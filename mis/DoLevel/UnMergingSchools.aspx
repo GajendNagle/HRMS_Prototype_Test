@@ -91,10 +91,10 @@
                         </div>
                     </div>
                     <div class="col-md-2 mb-4">
-                        <asp:Button ID="View1" CssClass="btn w-lg btn-success btn-rounded " OnClick="View1_Click" runat="server" Text="Search" />
+                        <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
                     </div>
                     <div class="col-md-2 mb-4">
-                        <a href="UnMergingSchools.aspx" class="btn w-lg btn-danger btn-rounded">Clear</a>
+                        <a href="UnMergingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                     </div>
                 </div>
 
@@ -184,7 +184,7 @@
                 <div class="row justify-content-center" runat="server" id="divbtn" visible="false">
 
                     <div class="col-md-3 mt-2 text-center">
-                        <button type="button" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" class="  btn w-lg btn-success btn-rounded">Unmerge Request</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" class="btn w-lg btn-outline-success btn-rounded">Unmerge Request</button>
                     </div>
 
                 </div>
@@ -726,7 +726,7 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn w-lg btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn w-lg btn-outline-danger btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
 
@@ -809,8 +809,8 @@
                         </div>
                         <div class="modal-footer justify-content-center">
 
-                            <button type="button" class="btn w-lg btn-success Alert-UnMerge" data-bs-dismiss="modal">Save</button>
-                            <button type="button" class="btn w-lg btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn w-lg btn-outline-success btn-rounded Alert-UnMerge" data-bs-dismiss="modal">Save</button>
+                            <button type="button" class="btn w-lg btn-outline-danger btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                     <!-- /.modal-content -->

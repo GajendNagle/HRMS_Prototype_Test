@@ -9,128 +9,136 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div id="dv_Masters_LocationMasters" runat="server">
 
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Merge School Verification</h4>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
 
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=HO" title="click to go on">HO Level Request</a></li>
-                        <li class="breadcrumb-item active">Merge School Verification</li>
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">HO Level Request</li>
+                        <li class="breadcrumb-item">Merge School Verification</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+    <div class="card ">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Merge School Verification/मर्ज स्कूल सत्यापन
+                    </h4>
+                </div>
             </div>
+        </div>
 
-            <div class="card-body">
+        <div class="card-body">
 
-                <fieldset>
-                    <legend>Merge School Verification</legend>
+            <fieldset>
+                <legend>Merge School Verification/मर्ज स्कूल सत्यापन</legend>
 
-                    <div class="row justify-content-center">
+                <div class="row justify-content-center">
 
-                        <div class="col-md-3">
-                            <label class="font-bold">Division Name </label>
-                            <asp:DropDownList runat="server" CssClass="form-control select2">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Gwalior</asp:ListItem>
-                                <asp:ListItem>Narmadapuram</asp:ListItem>
-                                <asp:ListItem>Indore</asp:ListItem>
-                                <asp:ListItem>Jabalpur</asp:ListItem>
-                                <asp:ListItem>Rewa</asp:ListItem>
-                                <asp:ListItem>Sagar</asp:ListItem>
-                                <asp:ListItem>Shahdol</asp:ListItem>
-                                <asp:ListItem>Ujjain</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">District Name</label>
-                            <asp:DropDownList runat="server" CssClass="form-control select2">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Raisen</asp:ListItem>
-                                <asp:ListItem>Rajgarh</asp:ListItem>
-                                <asp:ListItem>Sehore</asp:ListItem>
-                                <asp:ListItem>Vidisha</asp:ListItem>
-                                <asp:ListItem>Ashoknagar</asp:ListItem>
-                                <asp:ListItem>Shivpuri</asp:ListItem>
-                                <asp:ListItem>Datia</asp:ListItem>
-                                <asp:ListItem>Guna</asp:ListItem>
-                                <asp:ListItem>Gwalior</asp:ListItem>
-                                <asp:ListItem>Harda</asp:ListItem>
-                                <asp:ListItem>Hoshangabad</asp:ListItem>
-                                <asp:ListItem>Betul</asp:ListItem>
-                                <asp:ListItem>Morena</asp:ListItem>
-                                <asp:ListItem>Sheopur</asp:ListItem>
-                                <asp:ListItem>Bhind</asp:ListItem>
-                                <asp:ListItem>Barwani</asp:ListItem>
-                                <asp:ListItem>Burhanpur</asp:ListItem>
-                                <asp:ListItem>Dhar</asp:ListItem>
-                                <asp:ListItem>Indore</asp:ListItem>
-                                <asp:ListItem>Jhabua</asp:ListItem>
-                                <asp:ListItem>Khandwa</asp:ListItem>
-                                <asp:ListItem>Khargone</asp:ListItem>
-                                <asp:ListItem>Alirajpur</asp:ListItem>
-                                <asp:ListItem>Balaghat</asp:ListItem>
-                                <asp:ListItem>Chhindwara</asp:ListItem>
-                                <asp:ListItem>Jabalpur</asp:ListItem>
-                                <asp:ListItem>Katni</asp:ListItem>
-                                <asp:ListItem>Mandla</asp:ListItem>
-                                <asp:ListItem>Narsinghpur</asp:ListItem>
-                                <asp:ListItem>Seoni</asp:ListItem>
-                                <asp:ListItem>Rewa</asp:ListItem>
-                                <asp:ListItem>Satna</asp:ListItem>
-                                <asp:ListItem>Sidhi</asp:ListItem>
-                                <asp:ListItem>Singroli</asp:ListItem>
-                                <asp:ListItem>Chhatarpur</asp:ListItem>
-                                <asp:ListItem>Damoh</asp:ListItem>
-                                <asp:ListItem>Panna</asp:ListItem>
-                                <asp:ListItem>Sagar</asp:ListItem>
-                                <asp:ListItem>Tikamgarh</asp:ListItem>
-                                <asp:ListItem>Shahdol</asp:ListItem>
-                                <asp:ListItem>Umaria</asp:ListItem>
-                                <asp:ListItem>Dindori</asp:ListItem>
-                                <asp:ListItem>Anuppur</asp:ListItem>
-                                <asp:ListItem>Dewas</asp:ListItem>
-                                <asp:ListItem>Mandsaur</asp:ListItem>
-                                <asp:ListItem>Neemuch</asp:ListItem>
-                                <asp:ListItem>Ratlam</asp:ListItem>
-                                <asp:ListItem>Shajapur</asp:ListItem>
-                                <asp:ListItem>Ujjain</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">Block Name</label>
-                            <asp:DropDownList runat="server" CssClass="form-control select2">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Agar</asp:ListItem>
-                                <asp:ListItem>Barod</asp:ListItem>
-                                <asp:ListItem>Nalkheda</asp:ListItem>
-                                <asp:ListItem>Susner</asp:ListItem>
-                                <asp:ListItem>Alirajpur</asp:ListItem>
-                                <asp:ListItem>Bhabra</asp:ListItem>
-                                <asp:ListItem>Katthiwara</asp:ListItem>
-                                <asp:ListItem>Sondwa</asp:ListItem>
-                                <asp:ListItem>Udaygarh</asp:ListItem>
-                                <asp:ListItem>Jobat</asp:ListItem>
-                                <asp:ListItem>Anuppur</asp:ListItem>
-                                <asp:ListItem>Jaithari</asp:ListItem>
-                                <asp:ListItem>Kotma</asp:ListItem>
+                    <div class="col-md-3">
+                        <label class="font-bold">Select Division Name/संभाग का नाम चुनें</label>
+                        <asp:DropDownList runat="server" CssClass="form-control select2">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Bhopal</asp:ListItem>
+                            <asp:ListItem>Gwalior</asp:ListItem>
+                            <asp:ListItem>Narmadapuram</asp:ListItem>
+                            <asp:ListItem>Indore</asp:ListItem>
+                            <asp:ListItem>Jabalpur</asp:ListItem>
+                            <asp:ListItem>Rewa</asp:ListItem>
+                            <asp:ListItem>Sagar</asp:ListItem>
+                            <asp:ListItem>Shahdol</asp:ListItem>
+                            <asp:ListItem>Ujjain</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="font-bold">Select District Name/ जिले का नाम चुनें</label>
+                        <asp:DropDownList runat="server" CssClass="form-control select2">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Bhopal</asp:ListItem>
+                            <asp:ListItem>Raisen</asp:ListItem>
+                            <asp:ListItem>Rajgarh</asp:ListItem>
+                            <asp:ListItem>Sehore</asp:ListItem>
+                            <asp:ListItem>Vidisha</asp:ListItem>
+                            <asp:ListItem>Ashoknagar</asp:ListItem>
+                            <asp:ListItem>Shivpuri</asp:ListItem>
+                            <asp:ListItem>Datia</asp:ListItem>
+                            <asp:ListItem>Guna</asp:ListItem>
+                            <asp:ListItem>Gwalior</asp:ListItem>
+                            <asp:ListItem>Harda</asp:ListItem>
+                            <asp:ListItem>Hoshangabad</asp:ListItem>
+                            <asp:ListItem>Betul</asp:ListItem>
+                            <asp:ListItem>Morena</asp:ListItem>
+                            <asp:ListItem>Sheopur</asp:ListItem>
+                            <asp:ListItem>Bhind</asp:ListItem>
+                            <asp:ListItem>Barwani</asp:ListItem>
+                            <asp:ListItem>Burhanpur</asp:ListItem>
+                            <asp:ListItem>Dhar</asp:ListItem>
+                            <asp:ListItem>Indore</asp:ListItem>
+                            <asp:ListItem>Jhabua</asp:ListItem>
+                            <asp:ListItem>Khandwa</asp:ListItem>
+                            <asp:ListItem>Khargone</asp:ListItem>
+                            <asp:ListItem>Alirajpur</asp:ListItem>
+                            <asp:ListItem>Balaghat</asp:ListItem>
+                            <asp:ListItem>Chhindwara</asp:ListItem>
+                            <asp:ListItem>Jabalpur</asp:ListItem>
+                            <asp:ListItem>Katni</asp:ListItem>
+                            <asp:ListItem>Mandla</asp:ListItem>
+                            <asp:ListItem>Narsinghpur</asp:ListItem>
+                            <asp:ListItem>Seoni</asp:ListItem>
+                            <asp:ListItem>Rewa</asp:ListItem>
+                            <asp:ListItem>Satna</asp:ListItem>
+                            <asp:ListItem>Sidhi</asp:ListItem>
+                            <asp:ListItem>Singroli</asp:ListItem>
+                            <asp:ListItem>Chhatarpur</asp:ListItem>
+                            <asp:ListItem>Damoh</asp:ListItem>
+                            <asp:ListItem>Panna</asp:ListItem>
+                            <asp:ListItem>Sagar</asp:ListItem>
+                            <asp:ListItem>Tikamgarh</asp:ListItem>
+                            <asp:ListItem>Shahdol</asp:ListItem>
+                            <asp:ListItem>Umaria</asp:ListItem>
+                            <asp:ListItem>Dindori</asp:ListItem>
+                            <asp:ListItem>Anuppur</asp:ListItem>
+                            <asp:ListItem>Dewas</asp:ListItem>
+                            <asp:ListItem>Mandsaur</asp:ListItem>
+                            <asp:ListItem>Neemuch</asp:ListItem>
+                            <asp:ListItem>Ratlam</asp:ListItem>
+                            <asp:ListItem>Shajapur</asp:ListItem>
+                            <asp:ListItem>Ujjain</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें </label>
+                        <asp:DropDownList runat="server" CssClass="form-control select2">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Agar</asp:ListItem>
+                            <asp:ListItem>Barod</asp:ListItem>
+                            <asp:ListItem>Nalkheda</asp:ListItem>
+                            <asp:ListItem>Susner</asp:ListItem>
+                            <asp:ListItem>Alirajpur</asp:ListItem>
+                            <asp:ListItem>Bhabra</asp:ListItem>
+                            <asp:ListItem>Katthiwara</asp:ListItem>
+                            <asp:ListItem>Sondwa</asp:ListItem>
+                            <asp:ListItem>Udaygarh</asp:ListItem>
+                            <asp:ListItem>Jobat</asp:ListItem>
+                            <asp:ListItem>Anuppur</asp:ListItem>
+                            <asp:ListItem>Jaithari</asp:ListItem>
+                            <asp:ListItem>Kotma</asp:ListItem>
 
-                            </asp:DropDownList>
-                        </div>
-                       <%-- <div class="col-md-3">
+                        </asp:DropDownList>
+                    </div>
+                    <%-- <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">School UDISE Code</label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
@@ -144,251 +152,249 @@
                                 </asp:DropDownList>
                             </div>
                         </div>--%>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="font-bold">UDISE Code</label>
-                                <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group text-center">
-
-                                <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn btn-success btn-rounded " />
-
-                                <a href="#" class="btn  btn-danger btn-rounded ">Clear</a>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset runat="server" id="report" visible="false">
-                    <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <table class="table table-bordered table-responsive" style="border: 2px">
-
-                                <tbody>
-                                    <tr>
-                                        <th colspan="9">School to merge (स्कूल जिसका विलय करना हैं)</th>
-
-                                        <th colspan="6">Anchor School to be Merged (स्कूल जिसमे विलय करना हैं)</th>
-
-                                    </tr>
-                                    <tr>
-
-                                        <th>Sr.No.</th>
-                                        <th>View Request Detail</th>
-                                        <th>Action</th>
-                                        <th>Effective Date</th>
-                                        <th>UDISE Code</th>
-                                        <th>School Name</th>
-                                        <th>School Board</th>
-                                        <th>Category</th>
-                                        <th>School Category Detail</th>
-                                        <th>Sr.No.</th>
-                                        <th>UDISE Code</th>
-                                        <th>School Name</th>
-                                        <th>School Board</th>
-                                        <th>Category</th>
-                                        <th>School Category Detail</th>
-                                    </tr>
-                                    <tr>
-                                      
-
-                                        <td>1</td>
-                                        <td>
-                                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
-                                        </td>
-                                        <td scope="col">
-                                            <input type="checkbox" /></td>
-                                        <td>07/12/2023</td>
-
-                                        <td  class="txt-link">
-                                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
-                                23450404105</asp:HyperLink>
-                                        </td>
-                                        <td>Crist Academy School</td>
-                                        <td>State Board</td>
-                                        <td>Primary</td>
-                                        <td>Primary only with grades 1 to 5 (PRY)</td>
-                                                <td >1</td>
-
-        <td  class="txt-link">
-            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
-23445656546</asp:HyperLink>
-        </td>
-        <td >Sarasvati Vidhya Mandir</td>
-        <td >State Board</td>
-        <td >Upper Primary</td>
-        <td >Upper Primary with grades 1 to 8 (PRY-UPR)</td>
-                                    </tr>
-                                   
-                                    <tr>
-                                        <td >2</td>
-
-                                       
-                                        <td>
-                                            <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
-                                        </td>
-                                        <td scope="col">
-                                            <input type="checkbox" /></td>
-                                        <td>07/12/2023</td>
-
-                                        <td  class="txt-link">
-                                            <asp:HyperLink ID="HyperLink5" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
-                             23450404134</asp:HyperLink>
-                                        </td>
-                                        <td>Delhi Public School</td>
-                                        <td>State Board</td>
-                                        <td>Primary</td>
-                                        <td>Primary only with grades 1 to 5 (PRY)</td>
-        <td>1</td>
-
-                                                <td  class="txt-link">
-            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
-23450404129</asp:HyperLink>
-        </td>
-        <td >Bal Bharti School</td>
-        <td >State Board</td>
-        <td >Higher Secondary</td>
-        <td >Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
-                                    </tr>
-                                  
-                                    <tr>
-                                        <td >3</td>
-                                       
-                                        <td >
-                                            <asp:LinkButton ID="LinkButton5" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
-                                        </td>
-                                        <td scope="col">
-                                            <input type="checkbox" /></td>
-                                        <td>07/12/2023</td>
-                                        <td  class="txt-link">
-                                            <asp:HyperLink ID="HyperLink8" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
-                              23450404147</asp:HyperLink>
-                                        </td>
-                                        <td>Modern Convent School</td>
-                                        <td>State Board</td>
-                                        <td>Primary</td>
-                                        <td>Primary only with grades 1 to 5 (PRY)</td>
-                                        <td>1</td>
-
-                                                 <td  class="txt-link">
-             <asp:HyperLink ID="HyperLink7" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
-23450404152</asp:HyperLink>
-         </td>
-         <td >Geetanjali Public School</td>
-         <td >State Board</td>
-         <td >Higher Secondary</td>
-         <td >Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
-                                    </tr>
-                                  
-                                   
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- sample modal content -->
-                    <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header" id="myDIV">
-                                    <h4 class="modal-title" id="myLargeModalLabel1">Request Details</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                                </div>
-                                <div class="modal-body">
-
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                                                        <label>Date</label>
-                                                                        <asp:TextBox ID="TextBox3" placeholder="15/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
-                                                                    </div>
-                                                                       <div class="col-md-3">
-                                                                        <label>Order Document Type</label>
-                                                                        <asp:TextBox ID="TextBox6" placeholder="Order Letter" ReadOnly="true" runat="server" CssClass="form-control"></asp:TextBox>
-                                                                    </div>
-                                                                  
-                                                                    <div class="col-md-3">
-                                                                        <label>Order No</label>
-                                                                        <asp:TextBox ID="TextBox9" placeholder="1248745" ReadOnly="true" runat="server" CssClass=" form-control"></asp:TextBox>
-                                                                    </div>
-                                                                      <div class="col-md-2">
-                                                                        <label>Effective Date</label>
-                                                                        <asp:TextBox ID="TextBox4" placeholder="20/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
-                                                                    </div>
-                                        <div class="col-md-1 mt-2">
-
-                                            <asp:LinkButton ID="LinkButton8" runat="server" CssClass="btn border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="openPDF()"><i class="fas fa-eye"></i>Document</asp:LinkButton>
-                                            <%--<asp:FileUpload runat="server" CssClass="form-control" />--%>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                            <!-- /.modal-content -->
-                        </div>
-                        <!-- /.modal-dialog -->
-                    </div>
-                    <!-- /.modal -->
-
-                </fieldset>
-
-
-                <div class="row justify-content-center" runat="server" id="divbutton" visible="false">
                     <div class="col-md-3">
-                        <div class="form-group text-center">
-                            <button type="button" class=" btn btn-success  btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Merge School</button>
-
-
-                            <button type="button" class="btn btn-danger btn-rounded  " onclick="openBootstrapModal()">Reject Request</button>
-
+                        <div class="form-group">
+                            <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
+                            <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
                         </div>
                     </div>
-
+                    <div class="col-md-12">
+                        <div class="form-group text-center">
+                            <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn w-lg btn-outline-success btn-rounded" />
+                            <a href="#" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+                        </div>
+                    </div>
                 </div>
+            </fieldset>
+            <fieldset runat="server" id="report" visible="false">
+                <legend>Details/विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-responsive" style="border: 2px">
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="9">School to merge (स्कूल जिसका विलय करना हैं)</th>
+
+                                    <th colspan="6">Anchor School to be Merged (स्कूल जिसमे विलय करना हैं)</th>
+
+                                </tr>
+                                <tr>
+
+                                    <th>Sr. No./क्रमांक</th>
+                                    <th>View Request Detail/अनुरोध विवरण देखें</th>
+                                    <th>Action/कार्रवाई</th>
+                                    <th>Effective Date/प्रभावी तिथि</th>
+                                    <th>UDISE Code/UDISE कोड</th>
+                                    <th>School Name/स्कूल के नाम</th>
+                                    <th>School Board/स्कूल बोर्ड</th>
+                                    <th>Category/वर्ग</th>
+                                    <th>School Category Detail/स्कूल श्रेणी विवरण</th>
+                                    <th>Sr. No./क्रमांक</th>
+                                    <th>UDISE Code/UDISE कोड</th>
+                                    <th>School Name/स्कूल के नाम</th>
+                                    <th>School Board/स्कूल बोर्ड</th>
+                                    <th>Category/वर्ग</th>
+                                    <th>School Category Detail/स्कूल श्रेणी विवरण</th>
+                                </tr>
+                                <tr>
+
+
+                                    <td>1</td>
+                                    <td>
+                                        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
+                                    </td>
+                                    <td scope="col">
+                                        <input type="checkbox" /></td>
+                                    <td>07/12/2023</td>
+
+                                    <td class="txt-link">
+                                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
+                                23450404105</asp:HyperLink>
+                                    </td>
+                                    <td>Crist Academy School</td>
+                                    <td>State Board</td>
+                                    <td>Primary</td>
+                                    <td>Primary only with grades 1 to 5 (PRY)</td>
+                                    <td>1</td>
+
+                                    <td class="txt-link">
+                                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
+23445656546</asp:HyperLink>
+                                    </td>
+                                    <td>Sarasvati Vidhya Mandir</td>
+                                    <td>State Board</td>
+                                    <td>Upper Primary</td>
+                                    <td>Upper Primary with grades 1 to 8 (PRY-UPR)</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+
+
+                                    <td>
+                                        <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
+                                    </td>
+                                    <td scope="col">
+                                        <input type="checkbox" /></td>
+                                    <td>07/12/2023</td>
+
+                                    <td class="txt-link">
+                                        <asp:HyperLink ID="HyperLink5" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
+                             23450404134</asp:HyperLink>
+                                    </td>
+                                    <td>Delhi Public School</td>
+                                    <td>State Board</td>
+                                    <td>Primary</td>
+                                    <td>Primary only with grades 1 to 5 (PRY)</td>
+                                    <td>1</td>
+
+                                    <td class="txt-link">
+                                        <asp:HyperLink ID="HyperLink4" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
+23450404129</asp:HyperLink>
+                                    </td>
+                                    <td>Bal Bharti School</td>
+                                    <td>State Board</td>
+                                    <td>Higher Secondary</td>
+                                    <td>Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+
+                                    <td>
+                                        <asp:LinkButton ID="LinkButton5" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
+                                    </td>
+                                    <td scope="col">
+                                        <input type="checkbox" /></td>
+                                    <td>07/12/2023</td>
+                                    <td class="txt-link">
+                                        <asp:HyperLink ID="HyperLink8" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
+                              23450404147</asp:HyperLink>
+                                    </td>
+                                    <td>Modern Convent School</td>
+                                    <td>State Board</td>
+                                    <td>Primary</td>
+                                    <td>Primary only with grades 1 to 5 (PRY)</td>
+                                    <td>1</td>
+
+                                    <td class="txt-link">
+                                        <asp:HyperLink ID="HyperLink7" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i></i>
+23450404152</asp:HyperLink>
+                                    </td>
+                                    <td>Geetanjali Public School</td>
+                                    <td>State Board</td>
+                                    <td>Higher Secondary</td>
+                                    <td>Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
                 <!-- sample modal content -->
-                <!-- Bootstrap Modal -->
-                <div class="modal" tabindex="-1" role="dialog" id="bootstrapModal">
-                    <div class="modal-dialog" role="document">
+                <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Reject Remark</h5>
+                            <div class="modal-header" id="myDIV">
+                                <h4 class="modal-title" id="myLargeModalLabel1">Request Details/अनुरोध विवरण</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <label>Remark</label>
-                                        <asp:TextBox ID="TextBox8" placeholder="Enter Reject Remark" runat="server" CssClass="form-control"></asp:TextBox>
+
+                                <div class="row align-items-end">
+                                    <div class="col-md-2">
+                                        <label>Date/तारीख</label>
+                                        <asp:TextBox ID="TextBox3" placeholder="15/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Order Document Type/ऑर्डर दस्तावेज़ प्रकार</label>
+                                        <asp:TextBox ID="TextBox6" placeholder="Order Letter" ReadOnly="true" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label>Order No/आदेश संख्या</label>
+                                        <asp:TextBox ID="TextBox9" placeholder="1248745" ReadOnly="true" runat="server" CssClass=" form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>Effective Date/प्रभावी तिथि</label>
+                                        <asp:TextBox ID="TextBox4" placeholder="20/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-1 mt-2">
+
+                                        <asp:LinkButton ID="LinkButton8" runat="server" CssClass="btn border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="openPDF()"><i class="fas fa-eye"></i>Document</asp:LinkButton>
+                                        <%--<asp:FileUpload runat="server" CssClass="form-control" />--%>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn btn-danger Alert-Reject" data-bs-dismiss="modal">Reject</button>
-                                <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn w-lg btn-outline-danger btn-border" data-bs-dismiss="modal">Close</button>
                             </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+            </fieldset>
+
+
+            <div class="row justify-content-center" runat="server" id="divbutton" visible="false">
+                <div class="col-md-12">
+                    <div class="form-group text-center">
+                        <button type="button" class="btn w-lg btn-outline-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Merge School</button>
+
+
+                        <button type="button" class="btn w-lg btn-outline-danger btn-border" onclick="openBootstrapModal()">Reject Request</button>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- sample modal content -->
+            <!-- Bootstrap Modal -->
+            <div class="modal" tabindex="-1" role="dialog" id="bootstrapModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Reject Remark/टिप्पणी अस्वीकार करें</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row align-items-end">
+                                <div class="col-md-12">
+                                    <label>Remark/टिप्पणी</label>
+                                    <asp:TextBox ID="TextBox8" placeholder="Enter Reject Remark" runat="server" CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn w-lg btn-outline-danger btn-border Alert-Reject" data-bs-dismiss="modal">Reject</button>
+                            <button type="button" class="btn w-lg btn-outline-danger btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-                <!-- /.modal -->
-                <!--Description-->
-               <%-- <fieldset id="dcp" runat="server" visible="false">
+            </div>
+            <!-- /.modal -->
+            <!--Description-->
+            <%-- <fieldset id="dcp" runat="server" visible="false">
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -475,42 +481,41 @@
                         </div>
                     </div>
                 </fieldset>--%>
-                <!-- End Description -->
+            <!-- End Description -->
 
-                <div class="modal" tabindex="-1" role="dialog" id="OTPModal">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">OTP Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-            </div>
-            <div class="modal-body">
-                <fieldset>
-                    <legend>OTP Details</legend>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>OTP (One Time Password)</label>
-                                <input type="text" class="form-control" />
-                            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="OTPModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">OTP Details/ओटीपी विवरण</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <fieldset>
+                                <legend>OTP Details/ओटीपी विवरण</legend>
+                                <div class="row align-items-end">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>OTP (One Time Password)/ओटीपी (वन टाइम पासवर्ड)</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn w-lg btn-outline-success btn-border Alert-Mergeschool" data-bs-dismiss="modal">Submit</button>
+                            <button type="button" class="btn w-lg btn-outline-danger btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
-                </fieldset>
+                </div>
             </div>
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-danger Alert-Mergeschool" data-bs-dismiss="modal">Submit</button>
-                <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-            </div>
+
+
+
         </div>
     </div>
-</div>
 
-
-
-            </div>
-        </div>
-
-    </div>
 
 
 </asp:Content>
