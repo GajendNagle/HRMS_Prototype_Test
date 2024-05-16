@@ -1,0 +1,153 @@
+﻿:root {
+    --color-text: #616161;
+    --color-text-btn: #ffffff;
+    --card1-gradient-color1: #f12711;
+    --card1-gradient-color2: #f5af19;
+    --card2-gradient-color1: #7F00FF;
+    --card2-gradient-color2: #E100FF;
+    --card3-gradient-color1: #3f2b96;
+    --card3-gradient-color2: #a8c0ff;
+    --card4-gradient-color1: #11998e;
+    --card4-gradient-color2: #38ef7d;
+    --card5-gradient-color1: #0D1282;
+    --card5-gradient-color2: #A78295;
+}
+
+
+.card-wrap {
+    /*width: 220px;*/
+    background: #fff;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    color: var(--color-text);
+    /*  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;*/
+    box-shadow: rgb(27 91 92 / 0.19) 0px 10px 20px, rgb(27 91 92 / 0.23) 0px 6px 6px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-bottom: 0.6rem;
+}
+
+    .card-wrap:hover {
+        transform: scale(1.05);
+    }
+
+.card-header1 {
+    height: 100px;
+    width: 100%;
+    background: red;
+    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100% !important;
+    display: grid;
+    place-items: center;
+}
+
+    .card-header1 h4 {
+        font-weight: 600;
+    }
+
+.card-header i {
+    color: #fff;
+    font-size: 72px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card-title1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #1b5b5c !important;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    border: none;
+    border-radius: 100px;
+    padding: 5px 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.card-header.one {
+    background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-header.two {
+    background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-header.three {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-header.four {
+    background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+.card-header.five {
+    background: linear-gradient(to bottom left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}
+
+.card-btn.one {
+    background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-btn.two {
+    background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-btn.three {
+    background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-btn.four {
+    background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+.card-btn.five {
+    background: linear-gradient(to left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}
+
+.card-body h5 {
+    text-transform: none;
+    font-weight: 600;
+    color: #1b5b5c;
+    font-size: 1.1rem;
+}
+
+
+.card-body-caharts {
+    min-height: 20rem;
+    /* box-shadow: rgb(47 47 229 / 25%) 0px 30px 60px -12px inset,
+        rgb(151 216 255 / 30%) 0px 18px 36px -18px inset;*/
+    box-shadow: rgb(151 161 169 / 15%) 0px 30px 60px -12px inset, rgb(151 161 169 / 15%) 0px 30px 60px -12px;
+    margin-top: -1.5rem;
+}
+
+.card-body-caharts, .card-body, .card {
+    border-radius: 2.5rem !important;
+}
+
+.graph-maxheight {
+    margin-top: -35px;
+}
+
+
+smallh4 {
+    font-size: 0.8rem;
+}
+

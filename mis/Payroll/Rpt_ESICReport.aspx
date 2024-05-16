@@ -1,0 +1,283 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_ESICReport.aspx.cs" Inherits="mis_Payroll_Rpt_ESICReport" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+      <script>
+        function myFunction() {
+            var x = document.getElementById("show");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "block";
+            }
+        }
+      </script>
+    <style>
+        #show {
+            display: none;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+
+     <div class="content-wrapper">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="row page-titles mb-4">
+                <div class="col-md-5 align-self-center">
+                    <h4 class="text-themecolor ">ESIC Report</h4>
+                </div>
+                <div class="col-md-7 align-self-center text-end">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../Module.aspx?ID=Payroll" title="click to go on">Payroll</a></li>
+                            <li class="breadcrumb-item"><a href="../Menu.aspx?ID=Payroll&SubID=Reports" title="click to go on">Reports</a></li>
+                            <li class="breadcrumb-item active">ESIC Report</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-3 shadow">
+                <div class="card-header card-border-info">
+                </div>
+                <div class="card-body">
+                    <fieldset>
+                        <legend>ESIC Report</legend>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Office Type<span style="color: red;"> *</span></label>
+                                    <select class="form-control select2">
+                                        <option value="0">Select</option>
+                            <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">JOINT DIRECTORS</option>
+                                <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
+                                <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
+                                <option value="Bhopal">SANKUL/AEO</option>
+                                <option value="Bhopal">SCHOOL</option>
+                                <option value="Principal Secretary">Principal Secretary</option>
+                                <option value="Secretary">Secretary</option>
+                                <option value="Deputy Secretary">Deputy Secretary</option>
+                                <option value="CPI">CPI</option>
+                                <option value="CRSK">CRSK</option>
+                                <option value="DPI">DPI</option>
+                                <option value="Collector">Collector</option>
+                                <option value="CEO, ZP">CEO, ZP</option>
+                                <option value="DPC">DPC</option>
+                                <option value="BRC">BRC</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Year<span style="color: red;"> *</span></label>
+                                    <select class="form-control select2">
+                                        <option value="0">Select</option>
+                                        <option value="2023">2023-24</option>
+                                        <option value="2022">2022-23</option>
+                                        <option value="2021">2021-22</option>
+                                        <option value="2020">2020-21</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Month <span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                         <option value="0">Select</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option  value="12">December</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Earning & Deduction Head<span style="color: red;">*</span></label>
+                                    <select  class="form-control select2">
+                                        <option value="0">Select</option>
+                                        <option value="1">DEARNESS ALLOWANCE (Earning)</option>
+                                        <option value="2">HOUSE RENT ALLOWANCE (Earning)</option>
+                                        <option value="3">CONVEYANCE ALLOWANCE (Earning)</option>
+                                        <option value="4">ORD ALLOWANCE (Earning)</option>
+                                        <option  value="5">WASHING ALLOWANCE (Earning)</option>
+                                        <option value="6">SPECIAL PAY (Earning)</option>
+                                        <option value="7">OTHER ALLOWANCE (Earning)</option>
+                                        <option value="8">EPF DEDUCTION (Deduction)</option>
+                                        <option value="9">A.D.A. DEDUCTION (Deduction)</option>
+                                        <option value="10">GROUP INSURANCE (GIS) (Deduction)</option>
+                                        <option value="11">INCOME TAX (Deduction)</option>
+                                        <option value="12">PROFESSIONAL TAX (Deduction)</option>
+                                        <option value="13">RUNG. CHARGE (Deduction)</option>
+                                        <option value="14">VEHICLE ADVANCE (Deduction)</option>
+                                        <option value="16">STAFF ADVANCE (Deduction)</option>
+                                        <option value="18">MISC. DEDUCTION (Deduction)</option>
+                                        <option value="19">GRAIN ADVANCE (Deduction)</option>
+                                        <option value="20">FESTIVAL ADVANCE (Deduction)</option>
+                                        <option value="22">HOUSE RENT/ LICENSE FEE (Deduction)</option>
+                                        <option value="23">H.B. LOAN (Deduction)</option>
+                                        <option value="25">TRIB  ALLOWANCE (Earning)</option>
+                                        <option value="27">HANDICAP  ALLOWANCE (Earning)</option>
+                                        <option value="28">RECOVERY (Deduction)</option>
+                                        <option value="29">CTC (Earning)</option>
+                                        <option value="30">VPF CONTRIBUTION (Deduction)</option>
+                                        <option value="31">GENERAL PROVIDENT FUND (GPF) (Deduction)</option>
+                                        <option value="32">WATER CHARGES (Deduction)</option>
+                                        <option value="33">PETROL CHARGE (Deduction)</option>
+                                        <option value="34">EMPLOYEE INSURANCE (Deduction)</option>
+                                        <option value="35">SPL. ADVANCE INTEREST (Deduction)</option>
+                                        <option value="37">NATIONAL PENSION SYSTEM (NPS) (Deduction)</option>
+                                        <option value="38">INTEREST PAY ADVANCE (Deduction)</option>
+                                        <option value="36">PAY ADVANCE (Deduction)</option>
+                                        <option value="39">HOUSE LICENSE FEE (Earning)</option>
+                                        <option value="40">MPEISS / ESIC (Deduction)</option>
+                                    </select>
+                                    <small><span id="valddlEarnDeducHead" class="text-danger"></span></small>
+                                </div>
+                            </div>
+                            </div>
+                          <div class="row">
+                                <div class="col-md-2">
+                                <div class="form-group">
+                                    <button type="button" onclick="myFunction()" class="btn btn-success btn-block  btn-rounded">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <a href="Rpt_ESICReport.aspx" class=" btn-block btn btn-danger  btn-rounded">Clear</a>
+                                </div>
+                            </div>
+                          </div>                        
+                    </fieldset>
+                    <fieldset id="show">
+                        <legend>ESIC (Report)</legend>
+                        <div class="row justify-content-end">
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <th>Sr.No</th>
+                                        <th>EMPLOYEE NAME</th>
+                                        <th>DESIGNATION</th>
+                                        <th>Gross wages</th>
+                                        <th>ESIC PERCENT(%)</th>
+                                        <th>ESIC DEDUCTION</th>
+                                        <th>DEPOSIT DATE</th>
+                                        <th>CHALLAN NO.</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Aman Patidar</td>
+                                        <td>Asst. Grade III</td>
+                                        <td>19847</td>
+                                        <td>0.75%</td>
+                                        <td>149</td>
+                                        <td>07/07/2023</td>
+                                        <td>CBR1234</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2</td>
+                                        <td>Pradeep Jatav</td>
+                                        <td>Asst. Grade III</td>
+                                        <td>17850</td>
+                                        <td>0.75%</td>
+                                        <td>138</td>
+                                        <td>07/07/2023</td>
+                                        <td>CBR1234</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="ContentBody_dcp">
+                        <legend>Description</legend>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="main-ul">
+                                    <li><strong>Office Type (Dropdown)</strong>
+                                        <ul>
+                                           <li>User will be able to select the  <strong>Office Type</strong> from the dropdown which will automatically reflect<strong>Office Type Master.</strong> </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Year (Dropdown)</strong>
+                                        <ul>
+                                            <li>User will be able to select <strong>Year </strong>from dropdown. Data populated from <strong>Database Table</strong>. </li>
+                                        </ul>
+                                    </li>
+                                     <li><strong>Month (Dropdown)</strong>
+                                        <ul>
+                                            <li>User will be able to select <strong>Month </strong>from dropdown. Data populated from <strong>Database Table</strong>. </li>
+                                         
+                                        </ul>
+                                    </li>
+                                     <li><strong>Earn Deduction Type (Dropdown) </strong>
+                                        <ul>
+                                            <li>User will be able to select <strong>Earn Deduction Type </strong>from dropdown. Data populated from <strong>Earning and Deduction Master</strong>. </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Search </strong>
+                                        <ul>
+                                            <li>User will Search data as per selected field.</li>
+                                            <li>After click on Search button data will be visible in grid view.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Clear (Button)</strong>
+                                        <ul>
+                                            <li>User should be able to click on Clear button.</li>
+                                            <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Excel (Button)</strong>
+                                        <ul>
+                                            <li>Excel button should be visible and user should be able to click.</li>
+                                            <li>After clicking on the Excel button, showing the data will be export to Excel.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>PDF (Button)</strong>
+                                        <ul>
+                                            <li>PDF button should be visible and user should be able to click.</li>
+                                            <li>After clicking on PDF button grid view data export in PDF.</li>
+                                        </ul>
+                                    </li>
+                                     <li><strong>Searchbox (searchable box)</strong>
+                                        <ul>
+                                            <li>Users can search for any text value, and only the relevant text related to the search will be displayed .</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
+</asp:Content>
+
