@@ -1,33 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DepartmentEnquiry.aspx.cs" Inherits="mis_Transaction_DepartmentEnquiry" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        label {
-            font-weight: 600;
-        }
-
-
-
-
-        html body .font-bold {
-            font-weight: 700;
-            font-size: 12px;
-        }
-
-        #divEmpData {
-            margin-bottom: 100px;
-        }
-
-        .form-group label {
-            font-weight: 600;
-            font-size: 12px;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
@@ -44,7 +17,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry" title="click to go on">Department Enquiry</a></li>
+                       <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry" title="click to go on">Department Enquiry</a></li>--%>
                         <li class="breadcrumb-item active">Department Enquiry</li>
                     </ol>
                 </div>
@@ -54,224 +27,257 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <div class="row">
+                 <nav class="navbar navbar-expand-lg topbar ">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li>
 
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="fw-bold text-dark">
-                                Employee Unique Id<br />
-                                अपचारी लोक सेवक की यूनिक आई.डी. <span style="color: red">*</span>
-                            </label>
+                      <a class="nav-link  text-white " href="DepartmentEnquiryNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                  </li>
+                  <li>
 
-                            <asp:TextBox runat="server" ID="txtEmployeeId" CssClass="form-control" placeholder="Search" AutoComplete="off">
-  
-                            </asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mt-4">
-                        <asp:Button type="button" ID="Button1" OnClick="showDataBtn_Click" Text="Search" runat="server" class="btn btn-success btn-rounded w-100 btn-block" />
-                    </div>
-                </div>
+                      <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry
+                      </b></a>
+                  </li>
+                  <li>
 
-                <fieldset runat="server" id="divEmpData" visible="false">
-                    <legend>Employee Information
+                      <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry List
+                      </b></a>
+                  </li>
+                  <li>
+
+                      <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry Report
+                      </b></a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+  <br />
+                <fieldset >
+                    <legend> Search Employee
                     </legend>
 
-                    <div class="row mt-2">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Employee Name<br>
-                                    कर्मचारी का नाम<span style="color: red">*</span></label>
-                                <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Arjun Talwar" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Unique ID
-                                    <br>
-                                    यूनिक आई.डी<span style="color: red">*</span></label>
-                                <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="AR4781" />
-                            </div>
-                        </div>
+                    <div class="row align-items-end">
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>
-                                    Designation
-                                    <br>
-                                    पदनाम <span style="color: red">*</span></label>
-                                <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Teacher(UDT)" />
+                                <label class="fw-bold text-dark">
+                                    Employee Unique Id<br />
+                                    अपचारी लोक सेवक की यूनिक आई.डी. <span style="color: red">*</span>
+                                </label>
+
+                                <asp:TextBox runat="server" ID="txtEmployeeId" CssClass="form-control" placeholder="Search" AutoComplete="off">
+                                </asp:TextBox>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">
-                                District<br>
-                                ज़िला<span style="color: red">*</span></label>
-                            <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">
-                                Block<br>
-                                ब्लॉक<span style="color: red">*</span></label>
-                            <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="GovindPura" />
-                        </div>
-                        <div class="col-md-3">
+                            </div>
+                        <div class="col-md-1">
                             <div class="form-group">
-                                <label>
-                                    Sankul Code/ Name
+                            <asp:Button type="button" ID="Button1" OnClick="showDataBtn_Click" Text="Search" runat="server" class="btn btn-success btn-rounded w-100 btn-block" />
+                        </div>
+                        </div>
+                    </div>
+                      </fieldset>
+                    <fieldset runat="server" id="divEmpData" visible="false">
+                        <legend>Employee Information
+                        </legend>
+
+                        <div class="row mt-2">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Employee Name<br>
+                                        कर्मचारी का नाम<span style="color: red">*</span></label>
+                                    <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Arjun Talwar" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Unique ID
+                                    <br>
+                                        यूनिक आई.डी<span style="color: red">*</span></label>
+                                    <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="AR4781" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Designation
+                                    <br>
+                                        पदनाम <span style="color: red">*</span></label>
+                                    <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Teacher(UDT)" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="font-bold">
+                                    District<br>
+                                    ज़िला<span style="color: red">*</span></label>
+                                <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="font-bold">
+                                    Block<br>
+                                    ब्लॉक<span style="color: red">*</span></label>
+                                <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="GovindPura" />
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Sankul Code/ Name
                     <br />
-                                    संकुल कोड / नाम<span style="color: red">*</span></label>
-                                <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
+                                        संकुल कोड / नाम<span style="color: red">*</span></label>
+                                    <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
+                                </div>
                             </div>
-                        </div>
 
 
-                        <div class="col-md-3">
-                            <label class="font-bold">
-                                School<br>
-                                स्कूल <span style="color: red">*</span></label>
-                            <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="VINAYAK PUBLIC SCHOOL TARRAKHURD SCHOOL" />
-                        </div>
-                    </div>
-                </fieldset>
-                <br />
-                <%--start Second FieldSet   --%>
-                <fieldset id="DivVibhgiyData" runat="server" visible="false">
-                    <legend>मंडल परीक्षा की गोपनीयता भंग संबंधी विभागीय  जाँच की अघतन स्तिथि  का  विवरण 
-                    </legend>
-
-                    <div class="row mt-2">
-                        <div class="col-md-4">
-                            <div class="form-group">
-
-                                <br />
-                                <br />
+                            <div class="col-md-3">
                                 <label class="font-bold">
-                                    Name of Departmental Investigating Officer<br>
-                                    विभागीय जांचकर्ता अधिकारी का नाम<span style="color: red">*</span></label>
-                                <input name="txtEmpName" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of departmental investigating officer" />
+                                    School<br>
+                                    स्कूल <span style="color: red">*</span></label>
+                                <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="VINAYAK PUBLIC SCHOOL TARRAKHURD SCHOOL" />
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
+                    </fieldset>
+                    <br />
+                    <%--start Second FieldSet   --%>
+                    <fieldset id="DivVibhgiyData" runat="server" visible="false">
+                        <legend>मंडल परीक्षा की गोपनीयता भंग संबंधी विभागीय  जाँच की अघतन स्तिथि  का  विवरण 
+                        </legend>
 
-
-                                <br />
-                                <br />
-                                <label class="font-bold">
-                                    Name of Presenting Officer<br>
-                                    प्रस्तुतकर्ता अधिकारी का नाम<span style="color: red">*</span></label>
-                                <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of Presenting Officer" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-
-
-
-
-                                <label class="font-bold mt-4">
-                                    Notice To The Delinquent Officer To Appear Before The Investigating Officer<br>
-                                    जाँच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सुचना <span style="color: red">*</span></label>
-                                <input type="date" class="form-control" autocomplete="off" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="font-bold">
-                                Suspension Date<br>
-                                निलंबन दिनांक<span style="color: red">*</span></label>
-                            <input type="date" class="form-control" autocomplete="off" />
-                        </div>
-                        <div class="col-md-4">
-                            <label class="font-bold">
-                                Imputed Date<br>
-                                आरोपित दिनांक<span style="color: red">*</span></label>
-                            <input type="date" class="form-control" autocomplete="off" />
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="font-bold">
-                                    Brief Date of Departmental Inquiry/
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <div class="form-group">
                                     <br />
-                                    विभागीय जााँच की संक्षिप्त दिनांक<span style="color: red">*</span></label>
+
+                                    <label class="font-bold">
+                                        Name of departmental investigating officer<br>
+                                        विभागीय जांचकर्ता अधिकारी का नाम<span style="color: red">*</span></label>
+                                    <input name="txtEmpName" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of departmental investigating officer" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <br />
+
+
+                                    <label class="font-bold">
+                                        Name of Presenting Officer<br>
+                                        प्रस्तुतकर्ता अधिकारी का नाम<span style="color: red">*</span></label>
+                                    <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of Presenting Officer" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="font-bold mt-4">
+                                        Notice to the delinquent officer to appear before the investigating officer<br>
+                                        जाँच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सुचना <span style="color: red">*</span></label>
+                                    <input type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="font-bold">
+                                    Suspension Date<br>
+                                    निलंबन दिनांक<span style="color: red">*</span></label>
                                 <input type="date" class="form-control" autocomplete="off" />
                             </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <label class="font-bold">
-                                First Hearing of The Criminal Before The Investigating Officer And Reading of The Charge Sheet<br>
-                                जाँच अधिकारी के समक्ष अपचारी की प्रथम सुनवाई एवं आरोप पत्र का वाचन  <span style="color: red">*</span></label>
-                            <input type="date" class="form-control" autocomplete="off" />
-                        </div>
-                        <div class="col-md-4">
-                            <label class="font-bold">
-                                Presentation And Cross-Examination of Prosecution Evidence<br>
-                                अभियोजन साक्ष्य  की प्रस्तुति एवं प्रतिपरीक्षण  <span style="color: red">*</span></label>
-                            <input type="date" class="form-control" autocomplete="off" />
-                        </div>
-
-
-
-
-                        <div class="col-md-4">
-                            <div class="form-group">
+                            <div class="col-md-4">
                                 <label class="font-bold">
-                                    Presentation And Cross-Examination of Defense Supporting Evidence
+                                    Imputed Date<br>
+                                    आरोपित दिनांक<span style="color: red">*</span></label>
+                                <input type="date" class="form-control" autocomplete="off" />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="font-bold">
+                                        Brief date of departmental inquiry/
+                                    <br />
+                                        विभागीय जााँच की संक्षिप्त दिनांक<span style="color: red">*</span></label>
+                                    <input type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <label class="font-bold">
+                                    First hearing of the criminal before the investigating officer and reading of the charge sheet<br>
+                                    जाँच अधिकारी के समक्ष अपचारी की प्रथम सुनवाई एवं आरोप पत्र का वाचन  <span style="color: red">*</span></label>
+                                <input type="date" class="form-control" autocomplete="off" />
+                            </div>
+                            <br />
+                            <div class="col-md-4">
+                                <label class="font-bold">
+                                    Presentation and cross-examination of prosecution evidence<br>
+                                    अभियोजन साक्ष्य  की प्रस्तुति एवं प्रतिपरीक्षण  <span style="color: red">*</span></label>
+                                <input type="date" class="form-control" autocomplete="off" />
+                            </div>
+
+
+                            <br />
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="font-bold">
+                                        Presentation and cross-examination of defense supporting evidence
                                     <br>
-                                    बचाव सहायक साक्ष्य  की प्रस्तुति  एवं प्रतिपरीक्षण<span style="color: red">*</span></label>
+                                        बचाव सहायक साक्ष्य  की प्रस्तुति  एवं प्रतिपरीक्षण<span style="color: red">*</span></label>
+                                    <input type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <label class="font-bold">
+                                    Presenting the presenting officer's brief and making it available to the delinquent employee<br>
+                                    प्रस्तुतकर्ता अधिकारी की ब्रीफ प्रस्तुति एवं अपचारी कर्मचारी को उपलब्ध करना<span style="color: red">*</span></label>
                                 <input type="date" class="form-control" autocomplete="off" />
                             </div>
-                        </div>
-                        <div class="col-md-4 mt-2">
-                            <label class="font-bold">
-                                Presenting The Presenting Officer's Brief And Making It Available To The Delinquent Employee<br>
-                                प्रस्तुतकर्ता अधिकारी की ब्रीफ प्रस्तुति एवं अपचारी कर्मचारी को उपलब्ध करना<span style="color: red">*</span></label>
-                            <input type="date" class="form-control" autocomplete="off" />
-                        </div>
-                        <div class="col-md-4">
-                            <br />
-                            <br />
-                            <label class="font-bold">
-                                Delinquent Employee's Counter Argument on Brief<br>
-                                ब्रीफ पर अपचारी कर्मचारी का प्रतिवाद <span style="color: red">*</span></label>
-                            <input type="date" class="form-control" autocomplete="off" />
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
+                            <div class="col-md-4">
                                 <br />
                                 <br />
                                 <label class="font-bold">
-                                    Dispatch of Final Investigation Report To Disciplinary Officer/
-         <br />
-                                    अंतिम जाँच प्रतिवेदन का अनुशासकीय  अधिकारी को प्रेषण<span style="color: red">*</span></label>
+                                    Delinquent employee's counter argument on brief<br>
+                                    ब्रीफ पर अपचारी कर्मचारी का प्रतिवाद <span style="color: red">*</span></label>
                                 <input type="date" class="form-control" autocomplete="off" />
                             </div>
-                        </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <br />
+                                    <br />
+                                    <label class="font-bold">
+                                        Dispatch of final investigation report to disciplinary officer/
+         <br />
+                                        अंतिम जाँच प्रतिवेदन का अनुशासकीय  अधिकारी को प्रेषण<span style="color: red">*</span></label>
+                                    <input type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
 
 
-                        <div class="col-md-12">
-                            <label class="font-bold">
-                                Remark/
+                            <div class="col-md-12">
+                                <label class="font-bold">
+                                    Remark/
                                 रिमार्क  <span style="color: red">*</span></label>
-                            <%--<input type="text" class="form-control" autocomplete="off" placeholder="Enter Remark" />--%>
-                            <asp:TextBox runat="server" placeholder="Enter Remark" CssClass="form-control" TextMode="MultiLine" MaxLength="200" AutoComplete="off"></asp:TextBox>
+                                <%--<input type="text" class="form-control" autocomplete="off" placeholder="Enter Remark" />--%>
+                                <asp:TextBox runat="server" placeholder="Enter Remark" CssClass="form-control" TextMode="MultiLine" MaxLength="200" AutoComplete="off"></asp:TextBox>
 
+                            </div>
+
+                            <div class="col-md-12 mt-4 text-center">
+
+                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save</button>
+                                <a class="btn btn-danger btn-rounded" href="DepartmentEnquiry.aspx">Clear</a>
+                            </div>
                         </div>
+                    </fieldset>
 
-                        <div class="col-md-12 mt-4 text-center">
-
-                            <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save</button>
-                            <a class="btn btn-danger btn-rounded" href="DepartmentEnquiry.aspx">Clear</a>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <%--End Second FieldSet   --%>
+                    <%--End Second FieldSet   --%>
             </div>
         </div>
     </div>

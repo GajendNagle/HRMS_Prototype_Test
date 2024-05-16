@@ -1456,11 +1456,16 @@
                         <a href="Transaction/PromotionCancel.aspx">
                             <img src="dist/images/icon/HRMS_PromotionCancelOrders.png" class="dash-img" />
 
-                            <h6>Promotion Cancel Orders</h6>
+                            <h6>Promotion Hold Orders</h6>
                         </a>
                     </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="Transaction/PromotionCancel.aspx">
+                            <img src="dist/images/icon/HRMS_PromotionCancelOrders.png" class="dash-img" />
 
-
+                            <h6>Promotion Order Report</h6>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1605,6 +1610,12 @@
                         </a>
                     </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="Transaction/EmployeeVerificationNotes.aspx">
+                            <img src="dist/images/icon/HRMS_LeaveTypeMaster.png" class="dash-img" />
+                            <h6>Employee Verification</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/EmployeeOtherCurriculumActivitiesNotw.aspx">
                             <img src="dist/images/icon/HRMS_LeaveTypeMaster.png" class="dash-img" />
                             <h6>Employee Other Curriculum Activities</h6>
@@ -1616,12 +1627,6 @@
                         <a href="Transaction/EmployeeRegistration.aspx">
                             <img src="dist/images/icon/HRMS_LeaveTypeMaster.png" class="dash-img" />
                             <h6>Employee Registration</h6>
-                        </a>
-                    </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/EmployeeVerification.aspx">
-                            <img src="dist/images/icon/SchoolDirectory_HO_CloseSchoolVerification.png" class="dash-img" />
-                            <h6>Employee Verification</h6>
                         </a>
                     </div>--%>
 
@@ -1855,7 +1860,7 @@
                     </div>
 
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/OIS_Transfer1.aspx">
+                        <a href="Transaction/OIS_Transfer1Notes.aspx">
                             <img src="dist/images/icon/HRMS_Increment_Process.png" class="dash-img" />
                             <h6>Automatic Transfer System</h6>
                         </a>
@@ -1868,7 +1873,7 @@
                         </a>
                     </div>
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/EmployeeJoiningInOffice.aspx">
+                        <a href="Transaction/EmployeeJoiningInOfficeNotes.aspx">
                             <img src="dist/images/icon/HRMS_Increment_Process.png" class="dash-img" />
                             <h6>Employee Joining In Office</h6>
                         </a>
@@ -1915,7 +1920,7 @@
             <div class="card-body">
                 <div class="row text-center justify-content-center mb-5">
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/EmpTourApply.aspx">
+                        <a href="Transaction/EmpTourApplyNotes.aspx">
                             <img src="dist/images/icon/HRMS_Increment_Process.png" class="dash-img" />
                             <h6>Apply Tour </h6>
                         </a>
@@ -1938,7 +1943,7 @@
     <%--End by Zaheer on 29-12-23 --%>
 
     <%--Added by Zaheer on 29-12-23 --%>
-    <div id="DEnquiry" runat="server">
+    <%--<div id="DEnquiry" runat="server">
         <!-- ============================================================== -->
         <!-- Bread crumb and right sidebar toggle -->
         <!-- ============================================================== -->
@@ -1966,7 +1971,7 @@
             <div class="card-body">
                 <div class="row text-center justify-content-center mb-5">
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/DepartmentEnquiry.aspx">
+                        <a href="Transaction/DepartmentEnquiryNotes.aspx">
                             <img src="dist/images/icon/HRMS_Increment_Process.png" class="dash-img" />
                             <h6>Department Enquiry</h6>
                         </a>
@@ -1990,7 +1995,7 @@
 
         </div>
 
-    </div>
+    </div>--%>  <%--commented by sagar 16/05/2024--%>
     <%--End by Zaheer on 29-12-23 --%>
 
     <div id="dv_HRMS_TourApply" runat="server">

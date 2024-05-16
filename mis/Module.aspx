@@ -367,14 +367,20 @@
                             <h6>e-Service Book</h6>
                         </a>
                     </div>
-                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                   <%-- <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry">
+                            <img src="dist/images/icon/HRMS_EServiceBook.png" class="dash-img" />
+                            <h6>Department Enquiry</h6>
+                        </a>
+                    </div>--%>
+                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="Transaction/DepartmentEnquiryNotes.aspx">
                             <img src="dist/images/icon/HRMS_EServiceBook.png" class="dash-img" />
                             <h6>Department Enquiry</h6>
                         </a>
                     </div>
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="HRMS/ConfedicialReport.aspx">
+                        <a href="HRMS/ConfedicialReportNotes.aspx">
                             <img src="dist/images/icon/HRMS_AnuualConfidentionalReport.png" class="dash-img" />
 
                             <h6>Annual Confidential Report (ACR)</h6>

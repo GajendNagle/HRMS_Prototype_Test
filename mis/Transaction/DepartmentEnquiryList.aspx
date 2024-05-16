@@ -50,8 +50,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry" title="click to go on">Department Enquiry</a></li>
-                    <li class="breadcrumb-item active">Department Enquiry list</li>
+                   <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry" title="click to go on">Department Enquiry</a></li>--%>
+                     <li class="breadcrumb-item active">Department Enquiry</li>
                 </ol>
             </div>
         </div>
@@ -60,6 +60,39 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
+              <nav class="navbar navbar-expand-lg topbar ">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li>
+
+                      <a class="nav-link  text-white " href="DepartmentEnquiryNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                  </li>
+                  <li>
+
+                      <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry
+                      </b></a>
+                  </li>
+                  <li>
+
+                      <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry List
+                      </b></a>
+                  </li>
+                  <li>
+
+                      <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry Report
+                      </b></a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+  <br />
             <fieldset>
                 <legend>Department Enquiry list</legend>
                 <div class="row justify-content-end">
@@ -325,7 +358,7 @@
 
     <script>
         function addData() {
-            document.getElementById("outputTable").style.display = "table";  
+            document.getElementById("outputTable").style.display = "table";
             // Get input values
             let name =
                 document.getElementById("nameInput").value;

@@ -25,8 +25,8 @@ public partial class mis_Dashboard : System.Web.UI.Page
         dv_Payroll.Visible = false;
         dv_StudentDirectory.Visible = false;
         dv_SchemeManagement.Visible = false;
-		Divuser_management.Visible = false;
-		if (ViewState["ModuleID"] != null)
+        Divuser_management.Visible = false;
+        if (ViewState["ModuleID"] != null)
         {
 
             if (ViewState["ModuleID"].ToString() == "Dashboard")
@@ -57,11 +57,11 @@ public partial class mis_Dashboard : System.Web.UI.Page
             {
                 dv_SchemeManagement.Visible = true;
             }
-			else if (ViewState["ModuleID"].ToString() == "usermanagement")
-			{
-				Divuser_management.Visible = true;
-			}
-			else
+            else if (ViewState["ModuleID"].ToString() == "usermanagement")
+            {
+                Divuser_management.Visible = true;
+            }
+            else
             {
                 Response.Redirect("Default.aspx");
             }

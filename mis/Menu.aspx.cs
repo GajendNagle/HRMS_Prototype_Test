@@ -50,7 +50,7 @@ public partial class mis_Menu : System.Web.UI.Page
         dv_Schememgmt_StudentProfileMgmt.Visible = false;
         dv_Office_Mgmt_System.Visible = false;
         dv_Bank_Master.Visible = false;
-        DEnquiry.Visible = false;
+        //DEnquiry.Visible = false;  commented by sagar 16/05/2024
         Div1.Visible = false;
         div_TransferCertificate.Visible = false;
         DIV_ProgressReport.Visible = false;
@@ -191,10 +191,10 @@ public partial class mis_Menu : System.Web.UI.Page
                 {
                     Div1.Visible = true;
                 }
-                else if (ViewState["MenuID"].ToString() == "DepartmentEnquiry")
+                /*else if (ViewState["MenuID"].ToString() == "DepartmentEnquiry")
                 {
                     DEnquiry.Visible = true;
-                }
+                }  */          //commented by sagar 16/05/2004 
                 else if (ViewState["MenuID"].ToString() == "EServiceBook")
                 {
                     dv_HRMS_eServiceBook.Visible = true;
