@@ -11,6 +11,9 @@
             font-weight: 600;
         }
 
+
+
+
         html body .font-bold {
             font-weight: 700;
             font-size: 12px;
