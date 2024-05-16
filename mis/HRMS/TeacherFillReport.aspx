@@ -54,8 +54,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                        <li class="breadcrumb-item active"></li>
+                        <li class="breadcrumb-item active">Annual Confidential Report (ACR)</li>
                     </ol>
                 </div>
             </div>
@@ -63,6 +62,8 @@
 
     </div>
     <div class="card mt-3 shadow">
+        <div class="card-header card-border-info">
+        </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -71,23 +72,20 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       <a class="nav-link  text-white " href="#" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
-       <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-           </a>
-           <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-               <li><a class="dropdown-item" href="EmployeeDetails.aspx" >Print Application </a></li>
-           </ul>
-       </li>
-         <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-<a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
-   </ul>
-
-
-
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li><a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
+                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Print Application </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a></li>
+                            <li><a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>

@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        #workdescription2::-webkit-scrollbar{
+           display:none;
+        }
         #workdescription2 {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
@@ -49,21 +52,22 @@
                     <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                     </u>
                 </p>
-                <h6 style="font-size: 15px; margin-left:25px">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
+                <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                        <li class="breadcrumb-item active"></li>
+                        <li class="breadcrumb-item active">Annual Confidential Report (ACR)</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
     <div class="card mt-3 shadow">
+        <div class="card-header card-border-info">
+        </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -73,7 +77,7 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <a class="nav-link  text-white " href="#" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
+                            <li><a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
@@ -83,8 +87,8 @@
                                     <li><a class="dropdown-item" href="EmployeeDetails.aspx">Print Application </a></li>
                                 </ul>
                             </li>
-                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+                            <li><a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a></li>
+                            <li><a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a></li>
                         </ul>
                     </div>
                 </div>
