@@ -3,22 +3,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
         /* Style for the modal */
-        #Editmodal {
+        /*#Editmodal {
             display: none;
             position: fixed;
             z-index: 1;
             left: 0;
             top: 0;
-            /* width: 100%;
-      height: 100%;*/
+             width: 100%;
+      height: 100%;
             overflow: auto;
             background-color: rgb(0,0,0);
             background-color: rgba(0,0,0,0.4);
-            /* padding-top: 60px;*/
-        }
+             padding-top: 60px;
+        }*/
 
         /* Style for the modal content */
-        /* .modal-content {
+         /*.modal-content {
       background-color: #fefefe;
       margin: 5% auto;
       padding: 20px;
@@ -64,6 +64,29 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
+            <nav class="navbar navbar-expand-lg topbar ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li>
+
+                                <a class="nav-link  text-white " href="OIS_Transfer1Notes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            </li>
+                            <li>
+
+                                <a class="nav-link  text-white " href="OIS_Transfer1.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Generate OIS Transfer
+                                </b></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <br />
             <fieldset>
                 <legend>Generate OIS Transfer</legend>
                 <div class="row">
@@ -208,7 +231,7 @@
                     <div class="col-md-5">
                         <div class="form-group ">
                             <button type="button" onclick="btnSearch()" class="btn btn-success btn-rounded">Search</button>
-                            <a href="OIS_Transfer.aspx" class=" btn btn-danger btn-rounded">Clear</a>
+                            <a href="OIS_Transfer1.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -682,7 +705,7 @@
         </div>
     </div>
     <!-- Editable  modal content -->
-    <div id="Editmodal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+    <div id="Editmodal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" ">
         <div class="modal-dialog modal-xxl" style="width: 100%;">
             <div class="modal-content">
                 <div class="modal-header">
@@ -875,7 +898,7 @@
                                     <label class="font-bold">In-Charge Type<span style="color: red;"> *</span></label>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                         <asp:ListItem>-Select-</asp:ListItem>
-                                        <asp:ListItem Selected="t">1-Head Master / Principal </asp:ListItem>
+                                        <asp:ListItem Selected="True">1-Head Master / Principal </asp:ListItem>
                                         <asp:ListItem>2-Asst. head Master  / VP</asp:ListItem>
                                         <asp:ListItem>3-Acting Head Teacher </asp:ListItem>
                                     </asp:DropDownList>
@@ -907,7 +930,7 @@
                                     <%-- <asp:TextBox runat="server" placeholder="Enter Year of Establishment" CssClass="form-control" ReadOnly="true"></asp:TextBox>--%>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                         <asp:ListItem>-Select-</asp:ListItem>
-                                        <asp:ListItem Selected="t">2015</asp:ListItem>
+                                        <asp:ListItem Selected="True">2015</asp:ListItem>
 
                                     </asp:DropDownList>
                                 </div>

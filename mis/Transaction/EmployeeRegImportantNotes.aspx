@@ -23,7 +23,7 @@
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                    <li class="breadcrumb-item active">Employee Registration Guidelines</li>
+                    <li class="breadcrumb-item active">Employee Registration </li>
                 </ol>
             </div>
         </div>
@@ -41,21 +41,10 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                            <%--                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                  
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
-
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                               
-                                </ul>
-                            </li>--%>
+                           
                             <a class="nav-link  text-white " href="EmployeeRegImportantNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold">Employee Registration</b></a>
-                            <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>
+                            <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>&nbsp;Employee Registration</b></a>
+                            <%--<a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>--%>
                         </ul>
 
                     </div>
@@ -65,17 +54,17 @@
             <br />
             <div class="row">
                 <div class="col-md-12">
-                    <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>
+                    <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>
                 </div>
             </div>
             <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
 
             <div>
                 <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
-                    <b>1):-</b>  समस्त जानकारी सावधानीपूर्वक और सही-सही भरें |<br />
-                    <b>2):-</b> आवेदन पत्र में गलत जानकारी प्राप्त होने पर आवेदन को निरस्त कर दिया जाएगा |<br />
-                    <b>3):-</b> फॉर्म को भरने के पूर्व फॉर्म संबंधी समस्त दस्तावेज साथ में लेकर बैठे ताकि असुविधा से बचा जा सके।<br />
-                    <b>4):-</b> फोटोग्राफ (JPG format) 700kb और सभी प्रकार के प्रमाण पत्र  (PDF Format) 700kb  में होना चाहिए
+                    <b>1)</b> &nbsp;समस्त जानकारी सावधानीपूर्वक और सही-सही भरें |<br />
+                    <b>2)</b> &nbsp;आवेदन पत्र में गलत जानकारी प्राप्त होने पर आवेदन को निरस्त कर दिया जाएगा |<br />
+                    <b>3)</b> &nbsp;फॉर्म को भरने के पूर्व फॉर्म संबंधी समस्त दस्तावेज साथ में लेकर बैठे ताकि असुविधा से बचा जा सके।<br />
+                    <b>4)</b> &nbsp;फोटोग्राफ (JPG format) 700kb और सभी प्रकार के प्रमाण पत्र  (PDF Format) 700kb  में होना चाहिए
                     <br />
 
 

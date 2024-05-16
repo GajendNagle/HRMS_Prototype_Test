@@ -130,9 +130,14 @@
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
 
-                                <a class="nav-link  text-white " href="EmployeeRegImportantNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold">Employee Registration</b></a>
-                                <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>
+                                <li>
+
+                                    <a class="nav-link  text-white " href="EmployeeVerificationNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                </li>
+                                <li>
+
+                                    <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Employee Verification</b></a>
+                                </li>
                             </ul>
 
                         </div>

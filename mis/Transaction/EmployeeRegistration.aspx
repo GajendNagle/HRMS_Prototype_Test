@@ -153,6 +153,7 @@
             </div>
         </div>
         <div class="card mt-3 shadow">
+       
             <div class="card-body">
                 <nav class="navbar navbar-expand-lg topbar ">
                     <div class="container-fluid">
@@ -165,14 +166,15 @@
 
 
                                 <a class="nav-link  text-white " href="EmployeeRegImportantNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold">Employee Registration</b></a>
-                                <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>
+                                <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>&nbsp;Employee Registration</b></a>
+                               <%-- <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>--%>
                             </ul>
 
                         </div>
                     </div>
                 </nav>
                 <br />
+                
 
                 <div class="row">
                     <div class="col-md-12">
