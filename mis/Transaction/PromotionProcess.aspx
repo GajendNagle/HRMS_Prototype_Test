@@ -2,44 +2,27 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        #showdetails {
+        #div1 {
             display: none;
         }
 
-        #divNewPromotion {
+        #div2 {
             display: none;
         }
 
-        #OfficeCode {
+        #div3 {
             display: none;
         }
-
-        #SchoolCode {
-            display: none;
-        }
-
-        #radioCode {
-            display: none;
-        }
-
-        #fileno {
-            display: none;
-        }
-
-        #checkbox {
+        #sel1 {
             display: none;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
-
-
-
-
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Promotion Process</h4>
+                <h4 class="text-themecolor ">Promotion Process/पदोन्नति प्रक्रिया</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -56,165 +39,44 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
+
                 <fieldset>
                     <legend>Employee Promotion</legend>
                     <div class="row">
-                        <%-- <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Division / संभाग <span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Bhopal">Bhopal</option>
-                                    <option value="Indore">Indore</option>
-                                    <option value="Gwalior">Gwalior</option>
-                                    <option value="Jabalpur">Jabalpur</option>
-                                    <option value="Ujjain">Ujjain</option>
-                                    <option value="Sagar">Sagar</option>
-                                    <option value="Rewa">Rewa</option>
-                                    <option value="Chambal">Chambal</option>
-                                    <option value="Shahdol">Shahdol</option>
-                                    <option value="Hoshangabad">Hoshangabad</option>
-                                    <option value="Narmadapuram">Narmadapuram</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">District<span style="color: red">*</span></label>
-                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="Bhopal">Bhopal</option>
-                                <option value="Raisen">Raisen</option>
-                                <option value="Rajgarh">Rajgarh</option>
-                                <option value="Sehore">Sehore</option>
-                                <option value="Vidisha">Vidisha</option>
-                                <option value="Ashoknagar">Ashoknagar</option>
-                                <option value="Shivpuri">Shivpuri</option>
-                                <option value="Datia">Datia</option>
-                                <option value="Guna">Guna</option>
-                                <option value="Gwalior">Gwalior</option>
-                                <option value="Harda">Harda</option>
-                                <option value="Hoshangabad">Hoshangabad</option>
-                                <option value="Betul">Betul</option>
-                                <option value="Morena">Morena</option>
-                                <option value="Sheopur">Sheopur</option>
-                                <option value="Bhind">Bhind</option>
-                                <option value="Barwani">Barwani</option>
-                                <option value="Burhanpur">Burhanpur</option>
-                                <option value="Dhar">Dhar</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Jhabua">Jhabua</option>
-                                <option value="Khandwa">Khandwa</option>
-                                <option value="Khargone">Khargone</option>
-                                <option value="Alirajpur">Alirajpur</option>
-                                <option value="Balaghat">Balaghat</option>
-                                <option value="Chhindwara">Chhindwara</option>
-                                <option value="Jabalpur">Jabalpur</option>
-                                <option value="Katni">Katni</option>
-                                <option value="Mandla">Mandla</option>
-                                <option value="Narsinghpur">Narsinghpur</option>
-                                <option value="Seoni">Seoni</option>
-                                <option value="Rewa">Rewa</option>
-                                <option value="Satna">Satna</option>
-                                <option value="Sidhi">Sidhi</option>
-                                <option value="Singroli">Singroli</option>
-                                <option value="Chhatarpur">Chhatarpur</option>
-                                <option value="Damoh">Damoh</option>
-                                <option value="Panna">Panna</option>
-                                <option value="Sagar">Sagar</option>
-                                <option value="Tikamgarh">Tikamgarh</option>
-                                <option value="Shahdol">Shahdol</option>
-                                <option value="Umaria">Umaria</option>
-                                <option value="Dindori">Dindori</option>
-                                <option value="Anuppur">Anuppur</option>
-                                <option value="Dewas">Dewas</option>
-                                <option value="Mandsaur">Mandsaur</option>
-                                <option value="Neemuch">Neemuch</option>
-                                <option value="Ratlam">Ratlam</option>
-                                <option value="Shajapur">Shajapur</option>
-                                <option value="Ujjain">Ujjain</option>
-
-                            </select>
-                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Designation Type/पदनाम का प्रकार <span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Indore">Ministry (मंत्रालय)</option>
-                                    <option value="Gwalior">Executive (कार्यकारी)</option>
-                                    <option value="Jabalpur">Teacher (अध्यापक)</option>
+                                <label>Promotion with Transfer <span style="color: red">*</span></label>
+                                <select id="dropdown" class="form-control">
+                                    <option value="0">Select</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Designation Name/पदनाम<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Additional Director">Additional Director</option>
-                                    <option value="Joint Director">Joint Director</option>
-                                    <option value="Deputy Director">Deputy Director</option>
-                                    <option value="Asstt Director">Asstt Director</option>
-                                    <option value="Regional Librarian">Regional Librarian</option>
-                                    <option value="Planning Officer">Planning Officer</option>
-                                    <option value="Director (ELTI)">Director (ELTI)</option>
-                                    <option value="Director(SISE)">Director(SISE)</option>
-                                    <option value="Principal (PGBT)">Principal (PGBT)</option>
-                                    <option value="Principal (DIET)">Principal (DIET)</option>
-                                    <option value="Principal HSS">Principal HSS</option>
-                                    <option value="Principal HS">Principal HS</option>
-                                    <option value="Lecturer">Lecturer</option>
-                                    <option value="HM(MS)">HM(MS)</option>
-                                    <option value="Teacher (UDT)">Teacher (UDT)</option>
-                                    <option value="Music Teacher">Music Teacher</option>
-                                    <option value="Tabla Teacher">Tabla Teacher</option>
-                                    <option value="Craft Teacher">Craft Teacher</option>
-                                    <option value="HM(PS)">HM(PS)</option>
-                                    <option value="Asstt Teacher(LDT)">Asstt Teacher(LDT)</option>
-                                    <option value="Varistha Adhyapak">Varistha Adhyapak</option>
-                                    <option value="Adhyapak">Adhyapak</option>
-                                    <option value="Sahayak Adhyapak">Sahayak Adhyapak</option>
-                                </select>
+                                <label>Employee Unique ID/कर्मचारी का यूनिक आई.डी <span style="color: red">*</span></label>
+                                <input class="form-control" id="txtempluniqueid" autocomplete="off" maxlength="11" required data-msg="Enter Unique Id" type="text" name="EmpUniqueId" value="" />
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Employee Name-Code /
-                                    <br />
-                                    कर्मचारी का नाम-कोड<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Yes">Rohan-20562</option>
-                                    <option value="No">Aalok-03265</option>
-                                    <option value="No">Sahil-95865</option>
-                                </select>
-                            </div>
-                        </div>--%>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Employee Code /
-                                    कर्मचारी का कोड</label>
-                                <asp:TextBox ID="txtEmpCodeno" runat="server" CssClass="form-control" MaxLength="20" AutoComplete="off"></asp:TextBox>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-5" style="margin-top: 1.8rem !important;">
                             <div class="form-group ">
-                                <button type="button" onclick="Hideshow()" class="btn btn-success btn-rounded ">Search</button>
+                                <input type="button" value="Search" class="btn btn-success btn-rounded" id="searchButton" onclick="checkDropdown(); return false;" />
                                 <a href="PromotionProcess.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                             </div>
                         </div>
                     </div>
                 </fieldset>
-                <div id="showdetails">
+                <div id="div1">
                     <fieldset>
                         <legend>CURRENT PAYSCALE</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        कर्मचारी का नाम-कोड/Employee Name-Code
+                                        Employee Name/कर्मचारी का नाम<span style="color: red">*</span>
                                         <br />
                                     </label>
                                     <input name="ename" type="text" value="AU4336-Ashok Patidar" disabled class="form-control" autocomplete="off" placeholder="" />
@@ -222,148 +84,80 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Designation / पद</label>
-                                    <input name="ename" type="text" value="Attendant" disabled class="form-control" autocomplete="off" placeholder="" />
+                                    <label>Class / श्रेणी <span style="color: red">*</span></label>
+                                    <input name="eclass" type="text" value="Class 1" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Gender/लिंग</label>
-                                    <input name="ename" type="text" value="Male" disabled class="form-control" autocomplete="off" placeholder="" />
+                                    <label>Type of Post/पद प्रकार<span style="color: red">*</span></label>
+                                    <input name="epost" type="text" value="Regular" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        DDO-Sankul Code-Name/
-                                        डीडीओ-संकुल कोड-नाम<span style="color: red">*</span></label>
-                                    <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
+                                        Designation Type/
+                                        पदनाम प्रकार<span style="color: red">*</span></label>
+                                    <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Teaching" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Designation/ पद <span style="color: red">*</span></label>
+                                    <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Prathmik Shikshak" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>OIS Code-Name/ओआईएस कोड-नाम<span style="color: red">*</span></label>
-                                    <input name="txtPresentParentInstitution" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Name of the Present Parent Institution" value="52125212542-Naveen HHS school Bhopal" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>District/जिला<span style="color: red">*</span></label>
-                                    <input name="txtPresentParentInstitution" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Name of the Present Parent Institution" value="Shajapur" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Class / श्रेणी</label>
-                                    <input name="ename" type="text" value="Class IV" disabled class="form-control" autocomplete="off" placeholder="" />
+                                    <label>
+                                        Department/
+                                        विभाग<span style="color: red">*</span></label>
+                                    <input name="txtdepartment" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Department of Education" />
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Pay Commission / वेतन आयोग</label>
-                                    <input name="ename" type="text" value="Seventh Pay Commission" disabled class="form-control" autocomplete="off" placeholder="" />
+                                    <label>Pay Commission / वेतन आयोग <span style="color: red">*</span></label>
+                                    <input name="ename" type="text" value="Seventh Pay Commission" disabled class="form-control" autocomplete="off" placeholder="Seventh Pay Commission" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Pay Scale / वेतनमान</label>
+                                    <label>Pay Scale / वेतनमान <span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="5200-20200" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Level / स्तर</label>
+                                    <label>Level / स्तर <span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="Level-7" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Basic Salary / मूल वेतन</label>
+                                    <label>Current Office / वर्तमान कार्यालय <span style="color: red">*</span></label>
+                                    <input name="ename" type="text" value="Govt MS UNDRAI" disabled class="form-control" autocomplete="off" placeholder="" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Basic Salary/ मूल वेतन <span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="43500.00" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                         </div>
                     </fieldset>
+                </div>
+                <div id="div2">
                     <fieldset>
                         <legend>NEW PROMOTION DETAIL</legend>
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Promotion with Transfer<span style="color: red">*</span></label>
-                                    <asp:DropDownList ID="ddlYesorNo" runat="server" CssClass="form-control"
-                                        onchange="TransferYesOrNo($(this).val())">
-                                        <asp:ListItem Value="2">No</asp:ListItem>
-                                        <asp:ListItem Value="1">Yes</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <%-- <div class="custom-control custom-radio">
-                                        <input onclick="toggleDivs()" type="radio" id="customRadio1" name="customRadio1" class="form-check-input">
-                                        <label class="form-check-label" for="customRadio11">Yes</label>
-                                       
-                                        <input onclick="toggleDivs()" type="radio" id="customRadio2" checked="checked" name="customRadio1" class="form-check-input">
-                                        <label class="form-check-label" for="customRadio11">No</label>
-                                    </div>--%>
-                                </div>
-                            </div>
-                            <div class="col-md-3" id="DivDistrictTransfer" style="display: none;">
-                                <div class="form-group">
-                                    <label>District<span style="color: red">*</span></label>
-                                    <select class="form-control select2">
-                                        <option value="--Select--">--Select--</option>
-                                        <option value="Bhopal">Bhopal</option>
-                                        <option value="Indore">Indore</option>
-                                        <option value="Gwalior">Gwalior</option>
-                                        <option value="Jabalpur">Jabalpur</option>
-                                        <option value="Ujjain">Ujjain</option>
-                                        <option value="Sagar">Sagar</option>
-                                        <option value="Rewa">Rewa</option>
-                                        <option value="Satna">Satna</option>
-                                        <option value="Guna">Guna</option>
-                                        <option value="Chhindwara">Chhindwara</option>
-                                        <option value="Morena">Morena</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3" id="DivSankulTransfer" style="display: none;">
-                                <div class="form-group">
-                                    <label>
-                                        DDO-Sankul Code-Name/डीडीओ-संकुल कोड-नाम<span style="color: red">*</span></label>
-                                    <select class="form-control">
-                                        <option>Select</option>
-                                        <option value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD">15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3" id="DivOisSchoolTransfer" style="display: none;">
-                                <div class="form-group">
-                                    <label>OIS Code-Name/ओआईएस कोड-नाम<span style="color: red">*</span></label>
-                                    <select name="txtPresentParentInstitution" class="form-control">
-                                        <option>Select</option>
-                                        <option value="52125212542-Naveen HHS school Bhopal">52125212542-Naveen HHS school Bhopal</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3" id="DivTransferOrderNo" style="display: none;">
-                                <div class="form-group">
-                                    <label>Transfer Order No./स्थानान्तरण आदेश न.<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" class="form-control" ID="txtTransferorderNo" MaxLength="10" CssClass="form-control"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="col-md-3" id="DivTransferOrderDate" style="display: none;">
-                                <div class="form-group">
-                                    <label>Transfer Order No./स्थानान्तरण आदेश न.<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" class="form-control" ID="txtTransferOrderDate" TextMode="Date" CssClass="form-control"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Designation / पद<span style="color: red">*</span></label>
-                                    <select class="form-control select2">
-                                        <option value="--Select--">--Select--</option>
-                                        <option value="Yes">Attendent</option>
-                                    </select>
-                                </div>
-                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Class / श्रेणी<span style="color: red">*</span></label>
@@ -378,102 +172,180 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Pay Commission / वेतन आयोग<span style="color: red">*</span></label>
+                                    <label>Type of Post / पद प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
-                                        <option value="Yes">First Pay Commission</option>
-                                        <option value="Yes">Second Pay Commission</option>
-                                        <option value="Yes">Third Pay Commission</option>
-                                        <option value="Yes">Fourth Pay Commission</option>
-                                        <option value="Yes">Fifth Pay Commission</option>
-                                        <option value="Yes">Sixth Pay Commission</option>
-                                        <option value="Yes">Seventh Pay Commission</option>
+                                        <option value="1">Regular/Permanent</option>
+                                        <option value="2">Fixed Employee</option>
+                                        <option value="3">Contigent Employee</option>
+                                        <option value="4">Samvida Employee</option>
+                                        <option value="5">Theka Shramik</option>
+                                        <option value="6">Outsource Employee</option>
+                                        <option value="7">Deputation Employee</option>
+                                        <option value="8">Contractual Employee</option>
+                                        <option value="9">Daily Wages Employee</option>
+                                        <option value="10">Dally Wages Federation</option>
+                                        <option value="11">Job Rate Employee</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Pay Scale / वेतनमान<span style="color: red">*</span></label>
+                                    <label>Designation / पद<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
-                                        <option value="Yes">5200-20200</option>
+                                        <option value="1">Commissioner</option>
+                                        <option value="2">Director</option>
+                                        <option value="3">Additional Director</option>
+                                        <option value="4">Joint Director</option>
+                                        <option value="5">Deputy Director</option>
+                                        <option value="6">Asstt Director</option>
+                                        <option value="7">Regional Librarian</option>
+                                        <option value="8">Planning Officer</option>
+                                        <option value="9">Director (ELTI)</option>
+                                        <option value="10">Director(SISE)</option>
+                                        <option value="11">CPI</option>
+                                        <option value="12">DEO</option>
+                                        <option value="13">Sankul Principal</option>
+                                        <option value="14">Principal HS</option>
+                                        <option value="15">Lecturer</option>
+                                        <option value="16">HM(MS)</option>
+                                        <option value="17">Teacher (UDT)</option>
+                                        <option value="18">Music Teacher</option>
+                                        <option value="19">Tabla Teacher</option>
+                                        <option value="20">Craft Teacher</option>
+                                        <option value="21">HM(PS)</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Level / स्तर<span style="color: red">*</span></label>
+                                    <label>Department / विभाग<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
-                                        <option value="Yes">Level-1</option>
-                                        <option value="Yes">Level-2</option>
-                                        <option value="Yes">Level-3</option>
-                                        <option value="Yes">Level-4</option>
-                                        <option value="Yes">Level-5</option>
-                                        <option value="Yes">Level-6</option>
-                                        <option value="Yes">Level-7</option>
+                                        <option value="1">Department of Education </option>
+                                        <option value="2">Tribal Welfare Department</option>
+                                        <option value="3">Local Body</option>
+                                        <option value="4">Other State Govt Managed</option>
+                                        <option value="5">Minority Affairs Dept</option>
+                                        <option value="6">Social Welfare Department</option>
+                                        <option value="7">Ministry of Labour</option>
+                                        <option value="8">Government Aided</option>
+                                        <option value="9">Partially Govt Aided</option>
+                                        <option value="10">Private Unaided  Recognized</option>
+                                        <option value="11">Kendriya Vidyalaya</option>
+                                        <option value="12">Jawahar Navodaya Vidyalaya</option>
+                                        <option value="13">Sainik School</option>
+                                        <option value="14">Railway School</option>
+                                        <option value="15">Central Tibetan School</option>
+                                        <option value="16">Other Central Govt PSU Schools</option>
+                                        <option value="17">Unrecognized</option>
+                                        <option value="18">Madrasa Private Unaided Recognized</option>
+                                        <option value="19">Madrasa Aided Recognized</option>
+                                        <option value="20">Madarsa Unrecognized</option>
                                     </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Basic Salary / मूल वेतन<span style="color: red">*</span></label>
-                                    <select class="form-control select2">
-                                        <option value="--Select--">--Select--</option>
-                                        <option value="Yes">43500.00</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>File No.<span style="color: red">*</span></label>
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="Enter File No." name="name" value="" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Date of Relivieving/कार्यमुक्ति की तिथि<span style="color: red">*</span></label>
-                                    <asp:TextBox ID="txtRelievinMonth" runat="server" TextMode="Month" class="form-control"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Promotion Order No./पदोन्नति आदेश न.<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" class="form-control" ID="txtPromotionOrderNo" MaxLength="10" CssClass="form-control"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Promotion Order No./पदोन्नति आदेश न.<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" class="form-control" ID="txtPromotionOrderdate" TextMode="Date" CssClass="form-control"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Remark/टिप्पणी<span style="color: red">*</span></label>
-                                    <asp:TextBox ID="txtRemark" runat="server" class="form-control" TextMode="MultiLine"></asp:TextBox>
+                                    <label>Pay Commission / वेतन आयोग<span style="color: red">*</span></label>
+                                    <select class="form-control select2" name="PayCommissionId" id="PayCommissionId" onchange="return ShowHidePayDiv()"  required data-msg="Select Pay Commission">
+                                        <option value="--Select--">--Select--</option>
+                                        <option value="1">Fourth Pay Commission</option>
+                                        <option value="1">Fifth Pay Commission</option>
+                                        <option value="1">Sixth Pay Commission</option>
+                                        <option value="2">Seventh Pay Commission</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3" id="sel1" >
+                                <div class="form-group">
+                                    <label>Level / स्तर<span style="color: red">*</span></label>
+                                    <select class="form-select select2" name="LevelId" >
+                                        <option value="0">Select</option>
+                                        <option value="1">Level-1</option>
+                                        <option value="2">Level-2</option>
+                                        <option value="3">Level-3</option>
+                                        <option value="4">Level-4</option>
+                                        <option value="5">Level-5</option>
+                                        <option value="6">Level-6</option>
+                                        <option value="7">Level-7</option>
+                                        <option value="8">Level-8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3" id="sel2" >
+                                <div class="form-group">
+                                    <label>Pay Scale / वेतनमान<span style="color: red">*</span></label>
+                                    <select class="form-select select2" name="PayScaleId">
+                                        <option value="0">Select</option>
+                                        <option value="1">4440-7440</option>
+                                        <option value="2">5200-20200</option>
+                                        <option value="3">9300-34800</option>
+                                        <option value="4">15600-39100</option>
+                                        <option value="5">37400-67000</option>
+                                        <option value="6">4440-7440&#x9;</option>
+                                        <option value="7">5200-20200&#x9;&#x9;&#x9;&#x9;</option>
+                                        <option value="8">9300-34800&#x9;</option>
+                                        <option value="9">15600-39100&#x9;</option>
+                                        <option value="10">37400-67000&#x9;</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3" id="sel3" >
+                                <div class="form-group">
+                                    <label>Grade Pay / ग्रेड पे<span style="color: red">*</span></label>
+                                    <select class="form-select select2" name="GradePayId" >
+                                        <option value="0">Select</option>
+                                        <option value="1">1300</option>
+                                        <option value="2">1400</option>
+                                        <option value="3">1800</option>
+                                        <option value="4">1900</option>
+                                        <option value="5">2100</option>
+                                        <option value="6">2400</option>
+                                        <option value="7">2800</option>
+                                        <option value="8">3200</option>
+                                        <option value="9">3600</option>
+                                        <option value="10">4200</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3" id="sel4" >
+                                <div class="form-group">
+                                    <label>Basic Pay / मूल वेतन<span style="color: red">*</span></label>
+                                    <select class="form-select select2" name="BasicPayId" >
+                                        <option value="0">Select</option>
+                                        <option value="1">15500.00</option>
+                                        <option value="2">16000.00</option>
+                                        <option value="3">16500.00</option>
+                                        <option value="4">17000.00</option>
+                                        <option value="5">17500.00</option>
+                                        <option value="6">18000.00</option>
+                                        <option value="7">18500.00</option>
+                                        <option value="8">19100.00</option>
+                                        <option value="9">19700.00</option>
+                                        <option value="10">20300.00</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>File No.<span style="color: red">*</span></label>
+                                        <input type="text" autocomplete="off" class="form-control" placeholder="Enter File No." name="name" value="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <fieldset style="display: none;">
-                            <legend>Promotion with Transfer</legend>
-                            <div class="row">
-                                <%--  <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Promotion with Transfer<span style="color: red">*</span></label>
-                                        <div class="custom-control custom-radio">
-                                            <input onclick="toggleDivs()" type="radio" id="customRadio1" name="customRadio1" class="form-check-input">
-                                            <label class="form-check-label" for="customRadio11">Yes  </label>
-                                            <br />
-                                            <input onclick="toggleDivs()" type="radio" id="customRadio2" checked="checked" name="customRadio1" class="form-check-input">
-                                            <label class="form-check-label" for="customRadio11">No</label>
-                                        </div>
-                                    </div>
-                                </div>--%>
-                            </div>
-                            <div id="divNewPromotion">
+
+                        <div id="div3">
+                            <fieldset>
+                                <legend>Select Transfer Location</legend>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
@@ -515,7 +387,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Block<span style="color: red">*</span></label>
+                                            <label>Block / ब्लॉक<span style="color: red">*</span></label>
                                             <select class="form-control select2">
                                                 <option value="--Select--">--Select--</option>
                                                 <option value="Agar">Agar</option>
@@ -536,8 +408,55 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>OIS Udise Code-Name<span style="color: red">*</span></label>
-                                            <select id="ddlSchoolCode" class="form-control select2">
+                                            <label>Sankul / संकुल<span style="color: red">*</span></label>
+                                            <select class="form-control select2">
+                                                <option value="--Select--">--Select--</option>
+                                                <option value="BILHA">BILHA</option>
+                                                <option value="BELTARA">BELTARA</option>
+                                                <option value="BITKULI">BITKULI</option>
+                                                <option value="DAGANIYA">DAGANIYA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>School / विद्यालय<span style="color: red">*</span></label>
+                                            <select class="form-control select2">
+                                                <option value="--Select--">--Select--</option>
+                                                <option value="1">HS GOVT.GIRLS BAIMA(22070304405)</option>
+                                                <option value="2">GOVT. HIGH SCHOOL BIRKONA(22070304710)</option>
+                                                <option value="3">H S SHRI SAI, SILPAHARI(22070305303)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Postal Code / पोस्टल कोड<span style="color: red">*</span></label>
+                                            <select id="ddlpostalcode" class="form-control select2">
+                                                <option value="0">--Select--</option>
+                                                <option value="1">43512 - AAMAI HS NEW JSK</option>
+                                                <option value="2">2312 - AKBARPUR GOVT. HS</option>
+                                                <option value="3">23231 - B.HSS BISTAN</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Panel Name / पैनल का नाम<span style="color: red">*</span></label>
+                                            <select id="ddlpanelname" class="form-control select2">
+                                                <option value="0">--Select--</option>
+                                                <option value="1">JSK</option>
+                                                <option value="2">BISTAN </option>
+                                                <option value="3">B.HSS </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Vacant Post / रिक्त पद<span style="color: red">*</span></label>
+                                            <select id="ddlvacantpost" class="form-control select2">
                                                 <option value="0">--Select--</option>
                                                 <option value="1">43512 - AAMAI HS NEW JSK</option>
                                                 <option value="2">2312 - AKBARPUR GOVT. HS</option>
@@ -546,411 +465,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="checkbox" />
-                                            <label>विभाग के आदेशानुसार पदोन्‍नति की प्रक्रिया की जा रही है।<span style="color: red">*</span></label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
+                            </fieldset>
+                        </div>
 
                         <div class="row justify-content-center">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <button type="button" class="Alert-Save btn btn-success  btn-rounded">Add</button>
+                                    <button type="button" class="Alert-Save btn btn-success  btn-rounded">Save</button>
                                     <a href="PromotionProcess.aspx" class=" btn btn-danger  btn-rounded">Clear</a>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
-
-                    <fieldset id="divEnteredDetails" style="display: none;">
-                        <legend>Details</legend>
-
-                        <div class="row justify-content-end">
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <tr>
-                                            <th rowspan="2">Sr.No.</th>
-                                            <th rowspan="2">Action</th>
-                                            <th rowspan="2">Employee ID-Name</th>
-                                            <th rowspan="2">Employee Designation</th>
-                                            <th rowspan="2">File No.</th>
-                                            <th colspan="7" class="text-center">Current Details</th>
-                                            <th colspan="7" class="text-center">New Details</th>
-                                            <th rowspan="2">View Service Book</th>
-                                            <th rowspan="2">Delete</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Class</th>
-                                            <th>Type of Post</th>
-                                            <th>Designation</th>
-                                            <th>Department</th>
-                                            <th>Pay Scale</th>
-                                            <th>Level</th>
-                                            <th>OIS-Udise Code</th>
-
-                                            <th>Class</th>
-                                            <th>Type of Post</th>
-                                            <th>Designation</th>
-                                            <th>Department</th>
-                                            <th>Pay Scale</th>
-                                            <th>Level</th>
-                                            <th>OIS-Udise Code</th>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                <input id="chckTransfer" type="checkbox" /></td>
-                                            <td>543545-Ashok Kumar</td>
-                                            <td>Teacher</td>
-                                            <td>254786</td>
-
-                                            <td>Class IV</td>
-                                            <td>Regular</td>
-                                            <td>Attendant</td>
-                                            <td>Administration</td>
-                                            <td>5200-20200</td>
-                                            <td>Level-7</td>
-                                            <td>7894500</td>
-
-                                            <td>Class V</td>
-                                            <td>Regular</td>
-                                            <td>Attendant</td>
-                                            <td>Administration</td>
-                                            <td>7600-30250</td>
-                                            <td>Level-8</td>
-                                            <td>6294520</td>
-
-                                            <td><a onclick="openPDF()" class="btn" onclientclick="return false;"><i class="fas fa-eye"></i>View</a></td>
-                                            <td class="text-center"><a class='Alert-Delete' onclick='DeleteConfirmation()'><i class='fa fa-trash'></i></a></td>
-                                        </tr>
-                                        <%--<tr>
-                                            <th>2</th>
-                                            <td>
-                                                <input id="chckTransfer2" onclick="checkClick();" type="checkbox" /></td>
-                                            <td>234343-Shiv Sharan</td>
-                                            <td>Teacher</td>
-
-                                            <td>Class IV</td>
-                                            <td>Regular</td>
-                                            <td>Attendant</td>
-                                            <td>Administration</td>
-                                            <td>5200-20200</td>
-                                            <td>Level-7</td>
-                                            <td>7894500</td>
-
-                                            <td>Class VI</td>
-                                            <td>Regular</td>
-                                            <td>Attendant</td>
-                                            <td>Administration</td>
-                                            <td>10000-55000</td>
-                                            <td>Level-8</td>
-                                            <td>6294520</td>
-
-                                            <td><a onclick="openPDF()" class="btn" onclientclick="return false;"><i class="fas fa-eye"></i>View</a></td>
-                                            <td class="text-center"><a class='Alert-Delete' onclick='DeleteConfirmation()'><i class='fa fa-trash'></i></a></td>
-                                        </tr>--%>
-                                    </table>
-                                </div>
-                            </div>
-                            <%--                            <div class="col-md-12">
-                                <div>
-                                    <p id="note"><b>Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन का अनुमोदन करें |</b></p>
-                                </div>
-                                <br />
-                            </div>--%>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <input type="button" class="Alert-Save2 btn btn-success btn-rounded" value="Promotion/Transfer Process" />
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset id="divTransfer" style="display: none;">
-                        <legend>Final Details</legend>
-                        <div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>File No. / फाइल नंबर<span style="color: red">*</span></label>
-                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." value="254786" readonly />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Order Date / आदेश तारीख<span style="color: red">*</span></label>
-                                        <input name="ename" type="date" class="form-control" autocomplete="off" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Effective Date / प्रभावी तारीख<span style="color: red">*</span></label>
-                                        <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Upload Documents<span style="color: red">*</span></label>
-                                        <input name="ename" type="file" class="form-control" autocomplete="off" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Remark</label>
-                                        <input type="text" class="form-control" placeholder="Enter Remark" autocomplete="off" />
-                                    </div>
-                                </div>
-                                <div class="col-md-2 mt-4">
-                                    <div class="form-group">
-                                        <input type="button" class="Alert-Save2 btn btn-success btn-block btn-rounded" value="Promotion Process" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset id="divOrderDetails" style="display: none;">
-                        <legend>Details</legend>
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>File No.</th>
-                                        <th>Order Date</th>
-                                        <th>Effective Date</th>
-                                        <th>Generate Order</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>254786</td>
-                                        <td>05/02/2024</td>
-                                        <td>06/02/2024</td>
-                                        <td>
-                                            <button onclick="openPDF1()" type="button" class=" btn "><i class="fa fa-download dnldIcon"></i></button>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-
-                    </fieldset>
-
-                </div>
-                <fieldset>
-                    <legend>Description</legend>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="main-ul">
-                                <li><strong>Division Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Division Name </strong>from the dropdown and the data will be populated from the <strong>Division Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>District Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>District Name </strong>from the dropdown and the data will be populated from the <strong>District Master</strong> and data cascade from <strong>Division Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Designation Type</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Designation Type </strong>from the dropdown and the data will be populated from the <strong>Designation Type Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Designation Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Designation Name </strong>from the dropdown and the data will be populated from the <strong>Designation Name Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Employee Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Employee Name </strong>from the dropdown and the data will be populated from the <strong>Employee Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Search </strong>
-                                    <ul>
-                                        <li>User should be able to click on Search button.</li>
-                                        <li>After clicking on Search button the School details will show on the screen according to the selected field.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Clear</strong>
-                                    <ul>
-                                        <li>User should be able to click on Clear button.</li>
-                                        <li>After clicking on Clear button all the dropdown should be Clear or reload the same page.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>CURRENT PAYSCALE</strong>
-                                    <ul>
-                                        <li>All the fields of the <strong>Current Payscale </strong>will fill automatically according to the employee.</li>
-                                    </ul>
-                                </li>
-
-                                <li><b>NEW PROMOTION DETAIL</b>
-                                </li>
-                                <li><strong>Class </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Class</strong>from the dropdown and the data will be populated from the <strong>Class Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Type of Post  </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Type of Post </strong>from the dropdown and the data will be populated from the <strong>Type of Post  Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Designation </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Designation </strong>from the dropdown and the data will be populated from the <strong>Designation Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Department </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Department </strong>from the dropdown and the data will be populated from the <strong>Department Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Pay Commission </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Pay Commission </strong>from the dropdown and the data will be populated from the <strong>Pay Commission Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Pay Scale </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Pay Scale </strong>from the dropdown and the data will be populated from the <strong>Pay Scale Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Level </strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Level </strong>from the dropdown and the data will be populated from the <strong>Level Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Basic Salary</strong>
-                                    <ul>
-                                        <li>User will be able to enter the <strong>Basic Salary </strong>and the text field will accept <strong>only numerical values.</strong> </li>
-                                    </ul>
-                                </li>
-                                <li><strong>Promotion with Transfer</strong>
-                                    <ul>
-                                        <li>User will be able to Select Yes/No radio button.</li>
-                                        <li>If User select Yes Dropdown(Division, District, Block) and RadioButton(Office Code/School Code) will be visible.</li>
-                                        <li>If User select No Dropdown(Division, District, Block) and RadioButton(Office Code/School Code) will be hidden.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Division Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Division Name </strong>from the dropdown and the data will be populated from the <strong>Division Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>District Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>District Name </strong>from the dropdown and the data will be populated from the <strong>District Master</strong> and data cascade from <strong>Division Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Block Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Block Name </strong>from the dropdown and the data will be populated from the <strong>Block Master</strong> and data cascade from <strong>District Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Office Code / School Code*</strong>
-                                    <ul>
-                                        <li>User will be able to Select Yes/No radio button.</li>
-                                        <li>If User select Office Code, Office Code Dropdown and File No. and Checkbox will be visible and School Code Dropdown will be hide.</li>
-                                        <li>If User select School Code, School Code Dropdown and File No. and Checkbox will be visible and Office Code Dropdown will be hide.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Save</strong>
-                                    <ul>
-                                        <li>User Can Click Save Button.</li>
-                                        <li>On save button click form field should be validated.</li>
-                                        <li>After all fields Validate the Confirmation popup should be open with Message Format ("Are you sure?" "Do you want to save this record?"). </li>
-                                        <li>If click on Yes – Data will be saved and message will appear on the screen – Message ("Success!" "Record Saved Successfully!") </li>
-                                        <li>If click on NO the data will not be saved and will return to the same page.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Clear</strong>
-                                    <ul>
-                                        <li>User should be able to click on Clear button.</li>
-                                        <li>After clicking on Clear button all the dropdown should be Clear or reload the same page.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
-        <div id="popup" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="card">
-                        <div class="card-header">
-                            Total Post Details/कुल पद विवरण
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr>
-                                                <th>Sr.No.</th>
-                                                <th>Post</th>
-                                                <th>Total Post</th>
-                                                <th>vacant post</th>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Principal</td>
-                                                <th>1</th>
-                                                <td>0</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Teacher</td>
-                                                <th>4</th>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Peon</td>
-                                                <th>3</th>
-                                                <td>1</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row fa-pull-right">
-                                    <div class="col-md-2">
-                                        <button type="button" class="btn btn-dark waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1159,23 +685,88 @@
 
     </script>
     <script>
-        function TransferYesOrNo(ths) {
-            if (ths == "1") {
-                document.getElementById("DivDistrictTransfer").style = "block";
-                document.getElementById("DivSankulTransfer").style = "block";
-                document.getElementById("DivOisSchoolTransfer").style = "block";
-                document.getElementById("DivTransferOrderNo").style = "block";
-                document.getElementById("DivTransferOrderDate").style = "block";
+        function checkDropdown() {
+            var selectedValue = document.getElementById("dropdown").value;
+            //console.log(selectedValue);
+            var div1 = document.getElementById("div1");
+            var div2 = document.getElementById("div2");
+            var div3 = document.getElementById("div3");
+
+
+            if (selectedValue == "1") {
+                div1.style.display = "block";
+                div2.style.display = "block";
+                div3.style.display = "block";
+
+            } else if (selectedValue == "2") {
+                div1.style.display = "block";
+                div2.style.display = "block";
+                div3.style.display = "none";
+
             }
             else {
-                document.getElementById("DivDistrictTransfer").style.display = "none";
-                document.getElementById("DivSankulTransfer").style.display = "none";
-                document.getElementById("DivOisSchoolTransfer").style.display = "none";
-                document.getElementById("DivTransferOrderNo").style.display = "none";
-                document.getElementById("DivTransferOrderDate").style.display = "none";
+                div1.style.display = "none";
+                div2.style.display = "none";
+                div3.style.display = "none";
             }
         }
+
+        function ShowHidePayDiv() {
+
+
+            var selectElement = document.getElementById("PayCommissionId").value;
+            var sel1 = document.getElementById("sel1");
+            var sel3 = document.getElementById("sel3");
+            //console.log(selectElement);
+            if (selectElement == "2") {
+                sel1.style.display = "block";
+                sel3.style.display = "none";
+            }
+            else if (selectElement == "1") {
+                sel1.style.display = "none";
+                sel3.style.display = "block";
+            }
+            else {
+                sel1.style.display = "none";
+                sel3.style.display = "block";
+            }
+           
+
+            //// Clear required attributes and data-msg for affected fields
+            //clearRequiredMessages(["LevelId", "PayScaleId", "BasicPayId", "GradePayId", "BasicPay"]);
+            //var selectElement = document.getElementById("PayCommissionId");
+            //var selectedText = selectElement.options[selectElement.selectedIndex].text;
+            //var divLevel = document.getElementById("divLevel");
+            //var divPayScale = document.getElementById("divPayScaleSeventh");
+            //var divBasicPay = document.getElementById("divBasicPay");
+            //var divGradePay = document.getElementById("divGradePay");
+            //var divBasicPayText = document.getElementById("divBasicPayText");
+
+            //if (selectedText === "Seventh Pay Commission") {
+            //    divLevel.style.display = "block";
+            //    divPayScale.style.display = "block";
+            //    divBasicPay.style.display = "block";
+            //    divGradePay.style.display = "none";
+            //    divBasicPayText.style.display = "none";
+            //    // Set required attributes and data-msg for visible fields
+            //    setRequiredMessage("LevelId", "Select Level");
+            //    setRequiredMessage("PayScaleId", "Select Pay Scale");
+            //    setRequiredMessage("BasicPayId", "Select Basic Pay");
+            //} else {
+            //    divLevel.style.display = "none";
+            //    divPayScale.style.display = "block";
+            //    divBasicPay.style.display = "none";
+            //    divGradePay.style.display = "block";
+            //    divBasicPayText.style.display = "block";
+            //    // Set required attributes and data-msg for visible fields
+            //    setRequiredMessage("GradePayId", "Select Grade Pay");
+            //    setRequiredMessage("PayScaleId", "Select Pay Scale");
+            //    setRequiredMessage("BasicPay", "Enter Basic Pay");
+            //}
+        }
+
     </script>
+
 </asp:Content>
 
 
