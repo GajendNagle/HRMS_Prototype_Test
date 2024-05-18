@@ -157,6 +157,7 @@
                                             <th data-hide="phone,tablet" scope="col">School</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदक का नाम</th>
                                             <th data-hide="phone,tablet" scope="col">जेंडर</th>
+                                             <th data-hide="phone,tablet" scope="col">वर्ग</th>
                                             <th data-hide="phone,tablet" scope="col">जन्म तिथि</th>
                                             <th data-hide="phone,tablet" scope="col">Mobile </th>
                                             <th data-hide="phone,tablet" scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
@@ -188,6 +189,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblAoolicantGender">Male</span>
                                             </td>
+                                            <td>SC</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappdob">30/12/1999</span>
                                             </td>
@@ -233,6 +235,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAoolicantGender">Male</span>
                                             </td>
+                                            <td>SC</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappdob">09/07/1992</span>
                                             </td>
@@ -278,6 +281,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAoolicantGender">Female</span>
                                             </td>
+                                            <td>ST</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblappdob">30/10/1988</span>
                                             </td>
@@ -323,6 +327,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAoolicantGender">Male</span>
                                             </td>
+                                            <td>OBC</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblappdob">29/10/1996</span>
                                             </td>

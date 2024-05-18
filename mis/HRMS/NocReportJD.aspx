@@ -270,6 +270,7 @@
                                                                     <th scope="col">आवेदक का नाम</th>
 
                                                                     <th scope="col">जेंडर</th>
+                                                                      <th scope="col">वर्ग</th>
                                                                     <th scope="col">आवेदक की जन्म तिथि </th>
                                                                     <th scope="col">मोबाईल  नंबर</th>
                                                                     <th scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
@@ -280,6 +281,8 @@
                                                                     <%-- <th scope="col">नोटशित  प्रिंट करे  कार्यवाही करे</th>--%>
                                                                     <th scope="col">Status</th>
                                                                     <th scope="col">नियुक्ति विभाग का नाम</th>
+                                                                    <th scope="col">NOC पत्र </th>
+                                                                    <th scope="col">आदेश पत्र</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -290,6 +293,7 @@
                                                                     <td>28/12/2021</td>
                                                                     <td>BRAJESH KUSHVAH</td>
                                                                     <td>M</td>
+                                                                    <td>OBC</td>
                                                                     <td>10/08/1997</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -302,6 +306,8 @@
                                                                     </td>--%>
                                                                     <td>Pending by collector</td>
                                                                     <td>Nil</td>
+                                                                    <td style="color: #00bcd4">View </td>
+                                                                    <td style="color: #00bcd4">View </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
@@ -310,6 +316,7 @@
                                                                     <td>15/04/2022</td>
                                                                     <td>SHAKSHAM SHINGH </td>
                                                                     <td>M</td>
+                                                                    <td>OBC</td>
                                                                     <td>12/12/1996</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -322,6 +329,8 @@
                                                                     </td>--%>
                                                                     <td>Pending by DEO</td>
                                                                     <td>Nil</td>
+                                                                    <td style="color: #00bcd4">View </td>
+                                                                    <td style="color: #00bcd4">View </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>3</td>
@@ -330,6 +339,7 @@
                                                                     <td>16/01/2023</td>
                                                                     <td>PRAMOD KUMAR PATEL</td>
                                                                     <td>M</td>
+                                                                    <td>SC</td>
                                                                     <td>02/10/2000</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -342,6 +352,8 @@
                                                                     </td>--%>
                                                                     <td>Got a job</td>
                                                                     <td>Health department</td>
+                                                                    <td style="color: #00bcd4">View </td>
+                                                                    <td style="color: #00bcd4">View </td>
                                                                 </tr>
                                                             </tbody>
                                                             <tfoot>
