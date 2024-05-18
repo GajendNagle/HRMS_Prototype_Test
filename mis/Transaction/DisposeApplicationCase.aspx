@@ -45,7 +45,7 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar " style="position:relative; bottom:26px;">
+            <nav class="navbar navbar-expand-lg topbar " style="position: relative; bottom: 26px;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,18 +54,7 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                            <%--                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                  
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
 
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                               
-                                </ul>
-                            </li>--%>
                             <a class="nav-link  text-white " href="DisposeApplicationCaseForDEO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
 
                             <li class="nav-item">
@@ -85,7 +74,7 @@
                                 </div>
 
                             </li>
-                            <li class="nav-item" style="position:relative; right:20px;">
+                            <li class="nav-item" style="position: relative; right: 20px;">
                                 <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
                             </li>
                             <li class="nav-item mr-4">
@@ -94,8 +83,6 @@
                             <li class="nav-item mr-3">
                                 <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorDeo.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
 
-                            <%--  &nbsp; <i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i><a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab2.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तर के पुरस्कार</b></a>--%>
-                            <%-- &nbsp;<i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i>  <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab3.aspx" role="button"><b class="font-16 font-bold">प्रशिक्षण का विवरण</b></a>--%>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -120,8 +107,7 @@
                     </div>
                 </div>
             </nav>
-            <br />
-            <br />
+
 
             <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
 
@@ -133,15 +119,24 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>जिला :<span style="color: red">*</span></label>
-                            <select class="form-control select2">
+                            <%--<select class="form-control select2" disabled="disabled">
                                 <option value="--Select--">--Select--</option>
-                                <option value="--Select--">भोपाल</option>
-                                <option value="--Select--">इंदौर</option>
-                                <option value="--Select--">उज्जैन</option>
-                                <option value="--Select--">शाजापुर</option>
-                                <option value="--Select--">रतलाम</option>
-                                <option value="--Select--">अलीराजपुर</option>
-                            </select>
+                                <option value="" selected="selected">भोपाल</option>
+                                <option value="--Select--"> इंदौर     </option>
+                                <option value="--Select--">उज्जैन     </option>
+                                <option value="--Select--">शाजापुर     </option>
+                                <option value="--Select--">रतलाम     </option>
+                                <option value="--Select--">अलीराजपुर   </option>
+                            </select>--%>
+                            <asp:DropDownList runat="server" Enabled="false" CssClass="form-control">
+
+                                <asp:ListItem Selected="True">    भोपाल        </asp:ListItem>
+                                <asp:ListItem>    इंदौर        </asp:ListItem>
+                                <asp:ListItem>   उज्जैन        </asp:ListItem>
+                                <asp:ListItem>   शाजापुर       </asp:ListItem>
+                                <asp:ListItem>   रतलाम       </asp:ListItem>
+                                <asp:ListItem>   अलीराजपुर     </asp:ListItem>
+                            </asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-md-3 mt-4 py-2">
@@ -167,6 +162,8 @@
                                             <th>जिला</th>
                                             <th>आवेदक का नाम</th>
                                             <th>जेंडर</th>
+                                            <th>वर्ग</th>
+
                                             <th>वैवाहिक स्थिति</th>
                                             <th>जन्म दिनांक</th>
                                             <th>दिवंगत से सम्बंध</th>
@@ -181,6 +178,7 @@
                                             <td>Shajapur</td>
                                             <td>ANIL BAMNIYA</td>
                                             <td>Male</td>
+                                            <td>O.B.C.</td>
                                             <td>Married</td>
                                             <td>18/05/1994 </td>
                                             <td>Son</td>
@@ -197,6 +195,7 @@
                                             <td>Narmadapuram</td>
                                             <td>VIRENDRA</td>
                                             <td>Male</td>
+                                            <td>O.B.C.</td>
                                             <td>UnMarried</td>
                                             <td>01/01/1900 </td>
                                             <td>Son</td>
@@ -213,6 +212,7 @@
                                             <td>Ujjain</td>
                                             <td>ashar pasha</td>
                                             <td>Male</td>
+                                            <td>O.B.C.</td>
                                             <td>UnMarried</td>
                                             <td>09/01/1996 </td>
                                             <td>Son</td>

@@ -30,10 +30,10 @@ public partial class mis_Transaction_JDLevelReportSection : System.Web.UI.Page
         DisposeCasesNOC.Visible = false;
         BlockWiseCounting.Visible = false;
         DistrictWiseCounting.Visible = false;
-        ApplicationNirakrutData.Visible = false;
-        AvedankoForwordKiyagya.Visible = false;
+        DisposeAavedan.Visible = false;
+        AvedankoAdhikariKoForwordKiyagya.Visible = false;
         AavendalMeApptiDarjReport.Visible = false;
-        AcceptedApplicationData.Visible = false;
+        //AcceptedApplicationData.Visible = false;
         TotalReceivedCases.Visible = false;
         divBlockWiseCountingtbl.Visible = false;
         divOfDropdownDistrict.Visible= false;
@@ -151,45 +151,47 @@ public partial class mis_Transaction_JDLevelReportSection : System.Web.UI.Page
 
     }
 
-    protected void hideshowAcceptedApplicationData_Click(object sender, EventArgs e)
+    
+
+    
+
+   
+
+    
+
+
+    
+   
+
+    
+    protected void hideShowDistrictWiseLockaavedan_Click(object sender, EventArgs e)
     {
+        DistrictWiseLockaavedan.Visible=true;
 
         DistrictWiseCounting.Visible=false;
-        AcceptedApplicationData.Visible=true;
     }
 
-    protected void hideShowAavendalMeApptiDarjReport_Click(object sender, EventArgs e)
+    protected void hidshowAvedankoAdhikariKoForwordKiyagya_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
-        AavendalMeApptiDarjReport.Visible=true;
+        AvedankoAdhikariKoForwordKiyagya.Visible=true;
     }
 
-    protected void hideShowAvedankoForwordKiyagya_Click(object sender, EventArgs e)
-    {
-
-        DistrictWiseCounting.Visible=false;
-        AvedankoForwordKiyagya.Visible=true;
-    }
-
-    protected void hideshowApplicationNirakrutData_Click(object sender, EventArgs e)
-    {
-        DistrictWiseCounting.Visible=false;
-        ApplicationNirakrutData.Visible=true;
-
-    }
-
-
-
-    protected void hideshowTotalReceivedCases_Click(object sender, EventArgs e)
-    {
-        DistrictWiseCounting.Visible=false;
-        TotalReceivedCases.Visible=true;
-    }
-
-    protected void hidshowDisposeAavedan_Click(object sender, EventArgs e)
+    protected void hideshowDisposeAavedan_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
         DisposeAavedan.Visible=true;
     }
 
+    protected void hideshowlambitAvedan_Click(object sender, EventArgs e)
+    {
+        DistrictWiseCounting.Visible=false;
+        lambitAvedan.Visible=true;
+    }
+
+    protected void hideshowTotalReceivedCases_Click1(object sender, EventArgs e)
+    {
+        DistrictWiseCounting.Visible=false;
+        TotalReceivedCases.Visible=true;
+    }
 }

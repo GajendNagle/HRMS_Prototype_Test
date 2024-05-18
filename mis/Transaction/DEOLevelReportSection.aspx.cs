@@ -38,14 +38,15 @@ public partial class mis_Transaction_DEOLevelReportSection : System.Web.UI.Page
         DisposeCasesNOC.Visible = false;
         BlockWiseCounting.Visible = false;
         DistrictWiseCounting.Visible = false;
-        ApplicationNirakrutData.Visible = false;
-        AvedankoForwordKiyagya.Visible = false;
+        DisposeAavedan.Visible = false;
+        AvedankoAdhikariKoForwordKiyagya.Visible = false;
         AavendalMeApptiDarjReport.Visible = false;
-        AcceptedApplicationData.Visible = false;
+       // AcceptedApplicationData.Visible = false;
         TotalReceivedCases.Visible = false;
        divBlockWiseCountingtbl.Visible = false;
         divOfDropdownDistrict.Visible= false;
         divBlockWiseCountingtbl.Visible= false;
+
         //dv_HRMS.Visible = false;
 
         if (ViewState["ModuleID"] != null)
@@ -103,26 +104,22 @@ public partial class mis_Transaction_DEOLevelReportSection : System.Web.UI.Page
     {
 
         DistrictWiseCounting.Visible=false;
-        AcceptedApplicationData.Visible=true;
+        TotalReceivedCases.Visible=true;
     }
 
-    protected void hideShowAavendalMeApptiDarjReport_Click(object sender, EventArgs e)
-    {
-        DistrictWiseCounting.Visible=false;
-        AavendalMeApptiDarjReport.Visible=true;
-    }
+   
 
     protected void hideShowAvedankoForwordKiyagya_Click(object sender, EventArgs e)
     {
 
         DistrictWiseCounting.Visible=false;
-        AvedankoForwordKiyagya.Visible=true;
+        AvedankoAdhikariKoForwordKiyagya.Visible=true;
     }
 
     protected void hideshowApplicationNirakrutData_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
-        ApplicationNirakrutData.Visible=true;
+       // ApplicationNirakrutData.Visible=true;
 
     }
 
@@ -144,6 +141,32 @@ public partial class mis_Transaction_DEOLevelReportSection : System.Web.UI.Page
     {
         BlockWiseCounting.Visible=true;
         divBlockWiseCountingtbl.Visible=true;
+
+    }
+
+    protected void hideShowDistrictWiseLockaavedan_Click(object sender, EventArgs e)
+    {
+        DistrictWiseLockaavedan.Visible=true;
+    
+    DistrictWiseCounting.Visible=false;
+    }
+
+    protected void hidshowAvedankoAdhikariKoForwordKiyagya_Click(object sender, EventArgs e)
+    {
+        DistrictWiseCounting.Visible=false;
+        AvedankoAdhikariKoForwordKiyagya.Visible=true;
+    }
+
+    protected void hideshowlambitAvedan_Click(object sender, EventArgs e)
+    {
+        DistrictWiseCounting.Visible=false;
+        lambitAvedan.Visible=true;
+    }
+
+    protected void hideshowDisposeAavedan_Click(object sender, EventArgs e)
+    {
+        DistrictWiseCounting.Visible=false;
+        DisposeAavedan.Visible=true;
 
     }
 }

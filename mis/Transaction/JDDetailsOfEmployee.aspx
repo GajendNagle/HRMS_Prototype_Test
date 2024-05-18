@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DetailsOfDeceasedEmployee.aspx.cs" Inherits="mis_Transaction_DetailsOfDeceasedEmployee" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="JDDetailsOfEmployee.aspx.cs" Inherits="mis_Transaction_JDDetailsOfEmployee" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
@@ -59,7 +59,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
 
-                            <a class="nav-link  text-white " href="DisposeApplicationCaseForDEO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            <a class="nav-link  text-white " href="DisposeApplicationCaseForJD.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
 
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
@@ -69,8 +69,8 @@
                                                 <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/Trn_JDCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/JDPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
                                             </ul>
                                         </li>
 
@@ -79,13 +79,13 @@
 
                             </li>
                             <li class="nav-item" style="position: relative; right: 20px;">
-                                <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
+                                <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListJD.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
                             </li>
                             <li class="nav-item mr-4">
-                                <a class="nav-link  text-white " href="../Transaction/DisposeApplicationCase.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
+                                <a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForJD.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
 
                             <li class="nav-item mr-3">
-                                <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorDeo.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
+                                <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorJD.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
 
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
@@ -95,9 +95,9 @@
                                                 <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
+                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
+                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
                                             </ul>
                                         </li>
@@ -633,5 +633,4 @@
         }
     </script>
 </asp:Content>
-
 

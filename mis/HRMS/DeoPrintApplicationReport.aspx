@@ -69,7 +69,7 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <nav class="navbar navbar-expand-lg topbar" style="position:relative; bottom:26px;">
+                <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px;">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +98,7 @@
                                 </li>
                                 <%--  <a href="Trn_ProcessApplicationListDeo.aspx">Trn_ProcessApplicationListDeo.aspx</a>--%>
 
-                                <li class="nav-item" style="position:relative; right:20px;">
+                                <li class="nav-item" style="position: relative; right: 20px;">
                                     <a class="nav-link text-warning font-16 text-white" href="Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
                                 </li>
                                 <li class="nav-item mr-4">
@@ -119,7 +119,7 @@
                                                     <li><a class="dropdown-item" href="../Transaction/DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
                                                     <li><a class="dropdown-item" href="../Transaction/DEOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
                                                     <li><a class="dropdown-item" href="../Transaction/DEOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
-                                                     <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
+                                                    <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
 
                                                 </ul>
                                             </li>
@@ -131,17 +131,22 @@
                     </div>
                 </nav>
                 <br />
-                <div class="row ms-2">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>जिला <span style="color: red"></span></label>
-                            <asp:DropDownList runat="server" CssClass="form-select form-control" Enabled="false" ID="ddlDistrict">
-                                <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                <asp:ListItem Value="1" Selected="True">Bhopal</asp:ListItem>
-                            </asp:DropDownList>
+                <fieldset>
+                    <legend>प्रिंट आवेदन
+                    </legend>
+
+                    <div class="row ms-2">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>जिला<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" CssClass="form-control" Enabled="false" ID="ddlDistrict">
+                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                    <asp:ListItem Value="1" Selected="True">Bhopal</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </fieldset>
                 <fieldset>
                     <legend>Compassionate Appointment Print Application       
                     </legend>
@@ -170,7 +175,7 @@
 
                                 <table class="table table-bordered text-center ">
                                     <thead>
-                                        <tr>
+                                        <tr >
                                             <th>स. क्र.</th>
                                             <th>आवेदक का नाम</th>
                                             <th>लिंग</th>
@@ -203,12 +208,12 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding</td>
+                                        <td>Panding </td>
                                     </tr>
                                     <%-- my code Increase grid --%>
 
                                     <tr>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>Raj Kumar</td>
                                         <td>Male</td>
                                         <td>15/10/1999</td>
@@ -223,7 +228,7 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding</td>
+                                        <td>Panding  </td>
                                     </tr>
                                     <%-- my code Increase grid --%>
                                 </table>

@@ -60,7 +60,7 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <nav class="navbar navbar-expand-lg topbar" style="position:relative; bottom:26px;">
+                <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px;">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,7 @@
                                     </div>
                                 </li>
 
-                                <li class="nav-item" style="position:relative; right:20px;">
+                                <li class="nav-item" style="position: relative; right: 20px;">
                                     <a class="nav-link text-warning font-16 text-white" href="Trn_ProcessApplicationListHO.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
 
                                 </li>
@@ -136,27 +136,30 @@
 
 
                 <%-- My Code Start--%>
-                <div class="row mt-3 ms-2" id="divoftextBox" runat="server">
-                    <div class="col-md-2">
-                        <div class="form-group">
-                            <label class="fw-bold">कर्मचारी आईडी प्रविष्ट करें<span style="color: red"></span></label>
-                            <%-- <span class="fa-pull-right">
+                <fieldset id="divoftextBox" runat="server">
+                    <legend>अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</legend>
+                    <div class="row mt-3 ms-2" >
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label class="fw-bold">कर्मचारी आईडी प्रविष्ट करें<span style="color: red"></span></label>
+                                <%-- <span class="fa-pull-right">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
                                     ErrorMessage="कर्मचारी आईडी अनिवार्य है।" ForeColor="Red"
                                     Text="<i class='fa fa-exclamation-circle' title='कर्मचारी आईडी अनिवार्य है। !'></i>"
                                     ControlToValidate="txtEmployeeId" Display="Dynamic" runat="server">
                                 </asp:RequiredFieldValidator>
                             </span>--%>
-                            <asp:TextBox runat="server" ID="txtEmployeeId" CssClass="form-control" placeholder="Search" AutoComplete="off">
+                                <asp:TextBox runat="server" ID="txtEmployeeId" CssClass="form-control" placeholder="Search" AutoComplete="off">
                             
-                            </asp:TextBox>
+                                </asp:TextBox>
 
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <asp:Button type="button" ID="showDataBtn" OnClick="showDataBtn_Click" Text="Search" runat="server" class="btn btn-success btn-rounded w-100 btn-block" />
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <asp:Button type="button" ID="showDataBtn" OnClick="showDataBtn_Click" Text="Search" runat="server" class="btn btn-success btn-rounded w-100 btn-block" />
-                    </div>
-                </div>
+                </fieldset>
                 <%--  My Code End --%>
                 <div class="row" id="divDataofAU5693" runat="server" visible="false">
 

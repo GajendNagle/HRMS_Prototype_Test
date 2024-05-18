@@ -125,6 +125,7 @@
                                             <th>स. क्र.</th>
                                             <th>आवेदक का नाम</th>
                                             <th>लिंग</th>
+                                            <th>वर्ग</th>
                                             <th>जन्म की तारीख</th>
                                             <th>मोबाइल नंबर</th>
                                             <th>आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
@@ -142,6 +143,7 @@
                                         <td>1</td>
                                         <td>Aniket Kumar</td>
                                         <td>Male</td>
+                                        <td>O.B.C</td>
                                         <td>15/10/1995</td>
                                         <td>9856325685</td>
                                         <td>Son</td>
@@ -162,13 +164,13 @@
                                         <td>1</td>
                                         <td>Raj Kumar</td>
                                         <td>Male</td>
+                                                <td>O.B.C</td>
                                         <td>15/10/1999</td>
                                         <td>9856425685</td>
                                         <td>Son</td>
                                         <td>Unmarried</td>
                                         <td>शैक्षणिक संवर्ग</td>
                                         <td>प्रयोगशाला शिक्षक</td>
-                                        <td>हाँ</td>
                                         <td>हाँ</td>
                                         <td>2016</td>
                                         <td>B.Sc</td>

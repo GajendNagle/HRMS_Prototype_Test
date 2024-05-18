@@ -60,7 +60,7 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <nav class="navbar navbar-expand-lg topbar" style="position:relative; bottom:26px">
+                <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -157,7 +157,8 @@
                                             <th data-hide="phone,tablet" scope="col">School</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदक का नाम</th>
                                             <th data-hide="phone,tablet" scope="col">जेंडर</th>
-                                             <th data-hide="phone,tablet" scope="col">वर्ग</th>
+                                            <th data-hide="phone,tablet" scope="col">वर्ग</th>
+
                                             <th data-hide="phone,tablet" scope="col">जन्म तिथि</th>
                                             <th data-hide="phone,tablet" scope="col">Mobile </th>
                                             <th data-hide="phone,tablet" scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
@@ -189,7 +190,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>SC</td>
+                                            <td>O.B.C.</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappdob">30/12/1999</span>
                                             </td>
@@ -235,7 +236,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>SC</td>
+                                            <td>SCHEDULED CASTES</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappdob">09/07/1992</span>
                                             </td>
@@ -281,7 +282,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAoolicantGender">Female</span>
                                             </td>
-                                            <td>ST</td>
+                                            <td>SCHEDULED CASTES</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblappdob">30/10/1988</span>
                                             </td>
@@ -327,7 +328,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>OBC</td>
+                                            <td>SCHEDULED CASTES</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblappdob">29/10/1996</span>
                                             </td>
@@ -370,9 +371,11 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblApplicantName">Rohit Dubey</span>
                                             </td>
+
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAoolicantGender">Male</span>
                                             </td>
+                                            <td>O.B.C.</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblappdob">01/03/1991</span>
                                             </td>
@@ -445,11 +448,11 @@
                                     </div>
                                     <asp:DropDownList ID="ddlJDLevelDistrict" runat="server" class="form-control vd_DDL_required" AutoPostBack="true">
                                         <asp:ListItem Value="o">-- District -- </asp:ListItem>
-                                        <asp:ListItem Value="1">Bhopal  </asp:ListItem>
-                                        <asp:ListItem Value="2">Raisen  </asp:ListItem>
-                                        <asp:ListItem Value="3">Rajgarh  </asp:ListItem>
-                                        <asp:ListItem Value="4">Sehore  </asp:ListItem>
-                                        <asp:ListItem Value="5">Vidisha  </asp:ListItem>
+                                        <asp:ListItem Value="1">    Bhopal  </asp:ListItem>
+                                        <asp:ListItem Value="2">    Raisen  </asp:ListItem>
+                                        <asp:ListItem Value="3">    Rajgarh  </asp:ListItem>
+                                        <asp:ListItem Value="4">    Sehore  </asp:ListItem>
+                                        <asp:ListItem Value="5">    Vidisha  </asp:ListItem>
 
 
                                     </asp:DropDownList>
@@ -491,10 +494,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -507,7 +510,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+
                                                 </tr>
                                                 <tr>
                                                     <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
@@ -518,7 +521,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+
                                                 </tr>
                                                 <tr>
                                                     <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
@@ -529,7 +532,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+
                                                 </tr>
                                                 <tr>
                                                     <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
@@ -540,7 +543,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+
                                                 </tr>
 
                                             </tbody>
@@ -561,10 +564,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -577,7 +580,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">7</td>
                                                     <td style="text-align: right;">19</td>
-                                                    <td style="text-align: right;">19</td>
+
                                                 </tr>
 
 
@@ -599,10 +602,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -615,7 +618,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">12</td>
                                                     <td style="text-align: right;">82</td>
-                                                    <td style="text-align: right;">24</td>
+
                                                 </tr>
 
 
@@ -640,10 +643,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -656,7 +659,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">9</td>
                                                     <td style="text-align: right;">38</td>
-                                                    <td style="text-align: right;">41</td>
+
                                                 </tr>
 
 
@@ -678,10 +681,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -693,8 +696,8 @@
                                                     <td style="text-align: right;">8</td>
                                                     <td style="text-align: right;">13</td>
                                                     <td style="text-align: right;">8</td>
-                                                    <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">63</td>
+                                                    
+
                                                 </tr>
 
                                             </tbody>
@@ -740,10 +743,10 @@
                                             <th data-class="phone,tablet" scope="col">जिला</th>
                                             <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+
                                             <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                            <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                            <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -753,71 +756,32 @@
 
 
 
-                                            <td>
-                                                <asp:Button runat="server" Text="2" Style="color: #00BCD4;" OnClick="hideshowTotalReceivedCases_Click" ID="hideshowTotalReceivedCases" BorderStyle="None" /></td>
+                                            <td style="color: #00BCD4;">
+                                                <asp:Button runat="server" Text="2" Style="color: #00BCD4;" OnClick="hideshowTotalReceivedCases_Click1" ID="hideshowTotalReceivedCases" BorderStyle="None" /></td>
 
 
-                                            <td>
-                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideshowAcceptedApplicationData_Click" BorderStyle="None" ID="hideshowAcceptedApplicationData" />
-                                            </td>
-                                            <td>
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideShowAavendalMeApptiDarjReport_Click" BorderStyle="None" ID="hideShowAavendalMeApptiDarjReport" />
-                                            </td>
-                                            <td><%--<a href="#">1</a>--%>
-                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideShowAvedankoForwordKiyagya_Click" BorderStyle="None" ID="hideShowAvedankoForwordKiyagya" />
+
+
+                                            <td style="color: #00BCD4;"><%--<a href="#">1</a>--%>
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideShowDistrictWiseLockaavedan_Click" BorderStyle="None" ID="hideShowDistrictWiseLockaavedan" />
 
                                             </td>
-                                            <td>
-                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" OnClick="hidshowDisposeAavedan_Click" BorderStyle="None"
-                                                    ID="hidshowDisposeAavedan" />
+                                            <td style="color: #00BCD4;">
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hidshowAvedankoAdhikariKoForwordKiyagya_Click" BorderStyle="None"
+                                                    ID="hidshowAvedankoAdhikariKoForwordKiyagya" />
 
 
                                             </td>
-                                            <td>
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideshowApplicationNirakrutData_Click" BorderStyle="None" ID="hideshowApplicationNirakrutData" />
+                                            <td style="color: #00BCD4;">
+                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
+
+                                            </td>
+                                            <td style="color: #00BCD4;">
+                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
 
                                             </td>
                                         </tr>
-                                        <%--  <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Raisen</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzQ=">106</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzQ=">0</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzQ=">2</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzQ=">12</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzQ=">82</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzQ=">24</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Rajgarh</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzA=">79</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzA=">1</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzA=">15</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzA=">9</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzA=">38</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzA=">41</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Sehore</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzM=">38</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzM=">0</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzM=">2</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzM=">7</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzM=">19</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzM=">19</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Vidisha</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzE=">79</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzE=">13</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzE=">8</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzE=">8</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzE=">16</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzE=">63</a></td>
-                                        </tr>--%>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -829,7 +793,7 @@
 
                 <%-- total Start Dispose Cases Table --%>
                 <fieldset id="DisposeAavedan" runat="server" visible="false">
-                    <legend>पंजीकृत आवेदन का विवरण    
+                    <legend>जिला वार डिस्पोज़ का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -902,12 +866,12 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempname">Manphool Imne</span>
+                                                    <span>Manphool Imne</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">ANITA IMNE</span>
+                                                    <span>ANITA IMNE</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -962,7 +926,7 @@
                                             </td>
                                             <td>
                                                 <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblTo" title="Click here To view Appointment Letter">View Document</span>
+                                                    <span title="Click here To view Appointment Letter">View Document</span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -971,12 +935,12 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempname">Bhagwan Singh</span>
+                                                    <span>Bhagwan Singh</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">BHUPENDRA MEENA</span>
+                                                    <span>BHUPENDRA MEENA</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -1374,32 +1338,32 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblcode">AA1277</span>
+                                                    <span id="">AA1277</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempname">Sohela Akhter</span>
+                                                    <span id="">Sohela Akhter</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempdesigantion">Asstt Grade-3</span>
+                                                    <span id="">Asstt Grade-3</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lbldeath">06/01/2018</span>
+                                                    <span id="">06/01/2018</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">MARIYAM RAZIQ</span>
+                                                    <span id="">MARIYAM RAZIQ</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">01/01/1900</span>
+                                                    <span id="">01/01/1900</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1408,32 +1372,32 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblcode">AT9965</span>
+                                                    <span>AT9965</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempname">Manisha Shrivastav</span>
+                                                    <span>Manisha Shrivastav</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempdesigantion">Prathmik Shikshak</span>
+                                                    <span id="">Prathmik Shikshak</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lbldeath">05/07/2020</span>
+                                                    <span id="">05/07/2020</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">MIHI SHRIVASTAVA</span>
+                                                    <span id="">MIHI SHRIVASTAVA</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">09/12/2004</span>
+                                                    <span id="">09/12/2004</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1446,8 +1410,8 @@
                 </fieldset>
                 <%-- total End received Cases Table --%>
 
-                <%-- total End received Cases Table --%>
-                <fieldset id="AcceptedApplicationData" runat="server" visible="false">
+                <%-- total start DistrictWiseLockaavedan Cases Table --%>
+                <fieldset id="DistrictWiseLockaavedan" runat="server" visible="false">
                     <legend>जिला वार लॉक आवेदन का विवरण
                     </legend>
                     <div class="row justify-content-end">
@@ -1535,9 +1499,9 @@
                         </div>
                     </div>
                 </fieldset>
-                <%-- total End received Cases Table --%>
+                <%-- total End DistrictWiseLockaavedan Cases Table --%>
 
-                <%-- total End received Cases Table --%>
+                <%-- total start AavendalMeApptiDarjReport Cases Table --%>
                 <fieldset id="AavendalMeApptiDarjReport" runat="server" visible="false">
                     <legend>जिला वार लंबित आवेदन
                     </legend>
@@ -1583,11 +1547,11 @@
                                             <th data-hide="phone,tablet" scope="col">
                                                 <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
                                             </th>
+                                            <%--  <th data-hide="phone,tablet" scope="col">
+                                 <div style="text-align: center;">लंबित के कारण</div>
+                             </th>--%>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">लंबित के कारण</div>
-                                            </th>
-                                            <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आपत्ति के कारण</div>
+                                                <div style="text-align: center;">लंबित/आपत्ति के कारण</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
                                                 <div style="text-align: center;">आपत्ति का विवरण</div>
@@ -1646,11 +1610,7 @@
                                                     <span id="">NA</span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblremakrs"></span>
-                                                </div>
-                                            </td>
+
                                         </tr>
                                         <tr>
                                             <td class="expand" style="text-align: right;">2
@@ -1700,11 +1660,7 @@
                                                     <span id="">NA</span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id=""></span>
-                                                </div>
-                                            </td>
+
                                         </tr>
                                         <tr>
                                             <td class="expand" style="text-align: right;">3
@@ -1754,11 +1710,7 @@
                                                     <span id="">NA</span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id=""></span>
-                                                </div>
-                                            </td>
+
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1766,8 +1718,10 @@
                         </div>
                     </div>
                 </fieldset>
-                <%-- total End received Cases Table --%>
-                <fieldset id="AvedankoForwordKiyagya" runat="server" visible="false">
+                <%-- total End AavendalMeApptiDarjReport Cases Table --%>
+
+                <%-- total start AvedankoAdhikariKoForwordKiyagya Cases Table --%>
+                <fieldset id="AvedankoAdhikariKoForwordKiyagya" runat="server" visible="false">
                     <legend>जिला वार फॉरवर्ड किये गए आवेदन का विवरण
                     </legend>
                     <div class="row justify-content-end">
@@ -1855,10 +1809,10 @@
                         </div>
                     </div>
                 </fieldset>
-                <%-- total End received Cases Table --%>
+                <%-- total End AvedankoAdhikariKoForwordKiyagya Cases Table --%>
 
-                <%-- total End received Cases Table --%>
-                <fieldset id="ApplicationNirakrutData" runat="server" visible="false">
+                <%-- total start lambitAvedan Cases Table --%>
+                <fieldset id="lambitAvedan" runat="server" visible="false">
                     <legend>जिला वार लंबित आवेदन का विवरण
                     </legend>
                     <div class="row justify-content-end">
@@ -1904,11 +1858,9 @@
                                                 <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">लंबित के कारण</div>
+                                                <div style="text-align: center;">आपत्ति/लंबित के कारण</div>
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आपत्ति के कारण</div>
-                                            </th>
+
                                             <th data-hide="phone,tablet" scope="col">
                                                 <div style="text-align: center;">आपत्ति का विवरण</div>
                                             </th>
@@ -1943,12 +1895,12 @@
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">CHANDRA KANT BAGHEL</span>
+                                                    <span id="b">CHANDRA KANT BAGHEL</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">06/09/2001</span>
+                                                    <span id="gf">06/09/2001</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -1956,11 +1908,7 @@
                                                     <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lnlpending"></span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblobj"></span>
-                                                </div>
-                                            </td>
+
                                             <td>
                                                 <div style="text-align: left;">
                                                     <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblobdj">NA</span>
@@ -2002,22 +1950,7 @@
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">08/12/1983</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lnlpending"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblobj"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblobdj">NA</span>
+                                                    <span>08/12/1983</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -2025,6 +1958,14 @@
                                                     <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblremakrs"></span>
                                                 </div>
                                             </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lnlpending">NA</span>
+                                                </div>
+                                            </td>
+
+
+
                                         </tr>
                                         <tr>
                                             <td class="expand" style="text-align: right;">3
@@ -2064,11 +2005,7 @@
                                                     <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lnlpending"></span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblobj"></span>
-                                                </div>
-                                            </td>
+
                                             <td>
                                                 <div style="text-align: left;">
                                                     <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblobdj">NA</span>
@@ -2086,7 +2023,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <%-- total End received Cases Table --%>
+                <%-- total End lambitAvedan Cases Table --%>
             </div>
         </div>
     </div>

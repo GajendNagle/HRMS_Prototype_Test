@@ -135,13 +135,19 @@
                             <label>जिला :<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                                <option value="--Select--">भोपाल</option>
-                                <option value="--Select--">इंदौर</option>
-                                <option value="--Select--">उज्जैन</option>
-                                <option value="--Select--">शाजापुर</option>
-                                <option value="--Select--">रतलाम</option>
-                                <option value="--Select--">अलीराजपुर</option>
+                                <option value="--Select--">    Bhopal       </option>
+                                <option value="--Select--">   Raisen       </option>
+                                <option value="--Select--">    Rajgarh      </option>
+                                <option value="--Select--">     Sehore     </option>
+                                <option value="--Select--">        Vidisha  </option>
+                                <option value="--Select--">          </option>
                             </select>
+
+                            
+                              
+                             
+                              
+                             
                         </div>
                     </div>
                     <div class="col-md-3 mt-4 py-2">
@@ -167,6 +173,8 @@
                                             <th>जिला</th>
                                             <th>आवेदक का नाम</th>
                                             <th>जेंडर</th>
+                                            <th>वर्ग</th>
+
                                             <th>वैवाहिक स्थिति</th>
                                             <th>जन्म दिनांक</th>
                                             <th>दिवंगत से सम्बंध</th>
@@ -181,10 +189,12 @@
                                             <td>Shajapur</td>
                                             <td>ANIL BAMNIYA</td>
                                             <td>Male</td>
+                                            <td>GENERAL</td>
+
                                             <td>Married</td>
                                             <td>18/05/1994 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="DetailsOfDeceasedEmployee.aspx" />Action</td>
+                                            <td><a class="btn btn-success btn-rounded" href="JDDetailsOfEmployee.aspx" />Action</td>
 
 
                                         </tr>
@@ -197,10 +207,11 @@
                                             <td>Narmadapuram</td>
                                             <td>VIRENDRA</td>
                                             <td>Male</td>
+                                              <td>GENERAL</td>
                                             <td>UnMarried</td>
                                             <td>01/01/1900 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="DetailsOfDeceasedEmployee.aspx" />Action</td>
+                                            <td><a class="btn btn-success btn-rounded" href="JDDetailsOfEmployee.aspx" />Action</td>
 
 
                                         </tr>
@@ -213,10 +224,11 @@
                                             <td>Ujjain</td>
                                             <td>ashar pasha</td>
                                             <td>Male</td>
+                                              <td>GENERAL</td>
                                             <td>UnMarried</td>
                                             <td>09/01/1996 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="DetailsOfDeceasedEmployee.aspx" />Action</td>
+                                            <td><a class="btn btn-success btn-rounded" href="JDDetailsOfEmployee.aspx" />Action</td>
 
 
                                         </tr>

@@ -132,16 +132,62 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>जिला :<span style="color: red">*</span></label>
-                            <select class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="--Select--">भोपाल</option>
-                                <option value="--Select--">इंदौर</option>
-                                <option value="--Select--">उज्जैन</option>
-                                <option value="--Select--">शाजापुर</option>
-                                <option value="--Select--">रतलाम</option>
-                                <option value="--Select--">अलीराजपुर</option>
-                            </select>
+                            <label>जिला<span style="color: red">*</span></label>
+                            <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
+    <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
+    <asp:ListItem Value="51">Agar Malwa</asp:ListItem>
+    <asp:ListItem Value="49">Alirajpur</asp:ListItem>
+    <asp:ListItem Value="47">Anuppur</asp:ListItem>
+    <asp:ListItem Value="46">Ashoknagar</asp:ListItem>
+    <asp:ListItem Value="45">Balaghat</asp:ListItem>
+    <asp:ListItem Value="28">Barwani</asp:ListItem>
+    <asp:ListItem Value="35">Betul</asp:ListItem>
+    <asp:ListItem Value="3">Bhind</asp:ListItem>
+    <asp:ListItem Value="32">Bhopal</asp:ListItem>
+    <asp:ListItem Value="48">Burhanpur</asp:ListItem>
+    <asp:ListItem Value="9">Chhatarpur</asp:ListItem>
+    <asp:ListItem Value="43">Chhindwara</asp:ListItem>
+    <asp:ListItem Value="12">Damoh</asp:ListItem>
+    <asp:ListItem Value="5">Datia</asp:ListItem>
+    <asp:ListItem Value="23">Dewas</asp:ListItem>
+    <asp:ListItem Value="25">Dhar</asp:ListItem>
+    <asp:ListItem Value="41">Dindori</asp:ListItem>
+    <asp:ListItem Value="7">Guna</asp:ListItem>
+    <asp:ListItem Value="4">Gwalior</asp:ListItem>
+    <asp:ListItem Value="36">Harda</asp:ListItem>
+    <asp:ListItem Value="26">Indore</asp:ListItem>
+    <asp:ListItem Value="39">Jabalpur</asp:ListItem>
+    <asp:ListItem Value="24">Jhabua</asp:ListItem>
+    <asp:ListItem Value="38">Katni</asp:ListItem>
+    <asp:ListItem Value="29">Khandwa</asp:ListItem>
+    <asp:ListItem Value="27">Khargone</asp:ListItem>
+    <asp:ListItem Value="42">Mandla</asp:ListItem>
+    <asp:ListItem Value="19">Mandsaur</asp:ListItem>
+    <asp:ListItem Value="2">Morena</asp:ListItem>
+    <asp:ListItem Value="37">Narmadapuram</asp:ListItem>
+    <asp:ListItem Value="40">Narsinghpur</asp:ListItem>
+    <asp:ListItem Value="18">Neemuch</asp:ListItem>
+    <asp:ListItem Value="52">Niwari</asp:ListItem>
+    <asp:ListItem Value="10">Panna</asp:ListItem>
+    <asp:ListItem Value="34">Raisen</asp:ListItem>
+    <asp:ListItem Value="30">Rajgarh</asp:ListItem>
+    <asp:ListItem Value="20">Ratlam</asp:ListItem>
+    <asp:ListItem Value="14">Rewa</asp:ListItem>
+    <asp:ListItem Value="11">Sagar</asp:ListItem>
+    <asp:ListItem Value="13">Satna</asp:ListItem>
+    <asp:ListItem Value="33">Sehore</asp:ListItem>
+    <asp:ListItem Value="44">Seoni</asp:ListItem>
+    <asp:ListItem Value="16">Shahdol</asp:ListItem>
+    <asp:ListItem Value="22">Shajapur</asp:ListItem>
+    <asp:ListItem Value="1">Sheopur</asp:ListItem>
+    <asp:ListItem Value="6">Shivpuri</asp:ListItem>
+    <asp:ListItem Value="17">Sidhi</asp:ListItem>
+    <asp:ListItem Value="50">Singrauli</asp:ListItem>
+    <asp:ListItem Value="8">Tikamgarh</asp:ListItem>
+    <asp:ListItem Value="21">Ujjain</asp:ListItem>
+    <asp:ListItem Value="15">Umaria</asp:ListItem>
+    <asp:ListItem Value="31">Vidisha</asp:ListItem>
+</asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-md-3 mt-4 py-2">
@@ -167,6 +213,7 @@
                                             <th>जिला</th>
                                             <th>आवेदक का नाम</th>
                                             <th>जेंडर</th>
+                                            <th>वर्ग</th>
                                             <th>वैवाहिक स्थिति</th>
                                             <th>जन्म दिनांक</th>
                                             <th>दिवंगत से सम्बंध</th>
@@ -181,10 +228,11 @@
                                             <td>Shajapur</td>
                                             <td>ANIL BAMNIYA</td>
                                             <td>Male</td>
+                                              <td>GENERAL</td>
                                             <td>Married</td>
                                             <td>18/05/1994 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="DetailsOfDeceasedEmployee.aspx" />Action</td>
+                                            <td><a class="btn btn-success btn-rounded" href="HODetailsOfEmployee.aspx" />Action</td>
 
 
                                         </tr>
@@ -197,10 +245,12 @@
                                             <td>Narmadapuram</td>
                                             <td>VIRENDRA</td>
                                             <td>Male</td>
+                                              <td>GENERAL</td>
+
                                             <td>UnMarried</td>
                                             <td>01/01/1900 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="DetailsOfDeceasedEmployee.aspx" />Action</td>
+                                            <td><a class="btn btn-success btn-rounded" href="HODetailsOfEmployee.aspx" />Action</td>
 
 
                                         </tr>
@@ -213,10 +263,12 @@
                                             <td>Ujjain</td>
                                             <td>ashar pasha</td>
                                             <td>Male</td>
+                                              <td>GENERAL</td>
+
                                             <td>UnMarried</td>
                                             <td>09/01/1996 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="DetailsOfDeceasedEmployee.aspx" />Action</td>
+                                            <td><a class="btn btn-success btn-rounded" href="HODetailsOfEmployee.aspx" />Action</td>
 
 
                                         </tr>

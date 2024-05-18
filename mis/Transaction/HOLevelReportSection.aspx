@@ -160,7 +160,8 @@
                                             <th data-hide="phone,tablet" scope="col">School</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदक का नाम</th>
                                             <th data-hide="phone,tablet" scope="col">जेंडर</th>
-                                             <th data-hide="phone,tablet" scope="col">वर्ग</th>
+                                            <th data-hide="phone,tablet" scope="col">वर्ग</th>
+                                            
                                             <th data-hide="phone,tablet" scope="col">जन्म तिथि</th>
                                             <th data-hide="phone,tablet" scope="col">Mobile </th>
                                             <th data-hide="phone,tablet" scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
@@ -192,7 +193,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>SC</td>
+                                             <td> SCHEDULED CASTES</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappdob">30/12/1999</span>
                                             </td>
@@ -238,7 +239,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>ST</td>
+                                              <td> SCHEDULED CASTES</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappdob">09/07/1992</span>
                                             </td>
@@ -284,7 +285,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAoolicantGender">Female</span>
                                             </td>
-                                            <td>SC</td>
+                                              <td> SCHEDULED CASTES</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblappdob">30/10/1988</span>
                                             </td>
@@ -330,7 +331,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>SC</td>
+                                              <td>O.B.C.</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblappdob">29/10/1996</span>
                                             </td>
@@ -376,7 +377,7 @@
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAoolicantGender">Male</span>
                                             </td>
-                                            <td>OBC</td>
+                                                <td>O.B.C.</td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblappdob">01/03/1991</span>
                                             </td>
@@ -541,10 +542,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                   
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -557,7 +558,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
@@ -568,7 +569,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
@@ -579,7 +580,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
@@ -590,7 +591,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">11</td>
+                                                    
                                                 </tr>
 
                                             </tbody>
@@ -611,10 +612,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -627,7 +628,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">7</td>
                                                     <td style="text-align: right;">19</td>
-                                                    <td style="text-align: right;">19</td>
+                                                   
                                                 </tr>
 
 
@@ -649,10 +650,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -665,7 +666,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">12</td>
                                                     <td style="text-align: right;">82</td>
-                                                    <td style="text-align: right;">24</td>
+                                                   
                                                 </tr>
 
 
@@ -690,10 +691,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -706,7 +707,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">9</td>
                                                     <td style="text-align: right;">38</td>
-                                                    <td style="text-align: right;">41</td>
+                                                   
                                                 </tr>
 
 
@@ -728,10 +729,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -744,7 +745,7 @@
                                                     <td style="text-align: right;">13</td>
                                                     <td style="text-align: right;">8</td>
                                                     <td style="text-align: right;">16</td>
-                                                    <td style="text-align: right;">63</td>
+                                                    
                                                 </tr>
 
                                             </tbody>
@@ -765,10 +766,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -781,7 +782,7 @@
                                                     <td style="text-align: right;">5</td>
                                                     <td style="text-align: right;">3</td>
                                                     <td style="text-align: right;">34</td>
-                                                    <td style="text-align: right;">23</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -802,10 +803,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -818,7 +819,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">3</td>
-                                                    <td style="text-align: right;">0</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -839,10 +840,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -855,7 +856,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">6</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -877,10 +878,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -893,7 +894,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">5</td>
                                                     <td style="text-align: right;">12</td>
-                                                    <td style="text-align: right;">10</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -915,10 +916,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -931,7 +932,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">15</td>
                                                     <td style="text-align: right;">28</td>
-                                                    <td style="text-align: right;">125</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -953,10 +954,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -969,7 +970,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">9</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -991,10 +992,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1007,7 +1008,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">16</td>
                                                     <td style="text-align: right;">64</td>
-                                                    <td style="text-align: right;">38</td>
+                                                    
                                                 </tr>
 
                                             </tbody>
@@ -1029,10 +1030,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1045,7 +1046,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">2</td>
-                                                    <td style="text-align: right;">3</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -1067,10 +1068,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1083,7 +1084,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">9</td>
-                                                    <td style="text-align: right;">13</td>
+                                                    
                                                 </tr>
 
                                             </tbody>
@@ -1105,10 +1106,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1121,7 +1122,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">33</td>
-                                                    <td style="text-align: right;">15</td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -1143,10 +1144,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1159,7 +1160,7 @@
                                                     <td style="text-align: right;">15</td>
                                                     <td style="text-align: right;">54</td>
                                                     <td style="text-align: right;">35</td>
-                                                    <td style="text-align: right;">130</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1180,10 +1181,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1196,7 +1197,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">12</td>
                                                     <td style="text-align: right;">30</td>
-                                                    <td style="text-align: right;">38</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1217,10 +1218,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1233,7 +1234,7 @@
                                                     <td style="text-align: right;">7</td>
                                                     <td style="text-align: right;">15</td>
                                                     <td style="text-align: right;">17</td>
-                                                    <td style="text-align: right;">27</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1254,10 +1255,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1270,7 +1271,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">23</td>
                                                     <td style="text-align: right;">37</td>
-                                                    <td style="text-align: right;">39</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1291,10 +1292,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1307,7 +1308,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">9</td>
                                                     <td style="text-align: right;">14</td>
-                                                    <td style="text-align: right;">10</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1328,10 +1329,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1344,7 +1345,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">2</td>
-                                                    <td style="text-align: right;">1</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1365,10 +1366,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1378,10 +1379,10 @@
                                                     <td><span style="font-size: 12pt;">Aron</span></td>
                                                     <td style="text-align: right;">39</td>
                                                     <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">11</td>
+                                                    <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">8</td>
                                                     <td style="text-align: right;">5</td>
-                                                    <td style="text-align: right;">34</td>
+                                                  
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1402,10 +1403,9 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1416,9 +1416,9 @@
                                                     <td style="text-align: right;">39</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">1</td>
-                                                    <td style="text-align: right;">11</td>
+                                                    <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">22</td>
-                                                    <td style="text-align: right;">17</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1439,10 +1439,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1455,7 +1455,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">4</td>
                                                     <td style="text-align: right;">9</td>
-                                                    <td style="text-align: right;">4</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1476,10 +1476,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1492,7 +1492,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">9</td>
                                                     <td style="text-align: right;">106</td>
-                                                    <td style="text-align: right;">25</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1513,10 +1513,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1529,7 +1529,7 @@
                                                     <td style="text-align: right;">15</td>
                                                     <td style="text-align: right;">19</td>
                                                     <td style="text-align: right;">27</td>
-                                                    <td style="text-align: right;">101</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1550,10 +1550,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1566,7 +1566,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">1</td>
-                                                    <td style="text-align: right;">2</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1587,10 +1587,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1603,7 +1603,7 @@
                                                     <td style="text-align: right;">7</td>
                                                     <td style="text-align: right;">23</td>
                                                     <td style="text-align: right;">34</td>
-                                                    <td style="text-align: right;">60</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1624,10 +1624,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1640,7 +1640,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">12</td>
                                                     <td style="text-align: right;">31</td>
-                                                    <td style="text-align: right;">14</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1661,10 +1661,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1677,7 +1677,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">17</td>
-                                                    <td style="text-align: right;">1</td>
+                                                  
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1699,10 +1699,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1715,7 +1715,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">0</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1736,10 +1736,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1752,7 +1752,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">9</td>
                                                     <td style="text-align: right;">49</td>
-                                                    <td style="text-align: right;">19</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1773,10 +1773,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1789,7 +1789,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">3</td>
                                                     <td style="text-align: right;">10</td>
-                                                    <td style="text-align: right;">6</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1810,10 +1810,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1826,7 +1826,7 @@
                                                     <td style="text-align: right;">8</td>
                                                     <td style="text-align: right;">5</td>
                                                     <td style="text-align: right;">36</td>
-                                                    <td style="text-align: right;">25</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1847,10 +1847,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1863,7 +1863,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">28</td>
                                                     <td style="text-align: right;">7</td>
-                                                    <td style="text-align: right;">46</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1884,10 +1884,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1900,7 +1900,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">13</td>
                                                     <td style="text-align: right;">8</td>
-                                                    <td style="text-align: right;">15</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1921,10 +1921,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1937,7 +1937,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">6</td>
                                                     <td style="text-align: right;">24</td>
-                                                    <td style="text-align: right;">24</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1958,10 +1958,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1974,7 +1974,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">5</td>
                                                     <td style="text-align: right;">32</td>
-                                                    <td style="text-align: right;">50</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1995,10 +1995,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2011,7 +2011,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">18</td>
                                                     <td style="text-align: right;">49</td>
-                                                    <td style="text-align: right;">33</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2032,10 +2032,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2048,7 +2048,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">33</td>
                                                     <td style="text-align: right;">41</td>
-                                                    <td style="text-align: right;">139</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2068,10 +2068,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2084,7 +2084,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">19</td>
-                                                    <td style="text-align: right;">5</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2105,10 +2105,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2121,7 +2121,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">32</td>
                                                     <td style="text-align: right;">111</td>
-                                                    <td style="text-align: right;">52</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2142,10 +2142,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2158,7 +2158,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">57</td>
-                                                    <td style="text-align: right;">18</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2179,10 +2179,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2195,7 +2195,7 @@
                                                     <td style="text-align: right;">1</td>
                                                     <td style="text-align: right;">3</td>
                                                     <td style="text-align: right;">7</td>
-                                                    <td style="text-align: right;">9</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2216,10 +2216,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2232,7 +2232,7 @@
                                                     <td style="text-align: right;">3</td>
                                                     <td style="text-align: right;">10</td>
                                                     <td style="text-align: right;">49</td>
-                                                    <td style="text-align: right;">21</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2253,10 +2253,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2269,7 +2269,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">3</td>
-                                                    <td style="text-align: right;">0</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2290,10 +2290,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2306,7 +2306,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">7</td>
                                                     <td style="text-align: right;">41</td>
-                                                    <td style="text-align: right;">18</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2327,10 +2327,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2343,7 +2343,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">18</td>
                                                     <td style="text-align: right;">41</td>
-                                                    <td style="text-align: right;">39</td>
+                                                    
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2364,10 +2364,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2380,7 +2380,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">3</td>
                                                     <td style="text-align: right;">45</td>
-                                                    <td style="text-align: right;">16</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2401,10 +2401,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2417,7 +2417,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">5</td>
                                                     <td style="text-align: right;">35</td>
-                                                    <td style="text-align: right;">27</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2438,10 +2438,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2454,7 +2454,7 @@
                                                     <td style="text-align: right;">2</td>
                                                     <td style="text-align: right;">21</td>
                                                     <td style="text-align: right;">85</td>
-                                                    <td style="text-align: right;">70</td>
+                                                  
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2475,10 +2475,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2491,7 +2491,7 @@
                                                     <td style="text-align: right;">0</td>
                                                     <td style="text-align: right;">4</td>
                                                     <td style="text-align: right;">37</td>
-                                                    <td style="text-align: right;">16</td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2512,10 +2512,10 @@
                                                     <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
                                                     <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                                    
                                                     <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                     <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2574,10 +2574,10 @@
                                             <th data-class="phone,tablet" scope="col">जिला</th>
                                             <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदन में आपत्ति दर्ज की गयी</th>
+                                            
                                             <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                             <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                            <th data-hide="phone,tablet" scope="col">लंबित आवेदन</th>
+                                         <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -2595,12 +2595,12 @@
                                                 <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideshowAcceptedApplicationData_Click" BorderStyle="None" ID="hideshowAcceptedApplicationData" />
                                             </td>
                                             <td>
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideShowAavendalMeApptiDarjReport_Click" BorderStyle="None" ID="hideShowAavendalMeApptiDarjReport" />
+                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideShowAvedankoForwordKiyagya_Click1" BorderStyle="None" ID="hideShowAvedankoForwordKiyagya" />
                                             </td>
-                                            <td><%--<a href="#">1</a>--%>
+                                            <%--<td>
                                                 <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideShowAvedankoForwordKiyagya_Click" BorderStyle="None" ID="hideShowAvedankoForwordKiyagya" />
 
-                                            </td>
+                                            </td>--%>
                                             <td>
                                                 <asp:Button runat="server" Text="6" Style="color: #00BCD4;" OnClick="hidshowDisposeAavedan_Click" BorderStyle="None"
                                                     ID="hidshowDisposeAavedan" />
@@ -2608,50 +2608,11 @@
 
                                             </td>
                                             <td>
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideshowApplicationNirakrutData_Click" BorderStyle="None" ID="hideshowApplicationNirakrutData" />
+                                                <asp:button runat="server" text="3" style="color: #00bcd4;" onclick="hideshowDarjYaLambitReport_Click" borderstyle="none" id="hideshowDarjYaLambitReport" />
 
                                             </td>
                                         </tr>
-                                        <%--  <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Raisen</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzQ=">106</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzQ=">0</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzQ=">2</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzQ=">12</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzQ=">82</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzQ=">24</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Rajgarh</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzA=">79</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzA=">1</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzA=">15</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzA=">9</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzA=">38</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzA=">41</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Sehore</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzM=">38</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzM=">0</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzM=">2</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzM=">7</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzM=">19</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzM=">19</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand"><span style=" font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style=" font-size: 12pt;">Vidisha</span></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseApplicantDetails.aspx?DistrictId=MzE=">79</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseLocked.aspx?DistrictId=MzE=">13</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePending.aspx?DistrictId=MzE=">8</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseforwarded.aspx?DistrictId=MzE=">8</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWiseDispose.aspx?DistrictId=MzE=">16</a></td>
-                                            <td><a href="/CAFMS/Public/DistrictWisePendingApplication.aspx?DistrictId=MzE=">63</a></td>
-                                        </tr>--%>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -2663,7 +2624,7 @@
 
                 <%-- total Start Dispose Cases Table --%>
                 <fieldset id="DisposeAavedan" runat="server" visible="false">
-                    <legend>पंजीकृत आवेदन का विवरण    
+                    <legend>जिला वार डिस्पोज़ का विवरण  
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -3372,7 +3333,7 @@
                 <%-- total End received Cases Table --%>
 
                 <%-- total End received Cases Table --%>
-                <fieldset id="AavendalMeApptiDarjReport" runat="server" visible="false">
+                <fieldset id="DarjYaLambitReport" runat="server" visible="false">
                     <legend>जिला वार लंबित आवेदन
                     </legend>
                     <div class="row justify-content-end">
@@ -3417,11 +3378,9 @@
                                             <th data-hide="phone,tablet" scope="col">
                                                 <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
                                             </th>
+                                           
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">लंबित के कारण</div>
-                                            </th>
-                                            <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आपत्ति के कारण</div>
+                                                <div style="text-align: center;">लंबित/आपत्ति के कारण</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
                                                 <div style="text-align: center;">आपत्ति का विवरण</div>
@@ -3470,11 +3429,7 @@
                                                     <span id=""></span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id=""></span>
-                                                </div>
-                                            </td>
+                                            
                                             <td>
                                                 <div style="text-align: left;">
                                                     <span id="">NA</span>
@@ -3524,11 +3479,7 @@
                                                     <span id=""></span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id=""></span>
-                                                </div>
-                                            </td>
+                                            
                                             <td>
                                                 <div style="text-align: left;">
                                                     <span id="">NA</span>
@@ -3578,11 +3529,7 @@
                                                     <span id=""></span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id=""></span>
-                                                </div>
-                                            </td>
+                                            
                                             <td>
                                                 <div style="text-align: left;">
                                                     <span id="">NA</span>

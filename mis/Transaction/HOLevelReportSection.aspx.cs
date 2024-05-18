@@ -34,7 +34,7 @@ public partial class mis_Transaction_HOLevelReportSection : System.Web.UI.Page
         DistrictWiseCounting.Visible = false;
         ApplicationNirakrutData.Visible = false;
         AvedankoForwordKiyagya.Visible = false;
-        AavendalMeApptiDarjReport.Visible = false;
+         AvedankoForwordKiyagya.Visible = false;
         AcceptedApplicationData.Visible = false;
         TotalReceivedCases.Visible = false;
         divBlockWiseCountingtbl.Visible = false;
@@ -3116,7 +3116,7 @@ public partial class mis_Transaction_HOLevelReportSection : System.Web.UI.Page
     protected void hideShowAavendalMeApptiDarjReport_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
-        AavendalMeApptiDarjReport.Visible=true;
+        //AavendalMeApptiDarjReport.Visible=true;
     }
 
     protected void hideShowAvedankoForwordKiyagya_Click(object sender, EventArgs e)
@@ -3147,4 +3147,15 @@ public partial class mis_Transaction_HOLevelReportSection : System.Web.UI.Page
         DisposeAavedan.Visible=true;
     }
 
+    protected void hideshowDarjYaLambitReport_Click(object sender, EventArgs e)
+    {
+        DarjYaLambitReport.Visible=true;
+        DistrictWiseCounting.Visible=false;
+    }
+
+    protected void hideShowAvedankoForwordKiyagya_Click1(object sender, EventArgs e)
+    {
+        AvedankoForwordKiyagya.Visible=true;
+        DistrictWiseCounting.Visible=false;                    
+    }
 }

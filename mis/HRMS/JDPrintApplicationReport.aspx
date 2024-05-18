@@ -69,7 +69,7 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <nav class="navbar navbar-expand-lg topbar" style="position:relative; bottom:26px">
+                <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,22 +129,25 @@
                         </div>
                     </div>
                 </nav>
-                <br />
-                <div class="row ms-2">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>जिला <span style="color: red"></span></label>
-                            <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
-                                <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                <asp:ListItem Value="1">Bhopal</asp:ListItem>
-                                <asp:ListItem Value="2">Raisen</asp:ListItem>
-                                <asp:ListItem Value="3">Rajgarh</asp:ListItem>
-                                <asp:ListItem Value="4">Sehore</asp:ListItem>
-                                <asp:ListItem Value="5">Vidisha</asp:ListItem>
-                            </asp:DropDownList>
+               
+                <fieldset>
+                    <legend>प्रिंट आवेदन</legend>
+                    <div class="row ms-2">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>जिला <span style="color: red"></span></label>
+                                <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
+                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                    <asp:ListItem Value="1">Bhopal</asp:ListItem>
+                                    <asp:ListItem Value="2">Raisen</asp:ListItem>
+                                    <asp:ListItem Value="3">Rajgarh</asp:ListItem>
+                                    <asp:ListItem Value="4">Sehore</asp:ListItem>
+                                    <asp:ListItem Value="5">Vidisha</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </fieldset>
                 <fieldset>
                     <legend>Compassionate Appointment Print Application       
                     </legend>
@@ -206,12 +209,12 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding</td>
+                                        <td>Panding </td>
                                     </tr>
                                     <%-- my code Increase grid --%>
 
                                     <tr>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>Raj Kumar</td>
                                         <td>Male</td>
                                         <td>15/10/1999</td>
@@ -226,7 +229,7 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding</td>
+                                        <td>Panding </td>
                                     </tr>
                                     <%-- my code Increase grid --%>
                                 </table>

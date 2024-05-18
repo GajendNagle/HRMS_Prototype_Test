@@ -128,10 +128,13 @@
                     </div>
                 </nav>
                 <br />
+                <fieldset>
+    <legend>प्रिंट आवेदन
+    </legend>
                 <div class="row ms-2">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>जिला <span style="color: red"></span></label>
+                            <label>जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
                                 <asp:ListItem Value="51">Agar Malwa</asp:ListItem>
@@ -190,6 +193,7 @@
                         </div>
                     </div>
                 </div>
+                    </fieldset>
                 <fieldset>
                     <legend>Compassionate Appointment Print Application       
                     </legend>
@@ -256,7 +260,7 @@
                                     <%-- my code Increase grid --%>
 
                                     <tr>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>Raj Kumar</td>
                                         <td>Male</td>
                                         <td>15/10/1999</td>
@@ -271,7 +275,7 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding</td>
+                                        <td>Panding </td>
                                     </tr>
                                     <%-- my code Increase grid --%>
                                 </table>

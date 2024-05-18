@@ -269,6 +269,7 @@
                                                                     <th scope="col">आवेदक का नाम</th>
 
                                                                     <th scope="col">जेंडर</th>
+                                                     <th scope="col">वर्ग</th>
                                                                     <th scope="col">आवेदक की जन्म तिथि </th>
                                                                     <th scope="col">मोबाईल  नंबर</th>
                                                                     <th scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
@@ -287,7 +288,8 @@
                                                                     <td>Asstt Teacher(LDT)</td>
                                                                     <td>28/12/2021</td>
                                                                     <td>BRAJESH KUSHVAH</td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
+                                                                    <td> S.C.</td>
                                                                     <td>10/08/1997</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -306,7 +308,8 @@
                                                                     <td>Madhyami8k Shaishak</td>
                                                                     <td>15/04/2022</td>
                                                                     <td>SHAKSHAM SHINGH </td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
+                                                                      <td> S.C.</td>
                                                                     <td>12/12/1996</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -325,7 +328,8 @@
                                                                     <td>Asstt Grade-2</td>
                                                                     <td>16/01/2023</td>
                                                                     <td>PRAMOD KUMAR PATEL</td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
+                                                                      <td>O.B.C.</td>
                                                                     <td>02/10/2000</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -1192,12 +1196,12 @@
                                 <b style="color: black;">कार्रवाई</b>  <span style="color: Red;">*</span></label>
                             <select name="ctl00$ContentBody$ddlkaryvahi" id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
                                 <option value="0">- Select  - </option>
-                                <option value="1">आवेदन मे आपत्ति करे </option>
+                                <option value="1">आवेदन मे आपत्ति/लंबित किया जाना है   </option>
                                 <option value="2">आवेदन स्वीकार  करे </option>
                                 <option value="3">आवेदन फॉरवर्ड करे संभागीय संयुक्त संचालक को </option>
                                 <option value="4">आवेदन फॉरवर्ड करे आयुक्त लोक शिक्षण को </option>
                                 <option value="5">आवेदन फॉरवर्ड करे स्कूल शिक्षा विभाग को </option>
-                                <option value="6">लंबित किया जाना है  </option>
+                                <%--<option value="6">लंबित किया जाना है  </option>--%>
 
                             </select>
                         </div>
