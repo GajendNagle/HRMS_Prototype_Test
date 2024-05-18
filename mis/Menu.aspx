@@ -566,7 +566,7 @@
                     <div class="col-lg-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2">
                             <img src="dist/images/icon/Report.png" class="dash-img" />
-                            <h6>School Reports 2</h6>
+                            <h6>OIS Setup Reports</h6>
                         </a>
                     </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
@@ -715,13 +715,13 @@
                             <h6>Zero Teacher School Report</h6>
                         </a>
                     </div>--%>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    <%--      <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/SurplusTeacherManagementSystem.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
 
                             <h6>Surplus Teacher School Report</h6>
                         </a>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/Rpt_SchoolDetail.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
@@ -729,21 +729,20 @@
                             <h6>School Detail Report Card</h6>
                         </a>
                     </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    <%--<div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/Rpt_SchoolSetup.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
 
                             <h6>OIS Report Card</h6>
                         </a>
-                    </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    </div>--%>
+                    <%--  <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/Rpt_DistrictWisePublishedSchool.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
 
                             <h6>District Wise Published School Report</h6>
                         </a>
-                    </div>
-
+                    </div>--%>
                 </div>
             </div>
         </div>
@@ -754,15 +753,15 @@
         <!-- ============================================================== -->
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">School Reports</h4>
+                <h4 class="text-themecolor ">OIS Setup Reports</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="Module.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">Reports</a></li>
-                        <li class="breadcrumb-item active">School Reports 2</li>
+                        <li class="breadcrumb-item"><a href="Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
+                        <li class="breadcrumb-item active">OIS Setup Reports</li>
                     </ol>
                 </div>
             </div>
@@ -777,6 +776,13 @@
             <div class="card-body">
                 <div class="row text-center justify-content-center mb-5">
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/SurplusTeacherManagementSystem.aspx">
+                            <img src="dist/images/icon/report.png" class="dash-img" />
+
+                            <h6>Surplus Teacher School Report</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Report/SchoolSetupMaster.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
 
@@ -788,6 +794,19 @@
                             <img src="dist/images/icon/report.png" class="dash-img" />
 
                             <h6>District Wise Publish School</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/Rpt_SchoolSetup.aspx">
+                            <img src="dist/images/icon/report.png" class="dash-img" />
+
+                            <h6>OIS Report Card</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="Transaction/ZeroStaffSchool_Report.aspx">
+                            <img src="dist/images/icon/report.png" class="dash-img" />
+                            <h6>School Low Staff Report</h6>
                         </a>
                     </div>
                 </div>
@@ -1447,23 +1466,29 @@
                         </a>
                     </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/PromotionOrder.aspx">
+                        <a href="Transaction/PromotionOrders.aspx">
                             <img src="dist/images/icon/HRMS_PromotionOrder.png" class="dash-img" />
                             <h6>Promotion Order</h6>
                         </a>
                     </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/PromotionCancel.aspx">
+                        <a href="Transaction/PromotionHoldOrder.aspx">
                             <img src="dist/images/icon/HRMS_PromotionCancelOrders.png" class="dash-img" />
 
                             <h6>Promotion Hold Orders</h6>
                         </a>
                     </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                        <a href="Transaction/PromotionCancel.aspx">
+                        <a href="Transaction/Promotion.aspx">
                             <img src="dist/images/icon/HRMS_PromotionCancelOrders.png" class="dash-img" />
 
                             <h6>Promotion Order Report</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="Transaction/PromotionWithTransfer.aspx">
+                            <img src="dist/images/icon/HRMS_PromotionCancelOrders.png" class="dash-img" />
+                            <h6>Promotion With Transfer Report</h6>
                         </a>
                     </div>
                 </div>
