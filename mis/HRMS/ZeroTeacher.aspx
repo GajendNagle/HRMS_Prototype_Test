@@ -5,33 +5,48 @@
         .head {
             justify-content: space-around;
             margin: 10px;
-            /*margin-bottom: 800px;*/
             padding-bottom: 500px;
             font-weight: 400;
             font-size: 20px;
             color: white;
         }
+
             .head:hover {
                 color: red;
                 text-decoration: underline;
             }
+
         .nav {
             background-color: #005b5c;
             padding: 10px;
         }
+
         title {
             background-color: brown;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <header class="bg-Secondary">
-        <h2 class="fw-normal"><a href="#">Surplus Teachers Management System</a></h2>
-    </header>
+    <div class="row page-titles mb-4">
+        <div class="col-md-5 align-self-center">
+            <h4 class="text-themecolor ">Surplus Teachers Management System</h4>
+
+        </div>
+        <div class="col-md-7 align-self-center text-end">
+            <div class="d-flex justify-content-end align-items-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">OIS Setup Reports</a></li>
+                    <li class="breadcrumb-item active">Zero Teachers Management System</li>
+                </ol>
+            </div>
+        </div>
+    </div>
     <div>
         <div class="row nav">
             <div class="col-md-12 justify-content-around">
-                <a class="head" href="../Default.aspx">Home</a>
                 <a class="head" href="ZeroTeacher.aspx">Zero Teachers </a>
                 <a class="head" href="SingleTeacherManagementSystem.aspx">Single Teachers</a>
                 <a class="head" href="SurplusTeacherManagementSystem.aspx">Surplus Status</a>
@@ -116,6 +131,10 @@
                             <td><a href="#BlockofDamoh">Damoh</a></td>
                             <td>54</td>
                         </tr>
+                        <tr style="background-color: #005b5c; color: white">
+                            <th colspan="2" class="text-center">Total Count</th>
+                            <th>395</th>
+                        </tr>
                     </tbody>
                     <tfoot>
                     </tfoot>
@@ -141,8 +160,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1
-                            </td>
+                            <td>1</td>
                             <td>Barod</td>
                             <td>23510102002</td>
                             <td>GMS RAMAKHEDI</td>

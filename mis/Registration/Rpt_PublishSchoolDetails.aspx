@@ -33,7 +33,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Division Name <span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" CssClass="form-control select2">
@@ -50,7 +50,7 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">District Name<span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" CssClass="form-control select2">
@@ -108,7 +108,7 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Block Name<span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" CssClass="form-control select2">
@@ -130,7 +130,28 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="font-bold">School Category</label>
+                                <asp:DropDownList runat="server" CssClass="form-control select2">
+                                    <asp:ListItem>--Select--</asp:ListItem>
+                                    <asp:ListItem>Primary </asp:ListItem>
+                                    <asp:ListItem>Upper Primary </asp:ListItem>
+                                    <asp:ListItem>Secondary </asp:ListItem>
+                                    <asp:ListItem>Higher Secondary</asp:ListItem>
+
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="font-bold">School Name</label>
+                                <asp:DropDownList runat="server" CssClass="form-control select2">
+                                    <asp:ListItem>--Select--</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Management Group</label>
                                 <asp:DropDownList runat="server" CssClass="form-control select2">
@@ -143,7 +164,7 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Management Details</label>
                                 <asp:DropDownList runat="server" CssClass="form-control select2">
@@ -171,51 +192,8 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label class="font-bold">School Category</label>
-                                <asp:DropDownList runat="server" CssClass="form-control select2">
-                                    <asp:ListItem>--Select--</asp:ListItem>
-                                    <asp:ListItem>Primary </asp:ListItem>
-                                    <asp:ListItem>Upper Primary </asp:ListItem>
-                                    <asp:ListItem>Secondary </asp:ListItem>
-                                    <asp:ListItem>Higher Secondary</asp:ListItem>
 
-                                </asp:DropDownList>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>School Category Details</label>
-                                <select class="form-control select2">
-                                    <option value=" -Select-">-Select-</option>
-                                    <option value="1-Primary only with grades 1 to 5 (PRY)">1-Primary only with grades 1 to 5 (PRY)</option>
-                                    <option value="2-Upper Primary with grades 1 to 8 (PRY-UPR) ">2-Upper Primary with grades 1 to 8 (PRY-UPR) </option>
-                                    <option value="3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)">3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</option>
-                                    <option value="4-Upper Primary only with grades 6 to 8 (UPR)">4-Upper Primary only with grades 6 to 8 (UPR)</option>
-                                    <option value="5-Higher Secondary with grades 6 to 12 (UPR-SEC-HSEC)">5-Higher Secondary with grades 6 to 12 (UPR-SEC-HSEC)</option>
-                                    <option value="6-Secondary with grades 1 to 10 (PRY-UPR-SEC)">6-Secondary with grades 1 to 10 (PRY-UPR-SEC)</option>
-                                    <option value="6-Secondary with grades 1 to 10 (PRY-UPR-SEC)">7-Secondary with grades 6 to 10 (UPR-SEC)</option>
-                                    <option value="6-Secondary with grades 1 to 10 (PRY-UPR-SEC)">8-Secondary only with grades 9 & 10 (SEC)</option>
-                                    <option value="6-Secondary with grades 1 to 10 (PRY-UPR-SEC)">9-Higher Secondary  with grades 9 & 12 (SEC-HSEC)</option>
-                                    <option value="6-Secondary with grades 1 to 10 (PRY-UPR-SEC)">10-HR.Sec /Jr/Collageonly with grades 11 & 12 (HSEC)</option>
-                                    <option value="6-Secondary with grades 1 to 10 (PRY-UPR-SEC)">11-Pre-Primary Only (PRE)</option>
-
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label class="font-bold">School Name</label>
-                                <asp:DropDownList runat="server" CssClass="form-control select2">
-                                    <asp:ListItem>--Select--</asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">From Date</label>
                                 <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
@@ -223,18 +201,15 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">To Date</label>
-                                <%--<asp:TextBox ID="txtPurchase" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
-
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="form-group">
                                 <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn btn-success  btn-rounded" />
-
                                 <a href="Rpt_PublishSchoolDetails.aspx" class="btn  btn-danger btn-rounded">Clear</a>
                             </div>
                         </div>
@@ -261,17 +236,15 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
+                                <table class="table table-bordered">
+                                    <tr class="card-header">
                                         <th>Sr.No.</th>
-
                                         <th>Division Name</th>
                                         <th>District Name</th>
                                         <th>Block Name</th>
                                         <th>Management Group</th>
                                         <th>Management Group Detail</th>
                                         <th>School Category</th>
-                                        <th>School Category Detail</th>
                                         <th>Sankul Name</th>
                                         <th>School Name</th>
                                         <th>Status</th>
@@ -286,7 +259,6 @@
                                         <td>State Government- A</td>
                                         <td>Department of Education-1</td>
                                         <td>Upper Primary School - 2</td>
-                                        <td>2-Upper Primary with grades 1 to 8 (PRY-UPR)</td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
                                         <td>GOVT MS BOYS BARKHEDA (BHEL) - 23355854596 </td>
                                         <td>Close</td>
@@ -296,14 +268,13 @@
                                     </tr>
 
                                     <tr>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>Bhopal</td>
                                         <td>Bhopal</td>
                                         <td>PHANDA URBAN NEW</td>
                                         <td>State Government- A</td>
                                         <td>Department of Education-1</td>
                                         <td>Higher Secondary School - 3</td>
-                                        <td>3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23568456321</td>
                                         <td>PVT HSS (1-12) ST. XAVIERS SR. SEC CO-ED SCHOOL, C SECTOR, BERKHERA, BHEL, BHOPAL (25431) - 23320303017</td>
                                         <td>Merge</td>
@@ -430,5 +401,4 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    >t>
 </asp:Content>

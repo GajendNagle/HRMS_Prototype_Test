@@ -21,7 +21,7 @@
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
                         <li class="breadcrumb-item active">School Merge Report</li>
                     </ol>
                 </div>
@@ -36,9 +36,9 @@
                 <fieldset>
                     <legend>School Merge Report</legend>
 
-                    <div class="row justify-content-center">
+                    <div class="row ">
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">Division Name <span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -53,7 +53,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">District Name<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -109,7 +109,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">Block Name</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -129,7 +129,7 @@
 
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Sankul Name</label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
@@ -147,31 +147,32 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">From Date</label>
                                 <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                                                <input type="date" class="form-control" Placeholder="17/11/2023"/>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">To Date</label>
                                 <%--<asp:TextBox ID="txtPurchase" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                                                <input type="date" class="form-control" Placeholder="17/11/2023"/>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="form-group ">
+                                <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn btn-success  btn-rounded" />
 
-                        <div class="col-md-4">
-                        <div class="form-group text-center">
-                            <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn btn-success  btn-rounded" />
-               
-                            <a href="RPT_MeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                        </div>
+                                <a href="RPT_MeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            </div>
                         </div>
                     </div>
+
+                    <%--</div>--%>
                 </fieldset>
                 <fieldset runat="server" id="report" visible="false">
                     <legend>Details</legend>
@@ -194,7 +195,7 @@
                             <table class="table table-bordered table-responsive-lg" style="border: 2px">
 
                                 <tbody>
-                                    <tr>
+                                    <tr class="card-header">
                                         <th colspan="4">Anchor School to be Merged (स्कूल जिसमे विलय करना हैं)</th>
                                         <th colspan="5">School to merge (स्कूल जिसका विलय करना हैं)</th>
 
@@ -281,7 +282,7 @@
                     </div>
 
                 </fieldset>
-               <%-- <fieldset>
+                <%-- <fieldset>
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">

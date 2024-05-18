@@ -29,23 +29,8 @@
 
                 <fieldset>
                     <legend>School Details</legend>
-
                     <div class="row form-group">
-                        <%-- <div class="col-md-2">
-                            <label class="font-bold">Registration Type<span style="color: red">*</span></label>
-                            <span class="fa-pull-right">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ValidationGroup="a"
-                                    ErrorMessage="Select Institute Registration" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Institute Registration !'></i>"
-                                    ControlToValidate="ddlInstituteReg" Display="Dynamic" runat="server">
-                                </asp:RequiredFieldValidator>
-                            </span>
-                            <asp:DropDownList runat="server" CssClass="form-control select2" ID="ddlInstituteReg">
-                                <asp:ListItem Value="0">-Select-</asp:ListItem>
-                                <asp:ListItem>School</asp:ListItem>
-                                <asp:ListItem>Institute Registration</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>--%>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">Division Name <span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -60,7 +45,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">District Name<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -116,7 +101,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">Block Name</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -136,7 +121,7 @@
 
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">School Name</label>
                                 <span class="fa-pull-right">
@@ -162,7 +147,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Management Group</label>
                                 <span class="fa-pull-right">
@@ -172,7 +157,7 @@
                                     </asp:RequiredFieldValidator>
                                 </span>
                                 <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlManagementGrp">
-                                    <asp:ListItem Value="0"> -Select-</asp:ListItem>
+                                    <asp:ListItem Value="0"> --Select--</asp:ListItem>
                                     <asp:ListItem>A-State Govt</asp:ListItem>
                                     <asp:ListItem>B-Govt Aided</asp:ListItem>
                                     <asp:ListItem>C-Private UnAided </asp:ListItem>
@@ -182,7 +167,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">Management Details</label>
                                 <span class="fa-pull-right">
@@ -192,14 +177,14 @@
                                     </asp:RequiredFieldValidator>
                                 </span>
                                 <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlSchoolManagement">
-                                    <asp:ListItem Value="0"> -Select-</asp:ListItem>
+                                    <asp:ListItem Value="0"> --Select--</asp:ListItem>
                                     <asp:ListItem>1-Department of Education (DOE)</asp:ListItem>
                                     <asp:ListItem>2-Tribal walfare department(TWD)</asp:ListItem>
                                     <asp:ListItem>3-Local Body </asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">School Category</label>
                                 <span class="fa-pull-right">
@@ -209,7 +194,7 @@
                                     </asp:RequiredFieldValidator>
                                 </span>
                                 <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlSchoolCat">
-                                    <asp:ListItem Value="0"> -Select-</asp:ListItem>
+                                    <asp:ListItem Value="0"> --Select--</asp:ListItem>
                                     <asp:ListItem>1-Primary</asp:ListItem>
                                     <asp:ListItem>2-Upper Primary</asp:ListItem>
                                     <asp:ListItem>3-Higher Secondary</asp:ListItem>
@@ -217,11 +202,11 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>School Category Details</label>
                                 <select class="form-control select2">
-                                    <option value=" -Select-">-Select-</option>
+                                    <option value=" -Select-">--Select--</option>
                                     <option value="1-Primary only with grades 1 to 5 (PRY)">1-Primary only with grades 1 to 5 (PRY)</option>
                                     <option value="2-Upper Primary with grades 1 to 8 (PRY-UPR) ">2-Upper Primary with grades 1 to 8 (PRY-UPR) </option>
                                     <option value="3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)">3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</option>
@@ -237,7 +222,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">School Code</label>
                                 <span class="fa-pull-right">
@@ -247,7 +232,7 @@
                                     </asp:RequiredFieldValidator>
                                 </span>
                                 <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlSchoolDiseCode">
-                                    <asp:ListItem Value="0"> -Select-</asp:ListItem>
+                                    <asp:ListItem Value="0"> --Select--</asp:ListItem>
                                     <asp:ListItem>23450404101</asp:ListItem>
                                     <asp:ListItem>23320300062</asp:ListItem>
                                     <asp:ListItem>23271000593</asp:ListItem>
@@ -279,7 +264,7 @@
                     <div class="col-md-12">
 
                         <fieldset>
-                            <legend>School  Details</legend>
+                            <legend>School Details</legend>
 
                             <div class="row justify-content-end">
                                 <div class="col-md-1 ">
@@ -298,11 +283,10 @@
                                         <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                     </div>
                                 </div>
-
                             </div>
 
                             <table class="table table-responsive">
-                                <tr>
+                                <tr class="card-header">
                                     <th>Sr. No</th>
                                     <th>Division</th>
                                     <th>District</th>
@@ -331,11 +315,6 @@
                                     <td>Mr.Rammohan Yadav</td>
                                     <td>Yes/No</td>
                                     <td>
-                                        <%--  <button class="btn view-but" onclick="openModal()">
-                                     <i class="fas fa-eye"></i>View
-                                 </button>--%>
-
-
                                         <asp:LinkButton ID="lnkOpenModal" runat="server" CssClass="view-but btn btn-success" OnClientClick="return false;"><i class="fas fa-eye"></i><br />View</asp:LinkButton>
 
                                     </td>
@@ -493,7 +472,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Division<span style="color: red;"> *</span></label>
                                                             <asp:DropDownList CssClass="form-control" Enabled="false" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Bhopal</asp:ListItem>
                                                                 <asp:ListItem Selected="True">2-Chambal</asp:ListItem>
                                                                 <asp:ListItem>3-Ujjain</asp:ListItem>
@@ -504,7 +483,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">District<span style="color: red;"> *</span></label>
                                                             <asp:DropDownList CssClass="form-control" Enabled="false" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Bhopal</asp:ListItem>
                                                                 <asp:ListItem Selected="True">2-SHEOPUR</asp:ListItem>
                                                                 <asp:ListItem>3-Sehore</asp:ListItem>
@@ -515,7 +494,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Block</label>
                                                             <asp:DropDownList CssClass="form-control" Enabled="false" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>Huzur</asp:ListItem>
                                                                 <asp:ListItem Selected="True">VIJAYPUR</asp:ListItem>
                                                                 <asp:ListItem>Phanda</asp:ListItem>
@@ -529,7 +508,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Location<span style="color: red;">*</span></label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Rural</asp:ListItem>
                                                                 <asp:ListItem>2-Urban</asp:ListItem>
                                                             </asp:DropDownList>
@@ -539,7 +518,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Assembly <span style="color: red;">*</span></label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>Govindpura</asp:ListItem>
                                                                 <asp:ListItem>Huzur</asp:ListItem>
                                                             </asp:DropDownList>
@@ -549,7 +528,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Parliamentary</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>Bhopal</asp:ListItem>
 
                                                             </asp:DropDownList>
@@ -559,7 +538,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Habitation </label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>Berasia</asp:ListItem>
 
                                                             </asp:DropDownList>
@@ -571,7 +550,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Board Type</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-CBSE</asp:ListItem>
                                                                 <asp:ListItem>2-State Board</asp:ListItem>
                                                                 <asp:ListItem>3-ICSE </asp:ListItem>
@@ -583,7 +562,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">School Type</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Boy</asp:ListItem>
                                                                 <asp:ListItem>2-Girls</asp:ListItem>
                                                                 <asp:ListItem>3-Co-Ed</asp:ListItem>
@@ -594,7 +573,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">School Category</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Primary</asp:ListItem>
                                                                 <asp:ListItem>2-Upper Primary</asp:ListItem>
                                                                 <asp:ListItem>3-Higher Secondary</asp:ListItem>
@@ -607,7 +586,7 @@
                                                             <label class="font-bold">Lowest Class<span style="color: red;">*</span></label>
                                                             <%--<asp:TextBox ID="txtclass" runat="server" placeholder="Enter Lowest Class" CssClass="form-control"></asp:TextBox>--%>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>Nursary</asp:ListItem>
                                                                 <asp:ListItem>LKG</asp:ListItem>
                                                                 <asp:ListItem>UKG</asp:ListItem>
@@ -633,7 +612,7 @@
                                                             <label class="font-bold">Highest Class<span style="color: red;">*</span></label>
                                                             <%-- <asp:TextBox ID="TextBox1" runat="server" placeholder="Enter Highest Class" CssClass="form-control"></asp:TextBox>--%>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>Nursary</asp:ListItem>
                                                                 <asp:ListItem>LKG</asp:ListItem>
                                                                 <asp:ListItem>UKG</asp:ListItem>
@@ -656,7 +635,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">Management Group</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>A-State Govt</asp:ListItem>
                                                                 <asp:ListItem>B-Govt Aided</asp:ListItem>
                                                                 <asp:ListItem>C-Private UnAided </asp:ListItem>
@@ -669,7 +648,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">School Management</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem>-Select-</asp:ListItem>
+                                                                <asp:ListItem>--Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Department of Education (DOE)</asp:ListItem>
                                                                 <asp:ListItem>2-Tribal walfare department(TWD)</asp:ListItem>
                                                                 <asp:ListItem>3-Local Body </asp:ListItem>
@@ -680,7 +659,7 @@
                                                         <div class="form-group">
                                                             <label class="font-bold">In Charge Type</label>
                                                             <asp:DropDownList CssClass="form-control" runat="server">
-                                                                <asp:ListItem> -Select-</asp:ListItem>
+                                                                <asp:ListItem> --Select--</asp:ListItem>
                                                                 <asp:ListItem>1-Head Master / Principal </asp:ListItem>
                                                                 <asp:ListItem>2-Asst. head Master  / VP</asp:ListItem>
                                                                 <asp:ListItem>3-Acting Head Teacher </asp:ListItem>

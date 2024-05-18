@@ -16,7 +16,7 @@
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
                         <li class="breadcrumb-item active">Close School Report</li>
                     </ol>
                 </div>
@@ -31,8 +31,8 @@
                     <legend>Close School Report</legend>
 
                     <div class="row">
-                        <div class="col-md-2">
-                            <label class="font-bold">Division Name <span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label class="font-bold">Division Name<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -46,7 +46,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">District Name<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -102,7 +102,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">Block Name</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -122,36 +122,30 @@
 
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">From Date</label>
                                 <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                                                <input type="date" class="form-control" Placeholder="17/11/2023"/>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">To Date</label>
-                                <%--<asp:TextBox ID="txtPurchase" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                                                <input type="date" class="form-control" Placeholder="17/11/2023"/>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 text-center">
-                        <div class="form-group">
-                            <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
-                  
-                            <a href="RPT_UnMeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <div class="col-md-4 mt-4">
+                            <div class="form-group">
+                                <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
+                                <a href="RPT_UnMeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            </div>
                         </div>
-                        </div>
-
                     </div>
-
-
-
+                    <%--<div class="row justify-content-center">
+                    </div>--%>
                 </fieldset>
                 <div class="row form-group">
                     <div class="col-md-12">
@@ -170,52 +164,57 @@
                                     </div>
                                 </div>
                             </div>
-                            <table class="table table-responsive">
-                                <tr>
-                                    <th>Sr. No</th>
-                                    <th>Division</th>
-                                    <th>District</th>
-                                    <th>Block</th>
-                                    <th>Dise Code</th>
-                                    <th>School Name</th>
-                                    <th>Management</th>
-                                    <th>Category</th>
-                                    <th>Sankul(DDO)</th>
-                                    <th>Incharge Name</th>
-                                    <th>Functional</th>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tr class="card-header">
+                                                <th>Sr. No</th>
+                                                <th>Division</th>
+                                                <th>District</th>
+                                                <th>Block</th>
+                                                <th>Dise Code</th>
+                                                <th>School Name</th>
+                                                <th>Management</th>
+                                                <th>Category</th>
+                                                <th>Sankul(DDO)</th>
+                                                <th>Incharge Name</th>
+                                                <th>Functional</th>
 
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Chambal</td>
-                                    <td>SHEOPUR</td>
-                                    <td>VIJAYPUR</td>
-                                    <td>23010804504</td>
-                                    <td>GOVT. HSS Rose</td>
-                                    <td>Govt_SED</td>
-                                    <td>Higher Secodary</td>
-                                    <td>GOVT. HSS Rose</td>
-                                    <td>Mr.Rammohan Yadav</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Bhopal</td>
-                                    <td>Bhopal</td>
-                                    <td>Berasia</td>
-                                    <td>23010804523</td>
-                                    <td>GOVT. HSS SHYAMPUR</td>
-                                    <td>Govt_SED</td>
-                                    <td>Higher Secodary</td>
-                                    <td>GOVT. HSS SHYAMPUR</td>
-                                    <td>Mr.Rammohan Yadav</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </table>
-
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Chambal</td>
+                                                <td>SHEOPUR</td>
+                                                <td>VIJAYPUR</td>
+                                                <td>23010804504</td>
+                                                <td>GOVT. HSS Rose</td>
+                                                <td>Govt_SED</td>
+                                                <td>Higher Secodary</td>
+                                                <td>GOVT. HSS Rose</td>
+                                                <td>Mr.Rammohan Yadav</td>
+                                                <td>Closed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Bhopal</td>
+                                                <td>Bhopal</td>
+                                                <td>Berasia</td>
+                                                <td>23010804523</td>
+                                                <td>GOVT. HSS SHYAMPUR</td>
+                                                <td>Govt_SED</td>
+                                                <td>Higher Secodary</td>
+                                                <td>GOVT. HSS SHYAMPUR</td>
+                                                <td>Mr.Rammohan Yadav</td>
+                                                <td>Closed</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </fieldset>
 
-                      <%--  <fieldset>
+                        <%--  <fieldset>
                             <legend>Description</legend>
                             <div class="row">
                                 <div class="col-md-12">

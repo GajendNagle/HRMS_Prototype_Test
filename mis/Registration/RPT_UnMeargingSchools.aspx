@@ -27,7 +27,7 @@
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
                         <li class="breadcrumb-item active">School Unmerge Report</li>
                     </ol>
                     <asp:Label ID="lblMsg" runat="server" Text="" Visible="true"></asp:Label>
@@ -45,8 +45,8 @@
 
                     <div class="row">
 
-                        <div class="col-md-2">
-                            <label class="font-bold">Division Name <span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label class="font-bold">Division Name<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -60,7 +60,7 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label class="font-bold">District Name<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -116,8 +116,8 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
-                            <label class="font-bold">Block Name<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label class="font-bold">Block Name</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Agar</asp:ListItem>
@@ -136,7 +136,7 @@
 
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">UDISE Code</label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
@@ -149,34 +149,25 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">From Date</label>
-                                <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                                                <input type="date" class="form-control" Placeholder="17/11/2023"/>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">To Date</label>
-                                <%--<asp:TextBox ID="txtPurchase" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                                                <input type="date" class="form-control" Placeholder="17/11/2023"/>
-
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
                             </div>
                         </div>
-
-                    </div>
-                    <div class="row justify-content-center">
-
-                        <div class="col-md-4">
-                        <div class="form-group text-center">
-                            <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
-                    
-                            <a href="RPT_UnMeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <div class="col-md-4 mt-4">
+                            <div class="form-group ">
+                                <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
+                                <a href="RPT_UnMeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            </div>
                         </div>
-                        </div>
-
                     </div>
                 </fieldset>
                 <fieldset runat="server" id="report" visible="false">
@@ -206,7 +197,7 @@
                         </div>
                         <table class="table table-bordered table-responsive-lg" style="border: 2px">
                             <tbody>
-                                <tr>
+                                <tr class="card-header">
                                     <th colspan="4">Parent School to be Merged (स्कूल जिसमे विलय करना हैं)</th>
                                     <th colspan="7">School to Merged (स्कूल जिसका विलय करना हैं)</th>
 
@@ -330,16 +321,16 @@
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label>Order No</label>
-                                                                <asp:TextBox ID="TextBox4" ReadOnly="true" placeholder="Order No"  runat="server" Text="2365" CssClass=" form-control"></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox4" ReadOnly="true" placeholder="Order No" runat="server" Text="2365" CssClass=" form-control"></asp:TextBox>
 
                                                             </div>
                                                             <div class="col-md-1 mt-2">
-                                                              <asp:LinkButton ID="LinkButton7" runat="server" CssClass="btn view-but border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="openPDF()"><i class="fas fa-eye"></i>Document</asp:LinkButton>
+                                                                <asp:LinkButton ID="LinkButton7" runat="server" CssClass="btn view-but border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="openPDF()"><i class="fas fa-eye"></i>Document</asp:LinkButton>
 
-                                                                
+
                                                             </div>
                                                         </div>
-                                                    <%--    <div class="row m-l-5">
+                                                        <%--    <div class="row m-l-5">
                                                             <div class="col-md-12">
                                                                 <label class="form-check m-b-0">
                                                                     <input type="checkbox" class="form-check-input">
@@ -348,7 +339,6 @@
                                                                 </label>
                                                             </div>
                                                         </div>--%>
-
                                                     </div>
                                                     <div class="modal-footer">
 
@@ -369,7 +359,7 @@
                     </div>
                 </fieldset>
 
-               <%-- <fieldset>
+                <%-- <fieldset>
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -464,7 +454,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-<%--    <script type="text/javascript">
+    <%--    <script type="text/javascript">
         $(document).ready(function () {
             $('#<%= txtPurchase.ClientID %>').datepicker({
                 format: 'dd-mm-yyyy',

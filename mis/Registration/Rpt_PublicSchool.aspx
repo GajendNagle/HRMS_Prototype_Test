@@ -37,7 +37,7 @@
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
                         <li class="breadcrumb-item active">School Summary Report</li>
                     </ol>
                 </div>
@@ -47,14 +47,11 @@
         <div class="card mt-3 shadow">
             <div class="card-header card-border-info">
             </div>
-
             <div class="card-body">
-
                 <div runat="server">
                     <fieldset>
                         <legend>School Summary Report</legend>
                         <div class="row">
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Division <span style="color: red">*</span></label>
@@ -128,7 +125,6 @@
                                         <option value="Ratlam">Ratlam</option>
                                         <option value="Shajapur">Shajapur</option>
                                         <option value="Ujjain">Ujjain</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -154,7 +150,6 @@
                                     </select>
                                 </div>
                             </div>
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Board Type</label>
@@ -164,7 +159,6 @@
                                         <option value="2-State Board">2-State Board</option>
                                         <option value="3-ICSE ">3-ICSE </option>
                                         <option value="4-International">4-International</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -176,7 +170,6 @@
                                         <option value="1-Boy">1-Boy</option>
                                         <option value="2-Girls">2-Girls</option>
                                         <option value="3-Co-Ed">3-Co-Ed</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -189,7 +182,6 @@
                                         <option value="2-Upper Primary">2-Upper Primary</option>
                                         <option value="3-Higher Secondary">3-Higher Secondary</option>
                                         <option value="4-Upper Primary School">4-Upper Primary School</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -203,11 +195,9 @@
                                         <option value="3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)">3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</option>
                                         <option value="4-Upper Primary only with grades 6 to 8 (UPR)">4-Upper Primary only with grades 6 to 8 (UPR)</option>
                                         <option value="5-Higher Secondary with grades 6 to 12 (UPR-SEC-HSEC)">5-Higher Secondary with grades 6 to 12 (UPR-SEC-HSEC)</option>
-
                                     </select>
                                 </div>
                             </div>
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Management Group</label>
@@ -218,11 +208,9 @@
                                         <option value="C-Private UnAided ">C-Private UnAided </option>
                                         <option value="D-Central Govt">D-Central Govt</option>
                                         <option value="E-Other">E-Other</option>
-
                                     </select>
                                 </div>
                             </div>
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Management Group Details</label>
@@ -234,11 +222,9 @@
                                         <option value="4-Government Aided ">4-Government Aided </option>
                                         <option value="5-Private Unaided (Recognized)">5-Private Unaided (Recognized)</option>
                                         <option value="6-Other State Govt. Managed ">6-Other State Govt. Managed </option>
-
                                     </select>
                                 </div>
                             </div>
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>School Medium</label>
@@ -249,13 +235,9 @@
                                         <option value="18">18-Urdu</option>
                                         <option value="10">10-Marathi</option>
                                         <option value="99">99-Other</option>
-
                                     </select>
                                 </div>
                             </div>
-
-
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Sankul Name</label>
@@ -274,7 +256,6 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Parliament</label>
@@ -309,7 +290,6 @@
                                         <option value="Mandsaur">Mandsaur</option>
                                         <option value="Ratlam">Ratlam</option>
                                         <option value="Ujjain">Ujjain</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -320,7 +300,6 @@
                                         <option value="All">All</option>
                                         <option value="Govindpura">Govindpura</option>
                                         <option value="Huzur">Huzur</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -331,11 +310,9 @@
                                         <option value="All">All</option>
                                         <option value="1-Urban">1-Urban</option>
                                         <option value="2-Rural">2-Rural</option>
-
                                     </select>
                                 </div>
                             </div>
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Nagar Nigam</label>
@@ -352,8 +329,6 @@
                                         <option value="Dewas">Dewas</option>
                                         <option value="Katni">Katni</option>
                                         <option value="Chhindwara">Chhindwara</option>
-
-
                                     </select>
                                 </div>
                             </div>
@@ -373,7 +348,6 @@
                                         <option value="Sehore">Sehore</option>
                                         <option value="Ashta">Ashta</option>
                                         <option value="Vidisha">Vidisha</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -389,7 +363,6 @@
                                         <option value="JAITHARI ">JAITHARI </option>
                                         <option value="KOTMA ">KOTMA </option>
                                         <option value="PUSHPRAJ GARH">PUSHPRAJ GARH</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -405,7 +378,6 @@
                                         <option value="BHANDER">BHANDER </option>
                                         <option value="DATIA ">DATIA </option>
                                         <option value="SEONDHA ">SEONDHA </option>
-
                                     </select>
                                 </div>
                             </div>
@@ -427,7 +399,6 @@
                                         <option value="BARKHEDA">BARKHEDA</option>
                                         <option value="BARAMAD">BARAMAD</option>
                                         <option value="BARODI">BARODI</option>
-
                                     </select>
                                 </div>
                             </div>
@@ -456,18 +427,17 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="col-md-4 mt-4">
+                                <div class="form-group">
+                                    <button type="button" class="Alert-Download btn btn-success btn-rounded">Download</button>
+                                    <a href="Rpt_PublicSchool.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
-                    <div class="row justify-content-center">
-                        <div class="col-md-2">
-                        <div class="form-group">
-                            <button type="button" class="Alert-Download btn btn-success btn-rounded">Download</button>
-    
-                            <a href="Rpt_PublicSchool.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                        </div>
-                        </div>
-                    </div>
-                   <%-- <fieldset>
+                    <%--<div class="row justify-content-center">
+                    </div>--%>
+                    <%-- <fieldset>
                         <legend>Description</legend>
                         <div class="row">
                             <div class="col-md-12">
@@ -498,7 +468,6 @@
                             </div>
                         </div>
                     </fieldset>--%>
-
                 </div>
             </div>
         </div>

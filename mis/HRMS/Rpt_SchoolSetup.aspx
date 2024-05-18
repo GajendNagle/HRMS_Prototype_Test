@@ -13,7 +13,7 @@
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">OIS Setup Reports</a></li>
                     <li class="breadcrumb-item active">School Setup Report</li>
                 </ol>
             </div>
@@ -25,12 +25,11 @@
                 <div class="col-md-2">
                     <label class="font-bold text-dark">OIS Type<span style="color: red">*</span></label>
                     <asp:DropDownList ID="ddlOISType" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlOISType_SelectedIndexChanged" AutoPostBack="true">
-                        <%--<asp:ListItem Value="0">--Select--</asp:ListItem>--%>
-                        <asp:ListItem Value="3">School</asp:ListItem>
+                        <asp:ListItem Value="0">--Select--</asp:ListItem>
                         <asp:ListItem Value="1">Office</asp:ListItem>
                         <asp:ListItem Value="2">Institute</asp:ListItem>
+                        <asp:ListItem Value="3" Selected="True">School</asp:ListItem>
                     </asp:DropDownList>
-
                 </div>
             </div>
         </div>
@@ -38,7 +37,7 @@
             <fieldset>
                 <legend>School Setup Report</legend>
                 <div class="row form-group">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">Division Name<span style="color: red">*</span></label>
                         <asp:DropDownList ID="ddlDivision" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlDivision_SelectedIndexChanged" AutoPostBack="true">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -46,20 +45,20 @@
                             <asp:ListItem>Gwalior</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">District Name<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" AutoPostBack="true" CssClass="form-control select2" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" ID="ddlDistrict">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">Block Name</label>
                         <asp:DropDownList ID="ddlBlock" runat="server" AutoPostBack="true"
                             CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-3">
                         <label class="font-bold">
                             Management Group
                         </label>
@@ -73,7 +72,7 @@
 
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-3">
                         <label class="font-bold">
                             Management Details
                         </label>
@@ -81,42 +80,58 @@
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">Category </label>
-                        <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true" ID="ddlCategory" CssClass="form-control ">
+                        <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true" ID="ddlCategory" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                             <asp:ListItem Value="1">Primary</asp:ListItem>
                             <asp:ListItem Value="2">Upper Primary</asp:ListItem>
                             <asp:ListItem Value="3">Secondary</asp:ListItem>
-                            <asp:ListItem vlaue="4">Upper-Secondary</asp:ListItem>
+                            <asp:ListItem Value="4">Upper-Secondary</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 mt-3">
+                    <div class="col-md-3 ">
                         <label class="font-bold">Category Details</label>
-                       <%-- <asp:DropDownList runat="server" ID="ddlCateDtls" CssClass="form-control ">
-                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                            <asp:ListItem Value="1">1st to 5th </asp:ListItem>
-                        </asp:DropDownList>--%>
-                        <asp:TextBox runat="server" ReadOnly="true"  CssClass="form-control" ID="txtCategoryDtls"/>
+                        <asp:DropDownList runat="server" Disabled="true" ID="ddlCateDtls" CssClass="form-control ">
+                            <%--<asp:ListItem Value="0">--Select--</asp:ListItem>--%>
+                            <%--<asp:ListItem Value="1">1st to 5th </asp:ListItem>--%>
+                        </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 mt-3">
-                        <label class="font-bold">Dice Code</label>
-                        <%--<asp:DropDownList runat="server" ID="ddlDiceCode" CssClass="form-control ">
-                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                        </asp:DropDownList>--%>
-                        <asp:TextBox runat="server" ReadOnly="true" CssClass="form-control" ID="txtDiceCode"/>
+                    <div class="col-md-3">
+                        <label class="font-weight-bold">School-Dise<span style="color: red">*</span></label>
+                        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
-                    <div class="col-md-2 mt-5">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-2 mt-4">
                         <div class="form-group">
-                            <asp:Button runat="server" CssClass="btn mt-2 btn-success btn-rounded" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
+                            <asp:Button runat="server" CssClass="btn btn-success btn-rounded" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
                         </div>
                     </div>
                 </div>
+
             </fieldset>
 
 
             <fieldset runat="server" id="div_details" visible="false">
                 <legend>Details</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-1 ">
+                        <div class="form-group">
+                            <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <asp:Button ID="Button3" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -126,6 +141,7 @@
                                     <th>District</th>
                                     <th>Block</th>
                                     <th>School</th>
+                                    <th>No.Of School</th>
                                     <th>Enrollment (Count)</th>
                                     <th colspan="2">No of Sanctioned Post</th>
                                     <th colspan="2">No of Working Post</th>
@@ -152,10 +168,11 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Bhopal</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Berasia</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Berasia</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Private Unaided (Recognized)</td>
-                                    <td>20</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">10</a></td>
+                                    <td>40</td>
                                     <td>7</td>
                                     <td>8</td>
                                     <td>5</td>
@@ -169,10 +186,11 @@
                                 <tr>
                                     <td>2</td>
                                     <td>Gwalior</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Guna</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Guna</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Kendriya Vidyalaya</td>
-                                    <td>15</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">12</a></td>
+                                    <td>55</td>
                                     <td>15</td>
                                     <td>5</td>
                                     <td>15</td>
@@ -191,6 +209,24 @@
 
             <fieldset runat="server" id="divUpperPrimary" visible="false">
                 <legend>Details</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-1 ">
+                        <div class="form-group">
+                            <asp:Button ID="Button1" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <asp:Button ID="Button4" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -200,6 +236,7 @@
                                     <th>District</th>
                                     <th>Block</th>
                                     <th>School</th>
+                                    <th>No.Of School</th>
                                     <th>Enrollment (Count)</th>
                                     <th colspan="7" class="text-center">No of Sanctioned Post</th>
                                     <th colspan="7" class="text-center">No of Working Post</th>
@@ -246,9 +283,10 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Bhopal</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Berasia</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Berasia</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Jawahar Navodaya Vidyalaya</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">10</a></td>
                                     <td>25</td>
                                     <td>10</td>
                                     <td>12</td>
@@ -283,9 +321,10 @@
                                 <tr>
                                     <td>2</td>
                                     <td>Raisen</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Sagar</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Sagar</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Minority Affairs Dept.</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">12</a></td>
                                     <td>32</td>
                                     <td>12</td>
                                     <td>8</td>
@@ -325,6 +364,24 @@
 
             <fieldset runat="server" id="divSecondary" visible="false">
                 <legend>Details</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-1 ">
+                        <div class="form-group">
+                            <asp:Button ID="Button5" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <asp:Button ID="Button6" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -334,6 +391,7 @@
                                     <th>District</th>
                                     <th>Block</th>
                                     <th>School</th>
+                                    <th>No.Of School</th>
                                     <th>Enrollment (Count)</th>
                                     <th colspan="7" class="text-center">No of Sanctioned Post</th>
                                     <th colspan="7" class="text-center">No of Working Post</th>
@@ -380,9 +438,10 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Bhopal</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Berasia</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Berasia</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Private Unaided (Recognized)</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">10</a></td>
                                     <td>25</td>
                                     <td>10</td>
                                     <td>12</td>
@@ -417,9 +476,10 @@
                                 <tr>
                                     <td>2</td>
                                     <td>Gwalior</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Guna</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Guna</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Jawahar Navodaya Vidyalaya</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">12</a></td>
                                     <td>65</td>
                                     <td>10</td>
                                     <td>12</td>
@@ -459,6 +519,24 @@
 
             <fieldset runat="server" id="divUprSec" visible="false">
                 <legend>Details</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-1 ">
+                        <div class="form-group">
+                            <asp:Button ID="Button7" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <asp:Button ID="Button8" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -468,6 +546,7 @@
                                     <th>District</th>
                                     <th>Block</th>
                                     <th>School</th>
+                                    <th>No.Of School</th>
                                     <th>Enrollment (Count)</th>
                                     <th colspan="7" class="text-center">No of Sanctioned Post</th>
                                     <th colspan="7" class="text-center">No of Working Post</th>
@@ -514,9 +593,10 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Bhopal</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Berasia</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Berasia</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Kendriya Vidyalaya</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">10</a></td>
                                     <td>25</td>
                                     <td>10</td>
                                     <td>12</td>
@@ -551,9 +631,10 @@
                                 <tr>
                                     <td>2</td>
                                     <td>Gwalior</td>
-                                    <td><a href="../Transaction/Rpt_SchoolDetail.aspx">Guna</a></td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">Guna</a></td>
                                     <%--<td>Central Government</td>--%>
                                     <td>Minority Affairs Dept.</td>
+                                    <td><a class="text-info" href="SchoolRecord.aspx">12</a></td>
                                     <td>15</td>
                                     <td>15</td>
                                     <td>5</td>
@@ -570,17 +651,8 @@
                     </div>
                 </div>
             </fieldset>
-
-
         </div>
     </div>
-
-
-
-
-
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

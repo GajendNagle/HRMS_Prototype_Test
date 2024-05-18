@@ -5,9 +5,6 @@
         a {
             color: blue;
         }
-        /*        tr{
-         background-color:green;
-     }*/
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -23,61 +20,37 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">OIS Setup Reports</a></li>
                         <li class="breadcrumb-item"><a href="DistWiseSummaryOfPublishedSchools.aspx" title="click to go on">District Wise Summary of Publishing Schools</a></li>
-                        <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>--%>
                         <li class="breadcrumb-item active">Block-wise Publish Schools</li>
                     </ol>
                 </div>
             </div>
         </div>
-
         <div class="card mt-3 shadow">
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-
                 <fieldset>
-
                     <legend>Block-wise Publish Schools</legend>
-
-                    <div class="row">
-
-                        <div class="col-md-4">
+                    <div class="row form-group">
+                        <div class="col-md-3">
                             <label class="font-bold">District Name<span style="color: red">*</span></label>
-                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator5"
-                                ErrorMessage="Select District Name" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select District Name !'></i>"
-                                ControlToValidate="ddlDistrictName" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>--%>
-
                             <asp:DropDownList runat="server" ID="ddlDistrictName" OnSelectedIndexChanged="ddlDistrictName_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control select2 mt-2">
-
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
                                 <asp:ListItem>Raisen</asp:ListItem>
                             </asp:DropDownList>
-
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label class="font-bold">Block Name<span style="color: red">*</span></label>
-
-                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1"
-                                ErrorMessage="Select Block Name" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Block Name !'></i>"
-                                ControlToValidate="ddlBlockN" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>--%>
                             <asp:DropDownList runat="server" ID="ddlBlockN" CssClass="form-control select2 mt-2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                             </asp:DropDownList>
-
                         </div>
-
-                        <div class="col-md-4">
-                            <label class="font-bold">Management Group<span style="color: red">*</span></label>
-                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2"
-                                ErrorMessage="Select Management Group" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>"
-                                ControlToValidate="ddlMgtGroup" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>--%>
-
+                        <div class="col-md-3">
+                            <label class="font-bold">Management Group</label>
                             <asp:DropDownList runat="server" ID="ddlMgtGroup" CssClass="form-control select2 mt-2" OnSelectedIndexChanged="ddlMgtGroup_SelectedIndexChanged" AutoPostBack="true">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem>Central Government</asp:ListItem>
@@ -85,32 +58,15 @@
                                 <asp:ListItem>Government Aided</asp:ListItem>
                                 <asp:ListItem>State Government</asp:ListItem>
                             </asp:DropDownList>
-
                         </div>
-                    </div>
-                    <div class="row mt-3">
-
-                        <div class="col-md-4">
-                            <label class="font-bold">Management Group Details<span style="color: red">*</span></label>
-                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator3"
-                                ErrorMessage="Select MGt Group Details" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select MGt Group Details !'></i>"
-                                ControlToValidate="ddlMgtGroupD" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>--%>
+                        <div class="col-md-3">
+                            <label class="font-bold">Management Group Details</label>
                             <asp:DropDownList runat="server" ID="ddlMgtGroupD" CssClass="form-control select2 mt-2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
-
                             </asp:DropDownList>
-
                         </div>
-
-                        <div class="col-md-4">
-                            <label class="font-bold">Category<span style="color: red">*</span></label>
-
-                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator4"
-                                ErrorMessage="Select Category" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Category !'></i>"
-                                ControlToValidate="ddlCategory" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>--%>
-
+                        <div class="col-md-3">
+                            <label class="font-bold">Category</label>
                             <asp:DropDownList runat="server" ID="ddlCategory" CssClass="form-control select2 mt-2" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem>Primary School</asp:ListItem>
@@ -119,43 +75,24 @@
                                 <asp:ListItem>Higher Secondary School</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-
-                        <div class="col-md-4">
-                            <label class="font-bold">Category Detail<span style="color: red">*</span></label>
-
-                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator6"
-                                ErrorMessage="Select District Name" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Category Detail !'></i>"
-                                ControlToValidate="ddlCategoryDetail" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>--%>
-
+                        <div class="col-md-3">
+                            <label class="font-bold">Category Detail</label>
                             <asp:DropDownList runat="server" ID="ddlCategoryDetail" CssClass="form-control select2 mt-2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
-
                             </asp:DropDownList>
-
                         </div>
-
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-4"></div>
-                        <div class="col-md-4">
-                            <div class="form-group text-center">
-                                <asp:Button runat="server" Text="Block-wise Summary of Publishing Schools" CssClass="btn btn-success shadow" OnClick="Unnamed_Click" />
-
+                        <div class="col-md-3">
+                            <div class="form-group mt-4">
+                                <asp:Button runat="server" Text="Block-wise Summary of Publishing Schools" CssClass="btn btn-success btn-rounded" OnClick="Unnamed_Click" />
                             </div>
                         </div>
                     </div>
-
                 </fieldset>
-
                 <fieldset id="tblDetails" visible="false" runat="server">
-
                     <legend>Details</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
                             <div class="form-group">
-
                                 <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
                             </div>
                         </div>
@@ -169,25 +106,20 @@
                                 <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                             </div>
                         </div>
-
                     </div>
                     <div class="table-responsive">
-
                         <table class="table text-center table-bordered">
                             <thead>
                                 <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th colspan="2">New Schools to be Opened</th>
+                                    <th colspan="4">New Schools to be Opened</th>
                                     <th colspan="2">Schools to be Merged</th>
                                     <th colspan="2">Schools to be Closed</th>
                                     <th colspan="2">Schools to be Updated/Upgraded</th>
                                 </tr>
-
                             </thead>
                             <tr>
-                                <th>S.No.   </th>
-                                <th>Block   </th>
+                                <th>Sr.No.</th>
+                                <th>Block</th>
                                 <th>Proposed</th>
                                 <th>Approved</th>
                                 <th>Proposed</th>
@@ -196,9 +128,7 @@
                                 <th>Approved</th>
                                 <th>Proposed</th>
                                 <th>Approved</th>
-
                             </tr>
-
                             <tr>
                                 <td>1</td>
                                 <td><a href="SankulWiseSummaryOfProgressOfReviewAndVerificationofSchoolDirectory.aspx">Berasia</a></td>
@@ -211,9 +141,7 @@
                                 <td>30</td>
                                 <td>17</td>
                             </tr>
-
                             <tr>
-
                                 <td>2</td>
                                 <td><a href="SankulWiseSummaryOfProgressOfReviewAndVerificationofSchoolDirectory.aspx">Phanda Gramin</a></td>
                                 <td>20</td>
@@ -226,7 +154,6 @@
                                 <td>10</td>
                             </tr>
                             <tr class="card-header">
-                                <%--<th></th>--%>
                                 <th colspan="2">TOTAL</th>
                                 <th>30</th>
                                 <th>22</th>
@@ -237,21 +164,12 @@
                                 <th>46</th>
                                 <th>27</th>
                             </tr>
-
-
                         </table>
                     </div>
-
-
                 </fieldset>
             </div>
         </div>
     </div>
-
-
-
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

@@ -31,13 +31,26 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <header class="bg-Secondary">
-        <h2 class="fw-normal"><a href="#">Surplus Teachers Management System</a></h2>
-    </header>
+    <div class="row page-titles mb-4">
+        <div class="col-md-5 align-self-center">
+            <h4 class="text-themecolor ">Surplus Teachers Management System</h4>
+        </div>
+        <div class="col-md-7 align-self-center text-end">
+            <div class="d-flex justify-content-end align-items-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">OIS Setup Reports</a></li>
+                    <li class="breadcrumb-item active">Surplus Teachers Management System</li>
+                </ol>
+            </div>
+        </div>
+    </div>
     <div class="mb-3">
         <div class="row nav">
             <div class="col-md-12 justify-content-around">
-                 <a class="head" href="../Default.aspx">Home</a>
+                <%--<a class="head" href="../Default.aspx">Home</a>--%>
                 <a class="head" href="ZeroTeacher.aspx">Zero Teachers </a>
                 <a class="head" href="SingleTeacherManagementSystem.aspx">Single Teachers</a>
                 <a class="head" href="SurplusTeacherManagementSystem.aspx">Surplus Status</a>
@@ -196,6 +209,12 @@
                 </tr>
             </tbody>
             <tfoot>
+                <tr style="background-color: #005b5c; color: white">
+                    <th colspan="2">Total Count</th>
+                    <th>83</th>
+                    <th>54</th>
+                    <th>22</th>
+                </tr>
             </tfoot>
         </table>
     </div>
@@ -207,7 +226,7 @@
 
 
     <div>
-        <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="tblS2" style="width: 100%; display:none; border-collapse: collapse;">
+        <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="tblS2" style="width: 100%; display: none; border-collapse: collapse;">
             <thead>
                 <tr>
                     <th scope="col">DISECode</th>

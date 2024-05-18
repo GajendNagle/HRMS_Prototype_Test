@@ -14,8 +14,9 @@
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <%-- <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>--%>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
                         <li class="breadcrumb-item active">School Without Sankul</li>
                     </ol>
                 </div>
@@ -161,144 +162,144 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <table class="table table-bordered table-responsive-lg text-center" style="border: 2px;" id="districtD">
+                            <div class=" table-responsive">
+                                <table class="table table-bordered text-center" id="districtD">
+                                    <thead>
+                                        <tr>
+                                            <th>S.NO.</th>
+                                            <th>District Name</th>
+                                            <th>School No.</th>
 
-                                <thead>
+                                        </tr>
+                                    </thead>
+
                                     <tr>
-                                        <th>S.NO.</th>
-                                        <th>District Name</th>
-                                        <th>School No.</th>
+                                        <td>1</td>
+                                        <td>Bhopal</td>
+                                        <td><a onclick="showtbl('BlockDetail')" style="color: blue">2</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Raisen</td>
+                                        <td><a onclick="showtbl('Raisenblock')" style="color: blue">2</a></td>
 
                                     </tr>
-                                </thead>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>Bhopal</td>
-                                    <td><a onclick="showtbl('BlockDetail')" style="color: blue">2</a></td>
-                                </tr>
+                                </table>
 
-                                <tr>
-                                    <td>2</td>
-                                    <td>Raisen</td>
-                                    <td><a onclick="showtbl('Raisenblock')" style="color: blue">2</a></td>
-
-                                </tr>
-
-                            </table>
-
-                            <table class="table table-bordered table-responsive-lg text-center" style="border: 2px; display: none" id="BlockDetail">
-
-                                <tbody>
-                                <thead>
+                                <table class="table table-borderedtext-center" style="border: 2px; display: none" id="BlockDetail">
+                                    <tbody>
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>Block Name</th>
+                                            <th>School No.</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <th>S.No</th>
-                                        <th>Block Name</th>
-                                        <th>School No.</th>
+                                        <td>1</td>
+                                        <td>Berasia</td>
+                                        <td><a onclick="showtbl('SclDetail')" style="color: blue">1</a></td>
                                     </tr>
-                                </thead>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Berasia</td>
-                                    <td><a onclick="showtbl('SclDetail')" style="color: blue">1</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Phanda Gramin</td>
-                                    <td>1</td>
-                                </tr>
-                            </table>
-
-                            <table class="table table-bordered table-responsive-lg text-center" style="border: 2px; display: none" id="Raisenblock">
-
-                                <thead>
                                     <tr>
-                                        <th>S.No</th>
-                                        <th>Block Name</th>
-                                        <th>School No.</th>
+                                        <td>2</td>
+                                        <td>Phanda Gramin</td>
+                                        <td>1</td>
                                     </tr>
-                                </thead>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Begamganj</td>
-                                    <td><a onclick="showtbl('RaisenSclD')" style="color: blue">1</a></td>
-                                </tr>
+                                </table>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>Gairatganj</td>
-                                    <td><a onclick="showtbl('GairatganjD')" style="color: blue">1</a></td>
-                                </tr>
+                                <table class="table table-bordered text-center" style="border: 2px; display: none" id="Raisenblock">
 
-                            </table>
-
-                            <table class="table table-bordered table-responsive-lg text-center" style="display: none;" id="SclDetail">
-                                <thead>
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>Block Name</th>
+                                            <th>School No.</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <th>S.NO.</th>
-                                        <th>School Dise/School Name</th>
-                                        <th>Management Group</th>
-                                        <th>Management Detail</th>
-                                        <th>Category</th>
-                                        <th>Category Detail</th>
+                                        <td>1</td>
+                                        <td>Begamganj</td>
+                                        <td><a onclick="showtbl('RaisenSclD')" style="color: blue">1</a></td>
                                     </tr>
-                                </thead>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>23320110008-GOVT HSS GUNGA</td>
-                                    <td>State Government</td>
-                                    <td>Department of Education</td>
-                                    <td>Higher Secondary School</td>
-                                    <td>Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
-                                </tr>
-                            </table>
-
-                            <table class="table table-bordered table-responsive-lg text-center" style="display: none;" id="RaisenSclD">
-                                <thead>
                                     <tr>
-                                        <th>S.NO.</th>
-                                        <th>School Dise Code/School Name</th>
-                                        <th>Management Group</th>
-                                        <th>Management Detail</th>
-                                        <th>Category</th>
-                                        <th>Category Detail</th>
+                                        <td>1</td>
+                                        <td>Gairatganj</td>
+                                        <td><a onclick="showtbl('GairatganjD')" style="color: blue">1</a></td>
                                     </tr>
-                                </thead>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>23340202202-GMS BERKHEDI BARAMAD GADHI</td>
-                                    <td>State Government</td>
-                                    <td>Department of Education</td>
-                                    <td>Upper primary School</td>
-                                    <td>Upper Primary with grades 1 to 8 (PRY-UPR) </td>
-                                </tr>
+                                </table>
 
-                            </table>
+                                <table class="table table-bordered text-center" style="display: none;" id="SclDetail">
+                                    <thead>
+                                        <tr>
+                                            <th>S.NO.</th>
+                                            <th>School Dise/School Name</th>
+                                            <th>Management Group</th>
+                                            <th>Management Detail</th>
+                                            <th>Category</th>
+                                            <th>Category Detail</th>
+                                        </tr>
+                                    </thead>
 
-                            <table class="table table-bordered table-responsive-lg text-center" style="display: none;" id="GairatganjD">
-                                <thead>
                                     <tr>
-                                        <th>S.NO.</th>
-                                        <th>School Dise Code/School Name</th>
-                                        <th>Management Group</th>
-                                        <th>Management Detail</th>
-                                        <th>Category</th>
-                                        <th>Category Detail</th>
+                                        <td>1</td>
+                                        <td>23320110008-GOVT HSS GUNGA</td>
+                                        <td>State Government</td>
+                                        <td>Department of Education</td>
+                                        <td>Higher Secondary School</td>
+                                        <td>Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
                                     </tr>
-                                </thead>
+                                </table>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>23340300401-UEGS KUSNAGAR AMGAWAN</td>
-                                    <td>State Government</td>
-                                    <td>Department of Education</td>
-                                    <td>Primary School</td>
-                                    <td>Primary only with grades 1 to 5 (PRY)</td>
-                                </tr>
+                                <table class="table table-bordered text-center" style="display: none;" id="RaisenSclD">
+                                    <thead>
+                                        <tr>
+                                            <th>S.NO.</th>
+                                            <th>School Dise Code/School Name</th>
+                                            <th>Management Group</th>
+                                            <th>Management Detail</th>
+                                            <th>Category</th>
+                                            <th>Category Detail</th>
+                                        </tr>
+                                    </thead>
 
-                            </table>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>23340202202-GMS BERKHEDI BARAMAD GADHI</td>
+                                        <td>State Government</td>
+                                        <td>Department of Education</td>
+                                        <td>Upper primary School</td>
+                                        <td>Upper Primary with grades 1 to 8 (PRY-UPR) </td>
+                                    </tr>
+
+                                </table>
+
+                                <table class="table table-bordered text-center" style="display: none;" id="GairatganjD">
+                                    <thead>
+                                        <tr>
+                                            <th>S.NO.</th>
+                                            <th>School Dise Code/School Name</th>
+                                            <th>Management Group</th>
+                                            <th>Management Detail</th>
+                                            <th>Category</th>
+                                            <th>Category Detail</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>23340300401-UEGS KUSNAGAR AMGAWAN</td>
+                                        <td>State Government</td>
+                                        <td>Department of Education</td>
+                                        <td>Primary School</td>
+                                        <td>Primary only with grades 1 to 5 (PRY)</td>
+                                    </tr>
+
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
