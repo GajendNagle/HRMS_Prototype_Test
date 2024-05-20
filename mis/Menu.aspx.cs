@@ -51,6 +51,7 @@ public partial class mis_Menu : System.Web.UI.Page
         dv_Office_Mgmt_System.Visible = false;
         dv_Bank_Master.Visible = false;
         //DEnquiry.Visible = false;  commented by sagar 16/05/2024
+        dv_APRMS.Visible = false; // Added by Sagar 16/05/2024
         Div1.Visible = false;
         div_TransferCertificate.Visible = false;
         DIV_ProgressReport.Visible = false;
@@ -206,6 +207,10 @@ public partial class mis_Menu : System.Web.UI.Page
                 else if (ViewState["MenuID"].ToString() == "LeaveProcessReports")
                 {
                     dv_HRMS_LeaveProcessReports.Visible = true;
+                }
+                else if (ViewState["MenuID"].ToString() == "APRMS")
+                {
+                    dv_APRMS.Visible = true;
                 }
                 else
                 {

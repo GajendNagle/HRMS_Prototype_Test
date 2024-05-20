@@ -43913,7 +43913,7 @@ html body .waves-notransition {
     }
 
     .fixed-layout .topbar {
-        position: fixed;
+        /*position: fixed;*/
         width: 100%
     }
 

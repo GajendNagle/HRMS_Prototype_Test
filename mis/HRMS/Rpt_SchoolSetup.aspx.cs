@@ -114,7 +114,8 @@ public partial class mis_HRMS_Rpt_SchoolSetup : System.Web.UI.Page
         if (ddlCategory.SelectedValue == "1")
         {
             //txtCategoryDtls.Text = "";
-            txtCategoryDtls.Text = "1st to 5th";
+            ddlCateDtls.Items.FindByText("1st to 5th").Selected = true;
+            //txtcategorydtls.text = "1st to 5th";
             txtDiceCode.Text = "23510100704";
             //ddlCateDtls.SelectedItem.Text = "1st to 5th";
             //ddlDiceCode.ClearSelection();
@@ -122,7 +123,7 @@ public partial class mis_HRMS_Rpt_SchoolSetup : System.Web.UI.Page
         }
         else if (ddlCategory.SelectedValue == "2")
         {
-            txtCategoryDtls.Text = "6th to 8th";
+            ddlCateDtls.Items.FindByText("6th to 8th").Selected = true;
             txtDiceCode.Text = "23510815002";
             //ddlCateDtls.SelectedItem.Text = "6th to 8th";
             //ddlDiceCode.ClearSelection();
@@ -130,7 +131,7 @@ public partial class mis_HRMS_Rpt_SchoolSetup : System.Web.UI.Page
         }
         else if (ddlCategory.SelectedValue == "3")
         {
-            txtCategoryDtls.Text = "9th to 10th";
+            ddlCateDtls.Items.FindByText("9th to 10th").Selected = true;
             txtDiceCode.Text = "23510100403";
 
             //ddlCateDtls.SelectedItem.Text = "9th to 10th";
@@ -139,7 +140,7 @@ public partial class mis_HRMS_Rpt_SchoolSetup : System.Web.UI.Page
         }
         else if (ddlCategory.SelectedValue == "4")
         {
-            txtCategoryDtls.Text = "6th to 10th";
+            ddlCateDtls.Items.FindByText("11th to 12th").Selected = true;
             txtDiceCode.Text = "23510102008";
 
             //ddlCateDtls.SelectedItem.Text = "6th to 10th";

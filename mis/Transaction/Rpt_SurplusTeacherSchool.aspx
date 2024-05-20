@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_SurplusTeacherSchool.aspx.cs" Inherits="mis_Registration_Rpt_SurplusTeacherSchool" %>
 
-<%--Sagar Sarkar--%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>

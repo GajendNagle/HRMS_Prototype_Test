@@ -1543,13 +1543,13 @@
                             <h6>Increment Cancel Orders</h6>
                         </a>
                     </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                 <%--   <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/AddIncrement.aspx">
                             <img src="dist/images/icon/HRMS_Increment_CancelOrder.png" class="dash-img" />
 
                             <h6>Add Increment</h6>
                         </a>
-                    </div>
+                    </div>--%>
 
 
                 </div>
@@ -2022,6 +2022,58 @@
 
     </div>--%>  <%--commented by sagar 16/05/2024--%>
     <%--End by Zaheer on 29-12-23 --%>
+
+    <%--Added by Sagar on 16/05/2024--%>
+    <div id="dv_APRMS" runat="server">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="row page-titles mb-4">
+            <div class="col-md-5 align-self-center">
+                <h4 class="text-themecolor ">Annual Property Returns Management System</h4>
+            </div>
+            <div class="col-md-7 align-self-center text-end">
+                <div class="d-flex justify-content-end align-items-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Default.aspx" title="click to go on">Home</a></li>
+                        <li class="breadcrumb-item"><a href="Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                        <li class="breadcrumb-item active">APRMS</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+
+        <div class="card mt-3 shadow">
+            <div class="card-header card-border-info">
+            </div>
+            <div class="card-body">
+                <div class="row text-center justify-content-center mb-5">
+                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/EmpAprNotes.aspx">
+                            <img src="dist/images/icon/HRMS_Increment_Process.png" class="dash-img" />
+                            <h6>Employee APRMS</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/HOAprNotes.aspx">
+                            <img src="dist/images/icon/HRMS_Increment_Process.png" class="dash-img" />
+                            <h6>Head Office APRMS</h6>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <%--End by Sagar on 16/05/2024--%>
 
     <div id="dv_HRMS_TourApply" runat="server">
         <!-- ============================================================== -->

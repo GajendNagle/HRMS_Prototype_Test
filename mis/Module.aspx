@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/HomeMaster.master" AutoEventWireup="true" CodeFile="Module.aspx.cs" Inherits="mis_Dashboard" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -367,7 +368,7 @@
                             <h6>e-Service Book</h6>
                         </a>
                     </div>
-                   <%-- <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    <%-- <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry">
                             <img src="dist/images/icon/HRMS_EServiceBook.png" class="dash-img" />
                             <h6>Department Enquiry</h6>
@@ -411,6 +412,13 @@
                             <img src="dist/images/icon/Report.png" class="dash-img" />
 
                             <h6>Grievance Management System</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="Menu.aspx?ID=HRMS&SubID=APRMS">
+                            <img src="dist/images/icon/Report.png" class="dash-img" />
+
+                            <h6>APRMS</h6>
                         </a>
                     </div>
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
@@ -486,6 +494,13 @@
                             <img src="dist/images/icon/Payroll_PaymentFile.png" class="dash-img" />
 
                             <h6>Payment File</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/AddIncrement.aspx">
+                            <img src="dist/images/icon/HRMS_Increment_CancelOrder.png" class="dash-img" />
+
+                            <h6>Add Increment</h6>
                         </a>
                     </div>
 
