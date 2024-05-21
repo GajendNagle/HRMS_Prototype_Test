@@ -18,6 +18,9 @@
         #note {
             color: red;
         }
+       /* #EmployeeDetails1{
+            ;
+        }*/
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -42,8 +45,34 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
+                <div>
+                    <fieldset>
+                        <legend>Promotion Order Reports</legend>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>From Date / दिनांक से <span style="color: red">*</span></label>
+                                    <input name="ename" type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>To Date / दिनांक तक <span style="color: red">*</span></label>
+                                    <input name="ename" type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="form-group">
+                                    <%--<button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>--%>
+                                    <asp:button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
+                                    <a href="Promotion.aspx" class=" btn btn-danger btn-rounded">Clear</a>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
 
-                <div id="EmployeeDetails1">
+                <div id="EmployeeDetails1" runat="server" visible="false">
                     <fieldset>
                         <legend>Employee Details</legend>
                         <div class="row justify-content-end">
@@ -133,8 +162,8 @@
                                         </tr>
                                         <tr>
                                             <th>4</th>
-                                            <td>
-                                                <input id="checkbox1" onclick="showhidesavebtn()" type="checkbox" /></td>
+                                            <%-- <td>
+                                                <input id="checkbox1" onclick="showhidesavebtn()" type="checkbox" /></td>--%>
                                             <td>BW4800-Chanchal Kumar</td>
                                             <td>HSS MADHUSUDANGARH RAGHOGARH (1362003016)</td>
                                             <td>RPVV School (2307091906)</td>
@@ -146,11 +175,11 @@
                                             <td>ok</td>
                                             <td>Hold</td>
                                         </tr>
-                                       
+
                                     </table>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <%--    <div class="col-md-12">
                                 <div>
                                     <p id="note"><b>Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन का अनुमोदन करें |</b></p>
                                 </div>
@@ -167,13 +196,13 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Order Date / आदेश तारीख<span style="color: red">*</span></label>
+                                            <label>Order Date / आदेश दिनांक<span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Effective Date / प्रभावी तारीख<span style="color: red">*</span></label>
+                                            <label>Effective Date / प्रभावी दिनांक<span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                         </div>
                                     </div>
@@ -189,7 +218,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>--%>
                         </div>
                     </fieldset>
                 </div>

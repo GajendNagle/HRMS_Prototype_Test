@@ -11,4 +11,9 @@ public partial class mis_Transaction_Promotion : System.Web.UI.Page
     {
 
     }
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        EmployeeDetails1.Visible= true;    
+    }
 }

@@ -22,6 +22,7 @@
         #note {
             color: red;
         }
+
         #note2 {
             color: red;
         }
@@ -95,7 +96,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Reports" title="click to go on">Report</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Promotion" title="click to go on">Promotion</a></li>
+
                     <li class="breadcrumb-item active">Promotion Order</li>
                 </ol>
             </div>
@@ -129,7 +131,7 @@
 
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <button type="button" class=" Alert-Save btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>
+                            <button type="button" class="  btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>
                             <a href="PromotionOrders.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
@@ -167,25 +169,26 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-bordered text-center">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <%--<th rowspan="2">Office Type</th>--%>
-                                        <th>Employee Name</th>
-                                        <th>File No.</th>
-                                        <th>Current Grade Level</th>
-                                        <th>New Grade Level</th>
-                                        <th>Current School UdiceCode-Name</th>
-                                        <th>New School UdiceCode-Name</th>
-                                        <th>Current PayScale</th>
-                                        <th>New PayScale</th>
-                                        <th>Action</th>
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.</th>
+                                            <%--<th rowspan="2">Office Type</th>--%>
+                                            <th>Employee Id-Name</th>
+                                            <th>File No.</th>
+                                            <th>Current Grade Level</th>
+                                            <th>New Grade Level</th>
+                                            <th>Current School UdiceCode-Name</th>
+                                            <th>New School UdiceCode-Name</th>
+                                            <th>Current PayScale</th>
+                                            <th>New PayScale</th>
+                                            <th>Action</th>
 
-                                    </tr>
-
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <th>1</th>
                                         <%--<td>Head Office</td>--%>
-                                        <td>Ashok Kumar</td>
+                                        <td>AK4868-Ashok Kumar</td>
                                         <td>254845</td>
                                         <td>Level-7</td>
                                         <td>Level-8</td>
@@ -201,7 +204,7 @@
                                     <tr>
                                         <th>2</th>
                                         <%--<td>Head Office</td>--%>
-                                        <td>Shiv Sharan</td>
+                                        <td>BZ4776-Shiv Sharan</td>
                                         <td>254845</td>
                                         <td>Level-7</td>
                                         <td>Level-8</td>
@@ -234,13 +237,19 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Order Date / आदेश तारीख<span style="color: red">*</span></label>
+                                        <label>Order Date / आदेश दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Effective Date / प्रभावी तारीख<span style="color: red">*</span></label>
+                                        <label>Effective Date / प्रभावी दिनांक<span style="color: red">*</span></label>
+                                        <input name="ename" type="date" class="form-control" autocomplete="off" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Relieving Date / कार्यमुक्ति दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
@@ -250,7 +259,7 @@
                                         <input name="ename" type="file" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                     </div>
                                 </div>
-                                <div class="col-md-2 mt-2">
+                                <div class="col-md-2 mt-4">
                                     <div class="form-group">
                                         <button type="button" class="Alert-Save btn btn-success btn-rounded w-100 btn-block">Save</button>
                                     </div>
@@ -296,24 +305,25 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-bordered text-center">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <%--<th rowspan="2">Office Type</th>--%>
-                                        <th>Employee Name</th>
-                                        <th>File No.</th>
-                                        <th>Current Grade Level</th>
-                                        <th>New Grade Level</th>
-                                        <th>Current School UdiceCode-Name</th>
-                                        <th>Current PayScale</th>
-                                        <th>New PayScale</th>
-                                        <th>Action</th>
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.</th>
+                                            <%--<th rowspan="2">Office Type</th>--%>
+                                            <th>Employee Id-Name</th>
+                                            <th>File No.</th>
+                                            <th>Current Grade Level</th>
+                                            <th>New Grade Level</th>
+                                            <th>Current School UdiceCode-Name</th>
+                                            <th>Current PayScale</th>
+                                            <th>New PayScale</th>
+                                            <th>Action</th>
 
-                                    </tr>
-
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <th>1</th>
                                         <%--<td>Head Office</td>--%>
-                                        <td>Aman Deep Singh</td>
+                                        <td>AK4891-Aman Deep Singh</td>
                                         <td>254594</td>
                                         <td>Level-7</td>
                                         <td>Level-8</td>
@@ -327,7 +337,7 @@
                                     <tr>
                                         <th>2</th>
                                         <%--<td>Head Office</td>--%>
-                                        <td>Abhishek Rajput</td>
+                                        <td>BW4800-Abhishek Rajput</td>
                                         <td>246845</td>
                                         <td>Level-7</td>
                                         <td>Level-8</td>
@@ -361,23 +371,30 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Order Date / आदेश तारीख<span style="color: red">*</span></label>
+                                        <label>Order Date / आदेश दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Effective Date / प्रभावी तारीख<span style="color: red">*</span></label>
+                                        <label>Effective Date / प्रभावी दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Relieving Date / कार्यमुक्ति दिनांक<span style="color: red">*</span></label>
+                                        <input name="ename" type="date" class="form-control" autocomplete="off" />
+                                    </div>
+                                </div>
+
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Document / दस्तावेज़<span style="color: red">*</span></label>
                                         <input name="ename" type="file" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                     </div>
                                 </div>
-                                <div class="col-md-2 mt-2">
+                                <div class="col-md-2 mt-4">
                                     <div class="form-group">
                                         <button type="button" class="Alert-Save btn btn-success btn-rounded w-100 btn-block">Save</button>
                                     </div>
@@ -941,6 +958,63 @@
             }
         }
     </script>
+
+
+    <script>
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to save this record ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                        // animation: false,
+                        // customClass: {
+                        //     popup: 'animated tada'
+                        // }
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Record Saved Successfully!',
+                                timer: 2000
+                                // animation: false,
+                                // customClass: {
+                                //     popup: 'animated tada'
+                                // }
+                            }
+                            )
+                            var x = document.getElementById("EmployeeDetails2");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "block";
+                            }
+                        }
+                    })
+                });
+            },
+                //init
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
+    </script>
+
 
 
 

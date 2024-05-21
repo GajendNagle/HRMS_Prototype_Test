@@ -26,7 +26,7 @@
             <fieldset>
                 <legend>District Wise List Of Published Schools</legend>
                 <div class="row form-group">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">District Name<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" AutoPostBack="true" CssClass="form-control select2" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" ID="ddlDistrict">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -36,14 +36,14 @@
                             <asp:ListItem>Guna</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">Block Name<span style="color: red">*</span></label>
                         <asp:DropDownList ID="ddlBlock" runat="server"
                             CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-3">
                         <label class="font-bold">
                             Management Group
                         </label>
@@ -57,7 +57,7 @@
 
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-3">
                         <label class="font-bold">
                             Management Details
                         </label>
@@ -65,7 +65,7 @@
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">Category </label>
                         <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true" ID="ddlCategory" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -75,29 +75,42 @@
                             <asp:ListItem Value="4">Upper-Secondary</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="font-bold">Category Details</label>
-                        <%--<asp:DropDownList runat="server" ID="ddlCateDtls" CssClass="form-control select2">
-                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                            <%--<asp:ListItem Value="1">1st to 5th </asp:ListItem>--%>
-                        <%--</asp:DropDownList>--%>
                         <asp:TextBox runat="server" CssClass="form-control" ID="txtCateDtls"></asp:TextBox>
                     </div>
-                    <div class="col-md-2 mt-3">
+                    <div class="col-md-3">
                         <label class="font-weight-bold">School-DiseCode</label>
                         <asp:TextBox runat="server" CssClass="form-control" ID="txtSclDise"></asp:TextBox>
 
                     </div>
-                </div>
-                <div class="row form-group justify-content-center">
-                    <div class="col-md-2 ">
-                        <asp:Button runat="server" CssClass="btn btn-success btn-rounded" OnClick="btnSave_Click" Text="District Wise List Of Published School" ID="btnSave" />
+                    <div class="col-md-2 mt-4">
+                        <asp:Button runat="server" CssClass="btn btn-success btn-rounded" OnClick="btnSave_Click" Text="View" ID="btnSave" />
                     </div>
                 </div>
             </fieldset>
 
             <fieldset class="mt-4" runat="server" id="div_Details" visible="false">
                 <legend>Published Schools Details</legend>
+                <div class="row justify-content-end">
+
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <asp:Button ID="Button3" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">

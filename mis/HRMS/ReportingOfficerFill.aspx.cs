@@ -16,7 +16,7 @@ public partial class mis_Transaction_ReportingOfficerFill : System.Web.UI.Page
     {
 
         show2.Visible = false;
-        Fieldset1.Visible = true;
+        Fieldset1.Visible= true;
     }
 
     protected void Unnamed_Click1(object sender, EventArgs e)

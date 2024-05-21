@@ -45,9 +45,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles">
+        <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <p style="margin-bottom:0px;     font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                     <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                     </u>
                 </p>
@@ -64,7 +64,7 @@
         </div>
 
     </div>
-    <div class="card shadow">
+    <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">

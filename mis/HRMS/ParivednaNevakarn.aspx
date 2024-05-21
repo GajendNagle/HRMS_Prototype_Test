@@ -31,7 +31,7 @@
 
             <div class="col-md-3 align-self-center">
                 <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Grievance%20Logo.png" style="height: 70px" /><u><br />
+                    <img src="../../img/Grievance%20Logo.png" style="height: 70px"><u><br />
                     </u>
                 </p>
             </div>

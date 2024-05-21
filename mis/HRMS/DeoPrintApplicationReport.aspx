@@ -175,7 +175,7 @@
 
                                 <table class="table table-bordered text-center ">
                                     <thead>
-                                        <tr >
+                                        <tr style="margin-right:120%;" >
                                             <th>स. क्र.</th>
                                             <th>आवेदक का नाम</th>
                                             <th>लिंग</th>

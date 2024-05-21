@@ -156,7 +156,7 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding From DEO</td>
+                                        <td>Pending From DEO</td>
                                     </tr>
                                     <%-- my code Increase grid --%>
 
@@ -177,7 +177,7 @@
                                         <td>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                         </td>
-                                        <td>Panding From JD</td>
+                                        <td>Pending From JD</td>
                                     </tr>
                                     <%-- my code Increase grid --%>
                                 </table>

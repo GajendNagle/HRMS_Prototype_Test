@@ -12,10 +12,10 @@ public partial class mis_Transaction_TeacherFillReport : System.Web.UI.Page
 
     }
 
-
+   
     protected void Unnamed_Click(object sender, EventArgs e)
     {
-
+        
         Fieldset1.Visible = false;
         fieldset2.Visible = true;
         fieldset3.Visible = false;
@@ -24,7 +24,7 @@ public partial class mis_Transaction_TeacherFillReport : System.Web.UI.Page
 
     protected void Unnamed_Click1(object sender, EventArgs e)
     {
-
+      
         Fieldset1.Visible = false;
         fieldset2.Visible = false;
         fieldset3.Visible = true;
@@ -39,6 +39,6 @@ public partial class mis_Transaction_TeacherFillReport : System.Web.UI.Page
         fieldset4.Visible = true;
     }
 
-
-
+  
+  
 }

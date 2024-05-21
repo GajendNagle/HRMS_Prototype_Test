@@ -39,7 +39,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Choose Employee Id<span style="color: red">*</span></label>
+                                    Choose an option<span style="color: red">*</span></label>
                                 <%--<select class="form-control select2" runat="server" id="ddlEmp">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Yes">Yes</option>
@@ -48,8 +48,8 @@
 
                                 <asp:DropDownList runat="server" ID="ddlEmp" AutoPostBack="true" class="form-control select2" OnSelectedIndexChanged="ddlEmp_SelectedIndexChanged">
                                     <asp:ListItem Text="--Select--" Value="0" />
-                                    <asp:ListItem Text="Yes" Value="1" />
-                                    <asp:ListItem Text="No" Value="2" />
+                                    <asp:ListItem Text="Employee Unique Id" Value="1" />
+                                    <asp:ListItem Text="Order No." Value="2" />
                                 </asp:DropDownList>
 
                             </div>
@@ -75,8 +75,8 @@
                         </div>--%>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mt-5 ">
-                            <div class="form-group  mt-3 ">
+                        <div class="col-md-5 ">
+                            <div class="form-group ">
                                 <%-- <asp:Button Text="Search" OnClick="Unnamed_Click" runat="server" class=" btn btn-success btn-rounded" validationgroup="a"/>--%>
                                 <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded" validationgroup="a">Search</button>
                                 <a href="PromotionHoldOrder.aspx" class="btn btn-danger btn-rounded">Clear</a>

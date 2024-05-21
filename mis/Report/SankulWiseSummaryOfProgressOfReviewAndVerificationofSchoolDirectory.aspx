@@ -30,7 +30,7 @@
                 <legend>Sankul Wise Progress Report</legend>
                 <div class="row form-group">
                     <div class="col-md-3">
-                        <label class="font-bold">District<span style="color: red">*</span></label>
+                        <label class="font-bold">District<span style="color: red">* </span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2" ID="ddlDistrict" ClientIDMode="Static" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" AutoPostBack="true">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>

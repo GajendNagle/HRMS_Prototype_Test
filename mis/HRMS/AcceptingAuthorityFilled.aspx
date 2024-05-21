@@ -2,9 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        #workdescription2::-webkit-scrollbar{
-           display:none;
-        }
         #workdescription2 {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */

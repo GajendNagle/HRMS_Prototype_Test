@@ -153,7 +153,6 @@
             </div>
         </div>
         <div class="card mt-3 shadow">
-       
             <div class="card-body">
                 <nav class="navbar navbar-expand-lg topbar ">
                     <div class="container-fluid">
@@ -174,7 +173,6 @@
                     </div>
                 </nav>
                 <br />
-                
 
                 <div class="row">
                     <div class="col-md-12">

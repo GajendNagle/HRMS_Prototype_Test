@@ -230,7 +230,7 @@
                                     फॉरवर्ड करे
                                 <span style="color: red">*</span></label>
 
-                                <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlGrievanceType" id="" class="form-control vd_DDL_required">
+                                <select  id="ddlForword" class="form-control vd_DDL_required" >
                                     <option value="0">-- Select -- </option>
                                     <option value="1">SED(Vallbhav Bhawan)</option>
                                     <option value="3">CPI</option>
@@ -282,7 +282,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         
-                        <button type="button" class="Alert-Confirmation  btn btn-success btn-rounded">शिकायत का दर्ज करे</button>
+                        <Button runat="server" type="button" class="Alert-Save  btn btn-success btn-rounded">शिकायत का दर्ज करे</Button>
                     </div>
                 </div>
 
@@ -293,5 +293,70 @@
                     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
+
+   <script>
+            debugger;
+            !function ($) {
+                "use strict";
+                var SweetAlert = function () { };
+                //examples
+                SweetAlert.prototype.init = function () {
+                    //Basic
+                    //Success Message
+                    $('.Alert-Save').click(function () {
+                        Swal.fire({
+                            title: 'Are you sure?',
+                            text: "Do you want to save this record ?",
+                            type: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085D6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Yes'
+                            //animation: false,
+                            //customClass: {
+                            //    popup: 'animated tada'
+                            //}
+                        }).then((result) => {
+                            if (result.value) {
+                                Swal.fire({
+                                    type: 'success',
+                                    title: 'Success!',
+                                    text: 'Record Saved Successfully!',
+                                    timer: 2000,
+
+                                    // animation: false,<a href="">TeacherFillReport.aspx</a>
+                                    // customClass: {<a href="ViewAccumulatedComplaints.aspx">ViewAccumulatedComplaints.aspx</a>
+                                    //     popup: 'animated tada'
+                                    // }
+                                }
+                                ).then(() => {
+                                    // Redirect to another page after success message is closed
+                                    var ForwordTo = document.getElementById("ddlForword").value
+
+                                    if (ForwordTo == "3") {
+
+                                        window.location.href = 'ViewAccumulatedComplaints.aspx';
+                                    }
+                                });
+                                var x = document.getElementById("EmployeeDetails2");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "block";
+                                }
+                            }
+                        })
+                    });
+                },
+                    //init
+                    //init
+                    $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+            }(window.jQuery),
+                //initializing
+                function ($) {
+                    "use strict";
+                    $.SweetAlert.init()
+                }(window.jQuery);
+   </script>
 </asp:Content>
 

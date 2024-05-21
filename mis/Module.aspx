@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/HomeMaster.master" AutoEventWireup="true" CodeFile="Module.aspx.cs" Inherits="mis_Dashboard" %>
-
+﻿<%@ page title="" language="C#" masterpagefile="~/mis/HomeMaster.master" autoeventwireup="true" codefile="Module.aspx.cs" inherits="mis_Dashboard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>

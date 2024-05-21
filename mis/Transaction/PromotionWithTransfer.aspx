@@ -42,7 +42,34 @@
             </div>
             <div class="card-body">
 
-                <div id="EmployeeDetails1">
+                <div>
+                    <fieldset>
+                        <legend>Promotion With Transfer Order Reports</legend>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>From Date / दिनांक से <span style="color: red">*</span></label>
+                                    <input name="ename" type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>To Date / दिनांक तक <span style="color: red">*</span></label>
+                                    <input name="ename" type="date" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="form-group">
+                                    <%--<button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>--%>
+                                    <asp:Button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
+                                    <a href="Promotion.aspx" class=" btn btn-danger btn-rounded">Clear</a>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div id="EmployeeDetails1" runat="server" visible="false">
                     <fieldset>
                         <legend>Employee Details</legend>
                         <div class="row justify-content-end">
@@ -181,13 +208,13 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Order Date / आदेश तारीख<span style="color: red">*</span></label>
+                                            <label>Order Date / आदेश दिनांक<span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Effective Date / प्रभावी तारीख<span style="color: red">*</span></label>
+                                            <label>Effective Date / प्रभावी दिनांक<span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                         </div>
                                     </div>

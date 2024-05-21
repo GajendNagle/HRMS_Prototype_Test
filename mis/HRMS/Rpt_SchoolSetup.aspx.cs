@@ -111,39 +111,28 @@ public partial class mis_HRMS_Rpt_SchoolSetup : System.Web.UI.Page
 
     protected void ddlCategory_SelectedIndexChanged(object sender, EventArgs e)
     {
+        ddlCateDtls.Items.Clear();
         if (ddlCategory.SelectedValue == "1")
         {
-            //txtCategoryDtls.Text = "";
-            ddlCateDtls.Items.FindByText("1st to 5th").Selected = true;
-            //txtcategorydtls.text = "1st to 5th";
-            txtDiceCode.Text = "23510100704";
-            //ddlCateDtls.SelectedItem.Text = "1st to 5th";
+            ddlCateDtls.Items.Add( "1st to 5th");
             //ddlDiceCode.ClearSelection();
             //ddlDiceCode.SelectedItem.Text = "23510100704";
         }
         else if (ddlCategory.SelectedValue == "2")
         {
-            ddlCateDtls.Items.FindByText("6th to 8th").Selected = true;
-            txtDiceCode.Text = "23510815002";
-            //ddlCateDtls.SelectedItem.Text = "6th to 8th";
+            ddlCateDtls.Items.Add("6th to 8th");
             //ddlDiceCode.ClearSelection();
             //ddlDiceCode.SelectedItem.Text = "23510815002";
         }
         else if (ddlCategory.SelectedValue == "3")
         {
-            ddlCateDtls.Items.FindByText("9th to 10th").Selected = true;
-            txtDiceCode.Text = "23510100403";
-
-            //ddlCateDtls.SelectedItem.Text = "9th to 10th";
+            ddlCateDtls.Items.Add("9th to 10th");
             //ddlDiceCode.ClearSelection();
             //ddlDiceCode.SelectedItem.Text = "23510100403";
         }
         else if (ddlCategory.SelectedValue == "4")
         {
-            ddlCateDtls.Items.FindByText("11th to 12th").Selected = true;
-            txtDiceCode.Text = "23510102008";
-
-            //ddlCateDtls.SelectedItem.Text = "6th to 10th";
+            ddlCateDtls.Items.Add("6th to 10th");
             //ddlDiceCode.ClearSelection();
             //ddlDiceCode.SelectedItem.Text = "23510102008";
         }
@@ -160,7 +149,10 @@ public partial class mis_HRMS_Rpt_SchoolSetup : System.Web.UI.Page
         {
             Response.Redirect("Rpt_InstituteSetup.aspx");
         }
-
+        else if (ddlOISType.SelectedValue == "3")
+        {
+            Response.Redirect("Rpt_SchoolSetup.aspx");
+        }
     }
 
     protected void ddlMngmntGrp_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/HomeMaster.master" AutoEventWireup="true" CodeFile="Menu.aspx.cs" Inherits="mis_Menu" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/mis/HomeMaster.master" autoeventwireup="true" codefile="Menu.aspx.cs" inherits="mis_Menu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
@@ -806,6 +806,7 @@
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/ZeroStaffSchool_Report.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
+
                             <h6>School Low Staff Report</h6>
                         </a>
                     </div>
@@ -1543,7 +1544,7 @@
                             <h6>Increment Cancel Orders</h6>
                         </a>
                     </div>
-                 <%--   <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                  <%--  <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/AddIncrement.aspx">
                             <img src="dist/images/icon/HRMS_Increment_CancelOrder.png" class="dash-img" />
 
@@ -2021,7 +2022,7 @@
         </div>
 
     </div>--%>  <%--commented by sagar 16/05/2024--%>
-    <%--End by Zaheer on 29-12-23 --%>
+
 
     <%--Added by Sagar on 16/05/2024--%>
     <div id="dv_APRMS" runat="server">
@@ -2074,6 +2075,8 @@
 
     </div>
     <%--End by Sagar on 16/05/2024--%>
+
+    <%--End by Zaheer on 29-12-23 --%>
 
     <div id="dv_HRMS_TourApply" runat="server">
         <!-- ============================================================== -->

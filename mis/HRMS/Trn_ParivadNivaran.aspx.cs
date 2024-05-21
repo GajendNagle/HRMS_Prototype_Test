@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,4 +12,14 @@ public partial class mis_Transaction_Trn_ParivadNivaran : System.Web.UI.Page
     {
 
     }
+
+    //protected void Unnamed_Click(object sender, EventArgs e)
+    //{
+    //    if (ddlForword.SelectedItem.Text == "CPI")
+    //    {
+
+    //        Response.Redirect("ViewAccumulatedComplaints.aspx");
+
+    //    }
+    //}
 }

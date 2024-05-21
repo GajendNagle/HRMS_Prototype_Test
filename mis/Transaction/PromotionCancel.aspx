@@ -64,7 +64,7 @@
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Promotion Cancel Orders</h4>
+                <h4 class="text-themecolor ">Promotion Hold Orders</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -72,7 +72,7 @@
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Promotion" title="click to go on">Promotion</a></li>
-                        <li class="breadcrumb-item active">Promotion Cancel Orders</li>
+                        <li class="breadcrumb-item active">Promotion Hold Orders</li>
                     </ol>
                 </div>
             </div>

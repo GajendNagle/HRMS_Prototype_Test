@@ -93,16 +93,13 @@
                     <div class="col-md-3 ">
                         <label class="font-bold">Category Details</label>
                         <asp:DropDownList runat="server" Disabled="true" ID="ddlCateDtls" CssClass="form-control ">
-                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                            <asp:ListItem Value="1">1st to 5th</asp:ListItem>
-                            <asp:ListItem Value="2">6th to 8th</asp:ListItem>
-                            <asp:ListItem Value="3">9th to 10th</asp:ListItem>
-                            <asp:ListItem Value="4">11th to 12th</asp:ListItem>
+                            <%--<asp:ListItem Value="0">--Select--</asp:ListItem>--%>
+                            <%--<asp:ListItem Value="1">1st to 5th </asp:ListItem>--%>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
                         <label class="font-weight-bold">School-Dise<span style="color: red">*</span></label>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtDiceCode"></asp:TextBox>
+                        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row justify-content-center">
