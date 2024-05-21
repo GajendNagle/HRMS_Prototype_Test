@@ -1,6 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ParivednaNevakarn.aspx.cs" Inherits="mis_Transaction_ParivednaNevakarn" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+
+    <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />--%>
+    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
+    <style>
+        #ACR_Details_Graph .highcharts-data-label text {
+            color: white !important;
+            font-size: 0.65rem !important;
+            font-weight: bold !important;
+            text-align: center !important;
+            fill: white !important;
+            text-decoration: none !important;
+        }
+    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="container-fluid">
@@ -17,7 +31,7 @@
 
             <div class="col-md-3 align-self-center">
                 <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Grievance%20Logo.png" style="height: 70px"><u><br />
+                    <img src="../../img/Grievance%20Logo.png" style="height: 70px" /><u><br />
                     </u>
                 </p>
             </div>
@@ -45,52 +59,52 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                                               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-    <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-    <li class="nav-item dropdown">
+                                <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <li class="nav-item dropdown">
 
-      <%--  <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>शिकायत पंजीयन</></strong></a>--%>
-         <%-- <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत पंजीयन </b></a>--%>
-
-
-          <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i> शिकायत पंजीयन</b></strong></a>
-        <ul class="dropdown-menu">
-
-            <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
-
-            <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
-            <li><a class="dropdown-item" href="PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
-
-        </ul>
-       
-    </li>
-  <%--  <a class="nav-link  text-white " href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold">शिकायत प्रोसेसिंग </b></a>--%>
+                                    <%--  <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>शिकायत पंजीयन</></strong></a>--%>
+                                    <%-- <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत पंजीयन </b></a>--%>
 
 
-       <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत प्रोसेसिंग </b></a>
-  <%--  <a class="nav-link  text-white " href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold">शिकायत निराकरण </b></a>--%>
+                                    <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
+
+                                        <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
+                                        <li><a class="dropdown-item" href="PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
+
+                                    </ul>
+
+                                </li>
+                                <%--  <a class="nav-link  text-white " href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold">शिकायत प्रोसेसिंग </b></a>--%>
 
 
-
-     <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत निराकरण </b></a>
+                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
+                                <%--  <a class="nav-link  text-white " href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold">शिकायत निराकरण </b></a>--%>
 
 
 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  रिपोर्ट</b> </a>
-        
-         <ul class="dropdown-menu">
+                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
 
-       <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
-       <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
 
-       <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
-       <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
-       <%-- <li><a class="dropdown-item" href="#">शिकायत प्रिंट करे</a></li>--%>
-   </ul>
-    </li>
-</ul>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
+
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
+                                        <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
+
+                                        <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
+                                        <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
+                                        <%-- <li><a class="dropdown-item" href="#">शिकायत प्रिंट करे</a></li>--%>
+                                    </ul>
+                                </li>
+                            </ul>
 
 
                         </div>
@@ -98,6 +112,113 @@
                 </nav>
                 <br />
                 <br />
+
+
+
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+
+                        <div class="single_element">
+                            <div class="quick_activity">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 one">
+                                                <h4 class="">पंजीकृत शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+                                                <button class="card-btn one">8593 </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 five">
+                                                <h4 class="">लॉक शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn five">8348 </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 two">
+                                                <h4 class="">अग्रेषित शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn two">6604 </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 three">
+                                                <h4 class="">पूर्ण शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+                                                <button class="card-btn one">2648</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 four">
+                                                <h4 class="">अस्वीकृत शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn five">137 </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 six">
+                                                <h4 class="">पेंडिंग शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn two">5808  </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <fieldset>
                     <legend>परिवेदना निवारण
@@ -144,5 +265,20 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script src="../dist/DashboardNew/js/jquery1-3.4.1.min.js"></script>
+    <script src="../dist/DashboardNew/js/jquery.waypoints.min.js"></script>
+
+    <script src="../dist/DashboardNew/js/jquery.counterup.min.js"></script>
+    <script src="../dist/DashboardNew/js/custom.js"></script>
+    <script src="../dist/dashboard/raphael-min.js"></script>
+    <script src="../dist/dashboard/morris.js"></script>
+    <script src="../dist/js/highcharts/highcharts.js"></script>
+
+
+    <script src="../js/highcharts-3d.js"></script>
+    <script src="../js/drilldown.js"></script>
+    <script src="../js/exporting.js"></script>
+    <script src="../js/export-data.js"></script>
+    <script src="../js/accessibility.js"></script>
 </asp:Content>
 
