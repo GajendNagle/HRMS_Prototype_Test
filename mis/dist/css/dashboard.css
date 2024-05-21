@@ -1,0 +1,55 @@
+﻿body {
+}
+
+.card-header, .card-title {
+    color: #212529 !important;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: .75rem;
+}
+
+.card-border-default {
+    background: none !important;
+    border-top: 0.5rem solid #1B5B5C;
+}
+
+.card-border-primary {
+    background: none !important;
+    border-top: 0.5rem solid #3395ffab;
+}
+
+.card-border-secondary {
+    background: none !important;
+    border-top: 0.5rem solid #6c757d;
+}
+
+.card-border-success {
+    background: none !important;
+    border-top: 0.5rem solid #28a745;
+}
+
+.card-border-danger {
+    background: none !important;
+    border-top: 0.5rem solid #dc3545;
+}
+
+.card-border-warning {
+    background: none !important;
+    border-top: 0.5rem solid #ffbc34;
+}
+
+
+.card-border-infoMain {
+    background: none !important;
+    border-top: 0.5rem solid #17a2b8;
+}
+
+
+.card-border-light {
+    background: none !important;
+    border-top: 0.5rem solid #c6c8ca;
+}
+
+.card-shadow {
+    box-shadow: 0 .5rem 0.8rem rgba(66, 60, 46, 0.31) !important
+}
