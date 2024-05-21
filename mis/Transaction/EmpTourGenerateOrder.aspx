@@ -43,7 +43,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                             <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-
+                            <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Tour" title="click to go on">Tour</a></li>
                             <li class="breadcrumb-item active">Tour Generate</li>
                         </ol>
                     </div>
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                                 </div>
                             </div>
                         </div>
@@ -81,46 +81,43 @@
                                         <tr>
                                             <th>Sr.No.</th>
                                             <th>Action</th>
-                                            <th>Tour Status</th>
-                                            <th>Employee ID/Name</th>
-                                            <th>Office Type</th>
-                                            <th>Tour For</th>
-                                            <th>Remark</th>
-                                            <th>From </th>
-                                            <th>To</th>
-                                            <th>From Date</th>
-                                            <th>To Date</th>
+                                            <th>Employee Code/Name</th>
+                                            <th>Tour Type</th>
+                                            <th>Tour Starts Date</th>
+                                            <th>Tour End Date</th>
+                                            <th>Tour Starts From</th>
+                                            <th>Tour Ends At</th>
                                             <th>Total Days</th>
+                                            <th>Tour Purpose</th>
+                                            <th>Tour Status</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
                                             <td>
                                                 <input id="checkbox1" onclick="showhidesavebtn()" type="checkbox" /></td>
-                                            <td>Pending</td>
                                             <td>543545 Mr. Ashok Kumar Mishra</td>
-                                            <td>DPI</td>
                                             <td>Official</td>
-                                            <td>Office Work</td>
-                                            <td>Bhopal</td>
-                                            <td>Indore</td>
                                             <td>10/10/2023</td>
                                             <td>12/10/2023</td>
+                                            <td>Bhopal</td>
+                                            <td>Indore</td>
                                             <td>3</td>
+                                            <td>Office Work</td>
+                                            <td>Pending</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>
                                                 <input id="checkbox2" onclick="showhidesavebtn()" type="checkbox" /></td>
-                                            <td>Pending</td>
                                             <td>543563 Mr. Sanjay Sharma</td>
-                                            <td>DPI</td>
                                             <td>Official</td>
-                                            <td>Office Work</td>
-                                            <td>Indore</td>
-                                            <td>Gwalior</td>
                                             <td>12/10/2023</td>
                                             <td>15/10/2023</td>
+                                            <td>Indore</td>
+                                            <td>Gwalior</td>
                                             <td>4</td>
+                                            <td>Office Work</td>
+                                            <td>Pending</td>
                                         </tr>
                                     </table>
                                 </div>

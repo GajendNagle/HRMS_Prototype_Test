@@ -34,143 +34,51 @@
             </div>
             <div class="card-body">
                 <fieldset>
-                    <legend>All Employee Promotion History (Hold Promotions Orders After Final Confirmation)</legend>
+                    <legend>Hold Promotions Orders After Final Confirmation</legend>
                     <div class="row">
-                        <%--<div class="col-md-3">
-                            <div class="form-group">
-                                <label>Division / संभाग <span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Bhopal">Bhopal</option>
-                                    <option value="Indore">Indore</option>
-                                    <option value="Gwalior">Gwalior</option>
-                                    <option value="Jabalpur">Jabalpur</option>
-                                    <option value="Ujjain">Ujjain</option>
-                                    <option value="Sagar">Sagar</option>
-                                    <option value="Rewa">Rewa</option>
-                                    <option value="Chambal">Chambal</option>
-                                    <option value="Shahdol">Shahdol</option>
-                                    <option value="Hoshangabad">Hoshangabad</option>
-                                    <option value="Narmadapuram">Narmadapuram</option>
-                                </select>
-                            </div>
-                        </div>--%>
-                             <%--<div class="col-md-3">
-                            <label>District<span style="color: red">*</span></label>
-                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="Bhopal">Bhopal</option>
-                                <option value="Raisen">Raisen</option>
-                                <option value="Rajgarh">Rajgarh</option>
-                                <option value="Sehore">Sehore</option>
-                                <option value="Vidisha">Vidisha</option>
-                                <option value="Ashoknagar">Ashoknagar</option>
-                                <option value="Shivpuri">Shivpuri</option>
-                                <option value="Datia">Datia</option>
-                                <option value="Guna">Guna</option>
-                                <option value="Gwalior">Gwalior</option>
-                                <option value="Harda">Harda</option>
-                                <option value="Hoshangabad">Hoshangabad</option>
-                                <option value="Betul">Betul</option>
-                                <option value="Morena">Morena</option>
-                                <option value="Sheopur">Sheopur</option>
-                                <option value="Bhind">Bhind</option>
-                                <option value="Barwani">Barwani</option>
-                                <option value="Burhanpur">Burhanpur</option>
-                                <option value="Dhar">Dhar</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Jhabua">Jhabua</option>
-                                <option value="Khandwa">Khandwa</option>
-                                <option value="Khargone">Khargone</option>
-                                <option value="Alirajpur">Alirajpur</option>
-                                <option value="Balaghat">Balaghat</option>
-                                <option value="Chhindwara">Chhindwara</option>
-                                <option value="Jabalpur">Jabalpur</option>
-                                <option value="Katni">Katni</option>
-                                <option value="Mandla">Mandla</option>
-                                <option value="Narsinghpur">Narsinghpur</option>
-                                <option value="Seoni">Seoni</option>
-                                <option value="Rewa">Rewa</option>
-                                <option value="Satna">Satna</option>
-                                <option value="Sidhi">Sidhi</option>
-                                <option value="Singroli">Singroli</option>
-                                <option value="Chhatarpur">Chhatarpur</option>
-                                <option value="Damoh">Damoh</option>
-                                <option value="Panna">Panna</option>
-                                <option value="Sagar">Sagar</option>
-                                <option value="Tikamgarh">Tikamgarh</option>
-                                <option value="Shahdol">Shahdol</option>
-                                <option value="Umaria">Umaria</option>
-                                <option value="Dindori">Dindori</option>
-                                <option value="Anuppur">Anuppur</option>
-                                <option value="Dewas">Dewas</option>
-                                <option value="Mandsaur">Mandsaur</option>
-                                <option value="Neemuch">Neemuch</option>
-                                <option value="Ratlam">Ratlam</option>
-                                <option value="Shajapur">Shajapur</option>
-                                <option value="Ujjain">Ujjain</option>
-
-                            </select>
-                        </div>--%>
-                        <%--<div class="col-md-3">
-                            <div class="form-group">
-                                <label>Designation Type/पदनाम का प्रकार <span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Indore">Ministry (मंत्रालय)</option>
-                                    <option value="Gwalior">Executive (कार्यकारी)</option>
-                                    <option value="Jabalpur">Teaching (शिक्षण)</option>
-                                </select>
-                            </div>
-                        </div>--%>
-                        <%--<div class="col-md-3">
-                            <div class="form-group">
-                                <label>Designation Name/पदनाम<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Additional Director">Additional Director</option>
-                                    <option value="Joint Director">Joint Director</option>
-                                    <option value="Deputy Director">Deputy Director</option>
-                                    <option value="Asstt Director">Asstt Director</option>
-                                    <option value="Regional Librarian">Regional Librarian</option>
-                                    <option value="Planning Officer">Planning Officer</option>
-                                    <option value="Director (ELTI)">Director (ELTI)</option>
-                                    <option value="Director(SISE)">Director(SISE)</option>
-                                    <option value="Principal (PGBT)">Principal (PGBT)</option>
-                                    <option value="Principal (DIET)">Principal (DIET)</option>
-                                    <option value="Principal HSS">Principal HSS</option>
-                                    <option value="Principal HS">Principal HS</option>
-                                    <option value="Lecturer">Lecturer</option>
-                                    <option value="HM(MS)">HM(MS)</option>
-                                    <option value="Teacher (UDT)">Teacher (UDT)</option>
-                                    <option value="Music Teacher">Music Teacher</option>
-                                    <option value="Tabla Teacher">Tabla Teacher</option>
-                                    <option value="Craft Teacher">Craft Teacher</option>
-                                    <option value="HM(PS)">HM(PS)</option>
-                                    <option value="Asstt Teacher(LDT)">Asstt Teacher(LDT)</option>
-                                    <option value="Varistha Adhyapak">Varistha Adhyapak</option>
-                                    <option value="Adhyapak">Adhyapak</option>
-                                    <option value="Sahayak Adhyapak">Sahayak Adhyapak</option>
-                                </select>
-                            </div>
-                        </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Code /
-                                    <br />
-                                    कर्मचारी का कोड<span style="color: red">*</span></label>
-                                <select class="form-control select2">
+                                    Choose Employee Id<span style="color: red">*</span></label>
+                                <%--<select class="form-control select2" runat="server" id="ddlEmp">
                                     <option value="--Select--">--Select--</option>
-                                    <option value="Yes">20562</option>
-                                    <option value="No">03265</option>
-                                    <option value="No">95865</option>
-                                </select>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>--%>
+
+                                <asp:DropDownList runat="server" ID="ddlEmp" AutoPostBack="true" class="form-control select2" OnSelectedIndexChanged="ddlEmp_SelectedIndexChanged">
+                                    <asp:ListItem Text="--Select--" Value="0" />
+                                    <asp:ListItem Text="Yes" Value="1" />
+                                    <asp:ListItem Text="No" Value="2" />
+                                </asp:DropDownList>
+
                             </div>
+                            <asp:RequiredFieldValidator ErrorMessage="Required" ControlToValidate="ddlEmp" ValidationGroup="a" ForeColor="Red" runat="server" />
                         </div>
+                        <div class="col-md-3">
+                                <div class="form-group" runat="server" visible="false" id="txtEmpID">
+                                <label>  Employee Unique Id<span style="color: red">*</span></label> 
+                                <asp:TextBox runat="server" CssClass="form-control" />
+                                </div>
+                                <div class="form-group" runat="server" visible="false" id="txtOrderNo">  
+                                 <label> Order No.:<span style="color: red">*</span></label>
+                                  <asp:TextBox runat="server" CssClass="form-control" />
+                                </div>
+                            
+                        </div>
+                        <%-- <div class="col-md-3">
+                            <div class="form-group" runat="server" visible="false" id="txtOrderNo">
+                                <label>
+                                    Order No.:<span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" CssClass="form-control" />
+                            </div>
+                        </div>--%>
+                    </div>
+                    <div class="row">
                         <div class="col-md-5 mt-5 ">
                             <div class="form-group  mt-3 ">
-                                <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded">Search</button>
+                                <%-- <asp:Button Text="Search" OnClick="Unnamed_Click" runat="server" class=" btn btn-success btn-rounded" validationgroup="a"/>--%>
+                                <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded" validationgroup="a">Search</button>
                                 <a href="PromotionHoldOrder.aspx" class="btn btn-danger btn-rounded">Clear</a>
                             </div>
                         </div>
@@ -252,7 +160,7 @@
                             </div>
                             <div class="col-md-4 mt-2 text-center">
                                 <div class="form-group">
-                                     <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal">Hold Order</button>
+                                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal">Hold Order</button>
                                 </div>
                             </div>
                         </div>
@@ -333,33 +241,33 @@
             </div>
         </div>
     </div>
-      <!-- The Modal -->
-  <div class="modal" id="myModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                  <h4 class="modal-title">Add Remark For Holding Order </h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal Body -->
-              <div class="modal-body">
-                  <div class="form-group">
-                      <label>Remark<span style="color: red">*</span></label>
-                      <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Holding Order"></textarea>
-                  </div>
-              </div>
-              <!-- Modal Footer -->
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success Alert-RejectT" data-dismiss="modal" id="saveButton">Hold</button>
-              </div>
-          </div>
-      </div>
-  </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Remark For Holding Order </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Remark<span style="color: red">*</span></label>
+                        <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Holding Order"></textarea>
+                    </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success Alert-RejectT" data-dismiss="modal" id="saveButton">Hold</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </asp:Content>

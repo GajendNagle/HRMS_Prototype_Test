@@ -54,7 +54,7 @@
                                     </li>
                                     <li>
 
-                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Tour Apply</b></a>
+                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Tour Apply</b></a>
                                     </li>
                                 </ul>
 
@@ -62,16 +62,67 @@
                         </div>
                     </nav>
                     <br />
-                    
+
                     <fieldset>
                         <legend>Tour Apply</legend>
                         <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Employee Code / Name<span style="color: red"> *</span></label>
+                                    <asp:TextBox runat="server" placeholder="Enter Your Name" CssClass="form-control" />
+
+
+                                    <%-- <select class="form-control select2">
+                                        <option value=">--Select--">--Select--</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Indore">Indore</option>
+                                        <option value="Bhopal">Dewas</option>
+                                        <option value="Gwalior">Gwalior</option>
+                                    </select>--%>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Tour Type<span style="color: red"> *</span></label>
+                                    <select class="form-control select2">
+                                        <option value="0">--Select--</option>
+                                        <option value="1">Official</option>
+                                        <option value="2">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Tour Starts From<span style="color: red"> *</span></label>
+                                    <select class="form-control select2">
+                                        <option value=">--Select--">--Select--</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Indore">Indore</option>
+                                        <option value="Bhopal">Dewas</option>
+                                        <option value="Gwalior">Gwalior</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Tour Ends At<span style="color: red"> *</span></label>
+                                    <select class="form-control select2">
+                                        <option value=">--Select--">--Select--</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Indore">Indore</option>
+                                        <option value="Bhopal">Dewas</option>
+                                        <option value="Gwalior">Gwalior</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>From Date<span style="color: red;"> *</span></label>
                                     <input id="Fromdate" type="date" class="form-control" />
                                 </div>
                             </div>
+
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>To Date<span style="color: red"> *</span></label>
@@ -84,7 +135,7 @@
                                     <textarea class="form-control" rows="1" style="resize: vertical"></textarea>
                                 </div>
                             </div>--%>
-                            <div class="col-md-3">
+                            <%--<div class="col-md-3">
                                 <div class="form-group">
                                     <label>From<span style="color: red"> *</span></label>
                                     <select class="form-control select2">
@@ -95,28 +146,23 @@
                                         <option value="Gwalior">Gwalior</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div>--%>
+
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>To<span style="color: red"> *</span></label>
-                                    <select class="form-control select2">
-                                        <option value=">--Select--">--Select--</option>
-                                        <option value="Bhopal">Bhopal</option>
-                                        <option value="Indore">Indore</option>
-                                        <option value="Bhopal">Dewas</option>
-                                        <option value="Gwalior">Gwalior</option>
-                                    </select>
+                                    <label>No. of Days<span style="color: red"> *</span></label>
+                                    <asp:TextBox placeholder="Enter No. Of Days" runat="server" CssClass="form-control" />
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Remark</label>
-                                    <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Your Tour Detail"></textarea>
+                                    <label>Tour Purpose</label>
+                                    <textarea class="form-control" rows="2" style="resize: vertical ;"   placeholder="Enter Your Tour Detail"></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                           <%-- <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Tour For<span style="color: red"> *</span></label>
                                     <select class="form-control select2">
@@ -124,13 +170,13 @@
                                         <option value="Official">Official</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-md-1 mt-4">
+                            </div>--%>
+                            <div class="col-md-1 mt-5">
                                 <div class="form-group">
                                     <button type="button" class="btn btn-success btn-block  btn-rounded Alert-Save " onclick="myFunction()">Apply</button>
                                 </div>
                             </div>
-                            <div class="col-md-1 mt-4">
+                            <div class="col-md-1 mt-5">
                                 <div class="form-group">
                                     <a href="EmpTourApply.aspx" class="btn btn-danger btn-block  btn-rounded">Clear</a>
                                 </div>
@@ -152,7 +198,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+                                    <input type="text" id="searchInput" class="form-control" placeholder="Search..." />
                                 </div>
                             </div>
                         </div>
@@ -161,34 +207,34 @@
                                 <table class="table" id="myTable">
                                     <tr>
                                         <th>Sr.No.</th>
-                                        <th>Tour For</th>
+                                        <th>Employee Code/Name</th>
+                                        <th>Tour Type</th>
                                         <th>From Date</th>
                                         <th>To Date</th>
-                                        <th>From</th>
-                                        <th>To</th>
-                                        <th>Remark</th>
+                                        <th>Tour Starts From</th>
+                                        <th>Tour Ends At</th>
                                         <th>Total Days</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
+                                        <td>BI3468-Suresh Bamniya</td>
                                         <td>official </td>
                                         <td>10/10/2023</td>
                                         <td>12/10/2023</td>
                                         <td>Bhopal</td>
                                         <td>Indore</td>
-                                        <td>Office Work</td>
                                         <td>3</td>
                                     </tr>
-                                    <tr>
+                                    <%--<tr>
                                         <td>2</td>
+                                        <td>AI8857-Ajay Mishra</td>
                                         <td>official </td>
                                         <td>14/10/2023</td>
                                         <td>15/10/2023</td>
                                         <td>Indore</td>
                                         <td>Gwalior</td>
-                                        <td>Office Work</td>
                                         <td>2</td>
-                                    </tr>
+                                    </tr>--%>
                                 </table>
                             </div>
                         </div>
