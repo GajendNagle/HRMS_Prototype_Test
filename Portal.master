@@ -1,0 +1,259 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Portal.master.cs" Inherits="Portal" %>
+
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../mis/dist/images/icon/Emblem_of_Madhya_Pradesh.svg.png">
+
+    <title>DPI-HRMS</title>
+
+    <link href="./mis/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./mis/dist/css/style.min.css" rel="stylesheet" />
+    <link href="./mis/dist/css/site.css" rel="stylesheet" />
+    <link href="./mis/dist/css/login.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="horizontal-nav skin-megna fixed-layout skin-blue-dark">
+    <form id="form1" runat="server">
+
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader__figure"></div>
+                <p class="loader__label">SED</p>
+            </div>
+        </div>
+        <div id="main-wrapper">
+            <!-- ============================================================== -->
+            <!-- Topbar header - style you can find in pages.scss -->
+            <!-- ============================================================== -->
+            <header class="topbar">
+                <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="Login.aspx">
+                            <!-- Logo icon -->
+                            <b>
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <img src="../mis/dist/images/icon/MP_LOGO.svg" width="100" height="100" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo icon -->
+                                <img src="../mis/dist/images/icon/MP_LOGO.svg" width="100" height="100" alt="homepage" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+
+                            <!-- dark Logo text -->
+                            <img src="../mis/dist/images/icon/MP_LOGO.svg" alt="homepage" class="dark-logo" width="380" height="77" />
+                            <!-- Light Logo text -->
+                            <img src="../mis/dist/images/icon/HRMS_Logo.png" class="light-logo" width="" height="80" alt="homepage" />
+
+                            <span class="hidden-sm-down" style="font-size: x-large; padding-left: 15rem; font-weight: 600">School Education Portal 3.0
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-collapse">
+                        <!-- ============================================================== -->
+                        <!-- toggle and nav items -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav me-auto ">
+                            <!-- This is  -->
+                            <li class="nav-item"><a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a></li>
+                            <li class="nav-item"><a class="nav-link sidebartoggler d-none waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a></li>
+                            <!-- ============================================================== -->
+                            <!-- Search -->
+                            <!-- ============================================================== -->
+
+                        </ul>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav my-lg-0">
+                            <!-- User Profile -->
+                            <!-- ============================================================== -->
+
+                            <!-- ============================================================== -->
+                            <!-- End User Profile -->
+                            <!-- ============================================================== -->
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- ============================================================== -->
+            <!-- End Topbar header -->
+            <!-- Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- Page wrapper  -->
+            <!-- ============================================================== -->
+
+            <div class="page-wrapper">
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <span class="hidden-sm-up">
+                    <br />
+                    <br />
+                </span>
+                <div class="container-fluid">
+                    <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--     <div class="col-md-2">
+                                <p><a href="#" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" class="text-dark">Login & Logout Policy</a></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p><a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3">Password reset policy</a></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p><a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4">Password Change policy</a></p>
+                            </div>--%>
+                </div>
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="text-center text-light">
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Login & Logout Policy</a>
+                                </li>
+                                |
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3">Password Forgot Policy</a>
+
+                                </li>
+                                |
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4">Password Change Policy</a>
+                                </li>
+                                |
+                                <li>
+                                    <a href="TelephoneDirectory.aspx">Telephone Directory</a>
+                                </li>|
+                                <li>
+                                    <a href="ContactUs.aspx">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <!-- sample modal content 1 -->
+                    <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header" id="myDIV">
+                                    <h4 class="modal-title" id="myLargeModalLabel1">Login & Logout Policy</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="row">
+                                        <h6>Login</h6>
+                                        <p>1.लॉगिन करने के लिए यूज़र का नेम, पासवर्ड और कैप्चा कोड  प्रविष्टि करने के  उपरांत लॉगिन बटन  पर क्लिक करें।</p>
+                                        <p>2.लॉगिन पेज में  यदि  पासवर्ड गलत डालते हैं तो तीन बार के उपरांत 24 घंटे के लिए यूजर ब्लॉक हो जाएगा उसके उपरांत ही पुनः लॉगिन कर पाएगा</p>
+                                        <hr />
+                                        <h6>Logout</h6>
+                                        <p>1.लॉगिन करने के उपरांत स्वयं के लॉगिन पेज पर लॉगआउट बटन को दिया गया है जिसको क्लिक करने के उपरांत स्वयं के लॉगिन पैनल से बाहर आया जाता है    </p>
+                                        <p>2.यदि किसी प्रकार से आप लॉगिन पेज से डायरेक्ट बाहर आ जाते हैं तो  पुनः लॉगिन करना पड़ेगा ।</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+
+                    <!-- sample modal content 2 -->
+                    <div class="modal bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header" id="myDIV">
+                                    <h4 class="modal-title" id="myLargeModalLabel1">Password Forgot Policy</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="container">
+                                                <p>पासवर्ड रिसेट करने के लिए फॉरगेट पासवर्ड पर क्लिक करें अपना रजिस्टर्ड मोबाइल नंबर डालकर ओटीपी सेंड करें और संबंधित ओटीपी को दर्ज करें उसके उपरांत न्यू पासवर्ड और कन्फर्म पासवर्ड का ऑप्शन पर अपना नया पासवर्ड डालकर सेव कर दें पासवर्ड रिसेट हो जाएगा । </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <!-- sample modal content 3 -->
+                    <div class="modal bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header" id="myDIV">
+                                    <h4 class="modal-title" id="myLargeModalLabel1">Password Change Policy</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="container">
+                                                <p>पासवर्ड को चेंज करने के लिए अपने लॉगिन पैनल पर पासवर्ड चेंज का ऑप्शन दिया गया है, पासवर्ड चेंज पर क्लिक करने पर ओल्ड पासवर्ड और न्यू पासवर्ड बनाने का ऑप्शन आएगा दोनों को प्रविष्ट करने के बाद रजिस्टर्ड मोबाइल नंबर पर ओटीपी के माध्यम से सेव करवाने पर पासवर्ड बदल जाएगा ।                                           </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+
+                </footer>
+
+
+            </div>
+
+            <script src="../../mis/dist/js/jquery.min.js"></script>
+            <script src="../../mis/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="../../mis/dist/js/custom.min.js"></script>
+
+          
+    <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+        </div>
+
+    </form>
+</body>
+</html>
+
