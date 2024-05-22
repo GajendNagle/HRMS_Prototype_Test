@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="AdministrativePrintTransferOrder.aspx.cs" Inherits="mis_HRMS_AdministrativePrintTransferOrder" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
-      <style>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -44,65 +44,76 @@
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    
+
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">फाइनल प्रिंट ट्रांसफर लेटर</p>
         </div>
-        <div class="col-md-4 align-self-center">   
+        <div class="col-md-4 align-self-center">
 
 
 
-  
+
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
-                   <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                  
-                    <li class="breadcrumb-item active">Final Print Transfer Letter</li>
+                    <li class="breadcrumb-item"><a href="../HRMS/Trn_AdministrativeTransfer.aspx" title="click to go on">Administrative Level Transfer</a></li>
+                    <li class="breadcrumb-item active">Print Transfer Order</li>
                 </ol>
             </div>
         </div>
     </div>
-     <div class="card mt-3 shadow">
+    <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-              <nav class="navbar navbar-expand-lg topbar ">
+            <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                         
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
-                                <ul class="dropdown-menu">                                   
-                                    <%--<li><a class="dropdown-item" href="trn_administrativepostcodewithvacancies.aspx">view post code with vacancies</a></li>--%>
+                                <ul class="dropdown-menu">
+
                                     <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
-                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Final Print Transfer Order</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
                                 </ul>
                             </li>
-                              <li class="nav-item">
-                                  <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button" ><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
-                                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+
+                                </ul>
+                            </li>
                         </ul>
 
                     </div>
                 </div>
             </nav>
+
+    
             <br />
             <br />
             <fieldset>
@@ -256,8 +267,8 @@
                             <table class="table table-hover">
                                 <tr>
                                     <th>Sr.No</th>
-                                    
-                                       <th>Order No.</th>
+
+                                    <th>Order No.</th>
                                     <th>Employee Name</th>
                                     <th>Unique Id</th>
                                     <th>Current DDO/Shankul </th>
@@ -266,8 +277,8 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                   
-                                        <td>2024/20-01/140530</td>
+
+                                    <td>2024/20-01/140530</td>
                                     <td>Arjun Talwar</td>
                                     <td>BT9430</td>
                                     <td>1214548455-Sarasvati Gyan Mandir</td>
@@ -279,12 +290,12 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                   
-                                      <td>2024/20-01/140580</td>
-                                        <td>Kapil Sharma</td>
-                                        <td>BT9430</td>
-                                         <td>1014632121-Gyan Ganga Vidhya Mandir</td>
-                                         <td>1214548455-Sarasvati Gyan Mandir</td>
+
+                                    <td>2024/20-01/140580</td>
+                                    <td>Kapil Sharma</td>
+                                    <td>BT9430</td>
+                                    <td>1014632121-Gyan Ganga Vidhya Mandir</td>
+                                    <td>1214548455-Sarasvati Gyan Mandir</td>
                                     <td class="text-md-center">
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                     </td>
@@ -292,7 +303,7 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                   
+
                                     <td>2024/20-01/140690</td>
                                     <td>Rohan Kumar</td>
                                     <td>AO5690</td>
@@ -305,12 +316,12 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                  
-                                     <td>2024/20-01/140750</td>
+
+                                    <td>2024/20-01/140750</td>
                                     <td>Ravi Singh</td>
                                     <td>MT5695</td>
-                                  <td>1258963478-Model High Secondary School</td>
-                                     <td>1236547895-Gov.Hs School</td>
+                                    <td>1258963478-Model High Secondary School</td>
+                                    <td>1236547895-Gov.Hs School</td>
                                     <td class="text-md-center">
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                     </td>
@@ -318,8 +329,8 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                 
-                                       <td>2024/20-01/140750</td>
+
+                                    <td>2024/20-01/140750</td>
                                     <td>Amar Rajpoot</td>
                                     <td>GT7589</td>
                                     <td>1224876546-Bal Bharti Higher Secondary School</td>
@@ -430,7 +441,7 @@
                                                                 <td class="font-16 text-center">(शिल्पा गुप्ता)<br />
                                                                     <span>आयुक्त<br />
                                                                     </span>
-                                                                  
+
 
                                                                     लोक शिक्षण, मध्यप्रदेश
                                                                 </td>
@@ -438,12 +449,21 @@
                                                         </table>
 
 
-                                                         <table style="width: 100%;">
+                                                        <table style="width: 100%;">
 
-                                                             <tr><td>Digital Signed By SHILPA<br /> GUPTA</td></tr>
-                                                               <tr><td>Date: 2024.03.13  12:57:23 +05:30</td></tr>
-                                                              <tr><td>Reason:</td></tr>
-                                                             <tr><td>Location:</td></tr>                                                 
+                                                            <tr>
+                                                                <td>Digital Signed By SHILPA<br />
+                                                                    GUPTA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Date: 2024.03.13  12:57:23 +05:30</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Reason:</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Location:</td>
+                                                            </tr>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -479,51 +499,51 @@
 
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-      <script>
-          debugger;
-          !function ($) {
-              "use strict";
-              var SweetAlert = function () { };
-              //examples
-              SweetAlert.prototype.init = function () {
-                  $('.Alert-Save').click(function () {
-                      Swal.fire({
-                          title: 'Are you sure?',
-                          text: "Do you want to Approve This Record?",
-                          type: 'warning',
-                          showCancelButton: true,
-                          confirmButtonColor: '#3085D6',
-                          cancelButtonColor: '#d33',
-                          confirmButtonText: 'Yes'
-                      }).then((result) => {
-                          if (result.value) {
-                              Swal.fire({
-                                  type: 'success',
-                                  title: 'Success!',
-                                  text: 'Approve  Successfully!',
-                                  timer: 2000
-                              }
-                              )
-                              var x = document.getElementById("EmployeeDetails2");
-                              if (x.style.display === "none") {
-                                  x.style.display = "block";
-                              }
-                              else {
-                                  x.style.display = "block";
-                              }
-                          }
-                      })
-                  });
-              },
-                  //init
-                  $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
-          }(window.jQuery),
-              //initializing
-              function ($) {
-                  "use strict";
-                  $.SweetAlert.init()
-              }(window.jQuery);
-      </script>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                $('.Alert-Save').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Approve This Record?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Approve  Successfully!',
+                                timer: 2000
+                            }
+                            )
+                            var x = document.getElementById("EmployeeDetails2");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            }
+                            else {
+                                x.style.display = "block";
+                            }
+                        }
+                    })
+                });
+            },
+                //init
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
+    </script>
 </asp:Content>
 

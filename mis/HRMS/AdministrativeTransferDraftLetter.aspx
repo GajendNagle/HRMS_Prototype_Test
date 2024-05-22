@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="AdministrativeTransferDraftLetter.aspx.cs" Inherits="mis_HRMS_AdministrativeTransferDraftLetter" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
         @media print {
             /* Show modal content in full page */
@@ -22,7 +22,6 @@
                 height: auto;
                 overflow: visible !important;
                 zoom: 120%;
-               
             }
             /* Hide unnecessary elements */
             body.modal-open {
@@ -44,28 +43,30 @@
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    
+
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">प्रिंट ड्राफ्ट लेटर - अपडेट </p>
         </div>
-        <div class="col-md-4 align-self-center">   
+        <div class="col-md-4 align-self-center">
 
 
-    
+
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
-                   <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                  
-                    <li class="breadcrumb-item active">Print Draft Transfer Letter or Transfer Letter</li>
+                    <li class="breadcrumb-item"><a href="../HRMS/Trn_AdministrativeTransfer.aspx" title="click to go on">Administrative Level Transfer</a></li>
+                    <li class="breadcrumb-item active">Print Draft Transfer</li>
                 </ol>
             </div>
         </div>
@@ -74,33 +75,42 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-   <nav class="navbar navbar-expand-lg topbar ">
+            <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
-                                <ul class="dropdown-menu">                                   
-                                    <%--<li><a class="dropdown-item" href="trn_administrativepostcodewithvacancies.aspx">view post code with vacancies</a></li>--%>
+                                <ul class="dropdown-menu">
+
                                     <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
-                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Final Print Transfer Order</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
                                 </ul>
                             </li>
-                              <li class="nav-item">
-                                  <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button" ><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
-                                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+
+                                </ul>
+                            </li>
                         </ul>
 
                     </div>
                 </div>
             </nav>
+
             <br />
             <br />
             <fieldset>
@@ -115,7 +125,7 @@
                                 पदनाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="----">--Select--</option>
-                                  <option value="----">All</option>
+                                <option value="----">All</option>
                                 <option value="----">Clerical</option>
                                 <option value="----">Executive</option>
                                 <option value="----">Ministry</option>
@@ -129,7 +139,7 @@
                             ज़िला<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
-                               <option value="----">All</option>
+                            <option value="----">All</option>
                             <option value="Bhopal">Bhopal</option>
                             <option value="Raisen">Raisen</option>
                             <option value="Rajgarh">Rajgarh</option>
@@ -190,18 +200,18 @@
                             ब्लॉक</label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
-                               <option value="----">All</option>
+                            <option value="----">All</option>
                             <option value="Bhopal">Huzur</option>
                             <option value="Raisen">Fanda</option>
                             <option value="Govindapura">Govindpura</option>
                         </select>
                     </div>
-                     <div class="col-md-3">
+                    <div class="col-md-3">
                         <label class="font-bold">
-                           Employee Unique ID.<br />
+                            Employee Unique ID.<br />
                             कर्मचारी यूनिक आईडी.
-                            </label>
-                    <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
+                        </label>
+                        <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
                     </div>
 
 
@@ -241,7 +251,9 @@
                             <td>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                             </td>
-                            <td><button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button></td>
+                            <td>
+                                <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
+                            </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -255,7 +267,9 @@
                             <td>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                             </td>
-                            <td><button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button></td>
+                            <td>
+                                <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
+                            </td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -269,7 +283,9 @@
                             <td>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                             </td>
-                            <td><button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button></td>
+                            <td>
+                                <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -278,7 +294,7 @@
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title w-100 text-center">प्रिंट ड्राफ्ट ट्रांसफर लेटर या ट्रांसफर लेटर डिलीट </h3>                          
+                            <h3 class="modal-title w-100 text-center">प्रिंट ड्राफ्ट ट्रांसफर लेटर या ट्रांसफर लेटर डिलीट </h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -306,7 +322,7 @@
                                             <td>757972</td>
                                             <th>दिनाँक:</th>
                                             <td>09 /10 /2022</td>
-                                        </tr>                                     
+                                        </tr>
                                         <tr>
                                             <th colspan="4" class="text-center font-20">: : <u>ई-सेवा पुस्तिका अनुसार व्यक्तिगत जानकारी</u> : :</th>
                                         </tr>
@@ -365,11 +381,11 @@
                                         <tr>
                                             <th>कुल अवधि वर्षों में</th>
                                             <td colspan="3">4</td>
-                                        </tr>                                     
+                                        </tr>
                                         <tr>
                                             <th colspan="4" class="text-center font-20">: : <u>नया कार्यालय स्थान</u> : :</th>
                                         </tr>
-                                       <%-- <tr>
+                                        <%-- <tr>
                                             <th>आदेश क्रमांक</th>
                                             <td>132240</td>
                                             <th>आदेश दिनाँक</th>
@@ -381,32 +397,32 @@
                                             <th>यूनिक आई.डी</th>
                                             <td>AR4781</td>
                                         </tr>
-                                       <tr>
-                                           <th>प्रभावी दिनांक</th>
-                                           <td>15/04/2024</td>
-                                           <th>कार्यमुक्त दिनांक</th>
-                                           <td>11/04/2024</td>
-                                       </tr>                                      
                                         <tr>
-                                              <th>नवीन संकुल कोड</th>
-                                            <td>4012003014 - VIJAYPUR, PRINCIPAL H S S TARRAKALAN </td>
-                                             <th>नवीन ओ.आई.एस.कोड</th>
-                                            <td>4012003014 - VIJAYPUR, PRINCIPAL H S S TARRAKALAN</td>                                         
-                                            
+                                            <th>प्रभावी दिनांक</th>
+                                            <td>15/04/2024</td>
+                                            <th>कार्यमुक्त दिनांक</th>
+                                            <td>11/04/2024</td>
                                         </tr>
-                                         <tr>
+                                        <tr>
+                                            <th>नवीन संकुल कोड</th>
+                                            <td>4012003014 - VIJAYPUR, PRINCIPAL H S S TARRAKALAN </td>
+                                            <th>नवीन ओ.आई.एस.कोड</th>
+                                            <td>4012003014 - VIJAYPUR, PRINCIPAL H S S TARRAKALAN</td>
+
+                                        </tr>
+                                        <tr>
                                             <th>पैनल समूह</th>
                                             <td>SSS-1 Mathematics</td>
-                                              <th>ट्रान्सफर निर्देशानुसार</th>
+                                            <th>ट्रान्सफर निर्देशानुसार</th>
                                             <td>मंत्रालय</td>
 
-                                            
+
                                         </tr>
                                         <tr>
                                             <th>टिप्पणी</th>
-                                            <td> </td>
+                                            <td></td>
                                         </tr>
-                                        
+
                                         <%--<tr>
                                             <th>विषय </th>
                                             <td>Mathematics</td>
@@ -431,7 +447,7 @@
                                         </tr>--%>
                                     </tbody>
                                 </table>
-                               <%-- <table style="width: 100%;">
+                                <%-- <table style="width: 100%;">
                                     <tbody>
                                         <tr>
                                             <th class="text-center font-20">: : <u>घोषणा</u> : :</th>
@@ -456,8 +472,8 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer justify-content-center">
-                              <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                          
+                            <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -465,12 +481,12 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-     <script>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
         function myFunction() {
 
             document.getElementById("vacaniesDetail").style.display = "block";
         }
-     </script>
+    </script>
 </asp:Content>
 
