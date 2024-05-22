@@ -599,27 +599,27 @@
 
 
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="2" Style="color: #00BCD4;" OnClick="hideshowTotalReceivedCases_Click" ID="hideshowTotalReceivedCases" BorderStyle="None" /></td>
+                                                <asp:Button runat="server" Text="2" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowTotalReceivedCases_Click" ID="hideshowTotalReceivedCases" BorderStyle="None" /></td>
 
 
 
 
                                             <td style="color: #00BCD4;"><%--<a href="#">1</a>--%>
-                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideShowDistrictWiseLockaavedan_Click" BorderStyle="None" ID="hideShowDistrictWiseLockaavedan" />
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideShowDistrictWiseLockaavedan_Click" BorderStyle="None" ID="hideShowDistrictWiseLockaavedan" />
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hidshowAvedankoAdhikariKoForwordKiyagya_Click" BorderStyle="None"
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hidshowAvedankoAdhikariKoForwordKiyagya_Click" BorderStyle="None"
                                                     ID="hidshowAvedankoAdhikariKoForwordKiyagya" />
 
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
+                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
+                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
 
                                             </td>
                                         </tr>
