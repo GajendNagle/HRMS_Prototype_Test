@@ -101,9 +101,11 @@
 
                                         <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
                                         <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
-                                        <%-- <li><a class="dropdown-item" href="#">शिकायत प्रिंट करे</a></li>--%>
+                                        <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">जिला वार प्रगति रिपोर्ट</a></li>
+                                        <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">सेक्शनवार लंबित रिपोर्ट</a></li>
                                     </ul>
                                 </li>
+
                             </ul>
 
 
