@@ -126,7 +126,7 @@
                 <%--Start DropDown Base data --%>
                 <%--  My Code Start for Dispose Cases NOC --%>
                 <fieldset id="DisposeCasesNOC" runat="server">
-                    <legend>Dispose Cases    
+                    <legend>Dispose Cases  Report
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -436,7 +436,7 @@
                 </fieldset>--%>
                 <div id="BlockWiseCounting" runat="server">
                     <fieldset>
-                        <legend>ब्लॉक वार सांख्यिकी   </legend>
+                        <legend>जिला का चयन करे </legend>
                         <%-- Dropdown code --%>
                         <div class="col-md-12" id="divOfDropdownDistrict" runat="server">
                             <div class="row">
@@ -446,8 +446,8 @@
                                         <span style="font-weight: bold;">District </span>:</label>
                                     <div class="clearfix">
                                     </div>
-                                    <asp:DropDownList ID="ddlJDLevelDistrict" runat="server" class="form-control vd_DDL_required" AutoPostBack="true">
-                                        <asp:ListItem Value="o">-- District -- </asp:ListItem>
+                                    <asp:DropDownList ID="ddlJDLevelDistrict" runat="server" class="form-control vd_DDL_required" >
+                                        <asp:ListItem Value="0">-- District -- </asp:ListItem>
                                         <asp:ListItem Value="1">    Bhopal  </asp:ListItem>
                                         <asp:ListItem Value="2">    Raisen  </asp:ListItem>
                                         <asp:ListItem Value="3">    Rajgarh  </asp:ListItem>
@@ -714,7 +714,7 @@
                 <%--  My Code Start for District Wise Count Cases --%>
                 <fieldset id="DistrictWiseCounting" runat="server">
 
-                    <legend>जिला वार सांख्यिकी     
+                    <legend>जिला वार सांख्यिकी रिपोर्ट
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">

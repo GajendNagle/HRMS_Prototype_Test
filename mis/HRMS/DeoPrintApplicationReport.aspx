@@ -60,7 +60,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
-                        <li class="breadcrumb-item active">Compassionate Appointment Print Application</li>
+                        <li class="breadcrumb-item active">Compassionate Appointment Print Application </li>
                     </ol>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                 </nav>
                 <br />
                 <fieldset>
-                    <legend>प्रिंट आवेदन
+                    <legend>जिला का चयन करे
                     </legend>
 
                     <div class="row ms-2">
@@ -148,7 +148,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Compassionate Appointment Print Application       
+                    <legend>Compassionate Appointment Print Application Report     
                     </legend>
                     <div class="row justify-content-end">
 
@@ -175,7 +175,7 @@
 
                                 <table class="table table-bordered text-center ">
                                     <thead>
-                                        <tr style="margin-right:120%;" >
+                                        <tr >
                                             <th>स. क्र.</th>
                                             <th>आवेदक का नाम</th>
                                             <th>लिंग</th>

@@ -128,7 +128,7 @@
                 <%--Start DropDown Base data --%>
                 <%--  My Code Start for Dispose Cases NOC --%>
                 <fieldset id="DisposeCasesNOC" runat="server">
-                    <legend>Dispose Cases      
+                    <legend>Dispose Cases Report
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -437,7 +437,7 @@
                 </fieldset>--%>
                 <div id="BlockWiseCounting" runat="server">
                     <fieldset>
-                        <legend>ब्लॉक वार सांख्यिकी   </legend>
+                        <legend>जिला का चयन करे </legend>
                         <%-- Dropdown code --%>
                         <div class="col-md-12" id="divOfDropdownDistrict" runat="server">
                             <div class="row">
@@ -451,14 +451,17 @@
                                         <asp:ListItem Value="1" Selected="True">Bhopal भोपाल </asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
-                                <div class="col-md-2">
+                                <%--<div class="col-md-2">
                                     <asp:Button runat="server" Text="Search" class="btn btn-large btn-info form-control" OnClick="btnSearch_Click" ID="btnSearch" />
 
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                         <%-- Dropdown code --%>
-                        <div id="divBlockWiseCountingtbl" runat="server">
+                    </fieldset>
+                    <fieldset>
+                           <legend>ब्लॉक वार सांख्यिकी रिपोर्ट  </legend>
+                        <div id="divBlockWiseCountingtbl" runat="server" visible="true">
                             <div class="row justify-content-end">
                                 <div class="col-md-1">
                                     <div class="form-group">
@@ -476,72 +479,73 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
-                                            <thead>
-                                                <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td><span style="font-size: 12pt;">Berasia</span></td>
-                                                    <td style="text-align: right;">27</td>
-                                                    <td style="text-align: right;">3</td>
-                                                    <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">1</td>
-                                                    <td style="text-align: right;">16</td>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                        <thead>
+                                            <tr>
+                                                <th data-class="expand" scope="col">संभाग</th>
+                                                <th data-class="phone,tablet" scope="col">जिला</th>
+                                                <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
+                                                <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
+                                                <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
 
-                                                </tr>
-                                                <tr>
-                                                    <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td><span style="font-size: 12pt;">Phanda Gramin</span></td>
-                                                    <td style="text-align: right;">27</td>
-                                                    <td style="text-align: right;">3</td>
-                                                    <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">1</td>
-                                                    <td style="text-align: right;">16</td>
+                                                <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
+                                                <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td><span style="font-size: 12pt;">Berasia</span></td>
+                                                <td style="text-align: right;">27</td>
+                                                <td style="text-align: right;">3</td>
+                                                <td style="text-align: right;">0</td>
+                                                <td style="text-align: right;">1</td>
+                                                <td style="text-align: right;">16</td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td><span style="font-size: 12pt;">Phanda URBAN- New City</span></td>
-                                                    <td style="text-align: right;">27</td>
-                                                    <td style="text-align: right;">3</td>
-                                                    <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">1</td>
-                                                    <td style="text-align: right;">16</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td><span style="font-size: 12pt;">Phanda Gramin</span></td>
+                                                <td style="text-align: right;">27</td>
+                                                <td style="text-align: right;">3</td>
+                                                <td style="text-align: right;">0</td>
+                                                <td style="text-align: right;">1</td>
+                                                <td style="text-align: right;">16</td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
-                                                    <td><span style="font-size: 12pt;">Phanda URBAN- Old City</span></td>
-                                                    <td style="text-align: right;">27</td>
-                                                    <td style="text-align: right;">3</td>
-                                                    <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">1</td>
-                                                    <td style="text-align: right;">16</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td><span style="font-size: 12pt;">Phanda URBAN- New City</span></td>
+                                                <td style="text-align: right;">27</td>
+                                                <td style="text-align: right;">3</td>
+                                                <td style="text-align: right;">0</td>
+                                                <td style="text-align: right;">1</td>
+                                                <td style="text-align: right;">16</td>
 
-                                                </tr>
+                                            </tr>
+                                            <tr>
+                                                <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
+                                                <td><span style="font-size: 12pt;">Phanda URBAN- Old City</span></td>
+                                                <td style="text-align: right;">27</td>
+                                                <td style="text-align: right;">3</td>
+                                                <td style="text-align: right;">0</td>
+                                                <td style="text-align: right;">1</td>
+                                                <td style="text-align: right;">16</td>
 
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -552,7 +556,7 @@
                 <%--  My Code Start for District Wise Count Cases --%>
                 <fieldset id="DistrictWiseCounting" runat="server">
 
-                    <legend>जिला वार सांख्यिकी     
+                    <legend>जिला वार सांख्यिकी रिपोर्ट
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -1558,7 +1562,7 @@
                 </fieldset>
                 <%-- total End AavendalMeApptiDarjReport Cases Table --%>
 
-                  <%-- total start AvedankoAdhikariKoForwordKiyagya Cases Table --%>
+                <%-- total start AvedankoAdhikariKoForwordKiyagya Cases Table --%>
                 <fieldset id="AvedankoAdhikariKoForwordKiyagya" runat="server" visible="false">
                     <legend>जिला वार फॉरवर्ड किये गए आवेदन का विवरण
                     </legend>

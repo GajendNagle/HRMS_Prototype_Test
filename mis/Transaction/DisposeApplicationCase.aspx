@@ -2,10 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        #empDetail {
-            display: none;
-        }
-
+       
         th {
             padding-top: 12px;
             padding-bottom: 12px;
@@ -139,16 +136,15 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-                    <div class="col-md-3 mt-4 py-2">
+                    <%--<div class="col-md-3 mt-4 py-2">
                         <button id="Button1" type="button" class="btn btn-success btn-rounded" onclick="myFunction()">सर्च</button>
-                        <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
-                    </div>
+                    </div>--%>
                 </div>
 
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-
+                    <legend>लंबित आवेदन रिपोर्ट</legend>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive table-bordered">

@@ -167,7 +167,7 @@
                             <div id="navpills-1" class="tab-pane active">
                                 <div class="row">
                                     <fieldset>
-                                        <legend>NOC जिला  कलेक्टर को भेजी गई</legend>
+                                        <legend>NOC जिला  कलेक्टर को भेजी गई रिपोर्ट</legend>
 
                                         <div class="row">
                                             <div class="col-md-3">

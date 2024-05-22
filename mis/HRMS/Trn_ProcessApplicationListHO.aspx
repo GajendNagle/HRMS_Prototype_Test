@@ -166,7 +166,7 @@
                             <div id="navpills-1" class="tab-pane active">
                                 <div class="row">
                                     <fieldset>
-                                        <legend>अनुकंपा नियुक्ति पर कार्यवाही </legend>
+                                        <legend>अनुकंपा नियुक्ति पर कार्यवाही रिपोर्ट </legend>
 
                                         <div class="row">
                                             <div class="col-md-3">

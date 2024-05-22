@@ -170,7 +170,7 @@
                             <div id="navpills-1" class="tab-pane active">
                                 <div class="row">
                                     <fieldset>
-                                        <legend>NOC जिला  कलेक्टर को भेजी गई </legend>
+                                        <legend>NOC जिला  कलेक्टर को भेजी गई रिपोर्ट</legend>
 
                                         <div class="row">
                                             <div class="col-md-3">
@@ -233,10 +233,7 @@
                                                     </asp:DropDownList>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 mt-4">
-                                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" id="btnView" onclick="HideShow();">कार्यवाही हेतु प्रकरण देखे </button>
-                                                <%--<asp:Button runat="server" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" ID="btnView" OnClientClick="HideShow();" Text="कार्यवाही हेतु प्रकरण देखे" />--%>
-                                            </div>
+                                           
                                         </div>
                                         <div class="row justify-content-end">
 

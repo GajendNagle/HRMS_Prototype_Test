@@ -129,8 +129,8 @@
                 </nav>
                 <br />
                 <fieldset>
-    <legend>प्रिंट आवेदन
-    </legend>
+  <legend>जिला का चयन करे
+ </legend>
                 <div class="row ms-2">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -195,7 +195,7 @@
                 </div>
                     </fieldset>
                 <fieldset>
-                    <legend>Compassionate Appointment Print Application       
+                    <legend>Compassionate Appointment Print Application Report         
                     </legend>
                     <div class="row justify-content-end">
 

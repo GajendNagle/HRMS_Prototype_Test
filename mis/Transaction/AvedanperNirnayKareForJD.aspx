@@ -127,7 +127,7 @@
 
 
             <fieldset>
-                <legend>लंबित आवेदनों पर निर्णय करें
+                <legend>जिला का चयन करे
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -159,7 +159,8 @@
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-
+                     <legend>लंबित आवेदन रिपोर्ट
+ </legend>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive table-bordered">
