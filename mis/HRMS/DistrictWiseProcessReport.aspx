@@ -50,32 +50,23 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles" style="margin-bottom: -30px">
-
-
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)"><u><br>
                 </u>
             </p>
         </div>
-
-
         <div class="col-md-8 align-items-xxl-end text-end">
-
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-
                     <li class="breadcrumb-item active">Grievance Application Status</li>
                 </ol>
             </div>
         </div>
     </div>
-
-
-
-    <div class="card mt-3 shadow">
+    <div class="card shadow">
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
@@ -107,31 +98,24 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
                                 <ul class="dropdown-menu">
-
                                     <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
                                     <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
-
                                     <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
                                     <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
                                     <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">जिला वार प्रगति रिपोर्ट</a></li>
                                     <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">सेक्शनवार लंबित रिपोर्ट</a></li>
-
                                 </ul>
                             </li>
-
                         </ul>
-
-
                     </div>
                 </div>
             </nav>
             <br />
             <br />
-
             <div runat="server" id="show">
             </div>
             <fieldset id="fdSetSummaryReport" runat="server">
-                <legend>Summary Report</legend>
+                <legend>District Wise Progress Report</legend>
                 <div class="row">
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -153,7 +137,7 @@
                         <%-- first time Data Start --%>
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                <table class="table  table-bordered">
                                     <thead>
                                         <tr>
                                             <th>Sr.No.</th>
@@ -170,20 +154,89 @@
                                             <td>1
                                             </td>
                                             <td>Barwani</td>
-                                            <td>1</td>
+                                            <td>4</td>
                                             <td>
-
-                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00ffcc" OnClick="PendingForActin_Click" ID="PendingForActin" />
+                                                <asp:Button runat="server" Text="2" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="PendingForActin_Click" ID="PendingForActin" />
                                             </td>
                                             <td>
-                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00ffcc" OnClick="RejectedGrievances_Click" ID="RejectedGrievances" />
+                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="RejectedGrievances_Click" ID="RejectedGrievances" />
                                             </td>
                                             <td>
-                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00ffcc" OnClick="DisposedGrievances_Click" ID="DisposedGrievances" />
+                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="DisposedGrievances_Click" ID="DisposedGrievances" />
                                             </td>
-
-                                            <td>100</td>
+                                            <td>50</td>
                                         </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Bhopal</td>
+                                            <td>4</td>
+                                            <td>
+                                                <asp:Button runat="server" Text="2" BorderStyle="None" Font-Bold="true" ForeColor="#00bcd4" OnClick="PendingForActinBhopal_Click" ID="PendingForActinBhopal" />
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="RejectedGrievancesBhopal_Click" ID="RejectedGrievancesBhopal" />
+
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="DisposedGrievancesBhopal_Click" ID="DisposedGrievancesBhopal" />
+
+                                            </td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dindori</td>
+                                            <td>0</td>
+                                            <td>
+                                                <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="PendingForActinDindori" />
+                                            </td>
+
+                                            <td>
+                                                <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="RejectedGrievancesDindori" />
+
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="DisposedGrievancesDindori" />
+
+                                            </td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4
+                                            </td>
+                                            <td>Alirajpur</td>
+                                            <td>4</td>
+                                            <td>
+                                                <asp:Button runat="server" Text="2" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="PendingForActinAlirajpur_Click" ID="PendingForActinAlirajpur" />
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="RejectedGrievancesAlirajpur_Click" ID="RejectedGrievancesAlirajpur" />
+
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="1" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" OnClick="DisposedGrievancesAlirajpur_Click" ID="DisposedGrievancesAlirajpur" />
+
+                                            </td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Anuppur</td>
+                                            <td>0</td>
+                                            <td>
+                                                <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="PendingForActinAnuppur" />
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="RejectedGrievancesAnuppur" />
+
+                                            </td>
+                                            <td>
+                                                <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="DisposedGrievancesAnuppur" />
+
+                                            </td>
+                                            <td>0</td>
+                                        </tr>
+
 
                                     </tbody>
                                 </table>
@@ -210,7 +263,7 @@
                             <asp:ListItem Value="3">Anuppur ,अनूपपुर  </asp:ListItem>
                             <asp:ListItem Value="4">Ashoknagar ,अशोकनगर  </asp:ListItem>
                             <asp:ListItem Value="5">Balaghat ,बालाघाट  </asp:ListItem>
-                            <asp:ListItem Selected="True" Value="6">Barwani ,बड़वानी  </asp:ListItem>
+                            <asp:ListItem Value="6">Barwani ,बड़वानी  </asp:ListItem>
                             <asp:ListItem Value="7">Betul ,बैतूल  </asp:ListItem>
                             <asp:ListItem Value="8">Bhind ,भिण्ड  </asp:ListItem>
                             <asp:ListItem Value="9">Bhopal ,भोपाल  </asp:ListItem>
@@ -258,7 +311,6 @@
                             <asp:ListItem Value="51">Umaria ,उमरिया  </asp:ListItem>
                             <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
                         </asp:DropDownList>
-
                     </div>
                     <div class="col-md-2 mt-4">
                         <asp:Button runat="server" CssClass="form-control bg-success" Text="View Details" OnClick="BtndistrictWiseData_Click" ID="BtndistrictWiseData" />
@@ -576,7 +628,7 @@
                             <asp:ListItem Value="3">Anuppur ,अनूपपुर  </asp:ListItem>
                             <asp:ListItem Value="4">Ashoknagar ,अशोकनगर  </asp:ListItem>
                             <asp:ListItem Value="5">Balaghat ,बालाघाट  </asp:ListItem>
-                            <asp:ListItem Selected="True" Value="6">Barwani ,बड़वानी  </asp:ListItem>
+                            <asp:ListItem Value="6">Barwani ,बड़वानी  </asp:ListItem>
                             <asp:ListItem Value="7">Betul ,बैतूल  </asp:ListItem>
                             <asp:ListItem Value="8">Bhind ,भिण्ड  </asp:ListItem>
                             <asp:ListItem Value="9">Bhopal ,भोपाल  </asp:ListItem>
@@ -887,7 +939,7 @@
                             <asp:ListItem Value="3">Anuppur ,अनूपपुर  </asp:ListItem>
                             <asp:ListItem Value="4">Ashoknagar ,अशोकनगर  </asp:ListItem>
                             <asp:ListItem Value="5">Balaghat ,बालाघाट  </asp:ListItem>
-                            <asp:ListItem Selected="True" Value="6">Barwani ,बड़वानी  </asp:ListItem>
+                            <asp:ListItem Value="6">Barwani ,बड़वानी  </asp:ListItem>
                             <asp:ListItem Value="7">Betul ,बैतूल  </asp:ListItem>
                             <asp:ListItem Value="8">Bhind ,भिण्ड  </asp:ListItem>
                             <asp:ListItem Value="9">Bhopal ,भोपाल  </asp:ListItem>
@@ -1192,21 +1244,23 @@
                                 <h4 class="font-bold">लोकसेवक का विवरण</h4>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <table class="table text-center table-bordered table-responsive">
-                                        <tr>
-                                            <th>क्र.</th>
-                                            <th>शिकायत क्र.</th>
-                                            <th>शिकायत दिनाँक </th>
-                                            <th>जिला  </th>
-                                            <th>विभाग </th>
-                                            <th>लोकसेवक का नाम </th>
-                                            <th>पदनाम </th>
-                                            <th>ईमेल </th>
-                                            <th>मोबाइल</th>
-                                            <th>शिकायत का विषय</th>
+                                <div class="col-md-12 table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>क्र.</th>
+                                                <th>शिकायत क्र.</th>
+                                                <th>शिकायत दिनाँक </th>
+                                                <th>जिला  </th>
+                                                <th>विभाग </th>
+                                                <th>लोकसेवक का नाम </th>
+                                                <th>पदनाम </th>
+                                                <th>ईमेल </th>
+                                                <th>मोबाइल</th>
+                                                <th>शिकायत का विषय</th>
 
-                                        </tr>
+                                            </tr>
+                                        </thead>
                                         <tr>
                                             <td>1</td>
                                             <td>74060</td>
@@ -1218,8 +1272,6 @@
                                             <td>Gaurishankartkg@Gmail.Com</td>
                                             <td>7974333143</td>
                                             <td>बकाया लंबित</td>
-
-
                                         </tr>
                                     </table>
                                 </div>
