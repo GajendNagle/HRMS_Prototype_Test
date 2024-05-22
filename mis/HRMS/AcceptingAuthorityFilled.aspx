@@ -2,9 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        #workdescription2::-webkit-scrollbar{
-           display:none;
-        }
         #workdescription2 {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
@@ -48,26 +45,24 @@
     <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                    </u>
-                </p>
-                <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
+                <h4 class="text-themecolor ">व्याख्याता/शिक्षक की गोपनीय चरित्रावली  </h4>
+                <br />
+                <h6 style="font-size: 15px;">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active">Annual Confidential Report (ACR)</li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
+                        <li class="breadcrumb-item active"></li>
                     </ol>
                 </div>
             </div>
         </div>
+
     </div>
     <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -76,33 +71,16 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-          </a>
-          <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-             <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
-          </ul>
-      </li>
-      <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-      <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <a class="nav-link  text-white " href="#" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
+                            <a class="nav-link text-white" href="ConfedicialReport.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>Employee Apply ACR</b></a>
+                            <%--  <a class="nav-link text-white" href="TeacherFillReport.aspx" role="button"><b class="font-14 font-bold"><span style="font-size: 18px">&#149;</span>&nbsp;Teacher Officer Fill ACR  Report</b></a>--%>
+                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
+                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+                        </ul>
 
 
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
-          </a>
-          <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
-    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
-    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
-    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
-</ul>
-      </li>
-  </ul>
+
                     </div>
                 </div>
             </nav>
@@ -130,48 +108,38 @@
                         <div class="col-md-12">
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>S.No</th>
-                                        <th>Unique ID/Name</th>
-                                        <th>Date of Birth</th>
-                                        <th>Designation </th>
-                                        <th>Dise Code of Institution</th>
-                                        <th>View Employee Application</th>
-                                        <th>ACR Form</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
                                     <tr valign="middle">
                                         <td>1</td>
-                                        <td>गोपाल वर्मा/<br />EDP4454445</td>
+                                        <td>गोपाल वर्मा/EDP4454445</td>
+
                                         <td>22/07/1989</td>
                                         <td>सहायक शिक्षक</td>
                                         <td>DPI/456656356</td>
                                         <td>
-                                            <a href="Rpt_EmployeeACR.aspx" type="button" class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></button>
                                         </td>
                                         <td>
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click" />
-
                                         </td>
-                                         <td><button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>
+
+
                                     </tr>
-                                </tbody>
+                                    </tbody>
                                 <tbody>
                                     <tr valign="middle">
                                         <td>2</td>
-                                        <td>सागर गुप्ता/<br />EDP78974445</td>
+                                        <td>सागर गुप्ता/EDP78974445</td>
+
                                         <td>28/09/1989</td>
                                         <td>सहायक शिक्षक</td>
                                         <td>DPI/456656356</td>
                                         <td>
-                                           <a href="Rpt_EmployeeACR.aspx" type="button" class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></button>
                                         </td>
                                         <td>
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click1" />
                                         </td>
-                                         <td><button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -190,16 +158,23 @@
                     <div class="col-md-3">
                         <label class="fw-bold fs-4">Employee Name/Unique ID</label>
                         <asp:TextBox runat="server" CssClass="form-control" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+
                     </div>
+
                 </div>--%>
                 <fieldset>
                     <legend>To Be Filled By Accepting Authority(स्वीकृत अधिकारी द्वारा भरा जाये)</legend>
+
                     <div class="row">
+
                         <div class="col-md-4">
                             <label class="mt-3 fw-bold">
                                 Employee Name/Unique ID<br />
                                 (कर्मचारी का नाम/कर्मचारी आई.डी)</label>
                             <asp:TextBox runat="server" CssClass="form-control mt-2 fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+
+
+
                         </div>
                         <div class="col-md-4 mt-4">
                             <label>Do you agree with the remarks of the reporting officer ?(क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|)</label>
@@ -209,8 +184,10 @@
                                 <asp:ListItem>No/नही</asp:ListItem>
                                 <%--   <asp:ListItem>No/या</asp:ListItem>--%>
                                 <asp:ListItem>Partially/आंशिक</asp:ListItem>
+
                             </asp:DropDownList>
                         </div>
+
                         <div class="col-md-4" style="position: relative; top: 46px;">
                             <label>Grading(ग्रेड)</label>
                             <asp:DropDownList runat="server" CssClass="select2 form-control">
@@ -220,6 +197,7 @@
                                 <asp:ListItem>good/अच्छा</asp:ListItem>
                                 <asp:ListItem>Satisfactory/संतोषप्रद</asp:ListItem>
                                 <asp:ListItem>Below satisfaction/असंतोषप्रद</asp:ListItem>
+
                             </asp:DropDownList>
                         </div>
                     </div>
@@ -231,8 +209,11 @@
                             <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
                             <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                         </div>
+
                     </div>
+
                 </fieldset>
+
                 <div class="row">
                     <div class="col-5"></div>
                     <div class="col-md-3 text-center" style="position: relative; top: 20px;">
@@ -240,44 +221,21 @@
                             <button type="button" class="Alert-Save btn btn-success btn-rounded  ">
                                 Send to Officer
                             </button>
+
+
                             <a href="AcceptingAuthorityFilled.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
 
-        <div class="modal" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header" style="background-color:#1B5B5C; color:white">
-                <h4 class="modal-title">Add Remark For Reject ACR Report </h4>
-                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-                <div class="form-group">
-                    <label>Remark<span style="color: red">*</span></label>
-                    <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject ACR Report"></textarea>
-                </div>
-            </div>
-            <!-- Modal Footer -->
-            <div class="modal-footer justify-content-center">
-               
-                <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
-                 <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
     <script>
         debugger;
         !function ($) {
@@ -332,6 +290,8 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
+
+
     <script>function autoResize(textarea) {
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
