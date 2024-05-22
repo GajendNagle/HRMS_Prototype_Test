@@ -46,16 +46,18 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    
+
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">स्थानांतरण आदेश</p>
         </div>
-        <div class="col-md-4 align-self-center">   
+        <div class="col-md-4 align-self-center">
 
 
             <div class="d-flex justify-content-end align-items-center">
@@ -63,8 +65,8 @@
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>
-                    <li class="breadcrumb-item active">Head Office Transfer Final Approval</li>
+                    <li class="breadcrumb-item"><a href="../HRMS/Trn_AdministrativeTransfer.aspx" title="click to go on">Administrative Level Transfer</a></li>
+                    <li class="breadcrumb-item active">Generate Transfer Order</li>
                 </ol>
             </div>
         </div>
@@ -74,29 +76,36 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-               <nav class="navbar navbar-expand-lg topbar ">
+            <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                          
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
-                                <ul class="dropdown-menu">                                   
-                                    <%--<li><a class="dropdown-item" href="trn_administrativepostcodewithvacancies.aspx">view post code with vacancies</a></li>--%>
+                                <ul class="dropdown-menu">
+
                                     <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
-                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Final Print Transfer Order</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
                                 </ul>
                             </li>
-                              <li class="nav-item">
-                                  <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button" ><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
-                                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+
+                                </ul>
+                            </li>
                         </ul>
 
                     </div>
@@ -116,7 +125,7 @@
                                 पदनाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="----">--Select--</option>
-                                  <option value="----">All</option>
+                                <option value="----">All</option>
                                 <option value="----">Clerical</option>
                                 <option value="----">Executive</option>
                                 <option value="----">Ministry</option>
@@ -130,7 +139,7 @@
                             ज़िला<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
-                               <option value="----">All</option>
+                            <option value="----">All</option>
                             <option value="Bhopal">Bhopal</option>
                             <option value="Raisen">Raisen</option>
                             <option value="Rajgarh">Rajgarh</option>
@@ -191,18 +200,18 @@
                             ब्लॉक</label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
-                               <option value="----">All</option>
+                            <option value="----">All</option>
                             <option value="Bhopal">Huzur</option>
                             <option value="Raisen">Fanda</option>
                             <option value="Govindapura">Govindpura</option>
                         </select>
                     </div>
-                     <div class="col-md-3">
+                    <div class="col-md-3">
                         <label class="font-bold">
-                           Employee Unique ID.<br />
+                            Employee Unique ID.<br />
                             कर्मचारी यूनिक आईडी.
-                            </label>
-                    <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
+                        </label>
+                        <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
                     </div>
 
 
@@ -252,7 +261,7 @@
                                 <tr id="row1">
                                     <td>1</td>
                                     <td class="text-center">
-                                     <input type="checkbox" id="chk1" class="form-check" onchange="toggleDivVisibility()" /></td>
+                                        <input type="checkbox" id="chk1" class="form-check" onchange="toggleDivVisibility()" /></td>
                                     <td>2024/20-01/140530</td>
                                     <td>Arjun Talwar</td>
                                     <td>BT9430</td>
@@ -266,8 +275,8 @@
                                         <td>2024/20-01/140530</td>
                                         <td>Kapil Sharma</td>
                                         <td>BT9430</td>
-                                         <td>1014632121-Gyan Ganga Vidhya Mandir</td>
-                                         <td>1214548455-Sarasvati Gyan Mandir</td>
+                                        <td>1014632121-Gyan Ganga Vidhya Mandir</td>
+                                        <td>1214548455-Sarasvati Gyan Mandir</td>
                                     </tr>
 
                                 <tr id="row3">
@@ -287,8 +296,8 @@
                                     <td>2024/20-01/140530</td>
                                     <td>Ravi Singh</td>
                                     <td>MT5695</td>
-                                  <td>1258963478-Model High Secondary School</td>
-                                     <td>1236547895-Gov.Hs School</td>
+                                    <td>1258963478-Model High Secondary School</td>
+                                    <td>1236547895-Gov.Hs School</td>
                                 </tr>
                                 <tr id="row5">
                                     <td>5</td>
@@ -301,7 +310,7 @@
                                     <td>1315476598-Sarasvati Vidhya Mandir</td>
                                 </tr>
                             </table>
-                            <p style="color:blue" class="font-16">नोट :- जनरेट आर्डर करने हेतु चेक बॉक्स पर क्लिक कर गेट DSC करें |</p>
+                            <p style="color: blue" class="font-16">नोट :- जनरेट आर्डर करने हेतु चेक बॉक्स पर क्लिक कर गेट DSC करें |</p>
                         </div>
                     </div>
                 </div>
@@ -543,6 +552,6 @@
             }
         }
     </script>
-    
+
 </asp:Content>
 

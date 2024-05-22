@@ -20,8 +20,8 @@
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                       <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                   <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=EServiceBook" title="click to go on">Application For Voluntary Transfer</a></li>
-                    <li class="breadcrumb-item active">Application For Voluntary Transfer</li>--%>
+                    <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=EServiceBook" title="click to go on">Application For Voluntary Transfer</a></li>--%>
+                    <li class="breadcrumb-item active">Administrative Level Transfer</li>
                 </ol>
             </div>
         </div>
@@ -42,7 +42,7 @@
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
                                 <ul class="dropdown-menu">                                   
-                                    <%--<li><a class="dropdown-item" href="trn_administrativepostcodewithvacancies.aspx">view post code with vacancies</a></li>--%>
+                                   
                                     <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
                                     <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
@@ -52,6 +52,14 @@
                               <li class="nav-item">
                                   <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button" ><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
                                   </li>
+                                 <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                <ul class="dropdown-menu">                                   
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+                                   
+                                </ul>
+                            </li>
                         </ul>
 
                     </div>

@@ -120,20 +120,33 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li><a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Print Application </a></li>
-                                </ul>
-                            </li>
-                            <li><a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a></li>
-                            <li><a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a></li>
-                        </ul>
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
+              <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
+          </ul>
+      </li>
+      <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
+      <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
+          </a>
+        <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
+</ul>
+      </li>
+  </ul>
                     </div>
                 </div>
             </nav>
@@ -179,13 +192,14 @@
 
                                         <th>View Employee Application</th>
                                         <th>ACR Form</th>
+                                        <th>Action</th>
                                         <%--<th>प्रिंट</th--%>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
                                         <td>1</td>
-                                        <td>गोपाल वर्मा/EDP4454445</td>
+                                        <td>गोपाल वर्मा/<br />EDP4454445</td>
 
                                         <td>22/07/1989</td>
                                         <td>सहायक शिक्षक</td>
@@ -198,6 +212,7 @@
                                         <td>
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click" />
                                         </td>
+                                        <td><button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>
 
 
                                     </tr>
@@ -205,7 +220,7 @@
                                 <tbody>
                                     <tr valign="middle">
                                         <td>2</td>
-                                        <td>सागर गुप्ता/EDP78974445</td>
+                                        <td>सागर गुप्ता/<br />EDP78974445</td>
 
                                         <td>28/09/1989</td>
                                         <td>सहायक शिक्षक</td>
@@ -218,7 +233,7 @@
                                         <td>
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click1" />
                                         </td>
-
+                                        <td><button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -652,8 +667,9 @@
 
                     </fieldset>
                     <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                         <button type="button" class="btn btn-success" onclick="window.print()">Print</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                       
                     </div>
 
                 </div>
@@ -662,7 +678,33 @@
         </div>
     </div>
 
+      <div class="modal" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header" style="background-color:#1B5B5C; color:white">
+                  <h4 class="modal-title">Add Remark For Reject ACR Report </h4>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                  <div class="form-group">
+                      <label>Remark<span style="color: red">*</span></label>
+                      <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject ACR Report"></textarea>
+                  </div>
+              </div>
+              <!-- Modal Footer -->
+              <div class="modal-footer justify-content-center">
+                 
+                  <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
+                   <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>

@@ -2168,6 +2168,12 @@
                         </a>
                     </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/Rpt_EmployeeHandicap.aspx">
+                            <img src="dist/images/icon/Report.png" class="dash-img" />
+                            <h6>Employee Handicap Report</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/Rpt_EmployeePromotion.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
                             <h6>Employee Promotion Report</h6>

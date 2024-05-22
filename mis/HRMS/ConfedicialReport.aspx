@@ -11,13 +11,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles">
-            <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
-                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                    </u>
-                </p>
-                <h6 style="font-size: 15px; margin-left: 25px">PART-1 Basic Information(भाग एक- सामान्य जानकारी)</h6>
-            </div>
+                        <div class="col-md-5 align-self-center">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+        <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        </u>
+    </p>
+    <h6 style="font-size: 15px; margin-left: 25px">PART-1 Basic Information(भाग एक- सामान्य जानकारी)</h6>
+</div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
@@ -41,20 +41,33 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li><a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Print Application </a></li>
-                                </ul>
-                            </li>
-                            <li><a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a></li>
-                            <li><a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a></li>
-                        </ul>
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
+             <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
+          </ul>
+      </li>
+      <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
+      <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
+          </a>
+         <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
+</ul>
+      </li>
+  </ul>
                     </div>
                 </div>
             </nav>
@@ -315,6 +328,7 @@
                     })
                 });
             },
+                //init
                 //init
                 $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
         }(window.jQuery),

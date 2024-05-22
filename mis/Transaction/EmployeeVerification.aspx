@@ -293,7 +293,7 @@
                                 </select>
                             </div>
                         </div>--%>
-                        <div class="col-md-3">
+                     <%--   <div class="col-md-3">
                             <div class="form-group">
                                 <label>Designation Type / पदनाम का प्रकार<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl01" class="form-control select2">
@@ -322,7 +322,7 @@
                                     <option value="Tabla Teacher">Tabla Teacher</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>--%>
 
                         <div class="col-md-3">
                             <div class="form-group">
