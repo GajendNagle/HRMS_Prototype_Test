@@ -3,9 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
-          table th {
+        table th {
             font-weight: 400 !important;
-            width:fit-content;
+            width: fit-content;
         }
     </style>
 </asp:Content>
@@ -25,7 +25,7 @@
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
                         <%--<li class="breadcrumb-item active">Cancel Transfer Report</li>--%>
                         <li class="breadcrumb-item active"><a href="Trn_CancleTransferOrderApplication.aspx" title="click to go on">Cancel Transfer Order</a></li>
-                    <li class="breadcrumb-item active">Canceled Transfer Report</li>
+                        <li class="breadcrumb-item active">Canceled Transfer Report</li>
                     </ol>
                 </div>
             </div>
@@ -55,7 +55,9 @@
                     <legend>Cancel Transfer Details</legend>
                     <div class="row form-group">
                         <div class="col-md-3">
-                            <label class="font-bold" id="txtId">District Name<br />जिला का नाम<span style="color: red">*</span></label>
+                            <label class="font-bold" id="txtId">
+                                District Name<br />
+                                जिला का नाम<span style="color: red">*</span></label>
                             <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="ddlDistrict" Display="Dynamic"></asp:RequiredFieldValidator>
                             <asp:DropDownList runat="server" CssClass="form-control select2" ID="ddlDistrict">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -97,8 +99,8 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th >Sr. No.<br />
-                                                   सरल क्र.</th>
+                                                <th>Sr. No.<br />
+                                                    सरल क्र.</th>
                                                 <th>Current Location<br />
                                                     वर्तमान स्थान</th>
                                                 <th>ID-Employee Name<br />
@@ -127,7 +129,7 @@
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Jhaabua</td>
+                                            <td>Bhopal</td>
                                             <td>PS5548-Radha</td>
                                             <td>4512</td>
                                             <td>10/10/2023</td>
@@ -137,7 +139,7 @@
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Murena</td>
+                                            <td>Bhopal</td>
                                             <td>UT8852-Kailash</td>
                                             <td>5412</td>
                                             <td>05/05/2020</td>
@@ -147,7 +149,7 @@
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>Vidisha</td>
+                                            <td>Bhopal</td>
                                             <td>TU6744-Sagar</td>
                                             <td>9554</td>
                                             <td>15/02/2024</td>
@@ -157,7 +159,7 @@
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>Sagar</td>
+                                            <td>Bhopal</td>
                                             <td>VB1 963-Dhannalal</td>
                                             <td>6561</td>
                                             <td>25/08/2019</td>
@@ -197,21 +199,21 @@
                                     <thead>
                                         <tr>
                                             <th>Sr. No.<br />
-                                                   सरल क्र.</th>
-                                                <th>Current Location<br />
-                                                    वर्तमान स्थान</th>
-                                                <th >ID-Employee Name<br />
-                                                    कर्मचारी का नाम-आई.डी.</th>
-                                                <th >Promotion Order No.<br />
-                                                    पदोन्नति आदेश क्र.</th>
-                                                <th >Promotion Order Date<br />
-                                                    पदोन्नति आदेश दिनांक</th>
-                                                <th >New Location<br />
-                                                    नया स्थान</th>
-                                                <th>Cancel Order No.<br />
-                                                    निरस्त आदेश क्र.</th>
-                                                <th>Cancel Order Date<br />
-                                                    निरस्त आदेश दिनांक</th>
+                                                सरल क्र.</th>
+                                            <th>Current Location<br />
+                                                वर्तमान स्थान</th>
+                                            <th>ID-Employee Name<br />
+                                                कर्मचारी का नाम-आई.डी.</th>
+                                            <th>Promotion Order No.<br />
+                                                पदोन्नति आदेश क्र.</th>
+                                            <th>Promotion Order Date<br />
+                                                पदोन्नति आदेश दिनांक</th>
+                                            <th>New Location<br />
+                                                नया स्थान</th>
+                                            <th>Cancel Order No.<br />
+                                                निरस्त आदेश क्र.</th>
+                                            <th>Cancel Order Date<br />
+                                                निरस्त आदेश दिनांक</th>
                                         </tr>
                                     </thead>
                                     <tr>
@@ -373,6 +375,300 @@
                                         <td>Khandava</td>
                                         <td>53624</td>
                                         <td>07/07/2019</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset runat="server" id="detailGuna" visible="false">
+                    <legend>Details</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput4" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th>Current Location<br />
+                                                वर्तमान स्थान</th>
+                                            <th>ID-Employee Name<br />
+                                                कर्मचारी का नाम-आई.डी.</th>
+                                            <th>Promotion Order No.<br />
+                                                पदोन्नति आदेश क्र.</th>
+                                            <th>Promotion Order Date<br />
+                                                पदोन्नति आदेश दिनांक</th>
+                                            <th>New Location<br />
+                                                नया स्थान</th>
+                                            <th>Cancel Order No.<br />
+                                                निरस्त आदेश क्र.</th>
+                                            <th>Cancel Order Date<br />
+                                                निरस्त आदेश दिनांक</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Guna</td>
+                                        <td>TU4562-Udairam</td>
+                                        <td>5455</td>
+                                        <td>05/07/2023</td>
+                                        <td>Betul</td>
+                                        <td>55345</td>
+                                        <td>09/05/2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Guna</td>
+                                        <td>PS5548-Radha</td>
+                                        <td>4512</td>
+                                        <td>10/10/2023</td>
+                                        <td>Gwalior</td>
+                                        <td>58755</td>
+                                        <td>20/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Guna</td>
+                                        <td>UT8852-Kailash</td>
+                                        <td>5412</td>
+                                        <td>05/05/2020</td>
+                                        <td>Khandava</td>
+                                        <td>38632</td>
+                                        <td>29/08/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Guna</td>
+                                        <td>TU6744-Sagar</td>
+                                        <td>9554</td>
+                                        <td>15/02/2024</td>
+                                        <td>Singrauli</td>
+                                        <td>32452</td>
+                                        <td>24/10/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Guna</td>
+                                        <td>VB1 963-Dhannalal</td>
+                                        <td>6561</td>
+                                        <td>25/08/2019</td>
+                                        <td>Dewas</td>
+                                        <td>65652</td>
+                                        <td>25/04/2021</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset runat="server" id="detailDatia" visible="false">
+                    <legend>Details</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput0" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th>Current Location<br />
+                                                वर्तमान स्थान</th>
+                                            <th>ID-Employee Name<br />
+                                                कर्मचारी का नाम-आई.डी.</th>
+                                            <th>Promotion Order No.<br />
+                                                पदोन्नति आदेश क्र.</th>
+                                            <th>Promotion Order Date<br />
+                                                पदोन्नति आदेश दिनांक</th>
+                                            <th>New Location<br />
+                                                नया स्थान</th>
+                                            <th>Cancel Order No.<br />
+                                                निरस्त आदेश क्र.</th>
+                                            <th>Cancel Order Date<br />
+                                                निरस्त आदेश दिनांक</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Datia</td>
+                                        <td>TU4562-Udairam</td>
+                                        <td>5455</td>
+                                        <td>05/07/2023</td>
+                                        <td>Betul</td>
+                                        <td>55345</td>
+                                        <td>09/05/2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Datia</td>
+                                        <td>PS5548-Radha</td>
+                                        <td>4512</td>
+                                        <td>10/10/2023</td>
+                                        <td>Gwalior</td>
+                                        <td>58755</td>
+                                        <td>20/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Datia</td>
+                                        <td>UT8852-Kailash</td>
+                                        <td>5412</td>
+                                        <td>05/05/2020</td>
+                                        <td>Khandava</td>
+                                        <td>38632</td>
+                                        <td>29/08/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Datia</td>
+                                        <td>TU6744-Sagar</td>
+                                        <td>9554</td>
+                                        <td>15/02/2024</td>
+                                        <td>Singrauli</td>
+                                        <td>32452</td>
+                                        <td>24/10/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Datia</td>
+                                        <td>VB1 963-Dhannalal</td>
+                                        <td>6561</td>
+                                        <td>25/08/2019</td>
+                                        <td>Dewas</td>
+                                        <td>65652</td>
+                                        <td>25/04/2021</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset runat="server" id="detailDewas" visible="false">
+                    <legend>Details</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput6" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th>Current Location<br />
+                                                वर्तमान स्थान</th>
+                                            <th>ID-Employee Name<br />
+                                                कर्मचारी का नाम-आई.डी.</th>
+                                            <th>Promotion Order No.<br />
+                                                पदोन्नति आदेश क्र.</th>
+                                            <th>Promotion Order Date<br />
+                                                पदोन्नति आदेश दिनांक</th>
+                                            <th>New Location<br />
+                                                नया स्थान</th>
+                                            <th>Cancel Order No.<br />
+                                                निरस्त आदेश क्र.</th>
+                                            <th>Cancel Order Date<br />
+                                                निरस्त आदेश दिनांक</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Dewas</td>
+                                        <td>TU4562-Udairam</td>
+                                        <td>5455</td>
+                                        <td>05/07/2023</td>
+                                        <td>Betul</td>
+                                        <td>55345</td>
+                                        <td>09/05/2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Dewas</td>
+                                        <td>PS5548-Radha</td>
+                                        <td>4512</td>
+                                        <td>10/10/2023</td>
+                                        <td>Gwalior</td>
+                                        <td>58755</td>
+                                        <td>20/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Dewas</td>
+                                        <td>UT8852-Kailash</td>
+                                        <td>5412</td>
+                                        <td>05/05/2020</td>
+                                        <td>Khandava</td>
+                                        <td>38632</td>
+                                        <td>29/08/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Dewas</td>
+                                        <td>TU6744-Sagar</td>
+                                        <td>9554</td>
+                                        <td>15/02/2024</td>
+                                        <td>Singrauli</td>
+                                        <td>32452</td>
+                                        <td>24/10/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Dewas</td>
+                                        <td>VB1 963-Dhannalal</td>
+                                        <td>6561</td>
+                                        <td>25/08/2019</td>
+                                        <td>Dewas</td>
+                                        <td>65652</td>
+                                        <td>25/04/2021</td>
                                     </tr>
                                 </table>
                             </div>

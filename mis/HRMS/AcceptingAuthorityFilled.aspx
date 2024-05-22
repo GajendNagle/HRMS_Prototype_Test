@@ -9,7 +9,10 @@
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
-
+         #workdescription3 {
+     resize: vertical;
+     min-height: 40px; /* Set a minimum height */
+ }
         /*.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
             background-color: #16603ae3;
         }
@@ -211,26 +214,32 @@
                                 <asp:ListItem>Partially/आंशिक</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-4" style="position: relative; top: 46px;">
-                            <label>Grading(ग्रेड)</label>
-                            <asp:DropDownList runat="server" CssClass="select2 form-control">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Outstanding/उत्कृष्ट</asp:ListItem>
-                                <asp:ListItem>Very good/बहुत अच्छा</asp:ListItem>
-                                <asp:ListItem>good/अच्छा</asp:ListItem>
-                                <asp:ListItem>Satisfactory/संतोषप्रद</asp:ListItem>
-                                <asp:ListItem>Below satisfaction/असंतोषप्रद</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                            <div class="col-md-4 mt-4">
+          <label>
+              If no or agree partially give reasons for disagreement<br />
+              (यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण )</label>
+          <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
+          <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
+      </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 mt-4">
-                            <label>
-                                If no or agree partially give reasons for disagreement<br />
-                                (यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण )</label>
-                            <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
-                            <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
-                        </div>
+
+                          <div class="col-md-4">
+      <label>Grading(ग्रेड)</label>
+       <select class="form-control select2" id="ddlGrading" onchange="myFunction()">
+          <option Value="0">--Select--</option>
+          <option Value="1">Outstanding/उत्कृष्ट</option>
+          <option Value="2">Very good/बहुत अच्छा</option>
+          <option Value="3">good/अच्छा</option>
+          <option Value="4">Satisfactory/संतोषप्रद</option>
+          <option Value="5">Below satisfaction/असंतोषप्रद</option>
+      </select>
+  </div>
+                                        <div class="col-md-4"  style="display:none;" id="OfficerName"> 
+    <label> Enter Remark For  Outstanding Grading<span style="color: red">*</span></label>
+        <textarea class="form-control mb-2" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+
+</div>
                     </div>
                 </fieldset>
                 <div class="row">
@@ -278,6 +287,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        function myFunction() {
+            var ForwordTo = document.getElementById("ddlGrading").value;
+            if (ForwordTo == "1") {
+                document.getElementById('OfficerName').style.display = "block";
+            } else {
+                document.getElementById('OfficerName').style.display = "none";
+            }
+        }
+    </script>
+
     <script>
         debugger;
         !function ($) {

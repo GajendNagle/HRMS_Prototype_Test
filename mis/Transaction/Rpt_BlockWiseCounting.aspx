@@ -77,12 +77,12 @@
 
                                 <asp:DropDownList runat="server" ID="ddlDistrictN" CssClass="select2">
                                     <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                    <asp:ListItem Value="6">All</asp:ListItem>
                                     <asp:ListItem Value="1">Bhopal</asp:ListItem>
                                     <asp:ListItem Value="2">Raisen</asp:ListItem>
                                     <asp:ListItem Value="3">Sehore</asp:ListItem>
                                     <asp:ListItem Value="4">Vidisha</asp:ListItem>
                                     <asp:ListItem Value="5">Gwalior</asp:ListItem>
-                                    <asp:ListItem Value="6">All</asp:ListItem>
 
                                 </asp:DropDownList>
                             </div>

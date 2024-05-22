@@ -147,7 +147,7 @@
                                         <td>Bhopal</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="10" OnClick="Unnamed_Click1" ID="btn1" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="4" OnClick="Unnamed_Click1" ID="btn1" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
 
                                     </tr>
@@ -156,7 +156,7 @@
                                         <td>Indore</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="20" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-white  text-info  " /></td>
+                                            <asp:Button runat="server" Text="6" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-white  text-info  " /></td>
 
                                     </tr>
                                     <tr valign="middle">
@@ -164,14 +164,14 @@
                                         <td>Sagar</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="40" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="6" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-white  text-info" /></td>
                                     </tr>
                                     <tr valign="middle">
                                         <td>4</td>
                                         <td>Sehore</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="50" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="6" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
 
 
@@ -224,7 +224,7 @@
                                         <td>Bhopal</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="10" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="4" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
 
 
@@ -278,7 +278,7 @@
                                         <td>Indore</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="20" OnClick="Button5_Click" ID="Button5" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="6" OnClick="Button5_Click" ID="Button5" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
                                     </tr>
 
@@ -331,7 +331,7 @@
                                         <td>Sagar</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="40" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="5" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
                                     </tr>
 
@@ -381,7 +381,7 @@
                                         <td>Sehore</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="50" OnClick="Button7_Click" ID="Button7" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="6" OnClick="Button7_Click" ID="Button7" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
                                     </tr>
 
@@ -555,14 +555,14 @@
                                     </tr>
 
                                     <tr valign="middle">
-                                        <td>4</td>
+                                        <td>5</td>
 
                                         <td>Bk8573/Mohammad Rafi</td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
                                         <td>2023-2024</td>
                                     </tr>
                                     <tr valign="middle">
-                                        <td>5</td>
+                                        <td>6</td>
 
                                         <td>BY8573/Neeraj Saxena</td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
@@ -653,14 +653,14 @@
                                     </tr>
 
                                     <tr valign="middle">
-                                        <td>4</td>
+                                        <td>5</td>
 
                                         <td>Bk8573/SWATANTRA TRIPATHI </td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
                                         <td>2023-2024</td>
                                     </tr>
                                     <tr valign="middle">
-                                        <td>5</td>
+                                        <td>6</td>
 
                                         <td>BY8573/Ramakant Sharma</td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
@@ -756,7 +756,7 @@
                                         <td>2023-2024</td>
                                     </tr>
                                     <tr valign="middle">
-                                        <td>5</td>
+                                        <td>6</td>
 
                                         <td>BY8573/Jagdeesh   Sahu</td>
                                         <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
