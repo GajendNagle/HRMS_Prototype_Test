@@ -11,46 +11,7 @@ public partial class mis_Transaction_Rpt_CancelTransfer : System.Web.UI.Page
     {
 
     }
-    //protected void ddlDistrict_SelectedIndexChanged(object sender, EventArgs e)
-    //{
-    //    //ddlBlock.ClearSelection();
-    //    //if (ddlDistrict.SelectedItem.Text == "All")
-    //    //{
-            
-    //    //}
 
-    //     if (ddlDistrict.SelectedItem.Text == "Bhopal")
-    //    {
-
-    //        FillLocation(ddlBlock, new[] { "Berasia", "Phanda" });
-    //    }
-    //    else if (ddlDistrict.SelectedItem.Text == "Raisen")
-    //    {
-
-    //        FillLocation(ddlBlock, new[] { "Sagar ", "Vidisha " });
-    //    }
-
-    //    else if (ddlDistrict.SelectedItem.Text == "Shivpuri")
-    //    {
-
-    //        FillLocation(ddlBlock, new[] { "Dabra", "Morar" });
-    //    }
-    //    else if (ddlDistrict.SelectedItem.Text == "Guna")
-    //    {
-
-    //        FillLocation(ddlBlock, new[] { "Aron", "Chachoda" });
-    //    }
-    //    else if (ddlDistrict.SelectedItem.Text == "All")
-    //    {
-
-    //        FillLocation(ddlBlock, new[] { "Aron", "Chachoda", "Berasia", "Phanda", "Sagar ", "Vidisha ", "Dabra", "Morar" });
-    //    }
-    //    else
-    //    {
-
-    //       // ddlDistrict.Items.Insert(0, "--Select--");
-    //    }
-    //}
     protected void FillLocation(DropDownList ddltofill, string[] param)
     {
         ddltofill.Items.Clear();
@@ -62,19 +23,45 @@ public partial class mis_Transaction_Rpt_CancelTransfer : System.Web.UI.Page
     }
 
 
-
-
     protected void btnSave_Click(object sender, EventArgs e)
     {
-        if(ddlDistrict.SelectedValue == "1")
+        if (ddlDistrict.SelectedValue == "1")
         {
             dv_info.Visible = false;
             Detail.Visible = true;
+            detailGuna.Visible = false;
+            detailDewas.Visible = false;
+            detailDatia.Visible = false;
         }
-        else
+        else if (ddlDistrict.SelectedValue == "2")
         {
             dv_info.Visible = true;
             Detail.Visible = false;
+            detailGuna.Visible = false;
+            detailDewas.Visible = false;
+            detailDatia.Visible = false;
+        }
+        else if (ddlDistrict.SelectedValue == "3")
+        {
+            dv_info.Visible = false;
+            Detail.Visible = false;
+            detailGuna.Visible = true;
+        }
+        else if (ddlDistrict.SelectedValue == "4")
+        {
+            dv_info.Visible = false;
+            Detail.Visible = false;
+            detailGuna.Visible = false;
+            detailDatia.Visible = true;
+            detailDewas.Visible = false;
+        }
+        else if (ddlDistrict.SelectedValue == "5")
+        {
+            dv_info.Visible = false;
+            Detail.Visible = false;
+            detailGuna.Visible = false;
+            detailDewas.Visible = true;
+            detailDatia.Visible = false;
         }
     }
 }
