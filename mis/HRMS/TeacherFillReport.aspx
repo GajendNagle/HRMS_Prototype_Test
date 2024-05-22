@@ -44,11 +44,21 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">व्याख्याता/शिक्षक की गोपनीय चरित्रावली </h4>
-                <br />
-                <h6 style="font-size: 15px;">PART-2 Self-Evaluation(भाग दो-स्वमूल्यांकन)</h6>
-            </div>
+            <%--<div class="col-md-5 align-self-center">
+    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+    <h4 class="text-themecolor" style="position: relative; left: 500px; bottom: 20px; color: brown; font-weight: bolder; font-family: Helvetica, Arial, sans-serif;">व्याख्याता/शिक्षक की गोपनीय चरित्रावली  </h4>
+    <br />
+    <h6 style="font-size: 15px; position: relative; left: 520PX; bottom: 20px;"></h6>
+</div>--%>
+                                    <div class="col-md-5 align-self-center">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+        <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        </u>
+    </p>
+    <h6 style="font-size: 15px; margin-left: 25px">PART-2 Self-Evaluation(भाग दो-स्वमूल्यांकन)</h6>
+</div>
+
+            
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
@@ -63,7 +73,7 @@
     </div>
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
-        </div>
+ </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -73,18 +83,31 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li><a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a></li>
+                            <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Print Application </a></li>
+                                   <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
                                 </ul>
                             </li>
-                            <li><a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a></li>
-                            <li><a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a></li>
+                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
+                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
+                                </a>
+                               <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
+    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
+</ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -209,7 +232,84 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-
+                                      <tr valign="middle">
+      <td>7</td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <textarea class="form-control mt-1" id="workdescription7" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+  </tr>
+                                      <tr valign="middle">
+      <td>8</td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <textarea class="form-control mt-1" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+  </tr>
+                                      <tr valign="middle">
+      <td>9</td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <textarea class="form-control mt-1" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+  </tr>
+                                      <tr valign="middle">
+      <td>10</td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <textarea class="form-control mt-1" id="workdescription10" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+  </tr>
+                                      <tr valign="middle">
+      <td>11</td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <textarea class="form-control mt-1" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+  </tr>
+                                      <tr valign="middle">
+      <td>12</td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+      <td>
+          <textarea class="form-control mt-1" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+  </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -297,8 +397,102 @@
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
 
                                     </tr>
+                                    <tr valign="middle">
+    <td>5</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
 
-                                </tbody>
+</tr>
+                                    <tr valign="middle">
+    <td>6</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>
+                                    <tr valign="middle">
+    <td>7</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>
+                                    <tr valign="middle">
+    <td>8</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>
+                                    <tr valign="middle">
+    <td>9</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>
+                                    <tr valign="middle">
+    <td>10</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>
+                                    <tr valign="middle">
+    <td>11</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>
+            <tr valign="middle">
+    <td>12</td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+
+</tr>                    </tbody>
                             </table>
                         </div>
                     </div>
@@ -388,32 +582,19 @@
                                     <tr valign="middle">
                                         <td>1
                                         </td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                        <td><asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
 
 
                                     </tr>
@@ -480,6 +661,294 @@
                                             <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
 
                                     </tr>
+                                    <tr valign="middle">
+    <td>4
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>5
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>6
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>7
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>8
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>9
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>10
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>11
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
+                                    <tr valign="middle">
+    <td>12
+    </td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+    <td>
+        <asp:TextBox runat="server" Style="width: 70px;"></asp:TextBox></td>
+
+
+</tr>
                                 </tbody>
                             </table>
 
@@ -646,23 +1115,88 @@
                 <div class="row justify-content-center">
                     <div class="col-md-3 text-center mt-3" style="position: relative; top: 20px;">
                         <div class="form-group">
-                            <button type="button" class="Alert-Save btn btn-success btn-rounded  ">
+                           <%-- <button type="button" class="btn btn-success btn-rounded " data-toggle="modal" data-target="#myModal">
                                 Send to Officer
-                            </button>
 
+                            </button>--%>
 
-                            <a href="TeacherFillReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
+                             <button type="button" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> Save  </button>
+                            <a href="TeacherFillReport.aspx" class="btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
+    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#1B5B5C;">
+            
+      <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+ 
+        <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel" >Send To Reporting Officer</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                            <fieldset>
+                      <legend>Send To Reporting Officer </legend>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <label>  Reporting Officer Unique ID <span style="color: red">*</span></label>
+                          <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+
+                      </div>
+                     
+                        <div class="col-md-4"  style="display:none;" id="OfficerName"> 
+      <label>  Reporting Officer Name <span style="color: red">*</span></label>
+      <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi" ></asp:TextBox>
+
+  </div>
+
+                        <div class="col-md-4"  style="display:none;" id="SankulCode">
+      <label>  Reporting Officer Sankul Code</label>
+      <asp:TextBox runat="server" CssClass="form-control" placeholder="GOVT. HSS SHYAMPUR-23010804504"></asp:TextBox>
+</div>
+  </div>
+
+
+               
+                  
+              <%--    <div class="form-group">
+                      <label>Remark<span style="color: red">*</span></label>
+                      <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject Order"></textarea>
+                  </div>--%>
+                      </fieldset>
+                     <div class="modal-footer justify-content-center">
+                         <div  style="display:none;" id="btn1">
+            <button type="button" class="btn btn-success Alert-Save btn-rounded" data-dismiss="modal" id="saveButton">Send To Officer</button>
+        <a href="TeacherFillReport.aspx" class="btn btn-danger btn-rounded">Clear</a> 
+    </div>
+   </div>
+      </div>
+   
+    </div>
+  </div>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        function myFunction() {
+            document.getElementById('OfficerName').style.display = "block";
+            document.getElementById('SankulCode').style.display = "block";
+            document.getElementById('btn1').style.display = "block";
+       
+
+            //var x = document.getElementById("mySelect").value;
+            //document.getElementById("demo").innerHTML = "You selected: " + x;
+        }
+    </script>
+
+      
     <script>function autoResize(textarea) {
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height

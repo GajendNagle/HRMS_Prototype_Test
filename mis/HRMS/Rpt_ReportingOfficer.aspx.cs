@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class mis_Transaction_AcceptingAuthorityFilled : System.Web.UI.Page
+public partial class mis_Transaction_Rpt_ReportingOfficer : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -14,15 +14,20 @@ public partial class mis_Transaction_AcceptingAuthorityFilled : System.Web.UI.Pa
 
     protected void Unnamed_Click(object sender, EventArgs e)
     {
-        show2.Visible = false;
-        Fieldset1.Visible = true;
+        Response.Redirect("Rpt_EmployeeACR.aspx");
     }
 
     protected void Unnamed_Click1(object sender, EventArgs e)
     {
-        show2.Visible = false;
-        Fieldset1.Visible = true;
+        Response.Redirect("Rpt_EmployeeACR.aspx");
+    }
+
+
+
+
+
+    protected void Unnamed_Click2(object sender, EventArgs e)
+    {
 
     }
 }
-

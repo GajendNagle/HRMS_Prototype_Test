@@ -22,4 +22,16 @@ public partial class mis_Transaction_Trn_ParivadNivaran : System.Web.UI.Page
 
     //    }
     //}
+
+    protected void ddlForword_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        AuthorityName.Visible = false;
+        if (ddlForword.SelectedItem.Text == "CPI")
+        {
+
+            AuthorityName.Visible = true;
+        }
+
+          
+    }
 }

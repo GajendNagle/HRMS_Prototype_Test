@@ -230,21 +230,48 @@
                                     फॉरवर्ड करे
                                 <span style="color: red">*</span></label>
 
-                                <select  id="ddlForword" class="form-control vd_DDL_required" >
-                                    <option value="0">-- Select -- </option>
-                                    <option value="1">SED(Vallbhav Bhawan)</option>
-                                    <option value="3">CPI</option>
-                                    <option value="5">RSK</option>
-                                    <option value="6">SCERT</option>
-                                    <option value="7">Divisional JD</option>
-                                    <option value="8">DEO</option>
-                                    <option value="11">DPC</option>
-                                    <option value="12">BEO  District / Block All </option>
-                                    <option value="13">BRC District / Block All</option>
-                                    <option value="16">DIET/ DRC</option>
-                                </select>
+                                <asp:DropDownList  id="ddlForword" class="form-control vd_DDL_required" runat="server" OnSelectedIndexChanged="ddlForword_SelectedIndexChanged" AutoPostBack="true">
+                                    <asp:ListItem value="0">-- Select -- </asp:ListItem>
+                                    <asp:ListItem value="1">SED(Vallbhav Bhawan)</asp:ListItem>
+                                    <asp:ListItem value="3">CPI</asp:ListItem>
+                                    <asp:ListItem value="5">RSK</asp:ListItem>
+                                    <asp:ListItem value="6">SCERT</asp:ListItem>
+                                    <asp:ListItem value="7">Divisional JD</asp:ListItem>
+                                    <asp:ListItem value="8">DEO</asp:ListItem>
+                                    <asp:ListItem value="11">DPC</asp:ListItem>
+                                    <asp:ListItem value="12">BEO  District / Block All </asp:ListItem>
+                                    <asp:ListItem value="13">BRC District / Block All</asp:ListItem>
+                                    <asp:ListItem value="16">DIET/ DRC</asp:ListItem>
+                                </asp:DropDownList>
                             </div>
                         </div>
+                       
+                           <div class="col-md-3" runat="server" id="AuthorityName"  visible="false">
+       <div class="form-group">
+           <label>Authority Name:<span style="color: red">*</span></label>
+           <select class="form-control select2">
+               <option value="Select">-Select-</option>
+               <option value="1">RMSA</option>
+               <option value="2">Est-1</option>
+               <option value="3">Est-2</option>
+               <option value="4">Est-3</option>
+               <option value="5">Est-4</option>
+               <option value="6">CAFMS</option>
+               <option value="7">New Cadre</option>
+               <option value="15">Finance</option>
+               <option value="16">Grant</option>
+               <option value="17">NSDL</option>
+               <option value="18">CPI</option>
+               <option value="19">Legal</option>
+               <option value="20">Mis</option>
+               <option value="21">Physical education</option>
+               <option value="22">Akadmik</option>
+               <option value="23">CM-RISE</option>
+               <option value="24">Planning</option>
+               <option value="26">TMC</option>
+           </select>
+       </div>
+   </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
@@ -282,7 +309,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         
-                        <Button runat="server" type="button" class="Alert-Save  btn btn-success btn-rounded">शिकायत का दर्ज करे</Button>
+                        <Button runat="server" type="button" class="Alert-Confirmation  btn btn-success btn-rounded">शिकायत का दर्ज करे</Button>
                     </div>
                 </div>
 
@@ -294,7 +321,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
 
-   <script>
+  <%-- <script>
             debugger;
             !function ($) {
                 "use strict";
@@ -357,6 +384,6 @@
                     "use strict";
                     $.SweetAlert.init()
                 }(window.jQuery);
-   </script>
+   </script>--%>
 </asp:Content>
 
