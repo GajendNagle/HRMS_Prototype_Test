@@ -283,7 +283,7 @@
                                                 </tr>
                                                 <tr valign="middle">
                                                     <td>2</td>
-                                                    <td cssclass="fw-bold text-center">दूसरी</td>
+                                                    <td cssclass="fw-bold text-center">दूसरी कक्षा</td>
                                                     <td cssclass="fw-bold text-center">पहला</td>
                                                     <td cssclass="fw-bold text-center">दूसरा</td>
                                                     <td cssclass="fw-bold text-center">92%</td>
