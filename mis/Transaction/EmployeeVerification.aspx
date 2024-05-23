@@ -56,22 +56,6 @@
                 penid.style.display = "none";
                 divbtn.style.display = "none";
             }
-
-            //var y = document.getElementById("divbtn");
-            //if (y.style.visibility === "hidden") {
-            //    y.style.visibility = "visible";
-            //} else {
-            //    y.style.visibility = "visible";
-            //}
-
-            //var z = document.getElementById("des");
-            //if (z.style.visibility === "hidden") {
-            //    z.style.visibility = "visible";
-            //} else {
-            //    z.style.visibility = "visible";
-            //}
-
-
         }
     </script>
     <script> 
@@ -102,11 +86,6 @@
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
-                        <%--  <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active"></li>--%>
-
-
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
@@ -128,208 +107,26 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-
                                 <li>
-
                                     <a class="nav-link  text-white " href="EmployeeVerificationNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                 </li>
                                 <li>
-
-                                    <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Employee Verification</b></a>
+                                    <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee Verification</b></a>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </nav>
                 <br />
-
                 <fieldset>
                     <legend>Employee Verification
                     </legend>
                     <div class="row">
-                        <%--<div class="col-md-3">
-                            <div class="form-group">
-                                <label>State / राज्य </label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                                    <option value="Assam">Assam</option>
-                                    <option value="Bihar">Bihar</option>
-                                    <option value="Chhattisgarh">Chhattisgarh</option>
-                                    <option value="Goa">Goa</option>
-                                    <option value="Gujarat">Gujarat</option>
-                                    <option value="Haryana">Haryana</option>
-                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                                    <option value="Jharkhand">Jharkhand</option>
-                                    <option value="Karnataka">Karnataka</option>
-                                    <option value="Kerala">Kerala</option>
-                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                                    <option value="Maharashtra">Maharashtra</option>
-                                    <option value="Manipur">Manipur</option>
-                                    <option value="Meghalaya">Meghalaya</option>
-                                    <option value="Mizoram">Mizoram</option>
-                                    <option value="Nagaland">Nagaland</option>
-                                    <option value="Odisha">Odisha</option>
-                                    <option value="Punjab">Punjab</option>
-                                    <option value="Rajasthan">Rajasthan</option>
-                                    <option value="Sikkim">Sikkim</option>
-                                    <option value="Tamil Nadu">Tamil Nadu</option>
-                                    <option value="Telangana">Telangana</option>
-                                    <option value="Tripura">Tripura</option>
-                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                                    <option value="Uttarakhand">Uttarakhand</option>
-                                    <option value="West Bengal">West Bengal</option>
-                                </select>
-                            </div>
-                        </div>--%>
-
-                        <%-- <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="font-bold">Division / संभाग </label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Bhopal">Bhopal</option>
-                                    <option value="Indore">Indore</option>
-                                    <option value="Gwalior">Gwalior</option>
-                                    <option value="Jabalpur">Jabalpur</option>
-                                    <option value="Ujjain">Ujjain</option>
-                                    <option value="Sagar">Sagar</option>
-                                    <option value="Rewa">Rewa</option>
-                                    <option value="Chambal">Chambal</option>
-                                    <option value="Shahdol">Shahdol</option>
-                                    <option value="Hoshangabad">Hoshangabad</option>
-                                    <option value="Narmadapuram">Narmadapuram</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <label class="font-bold">District/जिला</label>
-                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="Bhopal">Bhopal</option>
-                                <option value="Raisen">Raisen</option>
-                                <option value="Rajgarh">Rajgarh</option>
-                                <option value="Sehore">Sehore</option>
-                                <option value="Vidisha">Vidisha</option>
-                                <option value="Ashoknagar">Ashoknagar</option>
-                                <option value="Shivpuri">Shivpuri</option>
-                                <option value="Datia">Datia</option>
-                                <option value="Guna">Guna</option>
-                                <option value="Gwalior">Gwalior</option>
-                                <option value="Harda">Harda</option>
-                                <option value="Hoshangabad">Hoshangabad</option>
-                                <option value="Betul">Betul</option>
-                                <option value="Morena">Morena</option>
-                                <option value="Sheopur">Sheopur</option>
-                                <option value="Bhind">Bhind</option>
-                                <option value="Barwani">Barwani</option>
-                                <option value="Burhanpur">Burhanpur</option>
-                                <option value="Dhar">Dhar</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Jhabua">Jhabua</option>
-                                <option value="Khandwa">Khandwa</option>
-                                <option value="Khargone">Khargone</option>
-                                <option value="Alirajpur">Alirajpur</option>
-                                <option value="Balaghat">Balaghat</option>
-                                <option value="Chhindwara">Chhindwara</option>
-                                <option value="Jabalpur">Jabalpur</option>
-                                <option value="Katni">Katni</option>
-                                <option value="Mandla">Mandla</option>
-                                <option value="Narsinghpur">Narsinghpur</option>
-                                <option value="Seoni">Seoni</option>
-                                <option value="Rewa">Rewa</option>
-                                <option value="Satna">Satna</option>
-                                <option value="Sidhi">Sidhi</option>
-                                <option value="Singroli">Singroli</option>
-                                <option value="Chhatarpur">Chhatarpur</option>
-                                <option value="Damoh">Damoh</option>
-                                <option value="Panna">Panna</option>
-                                <option value="Sagar">Sagar</option>
-                                <option value="Tikamgarh">Tikamgarh</option>
-                                <option value="Shahdol">Shahdol</option>
-                                <option value="Umaria">Umaria</option>
-                                <option value="Dindori">Dindori</option>
-                                <option value="Anuppur">Anuppur</option>
-                                <option value="Dewas">Dewas</option>
-                                <option value="Mandsaur">Mandsaur</option>
-                                <option value="Neemuch">Neemuch</option>
-                                <option value="Ratlam">Ratlam</option>
-                                <option value="Shajapur">Shajapur</option>
-                                <option value="Ujjain">Ujjain</option>
-
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Block / ब्लॉक </label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Agar">Agar</option>
-                                    <option value="Alirajpur">Alirajpur</option>
-                                    <option value="Anuppur">Anuppur</option>
-                                    <option value="Ashoknagar">Ashoknagar</option>
-                                    <option value="Balaghat">Balaghat</option>
-                                    <option value="Barwani">Barwani</option>
-                                    <option value="Betul">Betul</option>
-                                    <option value="Bhind">Bhind</option>
-                                    <option value="Bhopal">Bhopal</option>
-                                    <option value="Burhanpur">Burhanpur</option>
-                                    <option value="Chhatarpur">Chhatarpur</option>
-                                    <option value="Chhindwara">Chhindwara</option>
-                                    <option value="Damoh">Damoh</option>
-                                    <option value="Datia">Datia</option>
-                                    <option value="Dewas">Dewas</option>
-                                    <option value="Dhar">Dhar</option>
-                                    <option value="Dindori">Dindori</option>
-                                    <option value="Guna">Guna</option>
-                                    <option value="Gwalior">Gwalior</option>
-
-
-
-                                </select>
-                            </div>
-                        </div>--%>
-                     <%--   <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Designation Type / पदनाम का प्रकार<span style="color: red">*</span></label>
-                                <select name="ctl00$ContentBody$ctl01" class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Regular">Ministry</option>
-                                    <option value="Sthai Karmi">Teaching</option>
-                                    <option value="Theka shramik">Executive</option>
-                                    <option value="Clerical">Clerical</option>
-                                    <option value="State">State</option>
-                                    <option value="Other Department">Other Department</option>
-                                    <option value="Hostel">Hostel</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Designation / पदनाम <span style="color: red">*</span></label>
-                                <select name="Designation" class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="General Manager">General Manager</option>
-                                    <option value="Sthai Karmi">Manager</option>
-                                    <option value="Commissioner">Commissioner</option>
-                                    <option value="Additional Director">Additional Director</option>
-                                    <option value="Asstt Director">Asstt Director</option>
-                                    <option value="Planning Officer">Planning Officer</option>
-                                    <option value="Tabla Teacher">Tabla Teacher</option>
-                                </select>
-                            </div>
-                        </div>--%>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Verification Status/ सत्यापन स्थिति</label>
                                 <select class="form-control select2" id="ddlApprove">
                                     <option value="0">--Select--</option>
-
                                     <option value="1">Approve</option>
                                     <option value="2">Pending</option>
                                     <option value="3">Reject</option>
@@ -338,12 +135,10 @@
                         </div>
                         <div class="col-md-3 mt-4 justify-content-end">
                             <button onclick="myFunction()" type="button" class=" btn btn-success btn-rounded ">Search</button>
-
                             <a runat="server" id="A1" href="EmployeeVerification.aspx" class="btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
                 </fieldset>
-
                 <fieldset id="showdetails">
                     <legend>Details</legend>
                     <div class="row justify-content-end">
@@ -362,17 +157,25 @@
                     <div class="row form-group">
                         <div class="col-md-12" id="appid">
                             <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Name</th>
-                                        <th>Employee ID</th>
-                                        <th>Designation</th>
-                                        <th>Department</th>
-                                        <th>View More</th>
-                                        <th>Status</th>
-
-                                    </tr>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
+                                            <th>Employee Name<br />
+                                                कर्मचारी का नाम</th>
+                                            <th>Employee ID<br />
+                                                कर्मचारी की आई. डी.</th>
+                                            <th>Designation<br />
+                                                धारित पद</th>
+                                            <th>Department<br />
+                                                विभाग</th>
+                                            <th>View More<br />
+                                                और देखे</th>
+                                            <th>Status<br />
+                                                स्थिति</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Shri A.K. Ranjan</td>
@@ -400,35 +203,37 @@
                                         <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                         <td>Approved</td>
                                     </tr>
-
                                 </table>
                             </div>
                         </div>
                         <div class="col-md-12" id="penid">
                             <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Action
-                                       <br />
-                                            <input type="checkbox" />
-
-                                        </th>
-                                        <th>Employee Name</th>
-                                        <th>Employee ID</th>
-                                        <th>Designation</th>
-                                        <th>Department</th>
-                                        <th>View More</th>
-                                        <th>Status</th>
-
-                                    </tr>
-
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
+                                            <th>Action<br />
+                                                गतिविधि</th>
+                                            <th>Employee Name<br />
+                                                कर्मचारी का नाम</th>
+                                            <th>Employee ID<br />
+                                                कर्मचारी की आई.डी.</th>
+                                            <th>Designation<br />
+                                                धारित पद</th>
+                                            <th>Department<br />
+                                                विभाग</th>
+                                            <th>View More<br />
+                                                और देखे</th>
+                                            <th>Status<br />
+                                                स्थिति</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td scope="col">
                                             <input type="checkbox" />
                                         </td>
-
                                         <td>Shri S.S. Soni</td>
                                         <td>0059</td>
                                         <td>UDC</td>
@@ -441,7 +246,6 @@
                                         <td scope="col">
                                             <input type="checkbox" />
                                         </td>
-
                                         <td>R.K. Dubey</td>
                                         <td>0089</td>
                                         <td>UDC</td>
@@ -454,7 +258,6 @@
                                         <td scope="col">
                                             <input type="checkbox" />
                                         </td>
-
                                         <td>Pradeep Mishra</td>
                                         <td>0065</td>
                                         <td>UDC</td>
@@ -467,7 +270,6 @@
                                         <td scope="col">
                                             <input type="checkbox" />
                                         </td>
-
                                         <td>Dhanraj Sharma</td>
                                         <td>0060</td>
                                         <td>UDC</td>
@@ -480,17 +282,25 @@
                         </div>
                         <div class="col-md-12" id="regid">
                             <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Name</th>
-                                        <th>Employee ID</th>
-                                        <th>Designation</th>
-                                        <th>Department</th>
-                                        <th>View More</th>
-                                        <th>Status</th>
-                                    </tr>
-
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
+                                            <th>Employee Name<br />
+                                            कर्मचारी का नाम</th>
+                                            <th>Employee ID<br />
+                                            कर्मचारी की आई.डी.</th>
+                                            <th>Designation<br />
+                                            धारित पद</th>
+                                            <th>Department<br />
+                                            विभाग</th>
+                                            <th>View More<br />
+                                            और देखे</th>
+                                            <th>Status<br />
+                                            स्तिथि</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Ramcharan</td>
@@ -527,9 +337,7 @@
                     <div class="col-md-12">
                         <div class="form-group text-center">
                             <button type="button" class="btn btn-success btn-rounded" onclick="openBootstrapModalreg1()">Save</button>
-
                             <button type="button" class=" btn btn-danger btn-rounded" onclick="openBootstrapModalreg()">Reject</button>
-                            <%--  <button type="button" class=" btn btn-danger btn-rounded" onclick="openBootstrapModalreg1()">Reject</button>--%>
                         </div>
                     </div>
                 </div>
@@ -538,27 +346,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="main-ul">
-
-                                <%--   <li><strong>State  Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>State  Name </strong>from the dropdown and the data will be populated from the <strong>State  Master</strong>.</li>
-                                    </ul>
-                                </li>--%>
-                                <%--   <li><strong>Division Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Division Name </strong>from the dropdown and the data will be populated from the <strong>Division Master</strong> and data cascade from <strong>State Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>District Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>District Name </strong>from the dropdown and the data will be populated from the <strong>District Master</strong> and data cascade from <strong>State and Division Master</strong>.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Block Name</strong>
-                                    <ul>
-                                        <li>User should be able to select the <strong>Block Name </strong>from the dropdown and the data will be populated from the <strong>Block Master</strong> and data cascade from <strong>State Master </strong>and <strong>Division Master</strong> and <strong>District Master</strong> .</li>
-                                    </ul>
-                                </li>--%>
                                 <li><strong>Designation Type</strong>
                                     <ul>
                                         <li>User will be able to select <strong>Designation Type </strong>from dropdown. Data populated from <strong>Designation Type master.</strong> </li>
@@ -816,8 +603,6 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </fieldset>
 
@@ -829,7 +614,6 @@
                                                 <legend>Present Address
                                                 </legend>
                                                 <div class="row">
-
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Address line 1<span style="color: red">*</span></label>
@@ -874,8 +658,6 @@
                                                     </div>
 
                                                 </div>
-
-
                                             </fieldset>
                                         </div>
                                         <div class="col-md-6">
@@ -883,7 +665,6 @@
                                             <div class="form-group">
                                                 <input type="checkbox" id="vehicle1" name="vehicle1" checked value="Bike">
                                                 <b>Permanent Address same as Present Address</b>
-                                                <%--<label><span style="color: red">*</span></label>--%>
                                             </div>
                                         </div>
 
@@ -899,7 +680,6 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                         </div>
                                                     </div>
-
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Address line 2<span style="color: red">*</span></label>
@@ -930,22 +710,17 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-
-
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Pincode<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="462010" />
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </fieldset>
                                         </div>
-
                                     </div>
                                 </fieldset>
-
                                 <fieldset>
                                     <legend>Marital Status and Spouse Details</legend>
                                     <div class="row">
@@ -981,7 +756,6 @@
                                         </div>
                                     </div>
                                 </fieldset>
-
                                 <fieldset>
                                     <legend>Education Qualification</legend>
                                     <div class="row">
@@ -1027,7 +801,6 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20.12.2021" />
                                             </div>
                                         </div>
-
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>First Appointment Department <span style="color: red">*</span></label>
@@ -1242,13 +1015,8 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2 mt-4">
-
-                                        <%-- <button data-bs-dismiss="modal" class="btn btn-success Alert-Empverify btn-rounded w-100">Save</button>--%>
-
                                         <button type="button" class="btn btn-success   Alert-Empverify btn-rounded w-100" data-bs-dismiss="modal">Save</button>
-                                        <%--<button type="button" class="btn btn-danger btn-block waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>--%>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -1261,11 +1029,9 @@
 
                 </div>
                 <!-- /.modal -->
-
             </div>
         </div>
     </div>
-
     <div class="modal" tabindex="-1" role="dialog" id="bootstrapModalreg">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1288,16 +1054,11 @@
             </div>
         </div>
     </div>
-
-
-
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="bootstrapModalreg1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-
                     <h3 style="font: bold; margin-left: auto;">//आहरण संवितरण अधिकारी की अनुशंसा//</h3>
-
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                 </div>
                 <div class="modal-body">
@@ -1338,30 +1099,16 @@
                                 <div class="col-md-12">
                                     <div class="form-group text-center">
                                         <button type="button" class="Alert-SaveOrder  btn btn-success btn-rounded">Approve</button>
-
-
                                         <button type="button" class="btn btn-danger btn-rounded waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <%--    <style>
-        table, td, th {
-            border: 1px solid;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-    </style>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 
@@ -1379,10 +1126,6 @@
                         title: 'Good job!',
                         text: 'Something went wrong!',
                         timer: 2000
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
                     })
                 });
 
@@ -1395,10 +1138,6 @@
                         confirmButtonColor: '#3085D6',
                         cancelButtonColor: '#d33',
                         confirmButtonText: 'Yes'
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
                     }).then((result) => {
                         if (result.value) {
                             Swal.fire({
@@ -1406,14 +1145,9 @@
                                 title: 'Success!',
                                 text: 'Employee Verified Successfully!',
                                 timer: 2000
-                                // animation: false,
-                                // customClass: {
-                                //     popup: 'animated tada'
-                                // }
                             }
                             )
                         }
-
                     })
                 });
             },
@@ -1452,10 +1186,6 @@
                         confirmButtonColor: '#3085D6',
                         cancelButtonColor: '#d33',
                         confirmButtonText: 'Yes',
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
                     }).then((result) => {
                         if (result.value) {
                             Swal.fire({
@@ -1463,10 +1193,7 @@
                                 title: 'Success!',
                                 text: 'Record Approve Successfully!',
                                 timer: 2000
-                                // animation: false,
-                                // customClass: {
-                                //     popup: 'animated tada'
-                                // }
+
                             }
                             )
                             var x = document.getElementById('ShowOrders');
