@@ -331,7 +331,7 @@
                                         <td>Sagar</td>
                                         <td>2023-2024</td>
                                         <td>
-                                            <asp:Button runat="server" Text="5" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                            <asp:Button runat="server" Text="6" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
                                     </tr>
 
