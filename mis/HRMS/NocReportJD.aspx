@@ -289,7 +289,7 @@
                                                                     <td>Asstt Teacher(LDT)</td>
                                                                     <td>28/12/2021</td>
                                                                     <td>BRAJESH KUSHVAH</td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
                                                                     <td>10/08/1997</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -309,7 +309,7 @@
                                                                     <td>Madhyami8k Shaishak</td>
                                                                     <td>15/04/2022</td>
                                                                     <td>SHAKSHAM SHINGH </td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
                                                                     <td>12/12/1996</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -329,7 +329,7 @@
                                                                     <td>Asstt Grade-2</td>
                                                                     <td>16/01/2023</td>
                                                                     <td>PRAMOD KUMAR PATEL</td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
                                                                     <td>02/10/2000</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -831,14 +831,7 @@
                                             मृत्यु का कारण  :<span style="color: Red;">*</span></label>
 
 
-                                        <%-- <asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
 
-
-                                            <asp:ListItem Value="0">- Select Death Type - </asp:ListItem>
-                                            <asp:ListItem Value="4">कोविड-19 संक्रमण  </asp:ListItem>
-                                            <asp:ListItem Selected="True" Value="6">अन्य  </asp:ListItem>
-
-                                        </asp:DropDownList>--%>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="कोविड-19 संक्रमण " maxlength="50" disabled="disabled" class="form-control vd_Required " />
 
 
@@ -859,22 +852,7 @@
                                             जीवित परिवार के सदस्यों में से कोई नहीं : <span style="color: Red;">*</span></label>
 
 
-                                        <%--  <asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
 
-
-                                            <asp:ListItem Value="0">Select </asp:ListItem>
-                                            <asp:ListItem Value="1">1 </asp:ListItem>
-                                            <asp:ListItem Value="2">2 </asp:ListItem>
-                                            <asp:ListItem Value="3">3 </asp:ListItem>
-                                            <asp:ListItem Value="4">4 </asp:ListItem>
-                                            <asp:ListItem Selected="True" Value="5">5 </asp:ListItem>
-                                            <asp:ListItem Value="6">6 </asp:ListItem>
-                                            <asp:ListItem Value="7">7 </asp:ListItem>
-                                            <asp:ListItem Value="8">8 </asp:ListItem>
-                                            <asp:ListItem Value="9">9 </asp:ListItem>
-                                            <asp:ListItem Value="10">10 </asp:ListItem>
-
-                                        </asp:DropDownList>--%>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
                                     </div>
@@ -1081,7 +1059,7 @@
                                             <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblApplicantName">BRAJESH KUSHWAH</span>
                                         </td>
                                         <td>
-                                            <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblAoolicantGender">M</span>
+                                            <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblAoolicantGender">Male</span>
                                         </td>
                                         <td>
                                             <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappdob">10/08/1997</span>
