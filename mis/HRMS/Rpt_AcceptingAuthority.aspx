@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_AcceptingAuthority.aspx.cs" Inherits="mis_Transaction_Rpt_AcceptingAuthority" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+
     <style>
         #workdescription2 {
             resize: vertical;
@@ -13,45 +14,51 @@
             position: relative;
             bottom: 20px;
         }
-        /*@media print {*/
-        /* Show modal content in full page */
-        /*.modal-dialog {
-         width: 200%;
-         height: auto;
-         margin: 0;
-         padding: 0;
-     }
 
-     .modal-content {
-         height: 200%;
-         border: none;
-         box-shadow: none;
-     }
+        @media print {
+          
+            /* Show modal content in full page */
+            .modal-dialog {
+                width: 200%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
-     .modal-body {
-         width: 210%;
-         height: auto;
-         overflow: visible !important;
-         zoom: 90%;
-     }*/
-        /* Hide unnecessary elements */
-        /*body.modal-open {
-         visibility: hidden;
-     }
+            .modal-content {
+                height: 200%;
+                border: none;
+                box-shadow: none;
+            }
 
-         body.modal-open .modal .modal-header,
-         body.modal-open .modal .modal-body {
-             visibility: visible;
-         }
+            .modal-body {
+                width: 210%;
+                height: auto;
+                overflow: visible !important;
+                zoom: 90%;
+            }
+            /* Hide unnecessary elements */
+            body.modal-open {
+                visibility: hidden;
+            }
 
-     .modal-footer {
-         display: none;
-     }
+                body.modal-open .modal .modal-header,
+                body.modal-open .modal .modal-body {
+                    visibility: visible;
+                }
 
-     #exampleModalLabel {
-         position: center;*/
-        /*right:40px;*/
-        /*}*/
+            .modal-footer {
+                display: none;
+            }
+
+            .modal-header {
+                display: none;
+            }
+
+            fieldset {
+                position: center;
+            }
+        }
 
         @media Print {
             /* Show modal content in full page */
@@ -60,19 +67,18 @@
                 display: none;
             }
         }
-      
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-        <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-        </u>
-    </p>
-    <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
-</div>
+                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                    </u>
+                </p>
+                <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
+            </div>
             <div class="col-md-7 align-self-center text-end" id="hrms">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
@@ -86,8 +92,8 @@
         </div>
     </div>
     <div class="card mt-3 shadow">
-         <div class="card-header card-border-info">
- </div>
+        <div class="card-header card-border-info">
+        </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -115,12 +121,12 @@
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
                                 </a>
-                               <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
-    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
-    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
-    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
-</ul>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
+                                    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
+                                    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
+                                    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -175,20 +181,19 @@
                                         <td>सहायक शिक्षक</td>
                                         <td>DPI/456656356</td>
 
-                                       
-                                        <td>
-                                            <a href="Rpt_EmployeeACR.aspx"  class="btn btn-primary"> <i class="fa fa-print" aria-hidden="true" >
-                                                                                                                                                  </i></a>
-                                        </td>
-                                       
-                                         <td>
-      <a href="Rpt_ReportingOfficer.aspx" class="btn btn-primary" > <i class="fa fa-print" aria-hidden="true" ></i></a>
- </td>
-                                                                                <td>
-   <a onclick="showtbl()" class="btn btn-primary"> <i class="fa fa-print" aria-hidden="true"></i> </a>
 
-</td>
-                                     
+                                        <td>
+                                            <a href="Rpt_EmployeeACR.aspx" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true"></i></a>
+                                        </td>
+
+                                        <td>
+                                            <a href="Rpt_ReportingOfficer.aspx" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></a>
+
+                                        </td>
+
                                     </tr>
                                 </tbody>
                                 <tbody>
@@ -199,18 +204,17 @@
                                         <td>28/09/1989</td>
                                         <td>सहायक शिक्षक</td>
                                         <td>DPI/456656356</td>
-                                         
-                                       
+
+
                                         <td>
-                                            <a href="Rpt_EmployeeACR.aspx"  class="btn btn-primary"> <i class="fa fa-print" aria-hidden="true" >
-                                                                                                                                                  </i></a>
+                                            <a href="Rpt_EmployeeACR.aspx" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true"></i></a>
                                         </td>
-                                                                      <td>
-     <a href="Rpt_ReportingOfficer.aspx" class="btn btn-primary" > <i class="fa fa-print" aria-hidden="true" ></i></a>
-</td>
-                                         <td>
-       <a onclick="showtbl()" class="btn btn-primary"> <i class="fa fa-print" aria-hidden="true"></i> </a>
- </td>
+                                        <td>
+                                            <a href="Rpt_ReportingOfficer.aspx" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -222,7 +226,7 @@
 
 
             <br />
-               <fieldset style="display: none;" id="FS_FillByOfficer">
+            <fieldset style="display: none;" id="FS_FillByOfficer">
 
                 <legend>To Be Filled By Accepting Authority(स्वीकृत अधिकारी द्वारा भरा जाये)</legend>
                 <div class="row">
@@ -264,15 +268,128 @@
                     </div>
                 </div>
                 <br />
-                   <div class="modal-footer justify-content-center" id="button">
+                <div class="modal-footer justify-content-center" id="button">
 
-    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-</div>
+                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </fieldset>
-            
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title w-100 text-center"></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <fieldset>
+                                <br />
+                                <br />
+                                <div class="row text-center">
+                                    <div class="col-sm-2">
+                                        <img id="imgLogoP1" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
+                                    </div>
+                                    <div class="col-sm-8 text-center">
+                                        <br />
+                                        <h3><strong><b>व्याख्याता/शिक्षक की गोपनीय चरित्रावली का प्रारूप</b></strong></h3>
+                                        <h4><strong><b>स्कूल शिक्षा विभाग मध्य प्रदेश शासन</b></strong></h4>
+                                        <h4><strong><b>जिला:- भोपल</b></strong></h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
+                                    </div>
+                                </div>
+                                <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="">
+                                                <div class="">
+                                                    <div class="row">
+                                                        <div class="col text-start">
+                                                            <span class="fw-bold">वार्षिक प्रतिवेदन अवधि वर्ष :-</span>
+
+                                                            <span class="fw-bold">2023-2024</span>
+                                                        </div>
+
+                                                        <div class="col text-end">
+                                                            <span class="fw-bold">आवेदन दिनाँक:-</span>
+                                                            <span class="fw-bold">09-03-2024</span>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <h3 class="text-center mt-4 mb-4 font-bold"><u>:: Information filled by the Accepting Authority::<br />
+                                                        <span class="fs-5">:: स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</span></u></h3>
+                                                </div>
+                                                <table class="table table-bordered table-st fs-5">
+                                                    <tr class="mt-3">
+
+                                                        <th>कर्मचारी आई.डी/नाम</th>
+                                                        <td>सिया वर्मा/EDP4454445</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
+                                                        <td>YES/हँ</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <th>यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण </th>
+                                                        <td>Nil</td>
+                                                    </tr>
+                                                    <tr class="mt-3">
+                                                        <th>Grading(ग्रेड)</th>
+                                                        <td>Outstanding/उत्कृष्ट</td>
+                                                    </tr>
+
+                                                </table>
+                                                <br />
+                                               
+                                                <div class="row ms-0 me-0">
+                                                    <div class="col-12">
+
+                                                        <h4 class="text-center font-bold">: : <u>Remark for outstanding</u> : :</h4>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <p class="font-18 text-center">
+                                                            सिया वर्मा  ने इस वर्ष अपने विकास में काफी प्रगति की है। वह अधिक आत्मविश्वासी  और शैक्षणिक रूप से अच्छा प्रदर्शन कर रहा है।
+                                                        </p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+
+                                <br />
+                                <br />
+                                <br />
+
+
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+              
+            </div>
         </div>
+
+
     </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <%-- <script>
@@ -285,12 +402,12 @@
           document.getElementById('<%= show2.ClientID %>').style.display = "none";
       }
   </script>--%>
-      <script>function showtbl() {
+    <script>function showtbl() {
 
-              document.getElementById('FS_FillByOfficer').style.display = "block";
-              document.getElementById('show2').style.display = "none";
-              document.getElementById('buttons').style.display = "block";
+            document.getElementById('FS_FillByOfficer').style.display = "block";
+            document.getElementById('show2').style.display = "none";
+            document.getElementById('buttons').style.display = "block";
 
-          }// TABLE SHOE</script>
+        }// TABLE SHOE</script>
 </asp:Content>
 
