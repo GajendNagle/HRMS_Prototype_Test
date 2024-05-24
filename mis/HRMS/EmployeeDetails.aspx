@@ -224,133 +224,133 @@
                 <div class="modal-body">
                     <div runat="server" id="show">
                         <fieldset>
-                            <legend>EMPLOYEE PERSONAL INFORMATION</legend>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Financial Year(वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span> </label>
-                                        <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
-                                            <asp:ListItem>2020-2021</asp:ListItem>
-                                            <asp:ListItem>2021-2022</asp:ListItem>
-                                            <asp:ListItem>2022-2023</asp:ListItem>
-                                            <asp:ListItem>2023-2024</asp:ListItem>
-                                            <asp:ListItem>2024-2025</asp:ListItem>
-                                        </asp:DropDownList>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Name (नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
-                                        <asp:TextBox runat="server" ID="txtName" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
+    <legend>EMPLOYEE PERSONAL INFORMATION</legend>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Financial Year<br />(वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span> </label>
+                <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
+                    <asp:ListItem>2020-2021</asp:ListItem>
+                    <asp:ListItem>2021-2022</asp:ListItem>
+                    <asp:ListItem>2022-2023</asp:ListItem>
+                    <asp:ListItem>2023-2024</asp:ListItem>
+                    <asp:ListItem>2024-2025</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Name <br />(नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
+                <asp:TextBox runat="server" ID="txtName" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Designation (पद नाम) <span class="fa-pull-right" style="color: red">*</span> </label>
-                                        <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
-                                            <asp:ListItem>सहायक शिक्षक</asp:ListItem>
-                                            <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
-                                            <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
-                                            <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
-                                        </asp:DropDownList>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Designation <br />(पद नाम) <span style="color: red">*</span> </label>
+                <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
+                    <asp:ListItem>सहायक शिक्षक</asp:ListItem>
+                    <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
+                    <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
+                    <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
+                </asp:DropDownList>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Unique ID
-                                                      (कर्मचारी आई.डी)
-                                                   <span class="fa-pull-right" style="color: red">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="TextBox4" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>
+                    Unique ID<br />
+                              (कर्मचारी आई.डी)
+                           <span class="fa-pull-right" style="color: red">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TextBox4" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Date of Birth<br />
-                                            (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="TXTDOB" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label><br />
+                    Date of Birth<br />
+                    (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TXTDOB" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <%--  <div class="col-md-3">
-                                               <div class="form-group">
-                                                   <label>Date of Birth(जन्मतिथि)/ शब्दों में <span class="fa-pull-right" style="color: red">*</span> </label>
-                                                   <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
+            </div>
+        </div>
+        <%--  <div class="col-md-3">
+                       <div class="form-group">
+                           <label>Date of Birth(जन्मतिथि)/ शब्दों में <span class="fa-pull-right" style="color: red">*</span> </label>
+                           <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
 
-                                               </div>
-                                           </div>--%>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Institution of Posting<br />
-                                            (पदस्थी शाला/स्थान)<span style="color: red; position: relative; bottom: 20px; right: 60PX;">*</span></label>
-                                        <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 select2" autocomplete="off">
-                                            <asp:ListItem>भोपाल</asp:ListItem>
-                                            <asp:ListItem>बैतूल</asp:ListItem>
-                                            <asp:ListItem>इंदौर </asp:ListItem>
-                                            <asp:ListItem>जबलपुर</asp:ListItem>
-                                        </asp:DropDownList>
+                       </div>
+                   </div>--%>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label><br />
+                    Institution of Posting<br />
+                    (पदस्थी शाला/स्थान)<span  style="color: red;">*</span></label>
+                <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 select2" autocomplete="off">
+                    <asp:ListItem>भोपाल</asp:ListItem>
+                    <asp:ListItem>बैतूल</asp:ListItem>
+                    <asp:ListItem>इंदौर </asp:ListItem>
+                    <asp:ListItem>जबलपुर</asp:ListItem>
+                </asp:DropDownList>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="fs-6">
-                                            Dise Code of Institution<br />
-                                            (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
-                                        <asp:TextBox runat="server" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="fs-6"><br />
+                    Dise Code of Institution<br />
+                    (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
+                <asp:TextBox runat="server" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Date OF First Posting and designation<br />
-                                            (प्रथम नियुक्ति का दिनांक एवं पद)<span style="color: red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>
+                    Date OF First Posting and designation<br />
+                    (प्रथम नियुक्ति का दिनांक एवं पद)<span style="color: red;">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
 
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="row">
-
-                                <div class="col-md-3 mt-2">
-                                    <div class="form-group">
-                                        <label>
-                                            Date OF  Posting/Pramotion<br />
-                                            (वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक)<span style="color: red;">*</span>
-                                        </label>
-                                        <br />
-                                        <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control mt-1" autocomplete="off" value="1996-12-23" TextMode="Date" Style="position: relative; top: 5px;"></asp:TextBox>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mb-1">
-                                    <div class="form-group">
-                                        <label>
-                                            Date OF Filiing of annual Immovabel Property Return
-                                                       (स्थाई संपत्ती विवरण दाखिल करनेका दिनांक)<span style="color: red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="TextBox5" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date" Style="position: relative; bottom: 4px;"></asp:TextBox>
-
-                                    </div>
-                                </div>
-
-                            </div>
+            </div>
+        </div>
 
 
-                        </fieldset>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3 mt-2">
+            <div class="form-group">
+                <label>
+                    Date OF  Posting/Pramotion<br />
+                    (वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक)<span style="color: red;">*</span>
+                </label>
+                <br />
+                <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control mt-1" autocomplete="off" value="1996-12-23" TextMode="Date" Style="position: relative; top: 5px;"></asp:TextBox>
+
+            </div>
+        </div>
+        <div class="col-md-3 mb-1">
+            <div class="form-group">
+                <label>
+                    Date OF Filiing of annual Immovabel Property Return
+                               (स्थाई संपत्ती विवरण दाखिल करनेका दिनांक)<span style="color: red;">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TextBox5" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date" Style="position: relative; bottom: 4px;"></asp:TextBox>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</fieldset>
                         <br />
                         <h5 class="fw-bold ml-3" style="color: #416a59;">PART-2 Self-Evaluation(भाग दो-स्वमूल्यांकन)</h5>
                         <br />
@@ -1084,11 +1084,11 @@
 
                         </fieldset>
 
-                        <div class="modal-footer justify-content-center" id="button">
+                     <%--   <div class="modal-footer justify-content-center" id="button">
                             <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                        </div>
+                        </div>--%>
                         <%--  </fieldset>--%>
                     </div>
 
@@ -1111,138 +1111,133 @@
                 </div>
                 <div class="modal-body">
                     <fieldset>
-                        <legend>EMPLOYEE PERSONAL INFORMATION</legend>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-3" style="position: relative; bottom: 20px;">
-                                <div class="form-group">
-                                    <label>
-                                        Financial Year<br />
-                                        (वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span>
-                                    </label>
-                                    <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
-                                        <asp:ListItem>2020-2021</asp:ListItem>
-                                        <asp:ListItem>2021-2022</asp:ListItem>
-                                        <asp:ListItem>2022-2023</asp:ListItem>
-                                        <asp:ListItem>2023-2024</asp:ListItem>
-                                        <asp:ListItem>2024-2025</asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Name (नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
-                                    <asp:TextBox runat="server" ID="TextBox1" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
+    <legend>EMPLOYEE PERSONAL INFORMATION</legend>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Financial Year<br />(वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span> </label>
+                <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
+                    <asp:ListItem>2020-2021</asp:ListItem>
+                    <asp:ListItem>2021-2022</asp:ListItem>
+                    <asp:ListItem>2022-2023</asp:ListItem>
+                    <asp:ListItem>2023-2024</asp:ListItem>
+                    <asp:ListItem>2024-2025</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Name <br />(नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
+                <asp:TextBox runat="server" ID="TextBox1" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
 
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Designation (पद नाम) <span class="fa-pull-right" style="color: red">*</span> </label>
-                                    <asp:DropDownList runat="server" ID="DropDownList3" class="form-control select2" autocomplete="off">
-                                        <asp:ListItem>सहायक शिक्षक</asp:ListItem>
-                                        <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
-                                        <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
-                                        <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
-                                    </asp:DropDownList>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Designation <br />(पद नाम) <span style="color: red">*</span> </label>
+                <asp:DropDownList runat="server" ID="DropDownList3" class="form-control select2" autocomplete="off">
+                    <asp:ListItem>सहायक शिक्षक</asp:ListItem>
+                    <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
+                    <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
+                    <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
+                </asp:DropDownList>
 
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Unique ID
-                       (कर्मचारी आई.डी)
-                    <span class="fa-pull-right" style="color: red">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox2" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>
+                    Unique ID<br />
+                              (कर्मचारी आई.डी)
+                           <span class="fa-pull-right" style="color: red">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TextBox2" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Date of Birth<br />
-                                        (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox3" class="form-control  " autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label><br />
+                    Date of Birth<br />
+                    (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TextBox3" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
 
-                                </div>
-                            </div>
-                            <%--  <div class="col-md-3">
-                <div class="form-group">
-                    <label>Date of Birth(जन्मतिथि)/ शब्दों में <span class="fa-pull-right" style="color: red">*</span> </label>
-                    <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
+            </div>
+        </div>
+        <%--  <div class="col-md-3">
+                       <div class="form-group">
+                           <label>Date of Birth(जन्मतिथि)/ शब्दों में <span class="fa-pull-right" style="color: red">*</span> </label>
+                           <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
 
-                </div>
-            </div>--%>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Institution of Posting<br />
-                                        (पदस्थी शाला/स्थान)<span style="color: red; position: relative; left: 1PX;">*</span></label>
-                                    <asp:DropDownList runat="server" ID="DropDownList4" class="form-control mb-5 select2" autocomplete="off">
-                                        <asp:ListItem>भोपाल</asp:ListItem>
-                                        <asp:ListItem>बैतूल</asp:ListItem>
-                                        <asp:ListItem>इंदौर </asp:ListItem>
-                                        <asp:ListItem>जबलपुर</asp:ListItem>
-                                    </asp:DropDownList>
+                       </div>
+                   </div>--%>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label><br />
+                    Institution of Posting<br />
+                    (पदस्थी शाला/स्थान)<span  style="color: red;">*</span></label>
+                <asp:DropDownList runat="server" ID="DropDownList4" class="form-control mb-5 select2" autocomplete="off">
+                    <asp:ListItem>भोपाल</asp:ListItem>
+                    <asp:ListItem>बैतूल</asp:ListItem>
+                    <asp:ListItem>इंदौर </asp:ListItem>
+                    <asp:ListItem>जबलपुर</asp:ListItem>
+                </asp:DropDownList>
 
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="fs-6">
-                                        Dise Code of Institution<br />
-                                        (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
-                                    <asp:TextBox runat="server" ID="TextBox6" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="fs-6"><br />
+                    Dise Code of Institution<br />
+                    (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
+                <asp:TextBox runat="server" ID="TextBox6" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
 
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="position: relative; bottom: 20px;">
-                                <div class="form-group">
-                                    <label>
-                                        Date OF First Posting
-                                        <br />
-                                        and designation<br />
-                                        (प्रथम नियुक्ति का दिनांक एवं पद)<span style="color: red;">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox7" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>
+                    Date OF First Posting and designation<br />
+                    (प्रथम नियुक्ति का दिनांक एवं पद)<span style="color: red;">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TextBox7" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
 
-                                </div>
-                            </div>
+            </div>
+        </div>
 
 
-                        </div>
-                        <div class="row">
+    </div>
+    <div class="row">
 
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Date OF  Posting/Pramotion<br />
-                                        (वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक)<span style="color: red;">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox8" class="form-control mt-3" autocomplete="off" value="1996-12-23" TextMode="Date" Style="position: relative; top: 5px;"></asp:TextBox>
+        <div class="col-md-3 mt-2">
+            <div class="form-group">
+                <label>
+                    Date OF  Posting/Pramotion<br />
+                    (वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक)<span style="color: red;">*</span>
+                </label>
+                <br />
+                <asp:TextBox runat="server" ID="TextBox8" class="form-control mt-1" autocomplete="off" value="1996-12-23" TextMode="Date" Style="position: relative; top: 5px;"></asp:TextBox>
 
-                                </div>
-                            </div>
-                            <div class="col-md-3 mt-1">
-                                <div class="form-group">
-                                    <label>
-                                        Date OF Filiing of annual Immovabel Property Return<br />
-                                        (स्थाई संपत्ती विवरण दाखिल करनेका दिनांक)<span style="color: red;">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox9" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date" Style="position: relative; bottom: 4px;"></asp:TextBox>
+            </div>
+        </div>
+        <div class="col-md-3 mb-1">
+            <div class="form-group">
+                <label>
+                    Date OF Filiing of annual Immovabel Property Return
+                               (स्थाई संपत्ती विवरण दाखिल करनेका दिनांक)<span style="color: red;">*</span>
+                </label>
+                <asp:TextBox runat="server" ID="TextBox9" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date" Style="position: relative; bottom: 4px;"></asp:TextBox>
 
-                                </div>
-                            </div>
+            </div>
+        </div>
 
-                        </div>
+    </div>
 
 
-                    </fieldset>
+</fieldset>
 
 
 

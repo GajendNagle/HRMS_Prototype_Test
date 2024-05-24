@@ -15,58 +15,26 @@
             bottom: 20px;
         }
 
-        @media print {
-          
-            /* Show modal content in full page */
-            .modal-dialog {
-                width: 200%;
-                height: auto;
-                margin: 0;
-                padding: 0;
-            }
+       @media print {
 
-            .modal-content {
-                height: 200%;
-                border: none;
-                box-shadow: none;
-            }
 
-            .modal-body {
-                width: 210%;
-                height: auto;
-                overflow: visible !important;
-                zoom: 90%;
-            }
-            /* Hide unnecessary elements */
-            body.modal-open {
-                visibility: hidden;
-            }
+     @page {
+         size: A4;
+         margin: 10mm;
+     }
 
-                body.modal-open .modal .modal-header,
-                body.modal-open .modal .modal-body {
-                    visibility: visible;
-                }
+     body {
+         font-size: 12px;
+         transform-origin: top left;
+         transform: scale(calc(100% / var(--print-scale, 1)));
+     }
 
-            .modal-footer {
-                display: none;
-            }
+     .page-break {
+         page-break-after: always;
+     }
+ }
 
-            .modal-header {
-                display: none;
-            }
 
-            fieldset {
-                position: center;
-            }
-        }
-
-        @media Print {
-            /* Show modal content in full page */
-
-            #show2, .navbar, #hrms, #button, .footer {
-                display: none;
-            }
-        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -275,6 +243,10 @@
                 </div>
             </fieldset>
 
+        </div>
+
+
+    </div>
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -373,25 +345,45 @@
                                 <br />
 
 
+                            </fieldset>
+                        </div>
                                 <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                                    <button type="button" class="btn btn-primary" onclick="printModalContent('staticBackdrop')">Print</button>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
                                 </div>
-                            </fieldset>
-                        </div>
                     </div>
                 </div>
 
               
             </div>
-        </div>
-
-
-    </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script> function printModalContent(modalId) {
+            var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
+
+
+            document.body.innerHTML = modalContent.innerHTML
+            window.print();
+     window.location.href = "Rpt_AcceptingAuthority.aspx";
+
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
+                // Prevent default behavior of Ctrl+P (opening print dialog)
+                event.preventDefault();
+
+                // Print the content of the active modal
+                var activeModal = document.querySelector('.modal.show');
+                if (activeModal) {
+                    var modalId = activeModal.getAttribute('id');
+                    printModalContent(modalId);
+                }
+            }
+        });</script>
     <%-- <script>
       function openPDF() {
           // Replace 'your-pdf-file.pdf' with the actual path to your PDF file

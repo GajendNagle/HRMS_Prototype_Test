@@ -6,6 +6,10 @@
             .page-break {
                 page-break-after: always;
             }
+            td{
+                font-size:11px;
+                
+            }
         }
 
         .modal-table td, .modal-table th {
@@ -426,6 +430,10 @@ relations<br />
                             </div>
                         </div>
                          </fieldset>
+                    <div class="page-break">
+                        
+                                    </div>
+                   <br />
                     <fieldset>
                         <div class="row">
 
@@ -486,7 +494,7 @@ relations<br />
 
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" onclick="printDiv('printArea')">Print</button>
+                    <button type="button" class="btn btn-primary" onclick="printModalContent('staticBackdrop') ">Print</button>
                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                    <%-- <button type="button" class="btn btn-secondary" data-bs-dismiss="closeModal()">Close</button>--%>
                 </div>
@@ -502,14 +510,33 @@ relations<br />
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
         }
-        function printDiv(divId) {
-            var printContents = document.getElementById(divId).innerHTML;
-            var originalContents = document.body.innerHTML;
 
-            document.body.innerHTML = printContents;
+        function printModalContent(modalId) {
+            var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
+            document.body.innerHTML = modalContent.innerHTML
             window.print();
-            document.body.innerHTML = originalContents;
+            window.location.href = "Rpt_ReportingOfficer.aspx";
         }
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
+                // Prevent default behavior of Ctrl+P (opening print dialog)
+                event.preventDefault();
+                // Print the content of the active modal
+                var activeModal = document.querySelector('.modal.show');
+                if (activeModal) {
+                    var modalId = activeModal.getAttribute('id');
+                    printModalContent(modalId);
+                }
+            }
+        });
+        //function printDiv(divId) {
+        //    var printContents = document.getElementById(divId).innerHTML;
+        //    var originalContents = document.body.innerHTML;
+
+        //    document.body.innerHTML = printContents;
+        //    window.print();
+        //    document.body.innerHTML = originalContents;
+        //}
   //  document.addEventListener('keydown', function (event) {
   //    // Check if Ctrl+P is pressed
   //    if (event.ctrlKey && event.key === 'p') {

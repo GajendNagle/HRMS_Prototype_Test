@@ -11,7 +11,7 @@
             min-height: 40px; /* Set a minimum height */
         }
 
-        #workdescription3 {
+       textarea{
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
@@ -204,12 +204,7 @@
                     </div>
                 </div>
             </fieldset>
-            <%-- <ul class="nav nav-pills m-t-30 ms-3 m-b-30">
-                    <li class=" nav-item"><a href="ConfedicialReport.aspx" class="nav-link  tab-menu" aria-expanded="false">Employee Personal Information</a> </li>
-                    <li class="nav-item"><a href="TeacherFillReport.aspx" class="nav-link  tab-menu" aria-expanded="false">Teacher Report Filled</a> </li>
-                    <li class="nav-item"><a href="ReportingOfficerFill.aspx" class="nav-link tab-menu" aria-expanded="true">Reporting Fill ACR Report</a> </li>
-                    <li class="nav-item"><a href="AcceptingAuthorityFilled.aspx" class="nav-link active tab-menu" aria-expanded="true">Accepting Authority Fill ACR Report</a> </li>
-                </ul>--%>
+            
             <div runat="server" id="Fieldset1" visible="false">
                 <%-- <div class="ROW">
                     <div class="col-md-3">
@@ -296,7 +291,7 @@
                           <div class="row">
                               <div class="col-md-3">
                                   <div class="form-group">
-                                      <label>Financial Year(वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span> </label>
+                                      <label>Financial Year<br />(वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span> </label>
                                       <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
                                           <asp:ListItem>2020-2021</asp:ListItem>
                                           <asp:ListItem>2021-2022</asp:ListItem>
@@ -308,14 +303,14 @@
                               </div>
                               <div class="col-md-3">
                                   <div class="form-group">
-                                      <label>Name (नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
+                                      <label>Name <br />(नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
                                       <asp:TextBox runat="server" ID="txtName" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
 
                                   </div>
                               </div>
                               <div class="col-md-3">
                                   <div class="form-group">
-                                      <label>Designation (पद नाम) <span class="fa-pull-right" style="color: red">*</span> </label>
+                                      <label>Designation <br />(पद नाम) <span style="color: red">*</span> </label>
                                       <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
                                           <asp:ListItem>सहायक शिक्षक</asp:ListItem>
                                           <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
@@ -328,7 +323,7 @@
                               <div class="col-md-3">
                                   <div class="form-group">
                                       <label>
-                                          Unique ID
+                                          Unique ID<br />
                                                     (कर्मचारी आई.डी)
                                                  <span class="fa-pull-right" style="color: red">*</span>
                                       </label>
@@ -340,7 +335,7 @@
                           <div class="row">
                               <div class="col-md-3">
                                   <div class="form-group">
-                                      <label>
+                                      <label><br />
                                           Date of Birth<br />
                                           (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
                                       </label>
@@ -357,9 +352,9 @@
                                          </div>--%>
                               <div class="col-md-3">
                                   <div class="form-group">
-                                      <label>
+                                      <label><br />
                                           Institution of Posting<br />
-                                          (पदस्थी शाला/स्थान)<span style="color: red; position: relative; bottom: 20px; right: 60PX;">*</span></label>
+                                          (पदस्थी शाला/स्थान)<span  style="color: red;">*</span></label>
                                       <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 select2" autocomplete="off">
                                           <asp:ListItem>भोपाल</asp:ListItem>
                                           <asp:ListItem>बैतूल</asp:ListItem>
@@ -371,7 +366,7 @@
                               </div>
                               <div class="col-md-3">
                                   <div class="form-group">
-                                      <label class="fs-6">
+                                      <label class="fs-6"><br />
                                           Dise Code of Institution<br />
                                           (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
                                       <asp:TextBox runat="server" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
@@ -1273,11 +1268,14 @@
                        </td>
                        <td style="position: relative; top: 40px;">
                            <asp:TextBox runat="server" class="form-control text-center fw-bold" id="TextBox1"  autocomplete="off" placeholder="hardworking student"></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold " id="workdescription4"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold " id="workdescription5"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold " id="workdescription6"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control  text-center  fw-bold  " id="workdescription7"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold " id="workdescription8"  autocomplete="off" placeholder="hardworking student "></asp:TextBox>
+
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold mt-2" id="workdescription4"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold mt-2" id="workdescription5"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2 " id="workdescription6"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+                           <asp:TextBox runat="server" class="form-control  text-center  fw-bold mt-2 " id="workdescription7"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold mt-2 " id="workdescription8"  autocomplete="off" placeholder="hardworking student "></asp:TextBox>
                    </tr>
                    <tr>
                        <td class="text-center">4</td>
@@ -1299,8 +1297,8 @@
                            <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox></td>
                        <td style="position: relative; top: 50px">
                            <asp:TextBox runat="server" class="form-control text-center fw-bold " id="workdescription17"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control   fw-bold" id="workdescription18"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold  " id="workdescription19"  autocomplete="off" placeholder="hardworking student "></asp:TextBox></td>
+                           <asp:TextBox runat="server" class="form-control   fw-bold  mt-2" id="workdescription18"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2" id="workdescription19"  autocomplete="off" placeholder="hardworking student "></asp:TextBox></td>
 
                    </tr>
 
@@ -1331,9 +1329,9 @@
                            <asp:TextBox runat="server" CssClass="form-control mt-2 text-center fw-bold" placeholder="5"></asp:TextBox></td>
                        <td style="position: relative; top: 60px;">
                            <asp:TextBox runat="server" class="form-control text-center fw-bold" id="workdescription13"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control  text-center fw-bold" id="workdescription14"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold" id="workdescription15"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                           <asp:TextBox runat="server" class="form-control text-center fw-bold " id="workdescription16"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+                           <asp:TextBox runat="server" class="form-control  text-center fw-bold  mt-2" id="workdescription14"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2" id="workdescription15"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+                           <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2 " id="workdescription16"  autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
 
                        </td>
                    </tr>
@@ -1367,29 +1365,26 @@
 
     <legend>Grade</legend>
     <div class="row">
-        <div class="col-md-4 mt-5">
-            <label>Allegiance (सन्निष्ठा)</label>
-            <asp:TextBox runat="server" class="form-control  fw-bold" id="TextBox2" autocomplete="off" placeholder="Nil"></asp:TextBox>
-        </div>
+       <div class="col-md-4 mt-3">
+     <label>Allegiance (सन्निष्ठा)</label>
+     <textarea class="form-control mt-1 fw-bold"  rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+ </div>
 
+ <div class="col-md-4">
+     <label>
+         Please comment on overall assessment of the Teacher
+             (शिक्षक के समग्र मूल्यांकन पर टिप्पणी)</label>
+     <textarea class="form-control mb-2 fw-bold"  rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+ </div>
 
-        <div class="col-md-4 mt-5">
-            <label>Grade(शिक्षक के समग्र मूल्यांकन श्रेणी)</label>
-            <asp:DropDownList runat="server" CssClass="fw-bold form-control">
-
-                <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
-                <asp:ListItem>A/बहुत अच्छा</asp:ListItem>
-                <asp:ListItem>B/अच्छा</asp:ListItem>
-                <asp:ListItem>C/संतोषप्रद</asp:ListItem>
-                <asp:ListItem>D/असंतोषप्रद</asp:ListItem>
-            </asp:DropDownList>
-        </div>
-        <div class="col-md-4 mt-2">
-            <label>
-                If no or agree partially give reasons for disagreement<br />
-                (यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण )</label>
-            <asp:TextBox runat="server" class="form-control fw-bold" id="workdescription12" autocomplete="off" placeholder="Nil"></asp:TextBox>
-        </div>
+ <div class="col-md-4 mt-4">
+     <label>Grade(शिक्षक के समग्र मूल्यांकन श्रेणी)</label>
+     <asp:DropDownList runat="server" CssClass="fw-bold form-control">
+        
+         <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
+      
+     </asp:DropDownList>
+ </div>
     </div>
 </fieldset>
 
@@ -1399,48 +1394,47 @@
 
 
     <div class="row">
-        <div class="col-md-4 mt-4 fs-6">
-            <label>Do you agree with the remarks of the reporting officer ?(क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|)</label>
-            <asp:DropDownList runat="server" CssClass="form-control fw-bold">
-                <%--  <asp:ListItem>--Select--</asp:ListItem>--%>
-                <asp:ListItem>Yes/हाँ</asp:ListItem>
-                <asp:ListItem>No/नही</asp:ListItem>
-                <%--  <asp:ListItem>No/या</asp:ListItem>--%>
-                <asp:ListItem>Partially/आंशिक</asp:ListItem>
+         <div class="col-md-4 mt-4">
+       <label>Do you agree with the remarks of the reporting officer ?(क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|)</label>
+       <asp:DropDownList runat="server" CssClass="fw-bold form-control">
+           
+           <asp:ListItem>Yes/हाँ</asp:ListItem>
+           <asp:ListItem>No/नही</asp:ListItem>
+           <%--  <asp:ListItem>No/या</asp:ListItem>--%>
+           <asp:ListItem>Partially/आंशिक</asp:ListItem>
 
-            </asp:DropDownList>
-        </div>
+       </asp:DropDownList>
+   </div>
+   <div class="col-md-4">
+       <label>
+           If no or agree partially give reasons for disagreement<br />
+           (यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण )</label>
+       <textarea class="form-control fw-bold" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+   </div>
 
+   <div class="col-md-4" style="position: relative; top: 60px;">
+       <label>Grading(ग्रेड)</label>
+       <asp:DropDownList runat="server" CssClass="fw-bold form-control">
+          
+           <asp:ListItem>Outstanding/उत्कृष्ट</asp:ListItem>
+           <asp:ListItem>Very good/बहुत अच्छा</asp:ListItem>
+           <asp:ListItem>good/अच्छा</asp:ListItem>
+           <asp:ListItem>Satisfactory/संतोषप्रद</asp:ListItem>
+           <asp:ListItem>Below satisfaction/असंतोषप्रद</asp:ListItem>
 
-        <div class="col-md-4 mt-5" >
-            <label>Grading(ग्रेड)</label>
-            <asp:DropDownList runat="server" CssClass=" form-control fw-bold">
-
-                <asp:ListItem>Outstanding/उत्कृष्ट</asp:ListItem>
-                <asp:ListItem>Very good/बहुत अच्छा</asp:ListItem>
-                <asp:ListItem>good/अच्छा</asp:ListItem>
-                <asp:ListItem>Satisfactory/संतोषप्रद</asp:ListItem>
-                <asp:ListItem>Below satisfaction/असंतोषप्रद</asp:ListItem>
-
-            </asp:DropDownList>
-        </div>
-        <div class="col-md-4 mt-2">
-            <label class="fs-6">
-                If no or agree partially give reasons for disagreement<br />
-                (यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण )</label>
-            <asp:TextBox runat="server" class="form-control" ID="TextBox3" autocomplete="off" placeholder="Nil" Style="height: 30px;"></asp:TextBox>
-        </div>
+       </asp:DropDownList>
+   </div>
     </div>
     
 
 </fieldset>
-               <div class="justify-content-center" style="position: relative; left: 500px;" id="button">
+            <%--   <div class="justify-content-center" style="position: relative; left: 500px;" id="button">
                    <div class="modal-footer justify-content-center" style="display: none;" id="buttons">
                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
                    </div>
-               </div>
+               </div>--%>
            </fieldset>
                       </div>
                   </div>
