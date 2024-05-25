@@ -2,11 +2,23 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <style>
+        th{
+            white-space: nowrap;
+        }
+        a{
+            color:#0000ff
+        }
+        a:hover{
+            color:#0000ff92
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Head Office Annual Property Returns Management System /<br />
+            <h4 class="text-themecolor ">Head Office Annual Property Returns Management System
+                <br />
                 प्रधान कार्यालय वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
@@ -43,16 +55,18 @@
                             <li>
                                 <a class="nav-link text-white" href="Trn_HoAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Fill APR
+                                        एपीआर भरे
                                     </b>
                                 </a>
                             </li>
                             <li class="dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>APR Reports</b>
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> एपीआर रिपोर्ट </b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Reports</a></li>
+                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Report
+                                        <br />
+                                        एपीआर जिलावार रिपोर्ट</a></li>
 
                                 </ul>
                             </li>
@@ -63,14 +77,14 @@
             <br />
 
             <fieldset>
-                <legend>Annual Property Returns Report</legend>
+                <legend>APR District Wise Report / एपीआर जिलावार रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
                                 <%--<label class="font-bold">--%>
-                                    District<br />
-                                ज़िला</label>
+                                    District Name<br />
+                                जिला का नाम</label>
                             <select class="form-control select2" id="ddlDistrict">
                                 <option selected="selected" value="All">--Select All--</option>
 
@@ -131,8 +145,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Department<br />
-                                विभाग</label>
+                                Department Name<br />
+                                विभाग का नाम</label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select All--</option>
                                 <option value="1">Commissioner, Public Instructions </option>
@@ -153,7 +167,7 @@
                             <label class="fw-bold text-dark">
                                 Annual Year 
    <br />
-                                वित्तीय वर्ष
+                                वित्तीय वर्ष<span style="color:red;"> *</span>
                             </label>
                             <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
 
@@ -170,7 +184,7 @@
                 </div>
             </fieldset>
             <fieldset id="FS_Details" style="display: none">
-                <legend>Details  </legend>
+                <legend>Details </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -191,11 +205,16 @@
                             <table class="table table-bordered" id="mainTable">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No.</th>
-                                        <th>District</th>
-                                        <th>Total Employees Whose APR Uploaded</th>
-                                        <th>Total Employees Whose APR Not Uploaded</th>
-                                        <th>Performance %</th>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.
+                                        </th>
+                                        <th>District<br /> जिला</th>
+                                        <th>Total Employees Whose APR Uploaded <br />कुल कर्मचारी जिनका एपीआर अपलोडेड हैं</th>
+                                        <th>Total Employees Whose APR Not Uploaded <br />कुल कर्मचारी जिनका एपीआर अपलोडेड नहीं हैं</th>
+                                        <th>Performance %
+                                            <br />
+                                            प्रदर्शन %
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -225,7 +244,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="districtModalLabel">APR Details - <span id="modalDistrictName"></span></h3>
+                            <h1 class="" id="districtModalLabel">APR Details - <span id="modalDistrictName"></span></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </button>
                         </div>
@@ -249,11 +268,13 @@
                                         <table id="modalTable" class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th>Sr. No.</th>
+                                                   <th>Sr. No.<br />
+    सरल क्र.
+</th>
                                                     <th>Employee
                                             <br />
                                                         कर्मचारी</th>
-                                                    <th>Distric
+                                                    <th>District
                                             <br />
                                                         जिला</th>
                                                     <th>Sankul
@@ -261,7 +282,7 @@
                                                         संकुल</th>
                                                     <th>OIS Name<br />
                                                         कार्यालय / संस्था/ स्कूल</th>
-                                                    <th>Dipartment
+                                                    <th>Department
                                             <br />
                                                         विभाग</th>
                                                     <th>Designation

@@ -2,12 +2,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <style>
+         th{
+     white-space: nowrap;
+ }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Employee Annual Property Returns Management System/<br />
+            <h4 class="text-themecolor ">Employee Annual Property Returns Management System <br />
                 कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली  </h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
@@ -45,7 +50,7 @@
                             <li>
                                 <a class="nav-link text-white" href="Trn_EmpAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Fill APR
+                                        एपीआर भरे
                                     </b>
                                 </a>
                             </li>
@@ -64,13 +69,13 @@
             </nav>
             <br />
             <fieldset>
-                <legend>PERSONAL INFORMATION</legend>
+                <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
 
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Unique Id-Name /<br />
+                                Unique Id-Name <br />
                                 यूनिक आई.डी. - नाम
                             </label>
 
@@ -81,9 +86,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                District/
+                                District Name
                                 <br />
-                                जिला
+                                जिला नाम
                             </label>
                             <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" value="Bhopal" />
                         </div>
@@ -91,9 +96,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Sankul /
+                                Sankul Name
                                 <br />
-                                संकुल
+                                संकुल का नाम
                             </label>
                             <input type="text" class="form-control" readonly autocomplete="off" value="23354912798 -Bal Bharti School" />
                         </div>
@@ -101,9 +106,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Designation /
+                                Designation Name
                                 <br />
-                                पद
+                                पदनाम
                             </label>
                             <input type="text" class="form-control" readonly autocomplete="off" value="Assistant Teacher" />
                         </div>
@@ -113,16 +118,19 @@
 
             </fieldset>
             <fieldset>
-                <legend>Fill APR</legend>
+                <legend>Fill APR / एपीआर भरे</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
                                 Year of Annual Property Returns
                                 <br />
-                                अचल संपत्ति के विवरण का वर्ष<span style="color: red">*</span>
+                                अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                             </label>
                             <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
+                            <br />
+                            <br />
+                            <br />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -130,10 +138,14 @@
                             <label class="fw-bold text-dark">
                                 Uplode Annual Property Returns form
                                 <br />
-                                अचल संपत्ति के विवरण का फार्म अपलोड करे<span style="color: red">*</span>
+                                अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                             </label>
-                            <span style="color: red" id="MsgErr"></span>
                             <input type="file" class="form-control" accept=".pdf" onchange="checkFileSize('FuAprForm', 200, 'MsgErr')" id="FuAprForm" />
+                             <div style="color: red; font-size:12px; margin:0px;padding:0px; display:inline" id="MsgErr">
+                                 <br />
+                                 <br />
+                                 <br />
+                                 </div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -141,12 +153,15 @@
                             <input type="button" value="Save" onclick="document.getElementById('FS_Details').style.display = 'block';" class="Alert-Confirmation btn btn-success btn-rounded">
 
                             <a href="Trn_EmpAprFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <br />
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset id="FS_Details" style="display: none">
-                <legend>APR Details</legend>
+                <legend>APR Details / एपीआर विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -167,13 +182,13 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No.</th>
-                                        <th>District / जिला</th>
-                                        <th>Employee / कर्मचारी</th>
-                                        <th>Sankul / संकुल</th>
-                                        <th>Designation / पद</th>
-                                        <th>Financial Year / वित्तीय वर्ष</th>
-                                        <th>Detail / विवरण</th>
+                                        <th>Sr. No. <br /> सरल क्र.</th>
+                                        <th>District <br /> जिला</th>
+                                        <th>Employee <br /> कर्मचारी</th>
+                                        <th>Sankul <br /> संकुल</th>
+                                        <th>Designation <br /> पद</th>
+                                        <th>Financial Year <br /> वित्तीय वर्ष</th>
+                                        <th>Detail <br /> विवरण</th>
                                     </tr>
                                 </thead>
                                 <tr>
@@ -245,11 +260,11 @@
 
             const file = fileInput.files[0];
             if (file && file.size > maxSizeInBytes) {
-                fileSizeMessage.innerHTML = '<br>File size exceeds the maximum limit (' + maxSizeInKB + ' KB). Please select a smaller file.';
+                fileSizeMessage.innerHTML = 'File size exceeds the maximum limit (' + maxSizeInKB + ' KB). Please select a smaller file.';
                 // Optionally, you could clear the file input here to prevent submitting the oversized file
                 fileInput.value = '';
             } else {
-                fileSizeMessage.textContent = '';
+                fileSizeMessage.innerHTML = ' <br /><br /> <br /> ';
             }
         }
 

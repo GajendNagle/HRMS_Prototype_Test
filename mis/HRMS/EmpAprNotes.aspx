@@ -6,7 +6,7 @@
 
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Employee Annual Property Returns Management System /<br />
+            <h4 class="text-themecolor ">Employee Annual Property Returns Management System <br />
                 कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
@@ -43,7 +43,7 @@
                             <li>
                                 <a class="nav-link text-white" href="Trn_EmpAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Fill APR
+                                      एपीआर भरे
                                     </b>
                                 </a>
                             </li>

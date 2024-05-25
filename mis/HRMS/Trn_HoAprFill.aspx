@@ -2,11 +2,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <style>
+        th {
+            white-space: nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Head Office Annual Property Returns Management System /<br />
+            <h4 class="text-themecolor ">Head Office Annual Property Returns Management System
+                <br />
                 प्रधान कार्यालय वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
@@ -43,16 +49,18 @@
                             <li>
                                 <a class="nav-link text-white" href="Trn_HoAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Fill APR
+                                        एपीआर भरे
                                     </b>
                                 </a>
                             </li>
                             <li class="dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>APR Reports</b>
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>एपीआर रिपोर्ट </b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Reports</a></li>
+                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Report
+                             <br />
+                                        एपीआर जिलावार रिपोर्ट</a></li>
 
                                 </ul>
                             </li>
@@ -62,13 +70,14 @@
             </nav>
             <br />
             <fieldset>
-                <legend>Annual Property Returns Report</legend>
+                <legend>Get Details / विवरण प्राप्त करें </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Unique Id /<br />
-                                यूनिक आई.डी.
+                                Unique Id
+                                <br />
+                                यूनिक आई.डी.<span style="color: red">*</span>
                             </label>
 
                             <asp:TextBox runat="server" ID="txtUniqueId" CssClass="form-control" placeholder="Unique Id" AutoComplete="off"></asp:TextBox>
@@ -86,13 +95,14 @@
                 </div>
             </fieldset>
             <fieldset id="FS_EmpInfo" style="display: none;">
-                <legend>EMPLOYEE INFORMATION</legend>
+                <legend>EPERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
 
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Unique Id-Name /<br />
+                                Unique Id-Name
+                                <br />
                                 यूनिक आई.डी. - नाम
                             </label>
 
@@ -103,9 +113,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                District/
-                        <br />
-                                जिला
+                                District Name
+  <br />
+                                जिला का नाम
                             </label>
                             <input name="txtDistrict" type="text" class="form-control" disabled autocomplete="off" value="Bhopal" />
                         </div>
@@ -113,9 +123,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Sankul /
-                        <br />
-                                संकुल
+                                Sankul Name
+  <br />
+                                संकुल का नाम
                             </label>
                             <input type="text" class="form-control" disabled autocomplete="off" value="23354912798 -Bal Bharti School" />
                         </div>
@@ -133,21 +143,22 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Dipartment
+                                Department Name
                         <br />
-                                विभाग
+                                विभाग का नाम
                             </label>
                             <select class="form-control " disabled>
-                                <option value="">School</option>
+                                <option value="">Education</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Designation /
-                        <br />
-                                पद
+                                Designation Name
+                                <br />
+                                पदनाम
+
                             </label>
                             <input type="text" class="form-control" disabled autocomplete="off" value="Assistant Teacher" />
                         </div>
@@ -158,7 +169,7 @@
             </fieldset>
 
             <fieldset id="FS_FillApr" style="display: none;">
-                <legend>Fill APR</legend>
+                <legend>Fill APR / एपीआर भरे</legend>
 
 
                 <div class="row align-items-end">
@@ -166,29 +177,38 @@
                         <div class="form-group">
                             <label class="fw-bold text-dark">
                                 Year of Annual Property Returns
-                      <br />
-                                अचल संपत्ति के विवरण का वर्ष<span style="color: red">*</span>
+                <br />
+                                अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                             </label>
                             <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
-
+                            <br />
+                            <br />
+                            <br />
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
                                 Uplode Annual Property Returns form
-                      <br />
-                                अचल संपत्ति के विवरण का फार्म अपलोड करे<span style="color: red">*</span>
+                <br />
+                                अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                             </label>
-                            <span style="color: red" id="MsgErr"></span>
                             <input type="file" class="form-control" accept=".pdf" onchange="checkFileSize('FuAprForm', 200, 'MsgErr')" id="FuAprForm" />
+                            <div style="color: red; font-size: 12px; margin: 0px; padding: 0px; display: inline" id="MsgErr">
+                                <br />
+                                <br />
+                                <br />
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <div class="form-group ">
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <input type="button" value="Save" onclick="document.getElementById('FS_Details').style.display = 'block';" class="Alert-Confirmation btn btn-success btn-rounded">
 
                             <a href="Trn_HoAprFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <br />
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </div>
@@ -215,17 +235,29 @@
                             <table class="table  table-hover table-bordered">
                                 <thead>
                                     <tr>
-
-                                        <th>S. No.</th>
-                                        <th>Employee / कर्मचारी</th>
-                                        <th>Distric / जिला</th>
-                                        <th>Sankul / संकुल</th>
-                                        <th>Office / Institute / School<br />
+                                        <th>Sr. No<br />
+                                            सरल क्र.</th>
+                                        <th>Employee<br />
+                                            कर्मचारी</th>
+                                        <th>District<br />
+                                            जिला</th>
+                                        <th>Sankul<br />
+                                            संकुल</th>
+                                        <th>Office / Institute / School
+                                            <br />
                                             कार्यालय / संस्था/ स्कूल</th>
-                                        <th>Dipartment / विभाग</th>
-                                        <th>Designation / पद</th>
-                                        <th>Financial Year / वित्तीय वर्ष</th>
-                                        <th>Detail / विवरण</th>
+                                        <th>Department 
+                                            <br />
+                                            विभाग</th>
+                                        <th>Designation
+                                            <br />
+                                            पद</th>
+                                        <th>Financial Year
+                                            <br />
+                                            वित्तीय वर्ष</th>
+                                        <th>Detail
+                                            <br />
+                                            विवरण</th>
                                     </tr>
                                 </thead>
                                 <tr>
@@ -302,7 +334,7 @@
                 // Optionally, you could clear the file input here to prevent submitting the oversized file
                 fileInput.value = '';
             } else {
-                fileSizeMessage.textContent = '';
+                fileSizeMessage.innerHTML = ' <br /><br /> <br /> ';
             }
         }
 
