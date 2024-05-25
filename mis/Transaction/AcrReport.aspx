@@ -44,7 +44,7 @@
         }
     </style>
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
-    <link href="https://schooledutest.tserver.co.in/css/site.css" rel="stylesheet" />
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
