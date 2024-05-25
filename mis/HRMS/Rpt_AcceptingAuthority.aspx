@@ -15,26 +15,24 @@
             bottom: 20px;
         }
 
-       @media print {
+        @media print {
 
 
-     @page {
-         size: A4;
-         margin: 10mm;
-     }
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
 
-     body {
-         font-size: 12px;
-         transform-origin: top left;
-         transform: scale(calc(100% / var(--print-scale, 1)));
-     }
+            body {
+                font-size: 12px;
+                transform-origin: top left;
+                transform: scale(calc(100% / var(--print-scale, 1)));
+            }
 
-     .page-break {
-         page-break-after: always;
-     }
- }
-
-
+            .page-break {
+                page-break-after: always;
+            }
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -247,135 +245,131 @@
 
 
     </div>
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title w-100 text-center"></h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center"></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <br />
+                        <br />
+                        <div class="row text-center">
+                            <div class="col-sm-2">
+                                <img id="imgLogoP1" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
+                            </div>
+                            <div class="col-sm-8 text-center">
+                                <br />
+                                <h3><strong><b>व्याख्याता/शिक्षक की गोपनीय चरित्रावली का प्रारूप</b></strong></h3>
+                                <h4><strong><b>स्कूल शिक्षा विभाग मध्य प्रदेश शासन</b></strong></h4>
+                                <h4><strong><b>जिला:- भोपल</b></strong></h4>
+                            </div>
+                            <div class="col-sm-2">
+                                <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <fieldset>
-                                <br />
-                                <br />
-                                <div class="row text-center">
-                                    <div class="col-sm-2">
-                                        <img id="imgLogoP1" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
-                                    </div>
-                                    <div class="col-sm-8 text-center">
-                                        <br />
-                                        <h3><strong><b>व्याख्याता/शिक्षक की गोपनीय चरित्रावली का प्रारूप</b></strong></h3>
-                                        <h4><strong><b>स्कूल शिक्षा विभाग मध्य प्रदेश शासन</b></strong></h4>
-                                        <h4><strong><b>जिला:- भोपल</b></strong></h4>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
-                                    </div>
-                                </div>
-                                <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
-                                <div class="row">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="">
-                                                <div class="">
-                                                    <div class="row">
-                                                        <div class="col text-start">
-                                                            <span class="fw-bold">वार्षिक प्रतिवेदन अवधि वर्ष :-</span>
+                        <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col text-start">
+                                                    <span class="fw-bold">वार्षिक प्रतिवेदन अवधि वर्ष :-</span>
 
-                                                            <span class="fw-bold">2023-2024</span>
-                                                        </div>
-
-                                                        <div class="col text-end">
-                                                            <span class="fw-bold">आवेदन दिनाँक:-</span>
-                                                            <span class="fw-bold">09-03-2024</span>
-
-                                                        </div>
-
-
-                                                    </div>
-
-                                                    <h3 class="text-center mt-4 mb-4 font-bold"><u>:: Information filled by the Accepting Authority::<br />
-                                                        <span class="fs-5">:: स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</span></u></h3>
+                                                    <span class="fw-bold">2023-2024</span>
                                                 </div>
-                                                <table class="table table-bordered table-st fs-5">
-                                                    <tr class="mt-3">
 
-                                                        <th>कर्मचारी आई.डी/नाम</th>
-                                                        <td>सिया वर्मा/EDP4454445</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
-                                                        <td>YES/हँ</td>
-                                                    </tr>
-                                                    <tr>
-
-                                                        <th>यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण </th>
-                                                        <td>Nil</td>
-                                                    </tr>
-                                                    <tr class="mt-3">
-                                                        <th>Grading(ग्रेड)</th>
-                                                        <td>Outstanding/उत्कृष्ट</td>
-                                                    </tr>
-
-                                                </table>
-                                                <br />
-                                               
-                                                <div class="row ms-0 me-0">
-                                                    <div class="col-12">
-
-                                                        <h4 class="text-center font-bold">: : <u>Remark for outstanding</u> : :</h4>
-                                                    </div>
-
-                                                    <div class="col-12">
-                                                        <p class="font-18 text-center">
-                                                            सिया वर्मा  ने इस वर्ष अपने विकास में काफी प्रगति की है। वह अधिक आत्मविश्वासी  और शैक्षणिक रूप से अच्छा प्रदर्शन कर रहा है।
-                                                        </p>
-                                                    </div>
-
+                                                <div class="col text-end">
+                                                    <span class="fw-bold">आवेदन दिनाँक:-</span>
+                                                    <span class="fw-bold">09-03-2024</span>
 
                                                 </div>
+
+
                                             </div>
+
+                                            <h3 class="text-center mt-4 mb-4 font-bold"><u>:: Information filled by the Accepting Authority::<br />
+                                                <span class="fs-5">:: स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</span></u></h3>
+                                        </div>
+                                        <table class="table table-bordered table-st fs-5">
+                                            <tr class="mt-3">
+
+                                                <th>कर्मचारी आई.डी/नाम</th>
+                                                <td>सिया वर्मा/EDP4454445</td>
+                                            </tr>
+                                            <tr>
+                                                <th>क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
+                                                <td>YES/हँ</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण </th>
+                                                <td>Nil</td>
+                                            </tr>
+                                            <tr class="mt-3">
+                                                <th>Grading(ग्रेड)</th>
+                                                <td>Outstanding/उत्कृष्ट</td>
+                                            </tr>
+
+                                        </table>
+                                        <br />
+
+                                        <div class="row ms-0 me-0">
+                                            <div class="col-12">
+
+                                                <h4 class="text-center font-bold">: : <u>Remark for outstanding</u> : :</h4>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <p class="font-18 text-center">
+                                                    सिया वर्मा  ने इस वर्ष अपने विकास में काफी प्रगति की है। वह अधिक आत्मविश्वासी  और शैक्षणिक रूप से अच्छा प्रदर्शन कर रहा है।
+                                                </p>
+                                            </div>
+
+
                                         </div>
                                     </div>
                                 </div>
-                                <br />
-
-                                <br />
-                                <br />
-                                <br />
-
-
-                            </fieldset>
+                            </div>
                         </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-primary" onclick="printModalContent('staticBackdrop')">Print</button>
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <br />
 
-                                </div>
-                    </div>
+                        <br />
+                        <br />
+                        <br />
+
+
+                    </fieldset>
                 </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" onclick="printModalContent('staticBackdrop')">Print</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-              
+                </div>
             </div>
+        </div>
+
+
+    </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 
-    <script> function printModalContent(modalId) {
+    <script>
+        function printModalContent(modalId) {
             var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
-
-
             document.body.innerHTML = modalContent.innerHTML
             window.print();
-     window.location.href = "Rpt_AcceptingAuthority.aspx";
-
+            window.location.href = "Rpt_AcceptingAuthority.aspx";
         }
-
         document.addEventListener('keydown', function (event) {
             if (event.ctrlKey && event.key === 'p') {
                 // Prevent default behavior of Ctrl+P (opening print dialog)
                 event.preventDefault();
-
                 // Print the content of the active modal
                 var activeModal = document.querySelector('.modal.show');
                 if (activeModal) {
@@ -383,7 +377,9 @@
                     printModalContent(modalId);
                 }
             }
-        });</script>
+        });
+
+    </script>
     <%-- <script>
       function openPDF() {
           // Replace 'your-pdf-file.pdf' with the actual path to your PDF file

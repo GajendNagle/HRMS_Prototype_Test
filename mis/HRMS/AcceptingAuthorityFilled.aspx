@@ -1303,7 +1303,6 @@
                    </tr>
 
                    <tr>
-
                        <td class="text-center" style="position: relative; top: 100px">5</td>
                        <td>
                            <h4 class="fw-bold">Individual Qualities<br />
@@ -1336,7 +1335,6 @@
                        </td>
                    </tr>
                    <tr>
-
                        <td class="text-center mt-2">6</td>
                        <td>
                            <h4 class="fw-bold">Participation in academic tranning<br />

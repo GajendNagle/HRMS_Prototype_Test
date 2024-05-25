@@ -517,6 +517,8 @@ relations<br />
             window.print();
             window.location.href = "Rpt_ReportingOfficer.aspx";
         }
+
+       
         document.addEventListener('keydown', function (event) {
             if (event.ctrlKey && event.key === 'p') {
                 // Prevent default behavior of Ctrl+P (opening print dialog)
@@ -529,23 +531,6 @@ relations<br />
                 }
             }
         });
-        //function printDiv(divId) {
-        //    var printContents = document.getElementById(divId).innerHTML;
-        //    var originalContents = document.body.innerHTML;
-
-        //    document.body.innerHTML = printContents;
-        //    window.print();
-        //    document.body.innerHTML = originalContents;
-        //}
-  //  document.addEventListener('keydown', function (event) {
-  //    // Check if Ctrl+P is pressed
-  //    if (event.ctrlKey && event.key === 'p') {
-  //        // Prevent the default print action
-  //        event.preventDefault();
-  //        // Call your JavaScript function here
-  //        printDiv('printArea'); // Replace printContent with the name of your function
-  //    }
-  //});
     </script>
 </asp:Content>
 
