@@ -48,6 +48,7 @@
 
         #idDeptName {
             display: none;
+            margin-top:7px
         }
 
         #idCurDeptName {
@@ -113,7 +114,8 @@
         #P3 {
             display: none;
         }
-                #Una {
+
+        #Una {
             display: none;
         }
     </style>
@@ -177,11 +179,8 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-
                                 <a class="nav-link  text-white " href="EmployeeRegImportantNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                 <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>&nbsp;Employee Registration</b></a>
-                                <%-- <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>--%>
                             </ul>
 
                         </div>
@@ -470,7 +469,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="idCertificateDate" class="col-md-3 ">
+                                                    <div id="idCertificateDate" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Certification Date<span style="color: red">*</span>
@@ -534,7 +533,7 @@
                                                         </div>
                                                         <div class="col-md-2 mt-4">
                                                             <div class="form-group">
-                                                                <input type="button" id="btnNomineeadd" class="btn btn-info btn-rounded" value="ADD" onclick="AddNominee();" />
+                                                                <input type="button" id="btnNomineeadd" class="btn btn-success btn-rounded" value="ADD" onclick="AddNominee();" />
 
                                                             </div>
                                                         </div>
@@ -542,447 +541,447 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <table class="table" id="tblNominee" style="visibility: hidden;">
-                                                                <tr>
-                                                                    <th>Sr.</th>
-                                                                    <th>Nominee Name</th>
-                                                                    <th>Nominee Relation</th>
-                                                                    <th>Nominee Percentage</th>
-                                                                    <th>Action</th>
-                                                                </tr>
-                                                            </table>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered" id="tblNominee" style="visibility: hidden;">
+                                                                    <tr class="card-header text-center">
+                                                                        <th>Sr. No.</th>
+                                                                        <th>Nominee Name</th>
+                                                                        <th>Nominee Relation</th>
+                                                                        <th>Nominee Percentage</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <hr />
                                                 </fieldset>
-                                            </fieldset>
+                                                <fieldset>
+                                                    <legend>Address</legend>
+                                                    <div class="row">
+                                                        <div class="12">
+                                                            <fieldset>
+                                                                <legend>Present Address
+                                                                </legend>
+                                                                <div class="row">
+                                                                    <div class="col-md-3 form-group">
+                                                                        <label class="font-bold">State <span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Rajasthan">Rajasthan</option>
+                                                                            <option value="Maharashtra">Maharashtra</option>
+                                                                            <option value="Nagaland">Nagaland</option>
+                                                                            <option value="Nashik">Nashik</option>
+                                                                            <option value="West">West</option>
+                                                                            <option value="Bengal">Bengal</option>
+                                                                            <option value="Telangana">Telangana</option>
+                                                                            <option value="Assam">Assam</option>
+                                                                            <option value="Tripura">Tripura</option>
+                                                                            <option value="Madhya">Madhya</option>
+                                                                            <option value="Pradesh">Pradesh</option>
+                                                                            <option value="Tamil">Tamil</option>
+                                                                            <option value="Nadu">Nadu</option>
+                                                                            <option value="Gujarat">Gujarat</option>
+                                                                            <option value="Sikkim">Sikkim</option>
+                                                                            <option value="Andhra">Andhra</option>
+                                                                            <option value="Uttar">Uttar</option>
+                                                                            <option value="Punjab">Punjab</option>
+                                                                            <option value="Karnataka">Karnataka</option>
+                                                                            <option value="Meghalaya">Meghalaya</option>
+                                                                            <option value="Uttarakhand">Uttarakhand</option>
+                                                                            <option value="Goa">Goa</option>
+                                                                            <option value="Haryana">Haryana</option>
+                                                                            <option value="Mizoram">Mizoram</option>
+                                                                            <option value="Arunachal">Arunachal</option>
+                                                                            <option value="Pradesh">Pradesh</option>
+                                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                                            <option value="Bihar">Bihar</option>
+                                                                            <option value="Himachal">Himachal</option>
+                                                                            <option value="Kerala">Kerala</option>
+                                                                            <option value="Jharkhand">Jharkhand</option>
+                                                                            <option value="Orissa">Orissa</option>
 
-                                            <fieldset>
-                                                <legend>Address</legend>
-                                                <div class="row">
-                                                    <div class="12">
-                                                        <fieldset>
-                                                            <legend>Present Address
-                                                            </legend>
-                                                            <div class="row">
-                                                                <div class="col-md-3 form-group">
-                                                                    <label class="font-bold">State <span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Rajasthan">Rajasthan</option>
-                                                                        <option value="Maharashtra">Maharashtra</option>
-                                                                        <option value="Nagaland">Nagaland</option>
-                                                                        <option value="Nashik">Nashik</option>
-                                                                        <option value="West">West</option>
-                                                                        <option value="Bengal">Bengal</option>
-                                                                        <option value="Telangana">Telangana</option>
-                                                                        <option value="Assam">Assam</option>
-                                                                        <option value="Tripura">Tripura</option>
-                                                                        <option value="Madhya">Madhya</option>
-                                                                        <option value="Pradesh">Pradesh</option>
-                                                                        <option value="Tamil">Tamil</option>
-                                                                        <option value="Nadu">Nadu</option>
-                                                                        <option value="Gujarat">Gujarat</option>
-                                                                        <option value="Sikkim">Sikkim</option>
-                                                                        <option value="Andhra">Andhra</option>
-                                                                        <option value="Uttar">Uttar</option>
-                                                                        <option value="Punjab">Punjab</option>
-                                                                        <option value="Karnataka">Karnataka</option>
-                                                                        <option value="Meghalaya">Meghalaya</option>
-                                                                        <option value="Uttarakhand">Uttarakhand</option>
-                                                                        <option value="Goa">Goa</option>
-                                                                        <option value="Haryana">Haryana</option>
-                                                                        <option value="Mizoram">Mizoram</option>
-                                                                        <option value="Arunachal">Arunachal</option>
-                                                                        <option value="Pradesh">Pradesh</option>
-                                                                        <option value="Chhattisgarh">Chhattisgarh</option>
-                                                                        <option value="Bihar">Bihar</option>
-                                                                        <option value="Himachal">Himachal</option>
-                                                                        <option value="Kerala">Kerala</option>
-                                                                        <option value="Jharkhand">Jharkhand</option>
-                                                                        <option value="Orissa">Orissa</option>
-
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <label class="font-bold">Division <span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl01" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Bhopal">Bhopal</option>
-                                                                        <option value="Gwalior">Gwalior</option>
-                                                                        <option value="Narmadapuram">Narmadapuram</option>
-                                                                        <option value="Indore">Indore</option>
-                                                                        <option value="Jabalpur">Jabalpur</option>
-                                                                        <option value="Rewa">Rewa</option>
-                                                                        <option value="Sagar">Sagar</option>
-                                                                        <option value="Shahdol">Shahdol</option>
-                                                                        <option value="Ujjain">Ujjain</option>
-
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <label class="font-bold">District<span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Bhopal">Bhopal</option>
-                                                                        <option value="Raisen">Raisen</option>
-                                                                        <option value="Rajgarh">Rajgarh</option>
-                                                                        <option value="Sehore">Sehore</option>
-                                                                        <option value="Vidisha">Vidisha</option>
-                                                                        <option value="Ashoknagar">Ashoknagar</option>
-                                                                        <option value="Shivpuri">Shivpuri</option>
-                                                                        <option value="Datia">Datia</option>
-                                                                        <option value="Guna">Guna</option>
-                                                                        <option value="Gwalior">Gwalior</option>
-                                                                        <option value="Harda">Harda</option>
-                                                                        <option value="Hoshangabad">Hoshangabad</option>
-                                                                        <option value="Betul">Betul</option>
-                                                                        <option value="Morena">Morena</option>
-                                                                        <option value="Sheopur">Sheopur</option>
-                                                                        <option value="Bhind">Bhind</option>
-                                                                        <option value="Barwani">Barwani</option>
-                                                                        <option value="Burhanpur">Burhanpur</option>
-                                                                        <option value="Dhar">Dhar</option>
-                                                                        <option value="Indore">Indore</option>
-                                                                        <option value="Jhabua">Jhabua</option>
-                                                                        <option value="Khandwa">Khandwa</option>
-                                                                        <option value="Khargone">Khargone</option>
-                                                                        <option value="Alirajpur">Alirajpur</option>
-                                                                        <option value="Balaghat">Balaghat</option>
-                                                                        <option value="Chhindwara">Chhindwara</option>
-                                                                        <option value="Jabalpur">Jabalpur</option>
-                                                                        <option value="Katni">Katni</option>
-                                                                        <option value="Mandla">Mandla</option>
-                                                                        <option value="Narsinghpur">Narsinghpur</option>
-                                                                        <option value="Seoni">Seoni</option>
-                                                                        <option value="Rewa">Rewa</option>
-                                                                        <option value="Satna">Satna</option>
-                                                                        <option value="Sidhi">Sidhi</option>
-                                                                        <option value="Singroli">Singroli</option>
-                                                                        <option value="Chhatarpur">Chhatarpur</option>
-                                                                        <option value="Damoh">Damoh</option>
-                                                                        <option value="Panna">Panna</option>
-                                                                        <option value="Sagar">Sagar</option>
-                                                                        <option value="Tikamgarh">Tikamgarh</option>
-                                                                        <option value="Shahdol">Shahdol</option>
-                                                                        <option value="Umaria">Umaria</option>
-                                                                        <option value="Dindori">Dindori</option>
-                                                                        <option value="Anuppur">Anuppur</option>
-                                                                        <option value="Dewas">Dewas</option>
-                                                                        <option value="Mandsaur">Mandsaur</option>
-                                                                        <option value="Neemuch">Neemuch</option>
-                                                                        <option value="Ratlam">Ratlam</option>
-                                                                        <option value="Shajapur">Shajapur</option>
-                                                                        <option value="Ujjain">Ujjain</option>
-
-                                                                    </select>
-                                                                </div>
-
-                                                                <div class="col-md-3">
-                                                                    <label class="font-bold">Block<span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Bhopal">Huzur</option>
-                                                                        <option value="Raisen">Fanda</option>
-                                                                        <option value="Govindapura">Govindapura</option>
-
-
-                                                                    </select>
-                                                                </div>
-
-
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label>Pincode<span style="color: red">*</span></label>
-                                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
+                                                                        </select>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label>Address line 1<span style="color: red">*</span></label>
-                                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
+                                                                    <div class="col-md-3">
+                                                                        <label class="font-bold">Division <span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Bhopal">Bhopal</option>
+                                                                            <option value="Gwalior">Gwalior</option>
+                                                                            <option value="Narmadapuram">Narmadapuram</option>
+                                                                            <option value="Indore">Indore</option>
+                                                                            <option value="Jabalpur">Jabalpur</option>
+                                                                            <option value="Rewa">Rewa</option>
+                                                                            <option value="Sagar">Sagar</option>
+                                                                            <option value="Shahdol">Shahdol</option>
+                                                                            <option value="Ujjain">Ujjain</option>
+
+                                                                        </select>
                                                                     </div>
-                                                                </div>
+                                                                    <div class="col-md-3">
+                                                                        <label class="font-bold">District<span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Bhopal">Bhopal</option>
+                                                                            <option value="Raisen">Raisen</option>
+                                                                            <option value="Rajgarh">Rajgarh</option>
+                                                                            <option value="Sehore">Sehore</option>
+                                                                            <option value="Vidisha">Vidisha</option>
+                                                                            <option value="Ashoknagar">Ashoknagar</option>
+                                                                            <option value="Shivpuri">Shivpuri</option>
+                                                                            <option value="Datia">Datia</option>
+                                                                            <option value="Guna">Guna</option>
+                                                                            <option value="Gwalior">Gwalior</option>
+                                                                            <option value="Harda">Harda</option>
+                                                                            <option value="Hoshangabad">Hoshangabad</option>
+                                                                            <option value="Betul">Betul</option>
+                                                                            <option value="Morena">Morena</option>
+                                                                            <option value="Sheopur">Sheopur</option>
+                                                                            <option value="Bhind">Bhind</option>
+                                                                            <option value="Barwani">Barwani</option>
+                                                                            <option value="Burhanpur">Burhanpur</option>
+                                                                            <option value="Dhar">Dhar</option>
+                                                                            <option value="Indore">Indore</option>
+                                                                            <option value="Jhabua">Jhabua</option>
+                                                                            <option value="Khandwa">Khandwa</option>
+                                                                            <option value="Khargone">Khargone</option>
+                                                                            <option value="Alirajpur">Alirajpur</option>
+                                                                            <option value="Balaghat">Balaghat</option>
+                                                                            <option value="Chhindwara">Chhindwara</option>
+                                                                            <option value="Jabalpur">Jabalpur</option>
+                                                                            <option value="Katni">Katni</option>
+                                                                            <option value="Mandla">Mandla</option>
+                                                                            <option value="Narsinghpur">Narsinghpur</option>
+                                                                            <option value="Seoni">Seoni</option>
+                                                                            <option value="Rewa">Rewa</option>
+                                                                            <option value="Satna">Satna</option>
+                                                                            <option value="Sidhi">Sidhi</option>
+                                                                            <option value="Singroli">Singroli</option>
+                                                                            <option value="Chhatarpur">Chhatarpur</option>
+                                                                            <option value="Damoh">Damoh</option>
+                                                                            <option value="Panna">Panna</option>
+                                                                            <option value="Sagar">Sagar</option>
+                                                                            <option value="Tikamgarh">Tikamgarh</option>
+                                                                            <option value="Shahdol">Shahdol</option>
+                                                                            <option value="Umaria">Umaria</option>
+                                                                            <option value="Dindori">Dindori</option>
+                                                                            <option value="Anuppur">Anuppur</option>
+                                                                            <option value="Dewas">Dewas</option>
+                                                                            <option value="Mandsaur">Mandsaur</option>
+                                                                            <option value="Neemuch">Neemuch</option>
+                                                                            <option value="Ratlam">Ratlam</option>
+                                                                            <option value="Shajapur">Shajapur</option>
+                                                                            <option value="Ujjain">Ujjain</option>
 
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label>Address line 2<span style="color: red">*</span></label>
-                                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" />
+                                                                        </select>
                                                                     </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <label class="font-bold">Block<span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Bhopal">Huzur</option>
+                                                                            <option value="Raisen">Fanda</option>
+                                                                            <option value="Govindapura">Govindapura</option>
+
+
+                                                                        </select>
+                                                                    </div>
+
+
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Pincode<span style="color: red">*</span></label>
+                                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Address line 1<span style="color: red">*</span></label>
+                                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Address line 2<span style="color: red">*</span></label>
+                                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" />
+                                                                        </div>
+                                                                    </div>
+
+
                                                                 </div>
+                                                            </fieldset>
 
-
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" id="vehicle1" name="vehicle1" checked value="Bike">
+                                                                    <b>Permanent Address same as Present Address</b>
+                                                                    <%--<label><span style="color: red">*</span></label>--%>
+                                                                </div>
                                                             </div>
-                                                        </fieldset>
 
-                                                        <div class="col-md-4">
+                                                            <fieldset>
+                                                                <legend>Permanent Address
+                                                                </legend>
+                                                                <div class="row">
+
+                                                                    <div class="col-md-3 form-group">
+                                                                        <label class="font-bold">State <span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Rajasthan">Rajasthan</option>
+                                                                            <option value="Maharashtra">Maharashtra</option>
+                                                                            <option value="Nagaland">Nagaland</option>
+                                                                            <option value="Nashik">Nashik</option>
+                                                                            <option value="West">West</option>
+                                                                            <option value="Bengal">Bengal</option>
+                                                                            <option value="Telangana">Telangana</option>
+                                                                            <option value="Assam">Assam</option>
+                                                                            <option value="Tripura">Tripura</option>
+                                                                            <option value="Madhya">Madhya</option>
+                                                                            <option value="Pradesh">Pradesh</option>
+                                                                            <option value="Tamil">Tamil</option>
+                                                                            <option value="Nadu">Nadu</option>
+                                                                            <option value="Gujarat">Gujarat</option>
+                                                                            <option value="Sikkim">Sikkim</option>
+                                                                            <option value="Andhra">Andhra</option>
+                                                                            <option value="Uttar">Uttar</option>
+                                                                            <option value="Punjab">Punjab</option>
+                                                                            <option value="Karnataka">Karnataka</option>
+                                                                            <option value="Meghalaya">Meghalaya</option>
+                                                                            <option value="Uttarakhand">Uttarakhand</option>
+                                                                            <option value="Goa">Goa</option>
+                                                                            <option value="Haryana">Haryana</option>
+                                                                            <option value="Mizoram">Mizoram</option>
+                                                                            <option value="Arunachal">Arunachal</option>
+                                                                            <option value="Pradesh">Pradesh</option>
+                                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                                            <option value="Bihar">Bihar</option>
+                                                                            <option value="Himachal">Himachal</option>
+                                                                            <option value="Kerala">Kerala</option>
+                                                                            <option value="Jharkhand">Jharkhand</option>
+                                                                            <option value="Orissa">Orissa</option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label class="font-bold">Division <span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Bhopal">Bhopal</option>
+                                                                            <option value="Gwalior">Gwalior</option>
+                                                                            <option value="Narmadapuram">Narmadapuram</option>
+                                                                            <option value="Indore">Indore</option>
+                                                                            <option value="Jabalpur">Jabalpur</option>
+                                                                            <option value="Rewa">Rewa</option>
+                                                                            <option value="Sagar">Sagar</option>
+                                                                            <option value="Shahdol">Shahdol</option>
+                                                                            <option value="Ujjain">Ujjain</option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label class="font-bold">District<span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Bhopal">Bhopal</option>
+                                                                            <option value="Raisen">Raisen</option>
+                                                                            <option value="Rajgarh">Rajgarh</option>
+                                                                            <option value="Sehore">Sehore</option>
+                                                                            <option value="Vidisha">Vidisha</option>
+                                                                            <option value="Ashoknagar">Ashoknagar</option>
+                                                                            <option value="Shivpuri">Shivpuri</option>
+                                                                            <option value="Datia">Datia</option>
+                                                                            <option value="Guna">Guna</option>
+                                                                            <option value="Gwalior">Gwalior</option>
+                                                                            <option value="Harda">Harda</option>
+                                                                            <option value="Hoshangabad">Hoshangabad</option>
+                                                                            <option value="Betul">Betul</option>
+                                                                            <option value="Morena">Morena</option>
+                                                                            <option value="Sheopur">Sheopur</option>
+                                                                            <option value="Bhind">Bhind</option>
+                                                                            <option value="Barwani">Barwani</option>
+                                                                            <option value="Burhanpur">Burhanpur</option>
+                                                                            <option value="Dhar">Dhar</option>
+                                                                            <option value="Indore">Indore</option>
+                                                                            <option value="Jhabua">Jhabua</option>
+                                                                            <option value="Khandwa">Khandwa</option>
+                                                                            <option value="Khargone">Khargone</option>
+                                                                            <option value="Alirajpur">Alirajpur</option>
+                                                                            <option value="Balaghat">Balaghat</option>
+                                                                            <option value="Chhindwara">Chhindwara</option>
+                                                                            <option value="Jabalpur">Jabalpur</option>
+                                                                            <option value="Katni">Katni</option>
+                                                                            <option value="Mandla">Mandla</option>
+                                                                            <option value="Narsinghpur">Narsinghpur</option>
+                                                                            <option value="Seoni">Seoni</option>
+                                                                            <option value="Rewa">Rewa</option>
+                                                                            <option value="Satna">Satna</option>
+                                                                            <option value="Sidhi">Sidhi</option>
+                                                                            <option value="Singroli">Singroli</option>
+                                                                            <option value="Chhatarpur">Chhatarpur</option>
+                                                                            <option value="Damoh">Damoh</option>
+                                                                            <option value="Panna">Panna</option>
+                                                                            <option value="Sagar">Sagar</option>
+                                                                            <option value="Tikamgarh">Tikamgarh</option>
+                                                                            <option value="Shahdol">Shahdol</option>
+                                                                            <option value="Umaria">Umaria</option>
+                                                                            <option value="Dindori">Dindori</option>
+                                                                            <option value="Anuppur">Anuppur</option>
+                                                                            <option value="Dewas">Dewas</option>
+                                                                            <option value="Mandsaur">Mandsaur</option>
+                                                                            <option value="Neemuch">Neemuch</option>
+                                                                            <option value="Ratlam">Ratlam</option>
+                                                                            <option value="Shajapur">Shajapur</option>
+                                                                            <option value="Ujjain">Ujjain</option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label class="font-bold">Block<span style="color: red">*</span></label>
+                                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                                            <option value="--Select--">--Select--</option>
+                                                                            <option value="Bhopal">Huzur</option>
+                                                                            <option value="Raisen">Fanda</option>
+                                                                            <option value="Govindapura">Govindapura</option>
+                                                                        </select>
+                                                                    </div>
+
+
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Pincode<span style="color: red">*</span></label>
+                                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Address line 1<span style="color: red">*</span></label>
+                                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Address line 2<span style="color: red">*</span></label>
+                                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" />
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </fieldset>
+
+
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                    <legend>Marital Status and Spouse Details</legend>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
                                                             <div class="form-group">
-                                                                <input type="checkbox" id="vehicle1" name="vehicle1" checked value="Bike">
-                                                                <b>Permanent Address same as Present Address</b>
-                                                                <%--<label><span style="color: red">*</span></label>--%>
+                                                                <label>Married <span style="color: red">*</span></label>
+                                                                <select id="ddlMaarriedStatus" onchange="ShowHideMarried()" class="form-control select2">
+                                                                    <option value="--Select--">--Select--</option>
+                                                                    <option value="Yes">Yes</option>
+                                                                    <option value="No">No</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-
-                                                        <fieldset>
-                                                            <legend>Permanent Address
-                                                            </legend>
-                                                            <div class="row">
-
-                                                                <div class="col-md-3 form-group">
-                                                                    <label class="font-bold">State <span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Rajasthan">Rajasthan</option>
-                                                                        <option value="Maharashtra">Maharashtra</option>
-                                                                        <option value="Nagaland">Nagaland</option>
-                                                                        <option value="Nashik">Nashik</option>
-                                                                        <option value="West">West</option>
-                                                                        <option value="Bengal">Bengal</option>
-                                                                        <option value="Telangana">Telangana</option>
-                                                                        <option value="Assam">Assam</option>
-                                                                        <option value="Tripura">Tripura</option>
-                                                                        <option value="Madhya">Madhya</option>
-                                                                        <option value="Pradesh">Pradesh</option>
-                                                                        <option value="Tamil">Tamil</option>
-                                                                        <option value="Nadu">Nadu</option>
-                                                                        <option value="Gujarat">Gujarat</option>
-                                                                        <option value="Sikkim">Sikkim</option>
-                                                                        <option value="Andhra">Andhra</option>
-                                                                        <option value="Uttar">Uttar</option>
-                                                                        <option value="Punjab">Punjab</option>
-                                                                        <option value="Karnataka">Karnataka</option>
-                                                                        <option value="Meghalaya">Meghalaya</option>
-                                                                        <option value="Uttarakhand">Uttarakhand</option>
-                                                                        <option value="Goa">Goa</option>
-                                                                        <option value="Haryana">Haryana</option>
-                                                                        <option value="Mizoram">Mizoram</option>
-                                                                        <option value="Arunachal">Arunachal</option>
-                                                                        <option value="Pradesh">Pradesh</option>
-                                                                        <option value="Chhattisgarh">Chhattisgarh</option>
-                                                                        <option value="Bihar">Bihar</option>
-                                                                        <option value="Himachal">Himachal</option>
-                                                                        <option value="Kerala">Kerala</option>
-                                                                        <option value="Jharkhand">Jharkhand</option>
-                                                                        <option value="Orissa">Orissa</option>
-
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <label class="font-bold">Division <span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl01" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Bhopal">Bhopal</option>
-                                                                        <option value="Gwalior">Gwalior</option>
-                                                                        <option value="Narmadapuram">Narmadapuram</option>
-                                                                        <option value="Indore">Indore</option>
-                                                                        <option value="Jabalpur">Jabalpur</option>
-                                                                        <option value="Rewa">Rewa</option>
-                                                                        <option value="Sagar">Sagar</option>
-                                                                        <option value="Shahdol">Shahdol</option>
-                                                                        <option value="Ujjain">Ujjain</option>
-
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <label class="font-bold">District<span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Bhopal">Bhopal</option>
-                                                                        <option value="Raisen">Raisen</option>
-                                                                        <option value="Rajgarh">Rajgarh</option>
-                                                                        <option value="Sehore">Sehore</option>
-                                                                        <option value="Vidisha">Vidisha</option>
-                                                                        <option value="Ashoknagar">Ashoknagar</option>
-                                                                        <option value="Shivpuri">Shivpuri</option>
-                                                                        <option value="Datia">Datia</option>
-                                                                        <option value="Guna">Guna</option>
-                                                                        <option value="Gwalior">Gwalior</option>
-                                                                        <option value="Harda">Harda</option>
-                                                                        <option value="Hoshangabad">Hoshangabad</option>
-                                                                        <option value="Betul">Betul</option>
-                                                                        <option value="Morena">Morena</option>
-                                                                        <option value="Sheopur">Sheopur</option>
-                                                                        <option value="Bhind">Bhind</option>
-                                                                        <option value="Barwani">Barwani</option>
-                                                                        <option value="Burhanpur">Burhanpur</option>
-                                                                        <option value="Dhar">Dhar</option>
-                                                                        <option value="Indore">Indore</option>
-                                                                        <option value="Jhabua">Jhabua</option>
-                                                                        <option value="Khandwa">Khandwa</option>
-                                                                        <option value="Khargone">Khargone</option>
-                                                                        <option value="Alirajpur">Alirajpur</option>
-                                                                        <option value="Balaghat">Balaghat</option>
-                                                                        <option value="Chhindwara">Chhindwara</option>
-                                                                        <option value="Jabalpur">Jabalpur</option>
-                                                                        <option value="Katni">Katni</option>
-                                                                        <option value="Mandla">Mandla</option>
-                                                                        <option value="Narsinghpur">Narsinghpur</option>
-                                                                        <option value="Seoni">Seoni</option>
-                                                                        <option value="Rewa">Rewa</option>
-                                                                        <option value="Satna">Satna</option>
-                                                                        <option value="Sidhi">Sidhi</option>
-                                                                        <option value="Singroli">Singroli</option>
-                                                                        <option value="Chhatarpur">Chhatarpur</option>
-                                                                        <option value="Damoh">Damoh</option>
-                                                                        <option value="Panna">Panna</option>
-                                                                        <option value="Sagar">Sagar</option>
-                                                                        <option value="Tikamgarh">Tikamgarh</option>
-                                                                        <option value="Shahdol">Shahdol</option>
-                                                                        <option value="Umaria">Umaria</option>
-                                                                        <option value="Dindori">Dindori</option>
-                                                                        <option value="Anuppur">Anuppur</option>
-                                                                        <option value="Dewas">Dewas</option>
-                                                                        <option value="Mandsaur">Mandsaur</option>
-                                                                        <option value="Neemuch">Neemuch</option>
-                                                                        <option value="Ratlam">Ratlam</option>
-                                                                        <option value="Shajapur">Shajapur</option>
-                                                                        <option value="Ujjain">Ujjain</option>
-
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <label class="font-bold">Block<span style="color: red">*</span></label>
-                                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                                        <option value="--Select--">--Select--</option>
-                                                                        <option value="Bhopal">Huzur</option>
-                                                                        <option value="Raisen">Fanda</option>
-                                                                        <option value="Govindapura">Govindapura</option>
-                                                                    </select>
-                                                                </div>
-
-
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label>Pincode<span style="color: red">*</span></label>
-                                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label>Address line 1<span style="color: red">*</span></label>
-                                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label>Address line 2<span style="color: red">*</span></label>
-                                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" />
-                                                                    </div>
-                                                                </div>
-
-
+                                                        <div id="idSpouseName" class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Spouse Name<span style="color: red">*</span></label>
+                                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Name" />
                                                             </div>
-                                                        </fieldset>
+                                                        </div>
+                                                        <div id="idSpouseGovEmp" class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Is Spouse Government Employee <span style="color: red">*</span></label>
+                                                                <select id="ddlSpouseGovEmp" onchange="ShowHideGovEmp()" class="form-control select2">
+                                                                    <option value="--Select--">--Select--</option>
+                                                                    <option value="Yes">Yes</option>
+                                                                    <option value="No">No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div id="idSpouseDept" class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Spouse Department Name<span style="color: red">*</span></label>
+                                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Department Name" />
+                                                            </div>
+                                                        </div>
+                                                        <div id="idSpouseOfcAdd" class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Office Address<span style="color: red">*</span></label>
+                                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Office Address" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
 
-
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-
-                                            <fieldset>
-                                                <legend>Marital Status and Spouse Details</legend>
-                                                <div class="row">
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>Married <span style="color: red">*</span></label>
-                                                            <select id="ddlMaarriedStatus" onchange="ShowHideMarried()" class="form-control select2">
-                                                                <option value="--Select--">--Select--</option>
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
+                                                <fieldset>
+                                                    <legend>Education Qualification</legend>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Qualification<span style="color: red">*</span></label>
+                                                                <select id="Education" class="form-control select2">
+                                                                    <option value="----">--Select--</option>
+                                                                    <option value="BALLB">BALLB</option>
+                                                                    <option value="BachelorOfArts">Bachelor of Arts</option>
+                                                                    <option value="BachelorOfCommerce">Bachelor of Commerce</option>
+                                                                    <option value="Architecture">Architecture</option>
+                                                                    <option value="BCA">BCA</option>
+                                                                    <option value="ComputerScience">Computer Science</option>
+                                                                    <option value="Education">Education</option>
+                                                                    <option value="BBA">BBA</option>
+                                                                    <option value="MBBS">MBBS</option>
+                                                                    <option value="BachelorOfScience">Bachelor of Science</option>
+                                                                    <option value="BDesInDesign">BDes in Design</option>
+                                                                    <option value="Biotechnology">Biotechnology</option>
+                                                                    <option value="BScIT">BSc IT</option>
+                                                                    <option value="Engineering">Engineering</option>
+                                                                    <option value="Humanities">Humanities</option>
+                                                                    <option value="Management">Management</option>
+                                                                    <option value="Arts">Arts</option>
+                                                                    <option value="Aviation">Aviation</option>
+                                                                    <option value="Bsc">Bsc</option>
+                                                                    <option value="ChemicalEngineering">Chemical Engineering</option>
+                                                                    <option value="CivilEngineering">Civil Engineering</option>
+                                                                    <option value="Economics">Economics</option>
+                                                                    <option value="ElectricalEngineering">Electrical Engineering</option>
+                                                                    <option value="FashionDesigning">Fashion designing</option>
+                                                                    <option value="MBA">MBA</option>
+                                                                    <option value="EducationLaw">Education Law</option>
+                                                                    <option value="HospitalAdministration">Hospital Administration</option>
+                                                                    <option value="MasterOfScienceBiochemistry">Master of Science Biochemistry</option>
+                                                                    <option value="MBAFinance">MBA Finance</option>
+                                                                    <option value="MD">MD</option>
+                                                                    <option value="MassCommunications">Mass communications</option>
+                                                                    <option value="MastersOfPhysician">Masters Of Physician</option>
+                                                                    <option value="MCA">MCA</option>
+                                                                    <option value="PGDiplomaInEntrepreneurshipDevelopment">PG Diploma in Entrepreneurship Development</option>
+                                                                    <option value="ExecutivePGProgramInManagement">Executive PG program in Management</option>
+                                                                    <option value="HumanResourceManagement">Human Resource Management</option>
+                                                                    <option value="InternationalBusiness">International business</option>
+                                                                    <option value="MasterOfArts">Master of Arts</option>
+                                                                    <option value="MasterOfDataScience">Master of Data Science</option>
+                                                                    <option value="MBABusinessAnalytics">MBA Business Analytics</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div id="idSpouseName" class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>Spouse Name<span style="color: red">*</span></label>
-                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Name" />
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Subject<span style="color: red">*</span></label>
+                                                                <input id="Subject" value="" name="ename" type="text" class="form-control" placeholder="Enter Subject" />
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div id="idSpouseGovEmp" class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>Is Spouse Government Employee <span style="color: red">*</span></label>
-                                                            <select id="ddlSpouseGovEmp" onchange="ShowHideGovEmp()" class="form-control select2">
-                                                                <option value="--Select--">--Select--</option>
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div id="idSpouseDept" class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>Spouse Department Name<span style="color: red">*</span></label>
-                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Department Name" />
-                                                        </div>
-                                                    </div>
-                                                    <div id="idSpouseOfcAdd" class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>Office Address<span style="color: red">*</span></label>
-                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Office Address" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-
-                                            <fieldset>
-                                                <legend>Education Qualification</legend>
-                                                <div class="row">
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <label>Qualification<span style="color: red">*</span></label>
-                                                            <select id="Education" class="form-control select2">
-                                                                <option value="----">--Select--</option>
-                                                                <option value="BALLB">BALLB</option>
-                                                                <option value="BachelorOfArts">Bachelor of Arts</option>
-                                                                <option value="BachelorOfCommerce">Bachelor of Commerce</option>
-                                                                <option value="Architecture">Architecture</option>
-                                                                <option value="BCA">BCA</option>
-                                                                <option value="ComputerScience">Computer Science</option>
-                                                                <option value="Education">Education</option>
-                                                                <option value="BBA">BBA</option>
-                                                                <option value="MBBS">MBBS</option>
-                                                                <option value="BachelorOfScience">Bachelor of Science</option>
-                                                                <option value="BDesInDesign">BDes in Design</option>
-                                                                <option value="Biotechnology">Biotechnology</option>
-                                                                <option value="BScIT">BSc IT</option>
-                                                                <option value="Engineering">Engineering</option>
-                                                                <option value="Humanities">Humanities</option>
-                                                                <option value="Management">Management</option>
-                                                                <option value="Arts">Arts</option>
-                                                                <option value="Aviation">Aviation</option>
-                                                                <option value="Bsc">Bsc</option>
-                                                                <option value="ChemicalEngineering">Chemical Engineering</option>
-                                                                <option value="CivilEngineering">Civil Engineering</option>
-                                                                <option value="Economics">Economics</option>
-                                                                <option value="ElectricalEngineering">Electrical Engineering</option>
-                                                                <option value="FashionDesigning">Fashion designing</option>
-                                                                <option value="MBA">MBA</option>
-                                                                <option value="EducationLaw">Education Law</option>
-                                                                <option value="HospitalAdministration">Hospital Administration</option>
-                                                                <option value="MasterOfScienceBiochemistry">Master of Science Biochemistry</option>
-                                                                <option value="MBAFinance">MBA Finance</option>
-                                                                <option value="MD">MD</option>
-                                                                <option value="MassCommunications">Mass communications</option>
-                                                                <option value="MastersOfPhysician">Masters Of Physician</option>
-                                                                <option value="MCA">MCA</option>
-                                                                <option value="PGDiplomaInEntrepreneurshipDevelopment">PG Diploma in Entrepreneurship Development</option>
-                                                                <option value="ExecutivePGProgramInManagement">Executive PG program in Management</option>
-                                                                <option value="HumanResourceManagement">Human Resource Management</option>
-                                                                <option value="InternationalBusiness">International business</option>
-                                                                <option value="MasterOfArts">Master of Arts</option>
-                                                                <option value="MasterOfDataScience">Master of Data Science</option>
-                                                                <option value="MBABusinessAnalytics">MBA Business Analytics</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <label>Subject<span style="color: red">*</span></label>
-                                                            <input id="Subject" value="" name="ename" type="text" class="form-control" placeholder="Enter Subject" />
-                                                        </div>
-                                                    </div>
-                                                    <%--      <div class="col-md-3">
+                                                        <%--      <div class="col-md-3">
                             <div class="form-group">
                                 <label>Degree / Diploma<span style="color: red">*</span></label>
                                 <select class="form-control select2">
@@ -991,60 +990,60 @@
                                 </select>
                             </div>
                         </div>--%>
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <label>Board / Univercity name<span style="color: red">*</span></label>
-                                                            <select id="Board" class="form-control select2">
-                                                                <option value="----">--Select--</option>
-                                                                <option value="MP Board">MP Board</option>
-                                                                <option value="CBSC Board">CBSC Board</option>
-                                                                <option value="ICSC Board">ICSC Board</option>
-                                                            </select>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Board / Univercity name<span style="color: red">*</span></label>
+                                                                <select id="Board" class="form-control select2">
+                                                                    <option value="----">--Select--</option>
+                                                                    <option value="MP Board">MP Board</option>
+                                                                    <option value="CBSC Board">CBSC Board</option>
+                                                                    <option value="ICSC Board">ICSC Board</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <label>Passing Year <span style="color: red">*</span></label>
-                                                            <input id="PassingYear" name="ename" type="date" class="form-control" autocomplete="off" />
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Passing Year <span style="color: red">*</span></label>
+                                                                <input id="PassingYear" name="ename" type="date" class="form-control" autocomplete="off" />
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <label>Grade / Percentage<span style="color: red">*</span></label>
-                                                            <input id="Grade" value="" name="ename" type="text" class="form-control" placeholder="Enter Grade/Percentage" />
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Grade / Percentage<span style="color: red">*</span></label>
+                                                                <input id="Grade" value="" name="ename" type="text" class="form-control" placeholder="Enter Grade/Percentage" />
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-2 mt-4">
-                                                        <div class="form-group">
-                                                            <input type="button" id="btnAdd" class="btn btn-info btn-rounded" value="ADD" onclick="AddRow();" />
+                                                        <div class="col-md-3 mt-4">
+                                                            <div class="form-group">
+                                                                <input type="button" id="btnAdd" class="btn btn-success btn-rounded" value="ADD" onclick="AddRow();" />
 
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <table class="table" id="tableAdd" style="visibility: hidden;">
-                                                            <tr>
-                                                                <th>Sr.</th>
-                                                                <th>Qualification</th>
-                                                                <th>Subject</th>
-                                                                <th>Board/University</th>
-                                                                <th>Passing Year</th>
-                                                                <th>Grade/Percentage</th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </table>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered" id="tableAdd" style="visibility: hidden;">
+                                                                        <tr class="card-header">
+                                                                            <th>Sr. No.</th>
+                                                                            <th>Qualification</th>
+                                                                            <th>Subject</th>
+                                                                            <th>Board/University</th>
+                                                                            <th>Passing Year</th>
+                                                                            <th>Grade/Percentage</th>
+                                                                            <th>Action</th>
+                                                                        </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <hr />
-                                                <div class="row justify-content-center">
-                                                    <div class="col-md-4 text-center">
-                                                        <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save & Next</button>
-                                                        <a runat="server" id="clearfirst" href="EmployeeRegistration.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-4 text-center">
+                                                            <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save & Next</button>
+                                                            <a runat="server" id="clearfirst" href="EmployeeRegistration.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </fieldset>
-
+                                                </fieldset>
                                         </div>
                                     </div>
                                     <div id="navpills-2" class="tab-pane">
@@ -1160,7 +1159,7 @@
 
                                                     </select>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-4">
                                                     <div class="form-group">
                                                         <label>First Appointment Block<span style="color: red">*</span></label>
                                                         <select class="form-control select2">
@@ -1188,7 +1187,7 @@
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DDO Code & Name" />
                                                     </div>
                                                 </div>--%>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-4">
                                                     <div class="form-group">
                                                         <label>DDO / Sankul <span style="color: red">*</span></label>
                                                         <select class="form-control select2">
@@ -1203,7 +1202,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-4">
                                                     <div class="form-group">
                                                         <label>Office/Institute/School Code & Name<span style="color: red">*</span></label>
                                                         <select class="form-control select2">
@@ -1303,9 +1302,6 @@
                                                         </select>
                                                     </div>
                                                 </div>
-
-
-
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Appointment Joining Date<span style="color: red">*</span></label>
@@ -1348,13 +1344,13 @@
                                                 </div>
 
 
-                                                <div class="col-md-3 ">
+                                                <div class="col-md-3 mt-4">
                                                     <div class="form-group">
                                                         <label>Samvilian Order No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-4">
                                                     <div class="form-group">
                                                         <label>Samvilian Order Date<span style="color: red">*</span></label>
                                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
@@ -1389,36 +1385,13 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div id="idDeptName" class="col-md-3 mt-3">
+                                                <div id="idDeptName" class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Deputation Department Name<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
                                                     </div>
                                                 </div>
-                                                <%--   <div class="col-md-3 mt-3">
-                                                    <div class="form-group">
-                                                        <label>Payroll Office Type<span style="color: red">*</span></label>
-                                                        <select class="form-control select2">
-                                                            <option value="----">--Select--</option>
-                                                            <option value="PrincipalSecretary">Principal Secretary</option>
-                                                            <option value="Secretary">Secretary</option>
-                                                            <option value="DeputySecretary">Deputy Secretary</option>
-                                                            <option value="CPI">CPI</option>
-                                                            <option value="CRSK">CRSK</option>
-                                                            <option value="DPI">DPI</option>
-                                                            <option value="Collector">Collector</option>
-                                                            <option value="CEOZP">CEO, ZP</option>
-                                                            <option value="JointDirector">Joint Director</option>
-                                                            <option value="DEO">DEO</option>
-                                                            <option value="DPC">DPC</option>
-                                                            <option value="BEO">BEO</option>
-                                                            <option value="BRC">BRC</option>
-                                                        </select>
-
-                                                    </div>
-                                                </div>--%>
-
-                                                <div class="col-md-3 ">
+                                                <div class="col-md-3 mt-4">
                                                     <div class="form-group">
                                                         <label>IS Regular </label>
                                                         <select id="ddlIsRegular" class="form-control select2">
@@ -2242,7 +2215,7 @@
                                         <fieldset>
                                             <legend>Employee Account Info</legend>
                                             <div class="row">
-                                                <div class="col-md-3">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label>IFSC Code<span style="color: red">*</span></label>
                                                         <input onchange="ShowBankDetails()" placeholder="Enter IFSC Code" name="ename" value="" type="text" class="form-control" autocomplete="off" />
@@ -2303,12 +2276,12 @@
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
                                                     </div>
                                                 </div>
-                                                  <div class="col-md-3" id="Una" >
-      <div class="form-group"  >
-          <label>UNA No.</label>
-          <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
-      </div>
-  </div>
+                                                <div class="col-md-3" id="Una">
+                                                    <div class="form-group">
+                                                        <label>UNA No.</label>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-3" id="P2">
                                                     <div class="form-group">
                                                         <label>EPF No.</label>
@@ -2322,37 +2295,37 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-3" style="display:none;" id="nps">
+                                                <div class="col-md-3" style="display: none;" id="nps">
                                                     <div class="form-group">
                                                         <label>NPS No.</label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter NPS No." />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3"  id="P4">
+                                                <div class="col-md-3" id="P4">
                                                     <div class="form-group">
                                                         <label>Group Insurance No.</label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Group Insurance No." />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3"  id="P5" >
+                                                <div class="col-md-3" id="P5">
                                                     <div class="form-group">
                                                         <label>Gratuity No.</label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Gratuity No." />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3"  id="P6">
+                                                <div class="col-md-3" id="P6">
                                                     <div class="form-group">
                                                         <label>EGLS No.</label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EGLS No." />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3"  id="P7" ">
+                                                <div class="col-md-3" id="P7">
                                                     <div class="form-group">
                                                         <label>EDLI No.</label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EDLI No." />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3"  id="P8" ">
+                                                <div class="col-md-3" id="P8">
                                                     <div class="form-group">
                                                         <label>ESIC No.</label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter ESIC No." />
@@ -3391,7 +3364,7 @@
             </div>
         </div>
     </div>
-<%--    </div>--%>
+    <%--    </div>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
