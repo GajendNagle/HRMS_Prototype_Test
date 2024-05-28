@@ -18,9 +18,10 @@
         #note {
             color: red;
         }
-       /* #EmployeeDetails1{
-            ;
-        }*/
+
+        th {
+            white-space: nowrap;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -28,7 +29,9 @@
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Promotion Order Reports</h4>
+                <h4 class="text-themecolor ">Promotion Order Reports
+                    <br />
+                    पदोन्नति आदेश रिपोर्ट</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -47,24 +50,24 @@
             <div class="card-body">
                 <div>
                     <fieldset>
-                        <legend>Promotion Order Reports</legend>
+                        <legend>Promotion Order / पदोन्नति आदेश </legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>From Date / दिनांक से <span style="color: red">*</span></label>
+                                    <label>From Date / दिनांक से<span style="color: red">*</span></label>
                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>To Date / दिनांक तक <span style="color: red">*</span></label>
+                                    <label>To Date / दिनांक तक<span style="color: red">*</span></label>
                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 mt-4">
                                 <div class="form-group">
                                     <%--<button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>--%>
-                                    <asp:button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
+                                    <asp:Button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
                                     <a href="Promotion.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                                 </div>
                             </div>
@@ -97,21 +100,32 @@
                             <div class="col-md-12">
                                 <div class="table-responsive">
 
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered text-center">
                                         <thead>
                                             <tr>
-                                                <th>Sr.No.</th>
+                                                <th>Sr.No.<br />
+                                                    सरल क्र.</th>
                                                 <%--<th>Action</th>--%>
-                                                <th>Employee ID-Name</th>
-                                                <th>Payment Authority</th>
-                                                <th>School</th>
-                                                <th>Previous Designation</th>
-                                                <th>New Designation</th>
-                                                <th>Promotion order No.</th>
-                                                <th>Promotion order Issued By</th>
-                                                <th>Request Date</th>
-                                                <th>Remark</th>
-                                                <th>Status</th>
+                                                <th>Employee ID-Name<br />
+                                                    कर्मचारी आईडी-नाम</th>
+                                                <th>Payment Authority<br />
+                                                    भुगतान प्राधिकरण</th>
+                                                <th>School<br />
+                                                    स्कूल</th>
+                                                <th>Previous Designation<br />
+                                                    पूर्व पदनाम</th>
+                                                <th>New Designation<br />
+                                                    नया पदनाम</th>
+                                                <th>Promotion order No.<br />
+                                                    पदोन्नति आदेश क्रमांक</th>
+                                                <th>Promotion order Issued By Employee<br />
+                                                    कर्मचारी द्वारा जारी पदोन्नति आदेश</th>
+                                                <th>Request Date<br />
+                                                    अनुरोध की तिथि</th>
+                                                <th>Remark<br />
+                                                    टिप्पणी</th>
+                                                <th>Status<br />
+                                                    स्थिति</th>
 
                                             </tr>
                                         </thead>
@@ -252,7 +266,7 @@
                     </fieldset>
                 </div>
                 <fieldset>
-                    <legend>Description</legend>
+                    <legend>Description / विवरण</legend>
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="main-ul">

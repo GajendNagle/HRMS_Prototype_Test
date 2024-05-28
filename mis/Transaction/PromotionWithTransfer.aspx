@@ -17,6 +17,10 @@
         #note {
             color: red;
         }
+
+        th {
+            white-space: nowrap;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -24,7 +28,8 @@
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Promotion With Transfer Order Reports</h4>
+                <h4 class="text-themecolor ">Promotion With Transfer Order Reports<br />
+                    स्थानांतरण आदेश रिपोर्ट के साथ पदोन्नति</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -44,7 +49,7 @@
 
                 <div>
                     <fieldset>
-                        <legend>Promotion With Transfer Order Reports</legend>
+                        <legend>Promotion With Transfer Order / स्थानांतरण आदेश के साथ पदोन्नति</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -72,6 +77,7 @@
                 <div id="EmployeeDetails1" runat="server" visible="false">
                     <fieldset>
                         <legend>Employee Details</legend>
+
                         <div class="row justify-content-end">
 
                             <div class="col-md-1">
@@ -94,24 +100,38 @@
                             <div class="col-md-12">
                                 <div class="table-responsive">
 
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered text-center">
                                         <thead>
                                             <tr>
-                                                <th>Sr.No.</th>
+                                                <th>Sr.No.<br />
+                                                    सरल क्र.</th>
                                                 <%--<th>Action</th>--%>
-                                                <th>Employee ID-Name</th>
-                                                <th>Old Payment Authority</th>
-                                                <th>Old School</th>
-                                                <th>New Payment Authority</th>
-                                                <th>New School</th>
-                                                <th>Previous Designation</th>
-                                                <th>New Designation</th>
-                                                <th>Transfer order No.</th>
-                                                <th>Transfer order Issued By</th>
-                                                <th>Relieving order No.</th>
-                                                <th>Date of Relieving</th>
-                                                <th>Request Date</th>
-                                                <th>Status</th>
+                                                <th>Employee ID-Name<br />
+                                                    कर्मचारी आईडी-नाम</th>
+                                                <th>Old Payment Authority<br />
+                                                    पुराना भुगतान प्राधिकरण</th>
+                                                <th>Old School<br />
+                                                    पुराना स्कूल</th>
+                                                <th>New Payment Authority<br />
+                                                    नया भुगतान प्राधिकरण</th>
+                                                <th>New School<br />
+                                                    नया स्कूल</th>
+                                                <th>Previous Designation<br />
+                                                    पूर्व पदनाम</th>
+                                                <th>New Designation<br />
+                                                    नया पदनाम</th>
+                                                <th>Transfer order No.<br />
+                                                    स्थानांतरण आदेश संख्या</th>
+                                                <th>Transfer order Issued By Employee<br />
+                                                    कर्मचारी द्वारा जारी स्थानांतरण आदेश</th>
+                                                <th>Relieving order No.<br />
+                                                    कार्यमुक्ति आदेश क्रमांक</th>
+                                                <th>Date of Relieving<br />
+                                                    कार्यमुक्ति की तिथि</th>
+                                                <th>Request Date<br />
+                                                    अनुरोध की तिथि</th>
+                                                <th>Status<br />
+                                                    स्थिति</th>
 
                                             </tr>
                                         </thead>
@@ -264,7 +284,7 @@
                     </fieldset>
                 </div>
                 <fieldset>
-                    <legend>Description</legend>
+                    <legend>Description / विवरण</legend>
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="main-ul">

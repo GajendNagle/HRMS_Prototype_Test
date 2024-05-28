@@ -9,6 +9,10 @@
         #note {
             color: red;
         }
+
+        th {
+            white-space: nowrap;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -16,7 +20,8 @@
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Promotion Hold Orders</h4>
+                <h4 class="text-themecolor ">Promotion Hold Orders<br />
+                    प्रमोशन होल्ड ऑर्डर</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -34,12 +39,14 @@
             </div>
             <div class="card-body">
                 <fieldset>
-                    <legend>Hold Promotions Orders After Final Confirmation</legend>
+                    <legend>Hold Promotions Orders After Final Confirmation<br />
+                        अंतिम पुष्टि के बाद पदोन्नति ऑर्डर होल्ड करें</legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Choose an option<span style="color: red">*</span></label>
+                                    Choose an option<br />
+                                    विकल्प चुनें<span style="color: red">*</span></label>
                                 <%--<select class="form-control select2" runat="server" id="ddlEmp">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Yes">Yes</option>
@@ -56,15 +63,19 @@
                             <asp:RequiredFieldValidator ErrorMessage="Required" ControlToValidate="ddlEmp" ValidationGroup="a" ForeColor="Red" runat="server" />
                         </div>
                         <div class="col-md-3">
-                                <div class="form-group" runat="server" visible="false" id="txtEmpID">
-                                <label>  Employee Unique Id<span style="color: red">*</span></label> 
+                            <div class="form-group" runat="server" visible="false" id="txtEmpID">
+                                <label>
+                                    Employee Unique Id<br />
+                                    कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" />
-                                </div>
-                                <div class="form-group" runat="server" visible="false" id="txtOrderNo">  
-                                 <label> Order No.:<span style="color: red">*</span></label>
-                                  <asp:TextBox runat="server" CssClass="form-control" />
-                                </div>
-                            
+                            </div>
+                            <div class="form-group" runat="server" visible="false" id="txtOrderNo">
+                                <label>
+                                    Order No.:<br />
+                                    आदेश संख्या:<span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" CssClass="form-control" />
+                            </div>
+
                         </div>
                         <%-- <div class="col-md-3">
                             <div class="form-group" runat="server" visible="false" id="txtOrderNo">
@@ -75,7 +86,7 @@
                         </div>--%>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 ">
+                        <div class="col-md-3">
                             <div class="form-group ">
                                 <%-- <asp:Button Text="Search" OnClick="Unnamed_Click" runat="server" class=" btn btn-success btn-rounded" validationgroup="a"/>--%>
                                 <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded" validationgroup="a">Search</button>
@@ -83,10 +94,11 @@
                             </div>
                         </div>
                     </div>
+
                 </fieldset>
                 <div id="showdetails">
                     <fieldset>
-                        <legend>Promotion Hold Report</legend>
+                        <legend>Promotion Hold Detail</legend>
                         <div class="row justify-content-end">
 
                             <div class="col-md-1">
@@ -108,24 +120,35 @@
                         <div class="row justify-content-center">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-                                    <table class="table">
-                                        <tr>
-                                            <th>Sr.No.</th>
-                                            <th>Action</th>
-                                            <th>Office Name</th>
-                                            <th>Employee Name</th>
-                                            <th>Order No.</th>
-                                            <th>Order Date</th>
-                                            <th>Existing Level</th>
-                                            <th>Existing Basic Salary</th>
-                                            <th>New Level</th>
-                                            <th>New Basic Salary</th>
-                                            <th>Effective Date</th>
-                                        </tr>
+                                    <table class="table table-bordered text-center">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.No.<br />
+                                                    सरल क्र.</th>
+                                                <th>Office Name<br />
+                                                    कार्यालय का नाम</th>
+                                                <th>Employee Name<br />
+                                                    कर्मचारी का नाम</th>
+                                                <th>Order No.<br />
+                                                    आदेश संख्या।</th>
+                                                <th>Order Date<br />
+                                                    आर्डर की तारीख</th>
+                                                <th>Existing Level<br />
+                                                    मौजूदा स्तर</th>
+                                                <th>Existing Basic Salary<br />
+                                                    मौजूदा मूल वेतन</th>
+                                                <th>New Level<br />
+                                                    नया स्तर</th>
+                                                <th>New Basic Salary<br />
+                                                    नया मूल वेतन</th>
+                                                <th>Effective Date<br />
+                                                    प्रभावी तिथि</th>
+                                                <th>Action<br />कार्यवाही</th>
+                                            </tr>
+                                        </thead>
                                         <tr>
                                             <td>1</td>
-                                            <td scope="col">
-                                                <input type="checkbox" /></td>
+
                                             <td>Head Office</td>
                                             <td>Ashok Kumar</td>
                                             <td>58965</td>
@@ -135,6 +158,8 @@
                                             <td>Level-9</td>
                                             <td>59900.00</td>
                                             <td>01/07/2023</td>
+                                            <td scope="col">
+                                                <input type="checkbox" /></td>
                                         </tr>
                                         <%--<tr>
                                             <td>2</td>
@@ -160,13 +185,13 @@
                             </div>
                             <div class="col-md-4 mt-2 text-center">
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal">Hold Order</button>
+                                    <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal">Hold Order</button>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Description</legend>
+                        <legend>Description / विवरण</legend>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="main-ul">
