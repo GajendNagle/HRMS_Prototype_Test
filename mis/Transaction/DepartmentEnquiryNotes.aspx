@@ -39,17 +39,17 @@
                           </li>
                           <li>
 
-                              <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry
+                              <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> विभाग पूछताछ
                               </b></a>
                           </li>
                           <li>
 
-                              <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry List
+                              <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> विभाग पूछताछ सूची
                               </b></a>
                           </li>
                           <li>
 
-                              <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry Report
+                              <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> विभाग पूछताछ रिपोर्ट
                               </b></a>
                           </li>
                       </ul>
@@ -65,8 +65,6 @@
                   <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;विभाग पूछताछ :-</h4>
               </div>
           </div>
-          <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-
           <div>
               <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
                   <b>1)</b>&nbsp; यदि किसी कर्मचारी के प्रति किसी भी प्रकार की शिकायत या दोष पाया जाता है तो विभाग के उच्च अधिकारियों द्वारा कर्मचारी के खिलाफ विभागीय जांच की जाती हैं |<br />

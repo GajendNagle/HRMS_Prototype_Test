@@ -111,7 +111,7 @@
                                     <a class="nav-link  text-white " href="EmployeeVerificationNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                 </li>
                                 <li>
-                                    <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee Verification</b></a>
+                                    <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>कर्मचारी सत्यापन</b></a>
                                 </li>
                             </ul>
                         </div>
@@ -119,12 +119,12 @@
                 </nav>
                 <br />
                 <fieldset>
-                    <legend>Employee Verification
+                    <legend>Employee Verification / कर्मचारी सत्यापन
                     </legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Verification Status/ सत्यापन स्थिति</label>
+                                <label>Verification Status/ सत्यापन स्थिति<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="ddlApprove">
                                     <option value="0">--Select--</option>
                                     <option value="1">Approve</option>
@@ -140,7 +140,7 @@
                     </div>
                 </fieldset>
                 <fieldset id="showdetails">
-                    <legend>Details</legend>
+                    <legend>Verification Details</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -171,7 +171,7 @@
                                             <th>Department<br />
                                                 विभाग</th>
                                             <th>View More<br />
-                                                और देखे</th>
+                                                अधिक विवरण देखे</th>
                                             <th>Status<br />
                                                 स्थिति</th>
                                         </tr>
@@ -224,7 +224,7 @@
                                             <th>Department<br />
                                                 विभाग</th>
                                             <th>View More<br />
-                                                और देखे</th>
+                                                अधिक विवरण देखे</th>
                                             <th>Status<br />
                                                 स्थिति</th>
                                         </tr>
@@ -296,7 +296,7 @@
                                             <th>Department<br />
                                             विभाग</th>
                                             <th>View More<br />
-                                            और देखे</th>
+                                            अधिक विवरण देखे</th>
                                             <th>Status<br />
                                             स्तिथि</th>
                                         </tr>

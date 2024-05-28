@@ -21,8 +21,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry" title="click to go on">Department Enquiry</a></li>--%>
-                    <li class="breadcrumb-item active">Department Enquiry</li>
+                    <li class="breadcrumb-item"><a href="DepartmentEnquiryNotes.aspx" title="click to go on">Department Enquiry</a></li>
+                    <li class="breadcrumb-item active">Department Enquiry Report</li>
                 </ol>
             </div>
         </div>
@@ -45,17 +45,17 @@
                   </li>
                   <li>
 
-                      <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry
+                      <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> विभाग अनुसंधान
                       </b></a>
                   </li>
                   <li>
 
-                      <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry List
+                      <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> विभाग अनुसंधान सूची
                       </b></a>
                   </li>
                   <li>
 
-                      <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry Report
+                      <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  विभाग अनुसंधान रिपोर्ट
                       </b></a>
                   </li>
               </ul>
@@ -65,24 +65,22 @@
   </nav>
   <br />
             <fieldset>
-                <legend>Department Enquiry Report</legend>
+                <legend>Department Enquiry Report / विभाग पूछताछ रिपोर्ट</legend>
                 <div class="row">
                     <div class="col-md-12">
                         <table id="tblList" class="table table-bordered table-responsive-lg text-center">
                             <thead>
                                 <tr class="align-text-top">
-                                    <th rowspan="2">Sr.No.</th>
-                                    <th rowspan="2">Enquiry Order No.</th>
-                                    <th rowspan="2">Enquiry Order Date</th>
-                                    <th colspan="2">Remark</th>
-                                    <th rowspan="2">Close Order No.</th>
-                                    <th rowspan="2">Close Order Date</th>
+                                    <th rowspan="2">Sr.No.<br />सरल क्र.</th>
+                                    <th rowspan="2">Enquiry Order No.<br/>विभाग आदेश क्र.</th>
+                                    <th rowspan="2">Enquiry Order Date<br/>विभाग आदेश दिनांक</th>
+                                    <th colspan="2">Remark<br/>रिमार्क</th>
+                                    <th rowspan="2">close Order No.<br/>निराकरण आदेश क्र.</th>
+                                    <th rowspan="2">Close Order Date<br/>निराकरण आदेश दिनांक</th>
                                 </tr>
                                 <tr>
-
-
                                     <th>Open Remark</th>
-                                    <th>Close Remark</th>
+                                    <th>Close Remark<br /></th>
                                 </tr>
                             </thead>
                             <tbody>

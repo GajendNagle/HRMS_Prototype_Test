@@ -30,14 +30,7 @@
         #idBankDetailsBox {
             display: none;
         }
-        /*     #idFirstAppointment {
-            display: none;
-        }
 
-        #idCurrentAppointment {
-            display: none;
-        }
-*/
         #handipaceType {
             display: none;
         }
@@ -94,10 +87,6 @@
             display: none;
         }
 
-        #Div_officetype1 {
-            /*display: none;*/
-        }
-
         #DivCriticalIllness {
             display: none;
         }
@@ -136,7 +125,7 @@
 
         <div class="row page-titles">
             <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;margin-bottom: -1rem;">
+                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
                     <img src="../../img/Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
                     </u>
                 </p>
@@ -166,9 +155,7 @@
 
                                 <a class="nav-link  text-white " href="EmployeeRegImportantNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                 <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>&nbsp;Employee Registration</b></a>
-                               <%-- <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>--%>
                             </ul>
-
                         </div>
                     </div>
                 </nav>
@@ -259,8 +246,6 @@
                                                                 <option value="--Select--">Male</option>
                                                                 <option value="--Select--">Female</option>
                                                                 <option value="--Select--">Other</option>
-                                                                <%--  <option value="Bhopal">Grain Advance</option>
-                                        <option value="Bhopal">Festival Advance</option>--%>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -317,8 +302,6 @@
                                                                 <option value="--Select--">B-</option>
                                                                 <option value="--Select--">O+</option>
                                                                 <option value="--Select--">O-</option>
-                                                                <%--  <option value="Bhopal">Grain Advance</option>
-                                        <option value="Bhopal">Festival Advance</option>--%>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -468,7 +451,7 @@
                                                     <div id="idRollNo" class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                Employee Roll No.
+                                                                Employee Roll No.<span style="color: red">*</span>
                                                                       <br />
                                                                 &nbsp&nbsp&nbsp&nbsp</label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Roll No." />
@@ -478,7 +461,7 @@
                                                     <div id="idRank" class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                Employee Rank
+                                                                Employee Rank<span style="color: red">*</span>
                                                                     <br />
                                                                 &nbsp&nbsp&nbsp&nbsp</label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Rank" />
@@ -527,18 +510,20 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <table class="table" id="tblNominee" style="visibility: hidden;">
-                                                                <tr>
-                                                                    <th>Sr.</th>
-                                                                    <th>Nominee Name</th>
-                                                                    <th>Nominee Relation</th>
-                                                                    <th>Nominee Percentage</th>
-                                                                    <th>Action</th>
-                                                                </tr>
-                                                            </table>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered" id="tblNominee" style="visibility: hidden;">
+                                                                    <tr class="card-header text-center">
+                                                                        <th>Sr.No.</th>
+                                                                        <th>Nominee Name</th>
+                                                                        <th>Nominee Relation</th>
+                                                                        <th>Nominee Percentage</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <hr />
+
                                                 </fieldset>
                                             </fieldset>
 
@@ -551,7 +536,7 @@
                                                             </legend>
                                                             <div class="row">
                                                                 <div class="col-md-3 form-group">
-                                                                    <label class="font-bold">State <span style="color: red">*</span></label>
+                                                                    <label class="font-bold">State<span style="color: red">*</span></label>
                                                                     <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                                                         <option value="--Select--">--Select--</option>
                                                                         <option value="Rajasthan">Rajasthan</option>
@@ -590,7 +575,7 @@
                                                                     </select>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label class="font-bold">Division <span style="color: red">*</span></label>
+                                                                    <label class="font-bold">Division<span style="color: red">*</span></label>
                                                                     <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                                         <option value="--Select--">--Select--</option>
                                                                         <option value="Bhopal">Bhopal</option>
@@ -714,7 +699,7 @@
                                                             <div class="row">
 
                                                                 <div class="col-md-3 form-group">
-                                                                    <label class="font-bold">State <span style="color: red">*</span></label>
+                                                                    <label class="font-bold">State<span style="color: red">*</span></label>
                                                                     <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                                                         <option value="--Select--">--Select--</option>
                                                                         <option value="Rajasthan">Rajasthan</option>
@@ -753,7 +738,7 @@
                                                                     </select>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label class="font-bold">Division <span style="color: red">*</span></label>
+                                                                    <label class="font-bold">Division<span style="color: red">*</span></label>
                                                                     <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                                         <option value="--Select--">--Select--</option>
                                                                         <option value="Bhopal">Bhopal</option>
@@ -871,7 +856,7 @@
                                                 <div class="row">
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>Married <span style="color: red">*</span></label>
+                                                            <label>Married<span style="color: red">*</span></label>
                                                             <select id="ddlMaarriedStatus" onchange="ShowHideMarried()" class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
                                                                 <option value="Yes">Yes</option>
@@ -887,7 +872,7 @@
                                                     </div>
                                                     <div id="idSpouseGovEmp" class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>Is Spouse Government Employee <span style="color: red">*</span></label>
+                                                            <label>Is Spouse Government Employee<span style="color: red">*</span></label>
                                                             <select id="ddlSpouseGovEmp" onchange="ShowHideGovEmp()" class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
                                                                 <option value="Yes">Yes</option>
@@ -967,15 +952,6 @@
                                                             <input id="Subject" value="" name="ename" type="text" class="form-control" placeholder="Enter Subject" />
                                                         </div>
                                                     </div>
-                                                    <%--      <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Degree / Diploma<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                       
-                                </select>
-                            </div>
-                        </div>--%>
                                                     <div class="col-md-2">
                                                         <div class="form-group">
                                                             <label>Board / Univercity name<span style="color: red">*</span></label>
@@ -989,7 +965,7 @@
                                                     </div>
                                                     <div class="col-md-2">
                                                         <div class="form-group">
-                                                            <label>Passing Year <span style="color: red">*</span></label>
+                                                            <label>Passing Year<span style="color: red">*</span></label>
                                                             <input id="PassingYear" name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
@@ -1008,8 +984,9 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <table class="table" id="tableAdd" style="visibility: hidden;">
-                                                            <tr>
+                                                        <div class="table-responsive">
+                                                        <table class="table table-bordered" id="tableAdd" style="visibility: hidden;">
+                                                            <tr class="card-header  text-center">
                                                                 <th>Sr.</th>
                                                                 <th>Qualification</th>
                                                                 <th>Subject</th>
@@ -1020,8 +997,8 @@
                                                             </tr>
                                                         </table>
                                                     </div>
+                                                    </div>
                                                 </div>
-                                                <hr />
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-4 text-center">
                                                         <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save & Next</button>
@@ -1041,7 +1018,7 @@
 
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>OIS Type <span style="color: red">*</span></label>
+                                                        <label>OIS Type<span style="color: red">*</span></label>
                                                         <select id="ddlRegistrationType" class="form-control select2">
                                                             <option value="0">--Select--</option>
                                                             <option value="2">Office</option>
@@ -1073,7 +1050,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <label class="font-bold">First Appointment Division <span style="color: red">*</span></label>
+                                                    <label class="font-bold">First Appointment Division<span style="color: red">*</span></label>
                                                     <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                         <option value="--Select--">--Select--</option>
                                                         <option value="Bhopal">Bhopal</option>
@@ -1167,15 +1144,9 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <%--     <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label>DDO Code & Name<span style="color: red">*</span></label>
-                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DDO Code & Name" />
-                                                    </div>
-                                                </div>--%>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>DDO / Sankul <span style="color: red">*</span></label>
+                                                        <label>DDO / Sankul<span style="color: red">*</span></label>
                                                         <select class="form-control select2">
                                                             <option value="--Select--">--Select--</option>
                                                             <option value="--Select--">Geetanjali Public School</option>
@@ -1183,8 +1154,7 @@
                                                             <option value="--Select--">Uma Vidhaya Niketan HS School</option>
                                                             <option value="--Select--">Manvendra Public School</option>
                                                             <option value="--Select--">Rose Marry Public School</option>
-                                                            <%--  <option value="Bhopal">Grain Advance</option>
-<option value="Bhopal">Festival Advance</option>--%>
+                                                          
                                                         </select>
                                                     </div>
                                                 </div>
@@ -1199,8 +1169,6 @@
                                                             <option value="--Select--">Uma Vidhaya Niketan HS School</option>
                                                             <option value="--Select--">Manvendra Public School</option>
                                                             <option value="--Select--">Rose Marry Public School</option>
-                                                            <%--  <option value="Bhopal">Grain Advance</option>
-<option value="Bhopal">Festival Advance</option>--%>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -1225,7 +1193,7 @@
 
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>First Appointment Department <span style="color: red">*</span></label>
+                                                        <label>First Appointment Department<span style="color: red">*</span></label>
                                                         <select class="form-control select2">
                                                             <option value="----">--Select--</option>
                                                             <option value="----">DPI</option>
@@ -1288,9 +1256,6 @@
                                                         </select>
                                                     </div>
                                                 </div>
-
-
-
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Appointment Joining Date<span style="color: red">*</span></label>
@@ -1326,8 +1291,6 @@
                                                             <option value="--Select--">Physics</option>
                                                             <option value="--Select--">Bio</option>
                                                             <option value="--Select--">Sanskrit</option>
-                                                            <%--  <option value="Bhopal">Grain Advance</option>
-<option value="Bhopal">Festival Advance</option>--%>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -1345,28 +1308,11 @@
                                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                     </div>
                                                 </div>
-                                                <%--   <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label>Employee Retirement Date<span style="color: red">*</span></label>
-                                                        <input name="ename" placeholder="Retirement Date" readonly="readonly" type="text" id="retirementDateTextbox" class="form-control" autocomplete="off" />
-                                                    </div>
-                                                </div>--%>
-                                                <%--  <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Whether working/Posted in other department on Deputation/transfer <span style="color: red">*</span></label>
-                                                        <select class="form-control select2">
-                                                            <option value="--Select--">--Select--</option>
-                                                            <option value="Bhopal">Yes</option>
-                                                            <option value="Bhopal">No</option>
-                                                        </select>
-                                                    </div>
-                                                </div>--%>
-
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>
                                                             Working in other Department/<br />
-                                                            Organization on Deputation Transfer <span style="color: red">*</span></label>
+                                                            Organization on Deputation Transfer<span style="color: red">*</span></label>
                                                         <select id="ddlWorkingDept" onchange="ShowHideWorkingDept()" class="form-control select2">
                                                             <option value="Select">--Select--</option>
                                                             <option value="Yes">Yes</option>
@@ -1380,29 +1326,6 @@
                                                         <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
                                                     </div>
                                                 </div>
-                                                <%--   <div class="col-md-3 mt-3">
-                                                    <div class="form-group">
-                                                        <label>Payroll Office Type<span style="color: red">*</span></label>
-                                                        <select class="form-control select2">
-                                                            <option value="----">--Select--</option>
-                                                            <option value="PrincipalSecretary">Principal Secretary</option>
-                                                            <option value="Secretary">Secretary</option>
-                                                            <option value="DeputySecretary">Deputy Secretary</option>
-                                                            <option value="CPI">CPI</option>
-                                                            <option value="CRSK">CRSK</option>
-                                                            <option value="DPI">DPI</option>
-                                                            <option value="Collector">Collector</option>
-                                                            <option value="CEOZP">CEO, ZP</option>
-                                                            <option value="JointDirector">Joint Director</option>
-                                                            <option value="DEO">DEO</option>
-                                                            <option value="DPC">DPC</option>
-                                                            <option value="BEO">BEO</option>
-                                                            <option value="BRC">BRC</option>
-                                                        </select>
-
-                                                    </div>
-                                                </div>--%>
-
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
                                                         <label>IS Regular </label>
@@ -1413,7 +1336,6 @@
                                                         </select>
                                                     </div>
                                                 </div>
-
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
                                                         <label>Increment Month <span style="color: red;">*</span></label>
@@ -1434,7 +1356,7 @@
 
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Provision Period To Month <span style="color: red">*</span></label>
+                                                        <label>Provision Period To Month<span style="color: red">*</span></label>
                                                         <input name="ename" id="To1" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
                                                     </div>
                                                 </div>
@@ -1452,7 +1374,7 @@
 
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
-                                                        <label>Proviosion Type </label>
+                                                        <label>Proviosion Type<span style="color: red">*</span></label>
                                                         <select id="ddlProviosionType1" class="form-control select2">
                                                             <option value="Select">--Select--</option>
                                                             <option value="Yes">Regular Employee</option>
@@ -1611,13 +1533,6 @@
                                                         <input type="text" placeholder="Enter Basic Pay" class="form-control" name="name" value="" />
                                                     </div>
                                                 </div>
-
-                                                <%--        <div class="col-3 mt-3">
-                                                    <div class="form-group">
-                                                        <label>Order Letter <span style="color: red">*</span></label>
-                                                        <input type="file" class="form-control">
-                                                    </div>
-                                                </div>--%>
                                             </div>
 
                                         </fieldset>
@@ -1640,7 +1555,7 @@
                                             <div class="row">
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>OIS Type <span style="color: red">*</span></label>
+                                                        <label>OIS Type<span style="color: red">*</span></label>
                                                         <select id="DropDownList1" class="form-control select2">
                                                             <option value="0">--Select--</option>
                                                             <option value="2">Office</option>
@@ -1672,7 +1587,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <label class="font-bold">Current Appointment Division <span style="color: red">*</span></label>
+                                                    <label class="font-bold">Current Appointment Division<span style="color: red">*</span></label>
                                                     <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                         <option value="--Select--">--Select--</option>
                                                         <option value="Bhopal">Bhopal</option>
@@ -1918,8 +1833,6 @@
                                                             <option value="--Select--">Physics</option>
                                                             <option value="--Select--">Bio</option>
                                                             <option value="--Select--">Sanskrit</option>
-                                                            <%--  <option value="Bhopal">Grain Advance</option>
-<option value="Bhopal">Festival Advance</option>--%>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -1945,22 +1858,11 @@
                                                         <input name="ename" placeholder="Retirement Date" readonly="readonly" type="text" id="retirementDateTextbox1" class="form-control" autocomplete="off" />
                                                     </div>
                                                 </div>
-                                                <%--  <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Whether working/Posted in other department on Deputation/transfer <span style="color: red">*</span></label>
-                                                        <select class="form-control select2">
-                                                            <option value="--Select--">--Select--</option>
-                                                            <option value="Bhopal">Yes</option>
-                                                            <option value="Bhopal">No</option>
-                                                        </select>
-                                                    </div>
-                                                </div>--%>
-
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>
                                                             Working in other Department/<br />
-                                                            Organization on Deputation Transfer <span style="color: red">*</span></label>
+                                                            Organization on Deputation Transfer<span style="color: red">*</span></label>
                                                         <select id="ddlCurWorkingDept" onchange="ShowHideCurWorkingDept()" class="form-control select2">
                                                             <option value="Select">--Select--</option>
                                                             <option value="Yes">Yes</option>
@@ -1974,28 +1876,6 @@
                                                         <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
                                                     </div>
                                                 </div>
-                                                <%--          <div class="col-md-3 mt-3">
-                                                    <div class="form-group">
-                                                        <label>Payroll Office Type<span style="color: red">*</span></label>
-                                                        <select class="form-control select2">
-                                                            <option value="----">--Select--</option>
-                                                            <option value="PrincipalSecretary">Principal Secretary</option>
-                                                            <option value="Secretary">Secretary</option>
-                                                            <option value="DeputySecretary">Deputy Secretary</option>
-                                                            <option value="CPI">CPI</option>
-                                                            <option value="CRSK">CRSK</option>
-                                                            <option value="DPI">DPI</option>
-                                                            <option value="Collector">Collector</option>
-                                                            <option value="CEOZP">CEO, ZP</option>
-                                                            <option value="JointDirector">Joint Director</option>
-                                                            <option value="DEO">DEO</option>
-                                                            <option value="DPC">DPC</option>
-                                                            <option value="BEO">BEO</option>
-                                                            <option value="BRC">BRC</option>
-                                                        </select>
-
-                                                    </div>
-                                                </div>--%>
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
                                                         <label>IS Regular </label>
@@ -2009,7 +1889,7 @@
 
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
-                                                        <label>Increment Month <span style="color: red;">*</span></label>
+                                                        <label>Increment Month<span style="color: red">*</span></label>
                                                         <select id="ddlIncrementMonth1" class="form-control select2">
                                                             <option value="Select">--Select--</option>
                                                             <option value="January">January</option>
@@ -2027,14 +1907,14 @@
 
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Provision Period To Month <span style="color: red">*</span></label>
+                                                        <label>Provision Period To Month<span style="color: red">*</span></label>
                                                         <input name="ename" id="To" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
-                                                        <label>IF Proviosion Extend </label>
+                                                        <label>IF Proviosion Extend<span style="color: red">*</span></label>
                                                         <select id="ddlProviosionExtend" class="form-control select2">
                                                             <option value="Select">--Select--</option>
                                                             <option value="Yes">Yes</option>
@@ -2045,7 +1925,7 @@
 
                                                 <div class="col-md-3 ">
                                                     <div class="form-group">
-                                                        <label>Proviosion Type </label>
+                                                        <label>Proviosion Type<span style="color: red">*</span></label>
                                                         <select id="ddlProviosionType" class="form-control select2">
                                                             <option value="Select">--Select--</option>
                                                             <option value="Yes">Regular Employee</option>
@@ -2206,13 +2086,6 @@
                                                         <input type="text" class="form-control" placeholder="Enter Basic Pay" name="name" value="" />
                                                     </div>
                                                 </div>
-
-                                                <%--<div class="col-3 mt-3">
-                                                    <div class="form-group">
-                                                        <label>Order Letter <span style="color: red">*</span></label>
-                                                        <input type="file" class="form-control">
-                                                    </div>
-                                                </div>--%>
                                             </div>
 
                                             <div class="row justify-content-center">
@@ -2271,55 +2144,55 @@
                                             <div class="row">
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>DPF No.</label>
+                                                        <label>DPF No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>EPF No.</label>
+                                                        <label>EPF No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EPF No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>GPF No.</label>
+                                                        <label>GPF No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter GPF No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>NPS No.</label>
+                                                        <label>NPS No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter NPS No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Group Insurance No.</label>
+                                                        <label>Group Insurance No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Group Insurance No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Gratuity No.</label>
+                                                        <label>Gratuity No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Gratuity No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>EGLS No.</label>
+                                                        <label>EGLS No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EGLS No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>EDLI No.</label>
+                                                        <label>EDLI No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EDLI No." />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>ESIC No.</label>
+                                                        <label>ESIC No.<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter ESIC No." />
                                                     </div>
                                                 </div>
@@ -2347,12 +2220,10 @@
 
                                                 <div id="DocAppointment" class="col-md-2 mt-1">
                                                     <div class="form-group">
-                                                        <label>Upload Appointment Order : </label>
+                                                        <label>Upload Appointment Order:</label>
                                                     </div>
                                                 </div>
-
                                                 <div id="DocAppointment1" class="col-md-2">
-
                                                     <input type="file" id="fileInput1" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
                                                 </div>
 
@@ -2647,7 +2518,6 @@
                                             </div>
                                             <div class="row justify-content-center">
                                                 <div class="col-md-3 text-center">
-                                                    <%--  <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save</button>--%>
                                                     <button type="button" class="btn  btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                         Save
                                                     </button>
@@ -2675,8 +2545,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -2859,9 +2727,6 @@
                                     </ul>
                                 </li>
 
-                                <%-- <li>
-                                    <strong>Address - Present/Permanent</strong>
-                                </li>--%>
                                 <li>
                                     <strong>Division</strong>
 
@@ -2896,9 +2761,6 @@
                                         <li>If the permanent address is the same as the present address, the user can check the <strong>checkbox </strong>, and all permanent address fields will be automatically filled based on the present address</li>
                                     </ul>
                                 </li>
-
-
-
 
                                 <li><strong>Married </strong>
                                     <ul>
@@ -2962,7 +2824,6 @@
                                     </ul>
 
                                 </li>
-                                <!--Need to Apply  First Appointment Details -->
                                 <li><strong>Save</strong>
                                     <ul>
                                         <li>User Can Click Save Button.</li>
@@ -3031,11 +2892,7 @@
                                         <li>User can select Office/Institute/School Code & Name* from dropdown, data will be popolate form school registration page. </li>
                                     </ul>
                                 </li>
-                                <%--   <li><strong>DDO Code & Name</strong>
-                                    <ul>
-                                        <li>User can enter DDO Code & Name in textbox. </li>
-                                    </ul>
-                                </li>--%>
+
                                 <li><strong>Sankul name</strong>
                                     <ul>
                                         <li>User will be able to select <strong>Sankul name </strong>from dropdown. Data populated from <strong>Sankul registration</strong>.</li>

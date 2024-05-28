@@ -52,13 +52,11 @@
                     </u>
                 </p>
             </div>
-            <%-- <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">अनुकंपा नियुक्ति प्रबंधन प्रणाली</p>
-        </div>--%>
             <div class="col-md-7 align-self-center">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                         <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
                         <li class="breadcrumb-item active">Compassionate Appointment Print Application</li>
                     </ol>
@@ -78,16 +76,13 @@
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning  font-16 text-white" href="AnukampaNuktiMainPage.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="AnukampaNuktiMainPage.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning font-16 text-white" href="Trn_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="Trn_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</b></strong></a>
                                 </li>
-                                <%-- <li class="nav-item">
-     <a class="nav-link text-warning font-16 text-white" href="Trn_Process_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति प्रक्रिया</b></strong></a>
- </li>--%>
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning font-16 text-white" href="CompassionateAppointmentPrintApplication.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति आवेदन प्रिंट /स्टेटस</b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="CompassionateAppointmentPrintApplication.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति आवेदन प्रिंट /स्टेटस</b></strong></a>
                                 </li>
                             </ul>
                         </div>
@@ -97,7 +92,6 @@
                     <legend>Compassionate Appointment Print Application       
                     </legend>
                     <div class="row justify-content-end">
-
                         <div class="col-md-1">
                             <div class="form-group">
                                 <button class="btn btn-info btn-rounded w-100">Excel</button>
@@ -117,26 +111,42 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-
-
-                                <table class="table table-bordered text-center ">
+                                <table class="table table-bordered text-center">
                                     <thead>
-                                        <tr>
-                                            <th>स. क्र.</th>
-                                            <th>आवेदक का नाम</th>
-                                            <th>लिंग</th>
-                                            <th>वर्ग</th>
-                                            <th>जन्म की तारीख</th>
-                                            <th>मोबाइल नंबर</th>
-                                            <th>आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                            <th>वैवाहिक स्थिति</th>
-                                            <th>नियुक्ति हेतु संवर्ग</th>
-                                            <th>नियुक्ति हेतु पदनाम</th>
-                                            <th>प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
-                                            <th>पात्रता परीक्षा का वर्ष</th>
-                                            <th>व्यावसायिक योग्यता</th>
-                                            <th>प्रिंट</th>
-                                            <th>स्टेटस</th>
+                                        <tr style="white-space: nowrap">
+                                            <th>Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th>Applicant's Name<br />
+                                                आवेदक का नाम</th>
+                                            <th>Gender<br />
+                                                लिंग</th>
+                                            <th>Caste<br />
+                                                जाति</th>
+                                            <th>Date Of Birth<br />
+                                                जन्म की दिनांक</th>
+                                            <th>Mobile No.<br />
+                                                मोबाइल</th>
+                                            <th>Applicant's Relationship with the Deceased Teacher<br />
+                                                आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                            <th>Marital Status<br />
+                                                वैवाहिक स्थिति</th>
+                                            <th>cadre for appointment<br />
+                                                नियुक्ति हेतु संवर्ग</th>
+                                            <th>cadre for appointment<br />
+                                                नियुक्ति हेतु संवर्ग</th>
+                                            <th>designation for appointment<br />
+                                                नियुक्ति हेतु पदनाम</th>
+                                            <th>Status of passing Primary Teacher Eligibility Test<br />
+                                                for Primary Teacher<br />
+                                                प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
+                                            <th>year of eligibility test<br />
+                                                पात्रता परीक्षा का वर्ष</th>
+                                            <th>professional qualification<br />
+                                                व्यावसायिक योग्यता</th>
+                                            <th>Print<br />
+                                                प्रिंट</th>
+                                            <th>Status<br />
+                                                स्टेटस</th>
                                         </tr>
                                     </thead>
                                     <tr>
@@ -164,7 +174,7 @@
                                         <td>1</td>
                                         <td>Raj Kumar</td>
                                         <td>Male</td>
-                                                <td>O.B.C</td>
+                                        <td>O.B.C</td>
                                         <td>15/10/1999</td>
                                         <td>9856425685</td>
                                         <td>Son</td>
@@ -311,37 +321,42 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="table table-bordered">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+
+                                                <table class="table table-bordered">
+                                                       <tr>
+                                                        <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
+                                                    </tr>
+                                                    <tr class="card-header">
+                                                        <th>क्र.</th>
+                                                        <th>सदस्य का नाम</th>
+                                                        <th>दिवंगत के साथ संबंध</th>
+                                                        <th>व्यवसाय</th>
+                                                        <th>जन्म दिनांक</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Mohan</td>
+                                                        <td>Son</td>
+                                                        <td>कोई व्यवसाय नही</td>
+                                                        <td>18/03/1992</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Amar</td>
+                                                        <td>Son</td>
+                                                        <td>कोई व्यवसाय नही</td>
+                                                        <td>01/01/1995</td>
+                                                    </tr>
 
 
-                                        <tr>
-                                            <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
-                                        </tr>
-                                        <tr>
-                                            <th>क्र.</th>
-                                            <th>सदस्य का नाम</th>
-                                            <th>दिवंगत के साथ संबंध</th>
-                                            <th>व्यवसाय</th>
-                                            <th>जन्म दिनांक</th>
+                                                </table>
 
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mohan</td>
-                                            <td>Son</td>
-                                            <td>कोई व्यवसाय नही</td>
-                                            <td>18/03/1992</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Amar</td>
-                                            <td>Son</td>
-                                            <td>कोई व्यवसाय नही</td>
-                                            <td>01/01/1995</td>
-                                        </tr>
-
-
-                                    </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <table style="width: 100%;">
                                         <tbody>
                                             <tr style="height: 70px">

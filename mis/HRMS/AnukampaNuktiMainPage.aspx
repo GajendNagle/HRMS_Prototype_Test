@@ -12,6 +12,7 @@
             fill: white !important;
             text-decoration: none !important;
         }
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -24,18 +25,14 @@
                 </u>
             </p>
         </div>
-        <%--  <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">अनुकंपा नियुक्ति प्रबंधन प्रणाली</p>
-        </div>--%>
         <div class="col-md-7 align-self-center">
 
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--  <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>--%>
-                    <%--  <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
-                    <li class="breadcrumb-item active">Compassionate Appointment</li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
+                    <li class="breadcrumb-item active">Employee Compassionate Application</li>
                 </ol>
             </div>
         </div>
@@ -52,27 +49,14 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <%--                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b>Mutual Transfer Application</b></strong></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_MutualTransferApply.aspx">Mutual Transfer Apply</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferDraftApplication.aspx">Print Draft Application or Delete Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransLockApplication.aspx">Lock Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferPrintApplication.aspx">Print Application</a></li>
-                                </ul>
-                            </li> --%>
                             <li class="nav-item">
                                 <a class="nav-link text-warning  font-16 text-white" href="AnukampaNuktiMainPage.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-warning  font-16 text-white" href="Trn_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</b></strong></a>
+                                <a class="nav-link font-16 text-white" href="Trn_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</b></strong></a>
                             </li>
-                            <%--  <li class="nav-item">
-                                <a class="nav-link text-warning font-16 text-white" href="Trn_Process_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति प्रक्रिया</b></strong></a>
-                            </li>--%>
                             <li class="nav-item">
-                                <a class="nav-link text-warning font-16 text-white" href="CompassionateAppointmentPrintApplication.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति आवेदन प्रिंट /स्टेटस</b></strong></a>
+                                <a class="nav-link font-16 text-white" href="CompassionateAppointmentPrintApplication.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति आवेदन प्रिंट /स्टेटस</b></strong></a>
                             </li>
                         </ul>
 
@@ -168,15 +152,15 @@
 
                 <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति बिंदु विशिष्ट :</h4>
                 <ul style="font: bold; list-style-type: none; margin-left: -30px">
-                    <li style="background-color: #F0F8FF; padding: 10px 10px; border-radius: 10px;font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अध्यापक संवर्ग के लिए अनुकम्पा नियुक्ति के सम्बन्ध में पूर्व प्रावधान के अनुसार आवेदक का D.Ed. / B.Ed. के साथ 'शिक्षक पात्रता परीक्षा उत्तीर्ण' होना आवश्यक है, अब अध्यापक संवर्ग से नवीन कैडर में नियुक्ति के बाद अनुकम्पा नियुक्ति के 
+                    <li style="background-color: #F0F8FF; padding: 10px 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अध्यापक संवर्ग के लिए अनुकम्पा नियुक्ति के सम्बन्ध में पूर्व प्रावधान के अनुसार आवेदक का D.Ed. / B.Ed. के साथ 'शिक्षक पात्रता परीक्षा उत्तीर्ण' होना आवश्यक है, अब अध्यापक संवर्ग से नवीन कैडर में नियुक्ति के बाद अनुकम्पा नियुक्ति के 
                         लिए नियम भर्ती" 2018 के प्रावधानों के अधीन नियुक्त किये गये शिक्षकों की शासकीय सेवा में रहते हुए निधन होने पर तत्समय सामान्य प्रशासन विभाग द्वारा प्रभावशील अनुकंपा नियुक्ति की नीति के अनुसार पात्रता होगी । </li>
-                    <li style="background-color: #F8F8FF; padding: 10px; border-radius: 10px;font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;उक्त प्रणाली के माध्यम से समस्त संबंधित कार्यालयों द्वारा अनुकंपा नियुक्ति के आवेदन पत्रों को पंजीकृत करना होगा। पंजीकृत आवेदन पत्र में कमी होने या नियमानुसार पात्रता न होने के कारण कार्यालय द्वारा प्रकरण के लंबितपोर्टल विवरण विस्तृत उसका
+                    <li style="background-color: #F8F8FF; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;उक्त प्रणाली के माध्यम से समस्त संबंधित कार्यालयों द्वारा अनुकंपा नियुक्ति के आवेदन पत्रों को पंजीकृत करना होगा। पंजीकृत आवेदन पत्र में कमी होने या नियमानुसार पात्रता न होने के कारण कार्यालय द्वारा प्रकरण के लंबितपोर्टल विवरण विस्तृत उसका
                         में स्थिति की होने निरस्त / पर दर्ज किया जावेगा। जिससे कि प्रकरण लंबितनिरस्त / होने के कारणों की जानकारी आवेदक एवं वरिष्ट कार्यालय को मिल सकेंगी तथा प्रकरण के निराकरण में सुगमता आवेगी। समस्त कार्यालयों द्वारा नियमानुसार पात्रता रखने
                         वाले सभी प्रकरणों के विरूद्व जारी किये गये समस्त अनुकंपा नियुक्ति आदेशों का विवरण तथा आदेश की स्केण्ड प्रति भी पोर्टल पर अपलोड की जावेगी जिससे कि सभी स्तरों पर प्रकरण की अद्यतन स्थिति प्राप्त हो सकेंगी। </li>
-                    <li style="background-color: #FFFAF0; padding: 10px; border-radius: 10px;font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अनुकंपा नियुक्ति से संबंधित समस्त प्रकरणों की सूची, निरस्तकारण का होने लंबित /, वर्तमान स्थिति, नियुक्ति आदेश पोर्टल पर आवेदक एवं जन सामान्य के लिए सहज रूप से उपलब्ध रहेगें। प्रणाली के सफल क्रियान्वयन से प्रकरणों का तय समय सीमा
+                    <li style="background-color: #FFFAF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अनुकंपा नियुक्ति से संबंधित समस्त प्रकरणों की सूची, निरस्तकारण का होने लंबित /, वर्तमान स्थिति, नियुक्ति आदेश पोर्टल पर आवेदक एवं जन सामान्य के लिए सहज रूप से उपलब्ध रहेगें। प्रणाली के सफल क्रियान्वयन से प्रकरणों का तय समय सीमा
                         में त्वरित निराकरण किया जाकर दिवंगत कर्मचारी के आश्रितों को लाभ सुनिश्चित हो सकेगा। अनुकंपा नियुक्ति के संबंध में समयमध्यप जारी समय-प्रदेश शासन के नियम है। उपलब्ध पर पोर्टल भी निर्देश-</li>
-                    <li style="background-color: #F0FFF0; padding: 10px; border-radius: 10px;font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;इस प्रणाली के प्रारंभ होने के पश्चात शिक्षकोंआवेदन अपना को कर्मचारियों/ संबंधित कार्यालयों को मैन्युअल रूप से प्रस्तुत न करते हुये इस प्रणाली के तहत ऑनलाइन प्रस्तुत करनी होगी।</li>
-                    <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px;font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
+                    <li style="background-color: #F0FFF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;इस प्रणाली के प्रारंभ होने के पश्चात शिक्षकोंआवेदन अपना को कर्मचारियों/ संबंधित कार्यालयों को मैन्युअल रूप से प्रस्तुत न करते हुये इस प्रणाली के तहत ऑनलाइन प्रस्तुत करनी होगी।</li>
+                    <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
 
                 </ul>
             </fieldset>

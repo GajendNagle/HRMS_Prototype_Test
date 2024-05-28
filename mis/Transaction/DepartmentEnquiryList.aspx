@@ -2,24 +2,22 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        /* Style for the modal */
         #Editmodal {
             display: none;
             position: fixed;
             z-index: 1;
             left: 0;
             top: 0;
-            /* width: 100%;
-    height: 100%;*/
             overflow: auto;
             background-color: rgb(0,0,0);
             background-color: rgba(0,0,0,0.4);
             /* padding-top: 60px;*/
         }
+         th {
+            white-space: nowrap;
+        }
 
 
-
-        /* Close button style */
         .close {
             color: #aaa;
             float: right;
@@ -39,19 +37,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="row page-titles mb-4">
-                   <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
-                    <img src="../../img/Departmental%20Enquiry.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
-                    </u>
-                </p>
-            </div>
+        <div class="col-md-5 align-self-center">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
+                <img src="../../img/Departmental%20Enquiry.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
+                </u>
+            </p>
+        </div>
         <div class="col-md-7 align-self-center text-end">
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                   <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=DepartmentEnquiry" title="click to go on">Department Enquiry</a></li>--%>
-                     <li class="breadcrumb-item active">Department Enquiry</li>
+                    <li class="breadcrumb-item"><a href="DepartmentEnquiryNotes.aspx" title="click to go on">Department Enquiry</a></li>
+                    <li class="breadcrumb-item active">Department Enquiry List</li>
                 </ol>
             </div>
         </div>
@@ -60,41 +58,41 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-              <nav class="navbar navbar-expand-lg topbar ">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                  <li>
+            <nav class="navbar navbar-expand-lg topbar ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li>
 
-                      <a class="nav-link  text-white " href="DepartmentEnquiryNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                  </li>
-                  <li>
+                                <a class="nav-link  text-white " href="DepartmentEnquiryNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            </li>
+                            <li>
 
-                      <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry
-                      </b></a>
-                  </li>
-                  <li>
+                                <a class="nav-link  text-white " href="DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>विभाग पूछताछ
+                                </b></a>
+                            </li>
+                            <li>
 
-                      <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry List
-                      </b></a>
-                  </li>
-                  <li>
+                                <a class="nav-link  text-white " href="DepartmentEnquiryList.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>विभाग पूछताछ सूची
+                                </b></a>
+                            </li>
+                            <li>
 
-                      <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Department Enquiry Report
-                      </b></a>
-                  </li>
-              </ul>
+                                <a class="nav-link  text-white " href="Rpt_DepartmentEnquiry.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>विभाग पूछताछ रिपोर्ट
+                                </b></a>
+                            </li>
+                        </ul>
 
-          </div>
-      </div>
-  </nav>
-  <br />
+                    </div>
+                </div>
+            </nav>
+            <br />
             <fieldset>
-                <legend>Department Enquiry list</legend>
+                <legend>Department Enquiry list / विभाग पूछताछ सूची</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-2">
                         <div class="form-group">
@@ -114,27 +112,52 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="table table-responsive">
+                        <div class="table-responsive">
                             <table id="tblList" class="table table-bordered">
-                                <thead style="background-color: #416a59">
-                                    <tr style="color: white">
-                                        <th>Sr.No.</th>
-                                        <th>अपचारी लोक सेवक का नाम</th>
-                                        <th>जिला</th>
-                                        <th>विकासखंड</th>
-                                        <th>विभागीय जांचकर्ता अधिकारी का नाम</th>
-                                        <th>प्रस्तुतकर्ता अधिकारी का नाम</th>
-                                        <th>जांच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सूचना </th>
-                                        <th>निलंबन दिनांक</th>
-                                        <th>आरोपित दिनांक</th>
-                                        <th>विभागीय जांच की संक्षिप्त दिनांक</th>
-                                        <th>जांच आधिकारी के समक्ष अपचारी की प्रथम सुनवाई एवं आरोप पत्र का वाचन</th>
-                                        <th>अभियोजन साक्ष्य की प्रस्तुती एवं प्रतिपरिक्षण </th>
-                                        <th>बचाव सहायक साक्ष्य  की प्रस्तुती एवं प्रतिपरिक्षण </th>
-                                        <th>प्रस्तुतकर्ता अधिकारी की ब्रीफ प्रस्तुती एवं प्रतिपरिक्षण </th>
-                                        <th>ब्रीफ पर अपचारी कर्मचारी का प्रतिवाद</th>
-                                        <th>अंतिम जांच प्रतिवेदन का अनुशासनिक अधिकारी को प्रेषण</th>
-                                        <th>रिमार्क</th>
+                                <thead >
+                                    <tr>
+                                        <th >Sr.No.<br />
+                                            सरल क्र.</th>
+                                        <th>
+                                            Name of Delinquent Public Servant
+                                            <br />अपचारी लोक सेवक का नाम
+                                        </th>
+                                        <th>District<br />
+                                            जिला</th>
+                                        <th>Development Block
+                                            <br />
+                                            विकासखंड</th>
+                                        <th>Name of Departmental Investigating <br />Officer<br />
+                                            विभागीय जांचकर्ता अधिकारी का नाम </th>
+                                        <th>Name of Presenting Officer<br />
+                                            प्रस्तुतकर्ता अधिकारी का नाम </th>
+                                        <th >Notice of appearance of the delinquent <br />officer before the investigating officer<br />
+                                            जांच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सूचना</th>
+                                        <th>Date of Suspension<br />
+                                            निलंबन दिनांक </th>
+                                        <th>Imputed date<br />
+                                            आरोपित दिनांक </th>
+                                        <th>Date of Departmental Inquiry
+                                            <br />
+                                            विभागीय जांच की संक्षिप्त दिनांक </th>
+                                        <th>First Hearing of the Delinquent  Before the <br />Investigating Officer and Reading of the Charge Sheet.<br />
+                                            जांच आधिकारी के समक्ष अपचारी की प्रथम सुनवाई एवं आरोप पत्र का वाचन </th>
+                                        <th>Presentation and Cross-Examination of<br /> Prosecution Evidence<br />
+                                            अभियोजन साक्ष्य की प्रस्तुती एवं प्रतिपरिक्षण </th>
+                                        <th>
+                                            Presentation and Cross-Examination of<br/> Defense Supporting Evidence<br />
+                                            बचाव सहायक साक्ष्य  की प्रस्तुती एवं प्रतिपरिक्षण </th>
+                                        <th>
+                                           Brief Presentation and Cross-Examination of <br />the Presenting Officer <br />
+                                            प्रस्तुतकर्ता अधिकारी की ब्रीफ प्रस्तुती एवं प्रतिपरिक्षण  </th>
+                                        <th>
+                                            Delinquent Employee's Counter<br /> Argument on brief<br />
+                                            ब्रीफ पर अपचारी कर्मचारी का प्रतिवाद</th>
+                                        <th>
+                                            Dispatch of Final Investigation <br />Report to Disciplinary Officer<br />
+                                            अंतिम जांच प्रतिवेदन का अनुशासनिक अधिकारी को प्रेषण </th>
+                                        <th>Remark<br />
+                                            रिमार्क </th>
                                         <th>Action</th>
 
                                     </tr>
@@ -159,9 +182,9 @@
                                         <td>20/03/2024</td>
                                         <td>21/03/2024</td>
                                         <td>उपरोक्त कार्यवाही की जा रही है</td>
-                                        <td >
+                                        <td>
                                             <%--<asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click"><i class="fa fa-eye"></i></asp:LinkButton></td>--%>
-                                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click" style="width:100px">Fill Details</asp:LinkButton></td>
+                                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click" Style="width: 100px">Fill Details</asp:LinkButton></td>
 
                                     </tr>
                                     <tr>
@@ -184,7 +207,7 @@
                                         <td>21/03/2024</td>
                                         <td>मुख्य कार्यालय द्वारा प्रतीक्षारत है</td>
                                         <td>
-                                            <asp:LinkButton ID="LinkButton10" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click"  style="width:100px">Fill Details</asp:LinkButton></td>
+                                            <asp:LinkButton ID="LinkButton10" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click" Style="width: 100px">Fill Details</asp:LinkButton></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -206,7 +229,7 @@
                                         <td>21/03/2024</td>
                                         <td>कार्यालय द्वारा जिला न्यायालय को प्रेषित किया गया</td>
                                         <td>
-                                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click"  style="width:100px">Fill Details</asp:LinkButton></td>
+                                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-info" OnClick="LinkButton9_Click" Style="width: 100px">Fill Details</asp:LinkButton></td>
                                     </tr>
 
 
@@ -228,7 +251,7 @@
                 <div class="modal-body">
 
                     <fieldset>
-                        <legend> Witness Details</legend>
+                        <legend>Witness Details</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -257,7 +280,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered table-responsive-lg" id="outputTable" style="display:none;">
+                                    <table class="table table-bordered table-responsive-lg" id="outputTable" style="display: none;">
                                         <tr>
                                             <th style="background-color: #416a59">S. No.</th>
                                             <th style="background-color: #416a59">Witness Name</th>
@@ -358,7 +381,7 @@
 
     <script>
         function addData() {
-            document.getElementById("outputTable").style.display = "table";  
+            document.getElementById("outputTable").style.display = "table";
             // Get input values
             let name =
                 document.getElementById("nameInput").value;

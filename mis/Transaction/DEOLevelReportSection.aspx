@@ -8,6 +8,10 @@
             margin-left: 5rem;
         }
 
+        th {
+            white-space: nowrap;
+        }
+
         html body .m-t-30 {
             margin-top: 0px;
         }
@@ -43,9 +47,6 @@
                     </u>
                 </p>
             </div>
-            <%-- <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">अनुकंपा नियुक्ति प्रबंधन प्रणाली</p>
-        </div>--%>
             <div class="col-md-7 align-self-center">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
@@ -68,9 +69,8 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning  font-16 text-white" href="DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                    <a class="nav-link  font-16 text-white" href="DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="collapse navbar-collapse">
@@ -81,8 +81,8 @@
                                                 </a>
                                                 <ul class="dropdown-menu">
 
-                                                    <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
-                                                    <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
+                                                    <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
+                                                    <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">Print Application</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -91,7 +91,7 @@
 
 
                                 <li class="nav-item" style="position: relative; right: 20px;">
-                                    <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="../HRMS/Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
 
                                 </li>
                                 <li class="nav-item mr-4">
@@ -105,14 +105,13 @@
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                    <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                    <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
+                                                    <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">Block Wise Counting Report</a></li>
+                                                    <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">Disctrict Wise Counting Report</a></li>
                                                     <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
-
                                                 </ul>
                                             </li>
                                         </ul>
@@ -122,13 +121,12 @@
                         </div>
                     </div>
                 </nav>
-
                 <br />
 
                 <%--Start DropDown Base data --%>
                 <%--  My Code Start for Dispose Cases NOC --%>
                 <fieldset id="DisposeCasesNOC" runat="server">
-                    <legend>Dispose Cases Report
+                    <legend>Dispose Cases Details
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -150,25 +148,41 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                <table class="footable table  table-striped table-bordered text-center footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र</th>
-                                            <th data-class="phone,tablet" scope="col">District</th>
-                                            <th data-hide="phone,tablet" scope="col">Block</th>
-                                            <th data-hide="phone,tablet" scope="col">School</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">जेंडर</th>
-                                            <th data-hide="phone,tablet" scope="col">वर्ग</th>
-
-                                            <th data-hide="phone,tablet" scope="col">जन्म तिथि</th>
-                                            <th data-hide="phone,tablet" scope="col">Mobile </th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                            <th data-hide="phone,tablet" scope="col">वैवाहिक स्थिति</th>
-                                            <th data-hide="phone,tablet" scope="col">शैक्षिक योग्यता</th>
-                                            <th data-hide="phone,tablet" scope="col">नियुक्ति हेतु संवर्ग</th>
-                                            <th data-hide="phone,tablet" scope="col">नियुक्ति हेतु पदनाम </th>
-                                            <th data-hide="phone,tablet" scope="col">प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण  की स्थिति</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">District<br />
+                                                जिला</th>
+                                            <th data-hide="phone,tablet" scope="col">Block<br />
+                                                विकासखण्ड</th>
+                                            <th data-hide="phone,tablet" scope="col">School<br />
+                                                विद्यालय</th>
+                                            <th data-hide="phone,tablet" scope="col">Applicant's Name<br />
+                                                आवेदक का नाम</th>
+                                            <th data-hide="phone,tablet" scope="col">Gender<br />
+                                                लिंग</th>
+                                            <th data-hide="phone,tablet" scope="col">Caste<br />
+                                                जाति</th>
+                                            <th data-hide="phone,tablet" scope="col">Date Of Birth<br />
+                                                जन्म तिथि</th>
+                                            <th data-hide="phone,tablet" scope="col">Mobile No.<br />
+                                                मोबाइल नंबर</th>
+                                            <th data-hide="phone,tablet" scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध<br />
+                                                Applicant's Relationship with the Deceased Teacher</th>
+                                            <th data-hide="phone,tablet" scope="col">Marital Status<br />
+                                                वैवाहिक स्थिति</th>
+                                            <th data-hide="phone,tablet" scope="col">Educational Qualification<br />
+                                                शैक्षिक योग्यता</th>
+                                            <th data-hide="phone,tablet" scope="col">Cadre for Appointment<br />
+                                                नियुक्ति हेतु संवर्ग</th>
+                                            <th data-hide="phone,tablet" scope="col">Designation for Appointment<br />
+                                                नियुक्ति हेतु पदनाम </th>
+                                            <th data-hide="phone,tablet" scope="col">Status of passing Primary Teacher Eligibility
+                                                <br />
+                                                Test for Primary Teacher<br />
+                                                प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण  की स्थिति</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -437,7 +451,7 @@
                 </fieldset>--%>
                 <div id="BlockWiseCounting" runat="server">
                     <fieldset>
-                        <legend>जिला का चयन करे </legend>
+                        <legend>Block Wise Counting Report / ब्लॉक वार सांख्यिकी रिपोर्ट</legend>
                         <%-- Dropdown code --%>
                         <div class="col-md-12" id="divOfDropdownDistrict" runat="server">
                             <div class="row">
@@ -460,7 +474,7 @@
                         <%-- Dropdown code --%>
                     </fieldset>
                     <fieldset>
-                           <legend>ब्लॉक वार सांख्यिकी रिपोर्ट  </legend>
+                        <legend>Details</legend>
                         <div id="divBlockWiseCountingtbl" runat="server" visible="true">
                             <div class="row justify-content-end">
                                 <div class="col-md-1">
@@ -484,18 +498,25 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-                                    <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                    <table class="footable table  table-striped text-center table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                         <thead>
                                             <tr>
-                                                <th data-class="expand" scope="col">संभाग</th>
-                                                <th data-class="phone,tablet" scope="col">जिला</th>
-                                                <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-
-                                                <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                <th data-class="expand" scope="col">Division<br />
+                                                    संभाग</th>
+                                                <th data-class="phone,tablet" scope="col">District<br />
+                                                    जिला</th>
+                                                <th data-hide="phone,tablet" scope="col">Block<br />
+                                                    विकासखण्ड</th>
+                                                <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                    प्राप्त आवेदन</th>
+                                                <th data-hide="phone,tablet" scope="col">Applications Accepted<br />
+                                                    आवेदन स्वीकार किये गए</th>
+                                                <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                    आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                    आवेदन निराकृत</th>
+                                                <th data-hide="phone,tablet" scope="col">Objection/Pending Application<br />
+                                                    आपत्ति/लंबित आवेदन</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -556,7 +577,7 @@
                 <%--  My Code Start for District Wise Count Cases --%>
                 <fieldset id="DistrictWiseCounting" runat="server">
 
-                    <legend>जिला वार सांख्यिकी रिपोर्ट
+                    <legend>District Wise Counting Report / जिला वार सांख्यिकी रिपोर्ट
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -581,14 +602,20 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">संभाग</th>
-                                            <th data-class="phone,tablet" scope="col">जिला</th>
-                                            <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                            <th data-class="expand" scope="col">Division<br />
+                                                संभाग</th>
+                                            <th data-class="phone,tablet" scope="col">District<br />
+                                                जिला</th>
+                                            <th data-hide="phone,tablet" scope="col">Received Application<br />प्राप्त आवेदन</th>
+                                            <th data-hide="phone,tablet" scope="col">Applications Accepted<br />
+                                                आवेदन स्वीकार किये गए</th>
 
-                                            <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                            <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                            <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                            <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                आवेदन निराकृत</th>
+                                            <th data-hide="phone,tablet" scope="col">Objection/Pending Application<br />
+                                                आपत्ति/लंबित आवेदन</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -599,27 +626,27 @@
 
 
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="2" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowTotalReceivedCases_Click" ID="hideshowTotalReceivedCases" BorderStyle="None" /></td>
+                                                <asp:Button runat="server" Text="2" Style="color: #00BCD4;" OnClick="hideshowTotalReceivedCases_Click" ID="hideshowTotalReceivedCases" BorderStyle="None" /></td>
 
 
 
 
                                             <td style="color: #00BCD4;"><%--<a href="#">1</a>--%>
-                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideShowDistrictWiseLockaavedan_Click" BorderStyle="None" ID="hideShowDistrictWiseLockaavedan" />
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideShowDistrictWiseLockaavedan_Click" BorderStyle="None" ID="hideShowDistrictWiseLockaavedan" />
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hidshowAvedankoAdhikariKoForwordKiyagya_Click" BorderStyle="None"
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hidshowAvedankoAdhikariKoForwordKiyagya_Click" BorderStyle="None"
                                                     ID="hidshowAvedankoAdhikariKoForwordKiyagya" />
 
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
+                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
+                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
 
                                             </td>
                                         </tr>
@@ -1128,7 +1155,7 @@
                 <%-- total Start received Cases Table --%>
 
                 <fieldset id="TotalReceivedCases" runat="server" visible="false">
-                    <legend>पंजीकृत आवेदन का विवरण    
+                    <legend>Details of registered application / पंजीकृत आवेदन का विवरण    
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -1153,24 +1180,24 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr.No.<br />सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">Code of Deceased Officer/Employee<br />दिवंगत अधिकारी/ कर्मचारी का कोड</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">Name of Deceased Officer/Employee<br />दिवंगत अधिकारी/ कर्मचारी का नाम</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">Designation of Deceased Officer/Employee<br />दिवंगत अधिकारी/ कर्मचारी का पद</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">Late Date<br />दिवंगत दिनांक</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">Applicant's Name<br />आवेदक का नाम</div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">Date of Birth of the Applicant <br/>आवेदक का जन्म दिनांक</div>
                                             </th>
                                         </tr>
                                     </thead>
