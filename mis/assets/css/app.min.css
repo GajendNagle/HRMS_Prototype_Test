@@ -2515,6 +2515,7 @@
         background-color: transparent;
         padding: 10px var(--vz-grid-gutter-width);
         margin: -15px calc(var(--vz-grid-gutter-width) * -1) calc(var(--vz-grid-gutter-width) * .4) calc(var(--vz-grid-gutter-width) * -1)
+        /*margin: -45px calc(var(--vz-grid-gutter-width) * -1) calc(var(--vz-grid-gutter-width) * .4) calc(var(--vz-grid-gutter-width) * -1)*/
     }
 
 [data-theme=vintage] {
@@ -14816,12 +14817,13 @@ div.dtr-modal div.dtr-modal-close {
     .select2-container .select2-selection--single .select2-selection__arrow {
         height: 34px;
         width: 34px;
-        right: 3px
+        right: 3px;
     }
 
         .select2-container .select2-selection--single .select2-selection__arrow b {
-            border-color: var(--vz-input-border-custom) transparent transparent transparent;
-            border-width: 6px 6px 0 6px
+            /* border-color: var(--vz-input-border-custom) transparent transparent transparent;*/
+            border-color: #3f4040 transparent transparent transparent;
+            border-width: 4px 4px 0 4px
         }
 
 .select2-container--open .select2-selection--single .select2-selection__arrow b {
@@ -20511,5 +20513,25 @@ span.flatpickr-weekday {
     position: absolute;
     bottom: -18px;
     right: -35px
+}
+
+.form-control {
+    border-color: var(--vz-primary) !important
+}
+
+.form-select {
+    border-color: var(--vz-primary) !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border-color: var(--vz-primary) !important;
+}
+/*Add Changes By akash*/
+.multiselect-dropdown {
+    min-height: 38px;
+    border-radius: 0.6rem;
+    border-color: var(--vz-primary) !important;
+    width: 100% !important;
+    cursor: pointer;
 }
 /*# sourceMappingURL=app.min.css.map */
