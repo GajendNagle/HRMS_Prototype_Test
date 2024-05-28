@@ -25,43 +25,39 @@
         </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
-     <div class="container-fluid">
-         <a class="navbar-brand" href="#"></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                 <li>
-                     <a class="nav-link  text-white " href="HOAprNotes.aspx" role="button">
-                         <b class="font-16 font-bold "><i class="fa fa-home "></i>
-                         </b>
-
-                     </a>
-
-                 </li>
-                 <li>
-                     <a class="nav-link text-white" href="Trn_HoAprFill.aspx" role="button">
-                         <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                             एपीआर भरे
-                         </b>
-                     </a>
-                 </li>
-                 <li class="dropdown">
-                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> एपीआर रिपोर्ट </b>
-                     </a>
-                     <ul class="dropdown-menu">
-                         <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Report
-                             <br />
-                             एपीआर जिलावार रिपोर्ट</a></li>
-
-                     </ul>
-                 </li>
-             </ul>
-         </div>
-     </div>
- </nav>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li>
+                                <a class="nav-link  text-white " href="HOAprNotes.aspx" role="button">
+                                    <b class="font-16 font-bold "><i class="fa fa-home "></i>
+                                    </b>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-white" href="Trn_HoAprFill.aspx" role="button">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
+                                        Fill APR
+                                    </b>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>APR Report</b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">District Wise APR Report
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <br />
             <div class="row">
                 <div class="col-md-8">

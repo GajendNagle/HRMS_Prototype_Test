@@ -3,15 +3,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <style>
-        th{
+        th {
             white-space: nowrap;
         }
-        a{
-            color:#0000ff
+
+        a {
+
+            color: #0000ff
         }
-        a:hover{
-            color:#0000ff92
-        }
+
+            a:hover {
+                color: #0000ff92
+            }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -48,26 +51,22 @@
                                 <a class="nav-link  text-white " href="HOAprNotes.aspx" role="button">
                                     <b class="font-16 font-bold "><i class="fa fa-home "></i>
                                     </b>
-
                                 </a>
-
                             </li>
                             <li>
                                 <a class="nav-link text-white" href="Trn_HoAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        एपीआर भरे
+                                        Fill APR
                                     </b>
                                 </a>
                             </li>
                             <li class="dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> एपीआर रिपोर्ट </b>
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>APR Report</b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Report
-                                        <br />
-                                        एपीआर जिलावार रिपोर्ट</a></li>
-
+                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">District Wise APR Report
+                                    </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -77,7 +76,7 @@
             <br />
 
             <fieldset>
-                <legend>APR District Wise Report / एपीआर जिलावार रिपोर्ट</legend>
+                <legend>District Wise APR Report /  जिलावार APR रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -167,7 +166,7 @@
                             <label class="fw-bold text-dark">
                                 Annual Year 
    <br />
-                                वित्तीय वर्ष<span style="color:red;"> *</span>
+                                वित्तीय वर्ष<span style="color: red;"> *</span>
                             </label>
                             <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
 
@@ -198,6 +197,7 @@
                         </div>
                     </div>
                 </div>
+              
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -208,9 +208,14 @@
                                         <th>Sr. No.<br />
                                             सरल क्र.
                                         </th>
-                                        <th>District<br /> जिला</th>
-                                        <th>Total Employees Whose APR Uploaded <br />कुल कर्मचारी जिनका एपीआर अपलोडेड हैं</th>
-                                        <th>Total Employees Whose APR Not Uploaded <br />कुल कर्मचारी जिनका एपीआर अपलोडेड नहीं हैं</th>
+                                        <th>District<br />
+                                            जिला</th>
+                                        <th>Total Employees Whose APR Uploaded
+                                            <br />
+                                            कुल कर्मचारी जिनका APR अपलोडेड हैं</th>
+                                        <th>Total Employees Whose APR Not Uploaded
+                                            <br />
+                                            कुल कर्मचारी जिनका APR अपलोडेड नहीं हैं</th>
                                         <th>Performance %
                                             <br />
                                             प्रदर्शन %
@@ -218,20 +223,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr data-toggle="modal" data-target="#districtModal">
-                                        <td>1</td>
-                                        <td>Bhopal</td>
-                                        <td>50</td>
-                                        <td>20</td>
-                                        <td>71%</td>
-                                    </tr>
-                                    <tr data-toggle="modal" data-target="#districtModal">
-                                        <td>2</td>
-                                        <td>Raisen</td>
-                                        <td>40</td>
-                                        <td>30</td>
-                                        <td>57%</td>
-                                    </tr>
+                                   
                                     <!-- Add more rows as needed -->
                                 </tbody>
                             </table>
@@ -244,7 +236,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="" id="districtModalLabel">APR Details - <span id="modalDistrictName"></span></h1>
+                            <h1 class="" id="districtModalLabel font-bold">APR Details - <span id="modalDistrictName"></span></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </button>
                         </div>
@@ -268,9 +260,9 @@
                                         <table id="modalTable" class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                   <th>Sr. No.<br />
-    सरल क्र.
-</th>
+                                                    <th>Sr. No.<br />
+                                                        सरल क्र.
+                                                    </th>
                                                     <th>Employee
                                             <br />
                                                         कर्मचारी</th>
@@ -314,7 +306,7 @@
                 <div class="modal-dialog modal-xxl" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h2 class="modal-title">Selected APR Form </h2>
+                            <h2 class="modal-title font-bold">Selected APR Form </h2>
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -651,7 +643,7 @@
                 <td>${index + 1}</td>
                 <td>${district}</td>
                
-                <td><a data-bs-toggle="modal" data-bs-target="#districtModal" onclick="populateModalTable('${district}') " href="#">${10}</a></td>
+                <td><a data-bs-toggle="modal" data-bs-target="#districtModal" onclick="populateModalTable('${district}') " href="#"  class="font-bold" >${10}</a></td>
                 <td>${40}</td>
                 <td>${20}%</td>
             </tr>

@@ -43,7 +43,7 @@
                             <li>
                                 <a class="nav-link text-white" href="Trn_EmpAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                      एपीआर भरे
+                                      Fill APR
                                     </b>
                                 </a>
                             </li>
