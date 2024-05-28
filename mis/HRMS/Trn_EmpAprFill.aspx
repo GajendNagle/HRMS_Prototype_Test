@@ -3,16 +3,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <style>
-         th{
-     white-space: nowrap;
- }
+        th {
+            white-space: nowrap;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Employee Annual Property Returns Management System <br />
+            <h4 class="text-themecolor ">Employee Annual Property Returns Management System
+                <br />
                 कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली  </h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
@@ -38,7 +39,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li>
                                 <a class="nav-link  text-white " href="EmpAprNotes.aspx" role="button">
                                     <b class="font-16 font-bold "><i class="fa fa-home "></i>
@@ -50,7 +51,7 @@
                             <li>
                                 <a class="nav-link text-white" href="Trn_EmpAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        एपीआर भरे
+                                        Fill APR
                                     </b>
                                 </a>
                             </li>
@@ -75,7 +76,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Unique Id-Name <br />
+                                Unique Id-Name
+                                <br />
                                 यूनिक आई.डी. - नाम
                             </label>
 
@@ -88,7 +90,7 @@
                             <label class="fw-bold text-dark">
                                 District Name
                                 <br />
-                                जिला नाम
+                                जिला का नाम
                             </label>
                             <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" value="Bhopal" />
                         </div>
@@ -118,12 +120,12 @@
 
             </fieldset>
             <fieldset>
-                <legend>Fill APR / एपीआर भरे</legend>
+                <legend>Fill APR Form / APR फार्म भरे</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Year of Annual Property Returns
+                                Year of APR
                                 <br />
                                 अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                             </label>
@@ -136,16 +138,16 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Uplode Annual Property Returns form
+                                Uplode APR form
                                 <br />
                                 अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                             </label>
                             <input type="file" class="form-control" accept=".pdf" onchange="checkFileSize('FuAprForm', 200, 'MsgErr')" id="FuAprForm" />
-                             <div style="color: red; font-size:12px; margin:0px;padding:0px; display:inline" id="MsgErr">
-                                 <br />
-                                 <br />
-                                 <br />
-                                 </div>
+                            <div style="color: red; font-size: 12px; margin: 0px; padding: 0px; display: inline" id="MsgErr">
+                                <br />
+                                <br />
+                                <br />
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -161,7 +163,7 @@
                 </div>
             </fieldset>
             <fieldset id="FS_Details" style="display: none">
-                <legend>APR Details / एपीआर विवरण</legend>
+                <legend>APR Details / APR विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -182,13 +184,27 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No. <br /> सरल क्र.</th>
-                                        <th>District <br /> जिला</th>
-                                        <th>Employee <br /> कर्मचारी</th>
-                                        <th>Sankul <br /> संकुल</th>
-                                        <th>Designation <br /> पद</th>
-                                        <th>Financial Year <br /> वित्तीय वर्ष</th>
-                                        <th>Detail <br /> विवरण</th>
+                                        <th>Sr. No.
+                                            <br />
+                                            सरल क्र.</th>
+                                        <th>District
+                                            <br />
+                                            जिला</th>
+                                        <th>Employee
+                                            <br />
+                                            कर्मचारी</th>
+                                        <th>Sankul
+                                            <br />
+                                            संकुल</th>
+                                        <th>Designation
+                                            <br />
+                                            पद</th>
+                                        <th>Financial Year
+                                            <br />
+                                            वित्तीय वर्ष</th>
+                                        <th>Detail
+                                            <br />
+                                            विवरण</th>
                                     </tr>
                                 </thead>
                                 <tr>
@@ -215,7 +231,7 @@
             <div class="modal-dialog modal-xxl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title">Selected APR Form </h3>
+                        <h3 class="modal-title font-bold">Selected APR Form </h3>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

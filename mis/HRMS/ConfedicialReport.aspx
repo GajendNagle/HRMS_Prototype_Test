@@ -16,7 +16,7 @@
                     <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                     </u>
                 </p>
-                <h6 style="font-size: 15px; margin-left: 25px">PART-1 Basic Information(भाग एक- सामान्य जानकारी)</h6>
+                <h6 style="font-size: 15px; margin-left: 25px">PART-1 Basic Information<br />भाग एक- सामान्य जानकारी</h6>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -103,7 +103,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="fw-bold">For Teacher's Cadre (Class 1st to 12th)  (शिक्षक संवर्ग के लिए कक्षा 1 से 12)</h4>
+                    <h4 class="fw-bold">For Teacher's Cadre (Class 1st to 12th)<br />  शिक्षक संवर्ग के लिए (कक्षा 1 से 12)</h4>
                     <div class="card">
                         <div class="card-body">
 
@@ -117,13 +117,13 @@
                                 <div runat="server" id="show">
 
                                     <fieldset>
-                                        <legend>EMPLOYEE PERSONAL INFORMATION</legend>
+                                        <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Financial Year<br />
-                                                        (वार्षिक प्रतिवेदन अवधि वर्ष) <span class="fa-pull-right" style="color: red">*</span>
+                                                        वार्षिक प्रतिवेदन अवधि वर्ष <span class="fa-pull-right" style="color: red">*</span>
                                                     </label>
                                                     <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
                                                         <asp:ListItem>2020-2021</asp:ListItem>
@@ -139,7 +139,7 @@
                                                     <label>
                                                         Name
                                                         <br />
-                                                        (नाम)  <span class="fa-pull-right" style="color: red">*</span>
+                                                        नाम  <span class="fa-pull-right" style="color: red">*</span>
                                                     </label>
                                                     <asp:TextBox runat="server" ID="txtName" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
 
@@ -150,7 +150,7 @@
                                                     <label>
                                                         Designation
                                                         <br />
-                                                        (पद नाम) <span style="color: red">*</span>
+                                                        पद नाम <span style="color: red">*</span>
                                                     </label>
                                                     <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
                                                         <asp:ListItem>सहायक शिक्षक</asp:ListItem>
@@ -165,7 +165,7 @@
                                                 <div class="form-group">
                                                     <label>
                                                         Unique ID<br />
-                                                        (कर्मचारी आई.डी)
+                                                        कर्मचारी आई.डी
                            <span class="fa-pull-right" style="color: red">*</span>
                                                     </label>
                                                     <asp:TextBox runat="server" ID="TextBox4" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
@@ -179,7 +179,7 @@
                                                     <label>
                                                         <br />
                                                         Date of Birth<br />
-                                                        (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
+                                                        जन्मतिथि<span class="fa-pull-right" style="color: red">*</span>
                                                     </label>
                                                     <asp:TextBox runat="server" ID="TXTDOB" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
 
@@ -197,7 +197,7 @@
                                                     <label>
                                                         <br />
                                                         Institution of Posting<br />
-                                                        (पदस्थी शाला/स्थान)<span style="color: red;">*</span></label>
+                                                        पदस्थी शाला/स्थान<span style="color: red;">*</span></label>
                                                     <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 select2" autocomplete="off">
                                                         <asp:ListItem>भोपाल</asp:ListItem>
                                                         <asp:ListItem>बैतूल</asp:ListItem>
@@ -212,7 +212,7 @@
                                                     <label class="fs-6">
                                                         <br />
                                                         Dise Code of Institution<br />
-                                                        (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
+                                                        पदस्थी शाला का डाइस कोड<span style="color: red;">*</span></label>
                                                     <asp:TextBox runat="server" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
 
                                                 </div>
@@ -222,7 +222,7 @@
                                                     <label>
                                                         <br />
                                                         Date OF First Posting and designation<br />
-                                                        (प्रथम नियुक्ति का दिनांक एवं पद)<span style="color: red;">*</span>
+                                                        प्रथम नियुक्ति का दिनांक एवं पद<span style="color: red;">*</span>
                                                     </label>
                                                     <asp:TextBox runat="server" ID="txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
 
@@ -237,9 +237,8 @@
                                                 <div class="form-group">
                                                     <label>
                                                         Date OF  Posting/Pramotion<br />
-                                                        (वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक)<span style="color: red;">*</span>
+                                                        वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक<span style="color: red;">*</span>
                                                     </label>
-
                                                     <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control mt-1" autocomplete="off" value="1996-12-23" TextMode="Date"></asp:TextBox>
 
                                                 </div>
@@ -254,7 +253,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 text-center align-bottom">
+                                            <div class="col-md-3  align-bottom">
                                                 <div class="form-group ">
                                                     <button type="button" class="Alert-Save btn btn-success btn-rounded  ">
                                                         Save/Next

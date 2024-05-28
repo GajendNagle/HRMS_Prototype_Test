@@ -43,15 +43,15 @@
                     <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                     </u>
                 </p>
-                <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance(भाग चार-स्वीकृतकर्ता)</h6>
+                <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance <br />भाग चार-स्वीकृतकर्ता</h6>
             </div>
-            <div class="col-md-7 align-self-center text-end" id="hrms">
+            <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                        <li class="breadcrumb-item active"></li>
+                       <li class="breadcrumb-item"><a href="ConfedicialReportNotes.aspx" title="click to go on">Annual Confidential Report (ACR)</a></li>
+ <li class="breadcrumb-item active">Report</li>
                     </ol>
                 </div>
             </div>
@@ -102,7 +102,7 @@
 
 
             <fieldset id="show2">
-                <legend>ACR Report Fill By Reporting  Officer Details</legend>
+                <legend>ACR report filled by Accepting Authority / स्वीकृति प्राधिकारी द्वारा भरी गई एसीआर रिपोर्ट</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-1">
                         <div class="form-group">
@@ -124,16 +124,16 @@
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>S.No</th>
-                                        <th>Unique ID/Name</th>
+                                        <th>S.No<br/> सरल क्र.</th>
+                                        <th>Unique ID/Name<br/> कर्मचारी आईडी/नाम</th>
 
-                                        <th>Date of Birth</th>
-                                        <th>Designation </th>
-                                        <th>Dise Code of Institution</th>
+                                        <th>Date of Birth<br/>जन्मतिथि</th>
+                                        <th>Designation <br/>पदनाम </th>
+                                        <th>Dise Code of Institution<br/>संस्थान का डाइस कोड</th>
 
-                                        <th>Employee Report</th>
-                                        <th>Reporting Officer Report</th>
-                                        <th>Accepting Authority Report</th>
+                                        <th>Employee Report<br/>कर्मचारी की रिपोर्ट </th>
+                                        <th>Reporting Officer Report<br/>रिपोर्टिंग अधिकारी की रिपोर्ट</th>
+                                        <th>Accepting Authority Report<br/>स्वीकृति प्राधिकारी की रिपोर्ट</th>
 
                                         <%--<th>प्रिंट</th--%>
                                     </tr>
@@ -311,7 +311,8 @@
                                                 <td>Nil</td>
                                             </tr>
                                             <tr class="mt-3">
-                                                <th>Grading(ग्रेड)</th>
+                                                <th>Grading<br />ग्रेड
+                                                </th>
                                                 <td>Outstanding/उत्कृष्ट</td>
                                             </tr>
 

@@ -42,26 +42,22 @@
                                 <a class="nav-link  text-white " href="HOAprNotes.aspx" role="button">
                                     <b class="font-16 font-bold "><i class="fa fa-home "></i>
                                     </b>
-
                                 </a>
-
                             </li>
                             <li>
                                 <a class="nav-link text-white" href="Trn_HoAprFill.aspx" role="button">
                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        एपीआर भरे
+                                        Fill APR
                                     </b>
                                 </a>
                             </li>
                             <li class="dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>एपीआर रिपोर्ट </b>
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>APR Report</b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">APR District Wise Report
-                             <br />
-                                        एपीआर जिलावार रिपोर्ट</a></li>
-
+                                    <li><a class="dropdown-item" href="Trn_HoAprDistWiseReport.aspx">District Wise APR Report
+                                    </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -85,7 +81,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 ">
-                        <div class="form-group text-center">
+                        <div class="form-group ">
 
                             <button type="button" class="btn btn-success btn-rounded" onclick="document.getElementById('FS_EmpInfo').style.display = 'block';document.getElementById('FS_FillApr').style.display = 'block'">Search</button>
 
@@ -95,7 +91,7 @@
                 </div>
             </fieldset>
             <fieldset id="FS_EmpInfo" style="display: none;">
-                <legend>EPERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
+                <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
 
                 <div class="row">
                     <div class="col-md-3">
@@ -169,14 +165,14 @@
             </fieldset>
 
             <fieldset id="FS_FillApr" style="display: none;">
-                <legend>Fill APR / एपीआर भरे</legend>
+                <legend>Fill APR Form / APR फार्म भरे</legend>
 
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Year of Annual Property Returns
+                                Year of APR
                 <br />
                                 अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                             </label>
@@ -189,7 +185,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="fw-bold text-dark">
-                                Uplode Annual Property Returns form
+                                Uplode APR form
                 <br />
                                 अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                             </label>
@@ -284,7 +280,7 @@
         <div class="modal-dialog modal-xxl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Selected APR Form </h3>
+                    <h3 class="modal-title font-bold">Selected APR Form </h3>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

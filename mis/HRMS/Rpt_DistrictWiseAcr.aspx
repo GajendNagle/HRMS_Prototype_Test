@@ -17,13 +17,13 @@
                 </p>
                 <%--<h6 style="font-size: 15px; margin-left: 25px">PART-1 Basic Information(भाग एक- सामान्य जानकारी)</h6>--%>
             </div>
-            <div class="col-md-7 align-self-center text-end" id="hrms">
+            <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                        <li class="breadcrumb-item active"></li>
+                        <li class="breadcrumb-item"><a href="ConfedicialReportNotes.aspx" title="click to go on">Annual Confidential Report (ACR)</a></li>
+                        <li class="breadcrumb-item active">Report</li>
                     </ol>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                  <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
+                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
                                 </ul>
                             </li>
                             <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
@@ -85,12 +85,12 @@
 
                             <asp:DropDownList runat="server" ID="txtUniqueID" class="form-control select2" autocomplete="off" AutoPostBack="true" OnSelectedIndexChanged="txtUniqueID_SelectedIndexChanged">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                  <asp:ListItem>All</asp:ListItem>
+                                <asp:ListItem>All</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
                                 <asp:ListItem>Indore</asp:ListItem>
                                 <asp:ListItem>Sagar</asp:ListItem>
                                 <asp:ListItem>Sehore</asp:ListItem>
-                              
+
                             </asp:DropDownList>
 
                         </div>
