@@ -6,33 +6,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
     <style>
-            #ACR_Details_Graph .highcharts-data-label text {
-        color: white !important;
-        font-size: 0.65rem !important;
-        font-weight: bold !important;
-        text-align: center !important;
-        fill: white !important;
-        text-decoration: none !important;
-    }
-
+        #ACR_Details_Graph .highcharts-data-label text {
+            color: white !important;
+            font-size: 0.65rem !important;
+            font-weight: bold !important;
+            text-align: center !important;
+            fill: white !important;
+            text-decoration: none !important;
+        }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">   
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">HRMS Dashboard</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Dashboard" title="click to go on">Dashboard</a></li>
-                    <li class="breadcrumb-item active">HRMS Dashboard</li>
-                </ol>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0">HRMS Dashboard <span>(Status As On Year : 2024)</span></h4>
+
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                            <li class="breadcrumb-item active">HRMS Dashboard</li>
+                        </ol>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid p-0">
+        <%--<div class="row page-titles mb-4">
+            <div class="col-md-5 align-self-center">
+                <h4 class="text-themecolor "></h4>
+            </div>
+            <div class="col-md-7 align-self-center text-end">
+                <div class="d-flex justify-content-end align-items-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Dashboard" title="click to go on">Dashboard</a></li>
+                        <li class="breadcrumb-item active"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>--%>
+
         <div class="row justify-content-center">
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="section-title">
@@ -45,7 +60,10 @@
 
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 one">
-                                        <h4 class=""> Total Staff <smallh4><br />(No's)</smallh4></h4>
+                                        <h4 class="">Total Staff
+                                            <smallh4>
+                                                <br />
+                                                (No's)</smallh4></h4>
 
                                     </div>
                                     <div class="card-content">
@@ -58,7 +76,8 @@
 
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 five">
-                                        <h4 class="">Total Working Staff <smallh4>(No's)</smallh4></h4>
+                                        <h4 class="">Total Working Staff
+                                            <smallh4>(No's)</smallh4></h4>
 
                                     </div>
                                     <div class="card-content">
@@ -71,7 +90,8 @@
 
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 two">
-                                        <h4 class="">Total Retired Staff <smallh4>(No's)</smallh4></h4>
+                                        <h4 class="">Total Retired Staff
+                                            <smallh4>(No's)</smallh4></h4>
 
                                     </div>
                                     <div class="card-content">
@@ -85,7 +105,8 @@
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 one">
                                         <%--<i class="fas fa-code"></i>--%>
-                                        <h4 class="">Registered Administrative Staff <smallh4>(No's)</smallh4></h4>
+                                        <h4 class="">Registered Administrative Staff
+                                            <smallh4>(No's)</smallh4></h4>
 
                                     </div>
                                     <div class="card-content">
@@ -98,7 +119,8 @@
 
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 five">
-                                        <h4 class="">Registered Institutional Staff <smallh4>(No's)</smallh4></h4>
+                                        <h4 class="">Registered Institutional Staff
+                                            <smallh4>(No's)</smallh4></h4>
 
                                     </div>
                                     <div class="card-content">
@@ -111,7 +133,10 @@
 
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 two">
-                                        <h4 class="">Registered Teaching Staff <smallh4><br />(No's)</smallh4></h4>
+                                        <h4 class="">Registered Teaching Staff
+                                            <smallh4>
+                                                <br />
+                                                (No's)</smallh4></h4>
 
                                     </div>
                                     <div class="card-content">
@@ -123,7 +148,10 @@
                             <div class="col-lg-2">
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 three">
-                                        <h4 class="">Out Source Staff <smallh4><br />(No's)</smallh4></h4>
+                                        <h4 class="">Out Source Staff
+                                            <smallh4>
+                                                <br />
+                                                (No's)</smallh4></h4>
                                     </div>
                                     <div class="card-content">
                                         <%--<h1 class="card-title card-title1"></h1>--%>
@@ -134,7 +162,8 @@
                             <div class="col-lg-2">
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 four">
-                                        <h4 class="">Registered Guest Faculty <smallh4>(No's)</smallh4></h4>
+                                        <h4 class="">Registered Guest Faculty
+                                            <smallh4>(No's)</smallh4></h4>
                                     </div>
                                     <div class="card-content">
 
@@ -379,20 +408,20 @@
             </div>
 
 
-  <%--      </div>
+            <%--      </div>
             <div class="row">--%>
-        <div class="col-md-12">
-            <div class="form-group">
-                <div class="card shadow">
-                    <div class="card-header card-border-info">
-                    </div>
-                    <div class="card-body">
-                        <div id="TeacherStaff_Chart" class="graph-maxheight"></div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="card shadow">
+                        <div class="card-header card-border-info">
+                        </div>
+                        <div class="card-body">
+                            <div id="TeacherStaff_Chart" class="graph-maxheight"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -532,13 +561,13 @@
             }, {
                 label: "Leave Without Pay",
                 value: 50
-            },   {
+            }, {
                 label: "Unauthorized Absence",
                 value: 50
             }, {
                 label: "Present",
                 value: 50
-            },  {
+            }, {
                 label: "Half Day",
                 value: 50
             }, {
@@ -550,7 +579,7 @@
         });
 
 
-          // Leave Institutional Staff Charts
+        // Leave Institutional Staff Charts
 
         Morris.Donut({
             element: 'Institutional_Staff_Charts',
@@ -560,37 +589,37 @@
                     label: "Earned Leave",
                     value: 50
                 }, {
-                label: "Medical Leave",
-                value: 50
+                    label: "Medical Leave",
+                    value: 50
 
-            }, {
-                label: "Casual Leave",
-                value: 50
-            }, {
-                label: "Optional Leave",
-                value: 50
-            }, {
-                label: "Maternity Leave",
-                value: 50
-            }, {
-                label: "Paternity Leave",
-                value: 50
-            }, {
-                label: "Leave Without Pay",
-                value: 50
-            },   {
-                label: "Unauthorized Absence",
-                value: 50
-            }, {
-                label: "Present",
-                value: 50
-            },  {
-                label: "Half Day",
-                value: 50
-            }, {
-                label: "Child Care Leave",
-                value: 50
-            }],
+                }, {
+                    label: "Casual Leave",
+                    value: 50
+                }, {
+                    label: "Optional Leave",
+                    value: 50
+                }, {
+                    label: "Maternity Leave",
+                    value: 50
+                }, {
+                    label: "Paternity Leave",
+                    value: 50
+                }, {
+                    label: "Leave Without Pay",
+                    value: 50
+                }, {
+                    label: "Unauthorized Absence",
+                    value: 50
+                }, {
+                    label: "Present",
+                    value: 50
+                }, {
+                    label: "Half Day",
+                    value: 50
+                }, {
+                    label: "Child Care Leave",
+                    value: 50
+                }],
             resize: true,
             colors: ['#78416b', '#a8428c', '#e74171', '#e9463f', '#d26e22', '#fe7c00', '#fdc300', '#ffe500', '#8bbc00', '#3ba6a0', '#3d97d5', '#0094b0', '#e5afcf', '#b9dd73', '#abcff1', '#ffdc5a', '#ff9d94',]
         });
@@ -607,37 +636,37 @@
                     value: 50
                 },
                 {
-                label: "Medical Leave",
-                value: 50
+                    label: "Medical Leave",
+                    value: 50
 
-            }, {
-                label: "Casual Leave",
-                value: 50
-            }, {
-                label: "Earned Leave",
-                value: 50
-            }, {
-                label: "Optional Leave",
-                value: 50
-            }, {
-                label: "Maternity Leave",
-                value: 50
-            }, {
-                label: "Paternity Leave",
-                value: 50
-            }, {
-                label: "Leave Without Pay",
-                value: 50
-            }, {
-                label: "Unauthorized Absence",
-                value: 50
-            }, {
-                label: "Present",
-                value: 50
-            }, {
-                label: "Child Care Leave",
-                value: 50
-            }],
+                }, {
+                    label: "Casual Leave",
+                    value: 50
+                }, {
+                    label: "Earned Leave",
+                    value: 50
+                }, {
+                    label: "Optional Leave",
+                    value: 50
+                }, {
+                    label: "Maternity Leave",
+                    value: 50
+                }, {
+                    label: "Paternity Leave",
+                    value: 50
+                }, {
+                    label: "Leave Without Pay",
+                    value: 50
+                }, {
+                    label: "Unauthorized Absence",
+                    value: 50
+                }, {
+                    label: "Present",
+                    value: 50
+                }, {
+                    label: "Child Care Leave",
+                    value: 50
+                }],
             resize: true,
             colors: ['#78416b', '#a8428c', '#e74171', '#e9463f', '#d26e22', '#fe7c00', '#fdc300', '#ffe500', '#8bbc00', '#3ba6a0', '#3d97d5', '#0094b0', '#e5afcf', '#b9dd73', '#abcff1', '#ffdc5a', '#ff9d94',]
         });
@@ -654,37 +683,37 @@
                     value: 50
                 },
                 {
-                label: "Medical Leave",
-                value: 50
+                    label: "Medical Leave",
+                    value: 50
 
-            }, {
-                label: "Casual Leave",
-                value: 50
-            }, {
-                label: "Earned Leave",
-                value: 50
-            }, {
-                label: "Optional Leave",
-                value: 50
-            }, {
-                label: "Paternity Leave",
-                value: 50
-            }, {
-                label: "Leave Without Pay",
-                value: 50
-            }, {
-                label: "Unauthorized Absence",
-                value: 50
-            }, {
-                label: "Present",
-                value: 50
-            }, {
-                label: "Half Day",
-                value: 50
-            }, {
-                label: "Child Care Leave",
-                value: 50
-            }],
+                }, {
+                    label: "Casual Leave",
+                    value: 50
+                }, {
+                    label: "Earned Leave",
+                    value: 50
+                }, {
+                    label: "Optional Leave",
+                    value: 50
+                }, {
+                    label: "Paternity Leave",
+                    value: 50
+                }, {
+                    label: "Leave Without Pay",
+                    value: 50
+                }, {
+                    label: "Unauthorized Absence",
+                    value: 50
+                }, {
+                    label: "Present",
+                    value: 50
+                }, {
+                    label: "Half Day",
+                    value: 50
+                }, {
+                    label: "Child Care Leave",
+                    value: 50
+                }],
             resize: true,
             colors: ['#78416b', '#a8428c', '#e74171', '#e9463f', '#d26e22', '#fe7c00', '#fdc300', '#ffe500', '#8bbc00', '#3ba6a0', '#3d97d5', '#0094b0', '#e5afcf', '#b9dd73', '#abcff1', '#ffdc5a', '#ff9d94',]
         });
@@ -699,43 +728,43 @@
                     value: 50
                 },
                 {
-                label: "Medical Leave",
-                value: 50
+                    label: "Medical Leave",
+                    value: 50
 
-            }, {
-                label: "Earned Leave",
-                value: 50
-            }, {
-                label: "Optional Leave",
-                value: 50
-            }, {
-                label: "Maternity Leave",
-                value: 50
-            }, {
-                label: "Paternity Leave",
-                value: 50
-            }, {
-                label: "Leave Without Pay",
-                value: 50
-            }, {
-                label: "Unauthorized Absence",
-                value: 50
-            }, {
-                label: "Present",
-                value: 50
-            }, {
-                label: "Half Day",
-                value: 50
-            }, {
-                label: "Child Care Leave",
-                value: 50
-            }],
+                }, {
+                    label: "Earned Leave",
+                    value: 50
+                }, {
+                    label: "Optional Leave",
+                    value: 50
+                }, {
+                    label: "Maternity Leave",
+                    value: 50
+                }, {
+                    label: "Paternity Leave",
+                    value: 50
+                }, {
+                    label: "Leave Without Pay",
+                    value: 50
+                }, {
+                    label: "Unauthorized Absence",
+                    value: 50
+                }, {
+                    label: "Present",
+                    value: 50
+                }, {
+                    label: "Half Day",
+                    value: 50
+                }, {
+                    label: "Child Care Leave",
+                    value: 50
+                }],
             resize: true,
             colors: ['#78416b', '#a8428c', '#e74171', '#e9463f', '#d26e22', '#fe7c00', '#fdc300', '#ffe500', '#8bbc00', '#3ba6a0', '#3d97d5', '#0094b0', '#e5afcf', '#b9dd73', '#abcff1', '#ffdc5a', '#ff9d94',]
         });
 
 
-             // Leave Other Staff Charts
+        // Leave Other Staff Charts
 
         Morris.Donut({
             element: 'OthersLave_Chart',
@@ -963,7 +992,7 @@
                     ['Teaching Staff Promotions', 13],
                     ['Administrative Staff Awaited', 11],
                     ['Institutional Staff Awaited', 16],
-                   ['Teaching Staff Awaited', 9]//,
+                    ['Teaching Staff Awaited', 9]//,
                     //['Administrative Staff On Hold', 12],
                     //['Institutional Staff On Hold', 16],
                     //['Teaching Staff On Hold', 13]
@@ -1068,7 +1097,7 @@
                     ['Next 1 Year', 13],
                     ['Next 2 Year', 15],
                     ['Next 3 Year', 20],
-               
+
 
 
                 ]
@@ -1123,7 +1152,7 @@
                     }
                 }
             },
-      
+
             tooltip: {
                 headerFormat: '<span style="font-size:11px; color:black;">{series.name}</span><br>',
                 pointFormat: '<span style="color:{point.color}">{point.name}</span>: <span style="color:black;font-size:11px;"> <b>{point.y}</b> of total<br/></span>'
@@ -1206,7 +1235,7 @@
                 }
             },
             yAxis: {
-          
+
                 title: {
                     text: "Payroll (No's)"
                 },
@@ -1259,7 +1288,7 @@
                 align: 'left'
             },
             xAxis: {
-                categories: ['Administrative','Institutional' , 'Teaching'],
+                categories: ['Administrative', 'Institutional', 'Teaching'],
                 crosshair: true,
                 accessibility: {
                     description: 'Total'
@@ -1270,7 +1299,7 @@
                 title: {
                     text: "Property Returns  (No's)"
                 },
-                
+
                 labels: {
                     formatter: function () {
                         return this.value;
@@ -1315,7 +1344,7 @@
                 }
 
             ]
-        
+
         });
 
 
