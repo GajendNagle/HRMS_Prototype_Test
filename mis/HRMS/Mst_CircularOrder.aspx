@@ -4,6 +4,15 @@
     <%-- <link href="../dist/css/bootstrap-multiselect.css" rel="stylesheet" />--%>
 
     <style>
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+
         /* Style for the textarea */
         #workdescription {
             resize: vertical;
@@ -53,7 +62,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Circular Order</h4>
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
+                <img src="../../img/Circular%20Order.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-7 align-self-center text-end">
             <div class="d-flex justify-content-end align-items-center">
@@ -62,6 +74,7 @@
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
                     <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
+                     <li class="breadcrumb-item"><a href="AllOrderDetails.aspx" title="click to go on">Dashboard Display Circulars-Orders</a></li>
                     <li class="breadcrumb-item active">Circular Order</li>
                 </ol>
             </div>
@@ -79,66 +92,53 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <%--                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b>Mutual Transfer Application</b></strong></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_MutualTransferApply.aspx">Mutual Transfer Apply</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferDraftApplication.aspx">Print Draft Application or Update Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransLockApplication.aspx">Lock Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferPrintApplication.aspx">Print Application</a></li>
-                                </ul>
-                            </li> --%>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="AllOrderDetails.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                            <li>
+                                <a class="nav-link  font-16 text-white" href="AllOrderDetails.aspx" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="Mst_CircularOrder.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Circulars</b></strong></a>
+                                <a class="nav-link font-16 text-white" href="Mst_CircularOrder.aspx" role="button"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>सर्कुलर्स </b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="Mst_Order.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Orders</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="Mst_Order.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>आदेश</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="Mst_TenderDetail.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Tenders</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="Mst_TenderDetail.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>टेंडर्स </b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="PhotoAlbumDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Photos</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="PhotoAlbumDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>फ़ोटो</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="NewsDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;News</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="NewsDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>समाचार</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="EventInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Events</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="EventInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>इवेंट</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="MessageInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Messages</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="MessageInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>संदेश </b></strong></a>
                             </li>
-
                         </ul>
-
                     </div>
                 </div>
             </nav>
             <br />
-            <br />
             <fieldset>
-                <legend>Important Note </legend>
-                <p class="text-bold font-16">
-                    <b>1):- Please Upload File In PDF Formate.</b><br />
-                    <b>2):- File Shize Should Be Less Than 700 KB.</b><br />
-                    <b>3):-Don't upload .doc, .xls, .jpg or any other format file.</b>
-                    <br />
-
-                </p>
+                <legend>Important Note/महत्वपूर्ण लेख</legend>
+                <ul class="font-16">
+                    <li><b>Please Upload File in PDF Formate.</b></li>
+                    <li><b>File Size Shuld be Less Than 400 kb.</b></li>
+                    <li><b>Don't Upload .doc, .xls, .jpg or Any Other Formate File.</b></li>
+                    <li><b>Click Here to Download PDF Crater Software.</b></li>
+                </ul>
             </fieldset>
             <fieldset>
-                <legend>Circular Order
+                <legend>Circular Order/सर्कुलर्स आदेश
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Circular Number<span style="color: red">*</span>
+                                Circular Number<br />
+                                सर्कुलर्स नंबर<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Circular Number " />
 
@@ -148,7 +148,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Issue Date <span style="color: red">*</span>
+                                Issue Date<br />
+                                जारी करने की तिथि <span style="color: red">*</span>
 
                             </label>
                             <input type="date" class="form-control" />
@@ -157,7 +158,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Isseued By <span style="color: red">*</span>
+                                Isseued By
+                                <br />
+                                जारीकर्ता<span style="color: red">*</span>
                             </label>
                             <select id="issuing-authority" name="issuing-authority" class="form-control">
                                 <option value="Academic">--Select--</option>
@@ -180,13 +183,12 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="col-md-3">
-
-
                         <div class="form-group">
-                            <label>Select Circular Related Module <span style="color: red">*</span> </label>
-
+                            <label>
+                                Select Circular Related Module<br />
+                                सर्कुलर संबंधित मॉड्यूल का चयन करें <span style="color: red">*</span>
+                            </label>
                             <asp:DropDownList ID="ddlmedium" runat="server" multiple="multiple" CssClass="select2 form-control" ToolTip="Select Circular Related Module">
                                 <asp:ListItem Value="" Text="Select options..." />
                                 <asp:ListItem Value="Appointment Related">Appointment Related</asp:ListItem>
@@ -230,19 +232,15 @@
                                 <asp:ListItem Value="knowledge hub">knowledge hub</asp:ListItem>
                                 <asp:ListItem Value="Training">Training</asp:ListItem>
                             </asp:DropDownList>
-
                         </div>
-
                     </div>
-
                 </div>
-
-
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Circular Category<span style="color: red">*</span></label>
+                                Circular Category<br />
+                                सर्कुलर्स श्रेणी<span style="color: red">*</span></label>
                             <select id="" name="circular-category" class="form-control">
                                 <option value="Academic">--Select--</option>
                                 <option value="Academic">Academic</option>
@@ -330,7 +328,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                From Whom <span style="color: red">*</span></label>
+                                From Whom
+                                <br />
+                                जिस से<span style="color: red">*</span></label>
                             <select id="for-whom" name="for-whom" class="form-control">
                                 <option value="Academic">--Select--</option>
                                 <option value="All">All</option>
@@ -344,7 +344,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Priority <span style="color: red">*</span></label>
+                                Select Priority
+                                <br />
+                                प्राथमिकता चुनें<span style="color: red">*</span></label>
                             <select id="" name="for-whom" class="form-control">
                                 <option value="Academic">--Select--</option>
                                 <option value="All">Normal</option>
@@ -356,24 +358,25 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Upload File<span style="color: red">*</span></label>
+                            <label>
+                                Upload File<br />
+                                फ़ाइल अपलोड करें<span style="color: red">*</span></label>
                             <input type="file" class="form-control" />
-
                         </div>
                     </div>
-
                 </div>
                 <div class="row">
-
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Enter Subject<span style="color: red">*</span></label>
+                            <label>
+                                Enter Subject<br />
+                                विषय दर्ज करें<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" rows="1" placeholder="Enter Subject Description" oninput="autoResize(this)"></textarea>
                         </div>
 
 
                     </div>
-                    <div class="col-md-3" style="margin-top: 30px;">
+                    <div class="col-md-3 mt-5">
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
                             <a href="Mst_CircularOrder.aspx" class="btn btn-danger btn-rounded">Clear</a>
@@ -395,70 +398,100 @@
                 <legend>Circular Order Detail
                 </legend>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table  table-hover table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>ID</th>
-                                        <th>Circular Number</th>
-                                        <th>Circular Date</th>
-                                        <th>Circular Document</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>545686</td>
-                                        <td>1097-1098 कार्यालय संयुक्त संचालक लोक शिक्षण इंदौर संभाग इंदौर अंतर्गत गणक/लेखापाल संवर्ग की दिनाक 01/04/2023 की स्थिति में अंतरिम वरिष्ठता सूची का प्रकाशन |</td>
-                                        <td>03/04/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table  table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.No.<br />
+                                                    सरल क्र.</th>
+                                                <th>ID              
+                                            <br />
+                                                    आई डी</th>
+                                                <th>Circular Number 
+                                            <br />
+                                                    सर्कुलर्स नंबर </th>
+                                                <th>Circular Date   
+                                            <br />
+                                                    सर्कुलर्स दिनांक </th>
+                                                <th>Circular Document<br />
+                                                    सर्कुलर्स दस्तावेज़</th>
+                                                <th>Action          
+                                            <br />
+                                                    कार्रवाई  </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>545686</td>
+                                                <td>1097-1098 कार्यालय संयुक्त संचालक लोक शिक्षण इंदौर संभाग इंदौर अंतर्गत गणक/लेखापाल संवर्ग की दिनाक 01/04/2023 की स्थिति में अंतरिम वरिष्ठता सूची का प्रकाशन |</td>
+                                                <td>03/04/2024</td>
+                                                <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                                <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td>2</td>
-                                        <td>78878</td>
-                                        <td>1097-1098 कार्यालय संयुक्त संचालक लोक शिक्षण इंदौर संभाग इंदौर अंतर्गत गणक/लेखापाल संवर्ग की दिनाक 01/04/2023 की स्थिति में अंतरिम वरिष्ठता सूची का प्रकाशन |</td>
-                                        <td>03/02/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>78878</td>
+                                                <td>1097-1098 कार्यालय संयुक्त संचालक लोक शिक्षण इंदौर संभाग इंदौर अंतर्गत गणक/लेखापाल संवर्ग की दिनाक 01/04/2023 की स्थिति में अंतरिम वरिष्ठता सूची का प्रकाशन |</td>
+                                                <td>03/02/2024</td>
+                                                <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                                <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
 
-                                    <tr hidden id="1">
-                                        <td>3</td>
-                                        <td>73678</td>
-                                        <td>क्रमांक/समन्वय/बी/वीडियों कॉन्फ्रेसिंग/01/2024/91-8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक ।</td>
-                                        <td>06/04/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
+                                            <tr hidden id="1">
+                                                <td>3</td>
+                                                <td>73678</td>
+                                                <td>क्रमांक/समन्वय/बी/वीडियों कॉन्फ्रेसिंग/01/2024/91-8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक ।</td>
+                                                <td>06/04/2024</td>
+                                                <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                                <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
 
-                                    <tr hidden id="2">
-                                        <td>4</td>
-                                        <td>79778</td>
-                                        <td>क्रमांक/550-551/744/2018/20-3 पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में।</td>
-                                        <td>03/03/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
+                                            <tr hidden id="2">
+                                                <td>4</td>
+                                                <td>79778</td>
+                                                <td>क्रमांक/550-551/744/2018/20-3 पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में।</td>
+                                                <td>03/03/2024</td>
+                                                <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                                <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
 
 
-                                </tbody>
-                            </table>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </fieldset>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <button id="viewMoreBtn" class="btn btn-success" type="button" value="View More" onclick="myFunction()">View More</button>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button id="viewMoreBtn" class="btn btn-success" type="button" value="View More" onclick="myFunction()">View More</button>
+
+                    </div>
 
                 </div>
+            </fieldset>
 
-            </div>
         </div>
     </div>
     <script>

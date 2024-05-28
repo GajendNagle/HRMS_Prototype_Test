@@ -3,6 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
         #EmployeeDetails1 {
             display: none;
         }
@@ -53,9 +61,30 @@
                 <div class="card-header card-border-info">
                 </div>
                 <div class="card-body">
-                    <fieldset id="show">
-                        <legend>Tour Generate</legend>
+                    <nav class="navbar navbar-expand-lg topbar ">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                    <li>
 
+                                        <a class="nav-link  text-white " href="EmpTourGenerateOrder.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                    </li>
+                                    <li>
+
+                                        <a class="nav-link  text-white " href="EmpTourGenerateOrder.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>यात्रा जनरेट करें</b></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <br />
+                    <fieldset id="show">
+                        <legend>Tour Generate Details</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-1">
                                 <div class="form-group">
@@ -78,19 +107,41 @@
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
-                                        <tr>
-                                            <th>Sr.No.</th>
-                                            <th>Action</th>
-                                            <th>Employee Code/Name</th>
-                                            <th>Tour Type</th>
-                                            <th>Tour Starts Date</th>
-                                            <th>Tour End Date</th>
-                                            <th>Tour Starts From</th>
-                                            <th>Tour Ends At</th>
-                                            <th>Total Days</th>
-                                            <th>Tour Purpose</th>
-                                            <th>Tour Status</th>
-                                        </tr>
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.No.           
+                                                    <br />
+                                                    सरल क्र.  </th>
+                                                <th>Action           
+                                                    <br />
+                                                    कार्रवाई </th>
+                                                <th>Employee Code/Name<br />
+                                                    कर्मचारी कोड या नाम</th>
+                                                <th>Tour Type        
+                                                    <br />
+                                                    यात्रा का प्रकार</th>
+                                                <th>Tour Starts Date 
+                                                    <br />
+                                                    यात्रा प्रारंभ होने की तिथि     </th>
+                                                <th>Tour End Date    
+                                                    <br />
+                                                    यात्रा समाप्ति तिथि     </th>
+                                                <th>Tour Starts From 
+                                                    <br />
+                                                    यात्रा प्रारंभ होती है    </th>
+                                                <th>Tour Ends At     
+                                                    <br />
+                                                    यात्रा समाप्त होती है  </th>
+                                                <th>Total Days       
+                                                    <br />
+                                                    कुल दिन </th>
+                                                <th>Tour Purpose<br />
+                                                    भ्रमण का उद्देश्य  </th>
+                                                <th>Tour Status      
+                                                    <br />
+                                                    यात्रा की स्थिति </th>
+                                            </tr>
+                                        </thead>
                                         <tr>
                                             <td>1</td>
                                             <td>
@@ -121,18 +172,18 @@
                                         </tr>
                                     </table>
                                 </div>
-                            </div>
+                            </div> 
+                        </div><br />
                             <div class="col-md-12">
                                 <div>
-                                    <p id="note"><b>Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन का अनुमोदन करें |</b></p>
+                                    <p id="note"><b class="font-bold">Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन का अनुमोदन करें |</b></p>
                                 </div>
                                 <br />
                             </div>
-                        </div>
                         <div id="btnApproveBEO" class="row justify-content-center">
                             <div class="col-md-12 text-center">
-                                <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn btn-success ">Approve</button>
-                                <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal">Reject</button>
+                                <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn btn-success  btn-rounded">Approve</button>
+                                <button type="button" class="btn btn-danger  btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button>
                             </div>
                         </div>
                         <br />

@@ -1,6 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DisposedGrievances.aspx.cs" Inherits="mis_Transaction_DisposedGrievances" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        th {
+            white-space: nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles" style="margin-bottom: -30px">
@@ -15,9 +24,6 @@
         <div class="col-md-3 mt-5 fw-bold fs-3" style="position: relative; bottom: 10px; left: 80px; font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
             <p>निराकृत शिकायतों की सूची</p>
         </div>
-        <%--  <div class="col-md-3 mt-4" style="position:relative; left:20px;">
-        <p style="font-style: oblique; color: brown; font-weight: bolder;   font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align:right">शिकायत का निराकरण करना</p>
-    </div>--%>
 
         <div class="col-md-5 align-self-center">
 
@@ -25,15 +31,15 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                    <li class="breadcrumb-item"><a href="ParivednaNevakarn.aspx" title="click to go on">Grievance Management System</a></li>
+                    <li class="breadcrumb-item active">List of Resolved Grievance</li>
 
-                    <li class="breadcrumb-item active">Grievance Application Status</li>
                 </ol>
             </div>
         </div>
     </div>
 
-
-    <h4 class="fw-bold">List of Disposded Grievance</h4>
+    <%--<h4 class="fw-bold">List of Disposded Grievance</h4>--%>
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
@@ -46,48 +52,32 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            <li>
+                                <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            </li>
                             <li class="nav-item dropdown">
-
-                                <%--  <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>शिकायत पंजीयन</></strong></a>--%>
-                                <%-- <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत पंजीयन </b></a>--%>
-
-
                                 <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
                                 <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
-
-                                    <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
-                                    <li><a class="dropdown-item" href="PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
-
+                                    <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">Grievance Filed</a></li>
+                                    <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">Grievance Tracking Status</a></li>
+                                    <li><a class="dropdown-item" href="PrintComplaint.aspx">Print Grievance</a></li>
                                 </ul>
-
                             </li>
-                            <%--  <a class="nav-link  text-white " href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold">शिकायत प्रोसेसिंग </b></a>--%>
-
-
-                            <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
-                            <%--  <a class="nav-link  text-white " href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold">शिकायत निराकरण </b></a>--%>
-
-
-
-                            <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
-
-
-
+                            <li>
+                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
+                            </li>
+                            <li>
+                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
-
                                 <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
-                                    <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
-
-                                    <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
-                                    <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
-                                    <%-- <li><a class="dropdown-item" href="#">शिकायत प्रिंट करे</a></li>--%>
+                                    <li><a class="dropdown-item" href="DisposedGrievances.aspx">List of Resolved Grievance</a></li>
+                                    <li><a class="dropdown-item" href="RejectedGrievances.aspx">List of Rejected Grievance</a></li>
+                                    <li><a class="dropdown-item" href="ForwardedGrievances .aspx">District Wise Details of Forwarded Grievance</a></li>
+                                    <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">Details of Grievance forwarded from CPI</a></li>
+                                    <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">District Wise Progress Report</a></li>
+                                    <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">Section Wise Pending Report</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -98,25 +88,30 @@
 
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>Grievances Dispose/Reject</legend>
+                    <legend>List of Resolved Grievance/समाधान की गई शिकायतों की सूची</legend>
                     <div class="row">
 
-                        <div class="col-md-4">
-                            <label>District<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label class="font-bold">
+                                District
+                                <br />
+                                जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
-                                <asp:ListItem>--select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Raisen</asp:ListItem>
-                                <asp:ListItem>Rajgarh</asp:ListItem>
-                                <asp:ListItem>Sehore</asp:ListItem>
-                                <asp:ListItem>Vidisha</asp:ListItem>
-                                <asp:ListItem>Ashoknagar</asp:ListItem>
-                                <asp:ListItem>Shivpuri</asp:ListItem>
-                                <asp:ListItem>Datia</asp:ListItem>
+                                <asp:ListItem     value="0">--select--</asp:ListItem>
+                                <asp:ListItem     value="1">Bhopal</asp:ListItem>
+                                <asp:ListItem     value="2">Raisen</asp:ListItem>
+                                <asp:ListItem     value="3">Rajgarh</asp:ListItem>
+                                <asp:ListItem     value="4">Sehore</asp:ListItem>
+                                <asp:ListItem     value="5">Vidisha</asp:ListItem>
+                                <asp:ListItem     value="6">Ashoknagar</asp:ListItem>
+                                <asp:ListItem     value="7">Shivpuri</asp:ListItem>
+                                <asp:ListItem     value="8">Datia</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-4">
-                            <label>Authority  Name<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label class="font-bold">
+                                Section  Name<br />
+                                अनुभाग का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
                                 <asp:ListItem>--select--</asp:ListItem>
                                 <asp:ListItem>RMSA</asp:ListItem>
@@ -139,23 +134,19 @@
                                 <asp:ListItem>TMC</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-
-
-
-                        <div class="col-md-4 text-center mt-4" style="position: relative; top: 10px;">
+                        <div class="col-md-4 mt-3" style="position: relative; top: 2rem;">
                             <div class="form-group">
-                                <asp:Button runat="server" type="button" class="btn btn-success btn-rounded" OnClick="Unnamed_Click" Text=" Search" />
-
-                                </>
-                            <a href="DisposedGrievances.aspx" class="btn btn-danger  btn-rounded">Clear</a>
+                                <asp:Button runat="server" type="button" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text=" Search" ID="btnSearch" />
+                                <a href="DisposedGrievances.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                             </div>
                         </div>
                     </div>
+                    <br />
                 </fieldset>
             </div>
             <div runat="server" id="show2" visible="false">
                 <fieldset>
-                    <legend>निराकरण : Dispose Action</legend>
+                    <legend>Dispose Action Details</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
                             <div class="form-group">
@@ -174,160 +165,174 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <table id="Table4" class="table table-bordered table-responsive-lg text-center " runat="server">
-                                    <thead>
-                                        <tr style="background-color: #1B5B5C; color: white;">
-                                            <th data-class="expand" scope="col">Sr.No.</th>
-                                            <th data-class="phone,tablet" scope="col">Grievance No</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Employee Name</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Type</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Subject</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed On</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed By</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Dispose Details</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Status</th>
-                                            <th data-hide="phone,tablet" scope="col" style="display: table-cell;">View Doc</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="expand">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblRowNumber">1</span>
-                                                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl02$hdnId" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_hdnId" value="33554">
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblGrievance">33554</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblName">Umashankar Agrawal [Principal HS ]</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblGrievance_Type">Establishment Related</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblsubject">senior Scale - Second</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lbldate">5/2/2024 3:20:00 PM</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblDisposed_by">DEO, CHHINDWARA</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblDispose_Details">जिले में कार्यरत नही ।</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblstatus">Disposed</span>
-                                            </td>
-                                            <td style="display: table-cell;">
+                                <div class="table-responsive">
+                                    <table id="Table4" class="table table-bordered text-center m-1" runat="server">
+                                        <thead>
+                                            <tr style="background-color: #1B5B5C; color: white;">
+                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                    सरल क्र.
+                                                </th>
+                                                <th data-class="phone,tablet" scope="col">Grievance No.<br />
+                                                    शिकायत क्र.
+                                                </th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Employee Name<br />
+                                                    कर्मचारी का नाम</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Type<br />
+                                                    प्रकार</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Subject<br />
+                                                    विषय</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed On<br>
+                                                    पर निस्तारण किया गया</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed By<br>
+                                                    द्वारा निस्तारित</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Dispose Details<br>
+                                                    निपटान विवरण</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Status<br />
+                                                    स्थिति</th>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">View Document<br />
+                                                    दस्तावेज़ देखें </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="expand">
+                                                    <span >1</span>
+                                                    <input type="hidden"   value="33554">
+                                                </td>
+                                                <td class="phone,tablet">
+                                                    <span >33554</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Umashankar Agrawal [Principal HS ]</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Establishment Related</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >senior Scale - Second</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >5/2/2024 3:20:00 PM</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >DEO, CHHINDWARA</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >जिले में कार्यरत नही।</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Disposed</span>
+                                                </td>
+                                                <td style="display: table-cell;">
 
-                                                <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
+                                                    <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
 
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblRowNumber">2</span>
-                                                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl03$hdnId" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_hdnId" value="41194">
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblGrievance">41194</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblName">Abhilasha Sahu [Prathmik Shikshak ]</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblGrievance_Type">Others</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblsubject">Others</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lbldate">5/2/2024 3:19:00 PM</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblDisposed_by">DEO, CHHINDWARA</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblDispose_Details">शिक्षा विभाग स्थानान्तरण नीति अंतर्गत् स्थानान्तरण आनलाईन आवेदन द्वारा किये है संबंधित आनलाईन अपना स्थानान्तरण आवेदन की निराकरण स्थिति देख सकते है शिकायत विलोपित करने का अनुरोध है</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblstatus">Disposed</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="expand">
+                                                    <span >2</span>
+                                                    <input type="hidden"   value="41194">
+                                                </td>
+                                                <td class="phone,tablet">
+                                                    <span >41194</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Abhilasha Sahu [Prathmik Shikshak ]</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Others</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Others</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >5/2/2024 3:19:00 PM</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >DEO, CHHINDWARA</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >शिक्षा विभाग स्थानान्तरण नीति अंतर्गत् स्थानान्तरण आनलाईन आवेदन द्वारा किये है संबंधित आनलाईन अपना स्थानान्तरण आवेदन की निराकरण स्थिति देख सकते है शिकायत विलोपित करने का अनुरोध है</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Disposed</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
 
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblRowNumber">3</span>
-                                                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl04$hdnId" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_hdnId" value="53593">
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblGrievance">53593</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblName">Gayatri Nagwanshi [Prathmik Shikshak ]</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblGrievance_Type">Others</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblsubject">Others</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lbldate">5/2/2024 3:18:00 PM</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblDisposed_by">DEO, CHHINDWARA</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblDispose_Details">ifjosnuk dk mYys[k ugh</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblstatus">Disposed</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblRowNumber">4</span>
-                                                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl05$hdnId" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_hdnId" value="55080">
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblGrievance">55080</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblName">Mohammad Rafi [Prathmik Shikshak ]</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblGrievance_Type">Others</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblsubject">Others</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lbldate">5/2/2024 3:17:00 PM</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblDisposed_by">DEO, CHHINDWARA</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblDispose_Details">बी.एल.ओ.से मुक्त हेतु अपने तहसील कार्यालय में आवेदन देकर निराकरण करावे।</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblstatus">Disposed</span>
-                                            </td>
-                                            <td style="display: table-cell;">
-                                                <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="expand">
+                                                    <span >3</span>
+                                                    <input type="hidden"   value="53593">
+                                                </td>
+                                                <td class="phone,tablet">
+                                                    <span >53593</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Gayatri Nagwanshi [Prathmik Shikshak ]</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Others</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Others</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >5/2/2024 3:18:00 PM</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >DEO, CHHINDWARA</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >ifjosnuk dk mYys[k ugh</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Disposed</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="expand">
+                                                    <span >4</span>
+                                                    <input type="hidden"   value="55080">
+                                                </td>
+                                                <td class="phone,tablet">
+                                                    <span >55080</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Mohammad Rafi [Prathmik Shikshak ]</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Others</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Others</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >5/2/2024 3:17:00 PM</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >DEO, CHHINDWARA</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >बी.एल.ओ.से मुक्त हेतु अपने तहसील कार्यालय में आवेदन देकर निराकरण करावे।</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <span >Disposed</span>
+                                                </td>
+                                                <td style="display: table-cell;">
+                                                    <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -412,7 +417,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

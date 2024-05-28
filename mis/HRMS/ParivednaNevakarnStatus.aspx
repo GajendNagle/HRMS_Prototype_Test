@@ -1,6 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ParivednaNevakarnStatus.aspx.cs" Inherits="mis_Transaction_ParivednaNevakarnStatus" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        th {
+            white-space: nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="container-fluid">
@@ -29,7 +38,8 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active">Grievance Management</li>
+                        <li class="breadcrumb-item"><a href="ParivednaNevakarn.aspx" title="click to go on">Grievance Management System</a></li>
+                        <li class="breadcrumb-item active">Complaint Tracking Status</li>
                     </ol>
                 </div>
             </div>
@@ -48,85 +58,96 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                                <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <li>
+                                    <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                </li>
                                 <li class="nav-item dropdown">
-
-                                    <%--  <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>शिकायत पंजीयन</></strong></a>--%>
-                                    <%-- <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत पंजीयन </b></a>--%>
-
-
                                     <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
                                     <ul class="dropdown-menu">
-
-                                        <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
-
-                                        <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
-                                        <li><a class="dropdown-item" href="PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
-
+                                        <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">Complaint Filed</a></li>
+                                        <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">Complaint Tracking Status</a></li>
+                                        <li><a class="dropdown-item" href="PrintComplaint.aspx">Print Complaint</a></li>
                                     </ul>
-
                                 </li>
-                                <%--  <a class="nav-link  text-white " href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold">शिकायत प्रोसेसिंग </b></a>--%>
-
-
-                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
-                                <%--  <a class="nav-link  text-white " href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold">शिकायत निराकरण </b></a>--%>
-
-
-
-                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
-
-
-
+                                <li>
+                                    <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
+                                </li>
+                                <li>
+                                    <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
+                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
-
                                     <ul class="dropdown-menu">
-
-                                        <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
-                                        <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
-
-                                        <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
-                                        <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
-                                        <%-- <li><a class="dropdown-item" href="#">शिकायत प्रिंट करे</a></li>--%>
+                                        <li><a class="dropdown-item" href="DisposedGrievances.aspx">List of Resolved Grievances</a></li>
+                                        <li><a class="dropdown-item" href="RejectedGrievances.aspx">List of Rejected Grievances</a></li>
+                                        <li><a class="dropdown-item" href="ForwardedGrievances .aspx">District Wise Details of Forwarded Grievances</a></li>
+                                        <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">Details of Grievances forwarded from CPI</a></li>
+                                        <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">District Wise Progress Report</a></li>
+                                        <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">Section Wise Pending Report</a></li>
                                     </ul>
                                 </li>
                             </ul>
-
-
-
                         </div>
                     </div>
                 </nav>
                 <br />
-                <br />
                 <fieldset>
-                    <legend>शिकायत स्थिति
+                    <legend>Grievance Tracking Details
                     </legend>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="">
-                                <table class="table text-center table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>सरल क्र.</th>
-                                            <th>कर्मचारी / शिक्षक का नाम</th>
-                                            <th>दिनांक</th>
-                                            <th>शिकायत का प्रकार</th>
-                                            <th>शिकायत का विषय</th>
-                                            <th>स्थिति</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Ashok Verma</td>
-                                        <td>09-04-2024</td>
-                                        <td>स्थापना से संबंधित </td>
-                                        <td>वेतन निर्धारण</td>
-                                        <td>पेंडिंग </td>
-                                    </tr>
-                                </table>
+                        <div class="row justify-content-end">
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table text-center table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr.No.
+                                                <br />
+                                                        सरल क्र.</th>
+                                                    <th>Name of Employee or Teacher<br />
+                                                        कर्मचारी या शिक्षक का नाम</th>
+                                                    <th>Date
+                                                <br />
+                                                        दिनांक</th>
+                                                    <th>Type of Grievance
+                                                <br />
+                                                        शिकायत का प्रकार</th>
+                                                    <th>Subject of Grievance<br />
+                                                        शिकायत का विषय</th>
+                                                    <th>Status<br />
+                                                        स्थिति</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Ashok Verma</td>
+                                                <td>09-04-2024</td>
+                                                <td>स्थापना से संबंधित </td>
+                                                <td>वेतन निर्धारण</td>
+                                                <td>पेंडिंग </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

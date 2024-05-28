@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="EmpTourApplyNotes.aspx.cs" Inherits="mis_Transaction_EmpTourApplyNotes" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style> #workdescription1 {
+     resize: vertical;
+     min-height: 40px; /* Set a minimum height */
+ }</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="content-wrapper">
@@ -34,28 +37,21 @@
                             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                                     <li>
-
                                         <a class="nav-link  text-white " href="EmpTourApplyNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                     </li>
                                     <li>
-
-                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Tour Apply</b></a>
+                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i><%--Tour Apply--%>यात्रा के लिए आवेदन करें</b></a>
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
                     </nav>
-                    <br />
-                    <br />
                     <br />
                     <div class="row">
                         <div class="col-md-12">
                             <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;Tour Apply दिशानिर्देश :-</h4>
                         </div>
                     </div>
-                    <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-
                     <div>
                         <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
                             <b>1)</b>&nbsp; कर्मचारी द्वारा विभाग के कार्य के लिए एक स्थान से दूसरे स्थान पर जाने के लिए अपने विभाग प्रमुख से परमिशन के लिए टूर अप्लाई संबंधी फॉर्म को भरता है ।<br />
@@ -63,16 +59,14 @@
                             <b>3)</b>&nbsp; कर्मचारी द्वारा भरे हुए फॉर्म को अधिकारी अपने पैनल लॉगिन आईडी से देख सकता है, और टूर पर जाने के लिए कर्मचारी को परमिशन दे सकता है |<br />
                             <b>4)</b>&nbsp; यदि किसी कारणवश अधिकारी कर्मचारी को टूर पर नहीं भेजना चाहता तो संबंधित अधिकारी उसकी रिक्वेस्ट को रिजेक्ट भी कर सकता है,  रिक्वेस्ट को रिजेक्ट करते समय अधिकारी उसमें रिमार्क डालकर सेफ करता है। 
                             <br />
-                            <b>5)</b>&nbsp; अधिकारी द्वारा टूर को अप्रूव या रिजेक्ट करने की स्थिति में संबंधित कर्मचारी टूर का स्टेटस को टूर स्टेटस रिपोर्ट से देख सकता है।  <br />
-
-
+                            <b>5)</b>&nbsp; अधिकारी द्वारा टूर को अप्रूव या रिजेक्ट करने की स्थिति में संबंधित कर्मचारी टूर का स्टेटस को टूर स्टेटस रिपोर्ट से देख सकता है। 
+                            <br />
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

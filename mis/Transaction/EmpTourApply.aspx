@@ -1,7 +1,22 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="EmpTourApply.aspx.cs" Inherits="mis_HRMS_EmpTourApply" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        #workdescription1 {
+            resize: vertical;
+            min-height: 40px; /* Set a minimum height */
+        }
+    </style>
     <script>
+
         function myFunction() {
             var x = document.getElementById("show");
             if (x.style.display === "none") {
@@ -54,7 +69,7 @@
                                     </li>
                                     <li>
 
-                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Tour Apply</b></a>
+                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>यात्रा के लिए आवेदन करें</b></a>
                                     </li>
                                 </ul>
 
@@ -62,28 +77,23 @@
                         </div>
                     </nav>
                     <br />
-
                     <fieldset>
-                        <legend>Tour Apply</legend>
+                        <legend>Tour Apply/यात्रा के लिए आवेदन करें</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Employee Code / Name<span style="color: red"> *</span></label>
+                                    <label>
+                                        Employee Code or Name
+                                        <br />
+                                        कर्मचारी कोड या नाम<span style="color: red"> *</span></label>
                                     <asp:TextBox runat="server" placeholder="Enter Your Name" CssClass="form-control" />
-
-
-                                    <%-- <select class="form-control select2">
-                                        <option value=">--Select--">--Select--</option>
-                                        <option value="Bhopal">Bhopal</option>
-                                        <option value="Indore">Indore</option>
-                                        <option value="Bhopal">Dewas</option>
-                                        <option value="Gwalior">Gwalior</option>
-                                    </select>--%>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Tour Type<span style="color: red"> *</span></label>
+                                    <label>
+                                        Tour Type<br />
+                                        यात्रा का प्रकार<span style="color: red"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="0">--Select--</option>
                                         <option value="1">Official</option>
@@ -93,7 +103,10 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Tour Starts From<span style="color: red"> *</span></label>
+                                    <label>
+                                        Tour Starts From<br />
+                                        यात्रा प्रारंभ होती है
+                                        <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value=">--Select--">--Select--</option>
                                         <option value="Bhopal">Bhopal</option>
@@ -105,7 +118,10 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Tour Ends At<span style="color: red"> *</span></label>
+                                    <label>
+                                        Tour Ends At<br />
+                                        यात्रा समाप्त होती है
+                                        <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value=">--Select--">--Select--</option>
                                         <option value="Bhopal">Bhopal</option>
@@ -118,39 +134,29 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>From Date<span style="color: red;"> *</span></label>
+                                    <label>
+                                        From Date<br />
+                                        की तिथि से
+                                        <span style="color: red;">*</span></label>
                                     <input id="Fromdate" type="date" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>To Date<span style="color: red"> *</span></label>
+                                    <label>
+                                        To Date<br />
+                                        तारीख तक<span style="color: red"> *</span></label>
                                     <input id="Todate" type="date" class="form-control" />
                                 </div>
                             </div>
-                            <%--    <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Remark</label>
-                                    <textarea class="form-control" rows="1" style="resize: vertical"></textarea>
-                                </div>
-                            </div>--%>
-                            <%--<div class="col-md-3">
-                                <div class="form-group">
-                                    <label>From<span style="color: red"> *</span></label>
-                                    <select class="form-control select2">
-                                        <option value=">--Select--">--Select--</option>
-                                        <option value="Bhopal">Bhopal</option>
-                                        <option value="Indore">Indore</option>
-                                        <option value="Bhopal">Dewas</option>
-                                        <option value="Gwalior">Gwalior</option>
-                                    </select>
-                                </div>
-                            </div>--%>
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>No. of Days<span style="color: red"> *</span></label>
+                                    <label>
+                                        No. of Days<br />
+                                        दिनों की संख्या
+                                        <span style="color: red">*</span></label>
                                     <asp:TextBox placeholder="Enter No. Of Days" runat="server" CssClass="form-control" />
                                 </div>
                             </div>
@@ -158,28 +164,17 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Tour Purpose</label>
-                                    <textarea class="form-control" rows="2" style="resize: vertical ;"   placeholder="Enter Your Tour Detail"></textarea>
+                                    <label>
+                                        Tour Purpose<br />
+                                        यात्रा का उद्देश्य
+                                   <span style="color: red">*</span>
+                                    </label>
+                                    <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
                                 </div>
                             </div>
-                           <%-- <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Tour For<span style="color: red"> *</span></label>
-                                    <select class="form-control select2">
-                                        <option value=">--Select--">--Select--</option>
-                                        <option value="Official">Official</option>
-                                    </select>
-                                </div>
-                            </div>--%>
-                            <div class="col-md-1 mt-5">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-success btn-block  btn-rounded Alert-Save " onclick="myFunction()">Apply</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1 mt-5">
-                                <div class="form-group">
-                                    <a href="EmpTourApply.aspx" class="btn btn-danger btn-block  btn-rounded">Clear</a>
-                                </div>
+                            <div class="col-md-2 text-center" style="top: 3.3rem;">
+                                <button type="button" class="btn btn-success  btn-rounded Alert-Save " onclick="myFunction()">Apply</button>
+                                <a href="EmpTourApply.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                             </div>
                         </div>
                     </fieldset>
@@ -204,17 +199,35 @@
                         </div>
                         <div class="row">
                             <div class="table-responsive">
-                                <table class="table" id="myTable">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Code/Name</th>
-                                        <th>Tour Type</th>
-                                        <th>From Date</th>
-                                        <th>To Date</th>
-                                        <th>Tour Starts From</th>
-                                        <th>Tour Ends At</th>
-                                        <th>Total Days</th>
-                                    </tr>
+                                <table class="table table-bordered" id="myTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.
+                                            </th>
+                                            <th>Employee Code/Name<br />
+                                                कर्मचारी कोड या नाम
+                                            </th>
+                                            <th>Tour Type<br />
+                                                यात्रा का प्रकार
+                                            </th>
+                                            <th>From Date<br />
+                                                की तिथि से
+                                            </th>
+                                            <th>To Date<br />
+                                                तारीख तक
+                                            </th>
+                                            <th>Tour Starts From<br />
+                                                यात्रा प्रारंभ होती है
+                                            </th>
+                                            <th>Tour Ends At<br />
+                                                यात्रा समाप्त होती है
+                                            </th>
+                                            <th>Total Days<br />
+                                                कुल दिन
+                                            </th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>BI3468-Suresh Bamniya</td>
@@ -225,16 +238,6 @@
                                         <td>Indore</td>
                                         <td>3</td>
                                     </tr>
-                                    <%--<tr>
-                                        <td>2</td>
-                                        <td>AI8857-Ajay Mishra</td>
-                                        <td>official </td>
-                                        <td>14/10/2023</td>
-                                        <td>15/10/2023</td>
-                                        <td>Indore</td>
-                                        <td>Gwalior</td>
-                                        <td>2</td>
-                                    </tr>--%>
                                 </table>
                             </div>
                         </div>
@@ -317,7 +320,10 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-
+    <script>function autoResize(textarea) {
+            textarea.style.height = 'auto'; // Reset height to auto
+            textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
+        }</script>
     <script>
         debugger;
         !function ($) {

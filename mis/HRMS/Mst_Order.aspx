@@ -3,6 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
         /* Style for the textarea */
         #workdescription {
             resize: vertical;
@@ -14,15 +21,17 @@
 
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Order Information </h4>
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
+                <img src="../../img/Circular%20Order.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-7 align-self-center text-end">
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
+                    <li class="breadcrumb-item"><a href="AllOrderDetails.aspx" title="click to go on">Dashboard Display Circulars-Orders</a></li>
                     <li class="breadcrumb-item active">Order Information </li>
                 </ol>
             </div>
@@ -40,74 +49,63 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <%--                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b>Mutual Transfer Application</b></strong></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_MutualTransferApply.aspx">Mutual Transfer Apply</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferDraftApplication.aspx">Print Draft Application or Update Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransLockApplication.aspx">Lock Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferPrintApplication.aspx">Print Application</a></li>
-                                </ul>
-                            </li> --%>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="AllOrderDetails.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                            <li>
+                                <a class="nav-link  font-16 text-white" href="AllOrderDetails.aspx" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="Mst_CircularOrder.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Circulars</b></strong></a>
+                                <a class="nav-link font-16 text-white" href="Mst_CircularOrder.aspx" role="button"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>सर्कुलर्स </b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="Mst_Order.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Orders</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="Mst_Order.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>आदेश</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="Mst_TenderDetail.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Tenders</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="Mst_TenderDetail.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>टेंडर्स </b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="PhotoAlbumDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Photos</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="PhotoAlbumDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>फ़ोटो</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="NewsDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;News</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="NewsDetails.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>समाचार</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="EventInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Events</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="EventInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>इवेंट</b></strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="MessageInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;Messages</b></strong></a>
+                                <a class="nav-link  font-16 text-white" href="MessageInformation.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i>संदेश </b></strong></a>
                             </li>
-
                         </ul>
 
                     </div>
                 </div>
             </nav>
             <br />
-            <br />
             <fieldset>
-                <legend>Important Note </legend>
-                <p class="text-bold font-16">
-                    1):- Please Upload File In PDF Formate.<br />
-                    2):- File Shize Should Be Less Than 400 KB.<br />
-                    3):-Don't upload .doc, .xls, .jpg or any other format file.
-                    <br />
-                    <%--4):-Click here to download PDF Creater software.--%>
-                </p>
+                <legend>Important Note/महत्वपूर्ण लेख </legend>
+                <ul class="font-16">
+                    <li><b>Please Upload File in PDF Formate.</b></li>
+                    <li><b>File Size Shuld be Less Than 400 kb.</b></li>
+                    <li><b>Don't Upload .doc, .xls, .jpg or Any Other Formate File.</b></li>
+                    <li><b>Click Here to Download PDF Crater Software.</b></li>
+                </ul>
             </fieldset>
             <fieldset>
-                <legend>Order Information 
+                <legend>Order Information/आदेश की जानकारी
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Order Number
-                            </label>
+                            <label class="font-bold">
+                                Order Number<br />
+                                आदेश नंबर<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Order Number " />
 
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Subject</label>
+                            <label class="font-bold">
+                                Enter Subject<br />
+                                विषय दर्ज करें<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" rows="1" placeholder="Enter Subject Description" oninput="autoResize(this)"></textarea>
                         </div>
                         <script>
@@ -122,9 +120,10 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
+                            <label class="font-bold">
                                 Order Category
-                            </label>
+                                <br />
+                                आदेश श्रेणी<span style="color: red">*</span></label>
                             <select id="" name="circular-category" class="form-control">
                                 <option value="Academic">Select</option>
                                 <option value="Academic">Academic</option>
@@ -211,9 +210,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Isseued By
-                            </label>
+                            <label class="font-bold">
+                                Isseued By<br />
+                                जारीकर्ता<span style="color: red">*</span></label>
                             <select id="tender_issued_by" name="tender_issued_by" class="form-control">
                                 <option value="School Education Department">School Education Department</option>
                                 <option value="Directorate of Public Instruction">Directorate of Public Instruction</option>
@@ -232,16 +231,12 @@
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class="row">
-
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                From Whom
-                            </label>
+                            <label class="font-bold">
+                                From Whom<br />
+                                जिस से<span style="color: red">*</span></label>
                             <select id="for-whom" name="for-whom" class="form-control">
                                 <option value="Academic">Select</option>
                                 <option value="All">All</option>
@@ -254,9 +249,9 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Select Priority
-                            </label>
+                            <label class="font-bold">
+                                Select Priority<br />
+                                प्राथमिकता चुनें<span style="color: red">*</span></label>
                             <select id="" name="for-whom" class="form-control">
                                 <option value="Academic">Select</option>
                                 <option value="All">Normal</option>
@@ -269,21 +264,19 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Issue Date 
-
-                            </label>
+                            <label class="font-bold">
+                                Issue Date
+                                <br />
+                                जारी करने की तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" />
                         </div>
                     </div>
-
-
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Expiry Date 
-
-                            </label>
+                            <label class="font-bold">
+                                Expiry Date
+                                <br />
+                                समाप्ति तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" />
                         </div>
                     </div>
@@ -293,95 +286,125 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Upload File</label>
+                            <label class="font-bold">
+                                Upload File   
+                                <br />
+                                फ़ाइल अपलोड करें<span style="color: red">*</span></label>
                             <input type="file" class="form-control" />
 
                         </div>
                     </div>
 
 
-                    <div class="col-md-3" style="margin-top: 30px;">
+                    <div class="col-md-3" style="margin-top: 3rem;">
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
                             <a href="Mst_Order.aspx" class="btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
-
-
                 </div>
-
-
-
             </fieldset>
             <fieldset id="vacaniesDetail">
                 <legend>Order Detail
                 </legend>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table  table-hover table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Sr.No</th>
-                                        <th>Order-ID</th>
-                                        <th>Order-No</th>
-                                        <th>Issue Date</th>
-                                        <th>Expiry Date</th>
-                                        <th>Order Document</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>F11/8/2024/नियम/चार</td>
-                                        <td>4/4/2024</td>
-                                        <td>6/8/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>6</td>
-                                        <td>F14/9/2024/नियम/चार</td>
-                                        <td>14/4/2024</td>
-                                        <td>16/8/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <!-- Add more rows if needed -->
-                                    <tr hidden id="1">
-                                        <td>3</td>
-                                        <td>10</td>
-                                        <td>F22/12/2024/नियम/चार</td>
-                                        <td>22/4/2024</td>
-                                        <td>24/8/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr hidden id="2">
-                                        <td>4</td>
-                                        <td>15</td>
-                                        <td>F29/12/2024/नियम/चार</td>
-                                        <td>29/4/2024</td>
-                                        <td>1/9/2024</td>
-                                        <td><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        <td><a href="#"><i class="fa fa-edit"></i></a>|<a href="#"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table  table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No         
+                                            <br />
+                                                सरल क्र.</th>
+                                            <th>Order-ID      
+                                            <br />
+                                                आदेश आई.डी.</th>
+                                            <th>Order-No      
+                                            <br />
+                                                आदेश क्र.</th>
+                                            <th>Issue Date    
+                                            <br />
+                                                जारी करने की तिथि</th>
+                                            <th>Expiry Date   
+                                            <br />
+                                                समाप्ति तिथि</th>
+                                            <th>Order Document
+                                            <br />
+                                                आदेश दस्तावेज़ </th>
+                                            <th>Action        
+                                            <br />
+                                                कार्रवाई   </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>F11/8/2024/नियम/चार</td>
+                                            <td>4/4/2024</td>
+                                            <td>6/8/2024</td>
+                                            <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                            <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>6</td>
+                                            <td>F14/9/2024/नियम/चार</td>
+                                            <td>14/4/2024</td>
+                                            <td>16/8/2024</td>
+                                            <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                            <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                        </tr>
+                                        <!-- Add more rows if needed -->
+                                        <tr hidden id="1">
+                                            <td>3</td>
+                                            <td>10</td>
+                                            <td>F22/12/2024/नियम/चार</td>
+                                            <td>22/4/2024</td>
+                                            <td>24/8/2024</td>
+                                            <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                            <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                        </tr>
+                                        <tr hidden id="2">
+                                            <td>4</td>
+                                            <td>15</td>
+                                            <td>F29/12/2024/नियम/चार</td>
+                                            <td>29/4/2024</td>
+                                            <td>1/9/2024</td>
+                                            <td><a href="#"><i class="fa fa-eye"></i></a></td>
+                                            <td><a href="#"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-trash"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </fieldset>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <button id="viewMoreBtn" class="btn btn-success" type="button" value="View More" onclick="myFunction()">View More</button>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button id="viewMoreBtn" class="btn btn-success" type="button" value="View More" onclick="myFunction()">View More</button>
+
+                    </div>
 
                 </div>
-
-            </div>
+            </fieldset>
         </div>
     </div>
     <script>

@@ -19,6 +19,11 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
     {
         fdSetSummaryReport.Visible=false;
         fdSetPendingForActin.Visible = true;
+        if (fdSetPendingForActin.Visible == true)
+        {
+            ReportOfPendingComplaint.Visible = true;
+        }
+
         BeforeClickInPendingComplain.Visible=true;
         ddlDistrict.SelectedIndex=6;
     }
@@ -28,6 +33,10 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
         fdSetSummaryReport.Visible=false;
         BeforeClickInRejectComplain.Visible=true;
         ddlRejectCase.SelectedIndex=6;
+        if (fdSetRejectedGrievances.Visible == true)
+        {
+            ReportOfRejectedDetails.Visible = true;
+        }
     }
     protected void DisposedGrievances_Click(object sender, EventArgs e)
     {
@@ -35,6 +44,10 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
         BeforeClickInDisposeCase.Visible = true;
         fdSetSummaryReport.Visible=false;
         ddlDisposeCase.SelectedIndex=6;
+        if (fdSetDisposedGrievances.Visible == true)
+        {
+            ReportOfDisposedDetails.Visible = true;
+        }
     }
     protected void BtndistrictWiseData_Click(object sender, EventArgs e)
     {
@@ -46,6 +59,7 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
             onClicktblAlirajPur.Visible=false;
             BeforeClickInPendingComplain.Visible=false;
             fdSetPendingForActin.Visible=true;
+           
         }
         if (ddlDistrict.SelectedValue=="2")
         {
@@ -54,7 +68,7 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
             onClicktblAlirajPur.Visible=true;
             fdSetPendingForActin.Visible=true;
             BeforeClickInPendingComplain.Visible=false;
-
+           
         }
         if (ddlDistrict.SelectedValue=="3")
         {
@@ -132,6 +146,10 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
         fdSetPendingForActin.Visible = true;
         BeforeClickInPendingComplain.Visible=true;
         ddlDistrict.SelectedIndex=9;
+        if (fdSetPendingForActin.Visible == true)
+        {
+            ReportOfPendingComplaint.Visible = true;
+        }
     }
     protected void PendingForActinAlirajpur_Click(object sender, EventArgs e)
     {
@@ -139,48 +157,47 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
         fdSetPendingForActin.Visible = true;
         BeforeClickInPendingComplain.Visible=true;
         ddlDistrict.SelectedIndex=2;
+        if (fdSetPendingForActin.Visible == true)
+        {
+            ReportOfPendingComplaint.Visible = true;
+        }
     }
-    //protected void PendingForActinAnuppur_Click(object sender, EventArgs e)
-    //{
-    //    fdSetSummaryReport.Visible=false;
-    //    fdSetPendingForActin.Visible = true;
-    //    BeforeClickInPendingComplain.Visible=true;
-    //    ddlDistrict.SelectedIndex=3;
-    //}
+    
     protected void RejectedGrievancesBhopal_Click(object sender, EventArgs e)
     {
         fdSetRejectedGrievances.Visible = true;
         fdSetSummaryReport.Visible=false;
         BeforeClickInRejectComplain.Visible=true;
         ddlRejectCase.SelectedIndex=9;
+        if (fdSetRejectedGrievances.Visible == true)
+        {
+            ReportOfRejectedDetails.Visible = true;
+        }
+
     }
-    //protected void RejectedGrievancesDindori_Click(object sender, EventArgs e)
-    //{
-    //    fdSetRejectedGrievances.Visible = true;
-    //    fdSetSummaryReport.Visible=false;
-    //    BeforeClickInRejectComplain.Visible=true;
-    //    ddlRejectCase.SelectedIndex=17;
-    //}
+   
     protected void RejectedGrievancesAlirajpur_Click(object sender, EventArgs e)
     {
         fdSetRejectedGrievances.Visible = true;
         fdSetSummaryReport.Visible=false;
         BeforeClickInRejectComplain.Visible=true;
         ddlRejectCase.SelectedIndex=2;
+        if (fdSetRejectedGrievances.Visible == true)
+        {
+            ReportOfRejectedDetails.Visible = true;
+        }
     }
-    //protected void RejectedGrievancesAnuppur_Click(object sender, EventArgs e)
-    //{
-    //    fdSetRejectedGrievances.Visible = true;
-    //    fdSetSummaryReport.Visible=false;
-    //    BeforeClickInRejectComplain.Visible=true;
-    //    ddlRejectCase.SelectedIndex=3;
-    //}
+   
     protected void DisposedGrievancesBhopal_Click(object sender, EventArgs e)
     {
         fdSetDisposedGrievances.Visible = true;
         BeforeClickInDisposeCase.Visible = true;
         fdSetSummaryReport.Visible=false;
-        ddlDisposeCase.SelectedIndex=6;
+        ddlDisposeCase.SelectedIndex=9;
+        if (fdSetDisposedGrievances.Visible == true)
+        {
+            ReportOfDisposedDetails.Visible = true;
+        }
     }
    
     protected void DisposedGrievancesAlirajpur_Click(object sender, EventArgs e)
@@ -189,27 +206,10 @@ public partial class mis_HRMS_DistrictWiseProcessReport : System.Web.UI.Page
         BeforeClickInDisposeCase.Visible = true;
         fdSetSummaryReport.Visible=false;
         ddlDisposeCase.SelectedIndex=2;
+        if (fdSetDisposedGrievances.Visible == true)
+        {
+            ReportOfDisposedDetails.Visible = true;
+        }
     }
-    //protected void DisposedGrievancesAnuppur_Click(object sender, EventArgs e)
-    //{
-    //    fdSetDisposedGrievances.Visible = true;
-    //    BeforeClickInDisposeCase.Visible = true;
-    //    fdSetSummaryReport.Visible=false;
-    //    ddlDisposeCase.SelectedIndex=3;
-
-    //}
-    //protected void PendingForActinDindori_Click(object sender, EventArgs e)
-    //{
-    //    fdSetSummaryReport.Visible=false;
-    //    fdSetPendingForActin.Visible = true;
-    //    BeforeClickInPendingComplain.Visible=true;
-    //    ddlDistrict.SelectedIndex=17;
-    //}
-    //protected void DisposedGrievancesDindori_Click(object sender, EventArgs e)
-    //{
-    //    fdSetDisposedGrievances.Visible = true;
-    //    BeforeClickInDisposeCase.Visible = true;
-    //    fdSetSummaryReport.Visible=false;
-    //    ddlDisposeCase.SelectedIndex=17;
-    //}
+   
 }

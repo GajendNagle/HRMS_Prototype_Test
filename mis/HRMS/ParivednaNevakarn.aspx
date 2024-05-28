@@ -29,7 +29,8 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active">Grievance Management</li>
+                        <li class="breadcrumb-item active">Grievance Management System </li>
+
                     </ol>
                 </div>
             </div>
@@ -52,9 +53,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
-                                        <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
-                                        <li><a class="dropdown-item" href="PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
+                                        <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">Complaint Filed</a></li>
+                                        <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">Complaint Tracking Status</a></li>
+                                        <li><a class="dropdown-item" href="PrintComplaint.aspx">Print Complaint</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -66,26 +67,19 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
                                     <ul class="dropdown-menu">
-
-                                        <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
-                                        <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
-
-                                        <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
-                                        <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
-                                        <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">जिला वार प्रगति रिपोर्ट</a></li>
-                                        <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">सेक्शनवार लंबित रिपोर्ट</a></li>
+                                        <li><a class="dropdown-item" href="DisposedGrievances.aspx">List of Resolved Complaints</a></li>
+                                        <li><a class="dropdown-item" href="RejectedGrievances.aspx">List of Rejected Complaints</a></li>
+                                        <li><a class="dropdown-item" href="ForwardedGrievances .aspx">District Wise Details of Forwarded Complaints</a></li>
+                                        <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">Details of Complaints forwarded from CPI</a></li>
+                                        <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">District Wise Progress Report</a></li>
+                                        <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">Section Wise Pending Report</a></li>
                                     </ul>
                                 </li>
-
                             </ul>
-
-
                         </div>
                     </div>
                 </nav>
                 <br />
-                <br />
-
                 <fieldset>
                     <legend>परिवेदना निवारण
                     </legend>

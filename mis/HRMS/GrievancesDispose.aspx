@@ -6,6 +6,14 @@
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        th {
+            white-space: nowrap;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -31,8 +39,9 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                    <li class="breadcrumb-item"><a href="ParivednaNevakarn.aspx" title="click to go on">Grievance Management System</a></li>
 
-                    <li class="breadcrumb-item active">Grievance Application Status</li>
+                    <li class="breadcrumb-item active">Grievances Dispose</li>
                 </ol>
             </div>
         </div>
@@ -48,67 +57,50 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-    <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-    <li class="nav-item dropdown">
-
-      <%--  <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>शिकायत पंजीयन</></strong></a>--%>
-         <%-- <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत पंजीयन </b></a>--%>
-
-
-          <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i> शिकायत पंजीयन</b></strong></a>
-        <ul class="dropdown-menu">
-
-            <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
-
-            <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
-            <li><a class="dropdown-item" href="PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
-
-        </ul>
-       
-    </li>
-  <%--  <a class="nav-link  text-white " href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold">शिकायत प्रोसेसिंग </b></a>--%>
-
-
-       <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत प्रोसेसिंग </b></a>
-  <%--  <a class="nav-link  text-white " href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold">शिकायत निराकरण </b></a>--%>
-
-
-
-     <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  शिकायत निराकरण </b></a>
-
-
-
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>  रिपोर्ट</b> </a>
-        
-         <ul class="dropdown-menu">
-
-       <li><a class="dropdown-item" href="DisposedGrievances.aspx">निराकृत शिकायतों की सूची</a></li>
-       <li><a class="dropdown-item" href="RejectedGrievances.aspx">अस्वीकृत शिकायतों की सूची</a></li>
-
-       <li><a class="dropdown-item" href="ForwardedGrievances .aspx">जिलेवार अग्रेषित शिकायतों का विवरण</a></li>
-       <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">CPI से अग्रेषित शिकायतों का विवरण</a></li>
-       <%-- <li><a class="dropdown-item" href="#">शिकायत प्रिंट करे</a></li>--%>
-   </ul>
-    </li>
-</ul>
-
-
-
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li>
+                                <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">Complaint Filed</a></li>
+                                    <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">Complaint Tracking Status</a></li>
+                                    <li><a class="dropdown-item" href="PrintComplaint.aspx">Print Complaint</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
+                            </li>
+                            <li>
+                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="DisposedGrievances.aspx">List of Resolved Complaints</a></li>
+                                    <li><a class="dropdown-item" href="RejectedGrievances.aspx">List of Rejected Complaints</a></li>
+                                    <li><a class="dropdown-item" href="ForwardedGrievances .aspx">District Wise Details of Forwarded Complaints</a></li>
+                                    <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">Details of Complaints forwarded from CPI</a></li>
+                                    <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">District Wise Progress Report</a></li>
+                                    <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">Section Wise Pending Report</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
             <br />
-            <h3 class="fw-bold justify-content-center" style="position: relative; left: 500PX; top: 10PX; color: brown;">निराकरण : Dispose</h3>
+            <%--<h3 class="fw-bold justify-content-center" style="position: relative; left: 500PX; top: 10PX; color: brown;">निराकरण : Dispose</h3>--%>
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>Grievances Dispose</legend>
+                    <legend>Grievances Dispose/शिकायतों का निपटान</legend>
                     <div class="row">
 
-                        <div class="col-md-4 ">
-                            <label>District<span style="color: red">*</span></label>
+                        <div class="col-md-3 ">
+                            <label class="font-bold">
+                                District<br />
+                                जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
                                 <asp:ListItem>--select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -121,8 +113,10 @@
                                 <asp:ListItem>Datia</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-4 ">
-                            <label>Authority  Name<span style="color: red">*</span></label>
+                        <div class="col-md-3 ">
+                            <label class="font-bold">
+                                Section  Name<br />
+                                अनुभाग का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
                                 <asp:ListItem>--select--</asp:ListItem>
                                 <asp:ListItem>RMSA</asp:ListItem>
@@ -148,7 +142,7 @@
 
 
 
-                        <div class="col-md-4 text-center mt-4" style="position: relative; top: 10px;">
+                        <div class="col-md-4 mt-5" style="position: relative; top: 1px; bottom: 10px;">
                             <div class="form-group">
                                 <asp:Button runat="server" type="button" class="btn btn-success btn-rounded" OnClick="Unnamed_Click" Text=" Search" />
 
@@ -161,7 +155,7 @@
             </div>
             <div id="show2" runat="server" visible="false">
                 <fieldset>
-                    <legend>निराकरण : Dispose Action</legend>
+                    <legend>Dispose Action Details</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
                             <div class="form-group">
@@ -180,40 +174,52 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <table id="Table4" class="table table-bordered table-responsive-lg text-center " runat="server">
-                                    <thead>
-                                        <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                            <th>S.No.</th>
-                                            <th>Grievance No.</th>
-                                            <th>Employee Name</th>
-                                            <th>Type</th>
-                                            <th>Subject</th>
-                                            <th>Forwarded Date</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
-                                            <%-- <th>Application Forword</th>--%>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr valign="middle">
-                                            <td>1</td>
-                                            <td>1002</td>
-                                            <td>Dinanath Yadav</td>
-                                            <td>Establishment Related</td>
-                                            <td>Promotions</td>
-                                            <td>04/08/2020</td>
-                                            <td>DEO,KHARGONE</td>
-                                            <td>
-                                                <asp:CheckBox runat="server" ID="chakbox" OnCheckedChanged="chakbox_CheckedChanged" AutoPostBack="true" Style="border-color: #005b5c;" /></td>
-                                            <%-- <td>
+                                <div class="table-responsive">
+
+
+                                    <table id="Table4" class="table table-bordered  text-center " runat="server">
+                                        <thead>
+                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                                <th>S.No.<br />सरल क्र.</th>
+                                                <th>Grievance No.<br/>शिकायत क्र.</th>
+                                                <th>Employee Name<br/>कर्मचारी का नाम</th>
+                                                <th>Type<br />
+                                                    प्रकार
+                                                </th>
+                                                <th>Subject<br/>
+                                                    विषय
+                                                        </th>
+                                                <th>Forwarded Date<br/>
+                                                    अग्रेषित तिथि
+                                                                  </th>
+                                                <th>Status<br />स्थिति</th>
+                                                <th>Action <br />
+                                                    कार्रवाई
+                                                </th>
+                                                <%-- <th>Application Forword</th>--%>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr valign="middle">
+                                                <td>1</td>
+                                                <td>1002</td>
+                                                <td>Dinanath Yadav</td>
+                                                <td>Establishment Related</td>
+                                                <td>Promotions</td>
+                                                <td>04/08/2020</td>
+                                                <td>DEO,KHARGONE</td>
+                                                <td>
+                                                    <asp:CheckBox runat="server" ID="chakbox" OnCheckedChanged="chakbox_CheckedChanged" AutoPostBack="true" Style="border-color: #005b5c;" /></td>
+                                                <%-- <td>
                                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                     Forword
                                                     
                                                 </button>--%>
-                                            <%--</td>--%>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                <%--</td>--%>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -223,14 +229,15 @@
                 <label class="col-md-3 fw-bold color_black fs-4"><span style="color: red">Grievances No :- </span>1002</label>
                 <br />
                 <fieldset>
-                    <legend>Grievances Dispose/Reject</legend>
+                    <legend>Grievances Dispose or Reject/शिकायतों का निपटारा करें या अस्वीकार करें</legend>
                     <div class="row">
                         <%--  <div class="col-md-3 fw-bold color_black fs-4">
                         <label>Grievances No :<span style="color: red">*</span></label>
                         <asp:TextBox runat="server" ID="TXTGrievances" CssClass="form-control text-center fw-bold " placeholder="1002"></asp:TextBox>
                     </div>--%>
-                        <div class="col-md-4 fw-bold color_black ">
-                            <label>Disposal Status Type<span style="color: red">*</span></label>
+                        <div class="col-md-3 fw-bold color_black ">
+                            <label class="font-bold">Disposal Status Type<br />
+                                निपटान स्थिति प्रकार<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="ddlDisposal" CssClass="form-control ">
                                 <asp:ListItem>--select--</asp:ListItem>
                                 <asp:ListItem>Disposed</asp:ListItem>
@@ -238,34 +245,30 @@
                                 <asp:ListItem>Objected</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-8 fw-bold color_black ">
-                            <label>Type Note Here :<span style="color: red">*</span></label>
+                        <div class="col-md-3 fw-bold color_black ">
+                            <label class="font-bold">Type Note Here <br />
+                                यहां नोट टाइप करें<span style="color: red">*</span></label>
                             <textarea class="form-control   fw-bold" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                         </div>
-                    </div>
-
-
-                    <div class="row mt-3">
-                        <div class="col-md-4 fw-bold color_black">
-                            <label>File upload<span style="color: red">*</span></label>
+                        <div class="col-md-3 fw-bold color_black">
+                            <label class="font-bold">File upload<br />
+                                फाइल अपलोड<span style="color: red">*</span></label>
                             <asp:FileUpload runat="server" CssClass="form-control  " ID="file" />
                             <p class="justify-content-end  fw-bold" style="position: relative; font-size: 15px">
 
-                                <span style="color: red; font-size: 15px">documents in pdf format  size :150 kb</span>
+                                <span style="color: red; font-size: 14px">Documents In Pdf Format  Size:150 kb</span>
                             </p>
                         </div>
-
-
-
-
-                        <div class="col-md-3 text-center mt-4 justify-content-center">
+                        <div class="col-md-3 text-center mt-5 justify-content-center">
                             <div class="form-group">
                                 <button type="button" class="Alert-Save btn btn-success btn-rounded  ">
-                                    Dispose it
+                                    Dispose It
                                 </button>
                                 <a href="GrievancesDispose.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mt-1">
                     </div>
 
 
