@@ -24,7 +24,7 @@
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
                         <%--<li class="breadcrumb-item active">Cancel Transfer Report</li>--%>
-                        <li class="breadcrumb-item active"><a href="Trn_CancleTransferOrderApplication.aspx" title="click to go on">Cancel Transfer Order</a></li>
+                        <li class="breadcrumb-item"><a href="Trn_CancleTransferOrderApplication.aspx" title="click to go on">Cancel Transfer Order</a></li>
                         <li class="breadcrumb-item active">Canceled Transfer Report</li>
                     </ol>
                 </div>
@@ -43,9 +43,10 @@
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                                 <a class="nav-link  text-white " href="Trn_CancleTransferOrderApplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                <a class="nav-link  text-white " href="Trn_CancelTransferOrder.aspx" role="button"><b class="font-16 font-bold">Cancel Transfer Order</b></a>
-                                <a class="nav-link  text-white " href="CanceledTransferOrderPrint.aspx" role="button"><b class="font-16 font-bold">Print Cancel Transfer Order</b></a>
-                                <a class="nav-link text-white" href="Rpt_CancelTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
+                                <a class="nav-link  text-white " href="Trn_CancelTransferOrder.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
+                                    Cancel Transfer Order</b></a>
+                                <a class="nav-link  text-white " href="CanceledTransferOrderPrint.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Print Cancel Transfer Order</b></a>
+                                <a class="nav-link  text-white " href="Rpt_CancelTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
                             </ul>
 
                         </div>

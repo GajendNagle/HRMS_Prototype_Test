@@ -6,7 +6,9 @@
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">पारस्परिक स्थानांतरण आवेदन</p>
@@ -26,35 +28,36 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar">
+
+            <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b>Mutual Transfer Application</b></strong></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_MutualTransferApply.aspx">Mutual Transfer Apply</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransferDraftApplication.aspx">Print Draft Application or Update Application</a></li>
-                                    <li><a class="dropdown-item" href="MutualTransLockApplication.aspx">Lock Application</a></li>
-                                    <%-- <li><a class="dropdown-item" href="MutualTransferPrintApplication.aspx">Print Application</a></li>--%>
-                                </ul>
-                            </li>
-                            <%--<li class="nav-item">
-                                 <a class="nav-link text-dark font-16 text-white" href="MutalTransferSelfVerification.aspx" role="button"  aria-expanded="false"><strong><b>Mutual Transfer Self Verification</b></strong></a>
-                            </li>--%>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark font-16 text-white" href="MutualTransferApplicationStatus.aspx" role="button" aria-expanded="false"><strong><b>Mutual Transfer Application Status</b></strong></a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link  text-white " href="Trn_MutualTransferApplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle  font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>
+                                        Mutual Transfer Application</b></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Trn_MutualTransferApply.aspx">Mutual Transfer Apply</a></li>
+                                        <li><a class="dropdown-item" href="MutualTransferDraftApplication.aspx">Print Draft Application or Update Application</a></li>
+                                        <li><a class="dropdown-item" href="MutualTransLockApplication.aspx">Lock Application</a></li>
+                                    </ul>
+                                </li>
+                                <a class="nav-link  text-white " href="MutualTransferApplicationStatus.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Mutual Transfer Application Status</b></a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
+
+
+
+
             <br />
             <br />
             <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 20%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;पारस्परिक स्थानान्तरण दिशा निर्देश:</h4>
@@ -73,33 +76,7 @@
 
 
         </div>
-        <!-- Button trigger modal -->
-        <%--   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel"><strong><b>पारस्परिक स्थानान्तरण  दिशा निर्देश:-</b></strong><br />
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                1 आवेदक सभी जानकारियाँ सही-सही और सावधानीपूर्वक प्रविष्ट करें।<br />
-                                2 आवेदन पत्र का ड्राफ्ट प्रिंट निकालकर उस पर हस्ताक्षर कर अपलोड करना होगा तदुपरान्त आवेदन स्वतः लॉक हो जाएगा। ।।<br />
-                                3 आवेदन को लॉक करने / स्व-घोषणा पत्र अपलोड करने के उपरांत किसी भी प्रकार का संशोधन स्वीकार नहीं किया जाएगा यदि आपके द्वारा अंतिम तिधि तक स्व-घोषणा पत्र अपलोड नहीं किया जाता है तो आवेदन रद्द किया जा सकेगा।<br />
-                                4 पारस्परिक आवेदन में पद और विषय समान होना आवश्यक है।
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>--%>
+
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

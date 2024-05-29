@@ -38,14 +38,14 @@
                             </li>
                             <li>
 
-                                <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee Joining In Office
+                                <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Add Employee to Office
                                 </b></a>
                             </li>
 
                             <li>
 
                                 <a class="nav-link  text-white " href="Rpt_EmployeeJoining.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                    Report
+                                   Report 
                                 </b></a>
 
                             </li>

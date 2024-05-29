@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space: nowrap;
+        }
+
         .profileimage {
             display: block;
             height: 6.2rem;
@@ -43,14 +47,12 @@
                     </u>
                 </p>
             </div>
-            <%-- <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">अनुकंपा नियुक्ति प्रबंधन प्रणाली</p>
-        </div>--%>
             <div class="col-md-7 align-self-center">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment </a></li>
                         <li class="breadcrumb-item active">Register Application For Compassionate Appointment</li>
                     </ol>
                 </div>
@@ -68,10 +70,8 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning  font-16 text-white" href="../Transaction/DisposeApplicatonCaseForJD.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="../Transaction/DisposeApplicatonCaseForJD.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                                 </li>
 
                                 <li class="nav-item">
@@ -93,7 +93,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning font-16 text-white" href="Trn_ProcessApplicationListJD.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="Trn_ProcessApplicationListJD.aspx" role="button" aria-expanded="false"><strong><b>&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
 
                                 </li>
                                 <li class="nav-item">
@@ -108,30 +108,19 @@
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                                 </a>
                                                 <ul class="dropdown-menu">
-
                                                     <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
+                                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
                                                     <li><a class="dropdown-item" href="../HRMS/NocReportJD.aspx">NOC Report</a></li>
-
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                             </ul>
-
-                            <%--<li class="nav-item">
-                                    <a class="nav-link text-warning font-16 text-white" href="Trn_DeoCompassionateApproval.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> कर्मचारी
- के लिए आवेदन पंजीकृत /सुधार करें</b></strong></a>
-                                </li>
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link text-warning font-16 text-white" href="CompassionateAppointmentPrintApplication.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति प्रिंट आवेदन</b></strong></a>
-                                </li>--%>
                         </div>
                     </div>
                 </nav>
@@ -141,18 +130,13 @@
 
                 <%-- My Code Start--%>
                 <fieldset id="divoftextBox" runat="server">
-                    <legend>अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</legend>
-                    <div class="row mt-3 ms-2" >
+                    <legend>Register / Correct Application for Compassionate Appointment
+                        <br />
+                        अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</legend>
+                    <div class="row mt-3 ms-2">
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label class="fw-bold">कर्मचारी आईडी प्रविष्ट करें<span style="color: red"></span></label>
-                                <%-- <span class="fa-pull-right">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
-                                    ErrorMessage="कर्मचारी आईडी अनिवार्य है।" ForeColor="Red"
-                                    Text="<i class='fa fa-exclamation-circle' title='कर्मचारी आईडी अनिवार्य है। !'></i>"
-                                    ControlToValidate="txtEmployeeId" Display="Dynamic" runat="server">
-                                </asp:RequiredFieldValidator>
-                            </span>--%>
                                 <asp:TextBox runat="server" ID="txtEmployeeId" CssClass="form-control" placeholder="Search" AutoComplete="off">
                             
                                 </asp:TextBox>
@@ -178,29 +162,38 @@
                                     <div id="navpills-1" class="tab-pane active">
                                         <div class="row">
                                             <fieldset>
-                                                <legend>दिवंगत अधिकारी / कर्मचारी का विवरण</legend>
+                                                <legend>Details of deceased officer/employee<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का विवरण</legend>
                                                 <div class="row">
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>दिवंगत अधिकारी / कर्मचारी कोड <span style="color: red">*</span></label>
+                                                            <label>
+                                                                Deceased Officer/Employee Code<br />
+                                                                दिवंगत अधिकारी / कर्मचारी कोड <span style="color: red">*</span></label>
                                                             <input placeholder="दिवंगत अधिकारी / कर्मचारी कोड" id="Code" readonly name="ename" value="AU5693" type="text" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>दिवंगत शासकीय सेवक का पूर्ण नाम<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Full name of deceased government servant<br />
+                                                                दिवंगत शासकीय सेवक का पूर्ण नाम<span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname" value="Rohan Singh" readonly />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-2">
                                                         <div class="form-group">
-                                                            <label>लिंग<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Gender<br />
+                                                                लिंग<span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname1" value="Male" readonly />
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>जाति<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Caste<br />
+                                                                जाति<span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname2" value="OBC" readonly />
                                                         </div>
                                                     </div>
@@ -208,28 +201,36 @@
                                                 <div class="row">
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>अंतिम पोस्टिंग जिला का चयन करे<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Select Last Posting District<br />
+                                                                अंतिम पोस्टिंग जिला का चयन करे<span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname3" value="Bhopal" readonly />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>दिवंगत अधिकारी / कर्मचारी कैडर<span style="color: red" id="ddlcader">*</span></label>
+                                                            <label>
+                                                                <br />
+                                                                दिवंगत अधिकारी / कर्मचारी कैडर<span style="color: red" id="ddlcader">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname4" value="Class 3" readonly />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>दिवंगत अधिकारी/कर्मचारी पदनाम<span style="color: red">*</span></label>
+                                                            <label>
+                                                                <br />
+                                                                दिवंगत अधिकारी / कर्मचारी पदनाम<span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname5" value="Teacher (UDT)" readonly />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>मृत्यु दिनांक (दिनांक DD/MM/YYYY के प्रारूप मे दर्ज करे) <span style="color: red">*</span></label>
+                                                            <label>
+                                                                Death Date<br />
+                                                                मृत्यु दिनांक<span style="color: red">*</span></label>
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" placeholder=" मृत्यु दिनांक (दिनांक DD/MM/YYYY के प्रारूप मे दर्ज करे) ." />
                                                         </div>
                                                     </div>
@@ -238,14 +239,18 @@
 
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>मृत्यु का कारण <span style="color: red">*</span></label>
+                                                            <label>
+                                                                Cause of Death<br />
+                                                                मृत्यु का कारण <span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="मृत्यु का कारण" id="txtname6" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>परिवार के जीवित सदस्यों की संख्या <span style="color: red">*</span></label>
+                                                            <label>
+                                                                Number of Surviving Family Members<br />
+                                                                परिवार के जीवित सदस्यों की संख्या <span style="color: red">*</span></label>
                                                             <select class="form-control select2" id="ddlFamelyMemberCount">
                                                                 <option value="----">--Select--</option>
                                                                 <option value="----">1</option>
@@ -264,7 +269,10 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>विभाग का नाम<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Department Name
+                                                                <br />
+                                                                विभाग का नाम<span style="color: red">*</span></label>
                                                             <input name="ename" id="DOB" type="text" class="form-control" autocomplete="off" readonly="readonly" value="Education" />
                                                         </div>
                                                     </div>
@@ -272,17 +280,23 @@
                                                 </div>
                                             </fieldset>
                                             <fieldset>
-                                                <legend>दिवंगत लोकसेवक/ शिक्षक के परिवार के सभी सदस्यों की जानकारी दर्ज करें</legend>
+                                                <legend>Enter Information About all the Family Members of the Deceased Public Servant / Teacher
+                                                    <br />
+                                                    दिवंगत लोकसेवक / शिक्षक के परिवार के सभी सदस्यों की जानकारी दर्ज करें</legend>
                                                 <div class="row">
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>सदस्य का नाम<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Member Name<br />
+                                                                सदस्य का नाम<span style="color: red">*</span></label>
                                                             <input type="text" class="form-control" autocomplete="off" placeholder="सदस्य का नाम" id="Name" />
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
+                                                                Relation With Deceased
+                                                                <br />
                                                                 दिवंगत के साथ संबंध<span style="color: red">*</span></label>
                                                             <select class="form-control select2" id="ddlRelation">
                                                                 <option value="">--Select--</option>
@@ -294,13 +308,18 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>व्यवसाय<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Business<br />
+                                                                व्यवसाय<span style="color: red">*</span></label>
                                                             <input type="text" class="form-control" autocomplete="off" placeholder="व्यवसाय" id="TxtWorkStatus" />
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>लिंग </label>
+                                                            <label>
+                                                                Gender<br />
+                                                                लिंग
+                                                            </label>
                                                             <select class="form-control select2" id="ddlgender">
                                                                 <option value="">--Select--</option>
                                                                 <option value="Male">Male</option>
@@ -314,7 +333,7 @@
 
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>जन्म दिनांक<span style="color: red">*</span></label>
+                                                            <label>Date of Birth / जन्म दिनांक<span style="color: red">*</span></label>
                                                             <input type="date" class="form-control" autocomplete="off" placeholder="जन्म दिनांक" id="date" />
                                                         </div>
                                                     </div>
@@ -323,7 +342,7 @@
 
 
 
-                                                    <div class="col-md-2 mt-4">
+                                                    <div class="col-md-2 ">
                                                         <div class="form-group">
                                                             <input type="button" id="btnAdd" class="btn btn-info btn-rounded btn-block" value="जोडे़" onclick="AddRow();" />
                                                         </div>
@@ -332,19 +351,18 @@
                                                 <div class="row form-group">
                                                     <div class="col-md-12">
                                                         <div class="table-responsive">
-                                                            <table class="table" id="mytable" style="display: none;">
+                                                            <table class="table table-bordered text-center" id="mytable" style="display: none;">
                                                                 <tbody>
-                                                                    <tr>
+                                                                    <tr class="card-header">
                                                                         <th>Sr.No./सरल क्र.</th>
                                                                         <th>CheckBox</th>
-                                                                        <th>सदस्य का नाम</th>
-                                                                        <th>दिवंगत के साथ संबंध</th>
-                                                                        <th>व्यवसाय</th>
-                                                                        <th>लिंग</th>
-                                                                        <th>जन्म दिनांक</th>
+                                                                        <th>Member Name / सदस्य का नाम</th>
+                                                                        <th>Relation With Deceased / दिवंगत के साथ संबंध</th>
+                                                                        <th>Business / व्यवसाय</th>
+                                                                        <th>Gender / लिंग</th>
+                                                                        <th>Date of Birth / जन्म दिनांक</th>
                                                                         <th>Action</th>
                                                                     </tr>
-
                                                                 </tbody>
                                                             </table>
                                                         </div>
@@ -352,19 +370,25 @@
                                                 </div>
                                             </fieldset>
                                             <fieldset>
-                                                <legend>परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
+                                                <legend>Details of the Family Member Who has Applied for Appointment<br />
+                                                    परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
                                                 <div class="row">
                                                     <div class="12">
                                                         <div class="row">
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4">
                                                                 <div class="form-group">
-                                                                    <label>अनुकंपा नियुक्ति हेतु परिवार के आवेदक सदस्य का नाम<span style="color: red">*</span></label>
+                                                                    <label>Name of the applicant family member for compassionate appointment / अनुकंपा नियुक्ति हेतु परिवार के आवेदक सदस्य का नाम<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="अनुकंपा नियुक्ति हेतु परिवार के आवेदक सदस्य का नाम" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-2">
                                                                 <div class="form-group">
-                                                                    <label>लिंग </label>
+                                                                    <br />
+                                                                    <label>
+                                                                        Gender
+                                                                        <br />
+                                                                        लिंग
+                                                                    </label>
                                                                     <select class="form-control select2">
                                                                         <option value="--Select--">--Select--</option>
                                                                         <option value="Bhopal">Male</option>
@@ -376,7 +400,11 @@
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label>वैवाहिक स्थिति </label>
+                                                                    <br />
+                                                                    <label>
+                                                                        Marital Status<br />
+                                                                        वैवाहिक स्थिति
+                                                                    </label>
                                                                     <select class="form-control select2">
                                                                         <option value="--Select--">--Select--</option>
                                                                         <option value="married">married</option>
@@ -388,14 +416,19 @@
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label>जन्म की तारीख (DD/MM/YYYY)<span style="color: red">*</span></label>
+                                                                    <br />
+                                                                    <label>
+                                                                        Date of Birth<br />
+                                                                        जन्म की तारीख (DD/MM/YYYY)<span style="color: red">*</span></label>
                                                                     <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="जन्म की तारीख (DD/MM/YYYY)" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3" style="margin-top: 22px">
+                                                            <div class="col-md-4" style="margin-top: 22px">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        आवेदक का दिवंगत लोकसेवक/ शिक्षक के साथ संबंध<span style="color: red">*</span></label>
+                                                                        Relation of Applicant With the Deceased Public Servant / Teacher
+                                                                        <br />
+                                                                        आवेदक का दिवंगत लोकसेवक / शिक्षक के साथ संबंध<span style="color: red">*</span></label>
                                                                     <select class="form-control select2" id="">
                                                                         <option value="----">--Select--</option>
                                                                         <option value="----">Wife Husband</option>
@@ -404,28 +437,22 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3" style="margin-top: 22px">
+                                                            <div class="col-md-2" style="margin-top: 22px">
                                                                 <div class="form-group">
-                                                                    <label>आवेदक की योग्यता<span style="color: red">*</span></label>
+                                                                    <br />
+                                                                    <label>
+                                                                        Applicant's Qualification<br />
+                                                                        आवेदक की योग्यता<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="आवेदक की योग्यता" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label>
-                                                                        क्या परिवार के सभी सदस्यों ने आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति / शपथ पत्र दिया है ?<span style="color: red">*</span></label>
-                                                                    <select class="form-control select2" id="ddlSapthpatr" onchange="showddlSapthpatr();">
-                                                                        <option value="">--Select--</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-
                                                             <div class="col-md-3" style="margin-top: 22px">
                                                                 <div class="form-group">
-                                                                    <label>मोबाइल नंबर</label><span style="color: red">*</span>
+                                                                    <br />
+                                                                    <label>
+                                                                        Mobile Number
+                                                                        <br />
+                                                                        मोबाइल नंबर</label><span style="color: red">*</span>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="मोबाइल नंबर" />
                                                                 </div>
                                                             </div>
@@ -437,7 +464,10 @@
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label>आवेदक किस पद पर नियुक्ति चाहता है</label><span style="color: red">*</span>
+
+                                                                    <label>
+                                                                        The Post Applicant Want to be Appointed<br />
+                                                                        आवेदक किस पद पर नियुक्ति चाहता है</label>
                                                                     <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
                                                                         <option value="">--चयन करें--</option>
                                                                         <option value="1">शैक्षणिक संवर्ग</option>
@@ -454,6 +484,20 @@
                                                                         <option value="">--चयन करें--</option>
                                                                         <option value="1">प्रयोगशाला शिक्षक</option>
                                                                         <option value="2">प्राथमिक शिक्षक</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <div class="form-group">
+                                                                    <br />
+                                                                    <label>
+                                                                        Have All the Family Members Given Consent/Affidavit to Applicant to Avail the benefit of compassionate appointment?
+                                                                        <br />
+                                                                        क्या परिवार के सभी सदस्यों ने आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति / शपथ पत्र दिया है ?<span style="color: red">*</span></label>
+                                                                    <select class="form-control select2" id="ddlSapthpatr" onchange="showddlSapthpatr();">
+                                                                        <option value="">--Select--</option>
+                                                                        <option value="Yes">Yes</option>
+                                                                        <option value="No">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -528,7 +572,10 @@
 
                                                 <div id="DocAppointment" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Death Certificate of Ddeceased Government Servant
+                                                            <br />
+                                                            दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र : <span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
 
@@ -550,7 +597,9 @@
 
                                                 <div id="DocBirth" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>आवेदक का जन्म तिथि का प्रमाण पत्र :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Certificate of Date of Birth of the Applicant<br />
+                                                            आवेदक का जन्म तिथि का प्रमाण पत्र :<span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
 
@@ -571,7 +620,9 @@
 
                                                 <div id="DocCaste" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>निवास/मूल निवासी होने का प्रमाण पत्र :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Certificate of Residence / Domicile<br />
+                                                            निवास/मूल निवासी होने का प्रमाण पत्र :<span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
 
@@ -593,7 +644,10 @@
 
                                                 <div id="DocPresentpost" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>जाती प्रमाण पत्र : </label>
+                                                        <label>
+                                                            Caste Certificate<br />
+                                                            जाती प्रमाण पत्र :
+                                                        </label>
                                                     </div>
                                                 </div>
 
@@ -614,7 +668,10 @@
 
                                                 <div id="Dochandicapped" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>हायर सेकेण्डरी / स्नातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Certificate of Passing Higher Secondary / Graduation or other Examination
+                                                            <br />
+                                                            हायर सेकेण्डरी / स्नातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र :<span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
 
@@ -634,7 +691,9 @@
                                             <div class="row">
                                                 <div id="CriticalIllness" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>परिवार के मुखिया द्वारा सहमति प्रमाण पत्र :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Certificate of Date of Birth of the Applicant<br />
+                                                            परिवार के मुखिया द्वारा सहमति प्रमाण पत्र :<span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
 
@@ -656,7 +715,9 @@
 
                                                 <div id="DocMarried" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>आवेदक का फोटो :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Applicant's Photo<br />
+                                                            आवेदक का फोटो :<span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
                                                 <div id="DocMarried1" class="col-md-2">
@@ -676,7 +737,10 @@
 
                                                 <div id="CriticalIllness10" class="col-md-4 mt-1">
                                                     <div class="form-group">
-                                                        <label>राशन कार्ड :<span style="color: red">*</span></label>
+                                                        <label>
+                                                            Ration Card
+                                                            <br />
+                                                            राशन कार्ड :<span style="color: red">*</span></label>
                                                     </div>
                                                 </div>
 

@@ -2,9 +2,18 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-          #ShowOrders{
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        #ShowOrders {
             display: none;
         }
+
         th, td {
             padding: 15px;
         }
@@ -63,7 +72,7 @@
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active"><a href="Trn_CancleTransferOrderApplication.aspx" title="click to go on">Cancel Transfer Order</a></li>
+                    <li class="breadcrumb-item"><a href="Trn_CancleTransferOrderApplication.aspx" title="click to go on">Cancel Transfer Order</a></li>
                     <li class="breadcrumb-item active">Canceled Transfer Order Print</li>
                 </ol>
             </div>
@@ -74,7 +83,7 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar " id="mynav">
+            <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,10 +91,11 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-                            <a class="nav-link  text-white" href="Trn_CancleTransferOrderApplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            <a class="nav-link  text-white" href="Trn_CancelTransferOrder.aspx" role="button"><b class="font-16 font-bold">Cancel Transfer Order</b></a>
-                            <a class="nav-link  text-white" href="CanceledTransferOrderPrint.aspx" role="button"><b class="font-16 font-bold">Print Cancel Transfer Order</b></a>
+                            <a class="nav-link  text-white " href="Trn_CancleTransferOrderApplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            <a class="nav-link  text-white " href="Trn_CancelTransferOrder.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
+                                Cancel Transfer Order</b></a>
+                            <a class="nav-link  text-white " href="CanceledTransferOrderPrint.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Print Cancel Transfer Order</b></a>
+                            <a class="nav-link  text-white " href="Rpt_CancelTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
                         </ul>
 
                     </div>
@@ -93,59 +103,75 @@
             </nav>
 
 
-              <fieldset>
-                    <legend>Cancel Order Detail</legend>
-                    <div class="row">
+            <fieldset>
+                <legend>Cancel Order Detail / रद्द स्थानांतरण आदेश</legend>
+                <div class="row">
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                 <label>Choose an option<span style="color: red">*</span></label>
-                                <select id="dropdown" onchange="showTextBox()" class="form-control">
-                                    <option value="Select">Select</option>
-                                    <option value="Order No">Order No.</option>
-                                    <option value="Employee ID">Employee-ID</option>
-                                </select>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Choose an option / एक विकल्प चुनें<span style="color: red">*</span></label>
+                            <select id="dropdown" onchange="showTextBox()" class="form-control">
+                                <option value="Select">Select</option>
+                                <option value="Order No">Order No.</option>
+                                <option value="Employee ID">Employee-ID </option>
+                            </select>
                         </div>
-                        <div class="col-md-3" id="orderNoInput" style="display: none;">
-                            <div class="form-group">
-                                <label>Order No.<span style="color: red">*</span></label>
-                                <input type="text" class="form-control" placeholder="Enter Order No.">
-                            </div>
+                    </div>
+                    <div class="col-md-3" id="orderNoInput" style="display: none;">
+                        <div class="form-group">
+                            <label>Order No. / आदेश संख्या<span style="color: red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Order No.">
                         </div>
-                        <div class="col-md-3" id="employeeIDInput" style="display: none;">                        
-                                <div class="form-group">
-                                    <label>Employee-ID<span style="color: red">*</span> </label>
-                                    <input type="text" class="form-control" placeholder="Enter Employee-ID">
-                                </div>
+                    </div>
+                    <div class="col-md-3" id="employeeIDInput" style="display: none;">
+                        <div class="form-group">
+                            <label>Employee-ID / कर्मचारी आई <span style="color: red">*</span> </label>
+                            <input type="text" class="form-control" placeholder="Enter Employee-ID">
                         </div>
+                    </div>
 
-                        <div class="col-md-3 mt-4">
-                            <div class="form-group ">
-                                <button type="button" onclick="HideShow()" class=" btn btn-success btn-rounded ">Search</button>
-                                <a href="CanceledTransferOrderPrint.aspx" class=" btn btn-danger btn-rounded">Clear</a>
-                            </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="form-group ">
+                            <button type="button" onclick="HideShow()" class=" btn btn-success btn-rounded ">Search</button>
+                            <a href="CanceledTransferOrderPrint.aspx" class=" btn btn-danger btn-rounded">Clear</a>
+                        </div>
                         <%--</div>--%>
-
-
-
-
-       
                     </div>
                     <div class="row">
                     </div>
-                </fieldset>
+            </fieldset>
 
             <fieldset id="ShowOrders">
                 <legend>Detail</legend>
-                <div class="col-md-12"> 
+                <div class="row justify-content-end">
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-100">Excel</button>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
                     <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th>Sr.No.</th>
-                                <th>Cancel Order No.</th>
-                                <th>Date Of Cancellation</th>
-                                <th>Generate Cancel Order</th>
+                        <table class="table table-bordered text-center">
+                            <tr class="card-header">
+                                <th>Sr.No.<br />
+                                    सरल क्र.</th>
+                                <th>Cancel Order No.<br />
+                                    आदेश संख्या </th>
+                                <th>Date Of Cancellation<br />
+                                    रद्दीकरण का दिनांक </th>
+                                <th>Generate Cancel Order<br />
+                                    रद्द आदेश जनरेट करें</th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -155,7 +181,7 @@
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                 </td>
                             </tr>
-                           
+
                         </table>
                     </div>
                 </div>
@@ -195,9 +221,9 @@
                                         <div class="col-md-12">
                                             <div class="">
 
-                                                <div class="">
-                                                    <table class="table ">
-                                                        <tr>
+                                                <%--<div class="table-responsive">
+                                                    <table class="table table-bordered text-center ">
+                                                        <tr class="card-header">
                                                             <th>क्र./एन.सी/ए/92(3)/स्था. निरस्त/2022/2024/10673</th>
                                                             <td></td>
                                                             <th>दिनाँक:-</th>
@@ -206,7 +232,7 @@
                                                     </table>
                                                     <h4 class="text-center mt-4 mb-4 font-bold"><u>- आदेश -</u></h4>
 
-                                                </div>
+                                                </div>--%>
                                                 <div>
 
                                                     <p class="font-18">
@@ -214,30 +240,39 @@
                                                     </p>
 
                                                 </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered text-center ">
+                                                        <tr class="card-header">
+                                                            <th>Unique Code<br />
+                                                                यूनिक कोड</th>
+                                                            <th>Name of Public Servant<br />
+                                                                लोक सेवक का नाम</th>
+                                                            <th>Designation and Subject<br />
+                                                                पदनाम एवं विषय</th>
+                                                            <th>Working Organization and DICE Code<br />
+                                                                कार्यरत संस्था एवं डाइस कोड</th>
+                                                            <th>Working District<br />
+                                                                कार्यरत जिला</th>
+                                                            <th>Transferred Organization/DICE Code
+                                                            <br />
+                                                                स्थानांतरित संस्था/ डाइस कोड</th>
+                                                            <th>District of New Posting
+ <br />
+                                                                नवीन पदस्थापन का जिला</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>BB1530</td>
+                                                            <td>Arvindra Varma Prathmik Shikshak</td>
+                                                            <th>-- </th>
+                                                            <td>GMS NO.1 KHANJYADHANA (1 To 8)[23060530301]</td>
+                                                            <td>Shivpuri</td>
+                                                            <td>GPS AGARRA (1 TO 5)  [23060600901]</td>
+                                                            <td>Shivpuri</td>
 
-                                                <table class="table table-bordered mt-2">
-                                                    <tr>
-                                                        <th>यूनिक कोड</th>
-                                                        <th>लोक सेवक का नाम</th>
-                                                        <th>पदनाम एवं विषय</th>
-                                                        <th>कार्यरत संस्था एवं डाइस कोड</th>
-                                                        <th>कार्यरत जिला</th>
-                                                        <th>स्थानांतरित संस्था/ डाइस कोड</th>
-                                                        <th>नवीन पदस्थापन का जिला</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BB1530</td>
-                                                        <td>Arvindra Varma Prathmik Shikshak</td>
-                                                        <th>-- </th>
-                                                        <td>GMS NO.1 KHANJYADHANA (1 To 8)[23060530301]</td>
-                                                        <td>Shivpuri</td>
-                                                        <td>GPS AGARRA (1 TO 5)  [23060600901]</td>
-                                                        <td>Shivpuri</td>
+                                                        </tr>
 
-                                                    </tr>
-
-                                                </table>
-
+                                                    </table>
+                                                </div>
                                                 <div>
                                                     <p class="font-18" style="text-align: justify;">
                                                         2/&nbsp;&nbsp;जो लोक सेवक स्थानांतरण आदेश के पालन मे कार्यमुक्त हो चुके हैं किन्तु उनके द्वारा स्थानांतरित संस्था में कार्यभार ग्रहण नहीं
@@ -294,13 +329,13 @@
                                                     </p>
 
 
-                                                    <p class="text-start font-16 ml-5 " style="margin-top: 5px;color:black; font-weight:400;">
+                                                    <p class="text-start font-16 ml-5 " style="margin-top: 5px; color: black; font-weight: 400;">
                                                         <b>Digitally signed by SHILPA GUPTA           </b>
                                                         <br />
                                                         <b>Date: 2024.03.15 13:29:19 +05:30</b><br />
                                                         <b>Reason:</b><br />
                                                         <b>Location:</b><br />
-                                                  
+
                                                     </p>
 
 
@@ -319,7 +354,6 @@
 
                                     </div>
                                 </div>
-
 
                             </fieldset>
                             <div class="modal-footer text-center">
@@ -353,7 +387,7 @@
             }
         }
     </script>
-      <script>
+    <script>
         function HideShow() {
 
             var x = document.getElementById("ShowOrders");
@@ -363,6 +397,6 @@
                 x.style.display = "block";
             }
         }
-      </script>
+    </script>
 </asp:Content>
 

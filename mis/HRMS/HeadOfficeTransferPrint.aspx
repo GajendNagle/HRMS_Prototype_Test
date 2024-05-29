@@ -3,6 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        th {
+            white-space: nowrap;
+        }
+
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -46,23 +54,25 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    
+
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">प्रधान कार्यालय स्थानांतरण आदेश प्रिंट</p>
         </div>
-        <div class="col-md-4 align-self-center">  
+        <div class="col-md-4 align-self-center">
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active"><a href="HeadOfficeTransferApproveAplication.aspx">Head Office Transfer Approval</a></li>
-                    <li class="breadcrumb-item active">Head Office Transfer Print Order</li>
+                    <li class="breadcrumb-item"><a href="HeadOfficeTransferApproveAplication.aspx">HO Transfer Approval</a></li>
+                    <li class="breadcrumb-item active">HO Transfer Print Order</li>
                 </ol>
             </div>
         </div>
@@ -80,29 +90,29 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Approval</b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="HeadOfficeTransferApproval.aspx">View Transfer Request & Approve</a></li>
-                                    <li><a class="dropdown-item" href="HeadOfficFinalVoluntaryTransferApprove.aspx">Voluntary Transfer Final Approve</a></li>
-                                    <li><a class="dropdown-item" href="HeadOfficeTransferPrint.aspx">Voluntary Transfer Print</a></li>
+                                <a class="nav-link  text-white " href="HeadOfficeTransferApproveAplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Approval</b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="HeadOfficeTransferApproval.aspx">View Transfer Request & Approve</a></li>
+                                        <li><a class="dropdown-item" href="HeadOfficFinalVoluntaryTransferApprove.aspx">Voluntary Transfer Final Approve</a></li>
+                                        <li><a class="dropdown-item" href="HeadOfficeTransferPrint.aspx">Voluntary Transfer Print</a></li>
 
-                                </ul>
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Mutal Transfer Approval</b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="HeadOfficeMutalTransferApprove.aspx">Mutal Transfer Approve</a></li>
+                                        <li><a class="dropdown-item" href="HeadOfficeMutalTransferPrint.aspx">Mutal Transfer Print</a></li>
+
+                                    </ul>
+                                </li>
+
                             </li>
-
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Mutual Transfer Approval</b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="HeadOfficeMutalTransferApprove.aspx">Mutual Transfer Approve</a></li>
-
-                                    <li><a class="dropdown-item" href="HeadOfficeMutalTransferPrint.aspx">Mutual Transfer Print</a></li>
-
-                                </ul>
-                            </li>
-
-
                         </ul>
 
                     </div>
@@ -112,7 +122,7 @@
             <br />
             <br />
             <fieldset>
-                <legend>Voluntary Transfer Print 
+                <legend>Voluntary Transfer Print / स्वैच्छिक स्थानांतरण प्रिंट
                 </legend>
                 <div class="row">
 
@@ -264,28 +274,33 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-hover">
-                                <tr>
-                                    <th>Sr.No</th>
+                            <table class="table table-bordered text-center">
+                                <tr class="card-header">
+                                    <th>Sr.No.<br />
+                                        सरल क्र.</th>
 
-                                    <th>Application No.</th>
-                                     <th>Order No.</th>
+                                    <th>Application No.<br />
+                                        आवेदन संख्या</th>
+                                    <th>Order No.<br />
+                                        आदेश क्र. </th>
 
-                                    <th>Employee Name</th>
-                                    <th>Unique Id</th>
-                                    <th>Current DDO/Shankul </th>
-                                    <th>New DDO/Shankul</th>
-                                    <th>Print Application</th>
-
-
-
+                                    <th>Employee Name<br />
+                                        कर्मचारी का नाम </th>
+                                    <th>Unique Id<br />
+                                        यूनीक आई डी </th>
+                                    <th>Current DDO/Shankul<br />
+                                        वर्तमान डीडीओ/शंकुल </th>
+                                    <th>New DDO/Shankul<br />
+                                        नया डीडीओ/शंकुल</th>
+                                    <th>Print Application<br />
+                                        प्रिन्ट आवेदन</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -391,15 +406,15 @@
                                 <div class="col-md-12">
                                     <div>
 
-                                        <div>
-                                            <table class="table">
-                                                <tr>
+                                        <div class="table-responsive">
+                                            <%--<table class="table table-bordered text-center">
+                                                <tr class="card-header">
                                                     <th>क्र./स्थानांतरण</th>
                                                     <td>2024/20-01/140621</td>
                                                     <th>दिनाँक:-</th>
                                                     <td>09-03-2024</td>
                                                 </tr>
-                                            </table>
+                                            </table>--%>
                                             <h4 class="text-center mt-4 mb-4 font-bold"><u>:: आदेश ::</u></h4>
 
                                             <p class="text-center">राज्य शासन एतद द्वारा सक्षम स्वीकृति उपरांत निस्रांकित लोक सेवक को उनके नाम के सम्मुख तालिका के कॉलम क्र. 7एवं 8 में अंकित संस्था एवं जिले में समान मामर्थ्य एवं वेतनमान में स्थानांतरित कर पदस्थ किया जाता है।</p>
@@ -409,18 +424,26 @@
                                         <div class="row">
 
                                             <div class="col-md-12">
-                                                <div class="">
-                                                    <table class="table">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered text-center">
 
-                                                        <tr>
-                                                            <th>सरल क्र.</th>
-                                                            <th>यूनिक आई.डी</th>
-                                                            <th>नाम एवं पद</th>
-                                                            <th>विषय </th>
-                                                            <th>कार्यरत संस्था एवं डाइम कोड</th>
-                                                            <th>कार्यरत जिला</th>
-                                                            <th>नवीन संस्था एवं डाइस कोड</th>
-                                                            <th>नवीन पदस्थापना का जिला</th>
+                                                        <tr class="card-header">
+                                                            <th>Sr. No.<br />
+                                                                सरल क्र.</th>
+                                                            <th>Unique ID<br />
+                                                                यूनिक आई.डी</th>
+                                                            <th>Name and Designation<br />
+                                                                नाम एवं पद</th>
+                                                            <th>Subject<br />
+                                                                विषय </th>
+                                                            <th>Working Organization and Dise Code<br />
+                                                                कार्यरत संस्था एवं डाइस कोड</th>
+                                                            <th>Working District<br />
+                                                                कार्यरत जिला</th>
+                                                            <th>New Organisation and Dise Code<br />
+                                                                नवीन संस्था एवं डाइस कोड</th>
+                                                            <th>District of new posting<br />
+                                                                नवीन पदस्थापना का जिला</th>
                                                         </tr>
                                                         <tr>
                                                             <td>1</td>

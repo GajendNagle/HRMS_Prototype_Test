@@ -2,6 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        th {
+            white-space: nowrap;
+        }
+
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -50,7 +58,7 @@
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
                 </u>
             </p>
         </div>
@@ -66,7 +74,7 @@
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
                     <li class="breadcrumb-item"><a href="../HRMS/Trn_AdministrativeTransfer.aspx" title="click to go on">Administrative Level Transfer</a></li>
-                    <li class="breadcrumb-item active">Generate Transfer Order</li>
+                    <li class="breadcrumb-item active">Head Office Transfer Final Approval</li>
                 </ol>
             </div>
         </div>
@@ -77,44 +85,48 @@
         </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
-                                <ul class="dropdown-menu">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link  text-white " href="Trn_AdministrativeTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
 
-                                    <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
-                                    <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
-                                    <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
-                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
-                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
-
-                                </ul>
-                            </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
+                            Transfer Process</b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
+                            <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
+                            <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order </a></li>
+                            <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancies</b></a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                            <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
 
-                    </div>
-                </div>
-            </nav>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
             <br />
             <br />
             <fieldset>
-                <legend>Generate Transfer Order
+                <legend>Generate Transfer Order / स्थानांतरण आदेश जनरेट करें
                 </legend>
                 <div class="row">
 
@@ -226,7 +238,7 @@
             </fieldset>
 
             <fieldset id="vacaniesDetail" style="display: none;">
-                <legend>Transfer Order Detail
+                <legend>Transfer Order Details 
                 </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-1">
@@ -241,22 +253,31 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-hover">
-                                <tr>
-                                    <th>Sr.No</th>
-                                    <th>Get DSC</th>
-                                    <th>Order No.</th>
-                                    <th>Employee Name</th>
-                                    <th>Unique Id</th>
-                                    <th>Current DDO/Shankul </th>
-                                    <th>New DDO/Shankul</th>
+                            <table class="table text-center  table-bordered  ">
+                                <tr class="card-header">
+                                    <th>Sr. No.
+                                        <br />
+                                        सरल क्र. </th>
+                                    <th>Get DSC<br />
+                                        डीएससी प्राप्त करें</th>
+                                    <th>Order No.<br />
+                                        आदेश संख्या</th>
+                                    <th>Employee Name<br />
+                                        कर्मचारी का नाम</th>
+                                    <th>Unique Id<br />
+                                        यूनीक आई डी </th>
+                                    <th>Current DDO/Shankul
+                                        <br />
+                                        वर्तमान डीडीओ/शंकुल</th>
+                                    <th>New DDO/Shankul<br />
+                                        नया  डीडीओ/शंकुल</th>
                                 </tr>
                                 <tr id="row1">
                                     <td>1</td>
@@ -279,38 +300,38 @@
                                         <td>1214548455-Sarasvati Gyan Mandir</td>
                                     </tr>
 
-                                <tr id="row3">
-                                    <td>3</td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="form-check" id="chk3" onchange="toggleDivVisibility()" /></td>
-                                    <td>2024/20-01/140530</td>
-                                    <td>Rohan Kumar</td>
-                                    <td>AO5690</td>
-                                    <td>1236547895-Gov.Hs School</td>
-                                    <td>1258963478-Model High Secondary School</td>
-                                </tr>
-                                <tr id="row4">
-                                    <td>4</td>
-                                    <td class="text-center">
-                                        <input type="checkbox" id="chk4" class="form-check" onchange="toggleDivVisibility()" /></td>
-                                    <td>2024/20-01/140530</td>
-                                    <td>Ravi Singh</td>
-                                    <td>MT5695</td>
-                                    <td>1258963478-Model High Secondary School</td>
-                                    <td>1236547895-Gov.Hs School</td>
-                                </tr>
-                                <tr id="row5">
-                                    <td>5</td>
-                                    <td class="text-center">
-                                        <input type="checkbox" id="chk5" class="form-check" onchange="toggleDivVisibility()" /></td>
-                                    <td>2024/20-01/140530</td>
-                                    <td>Amar Rajpoot</td>
-                                    <td>GT7589</td>
-                                    <td>1224876546-Bal Bharti Higher Secondary School</td>
-                                    <td>1315476598-Sarasvati Vidhya Mandir</td>
-                                </tr>
+                                    <tr id="row3">
+                                        <td>3</td>
+                                        <td class="text-center">
+                                            <input type="checkbox" class="form-check" id="chk3" onchange="toggleDivVisibility()" /></td>
+                                        <td>2024/20-01/140530</td>
+                                        <td>Rohan Kumar</td>
+                                        <td>AO5690</td>
+                                        <td>1236547895-Gov.Hs School</td>
+                                        <td>1258963478-Model High Secondary School</td>
+                                    </tr>
+                                    <tr id="row4">
+                                        <td>4</td>
+                                        <td class="text-center">
+                                            <input type="checkbox" id="chk4" class="form-check" onchange="toggleDivVisibility()" /></td>
+                                        <td>2024/20-01/140530</td>
+                                        <td>Ravi Singh</td>
+                                        <td>MT5695</td>
+                                        <td>1258963478-Model High Secondary School</td>
+                                        <td>1236547895-Gov.Hs School</td>
+                                    </tr>
+                                    <tr id="row5">
+                                        <td>5</td>
+                                        <td class="text-center">
+                                            <input type="checkbox" id="chk5" class="form-check" onchange="toggleDivVisibility()" /></td>
+                                        <td>2024/20-01/140530</td>
+                                        <td>Amar Rajpoot</td>
+                                        <td>GT7589</td>
+                                        <td>1224876546-Bal Bharti Higher Secondary School</td>
+                                        <td>1315476598-Sarasvati Vidhya Mandir</td>
+                                    </tr>
                             </table>
-                            <p style="color: blue" class="font-16">नोट :- जनरेट आर्डर करने हेतु चेक बॉक्स पर क्लिक कर गेट DSC करें |</p>
+                            <p style="color: Red" class="font-16">नोट :- जनरेट आर्डर करने हेतु चेक बॉक्स पर क्लिक कर गेट DSC करें |</p>
                         </div>
                     </div>
                 </div>
