@@ -1182,58 +1182,54 @@ of annual examination result
         </div>
     </div>
 
+ <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-xl">
+         <div class="modal-content">
+             <div class="modal-header" style="background-color: #1B5B5C;">
 
-    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #1B5B5C;">
+                 <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
-                    <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                 <h3 class="modal-title  fw-bold  text-white ms-3">Send To Reporting Officer</h3>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <fieldset>
+                     <legend>Send To Reporting Officer / रिपोर्टिंग अधिकारी को भेजें </legend>
+                     <div class="row">
+                         <div class="col-md-4">
+                             <label>Reporting Officer Unique ID 
+                                 <br />
+                                 रिपोर्टिंग अधिकारी यूनिक आईडी<span style="color: red">*</span></label>
+                             <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
 
-                    <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">Send To Accepting Authority Officer</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <fieldset>
-                        <legend>Send To Accepting Authority Officer / स्वीकारकर्ता प्राधिकारी को भेजें</legend>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Accepting Authority Officer Unique ID <br />स्वीकारकर्ता प्राधिकारी की यूनिक आईडी <span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                         </div>
 
-                            </div>
+                         <div class="col-md-4" style="display: none;" id="OfficerName">
+                             <label>Reporting Officer Name
+                                 <br />
+                                 रिपोर्टिंग अधिकारी का नाम <span style="color: red">*</span></label>
+                             <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
 
-                            <div class="col-md-4" style="display: none;" id="OfficerName">
-                                <label>Accepting Authority Officer Name <br />स्वीकारकर्ता प्राधिकारी का नाम <span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
+                         </div>
 
-                            </div>
+                         <div class="col-md-4" style="display: none;" id="SankulCode">
+                             <label>Reporting Officer Sankul Code<br />
+                                 रिपोर्टिंग अधिकारी संकुल कोड</label>
+                             <asp:TextBox runat="server" CssClass="form-control" placeholder="GOVT. HSS SHYAMPUR-23010804504"></asp:TextBox>
+                         </div>
+                     </div>
+                 </fieldset>
+                 <div class="modal-footer justify-content-center">
+                     <div style="display: none;" id="btn1">
+                         <button type="button" class="btn btn-success Alert-Save btn-rounded">Send To Officer</button>
+                         <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                     </div>
+                 </div>
+             </div>
 
-                            <div class="col-md-4" style="display: none;" id="SankulCode">
-                                <label>Accepting Authority Officer Sankul Code <br /> स्वीकारकर्ता प्राधिकारी का संकुल कोड</label>
-                                <asp:TextBox runat="server" CssClass="form-control" placeholder="GOVT. HSS SHYAMPUR-23010804504"></asp:TextBox>
-                            </div>
-                        </div>
-
-
-
-
-                        <%--    <div class="form-group">
-                      <label>Remark<span style="color: red">*</span></label>
-                      <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject Order"></textarea>
-                  </div>--%>
-                    </fieldset>
-                    <div class="modal-footer justify-content-center">
-                        <div style="display: none;" id="btn1">
-                            <button type="button" class="btn btn-success Alert-Save btn-rounded" data-dismiss="modal" id="saveButton">Send To Officer</button>
-                            <a href="TeacherFillReport.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+         </div>
+     </div>
+ </div>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

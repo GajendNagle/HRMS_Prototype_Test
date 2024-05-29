@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    
+    <div id="dv_Masters_LocationMasters" runat="server">
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
@@ -366,7 +366,7 @@
                 </fieldset>--%>
             </div>
         </div>
-
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

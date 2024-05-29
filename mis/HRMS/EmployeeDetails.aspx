@@ -146,17 +146,17 @@
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>S.No</th>
-                                        <th>Unique ID/Name</th>
+                                        <th>S.No<br/>सरल क्र.</th>
+                                        <th>Unique ID/Name<br/> कर्मचारी आईडी/नाम</th>
 
-                                        <th>Date of Birth</th>
-                                        <th>Designation </th>
-                                        <th>Dise Code of Institution</th>
+                                        <th>Date of Birth<br/>जन्मतिथि</th>
+                                        <th>Designation <br/>पदनाम </th>
+                                        <th>Dise Code of Institution<br/>संस्थान का डाइस कोड</th>
 
-                                        <th>View Employee Application</th>
+                                        <th>View Employee Application<br/>कर्मचारी का आवेदन देखें</th>
 
-                                        <th>Status</th>
-                                        <th>Resend ACR Report</th>
+                                        <th>Status<br/>स्टेटस</th>
+                                        <th>Resend ACR Report<br/>एसीआर रिपोर्ट पुनः भेजें</th>
                                         <%--<th>प्रिंट</th--%>
                                     </tr>
                                 </thead>

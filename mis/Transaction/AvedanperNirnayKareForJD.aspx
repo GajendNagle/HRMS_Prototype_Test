@@ -3,10 +3,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        th {
-            white-space: nowrap;
-        }
-
         #empDetail {
             display: none;
         }
@@ -22,9 +18,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles" style="margin-bottom: -30px">
+        <%-- <div class="col-md-4 align-self-center">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+        </div>--%>
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
+                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -36,9 +36,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment </a></li>
                     <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>--%>
-                    <li class="breadcrumb-item active">Decision on Application</li>
+                    <li class="breadcrumb-item active">आवेदन पर निर्णय करें</li>
                 </ol>
             </div>
         </div>
@@ -47,7 +46,7 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px;">
+            <nav class="navbar navbar-expand-lg topbar" style="position:relative; bottom:26px;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +54,19 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                            <%--                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
+                                  
+                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
+
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
+                               
+                                </ul>
+                            </li>--%>
                             <a class="nav-link  text-white " href="DisposeApplicatonCaseForJD.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
 
                             <li class="nav-item">
@@ -75,25 +87,29 @@
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-16 text-white" href="../HRMS/Trn_ProcessApplicationListJD.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
+                                <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListJD.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  text-white " href="AvedanperNirnayKareForJD.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
 
                             <li class="nav-item">
                                 <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorJD.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
+
+                            <%--  &nbsp; <i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i><a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab2.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तर के पुरस्कार</b></a>--%>
+                            <%-- &nbsp;<i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i>  <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab3.aspx" role="button"><b class="font-16 font-bold">प्रशिक्षण का विवरण</b></a>--%>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
+                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
-                                                <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
+                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
+                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportJD.aspx">NOC Report</a></li>
+
                                             </ul>
                                         </li>
                                     </ul>
@@ -104,28 +120,38 @@
                     </div>
                 </div>
             </nav>
+            <br />
+            <br />
+
+            <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
+
 
             <fieldset>
-                <legend>Decide on pending applications / लंबित आवेदनों पर निर्णय करें
+                <legend>जिला का चयन करे
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District / जिला :<span style="color: red">*</span></label>
+                            <label>जिला :<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                                <option value="--Select--">Bhopal       </option>
-                                <option value="--Select--">Raisen       </option>
-                                <option value="--Select--">Rajgarh      </option>
-                                <option value="--Select--">Sehore     </option>
-                                <option value="--Select--">Vidisha  </option>
-                                <option value="--Select--"></option>
+                                <option value="--Select--">    Bhopal       </option>
+                                <option value="--Select--">   Raisen       </option>
+                                <option value="--Select--">    Rajgarh      </option>
+                                <option value="--Select--">     Sehore     </option>
+                                <option value="--Select--">        Vidisha  </option>
+                                <option value="--Select--">          </option>
                             </select>
 
+                            
+                              
+                             
+                              
+                             
                         </div>
                     </div>
                     <div class="col-md-3 mt-4 py-2">
-                        <button id="Button1" type="button" class="btn btn-success btn-rounded" onclick="myFunction()">Search</button>
+                        <button id="Button1" type="button" class="btn btn-success btn-rounded" onclick="myFunction()">सर्च</button>
                         <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                     </div>
                 </div>
@@ -133,54 +159,27 @@
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-                    <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                     <legend>लंबित आवेदन रिपोर्ट
+ </legend>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive table-bordered">
                                 <table class="table text-center">
                                     <tbody>
                                         <tr>
-                                            <th>Sr. No.<br />
-                                                सरल क्र.</th>
-                                            <th>Deceased Employee / Officer<br />
-                                                दिवंगत कर्मचारी / अधिकारी</th>
-                                            <th>Designation<br />
-                                                पद</th>
-                                            <th>Date of Death<br />
-                                                दिवंगत तिथि</th>
-                                            <th>District<br />
-                                                जिला</th>
-                                            <th>Applicant Name<br />
-                                                आवेदक का नाम</th>
-                                            <th>Gender<br />
-                                                लिंग</th>
-                                            <th>Class<br />
-                                                वर्ग</th>
-                                            <th>Marital Status<br />
-                                                वैवाहिक स्थिति</th>
-                                            <th>Date of Birth<br />
-                                                जन्म दिनांक</th>
-                                            <th>Relation with Deceased<br />
-                                                दिवंगत से सम्बंध</th>
-                                            <th>Dispose<br />
-                                                डिस्पोज करें</th>
+                                            <th>क्र.</th>
+                                            <th>दिवंगत कर्मचारी/ अधिकारी</th>
+                                            <th>पद</th>
+                                            <th>दिवंगत तिथि</th>
+                                            <th>जिला</th>
+                                            <th>आवेदक का नाम</th>
+                                            <th>जेंडर</th>
+                                            <th>वर्ग</th>
+
+                                            <th>वैवाहिक स्थिति</th>
+                                            <th>जन्म दिनांक</th>
+                                            <th>दिवंगत से सम्बंध</th>
+                                            <th>डिस्पोज करें</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -209,7 +208,7 @@
                                             <td>Narmadapuram</td>
                                             <td>VIRENDRA</td>
                                             <td>Male</td>
-                                            <td>GENERAL</td>
+                                              <td>GENERAL</td>
                                             <td>UnMarried</td>
                                             <td>01/01/1900 </td>
                                             <td>Son</td>
@@ -226,7 +225,7 @@
                                             <td>Ujjain</td>
                                             <td>ashar pasha</td>
                                             <td>Male</td>
-                                            <td>GENERAL</td>
+                                              <td>GENERAL</td>
                                             <td>UnMarried</td>
                                             <td>09/01/1996 </td>
                                             <td>Son</td>

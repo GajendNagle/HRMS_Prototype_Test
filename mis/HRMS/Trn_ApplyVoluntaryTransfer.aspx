@@ -3,14 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
-        th {
-            white-space: nowrap;
-        }
-
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
         #divtxtpanelname {
             display: none;
         }
@@ -36,23 +28,21 @@
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
         </div>
         <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">कर्मचारी स्वैच्छिक स्थानांतरण आवेदन करें</p>
+            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center"> कर्मचारी स्वैच्छिक स्थानांतरण आवेदन करें</p>
         </div>
-        <div class="col-md-4 align-self-center">
+        <div class="col-md-4 align-self-center">   
 
 
-
+  
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>
+                    <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>
                     <li class="breadcrumb-item active">Employee Voluntary Transfer Apply</li>
                 </ol>
             </div>
@@ -64,51 +54,47 @@
         </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                <li class="nav-item dropdown ">
-                    <a class="nav-link  text-white " href="ApplicationForVoluntaryTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                            Voluntary Transfer Application</b></a>
-                        <ul class="dropdown-menu">
-                            <li><a id="diva" class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                            <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a id="diva" class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
+                                    <%-- <li><a class="dropdown-item" href="Trn_ViewPostCodeWithVacancies.aspx">View Post Code With Vacancies</a></li>--%>
+                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
 
-                            </a></li>
-                            <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
+                                    <%--  <li><a class="dropdown-item" href="VoluntaryTransferPrintApplication.aspx">Print Application</a></li>--%>
+                                </ul>
+                            </li>
+
+                            <a class="nav-link  text-white " href="VoluntaryTransferStatus.aspx" role="button"><b class="font-16 font-bold">Voluntary Transfer Application Status</b></a>
+                            <a class="nav-link  text-white " href="Trn_ViewPostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancie</b></a>
                         </ul>
-                    </li>
 
-
-
-                    <a class="nav-link  text-white " href="VoluntaryTransferStatus.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Voluntary Transfer Application Status</b></a>
-
-                    <a class="nav-link  text-white " href="Trn_ViewPostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancie</b></a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-</nav>
+                    </div>
+                </div>
+            </nav>
             <br />
             <br />
 
 
             <fieldset>
-                <legend>Employee Information / कर्मचारी की जानकारी</legend>
+                <legend>Employee Information
+                </legend>
 
                 <div class="row mt-2">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Employee Name<br />
+                                Employee Name/<br />
                                 कर्मचारी का नाम<span style="color: red">*</span></label>
                             <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Arjun Talwar" />
                         </div>
@@ -116,8 +102,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Unique ID
-                                <br />
+                                Unique ID /<br />
                                 यूनिक आई.डी<span style="color: red">*</span></label>
                             <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4781" />
                         </div>
@@ -126,15 +111,14 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Designation
-                                <br />
+                                Designation /<br />
                                 पदनाम <span style="color: red">*</span></label>
                             <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <label class="font-bold">
-                            District<br />
+                            District/<br />
                             ज़िला<span style="color: red">*</span></label>
                         <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
                     </div>
@@ -142,14 +126,14 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label class="font-bold">
-                            Block<br />
+                            Block/<br />
                             ब्लॉक<span style="color: red">*</span></label>
                         <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Govindapura" />
                     </div>
 
                     <div class="col-md-3">
                         <label class="font-bold">
-                            Area<br />
+                            Area/<br />
                             क्षेत्र<span style="color: red">*</span></label>
                         <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
                     </div>
@@ -168,11 +152,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Present Office/Institute/School Name
-                                <br />
-                                वर्तमान कार्यालय/संस्था/विद्यालय नाम<span style="color: red">*</span></label>
-                            <input name="txtPresentParentInstitution" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Enter Name of the Present Parent Institution" value="52125212542-Naveen HHS school Bhopal" />
+                            <label>Present Office/Institute/School Name / वर्तमान कार्यालय/संस्था/विद्यालय नाम<span style="color: red">*</span></label>
+                            <input name="txtPresentParentInstitution" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Name of the Present Parent Institution" value="52125212542-Naveen HHS school Bhopal" />
                         </div>
                     </div>
 
@@ -184,16 +165,19 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date of Birth<br />
-                                जन्मतिथि<span style="color: red">*</span></label>
+                                Date of Birth
+                                    <br />
+                                / जन्मतिथि<span style="color: red">*</span></label>
                             <input name="DOB" id="txtDOB" class="form-control" readonly autocomplete="off" value="17/07/1992" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Age (As On 01.07.2024)<br />
-                                आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
+                                Age (As On 01.07.2024)
+             <br />
+                                /                                      
+             आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
                             <input name="DOB" id="txtAgeCrrnt" class="form-control" readonly autocomplete="off" value="32 years" />
                         </div>
                     </div>
@@ -202,7 +186,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Professional Qualifications<br />
+                                Professional Qualifications /<br />
                                 शैक्षणिक योग्यता<span style="color: red">*</span></label>
                             <input name="txtQualification" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="B Tech" />
                         </div>
@@ -211,7 +195,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Panal of Teaching on Which Appointment Is Made<br />
+                                Panal of Teaching on Which Appointment Is Made /<br />
                                 शिक्षण पैनल जिस पर नियुक्ति की गई है<span style="color: red">*</span></label>
                             <input name="txtPanel" type="text" class="form-control" readonly autocomplete="off" value="SSS-1 Mathematics" />
                         </div>
@@ -221,7 +205,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date Posted in Current Organization<br />
+                                Date Posted in Current Organization /
+                              <br />
                                 वर्तमान संस्था में पदस्थी दिनांक<span style="color: red">*</span></label>
                             <input name="DOB" id="txtDatePostedCrrnOrg" class="form-control" readonly autocomplete="off" value="15/04/2002" />
                         </div>
@@ -232,8 +217,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Total Duration in Years
-                                <br />
+                                Total Duration in Years /<br />
                                 कुल अवधि वर्षो में<span style="color: red">*</span></label>
                             <input name="txtTotalDurantionYears" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Total Duration in Years" value="4" />
                         </div>
@@ -252,19 +236,16 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Are You Suffering From Serious Illness (If yes, give details) / क्या आप गंभीर बीमारी से पीड़ित हैं (यदि हाँ तो विवरण दें)<span style="color: red">*</span></label>&emsp;&emsp;
+                                            <label>Are You Suffering From Serious Illness / क्या आप गंभीर बीमारी से पीड़ित हैं (यदि हाँ तो विवरण दें)<span style="color: red">*</span></label>&emsp;&emsp;
             <input type="radio" name="SeriousIllness" value="Yes" onchange="SeriousIllnessChange(this);" /><label>Yes</label>&emsp;
             <input type="radio" name="SeriousIllness" value="No" checked onchange="SeriousIllnessChange(this);" /><label>No</label>&emsp;&emsp;&emsp;
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row" id="divSeriousIllness" style="display: none;">
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>
-                                                Type of Critical Illness
-                                                <br />
-                                                गंभीर बीमारी का प्रकार<span style="color: red">*</span></label>
+                                            <label>Type of Critical Illness<span style="color: red">*</span></label>
                                             <select class="form-control select2">
                                                 <option>--Select--</option>
                                                 <option value="Cancer/ कैंसर">Cancer/ कैंसर</option>
@@ -275,11 +256,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                         <div class="form-group">
-                                            <label>
-                                                Attach Certificate from the Medical Board<br />
-                                                मेडीकल बोर्ड का प्रमाण पत्र संलग्न करें- &nbsp; <span style="color: red">*</span></label>
+                                            <label>Certificate from the Medical Board / मेडीकल बोर्ड का प्रमाण पत्र संलग्न करें- &nbsp; <span style="color: red">*</span></label>
                                             <input name="txtCertMedicalBoard" type="file" class="border form-control" />
                                         </div>
                                     </div>
@@ -289,19 +268,14 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>
-                                                Status Of Disability (Yes Or No) If Yes, Type And Percentage Of Disability (Attach Certificate)
-                                                <br />
-                                                विकलांगता की स्थिति (हाँ अथवा नहीं) यदि हाँ तो - विकलांगता का प्रकार एवं प्रतिशत (प्रमाण पत्र संलग़ करें)<span style="color: red">*</span></label>&emsp;&emsp;
+                                            <label>Status Of Disability (Yes Or No) If Yes, Type And Percentage Of Disability (Attach Certificate) / विकलांगता की स्थिति (हाँ अथवा नहीं) यदि हाँ तो - विकलांगता का प्रकार एवं प्रतिशत (प्रमाण पत्र संलग़ करें)<span style="color: red">*</span></label>&emsp;&emsp;
             <input type="radio" name="Disability" value="Yes" onchange="DisabilityStatusChange(this);" /><label>Yes</label>&emsp;
         <input type="radio" name="Disability" value="No" checked onchange="DisabilityStatusChange(this);" /><label>No</label>&emsp;&emsp;&emsp;
   
                                                 <div id="fileCertMedicalBoard" style="display: none;">
                                                     <div class="row">
-                                                        <div class="col-md-3">
-                                                            <label>
-                                                                Handicapped Type<br />
-                                                                विकलांगता का प्रकार<span style="color: red;">*</span></label>
+                                                        <div class="col-md-4">
+                                                            <label>Handicapped Type<span style="color: red;">*</span></label>
                                                             <select id="ddlHandiCaped" class="form-control select2">
                                                                 <option>--Select--</option>
                                                                 <option value="Cancer/ कैंसर">Blindnes/अंधापन</option>
@@ -330,9 +304,7 @@
                                                         </div>
                                                         <div id="HandicapePercentage" class="col-md-3">
                                                             <div class="form-group">
-                                                                <label>
-                                                                    Handicapped Percentage<br />
-                                                                    विकलांगता का प्रतिशत<span style="color: red">*</span></label>
+                                                                <label>Handicapped Percentage<span style="color: red">*</span></label>
                                                                 <select id="ddlHandicappedPercentage" class="form-control select2">
                                                                     <option>--Select--</option>
                                                                     <option value="40 to 50">40 to 50</option>
@@ -344,10 +316,8 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
-                                                            <label>
-                                                                Handicapped Certificate<br />
-                                                                विकलांगता प्रमाण पत्र<span style="color: red;">*</span></label>
+                                                        <div class="col-md-4">
+                                                            <label>Handicapped Certificate<span style="color: red;">*</span></label>
                                                             <input name="CertMedicalBoard" id="fileCerdtMedicalBoard" type="file" class=" border form-control" />
                                                         </div>
                                                     </div>
@@ -369,38 +339,29 @@
                                         <div class="col-md-11">
                                             <div class="form-group">
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>
-                                                                Name of Spouse
-                                                                <br />
-                                                                स्पाउस का नाम<span style="color: red">*</span>&nbsp;</label>
+                                                            <label>Name of Spouse / स्पाउस का नाम<span style="color: red">*</span>&nbsp;</label>
                                                             <input name="txtPostOfSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of Spouse" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>
-                                                                Post of Spouse<br />
-                                                                स्पाउस का मूल पद<span style="color: red">*</span>&nbsp;</label>
+                                                            <label>Post of Spouse / स्पाउस का मूल पद<span style="color: red">*</span>&nbsp;</label>
                                                             <input name="txtPostOfSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter Post of Spouse" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>
-                                                                Spouse Department
-                                                                <br />
-                                                                स्पाउस विभाग<span style="color: red">*</span>&nbsp;</label>
+                                                            <label>Spouse Department / स्पाउस विभाग<span style="color: red">*</span>&nbsp;</label>
                                                             <input name="txtPlacePostingSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter  Spouse Department " />
                                                         </div>
                                                     </div>
-
-                                                    <div class="col-md-3">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label>
-                                                                Spouse Office Address<br />
-                                                                स्पाउस कार्यालय का पता<span style="color: red">*</span>&nbsp;</label>
+                                                            <label>Spouse Office Address/ स्पाउस कार्यालय का पता<span style="color: red">*</span>&nbsp;</label>
                                                             <input name="txtDistancePostingPlaces" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Office Address" />
                                                         </div>
                                                     </div>
@@ -414,8 +375,8 @@
                             <li>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Reason for Seeking Transfer / स्थानांतरण चाहने का कारण <small><b></b></small><span style="color: red">*</span></label>
-                                        <input name="txtTransferReason" maxlength="250" type="text" class="form-control" autocomplete="off" placeholder="Enter Reason for Seeking Transfer (In 200 Words)" />
+                                        <label>Reason for Seeking Transfer/स्थानांतरण चाहने का कारण <small><b>(200 शब्दों में)</b></small><span style="color: red">*</span></label>
+                                        <input name="txtTransferReason" maxlength="250" type="text" class="form-control" autocomplete="off" placeholder="Enter Reason for Seeking Transfer" />
                                     </div>
                                 </div>
                             </li>
@@ -426,7 +387,7 @@
             <div id="divVoluntaryTransfer">
 
                 <fieldset>
-                    <legend>Voluntary Transfer Detail</legend>
+                    <legend>Voluntary Tansfer Detail</legend>
                     <div class="row mt-2">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -436,10 +397,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <label class="font-bold">
-                                District Name
-                                <br />
-                                जिले का नाम<span style="color: red">*</span></label>
+                            <label class="font-bold">District Name / जिले का नाम<span style="color: red">*</span></label>
                             <select id="ddlDistrict" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -495,10 +453,7 @@
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">
-                                Block Name
-                                <br />
-                                विकासखण्ड का नाम<span style="color: red">*</span></label>
+                            <label class="font-bold">Block Name / विकासखण्ड का नाम<span style="color: red">*</span></label>
                             <select id="ddlBlock" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Agar">Agar</option>
@@ -517,15 +472,13 @@
                             </select>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>
-                                    Sankul Name
-                                    <br />
-                                    संकुल का नाम
+                                    Sankul Name /संकुल का नाम
                                 </label>
                                 <select class="form-control" id="ddlOffice" onchange="BindSankul();">
-                                    <option>--Select--</option>
+                                    <option>Select</option>
                                     <option value="(2345040410) AAMAI HS NEW JSK">(2345040410) AAMAI HS NEW JSK</option>
                                     <option value="(2332030006) AKBARPUR GOVT. HS">(2332030006) AKBARPUR GOVT. HS</option>
                                     <option value="(2327100059) B.HSS BISTAN">(2327100059) B.HSS BISTAN</option>
@@ -534,14 +487,13 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>
-                                    Office/Institute/School (UDISE Code)<br />
-                                    कार्यालय/संस्था/विद्यालय
+                                    Office/Institute/School (UDISE Code) / कार्यालय/संस्था/विद्यालय
                                        <span style="color: red">*</span></label>
                                 <select class="form-control" id="ddlOfficce" onchange="BindSankul();">
-                                    <option>--Select--</option>
+                                    <option>Select</option>
                                     <option value="(2345040410) AAMAI HS NEW JSK">(2345040410) AAMAI HS NEW JSK</option>
                                     <option value="(2332030006) AKBARPUR GOVT. HS">(2332030006) AKBARPUR GOVT. HS</option>
                                     <option value="(2327100059) B.HSS BISTAN">(2327100059) B.HSS BISTAN</option>
@@ -550,13 +502,12 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label>
-                                    Post Code
-                                    <br />
-
-                                    पद कोड<span style="color: red">*</span></label>
+                                    Post Code /
+                              
+                                   पद कोड<span style="color: red">*</span></label>
                                 <%--<input onchange="ShowVacantPost()" placeholder="Enter Post Code" name="txtPostCode" value="" type="text" class="form-control" autocomplete="off" />--%>
                                 <select class="form-control" id="ddlPostCode" onchange="ShowVacantPost();">
                                     <option value="0">Select</option>
@@ -570,9 +521,7 @@
                         <div class="col-md-2" id="divtxtpanelname">
                             <div class="form-group">
                                 <label>
-                                    Panal Name
-                                    <br />
-                                    पैनल का नाम
+                                    Panal Name / पैनल का नाम
                                      <span style="color: red">*</span></label>
                                 <input disabled="disabled" value="SSS-1 Mathematics" id="txtpanelname" type="text" class="form-control" autocomplete="off" />
                             </div>
@@ -580,13 +529,12 @@
                         <div class="col-md-2" id="divtxtvacantpost">
                             <div class="form-group">
                                 <label>
-                                    Vacant Post<br />
-                                    रिक्त पद
+                                    Vacant Post / रिक्त पद
                                         <span style="color: red">*</span></label>
                                 <input disabled="disabled" value="01" id="txtvacantpost" type="text" class="form-control" autocomplete="off" placeholder="Enter Vacant Post" />
                             </div>
                         </div>
-                        <div class="col-md-2 " style="margin-top: 50px;" id="hideaddbtn">
+                        <div class="col-md-2 mt-4" id="hideaddbtn">
                             <div class="form-group">
                                 <input type="button" id="btnAdd" class="btn btn-info btn-rounded" value="Add" onclick="AddRow();" />
                             </div>
@@ -595,31 +543,18 @@
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table table-responsive text-center" id="mytable" style="display: none;">
+                                <table class="table" id="mytable" style="display: none;">
                                     <tbody>
-                                        <tr class=" card-header">
-                                            <th>Sr.No.<br />
-                                                सरल क्र.</th>
-                                            <th>District Name
-                                                <br />
-                                                जिले का नाम</th>
-                                            <th>Block Name
-                                                <br />
-                                                विकासखण्ड का नाम</th>
-                                            <th>Sankul Name
-                                                <br />
-                                                संकुल का नाम</th>
-                                            <th>Office/Institute/School (UDISE Code)<br />
-                                                कार्यालय/संस्था/विद्यालय</th>
+                                        <tr>
+                                            <th>Sr.No./सरल क्र.</th>
+                                            <th>District Name / जिले का नाम</th>
+                                            <th>Block Name / विकासखण्ड का नाम</th>
+                                            <th>Sankul Name / संकुल का नाम</th>
+                                            <th>Office/Institute/School (UDISE Code) / कार्यालय/संस्था/विद्यालय</th>
 
-                                            <th>Post Code<br />
-                                                पद कोड</th>
-                                            <th>Panal Name
-                                                <br />
-                                                पैनल का नाम</th>
-                                            <th>Vacant Post
-                                                <br />
-                                                रिक्त पद</th>
+                                            <th>Post Code / पद कोड</th>
+                                            <th>Panal Name / पैनल का नाम</th>
+                                            <th>Vacant Post / रिक्त पद</th>
                                             <th>Action</th>
                                         </tr>
                                         <%-- <tr>
@@ -636,16 +571,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center" id="btnRow">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <button type="button" id="btnRqstToHO" class="Alert-Confirmation btn btn-success btn-rounded">Send Request</button>
-                                <button id="btnClear" class="btn btn-danger btn-rounded">Clear</button>
-                            </div>
+                </fieldset>
+                <div class="row justify-content-center" id="btnRow">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <button type="button" id="btnRqstToHO" class="Alert-Confirmation btn btn-success btn-rounded">Send Request</button>
+                            <button id="btnClear" class="btn btn-danger btn-rounded">Clear</button>
                         </div>
                     </div>
-                </fieldset>
-
+                </div>
 
             </div>
 

@@ -1,16 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_DistWiseCounting.aspx.cs" Inherits="mis_Transaction_Rpt_DistWiseCounting" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
-        th {
-            white-space: nowrap;
-        }
-    </style>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -46,29 +36,24 @@
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                                 <li class="nav-item dropdown ">
-                                    <a class="nav-link  text-white " href="../HRMS/Trn_AdministrativeTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
+                                    <ul class="dropdown-menu">
 
-                                    <li class="nav-item dropdown ">
-                                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                            Transfer Process</b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="../HRMS/Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
-                                            <li><a class="dropdown-item" href="../HRMS/AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
-                                            <li><a class="dropdown-item" href="../HRMS/AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order </a></li>
-                                            <li><a class="dropdown-item" href="../HRMS/AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white " href="../HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancies</b></a>
-                                    </li>
-                                    <li class="nav-item dropdown ">
-                                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
-                                            <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
-
-                                        </ul>
-                                    </li>
+                                        <li><a class="dropdown-item" href="../HRMS/Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
+                                        <li><a class="dropdown-item" href="../HRMS/AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
+                                        <li><a class="dropdown-item" href="../HRMS/AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
+                                        <li><a class="dropdown-item" href="../HRMS/AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white " href="../HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                        <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+                                    </ul>
                                 </li>
                             </ul>
 
@@ -77,7 +62,7 @@
                 </nav>
 
                 <fieldset>
-                    <legend>District Wise Counting Report / जिला वार सांख्यिकी रिपोर्ट</legend>
+                    <legend>District Wise Counting Report/ जिला वार सांख्यिकी रिपोर्ट</legend>
                     <div class="row form-group">
                         <div class="col-md-3">
                             <label class="font-bold" id="txtId">
@@ -119,23 +104,23 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table text-center table-bordered">
-
-                                    <tr class="card-header">
-                                        <th>Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th>District<br />
-                                            जिला</th>
-                                        <th>Received Application<br />
-                                            प्राप्त आवेदन</th>
-                                        <th>Approved Application<br />
-                                            स्वीकृत आवेदन</th>
-                                        <th>Pending Application<br />
-                                            लंबित आवेदन</th>
-                                        <th>Reject Application<br />
-                                            निराकृत आवेदन</th>
-                                    </tr>
-
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                                स. क्र.</th>
+                                            <th>District<br />
+                                                जिला</th>
+                                            <th>Received Application<br />
+                                                प्राप्त आवेदन</th>
+                                            <th>Approved Application<br />
+                                                स्वीकृत आवेदन</th>
+                                            <th>Pending Application<br />
+                                                लंबित आवेदन</th>
+                                            <th>Reject Application<br />
+                                                निराकृत आवेदन</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Bhopal</td>
@@ -251,23 +236,23 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table text-center table-bordered">
-
-                                    <tr class="card-header">
-                                        <th>Sr. No.<br />
-                                            सरल  क्र.</th>
-                                        <th>District<br />
-                                            जिला</th>
-                                        <th>Received Application<br />
-                                            प्राप्त आवेदन</th>
-                                        <th>Approved Application<br />
-                                            स्वीकृत आवेदन</th>
-                                        <th>Pending Application<br />
-                                            लंबित आवेदन</th>
-                                        <th>Reject Application<br />
-                                            निराकृत आवेदन</th>
-                                    </tr>
-
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                               स. क्र.</th>
+                                            <th>District<br />
+                                                जिला</th>
+                                            <th>Received Application<br />
+                                                प्राप्त आवेदन</th>
+                                            <th>Approved Application<br />
+                                                स्वीकृत आवेदन</th>
+                                            <th>Pending Application<br />
+                                                लंबित आवेदन</th>
+                                            <th>Reject Application<br />
+                                                निराकृत आवेदन</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Bhopal</td>
@@ -319,21 +304,23 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table text-center  table-bordered">
-                                    <tr class="card-header">
-                                        <th>Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th>District<br />
-                                            जिला</th>
-                                        <th>Received Application<br />
-                                            प्राप्त आवेदन</th>
-                                        <th>Approved Application<br />
-                                            स्वीकृत आवेदन</th>
-                                        <th>Pending Application<br />
-                                            लंबित आवेदन</th>
-                                        <th>Reject Application<br />
-                                            निराकृत आवेदन</th>
-                                    </tr>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                                स. क्र.</th>
+                                            <th>District<br />
+                                                जिला</th>
+                                            <th>Received Application<br />
+                                                प्राप्त आवेदन</th>
+                                            <th>Approved Application<br />
+                                                स्वीकृत आवेदन</th>
+                                            <th>Pending Application<br />
+                                                लंबित आवेदन</th>
+                                            <th>Reject Application<br />
+                                                निराकृत आवेदन</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Guna</td>
@@ -342,6 +329,22 @@
                                         <td>2</td>
                                         <td>3</td>
                                     </tr>
+                                    <%--<tr>
+                                        <td>2</td>
+                                        <td>Guna</td>
+                                        <td>20</td>
+                                        <td>15</td>
+                                        <td>0</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Guna </td>
+                                        <td>25</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                    </tr>--%>
                                 </table>
                             </div>
                         </div>
@@ -370,21 +373,23 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table text-center table-bordered">
-                                    <tr class="card-header">
-                                        <th>Sr. No.<br />
-                                            सरल  क्र.</th>
-                                        <th>District<br />
-                                            जिला</th>
-                                        <th>Received Application<br />
-                                            प्राप्त आवेदन</th>
-                                        <th>Approved Application<br />
-                                            स्वीकृत आवेदन</th>
-                                        <th>Pending Application<br />
-                                            लंबित आवेदन</th>
-                                        <th>Reject Application<br />
-                                            निराकृत आवेदन</th>
-                                    </tr>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr. No.<br />
+                                                स. क्र.</th>
+                                            <th>District<br />
+                                                जिला</th>
+                                            <th>Received Application<br />
+                                                प्राप्त आवेदन</th>
+                                            <th>Approved Application<br />
+                                                स्वीकृत आवेदन</th>
+                                            <th>Pending Application<br />
+                                                लंबित आवेदन</th>
+                                            <th>Reject Application<br />
+                                                निराकृत आवेदन</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Dewas</td>

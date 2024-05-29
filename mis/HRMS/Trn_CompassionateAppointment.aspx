@@ -284,7 +284,7 @@
                                                                     <tr class="card-header">
                                                                         <th>Sr.No.<br />
                                                                             सरल क्र.</th>
-                                                                        <th>Check List</th>
+                                                                        <th>Check box <br /> चेक बॉक्स</th>
                                                                         <th>Name of Member<br />
                                                                             सदस्य का नाम</th>
                                                                         <th>Relationship With the Deceased<br />
@@ -295,7 +295,7 @@
                                                                             लिंग</th>
                                                                         <th>Date of Birth<br />
                                                                             जन्म दिनांक</th>
-                                                                        <th>Action</th>
+                                                                        <th>Action <br /> कार्यवाही</th>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -309,7 +309,7 @@
                                                     परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
                                                 <div class="row">
                                                     <div class="12">
-                                                        <div class="row">
+                                                        <div class="row align-items-end">
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
                                                                     <label>
@@ -319,8 +319,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
-                                                                <br />
-                                                                <br />
+                                                              
+                                                           
                                                                 <div class="form-group">
                                                                     <label>
                                                                         Gender<br />
@@ -335,8 +335,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
-                                                                <br />
-                                                                <br />
+                                                              
                                                                 <div class="form-group">
                                                                     <label>
                                                                         Marital Status<br />
@@ -351,8 +350,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
-                                                                <br />
-                                                                <br />
+                                                                
                                                                 <div class="form-group">
                                                                     <label>
                                                                         Date of Birth<br />
@@ -360,7 +358,7 @@
                                                                     <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="जन्म की तारीख (DD/MM/YYYY)" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3" style="margin-top: 22px">
+                                                            <div class="col-md-3" >
                                                                 <div class="form-group">
                                                                     <label>
                                                                         Applicant's Relationship with Deceased Public Servant/Teacher /
@@ -373,8 +371,8 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3" style="margin-top: 22px">
-                                                                <br />
+                                                            <div class="col-md-3" >
+
                                                                 <div class="form-group">
                                                                     <label>
                                                                         Applicant's Qualification
@@ -383,8 +381,8 @@
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="आवेदक की योग्यता" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3" style="margin-top: 22px">
-                                                                <br />
+                                                            <div class="col-md-3" >
+                                                           
                                                                 <div class="form-group">
                                                                     <label>
                                                                         Mobile No.<br />
@@ -393,7 +391,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
-                                                                <br />
+                                                        
                                                                 <div class="form-group">
                                                                     <label>
                                                                         To which Post Does the Applicant Want to be Appointed?<br />
@@ -422,9 +420,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3" id="fileInput" style="display: none;">
-                                                                <br />
-                                                                <br />
-                                                                <br /> 
+                                                               
                                                                 <div class="form-group mt-4">
                                                                     <label>
                                                                         Affidavit<br />
@@ -435,8 +431,7 @@
 
                                                             <div class="col-md-3 " style="display: none" id="DivDesignation">
                                                                 <div class="form-group mt-5">
-                                                                    <br />
-                                                                    <br />
+                                                                    
                                                                     <label>
                                                                         Designation<br />
                                                                         पदनाम<span style="color: red">*</span></label>
@@ -462,8 +457,7 @@
                                                             <%--</div>--%>
                                                             <div class="col-md-3" style="display: none" id="Divyear">
                                                                 <div class="form-group mt-5">
-                                                                    <br />
-                                                                    <br />
+                                                                   
                                                                     <label>
                                                                         Year of Eligibility Test<br />
                                                                         पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>

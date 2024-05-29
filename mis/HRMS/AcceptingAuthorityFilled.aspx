@@ -161,9 +161,9 @@
                                         <th>ACR Form
                                             <br />
                                             एसीआर फॉर्म</th>
-                                        <th>Action
+                                        <%--<th>Action
                                             <br />
-                                            कार्रवाई</th>
+                                            कार्रवाई</th>--%>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -188,8 +188,8 @@
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click" />
 
                                         </td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>
+                                       <%-- <td>
+                                            <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>--%>
                                     </tr>
                                 </tbody>
                                 <tbody>
@@ -214,8 +214,8 @@
                                         <td>
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click1" />
                                         </td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>
+                                      <%--  <td>
+                                            <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>--%>
                                     </tr>
                                 </tbody>
                             </table>
@@ -243,7 +243,7 @@
                         <div class="col-md-4 mt-4">
                             <label>
                                 Do you agree with the remarks of the reporting officer ?<br />
-                                क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</label>
+                                क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?</label>
                             <asp:DropDownList runat="server" CssClass="select2 form-control">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Yes/हाँ</asp:ListItem>
@@ -277,8 +277,8 @@
                             </select>
                         </div>
                         <div class="col-md-4" style="display: none;" id="OfficerName">
-                            <label>Enter Remark For  Outstanding Grading<span style="color: red">*</span></label>
-                            <textarea class="form-control mb-2" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+                            <label>Enter Remark For  Outstanding Grading <br />उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
+                            <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
 
                         </div>
                     </div>
@@ -1529,7 +1529,7 @@
 
 
     <%-- ////Remark--%>
-    <div class="modal" id="myModal">
+    <%--<div class="modal" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
@@ -1552,7 +1552,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--%>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

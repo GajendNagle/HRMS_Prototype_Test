@@ -26,9 +26,6 @@
         #note2 {
             color: red;
         }
-          th {
-        white-space: nowrap;
-    }
     </style>
 
 
@@ -92,7 +89,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Promotion Order<br />पदोन्नति आदेश</h4>
+            <h4 class="text-themecolor ">Promotion Order</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
             <div class="d-flex justify-content-end align-items-center">
@@ -111,11 +108,11 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Promotion Order / पदोन्नति आदेश</legend>
+                <legend>Promotion Order</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Promotion With Transfer <br /> स्थानांतरण के साथ पदोन्नति<span style="color: red">*</span></label>
+                            <label>Promotion With Transfer<span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlApprove">
                                 <%--<option value="--Select--">--Select--</option>--%>
                                 <option value="0">Select</option>
@@ -127,14 +124,14 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Unique ID <br />कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
+                            <label>Employee Unique ID<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control" />
                         </div>
                     </div>
 
-                    <div class="col-md-3 mt-5">
+                    <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>
+                            <button type="button" class="  btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>
                             <a href="PromotionOrders.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
@@ -174,16 +171,16 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No.<br />सरल क्र.</th>
+                                            <th>Sr.No.</th>
                                             <%--<th rowspan="2">Office Type</th>--%>
-                                            <th>Employee Id-Name<br />कर्मचारी आईडी-नाम</th>
-                                            <th>File No.<br />दस्तावेज संख्या</th>
-                                            <th>Current Grade Level<br />वर्तमान ग्रेड स्तर</th>
-                                            <th>New Grade Level<br />नया ग्रेड स्तर</th>
-                                            <th>Current School UdiseCode-Name<br />वर्तमान स्कूल का यूडाइसकोड-नाम</th>
-                                            <th>New School UdiseCode-Name<br />नये स्कूल का यूडाइसकोड-नाम</th>
-                                            <th>Current PayScale<br />वर्तमान वेतनमान</th>
-                                            <th>New PayScale<br />नया वेतनमान</th>
+                                            <th>Employee Id-Name</th>
+                                            <th>File No.</th>
+                                            <th>Current Grade Level</th>
+                                            <th>New Grade Level</th>
+                                            <th>Current School UdiceCode-Name</th>
+                                            <th>New School UdiceCode-Name</th>
+                                            <th>Current PayScale</th>
+                                            <th>New PayScale</th>
                                             <th>Action</th>
 
                                         </tr>
@@ -262,9 +259,9 @@
                                         <input name="ename" type="file" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                     </div>
                                 </div>
-                                <div class="col-md-3" style=" top:1.9rem;">
+                                <div class="col-md-2 mt-4">
                                     <div class="form-group">
-                                        <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
+                                        <button type="button" class="Alert-Save btn btn-success btn-rounded w-100 btn-block">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -310,15 +307,15 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No.<br />सरल क्र.</th>
+                                            <th>Sr.No.</th>
                                             <%--<th rowspan="2">Office Type</th>--%>
-                                            <th>Employee Id-Name<br />कर्मचारी आईडी-नाम</th>
-                                            <th>File No.<br />दस्तावेज संख्या</th>
-                                            <th>Current Grade Level<br />वर्तमान ग्रेड स्तर</th>
-                                            <th>New Grade Level<br />नया ग्रेड स्तर</th>
-                                            <th>Current School UdiseCode-Name<br />वर्तमान स्कूल यूडाइसकोड-नाम</th>
-                                            <th>Current PayScale<br />वर्तमान वेतनमान</th>
-                                            <th>New PayScale<br />नया वेतनमान</th>
+                                            <th>Employee Id-Name</th>
+                                            <th>File No.</th>
+                                            <th>Current Grade Level</th>
+                                            <th>New Grade Level</th>
+                                            <th>Current School UdiceCode-Name</th>
+                                            <th>Current PayScale</th>
+                                            <th>New PayScale</th>
                                             <th>Action</th>
 
                                         </tr>
@@ -397,9 +394,9 @@
                                         <input name="ename" type="file" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                     </div>
                                 </div>
-                                <div class="col-md-2"  style=" top:1.9rem;">
+                                <div class="col-md-2 mt-4">
                                     <div class="form-group">
-                                        <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
+                                        <button type="button" class="Alert-Save btn btn-success btn-rounded w-100 btn-block">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -834,7 +831,7 @@
 
             <!--Description-->
             <fieldset id="dcp" runat="server">
-                <legend>Description / विवरण</legend>
+                <legend>Description</legend>
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="main-ul">

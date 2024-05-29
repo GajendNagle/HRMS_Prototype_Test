@@ -1,37 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="HeadOfficeMutalTransferApprove.aspx.cs" Inherits="mis_HRMS_HeadOfficeMutalTransferApprove" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
-        th {
-            white-space: nowrap;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-
+    
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
-                </u>
-            </p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">प्रधान कार्यालय पारस्परिक ट्रांसफर अनुमोदन</p>
         </div>
-        <div class="col-md-4 align-self-center">
+        <div class="col-md-4 align-self-center">      
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item"><a href="HeadOfficeTransferApproveAplication.aspx">HO Transfer Approval</a></li>
-                    <li class="breadcrumb-item active">HO Mutual Transfer Final Approval</li>
+                    <li class="breadcrumb-item active"><a href="HeadOfficeTransferApproveAplication.aspx">Head Office Transfer Approval</a></li>
+                    <li class="breadcrumb-item active">Head Office Mutual Transfer Final Approval</li>
                 </ol>
             </div>
         </div>
@@ -50,29 +39,29 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
                             <li class="nav-item dropdown ">
-                                <a class="nav-link  text-white " href="HeadOfficeTransferApproveAplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Approval</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="HeadOfficeTransferApproval.aspx">View Transfer Request & Approve</a></li>
-                                        <li><a class="dropdown-item" href="HeadOfficFinalVoluntaryTransferApprove.aspx">Voluntary Transfer Final Approve</a></li>
-                                        <li><a class="dropdown-item" href="HeadOfficeTransferPrint.aspx">Voluntary Transfer Print</a></li>
-
-                                    </ul>
-                                </li>
-
-
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Mutal Transfer Approval</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="HeadOfficeMutalTransferApprove.aspx">Mutal Transfer Approve</a></li>
-                                        <li><a class="dropdown-item" href="HeadOfficeMutalTransferPrint.aspx">Mutal Transfer Print</a></li>
-
-                                    </ul>
-                                </li>
-
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Approval</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="HeadOfficeTransferApproval.aspx">View Transfer Request & Approve</a></li>
+                                    <li><a class="dropdown-item" href="HeadOfficFinalVoluntaryTransferApprove.aspx">Voluntary Transfer Final Approve</a></li>
+                                    <li><a class="dropdown-item" href="HeadOfficeTransferPrint.aspx">Voluntary Transfer Print</a></li>
+                                </ul>
                             </li>
+
+
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Mutual Transfer Approval</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="HeadOfficeMutalTransferApprove.aspx">Mutual Transfer Approve</a></li>
+
+                                    <li><a class="dropdown-item" href="HeadOfficeMutalTransferPrint.aspx">Mutual Transfer Print</a></li>
+
+                                </ul>
+                            
+                            </li>
+
+
                         </ul>
 
                     </div>
@@ -81,7 +70,7 @@
             <br />
             <br />
             <fieldset>
-                <legend>Mutual Transfer Final Approval / पारस्परिक स्थानांतरण को अंतिम मंजूरी
+                <legend>Mutual Transfer Final Approval
                 </legend>
                 <div class="row">
 
@@ -123,7 +112,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
@@ -131,7 +120,7 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table text-center table-bordered">
-                                <tr class="card-header">
+                                <tr>
 
                                     <th>Date<br />
                                         दिनांक</th>

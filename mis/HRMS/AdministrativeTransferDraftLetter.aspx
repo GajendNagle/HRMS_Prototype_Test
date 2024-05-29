@@ -2,14 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
-        th {
-            white-space: nowrap;
-        }
-
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -57,7 +49,7 @@
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -74,7 +66,7 @@
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
                     <li class="breadcrumb-item"><a href="../HRMS/Trn_AdministrativeTransfer.aspx" title="click to go on">Administrative Level Transfer</a></li>
-                    <li class="breadcrumb-item active">Print Draft Transfer Letter or Transfer Letter</li>
+                    <li class="breadcrumb-item active">Print Draft Transfer</li>
                 </ol>
             </div>
         </div>
@@ -93,39 +85,36 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                             <li class="nav-item dropdown ">
-                                <a class="nav-link  text-white " href="Trn_AdministrativeTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
+                                <ul class="dropdown-menu">
 
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Transfer Process</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
-                                        <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
-                                        <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order </a></li>
-                                        <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancies</b></a>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
-                                        <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
 
-                                    </ul>
-                                </li>
+                                </ul>
                             </li>
                         </ul>
 
                     </div>
                 </div>
             </nav>
+
             <br />
             <br />
             <fieldset>
-                <legend>Print Draft Letter or Update / ड्राफ्ट पत्र प्रिंट करें या अपडेट करें
+                <legend>Print Draft Letter & Update
                 </legend>
                 <div class="row">
 
@@ -220,7 +209,7 @@
                     <div class="col-md-3">
                         <label class="font-bold">
                             Employee Unique ID.<br />
-                            कर्मचारी यूनिक आई डी.
+                            कर्मचारी यूनिक आईडी.
                         </label>
                         <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
                     </div>
@@ -238,98 +227,68 @@
 
 
             <fieldset id="vacaniesDetail" style="display: none;">
-                <legend>Details </legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered text-center ">
-                        <tbody>
-                            <tr class="card-header">
-                                <th>Sr. No.
-                                    <br />
-                                    सरल क्र.</th>
-                                <th>Order Number
-                                    <br />
-                                    आदेश नंबर</th>
-                                <th>Employ Name
-                                    <br />
-                                    कर्मचारी का नाम </th>
-                                <th>Unique Id
-                                    <br />
-                                    यूनीक आई डी </th>
-                                <th>Print Draft Letter
-                                    <br />
-                                    ड्राफ्ट लेटर  प्रिंट करें</th>
-                                <th>Update Letter
-                                    <br />
-                                    लेटर अपडेट करें</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
+                <legend>Print Draft Letter & Update       
+                </legend>
+                <table class="table table-bordered text-center ">
+                    <tbody>
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Order Number</th>
+                            <th>Employ Name</th>
+                            <th>Unique Id</th>
+                            <th>Print Draft Letter</th>
+                            <th>Update Letter</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
 
-                                <td>2024/20-01/140530</td>
+                            <td>2024/20-01/140530</td>
 
-                                <td>Rounak Nath</td>
+                            <td>Rounak Nath</td>
 
-                                <td>AR4781</td>
+                            <td>AR4781</td>
 
-                                <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
 
-                                <td>2024/20-01/140530</td>
+                            <td>2024/20-01/140530</td>
 
-                                <td>Aman Singh</td>
+                            <td>Aman Singh</td>
 
-                                <td>FT8526</td>
+                            <td>FT8526</td>
 
-                                <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
 
-                                <td>2024/20-01/140530</td>
+                            <td>2024/20-01/140530</td>
 
-                                <td>Ankit Singh</td>
+                            <td>Ankit Singh</td>
 
-                                <td>ER4568</td>
+                            <td>ER4568</td>
 
-                                <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-info"><i class="fas fa-edit"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </fieldset>
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">

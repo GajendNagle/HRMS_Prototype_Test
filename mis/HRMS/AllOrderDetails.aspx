@@ -84,7 +84,7 @@
                         <div class="form-group">
                             <label class="font-bold">
                                 Select Circular Issued By<br />
-                                परिपत्र का चयन करें<span style="color: red">*</span></label>
+                                सर्कुलर का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control">
                                 <option value="--Select--">--Select--</option>
                                 <option value="All">All</option>

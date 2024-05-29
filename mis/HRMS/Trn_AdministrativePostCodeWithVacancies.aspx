@@ -1,15 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Trn_AdministrativePostCodeWithVacancies.aspx.cs" Inherits="mis_HRMS_Trn_AdministrativePostCodeWithVacancies" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
-        th {
-            white-space: nowrap;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -33,7 +24,7 @@
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item"><a href="../HRMS/Trn_AdministrativeTransfer.aspx" title="click to go on">Administrative Level Transfer</a></li>
+                    <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>
                     <li class="breadcrumb-item active">View Post Code With Vacancies</li>
                 </ol>
             </div>
@@ -54,29 +45,25 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                             <li class="nav-item dropdown ">
-                                <a class="nav-link  text-white " href="Trn_AdministrativeTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
+                                <ul class="dropdown-menu">
 
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Transfer Process</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
-                                        <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
-                                        <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order </a></li>
-                                        <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancies</b></a>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
-                                        <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
+                                    <li><a class="dropdown-item" href="AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
 
-                                    </ul>
-                                </li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -87,12 +74,13 @@
             <br />
 
             <fieldset>
-                <legend>View Post Code With Vacancies / रिक्तियों के साथ पोस्ट कोड देखें
+                <legend>View Post Code With Vacancies
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <label class="font-bold">
-                            District / ज़िला<span style="color: red">*</span></label>
+                            District<br />
+                            ज़िला<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -151,18 +139,24 @@
 
                     <div class="col-md-3">
                         <label class="font-bold">
-                            Block /  ब्लॉक<span style="color: red">*</span></label>
+                            Block<br />
+                            ब्लॉक<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Huzur</option>
                             <option value="Raisen">Fanda</option>
                             <option value="Govindapura">Govindpura</option>
+
+
+
                         </select>
                     </div>
                     <div class="col-md-3" id="divtxtpanelname">
                         <div class="form-group">
                             <label class="font-bold">
-                                School Category /  शाला का प्रकार<span style="color: red">*</span></label>
+                                School Category
+                                <br />
+                                शाला का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="SSS-1">Primary (Class 1 to 5)</option>
@@ -185,7 +179,8 @@
                     <div class="col-md-3" id="divtxtpdanelname">
                         <div class="form-group">
                             <label class="font-bold">
-                                Panal Name / पैनल का नाम<span style="color: red">*</span></label>
+                                Panal Name<br />
+                                पैनल का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">--Select--</option>
                                 <option value="1SSS-1 Hindi">SSS-1 Hindi</option>
@@ -249,29 +244,34 @@
             <fieldset id="vacaniesDetail" style="display: none;">
                 <legend>Vacancies Detail
                 </legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered text-center">
+                            <table class="table  table-hover">
+                                <%-- <tr>
+                                    <th>S.No.</th>
+                                    <th>District/ ज़िला</th>
+                                    <th>Block/ब्लॉक</th>
+                                    <th>Panal Name/पैनल का नाम</th>
+                                    <th>Vacancies</th>
 
-                                <tr class="card-header">
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bhopal</td>
+                                    <td>GovindPura</td>
+                                    <td>SSS-1</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Bhopal</td>
+                                    <td>Huzur</td>
+                                    <td>PR-HSS</td>
+                                    <td>6</td>
+                                </tr>--%>
+
+                                <tr>
                                     <th>Sr.No
                                         <br />
                                         सरल क्र.</th>

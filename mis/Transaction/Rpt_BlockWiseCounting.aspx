@@ -1,15 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_BlockWiseCounting.aspx.cs" Inherits="mis_Transaction_Rpt_BlockWiseCounting" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
-        th {
-            white-space: nowrap;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -46,29 +37,24 @@
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                                 <li class="nav-item dropdown ">
-                                    <a class="nav-link  text-white " href="../HRMS/Trn_AdministrativeTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Transfer Process</b></a>
+                                    <ul class="dropdown-menu">
 
-                                    <li class="nav-item dropdown ">
-                                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                            Transfer Process</b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="../HRMS/Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
-                                            <li><a class="dropdown-item" href="../HRMS/AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
-                                            <li><a class="dropdown-item" href="../HRMS/AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order </a></li>
-                                            <li><a class="dropdown-item" href="../HRMS/AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white " href="../HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancies</b></a>
-                                    </li>
-                                    <li class="nav-item dropdown ">
-                                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
-                                            <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
-
-                                        </ul>
-                                    </li>
+                                        <li><a class="dropdown-item" href="../HRMS/Trn_AdministrativeTransferApply.aspx">Transfer</a></li>
+                                        <li><a class="dropdown-item" href="../HRMS/AdministrativeTransferDraftLetter.aspx">Print Draft Transfer Or Update Application</a></li>
+                                        <li><a class="dropdown-item" href="../HRMS/AdministrativeGenerateTransferOrder.aspx">Generate Transfer Order</a></li>
+                                        <li><a class="dropdown-item" href="../HRMS/AdministrativePrintTransferOrder.aspx">Print Transfer Order</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white " href="../HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancies</b></a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Report</b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
+                                        <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+                                    </ul>
                                 </li>
                             </ul>
 
@@ -117,23 +103,6 @@
 
                 <fieldset id="table1" runat="server" visible="false">
                     <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
 
                         <div class="col-md-12">
@@ -216,23 +185,6 @@
                 <fieldset id="table2" runat="server" visible="false">
 
                     <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
 
                         <div class="col-md-12">
@@ -326,23 +278,6 @@
                 <fieldset id="table3" runat="server" visible="false">
 
                     <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
 
                         <div class="col-md-12">
@@ -426,23 +361,6 @@
                 <fieldset id="table4" runat="server" visible="false">
 
                     <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
 
                         <div class="col-md-12">
@@ -535,23 +453,6 @@
                 <fieldset id="table5" runat="server" visible="false">
 
                     <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
 
                         <div class="col-md-12">
@@ -627,23 +528,6 @@
                 <fieldset id="table6" runat="server" visible="false">
 
                     <legend>Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
 
                         <div class="col-md-12">
