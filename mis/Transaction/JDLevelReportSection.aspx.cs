@@ -185,8 +185,8 @@ public partial class mis_Transaction_JDLevelReportSection : System.Web.UI.Page
 
     protected void hideshowlambitAvedan_Click(object sender, EventArgs e)
     {
-        DistrictWiseCounting.Visible=false;
-        lambitAvedan.Visible=true;
+        //DistrictWiseCounting.Visible=false;
+        //lambitAvedan.Visible=true;
     }
 
     protected void hideshowTotalReceivedCases_Click1(object sender, EventArgs e)

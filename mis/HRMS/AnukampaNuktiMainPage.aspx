@@ -12,7 +12,6 @@
             fill: white !important;
             text-decoration: none !important;
         }
-
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -50,7 +49,7 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link text-warning  font-16 text-white" href="AnukampaNuktiMainPage.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                <a class="nav-link font-16 text-white" href="AnukampaNuktiMainPage.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link font-16 text-white" href="Trn_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</b></strong></a>
@@ -82,7 +81,6 @@
                                             <button class="card-btn one">1250</button>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="col-lg-4">
 
@@ -98,14 +96,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 two">
                                             <h4 class="">प्रतीक्षारत आवेदन संख्या</h4>
-
                                         </div>
                                         <div class="card-content">
-
                                             <button class="card-btn two">750</button>
                                         </div>
                                     </div>

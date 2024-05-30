@@ -57,7 +57,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
+                       <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                         <li class="breadcrumb-item active">Compassionate Appointment Print Application</li>
                     </ol>
                 </div>
@@ -89,7 +89,7 @@
                     </div>
                 </nav>
                 <fieldset>
-                    <legend>Compassionate Appointment Print Application       
+                    <legend>Compassionate Appointment Print Application/अनुकम्पा नियुक्ति प्रिंट आवेदन     
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -122,26 +122,24 @@
                                                 लिंग</th>
                                             <th>Caste<br />
                                                 जाति</th>
-                                            <th>Date Of Birth<br />
+                                            <th>Date of Birth<br />
                                                 जन्म की दिनांक</th>
                                             <th>Mobile No.<br />
                                                 मोबाइल</th>
-                                            <th>Applicant's Relationship with the Deceased Teacher<br />
+                                            <th>Applicant's Relationship With The Deceased Teacher<br />
                                                 आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
                                             <th>Marital Status<br />
                                                 वैवाहिक स्थिति</th>
-                                            <th>cadre for appointment<br />
+                                            <th>Cadre For Appointment<br />
                                                 नियुक्ति हेतु संवर्ग</th>
-                                            <th>cadre for appointment<br />
-                                                नियुक्ति हेतु संवर्ग</th>
-                                            <th>designation for appointment<br />
+                                            <th>Designation For Appointment<br />
                                                 नियुक्ति हेतु पदनाम</th>
-                                            <th>Status of passing Primary Teacher Eligibility Test<br />
+                                            <th>Status of Passing Primary Teacher Eligibility Test<br />
                                                 for Primary Teacher<br />
                                                 प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
-                                            <th>year of eligibility test<br />
+                                            <th>Year of Eligibility Test<br />
                                                 पात्रता परीक्षा का वर्ष</th>
-                                            <th>professional qualification<br />
+                                            <th>Professional Qualification<br />
                                                 व्यावसायिक योग्यता</th>
                                             <th>Print<br />
                                                 प्रिंट</th>

@@ -1,6 +1,29 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_BlockWiseCounting.aspx.cs" Inherits="mis_Transaction_Rpt_BlockWiseCounting" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
+        .SingleSelectBhopalData {
+            padding-top: 8rem !important;
+        }
+
+        .SingleSelectRaisenData {
+            padding-top: 9rem !important;
+        }
+
+        .SingleSelectSehoreData {
+            padding-top: 8rem !important;
+        }
+
+        .SingleSelectVidishaData {
+            padding-top: 9rem !important;
+        }.SingleSelectGwaliorData {
+            padding-top: 6rem !important;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -88,7 +111,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 mt-4">
+                        <div class="col-md-4" style="top:1.8rem;">
                             <div class="form-group">
 
                                 <asp:Button runat="server" ID="btn" Text="Search" CssClass="btn btn-success btn-rounded" OnClick="btn_Click" />
@@ -111,16 +134,12 @@
 
                                 <table class="table table-bordered text-center">
                                     <thead>
-
                                         <tr>
                                             <th>District<br />
                                                 जिला</th>
                                             <th>Block
                                                 <br />
                                                 ब्लॉक</th>
-                                            <th>Sankul Code
-                                                <br />
-                                                संकुल कोड</th>
                                             <th>Received Application<br />
                                                 प्राप्त आवेदन</th>
                                             <th>Approved Application<br />
@@ -129,14 +148,12 @@
                                                 लंबित आवेदन</th>
                                             <th>Reject Application<br />
                                                 निराकृत आवेदन</th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td rowspan="5" style="padding-top: 13%">Bhopal</td>
+                                            <td rowspan="5" class="SingleSelectBhopalData">Bhopal</td>
                                             <td>Phanda URBAN-Old City</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -144,7 +161,6 @@
                                         </tr>
                                         <tr>
                                             <td>Phanda URBAN-New City</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>70</td>
                                             <td>40</td>
                                             <td>20</td>
@@ -152,7 +168,6 @@
                                         </tr>
                                         <tr>
                                             <td>Phanda Gramin</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>50</td>
                                             <td>20</td>
                                             <td>20</td>
@@ -160,7 +175,6 @@
                                         </tr>
                                         <tr>
                                             <td>Berasia</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>50</td>
                                             <td>30</td>
                                             <td>15</td>
@@ -168,7 +182,6 @@
                                         </tr>
                                         <tr>
                                             <td>Huzur</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -201,9 +214,7 @@
                                             <th>Block
                 <br />
                                                 ब्लॉक</th>
-                                            <th>Sankul Code
-                <br />
-                                                संकुल कोड</th>
+
                                             <th>Received Application<br />
                                                 प्राप्त आवेदन</th>
                                             <th>Approved Application<br />
@@ -218,9 +229,8 @@
 
                                     <tbody>
                                         <tr>
-                                            <td rowspan="6" style="padding-top: 15%">Raisen</td>
+                                            <td rowspan="6" class="SingleSelectRaisenData">Raisen</td>
                                             <td>Badi</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -228,7 +238,6 @@
                                         </tr>
                                         <tr>
                                             <td>Begamganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -236,7 +245,6 @@
                                         </tr>
                                         <tr>
                                             <td>Gairatganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -244,7 +252,6 @@
                                         </tr>
                                         <tr>
                                             <td>Obedullaganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -252,7 +259,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sanchi</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -260,7 +267,7 @@
                                         </tr>
                                         <tr>
                                             <td>Silwani</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -294,9 +301,7 @@
                                             <th>Block
                                                 <br />
                                                 ब्लॉक</th>
-                                            <th>Sankul Code
-                                                <br />
-                                                संकुल कोड</th>
+
                                             <th>Received Application<br />
                                                 प्राप्त आवेदन</th>
                                             <th>Approved Application<br />
@@ -310,9 +315,8 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td rowspan="5" style="padding-top: 15%">Sehore</td>
+                                            <td rowspan="5" class="SingleSelectSehoreData">Sehore</td>
                                             <td>Ashta</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -320,7 +324,6 @@
                                         </tr>
                                         <tr>
                                             <td>Budni</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -328,7 +331,6 @@
                                         </tr>
                                         <tr>
                                             <td>Ichhawar</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -336,7 +338,6 @@
                                         </tr>
                                         <tr>
                                             <td>Nasrullaganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -344,7 +345,6 @@
                                         </tr>
                                         <tr>
                                             <td>Sehore</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -377,9 +377,7 @@
                                             <th>Block
                                 <br />
                                                 ब्लॉक</th>
-                                            <th>Sankul Code
-                                <br />
-                                                संकुल कोड</th>
+
                                             <th>Received Application<br />
                                                 प्राप्त आवेदन</th>
                                             <th>Approved Application<br />
@@ -394,9 +392,9 @@
 
                                     <tbody>
                                         <tr>
-                                            <td rowspan="6" style="padding-top: 15%">Vidisha</td>
+                                            <td rowspan="6" class="SingleSelectVidishaData">Vidisha</td>
                                             <td>Basoda</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -404,7 +402,7 @@
                                         </tr>
                                         <tr>
                                             <td>Gyaraspur</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -412,7 +410,7 @@
                                         </tr>
                                         <tr>
                                             <td>Kurwai</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -420,7 +418,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sironj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -428,7 +426,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sanchi</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -436,7 +434,7 @@
                                         </tr>
                                         <tr>
                                             <td>Vidisha</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -469,9 +467,7 @@
                                             <th>Block
                                 <br />
                                                 ब्लॉक</th>
-                                            <th>Sankul Code
-                                <br />
-                                                संकुल कोड</th>
+
                                             <th>Received Application<br />
                                                 प्राप्त आवेदन</th>
                                             <th>Approved Application<br />
@@ -486,9 +482,9 @@
 
                                     <tbody>
                                         <tr>
-                                            <td rowspan="4" style="padding-top: 11%">Gwalior</td>
+                                            <td rowspan="4" class="SingleSelectGwaliorData">Gwalior</td>
                                             <td>Bhitarwar</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -496,7 +492,7 @@
                                         </tr>
                                         <tr>
                                             <td>Dabra</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -504,7 +500,7 @@
                                         </tr>
                                         <tr>
                                             <td>Ghatigaon</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -512,7 +508,7 @@
                                         </tr>
                                         <tr>
                                             <td>Morar</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -543,9 +539,7 @@
                                             <th>Block
                                                 <br />
                                                 ब्लॉक</th>
-                                            <th>Sankul Code
-                                                <br />
-                                                संकुल कोड</th>
+
                                             <th>Received Application<br />
                                                 प्राप्त आवेदन</th>
                                             <th>Approved Application<br />
@@ -561,9 +555,9 @@
 
                                     <tbody>
                                         <tr>
-                                            <td rowspan="5" style="padding-top: 14%">Bhopal</td>
+                                            <td rowspan="5" class="SingleSelectBhopalData">Bhopal</td>
                                             <td>Phanda URBAN-Old City</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -572,7 +566,7 @@
                                         <tr>
 
                                             <td>Phanda URBAN-New City</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -580,7 +574,7 @@
                                         </tr>
                                         <tr>
                                             <td>Phanda Gramin</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -588,7 +582,7 @@
                                         </tr>
                                         <tr>
                                             <td>Berasia</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -596,16 +590,16 @@
                                         </tr>
                                         <tr>
                                             <td>Huzur</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
                                             <td>5</td>
                                         </tr>
                                         <tr>
-                                            <td rowspan="6" style="padding-top: 16%">Raisen</td>
+                                            <td rowspan="6" class="SingleSelectRaisenData" >Raisen</td>
                                             <td>Badi</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>20</td>
                                             <td>10</td>
                                             <td>5</td>
@@ -613,7 +607,7 @@
                                         </tr>
                                         <tr>
                                             <td>Begamganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>60</td>
                                             <td>30</td>
                                             <td>20</td>
@@ -621,7 +615,7 @@
                                         </tr>
                                         <tr>
                                             <td>Gairatganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -629,7 +623,7 @@
                                         </tr>
                                         <tr>
                                             <td>Obedullaganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>55</td>
                                             <td>20</td>
                                             <td>20</td>
@@ -637,7 +631,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sanchi</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>50</td>
                                             <td>20</td>
                                             <td>10</td>
@@ -645,7 +639,7 @@
                                         </tr>
                                         <tr>
                                             <td>Silwani</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -653,9 +647,9 @@
                                         </tr>
 
                                         <tr>
-                                            <td rowspan="5" style="padding-top: 17%">Sehore</td>
+                                            <td rowspan="5"  class="SingleSelectSehoreData">Sehore</td>
                                             <td>Ashta</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -663,7 +657,7 @@
                                         </tr>
                                         <tr>
                                             <td>Budni</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -671,7 +665,7 @@
                                         </tr>
                                         <tr>
                                             <td>Ichhawar</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -679,7 +673,7 @@
                                         </tr>
                                         <tr>
                                             <td>Nasrullaganj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -687,7 +681,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sehore</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -695,9 +689,9 @@
                                         </tr>
 
                                         <tr>
-                                            <td rowspan="6" style="padding-top: 20%">Vidisha</td>
+                                            <td rowspan="6"  class="SingleSelectVidishaData">Vidisha</td>
                                             <td>Basoda</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>40</td>
                                             <td>20</td>
                                             <td>10</td>
@@ -705,7 +699,7 @@
                                         </tr>
                                         <tr>
                                             <td>Gyaraspur</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -713,7 +707,7 @@
                                         </tr>
                                         <tr>
                                             <td>Kurwai</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -721,7 +715,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sironj</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>20</td>
                                             <td>10</td>
                                             <td>5</td>
@@ -729,7 +723,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sanchi</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -737,7 +731,7 @@
                                         </tr>
                                         <tr>
                                             <td>Vidisha</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>70</td>
                                             <td>40</td>
                                             <td>20</td>
@@ -745,9 +739,9 @@
                                         </tr>
 
                                         <tr>
-                                            <td rowspan="4" style="padding-top: 12%">Gwalior</td>
+                                            <td rowspan="4"  class="SingleSelectGwaliorData">Gwalior</td>
                                             <td>Bhitarwar</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>30</td>
                                             <td>20</td>
                                             <td>5</td>
@@ -755,7 +749,7 @@
                                         </tr>
                                         <tr>
                                             <td>Dabra</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>60</td>
                                             <td>30</td>
                                             <td>20</td>
@@ -763,7 +757,7 @@
                                         </tr>
                                         <tr>
                                             <td>Ghatigaon</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>50</td>
                                             <td>20</td>
                                             <td>10</td>
@@ -771,7 +765,7 @@
                                         </tr>
                                         <tr>
                                             <td>Morar</td>
-                                            <td>23320400117-MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</td>
+
                                             <td>40</td>
                                             <td>20</td>
                                             <td>10</td>
