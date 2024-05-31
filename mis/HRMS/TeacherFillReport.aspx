@@ -1,42 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="TeacherFillReport.aspx.cs" Inherits="mis_Transaction_TeacherFillReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         #workdescription, #workdescription1, #workdescription2, #workdescription3, #workdescription4, #workdescription5, #workdescription6, #workdescription7, #workdescription8 {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
 
-        /*  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-            background-color: #16603ae3;
-        }
-
-        .profileimage {
-            display: block;
-            height: 6.2rem;
-            margin-left: 5rem;
-        }
-
-        html body .m-t-30 {
-            margin-top: 0px;
-        }
-
-        .tab-menu {
-            color: #313132;
-            font-weight: 600 !important;
-            margin-left: 1px !important;
-            border: 1px solid #a5a3a3 !important;
-            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out !important;
-        }
-
-            .tab-menu:hover {
-                color: #16603ae3;
-            }*/
 
         #ddlPosition {
             position: relative;
             bottom: 20px;
+        }
+    </style>
+    <style>
+        #formContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+
+        #Table1 {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
         }
     </style>
 </asp:Content>
@@ -44,12 +37,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
-            <%--<div class="col-md-5 align-self-center">
-    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
-    <h4 class="text-themecolor" style="position: relative; left: 500px; bottom: 20px; color: brown; font-weight: bolder; font-family: Helvetica, Arial, sans-serif;">व्याख्याता/शिक्षक की गोपनीय चरित्रावली  </h4>
-    <br />
-    <h6 style="font-size: 15px; position: relative; left: 520PX; bottom: 20px;"></h6>
-</div>--%>
+
             <div class="col-md-5 align-self-center">
                 <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                     <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -116,12 +104,7 @@
             <br />
 
 
-            <%--<ul class="nav nav-pills m-t-30 ms-3 m-b-30">
-                    <li class=" nav-item"><a href="ConfedicialReport.aspx" class="nav-link  tab-menu" aria-expanded="false">Employee Personal Information</a> </li>
-                    <li class="nav-item"><a href="TeacherFillReport.aspx" class="nav-link active  tab-menu" aria-expanded="false">Teacher Report Filled</a> </li>
-                    <li class="nav-item"><a href="ReportingOfficerFill.aspx" class="nav-link tab-menu" aria-expanded="true">Reporting Fill ACR Report</a> </li>
-                    <li class="nav-item"><a href="AcceptingAuthorityFilled.aspx" class="nav-link tab-menu" aria-expanded="true">Accepting Authority Fill ACR Report</a> </li>
-                </ul>--%>
+
 
 
             <div runat="server" id="Fieldset1" style="display: block">
@@ -130,13 +113,15 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <table id="Table5" class="table table-bordered table-responsive-lg text-center " runat="server">
+                            <table id="Table1" class="table table-bordered table-responsive-lg text-center " runat="server">
                                 <thead>
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                         <th rowspan="2">S.No.<br />
                                             सरल.क्र </th>
                                         <th rowspan="2">Class being taught<br />
-                                            पढाई जाने वाली कक्षा</th>
+                                            पढाई जाने वाली कक्षा
+                                           
+                                        </th>
                                         <th colspan="2">Enrolment<br />
                                             नामांकन</th>
                                         <th rowspan="2">Average Annual attendance in Percentege<br />
@@ -144,6 +129,7 @@
                                         <th rowspan="2">Remark
                                             <br />
                                             टिप्पणी</th>
+                                        <th rowspan="2">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -158,19 +144,40 @@
                                         <td>1
                                         </td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <select cssclass="form-control select2" id="ddlClass" class="form-control select2" style="width: 190px;">
+                                                <option value="0">--Select--</option>
+                                                <option>1st class/कक्षा पहली</option>
+                                                <option>2nd class/कक्षा दूसरी</option>
+                                                <option>3rd class/कक्षा तीसरी</option>
+                                                <option>4th class/कक्षा चौथी</option>
+                                                <option>5th class/कक्षा पाचंवी</option>
+                                                <option>6th class/कक्षा छटवी</option>
+                                                <option>7th class/कक्षा सातवी</option>
+                                                <option>8th class/कक्षा आठवी</option>
+                                                <option>9th class/कक्षा नव्वी</option>
+                                                <option>10th class/कक्षा दसवी</option>
+                                                <option>11th class/कक्षा ग्यारवी</option>
+                                                <option>12th class/कक्षा बरवी</option>
+                                            </select></td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <%--<asp:TextBox runat="server" ID="a1" CssClass="form-control"></asp:TextBox>--%>
+                                            <input type="email" id="a1" class="form-control">
+                                        </td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <input type="email" id="a2" class="form-control">
+                                        </td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <input type="email" id="a3" class="form-control" style="width: 160px;"></td>
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                        <td>
+
+                                            <button type="button" onclick="addData()" class="btn btn-success">Add</button>
+                                        </td>
 
 
                                     </tr>
-                                    <tr valign="middle">
+                                    <%--    <tr valign="middle" style="display:none" id="tr1">
                                         <td>2</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -183,7 +190,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription4" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr2">
                                         <td>3</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -195,8 +202,9 @@
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription5" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                       
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr3">
                                         <td>4</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -209,7 +217,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription6" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr4">
                                         <td>5</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -222,7 +230,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription7" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr5">
                                         <td>6</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -235,7 +243,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr6">
                                         <td>7</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -248,7 +256,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription7" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr7">
                                         <td>8</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -261,7 +269,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr8">
                                         <td>9</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -274,7 +282,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr9">
                                         <td>10</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -287,7 +295,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription10" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr10">
                                         <td>11</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -300,7 +308,7 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="display:none"  id="tr11">
                                         <td>12</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -313,6 +321,19 @@
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                     </tr>
+                                    <tr valign="middle" style="display:none"  id="tr12">
+     <td>13</td>
+     <td>
+         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+     <td>
+         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+     <td>
+         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+     <td>
+         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+     <td>
+         <textarea class="form-control mt-1" id="workdescription13" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+ </tr>--%>
                                 </tbody>
                             </table>
                         </div>
@@ -355,22 +376,42 @@
                                             लक्ष्य (प्रतिशत में)</th>
                                         <th>Achievement (In % age)<br />
                                             उपलब्धि (प्रतिशत में)</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
                                         <td>1</td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <%--<asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>--%>
+                                            <select cssclass="form-control select2" id="ddlClass2" class="form-control select2" style="width: 190px;">
+                                                <option value="0">--Select--</option>
+                                                <option>1st class/कक्षा पहली</option>
+                                                <option>2nd class/कक्षा दूसरी</option>
+                                                <option>3rd class/कक्षा तीसरी</option>
+                                                <option>4th class/कक्षा चौथी</option>
+                                                <option>5th class/कक्षा पाचंवी</option>
+                                                <option>6th class/कक्षा छटवी</option>
+                                                <option>7th class/कक्षा सातवी</option>
+                                                <option>8th class/कक्षा आठवी</option>
+                                                <option>9th class/कक्षा नव्वी</option>
+                                                <option>10th class/कक्षा दसवी</option>
+                                                <option>11th class/कक्षा ग्यारवी</option>
+                                                <option>12th class/कक्षा बरवी</option>
+                                            </select>
+                                        </td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <input type="email" id="b1" class="form-control"></td>
                                         <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
+                                            <input type="email" id="b2" placeholder="100%" class="form-control text-center"></td>
                                         <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <input type="email" id="b3" class="form-control"></td>
+                                        <td>
+
+                                            <button type="button" onclick="addData1()" class="btn btn-success">Add</button></td>
 
                                     </tr>
-                                    <tr valign="middle">
+                                    <%--     <tr valign="middle">
                                         <td>2</td>
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
@@ -501,7 +542,7 @@
                                         <td>
                                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
 
-                                    </tr>
+                                    </tr>--%>
                                 </tbody>
                             </table>
                         </div>
@@ -560,6 +601,7 @@ of annual examination result
 आधार पर उपलब्धि<br />
                                             (Student in Grade)<br />
                                             (ग्रेडवार छात्र संख्या)</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -590,69 +632,86 @@ of annual examination result
                                             (द)</td>
                                         <td>E<br />
                                             (ई)</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr valign="middle">
                                         <td>1
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                            <select class="form-control select2" style="width: 70px;" id="ddlClass3">
+                                                <option value="0">--Select--</option>
+                                                <option>1st class/कक्षा पहली</option>
+                                                <option>2nd class/कक्षा दूसरी</option>
+                                                <option>3rd class/कक्षा तीसरी</option>
+                                                <option>4th class/कक्षा चौथी</option>
+                                                <option>5th class/कक्षा पाचंवी</option>
+                                                <option>6th class/कक्षा छटवी</option>
+                                                <option>7th class/कक्षा सातवी</option>
+                                                <option>8th class/कक्षा आठवी</option>
+                                                <option>9th class/कक्षा नव्वी</option>
+                                                <option>10th class/कक्षा दसवी</option>
+                                                <option>11th class/कक्षा ग्यारवी</option>
+                                                <option>12th class/कक्षा बरवी</option>
+                                            </select></td>
+                                        <td><input type="email" id="c1" class="form-control" Style="width: 70px;">
+                                            </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                           <input type="email" id="c2" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                          <input type="email" id="c4" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c5" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c6" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c7" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c8" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c9" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c10" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c11" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c12" class="form-control" Style="width: 70px;"></td>
+                                         <td>
 
+     <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
 
                                     </tr>
-                                    <tr valign="middle">
+                                    <%--     <tr valign="middle">
                                         <td>2
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
                                     </tr>
 
@@ -660,62 +719,62 @@ of annual examination result
                                         <td>3
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
                                     </tr>
                                     <tr valign="middle">
                                         <td>4
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -723,31 +782,31 @@ of annual examination result
                                         <td>5
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -755,31 +814,31 @@ of annual examination result
                                         <td>6
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -787,31 +846,31 @@ of annual examination result
                                         <td>7
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -819,31 +878,31 @@ of annual examination result
                                         <td>8
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -851,31 +910,31 @@ of annual examination result
                                         <td>9
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -883,31 +942,31 @@ of annual examination result
                                         <td>10
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -915,31 +974,31 @@ of annual examination result
                                         <td>11
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
                                     </tr>
@@ -947,34 +1006,34 @@ of annual examination result
                                         <td>12
                                         </td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
                                         <td>
-                                            <asp:TextBox CssClass="form-control" runat="server" Style="width: 70px;"></asp:TextBox></td>
+                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
 
-                                    </tr>
+                                    </tr>--%>
                                 </tbody>
                             </table>
 
@@ -1021,7 +1080,9 @@ of annual examination result
                 </h4>
                 <span class="fw-bold">कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्य का विवरण दे:-</span>
                 <fieldset>
-                    <legend>Role in academic  <br /> अकादमिक कार्यो में भूमिका</legend>
+                    <legend>Role in academic 
+                        <br />
+                        अकादमिक कार्यो में भूमिका</legend>
                     <div class="row ">
                         <div class="col-md-4">
                             <label>
@@ -1182,54 +1243,57 @@ of annual examination result
         </div>
     </div>
 
- <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-xl">
-         <div class="modal-content">
-             <div class="modal-header" style="background-color: #1B5B5C;">
+    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #1B5B5C;">
 
-                 <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                    <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
-                 <h3 class="modal-title  fw-bold  text-white ms-3">Send To Reporting Officer</h3>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-                 <fieldset>
-                     <legend>Send To Reporting Officer / रिपोर्टिंग अधिकारी को भेजें </legend>
-                     <div class="row">
-                         <div class="col-md-4">
-                             <label>Reporting Officer Unique ID 
+                    <h3 class="modal-title  fw-bold  text-white ms-3">Send To Reporting Officer</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Send To Reporting Officer / रिपोर्टिंग अधिकारी को भेजें </legend>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>
+                                    Reporting Officer Unique ID 
                                  <br />
-                                 रिपोर्टिंग अधिकारी यूनिक आईडी<span style="color: red">*</span></label>
-                             <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                                    रिपोर्टिंग अधिकारी यूनिक आईडी<span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
 
-                         </div>
+                            </div>
 
-                         <div class="col-md-4" style="display: none;" id="OfficerName">
-                             <label>Reporting Officer Name
+                            <div class="col-md-4" style="display: none;" id="OfficerName">
+                                <label>
+                                    Reporting Officer Name
                                  <br />
-                                 रिपोर्टिंग अधिकारी का नाम <span style="color: red">*</span></label>
-                             <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
+                                    रिपोर्टिंग अधिकारी का नाम <span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
 
-                         </div>
+                            </div>
 
-                         <div class="col-md-4" style="display: none;" id="SankulCode">
-                             <label>Reporting Officer Sankul Code<br />
-                                 रिपोर्टिंग अधिकारी संकुल कोड</label>
-                             <asp:TextBox runat="server" CssClass="form-control" placeholder="GOVT. HSS SHYAMPUR-23010804504"></asp:TextBox>
-                         </div>
-                     </div>
-                 </fieldset>
-                 <div class="modal-footer justify-content-center">
-                     <div style="display: none;" id="btn1">
-                         <button type="button" class="btn btn-success Alert-Save btn-rounded">Send To Officer</button>
-                         <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                     </div>
-                 </div>
-             </div>
+                            <div class="col-md-4" style="display: none;" id="SankulCode">
+                                <label>
+                                    Reporting Officer Sankul Code<br />
+                                    रिपोर्टिंग अधिकारी संकुल कोड</label>
+                                <asp:TextBox runat="server" CssClass="form-control" placeholder="GOVT. HSS SHYAMPUR-23010804504"></asp:TextBox>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="modal-footer justify-content-center">
+                        <div style="display: none;" id="btn1">
+                            <button type="button" class="btn btn-success Alert-Save btn-rounded">Send To Officer</button>
+                            <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        </div>
+                    </div>
+                </div>
 
-         </div>
-     </div>
- </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -1244,6 +1308,158 @@ of annual examination result
             //document.getElementById("demo").innerHTML = "You selected: " + x;
         }
     </script>
+    <script>
+        debugger
+        function
+            addData() {
+            // Get input values
+            let name = document.getElementById("ddlClass").value;
+            let email = document.getElementById("a1").value;
+            let mobile = document.getElementById("a2").value;
+            let address = document.getElementById("a3").value;
+            let Remark = document.getElementById("workdescription3").value;
+
+            // Get the table and insert a new row at the end
+            let table = document.getElementById("<%= Table1.ClientID %>");
+            let newRow = table.insertRow(table.rows.length);
+
+            // Insert data into cells of the new row
+            newRow.insertCell(0).innerHTML = table.rows.length - 3;
+            newRow.insertCell(1).innerHTML = name;
+            newRow.insertCell(2).innerHTML = email;
+            newRow.insertCell(3).innerHTML = mobile;
+            newRow.insertCell(4).innerHTML = address;
+            newRow.insertCell(5).innerHTML = Remark;
+
+            clearInputs();
+        }
+        function clearInputs() {
+            debugger;
+            // Clear input fields
+            //document.getElementById("ddlClass").Items.Insert(0, new ListItem("--Select--", "0"));
+            document.getElementById("ddlClass").selectedIndex = 0;
+            $('#ddlClass').trigger('change');
+            document.getElementById("a1").value = "";
+            document.getElementById("a2").value = "";
+            document.getElementById("a3").value = "";
+            document.getElementById("workdescription3").value = "";
+        }
+    </script>
+
+
+    <script>
+        function addData1() {
+            // Get input values
+            let name = document.getElementById("ddlClass2").value;
+            let subject = document.getElementById("b1").value;
+            let mobile = document.getElementById("b2").value;
+            let address = document.getElementById("b3").value;
+
+
+
+            // Get the table and insert a new row at the end
+            let table = document.getElementById("<%= Table2.ClientID %>");
+            let newRow = table.insertRow(table.rows.length);
+
+            // Insert data into cells of the new row
+            newRow.insertCell(0).innerHTML = table.rows.length - 2;
+            newRow.insertCell(1).innerHTML = name;
+            newRow.insertCell(2).innerHTML = subject;
+            newRow.insertCell(3).innerHTML = '100%';
+            newRow.insertCell(4).innerHTML = address;
+
+            clearInputs1();
+        }
+
+
+
+        function clearInputs1() {
+            debugger;
+            // Clear input fields
+            //document.getElementById("ddlClass").Items.Insert(0, new ListItem("--Select--", "0"));
+            document.getElementById("ddlClass2").selectedIndex = 0;
+            $('#ddlClass2').trigger('change');
+            document.getElementById("b1").value = "";
+            document.getElementById("b2").value = "";
+            document.getElementById("b3").value = "";
+
+        }
+
+
+    </script>
+
+      <script>
+         /* debugger*/
+          function
+              addData2(){
+              // Get input values
+              let name = document.getElementById("ddlClass3").value;
+              let email = document.getElementById("c1").value;
+              let mobile = document.getElementById("c2").value;
+              let PreviousGradea = document.getElementById("c3").value;
+              let PreviousGradeab = document.getElementById("c4").value;
+              let PreviousGradec = document.getElementById("c5").value;
+              let PreviousGraded = document.getElementById("c6").value;
+              let PreviousGradee = document.getElementById("c7").value;
+              let Gradea = document.getElementById("c8").value;
+              let Gradeb = document.getElementById("c9").value;
+              let Gradec = document.getElementById("c10").value;
+              let Graded = document.getElementById("c11").value;
+              let Gradee = document.getElementById("c12").value;
+
+              // Get the table and insert a new row at the end
+              let table = document.getElementById("<%= Table3.ClientID %>");
+           <%--   let table = document.getElementById("<%= Table3.ClientID %>");--%>
+              let newRow = table.insertRow(table.rows.length);
+
+              // Insert data into cells of the new row
+              newRow.insertCell(0).innerHTML = table.rows.length - 3;
+              newRow.insertCell(1).innerHTML = name;
+              newRow.insertCell(2).innerHTML = email;
+              newRow.insertCell(3).innerHTML = mobile;
+              newRow.insertCell(4).innerHTML = PreviousGradea;
+              newRow.insertCell(5).innerHTML = PreviousGradeab;
+              newRow.insertCell(6).innerHTML = PreviousGradec;
+              newRow.insertCell(7).innerHTML = PreviousGraded;
+              newRow.insertCell(8).innerHTML = PreviousGradee;
+
+
+              newRow.insertCell(9).innerHTML = Gradea;
+              newRow.insertCell(10).innerHTML = Gradeb;
+              newRow.insertCell(11).innerHTML = Gradec;
+              newRow.insertCell(12).innerHTML = Graded;
+              newRow.insertCell(13).innerHTML = Gradee;
+             
+
+              clearInputs3();
+          }
+          function clearInputs3() {
+              debugger;
+              // Clear input fields
+              //document.getElementById("ddlClass").Items.Insert(0, new ListItem("--Select--", "0"));
+              document.getElementById("ddlClass3").selectedIndex = 0;
+              $('#ddlClass3').trigger('change');
+              //document.getElementById("a1").value = "";
+              //document.getElementById("a2").value = "";
+              //document.getElementById("a3").value = "";
+              //document.getElementById("workdescription3").value = "";
+
+
+              let email = document.getElementById("c1").value = "";
+              let mobile = document.getElementById("c2").value = "";
+             let PreviousGradea  = document.getElementById("c3").value = "";
+             let PreviousGradeab= document.getElementById("c4").value = "";
+             let PreviousGradec = document.getElementById("c5").value = "";
+             let PreviousGraded = document.getElementById("c6").value = "";
+              let PreviousGradee = document.getElementById("c7").value = "";
+             let Gradea= document.getElementById("c8").value = "";
+             let Gradeb= document.getElementById("c9").value = "";
+             let Gradec= document.getElementById("c10").value = "";
+             let Graded = document.getElementById("c11").value = "";
+              let Gradee = document.getElementById("c12").value = "";
+
+          }
+      </script>
 
 
     <script>function autoResize(textarea) {
