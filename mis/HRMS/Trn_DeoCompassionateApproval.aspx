@@ -68,7 +68,7 @@
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning  font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="collapse navbar-collapse">
@@ -78,8 +78,8 @@
                                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
                                                 </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="Trn_DeoCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
-                                                    <li><a class="dropdown-item" href="DeoPrintApplicationReport.aspx">Print Application </a></li>
+                                                    <li><a class="dropdown-item" href="Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन / सुधार करें</a></li>
+                                                    <li><a class="dropdown-item" href="DeoPrintApplicationReport.aspx">प्रिन्ट आवेदन</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -101,7 +101,7 @@
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                                 </a>
                                                 <ul class="dropdown-menu">
 

@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space: nowrap;
+        }
+
         .profileimage {
             display: block;
             height: 6.2rem;
@@ -43,15 +47,13 @@
                     </u>
                 </p>
             </div>
-            <%-- <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">अनुकंपा नियुक्ति प्रबंधन प्रणाली</p>
-        </div>--%>
             <div class="col-md-7 align-self-center">
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
-                        <li class="breadcrumb-item active">Register Application For Compassionate Appointment</li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment </a></li>
+                        <li class="breadcrumb-item active">Decision on Application</li>
                     </ol>
                 </div>
             </div>
@@ -60,18 +62,15 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px">
+                <nav class="navbar navbar-expand-lg topbar ">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-warning  font-16 text-white" href="DisposeApplicationCaseForHO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
-                                </li>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                <a class="nav-link  text-white " href="DisposeApplicationCaseForHO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                 <li class="nav-item">
                                     <div class="collapse navbar-collapse">
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -81,37 +80,29 @@
                                                 </a>
                                                 <ul class="dropdown-menu">
 
-
                                                     <li><a class="dropdown-item" href="../HRMS/Trn_HOCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
                                                     <li><a class="dropdown-item" href="../HRMS/HOPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
-
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
+                                <a class="nav-link  text-white " href="../HRMS/Trn_ProcessApplicationListHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति पर कार्यवाही</b></a>
+                                <a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a>
 
-                                <li class="nav-item" style="position: relative; right: 20px;">
-                                    <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListHO.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
-
-                                </li>
-                                <li class="nav-item mr-4">
-                                    <a class="nav-link  text-white " href="AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
-
-                                <li class="nav-item mr-3">
-                                    <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorHO.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorHO.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला कलेक्टर को भेजी गई</b></a></li>
                                 <li class="nav-item">
                                     <div class="collapse navbar-collapse">
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                                 </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases (NOC)</a></li>
-                                                    <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                    <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
+                                                    <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                                    <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                    <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
                                                     <li><a class="dropdown-item" href="../HRMS/NocReportHO.aspx">NOC Report</a></li>
 
                                                 </ul>
@@ -120,6 +111,7 @@
                                     </div>
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </nav>
@@ -129,8 +121,7 @@
                 <%--Start DropDown Base data --%>
                 <%--  My Code Start for Dispose Cases NOC --%>
                 <fieldset id="DisposeCasesNOC" runat="server">
-                    <legend>Dispose Cases Report
-                    </legend>
+                    <legend>Dispose Cases Report / डिसपोस केस रिपोर्ट </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
                             <div class="form-group">
@@ -154,22 +145,37 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र</th>
-                                            <th data-class="phone,tablet" scope="col">District</th>
-                                            <th data-hide="phone,tablet" scope="col">Block</th>
-                                            <th data-hide="phone,tablet" scope="col">School</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">जेंडर</th>
-                                            <th data-hide="phone,tablet" scope="col">वर्ग</th>
-
-                                            <th data-hide="phone,tablet" scope="col">जन्म तिथि</th>
-                                            <th data-hide="phone,tablet" scope="col">Mobile </th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                            <th data-hide="phone,tablet" scope="col">वैवाहिक स्थिति</th>
-                                            <th data-hide="phone,tablet" scope="col">शैक्षिक योग्यता</th>
-                                            <th data-hide="phone,tablet" scope="col">नियुक्ति हेतु संवर्ग</th>
-                                            <th data-hide="phone,tablet" scope="col">नियुक्ति हेतु पदनाम </th>
-                                            <th data-hide="phone,tablet" scope="col">प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण  की स्थिति</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">District<br />
+                                                जिला</th>
+                                            <th data-hide="phone,tablet" scope="col">Block<br />
+                                                विकासखण्ड</th>
+                                            <th data-hide="phone,tablet" scope="col">School<br />
+                                                स्कूल</th>
+                                            <th data-hide="phone,tablet" scope="col">Applicant Name<br />
+                                                आवेदक का नाम</th>
+                                            <th data-hide="phone,tablet" scope="col">Gender<br />
+                                                लिंग</th>
+                                            <th data-hide="phone,tablet" scope="col">Cast<br />
+                                                वर्ग</th>
+                                            <th data-hide="phone,tablet" scope="col">Date of Birth<br />
+                                                जन्म तिथि</th>
+                                            <th data-hide="phone,tablet" scope="col">Mobile No.<br />
+                                                मोबाईल नं.</th>
+                                            <th data-hide="phone,tablet" scope="col">Applicant's Relation with Deceased Teacher<br />
+                                                आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                            <th data-hide="phone,tablet" scope="col">Marital Status<br />
+                                                वैवाहिक स्थिति</th>
+                                            <th data-hide="phone,tablet" scope="col">Educational Qualification<br />
+                                                शैक्षिक योग्यता</th>
+                                            <th data-hide="phone,tablet" scope="col">Cadre For Appointment<br />
+                                                नियुक्ति हेतु संवर्ग</th>
+                                            <th data-hide="phone,tablet" scope="col">Designation For Appointment<br />
+                                                नियुक्ति हेतु पदनाम </th>
+                                            <th data-hide="phone,tablet" scope="col">Status of Passing Primary Teacher Eligibility <br />Test for Primary Teacher
+                                                <br />
+                                                प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण  की स्थिति</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -409,48 +415,22 @@
                         </div>
                     </div>
                 </fieldset>
-                <%--  My Code End for Dispose Cases NOC --%>
 
 
-
-
-
-                <%--  My Code Start for Block Wise Count Cases --%>
-                <%--<fieldset id="FieldsetOfDropdownDistrict" runat="server">
-                    <legend>ब्लॉक वार सांख्यिकी   </legend>
-                    <div class="col-md-12" runat="server">
-                        <div class="col-md-6">
-                            <label>
-                                <span style="font-weight: bold;">District *</span>:</label>
-                            <div class="clearfix">
-                            </div>
-                            <asp:DropDownList ID="ddlDistrict" runat="server" class="form-control vd_DDL_required" AutoPostBack="true" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged1">
-                                <asp:ListItem Value="o">-- District -- </asp:ListItem>
-                                <asp:ListItem Value="1">Bhopal भोपाल </asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                        <div class="col-md-6">
-                            <asp:Button runat="server" Text="Search" class="btn btn-large btn-info PerformClick" OnClick="Unnamed_Click" />
-
-                        </div>
-
-                    </div>
-                </fieldset>--%>
                 <div id="BlockWiseCounting" runat="server">
                     <fieldset>
-                        <legend>जिला का चयन करे
-                        </legend>
+                        <legend>Block-Wise Statistics / ब्लॉक वार सांख्यिकी</legend>
                         <%-- Dropdown code --%>
                         <div class="col-md-12" id="divOfDropdownDistrict" runat="server">
                             <div class="row">
 
                                 <div class="col-md-3">
                                     <label>
-                                        <span style="font-weight: bold;">District </span>:</label>
+                                        <span style="font-weight: bold;">Block / विकासखण्ड</span>:</label>
                                     <div class="clearfix">
                                     </div>
                                     <asp:DropDownList ID="ddlJDLevelDistrict" runat="server" class="form-control vd_DDL_required" AutoPostBack="true">
-                                        <asp:ListItem Value="0">-- District --  </asp:ListItem>
+                                        <asp:ListItem Value="0">-- Select --  </asp:ListItem>
                                         <asp:ListItem Value="1">Bhopal भोपाल   </asp:ListItem>
                                         <asp:ListItem Value="2">Agar Malwa आगर  मालवा  </asp:ListItem>
                                         <asp:ListItem Value="3">Alirajpur अलीराजपुर   </asp:ListItem>
@@ -506,7 +486,7 @@
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-md-6">
-                                    <asp:Button runat="server" Text="Search" class="btn btn-large btn-info PerformClick" OnClick="btnSearch_Click" ID="btnSearch" />
+                                    <asp:Button runat="server" Text="Search" class="btn btn-rounded btn-success PerformClick" OnClick="btnSearch_Click" ID="btnSearch" />
 
                                 </div>
                             </div>
@@ -538,15 +518,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -608,15 +596,23 @@
                                         <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -643,18 +639,26 @@
                             <div class="row" id="divTbldataOfRaisen" runat="server">
                                 <div class="col-md-12">
                                     <div class="table-responsive">
-                                        <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="" style="border-collapse: collapse;">
+                                        <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -687,15 +691,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -725,15 +737,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -762,15 +782,23 @@
                                         <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -799,15 +827,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -836,15 +872,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -874,15 +918,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -912,15 +964,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -950,15 +1010,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -988,15 +1056,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1026,15 +1102,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1064,15 +1148,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1102,15 +1194,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1140,15 +1240,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1177,15 +1285,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1214,15 +1330,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1251,15 +1375,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1288,15 +1420,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1325,15 +1465,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1362,15 +1510,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1399,14 +1555,22 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1435,15 +1599,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1472,15 +1644,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1509,15 +1689,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1546,15 +1734,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1583,15 +1779,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1620,15 +1824,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1657,15 +1869,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1695,15 +1915,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1732,15 +1960,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1769,15 +2005,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1806,15 +2050,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1843,15 +2095,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1880,15 +2140,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1917,15 +2185,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1954,15 +2230,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1991,15 +2275,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2028,15 +2320,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2064,15 +2364,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2101,15 +2409,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2138,15 +2454,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2175,15 +2499,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2212,15 +2544,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2249,15 +2589,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2286,15 +2634,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2323,15 +2679,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2360,15 +2724,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2397,15 +2769,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2434,15 +2814,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2471,15 +2859,23 @@
                                         <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                             <thead>
                                                 <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
+                                                    <th data-class="expand" scope="col">Division<br />
+                                                        संभाग</th>
+                                                    <th data-class="phone,tablet" scope="col">District<br />
+                                                        जिला</th>
+                                                    <th data-hide="phone,tablet" scope="col">Block<br />
+                                                        विकासखण्ड</th>
+                                                    <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                        प्राप्त आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                        आवेदन स्वीकार किये गए</th>
 
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                    <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                                    <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                        आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                                    <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                        आवेदन निराकृत</th>
+                                                    <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                        आपत्ति / लंबित आवेदन</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -2499,44 +2895,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <%-- End Umaria district Data --%>
-
-                            <%-- Strat Umaria district Data --%>
-                            <%-- <div class="row" id="Div1" runat="server">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
-                                            <thead>
-                                                <tr>
-                                                    <th data-class="expand" scope="col">संभाग</th>
-                                                    <th data-class="phone,tablet" scope="col">जिला</th>
-                                                    <th data-hide="phone,tablet" scope="col">ब्लॉक</th>
-                                                    <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-                                                    
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                                    <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                                 <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="expand"><span style="font-size: 12pt;">Shahdol</span></td>
-                                                    <td class="phone,tablet"><span style="font-size: 12pt;">Umaria</span></td>
-                                                    <td><span style="font-size: 12pt;">Karkeli</span></td>
-                                                    <td style="text-align: right;">53</td>
-                                                    <td style="text-align: right;">2</td>
-                                                    <td style="text-align: right;">0</td>
-                                                    <td style="text-align: right;">4</td>
-                                                    <td style="text-align: right;">37</td>
-                                                    <td style="text-align: right;">16</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>--%>
-                            <%-- End Umaria district Data --%>
                         </div>
                     </fieldset>
                 </div>
@@ -2546,7 +2904,7 @@
                 <%--  My Code Start for District Wise Count Cases --%>
                 <fieldset id="DistrictWiseCounting" runat="server">
 
-                    <legend>जिला वार सांख्यिकी रिपोर्ट
+                    <legend>District-Wise Statistics/जिला वार सांख्यिकी
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -2571,20 +2929,27 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">संभाग</th>
-                                            <th data-class="phone,tablet" scope="col">जिला</th>
-                                            <th data-hide="phone,tablet" scope="col">प्राप्त आवेदन</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदन स्वीकार किये गए</th>
-
-                                            <th data-hide="phone,tablet" scope="col">आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
-                                            <th data-hide="phone,tablet" scope="col">आवेदन निराकृत</th>
-                                            <th data-hide="phone,tablet" scope="col">आपत्ति/लंबित आवेदन</th>
+                                            <th data-class="expand" scope="col">Division<br />
+                                                संभाग</th>
+                                            <th data-class="phone,tablet" scope="col">District<br />
+                                                जिला</th>
+                                            <th data-hide="phone,tablet" scope="col">Received Application
+                                                <br />
+                                                प्राप्त आवेदन</th>
+                                            <th data-hide="phone,tablet" scope="col">Application Accepted<br />
+                                                आवेदन स्वीकार किये गए</th>
+                                            <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
+                                            <th data-hide="phone,tablet" scope="col">Application Canceled<br />
+                                                आवेदन निराकृत</th>
+                                            <th data-hide="phone,tablet" scope="col">Objection / Pending Application<br />
+                                                आपत्ति / लंबित आवेदन</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="text-center">
                                             <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
-                                            <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
+                                            <td class="phone,tablet"><span style="font-size: 12pt;">Raisen</span></td>
 
 
 
@@ -2596,24 +2961,115 @@
                                                 <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideshowAcceptedApplicationData_Click" BorderStyle="None" ID="hideshowAcceptedApplicationData" />
                                             </td>
                                             <td>
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideShowAvedankoForwordKiyagya_Click1" BorderStyle="None" ID="hideShowAvedankoForwordKiyagya" />
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hideShowAvedankoForwordKiyagya_Click1" BorderStyle="None" ID="hideShowAvedankoForwordKiyagya" />
                                             </td>
                                             <%--<td>
                                                 <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideShowAvedankoForwordKiyagya_Click" BorderStyle="None" ID="hideShowAvedankoForwordKiyagya" />
 
                                             </td>--%>
                                             <td>
-                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" Font-Bold="true" OnClick="hidshowDisposeAavedan_Click" BorderStyle="None"
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" Font-Bold="true" OnClick="hidshowDisposeAavedan_Click" BorderStyle="None"
                                                     ID="hidshowDisposeAavedan" />
 
 
                                             </td>
                                             <td>
-                                                <asp:Button runat="server" Text="3" Style="color: #00bcd4;" Font-Bold="true" OnClick="hideshowDarjYaLambitReport_Click" BorderStyle="none" ID="hideshowDarjYaLambitReport" />
+                                                <asp:Button runat="server" Text="0" Style="color: #00bcd4;" Font-Bold="true" OnClick="hideshowDarjYaLambitReport_Click" BorderStyle="none" ID="hideshowDarjYaLambitReport" />
 
                                             </td>
                                         </tr>
+                                        <tr class="text-center">
+                                            <td class="expand"><span style="font-size: 12pt;">Shahdol</span></td>
+                                            <td class="phone,tablet"><span style="font-size: 12pt;">Umaria</span></td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('ReceivedcaseUmaria')" style="color: #00BCD4; font-weight: bold;">3</a>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('ForWordApplicationUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DisposeCaseUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DistrictWisePendingApplication')" style="color: #00BCD4; font-weight: bold;">2</a>
+                                                </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td class="expand"><span style="font-size: 12pt;">Rewa</span></td>
+                                            <td class="phone,tablet"><span style="font-size: 12pt;">Sidhi</span></td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('ReceivedcaseUmaria')" style="color: #00BCD4; font-weight: bold;">3</a>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DistWiseLockaavedan')" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DistWiseForwordApplication')" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DisposeCaseOfSidhi')" style="color: #00BCD4; font-weight: bold;">3</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td class="expand"><span style="font-size: 12pt;">Narmadapuram</span></td>
+                                            <td class="phone,tablet"><span style="font-size: 12pt;">Betul</span></td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td class="expand"><span style="font-size: 12pt;">Jabalpur</span></td>
+                                            <td class="phone,tablet"><span style="font-size: 12pt;">Balaghat</span></td>
 
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('ReceivedcaseUmaria')" style="color: #00BCD4; font-weight: bold;">3</a>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('ForWordApplicationUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DisposeCaseUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="toggleFieldset('DistrictWisePendingApplication')" style="color: #00BCD4; font-weight: bold;">2</a>
+                                                </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td class="expand"><span style="font-size: 12pt;">Ujjain</span></td>
+                                            <td class="phone,tablet"><span style="font-size: 12pt;">Mandsaur</span></td>
+
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                                </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -2625,7 +3081,7 @@
 
                 <%-- total Start Dispose Cases Table --%>
                 <fieldset id="DisposeAavedan" runat="server" visible="false">
-                    <legend>जिला वार डिस्पोज़ का विवरण  
+                    <legend>District-Wise Disposed Details / जिला वार डिस्पोज़ का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -2647,48 +3103,89 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS" style="border-collapse: collapse;">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Name<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">डिस्पोज़ का प्रकार</div>
+                                                <div style="text-align: center;">
+                                                    Dispose Type<br />
+                                                    डिस्पोज़ का प्रकार
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">नियुक्ति पत्र सं</div>
+                                                <div style="text-align: center;">
+                                                    Appointment Letter No.
+                                                    <br />
+                                                    नियुक्ति पत्र सं
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">पत्र दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Letter Date<br />
+                                                    पत्र दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">नियुक्त पद</div>
+                                                <div style="text-align: center;">
+                                                    Appointed Post<br />
+                                                    नियुक्त पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">नियुक्त संस्था का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Appointing Organization<br />
+                                                    नियुक्त संस्था का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">अस्वीकृत के कारण</div>
+                                                <div style="text-align: center;">
+                                                    Reasons for Rejection<br />
+                                                    अस्वीकृत के कारण
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">भुगतान तारीख</div>
+                                                <div style="text-align: center;">
+                                                    Payment Date<br />
+                                                    भुगतान तारीख
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">भुगतान</div>
+                                                <div style="text-align: center;">
+                                                    Payment<br />
+                                                    भुगतान
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आदेश नंबर</div>
+                                                <div style="text-align: center;">
+                                                    Order No.<br />
+                                                    आदेश नंबर
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">चेक नंबर</div>
+                                                <div style="text-align: center;">
+                                                    Check No.<br />
+                                                    चेक नंबर
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">PDF देखे</div>
+                                                <div style="text-align: center;">
+                                                    View PDF<br />
+                                                    PDF देखे
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -2762,351 +3259,7 @@
                                                 </a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">2
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span>Bhagwan Singh</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>BHUPENDRA MEENA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblDType">Paid Amount</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint1"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint2">01/01/1900</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint72">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint73"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblpaymentdate">4/24/2023 12:00:00 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblpayment">100000</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblorder">4587</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblChaque_no">4587</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">3
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span>Sigdar Puri Goswami</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblappname">Trasha Goswami</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblDType"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint1">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint2">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint72">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint73">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblpaymentdate"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">4
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblempname">Maya Batham</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblappname">NIKHIL BATHAM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblDType">Appointment order issued</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint1">216</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint2">02/08/2022</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint72">Prayogshala Shikshak</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint73">HSS CHAMLESHWAR  BADNAGAR DIS. UJJAIN</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblpaymentdate">1/1/1900 12:00:00 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">5
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblempname">Reeta Singh</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblappname">RAMANAND SINGH</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblDType">Rejected</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint1"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint2">01/01/1900</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint72">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint73"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint173">सहायक अध्यापक संवर्ग के मृतक आश्रित को भृत्य पद पर अनुकंपा नियुक्ति की पात्रता नही है।</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblpaymentdate">1/1/1900 12:00:00 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">6
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblempname">Girija Mehra</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblappname">VISHAL MEHRA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblDType"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblpaymentdate"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
+
 
                                     </tbody>
                                 </table>
@@ -3114,11 +3267,9 @@
                         </div>
                     </div>
                 </fieldset>
-                <%-- total end Dispose Cases Table --%>
-                <%-- total Start received Cases Table --%>
-
-                <fieldset id="TotalReceivedCases" runat="server" visible="false">
-                    <legend>पंजीकृत आवेदन का विवरण    
+                <%--next table of Dispose Case of Umaria--%>
+                <fieldset id="DisposeCaseUmaria" style="display: none">
+                    <legend>District-Wise Disposed Details / जिला वार डिस्पोज़ का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -3143,24 +3294,560 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Name<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">
+                                                    Dispose Type<br />
+                                                    डिस्पोज़ का प्रकार
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Appointment Letter No.
+                                    <br />
+                                                    नियुक्ति पत्र सं
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Letter Date<br />
+                                                    पत्र दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Appointed Post<br />
+                                                    नियुक्त पद
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Name of Appointing Organization<br />
+                                                    नियुक्त संस्था का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Reasons for Rejection<br />
+                                                    अस्वीकृत के कारण
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Payment Date<br />
+                                                    भुगतान तारीख
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Payment<br />
+                                                    भुगतान
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Order No.<br />
+                                                    आदेश नंबर
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Check No.<br />
+                                                    चेक नंबर
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    View PDF<br />
+                                                    PDF देखे
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">1
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: left;">
+                                                    <span>Manphool Imne</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>ANITA IMNE</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span title="Click here To view Appointment Letter">View Document</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <%--next table of Dispose case Sidhi--%>
+                <fieldset id="DisposeCaseOfSidhi" style="display: none">
+                    <legend>District-Wise Disposed Details / जिला वार डिस्पोज़ का विवरण
+                    </legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4">
+                            <div class="form-group">
+                                <input type="text" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Name<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Dispose Type<br />
+                                                    डिस्पोज़ का प्रकार
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Appointment Letter No.
+                                    <br />
+                                                    नियुक्ति पत्र सं
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Letter Date<br />
+                                                    पत्र दिनांक
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Appointed Post<br />
+                                                    नियुक्त पद
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Name of Appointing Organization<br />
+                                                    नियुक्त संस्था का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Reasons for Rejection<br />
+                                                    अस्वीकृत के कारण
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Payment Date<br />
+                                                    भुगतान तारीख
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Payment<br />
+                                                    भुगतान
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Order No.<br />
+                                                    आदेश नंबर
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Check No.<br />
+                                                    चेक नंबर
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    View PDF<br />
+                                                    PDF देखे
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">1
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: left;">
+                                                    <span>Manphool Imne</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>ANITA IMNE</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>3/2/1900 12:00:00 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span title="Click here To view Appointment Letter">View Document</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">2
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: left;">
+                                                    <span>Kamal Kumar</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>pinky vishwakarma</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Appointment order issued</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>04</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>28/06/2021</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Prayogshala Shikshak</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>govt hss parwalia sadak</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>1/1/1900 12:00:00 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span title="Click here To view Appointment Letter">View Document</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">3
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: left;">
+                                                    <span>Mohan Lal Knnojia</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>AMRIT LAL</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Appointment order issued</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>10</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>02/08/2021</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Peon</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>GOVT MS GIRLS STATION AREA, BHOPAL</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>1/1/1900 12:00:00 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: center;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span title="Click here To view Appointment Letter">View Document</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <%-- total end Dispose Cases Table --%>
+                <%-- total Start received Cases Table --%>
+                <fieldset id="TotalReceivedCases" runat="server" visible="false">
+                    <legend>पंजीकृत आवेदन का विवरण/Details of Registered Application
+                    </legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4">
+                            <div class="form-group">
+                                <input type="text" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand" scope="col">Sr. No.
+                                                <br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Code<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का कोड
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Name<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Post<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Death Date<br />
+                                                    दिवंगत दिनांक
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    D.O.B. of Applicant<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -3170,32 +3857,34 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblcode">AA1277</span>
+                                                    <span>AA1277</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempname">Sohela Akhter</span>
+                                                    <span>Sohela Akhter</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempdesigantion">Asstt Grade-3</span>
+
+
+                                                    <span>Asstt Grade-3</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lbldeath">06/01/2018</span>
+                                                    <span>06/01/2018</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">MARIYAM RAZIQ</span>
+                                                    <span>MARIYAM RAZIQ</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappname">01/01/1900</span>
+                                                    <span>01/01/1900</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -3204,32 +3893,213 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblcode">AT9965</span>
+                                                    <span>AT9965</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempname">Manisha Shrivastav</span>
+                                                    <span>Manisha Shrivastav</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempdesigantion">Prathmik Shikshak</span>
+                                                    <span>Prathmik Shikshak</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lbldeath">05/07/2020</span>
+                                                    <span>05/07/2020</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">MIHI SHRIVASTAVA</span>
+                                                    <span>MIHI SHRIVASTAVA</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">09/12/2004</span>
+                                                    <span>09/12/2004</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <%--next Table of Received Case For Umaria--%>
+                <fieldset id="ReceivedcaseUmaria" style="display: none;">
+                    <legend>पंजीकृत आवेदन का विवरण/Details of Registered Application
+                    </legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4">
+                            <div class="form-group">
+                                <input type="text" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand" scope="col">Sr. No.
+                                <br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Code<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का कोड
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Name<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Deceased Officer / Employee Post<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Death Date<br />
+                                                    दिवंगत दिनांक
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    D.O.B. of Applicant<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">1
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: center;">
+                                                    <span>AA1277</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Sohela Akhter</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+
+
+                                                    <span>Asstt Grade-3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>06/01/2018</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>MARIYAM RAZIQ</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>01/01/1900</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">2
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: center;">
+                                                    <span>AT9965</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Manisha Shrivastav</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Prathmik Shikshak</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>05/07/2020</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>MIHI SHRIVASTAVA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>09/12/2004</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">3
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: center;">
+                                                    <span>AA5174</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Nirmala Saxena</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Prathmik Shikshak</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>09/08/2020</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>APOORVA SAXENA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>05/05/1995</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -3241,7 +4111,6 @@
                     </div>
                 </fieldset>
                 <%-- total End received Cases Table --%>
-
                 <%-- total End received Cases Table --%>
                 <fieldset id="AcceptedApplicationData" runat="server" visible="false">
                     <legend>जिला वार लॉक आवेदन का विवरण
@@ -3269,24 +4138,43 @@
                                 <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">
+                                                    Code of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का कोड
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी / कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">
+                                                    Post of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Death Date<br />
+                                                    दिवंगत दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Applicant D.O.B.<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -3332,7 +4220,197 @@
                     </div>
                 </fieldset>
                 <%-- total End received Cases Table --%>
+                <%--lambit aavedan ka Vivran table --%>
+                <fieldset id="DistrictWisePendingApplication" style="display: none;">
+                    <legend>Pending Application Details/लंबित आवेदन का विवरण
+                    </legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4">
+                            <div class="form-group">
+                                <input type="text" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Code of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Post of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Date of Death<br />
+                                                    दिवंगत दिनांक
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant D.O.B.<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Cause of Objection / Pending<br />
+                                                    आपत्ति / लंबित के कारण
+                                                </div>
+                                            </th>
 
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Objection Details<br />
+                                                    आपत्ति का विवरण
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Remark<br />
+                                                    रिमार्क
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">1
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: center;">
+                                                    <span>BG3779</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Pradeep Singh Baghel</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Madhymik Shikshak</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>07/10/2021</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>CHANDRA KANT BAGHEL</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>06/09/2001</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">2
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: center;">
+                                                    <span>BN3380</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Devendra Singh</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Madhymik Shikshak</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>14/05/2021</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>RAMA DEVI</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>08/12/1983</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>NA</span>
+                                                </div>
+                                            </td>
+
+
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
                 <%-- total End received Cases Table --%>
                 <fieldset id="DarjYaLambitReport" runat="server" visible="false">
                     <legend>जिला वार लंबित आवेदन
@@ -3357,10 +4435,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="" style="border-collapse: collapse;">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
                                                 <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
                                             </th>
@@ -3390,6 +4469,7 @@
                                                 <div style="text-align: center;">रिमार्क</div>
                                             </th>
                                         </tr>
+
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -3397,43 +4477,43 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="">AA1879</span>
+                                                    <span>AA1879</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Mamta Rajput</span>
+                                                    <span>Mamta Rajput</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Prathmik Shikshak</span>
+                                                    <span>Prathmik Shikshak</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">02/04/2021</span>
+                                                    <span>02/04/2021</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">RATNESH SINGH RAJPUT</span>
+                                                    <span>RATNESH SINGH RAJPUT</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">17/07/2002</span>
+                                                    <span>17/07/2002</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id=""></span>
+                                                    <span></span>
                                                 </div>
                                             </td>
 
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">NA</span>
+                                                    <span>NA</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -3447,48 +4527,48 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="">BK1181</span>
+                                                    <span>BK1181</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Chandra Prakash Sharma</span>
+                                                    <span>Chandra Prakash Sharma</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Asstt Teacher(LDT)</span>
+                                                    <span>Asstt Teacher(LDT)</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">22/04/2021</span>
+                                                    <span>22/04/2021</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">NITIN SHARMA</span>
+                                                    <span>NITIN SHARMA</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">18/05/1993</span>
+                                                    <span>18/05/1993</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id=""></span>
+                                                    <span></span>
                                                 </div>
                                             </td>
 
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">NA</span>
+                                                    <span>NA</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id=""></span>
+                                                    <span></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -3497,48 +4577,48 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="">BP1194</span>
+                                                    <span>BP1194</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Bal Veer</span>
+                                                    <span>Bal Veer</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Prathmik Shikshak</span>
+                                                    <span>Prathmik Shikshak</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">26/05/2021</span>
+                                                    <span>26/05/2021</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">SANJAY YADAV</span>
+                                                    <span>SANJAY YADAV</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">01/01/1900</span>
+                                                    <span>01/01/1900</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id=""></span>
+                                                    <span></span>
                                                 </div>
                                             </td>
 
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">NA</span>
+                                                    <span>NA</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id=""></span>
+                                                    <span></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -3550,7 +4630,7 @@
                 </fieldset>
                 <%-- total End received Cases Table --%>
                 <fieldset id="AvedankoForwordKiyagya" runat="server" visible="false">
-                    <legend>जिला वार फॉरवर्ड किये गए आवेदन का विवरण
+                    <legend>District Wise Details of Forwarded Applications/जिला वार फॉरवर्ड किये गए आवेदन का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -3572,27 +4652,47 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS" style="border-collapse: collapse;">
+                                <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
+
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">
+                                                    Code of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">
+                                                    Post of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Death Daet<br />
+                                                    दिवंगत दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Applicant D.O.B.<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -3602,32 +4702,142 @@
                                             </td>
                                             <td class="phone,tablet">
                                                 <div style="text-align: center;">
-                                                    <span id="">AA3252</span>
+                                                    <span>AA3252</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Madhu Shrivastava</span>
+                                                    <span>Madhu Shrivastava</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">Asstt Teacher(LDT)</span>
+                                                    <span>Asstt Teacher(LDT)</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">08/05/2021</span>
+                                                    <span>08/05/2021</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">AKSHAT SHRIVASTAVA</span>
+                                                    <span>AKSHAT SHRIVASTAVA</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">09/04/2000</span>
+                                                    <span>09/04/2000</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <%--next table ForWord Application of Umaria--%>
+                <fieldset id="ForWordApplicationUmaria" style="display: none;">
+                    <legend>District Wise Details of Forwarded Applications/जिला वार फॉरवर्ड किये गए आवेदन का विवरण
+                    </legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4">
+                            <div class="form-group">
+                                <input type="text" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand" scope="col">Sr. No.
+                                                <br />
+                                                सरल क्र.</th>
+                                            <th data-class="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Code of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Post of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Death Daet<br />
+                                                    दिवंगत दिनांक
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
+                                            </th>
+                                            <th data-hide="phone,tablet" scope="col">
+                                                <div style="text-align: center;">
+                                                    Applicant D.O.B.<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="expand" style="text-align: right;">1
+                                            </td>
+                                            <td class="phone,tablet">
+                                                <div style="text-align: center;">
+                                                    <span>AA6391</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Satendra Singh Bhadoria</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>Khelkoond Shikshak (Grade B)</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>30/07/202</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>KU CHETNA BHADORIYA</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align: left;">
+                                                    <span>09/04/2000</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -3663,10 +4873,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="" style="border-collapse: collapse;">
+                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
                                                 <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
                                             </th>
@@ -3833,12 +5044,12 @@
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">RAHUL BOHRE</span>
+                                                    <span>RAHUL BOHRE</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div style="text-align: left;">
-                                                    <span id="">10/06/1991</span>
+                                                    <span>10/06/1991</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -3874,38 +5085,21 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <%--  <script>
-        function HideAndShow(Tohide, Toshow) {
-            for (var i in Tohide) {
-                document.getElementById(Tohide[i]).hidden = true;
-            }
-            for (var i in Toshow) {
-                document.getElementById(Toshow[i]).hidden = false;
-            }
-        }
-    </script>--%>
-    <%--   <script>
-        function showtbl(tblId) {
-            var tables = document.getElementsByTagName('fieldset');
-            for (var i = 0; i < tables.length; i++) {
-                tables[i].style.display = "none";
-            }
-            document.getElementById(tblId).style.display = "table";
-        }
-
-
-        //<table class="table table-bordered table-responsive-lg" id="tblBlockofBhopal" style="display: none;">
-        //<td><a onclick="showtbl('tblBlockofBhopal')">2</a></td>
-    </script>
     <script>
-        function toggleFieldset() {
-            var fieldset = document.getElementById("TotalReceivedCases");
-            if (fieldset.style.display === "none") {
-                fieldset.style.display = "block";
-            } else {
-                fieldset.style.display = "none";
+        function toggleFieldset(id) {
+            var fieldsets = document.getElementsByTagName("fieldset");
+            for (var i = 0; i < fieldsets.length; i++) {
+                if (fieldsets[i].id === id) {
+                    if (fieldsets[i].style.display === "none") {
+                        fieldsets[i].style.display = "block";
+                    } else {
+                        fieldsets[i].style.display = "none";
+                    }
+                } else {
+                    fieldsets[i].style.display = "none";
+                }
             }
         }
-    </script>--%>
+    </script>
 </asp:Content>
 

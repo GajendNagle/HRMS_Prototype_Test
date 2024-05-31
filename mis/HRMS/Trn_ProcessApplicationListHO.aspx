@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
     <style>
+        th {
+            white-space: nowrap;
+        }
+
         #ACR_Details_Graph .highcharts-data-label text {
             color: white !important;
             font-size: 0.65rem !important;
@@ -70,39 +74,28 @@
                 </u>
             </p>
         </div>
-        <%--  <div class="col-md-4 mt-4 ">
-         <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">अनुकंपा नियुक्ति प्रबंधन प्रणाली</p>
-     </div>--%>
         <div class="col-md-7 align-self-center">
-
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--  <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>--%>
-                    <%--  <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
-                    <li class="breadcrumb-item active">Compassionate Appointment</li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment </a></li>
+                    <li class="breadcrumb-item active">Action on Compassionate Appointment</li>
                 </ol>
             </div>
         </div>
     </div>
     <div class="card mt-3 shadow">
-        <%--<div class="card-header card-border-info">
-        </div>--%>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar">
+            <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-                            <li class="nav-item">
-                                <a class="nav-link text-warning  font-16 text-white" href="../Transaction/DisposeApplicationCaseForHO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
-                            </li>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <a class="nav-link  text-white " href="../Transaction/DisposeApplicationCaseForHO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -112,35 +105,31 @@
                                             </a>
                                             <ul class="dropdown-menu">
 
-                                                <li><a class="dropdown-item" href="Trn_HOCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
-                                                <li><a class="dropdown-item" href="HOPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
-
+                                                <li><a class="dropdown-item" href="../HRMS/Trn_HOCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/HOPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
+                            <a class="nav-link  text-white " href="../HRMS/Trn_ProcessApplicationListHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति पर कार्यवाही</b></a>
+                            <a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a>
 
-                            <li class="nav-item" style="position:relative; right:20px;">
-                                <a class="nav-link text-warning font-16 text-white" href="Trn_ProcessApplicationListHO.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
-                            </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
-
-                            <li class="nav-item mr-3">
-                                <a class="nav-link  text-white " href="NocSendByDistrictCollectorHO.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorHO.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
+                                                <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportHO.aspx">NOC Report</a></li>
+
                                             </ul>
                                         </li>
                                     </ul>
@@ -152,13 +141,6 @@
                 </div>
             </nav>
             <br />
-
-            <%--my code --%>
-
-            <%--my code --%>
-            <%-- <fieldset>
-                <legend> अनुकंपा नियुक्ति पर कार्यवाही 
-                </legend>--%>
             <div class="col-md-12" runat="server" clientidmode="static" id="DataFirstTime">
                 <div class="card">
                     <div class="card-body">
@@ -166,12 +148,13 @@
                             <div id="navpills-1" class="tab-pane active">
                                 <div class="row">
                                     <fieldset>
-                                        <legend>अनुकंपा नियुक्ति पर कार्यवाही रिपोर्ट </legend>
+                                        <legend>Action on Compassionate Appointment<br />
+                                            अनुकंपा नियुक्ति पर कार्यवाही </legend>
 
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label>जिला<span style="color: red">*</span></label>
+                                                    <label>District / जिला<span style="color: red">*</span></label>
                                                     <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                                         <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
                                                         <asp:ListItem Value="51">Agar Malwa</asp:ListItem>
@@ -230,10 +213,14 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-2 mt-4">
-                                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" id="btnView" onclick="HideShow();">कार्यवाही हेतु प्रकरण देखे </button>
+                                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" id="btnView" onclick="HideShow();">Search </button>
                                                 <%--<asp:Button runat="server" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" ID="btnView" OnClientClick="HideShow();" Text="कार्यवाही हेतु प्रकरण देखे" />--%>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                    <br />
+                                    <fieldset>
+                                        <legend>Details</legend>
                                         <div class="row justify-content-end">
 
                                             <div class="col-md-3 text-end">
@@ -249,31 +236,51 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <div class="table-responsive">
-                                                        <table class="table table-bordered table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
+                                                        <table class="table table-bordered table-hover text-center " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col">क्र.</th>
-                                                                    <th scope="col">दिवंगत कर्मचारी अधिकरी </th>
-                                                                    <th scope="col">पद</th>
-                                                                    <th scope="col">मृत्यु  दिनांक</th>
-                                                                    <th scope="col">आवेदक का नाम</th>
+                                                                    <th scope="col">Sr. No.<br />
+                                                                        सरल क्र.</th>
+                                                                    <th scope="col">Deceased Staff Officer<br />
+                                                                        दिवंगत कर्मचारी अधिकरी </th>
+                                                                    <th scope="col">Designation<br />
+                                                                        पद</th>
+                                                                    <th scope="col">Date of Death<br />
+                                                                        मृत्यु  दिनांक</th>
+                                                                    <th scope="col">Aplicant Name<br />
+                                                                        आवेदक का नाम</th>
 
-                                                                    <th scope="col">जेंडर</th>
-                                                                    <th scope="col">वर्ग</th>
-                                                                    <th scope="col">आवेदक की जन्म तिथि </th>
-                                                                    <th scope="col">मोबाईल  नंबर</th>
-                                                                    <th scope="col">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                                                    <th scope="col">आवेदक की वैवाहिक स्थिति</th>
-                                                                    <th scope="col">नियुक्ति हेतु पद का चयनित विकल्प</th>
-                                                                    <th scope="col">आवेदक की शैक्षणिक योग्यता </th>
-                                                                    <th scope="col">प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
-                                                                    <th scope="col">नोटशित  प्रिंट करे  कार्यवाही करे</th>
-                                                                    <th scope="col">कार्यवाही करे </th>
+                                                                    <th scope="col">Gender<br />
+                                                                        लिंग </th>
+                                                                    <th scope="col">Class<br />
+                                                                        वर्ग</th>
+                                                                    <th scope="col">Applicant's D.O.B<br />
+                                                                        आवेदक की जन्म तिथि </th>
+                                                                    <th scope="col">Mobile No.<br />
+                                                                        मोबाईल  नंबर</th>
+                                                                    <th scope="col">Applicant's Relationship with<br />
+                                                                        Deceased Teacher<br />
+                                                                        आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                                                    <th scope="col">Applicant Marital Status<br />
+                                                                        आवेदक की वैवाहिक स्थिति</th>
+                                                                    <th scope="col">Selected Option of Post for Appointment<br />
+                                                                        नियुक्ति हेतु पद का चयनित विकल्प</th>
+                                                                    <th scope="col">Applicant Educational Qualification<br />
+                                                                        आवेदक की शैक्षणिक योग्यता </th>
+                                                                    <th scope="col">Status of Passing Primary Teacher
+                                     <br />
+                                                                        Eligibility Test for Primary Teacher<br />
+                                                                        प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
+                                                                    <th scope="col">Print Note Sheet<br />
+                                                                        नोटशित प्रिंट करे </th>
+                                                                    <th scope="col">
+                                                                        <br />
+                                                                        Action<br />
+                                                                        कार्यवाही करे </th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -284,7 +291,7 @@
                                                                     <td>28/12/2021</td>
                                                                     <td>BRAJESH KUSHVAH</td>
                                                                     <td>Male</td>
-                                                                      <td> S.C.</td>
+                                                                    <td>S.C.</td>
                                                                     <td>10/08/1997</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -304,7 +311,7 @@
                                                                     <td>15/04/2022</td>
                                                                     <td>SHAKSHAM SHINGH </td>
                                                                     <td>Male</td>
-                                                                      <td> S.C.</td>
+                                                                    <td>S.C.</td>
                                                                     <td>12/12/1996</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -324,7 +331,7 @@
                                                                     <td>16/01/2023</td>
                                                                     <td>PRAMOD KUMAR PATEL</td>
                                                                     <td>Male</td>
-                                                                      <td> O.B.C.</td>
+                                                                    <td>O.B.C.</td>
                                                                     <td>02/10/2000</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -342,9 +349,10 @@
                                                             </tfoot>
                                                         </table>
                                                     </div>
-
                                                 </div>
+
                                             </div>
+
 
                                         </div>
                                     </fieldset>
@@ -1197,7 +1205,6 @@
                                 <option value="4">आवेदन फॉरवर्ड करे आयुक्त लोक शिक्षण को </option>
                                 <option value="5">आवेदन फॉरवर्ड करे स्कूल शिक्षा विभाग को </option>
                                 <%--<option value="6">लंबित किया जाना है  </option>--%>
-
                             </select>
                         </div>
                         <div class="col-md-6" id="RemarkView" style="display: none">
@@ -1351,7 +1358,7 @@
                                     <th>दिवंगत अधिकारी/कर्मचारी कोड:</th>
                                     <td>AK7328</td>
                                     <%-- <th>आवेदन आईडी: </th>
-                                        <td>4572</td>--%>
+                        <td>4572</td>--%>
                                     <th>दिवंगत अधिकारी/कर्मचारी का नाम: </th>
                                     <td>Phul Singh Kushawah</td>
                                 </tr>
@@ -1458,14 +1465,14 @@
 
                             <%--                                <tr>
 
-                                    <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
-                                </tr>--%>
+                    <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
+                </tr>--%>
                             <thead>
 
 
 
 
-                                <tr style="text-align: center; padding: 4px" class="bg-success">
+                                <tr style="text-align: center; padding: 4px" class="card-header">
                                     <th>क्र.</th>
                                     <th>सदस्य का नाम</th>
                                     <th>दिवंगत के साथ संबंध </th>

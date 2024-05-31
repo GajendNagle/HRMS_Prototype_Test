@@ -68,8 +68,8 @@
                                             </a>
                                             <ul class="dropdown-menu">
 
-                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">Print Application</a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन / सुधार करें</a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">प्रिन्ट आवेदन</a></li>
 
                                             </ul>
                                         </li>
@@ -92,11 +92,9 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
+                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
-
-
                                             </ul>
                                         </li>
                                     </ul>

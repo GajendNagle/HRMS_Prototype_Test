@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<%--    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />--%>
+    <%--    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />--%>
     <style>
         #ACR_Details_Graph .highcharts-data-label text {
             color: white !important;
@@ -80,9 +80,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--  <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>--%>
-                    <%--  <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
-                    <li class="breadcrumb-item active">Compassionate Appointment</li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
+                    <li class="breadcrumb-item active">Action Report on Compassionate Appointment</li>
                 </ol>
             </div>
         </div>
@@ -99,7 +98,24 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                            <li class="nav-item">
+                                <a class="nav-link font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन / सुधार करें</a></li>
+                                                <li><a class="dropdown-item" href="DeoPrintApplicationReport.aspx">प्रिन्ट आवेदन</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="nav-item" style="position: relative; right: 20px;">
                                 <a class="nav-link  font-16 text-white" href="Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
                             </li>
@@ -453,9 +469,9 @@
                     <div class="alert alert-success mt-4" style="text-align: left;">
                         <strong><b style="color: white;">मृतक लोकसेवक/ शिक्षक के परिवार के सभी सदस्यों की जानकारी </b></strong>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 table-responsive">
                         <div>
-                            <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdFamily" style="border-collapse: collapse;">
+                            <table class="footable table text-center table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdFamily" style="border-collapse: collapse;">
                                 <thead>
                                     <tr class="card-header">
                                         <th data-class="expand" scope="col">Sr.No.<br />
@@ -606,7 +622,7 @@
                     <div class="alert alert-success mt-4" style="text-align: left;">
                         <strong><b style="color: white;">परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</b>  </strong>
                     </div>
-                    <div class="row">
+                    <%--<div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table-bordered" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS">
@@ -677,11 +693,10 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
+                    </div>--%>
+                    <div class="col-md-12 table-responsive">
                         <div>
-
-                            <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_Grd2" style="border-collapse: collapse;">
+                            <table class="footable table table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_Grd2" style="border-collapse: collapse;">
                                 <thead>
                                     <tr>
                                         <th data-class="expand" scope="col">Sr. No.
@@ -700,56 +715,56 @@
                                         <td>1</td>
                                         <td>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>जन्मतिथि के प्रमाणीकरण हेतु हाई स्कूल की अंक सूची अथवा सक्षम अधिकारी द्वारा जारी किया गया  जन्म प्रमाण पत्र </td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>स्थानीय / मूल निवासी होने का प्रमाण पत्र</td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>यदि आवेदक अनुसूचित जाति/जनजाति तथा अन्य पिछड़े वर्ग का हो तो प्रमाण पत्र.</td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>हायर सेकेण्डरी /स्नातक या अन्य परीक्षा उत्तीर्ण करने के प्रमाण पत्र.</td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
                                         <td>परिवार के सभी सदस्यों द्वारा आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति का शपथ पत्र </td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
                                         <td>आवेदक का फोटो  अपलोड करे.</td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
                                         <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
                                         <td>
-                                            <a class="btn btn-outline-success">View</a>
+                                            <a class="btn btn-success">View</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1033,11 +1048,11 @@
                         <table class="table table-bordered text-center">
                             <thead>
                                 <tr style="text-align: center; padding: 4px">
-                                    <th>क्र.</th>
-                                    <th>सदस्य का नाम</th>
-                                    <th>दिवंगत के साथ संबंध </th>
-                                    <th>व्यवसाय</th>
-                                    <th>जन्म दिनांक</th>
+                                    <th>Sr. No.<br />सरल क्र.</th>
+                                    <th>Member Name<br />सदस्य का नाम</th>
+                                    <th>Relation With Deceased<br />दिवंगत के साथ संबंध </th>
+                                    <th>Business<br />व्यवसाय</th>
+                                    <th>Date of Birth<br />जन्म दिनांक</th>
                                 </tr>
 
                             </thead>

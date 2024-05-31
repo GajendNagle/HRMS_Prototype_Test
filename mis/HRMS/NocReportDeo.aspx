@@ -83,9 +83,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--  <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>--%>
-                    <%--  <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
-                    <li class="breadcrumb-item active">Compassionate Appointment</li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
+                    <li class="breadcrumb-item active">Register Application For Compassionate Appointment</li>
                 </ol>
             </div>
         </div>
@@ -104,7 +103,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item">
-                                <a class="nav-link text-warning  font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                <a class="nav-link font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                             </li>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
@@ -170,7 +169,7 @@
                             <div id="navpills-1" class="tab-pane active">
                                 <div class="row">
                                     <fieldset>
-                                        <legend>NOC Report </legend>
+                                        <legend>NOC Report / NOC रिपोर्ट</legend>
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
@@ -214,7 +213,8 @@
                                                                         दिवंगत कर्मचारी अधिकरी </th>
                                                                     <th scope="col">Designation<br />
                                                                         पद</th>
-                                                                    <th scope="col">Date Of Death<br />मृत्यु  दिनांक</th>
+                                                                    <th scope="col">Date Of Death<br />
+                                                                        मृत्यु  दिनांक</th>
                                                                     <th scope="col">applicant's Name<br />
                                                                         आवेदक का नाम</th>
                                                                     <th scope="col">Gender<br />
@@ -223,20 +223,30 @@
                                                                         आवेदक की जन्म तिथि </th>
                                                                     <th scope="col">Mobile No.<br />
                                                                         मोबाईल  नंबर</th>
-                                                                    <th scope="col">Applicant's Relationship with<br /> the Deceased Teacher<br />
+                                                                    <th scope="col">Applicant's Relationship with<br />
+                                                                        the Deceased Teacher<br />
                                                                         आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
                                                                     <th scope="col">Applicant's Marital Status<br />
                                                                         आवेदक की वैवाहिक स्थिति</th>
-                                                                    <th scope="col">Selected Option of Post <br />for Appointment<br />
+                                                                    <th scope="col">Selected Option of Post
+                                                                        <br />
+                                                                        for Appointment<br />
                                                                         नियुक्ति हेतु पद का चयनित विकल्प</th>
-                                                                    <th scope="col">Educational Qualification of<br /> the Applicant<br />
+                                                                    <th scope="col">Educational Qualification of<br />
+                                                                        the Applicant<br />
                                                                         आवेदक की शैक्षणिक योग्यता </th>
-                                                                    <th scope="col">Status of Passing Primary Teacher <br />Eligibility Test for Primary Teacher<br />
-                                                                        प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता  <br />परीक्षा उत्तीर्ण की स्थिति</th>
+                                                                    <th scope="col">Status of Passing Primary Teacher
+                                                                        <br />
+                                                                        Eligibility Test for Primary Teacher<br />
+                                                                        प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता 
+                                                                        <br />
+                                                                        परीक्षा उत्तीर्ण की स्थिति</th>
                                                                     <%--<th scope="col">नोटशित  प्रिंट करे  कार्यवाही करे</th>--%>
                                                                     <th scope="col">Status<br />
                                                                         स्थिति</th>
-                                                                    <th scope="col">Name of Appointment <br />Department<br />
+                                                                    <th scope="col">Name of Appointment
+                                                                        <br />
+                                                                        Department<br />
                                                                         नियुक्ति विभाग का नाम</th>
                                                                 </tr>
                                                             </thead>

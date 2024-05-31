@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ParivednaNevakarn.aspx.cs" Inherits="mis_Transaction_ParivednaNevakarn" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="container-fluid">
@@ -80,6 +82,101 @@
                     </div>
                 </nav>
                 <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+
+                        <div class="single_element">
+                            <div class="quick_activity">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 one">
+                                                <h4 class="">पंजीकृत शिकायतें </h4>
+
+                                            </div>
+                                            <div class="card-content">
+                                                <button class="card-btn one">5893</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 five">
+                                                <h4 class="">लोक्ड शिकायतें</h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn five">8348</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 two">
+                                                <h4 class="">अग्रेषित शिकायतें</h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn two">6604</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 three">
+                                                <h4 class="">पूर्ण शिकायतें</h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn three">2648</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 four">
+                                                <h4 class="">अस्वीकृत शिकायतें</h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn four">137</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <div class="card-wrap">
+                                            <div class="card-header card-header1 five">
+                                                <h4 class="">पेंडिंग शिकायतें</h4>
+
+                                            </div>
+                                            <div class="card-content">
+
+                                                <button class="card-btn five">5808</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
                 <fieldset>
                     <legend>परिवेदना निवारण
                     </legend>

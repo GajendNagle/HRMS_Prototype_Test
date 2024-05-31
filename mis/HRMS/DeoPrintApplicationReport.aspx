@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space: nowrap;
+        }
+
         @media print {
             .modal-dialog {
                 width: 200%;
@@ -22,6 +26,7 @@
                 overflow: visible !important;
                 zoom: 76%;
             }
+
             body.modal-open {
                 visibility: hidden;
             }
@@ -55,7 +60,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                         <li class="breadcrumb-item active">Compassionate Appointment Print Application </li>
                     </ol>
                 </div>
@@ -74,7 +79,7 @@
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning  font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                                    <a class="nav-link font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="collapse navbar-collapse">
@@ -84,9 +89,8 @@
                                                     <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
                                                 </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="Trn_DeoCompassionateApproval.aspx">
-Register/Correct Application for Compassionate Appointment</a></li>
-                                                    <li><a class="dropdown-item" href="DeoPrintApplicationReport.aspx">Print Application</a></li>
+                                                    <li><a class="dropdown-item" href="Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन / सुधार करें</a></li>
+                                                    <li><a class="dropdown-item" href="DeoPrintApplicationReport.aspx">प्रिन्ट आवेदन</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -106,7 +110,7 @@ Register/Correct Application for Compassionate Appointment</a></li>
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="../Transaction/DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
@@ -380,14 +384,14 @@ Register/Correct Application for Compassionate Appointment</a></li>
                                         <tr>
                                             <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
                                         </tr>
-                                            <tr class="card-header">
-                                                <th>क्र.</th>
-                                                <th>सदस्य का नाम</th>
-                                                <th>दिवंगत के साथ संबंध</th>
-                                                <th>व्यवसाय</th>
-                                                <th>जन्म दिनांक</th>
+                                        <tr class="card-header">
+                                            <th>Sr. No.<br />सरल क्र.</th>
+                                            <th>Member Name<br />सदस्य का नाम</th>
+                                            <th>Relation With Deceased<br />दिवंगत के साथ संबंध</th>
+                                            <th>Business<br />व्यवसाय</th>
+                                            <th>Date of Birth<br />जन्म दिनांक</th>
 
-                                            </tr>
+                                        </tr>
                                         <tr>
                                             <td>1</td>
                                             <td>Mohan</td>

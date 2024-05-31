@@ -8,6 +8,10 @@
             margin-left: 5rem;
         }
 
+        button, input, optgroup, select, textarea {
+            font-weight: bold;
+        }
+
         th {
             white-space: nowrap;
         }
@@ -51,7 +55,8 @@
                 <div class="d-flex justify-content-end align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                         <li class="breadcrumb-item active">Register Application For Compassionate Appointment</li>
                     </ol>
                 </div>
@@ -126,8 +131,7 @@
                 <%--Start DropDown Base data --%>
                 <%--  My Code Start for Dispose Cases NOC --%>
                 <fieldset id="DisposeCasesNOC" runat="server">
-                    <legend>Dispose Cases Details
-                    </legend>
+                    <legend>Dispose Cases Details / डिसपोस केस रिपोर्ट</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
                             <div class="form-group">
@@ -511,7 +515,7 @@
                                                     प्राप्त आवेदन</th>
                                                 <th data-hide="phone,tablet" scope="col">Applications Accepted<br />
                                                     आवेदन स्वीकार किये गए</th>
-                                                <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                                <th data-hide="phone,tablet" scope="col">Applications Forwarded To Senior Level<br />
                                                     आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                                 <th data-hide="phone,tablet" scope="col">Application Canceled<br />
                                                     आवेदन निराकृत</th>
@@ -602,15 +606,19 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
+                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                                सरल क्र.
+                                            </th>
                                             <th data-class="expand" scope="col">Division<br />
                                                 संभाग</th>
                                             <th data-class="phone,tablet" scope="col">District<br />
                                                 जिला</th>
-                                            <th data-hide="phone,tablet" scope="col">Received Application<br />प्राप्त आवेदन</th>
+                                            <th data-hide="phone,tablet" scope="col">Received Application<br />
+                                                प्राप्त आवेदन</th>
                                             <th data-hide="phone,tablet" scope="col">Applications Accepted<br />
                                                 आवेदन स्वीकार किये गए</th>
 
-                                            <th data-hide="phone,tablet" scope="col">Applications Forwarded to Senior Level<br />
+                                            <th data-hide="phone,tablet" scope="col">Applications Forwarded To Senior Level<br />
                                                 आवेदन वरिष्ठ स्तर को फॉरवर्ड किये गए</th>
                                             <th data-hide="phone,tablet" scope="col">Application Canceled<br />
                                                 आवेदन निराकृत</th>
@@ -620,6 +628,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td class="expand"><span style="font-size: 12pt;">1</span></td>
                                             <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
                                             <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
 
@@ -642,11 +651,11 @@
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="6" Style="color: #00BCD4;" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
+                                                <asp:Button runat="server" Text="1" Style="color: #00BCD4;" OnClick="hideshowDisposeAavedan_Click" BorderStyle="None" ID="hideshowDisposeAavedan" />
 
                                             </td>
                                             <td style="color: #00BCD4;">
-                                                <asp:Button runat="server" Text="3" Style="color: #00BCD4;" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
+                                                <asp:Button runat="server" Text="0" Style="color: #00BCD4;" OnClick="hideshowlambitAvedan_Click" BorderStyle="None" ID="hideshowlambitAvedan" />
 
                                             </td>
                                         </tr>
@@ -662,7 +671,7 @@
 
                 <%-- total Start Dispose Cases Table --%>
                 <fieldset id="DisposeAavedan" runat="server" visible="false">
-                    <legend>जिला वार डिस्पोज़ का विवरण
+                    <legend>District Wise Disposal Details/जिला वार डिस्पोज़ का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -687,45 +696,85 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Applicant<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">डिस्पोज़ का प्रकार</div>
+                                                <div style="text-align: center;">
+                                                    Type of Disposal<br />
+                                                    डिस्पोज़ का प्रकार
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">नियुक्ति पत्र सं</div>
+                                                <div style="text-align: center;">
+                                                    Appointment Letter No.<br />
+                                                    नियुक्ति पत्र सं
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">पत्र दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Letter Date<br />
+                                                    पत्र दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">नियुक्त पद</div>
+                                                <div style="text-align: center;">
+                                                    Appointed Position<br />
+                                                    नियुक्त पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">नियुक्त संस्था का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Appointing Organization<br />
+                                                    नियुक्त संस्था का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">अस्वीकृत के कारण</div>
+                                                <div style="text-align: center;">
+                                                    Reasons For Rejection<br />
+                                                    अस्वीकृत के कारण
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">भुगतान तारीख</div>
+                                                <div style="text-align: center;">
+                                                    Payment Date<br />
+                                                    भुगतान तारीख
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">भुगतान</div>
+                                                <div style="text-align: center;">
+                                                    Payment<br />
+                                                    भुगतान
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आदेश नंबर</div>
+                                                <div style="text-align: center;">
+                                                    Order Number<br />
+                                                    आदेश नंबर
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">चेक नंबर</div>
+                                                <div style="text-align: center;">
+                                                    Cheque Number<br />
+                                                    चेक नंबर
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">PDF देखे</div>
+                                                <div style="text-align: center;">
+                                                    View PDF<br />
+                                                    PDF देखे
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -799,351 +848,7 @@
                                                 </a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">2
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span>Bhagwan Singh</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>BHUPENDRA MEENA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblDType">Paid Amount</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint1"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint2">01/01/1900</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint72">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint73"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblpaymentdate">4/24/2023 12:00:00 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblpayment">100000</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblorder">4587</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblChaque_no">4587</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">3
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblempname">Sigdar Puri Goswami</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblappname">Trasha Goswami</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblDType"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint1">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint2">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint72">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint73">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblpaymentdate"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">4
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblempname">Maya Batham</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblappname">NIKHIL BATHAM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblDType">Appointment order issued</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint1">216</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint2">02/08/2022</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint72">Prayogshala Shikshak</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint73">HSS CHAMLESHWAR  BADNAGAR DIS. UJJAIN</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblpaymentdate">1/1/1900 12:00:00 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl05_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">5
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblempname">Reeta Singh</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblappname">RAMANAND SINGH</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblDType">Rejected</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint1"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint2">01/01/1900</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint72">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint73"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblAppoint173">सहायक अध्यापक संवर्ग के मृतक आश्रित को भृत्य पद पर अनुकंपा नियुक्ति की पात्रता नही है।</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblpaymentdate">1/1/1900 12:00:00 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl06_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">6
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblempname">Girija Mehra</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblappname">VISHAL MEHRA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblDType"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblAppoint173">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblpaymentdate"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblpayment">0</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblorder">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblChaque_no">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl07_lblTo" title="Click here To view Appointment Letter">View Document</span>
-                                                </a>
-                                            </td>
-                                        </tr>
+
 
                                     </tbody>
                                 </table>
@@ -1180,24 +885,44 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No.<br />सरल क्र.</th>
+                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">Code of Deceased Officer/Employee<br />दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">
+                                                    Code of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">Name of Deceased Officer/Employee<br />दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">Designation of Deceased Officer/Employee<br />दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">
+                                                    Designation of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">Late Date<br />दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Late Date<br />
+                                                    दिवंगत दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">Applicant's Name<br />आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Applicant's Name<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">Date of Birth of the Applicant <br/>आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Date of Birth of The Applicant
+                                                    <br />
+                                                    आवेदक का जन्म दिनांक
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -1281,7 +1006,7 @@
 
                 <%-- total start DistrictWiseLockaavedan Cases Table --%>
                 <fieldset id="DistrictWiseLockaavedan" runat="server" visible="false">
-                    <legend>जिला वार लॉक आवेदन का विवरण
+                    <legend>District Wise Lock Application Details/जिला वार लॉक आवेदन का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -1306,24 +1031,43 @@
                                 <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">
+                                                    Code of The Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">
+                                                    Designation of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Deceased Date<br />
+                                                    दिवंगत दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Applicant<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Date of Birth of The Applicant<br />
+                                                    आवेदक का जन्म दिनांक
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -1397,36 +1141,62 @@
                                 <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+
+                                                <div style="text-align: center;">
+                                                    Code of The Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+
+                                                <div style="text-align: center;">
+                                                    Designation of Deceased Officer/Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Deceased Date<br />
+                                                    दिवंगत दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Applicant<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
                                                 <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
                                             </th>
-                                            <%--  <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">लंबित के कारण</div>
-                                            </th>--%>
+
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">लंबित/आपत्ति के कारण</div>
+                                                <div style="text-align: center;">
+                                                    Pending/Due To ObjectionM<br />
+                                                    लंबित/आपत्ति के कारण
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आपत्ति का विवरण</div>
+                                                <div style="text-align: center;">
+                                                    Objection Details<br />
+                                                    आपत्ति का विवरण
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">रिमार्क</div>
+                                                <div style="text-align: center;">
+                                                    Remark<br />
+                                                    रिमार्क
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -1591,7 +1361,7 @@
 
                 <%-- total start AvedankoAdhikariKoForwordKiyagya Cases Table --%>
                 <fieldset id="AvedankoAdhikariKoForwordKiyagya" runat="server" visible="false">
-                    <legend>जिला वार फॉरवर्ड किये गए आवेदन का विवरण
+                    <legend>District Wise Details of Forwarded Applications/जिला वार फॉरवर्ड किये गए आवेदन का विवरण
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -1613,27 +1383,46 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS" style="border-collapse: collapse;">
+                                <table class="footable table  table-striped table-bordered default footable-loaded" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">क्र.</th>
+                                            <th data-class="expand" scope="col">Sr. No.<br />
+                                                सरल क्र.</th>
                                             <th data-class="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का कोड</div>
+                                                <div style="text-align: center;">
+                                                    Code of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का कोड
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Name of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत अधिकारी/ कर्मचारी का पद</div>
+                                                <div style="text-align: center;">
+                                                    Post of Deceased Officer / Employee<br />
+                                                    दिवंगत अधिकारी/ कर्मचारी का पद
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">दिवंगत दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Death Daet<br />
+                                                    दिवंगत दिनांक
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का नाम</div>
+                                                <div style="text-align: center;">
+                                                    Applicant Name<br />
+                                                    आवेदक का नाम
+                                                </div>
                                             </th>
                                             <th data-hide="phone,tablet" scope="col">
-                                                <div style="text-align: center;">आवेदक का जन्म दिनांक</div>
+                                                <div style="text-align: center;">
+                                                    Applicant D.O.B.<br />
+                                                    आवेदक की जन्म दिनांक
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -1704,7 +1493,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="" style="border-collapse: collapse;">
+                                <%-- <table class="footable table  table-striped table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" id="" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
                                             <th data-class="expand" scope="col">क्र.</th>
@@ -1739,155 +1528,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">1
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblcode">BG3779</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempname">Pradeep Singh Baghel</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblempdesigantion">Madhymik Shikshak</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lbldeath">07/10/2021</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="b">CHANDRA KANT BAGHEL</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="gf">06/09/2001</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lnlpending"></span>
-                                                </div>
-                                            </td>
-
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblobdj">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblremakrs"></span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">2
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblcode">BN3380</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempname">Devendra Singh</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblempdesigantion">Madhymik Shikshak</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lbldeath">14/05/2021</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblappname">RAMA DEVI</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span>08/12/1983</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lblremakrs"></span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl03_lnlpending">NA</span>
-                                                </div>
-                                            </td>
-
-
-
-                                        </tr>
-                                        <tr>
-                                            <td class="expand" style="text-align: right;">3
-                                            </td>
-                                            <td class="phone,tablet">
-                                                <div style="text-align: center;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblcode">BG2907</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblempname">Mahesh Kumar</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblempdesigantion">Prathmik Shikshak</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lbldeath">14/05/2021</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="">RAHUL BOHRE</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="">10/06/1991</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lnlpending"></span>
-                                                </div>
-                                            </td>
-
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblobdj">NA</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="text-align: left;">
-                                                    <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl04_lblremakrs"></span>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                       
                                     </tbody>
-                                </table>
+                                </table>--%>
                             </div>
                         </div>
                     </div>

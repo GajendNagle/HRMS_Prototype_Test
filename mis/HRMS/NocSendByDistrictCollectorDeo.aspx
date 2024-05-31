@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<%--    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />--%>
+    <%--    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />--%>
     <style>
         #ACR_Details_Graph .highcharts-data-label text {
             color: white !important;
@@ -14,7 +14,7 @@
         }
 
         /*.card-body-caharts, .card-body, .card {*/
-            /* border-radius: 2.5rem !important; */
+        /* border-radius: 2.5rem !important; */
         /*}*/
 
         .alert-success {
@@ -91,9 +91,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--  <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>--%>
-                    <%--  <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>--%>
-                    <li class="breadcrumb-item active">Compassionate Appointment</li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
+                    <li class="breadcrumb-item active">NOC Report Sent to District Collector</li>
                 </ol>
             </div>
         </div>
@@ -110,7 +109,9 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                            <li class="nav-item">
+                                <a class="nav-link  font-16 text-white" href="../Transaction/DisposeApplicationCaseForDEO.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                            </li>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -139,7 +140,7 @@
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="../Transaction/DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
@@ -170,7 +171,7 @@
                             <div id="navpills-1" class="tab-pane active">
                                 <div class="row">
                                     <fieldset>
-                                        <legend>NOC Report Sent to District Collector</legend>
+                                        <legend>NOC Report Sent to District Collector / NOC रिपोर्ट जिला कलेक्टर को भेजी गई</legend>
 
                                         <div class="row">
                                             <div class="col-md-3">

@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DisposeApplicationCase.aspx.cs" Inherits="mis_Transaction_DisposeApplicationCase" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-       <style>
+    <style>
         th {
-           white-space:nowrap;
+            white-space: nowrap;
         }
     </style>
 </asp:Content>
@@ -20,6 +20,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                     <li class="breadcrumb-item active">Decision On Application</li>
                 </ol>
             </div>
@@ -46,8 +47,8 @@
                                                 <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">Print Application </a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन / सुधार करें</a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">प्रिन्ट आवेदन</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -66,7 +67,7 @@
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
+                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
@@ -113,7 +114,7 @@
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-                    <legend>Pending Application Details</legend>
+                    <legend>Details</legend>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive">
