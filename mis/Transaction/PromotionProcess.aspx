@@ -22,7 +22,7 @@
     <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Promotion Process/पदोन्नति प्रक्रिया</h4>
+                <h4 class="text-themecolor ">Promotion Process<br />पदोन्नति प्रक्रिया</h4>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -41,11 +41,12 @@
             <div class="card-body">
 
                 <fieldset>
-                    <legend>Employee Promotion</legend>
+                    <legend>Employee Promotion / कर्मचारी का पदोन्नति
+                    </legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Promotion with Transfer <span style="color: red">*</span></label>
+                                <label>Promotion with Transfer<br />स्थानांतरण के साथ पदोन्नति<span style="color: red">*</span></label>
                                 <select id="dropdown" class="form-control">
                                     <option value="0">Select</option>
                                     <option value="1">Yes</option>
@@ -55,28 +56,28 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Employee Unique ID/कर्मचारी का यूनिक आई.डी <span style="color: red">*</span></label>
+                                <label>Employee Unique ID <br /> कर्मचारी का यूनिक आई.डी<span style="color: red">*</span></label>
                                 <input class="form-control" id="txtempluniqueid" autocomplete="off" maxlength="11" required data-msg="Enter Unique Id" type="text" name="EmpUniqueId" value="" />
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="margin-top: 1.8rem !important;">
+                    
+                        <div class="col-md-3" style="margin-top: 2.9rem !important;">
                             <div class="form-group ">
                                 <input type="button" value="Search" class="btn btn-success btn-rounded" id="searchButton" onclick="checkDropdown(); return false;" />
                                 <a href="PromotionProcess.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                             </div>
                         </div>
-                    </div>
+                        </div>
+                    
                 </fieldset>
                 <div id="div1">
                     <fieldset>
-                        <legend>CURRENT PAYSCALE</legend>
+                        <legend>CURRENT PAYSCALE / वर्तमान वेतनमान</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Name/कर्मचारी का नाम<span style="color: red">*</span>
+                                        Employee Name / कर्मचारी का नाम<span style="color: red">*</span>
                                         <br />
                                     </label>
                                     <input name="ename" type="text" value="AU4336-Ashok Patidar" disabled class="form-control" autocomplete="off" placeholder="" />
@@ -84,21 +85,21 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Class / श्रेणी <span style="color: red">*</span></label>
+                                    <label>Class / श्रेणी<span style="color: red">*</span></label>
                                     <input name="eclass" type="text" value="Class 1" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Type of Post/पद प्रकार<span style="color: red">*</span></label>
+                                    <label>Type of Post / पद का प्रकार<span style="color: red">*</span></label>
                                     <input name="epost" type="text" value="Regular" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation Type/
-                                        पदनाम प्रकार<span style="color: red">*</span></label>
+                                        Designation Type /
+                                       पदनाम का प्रकार<span style="color: red">*</span></label>
                                     <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Teaching" />
                                 </div>
                             </div>
@@ -106,14 +107,14 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Designation/ पद <span style="color: red">*</span></label>
+                                    <label>Designation / पद<span style="color: red">*</span></label>
                                     <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Prathmik Shikshak" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Department/
+                                        Department /
                                         विभाग<span style="color: red">*</span></label>
                                     <input name="txtdepartment" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Department of Education" />
                                 </div>
@@ -121,13 +122,13 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Pay Commission / वेतन आयोग <span style="color: red">*</span></label>
+                                    <label>Pay Commission / वेतन आयोग<span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="Seventh Pay Commission" disabled class="form-control" autocomplete="off" placeholder="Seventh Pay Commission" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Pay Scale / वेतनमान <span style="color: red">*</span></label>
+                                    <label>Pay Scale / वेतनमान<span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="5200-20200" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
@@ -135,19 +136,19 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Level / स्तर <span style="color: red">*</span></label>
+                                    <label>Level / स्तर<span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="Level-7" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Current Office / वर्तमान कार्यालय <span style="color: red">*</span></label>
+                                    <label>Current Office / वर्तमान कार्यालय<span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="Govt MS UNDRAI" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Basic Salary/ मूल वेतन <span style="color: red">*</span></label>
+                                    <label>Basic Salary / मूल वेतन<span style="color: red">*</span></label>
                                     <input name="ename" type="text" value="43500.00" disabled class="form-control" autocomplete="off" placeholder="" />
                                 </div>
                             </div>
@@ -156,7 +157,7 @@
                 </div>
                 <div id="div2">
                     <fieldset>
-                        <legend>NEW PROMOTION DETAIL</legend>
+                        <legend>NEW PROMOTION DETAILS / नई पदोन्नति विवरण</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -172,7 +173,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Type of Post / पद प्रकार<span style="color: red">*</span></label>
+                                    <label>Type of Post / पद का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="1">Regular/Permanent</option>
@@ -336,7 +337,7 @@
 
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>File No.<span style="color: red">*</span></label>
+                                        <label>File No. / दस्तावेज संख्या<span style="color: red">*</span></label>
                                         <input type="text" autocomplete="off" class="form-control" placeholder="Enter File No." name="name" value="" />
                                     </div>
                                 </div>
@@ -345,11 +346,11 @@
 
                         <div id="div3">
                             <fieldset>
-                                <legend>Select Transfer Location</legend>
+                                <legend>Select Transfer Location / स्थानांतरण स्थान का चयन करें </legend>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Division / संभाग <span style="color: red">*</span></label>
+                                            <label>Division / संभाग<span style="color: red">*</span></label>
                                             <select class="form-control select2">
                                                 <option value="--Select--">--Select--</option>
                                                 <option value="Bhopal">Bhopal</option>
@@ -368,7 +369,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>District / जिला <span style="color: red">*</span></label>
+                                            <label>District / जिला<span style="color: red">*</span></label>
                                             <select class="form-control select2">
                                                 <option value="--Select--">--Select--</option>
                                                 <option value="Bhopal">Bhopal</option>
@@ -471,7 +472,7 @@
                         <div class="row justify-content-center">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <button type="button" class="Alert-Save btn btn-success  btn-rounded">Save</button>
+                                    <button type="button" class="Alert-Confirmation btn btn-success  btn-rounded">Save</button>
                                     <a href="PromotionProcess.aspx" class=" btn btn-danger  btn-rounded">Clear</a>
                                 </div>
                             </div>
