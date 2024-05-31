@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        form label {
+            font-weight: 600;
+        }
+
         .profileimage {
             display: block;
             height: 6.2rem;
@@ -40,7 +44,7 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles" style="margin-bottom: -30px">
+        <div class="row page-titles">
             <div class="col-md-5 align-self-center">
                 <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                     <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -52,7 +56,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="AnukampaNuktiMainPage.aspx" title="click to go on">Compassionate Appointment</a></li>
+                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                         <li class="breadcrumb-item active">Register Application For Compassionate Appointment</li>
                     </ol>
                 </div>
@@ -101,7 +105,9 @@
                                     <div id="navpills-1" class="tab-pane active">
                                         <div class="row">
                                             <fieldset>
-                                                <legend>Details of Deceased Officer-Employee <br /> दिवंगत अधिकारी - कर्मचारी का विवरण  </legend>
+                                                <legend>Details of Deceased Officer-Employee
+                                                    <br />
+                                                    दिवंगत अधिकारी - कर्मचारी का विवरण  </legend>
                                                 <div class="row align-items-end">
                                                     <div class="col-md-3">
                                                         <div class="form-group">
@@ -114,7 +120,10 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <label>Full name of Deceased Government servant <br /> दिवंगत शासकीय सेवक का पूर्ण नाम<span style="color: red">*</span></label>
+                                                            <label>
+                                                                Full name of Deceased Government servant
+                                                                <br />
+                                                                दिवंगत शासकीय सेवक का पूर्ण नाम<span style="color: red">*</span></label>
                                                             <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname" value="Rohan Singh" readonly />
                                                         </div>
                                                     </div>
@@ -365,7 +374,8 @@
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        Applicant's Relationship With Deceased Public Servant/Teacher <br />
+                                                                        Applicant's Relationship With Deceased Public Servant/Teacher
+                                                                        <br />
                                                                         आवेदक का दिवंगत लोकसेवक/ शिक्षक के साथ संबंध<span style="color: red">*</span></label>
                                                                     <select class="form-control select2" id="">
                                                                         <option value="----">--Select--</option>
@@ -388,8 +398,8 @@
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                       Have All Family Members Consented Affidavit to The Applicant For Compassionate Appointment?<br />
-            क्या परिवार के सभी सदस्यों ने आवेदक को अनुकंपा नियुक्ति के लिए सहमति/शपथ पत्र दिया है?<span style="color: red">*</span></label>
+                                                                        Have All Family Members Consented Affidavit to The Applicant For Compassionate Appointment?<br />
+                                                                        क्या परिवार के सभी सदस्यों ने आवेदक को अनुकंपा नियुक्ति के लिए सहमति/शपथ पत्र दिया है?<span style="color: red">*</span></label>
                                                                     <select class="form-control select2">
                                                                         <option value="">--Select--</option>
                                                                         <option value="Yes">Yes</option>
@@ -521,7 +531,7 @@
 
                                                 <div id="DocAppointment1" class="col-md-2">
 
-                                                    <input type="file" id="fileInput1" style="margin-left: 0px;" class="form-control mt-3" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput1" class="form-control" onchange="displayImage(this)">
                                                 </div>
 
                                                 <div id="DocAppointment2" class="col-md-4">
@@ -543,7 +553,7 @@
 
                                                 <div id="DocBirth1" class="col-md-2">
 
-                                                    <input type="file" id="fileInput3" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput3" class="form-control" onchange="displayImage(this)">
                                                 </div>
 
                                                 <div id="DocBirth2" class="col-md-4">
@@ -564,7 +574,7 @@
                                                 </div>
                                                 <div id="DocCaste1" class="col-md-2">
 
-                                                    <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput2" class="form-control" onchange="displayImage(this)">
                                                 </div>
 
                                                 <div id="DocCaste2" class="col-md-4">
@@ -579,7 +589,7 @@
                                                     </label>
                                                 </div>
                                                 <div id="DocPresentpost1" class="col-md-2">
-                                                    <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput4" class="form-control" onchange="displayImage(this)">
                                                 </div>
 
                                                 <div id="DocPresentpost2" class="col-md-4">
@@ -587,14 +597,14 @@
                                                 </div>
                                             </div>
                                             <div class="row align-items-end">
-                                                <div id="Dochandicapped" class="col-md-4 mt-1">
+                                                <div id="Dochandicapped" class="col-md-4 ">
                                                     <label>
                                                         Certificate of Passing Higher Secondary/Graduation or Other Examination / 
                                                             हायर सेकेण्डरी / स्नातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र :<span style="color: red">*</span></label>
                                                 </div>
                                                 <div id="Dochandicapped1" class="col-md-2">
 
-                                                    <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput6" class="form-control" onchange="displayImage(this)">
                                                 </div>
 
                                                 <div id="Dochandicapped2" class="col-md-4">
@@ -602,14 +612,14 @@
                                                 </div>
                                             </div>
                                             <div class="row align-items-end">
-                                                <div id="CriticalIllness" class="col-md-4 mt-1">
+                                                <div id="CriticalIllness" class="col-md-4 ">
                                                     <label>
                                                         Consent Certificate from the Head of the Family<br />
                                                         परिवार के मुखिया द्वारा सहमति प्रमाण पत्र :<span style="color: red">*</span></label>
                                                 </div>
                                                 <div id="CriticalIllness1" class="col-md-2">
 
-                                                    <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput010" class="form-control" onchange="displayImage(this)">
                                                 </div>
                                                 <div id="CriticalIllness3" class="col-md-4">
                                                     <button type="submit" class="btn view-but "><i class="fas fa-eye"></i></button>
@@ -622,7 +632,7 @@
                                                         आवेदक का फोटो :<span style="color: red">*</span></label>
                                                 </div>
                                                 <div id="DocMarried1" class="col-md-2">
-                                                    <input type="file" id="fileInput5" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput5" class="form-control" onchange="displayImage(this)">
                                                 </div>
                                                 <div id="DocMarried2" class="col-md-4">
                                                     <button type="submit" class="btn view-but "><i class="fas fa-eye"></i></button>
@@ -636,20 +646,20 @@
                                                         राशन कार्ड :<span style="color: red">*</span></label>
                                                 </div>
                                                 <div id="CriticalIllness11" class="col-md-2">
-                                                    <input type="file" id="fileInput0101" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" id="fileInput0101" class="form-control" onchange="displayImage(this)">
                                                 </div>
                                                 <div id="CriticalIllness12" class="col-md-4">
                                                     <button type="submit" class="btn view-but "><i class="fas fa-eye"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="row align-items-end">
+                                            <div class="row align-items-baseline">
                                                 <div class="col-md-4 ">
                                                     <label>
                                                         Affidavit<br />
                                                         शपथ पत्र :<span style="color: red">*</span></label>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                    <input type="file" class="form-control" onchange="displayImage(this)">
                                                 </div>
                                                 <div class="col-md-4">
                                                     <button type="submit" class="btn view-but "><i class="fas fa-eye"></i></button>

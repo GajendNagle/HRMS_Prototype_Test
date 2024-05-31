@@ -278,7 +278,19 @@
                                             <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
                                         </div>
                                     </div>
-                                    <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
+                                    <div class="justify-content-end ">
+                                        <table class="table-borderless ">
+                                            <tr style="position: absolute; right: 4rem;">
+                                                <th>
+                                                    <span style="font-weight: bolder; font-size: large">दिनांक :
+                                                    </span>
+                                                </th>
+                                                <td><span style="font-weight: bolder; font-size: large">04/05/2024</span></td>
+                                            </tr>
+
+                                        </table>
+                                        <hr style="height: 3px; border-width: 10px; color: black; background-color: black; margin-top: 30px;" />
+                                    </div>
 
                                     <table class="table table-bordered">
                                         <tbody>
@@ -385,11 +397,16 @@
                                             <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
                                         </tr>
                                         <tr class="card-header">
-                                            <th>Sr. No.<br />सरल क्र.</th>
-                                            <th>Member Name<br />सदस्य का नाम</th>
-                                            <th>Relation With Deceased<br />दिवंगत के साथ संबंध</th>
-                                            <th>Business<br />व्यवसाय</th>
-                                            <th>Date of Birth<br />जन्म दिनांक</th>
+                                            <th>Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th>Member Name<br />
+                                                सदस्य का नाम</th>
+                                            <th>Relation With Deceased<br />
+                                                दिवंगत के साथ संबंध</th>
+                                            <th>Business<br />
+                                                व्यवसाय</th>
+                                            <th>Date of Birth<br />
+                                                जन्म दिनांक</th>
 
                                         </tr>
                                         <tr>

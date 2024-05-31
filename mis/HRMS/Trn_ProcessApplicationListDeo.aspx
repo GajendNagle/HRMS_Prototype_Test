@@ -329,7 +329,7 @@
                         <div class="card">
 
 
-                            <div class="row">
+                            <div class="row align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -772,12 +772,12 @@
                         </div>
                     </div>
                     <div class="alert alert-success mt-4" style="text-align: left;">
-                        <b><strong style="color: white;">कार्रवाई</strong></b>
+                        <b><strong style="color: white;">Action</strong></b>
                     </div>
 
                     <div class="row">
 
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <label>
                                 <b style="color: black;">Action<br />
                                     कार्रवाई</b>  <span style="color: Red;">*</span></label>
