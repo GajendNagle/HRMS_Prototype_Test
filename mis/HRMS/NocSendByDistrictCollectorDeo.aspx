@@ -91,7 +91,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                     <li class="breadcrumb-item active">NOC Report Sent to District Collector</li>
                 </ol>
             </div>
@@ -323,7 +323,7 @@
                     </div>
                     <div class="container-fluid">
                         <div class="card">
-                            <div class="row">
+                            <div class="row align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -375,7 +375,7 @@
                                     <br />
                                     <div class="form-group">
                                         <label>
-                                            Deceased Staff Cadre<br />
+                                            Deceased Employee Cadre<br />
                                             दिवंगत कर्मचारी कैडर<span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Regular Class- III " maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
@@ -404,7 +404,7 @@
                                     <div class="form-group">
                                         <label>
                                             Cause of Death<br />
-                                            मृत्यु का कारण  :<span style="color: Red;">*</span></label>
+                                            मृत्यु का कारण :<span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="कोविड-19 संक्रमण " maxlength="50" disabled="disabled" class="form-control vd_Required " />
                                     </div>
                                 </div>
@@ -421,8 +421,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            None of Surviving Family Members<br />
-                                            जीवित परिवार के सदस्यों में से कोई नहीं<span style="color: Red;">*</span></label>
+                                            Number of Family Members of Deceased Employee<br />
+                                            दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या :<span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                                     </div>
                                 </div>
@@ -438,7 +438,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Date of Receipt of Application<br />
+                                            Date of Receiving of Application<br />
                                             आवेदन प्राप्त तिथि<span style="color: Red;">*</span></label>
 
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtaaprecievedate" type="text" value="21/04/2023" maxlength="10" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtaaprecievedate" disabled="disabled" class="form-control vd_Required dummy" />
@@ -450,7 +450,7 @@
                     <div class="alert alert-success mt-4" style="text-align: left;">
                         <strong><b style="color: white;">मृतक लोकसेवक/ शिक्षक के परिवार के सभी सदस्यों की जानकारी </b></strong>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 table-responsive">
                         <div>
                             <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdFamily" style="border-collapse: collapse;">
                                 <thead>
@@ -773,7 +773,7 @@
                             </select>
                         </div>
                         <div id="divApattiHai" style="display: none">
-                            <div class="row mt-4">
+                            <div class="row align-items-end mt-4">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -812,7 +812,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -834,7 +834,9 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            <b>नियुक्ति पत्र :</b><span style="color: Red;">*</span>
+                                            <b>Appointment Letter
+                                                <br />
+                                                नियुक्ति पत्र :</b><span style="color: Red;">*</span>
                                         </label>
                                         <asp:FileUpload runat="server" CssClass="form-control" />
                                         <p style="color: red; font-size: 0.9em"><b>Upload PDF Format Size 200 KB</b></p>

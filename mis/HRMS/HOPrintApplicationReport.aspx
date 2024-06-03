@@ -195,7 +195,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Compassionate Appointment Print Application       
+                    <legend>Details       
                     </legend>
                     <div class="row justify-content-end">
 
@@ -247,16 +247,16 @@
                                                 Test for Primary Teacher
                                 <br />
                                                 प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
-                                            <th>
+                                            <th>Year of Eligibility Test
                                                 <br />
                                                 पात्रता परीक्षा का वर्ष</th>
-                                            <th>
+                                            <th>Professional Qualification
                                                 <br />
                                                 व्यावसायिक योग्यता</th>
-                                            <th>
+                                            <th>Print
                                                 <br />
                                                 प्रिंट</th>
-                                            <th>
+                                            <th>Status
                                                 <br />
                                                 स्टेटस</th>
                                         </tr>
@@ -329,7 +329,19 @@
                                             <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
                                         </div>
                                     </div>
-                                    <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
+                                    <div class="justify-content-end ">
+                                        <table class="table-borderless ">
+                                            <tr style="position: absolute; right: 4rem;">
+                                                <th>
+                                                    <span style="font-weight: bolder; font-size: large">दिनांक :
+                                                    </span>
+                                                </th>
+                                                <td><span style="font-weight: bolder; font-size: large">04/05/2024</span></td>
+                                            </tr>
+
+                                        </table>
+                                        <hr style="height: 3px; border-width: 10px; color: black; background-color: black; margin-top: 30px;" />
+                                    </div>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
                                             <tbody>

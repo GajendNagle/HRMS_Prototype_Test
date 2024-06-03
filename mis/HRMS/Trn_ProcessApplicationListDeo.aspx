@@ -386,7 +386,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Deceased Staff Cadre<br />
@@ -406,7 +406,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Last School/Office and Employee Address<br />
@@ -437,8 +437,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            None of the Surviving Family Members<br />
-                                            जीवित परिवार के सदस्यों में से कोई नहीं<span style="color: Red;">*</span></label>
+                                            Number of Family Members of Deceased Employee<br />
+दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या : <span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
                                     </div>
@@ -839,7 +839,7 @@
                                     <div class="form-group">
                                         <label>
                                             <b>Description of Action Taken<br />
-                                                एक्शन टेकन का विवरण</b><span style="color: Red;">*</span>
+                                                लिए गए एक्शन का विवरण</b><span style="color: Red;">*</span>
                                         </label>
                                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>

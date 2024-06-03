@@ -147,7 +147,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Compassionate Appointment Print Application Details     
+                    <legend>Details     
                     </legend>
                     <div class="row justify-content-end">
 
@@ -291,107 +291,108 @@
                                         </table>
                                         <hr style="height: 3px; border-width: 10px; color: black; background-color: black; margin-top: 30px;" />
                                     </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
 
-                                    <table class="table table-bordered">
-                                        <tbody>
+                                                <tr>
+                                                    <th colspan="4" class="text-center font-20">: : <u>अधिकारी/कर्मचारी का विवरण</u> : :</th>
+                                                </tr>
 
-                                            <tr>
-                                                <th colspan="4" class="text-center font-20">: : <u>अधिकारी/कर्मचारी का विवरण</u> : :</th>
-                                            </tr>
+                                                <tr>
+                                                    <th>आवेदन आईडी</th>
+                                                    <td>4032</td>
+                                                    <th>अधिकारी कर्मचारी कोड</th>
+                                                    <td>CA7933</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>आवेदन आईडी</th>
-                                                <td>4032</td>
-                                                <th>अधिकारी कर्मचारी कोड</th>
-                                                <td>CA7933</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>दिवंगत अधिकारी/कर्मचारी का नाम</th>
+                                                    <td>KRISHNAVATI PARTE</td>
+                                                    <th>लिंग</th>
+                                                    <td>Female</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>दिवंगत अधिकारी/कर्मचारी का नाम</th>
-                                                <td>KRISHNAVATI PARTE</td>
-                                                <th>लिंग</th>
-                                                <td>Female</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>अंतिम पोस्टिंग जिला</th>
+                                                    <td>Gwalior</td>
+                                                    <th>दिवंगत अधिकारी/कर्मचारी कैडर</th>
+                                                    <td>Regular Class- III</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>अंतिम पोस्टिंग जिला</th>
-                                                <td>Gwalior</td>
-                                                <th>दिवंगत अधिकारी/कर्मचारी कैडर</th>
-                                                <td>Regular Class- III</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>दिवंगत अधिकारी/कर्मचारी पदनाम</th>
+                                                    <td>Teacher (UDT)</td>
+                                                    <th>अंतिम स्कूल कार्यालय और कर्मचारी का पता</th>
+                                                    <td>GOVT. HSS GARDHI</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>दिवंगत अधिकारी/कर्मचारी पदनाम</th>
-                                                <td>Teacher (UDT)</td>
-                                                <th>अंतिम स्कूल कार्यालय और कर्मचारी का पता</th>
-                                                <td>GOVT. HSS GARDHI</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>मृत्यु का कारण</th>
+                                                    <td>अन्य</td>
+                                                    <th>जाति</th>
+                                                    <td>ST</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>मृत्यु का कारण</th>
-                                                <td>अन्य</td>
-                                                <th>जाति</th>
-                                                <td>ST</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>मृत्यु दिनांक</th>
+                                                    <td>01/01/2021</td>
+                                                    <th>परिवार के जीवित सदस्यों की संख्या</th>
+                                                    <td>2</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>मृत्यु दिनांक</th>
-                                                <td>01/01/2021</td>
-                                                <th>परिवार के जीवित सदस्यों की संख्या</th>
-                                                <td>2</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>विभाग का नाम</th>
+                                                    <td>Education</td>
+                                                    <th>आवेदन प्राप्त तिथि</th>
+                                                    <td>01/01/1900</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="4" class="text-center font-20">: : <u>आवेदक का विवरण</u> : :</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>आवेदक का नाम</th>
+                                                    <td>Mohan</td>
+                                                    <th>लिंग</th>
+                                                    <td>Male</td>
 
-                                            <tr>
-                                                <th>विभाग का नाम</th>
-                                                <td>Education</td>
-                                                <th>आवेदन प्राप्त तिथि</th>
-                                                <td>01/01/1900</td>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="4" class="text-center font-20">: : <u>आवेदक का विवरण</u> : :</th>
-                                            </tr>
-                                            <tr>
-                                                <th>आवेदक का नाम</th>
-                                                <td>Mohan</td>
-                                                <th>लिंग</th>
-                                                <td>Male</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>वैवाहिक स्थिति</th>
+                                                    <td>Unmarried</td>
+                                                    <th>जन्म दिनांक :</th>
+                                                    <td>01/01/1992</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>प्राप्ति की तारीख</th>
+                                                    <td>01/01/1900</td>
+                                                    <th>दिवंगत के साथ संबंध</th>
+                                                    <td>Son</td>
 
-                                            </tr>
-                                            <tr>
-                                                <th>वैवाहिक स्थिति</th>
-                                                <td>Unmarried</td>
-                                                <th>जन्म दिनांक :</th>
-                                                <td>01/01/1992</td>
-                                            </tr>
-                                            <tr>
-                                                <th>प्राप्ति की तारीख</th>
-                                                <td>01/01/1900</td>
-                                                <th>दिवंगत के साथ संबंध</th>
-                                                <td>Son</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>आवेदक किस पद पर नियुक्ति चाहता है</th>
+                                                    <td>शैक्षणिक संवर्ग</td>
+                                                    <th>पदनाम </th>
+                                                    <td>प्रयोगशाला शिक्षक</td>
+                                                </tr>
 
-                                            </tr>
-                                            <tr>
-                                                <th>आवेदक किस पद पर नियुक्ति चाहता है</th>
-                                                <td>शैक्षणिक संवर्ग</td>
-                                                <th>पदनाम </th>
-                                                <td>प्रयोगशाला शिक्षक</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
+                                                    <td>नही</td>
+                                                    <th>मोबाइल नंबर:</th>
+                                                    <td>9856365965</td>
 
-                                            <tr>
-                                                <th>प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
-                                                <td>नही</td>
-                                                <th>मोबाइल नंबर:</th>
-                                                <td>9856365965</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th>पात्रता परीक्षा का वर्ष</th>
-                                                <td>Not mentioned</td>
-                                                <th>व्यावसायिक योग्यता</th>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                </tr>
+                                                <tr>
+                                                    <th>पात्रता परीक्षा का वर्ष</th>
+                                                    <td>Not mentioned</td>
+                                                    <th>व्यावसायिक योग्यता</th>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><div class="table-responsive">
                                     <table class="table table-bordered">
                                         <tr>
                                             <th colspan="5" class="text-center font-20">: : <u>परिवार का विवरण</u> : :</th>
@@ -425,7 +426,7 @@
                                         </tr>
 
 
-                                    </table>
+                                    </table></div><div class="table-responsive">
                                     <table style="width: 100%;">
                                         <tbody>
                                             <tr style="height: 70px">
@@ -471,7 +472,7 @@
 
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    </table></div>
                                 </fieldset>
                             </div>
                             <div class="modal-footer justify-content-center">

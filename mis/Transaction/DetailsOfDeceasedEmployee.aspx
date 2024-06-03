@@ -20,7 +20,7 @@
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
                 </u>
             </p>
         </div>
@@ -111,7 +111,7 @@
             <fieldset>
                 <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
 
-                <div class="row">
+                <div class="row align-items-end">
 
 
                     <div class="col-md-3">
@@ -217,8 +217,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                <br />
-                                जीवित परिवार के सदस्यों में से कोई नहीं:<span style="color: red">*</span></label>
+                                Number of Family Members of Deceased Employee<br />
+                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या:<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>7</option>
                             </select>
@@ -362,18 +362,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
 
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>आवेदन की स्थिति<span style="color: red">*</span></label>
+                            <label>आवेदन की स्थिति / Application Status<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="आवेदन को संभागीय आयुक्त लोक शिक्षण फॉरवर्ड किया गया है" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>रेमार्क :<span style="color: red">*</span></label>
+                            <label>Remark / टिप्पणी :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="शाजापुर जिले एवं संभाग में पद रिक्त नहीं होने से" autocomplete="off" />
                         </div>
                     </div>
@@ -433,11 +433,6 @@
                                                 <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
                                                 <td><a class="btn btn-success">View</a></td>
                                             </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>यदि सत्यु का कारण कोविड 19 है तो RTPCR रिपोर्ट</td>
-                                                <td><a class="btn btn-success">View</a></td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -447,7 +442,7 @@
                 </div>
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <div class="card-header bg-success">आवेदन पर निर्णय करे  :</div>
+                        <div class="card-header bg-success">Action :</div>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -468,7 +463,7 @@
 
                     <div class="col-md-3" id="Mydocu" style="display: none;">
                         <div class="form-group">
-                            <label>Upload Document:</label>
+                            <label>Upload Document / दस्तावेज अपलोड करें:</label>
                             <asp:FileUpload runat="server" CssClass="form-control"></asp:FileUpload>
                             <h5 style="font-weight: 500;">Note  :<span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
                         </div>
@@ -477,28 +472,33 @@
 
                     <%--gajendra--%>
                 </div>
-                <div class="row" id="div1">
+                <div class="row align-items-end" id="div1">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>नियुक्ति पत्र संख्या :<span style="color: red">*</span></label>
+                            <label>Appointment Letter Number<br />
+                                नियुक्ति पत्र संख्या :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>नियुक्ति आदेश संख्या:<span style="color: red">*</span></label>
+                            <label>Appointment Order Number<br />
+                                नियुक्ति आदेश संख्या:<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <label>पत्र की तारीख:<span style="color: red">*</span></label>
+                            <label>Date of Letter<br />
+                                पत्र का दिनांक :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <label>आवेदक को किस पद पर नियुक्त किया गया है:<span style="color: red">*</span></label>
+                            <label>
+                                Position Appointed to Applicant<br />
+                                आवेदक नियुक्त पद:<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                             </select>
@@ -506,7 +506,8 @@
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <label>पोस्टिंग की जगह:<span style="color: red">*</span></label>
+                            <label>Place of Posting<br />
+                                पोस्टिंग की जगह:<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
@@ -515,7 +516,9 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Reason of Acceptance / स्वीकार के कारण :<span style="color: red">*</span></label>
+                            <label>Reason of Rejectance / Return
+                                <br />
+                                अस्वीकार्य / वापसी के कारण :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
@@ -523,25 +526,33 @@
                 <div class="row" id="div3">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>serial number / क्रम संख्या:<span style="color: red">*</span></label>
+                            <label>Order Number
+                                <br />
+                                क्रम संख्या:<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Check No. / चेक नंबर:<span style="color: red">*</span></label>
+                            <label>Check No.
+                                <br />
+                                चेक नंबर:<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Payment Date / भुगतान तिथि:<span style="color: red">*</span></label>
+                            <label>Payment Date
+                                <br />
+                                भुगतान तिथि:<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Payment / भुगतान :<span style="color: red">*</span></label>
+                            <label>Payment
+                                <br />
+                                भुगतान :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
