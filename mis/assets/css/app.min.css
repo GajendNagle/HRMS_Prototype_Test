@@ -7310,7 +7310,8 @@ html {
 
 label {
     font-weight: var(--vz-font-weight-medium);
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
+    font-size:medium;
 }
 
 b, strong {

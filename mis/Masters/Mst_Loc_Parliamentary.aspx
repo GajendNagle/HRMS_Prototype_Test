@@ -184,7 +184,7 @@
                                     <th>Parliamentary Name (In English)</th>
                                     <th>संसद का नाम(हिंदी में)</th>
                                     <th>Parliamentary Code No. / लोकसभा कोड संख्या</th>
-                                    <th>Status / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

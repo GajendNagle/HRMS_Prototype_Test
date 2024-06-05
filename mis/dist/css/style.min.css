@@ -41851,8 +41851,8 @@ ul.list-style-none {
 
     .card .card-title {
         position: relative;
-        font-weight: 500
-    }
+/*        font-weight: 500
+*/    }
 
     .card .card-actions {
         float: right
@@ -42785,9 +42785,9 @@ textarea {
     background-color: #00c292
 }
 
-form label {
+/*form label {
     font-weight: 400
-}
+}*/
 
 .form-group {
     margin-bottom: 25px
