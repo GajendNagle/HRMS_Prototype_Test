@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
-  <%--  <style>
+    <style>
         #idSpouseOfcAdd {
             display: none;
         }
@@ -145,7 +145,7 @@
         .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
             background-color: #16603ae3;
         }
-    </style>--%>
+    </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -3363,7 +3363,7 @@
     <%--    </div>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-  <%--  <script>
+    <script>
         function ShowHideCertificateDate() {
             var ddlCertificateDate = document.getElementById("ddlCertificateDate");
             var idCertificateDate = document.getElementById("idCertificateDate");
@@ -3787,5 +3787,5 @@
 
         google.setOnLoadCallback(OnLoad);
 
-    </script>--%>
+    </script>
 </asp:Content>
