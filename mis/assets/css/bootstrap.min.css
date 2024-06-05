@@ -4,8 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-.btn_success{
-    
+.btn_success {
 }
 
 
@@ -213,7 +212,8 @@ hr {
     color: inherit;
     border: 0;
     border-top: var(--vz-border-width) solid;
-    opacity: .25
+    opacity: .25;
+    width: 100%;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -754,7 +754,7 @@ progress {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     margin-top: calc(-1 * var(--vz-gutter-y));
     margin-right: calc(-.5 * var(--vz-gutter-x));
     margin-left: calc(-.5 * var(--vz-gutter-x))
@@ -764,7 +764,7 @@ progress {
     margin-bottom: 1.5rem;
 }
 
-    .row > * {
+   /* .row > * {
         -ms-flex-negative: 0;
         flex-shrink: 0;
         width: 100%;
@@ -772,7 +772,7 @@ progress {
         padding-right: calc(var(--vz-gutter-x) * .5);
         padding-left: calc(var(--vz-gutter-x) * .5);
         margin-top: var(--vz-gutter-y)
-    }
+    }*/
 
 .col {
     -webkit-box-flex: 1;
@@ -4580,8 +4580,6 @@ textarea.form-control-lg {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
- 
-       
 }
 
     .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -5523,24 +5521,24 @@ textarea.form-control-lg {
     font-family: 'Oswald', serif;
 }
 
-.breadcrumb-item{
-    font-weight:bold;
+.breadcrumb-item {
+    font-weight: bold;
 }
 
-.breadcrumb-item + .breadcrumb-item {
-    padding-left: var(--vz-breadcrumb-item-padding-x)
-}
-
-    .breadcrumb-item + .breadcrumb-item::before {
-        float: left;
-        padding-right: var(--vz-breadcrumb-item-padding-x);
-        color: var(--vz-breadcrumb-divider-color);
-        content: var(--vz-breadcrumb-divider, "\f0142")
+    .breadcrumb-item + .breadcrumb-item {
+        padding-left: var(--vz-breadcrumb-item-padding-x)
     }
 
-.breadcrumb-item.active {
-    color: var(--vz-breadcrumb-item-active-color)
-}
+        .breadcrumb-item + .breadcrumb-item::before {
+            float: left;
+            padding-right: var(--vz-breadcrumb-item-padding-x);
+            color: var(--vz-breadcrumb-divider-color);
+            content: var(--vz-breadcrumb-divider, "\f0142")
+        }
+
+    .breadcrumb-item.active {
+        color: var(--vz-breadcrumb-item-active-color)
+    }
 
 .pagination {
     --vz-pagination-padding-x: 0.75rem;

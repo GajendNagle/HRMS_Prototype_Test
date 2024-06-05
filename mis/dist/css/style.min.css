@@ -18903,8 +18903,8 @@ body {
 hr {
     margin: 1rem 0;
     color: inherit;
-    background-color: currentColor;
-    border: 0;
+/*    background-color: currentColor;
+*/    border: 0;
     opacity: .25
 }
 
@@ -19451,7 +19451,7 @@ progress {
     margin-left: calc(var(--bs-gutter-x) * -.5)
 }*/
 
-    .row > * {
+    /*.row > * {
         flex-shrink: 0;
         width: 100%;
         max-width: 100%;
@@ -19459,7 +19459,7 @@ progress {
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-top: var(--bs-gutter-y)
     }
-
+*/
 .col {
     flex: 1 0 0%
 }

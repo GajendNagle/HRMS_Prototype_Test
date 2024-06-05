@@ -31,7 +31,6 @@
             </marquee>
         </div>
     </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
@@ -122,7 +121,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Parliamentary Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Parliamentary Name (In English)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Parliamentary Name" />
                         </div>
                     </div>
@@ -134,7 +133,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Parliamentary Code No. / लोकसभा कोड दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Parliamentary Code No. / लोकसभा कोड दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -341,7 +340,6 @@
                     </div>
                 </fieldset>--%>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
