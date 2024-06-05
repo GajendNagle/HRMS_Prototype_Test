@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
-    <style>
+  <%--  <style>
         #idSpouseOfcAdd {
             display: none;
         }
@@ -48,7 +48,7 @@
 
         #idDeptName {
             display: none;
-            margin-top:7px
+            margin-top: 7px
         }
 
         #idCurDeptName {
@@ -145,12 +145,10 @@
         .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
             background-color: #16603ae3;
         }
-    </style>
+    </style>--%>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-
         <div class="row page-titles">
             <div class="col-md-5 align-self-center">
                 <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
@@ -187,7 +185,6 @@
                     </div>
                 </nav>
                 <br />
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
@@ -1024,15 +1021,15 @@
                                                         <div class="col-md-12">
                                                             <div class="table-responsive">
                                                                 <table class="table table-bordered" id="tableAdd" style="visibility: hidden;">
-                                                                        <tr class="card-header">
-                                                                            <th>Sr. No.</th>
-                                                                            <th>Qualification</th>
-                                                                            <th>Subject</th>
-                                                                            <th>Board/University</th>
-                                                                            <th>Passing Year</th>
-                                                                            <th>Grade/Percentage</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
+                                                                    <tr class="card-header">
+                                                                        <th>Sr. No.</th>
+                                                                        <th>Qualification</th>
+                                                                        <th>Subject</th>
+                                                                        <th>Board/University</th>
+                                                                        <th>Passing Year</th>
+                                                                        <th>Grade/Percentage</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
                                                                 </table>
                                                             </div>
                                                         </div>
@@ -3363,11 +3360,10 @@
                 </fieldset>
             </div>
         </div>
-    </div>
     <%--    </div>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>
+  <%--  <script>
         function ShowHideCertificateDate() {
             var ddlCertificateDate = document.getElementById("ddlCertificateDate");
             var idCertificateDate = document.getElementById("idCertificateDate");
@@ -3791,5 +3787,5 @@
 
         google.setOnLoadCallback(OnLoad);
 
-    </script>
+    </script>--%>
 </asp:Content>

@@ -3,34 +3,48 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Janpad Panchayat Master</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                        <li class="breadcrumb-item"><a href="../menu.aspx?ID=Masters&SubID=LocationMaster" title="click to go on">Location Masters</a></li>
-                        <li class="breadcrumb-item active">Janpad Panchayat Master</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span>HRMS</span>
+                        </li>
+                        <li class="breadcrumb-item">Location Master</li>
+                        <li class="breadcrumb-item">Janpad Panchayat Master</li>
                     </ol>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                इस पेज के माध्यम से नए Janpad Panchayat को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+            </marquee>
+        </div>
+    </div>
 
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h4 class="card-title">Janpad Panchayat Master / जनपद पंचायत मास्टर</h4>
+                </div>
             </div>
+        </div>
             <div class="card-body">
-
                 <span id="ContentBody_lblMsg"></span>
                 <fieldset>
-                    <legend>Janpad Panchayat</legend>
+                    <legend>Janpad Panchayat / जनपद पंचायत</legend>
 
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-3 form-group">
                             <label class="font-bold">State Name <span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
@@ -182,7 +196,7 @@
 
                         <div class="col-md-2 mt-4 form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                            <a href="Mst_Loc_JanpadPanchayat.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <a href="Mst_Loc_JanpadPanchayat.aspx" class="btn btn-outline-danger w-lg btn-rounded">Clear</a>
                         </div>
                     </div>
                 </fieldset>
@@ -394,7 +408,6 @@
                 </fieldset>--%>
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
