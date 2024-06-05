@@ -1,196 +1,87 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Portal.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <link href="../mis/assets/css/login.css" rel="stylesheet" />
     <style>
         body {
-            background-image: url("../mis/dist/images/login/bg.png");
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-
-        .page-wrapper, #main-wrapper {
-            background-color: transparent !important;
+            background-image: url(https://t3.ftcdn.net/jpg/05/00/34/58/360_F_500345899_4OqmtspFst6SRnNQvLj7h7TfKOrBwTer.jpg);
         }
     </style>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row mb-4">
-        <div class="col-lg-1">
-        </div>
-        <div class="col-lg-6">
-            <div class="container mt-6">
-                <div class="row mb-1">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-6">
-                        <a href="#" class="sidelog-link">
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>School Directory </h4>
-                            </div>
-                            <img src="mis/dist/images/login/School.png" class="sidelog-img img-right" />
-                        </a>
-
-                    </div>
-                </div>
-                <div class="row mb-1">
-
-                    <div class="col-lg-6">
-                        <a href="#" class="sidelog-link">
-                            <img src="mis/dist/images/login/Employee.png" class="sidelog-img img-left" />
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>Employee Directory </h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2"></div>
-
-                </div>
-                <div class="row mb-1">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-6">
-                        <a href="#" class="sidelog-link">
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>Student Directory </h4>
-                            </div>
-                            <img src="mis/dist/images/login/Student.png" class="sidelog-img img-right" />
-
-                        </a>
-
-                    </div>
-                </div>
-                <div class="row mb-1">
-                    <div class="col-lg-6">
-                        <a href="#" onclick="openPDF()" class="sidelog-link">
-                            <img src="mis/dist/images/login/Scheme.png" class="sidelog-img img-left" />
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>Schemes Information </h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2"></div>
-
-                </div>
-
-                <div class="row mb-1">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-6">
-                        <a href="mis/Registration/Rpt_PublicSchool.aspx" class="sidelog-link">
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>Summary Report</h4>
-                            </div>
-                            <img src="mis/dist/images/login/School.png" class="sidelog-img img-right" />
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="row mb-1">
-                    <div class="col-lg-6">
-                        <a href="#" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4" class="sidelog-link">
-                            <img src="mis/dist/images/login/PasswordChangePolicy.png" class="sidelog-img img-left" />
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>Password Change Policy</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row mb-1">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-6">
-                        <a href="#" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" class="sidelog-link">
-                            <div class="alert alert-bg shadow" role="alert">
-                                <h4>Login & Logout Policy</h4>
-                            </div>
-                            <img src="mis/dist/images/login/LogoutPolicy.png" class="sidelog-img img-right" />
-                        </a>
-
-                    </div>
-                </div>
-
+    <div class="container-fluid" >
+        <div class="row bg" >
+            <div class="col-lg-6">
+                <img src="mis/assets/images/LoginImage.png" style="width:100%;" />
             </div>
-        </div>
+            <div class="col-lg-6">
+         
+                <div class="container">
 
-        <div class="col-lg-4">
-            <div class="container" style="margin-top: 5rem">
-                <div class="login-container">
-                    <img src="mis/dist/images/users/1.png" class="login-image" />
-                    <div class="row justify-content-center mt-5">
-                        <div class="col-md-10 text-center mt-3">
-                            <div class="form-group">
-                                <h4 class="log-heading">User Login</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-10">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">
-                                        <i class="fa fa-user-alt"></i></span>
-                                    <asp:TextBox runat="server" ID="txtUserName" CssClass="form-control" placeholder="User Name">
-                                    </asp:TextBox>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">
-                                        <i class="fa fa-key"></i></span>
-                                    <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control" placeholder="Password" TextMode="Password">
-                                    </asp:TextBox>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <asp:TextBox runat="server" ID="TextBox1" Text="OmG1GD" ReadOnly="true" CssClass="form-control"></asp:TextBox>
+                    <div class="row justify-content-end">
+                        <div class="col-xl-7">
+                            <div class="card mt-4 card-bg-fill">
+
+                                <div class="card-body p-4">`
+                                    <div class="text-center mt-2">
+                                        <img src="../mis/assets/images/logo-sm.svg" alt="" height="100">
+
+                                        <h5 class="text-primary">Madhya Pradesh Education Portal 3.0</h5>
+                                        <h4 class="text-info">User Login</h4>
+                                    </div>
+                                    <div class="p-2 mt-4">
+                                        <div>
+
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Username</label>
+                                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="float-end">
+                                                    <a href="#" class="text-muted">Forgot password?</a>
+                                                </div>
+                                                <label class="form-label" for="password-input">Password</label>
+                                                <div class="position-relative auth-pass-inputgroup mb-3">
+                                                    <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input">
+                                                    <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon material-shadow-none" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                </div>
+                                            </div>
+
+                                          <div class="row text-center justify-content-center">
+                                            <div class="col-lg-12 mb-3">
+                                              <img src="../mis/assets/images/captcha.png" height="60" />
+                                            </div>
+                                              <div class="col-lg-12">
+                                                  <input type="text" class="form-control" placeholder="Enter Captcha" >
+                                              </div>
+                                          </div>
+                                            <div class="mt-4">
+                                                <%--<button class="btn btn-success w-100" type="submit">Sign In</button>--%>
+                                                <a href="../mis/Dashboard/AdminDashboard.aspx" class="btn btn-secondary w-100" type="submit">Sign In</a>
+                                            </div>
+
+                                         
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtCaptcha" CssClass="form-control" placeholder="Captcha"></asp:TextBox>
-                                    </div>
-                                </div>
+                                <!-- end card body -->
                             </div>
-                        </div>
-                        <div class="col-lg-10">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <asp:Button runat="server" ID="btnLogin" CssClass="btn btn-block btn-outline-cyan border-white" Text="Login" OnClick="btnLogin_Click" />
-                                    </div>
-                                </div>
+                            <!-- end card -->
 
-                            </div>
                         </div>
-                        <div class="col-lg-10 text-right">
-                            <div class="form-group">
-                                <a href="ForgotPassword.aspx">Forgot Password?</a>
-                            </div>
-                        </div>
-
                     </div>
-
+                    <!-- end row -->
                 </div>
+                <!-- end container -->
             </div>
+            <!-- end auth page content -->
+
+
+
         </div>
     </div>
-    
-    <script type="text/javascript">
-        function openPDF() {
-            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-            var pdfUrl = '../mis/Document/SchemeInformation.pdf';
-            // Open the PDF in a new window or tab
-            window.open(pdfUrl, '_blank');
-        } 
-    </script>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-
 </asp:Content>
-
 

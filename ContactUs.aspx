@@ -26,7 +26,7 @@
             <a href="Login.aspx" class="btn btn-outline-warning"><i class="fa fa-arrow-alt-circle-left"></i>Back to Login</a>
         </div>
     </div>--%>
-    <div class="container-fluid mt-5 mb-5">
+    <div class="container-fluid">
 
         <section class="contact">
             <div class="row">
