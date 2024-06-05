@@ -8,7 +8,6 @@
     <link href="../dist/css/select2.min.css" rel="stylesheet" />
     <link href="../dist/css/site.css" rel="stylesheet" />
     <style>
-
         @media print {
             .noprint {
                 display: none;
@@ -121,10 +120,10 @@
         #divdistance {
             display: none;
         }
+
         #divdistanceByRoad {
             display: none;
         }
-
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -173,14 +172,14 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Financial Year <span style="color: red">*</span></label>
-                   
+
                                 <asp:DropDownList runat="server" ID="ddlFinancialYear" CssClass="form-control">
                                     <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem>2024-25</asp:ListItem>
                                     <asp:ListItem>2023-24</asp:ListItem>
                                     <asp:ListItem>2022-23</asp:ListItem>
                                     <asp:ListItem>2021-22</asp:ListItem>
-                                  
+
                                 </asp:DropDownList>
                             </div>
                         </div>
@@ -398,57 +397,57 @@
                     </fieldset>
                     <fieldset>
                         <legend>Office Bank Details</legend>
-  <div class="row">
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>Bank Type<span style="color: red;">*</span></label>
-              <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
-                  <option value="" data-select2-id="64">Select</option>
-                  <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
-                  <option value="2" data-select2-id="148">Private  Sector  Commercial Banks</option>
-                  <option value="3" data-select2-id="149">Regional Rural Banks</option>
-                  <option value="4" data-select2-id="150">Co-operative Banks</option>
-                  <option value="5" data-select2-id="151">Small Finance Banks</option>
-              </select>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Bank Type<span style="color: red;">*</span></label>
+                                    <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
+                                        <option value="" data-select2-id="64">Select</option>
+                                        <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
+                                        <option value="2" data-select2-id="148">Private  Sector  Commercial Banks</option>
+                                        <option value="3" data-select2-id="149">Regional Rural Banks</option>
+                                        <option value="4" data-select2-id="150">Co-operative Banks</option>
+                                        <option value="5" data-select2-id="151">Small Finance Banks</option>
+                                    </select>
 
-          </div>
-      </div>
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>IFSC Code<span style="color: red;">*</span></label>
-              <select class="form-control select2">
-                  <option value="">--Select--</option>
-                  <option value="SBIN0001308">SBIN0001308</option>
-                  <option value="SBIN0003099">SBIN0003099</option>
-                  <option value="HDFC0000062">HDFC0000062</option>
-                  <option value="UBIN0532525">UBIN0532525</option>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>IFSC Code<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                        <option value="">--Select--</option>
+                                        <option value="SBIN0001308">SBIN0001308</option>
+                                        <option value="SBIN0003099">SBIN0003099</option>
+                                        <option value="HDFC0000062">HDFC0000062</option>
+                                        <option value="UBIN0532525">UBIN0532525</option>
 
-              </select>
-          </div>
-      </div>
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>Bank Name<span style="color: red;">*</span></label>
-              <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
-              <select class="form-control select2">
-                  <option value="">--Select--</option>
-                  <option value="sbi">State Bank of India (SBI)</option>
-                  <option value="boi">Bank of India (BOI)</option>
-                  <option value="central_bank">Central Bank of India</option>
-                  <option value="union_bank">Union Bank of India</option>
-                  <option value="hdfc">HDFC Bank</option>
-              </select>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Bank Name<span style="color: red;">*</span></label>
+                                    <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
+                                    <select class="form-control select2">
+                                        <option value="">--Select--</option>
+                                        <option value="sbi">State Bank of India (SBI)</option>
+                                        <option value="boi">Bank of India (BOI)</option>
+                                        <option value="central_bank">Central Bank of India</option>
+                                        <option value="union_bank">Union Bank of India</option>
+                                        <option value="hdfc">HDFC Bank</option>
+                                    </select>
 
-          </div>
-      </div>
-      
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>Account Number<span style="color: red;">*</span></label>
-              <input type="text" class="form-control" placeholder="Enter Account No." />
-          </div>
-      </div>
-  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Account Number<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Account No." />
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Office Geographical Details</legend>
@@ -690,7 +689,7 @@
                                         <option>Kasturba Gandhi Balika Vidyalaya</option>
                                     </select>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Institute Code<span style="color: red;"> *</span></label>
@@ -713,8 +712,8 @@
                                 <div class="form-group">
                                     <label>Year of Establishment<span style="color: red;">*</span></label>
 
-                                    <input  type="date" class="form-control your-selector"  />
-                             
+                                    <input type="date" class="form-control your-selector" />
+
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -1129,7 +1128,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>In Charge Type<span style="color: red;"> *</span></label>
-                              <%--      <select class="form-control select2">
+                                    <%--      <select class="form-control select2">
                                         <option value=" -Select-">-Select-</option>
                                         <option value="1-Head Master / Principal ">1-Head Master / Principal </option>
                                         <option value="2-Asst. head Master  / VP">2-Asst. head Master  / VP</option>
@@ -1139,11 +1138,11 @@
                                     </select>--%>
 
                                     <asp:DropDownList ID="ddl_Inst_InchargeType" runat="server" CssClass="form-control select2">
-                                       <asp:ListItem Value="">-Select-</asp:ListItem>
-                                       <asp:ListItem Value="1">1-Head Master / Principal</asp:ListItem>
-                                       <asp:ListItem Value="2">2-Asst. head Master  / VP</asp:ListItem>
-                                       <asp:ListItem Value="3">3-Acting Head Teacher</asp:ListItem>
-                                       <asp:ListItem Value="4">4-Other</asp:ListItem>
+                                        <asp:ListItem Value="">-Select-</asp:ListItem>
+                                        <asp:ListItem Value="1">1-Head Master / Principal</asp:ListItem>
+                                        <asp:ListItem Value="2">2-Asst. head Master  / VP</asp:ListItem>
+                                        <asp:ListItem Value="3">3-Acting Head Teacher</asp:ListItem>
+                                        <asp:ListItem Value="4">4-Other</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                             </div>
@@ -1156,7 +1155,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>In Charge Name<span style="color: red;"> *</span></label>
-       
+
                                     <asp:TextBox runat="server" ID="txtInst_InChargeName" class="form-control" placeholder="Enter In Charge Name"></asp:TextBox>
 
                                 </div>
@@ -1165,7 +1164,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>In Charge Mobile Number <span style="color: red;">*</span></label>
-                         
+
                                     <asp:TextBox runat="server" ID="txtInst_InchargeMobile" class="form-control" placeholder="Enter In Charge Mobile No."></asp:TextBox>
 
                                 </div>
@@ -1216,56 +1215,56 @@
                         <legend>Institute Bank Details</legend>
 
                         <div class="row">
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>Bank Type<span style="color: red;">*</span></label>
-              <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
-                  <option value="" data-select2-id="64">Select</option>
-                  <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
-                  <option value="2" data-select2-id="148">Private  Sector  Commercial Banks</option>
-                  <option value="3" data-select2-id="149">Regional Rural Banks</option>
-                  <option value="4" data-select2-id="150">Co-operative Banks</option>
-                  <option value="5" data-select2-id="151">Small Finance Banks</option>
-              </select>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Bank Type<span style="color: red;">*</span></label>
+                                    <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
+                                        <option value="" data-select2-id="64">Select</option>
+                                        <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
+                                        <option value="2" data-select2-id="148">Private  Sector  Commercial Banks</option>
+                                        <option value="3" data-select2-id="149">Regional Rural Banks</option>
+                                        <option value="4" data-select2-id="150">Co-operative Banks</option>
+                                        <option value="5" data-select2-id="151">Small Finance Banks</option>
+                                    </select>
 
-          </div>
-      </div>
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>IFSC Code<span style="color: red;">*</span></label>
-              <select class="form-control select2">
-                  <option value="">--Select--</option>
-                  <option value="SBIN0001308">SBIN0001308</option>
-                  <option value="SBIN0003099">SBIN0003099</option>
-                  <option value="HDFC0000062">HDFC0000062</option>
-                  <option value="UBIN0532525">UBIN0532525</option>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>IFSC Code<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                        <option value="">--Select--</option>
+                                        <option value="SBIN0001308">SBIN0001308</option>
+                                        <option value="SBIN0003099">SBIN0003099</option>
+                                        <option value="HDFC0000062">HDFC0000062</option>
+                                        <option value="UBIN0532525">UBIN0532525</option>
 
-              </select>
-          </div>
-      </div>
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>Bank Name<span style="color: red;">*</span></label>
-              <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
-              <select class="form-control select2">
-                  <option value="">--Select--</option>
-                  <option value="sbi">State Bank of India (SBI)</option>
-                  <option value="boi">Bank of India (BOI)</option>
-                  <option value="central_bank">Central Bank of India</option>
-                  <option value="union_bank">Union Bank of India</option>
-                  <option value="hdfc">HDFC Bank</option>
-              </select>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Bank Name<span style="color: red;">*</span></label>
+                                    <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
+                                    <select class="form-control select2">
+                                        <option value="">--Select--</option>
+                                        <option value="sbi">State Bank of India (SBI)</option>
+                                        <option value="boi">Bank of India (BOI)</option>
+                                        <option value="central_bank">Central Bank of India</option>
+                                        <option value="union_bank">Union Bank of India</option>
+                                        <option value="hdfc">HDFC Bank</option>
+                                    </select>
 
-          </div>
-      </div>
-      
-      <div class="col-md-3">
-          <div class="form-group">
-              <label>Account Number<span style="color: red;">*</span></label>
-              <input type="text" class="form-control" placeholder="Enter Account No." />
-          </div>
-      </div>
-  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Account Number<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Account No." />
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Institute Geographical Data</legend>
@@ -1595,7 +1594,7 @@
                                 <div class="form-group">
                                     <label>Year of Establishment<span style="color: red;">*</span></label>
 
-                                   <%-- <select class="form-control select2">
+                                    <%-- <select class="form-control select2">
                                         <option value="-Select-">-Select-</option>
                                         <option value="2015">2015</option>
                                         <option value="2016">2016</option>
@@ -1608,7 +1607,7 @@
                                         <option value="2023">2023</option>
 
                                     </select>--%>
-                                                                        <input  type="date" class="form-control your-selector"  />
+                                    <input type="date" class="form-control your-selector" />
 
                                 </div>
                             </div>
@@ -1628,7 +1627,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Board Code</label>
-                                  <input  type="text" class="form-control" placeholder="Enter Board Code"/>
+                                    <input type="text" class="form-control" placeholder="Enter Board Code" />
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -1722,25 +1721,25 @@
                                     </select>
                                 </div>
                             </div>
-                             <div class="col-md-3">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Recognition No. <span style="color: red;">*</span></label>
-                                  <input  class="form-control" type="text" placeholder="Enter Recognition No."/>
+                                    <input class="form-control" type="text" placeholder="Enter Recognition No." />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Recognition  Valid From<span style="color: red;">*</span></label>
-                                  <input  class="form-control" type="date"/>
+                                    <input class="form-control" type="date" />
                                 </div>
-                            </div>  
+                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Recognition  Valid To<span style="color: red;">*</span></label>
-                                  <input  class="form-control" type="date"/>
+                                    <input class="form-control" type="date" />
                                 </div>
-                            </div> 
-                            
+                            </div>
+
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>School Medium<span style="color: red;">*</span></label>
@@ -1791,7 +1790,7 @@
 
                                     </select>
                                 </div>
-                            </div>  
+                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Special School<span style="color: red;">*</span></label>
@@ -1804,8 +1803,8 @@
                                         <option value="Block Excellence School">05-Block Excellence School	</option>
                                         <option value="PM Shri School">06-PM Shri School</option>
                                         <option value="CWSN School">07-CWSN School</option>
-                                       
-                                   
+
+
 
                                     </select>
                                 </div>
@@ -1815,7 +1814,7 @@
                                     <label>JSK<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option value="-Select-">-Select-</option>
-                                    
+
 
                                     </select>
                                 </div>
@@ -2158,7 +2157,7 @@
                                     <input type="text" placeholder="Enter Distance in Meter" class="form-control" />
                                 </div>
                             </div>
-                            <div id="divdistanceByRoad"  class="col-md-3">
+                            <div id="divdistanceByRoad" class="col-md-3">
                                 <div class="form-group">
                                     <label>Habitation to School (By Road)<span style="color: red">*</span></label>
                                     <input type="text" placeholder="Enter Distance in Meter" class="form-control" />
@@ -2188,37 +2187,37 @@
                         </div>
                     </fieldset>
                     <fieldset data-select2-id="105">
-                <legend>Sankul Information</legend>
-                <div class="row" data-select2-id="104">
-                    <div class="col-md-3" data-select2-id="103">
-                        <div class="form-group" data-select2-id="102">
-                            <label class="control-label" for="SankulId">Sankul/AEO Code</label>
-                            <select class="form-control select2 select2-hidden-accessible" id="SankulId" name="SankulId" data-select2-id="SankulId" tabindex="-1" aria-hidden="true">
-                                <option value="" data-select2-id="109">Select</option>
-                                <option value="4" data-select2-id="113"></option>
-                                </select>
+                        <legend>Sankul Information</legend>
+                        <div class="row" data-select2-id="104">
+                            <div class="col-md-3" data-select2-id="103">
+                                <div class="form-group" data-select2-id="102">
+                                    <label class="control-label" for="SankulId">Sankul/AEO Code</label>
+                                    <select class="form-control select2 select2-hidden-accessible" id="SankulId" name="SankulId" data-select2-id="SankulId" tabindex="-1" aria-hidden="true">
+                                        <option value="" data-select2-id="109">Select</option>
+                                        <option value="4" data-select2-id="113"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">Board Type</label>
+                                    <input id="SankulBoardType" class="form-control valid" readonly aria-invalid="false">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">Management Group</label>
+                                    <input id="SankulManagementGroup" readonly class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">Management Group Details</label>
+                                    <input id="SankulManagementGroupDetails" readonly class="form-control">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="control-label">Board Type</label>
-                            <input id="SankulBoardType" class="form-control valid" readonly aria-invalid="false">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="control-label">Management Group</label>
-                            <input id="SankulManagementGroup" readonly class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="control-label">Management Group Details</label>
-                            <input id="SankulManagementGroupDetails" readonly class="form-control">
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
+                    </fieldset>
                     <fieldset>
                         <legend>School Contact Details</legend>
                         <div class="row">
@@ -2343,7 +2342,7 @@
 
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Account Number<span style="color: red;">*</span></label>
@@ -2707,12 +2706,12 @@
 
         }
     </script>
-     <script>
-         $(".your-selector").datepicker({
-             format: "yyyy",
-             viewMode: "years",
-             minViewMode: "years"
-         });
-     </script>
+    <script>
+        $(".your-selector").datepicker({
+            format: "yyyy",
+            viewMode: "years",
+            minViewMode: "years"
+        });
+    </script>
 </asp:Content>
 

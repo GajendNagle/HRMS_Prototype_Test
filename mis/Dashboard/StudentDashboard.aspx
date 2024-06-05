@@ -9,6 +9,9 @@
         .box-min-height {
             min-height: 14rem;
         }
+      /*  .modal-backdrop.show {
+            opacity:0;
+        }*/
     </style>
 
 </asp:Content>
@@ -305,21 +308,15 @@
                     </div>
                 </div>
             </div>
-     
-
-
+   
         </div>
     </div>
-
-
-
-
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script src="../dist/dashboard/echart-pie-doghnut.js"></script>
     <script src="../dist/dashboard/echarts-en.min.js"></script>
-    <script src="../dist/dashboard/vendors.min.js"></script>
+    <%--<script src="../dist/dashboard/vendors.min.js"></script>--%>
     <script src="../dist/dashboard/core.js"></script>
     <script src="../dist/dashboard/kelly.js"></script>
     <script src="../dist/dashboard/animated.js"></script>
