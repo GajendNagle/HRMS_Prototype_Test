@@ -77,10 +77,10 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="../Transaction/Rpt_DistWiseCounting.aspx">District Wise Counting</a></li>
                                         <li><a class="dropdown-item" href="../Transaction/Rpt_BlockWiseCounting.aspx">Block Wise Counting</a></li>
+                                     <li><a class="dropdown-item" href="../HRMS/Rpt_AdministrativeTransferReport.aspx">Transfer Report</a></li>
                                     </ul>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </nav>

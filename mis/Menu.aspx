@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/mis/HomeMaster.master" autoeventwireup="true" codefile="Menu.aspx.cs" inherits="mis_Menu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/HomeMaster.master" AutoEventWireup="true" CodeFile="Menu.aspx.cs" Inherits="mis_Menu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
@@ -1544,15 +1544,13 @@
                             <h6>Increment Cancel Orders</h6>
                         </a>
                     </div>
-                  <%--  <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    <%--  <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/AddIncrement.aspx">
                             <img src="dist/images/icon/HRMS_Increment_CancelOrder.png" class="dash-img" />
 
                             <h6>Add Increment</h6>
                         </a>
                     </div>--%>
-
-
                 </div>
             </div>
         </div>
@@ -1647,7 +1645,18 @@
                             <h6>Employee Other Curriculum Activities</h6>
                         </a>
                     </div>
-
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/Rpt_EmployeeDetails.aspx">
+                            <img src="dist/images/icon/Report.png" class="dash-img" />
+                            <h6>Employee Details Report</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/Rpt_EmployeeHandicap.aspx">
+                            <img src="dist/images/icon/Report.png" class="dash-img" />
+                            <h6>Employee Handicap Report</h6>
+                        </a>
+                    </div>
                     <%--   <div class="row text-center justify-content-center mb-5">
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/EmployeeRegistration.aspx">
@@ -2160,7 +2169,7 @@
                             <img src="dist/images/icon/Report.png" class="dash-img" />
                             <h6>Employee Detail Report</h6>
                         </a>
-                    </div>--%>
+                    </div>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/Rpt_EmployeeDetails.aspx">
                             <img src="dist/images/icon/Report.png" class="dash-img" />
@@ -2172,13 +2181,13 @@
                             <img src="dist/images/icon/Report.png" class="dash-img" />
                             <h6>Employee Handicap Report</h6>
                         </a>
-                    </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    </div>--%>
+                    <%--<div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/Rpt_EmployeePromotion.aspx">
                             <img src="dist/images/icon/report.png" class="dash-img" />
                             <h6>Employee Promotion Report</h6>
                         </a>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="Transaction/Rpt_EmployeeIncrement.aspx">
                             <img src="dist/images/icon/Report.png" class="dash-img" />
@@ -2191,12 +2200,12 @@
                             <h6>E-Service Book Report</h6>
                         </a>
                     </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    <%--<div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/Rpt_EServiceBookReport.aspx">
                             <img src="dist/images/icon/HRMS_EServiceBook.png" class="dash-img" />
                             <h6>Deparment Enquiry</h6>
                         </a>
-                    </div>
+                    </div>--%>
                     <%--Create by Aman's report--%>
                     <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/Rpt_HREmpRetirementList.aspx">
@@ -2204,7 +2213,7 @@
                             <h6>Employee Retirement Report</h6>
                         </a>
                     </div>
-                    <div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                    <%--<div class="col-md-3" data-aos="fade-down" data-aos-easing="ease-in-sine">
                         <a href="HRMS/Rpt_TransferReport.aspx">
                             <img src="dist/images/icon/HRMS_EServiceBook.png" class="dash-img" />
                             <h6>Transfer Report</h6>
@@ -2215,7 +2224,7 @@
                             <img src="dist/images/icon/HRMS_EServiceBook.png" class="dash-img" />
                             <h6>Compassionate Report</h6>
                         </a>
-                    </div>
+                    </div>--%>
                 </div>
             </div>
         </div>

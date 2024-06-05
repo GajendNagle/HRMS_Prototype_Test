@@ -5,7 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Automatic Transfer System</h4>
+            <h4 class="text-themecolor ">Automatic Transfer System <br />स्वचालित स्थानांतरण प्रणाली
+</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
             <div class="d-flex justify-content-end align-items-center">
@@ -37,7 +38,7 @@
                             </li>
                             <li>
 
-                                <a class="nav-link  text-white " href="OIS_Transfer1.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Generate OIS Transfer
+                                <a class="nav-link  text-white " href="OIS_Transfer1.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>OIS Generate Transfer
                                 </b></a>
                             </li>
                         </ul>

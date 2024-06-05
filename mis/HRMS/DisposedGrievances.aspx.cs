@@ -11,11 +11,9 @@ public partial class mis_Transaction_DisposedGrievances : System.Web.UI.Page
     {
 
     }
-
-    protected void Unnamed_Click(object sender, EventArgs e)
+    protected void btnSearch_Click(object sender, EventArgs e)
     {
         show.Visible=false;
         show2.Visible = true;
-
     }
 }

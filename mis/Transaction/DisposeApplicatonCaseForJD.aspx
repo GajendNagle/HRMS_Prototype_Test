@@ -47,8 +47,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>--%>
-                    <li class="breadcrumb-item active">आवेदन पर निर्णय करें</li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment </a></li>
+                    <li class="breadcrumb-item active">Decision on Application</li>
                 </ol>
             </div>
         </div>
@@ -57,79 +57,65 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <nav class="navbar navbar-expand-lg topbar" style="position: relative; bottom: 26px">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <%--                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                  
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
-
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                               
+                <li class="nav-item">
+                    <a class="nav-link font-16 text-white" href="DisposeApplicatonCaseForJD.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
+                </li>
+                <li class="nav-item">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../HRMS/Trn_JDCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
+                                    <li><a class="dropdown-item" href="../HRMS/JDPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
                                 </ul>
-                            </li>--%>
-                            <a class="nav-link  text-white " href="DisposeApplicatonCaseForJD.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            <li class="nav-item">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
-                                            </a>
-                                            <ul class="dropdown-menu">
-
-                                                <li><a class="dropdown-item" href="../HRMS/Trn_JDCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/JDPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
-
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <%--<a class="nav-link  text-white " href="../HRMS/Trn_DeoCompassionateApproval.aspx" role="button"><b class="font-16 font-bold">अनुकंपा नियुक्ति</b></a>--%>
-                            <a class="nav-link  text-white " href="../HRMS/Trn_ProcessApplicationListJD.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति पर कार्यवाही</b></a>
-                            <a class="nav-link  text-white " href="AvedanperNirnayKareForJD.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a>
-
-                            <li class="nav-item">
-                                <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorJD.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
-
-                            <%--  &nbsp; <i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i><a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab2.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तर के पुरस्कार</b></a>--%>
-                            <%-- &nbsp;<i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i>  <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab3.aspx" role="button"><b class="font-16 font-bold">प्रशिक्षण का विवरण</b></a>--%>
-                            <li class="nav-item">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report </b>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
-                                                <li><a class="dropdown-item" href="JDLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/NocReportJD.aspx">NOC Report</a></li>
-
-
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                         </ul>
-
                     </div>
-                </div>
-            </nav>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link font-16 text-white" href="../HRMS/Trn_ProcessApplicationListJD.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-white " href="AvedanperNirnayKareForJD.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorJD.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
+
+                <li class="nav-item">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                    <li><a class="dropdown-item" href="../Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
+                                    <li><a class="dropdown-item" href="../HRMS/NocReportJD.aspx">NOC Report</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
             <br />
             <br />
 

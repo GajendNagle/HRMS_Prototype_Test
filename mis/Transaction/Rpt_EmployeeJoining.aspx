@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_EmployeeJoining.aspx.cs" Inherits="mis_Transaction_Rpt_EmployeeJoining" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        th {
+            white-space: nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -41,10 +46,8 @@
                                 </li>
                                 <li>
 
-                                    <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee Joining In Office
+                                    <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Add Employee to Office
                                     </b></a>
-
-
                                 </li>
 
                                 <li>
@@ -69,7 +72,7 @@
 
                                 <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="ddlDistrictN" Display="Dynamic"></asp:RequiredFieldValidator>
 
-                                <asp:DropDownList runat="server" ID="ddlDistrictN"  CssClass="select2">
+                                <asp:DropDownList runat="server" ID="ddlDistrictN" CssClass="select2">
                                     <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem>Bhopal</asp:ListItem>
                                     <asp:ListItem>Raisen</asp:ListItem>
@@ -91,6 +94,23 @@
                 <fieldset visible="false" runat="server" id="tblDetail" class="mt-2">
 
                     <legend>Details</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-12">

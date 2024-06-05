@@ -130,6 +130,8 @@
                                                 <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
                                                 <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportHO.aspx">NOC Report</a></li>
+                                               <li><a class="dropdown-item" href="../HRMS/HoRpt_CompassionateAppointment.aspx">Compassionate Appointment Report</a></li>
+                                          
 
                                             </ul>
                                         </li>

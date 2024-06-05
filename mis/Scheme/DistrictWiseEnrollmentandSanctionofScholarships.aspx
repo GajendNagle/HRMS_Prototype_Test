@@ -159,7 +159,7 @@
                                                 <td>
                                                     <div style="text-align: left">
 
-                                                        <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_gvStudentList_ctl04_lnkDistrict" href="javascript:__doPostBack('ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$gvStudentList$ctl04$lnkDistrict','')" style="color: Blue;">AGAR MALWA</a>
+                                                        <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_gvStudentList_ctl04_lnkDistrict" href="BlockWiseEnrollmentandSanctionofScholarships.aspx" style="color: Blue;">AGAR MALWA</a>
                                                     </div>
                                                 </td>
                                                 <td>

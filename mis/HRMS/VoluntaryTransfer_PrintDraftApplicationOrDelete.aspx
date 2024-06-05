@@ -2,6 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
         th, td {
             padding: 15px;
         }
@@ -52,21 +60,23 @@
     <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
+                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
         </div>
         <div class="col-md-4 mt-4 ">
             <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">प्रिंट ड्राफ्ट आवेदन और अपडेट</p>
         </div>
-        <div class="col-md-4 align-self-center">   
+        <div class="col-md-4 align-self-center">
 
 
-   
+
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                     <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>
+                    <li class="breadcrumb-item"><a href="ApplicationForVoluntaryTransfer.aspx">Application For Voluntary Transfer</a></li>
                     <li class="breadcrumb-item active">Print Draft Application Or Update</li>
                 </ol>
             </div>
@@ -77,7 +87,6 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
@@ -88,20 +97,25 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                   <%-- <li><a class="dropdown-item" href="Trn_ViewPostCodeWithVacancies.aspx">View Post Code With Vacancies</a></li>--%>
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
+                                <a class="nav-link  text-white " href="ApplicationForVoluntaryTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
+                                        Voluntary Transfer Application</b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="diva" class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
+                                        <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
 
                                         </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                                  <%--  <li><a class="dropdown-item" href="VoluntaryTransferPrintApplication.aspx">Print Application</a></li>--%>
-                                </ul>
-                            </li>
+                                        <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
+                                    </ul>
+                                </li>
 
-                            <a class="nav-link  text-white " href="VoluntaryTransferStatus.aspx" role="button"><b class="font-16 font-bold">Voluntary Transfer Application Status</b></a>
-                              <a class="nav-link  text-white " href="Trn_ViewPostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold">View Post Code With Vacancie</b></a>
+
+
+                                <a class="nav-link  text-white " href="VoluntaryTransferStatus.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Voluntary Transfer Application Status</b></a>
+
+                                <a class="nav-link  text-white " href="Trn_ViewPostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancie</b></a>
+                            </li>
                         </ul>
 
                     </div>
@@ -110,13 +124,30 @@
             <br />
             <br />
             <fieldset>
-                <legend>Print Draft Application Or Update
+                <legend>Print Draft Application Or Update / ड्राफ्ट एप्लिकेशन प्रिंट या अपडेट करें
                 </legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-100">Excel</button>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-hover">
-                                <tr>
+                            <table class="table table-bordered">
+                                <tr class="card-header">
                                     <th>Sr.No<br />
                                         सरल क्र.</th>
                                     <th>Application No.<br />
@@ -139,31 +170,24 @@
                                     <td>
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                     </td>
-                                    <td><a class="btn-md" href="Trn_ApplyVoluntaryTransfer.aspx" target="_blank" ><i class="fa fa-edit"></i></a></td>
-                                    <th>
+                                    <td><a class="btn-md" href="Trn_ApplyVoluntaryTransfer.aspx" target="_blank"><i class="fa fa-edit"></i></a></td>
+
                                 </tr>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div  class="row">
+                <div class="row">
 
                     <div class="col-md-12">
-                        <p class="font-16"> <span style="color:blue">नोट:- स्वैच्छिक स्थानांतरण ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षर करें ।</span></p>
-
-
+                        <p class="font-16"><span style="color: blue">नोट:- स्वैच्छिक स्थानांतरण ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षर करें ।</span></p>
                     </div>
-
                 </div>
-
-
             </fieldset>
-
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -177,7 +201,6 @@
                   <br />
                                             मध्य प्रदेश शासन</b></strong></h4>
                                         <h4><strong><b>स्वैच्छिक स्थानांतरण के लिए आवेदन सह-घोषणा पत्र (DRAFT - Not Locked)</b></strong></h4>
-
                                     </div>
                                     <div class="col-sm-2">
                                         <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
@@ -188,9 +211,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="">
-
-                                                <div class="">
-                                                    <table class="table">
+                                                <div class="table table-responsive table-bordered text-center">
+                                                    <table class="table ">
                                                         <tr>
                                                             <th>वेरिफिकेशन कोड</th>
                                                             <td>757598</td>
@@ -199,7 +221,6 @@
                                                         </tr>
                                                     </table>
                                                     <h4 class="text-center mt-4 mb-4 font-bold"><u>:: ई-सेवा पुस्तिका अनुसार व्यक्तिगत जानकारी ::</u></h4>
-
                                                 </div>
                                                 <table class="table">
                                                     <tr>
@@ -213,12 +234,10 @@
                                                         <td>Arjun Talwar</td>
                                                         <th>यूनिक आई.डी</th>
                                                         <td>AR4781</td>
-
                                                     </tr>
                                                     <tr>
                                                         <th>पदनाम</th>
                                                         <td>Teacher (UDT)</td>
-
                                                         <th>ज़िला</th>
                                                         <td>Bhopal</td>
                                                     </tr>
@@ -257,21 +276,17 @@
                                                         <th>कुल अवधि वर्षो में</th>
                                                         <td>4</td>
                                                     </tr>
-
                                                     <tr>
                                                         <td class="text-center mt-4 mb-4 font-bold" colspan="6">
                                                             <span class="font-bold" style="font-size: large;"><u>:: निःशक्तता वैवाहिक स्थिति रोग ग्रस्त (गंभीर बीमारी) से संवन्धित जानकारी ::</u></span>
                                                         </td>
-
                                                     </tr>
-
                                                     <tr>
                                                         <th>क्या आप गंभीर बीमारी से पीड़ित हैं</th>
                                                         <td>हाँ </td>
 
                                                         <th>गंभीर बीमारी का प्रकार</th>
                                                         <td>कैंसर</td>
-
                                                     </tr>
                                                     <tr>
                                                         <th>विकलांगता की स्थिति</th>
@@ -284,42 +299,44 @@
                                                         <td>अंकिता </td>
                                                         <th>स्पाउस का मूल पद</th>
                                                         <td>अध्यापिका</td>
-
                                                     </tr>
                                                     <tr>
                                                         <th>स्पाउस विभाग</th>
                                                         <td>मप्र स्कूल शिक्षा विभाग</td>
                                                         <th>स्पाउस कार्यालय का पता</th>
                                                         <td>भोपाल</td>
-
                                                     </tr>
                                                     <tr>
                                                         <th>स्थानांतरण चाहने का कारण</th>
                                                         <td>गंभीर बीमारी से पीड़ित होने के कारण देखभाल के लिए अपने गृह निवास पर ट्रांसफर चाहता हूं</td>
                                                     </tr>
-
                                                     <tr>
-
                                                         <td class="text-center mt-4 mb-4 font-bold" colspan="6">
                                                             <span class="font-bold" style="font-size: large;"><u>:: विकल्प की जानकारी ::</u></span>
                                                         </td>
                                                     </tr>
                                                 </table>
                                                 <div class="row">
-
                                                     <div class="col-md-12">
                                                         <div class="">
-                                                            <table class="table">
-
-                                                                <tr>
-                                                                    <th>Sr.No/सरल क्र.</th>
-                                                                    <th>District/ज़िला</th>
-                                                                    <th>Block/विकासखण्ड </th>
-                                                                    <th>Shankul/संकुल</th>
-                                                                    <th>Office/Institute/School (UDISE Code)/कार्यालय/संस्था/विद्यालय</th>
-                                                                    <th>Post Code/पद कोड</th>
-                                                                    <th>Panal/पैनल</th>
-                                                                    <th>Vacant Post/रिक्त पद </th>
+                                                            <table class="table table-responsive table-bordered justify-content-center">
+                                                                <tr class="card-header">
+                                                                    <th>Sr. No.<br />
+                                                                        सरल क्र.</th>
+                                                                    <th>District<br />
+                                                                        ज़िला</th>
+                                                                    <th>Block<br />
+                                                                        विकासखण्ड </th>
+                                                                    <th>Shankul<br />
+                                                                        संकुल</th>
+                                                                    <th>Office/Institute/School (UDISE Code)<br />
+                                                                        कार्यालय/संस्था/विद्यालय</th>
+                                                                    <th>Post Code<br />
+                                                                        पद कोड</th>
+                                                                    <th>Panal<br />
+                                                                        पैनल</th>
+                                                                    <th>Vacant Post<br />
+                                                                        रिक्त पद </th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>1</td>
@@ -332,12 +349,8 @@
                                                                     <td>01</td>
                                                                 </tr>
                                                             </table>
-
                                                         </div>
-
                                                     </div>
-
-
                                                     <table style="width: 100%;">
                                                         <tbody>
                                                             <tr>
@@ -349,45 +362,26 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-
                                                                 <td class="text-end font-16 ">हस्ताक्षर<br />
                                                                     Arjun Talwar<br />
                                                                 </td>
                                                             </tr>
-                                                            <%--  <tr> 
-                                                                <td class="text-start font-bold" style="color:red;">नोट :- यह स्वयं की लॉगिन आईडी से जेनरेट एप्लीकेशन है हस्ताक्षर की आवश्यकता नहीं है।</td>
-                                                            </tr>--%>
                                                         </tbody>
                                                     </table>
-
                                                 </div>
-
-
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-
-                                <%--   <div class="modal-footer text-center d-grid justify-content-center">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                                  
-                                            </div>
-                                        </div>
-                                </div>--%>
                             </fieldset>
                             <div class="modal-footer text-center">
-
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

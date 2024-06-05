@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/mis/HomeMaster.master" autoeventwireup="true" codefile="Module.aspx.cs" inherits="mis_Dashboard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/HomeMaster.master" AutoEventWireup="true" CodeFile="Module.aspx.cs" Inherits="mis_Dashboard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
@@ -418,6 +418,13 @@
                             <img src="dist/images/icon/Report.png" class="dash-img" />
 
                             <h6>APRMS</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                        <a href="HRMS/EmployeeIDcardmanagementNotes.aspx">
+                            <img src="dist/images/icon/Report.png" class="dash-img" />
+
+                            <h6>Employee ID Card Management System</h6>
                         </a>
                     </div>
                     <div class="col-md-2" data-aos="fade-down" data-aos-easing="ease-in-sine">

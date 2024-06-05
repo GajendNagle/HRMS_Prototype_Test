@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_EmployeeHandicap.aspx.cs" Inherits="mis_Transaction_Rpt_EmployeeHandicap" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+   <style>
+       th{
+           white-space:nowrap;
+       }
+   </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
@@ -14,7 +20,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Reports" title="click to go on">Reports</a></li>
+                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
                         <li class="breadcrumb-item active">Employee Handicap Report</li>
                     </ol>
                 </div>
@@ -26,7 +32,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Search Handicapped Employee
+                <legend>Search Handicapped Employee/विकलांग कर्मचारी खोजें
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -132,7 +138,7 @@
                 </div>
             </fieldset>
             <fieldset id="fs_Details" style="display: none">
-                <legend>Details</legend>
+                <legend>Details/विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -153,10 +159,10 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No.</th>
-                                        <th>District</th>
-                                        <th>Total Handicapped Employees</th>
-                                        <th>Handicapped Type</th>
+                                        <th>Sr. No.<br />सरल क्र.</th>
+                                        <th>District<br />जिला</th>
+                                        <th>Total Handicapped Employees<br />कुल विकलांग कर्मचारी</th>
+                                        <th>Handicapped Type<br />विकलांग का प्रकार</th>
                                     </tr>
                                 </thead>
 
@@ -196,12 +202,12 @@
                                         <table class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th>Sr. No.</th>
-                                                    <th>Name</th>
-                                                    <th>Sankul</th>
-                                                    <th>School</th>
-                                                    <th>Handicapped Type</th>
-                                                    <th>Handicapped Percentage</th>
+                                                    <th>Sr. No.<br />सरल क्र.</th>
+                                                    <th>Name<br />नाम</th>
+                                                    <th>Sankul<br />संकुल</th>
+                                                    <th>School<br />स्कुल</th>
+                                                    <th>Handicapped Type<br />विकलांग प्रकार </th>
+                                                    <th>Handicapped Percentage<br />विकलांग प्रतिशत</th>
                                                 </tr>
                                             </thead>
                                             <tbody>

@@ -2,6 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space: nowrap;
+        }
+
+        table-bordered th, .table-bordered td {
+            border: 1px solid #808080d2;
+        }
+
         #Approve {
             display: none;
         }
@@ -51,52 +59,37 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <%--           <fieldset>
-                <legend>Transfer Report</legend>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Transfer Status<span style="color: red">*</span></label>
-                            <select class="form-control select2" id="ddlApprove">
-                                <option value="--Select--">--Select--</option>
-                                <option value="0">All</option>
-                                <option value="1">Approve</option>
-                                <option value="2">Pending</option>
-                                <option value="3">Reject</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mt-4">
-                        <div class="form-group">
-                            <button type="button" class=" Alert-Save btn btn-success btn-rounded" onclick="showhide()">Search</button>
-                            <a href="Rpt_TransferReport.aspx" class=" btn btn-danger btn-rounded">Clear</a>
-                        </div>
+            <nav class="navbar navbar-expand-lg topbar ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li>
+
+                                <a class="nav-link  text-white " href="EmployeeJoiningInOfficeNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            </li>
+                            <li>
+
+                                <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Add Employee to Office
+                                </b></a>
+                            </li>
+
+                            <li>
+
+                                <a class="nav-link  text-white " href="Rpt_EmployeeJoining.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
+                                    Report
+                                </b></a>
+
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
-            </fieldset>--%>
-               <nav class="navbar navbar-expand-lg topbar ">
-       <div class="container-fluid">
-           <a class="navbar-brand" href="#"></a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse " id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                   <li>
-
-                       <a class="nav-link  text-white " href="EmployeeJoiningInOfficeNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                   </li>
-                   <li>
-
-                       <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i> Employee Joining In Office
-                       </b></a>
-                   </li>
-               </ul>
-
-           </div>
-       </div>
-   </nav>
-   <br />
+            </nav>
+            <br />
             <div id="Approve">
                 <fieldset>
                     <legend>Approve Details</legend>
@@ -193,7 +186,7 @@
             </div>
             <div>
                 <fieldset>
-                    <legend>Pending Details</legend>
+                    <legend>Pending Details / लंबित विवरण</legend>
 
                     <div class="row justify-content-end">
                         <div class="col-md-1">
@@ -217,29 +210,39 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-bordered text-center">
-                                    <tr>
-                                        <th rowspan="2">Sr.No.</th>
-                                        <th rowspan="2">Office Type</th>
-                                        <th rowspan="2">Employee Name</th>
-                                        <th rowspan="2">Employee Designation</th>
-                                        <th rowspan="2">Employee Department</th>
-                                        <th rowspan="2">Employee Subject</th>
-                                        <th colspan="5">Current Location</th>
-                                        <th colspan="5">Preference Location</th>
-                                        <th rowspan="2">Action</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Office Type</th>
-                                        <th>Posted From</th>
-                                        <th>District</th>
-                                        <th>Block</th>
-                                        <th>Sankul Code</th>
-                                        <th>Office Type</th>
-                                        <th>Reason For Transfer</th>
-                                        <th>District</th>
-                                        <th>Block</th>
-                                        <th>Sankul Code</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">Sr.No.<br />सरल क्र. </th>
+                                            <th rowspan="2">Office Type<br />कार्यालय का प्रकार</th>
+                                            <th rowspan="2">Employee Name<br />
+                                                कर्मचारी का नाम</th>
+                                            <th rowspan="2">Employee Designation<br />
+                                                कर्मचारी पदनाम</th>
+                                            <th rowspan="2">Employee Department<br />
+                                                कर्मचारी विभाग</th>
+                                            <th rowspan="2">Employee Subject<br />कर्मचारी विषय</th>
+                                            <th colspan="5">Current Location<br />वर्तमान स्थान</th>
+                                            <th colspan="5">Preference Location<br /></th>
+                                            <th rowspan="2">Action<br /></th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Office Type<br />
+                                                कार्यालय का प्रकार</th>
+                                            <th>Posted From<br />से कार्यरत </th>
+                                            <th>District<br />जिला </th>
+                                            <th>Block<br />विकासखण्ड </th>
+                                            <th>Sankul Code<br />
+                                                संकुल कोड
+                                            </th>
+                                            <th>Office Type<br />कार्यालय का प्रकार</th>
+                                            <th>Reason For Transfer<br />
+                                                स्थानांतरण का कारण</th>
+                                            <th>District<br />जिला</th>
+                                            <th>Block<br />विकासखण्ड</th>
+                                            <th>Sankul Code<br />संकुल कोड</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <th>1</th>
                                         <td>Head Office</td>
@@ -303,18 +306,18 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>New Joining Date</label>
+                                        <label>New Joining Date <br /> नई ज्वाइनिंग दिनांक </label>
                                         <input type="date" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
 
-                                        <label>Remark</label>
+                                        <label>Remark <br /> टिप्पणी</label>
                                         <input type="text" class="form-control" placeholder="Enter Remark" />
                                     </div>
                                 </div>
-                                <div class="col-md-3 mt-4">
+                                <div class="col-md-3 mt-5 ">
                                     <button type="button" class="btn btn-success Alert-request" data-bs-dismiss="modal">Approve</button>
                                     <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
                                 </div>

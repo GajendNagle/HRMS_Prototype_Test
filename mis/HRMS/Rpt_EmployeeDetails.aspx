@@ -39,7 +39,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Reports" title="click to go on">Report</a></li>
+                    
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
                     <li class="breadcrumb-item active">Employee Report</li>
                 </ol>
             </div>
@@ -50,12 +51,12 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Search Employee</legend>
+                <legend>Search Employee/कर्मचारी खोजें</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>OIS Type<span style="color: red">*</span></label>
+                            <label>OIS Type(ओ.आई.एस का प्रकार)<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Office</option>
