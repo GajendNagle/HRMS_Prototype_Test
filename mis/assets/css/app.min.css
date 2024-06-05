@@ -9849,9 +9849,9 @@ a, button {
     border-bottom-color: var(--vz-dark-border-subtle) !important
 }
 
-.table > :not(caption) > * > * {
+/*.table > :not(caption) > * > * {
     color: var(--vz-table-color-state),var(--vz-table-color-type,var(--vz-table-color))
-}
+}*/
 
 .table .form-check {
     padding-left: 0;
