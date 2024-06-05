@@ -3,48 +3,61 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Module Mapping</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=usermanagement" title="click to go on">User Management</a></li> 
-                    <li class="breadcrumb-item active">Module Mapping</li>
-                </ol>
+   
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <span>User Management</span>
+                        </li>
+                        <li class="breadcrumb-item">Module Mapping</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Module Mapping / मॉड्यूल मैपिंग</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Module Mapping</legend>
+                <legend>Module Mapping / मॉड्यूल मैपिंग</legend>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <label class="font-weight-bold">Enter Module Name(In English)<span style="color: red">*</span></label>
+                            <label>Enter Module Name(In English)<span style="color: red">*</span></label>
                             <input type="text" maxlength="50" class="form-control" id="txtModuleNameEng" placeholder="Enter Module Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-5">
                         <div class="form-group">
-                            <label class="font-weight-bold"> मॉड्यूल का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>मॉड्यूल का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="मॉड्यूल का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <label class="font-weight-bold">Enter Module Sequence No.<span style="color: red">*</span></label>
+                            <label>Enter Module Sequence No. / मॉड्यूल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Module Sequence No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <label class="font-weight-bold">Select Module Icon<span style="color: red">*</span></label>
+                            <label>
+                                Select Module Icon / 
+मॉड्यूल आइकन चुनें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-select select2">
                                 <option value="0">Select</option>
                                 <option value="1">Hrms.png</option>
@@ -53,24 +66,28 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-3 ms-4">
                         <div class="form-group">
-                            <label class="font-weight-bold">Is Active</label>
-                            <br />
-                            <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                Status
+						<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
                         </div>
                     </div>
-                    <div class="col-md-3 mt-4">
+                    <hr />
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                            <a href="ModuleMapping.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+                            <a href="ModuleMapping.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
 
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Module Mapping Details </legend>
+                <legend>Module Mapping Details / मॉड्यूल मैपिंग विवरण </legend>
                 <div class="row justify-content-end">
 
                     <div class="col-md-4 text-end">
@@ -88,14 +105,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No.</th>
+                                    <th>Sr.No. / सरल क्र.</th>
                                     <th>Module Name (In English)</th>
                                     <th>मॉड्यूल का नाम (हिंदी में)</th>
-                                    <th>Module Sequence No.</th>
-                                    <th>Module Icon</th>
-                                    <th>Status</th>
+                                    <th>Module Sequence No. / मॉड्यूल अनुक्रम संख्या</th>
+                                    <th>Module Icon / मॉड्यूल आइकन</th>
+                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
@@ -105,7 +122,7 @@
                                     <td>01</td>
                                     <td>User Management.png</td>
                                     <td>Active</td>
-                                   <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="alert-dark"><i class="fa fa-check"></i></a></td>
+                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -114,7 +131,7 @@
                                     <td>02</td>
                                     <td>Hrms.png</td>
                                     <td>Active</td>
-                                   <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="alert-dark"><i class="fa fa-check"></i></a></td>
+                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -123,7 +140,7 @@
                                     <td>03</td>
                                     <td>Master.png</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="alert-dark"><i class="fa fa-check"></i></a></td>
+                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -135,15 +152,15 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
-    $(function () {
-        $('[id*=temp]').multiselect({
-            includeSelectAllOption: true,
-            enableFiltering: true,
-            filterPlaceholder: 'Search',
-            enableCaseInsensitiveFiltering: true,
-            buttonWidth: '100%'
+        $(function () {
+            $('[id*=temp]').multiselect({
+                includeSelectAllOption: true,
+                enableFiltering: true,
+                filterPlaceholder: 'Search',
+                enableCaseInsensitiveFiltering: true,
+                buttonWidth: '100%'
+            });
         });
-    });
     </script>
 </asp:Content>
 
