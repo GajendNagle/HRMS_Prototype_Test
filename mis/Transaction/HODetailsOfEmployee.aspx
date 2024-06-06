@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="HODetailsOfEmployee.aspx.cs" Inherits="mis_Transaction_HODetailsOfEmployee" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th{
+            white-space:nowrap;
+        }
         #empDetail {
             display: none;
         }
-
         th {
             padding-top: 12px;
             padding-bottom: 12px;
@@ -18,11 +19,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles" style="margin-bottom: -30px">
-        <%-- <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
-        </div>--%>
-
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -30,21 +26,18 @@
             </p>
         </div>
         <div class="col-md-7 align-self-center">
-
-
-
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>--%>
-                    <li class="breadcrumb-item active">दिवंगत कर्मचारी का विवरण</li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment
+</a></li>
+                   <li class="breadcrumb-item active">Details of deceased employee</li>
                 </ol>
             </div>
         </div>
     </div>
     <%-- Navbar --%>
-
     <%-- Navbar --%>
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
@@ -58,10 +51,9 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-
+                            <li>
                             <a class="nav-link  text-white " href="DisposeApplicationCaseForHO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-
+                            </li>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -77,14 +69,12 @@
 
                                     </ul>
                                 </div>
-
                             </li>
                             <li class="nav-item" style="position: relative; right: 20px;">
                                 <a class="nav-link text-warning font-16 text-white" href="../HRMS/Trn_ProcessApplicationListHO.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
                             </li>
                             <li class="nav-item mr-4">
                                 <a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
-
                             <li class="nav-item mr-3">
                                 <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorHO.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
 
@@ -100,25 +90,19 @@
                                                 <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=BlockWiseCounting">ब्लॉक वार सांख्यिकी</a></li>
                                                 <li><a class="dropdown-item" href="HOLevelReportSection.aspx?ID=DistrictWiseCounting">जिला वार सांख्यिकी</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportHO.aspx">NOC Report</a></li>
+                                                <li><a class="dropdown-item" href="../HRMS/HoRpt_CompassionateAppointment.aspx">Compassionate Appointment Report</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
-
-
-
             <fieldset>
                 <legend>PERSONAL INFORMATION</legend>
-
                 <div class="row">
-
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>कर्मचारी कोड :<span style="color: red">*</span></label>
@@ -135,7 +119,6 @@
                         <div class="form-group">
                             <label>जेंडर:<span style="color: red">*</span></label>
                             <select class="form-control select2">
-
                                 <option value="--Select--">Male</option>
                                 <option value="--Select--">Female</option>
                                 <option value="--Select--">Other</option>
@@ -146,7 +129,6 @@
                         <div class="form-group">
                             <label>कैटेगरी:<span style="color: red">*</span></label>
                             <select class="form-control select2">
-
                                 <option value="--Select--">OBC</option>
                                 <option value="--Select--">GENERAL</option>
                                 <option value="--Select--">SC</option>
@@ -206,7 +188,6 @@
                         </div>
                     </div>
                     <div class="col-md-3" id="DivCriticalIllness">
-
                         <div class="form-group">
                             <label>विभाग का नामः<span style="color: red">*</span></label>
                             <select class="form-control select2">
@@ -221,22 +202,23 @@
                             <input class="form-control" type="text" value="12/06/2021" />
                         </div>
                     </div>
-
-
                 </div>
-
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive table-bordered">
                             <table class="table text-center">
                                 <tbody>
                                     <tr>
-                                        <th class="text-center">क्र.</th>
-                                        <th class="text-center">सदस्य का नाम</th>
-                                        <th class="text-center">दिवंगत के साथ संबंध</th>
-                                        <th class="text-center">व्यवसाय</th>
-                                        <th class="text-center">जन्म दिनांक</th>
+                                        <th class="text-center">Sr. No.<br>
+                                            सरल क्र.</th>
+                                        <th class="text-center">Member Name<br>
+                                            सदस्य का नाम</th>
+                                        <th class="text-center">Relation with Deceased<br>
+                                            दिवंगत के साथ संबंध</th>
+                                        <th class="text-center">Business<br>
+                                            व्यवसाय</th>
+                                        <th class="text-center">Date of Birth<br>
+                                            जन्म दिनांक</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
@@ -244,7 +226,6 @@
                                         <td>Wife Husband</td>
                                         <td>कोई व्यवसाय नहीं</td>
                                         <td>23/04/1968</td>
-
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -272,8 +253,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="card-header bg-success">परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया हे</div>
@@ -286,18 +265,32 @@
                                 <div class="table-responsive table-bordered">
                                     <table class="table text-center">
                                         <tbody>
-                                            <tr>
-                                                <th class="text-center">क्र.</th>
-                                                <th class="text-center">आवेदक का नाम</th>
-                                                <th class="text-center">जेंडर</th>
-                                                <th class="text-center">जन्म तिथि</th>
-                                                <th class="text-center">Mobile</th>
-                                                <th class="text-center">आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                                <th class="text-center">वैवाहिक स्थिति</th>
-                                                <th class="text-center">शैक्षिक योग्यता</th>
-                                                <th class="text-center">नियुक्ति हेतु संवर्ग</th>
-                                                <th class="text-center">नियुक्ति हेतु पदनाम</th>
-                                                <th class="text-center">प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
+                                           <tr>
+                                                <th class="text-center">Sr. No.
+                                                    <br>
+                                                    सरल क्र.</th>
+                                                <th class="text-center">Applicant Name<br>
+                                                    आवेदक का नाम</th>
+                                                <th class="text-center">Gender<br>
+                                                    लिंग </th>
+                                                <th class="text-center">Date of Birth<br>
+                                                    जन्म तिथि</th>
+                                                <th class="text-center">Mobile No.<br>
+                                                    मोबाईल नं. </th>
+                                                <th class="text-center">Applicant's Relation Deceased Teacher<br>
+                                                    आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                                <th class="text-center">Marital Status<br>
+                                                    वैवाहिक स्थिति</th>
+                                                <th class="text-center">Educational Qualification<br>
+                                                    शैक्षिक योग्यता</th>
+                                                <th class="text-center">Cadre for Appointment<br>
+                                                    नियुक्ति हेतु संवर्ग</th>
+                                                <th class="text-center">Cadre for  Designation<br>
+                                                    नियुक्ति हेतु पदनाम</th>
+                                                <th class="text-center">Status of Passing Primary Teacher Eligibility
+                                                    <br>
+                                                    Test for Primary Teacher<br>
+                                                    प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -311,8 +304,6 @@
                                                 <td>शैक्षणिक संवर्ग</td>
                                                 <td>प्रयोगशाला शिक्षक</td>
                                                 <td></td>
-
-
                                             </tr>
                                         </tbody>
                                     </table>
@@ -322,8 +313,6 @@
                     </div>
                 </div>
                 <div class="row">
-
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>आवेदन की स्थिति<span style="color: red">*</span></label>
@@ -345,9 +334,13 @@
                                     <table class="table ">
                                         <tbody>
                                             <tr>
-                                                <th>क्र.</th>
-                                                <th>डॉक्यूमेंट</th>
-                                                <th>डॉक्यूमेंट देखे</th>
+                                                <th>Sr. No.<br>
+                                                    सरल क्र.</th>
+                                                <th>Document<br>
+                                                    दस्तावेज  </th>
+                                                <th>View Document
+                                                    <br>
+                                                    दस्तावेज देखे</th>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -389,11 +382,6 @@
                                                 <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
                                                 <td><a class="btn btn-outline-success">View</a></td>
                                             </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>यदि सत्यु का कारण कोविड 19 है तो RTPCR रिपोर्ट</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -413,15 +401,12 @@
                             <select class="form-control select2" id="Actionddl" onchange="ShowHideHandicape()">
                                 <option>--Select--</option>
                                 <option value="Appointment order issued">Appointment order issued</option>
-                                <option value="Rejected and Return to DEO">Rejected and Return to DEO</option>
+                              <%--  <option value="Rejected and Return to DEO">Rejected and Return to DEO</option>--%>
                                 <option value="Paid Amount">Paid Amount</option>
                                 <option value="NOC has been released, the case has been sent to the District Collector">NOC has been released, the case has been sent to the District Collector</option>
                             </select>
                         </div>
                     </div>
-
-                    <%--gajendra--%>
-
                     <div class="col-md-3" id="Mydocu" style="display: none;">
                         <div class="form-group">
                             <label>Upload Document:</label>
@@ -429,9 +414,6 @@
                             <h5 style="font-weight: 500;">Note  :<span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
                         </div>
                     </div>
-
-
-                    <%--gajendra--%>
                 </div>
                 <div class="row" id="div1">
                     <div class="col-md-3">
@@ -503,16 +485,10 @@
                     </div>
                 </div>
             </fieldset>
-
             <div class="row justify-content-center">
-
-
                 <div class="col-md-2">
-
-                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Save</button>
+                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Update</button>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -624,13 +600,6 @@
                 div3.style.display = "none";
                 Mydocu.style.display = "none";
             }
-            //if (ddlHandicape.value === "Appointment order issued") {
-            //    HandicapePercentage.style.display = "block";
-            //    handipaceType.style.display = "block";
-            //} else if (ddlHandicape.value === "No") {
-            //    HandicapePercentage.style.display = "none";
-            //    handipaceType.style.display = "none";
-            //}
         }
     </script>
 </asp:Content>

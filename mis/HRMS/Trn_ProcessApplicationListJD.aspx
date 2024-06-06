@@ -412,7 +412,8 @@
                             <div class="row  align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Employee Code<br />
+                                        <label>
+                                            Employee Code<br />
                                             कर्मचारी कोड : <span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtU_Id" type="text" value="AK7328" maxlength="6" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtU_Id" disabled="disabled"
                                             class="form-control vd_Required m-0" />
@@ -420,7 +421,8 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Name of Deceased Employee<br />
+                                        <label>
+                                            Name of Deceased Employee<br />
                                             दिवंगत कर्मचारी का नाम : <span style="color: Red;">*</span></label>
 
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtName" type="text"
@@ -431,7 +433,8 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Gender<br />
+                                        <label>
+                                            Gender<br />
                                             लिंग : <span style="color: Red;">*</span></label>
                                         <%--  <asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
                                             <asp:ListItem Selected="True" Value="1">Male </asp:ListItem>
@@ -446,7 +449,8 @@
 
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Category<br />
+                                        <label>
+                                            Category<br />
                                             कटेगरी : <span style="color: Red;">*</span></label>
                                         <%--<asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
                                             <asp:ListItem Value="0">- Select - </asp:ListItem>
@@ -550,7 +554,9 @@
 
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Deceased Employee Officer Designation <br />
+                                        <label>
+                                            Deceased Employee Officer Designation
+                                            <br />
                                             दिवंगत अधिकारी/कर्मचारी पदनाम : <span style="color: Red;">*</span></label>
                                         <%-- <asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
                                             <asp:ListItem Value="36">Accountant </asp:ListItem>
@@ -858,7 +864,8 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Cause of Death<br />
+                                        <label>
+                                            Cause of Death<br />
                                             मृत्यु का कारण  :<span style="color: Red;">*</span></label>
 
 
@@ -877,7 +884,9 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Death Date <br />
+                                        <label>
+                                            Death Date
+                                            <br />
                                             मृत्यु दिनाँक :<span style="color: Red;">*</span></label>
                                         <div class="input-group">
                                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="28/12/2021" maxlength="10" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtD_O_Death" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
@@ -914,7 +923,9 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Department Name <br />
+                                        <label>
+                                            Department Name
+                                            <br />
                                             विभाग का नाम : <span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtDepartment_Name" type="text" value="Education" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtDepartment_Name" disabled="disabled" class="form-control vd_Required" />
                                     </div>
@@ -1241,103 +1252,173 @@
                     <div class="alert alert-success mt-4" style="text-align: left;">
                         <b><strong style="color: white;">कार्रवाई</strong></b>
                     </div>
-
                     <div class="row">
-
-
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <label>
                                 <b style="color: black;">Action / कार्रवाई</b>  <span style="color: Red;">*</span></label>
                             <select name="ctl00$ContentBody$ddlkaryvahi" id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
                                 <option value="0">- Select  - </option>
                                 <option value="1">आवेदन मे आपत्ति/लंबित किया जाना है   </option>
                                 <option value="2">आवेदन स्वीकार  करे </option>
-                                <option value="3">आवेदन फॉरवर्ड करे संभागीय संयुक्त संचालक को </option>
-                                <option value="4">आवेदन फॉरवर्ड करे आयुक्त लोक शिक्षण को </option>
-                                <option value="5">आवेदन फॉरवर्ड करे स्कूल शिक्षा विभाग को </option>
-                                <%--<option value="6">लंबित किया जाना है  </option>--%>
+                                <option value="4">आवेदन फॉरवर्ड  करे जिला शिक्षा अधिकारी को </option>
                             </select>
                         </div>
-                        <div class="col-md-6" id="RemarkView" style="display: none">
-                            <label>
-                                <b>Remark / रिमार्क </b><span style="color: Red;">*</span>
-                            </label>
-                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
 
-
-                        <div id="divApattiHai" style="display: none">
-
-                            <div class="alert alert-success mt-4 w-100" style="text-align: left;">
-                                <b><strong style="color: black;">पेंडेंसी के लिए आवेदन और कारण  पर की गई  कार्यवाही का विवरण </strong></b>
+                        <%--new dropdown value--%>
+                        <div class="row align-items-end mt-2">
+                            <div class="row align-items-end" id="DisctrictCollectDetails" style="display: none;">
+                                <div class="col-md-3">
+                                    <label class="font-bold">
+                                        To which Post Does the Applicant Want to be Appointed?<br />
+                                        आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
+                                    <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
+                                        <option value="">--Select--</option>
+                                        <option value="1">शैक्षणिक संवर्ग</option>
+                                        <option value="3">चतुर्थ श्रेणी</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 " style="display: none" id="DivDesignation">
+                                    <label class="font-bold">
+                                        Designation<br />
+                                        पदनाम<span style="color: red">*</span></label>
+                                    <select class="form-control select2" id="ddlSapthpatr6" onchange="ShowHide1()">
+                                        <option value="">--Select--</option>
+                                        <option value="1">प्रयोगशाला शिक्षक</option>
+                                        <option value="2">प्राथमिक शिक्षक</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3" style="display: none" id="DivQualificationStatus">
+                                    <label class="font-bold">
+                                        Have Passed The Primary Teacher Eligibility Test For Primary Teacher<br />
+                                        क्या प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की है<span style="color: red">*</span></label>
+                                    <select class="form-control select2" id="ddlSapthpatr1" onchange="ShowHide2()">
+                                        <option value="">--Select--</option>
+                                        <option value="1">हाँ</option>
+                                        <option value="2">नहीं</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3" style="display: none" id="Divyear">
+                                    <label class="font-bold">
+                                        Year of Eligibility Test<br />
+                                        पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>
+                                    <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="पात्रता परीक्षा का वर्ष" />
+                                </div>
+                                <div class="col-md-3" style="display: none" id="DivQualification">
+                                    <label class="font-bold">
+                                        Professional Qualification
+                 <br />
+                                        व्यावसायिक योग्यता<span style="color: red">*</span></label>
+                                    <select class="form-control select2" id="ddlSapthpatr2">
+                                        <option value="">--Select--</option>
+                                        <option value="D.Ed">D.Ed</option>
+                                        <option value="B.Ed">B.Ed</option>
+                                        <option value="D.Ed + B.Ed Both">D.Ed + B.Ed Both</option>
+                                        <option value="कोई नहीं">कोई नहीं</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-bold">
+                                        <b>Remark<br />
+                                            रिमार्क </b><span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <div class="row align-items-end mt-2">
+                                    <div class="col-md-6" style="display: none" id="DivNote">
+                                        <p style="color: brown; font-size: large; font-weight: bolder">विज्ञान संकाय में 10+2 परीक्षा 50% अंक के साथ उत्तीर्ण होने पर पात्रता होगी</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>If there is Any Objection<br />
-                                            <b>यदि ,आपत्ति हो तो </b><span style="color: Red;">*</span>
-                                        </label>
-                                        <asp:DropDownList runat="server" CssClass="form-control">
-                                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                            <asp:ListItem Value="1"> नियमित  पद रिक्त नहीं होना</asp:ListItem>
-                                            <asp:ListItem Value="2"> आवेदक द्वारा  विलम्ब से आवेदन प्रस्तुत करना</asp:ListItem>
-                                            <asp:ListItem Value="3">  आवेदन अपूर्ण होना </asp:ListItem>
-                                            <asp:ListItem Value="4">आवश्यक दस्तावेज संलग्र  नहीं होना</asp:ListItem>
-                                            <asp:ListItem Value="5">आवेदक की शैक्षणिक  योग्यता नहीं होना</asp:ListItem>
-                                            <asp:ListItem Value="6">आश्रित  का बालिग्र अर्थात २१ वर्ष से कम होना </asp:ListItem>
-
-                                        </asp:DropDownList>
-                                    </div>
+                            <%--new dropdown value--%>
+                            <div class="col-md-6" id="RemarkView" style="display: none">
+                                <label class="font-bold">
+                                    <b>Remark<br />
+                                        रिमार्क </b><span style="color: Red;">*</span>
+                                </label>
+                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div id="divApattiHai" style="display: none">
+                                <div class="alert alert-success mt-4 w-100" style="text-align: left;">
+                                    <b><strong style="color: white;">पेंडेंसी के लिए आवेदन और कारण  पर की गई  कार्यवाही का विवरण </strong></b>
                                 </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Objection Details<br />
-                                            <b>आपत्ति का विवरण</b><span style="color: Red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>
+                                                <b>If there is Any Objection<br />
+                                                    यदि ,आपत्ति हो तो </b><span style="color: Red;">*</span>
+                                            </label>
+                                            <asp:DropDownList runat="server" CssClass="form-control">
+                                                <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                                <asp:ListItem Value="1"> नियमित  पद रिक्त नहीं होना</asp:ListItem>
+                                                <asp:ListItem Value="2"> आवेदक द्वारा  विलम्ब से आवेदन प्रस्तुत करना</asp:ListItem>
+                                                <asp:ListItem Value="3">  आवेदन अपूर्ण होना </asp:ListItem>
+                                                <asp:ListItem Value="4">आवश्यक दस्तावेज संलग्र  नहीं होना</asp:ListItem>
+                                                <asp:ListItem Value="5">आवेदक की शैक्षणिक  योग्यता नहीं होना</asp:ListItem>
+                                                <asp:ListItem Value="6">आश्रित  का बालिग्र अर्थात २१ वर्ष से कम होना </asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
                                     </div>
-                                </div>
-                                <br />
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Description of Action Taken<br />
-                                            <b>लिए गए एक्शन का विवरण</b><span style="color: Red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="font-bold">
+                                                <b>Objection Details<br />
+                                                    आपत्ति का विवरण</b><span style="color: Red;">*</span>
+                                            </label>
+                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Remark<br />
-                                            <b>रिमार्क </b><span style="color: Red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                    <br />
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>
+                                                <b>Description of Action Taken<br />
+                                                    लिए गए एक्शन का विवरण</b><span style="color: Red;">*</span>
+                                            </label>
+                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>
+                                                <b>Remark<br />
+                                                    रिमार्क </b><span style="color: Red;">*</span>
+                                            </label>
+                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            function showHideRemarkView() {
-                                var ddl = document.getElementById('ddlkaryvahi');
-                                var remarkView = document.getElementById("RemarkView");
+                         <script type="text/javascript">
+                             function showHideRemarkView() {
+                                 var ddl = document.getElementById('ddlkaryvahi');
+                                 var remarkView = document.getElementById("RemarkView");
+                                 var DisctrictCollectDetails = document.getElementById("DisctrictCollectDetails");
 
-                                if (ddl.value != "0" && ddl.value != "1") {
-                                    remarkView.style.display = "initial";
-                                    divApattiHai.style.display = "none";
-                                }
+                                 if (ddl.value == "1") {
+                                     divApattiHai.style.display = "initial";
+                                     remarkView.style.display = "none";
+                                     DisctrictCollectDetails.style.display = "none";
+                                 }
+                                 else if (ddl.value == "2" || ddl.value == "3") {
+                                     remarkView.style.display = "initial";
+                                     divApattiHai.style.display = "none";
+                                     DisctrictCollectDetails.style.display = "none";
+                                 }
+                                 else if (ddl.value == "4") {
+                                     DisctrictCollectDetails.style.display = "flex";
+                                     remarkView.style.display = "none";
+                                     divApattiHai.style.display = "none";
+                                 }
+                                 else {
+                                     remarkView.style.display = "none";
+                                     divApattiHai.style.display = "none";
+                                     DisctrictCollectDetails.style.display = "none";
+                                 }
+                             }
 
-                                else if (ddl.value == "1") {
-                                    divApattiHai.style.display = "initial";
-                                    remarkView.style.display = "none";
-                                }
-                                else {
-                                    remarkView.style.display = "none";
-                                    divApattiHai.style.display = "none";
-                                }
-                            }
-                        </script>
+                         </script>
                         <br />
                     </div>
 
@@ -1591,7 +1672,76 @@
     <script src="../dist/dashboard/raphael-min.js"></script>
     <script src="../dist/dashboard/morris.js"></script>
     <%--<script src="../dist/js/highcharts/highcharts.js"></script>--%>
+        <script>
+            function ShowHide() {
+         var div1 = document.getElementById("ddlSapthpatr5");
+            var div11 = document.getElementById("DivDesignation");
+            var Div2 = document.getElementById("DivQualificationStatus");
+            var div3 = document.getElementById("DivNote");
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
 
+
+            if (div1.value === '1') {
+                div11.style.display = "block"; // Show the Divbutton
+         }
+
+            else {
+                DivDesignation.style.display = "none";
+            Div2.style.display = "none";
+            div3.style.display = "none";
+            div11.style.display = "none";// Hide the Divbutton
+            div6.style.display = "none";
+            Div5.style.display = "none";
+         }
+     }
+            function ShowHide1() {
+
+         var Div2 = document.getElementById("DivQualificationStatus");
+            var div3 = document.getElementById("DivNote");
+            var Div4 = document.getElementById("ddlSapthpatr6");
+
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+            if (Div4.value === '1') {
+                div3.style.display = "block";
+            Div2.style.display = "none";
+            div6.style.display = "none";
+            Div5.style.display = "none";
+         }
+            else if (Div4.value === '2') {
+
+                Div2.style.display = "block";
+            div3.style.display = "block";
+            div6.style.display = "none";
+            Div5.style.display = "none";
+         }
+            else {
+                Div2.style.display = "none";
+            div3.style.display = "block";
+            div6.style.display = "none";
+            Div5.style.display = "none";
+            Div5.style.display = "none";
+         }
+     }
+            function ShowHide2() {
+
+         var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+            var Div7 = document.getElementById("ddlSapthpatr1");
+            /* var Div5 = document.getElementById("Divbutton");*/
+            if (Div7.value === '1') {
+
+                div6.style.display = "block";
+            Div5.style.display = "block";
+         }
+            else {
+                div6.style.display = "none";
+            Div5.style.display = "none";
+         }
+     }
+ 
+    </script>
     <script>
 
         function printDiv() {

@@ -44999,10 +44999,10 @@ html body .navbar-dark .mailbox .message-center {
 }
 
 @media (min-width:768px) {
-     {
+     /*{
         width: 220px;
         flex-shrink: 0
-    }
+    }*/
 
          .navbar-brand {
             padding-top: 0

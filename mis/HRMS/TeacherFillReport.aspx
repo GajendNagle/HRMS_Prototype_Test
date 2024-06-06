@@ -2,7 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <style>
+        .span {
+            color: red;
+        }
+
         #workdescription, #workdescription1, #workdescription2, #workdescription3, #workdescription4, #workdescription5, #workdescription6, #workdescription7, #workdescription8 {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
@@ -118,13 +123,13 @@
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                         <th rowspan="2">S.No.<br />
                                             सरल.क्र </th>
-                                        <th rowspan="2">Class being taught<br />
+                                        <th rowspan="2">Class Being Taught<br />
                                             पढाई जाने वाली कक्षा
                                            
                                         </th>
                                         <th colspan="2">Enrolment<br />
                                             नामांकन</th>
-                                        <th rowspan="2">Average Annual attendance in Percentege<br />
+                                        <th rowspan="2">Average Annual Attendance in Percentege<br />
                                             वार्षिक औसत उपिस्थिति</th>
                                         <th rowspan="2">Remark
                                             <br />
@@ -161,10 +166,10 @@
                                             </select></td>
                                         <td>
                                             <%--<asp:TextBox runat="server" ID="a1" CssClass="form-control"></asp:TextBox>--%>
-                                            <input type="email" id="a1" class="form-control">
+                                            <input maxlength="4" autocomplete="off" id="a1" class="form-control datepickerYear" type="text" data-val="true" required="required" />
                                         </td>
                                         <td>
-                                            <input type="email" id="a2" class="form-control">
+                                            <input maxlength="4" autocomplete="off" id="a2" class="form-control datepickerYear2" type="text" data-val="true" required="required" />
                                         </td>
                                         <td>
                                             <input type="email" id="a3" class="form-control" style="width: 160px;"></td>
@@ -384,8 +389,8 @@
                                         <td>1</td>
                                         <td>
                                             <%--<asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>--%>
-                                            <select cssclass="form-control select2" id="ddlClass2" class="form-control select2" style="width: 190px;">
-                                                <option value="0">--Select--</option>
+                                            <select name="message" cssclass="form-control select2" id="ddlClass2" class="form-control select2" style="width: 190px;">
+                                                <option value="">--Select--</option>
                                                 <option>1st class/कक्षा पहली</option>
                                                 <option>2nd class/कक्षा दूसरी</option>
                                                 <option>3rd class/कक्षा तीसरी</option>
@@ -401,159 +406,29 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <input type="email" id="b1" class="form-control"></td>
+                                            <input name="message" type="text" id="b1" class="form-control" /></td>
                                         <td>
-                                            <input type="email" id="b2" placeholder="100%" class="form-control text-center"></td>
+                                            <input name="message" type="text" placeholder="100%" id="b2" class="form-control text-center" /></td>
                                         <td>
-                                            <input type="email" id="b3" class="form-control"></td>
+                                            <input name="message" type="text" id="b3" class="form-control" /></td>
                                         <td>
 
-                                            <button type="button" onclick="addData1()" class="btn btn-success">Add</button></td>
-
-                                    </tr>
-                                    <%--     <tr valign="middle">
-                                        <td>2</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                                            <button type="submit" onclick="addData1()" class="btn btn-success">Add</button></td>
 
                                     </tr>
-                                    <tr valign="middle">
-                                        <td>2</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
 
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>4</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>5</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>6</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>7</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>8</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>9</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>10</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>11</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>12</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" Text="100%" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-
-                                    </tr>--%>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>
-                                <span class="fa-pull-left">Reasons, if any, fro not completing the target 
+                            <label for="message">
+                                Reasons, if any, For Not Completing the Target 
                                 <br />
-                                    लक्ष्य  प्राप्ति न होने के करण</span></label>
-                            <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons  Minimum 100 words"></textarea>
+                                लक्ष्य  प्राप्ति न होने के करण
+                                <span class="span">*</span></label>
+                            <textarea name="message" class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maximum 100 words"></textarea>
                         </div>
                     </div>
                 </fieldset>
@@ -561,7 +436,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-3 text-center mt-4">
                         <div class="form-group">
-                            <button type="button" class="Alert-Save2 btn btn-success btn-rounded ">
+                            <button type="submit" class="Alert-Save2 btn btn-success btn-rounded ">
                                 Save/Next
                             </button>
                             <a href="TeacherFillReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
@@ -588,14 +463,10 @@
                      Student<br />
                                             छात्र संख्या
                                         </th>
-                                        <th colspan="5">Previous class annual
-examination Result grade
-wises Student number<br />
-                                            पूर्व कक्षा के परीक्षा परिणाम के
-अनुसार छात्रों की ग्रेडवार संख्या
+                                        <th colspan="5">Previous Class Annual Examination Result Grade Wise Student Number<br />पूर्व कक्षा के परीक्षा परिणाम के अनुसार छात्रों की ग्रेडवार संख्या
                                         </th>
-                                        <th colspan="5">Achievement on the basis
-of annual examination result
+                                        <th colspan="5">Achievement on the Basis
+of Annual Examination Result
                                             <br />
                                             वार्षिक परीक्षा के
 आधार पर उपलब्धि<br />
@@ -654,33 +525,34 @@ of annual examination result
                                                 <option>11th class/कक्षा ग्यारवी</option>
                                                 <option>12th class/कक्षा बरवी</option>
                                             </select></td>
-                                        <td><input type="email" id="c1" class="form-control" Style="width: 70px;">
-                                            </td>
                                         <td>
-                                           <input type="email" id="c2" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c1" class="form-control" style="width: 70px;">
+                                        </td>
                                         <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c2" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                          <input type="email" id="c4" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c3" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c5" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c4" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c6" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c5" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c7" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c6" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c8" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c7" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c9" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c8" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c10" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c9" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c11" class="form-control" Style="width: 70px;"></td>
+                                            <input type="email" id="c10" class="form-control" style="width: 70px;"></td>
                                         <td>
-                                             <input type="email" id="c12" class="form-control" Style="width: 70px;"></td>
-                                         <td>
+                                            <input type="email" id="c11" class="form-control" style="width: 70px;"></td>
+                                        <td>
+                                            <input type="email" id="c12" class="form-control" style="width: 70px;"></td>
+                                        <td>
 
-     <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
+                                            <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
 
                                     </tr>
                                     <%--     <tr valign="middle">
@@ -1044,10 +916,10 @@ of annual examination result
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                                Reasons Of Not achieving target
+                                Reasons of Not Achieving Target
                                 <br />
-                                लक्ष्य  से कम उपलब्धि के करण</label>
-                            <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Minimum 100 words"></textarea>
+                                लक्ष्य  से कम उपलब्धि के करण <span class="span">*</span></label>
+                            <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maximum 100 words"></textarea>
                         </div>
                     </div>
 
@@ -1221,7 +1093,7 @@ of annual examination result
                         <div class="col-md-12">
                             <label>
                             </label>
-                            <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter  Other Work Outstanding Contribution in Minimum 100 words"></textarea>
+                            <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter  Other Work Outstanding Contribution in Maximum 100 words"></textarea>
                         </div>
                     </div>
 
@@ -1388,78 +1260,78 @@ of annual examination result
 
     </script>
 
-      <script>
-         /* debugger*/
-          function
-              addData2(){
-              // Get input values
-              let name = document.getElementById("ddlClass3").value;
-              let email = document.getElementById("c1").value;
-              let mobile = document.getElementById("c2").value;
-              let PreviousGradea = document.getElementById("c3").value;
-              let PreviousGradeab = document.getElementById("c4").value;
-              let PreviousGradec = document.getElementById("c5").value;
-              let PreviousGraded = document.getElementById("c6").value;
-              let PreviousGradee = document.getElementById("c7").value;
-              let Gradea = document.getElementById("c8").value;
-              let Gradeb = document.getElementById("c9").value;
-              let Gradec = document.getElementById("c10").value;
-              let Graded = document.getElementById("c11").value;
-              let Gradee = document.getElementById("c12").value;
+    <script>
+        /* debugger*/
+        function
+            addData2() {
+            // Get input values
+            let name = document.getElementById("ddlClass3").value;
+            let email = document.getElementById("c1").value;
+            let mobile = document.getElementById("c2").value;
+            let PreviousGradea = document.getElementById("c3").value;
+            let PreviousGradeab = document.getElementById("c4").value;
+            let PreviousGradec = document.getElementById("c5").value;
+            let PreviousGraded = document.getElementById("c6").value;
+            let PreviousGradee = document.getElementById("c7").value;
+            let Gradea = document.getElementById("c8").value;
+            let Gradeb = document.getElementById("c9").value;
+            let Gradec = document.getElementById("c10").value;
+            let Graded = document.getElementById("c11").value;
+            let Gradee = document.getElementById("c12").value;
 
-              // Get the table and insert a new row at the end
-              let table = document.getElementById("<%= Table3.ClientID %>");
+            // Get the table and insert a new row at the end
+            let table = document.getElementById("<%= Table3.ClientID %>");
            <%--   let table = document.getElementById("<%= Table3.ClientID %>");--%>
-              let newRow = table.insertRow(table.rows.length);
+            let newRow = table.insertRow(table.rows.length);
 
-              // Insert data into cells of the new row
-              newRow.insertCell(0).innerHTML = table.rows.length - 3;
-              newRow.insertCell(1).innerHTML = name;
-              newRow.insertCell(2).innerHTML = email;
-              newRow.insertCell(3).innerHTML = mobile;
-              newRow.insertCell(4).innerHTML = PreviousGradea;
-              newRow.insertCell(5).innerHTML = PreviousGradeab;
-              newRow.insertCell(6).innerHTML = PreviousGradec;
-              newRow.insertCell(7).innerHTML = PreviousGraded;
-              newRow.insertCell(8).innerHTML = PreviousGradee;
-
-
-              newRow.insertCell(9).innerHTML = Gradea;
-              newRow.insertCell(10).innerHTML = Gradeb;
-              newRow.insertCell(11).innerHTML = Gradec;
-              newRow.insertCell(12).innerHTML = Graded;
-              newRow.insertCell(13).innerHTML = Gradee;
-             
-
-              clearInputs3();
-          }
-          function clearInputs3() {
-              debugger;
-              // Clear input fields
-              //document.getElementById("ddlClass").Items.Insert(0, new ListItem("--Select--", "0"));
-              document.getElementById("ddlClass3").selectedIndex = 0;
-              $('#ddlClass3').trigger('change');
-              //document.getElementById("a1").value = "";
-              //document.getElementById("a2").value = "";
-              //document.getElementById("a3").value = "";
-              //document.getElementById("workdescription3").value = "";
+            // Insert data into cells of the new row
+            newRow.insertCell(0).innerHTML = table.rows.length - 3;
+            newRow.insertCell(1).innerHTML = name;
+            newRow.insertCell(2).innerHTML = email;
+            newRow.insertCell(3).innerHTML = mobile;
+            newRow.insertCell(4).innerHTML = PreviousGradea;
+            newRow.insertCell(5).innerHTML = PreviousGradeab;
+            newRow.insertCell(6).innerHTML = PreviousGradec;
+            newRow.insertCell(7).innerHTML = PreviousGraded;
+            newRow.insertCell(8).innerHTML = PreviousGradee;
 
 
-              let email = document.getElementById("c1").value = "";
-              let mobile = document.getElementById("c2").value = "";
-             let PreviousGradea  = document.getElementById("c3").value = "";
-             let PreviousGradeab= document.getElementById("c4").value = "";
-             let PreviousGradec = document.getElementById("c5").value = "";
-             let PreviousGraded = document.getElementById("c6").value = "";
-              let PreviousGradee = document.getElementById("c7").value = "";
-             let Gradea= document.getElementById("c8").value = "";
-             let Gradeb= document.getElementById("c9").value = "";
-             let Gradec= document.getElementById("c10").value = "";
-             let Graded = document.getElementById("c11").value = "";
-              let Gradee = document.getElementById("c12").value = "";
+            newRow.insertCell(9).innerHTML = Gradea;
+            newRow.insertCell(10).innerHTML = Gradeb;
+            newRow.insertCell(11).innerHTML = Gradec;
+            newRow.insertCell(12).innerHTML = Graded;
+            newRow.insertCell(13).innerHTML = Gradee;
 
-          }
-      </script>
+
+            clearInputs3();
+        }
+        function clearInputs3() {
+            debugger;
+            // Clear input fields
+            //document.getElementById("ddlClass").Items.Insert(0, new ListItem("--Select--", "0"));
+            document.getElementById("ddlClass3").selectedIndex = 0;
+            $('#ddlClass3').trigger('change');
+            //document.getElementById("a1").value = "";
+            //document.getElementById("a2").value = "";
+            //document.getElementById("a3").value = "";
+            //document.getElementById("workdescription3").value = "";
+
+
+            let email = document.getElementById("c1").value = "";
+            let mobile = document.getElementById("c2").value = "";
+            let PreviousGradea = document.getElementById("c3").value = "";
+            let PreviousGradeab = document.getElementById("c4").value = "";
+            let PreviousGradec = document.getElementById("c5").value = "";
+            let PreviousGraded = document.getElementById("c6").value = "";
+            let PreviousGradee = document.getElementById("c7").value = "";
+            let Gradea = document.getElementById("c8").value = "";
+            let Gradeb = document.getElementById("c9").value = "";
+            let Gradec = document.getElementById("c10").value = "";
+            let Graded = document.getElementById("c11").value = "";
+            let Gradee = document.getElementById("c12").value = "";
+
+        }
+    </script>
 
 
     <script>function autoResize(textarea) {
@@ -1538,7 +1410,9 @@ of annual examination result
                             }
                         })
                     }),
+
                     $('.Alert-Save2').click(function () {
+                        // if Reasons, if any, fro not completing the target empty not then
                         Swal.fire({
                             title: 'Are you sure?',
                             text: "Do you want to Save  this record ?",
@@ -1571,6 +1445,9 @@ of annual examination result
 
                             }
                         })
+
+                        // else
+
                     }), $('.Alert-Save3').click(function () {
                         Swal.fire({
                             title: 'Are you sure?',
@@ -1621,5 +1498,63 @@ of annual examination result
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
         }</script>
+
+    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $('.datepickerYear').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+                var nextYear = selectedYear + 1;
+                var financialYear = selectedYear + '-' + (nextYear % 100); // Example: 2023-24 for financial year 2023-2024
+                $(".datepickerYear").val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                //setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
+            }
+        });
+
+        $('.datepickerYear2').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+                var nextYear = selectedYear + 1;
+                var financialYear = selectedYear + '-' + (nextYear % 100); // Example: 2023-24 for financial year 2023-2024
+                $(".datepickerYear2").val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                //setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
+            }
+        });
+
+        // Function to set default value to current financial year
+        function setDefaultFinancialYear() {
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            var nextYear = currentYear + 1;
+            var financialYear = currentYear + '-' + (nextYear % 100);
+            $(".datepickerYear").val(financialYear);
+        }
+
+        // Set default value to current financial year on page load
+        $(document).ready(function () {
+            //setDefaultFinancialYear();
+        });</script>
+
 </asp:Content>
 
