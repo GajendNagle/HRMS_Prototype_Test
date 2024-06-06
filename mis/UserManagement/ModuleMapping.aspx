@@ -34,7 +34,7 @@
         <div class="card-body">
             <fieldset>
                 <legend>Module Mapping / मॉड्यूल मैपिंग</legend>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
                             <label>Enter Module Name(In English)<span style="color: red">*</span></label>
@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <label>
                                 Select Module Icon / 
-मॉड्यूल आइकन चुनें<span style="color: red">*</span></label>
+मॉड्यूल आइकन का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-select select2">
                                 <option value="0">Select</option>
                                 <option value="1">Hrms.png</option>

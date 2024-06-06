@@ -13,7 +13,7 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       
+
                         <li class="breadcrumb-item">
                             <span>User Management</span>
                         </li>
@@ -27,17 +27,18 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Create User Level / उपयोगकर्ता स्तर बनाएँ</h4>
+                    <h4 class="card-title">Create User Level / उपयोगकर्ता स्तर का निर्माण
+                    </h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Create User Level / उपयोगकर्ता स्तर बनाएँ</legend>
+                <legend>Create User Level / उपयोगकर्ता स्तर का निर्माण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select User Type / उपयोगकर्ता का प्रकार चुनें<span style="color: red">*</span></label>
+                            <label>Select User Type / उपयोगकर्ता के प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">Select</option>
                                 <option value="1">Admin</option>
@@ -75,7 +76,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>User Level Details / उपयोगकर्ता स्तर विवरण</legend>
+                <legend>User Level Details / उपयोगकर्ता स्तर का विवरण</legend>
                 <div class="row justify-content-end">
 
                     <div class="col-md-4 text-end">
