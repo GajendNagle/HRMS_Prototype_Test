@@ -25,9 +25,6 @@
             </p>
         </div>
         <div class="col-md-7 align-self-center">
-
-
-
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
@@ -39,7 +36,6 @@
         </div>
     </div>
     <%-- Navbar --%>
-
     <%-- Navbar --%>
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
@@ -53,10 +49,8 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-
-                            <a class="nav-link  text-white " href="DisposeApplicationCaseForDEO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-
+                            <li class="nav-item"><a class="nav-link  text-white " href="DisposeApplicationCaseForDEO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
+                            </li>
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -82,7 +76,6 @@
 
                             <li class="nav-item mr-3">
                                 <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorDeo.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
-
                             <li class="nav-item">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -105,15 +98,9 @@
                     </div>
                 </div>
             </nav>
-
-
-
             <fieldset>
                 <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
-
                 <div class="row align-items-end">
-
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
@@ -244,11 +231,7 @@
                             <input class="form-control" type="text" value="12/06/2021" />
                         </div>
                     </div>
-
-
                 </div>
-
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive table-bordered">
@@ -300,8 +283,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="card-header bg-success">परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया हे</div>
@@ -352,8 +333,6 @@
                                                 <td>शैक्षणिक संवर्ग</td>
                                                 <td>प्रयोगशाला शिक्षक</td>
                                                 <td></td>
-
-
                                             </tr>
                                         </tbody>
                                     </table>
@@ -363,8 +342,6 @@
                     </div>
                 </div>
                 <div class="row align-items-end">
-
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>आवेदन की स्थिति / Application Status<span style="color: red">*</span></label>
@@ -389,9 +366,9 @@
                                                 <th>Sr. No.<br />
                                                     सरल क्र.</th>
                                                 <th>Document<br />
-                                                    डॉक्यूमेंट</th>
+                                                    दस्तावेज </th>
                                                 <th>View Document<br />
-                                                    डॉक्यूमेंट देखे</th>
+                                                    दस्तावेज देखे</th>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -445,133 +422,212 @@
                         <div class="card-header bg-success">Action :</div>
                     </div>
                 </div>
-                <div class="row form-group">
+                <div class="row form-group align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Action / कार्रवाई करें<span style="color: red">*</span></label>
                             <select class="form-control select2" id="Actionddl" onchange="ShowHideHandicape()">
                                 <option>--Select--</option>
                                 <option value="Appointment order issued">Appointment order issued</option>
-                                <option value="Rejected and Return to DEO">Rejected and Return to DEO</option>
+                                <option value="Rejected and Return to JD">Rejected and Return to JD</option>
                                 <option value="Paid Amount">Paid Amount</option>
                                 <option value="NOC has been released, the case has been sent to the District Collector">NOC has been released, the case has been sent to the District Collector</option>
                             </select>
                         </div>
                     </div>
-
-                    <%--gajendra--%>
-
-                    <div class="col-md-3" id="Mydocu" style="display: none;">
-                        <div class="form-group">
-                            <label>Upload Document / दस्तावेज अपलोड करें:</label>
-                            <asp:FileUpload runat="server" CssClass="form-control"></asp:FileUpload>
-                            <h5 style="font-weight: 500;">Note  :<span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
-                        </div>
-                    </div>
-
-
-                    <%--gajendra--%>
-                </div>
-                <div class="row align-items-end" id="div1">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Appointment Letter Number<br />
-                                नियुक्ति पत्र संख्या :<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Appointment Order Number<br />
-                                नियुक्ति आदेश संख्या:<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="form-group">
-                            <label>Date of Letter<br />
-                                पत्र का दिनांक :<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                        </div>
-                    </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3" id="div2">
                         <div class="form-group">
                             <label>
-                                Position Appointed to Applicant<br />
-                                आवेदक नियुक्त पद:<span style="color: red">*</span></label>
-                            <select class="form-control select2">
-                                <option value="--Select--">--Select--</option>
+                                To which Post Does the Applicant Want to be Appointed?<br />
+                                आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
+                                <option value="">--Select--</option>
+                                <%--<option value="1">शैक्षणिक संवर्ग</option>--%>
+                                <option value="2">लिपिक संवर्ग</option>
+                                <%--<option value="3">चतुर्थ श्रेणी</option>--%>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3" id="DivReason">
                         <div class="form-group">
-                            <label>Place of Posting<br />
-                                पोस्टिंग की जगह:<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="div2">
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Reason of Rejectance / Return
-                                <br />
+                            <label>
+                                Reason of Rejectance/ Return
+            <br />
                                 अस्वीकार्य / वापसी के कारण :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
-                </div>
-                <div class="row" id="div3">
-                    <div class="col-md-3">
+                    <div class="col-md-4" id="Mydocu" style="display: none;">
                         <div class="form-group">
-                            <label>Order Number
-                                <br />
-                                क्रम संख्या:<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            <label>Upload Document / दस्तावेज अपलोड करें:</label>
+                            <asp:FileUpload runat="server" CssClass="form-control"></asp:FileUpload>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4" id="MydocuNote" style="display: none;">
                         <div class="form-group">
-                            <label>Check No.
-                                <br />
-                                चेक नंबर:<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Payment Date
-                                <br />
-                                भुगतान तिथि:<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Payment
-                                <br />
-                                भुगतान :<span style="color: red">*</span></label>
-                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            <h5 style="font-weight: 500;">Note  :<span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
                         </div>
                     </div>
                 </div>
+                <div class="row align-items-end" id="div1">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Appointment Letter Number<br />
+                                    नियुक्ति पत्र संख्या :<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Appointment Order Number<br />
+                                    नियुक्ति आदेश संख्या:<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>
+                                    Date of Letter<br />
+                                    पत्र का दिनांक :<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>
+                                    Position Appointed to Applicant<br />
+                                    आवेदक नियुक्त पद:<span style="color: red">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="--Select--">--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>
+                                    Place of Posting<br />
+                                    पोस्टिंग की जगह:<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="div3">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Order Number
+                                <br />
+                                    क्रम संख्या:<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Check No.
+                                <br />
+                                    चेक नंबर:<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Payment Date
+                                <br />
+                                    भुगतान तिथि:<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Payment
+                                <br />
+                                    भुगतान :<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
             </fieldset>
-
             <div class="row justify-content-center">
-
-
                 <div class="col-md-2">
-
-                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Save</button>
+                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Update</button>
                 </div>
-
-
             </div>
         </div>
     </div>
 
+    <%--new script start--%>
+    <script>
+        function ShowHide() {
+            var div1 = document.getElementById("ddlSapthpatr5");
+            var div11 = document.getElementById("DivDesignation");
+            var Div2 = document.getElementById("DivQualificationStatus");
+            var div3 = document.getElementById("DivNote");
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+            if (div1.value === '1') {
+                div11.style.display = "block"; // Show the Divbutton
+            }
+            else {
+                DivDesignation.style.display = "none";
+                Div2.style.display = "none";
+                div3.style.display = "none";
+                div11.style.display = "none";// Hide the Divbutton
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+        }
+        function ShowHide1() {
+
+            var Div2 = document.getElementById("DivQualificationStatus");
+            var div3 = document.getElementById("DivNote");
+            var Div4 = document.getElementById("ddlSapthpatr6");
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+            if (Div4.value === '1') {
+                div3.style.display = "block";
+                Div2.style.display = "none";
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+            else if (Div4.value === '2') {
+
+                Div2.style.display = "block";
+                div3.style.display = "block";
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+            else {
+                Div2.style.display = "none";
+                div3.style.display = "block";
+                div6.style.display = "none";
+                Div5.style.display = "none";
+                Div5.style.display = "none";
+            }
+        }
+        function ShowHide2() {
+
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+            var Div7 = document.getElementById("ddlSapthpatr1");
+            /* var Div5 = document.getElementById("Divbutton");*/
+            if (Div7.value === '1') {
+
+                div6.style.display = "block";
+                Div5.style.display = "block";
+            }
+
+            else {
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+        }
+    </script>
+    <%--new script start--%>
     <script>
         function myFunction() {
             document.getElementById("empDetail").style.display = "block";
@@ -628,64 +684,70 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
-
-
     <script>
         div1.style.display = "none";
         div2.style.display = "none";
         div3.style.display = "none";
         Mydocu.style.display = "none";
+        MydocuNote.style.display = "none";
+        DivReason.style.display = "none";
         function ShowHideHandicape() {
             debugger
             var ddlHandicape = document.getElementById("Actionddl");
             var div1 = document.getElementById("div1");
             var div2 = document.getElementById("div2");
+            var DivReason = document.getElementById("DivReason");
             var div3 = document.getElementById("div3");
             var Mydocu = document.getElementById("Mydocu");
+            var MydocuNote = document.getElementById("MydocuNote");
             div1.style.display = "none";
             div2.style.display = "none";
+            DivReason.style.display = "none";
             div3.style.display = "none";
             Mydocu.style.display = "none";
+            MydocuNote.style.display = "none";
 
 
             if (ddlHandicape.value == "Paid Amount") {
                 div1.style.display = "none";
                 div2.style.display = "none";
+                DivReason.style.display = "none";
                 Mydocu.style.display = "none";
+                MydocuNote.style.display = "none";
                 div3.style.display = "flex";
             }
-            else if (ddlHandicape.value == "Rejected and Return to DEO") {
+            else if (ddlHandicape.value == "Rejected and Return to JD") {
                 div1.style.display = "none";
                 div2.style.display = "flex";
+                DivReason.style.display = "flex";
                 div3.style.display = "none";
                 div3.style.display = "none";
             }
             else if (ddlHandicape.value == "Appointment order issued") {
                 div1.style.display = "flex";
                 div2.style.display = "none";
+                DivReason.style.display = "none";
                 div3.style.display = "none";
                 Mydocu.style.display = "none";
+                MydocuNote.style.display = "none";
 
             }
             else if (ddlHandicape.value == "NOC has been released, the case has been sent to the District Collector") {
                 div1.style.display = "none";
                 div2.style.display = "none";
+                DivReason.style.display = "none";
                 div3.style.display = "none";
                 Mydocu.style.display = "flex";
+                MydocuNote.style.display = "inline";
             }
             else {
                 div1.style.display = "none";
                 div2.style.display = "none";
+                DivReason.style.display = "none";
                 div3.style.display = "none";
                 Mydocu.style.display = "none";
+                MydocuNote.style.display = "none";
             }
-            //if (ddlHandicape.value === "Appointment order issued") {
-            //    HandicapePercentage.style.display = "block";
-            //    handipaceType.style.display = "block";
-            //} else if (ddlHandicape.value === "No") {
-            //    HandicapePercentage.style.display = "none";
-            //    handipaceType.style.display = "none";
-            //}
         }
     </script>
 </asp:Content>

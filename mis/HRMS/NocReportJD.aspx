@@ -5,9 +5,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
     <style>
-        th{
-            white-space:nowrap;
+        th {
+            white-space: nowrap;
         }
+
         #ACR_Details_Graph .highcharts-data-label text {
             color: white !important;
             font-size: 0.65rem !important;
@@ -80,7 +81,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="NocReportJD.aspx">Compassionate Appointment</a> </li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment">Compassionate Appointment</a> </li>
                     <li class="breadcrumb-item active">NOC Report</li>
                 </ol>
             </div>
@@ -151,13 +152,6 @@
                 </div>
             </nav>
             <br />
-
-            <%--my code --%>
-
-            <%--my code --%>
-            <%-- <fieldset>
-                <legend> अनुकंपा नियुक्ति पर कार्यवाही 
-                </legend>--%>
             <div class="col-md-12" runat="server" clientidmode="static" id="DataFirstTime">
                 <div class="card">
                     <div class="card-body">
@@ -166,69 +160,17 @@
                                 <div class="row">
                                     <fieldset>
                                         <legend>NOC Report / NOC विवरण</legend>
-
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>District / जिला <span style="color: red">*</span></label>
                                                     <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                                         <asp:ListItem Text="selected" Value="0">--Select--</asp:ListItem>
-                                                        <%--<asp:ListItem Value="51">Agar Malwa</asp:ListItem>
-                                                        <asp:ListItem Value="49">Alirajpur</asp:ListItem>
-                                                        <asp:ListItem Value="47">Anuppur</asp:ListItem>
-                                                        <asp:ListItem Value="46">Ashoknagar</asp:ListItem>
-                                                        <asp:ListItem Value="45">Balaghat</asp:ListItem>
-                                                        <asp:ListItem Value="28">Barwani</asp:ListItem>
-                                                        <asp:ListItem Value="35">Betul</asp:ListItem>
-                                                        <asp:ListItem Value="3">Bhind</asp:ListItem>--%>
                                                         <asp:ListItem Value="1">Bhopal</asp:ListItem>
                                                         <asp:ListItem Value="2">Raisen</asp:ListItem>
                                                         <asp:ListItem Value="3">Rajgarh</asp:ListItem>
                                                         <asp:ListItem Value="4">Sehore</asp:ListItem>
                                                         <asp:ListItem Value="5">Vidisha</asp:ListItem>
-                                                        <%-- <asp:ListItem Value="48">Burhanpur</asp:ListItem>
-                                                        <asp:ListItem Value="9">Chhatarpur</asp:ListItem>
-                                                        <asp:ListItem Value="43">Chhindwara</asp:ListItem>
-                                                        <asp:ListItem Value="12">Damoh</asp:ListItem>
-                                                        <asp:ListItem Value="5">Datia</asp:ListItem>
-                                                        <asp:ListItem Value="23">Dewas</asp:ListItem>
-                                                        <asp:ListItem Value="25">Dhar</asp:ListItem>
-                                                        <asp:ListItem Value="41">Dindori</asp:ListItem>
-                                                        <asp:ListItem Value="7">Guna</asp:ListItem>
-                                                        <asp:ListItem Value="4">Gwalior</asp:ListItem>
-                                                        <asp:ListItem Value="36">Harda</asp:ListItem>
-                                                        <asp:ListItem Value="26">Indore</asp:ListItem>
-                                                        <asp:ListItem Value="39">Jabalpur</asp:ListItem>
-                                                        <asp:ListItem Value="24">Jhabua</asp:ListItem>
-                                                        <asp:ListItem Value="38">Katni</asp:ListItem>
-                                                        <asp:ListItem Value="29">Khandwa</asp:ListItem>
-                                                        <asp:ListItem Value="27">Khargone</asp:ListItem>
-                                                        <asp:ListItem Value="42">Mandla</asp:ListItem>
-                                                        <asp:ListItem Value="19">Mandsaur</asp:ListItem>
-                                                        <asp:ListItem Value="2">Morena</asp:ListItem>
-                                                        <asp:ListItem Value="37">Narmadapuram</asp:ListItem>
-                                                        <asp:ListItem Value="40">Narsinghpur</asp:ListItem>
-                                                        <asp:ListItem Value="18">Neemuch</asp:ListItem>
-                                                        <asp:ListItem Value="52">Niwari</asp:ListItem>
-                                                        <asp:ListItem Value="10">Panna</asp:ListItem>
-                                                        <asp:ListItem Value="34">Raisen</asp:ListItem>
-                                                        <asp:ListItem Value="30">Rajgarh</asp:ListItem>
-                                                        <asp:ListItem Value="20">Ratlam</asp:ListItem>
-                                                        <asp:ListItem Value="14">Rewa</asp:ListItem>
-                                                        <asp:ListItem Value="11">Sagar</asp:ListItem>
-                                                        <asp:ListItem Value="13">Satna</asp:ListItem>
-                                                        <asp:ListItem Value="33">Sehore</asp:ListItem>
-                                                        <asp:ListItem Value="44">Seoni</asp:ListItem>
-                                                        <asp:ListItem Value="16">Shahdol</asp:ListItem>
-                                                        <asp:ListItem Value="22">Shajapur</asp:ListItem>
-                                                        <asp:ListItem Value="1">Sheopur</asp:ListItem>
-                                                        <asp:ListItem Value="6">Shivpuri</asp:ListItem>
-                                                        <asp:ListItem Value="17">Sidhi</asp:ListItem>
-                                                        <asp:ListItem Value="50">Singrauli</asp:ListItem>
-                                                        <asp:ListItem Value="8">Tikamgarh</asp:ListItem>
-                                                        <asp:ListItem Value="21">Ujjain</asp:ListItem>
-                                                        <asp:ListItem Value="15">Umaria</asp:ListItem>
-                                                        <asp:ListItem Value="31">Vidisha</asp:ListItem>--%>
                                                     </asp:DropDownList>
                                                 </div>
                                             </div>
@@ -236,8 +178,10 @@
                                                 <button type="button" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" id="btnView" onclick="HideShow();">Search </button>
                                                 <%--<asp:Button runat="server" class="Alert-Confirmation btn btn-success btn-rounded w-100 btn-block" ID="btnView" OnClientClick="HideShow();" Text="कार्यवाही हेतु प्रकरण देखे" />--%>
                                             </div>
-                                        </div></fieldset>
-                                        <fieldset><legend>Details</legend>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Details</legend>
                                         <div class="row justify-content-end">
 
                                             <div class="col-md-3 text-end">
@@ -257,24 +201,46 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <div class="table-responsive">
-                                                        <table class="table table-bordered text-center table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
+                                                        <table class="table table-bordered table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
                                                             <thead>
+
                                                                 <tr>
-                                                                    <th scope="col">Sr. No.<br />सरल क्र.</th>
-                                                                    <th scope="col">Deceased Employee / Officer<br />दिवंगत कर्मचारी / अधिकरी </th>
-                                                                    <th scope="col">Post<br />पद</th>
-                                                                    <th scope="col">Death Date<br />मृत्यु  दिनांक</th>
-                                                                    <th scope="col">Applicant Name<br />आवेदक का नाम</th>
-                                                                    <th scope="col">Gender<br />लिंग </th>
-                                                                    <th scope="col">Applicant D.O.B.<br />आवेदक की जन्म तिथि </th>
-                                                                    <th scope="col">Mobile No.<br />मोबाईल  नंबर</th>
-                                                                    <th scope="col">Applicant's Relation with Deceased Teacher<br />आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                                                    <th scope="col"><br />आवेदक की वैवाहिक स्थिति</th>
-                                                                    <th scope="col">Selected Option of Post for Appointment<br />नियुक्ति हेतु पद का चयनित विकल्प</th>
-                                                                    <th scope="col">Educational Qualification of Applicant<br />आवेदक की शैक्षणिक योग्यता </th>
-                                                                    <th scope="col">Status of Passing Primary Teacher Eligibility<br /> Test for Primary Teacher<br />प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
-                                                                    <th scope="col">Status<br />स्टैटस </th>
-                                                                    <th scope="col">Name of Appointment Department<br />नियुक्ति विभाग का नाम</th>
+                                                                    <th scope="col">Sr. No.<br>
+                                                                        सरल क्र.</th>
+                                                                    <th scope="col">Deceased Employee / Officer<br>
+                                                                        दिवंगत कर्मचारी / अधिकरी </th>
+                                                                    <th scope="col">Designation<br>
+                                                                        पद</th>
+                                                                    <th scope="col">Death Date<br>
+                                                                        मृत्यु दिनांक</th>
+                                                                    <th scope="col">Applicant Name<br>
+                                                                        आवेदक का नाम</th>
+                                                                    <th scope="col">Gender<br>
+                                                                        लिंग</th>
+                                                                    <th scope="col">Applicant D.O.B.<br>
+                                                                        आवेदक की जन्म तिथि </th>
+                                                                    <th scope="col">Mobile Number<br>
+                                                                        मोबाईल  नंबर</th>
+                                                                    <th scope="col">Applicant's Relation with Deceased Teacher<br>
+                                                                        आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                                                    <th scope="col">Applicant's Marital Status<br>
+                                                                        आवेदक की वैवाहिक स्थिति</th>
+                                                                    <th scope="col">Selected Option of Post for Appointment<br>
+                                                                        नियुक्ति हेतु पद का चयनित विकल्प</th>
+                                                                    <th scope="col">Educational Qualification of Applicant<br>
+                                                                        आवेदक की शैक्षणिक योग्यता </th>
+                                                                    <th scope="col">Status of Passing Primary Teacher Eligibility Test<br>
+                                                                        for Primary Teacher<br>
+                                                                        प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
+                                                                    <th scope="col">Status<br>
+                                                                        स्थिति</th>
+                                                                    <th scope="col">Appointment Department Name<br>
+                                                                        नियुक्ति विभाग का नाम</th>
+
+                                                                    <th scope="col">NOC Document<br />
+                                                                        एन.ओ.सी. दस्तावेज़</th>
+                                                                    <th scope="col">Appointment Document<br />
+                                                                        नियुक्ति दस्तावेज़</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -284,7 +250,7 @@
                                                                     <td>Asstt Teacher(LDT)</td>
                                                                     <td>28/12/2021</td>
                                                                     <td>BRAJESH KUSHVAH</td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
                                                                     <td>10/08/1997</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -293,10 +259,16 @@
                                                                     <td>12 PCM B SC COMPUTER SCIENCE</td>
                                                                     <td>नहीं </td>
                                                                     <%--<td>
-                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                                                    </td>--%>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+            </td>--%>
                                                                     <td>Pending by collector</td>
                                                                     <td>Nil</td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
@@ -304,7 +276,7 @@
                                                                     <td>Madhyami8k Shaishak</td>
                                                                     <td>15/04/2022</td>
                                                                     <td>SHAKSHAM SHINGH </td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
                                                                     <td>12/12/1996</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -313,10 +285,16 @@
                                                                     <td>GRADUATE</td>
                                                                     <td>नहीं </td>
                                                                     <%-- <td>
-                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                                                    </td>--%>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+            </td>--%>
                                                                     <td>Pending by DEO</td>
                                                                     <td>Nil</td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>3</td>
@@ -324,7 +302,7 @@
                                                                     <td>Asstt Grade-2</td>
                                                                     <td>16/01/2023</td>
                                                                     <td>PRAMOD KUMAR PATEL</td>
-                                                                    <td>M</td>
+                                                                    <td>Male</td>
                                                                     <td>02/10/2000</td>
                                                                     <td>70477701125</td>
                                                                     <td>Son</td>
@@ -333,10 +311,16 @@
                                                                     <td>GRADUATE</td>
                                                                     <td>नहीं </td>
                                                                     <%-- <td>
-                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                                                    </td>--%>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+            </td>--%>
                                                                     <td>Got a job</td>
                                                                     <td>Health department</td>
+                                                                    <td>
+                                                                       <button class="btn btn-success">View</button>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                             <tfoot>

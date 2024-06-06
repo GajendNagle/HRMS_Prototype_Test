@@ -87,8 +87,6 @@
         </div>
     </div>
     <div class="card mt-3 shadow">
-        <%--<div class="card-header card-border-info">
-        </div>--%>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -115,9 +113,11 @@
                                     </ul>
                                 </div>
                             </li>
-                            <a class="nav-link  text-white " href="../HRMS/Trn_ProcessApplicationListHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति पर कार्यवाही</b></a>
-                            <a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a>
-
+                            <li class="nav-item">
+                                <a class="nav-link  text-white " href="../HRMS/Trn_ProcessApplicationListHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति पर कार्यवाही</b></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link  text-white " href="../Transaction/AvedanperNirnayKareForHO.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorHO.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
                             <li class="nav-item">
@@ -132,14 +132,13 @@
                                                 <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
                                                 <li><a class="dropdown-item" href="../Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
                                                 <li><a class="dropdown-item" href="../HRMS/NocReportHO.aspx">NOC Report</a></li>
-                                                 <li><a class="dropdown-item" href="../HRMS/HoRpt_CompassionateAppointment.aspx">Compassionate Appointment Report</a></li>
+                                                <li><a class="dropdown-item" href="HoRpt_CompassionateAppointment.aspx">Compassionate Appointment Report</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
@@ -152,7 +151,6 @@
                                 <div class="row">
                                     <fieldset>
                                         <legend>NOC Report / NOC विवरण</legend>
-
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
@@ -220,7 +218,8 @@
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <fieldset><legend>Details</legend>
+                                    <fieldset>
+                                        <legend>Details</legend>
                                         <div class="row justify-content-end">
 
                                             <div class="col-md-3 text-end">
@@ -241,24 +240,46 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <div class="table-responsive">
-                                                        <table class="table text-center table-bordered table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
+                                                        <table class="table table-bordered table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
                                                             <thead>
+
                                                                 <tr>
-                                                                    <th scope="col">Sr. No.<br />सरल क्र.</th>
-                                                                    <th scope="col">Deceased Employee / Officer<br />दिवंगत कर्मचारी / अधिकरी </th>
-                                                                    <th scope="col">Designation<br />पद</th>
-                                                                    <th scope="col">Death Date<br />मृत्यु दिनांक</th>
-                                                                    <th scope="col">Applicant Name<br />आवेदक का नाम</th>
-                                                                    <th scope="col">Gender<br />लिंग</th>
-                                                                    <th scope="col">Applicant D.O.B.<br />आवेदक की जन्म तिथि </th>
-                                                                    <th scope="col">Mobile Number<br />मोबाईल  नंबर</th>
-                                                                    <th scope="col">Applicant's Relation with Deceased Teacher<br />आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                                                    <th scope="col">Applicant's Marital Status<br />आवेदक की वैवाहिक स्थिति</th>
-                                                                    <th scope="col">Selected Option of Post for Appointment<br />नियुक्ति हेतु पद का चयनित विकल्प</th>
-                                                                    <th scope="col">Educational Qualification of Applicant<br />आवेदक की शैक्षणिक योग्यता </th>
-                                                                    <th scope="col">Status of Passing Primary Teacher Eligibility Test<br /> for Primary Teacher<br />प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
-                                                                    <th scope="col">Status<br />स्थिति</th>
-                                                                    <th scope="col">Appointment Department Name<br />नियुक्ति विभाग का नाम</th>
+                                                                    <th scope="col">Sr. No.<br>
+                                                                        सरल क्र.</th>
+                                                                    <th scope="col">Deceased Employee / Officer<br>
+                                                                        दिवंगत कर्मचारी / अधिकरी </th>
+                                                                    <th scope="col">Designation<br>
+                                                                        पद</th>
+                                                                    <th scope="col">Death Date<br>
+                                                                        मृत्यु दिनांक</th>
+                                                                    <th scope="col">Applicant Name<br>
+                                                                        आवेदक का नाम</th>
+                                                                    <th scope="col">Gender<br>
+                                                                        लिंग</th>
+                                                                    <th scope="col">Applicant D.O.B.<br>
+                                                                        आवेदक की जन्म तिथि </th>
+                                                                    <th scope="col">Mobile Number<br>
+                                                                        मोबाईल  नंबर</th>
+                                                                    <th scope="col">Applicant's Relation with Deceased Teacher<br>
+                                                                        आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                                                    <th scope="col">Applicant's Marital Status<br>
+                                                                        आवेदक की वैवाहिक स्थिति</th>
+                                                                    <th scope="col">Selected Option of Post for Appointment<br>
+                                                                        नियुक्ति हेतु पद का चयनित विकल्प</th>
+                                                                    <th scope="col">Educational Qualification of Applicant<br>
+                                                                        आवेदक की शैक्षणिक योग्यता </th>
+                                                                    <th scope="col">Status of Passing Primary Teacher Eligibility Test<br>
+                                                                        for Primary Teacher<br>
+                                                                        प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
+                                                                    <th scope="col">Status<br>
+                                                                        स्थिति</th>
+                                                                    <th scope="col">Appointment Department Name<br>
+                                                                        नियुक्ति विभाग का नाम</th>
+
+                                                                    <th scope="col">NOC Document<br />
+                                                                        एन.ओ.सी. दस्तावेज़</th>
+                                                                    <th scope="col">Appointment Document<br />
+                                                                        नियुक्ति दस्तावेज़</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -277,10 +298,16 @@
                                                                     <td>12 PCM B SC COMPUTER SCIENCE</td>
                                                                     <td>नहीं </td>
                                                                     <%--<td>
-                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                                                    </td>--%>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+            </td>--%>
                                                                     <td>Pending by collector</td>
                                                                     <td>Nil</td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
@@ -296,11 +323,17 @@
                                                                     <td>लिपिकीय संवर्ग  </td>
                                                                     <td>GRADUATE</td>
                                                                     <td>नहीं </td>
-                                                                    <%--<td>
-                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                                                    </td>--%>
+                                                                    <%-- <td>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+            </td>--%>
                                                                     <td>Pending by DEO</td>
                                                                     <td>Nil</td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>3</td>
@@ -317,10 +350,16 @@
                                                                     <td>GRADUATE</td>
                                                                     <td>नहीं </td>
                                                                     <%-- <td>
-                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                                                    </td>--%>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+            </td>--%>
                                                                     <td>Got a job</td>
                                                                     <td>Health department</td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-success">View</button>
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                             <tfoot>
