@@ -145,6 +145,10 @@
                 padding: 1rem;
             }
 
+        .topbar {
+            background: var(--vz-primary);
+            content: "";
+        }
 
         /* .row {
             margin-right: auto;
@@ -307,621 +311,782 @@
                 </div>
 
             </header>
-        </div>
-        <!-- removeNotificationModal -->
-        <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mt-2 text-center">
-                            <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                                <h4>Are you sure ?</h4>
-                                <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+
+            <!-- removeNotificationModal -->
+            <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mt-2 text-center">
+                                <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                                    <h4>Are you sure ?</h4>
+                                    <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                                <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
                             </div>
                         </div>
-                        <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                            <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
-                        </div>
-                    </div>
 
+                    </div>
+                    <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-content -->
+                <!-- /.modal-dialog -->
             </div>
-            <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
-        <!-- ========== App Menu ========== -->
-        <div class="app-menu navbar-menu">
-            <!-- LOGO -->
-            <div class="navbar-brand-box">
-                <!-- Dark Logo-->
-                <a href="../Dashboard/AdminDashboard.aspx" class="logo logo-dark">
-                    <span class="logo-sm">
-                        <img src="../assets/images/logo-sm.svg" alt="" height="50">
-                    </span>
-                    <span class="logo-lg">
-                        <img src="../assets/images/logo-dark.png" alt="" height="35">
-                    </span>
-                </a>
-                <!-- Light Logo-->
-                <a href="../Dashboard/AdminDashboard.aspx" class="logo logo-light">
-                    <span class="logo-md logo-sm">
-                        <img src="../assets/images/logo-sm.svg" alt="" height="50">
-                    </span>
-                    <span class="logo-lg">
-                        <img src="../assets/images/logo-light.png" alt="" height="35">
-                    </span>
-                </a>
-                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
-                    <i class="ri-record-circle-line"></i>
-                </button>
-            </div>
-            <div class="dropdown sidebar-user m-1 rounded">
-                <button type="button" class="btn material-shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="d-flex align-items-center gap-2">
-                        <img class="rounded header-profile-user" src="../assets/images/users/avatar-1.jpg" alt="Header Avatar">
-                        <span class="text-start">
-                            <span class="d-block fw-medium sidebar-user-name-text">User</span>
-                            <span class="d-block fs-14 sidebar-user-name-sub-text"><i class="ri ri-circle-fill fs-10 text-success align-baseline"></i><span class="align-middle">Online</span></span>
+            <!-- /.modal -->
+            <!-- ========== App Menu ========== -->
+            <div class="app-menu navbar-menu">
+                <!-- LOGO -->
+                <div class="navbar-brand-box">
+                    <!-- Dark Logo-->
+                    <a href="../Dashboard/AdminDashboard.aspx" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.svg" alt="" height="50">
                         </span>
-                    </span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end">
-                    <!-- item-->
-                    <h6 class="dropdown-header">Welcome User!</h6>
-                    <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i><span class="align-middle">Profile</span></a>
-
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i><span class="align-middle">Lock screen</span></a>
-                    <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="35">
+                        </span>
+                    </a>
+                    <!-- Light Logo-->
+                    <a href="../Dashboard/AdminDashboard.aspx" class="logo logo-light">
+                        <span class="logo-md logo-sm">
+                            <img src="../assets/images/logo-sm.svg" alt="" height="50">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="35">
+                        </span>
+                    </a>
+                    <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                        <i class="ri-record-circle-line"></i>
+                    </button>
                 </div>
-            </div>
-            <div id="scrollbar">
-                <div class="container-fluid">
+                <div class="dropdown sidebar-user m-1 rounded">
+                    <button type="button" class="btn material-shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center gap-2">
+                            <img class="rounded header-profile-user" src="../assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                            <span class="text-start">
+                                <span class="d-block fw-medium sidebar-user-name-text">User</span>
+                                <span class="d-block fs-14 sidebar-user-name-sub-text"><i class="ri ri-circle-fill fs-10 text-success align-baseline"></i><span class="align-middle">Online</span></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome User!</h6>
+                        <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i><span class="align-middle">Profile</span></a>
 
-                    <div id="two-column-menu">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i><span class="align-middle">Lock screen</span></a>
+                        <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
-                    <ul class="navbar-nav" id="navbar-nav">
+                </div>
+                <div id="scrollbar">
+                    <div class="container-fluid">
 
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-dashboards">Dashboards</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarDashboards">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="../Dashboard/AdminDashboard.aspx" class="nav-link" data-key="t-analytics">Admin Dashboard </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../Dashboard/HRMSDashboard.aspx" class="nav-link" data-key="t-crm">HRMS Dashboard </a>
-                                    </li>
-                                    <li class="nav-item">
+                        <div id="two-column-menu">
+                        </div>
+                        <ul class="navbar-nav" id="navbar-nav">
 
-                                        <a href="../Dashboard/EmployeeDashBoard.aspx" class="nav-link" data-key="t-crm">Employee Dashboard </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../Dashboard/SchoolDirectoryDashboard.aspx" class="nav-link" data-key="t-ecommerce">School Directory Dashboard</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../Dashboard/StudentDashboard.aspx" class="nav-link" data-key="t-crypto">Student/Scheme Dashboard</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <%--Dashboards--%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-dashboards">Dashboards</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarDashboards">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="../Dashboard/AdminDashboard.aspx" class="nav-link" data-key="t-analytics">Admin Dashboard </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Dashboard/HRMSDashboard.aspx" class="nav-link" data-key="t-crm">HRMS Dashboard </a>
+                                        </li>
+                                        <li class="nav-item">
 
-                        <!-- end Dashboard Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUserManagement">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-sidebarUserManagement">User Management</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarUserManagement">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/CreateUserLevel.aspx">Create User Level</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/ModuleMapping.aspx">Module Mapping</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/ParentMenuCreation.aspx">Parent Menu Creation</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/SubMenuCreation.aspx">Sub Menu Creation</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/RoleCreation.aspx">Role Creation</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/RoleWiseModuleMapping.aspx">Role Wise Module Mapping</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/InchargeMapping.aspx">Incharge Mapping</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/FormWiseRightsAssign.aspx">Form Wise Right's Assign</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../UserManagement/RoleWiseRightsAssign.aspx">Role Wise Right's Assign</a>
-                                    </li>
+                                            <a href="../Dashboard/EmployeeDashBoard.aspx" class="nav-link" data-key="t-crm">Employee Dashboard </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Dashboard/SchoolDirectoryDashboard.aspx" class="nav-link" data-key="t-ecommerce">School Directory Dashboard</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Dashboard/StudentDashboard.aspx" class="nav-link" data-key="t-crypto">Student/Scheme Dashboard</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--Dashboards--%>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <%--User Management--%>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="MasterPages">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Master Data</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="MasterPages">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="#LocationMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="LocationMaster" data-key="t-LocationMaster"><i class="ri-dashboard-2-line"></i>
-                                            Location Master Data</a>
-                                        <div class="collapse menu-dropdown" id="LocationMaster">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_State.aspx" class="nav-link">State Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_Division.aspx" class="nav-link">Division Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_District.aspx" class="nav-link">District Master Data </a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_Block.aspx" class="nav-link">Block Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_Parliamentary.aspx" class="nav-link">Parliamentary Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_NagerNigam.aspx" class="nav-link">Nagar Nigam Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_NagarPalika.aspx" class="nav-link">Nagar Palika Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_ZilaPanchayat.aspx" class="nav-link">Jila Panchayat Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_NagarPanchayat.aspx" class="nav-link">Nagar Panchayat Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_JanpadPanchayat.aspx" class="nav-link">Janpad Panchayat Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_GramPanchayat.aspx" class="nav-link">Gram Panchayat Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_Village.aspx" class="nav-link">Village Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Loc_Habitation.aspx" class="nav-link">Habitation Master Data</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#OfficeMaster" class="nav-link" data-bs-toggle="collapse" role="button"
-                                            aria-expanded="false" aria-controls="OfficeMaster" data-key="t-OfficeMaster"><i class="ri-dashboard-2-line"></i>Office Master Data</a>
-                                        <div class="collapse menu-dropdown" id="OfficeMaster">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_OfficeType.aspx" class="nav-link">Office Type Master  Data</a></li>
+                            <!-- end Dashboard Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUserManagement">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-sidebarUserManagement">User Management</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarUserManagement">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/CreateUserLevel.aspx">Create User Level</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/ModuleMapping.aspx">Module Mapping</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/ParentMenuCreation.aspx">Parent Menu Creation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/SubMenuCreation.aspx">Sub Menu Creation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/RoleCreation.aspx">Role Creation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/RoleWiseModuleMapping.aspx">Role Wise Module Mapping</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/InchargeMapping.aspx">Incharge Mapping</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/FormWiseRightsAssign.aspx">Form Wise Right's Assign</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../UserManagement/RoleWiseRightsAssign.aspx">Role Wise Right's Assign</a>
+                                        </li>
 
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolType.aspx" class="nav-link">School Type Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolManagementGroup.aspx" class="nav-link">School Management Group Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_ManagementGroupDetails.aspx" class="nav-link">Management Group Detail Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolBoard.aspx" class="nav-link">School Board Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolCategory.aspx" class="nav-link">School Category Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolCategoryDetail.aspx" class="nav-link">School Category Detail Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolInchargeType.aspx" class="nav-link">School Incharge Type Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolMedium.aspx" class="nav-link">School Medium Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SpecialSchool.aspx" class="nav-link">Special School Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_HR_ClassSubjectMapping.aspx" class="nav-link">Class & Subject Mapping</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_OfficeRegistration.aspx" class="nav-link">Office Registration Master Data </a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_SchoolClassName.aspx" class="nav-link">School Class Name Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_Off_Subject.aspx" class="nav-link">Subject Master Data</a></li>
-                                                <li class="nav-item"><a href="../Masters/Mst_ContactMaster.aspx" class="nav-link">Directory Master Data</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#HRMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRMaster" data-key="t-HRMaster"><i class="ri-dashboard-2-line"></i>HR Master Data </a>
-                                        <div class="collapse menu-dropdown" id="HRMaster">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Post.aspx" class="nav-link">Post Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Class.aspx" class="nav-link">Class Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_DesignationType.aspx" class="nav-link">Designation Type Master Data Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Designation.aspx" class="nav-link">Designation Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Section.aspx" class="nav-link">Section Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_PayCommission.aspx" class="nav-link">Pay Commission Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_PayScale.aspx" class="nav-link">Pay Scale Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_GradePay.aspx" class="nav-link">Grade Pay Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Level.aspx" class="nav-link">Level Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_LevelBasicPay.aspx" class="nav-link">Level Basic Pay Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Department.aspx" class="nav-link">Appointment Department Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_BloodGroup.aspx" class="nav-link">Blood Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Caste.aspx" class="nav-link">Religion Master Data</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_CategoryMaster.aspx" class="nav-link">Caste Master Data </a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Masters/Mst_HR_Qualification.aspx" class="nav-link">Qualification Master Data</a> </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#PayrollMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-dashboard-2-line"></i>Payroll Master Data</a>
-                                        <div class="collapse menu-dropdown" id="PayrollMaster">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/Mst_EarningAndDeduction.aspx" class="nav-link">Head Master Data</a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--User Management--%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="MasterPages">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Master Data</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="MasterPages">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#LocationMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="LocationMaster" data-key="t-LocationMaster"><i class="ri-dashboard-2-line"></i>
+                                                Location Master Data</a>
+                                            <div class="collapse menu-dropdown" id="LocationMaster">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_State.aspx" class="nav-link">State Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_Division.aspx" class="nav-link">Division Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_District.aspx" class="nav-link">District Master Data </a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_Block.aspx" class="nav-link">Block Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_Parliamentary.aspx" class="nav-link">Parliamentary Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_NagerNigam.aspx" class="nav-link">Nagar Nigam Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_NagarPalika.aspx" class="nav-link">Nagar Palika Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_ZilaPanchayat.aspx" class="nav-link">Jila Panchayat Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_NagarPanchayat.aspx" class="nav-link">Nagar Panchayat Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_JanpadPanchayat.aspx" class="nav-link">Janpad Panchayat Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_GramPanchayat.aspx" class="nav-link">Gram Panchayat Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_Village.aspx" class="nav-link">Village Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Loc_Habitation.aspx" class="nav-link">Habitation Master Data</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#OfficeMaster" class="nav-link" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="OfficeMaster" data-key="t-OfficeMaster"><i class="ri-dashboard-2-line"></i>Office Master Data</a>
+                                            <div class="collapse menu-dropdown" id="OfficeMaster">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_OfficeType.aspx" class="nav-link">Office Type Master  Data</a></li>
 
-                                                </li>
-                                                <%--<li class="nav-item">
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolType.aspx" class="nav-link">School Type Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolManagementGroup.aspx" class="nav-link">School Management Group Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_ManagementGroupDetails.aspx" class="nav-link">Management Group Detail Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolBoard.aspx" class="nav-link">School Board Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolCategory.aspx" class="nav-link">School Category Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolCategoryDetail.aspx" class="nav-link">School Category Detail Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolInchargeType.aspx" class="nav-link">School Incharge Type Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolMedium.aspx" class="nav-link">School Medium Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SpecialSchool.aspx" class="nav-link">Special School Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_HR_ClassSubjectMapping.aspx" class="nav-link">Class & Subject Mapping</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_OfficeRegistration.aspx" class="nav-link">Office Registration Master Data </a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_SchoolClassName.aspx" class="nav-link">School Class Name Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_Off_Subject.aspx" class="nav-link">Subject Master Data</a></li>
+                                                    <li class="nav-item"><a href="../Masters/Mst_ContactMaster.aspx" class="nav-link">Directory Master Data</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#HRMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRMaster" data-key="t-HRMaster"><i class="ri-dashboard-2-line"></i>HR Master Data </a>
+                                            <div class="collapse menu-dropdown" id="HRMaster">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Post.aspx" class="nav-link">Post Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Class.aspx" class="nav-link">Class Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_DesignationType.aspx" class="nav-link">Designation Type Master Data Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Designation.aspx" class="nav-link">Designation Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Section.aspx" class="nav-link">Section Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_PayCommission.aspx" class="nav-link">Pay Commission Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_PayScale.aspx" class="nav-link">Pay Scale Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_GradePay.aspx" class="nav-link">Grade Pay Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Level.aspx" class="nav-link">Level Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_LevelBasicPay.aspx" class="nav-link">Level Basic Pay Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Department.aspx" class="nav-link">Appointment Department Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_BloodGroup.aspx" class="nav-link">Blood Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Caste.aspx" class="nav-link">Religion Master Data</a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_CategoryMaster.aspx" class="nav-link">Caste Master Data </a></li>
+                                                    <li class="nav-item">
+                                                        <a href="../Masters/Mst_HR_Qualification.aspx" class="nav-link">Qualification Master Data</a> </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#PayrollMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-dashboard-2-line"></i>Payroll Master Data</a>
+                                            <div class="collapse menu-dropdown" id="PayrollMaster">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/Mst_EarningAndDeduction.aspx" class="nav-link">Head Master Data</a>
+
+                                                    </li>
+                                                    <%--<li class="nav-item">
 
                                                         <a href="../Payroll/Mst_EarningAndDeduction.aspx" class="nav-link">Earning And Deduction Master</a>
 
                                                     </li>--%>
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/Mst_SetEarningDeductionOptionalHeadValue.aspx" class="nav-link">Set Earning & Deduction Optional Head Value</a>
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/Mst_SetEarningDeductionOptionalHeadValue.aspx" class="nav-link">Set Earning & Deduction Optional Head Value</a>
 
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/Mst_SetEarningDeductionValueHeadWise.aspx" class="nav-link">Set Earning & Deduction Value Head Wise</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/Mst_SetEarningDeductionValueHeadWise.aspx" class="nav-link">Set Earning & Deduction Value Head Wise</a>
 
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/SameAmountSettheAllemployeeheadwise.aspx" class="nav-link">Same Amount Set The All employee Head Wise</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/SameAmountSettheAllemployeeheadwise.aspx" class="nav-link">Same Amount Set The All employee Head Wise</a>
 
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/Mst_LoanMaster.aspx" class="nav-link">Loan Master Data</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/Mst_LoanMaster.aspx" class="nav-link">Loan Master Data</a>
 
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/Mst_PolicyMaster.aspx" class="nav-link">Policy Master Data</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/Mst_PolicyMaster.aspx" class="nav-link">Policy Master Data</a>
 
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../Payroll/Mst_PayrollSetHeadwiseChallanDetails.aspx" class="nav-link">Challan Details Master Data</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../Payroll/Mst_PayrollSetHeadwiseChallanDetails.aspx" class="nav-link">Challan Details Master Data</a>
 
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#OISSetup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="OISSetup" data-key="t-OISSetup"><i class="ri-dashboard-2-line"></i>OIS Setup Master</a>
-                                        <div class="collapse menu-dropdown" id="OISSetup">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Masters/Mst_SchoolSetup.aspx" class="nav-link">School Setup</a></li>
-                                                <%--not found--%>
-                                                <li class="nav-item"><a href="#" class="nav-link">Office Setup</a></li>
-                                                <%--not found--%>
-                                                <li class="nav-item"><a href="#" class="nav-link">Institute Setup</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <%--Master Data--%>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="SchoolDirectory">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">School Directory</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="SchoolDirectory">
-                                <ul class="nav nav-sm flex-column">
-                                    <%--not found--%>
-                                    <li class="nav-item">
-                                        <a href="../Masters/Mst_SchoolRegistration.aspx" class="nav-link">OIS Registration</a>
-
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#OISVerification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="OISVerification"
-                                            data-key="t-OISVerification"><i class="ri-dashboard-2-line"></i>OIS Verification</a>
-                                        <div class="collapse menu-dropdown" id="OISVerification">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/SchoolVerificationDO.aspx" class="nav-link">School Verification</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/Mst_SankulDO.aspx" class="nav-link">Create Sankul</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/SankulToschoolMapping.aspx" class="nav-link">Sankul To School Mapping</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/SankulToSchoolUnMapping.aspx" class="nav-link">Sankul To School UnMapping</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/MeargingSchools.aspx" class="nav-link">Merge School</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/UnMergingSchools.aspx" class="nav-link">Unmerge School</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../DoLevel/CloseSchool.aspx" class="nav-link">Close School</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#HeadOfficeLevelVerification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HeadOfficeLevelVerification" data-key="t-HeadOfficeLevelVerification"><i class="ri-dashboard-2-line"></i>Head Office Level Verification</a>
-                                        <div class="collapse menu-dropdown" id="HeadOfficeLevelVerification">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/SchoolVerification.aspx" class="nav-link">School Verification</a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/SankulVerification.aspx" class="nav-link">Sankul Verification</a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/SankulToschoolMappingHO.aspx" class="nav-link">Sankul To School Mapping Verification</a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/SankulToschoolUnMappingHO.aspx" class="nav-link">Sankul To School UnMapping Verification</a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/MeargingSchoolsVerification.aspx" class="nav-link">Merge School Verification</a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/UnmergingSchoolHO.aspx" class="nav-link">Unmerge School Verification</a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="../HoLevel/CloseSchoolHO.aspx" class="nav-link">Close School Verification</a>
-                                                    <%--Duplicate page--%><%--  <a href="HRMS/CloseSchoolHO.aspx">HRMS/CloseSchoolHO.aspx</a>--%>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#SchoolDirectoryReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="SchoolDirectoryReports" data-key="t-SchoolDirectoryReports"><i class="ri-dashboard-2-line"></i>Reports</a>
-                                        <div class="collapse menu-dropdown" id="SchoolDirectoryReports">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-
-                                                    <a href="../Registration/Rpt_PublishSchoolDetails.aspx" class="nav-link">Publish School Report</a></li>
-                                                <li class="nav-item">
-                                                    <a href="../Registration/Rpt_SchoolRegistration.aspx" class="nav-link">School Details Report</a></li>
-                                                <li class="nav-item">
-
-                                                    <a href="#" class="nav-link">Statistic Report</a></li>
-                                                <%--not found--%>
-
-
-
-                                                <li class="nav-item">
-
-                                                    <a href="#" class="nav-link">School Verification Report</a></li>
-                                                <%--not found--%>
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link">School Customize Report</a></li>
-                                                <%--not found--%>
-                                                <li class="nav-item">
-
-                                                    <a href="../Registration/RPT_MeargingSchools.aspx" class="nav-link">School Merge Report</a></li>
-                                                <li class="nav-item">
-
-                                                    <a href="../Registration/RPT_UnMeargingSchools.aspx" class="nav-link">School Unmerge Report</a></li>
-                                                <li class="nav-item">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#OISSetup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="OISSetup" data-key="t-OISSetup"><i class="ri-dashboard-2-line"></i>OIS Setup Master</a>
+                                            <div class="collapse menu-dropdown" id="OISSetup">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Masters/Mst_SchoolSetup.aspx" class="nav-link">School Setup</a></li>
                                                     <%--not found--%>
-                                                    <a href="#" class="nav-link">Unmap School from Sankul</a></li>
-                                                <li class="nav-item">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Office Setup</a></li>
+                                                    <%--not found--%>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Institute Setup</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-                                                    <a href="../Registration/Rpt_CloseSchool.aspx" class="nav-link">Close School Reports</a></li>
-                                                <li class="nav-item">
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--Master Data--%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="SchoolDirectory">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-apps">School Directory</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="SchoolDirectory">
+                                    <ul class="nav nav-sm flex-column">
+                                        <%--not found--%>
+                                        <li class="nav-item">
+                                            <a href="../Masters/Mst_SchoolRegistration.aspx" class="nav-link">OIS Registration</a>
 
-                                                    <a href="../Registration/Rpt_SankulToschoolMapping.aspx" class="nav-link">Sankul To School Mapping Report</a></li>
-                                                <li class="nav-item">
+                                        </li>
 
-                                                    <a href="../Registration/Rpt_Sankul.aspx" class="nav-link">Sankul Details Reports</a></li>
-
-
-
-                                                <%--  <li class="nav-item">
-                                                        <a href="../Registration/Rpt_PublicSchool.aspx" class="nav-link">School Summary Report</a></li>
+                                        <li class="nav-item">
+                                            <a href="#OISVerification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="OISVerification"
+                                                data-key="t-OISVerification"><i class="ri-dashboard-2-line"></i>OIS Verification</a>
+                                            <div class="collapse menu-dropdown" id="OISVerification">
+                                                <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item">
-
-                                                        <a href="../HRMS/SchoolWithoutSankul.aspx" class="nav-link">School Without Sankul Report
-                                                        </a></li>
+                                                        <a href="../DoLevel/SchoolVerificationDO.aspx" class="nav-link">School Verification</a>
+                                                    </li>
                                                     <li class="nav-item">
-                                                        <a href="../Transaction/Rpt_SchoolDetail.aspx" class="nav-link">School Detail Report Card
-                                                        </a></li>--%>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <%--School Directory--%>
+                                                        <a href="../DoLevel/Mst_SankulDO.aspx" class="nav-link">Create Sankul</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../DoLevel/SankulToschoolMapping.aspx" class="nav-link">Sankul To School Mapping</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../DoLevel/SankulToSchoolUnMapping.aspx" class="nav-link">Sankul To School UnMapping</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../DoLevel/MeargingSchools.aspx" class="nav-link">Merge School</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../DoLevel/UnMergingSchools.aspx" class="nav-link">Unmerge School</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../DoLevel/CloseSchool.aspx" class="nav-link">Close School</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#HeadOfficeLevelVerification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HeadOfficeLevelVerification" data-key="t-HeadOfficeLevelVerification"><i class="ri-dashboard-2-line"></i>Head Office Level Verification</a>
+                                            <div class="collapse menu-dropdown" id="HeadOfficeLevelVerification">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/SchoolVerification.aspx" class="nav-link">School Verification</a>
 
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRMS">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">HRMS</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="HRMS">
-                                <ul class="nav nav-sm flex-column">
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/SankulVerification.aspx" class="nav-link">Sankul Verification</a>
 
-                                    <li class="nav-item">
-                                        <a href="#Employee" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Employee"><i class="ri-dashboard-2-line"></i>Employee</a>
-                                        <div class="collapse menu-dropdown" id="Employee">
-                                            <ul class="nav nav-sm flex-column">
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/SankulToschoolMappingHO.aspx" class="nav-link">Sankul To School Mapping Verification</a>
 
-                                                <li class="nav-item"><a href="../Transaction/EmployeeRegistration.aspx" class="nav-link">Employee Registration</a></li>
-                                                <li class="nav-item"><a href="../Transaction/EmployeeVerification.aspx" class="nav-link">Employee Verification</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/SankulToschoolUnMappingHO.aspx" class="nav-link">Sankul To School UnMapping Verification</a>
 
-                                    <li class="nav-item">
-                                        <a href="#LeaveProcess" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="LeaveProcess" data-key="t-LeaveProcess"><i class="ri-dashboard-2-line"></i>Leave Process</a>
-                                        <div class="collapse menu-dropdown" id="LeaveProcess">
-                                            <ul class="nav nav-sm flex-column">
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/MeargingSchoolsVerification.aspx" class="nav-link">Merge School Verification</a>
 
-                                                <li class="nav-item"><a href="../HRMS/Mst_LeaveType.aspx" class="nav-link">Leave Type</a></li>
-                                                <li class="nav-item"><a href="../HRMS/LeaveStatus.aspx" class="nav-link">Leave Status</a></li>
-                                                <li class="nav-item"><a href="../HRMS/Mst_LeaveAllocation.aspx" class="nav-link">Leave Allocation</a></li>
-                                                <li class="nav-item"><a href="../HRMS/Mst_DepartmentWiseLeaveApproval.aspx" class="nav-link">Department Wise Leave Approval
-                                                </a></li>
-                                                <li class="nav-item"><a href="../HRMS/Trn_ApplyLeave.aspx" class="nav-link">Apply Leave</a></li>
-                                                <li class="nav-item"><a href="../HRMS/Trn_ViewLeaveRequest_Approve.aspx" class="nav-link">View Leave Request & Approve Leave
-                                                </a></li>
-                                                <li class="nav-item"><a href="../HRMS/Rpt_BalanceLeave.aspx" class="nav-link">Balance Leave</a></li>
-                                                <li class="nav-item"><a href="../HRMS/LeaveApplicantDetails.aspx" class="nav-link">Leave Applicant Details
-                                                </a></li>
-                                                <li class="nav-item"><a href="../HRMS/Trn_EmployeeLeaveOpeningBalance.aspx" class="nav-link">Employee Leave Opening Balance
-                                                </a></li>
-                                                <li class="nav-item"><a href="../HRMS/RptLeaveHistory.aspx" class="nav-link">Leave History Report
-                                                </a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#LeaveReport" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="LeaveReport" data-key="t-LeaveReport"><i class="ri-dashboard-2-line"></i>Leave Report</a>
-                                        <div class="collapse menu-dropdown" id="LeaveReport">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../HRMS/LeavePendencyMonitor.aspx" class="nav-link">Leave Pendency Monitor Report</a></li>
-                                                <li class="nav-item"><a href="../HRMS/DEOMonitoringGrid.aspx" class="nav-link">DEO Monitoring Grid Report
-                                                </a></li>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/UnmergingSchoolHO.aspx" class="nav-link">Unmerge School Verification</a>
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#VoluntaryTransfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="VoluntaryTransfer" data-key="t-VoluntaryTransfer"><i class="ri-dashboard-2-line"></i>Employee Voluntary Transfer</a>
-                                        <div class="collapse menu-dropdown" id="VoluntaryTransfer">
-                                            <ul class="nav nav-sm flex-column">
-                                                <%--<li class="nav-item"><a href="#" class="nav-link"> --- </a></li>--%>
-                                                <li class="nav-item"><a href="../HRMS/Trn_ApplyVoluntaryTransfer.aspx" class="nav-link">Apply Voluntary Transfer</a></li>
-                                                <li class="nav-item"><a href="../HRMS/VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx" class="nav-link">Print Draft Application or Update</a></li>
-                                                <li class="nav-item"><a href="../HRMS/VoluntaryTransferLock_Applicatin.aspx.aspx" class="nav-link">Lock Application</a></li>
-                                                <li class="nav-item"><a href="../HRMS/VoluntaryTransferStatus.aspx" class="nav-link">Voluntary Transfer Application Status </a></li>
-                                                <li class="nav-item"><a href="../HRMS/Trn_ViewPostCodeWithVacancies.aspx" class="nav-link"><i class="ri-dashboard-2-line"></i>View Post Code With Vacancie </a></li>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="../HoLevel/CloseSchoolHO.aspx" class="nav-link">Close School Verification</a>
+                                                        <%--Duplicate page--%><%--  <a href="HRMS/CloseSchoolHO.aspx">HRMS/CloseSchoolHO.aspx</a>--%>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#EmployeeMutualTransfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="EmployeeMutualTransfer" data-key="t-EmployeeMutualTransfer"><i class="ri-dashboard-2-line"></i>Employee Mutual Transfer</a>
-                                        <div class="collapse menu-dropdown" id="EmployeeMutualTransfer">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../HRMS/Trn_MutualTransferApply.aspx" class="nav-link">Mutual Transfer Apply</a></li>
-                                                <li class="nav-item"><a href="../HRMS/MutualTransferDraftApplication.aspx" class="nav-link">Print Draft Application or Update Application</a></li>
-                                                <li class="nav-item"><a href="../HRMS/MutualTransLockApplication.aspx" class="nav-link">Lock Application</a></li>
-                                                <li class="nav-item"><a href="../HRMS/MutualTransferApplicationStatus.aspx" class="nav-link"><i class="ri-dashboard-2-line"></i>Mutual Transfer Application Status</a></li>
+                                        <li class="nav-item">
+                                            <a href="#SchoolDirectoryReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="SchoolDirectoryReports" data-key="t-SchoolDirectoryReports"><i class="ri-dashboard-2-line"></i>Reports</a>
+                                            <div class="collapse menu-dropdown" id="SchoolDirectoryReports">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <%--School Reports Start--%>
+                                                    <li class="nav-item"><a href="../Registration/Rpt_PublishSchoolDetails.aspx" class="nav-link">Publish School Report</a></li>
+                                                    <li class="nav-item"><a href="../Registration/Rpt_SchoolRegistration.aspx" class="nav-link">School Details Report</a></li>
+                                                    <%--not found<li class="nav-item">
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#AdministrativeLevelTransfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="AdministrativeLevelTransfer" data-key="t-AdministrativeLevelTransfer"><i class="ri-dashboard-2-line"></i>Administrative Level Transfer</a>
-                                        <div class="collapse menu-dropdown" id="AdministrativeLevelTransfer">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../HRMS/Trn_AdministrativeTransferApply.aspx" class="nav-link">Transfer </a></li>
-                                                <li class="nav-item"><a href="../HRMS/AdministrativeTransferDraftLetter.aspx" class="nav-link">Print Draft Transfer Or Update Application </a></li>
-                                                <li class="nav-item"><a href="../HRMS/AdministrativeGenerateTransferOrder.aspx" class="nav-link">Generate Transfer Order </a></li>
-                                                <li class="nav-item"><a href="../HRMS/AdministrativePrintTransferOrder.aspx" class="nav-link">Print Transfer Order </a></li>
-                                                <li class="nav-item"><a href="../HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" class="nav-link">View Post Code With Vacancies </a></li>
-                                                <li class="nav-item"><a href="../Transaction/Rpt_DistWiseCounting.aspx" class="nav-link">District Wise Counting </a></li>
-                                                <li class="nav-item"><a href="../Transaction/Rpt_BlockWiseCounting.aspx" class="nav-link">Block Wise Counting </a></li>
-                                                <li class="nav-item"><a href="../HRMS/Rpt_AdministrativeTransferReport.aspx" class="nav-link">Transfer Report </a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#DEOTransferApproval" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="DEOTransferApproval" data-key="t-DEOTransferApproval"><i class="ri-dashboard-2-line"></i>DEO Transfer Approval</a>
-                                        <div class="collapse menu-dropdown" id="DEOTransferApproval">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../HRMS/DEOMutalTransferApprove.aspx" class="nav-link">Mutual Transfer Approve </a></li>
-                                                <li class="nav-item"><a href="../HRMS/DEOMutalTransferPrint.aspx" class="nav-link">Mutual Transfer Print </a></li>
+                                                        <a href="#" class="nav-link">Statistic Report</a></li>--%>
+                                                    <%--not found <li class="nav-item">
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#ApprovalByHeadOffice" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="ApprovalByHeadOffice" data-key="t-ApprovalByHeadOffice"><i class="ri-dashboard-2-line"></i>Transfer Approval by Head Office</a>
-                                        <div class="collapse menu-dropdown" id="ApprovalByHeadOffice">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../HRMS/HeadOfficeTransferApproval.aspx" class="nav-link">View Transfer Request & Approve </a></li>
-                                                <li class="nav-item"><a href="../HRMS/HeadOfficFinalVoluntaryTransferApprove.aspx" class="nav-link">Voluntary Transfer Final Approve </a></li>
-                                                <li class="nav-item"><a href="../HRMS/HeadOfficeTransferPrint.aspx" class="nav-link">Voluntary Transfer Print </a></li>
-                                                <li class="nav-item"><a href="../HRMS/HeadOfficeMutalTransferApprove.aspx" class="nav-link">Mutal Transfer Approve </a></li>
-                                                <li class="nav-item"><a href="../HRMS/HeadOfficeMutalTransferPrint.aspx" class="nav-link">Mutal Transfer Print </a></li>
+                                                        <a href="#" class="nav-link">School Verification Report</a></li>--%>
+
+                                                    <%--not found <li class="nav-item">
+                                                        <a href="#" class="nav-link">School Customize Report</a></li>--%>
+
+                                                    <li class="nav-item"><a href="../Registration/RPT_MeargingSchools.aspx" class="nav-link">School Merge Report</a></li>
+                                                    <li class="nav-item"><a href="../Registration/RPT_UnMeargingSchools.aspx" class="nav-link">School Unmerge Report</a></li>
+                                                    <%--not found <li class="nav-item">
+                                                        
+                                                        <a href="#" class="nav-link">Unmap School from Sankul</a></li>--%>
+                                                    <li class="nav-item"><a href="../Registration/Rpt_CloseSchool.aspx" class="nav-link">Close School Reports</a></li>
+                                                    <li class="nav-item"><a href="../Registration/Rpt_SankulToschoolMapping.aspx" class="nav-link">Sankul To School Mapping Report</a></li>
+                                                    <li class="nav-item"><a href="../Registration/Rpt_Sankul.aspx" class="nav-link">Sankul Details Reports</a></li>
+                                                    <li class="nav-item"><a href="../Registration/Rpt_PublicSchool.aspx" class="nav-link">School Summary Report</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/SchoolWithoutSankul.aspx" class="nav-link">School Without Sankul Report</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_SchoolDetail.aspx" class="nav-link">School Detail Report Card</a></li>
+                                                    <%--School Reports End--%>
+                                                    <%--OIS Setup Reports Start--%>
+
+                                                    <li class="nav-item"><a href="../HRMS/ZeroTeacher.aspx" class="nav-link">Zero Teachers </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/SingleTeacherManagementSystem.aspx" class="nav-link">Single Teachers</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/SurplusTeacherManagementSystem.aspx" class="nav-link">Surplus Teachers</a></li>
+                                                    <li class="nav-item"><a href="../Report/SchoolSetupMaster.aspx" class="nav-link">School Setup Master </a></li>
+                                                    <li class="nav-item"><a href="../Report/DistWiseSummaryOfPublishedSchools.aspx" class="nav-link">District Wise Publish School </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_SchoolSetup.aspx" class="nav-link">OIS Report Card </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/ZeroStaffSchool_Report.aspx" class="nav-link">School Low Staff Report </a></li>
+                                                    <%--OIS Setup Reports End--%>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_OfficeReport.aspx" class="nav-link">Office Report </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_InstituteManagement.aspx" class="nav-link">Institute Management Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--School Directory--%>
+
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRMS">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-apps">HRMS</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="HRMS">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a href="../Masters/Mst_HREmpRetirement.aspx" class="nav-link">Retirement Or Separation</a></li>
 
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#AutoTransferSys" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="AutoTransferSys" data-key="t-AutoTransferSys"><i class="ri-dashboard-2-line"></i>Automatic Transfer System</a>
-                                        <div class="collapse menu-dropdown" id="AutoTransferSys">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Transaction/OIS_Transfer1.aspx" class="nav-link">OIS Generate Transfer </a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#CancelTransferOrder" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="CancelTransferOrder" data-key="t-CancelTransferOrder"><i class="ri-dashboard-2-line"></i>Cancel Transfer Order</a>
-                                        <div class="collapse menu-dropdown" id="CancelTransferOrder">
-                                            <ul class="nav nav-sm flex-column">
-                                                <%--<li class="nav-item"><a href="#" class="nav-link"> -- </a></li>--%>
-                                                <li class="nav-item"><a href="../Transaction/Trn_CancelTransferOrder.aspx" class="nav-link">Cancel Transfer Order </a></li>
-                                                <li class="nav-item"><a href="../Transaction/CanceledTransferOrderPrint.aspx" class="nav-link">Print Cancel Transfer Order </a></li>
-                                                <li class="nav-item"><a href="../Transaction/Rpt_CancelTransfer.aspx" class="nav-link">Report </a></li>
+                                        <li class="nav-item">
+                                            <a href="#Employee" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Employee"><i class="ri-dashboard-2-line"></i>Employee</a>
+                                            <div class="collapse menu-dropdown" id="Employee">
+                                                <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item"><a href="../Transaction/EmployeeRegistration.aspx" class="nav-link">Employee Registration</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/EmployeeVerification.aspx" class="nav-link">Employee Verification</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#LeaveProcess" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="LeaveProcess" data-key="t-LeaveProcess"><i class="ri-dashboard-2-line"></i>Leave Process</a>
+                                            <div class="collapse menu-dropdown" id="LeaveProcess">
+                                                <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item"><a href="../HRMS/Mst_LeaveType.aspx" class="nav-link">Leave Type</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/LeaveStatus.aspx" class="nav-link">Leave Status</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Mst_LeaveAllocation.aspx" class="nav-link">Leave Allocation</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Mst_DepartmentWiseLeaveApproval.aspx" class="nav-link">Department Wise Leave Approval </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_ApplyLeave.aspx" class="nav-link">Apply Leave</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_ViewLeaveRequest_Approve.aspx" class="nav-link">View Leave Request & Approve Leave </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_BalanceLeave.aspx" class="nav-link">Balance Leave</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/LeaveApplicantDetails.aspx" class="nav-link">Leave Applicant Details</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_EmployeeLeaveOpeningBalance.aspx" class="nav-link">Employee Leave Opening Balance</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/RptLeaveHistory.aspx" class="nav-link">Leave History Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#LeaveReport" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="LeaveReport" data-key="t-LeaveReport"><i class="ri-dashboard-2-line"></i>Leave Report</a>
+                                            <div class="collapse menu-dropdown" id="LeaveReport">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/LeavePendencyMonitor.aspx" class="nav-link">Leave Pendency Monitor Report</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/DEOMonitoringGrid.aspx" class="nav-link">DEO Monitoring Grid Report </a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#VoluntaryTransfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="VoluntaryTransfer" data-key="t-VoluntaryTransfer"><i class="ri-dashboard-2-line"></i>Employee Voluntary Transfer</a>
+                                            <div class="collapse menu-dropdown" id="VoluntaryTransfer">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/Trn_ApplyVoluntaryTransfer.aspx" class="nav-link">Apply Voluntary Transfer</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx" class="nav-link">Print Draft Application or Update</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/VoluntaryTransferLock_Applicatin.aspx.aspx" class="nav-link">Lock Application</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/VoluntaryTransferStatus.aspx" class="nav-link">Voluntary Transfer Application Status </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_ViewPostCodeWithVacancies.aspx" class="nav-link"><i class="ri-dashboard-2-line"></i>View Post Code With Vacancie </a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#EmployeeMutualTransfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="EmployeeMutualTransfer" data-key="t-EmployeeMutualTransfer"><i class="ri-dashboard-2-line"></i>Employee Mutual Transfer</a>
+                                            <div class="collapse menu-dropdown" id="EmployeeMutualTransfer">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/Trn_MutualTransferApply.aspx" class="nav-link">Mutual Transfer Apply</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/MutualTransferDraftApplication.aspx" class="nav-link">Print Draft Application or Update Application</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/MutualTransLockApplication.aspx" class="nav-link">Lock Application</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/MutualTransferApplicationStatus.aspx" class="nav-link"><i class="ri-dashboard-2-line"></i>Mutual Transfer Application Status</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#AdministrativeLevelTransfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="AdministrativeLevelTransfer" data-key="t-AdministrativeLevelTransfer"><i class="ri-dashboard-2-line"></i>Administrative Level Transfer</a>
+                                            <div class="collapse menu-dropdown" id="AdministrativeLevelTransfer">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/Trn_AdministrativeTransferApply.aspx" class="nav-link">Transfer </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/AdministrativeTransferDraftLetter.aspx" class="nav-link">Print Draft Transfer Or Update Application </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/AdministrativeGenerateTransferOrder.aspx" class="nav-link">Generate Transfer Order </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/AdministrativePrintTransferOrder.aspx" class="nav-link">Print Transfer Order </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" class="nav-link">View Post Code With Vacancies </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_DistWiseCounting.aspx" class="nav-link">District Wise Counting </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_BlockWiseCounting.aspx" class="nav-link">Block Wise Counting </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_AdministrativeTransferReport.aspx" class="nav-link">Transfer Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#DEOTransferApproval" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="DEOTransferApproval" data-key="t-DEOTransferApproval"><i class="ri-dashboard-2-line"></i>DEO Transfer Approval</a>
+                                            <div class="collapse menu-dropdown" id="DEOTransferApproval">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/DEOMutalTransferApprove.aspx" class="nav-link">Mutual Transfer Approve </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/DEOMutalTransferPrint.aspx" class="nav-link">Mutual Transfer Print </a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#ApprovalByHeadOffice" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="ApprovalByHeadOffice" data-key="t-ApprovalByHeadOffice"><i class="ri-dashboard-2-line"></i>Transfer Approval by Head Office</a>
+                                            <div class="collapse menu-dropdown" id="ApprovalByHeadOffice">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/HeadOfficeTransferApproval.aspx" class="nav-link">View Transfer Request & Approve </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/HeadOfficFinalVoluntaryTransferApprove.aspx" class="nav-link">Voluntary Transfer Final Approve </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/HeadOfficeTransferPrint.aspx" class="nav-link">Voluntary Transfer Print </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/HeadOfficeMutalTransferApprove.aspx" class="nav-link">Mutal Transfer Approve </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/HeadOfficeMutalTransferPrint.aspx" class="nav-link">Mutal Transfer Print </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#AutoTransferSys" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="AutoTransferSys" data-key="t-AutoTransferSys"><i class="ri-dashboard-2-line"></i>Automatic Transfer System</a>
+                                            <div class="collapse menu-dropdown" id="AutoTransferSys">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/OIS_Transfer1.aspx" class="nav-link">OIS Generate Transfer </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#CancelTransferOrder" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="CancelTransferOrder" data-key="t-CancelTransferOrder"><i class="ri-dashboard-2-line"></i>Cancel Transfer Order</a>
+                                            <div class="collapse menu-dropdown" id="CancelTransferOrder">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/Trn_CancelTransferOrder.aspx" class="nav-link">Cancel Transfer Order </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/CanceledTransferOrderPrint.aspx" class="nav-link">Print Cancel Transfer Order </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_CancelTransfer.aspx" class="nav-link">Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#EmployeeJoiningInOffice" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="EmployeeJoiningInOffice" data-key="t-EmployeeJoiningInOffice"><i class="ri-dashboard-2-line"></i>Employee Joining In Office</a>
+                                            <div class="collapse menu-dropdown" id="EmployeeJoiningInOffice">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/EmployeeJoiningInOffice.aspx" class="nav-link">Add Employee to Office </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_EmployeeJoining.aspx" class="nav-link">Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Tour" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Tour" data-key="t-Tour"><i class="ri-dashboard-2-line"></i>Tour</a>
+                                            <div class="collapse menu-dropdown" id="Tour">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/EmpTourApply.aspx" class="nav-link">Apply Tour</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/EmpTourGenerateOrder.aspx" class="nav-link">Tour Approve</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Promotion" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Promotion" data-key="t-Promotion"><i class="ri-dashboard-2-line"></i>Promotion</a>
+                                            <div class="collapse menu-dropdown" id="Promotion">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/PromotionProcess.aspx" class="nav-link">Promotion Process </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/PromotionOrders.aspx" class="nav-link">Promotion Order </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/PromotionHoldOrder.aspx" class="nav-link">Promotion Hold Orders </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Promotion.aspx" class="nav-link">Promotion Order Report </a></li>
+                                                    <li class="nav-item"><a href="../Transaction/PromotionWithTransfer.aspx" class="nav-link">Promotion With Transfer Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Increment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Increment" data-key="t-Increment"><i class="ri-dashboard-2-line"></i>Increment</a>
+                                            <div class="collapse menu-dropdown" id="Increment">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/IncrementProcess.aspx" class="nav-link">Increment Process</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/IncrementOrders.aspx" class="nav-link">Increment Order</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/IncrementCancel.aspx" class="nav-link">Increment Cancel Orders</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#E-ServiceBook" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="E-ServiceBook" data-key="t-E-ServiceBook"><i class="ri-dashboard-2-line"></i>E-Service Book</a>
+                                            <div class="collapse menu-dropdown" id="E-ServiceBook">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_ServiceBook.aspx" class="nav-link">E-Service Book </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_ServiceBookSearchReport.aspx" class="nav-link">E-Service Book Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#DepartmentalEnquiry" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="DepartmentalEnquiry" data-key="t-DepartmentalEnquiry"><i class="ri-dashboard-2-line"></i>Departmental Enquiry</a>
+                                            <div class="collapse menu-dropdown" id="DepartmentalEnquiry">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/DepartmentEnquiry.aspx" class="nav-link">Departmental Enquiry</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/DepartmentEnquiryList.aspx" class="nav-link">Departmental Enquiry List</a></li>
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_DepartmentEnquiry.aspx" class="nav-link">Departmental Enquiry Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#ACR" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="ACR" data-key="t-ACR"><i class="ri-dashboard-2-line"></i>ACR</a>
+                                            <div class="collapse menu-dropdown" id="ACR">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/ConfedicialReport.aspx" class="nav-link">Employee Apply ACR </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/EmployeeDetails.aspx" class="nav-link">Resend/Print Application </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/ReportingOfficerFill.aspx" class="nav-link">ACR Report Fill By Reporting Officer </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/AcceptingAuthorityFilled.aspx" class="nav-link">ACR Report Reviewing Fill Accepting Authority </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_EmployeeACR.aspx" class="nav-link">Employee ACR Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_ReportingOfficer.aspx" class="nav-link">Reporting Officer ACR Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_AcceptingAuthority.aspx" class="nav-link">Accepting Authority ACR Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_DistrictWiseAcr.aspx" class="nav-link">District Wise ACR Report </a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#CompassionateAppointment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="CompassionateAppointment" data-key="t-CompassionateAppointment"><i class="ri-dashboard-2-line"></i>Compassionate Appointment</a>
+                                            <div class="collapse menu-dropdown" id="CompassionateAppointment">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <%--Employee Compassionate Application  Start--%>
+                                                    <li class="nav-item"><a href="../HRMS/AnukampaNuktiMainPage.aspx" class="nav-link">Compassionate Appointment Home </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_CompassionateAppointment.aspx" class="nav-link">Apply for compassionate appointment </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/CompassionateAppointmentPrintApplication.aspx" class="nav-link">Print Status of Compassionate Appointment Application </a></li>
+                                                    <%--Employee Compassionate Application  End--%>
+
+                                                    <%-- DEO Compassionate Application Approval Start--%>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/DisposeApplicationCaseForDEO.aspx">DEO Compassionate Application Approval Home</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/Trn_DeoCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/DeoPrintApplicationReport.aspx">Print Application </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/Trn_ProcessApplicationListDeo.aspx">Action on Compassionate Appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/DisposeApplicationCase.aspx">Decide on Application</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/NocSendByDistrictCollectorDeo.aspx">NOC sent to District Collector</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/DEOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/DEOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
+                                                    <%--DEO Compassionate Application Approval  End--%>
+
+                                                    <%--JD Compassionate Application Approval  Start--%>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/DisposeApplicatonCaseForJD.aspx">JD Compassionate Application Approval Home</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/Trn_JDCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/JDPrintApplicationReport.aspx">Print Application</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/Trn_ProcessApplicationListJD.aspx">Action on Compassionate Appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/AvedanperNirnayKareForJD.aspx">Decide on Application</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/NocSendByDistrictCollectorJD.aspx">NOC sent to District Collector</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../HRMS/NocReportJD.aspx">NOC Report</a></li>
+                                                    <%--JD Compassionate Application Approval  End--%>
+
+                                                    <%--Head Office Compassionate Application Approval  Start--%>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../Transaction/DisposeApplicationCaseForHO.aspx">Head Office Compassionate Application Approval Home</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../HRMS/Trn_HOCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../HRMS/HOPrintApplicationReport.aspx">Print Application</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../HRMS/Trn_ProcessApplicationListHO.aspx">Action on Compassionate Appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../Transaction/AvedanperNirnayKareForHO.aspx">Decide on Application</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../HRMS/NocSendByDistrictCollectorHO.aspx">NOC sent to District Collector</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../HRMS/NocReportHO.aspx">NOC Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link text-white" href="../HRMS/HoRpt_CompassionateAppointment.aspx">Compassionate Appointment Report</a></li>
+                                                    <li class="nav-item"><a href="../" class="nav-link">-- </a></li>
+                                                    <%--Head Office Compassionate Application Approval  End--%>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#DashboardDisplay" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="DashboardDisplay" data-key="t-DashboardDisplay"><i class="ri-dashboard-2-line"></i>Dashboard Display Circulars-Orders
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="DashboardDisplay">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/AllOrderDetails.aspx" class="nav-link">All Order Details </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/HRMS/Mst_CircularOrder.aspx" class="nav-link">Circular Order </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Mst_Order.aspx" class="nav-link">Order Master </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Mst_TenderDetail.aspx" class="nav-link">Tender Master </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/PhotoAlbumDetails.aspx" class="nav-link">Photo Master </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/NewsDetails.aspx" class="nav-link">News Master</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/EventInformation.aspx" class="nav-link">Event Information Master</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/MessageInformation.aspx" class="nav-link">Message Information Master </a></li>
 
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#EmployeeJoiningInOffice" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="EmployeeJoiningInOffice" data-key="t-EmployeeJoiningInOffice"><i class="ri-dashboard-2-line"></i>Employee Joining In Office</a>
-                                        <div class="collapse menu-dropdown" id="EmployeeJoiningInOffice">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Transaction/EmployeeJoiningInOffice.aspx" class="nav-link">Add Employee to Office </a></li>
-                                                <li class="nav-item"><a href="../Transaction/Rpt_EmployeeJoining.aspx" class="nav-link">Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#Grievance" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Grievance" data-key="t-Grievance"><i class="ri-dashboard-2-line"></i>Grievance Management System</a>
+                                            <div class="collapse menu-dropdown" id="Grievance">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/ParivednaNevakarn.aspx" class="nav-link">Grievance Management System Home</a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_ParivadNivaran.aspx" class="nav-link">Complaint Filed </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/ParivednaNevakarnStatus.aspx" class="nav-link">Complaint Tracking Status </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/PrintComplaint.aspx" class="nav-link">Print Complaint </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/ViewAccumulatedComplaints.aspx" class="nav-link">Grievances Processing </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/GrievancesDispose.aspx" class="nav-link">Grievances Dispose </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/DisposedGrievances.aspx" class="nav-link">List of Resolved Complaints </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/RejectedGrievances.aspx" class="nav-link">List of Rejected Grievance </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/ForwardedGrievances%20.aspx" class="nav-link">District Wise Forwarded Grievances </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/CPIGrievancesDetails.aspx" class="nav-link">Details of Grievances forwarded from CPI </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/DistrictWiseProcessReport.aspx" class="nav-link">District Wise Progress Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/SectionWiseGrievanceReports.aspx" class="nav-link">Section Wise Pending Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#APRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="APRMS" data-key="t-APRMS"><i class="ri-dashboard-2-line"></i>APRMS</a>
+                                            <div class="collapse menu-dropdown" id="APRMS">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <%--Employee APRMS--%>
+                                                    <li class="nav-item"><a href="../HRMS/EmpAprNotes.aspx" class="nav-link">Employee APRMS Home </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_EmpAprFill.aspx" class="nav-link">Employee APR Fill </a></li>
+
+                                                    <%--Head Office APRMS--%>
+                                                    <li class="nav-item"><a href="../HRMS/HOAprNotes.aspx" class="nav-link">Head Office APRMS Home </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_HoAprFill.aspx" class="nav-link">Head Office APR Fill </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Trn_HoAprDistWiseReport.aspx" class="nav-link">Head Office APR Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#IDCard" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="IDCard" data-key="t-IDCard"><i class="ri-dashboard-2-line"></i>Employee ID Card Management System</a>
+                                            <div class="collapse menu-dropdown" id="IDCard">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../HRMS/EmployeeIDcardmanagementSystem.aspx" class="nav-link">Employee ID Card Management System </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/GenerateIDCard.aspx" class="nav-link">Print Employee ID Card </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/EmployeeIDcardMissingDetails.aspx" class="nav-link">Employee Missing Details </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/DistrictwiseIDCardProgress.aspx" class="nav-link">District Wise ID Card Progress Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/BlockwiseIDCardProgress.aspx" class="nav-link">Block Wise ID Card Progress Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/SchoolwiseIDCardProgress.aspx" class="nav-link">School Wise ID Card Progress Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Reports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Reports" data-key="t-Reports"><i class="ri-dashboard-2-line"></i>Reports</a>
+                                            <div class="collapse menu-dropdown" id="Reports">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Transaction/Rpt_EmployeeIncrement.aspx" class="nav-link">Employee Increment Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_EServiceBookReport.aspx" class="nav-link">E-Service Book Report </a></li>
+                                                    <li class="nav-item"><a href="../HRMS/Rpt_HREmpRetirementList.aspx" class="nav-link">Employee Retirement Report </a></li>
 
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#Tour" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="Tour" data-key="t-Tour">Tour</a>
-                                        <div class="collapse menu-dropdown" id="Tour">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Transaction/EmpTourApply.aspx" class="nav-link">Apply Tour</a></li>
-                                                <li class="nav-item"><a href="../Transaction/EmpTourGenerateOrder.aspx" class="nav-link">Tour Approve</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#Promotion" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="Promotion" data-key="t-Promotion"><i class="ri-dashboard-2-line"></i>Promotion</a>
-                                        <div class="collapse menu-dropdown" id="Promotion">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="../Transaction/PromotionProcess.aspx" class="nav-link">Promotion Process </a></li>
-                                                <li class="nav-item"><a href="../Transaction/PromotionOrders.aspx" class="nav-link">Promotion Order </a></li>
-                                                <li class="nav-item"><a href="../Transaction/PromotionHoldOrder.aspx" class="nav-link">Promotion Hold Orders </a></li>
-                                                <li class="nav-item"><a href="../Transaction/Promotion.aspx" class="nav-link">Promotion Order Report </a></li>
-                                                <li class="nav-item"><a href="../Transaction/PromotionWithTransfer.aspx" class="nav-link">Promotion With Transfer Report </a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <%--<li class="nav-item">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <%-- <li class="nav-item">
                                             <a href="#Transfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="Transfer" data-key="t-Promotion">Transfer</a>
+                                                aria-controls="Transfer" data-key="t-Promotion"><i class="ri-dashboard-2-line"></i>Transfer</a>
                                             <div class="collapse menu-dropdown" id="Transfer">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="../HRMS/" class="nav-link"> -- </a></li>
@@ -930,319 +1095,201 @@
                                                 </ul>
                                             </div>
                                         </li>--%>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--HRMS--%>
 
 
-                                    <li class="nav-item">
-                                        <a href="#DepartmentEmployeePosition" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="DepartmentEmployeePosition" data-key="t-DepartmentEmployeePosition"><i class="ri-dashboard-2-line"></i>Department Employee Position</a>
-                                        <div class="collapse menu-dropdown" id="DepartmentEmployeePosition">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Department Setup</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Registration</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Edit Employee Details</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Retired Employee</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Incomplete Employee List</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Add Service Book</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#ACR" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="ACR" data-key="t-ACR"><i class="ri-dashboard-2-line"></i>ACR</a>
-                                        <div class="collapse menu-dropdown" id="ACR">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Update ACR Details</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">ACR Report</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Payroll">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-Payroll">Payroll</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="Payroll">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#SetEmployeeAttendance" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SetEmployeeAttendance">Set Employee Attendance</a>
+                                            <div class="collapse menu-dropdown" id="SetEmployeeAttendance">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Set Employee Attendance</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#SetEarningDeduction" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SetEarningDeduction">Set Earning & Deduction</a>
+                                            <div class="collapse menu-dropdown" id="SetEarningDeduction">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Set Earning & Deduction Master</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Update Single Head</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Copy From Previous Month</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#SalaryGenerateReset" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SalaryGenerateReset">Salary Generate / Reset</a>
+                                            <div class="collapse menu-dropdown" id="SalaryGenerateReset">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Salary Generate</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Reset Salary Status</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#Increment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="Increment" data-key="t-Increment"><i class="ri-dashboard-2-line"></i>Increment</a>
-                                        <div class="collapse menu-dropdown" id="Increment">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Add Increment</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Increment List</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">All Employee Increment History</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Cancel Increments</a></li>
+                                        <li class="nav-item">
+                                            <a href="#ArrerCalculation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SalaryGenerateReset">Arrer Calculation</a>
+                                            <div class="collapse menu-dropdown" id="ArrerCalculation">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Calculation</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Auto Calculation</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">DA Arrers</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Manual Entry</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#MontlyPayBill" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="MontlyPayBill">Montly Pay Bill</a>
+                                            <div class="collapse menu-dropdown" id="MontlyPayBill">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Paybill Monthly Branch Wise Bank Advice</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Paybill With All Heads</a></li>
 
-                                            </ul>
-                                        </div>
-                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#PayrollReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="PayrollReports">Payroll Reports</a>
+                                            <div class="collapse menu-dropdown" id="PayrollReports">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="#" class="nav-link">Final Summery Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Monthly Pay Bill Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Bank Advice Letter</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">EPF Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Employee Salary Slip</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">PT Challan Process</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Loan Details</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Form 16</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Type Wise Report </a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Office Wise Arrer EPF Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Month Wise Arrer EPF Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">GPF Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Office Wise Income Tax Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Employee Wise Income Tax Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Employee Final Statement</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Monthly Policy Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">NPS Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Salary Generation Reports</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Single Salary Slip</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Payroll Salary Ledger</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">EDLI for Year (1st Jan)</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">FY Wise Earn Deduction</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Office Wise Monthly Head Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">ESIC Report</a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">Monthly Earning & Deduction Details</a></li>
 
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--Payroll--%>
 
-                                    <li class="nav-item">
-                                        <a href="#AchievementPunishment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="AchievementPunishment" data-key="t-AchievementPunishment"><i class="ri-dashboard-2-line"></i>Achievement / Punishment</a>
-                                        <div class="collapse menu-dropdown" id="AchievementPunishment">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Achievement Entry</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Punishment Entry</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#DepartmentalEnquiry" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="DepartmentalEnquiry" data-key="t-DepartmentalEnquiry"><i class="ri-dashboard-2-line"></i>Departmental Enquiry</a>
-                                        <div class="collapse menu-dropdown" id="DepartmentalEnquiry">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Departmental Enquiry</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Departmental Enquiry List</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#StudentDirectory" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="StudentDirectory">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Student Directory</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="StudentDirectory">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a href="#" class="nav-link">Student Registration</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Student Verification</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Reports</a></li>
 
-                                    <li class="nav-item">
-                                        <a href="#Retirement" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="Retirement" data-key="t-Retirement"><i class="ri-dashboard-2-line"></i>Retirement</a>
-                                        <div class="collapse menu-dropdown" id="Retirement">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Retirement Entry</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Retirement List</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#LeaveRequests" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="LeaveRequests" data-key="t-LeaveRequests"><i class="ri-dashboard-2-line"></i>Leave Requests</a>
-                                        <div class="collapse menu-dropdown" id="LeaveRequests">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Pending Leave</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Approved Leave List</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee On Leave</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Leave Applied By Staff</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Office Wise Balance Leave</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Officers Balance Leave</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Leave Assign Master</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Leave Approval Authority(Single)</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Leave/Tour Authority Office Wise</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    </ul>
+                                </div>
 
-                                    <%-- <li class="nav-item">
-                                        <a href="#TourRequests" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="TourRequests" data-key="t-TourRequests">Tour Requests</a>
-                                        <div class="collapse menu-dropdown" id="TourRequests">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Pending Tour</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Approved / Reject Tour Details</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>--%>
+                            </li>
+                            <%--Student Directory--%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#SchemeManagement" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="SchemeManagement">
+                                    <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Scheme Management</span>
+                                </a>
 
+                                <div class="collapse menu-dropdown dropdown-custom-left" id="SchemeManagement">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a href="#" class="nav-link">Scheme Department Master</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Scheme Master</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Admission Management</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Student Profile Management</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Student Scheme Apply</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Student Profile View/Edit/Lock</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Application For Proposal</a></li>
+                                    </ul>
+                                </div>
 
-                                    <li class="nav-item">
-                                        <a href="#HRMSReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="HRMSReports" data-key="t-HRMSReports">HRMS Reports</a>
-                                        <div class="collapse menu-dropdown" id="HRMSReports">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Details Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Promotion Reports</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Increment Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Retirement Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Transfer Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Compassionate Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">E-Service Book Report</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-
-                                </ul>
-                            </div>
-                        </li>
-                        <%--HRMS--%>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Payroll">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-Payroll">Payroll</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="Payroll">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="#SetEmployeeAttendance" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="SetEmployeeAttendance">Set Employee Attendance</a>
-                                        <div class="collapse menu-dropdown" id="SetEmployeeAttendance">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Set Employee Attendance</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#SetEarningDeduction" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="SetEarningDeduction">Set Earning & Deduction</a>
-                                        <div class="collapse menu-dropdown" id="SetEarningDeduction">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Set Earning & Deduction Master</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Update Single Head</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Copy From Previous Month</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#SalaryGenerateReset" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="SalaryGenerateReset">Salary Generate / Reset</a>
-                                        <div class="collapse menu-dropdown" id="SalaryGenerateReset">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Salary Generate</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Reset Salary Status</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#ArrerCalculation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="SalaryGenerateReset">Arrer Calculation</a>
-                                        <div class="collapse menu-dropdown" id="ArrerCalculation">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Arrer Calculation</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Arrer Auto Calculation</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">DA Arrers</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Arrer Manual Entry</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#MontlyPayBill" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="MontlyPayBill">Montly Pay Bill</a>
-                                        <div class="collapse menu-dropdown" id="MontlyPayBill">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Paybill Monthly Branch Wise Bank Advice</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Paybill With All Heads</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#PayrollReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                            aria-controls="PayrollReports">Payroll Reports</a>
-                                        <div class="collapse menu-dropdown" id="PayrollReports">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item"><a href="#" class="nav-link">Final Summery Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Monthly Pay Bill Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Bank Advice Letter</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">EPF Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Salary Slip</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">PT Challan Process</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Loan Details</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Form 16</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Arrer Type Wise Report </a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Office Wise Arrer EPF Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Month Wise Arrer EPF Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">GPF Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Office Wise Income Tax Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Wise Income Tax Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Employee Final Statement</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Monthly Policy Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">NPS Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Salary Generation Reports</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Single Salary Slip</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Payroll Salary Ledger</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">EDLI for Year (1st Jan)</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">FY Wise Earn Deduction</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Office Wise Monthly Head Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">ESIC Report</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Monthly Earning & Deduction Details</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <%--Payroll--%>
-
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#StudentDirectory" data-bs-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="StudentDirectory">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Student Directory</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="StudentDirectory">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item"><a href="#" class="nav-link">Student Registration</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Student Verification</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Reports</a></li>
-
-                                </ul>
-                            </div>
-
-                        </li>
-                        <%--Student Directory--%>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#SchemeManagement" data-bs-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="SchemeManagement">
-                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Scheme Management</span>
-                            </a>
-
-                            <div class="collapse menu-dropdown dropdown-custom-left" id="SchemeManagement">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item"><a href="#" class="nav-link">Scheme Department Master</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Scheme Master</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Admission Management</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Student Profile Management</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Student Scheme Apply</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Student Profile View/Edit/Lock</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Application For Proposal</a></li>
-                                </ul>
-                            </div>
-
-                        </li>
-                        <%--Scheme Management--%>
-                        <%--  <li class="nav-item">
+                            </li>
+                            <%--Scheme Management--%>
+                            <%--  <li class="nav-item">
                                     <a class="nav-link menu-link" href="#UserManagement" data-bs-toggle="collapse" role="button"
                                         aria-expanded="false" aria-controls="UserManagement">
                                         <i class="ri-apps-2-line"></i><span data-key="t-apps">User Management</span>
                                     </a>
                                   
                                 </li>--%>
-                    </ul>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
                 </div>
-                <!-- Sidebar -->
+
+                <div class="sidebar-background"></div>
             </div>
+            <!-- Left Sidebar End -->
+            <!-- Vertical Overlay-->
+            <div class="vertical-overlay"></div>
 
-            <div class="sidebar-background"></div>
-        </div>
-        <!-- Left Sidebar End -->
-        <!-- Vertical Overlay-->
-        <div class="vertical-overlay"></div>
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
 
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
-        <div class="main-content">
-
-            <div class="page-content">
-                <div class="container-fluid">
-                    <asp:ContentPlaceHolder ID="ContentBody" runat="server">
-                    </asp:ContentPlaceHolder>
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+                        </asp:ContentPlaceHolder>
 
 
+                    </div>
+                    <!-- container-fluid -->
                 </div>
-                <!-- container-fluid -->
-            </div>
-            <!-- End Page-content -->
+                <!-- End Page-content -->
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script>
-                            © Madhya Pradesh State Education Portal 3.0.
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date())</script>
+                                © Madhya Pradesh State Education Portal 3.0.
                        
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by NICSI
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+                                    Design & Develop by NICSI
                            
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
 
-        </div>
-        <!-- end main content-->
+            </div>
+            <!-- end main content-->
 
         </div>
         <!-- END layout-wrapper -->
@@ -1250,7 +1297,7 @@
 
 
         <!--start back-to-top-->
-        <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <button onclick="topFunction()" type="button" class="btn btn-danger btn-icon" id="back-to-top">
             <i class="ri-arrow-up-line"></i>
         </button>
         <!--end back-to-top-->

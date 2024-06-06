@@ -181,7 +181,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+ 
 
         <div class="row page-titles mb-4 PrintNo">
             <div class="col-md-4 align-self-center">
@@ -1805,7 +1805,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
