@@ -80,7 +80,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
+                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
                     <li class="breadcrumb-item active">Action Report on Compassionate Appointment</li>
                 </ol>
             </div>
@@ -220,9 +220,9 @@
                                                                         <br />
                                                                         the Applicant<br />
                                                                         आवेदक की शैक्षणिक योग्यता </th>
-                                                                    <th scope="col">Status of Passing Primary Teacher<br />
+                                                                    <th scope="col">Status of Passing Primary Teacher
                                                                         Eligibility Test for Primary Teacher<br />
-                                                                        प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता  परीक्षा><br />
+                                                                        प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता  परीक्षा<br />
                                                                         उत्तीर्ण की स्थिति</th>
                                                                     <th scope="col">Print Note Sheet Take Action<br />
                                                                         नोटशित  प्रिंट करे  कार्यवाही करे</th>
@@ -296,10 +296,8 @@
                                                             </tfoot>
                                                         </table>
                                                     </div>
-
                                                 </div>
                                             </div>
-
                                         </div>
                                     </fieldset>
                                 </div>
@@ -312,7 +310,6 @@
                 <div class="card  bg-secondary">
                     <div class="card-header">
                         <span><b class="fw-bold">अनुकंपा संबंधी आवेदन पर उचित कार्यवाही दर्ज करें</b></span>
-
                     </div>
                 </div>
                 <div class="card-body ">
@@ -324,11 +321,7 @@
                         </div>
                     </div>
                     <div class="container-fluid">
-
-
                         <div class="card">
-
-
                             <div class="row align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -356,24 +349,15 @@
                                         <label>
                                             Gender<br />
                                             लिंग<span style="color: Red;">*</span></label>
-                                        <%--  <asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
-                                            <asp:ListItem Selected="True" Value="1">Male </asp:ListItem>
-                                            <asp:ListItem Value="2">Female </asp:ListItem>
-
-                                        </asp:DropDownList>--%>
-
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Male" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
-
                                     </div>
                                 </div>
-
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Caste<br />
                                             जाति<span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="SC" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
-
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -382,8 +366,6 @@
                                             Last Posting District<br />
                                             अंतिम पोस्टिंग जिला<span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Vidisha" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
-
-
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -438,7 +420,7 @@
                                     <div class="form-group">
                                         <label>
                                             Number of Family Members of Deceased Employee<br />
-दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या : <span style="color: Red;">*</span></label>
+                                            दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या : <span style="color: Red;">*</span></label>
                                         <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
                                     </div>
@@ -616,84 +598,9 @@
                             </table>
                         </div>
                     </div>
-
-
-
                     <div class="alert alert-success mt-4" style="text-align: left;">
                         <strong><b style="color: white;">परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</b>  </strong>
                     </div>
-                    <%--<div class="row">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table-bordered" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS">
-                                    <thead>
-                                        <tr>
-                                            <th data-class="expand" scope="col">Sr. No. सरल क्र</th>
-                                            <th data-class="phone,tablet" scope="col">Applicant's Name<br />
-                                                आवेदक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Gender<br />
-                                                लिंग</th>
-                                            <th data-hide="phone,tablet" scope="col">Date Of Birth<br />
-                                                जन्म तिथि</th>
-                                            <th data-hide="phone,tablet" scope="col">Mobile No.<br />
-                                                मोबाइल</th>
-                                            <th data-hide="phone,tablet" scope="col">Applicant's Relationship with the Deceased Teacher<br />
-                                                आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                            <th data-hide="phone,tablet" scope="col">Marital Status
-                                            <br />
-                                                वैवाहिक स्थिति</th>
-                                            <th data-hide="phone,tablet" scope="col">Educational Qualification<br />
-                                                शैक्षिक योग्यता</th>
-                                            <th data-hide="phone,tablet" scope="col">Cadre for Appointment<br />
-                                                नियुक्ति हेतु संवर्ग</th>
-                                            <th data-hide="phone,tablet" scope="col">Designation for Appointment<br />
-                                                नियुक्ति हेतु पदनाम </th>
-                                            <th data-hide="phone,tablet" scope="col">Status of Passing Primary Teacher Eligibility Test for Primary Teacher<br />
-                                                प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण  की स्थिति</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblRowNumber">1</span>
-                                                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdCAFMS$ctl02$hdnId" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_hdnId" value="4572" />
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblApplicantName">BRAJESH KUSHWAH</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblAoolicantGender">M</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblappdob">10/08/1997</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblMobileNo">7047701125</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblRelation_Detail">Son</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_LBLMarital_Status">अविवाहित</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_LBLMarital_Status_Qualification">12 PCM  B SC COMPUTER SCIENCE</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblApplied_Post">शैक्षणिक संवर्ग</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblApplied_Designation">प्रयोगशाला शिक्षक</span>
-                                            </td>
-                                            <td>
-                                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblIs_TET"></span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>--%>
                     <div class="col-md-12 table-responsive">
                         <div>
                             <table class="footable table table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_Grd2" style="border-collapse: collapse;">
@@ -774,38 +681,99 @@
                     <div class="alert alert-success mt-4" style="text-align: left;">
                         <b><strong style="color: white;">Action</strong></b>
                     </div>
-
-                    <div class="row">
-
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
                                 <b style="color: black;">Action<br />
                                     कार्रवाई</b>  <span style="color: Red;">*</span></label>
                             <select name="ctl00$ContentBody$ddlkaryvahi" id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
-                                <option value="0">- Select  - </option>
+                                <option value="0">--Select--</option>
                                 <option value="1">आवेदन मे आपत्ति/लंबित किया जाना है</option>
                                 <option value="2">आवेदन स्वीकार  करे </option>
-                                <option value="3">आवेदन फॉरवर्ड करे संभागीय संयुक्त संचालक को </option>
-                                <option value="4">आवेदन फॉरवर्ड करे आयुक्त लोक शिक्षण को </option>
-                                <option value="5">आवेदन फॉरवर्ड करे स्कूल शिक्षा विभाग को </option>
-                                <%--<option value="6">लंबित किया जाना है  </option>--%>
+                                <option value="4">आवेदन फॉरवर्ड करे संभागीय संयुक्त संचालक को </option>
+                                <%--<option value="">आवेदन फॉरवर्ड  करे जिला शिक्षा अधिकारी को  </option>--%>
                             </select>
                         </div>
+                    </div>
+                    <%--new dropdown value--%>
+                    <div class="row align-items-end mt-2">
+                        <div class="row align-items-end" id="DisctrictCollectDetails" style="display: none;">
+                            <div class="col-md-3">
+                                <label class="font-bold">
+                                    To which Post Does the Applicant Want to be Appointed?<br />
+                                    आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
+                                    <option value="">--Select--</option>
+                                 <%--   <option value="1">शैक्षणिक संवर्ग</option>--%>
+                                     <option value="2">लिपिक संवर्ग</option>
+                                    <%--<option value="3">चतुर्थ श्रेणी</option>--%>
+                                </select>
+                            </div>
+                            <div class="col-md-3 " style="display: none" id="DivDesignation">
+                                <label class="font-bold">
+                                    Designation<br />
+                                    पदनाम<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlSapthpatr6" onchange="ShowHide1()">
+                                    <option value="">--Select--</option>
+                                    <option value="1">प्रयोगशाला शिक्षक</option>
+                                    <option value="2">प्राथमिक शिक्षक</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3" style="display: none" id="DivQualificationStatus">
+                                <label class="font-bold">
+                                    Have Passed The Primary Teacher Eligibility Test For Primary Teacher<br />
+                                    क्या प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की है<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlSapthpatr1" onchange="ShowHide2()">
+                                    <option value="">--Select--</option>
+                                    <option value="1">हाँ</option>
+                                    <option value="2">नहीं</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3" style="display: none" id="Divyear">
+                                <label class="font-bold">
+                                    Year of Eligibility Test<br />
+                                    पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>
+                                <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="पात्रता परीक्षा का वर्ष" />
+                            </div>
+                            <div class="col-md-3" style="display: none" id="DivQualification">
+                                <label class="font-bold">
+                                    Professional Qualification
+                                    <br />
+                                    व्यावसायिक योग्यता<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlSapthpatr2">
+                                    <option value="">--Select--</option>
+                                    <option value="D.Ed">D.Ed</option>
+                                    <option value="B.Ed">B.Ed</option>
+                                    <option value="D.Ed + B.Ed Both">D.Ed + B.Ed Both</option>
+                                    <option value="कोई नहीं">कोई नहीं</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="font-bold">
+                                    <b>Remark<br />
+                                        रिमार्क </b><span style="color: Red;">*</span>
+                                </label>
+                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="row align-items-end mt-2">
+                                <div class="col-md-6" style="display: none" id="DivNote">
+                                    <p style="color: brown; font-size: large; font-weight: bolder">विज्ञान संकाय में 10+2 परीक्षा 50% अंक के साथ उत्तीर्ण होने पर पात्रता होगी</p>
+                                </div>
+                            </div>
+                        </div>
+                        <%--new dropdown value--%>
                         <div class="col-md-6" id="RemarkView" style="display: none">
-                            <label>
+                            <label class="font-bold">
                                 <b>Remark<br />
                                     रिमार्क </b><span style="color: Red;">*</span>
                             </label>
                             <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
-
                         <div id="divApattiHai" style="display: none">
-
                             <div class="alert alert-success mt-4 w-100" style="text-align: left;">
                                 <b><strong style="color: white;">पेंडेंसी के लिए आवेदन और कारण  पर की गई  कार्यवाही का विवरण </strong></b>
                             </div>
                             <div class="row">
-
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>
@@ -820,14 +788,12 @@
                                             <asp:ListItem Value="4">आवश्यक दस्तावेज संलग्र  नहीं होना</asp:ListItem>
                                             <asp:ListItem Value="5">आवेदक की शैक्षणिक  योग्यता नहीं होना</asp:ListItem>
                                             <asp:ListItem Value="6">आश्रित  का बालिग्र अर्थात २१ वर्ष से कम होना </asp:ListItem>
-
                                         </asp:DropDownList>
                                     </div>
                                 </div>
-
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>
+                                     <label class="font-bold">
                                             <b>Objection Details<br />
                                                 आपत्ति का विवरण</b><span style="color: Red;">*</span>
                                         </label>
@@ -855,29 +821,41 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            function showHideRemarkView() {
-                                var ddl = document.getElementById('ddlkaryvahi');
-                                var remarkView = document.getElementById("RemarkView");
-
-                                if (ddl.value != "0" && ddl.value != "1") {
-                                    remarkView.style.display = "initial";
-                                    divApattiHai.style.display = "none";
-                                }
-
-                                else if (ddl.value == "1") {
-                                    divApattiHai.style.display = "initial";
-                                    remarkView.style.display = "none";
-                                }
-                                else {
-                                    remarkView.style.display = "none";
-                                    divApattiHai.style.display = "none";
-                                }
-                            }
-                        </script>
-                        <br />
                     </div>
+                    <script type="text/javascript">
+                        function showHideRemarkView() {
+                            var ddl = document.getElementById('ddlkaryvahi');
+                            var remarkView = document.getElementById("RemarkView");
+                            var DisctrictCollectDetails = document.getElementById("DisctrictCollectDetails");
+
+                            if (ddl.value == "1") {
+                                divApattiHai.style.display = "initial";
+                                remarkView.style.display = "none";
+                                DisctrictCollectDetails.style.display = "none";
+                            }
+                            else if (ddl.value == "2" || ddl.value == "3") {
+                                remarkView.style.display = "initial";
+                                divApattiHai.style.display = "none";
+                                DisctrictCollectDetails.style.display = "none";
+                            }
+                            else if (ddl.value == "4") {
+                                DisctrictCollectDetails.style.display = "flex";
+                                remarkView.style.display = "none";
+                                divApattiHai.style.display = "none";
+                            }
+                            else {
+                                remarkView.style.display = "none";
+                                divApattiHai.style.display = "none";
+                                DisctrictCollectDetails.style.display = "none";
+                            }
+                        }
+                    </script>
+                    <%--my script--%>
+                   
+                    <%--my script--%>
+                    <br />
                 </div>
+
                 <div id="Divbutton">
                     <div class="row justify-content-center">
                         <div class="col-md-1 mt-3">
@@ -1048,11 +1026,16 @@
                         <table class="table table-bordered text-center">
                             <thead>
                                 <tr style="text-align: center; padding: 4px">
-                                    <th>Sr. No.<br />सरल क्र.</th>
-                                    <th>Member Name<br />सदस्य का नाम</th>
-                                    <th>Relation With Deceased<br />दिवंगत के साथ संबंध </th>
-                                    <th>Business<br />व्यवसाय</th>
-                                    <th>Date of Birth<br />जन्म दिनांक</th>
+                                    <th>Sr. No.<br />
+                                        सरल क्र.</th>
+                                    <th>Member Name<br />
+                                        सदस्य का नाम</th>
+                                    <th>Relation With Deceased<br />
+                                        दिवंगत के साथ संबंध </th>
+                                    <th>Business<br />
+                                        व्यवसाय</th>
+                                    <th>Date of Birth<br />
+                                        जन्म दिनांक</th>
                                 </tr>
 
                             </thead>

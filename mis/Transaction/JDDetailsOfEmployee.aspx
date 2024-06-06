@@ -228,7 +228,7 @@
                         <div class="form-group">
                             <label>
                                 Number of Family Members of Deceased Employee<br />
-दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या :<span style="color: red">*</span></label>
+                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या :<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>7</option>
                             </select>
@@ -380,13 +380,17 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Application Status <br /> आवेदन की स्थिति<span style="color: red">*</span></label>
+                            <label>Application Status
+                                <br />
+                                आवेदन की स्थिति<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="आवेदन को संभागीय आयुक्त लोक शिक्षण फॉरवर्ड किया गया है" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Remark <br /> टिप्पणी :<span style="color: red">*</span></label>
+                            <label>Remark
+                                <br />
+                                टिप्पणी :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="शाजापुर जिले एवं संभाग में पद रिक्त नहीं होने से" autocomplete="off" />
                         </div>
                     </div>
@@ -405,7 +409,7 @@
                                                     दस्तावेज  </th>
                                                 <th>View Document
                                                     <br />
-                                                    दस्तावेजट देखे</th>
+                                                    दस्तावेज देखे</th>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -486,7 +490,7 @@
 
                     <%--gajendra--%>
                 </div>
-                <div class="row" id="div1">
+                <div class="row align-items-end" id="div1">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
@@ -524,20 +528,88 @@
                     </div>
                     <div class="col-md-2 ">
                         <div class="form-group">
-                            <label>Place of Posting
+                            <label>
+                                Place of Posting
                                 <br />
                                 पोस्टिंग की जगह:<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                 </div>
-                <div class="row" id="div2">
-
+                <div class="row align-items-end" id="div2">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Reason of Rejectance / Return <br /> अस्वीकार्य / वापसी के कारण :<span style="color: red">*</span></label>
+                                To which Post Does the Applicant Want to be Appointed?<br />
+                                आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
+                                <option value="">--Select--</option>
+                                <option value="1">शैक्षणिक संवर्ग</option>
+                               <%-- <option value="2">लिपिक संवर्ग</option>--%>
+                                <option value="3">चतुर्थ श्रेणी</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 " style="display: none" id="DivDesignation">
+                        <div class="form-group">
+                            <label>
+                                Designation<br />
+                                पदनाम<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlSapthpatr6" onchange="ShowHide1()">
+                                <option value="">--Select--</option>
+                                <option value="1">प्रयोगशाला शिक्षक</option>
+                                <option value="2">प्राथमिक शिक्षक</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="display: none" id="DivQualificationStatus">
+                        <div class="form-group">
+                            <label>
+                                Have Passed The Primary Teacher Eligibility Test For Primary Teacher<br />
+                                क्या प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की है<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlSapthpatr1" onchange="ShowHide2()">
+                                <option value="">--Select--</option>
+                                <option value="1">हाँ</option>
+                                <option value="2">नहीं</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="display: none" id="Divyear">
+                        <div class="form-group">
+
+                            <label>
+                                Year of Eligibility Test<br />
+                                पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>
+                            <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="पात्रता परीक्षा का वर्ष" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="display: none" id="DivQualification">
+                        <div class="form-group">
+                            <label>
+                                Professional Qualification
+             <br />
+                                व्यावसायिक योग्यता<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlSapthpatr2">
+                                <option value="">--Select--</option>
+                                <option value="D.Ed">D.Ed</option>
+                                <option value="B.Ed">B.Ed</option>
+                                <option value="D.Ed + B.Ed Both">D.Ed + B.Ed Both</option>
+                                <option value="कोई नहीं">कोई नहीं</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Reason of Rejectance/ Return
+             <br />
+                                अस्वीकार्य / वापसी के कारण :<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="display: none" id="DivNote">
+                            <p style="color: brown; font-size: large; font-weight: bolder">विज्ञान संकाय में 10+2 परीक्षा 50% अंक के साथ उत्तीर्ण होने पर पात्रता होगी</p>
                         </div>
                     </div>
                 </div>
@@ -584,14 +656,92 @@
 
                 <div class="col-md-2">
 
-                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Save</button>
+                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Update</button>
                 </div>
 
 
             </div>
         </div>
     </div>
+    <%--new script of js--%>
+    <script>
+        function ShowHide() {
+            var div1 = document.getElementById("ddlSapthpatr5");
+            var div11 = document.getElementById("DivDesignation");
+            var Div2 = document.getElementById("DivQualificationStatus");
+            var div3 = document.getElementById("DivNote");
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
 
+
+            if (div1.value === '1') {
+                div11.style.display = "block"; // Show the Divbutton
+            }
+
+            else {
+                DivDesignation.style.display = "none";
+                Div2.style.display = "none";
+                div3.style.display = "none";
+                div11.style.display = "none";// Hide the Divbutton
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+        }
+        function ShowHide1() {
+
+            var Div2 = document.getElementById("DivQualificationStatus");
+            var div3 = document.getElementById("DivNote");
+            var Div4 = document.getElementById("ddlSapthpatr6");
+
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+
+
+
+
+            if (Div4.value === '1') {
+
+                div3.style.display = "block";
+                Div2.style.display = "none";
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+            else if (Div4.value === '2') {
+
+                Div2.style.display = "block";
+                div3.style.display = "block";
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+            else {
+                Div2.style.display = "none";
+                div3.style.display = "block";
+                div6.style.display = "none";
+                Div5.style.display = "none";
+                Div5.style.display = "none";
+            }
+        }
+        function ShowHide2() {
+
+            var Div5 = document.getElementById("Divyear");
+            var div6 = document.getElementById("DivQualification");
+            var Div7 = document.getElementById("ddlSapthpatr1");
+            /* var Div5 = document.getElementById("Divbutton");*/
+
+
+            if (Div7.value === '1') {
+
+                div6.style.display = "block";
+                Div5.style.display = "block";
+            }
+
+            else {
+                div6.style.display = "none";
+                Div5.style.display = "none";
+            }
+        }
+    </script>
+    <%--new script of js--%>
     <script>
         function myFunction() {
             document.getElementById("empDetail").style.display = "block";
