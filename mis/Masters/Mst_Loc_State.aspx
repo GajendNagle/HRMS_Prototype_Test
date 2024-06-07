@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <d class="card card-border-primary">
+    <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
@@ -131,6 +131,7 @@
                 </div>
             </fieldset>
         </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
