@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SubMenuCreation.aspx.cs" Inherits="mis_UserManagement_SubMenuCreation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -16,7 +15,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Sub Menu Creation</li>
                     </ol>
@@ -38,7 +37,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Module Name /<br /> मॉड्यूल का चयन करें<span style="color: red">*</span></label>
+                            <label>Select Module Name /<br />
+                                मॉड्यूल का चयन करें<span style="color: red">*</span></label>
                             <select id="dates-field2" class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="1">User Management</option>
@@ -49,7 +49,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Parent Menu /<br /> पेरेंट मेनू का चयन करें</label>
+                            <label>Select Parent Menu /<br />
+                                पेरेंट मेनू का चयन करें</label>
                             <select id="ddlparentmenu" class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="1">Role Master</option>
@@ -74,7 +75,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Controller Name /<br /> नियंत्रक का चयन करें<span style="color: red">*</span></label>
+                            <label>Select Controller Name /<br />
+                                नियंत्रक का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">Select</option>
                                 <option value="1">Role Master</option>
@@ -84,7 +86,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select View Name /<br /> व्यू नाम का चयन करें<span style="color: red">*</span></label>
+                            <label>Select View Name /<br />
+                                व्यू नाम का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">Select</option>
                                 <option value="1">Index</option>
@@ -94,15 +97,16 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Module Sequence No. /<br /> मॉड्यूल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Module Sequence No. /<br />
+                                मॉड्यूल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Menu Sequence No." />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Menu Icon /<br /> 
-मेनू आइकॉन का चयन करें<span style="color: red">*</span></label>
+                                Select Menu Icon /<br />
+                                मेनू आइकॉन का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="1">StateMaster.png</option>
@@ -152,16 +156,23 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No./<br /> सरल क्र.</th>
-                                    <th>Module Name/<br /> मोड्यूल का नाम</th>
-                                    <th>Parent Menu Name /<br /> पेरेंट मेनू का नाम</th>
+                                    <th>Sr.No./<br />
+                                        सरल क्र.</th>
+                                    <th>Module Name/<br />
+                                        मोड्यूल का नाम</th>
+                                    <th>Parent Menu Name /<br />
+                                        पेरेंट मेनू का नाम</th>
                                     <th>Sub Menu Name(In English)</th>
                                     <th>सब मेनू का नाम (हिंदी में)</th>
-                                    <th>Controller Name /<br /> नियंत्रक का नाम</th>
-                                    <th>View Name/<br /> व्यू नाम</th>
+                                    <th>Controller Name /<br />
+                                        नियंत्रक का नाम</th>
+                                    <th>View Name/<br />
+                                        व्यू नाम</th>
                                     <th>Menu Sequence No. / मेनू अनुक्रम संख्या</th>
-                                    <th>Menu Icon /<br /> मेनू आइकॉन</th>
-                                    <th>Status(Active / InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Menu Icon /<br />
+                                        मेनू आइकॉन</th>
+                                    <th>Status(Active / InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
