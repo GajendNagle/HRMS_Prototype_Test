@@ -201,15 +201,29 @@ ACR report filled by the reporting officer / रिपोर्टिंग अ�
                             </div>
                         </div>
                         <hr style="height: 3px; border-width: 10px; color: black; background-color: black;" />
+                                                   
                         <div class="fw-bold">Please give comment of agreement or disagreement on the achievement mentioned by the officer reported upon in self-assessment. Please give reasons in case of disagreement and refer to communication made to the officer reported upon in this regard.</div>
                         <div class="fw-bold">(आवेदक अधिकारी/शिक्षक द्वारा स्वमूल्यांकन में उल्लेखित उपलब्धि के संबंध में सहमति/असहमति की टिप्पणी | असहमति की स्थिति में कारण एवं इस संबंध में किये गये पत्राचार का विवरण एवं स्केल पॉइंट में प्रदर्शन )</div>
-
+                       
                         <div class="row">
+                          
                             <div class="col-md-12">
                                 <h3 class="text-center mt-3 font-bold"><u>:: Information filled by reporting officer ::</u></h3>
                                 <h5 class="text-center  mb-3 font-bold"><u>:: प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरी गई जानकारी ::</u></h5>
                             </div>
+                                                                                                        <div class="col text-start" >
+    <span class="fw-bold">वार्षिक प्रतिवेदन अवधि वर्ष :-</span>
+
+    <span class="fw-bold">2023-2024</span>
+</div>
+
+<div class="col text-end">
+    <span class="fw-bold">आवेदन दिनाँक:-</span>
+    <span class="fw-bold">09-03-2024</span>
+
+</div>
                         </div>
+                                                                           
                         <%--  <div class="row">
                             <div class="col-md-4">
                                 <label class="fw-bold fs-5">Employee Name/Unique ID</label>

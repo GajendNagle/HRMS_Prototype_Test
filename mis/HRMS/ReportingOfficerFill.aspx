@@ -441,7 +441,7 @@
                                     Allegiance
                                     <br />
                                     सन्निष्ठा<span style="color: red">*</span></label>
-                                <textarea class="form-control mt-1   fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" required name="message"></textarea>
+                                <textarea class="form-control mt-1   fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" ></textarea>
                             </div>
                             <div class="col-md-4">
                                 <label>
@@ -478,7 +478,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="form-group">
-                            <button  class=" btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <button type="button"  class=" btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                                Save
                             </button>
                             <a href="ReportingOfficerFill.aspx" class="btn btn-danger  btn-rounded">Clear</a>
@@ -508,7 +508,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Accepting Authority Officer Unique ID <br />स्वीकारकर्ता प्राधिकारी की यूनिक आईडी <span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction1()"></asp:TextBox>
+                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction1()" AutoComplete="off"></asp:TextBox>
 
                             </div>
 
@@ -1550,14 +1550,18 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Record Send Successfully!',
-                                timer: 2000
-                                // animation: false,
+                                text: 'Record Saved Successfully!',
+                                timer: 2000,
+
+                                // animation: false,<a href="">TeacherFillReport.aspx</a>
                                 // customClass: {
-                                //     popup: 'animated tada'
+                                //     popup: 'animated tada'<a href="ReportingOfficerFill.aspx">ReportingOfficerFill.aspx</a>
                                 // }
                             }
-                            )
+                            ).then(() => {
+                                // Redirect to another page after success message is closed
+                                window.location.href = 'ReportingOfficerFill.aspx';
+                            });
                             var x = document.getElementById("EmployeeDetails2");
                             if (x.style.display === "none") {
                                 x.style.display = "block";

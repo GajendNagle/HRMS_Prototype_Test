@@ -4,10 +4,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <style>
-        .span {
-            color: red;
-        }
-
         #workdescription, #workdescription1, #workdescription2, #workdescription3, #workdescription4, #workdescription5, #workdescription6, #workdescription7, #workdescription8 {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
@@ -123,18 +119,18 @@
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                         <th rowspan="2">S.No.<br />
                                             सरल.क्र </th>
-                                        <th rowspan="2">Class Being Taught<br />
+                                        <th rowspan="2">Class being taught<br />
                                             पढाई जाने वाली कक्षा
                                            
                                         </th>
                                         <th colspan="2">Enrolment<br />
                                             नामांकन</th>
-                                        <th rowspan="2">Average Annual Attendance in Percentege<br />
-                                            वार्षिक औसत उपिस्थिति</th>
+                                        <th rowspan="2">Average Annual attendance in Percentege<br />
+                                            वार्षिक औसत उपिस्थिति प्रतिशत में</th>
                                         <th rowspan="2">Remark
                                             <br />
                                             टिप्पणी</th>
-                                        <th rowspan="2">Action</th>
+                                        <th rowspan="2" style="display: none;" id="action">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -149,7 +145,7 @@
                                         <td>1
                                         </td>
                                         <td>
-                                            <select cssclass="form-control select2" id="ddlClass" class="form-control select2" style="width: 190px;">
+                                            <select cssclass="form-control select2" id="ddlClass" class="form-control select2" style="width: 190px;" onchange="myaddbtn()">
                                                 <option value="0">--Select--</option>
                                                 <option>1st class/कक्षा पहली</option>
                                                 <option>2nd class/कक्षा दूसरी</option>
@@ -165,7 +161,6 @@
                                                 <option>12th class/कक्षा बरवी</option>
                                             </select></td>
                                         <td>
-                                            <%--<asp:TextBox runat="server" ID="a1" CssClass="form-control"></asp:TextBox>--%>
                                             <input maxlength="4" autocomplete="off" id="a1" class="form-control datepickerYear" type="text" data-val="true" required="required" />
                                         </td>
                                         <td>
@@ -175,170 +170,14 @@
                                             <input type="email" id="a3" class="form-control" style="width: 160px;"></td>
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                        <td>
+                                        <td style="display: none;" id="btnaction">
 
                                             <button type="button" onclick="addData()" class="btn btn-success">Add</button>
                                         </td>
 
 
                                     </tr>
-                                    <%--    <tr valign="middle" style="display:none" id="tr1">
-                                        <td>2</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription4" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr2">
-                                        <td>3</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription5" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                       
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr3">
-                                        <td>4</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription6" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr4">
-                                        <td>5</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription7" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr5">
-                                        <td>6</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr6">
-                                        <td>7</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription7" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr7">
-                                        <td>8</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr8">
-                                        <td>9</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr9">
-                                        <td>10</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription10" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr10">
-                                        <td>11</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr11">
-                                        <td>12</td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                        <td>
-                                            <textarea class="form-control mt-1" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-                                    </tr>
-                                    <tr valign="middle" style="display:none"  id="tr12">
-     <td>13</td>
-     <td>
-         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-     <td>
-         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-     <td>
-         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-     <td>
-         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-     <td>
-         <textarea class="form-control mt-1" id="workdescription13" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
- </tr>--%>
+
                                 </tbody>
                             </table>
                         </div>
@@ -381,7 +220,7 @@
                                             लक्ष्य (प्रतिशत में)</th>
                                         <th>Achievement (In % age)<br />
                                             उपलब्धि (प्रतिशत में)</th>
-                                        <th>Action</th>
+                                        <th style="display: none;" id="action2">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -389,8 +228,8 @@
                                         <td>1</td>
                                         <td>
                                             <%--<asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>--%>
-                                            <select name="message" cssclass="form-control select2" id="ddlClass2" class="form-control select2" style="width: 190px;">
-                                                <option value="">--Select--</option>
+                                            <select cssclass="form-control select2" id="ddlClass2" class="form-control select2" style="width: 190px;" onchange="myaddbtn1()">
+                                                <option value="0">--Select--</option>
                                                 <option>1st class/कक्षा पहली</option>
                                                 <option>2nd class/कक्षा दूसरी</option>
                                                 <option>3rd class/कक्षा तीसरी</option>
@@ -406,14 +245,14 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <input name="message" type="text" id="b1" class="form-control" /></td>
+                                            <input type="email" id="b1" class="form-control"></td>
                                         <td>
-                                            <input name="message" type="text" placeholder="100%" id="b2" class="form-control text-center" /></td>
+                                            <input type="email" id="b2" placeholder="100%" class="form-control text-center"></td>
                                         <td>
-                                            <input name="message" type="text" id="b3" class="form-control" /></td>
-                                        <td>
+                                            <input type="email" id="b3" class="form-control"></td>
+                                        <td style="display: none;" id="btnaction2">
 
-                                            <button type="submit" onclick="addData1()" class="btn btn-success">Add</button></td>
+                                            <button type="button" onclick="addData1()" class="btn btn-success">Add</button></td>
 
                                     </tr>
 
@@ -423,12 +262,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="message">
-                                Reasons, if any, For Not Completing the Target 
+                            <label>
+                                Reasons, if any, for not completing the target 
                                 <br />
-                                लक्ष्य  प्राप्ति न होने के करण
-                                <span class="span">*</span></label>
-                            <textarea name="message" class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maximum 100 words"></textarea>
+                                लक्ष्य  प्राप्ति न होने के करण<span style="color: red">*</span></label>
+                            <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons  Maxmum 100 words"></textarea>
                         </div>
                     </div>
                 </fieldset>
@@ -436,7 +274,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-3 text-center mt-4">
                         <div class="form-group">
-                            <button type="submit" class="Alert-Save2 btn btn-success btn-rounded ">
+                            <button type="button" class="Alert-Save2 btn btn-success btn-rounded ">
                                 Save/Next
                             </button>
                             <a href="TeacherFillReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
@@ -463,16 +301,20 @@
                      Student<br />
                                             छात्र संख्या
                                         </th>
-                                        <th colspan="5">Previous Class Annual Examination Result Grade Wise Student Number<br />पूर्व कक्षा के परीक्षा परिणाम के अनुसार छात्रों की ग्रेडवार संख्या
+                                        <th colspan="5">Previous class annual
+examination Result grade
+wises Student number<br />
+                                            पूर्व कक्षा के परीक्षा परिणाम के
+अनुसार छात्रों की ग्रेडवार संख्या
                                         </th>
-                                        <th colspan="5">Achievement on the Basis
-of Annual Examination Result
+                                        <th colspan="5">Achievement on the basis
+of annual examination result
                                             <br />
                                             वार्षिक परीक्षा के
 आधार पर उपलब्धि<br />
                                             (Student in Grade)<br />
                                             (ग्रेडवार छात्र संख्या)</th>
-                                        <th>Action</th>
+                                        <th style="display: none;" id="action3">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -510,7 +352,7 @@ of Annual Examination Result
                                         <td>1
                                         </td>
                                         <td>
-                                            <select class="form-control select2" style="width: 70px;" id="ddlClass3">
+                                            <select class="form-control select2" style="width: 70px;" id="ddlClass3" onchange="myaddbtn2()">
                                                 <option value="0">--Select--</option>
                                                 <option>1st class/कक्षा पहली</option>
                                                 <option>2nd class/कक्षा दूसरी</option>
@@ -550,362 +392,12 @@ of Annual Examination Result
                                             <input type="email" id="c11" class="form-control" style="width: 70px;"></td>
                                         <td>
                                             <input type="email" id="c12" class="form-control" style="width: 70px;"></td>
-                                        <td>
+                                        <td style="display: none;" id="btnaction3">
 
                                             <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
 
                                     </tr>
-                                    <%--     <tr valign="middle">
-                                        <td>2
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
 
-                                    </tr>
-
-                                    <tr valign="middle">
-                                        <td>3
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>4
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>5
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>6
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>7
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>8
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>9
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>10
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>11
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>12
-                                        </td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-                                        <td>
-                                             <input type="email" id="c3" class="form-control" Style="width: 70px;"></td>
-
-
-                                    </tr>--%>
                                 </tbody>
                             </table>
 
@@ -916,10 +408,10 @@ of Annual Examination Result
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                                Reasons of Not Achieving Target
+                                Reasons Of Not achieving target
                                 <br />
-                                लक्ष्य  से कम उपलब्धि के करण <span class="span">*</span></label>
-                            <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maximum 100 words"></textarea>
+                                लक्ष्य  से कम उपलब्धि के करण<span style="color: red">*</span></label>
+                            <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maxmum 100 words"></textarea>
                         </div>
                     </div>
 
@@ -952,8 +444,8 @@ of Annual Examination Result
                 </h4>
                 <span class="fw-bold">कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्य का विवरण दे:-</span>
                 <fieldset>
-                    <legend>Role in academic 
-                        <br />
+                    <legend>Role in academic/ 
+                      
                         अकादमिक कार्यो में भूमिका</legend>
                     <div class="row ">
                         <div class="col-md-4">
@@ -1087,13 +579,12 @@ of Annual Examination Result
                 </div>
                 <br />
                 <fieldset>
-                    <legend>Any Other Work Which You Want to Mention as an Outstanding Contribution / 
-                        कोई अन्य कार्य जिसे आप एक उत्कृष्ट योगदान के रूप में उल्लेख करना चाहते है|</legend>
+                    <legend>Any Other Work Which You Want to Mention as an Outstanding Contribution / कोई अन्य कार्य जिसे आप एक उत्कृष्ट योगदान के रूप में उल्लेख करना चाहते है|</legend>
                     <div class="row">
                         <div class="col-md-12">
                             <label>
                             </label>
-                            <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter  Other Work Outstanding Contribution in Maximum 100 words"></textarea>
+                            <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter  Other Work Outstanding Contribution in Maxmum 100 words"></textarea>
                         </div>
                     </div>
 
@@ -1180,6 +671,40 @@ of Annual Examination Result
             //document.getElementById("demo").innerHTML = "You selected: " + x;
         }
     </script>
+    <script>
+        document.getElementById('btnaction').style.display = "block";
+
+
+        function myaddbtn() {
+            var ForwordTo = document.getElementById("ddlClass").value;
+            if (ForwordTo != "0") {
+                document.getElementById('<%=action.ClientID%>').style.display = "table-cell";
+
+                document.getElementById('<%=btnaction.ClientID%>').style = "display:table-cell";
+            }
+        }
+
+    </script>
+    <script>
+
+
+        function myaddbtn1() {
+            var ForwordTo = document.getElementById("ddlClass2").value;
+            if (ForwordTo != "0") {
+                document.getElementById('<%=action2.ClientID%>').style.display = "table-cell";
+
+                document.getElementById('<%=btnaction2.ClientID%>').style = "display:table-cell";
+            }
+        }
+    </script>
+    <script>function myaddbtn2() {
+            var ForwordTo = document.getElementById("ddlClass3").value;
+            if (ForwordTo != "0") {
+                document.getElementById('<%=action3.ClientID%>').style.display = "table-cell";
+
+                document.getElementById('<%=btnaction3.ClientID%>').style = "display:table-cell";
+    }
+}</script>
     <script>
         debugger
         function
@@ -1365,14 +890,24 @@ of Annual Examination Result
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Record Send Successfully!',
-                                timer: 2000
-                                // animation: false,
+                                text: 'Record Saved Successfully!',
+                                timer: 2000,
+
+                                // animation: false,<a href="">TeacherFillReport.aspx</a>
                                 // customClass: {
                                 //     popup: 'animated tada'
                                 // }
-                            })
-
+                            }
+                            ).then(() => {
+                                // Redirect to another page after success message is closed
+                                window.location.href = 'TeacherFillReport.aspx';
+                            });
+                            var x = document.getElementById("EmployeeDetails2");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "block";
+                            }
                         }
                     })
                 }),
@@ -1410,9 +945,7 @@ of Annual Examination Result
                             }
                         })
                     }),
-
                     $('.Alert-Save2').click(function () {
-                        // if Reasons, if any, fro not completing the target empty not then
                         Swal.fire({
                             title: 'Are you sure?',
                             text: "Do you want to Save  this record ?",
@@ -1445,9 +978,6 @@ of Annual Examination Result
 
                             }
                         })
-
-                        // else
-
                     }), $('.Alert-Save3').click(function () {
                         Swal.fire({
                             title: 'Are you sure?',
@@ -1498,7 +1028,6 @@ of Annual Examination Result
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
         }</script>
-
     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
@@ -1521,7 +1050,6 @@ of Annual Examination Result
                 alert("Please enter a valid year.");
             }
         });
-
         $('.datepickerYear2').datepicker({
             format: "yyyy",
             minViewMode: 2,
@@ -1541,7 +1069,6 @@ of Annual Examination Result
                 alert("Please enter a valid year.");
             }
         });
-
         // Function to set default value to current financial year
         function setDefaultFinancialYear() {
             var currentDate = new Date();
@@ -1550,11 +1077,9 @@ of Annual Examination Result
             var financialYear = currentYear + '-' + (nextYear % 100);
             $(".datepickerYear").val(financialYear);
         }
-
         // Set default value to current financial year on page load
         $(document).ready(function () {
             //setDefaultFinancialYear();
         });</script>
-
 </asp:Content>
 

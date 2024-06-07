@@ -51,7 +51,7 @@
                         <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                         <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
                        <li class="breadcrumb-item"><a href="ConfedicialReportNotes.aspx" title="click to go on">Annual Confidential Report (ACR)</a></li>
- <li class="breadcrumb-item active">Report</li>
+                       <li class="breadcrumb-item active">Report</li>
                     </ol>
                 </div>
             </div>
@@ -235,15 +235,11 @@
                 </div>
                 <br />
                 <div class="modal-footer justify-content-center" id="button">
-
                     <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </fieldset>
-
         </div>
-
-
     </div>
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -286,11 +282,10 @@
                                                 <div class="col text-end">
                                                     <span class="fw-bold">आवेदन दिनाँक:-</span>
                                                     <span class="fw-bold">09-03-2024</span>
-
                                                 </div>
-                                                                       <div class="col-md-12 mb-5">
+                            <div class="col-md-12 mb-5">
                            <h4 class="text-center mt-3 font-bold"><u>: : Part-3 Review (To Be Filled By Reviewing Authorities) : :</u></h4>
-                           <h6 class="text-center mt-2 font-bold"><u>: : भाग-3 समीक्षा (समीक्षक अधिकारी द्वारा भरा जाये) : :</u></h6>
+                           <h6 class="text-center mt-2 font-bold"><u>: : भाग-3 समीक्षक अधिकारी द्वारा भरा जाये : :</u></h6>
                        </div>
                        <table class="table table-bordered modal-table table-st fs-5">
                            <tr class="mt-3">
@@ -301,37 +296,33 @@
                            </tr>
                            <tr>
                                <th> If no or agree partially give reasons for disagreement<br />
-यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण</th>
+                                      यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण</th>
                                <td class="text-center ">Nil</td>
                            </tr>
-
                            <tr>
-
                                <th>Grading<br />ग्रेड</th>
                                <td class="text-center ">Outstanding/उत्कृष्ट</td>
                            </tr>
-
-
                        </table>
-
-                                            </div>
+                                     </div>
 
                                             <h3 class="text-center mt-4 mb-4 font-bold"><u>:: Information filled by the Accepting Authority::<br />
-                                                <span class="fs-5">:: स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</span></u></h3>
+                                                <span class="fs-5">:: भाग-4 स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</span></u></h3>
                                         </div>
                                         <table class="table table-bordered table-st fs-5">
                                             <tr class="mt-3">
 
-                                                <th>कर्मचारी आई.डी/नाम</th>
+                                                <th>Employee Name Unique ID
+<br />कर्मचारी का नाम यूनिक आई.डी</th>
                                                 <td>सिया वर्मा/EDP4454445</td>
                                             </tr>
                                             <tr>
-                                                <th>क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
+                                                <th> Do you agree with the remarks of the reporting officer ?<br />क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
                                                 <td>YES/हँ</td>
                                             </tr>
                                             <tr>
 
-                                                <th>यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण </th>
+                                                <th> If no or agree partially give reasons for disagreement<br />यदि नही या आंशिक रूप से सहमत होने पर बसहमति का कारण </th>
                                                 <td>Nil</td>
                                             </tr>
                                             <tr class="mt-3">

@@ -15,32 +15,7 @@
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
-        /*.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-            background-color: #16603ae3;
-        }
-
-        .profileimage {
-            display: block;
-            height: 6.2rem;
-            margin-left: 5rem;
-        }
-
-        html body .m-t-30 {
-            margin-top: 0px;
-        }
-
-        .tab-menu {
-            color: #313132;
-            font-weight: 600 !important;
-            margin-left: 1px !important;
-            border: 1px solid #a5a3a3 !important;
-            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out !important;
-        }
-
-            .tab-menu:hover {
-                color: #16603ae3;
-            }*/
-
+      
         #ddlPosition {
             position: relative;
             bottom: 20px;
@@ -57,8 +32,8 @@
                     <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                     </u>
                 </p>
-                <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance<br />
-                    भाग चार-स्वीकृतकर्ता</h6>
+               <%-- <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance<br />
+                    भाग चार-स्वीकृतकर्ता</h6>--%>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -225,9 +200,9 @@
             </fieldset>
             <fieldset runat="server" id="Fieldset2" visible="false">
 
-                <legend>Part-3 Review (To Be Filled By Reviewing Authorities)<br />  भाग-3 समीक्षा
+                <legend>Part-3 Review To Be Filled By Reviewing Authorities/ भाग-3
         
-                    (समीक्षक अधिकारी द्वारा भरा जाये)  </legend>
+                    समीक्षक अधिकारी द्वारा भरा जाये </legend>
 
 
                 <div class="row">
@@ -280,7 +255,7 @@
 
                     </div>
                 </div>
-            </fieldset>
+            </fieldset><br />
 
             <div runat="server" id="Fieldset1" visible="false">
                 <%-- <div class="ROW">
@@ -290,12 +265,13 @@
                     </div>
                 </div>--%>
                 <fieldset>
-                    <legend>To Be Filled By Accepting Authority / स्वीकृत अधिकारी द्वारा भरा जाये</legend>
+                    <legend>PART-4 Acceptance
+                   To Be Filled By Accepting Authority /  भाग-4 स्वीकृत अधिकारी द्वारा भरा जाये</legend>
                     <div class="row">
                         <div class="col-md-4">
                             <label class="mt-3 fw-bold">
                                 Employee Name/Unique ID<br />
-                                कर्मचारी का नाम/कर्मचारी आई.डी<span style="color: red">*</span></label>
+                                कर्मचारी का नाम/ यूनिक आई.डी<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control mt-2 fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
                         </div>
                         <div class="col-md-4 mt-4">
@@ -313,7 +289,7 @@
                         <div class="col-md-4 mt-4">
                             <label>
                                 If no or agree partially give reasons for disagreement<br />
-                                यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण<span style="color: red">*</span>
+                                यदि नही या आंशिक रूप से सहमत होने पर बसहमति का कारण<span style="color: red">*</span>
                             </label>
                             <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
                             <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
@@ -439,14 +415,7 @@
 
                                     </div>
                                 </div>
-                                <%--  <div class="col-md-3">
-    <div class="form-group">
-        <label>Date of Birth(जन्मतिथि)/ शब्दों में <span class="fa-pull-right" style="color: red">*</span> </label>
-        <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
-
-    </div>
-</div>--%>
-                                <div class="col-md-3">
+                              <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             <br />
@@ -1515,106 +1484,17 @@
                                 </div>
                             </fieldset>
 
-                        <%--    <fieldset style="position: relative; right: 10px;">
-
-                                <legend>Part-3 Review / भाग-3 समीक्षा
-                                    <br />
-                                    (समीक्षक अधिकारी द्वारा भरा जाये)  </legend>
-
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label>
-                                            Do you agree with the remarks of the reporting officer ?<br />
-                                            क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</label>
-                                        <asp:DropDownList runat="server" CssClass="fw-bold form-control select2">
-
-                                            <asp:ListItem>Yes/हाँ</asp:ListItem>
-                                            <asp:ListItem>No/नही</asp:ListItem>
-                                            <asp:ListItem>Partially/आंशिक</asp:ListItem>
-
-                                        </asp:DropDownList>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>
-                                            If no or agree partially give reasons for disagreement<br />
-                                            यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण
-                                        </label>
-                                        <textarea class="form-control fw-bold" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <label>
-                                            Grading<br />
-                                            ग्रेड</label>
-                                        <asp:DropDownList runat="server" CssClass="fw-bold form-control select2">
-
-                                            <asp:ListItem>Outstanding / उत्कृष्ट</asp:ListItem>
-                                            <asp:ListItem>Very good / बहुत अच्छा</asp:ListItem>
-                                            <asp:ListItem>good / अच्छा</asp:ListItem>
-                                            <asp:ListItem>Satisfactory / संतोषप्रद</asp:ListItem>
-                                            <asp:ListItem>Below satisfaction / असंतोषप्रद</asp:ListItem>
-
-                                        </asp:DropDownList>
-                                    </div>
-                                </div>
-
-
-                            </fieldset>--%>
-                            <%--   <div class="justify-content-center" style="position: relative; left: 500px;" id="button">
-                   <div class="modal-footer justify-content-center" style="display: none;" id="buttons">
-                       <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                   </div>
-               </div>--%>
                         </fieldset>
                     </div>
                 </div>
             </div>
 
-            <%--  <div class="row">
-                   <div class="col-5"></div>
-                   <div class="col-md-3 text-center" style="position: relative; top: 20px;">
-                       <div class="form-group">
-                           <button type="button" class="Alert-Save btn btn-success btn-rounded  ">
-                               Send to Officer
-                           </button>
-
-
-                           <a href="ReportingOfficerFill.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                       </div>
-                   </div>
-               </div>--%>
+       
         </div>
     </div>
 
 
-    <%-- ////Remark--%>
-    <%--<div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header" style="background-color: #1B5B5C; color: white">
-                    <h4 class="modal-title">Add Remark For Reject ACR Report </h4>
-                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal Body -->
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Remark<span style="color: red">*</span></label>
-                        <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject ACR Report"></textarea>
-                    </div>
-                </div>
-                <!-- Modal Footer -->
-                <div class="modal-footer justify-content-center">
-
-                    <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
-                    <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>--%>
+   
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
