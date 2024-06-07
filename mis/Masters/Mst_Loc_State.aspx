@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter State Code No. / राज्य कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter State Code No. /<br /> राज्य कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -102,11 +102,11 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
+                                    <th>Sr.No. /<br /> सरल क्र.</th>
                                     <th>State Name</th>
                                     <th>राज्य का नाम</th>
-                                    <th>State Code No. / राज्य कोड संख्या</th>
-                                    <th>Status</th>
+                                    <th>State Code No. /<br /> राज्य कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

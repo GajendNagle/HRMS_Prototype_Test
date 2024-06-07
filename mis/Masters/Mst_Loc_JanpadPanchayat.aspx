@@ -44,7 +44,7 @@
                 <legend>Add Janpad Panchayat / जनपद पंचायत जोड़े</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label>Select State Name / राज्य का चयन करे<span style="color: red">*</span></label>
+                        <label>Select State Name /<br /> राज्य का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Rajasthan">Rajasthan</option>
@@ -80,7 +80,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Division Name / संभाग का चयन करे<span style="color: red">*</span></label>
+                        <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -95,7 +95,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select District Name / जिला का चयन करे<span style="color: red">*</span></label>
+                        <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -151,7 +151,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Block Name / विकासखण्ड का चयन करे<span style="color: red">*</span></label>
+                        <label>Select Block Name /<br /> विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Agar">Agar</option>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Janpad Panchayat Code No./ जनपद पंचायत कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Janpad Panchayat Code No./<br /> जनपद पंचायत कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -228,15 +228,15 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>State Name / राज्य का नाम</th>
-                                    <th>Division Name / संभाग का नाम</th>
-                                    <th>District Name जिला का नाम]</th>
-                                    <th>Block Name / विकासखण्ड का नाम</th>
+                                    <th>Sr.No. /<br /> सरल क्र.</th>
+                                    <th>State Name /<br /> राज्य का नाम</th>
+                                    <th>Division Name /<br /> संभाग का नाम</th>
+                                    <th>District Name /<br />जिला का नाम</th>
+                                    <th>Block Name /<br /> विकासखण्ड का नाम</th>
                                     <th>Janpad Panchayat Name</th>
                                     <th>जनपद पंचायत का नाम</th>
-                                    <th>Janpad Panchayat Code No. /जनपद पंचायत कोड संख्या</th>
-                                    <th>Status(Active/InActive) /स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Janpad Panchayat Code No. /<br />जनपद पंचायत कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

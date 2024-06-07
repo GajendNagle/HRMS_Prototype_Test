@@ -45,7 +45,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name / संभाग का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name / जिला का चयन करे<span style="color: red">*</span></label>
+                            <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Assembly Code No.<span style="color: red">*</span></label>
+                            <label>Enter Assembly Code No. /<br />विधानसभा कोड संख्या जोड़े<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -175,13 +175,13 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>Division Name / संभाग का नाम</th>
-                                    <th>District Name /  जिले का नाम</th>
+                                    <th>Sr.No. /<br /> सरल क्र.</th>
+                                    <th>Division Name /<br /> संभाग का नाम</th>
+                                    <th>District Name /<br />  जिले का नाम</th>
                                     <th>Parliamentary Name (In English)</th>
                                     <th>संसद का नाम(हिंदी में)</th>
-                                    <th>Parliamentary Code No. / लोकसभा कोड संख्या</th>
-                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Parliamentary Code No. /<br /> लोकसभा कोड संख्या</th>
+                                    <th>Status(Active / InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

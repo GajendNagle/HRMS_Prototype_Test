@@ -46,7 +46,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select State Name / राज्य का चयन करे<span style="color: red">*</span></label>
+                            <label>Select State Name /<br> राज्य का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Rajasthan">Rajasthan</option>
@@ -84,7 +84,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Select Division Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Division Name (In English)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="Enter Division Name" />
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Select Division Code No. / संभाग कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Select Division Code No. /<br> संभाग कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Code No." />
                         </div>
                     </div>
@@ -141,12 +141,12 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>State Name / राज्य का नाम</th>
+                                    <th>Sr.No. /<br> सरल क्र.</th>
+                                    <th>State Name /<br> राज्य का नाम</th>
                                     <th>Division Name</th>
                                     <th>संभाग का नाम</th>
-                                    <th>Division Code No. / संभाग कोड संख्या</th>
-                                    <th>Status(Active/InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Division Code No. /<br> संभाग कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br> स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
