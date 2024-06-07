@@ -7311,7 +7311,7 @@ html {
 label {
     font-weight: var(--vz-font-weight-medium);
     margin-bottom: .5rem;
-    font-size:medium;
+    font-size: medium;
 }
 
 b, strong {
@@ -8808,12 +8808,13 @@ a, button {
     }
 
 .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    font-size: 15px;
-    line-height: 15px;
-    content: "\f0140";
-    font-family: "Material Design Icons"
+    content: "\f0142";
+    rotate: 90deg;
+    font-family: "Material Design Icons";
+}
+
+.topbar .navbar-nav {
+    padding-left: 16px;
 }
 
 .dropdown-menu {
