@@ -97,7 +97,7 @@
                                         <td>बालक</td>
                                         <td>1</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -105,7 +105,7 @@
                                         <td>बालिका</td>
                                         <td>2</td>
                                         <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -113,7 +113,7 @@
                                         <td>सह-शिक्षा</td>
                                         <td>3</td>
                                         <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                 </table>
                             </div>

@@ -90,21 +90,21 @@
                                         <td>हिन्दू</td>
 
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Muslim</td>
                                         <td>मुस्लिम</td>
                                         <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Sikh</td>
                                         <td>सिख </td>
                                         <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
                                     <tr>
@@ -112,7 +112,7 @@
                                         <td>Christian</td>
                                         <td>ईसाई </td>
                                         <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
                                 </table>

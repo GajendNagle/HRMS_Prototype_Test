@@ -91,7 +91,7 @@
                                         <td>सी.बी.एस.ई.</td>
                                         <td>01</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -99,7 +99,7 @@
                                         <td>राज्य बोर्ड</td>
                                         <td>02</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
                                     <tr>
@@ -108,7 +108,7 @@
                                         <td>आई.सी.एस.ई.</td>
                                         <td>03</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
                                     <tr>
@@ -117,7 +117,7 @@
                                         <td>अंतर्राष्ट्रीय बोर्ड</td>
                                         <td>04</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
@@ -125,7 +125,7 @@
                                         <td>अन्य बोर्ड</td>
                                         <td>05</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
@@ -133,7 +133,7 @@
                                         <td>सीबीएसई और राज्य बोर्ड दोनों</td>
                                         <td>06</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
@@ -141,7 +141,7 @@
                                         <td>मदरसा बोर्ड</td>
                                         <td>07</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
 

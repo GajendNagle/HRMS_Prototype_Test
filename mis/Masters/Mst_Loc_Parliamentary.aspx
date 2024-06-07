@@ -14,10 +14,10 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <span>Master Data</span>
                         </li>
-                        <li class="breadcrumb-item">Location Master</li>
-                        <li class="breadcrumb-item">Parliamentary Master</li>
+                        <li class="breadcrumb-item">Location Master Data</li>
+                        <li class="breadcrumb-item">Parliamentary Master Data</li>
                     </ol>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-bordered text-center">
                                 <tr>
                                     <th>Sr.No. / सरल क्र.</th>
                                     <th>Division Name / संभाग का नाम</th>
@@ -206,7 +206,6 @@
                                     <td>Active</td>
                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
-
                             </table>
                         </div>
                     </div>

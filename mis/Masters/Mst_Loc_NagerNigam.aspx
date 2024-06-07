@@ -14,10 +14,10 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <span>Master Data</span>
                         </li>
-                        <li class="breadcrumb-item">Location Master</li>
-                        <li class="breadcrumb-item">Nagar Nigam Master</li>
+                        <li class="breadcrumb-item">Location Master Data</li>
+                        <li class="breadcrumb-item">Nagar Nigam Master Data</li>
                     </ol>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                                     <td>मंडीदीप</td>
                                     <td>24</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -268,7 +268,7 @@
                                     <td>बैरसिया</td>
                                     <td>42</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

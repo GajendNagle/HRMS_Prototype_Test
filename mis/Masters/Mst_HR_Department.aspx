@@ -109,7 +109,7 @@
                                         <td>01/04/2022</td>
                                         <td>12</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -118,7 +118,7 @@
                                         <td>01/04/2023</td>
                                         <td>23</td>
                                         <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                 </table>
                             </div>

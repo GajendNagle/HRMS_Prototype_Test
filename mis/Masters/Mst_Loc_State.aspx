@@ -14,9 +14,9 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <span>Master Data</span>
                         </li>
-                        <li class="breadcrumb-item">Location Master</li>
+                        <li class="breadcrumb-item">Location Master Data</li>
                         <li class="breadcrumb-item">State Master</li>
                     </ol>
                 </div>
@@ -43,47 +43,47 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>State Master</legend>
+                <legend>Add State / राज्य जोड़े</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-weight-bold">State Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter State Name (In English)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter State Name" onkeypress="return hindiOnly();" />
                         </div>
-
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-weight-bold">राज्य का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>राज्य का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="राज्य का नाम दर्ज करे" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-weight-bold">State Code No.<span style="color: red">*</span></label>
+                            <label>Enter State Code No. / राज्य कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-weight-bold">Is Active</label>
-                            <br />
-                            <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                Status
+								<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
                         </div>
                     </div>
-                    </div>
-                        <hr />
+                </div>
+                <hr />
                 <div class="row">
                     <div class="col-md-12">
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="Mst_Loc_State.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-               </div>
-
+                </div>
             </fieldset>
-
             <fieldset>
-                <legend>State Details</legend>
+                <legend>State Details / राज्य विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -100,12 +100,12 @@
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No.</th>
+                                    <th>Sr.No. / सरल क्र.</th>
                                     <th>State Name</th>
                                     <th>राज्य का नाम</th>
-                                    <th>State Code No.</th>
+                                    <th>State Code No. / राज्य कोड संख्या</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -115,7 +115,7 @@
                                     <td>मध्य प्रदेश</td>
                                     <td>23</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -123,7 +123,7 @@
                                     <td>छत्तीसगढ़</td>
                                     <td>24</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -131,8 +131,6 @@
                 </div>
             </fieldset>
         </div>
-
-  
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
