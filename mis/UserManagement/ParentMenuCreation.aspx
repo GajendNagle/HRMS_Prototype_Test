@@ -14,7 +14,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Parent Menu Creation</li>
                     </ol>
@@ -37,7 +37,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Module Name / मॉड्यूल का चयन करें<span style="color: red">*</span></label>
+                            <label>Select Module Name /<br />
+                                मॉड्यूल का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="1">User Management</option>
@@ -61,13 +62,15 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Parent Menu Sequence No. / पेरेंट मेनू का  अनुक्रम क्रमांक दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Parent Menu Sequence No. /<br />
+                                पेरेंट मेनू का  अनुक्रम क्रमांक दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Parent Menu Sequence No." />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Parent Menu Icon / पेरेंट मेनू के आइकॉन का चयन करें<span style="color: red">*</span></label>
+                            <label>Select Parent Menu Icon /<br />
+                                पेरेंट मेनू के आइकॉन का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="1">StateMaster.png</option>
@@ -117,13 +120,18 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>Module Name / मोड्यूल का नाम</th>
+                                    <th>Sr.No./<br />
+                                        सरल क्र.</th>
+                                    <th>Module Name /<br />
+                                        मोड्यूल का नाम</th>
                                     <th>Parent Menu Name (In English)</th>
                                     <th>पेरेंट मेनू का नाम (हिंदी में)</th>
-                                    <th>Parent Menu Sequence No. / पेरेंट मेनू का  अनुक्रम क्रमांक</th>
-                                    <th>Parent Menu Icon / पेरेंट मेनू का आइकॉन</th>
-                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Parent Menu Sequence No. /<br />
+                                        पेरेंट मेनू का  अनुक्रम क्रमांक</th>
+                                    <th>Parent Menu Icon/<br />
+                                        पेरेंट मेनू का आइकॉन</th>
+                                    <th>Status(Active / InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
@@ -134,7 +142,7 @@
                                     <td>01</td>
                                     <td>RoleMaster.png</td>
                                     <td>Active</td>
-                                   <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>

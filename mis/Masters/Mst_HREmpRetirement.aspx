@@ -3,11 +3,28 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li> 
+                        <li class="breadcrumb-item">Retirement/Separation</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="content-wrapper">
         <!-- Main content -->
         <div class="container-fluid">
-            <div class="row page-titles mb-4">
+            <%--<div class="row page-titles mb-4">
                 <div class="col-md-5 align-self-center">
                     <h4 class="text-themecolor ">Retirement/Separation</h4>
                 </div>
@@ -21,17 +38,27 @@
                         </ol>
                     </div>
                 </div>
-            </div>
-            <div class="card mt-3 shadow">
-                <div class="card-header card-border-info">
+            </div>--%>
+            <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4 class="card-title">Retirement / Separation<br />विभाजन / सेवानिवृत्त</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Retirement/Separation</legend>
-                        <div class="row">
+                        <legend>Retirement/Separation
+                            <br />
+                            विभाजन/सेवानिवृत्त</legend>
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Office Type<span style="color: red;"> *</span></label>
+                                    <label>
+                                        Office Type /
+                                        <br />
+                                        कार्यालय का प्रकार<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="0">--Select--</option>
                                         <%--<option value="1">Head Office</option>
@@ -58,7 +85,10 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Employee Name<span style="color: red">*</span></label>
+                                    <label>
+                                        Employee Name /
+                                        <br />
+                                        कर्मचारी का नाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Mr Ram Gopal Sharma">Mr Ram Gopal Sharma</option>
@@ -72,7 +102,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Separation Type<span style="color: red">*</span></label>
+                                    <label>
+                                        Separation Type /<br />
+                                        विभाजन प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Death">Death</option>
@@ -87,35 +119,45 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Separation Retired on.<span style="color: red">*</span></label>
+                                    <label>
+                                        Separation / Retired on /<br />
+                                        विभाजन / सेवानिवृत्त<span style="color: red">*</span></label>
                                     <input id="date" type="date" class="form-control" />
                                 </div>
 
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Order No.<span style="color: red">*</span></label>
+                                    <label>
+                                        Order No. /<br />
+                                        ऑर्डर संख्या<span style="color: red">*</span></label>
                                     <input id="TxtOrderno" class="form-control" placeholder="Enter Order No." />
                                 </div>
 
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Order Date<span style="color: red">*</span></label>
+                                    <label>
+                                        Order Date /<br />
+                                        ऑर्डर दिनांक <span style="color: red">*</span></label>
                                     <input id="Orderdate" type="date" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Upload Supporting Document<span style="color: red">*</span></label>
+                                    <label>
+                                        Upload Supporting Document/<br />
+                                        सहायक दस्तावेज़ अपलोड करें<span style="color: red">*</span></label>
                                     <input id="UploadDocument" type="file" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Remark</label>
+                                    <label>
+                                        Remark /<br />
+                                        टिप्पणी</label>
                                     <textarea id="txtArea" class="form-control" rows="1" placeholder="Enter  Remark"></textarea>
                                 </div>
                             </div>
@@ -123,15 +165,15 @@
                         <div class="row justify-content-center">
                             <div class="col-md-4 text-center">
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-success  btn-rounded Alert-Confirmation">Save</button>
-                                    <a href="Mst_HREmpRetirement.aspx" class="btn btn-danger  btn-rounded">Clear</a>
+                                    <button type="button" class="btn btn-success  btn-border Alert-Confirmation">Save</button>
+                                    <a href="Mst_HREmpRetirement.aspx" class="btn btn-outline-danger  w-lg btn-border">Clear</a>
                                 </div>
                             </div>
 
                         </div>
                     </fieldset>
                     <fieldset id="ContentBody_dcp">
-                        <legend>Description</legend>
+                        <legend>Description / विवरण </legend>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="main-ul">

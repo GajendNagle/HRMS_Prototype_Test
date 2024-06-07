@@ -14,7 +14,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Role Creation</li>
                     </ol>
@@ -35,7 +35,8 @@
                 <legend>Role Creation / रोल का निर्माण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3 form-group">
-                        <label>Select  User Level Name / उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
+                        <label>Select  User Level Name /<br />
+                            उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Rajasthan">S/w admin</option>
@@ -67,16 +68,18 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Role sequence No. / रोल अनुक्रम संख्या दर्ज करें.<span style="color: red">*</span></label>
+                            <label>Enter Role sequence No. /<br />
+                                रोल अनुक्रम संख्या दर्ज करें.<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Role sequence No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="row align-items-end">
                         <div class="col-md-3 ms-4">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive1" name="IsActive" value="true">
-                                    Applicable to all User's of Selected User level / चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू
-                                </label>
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive1" name="IsActive" value="true">
+                                Applicable to all User's of Selected User level /<br />
+                                चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू
+                            </label>
                         </div>
                         <div class="col-md-3 ms-4">
                             <div class="form-group">
@@ -121,14 +124,18 @@
                     <div class="table-responsive">
                         <table class="table text-center">
                             <tr>
-                                <th>Sr.No. / सरल क्र.</th>
-                                <th>User Level Name / उपयोगकर्ता स्तर का नाम</th>
+                                <th>Sr.No./<br />
+                                    सरल क्र.</th>
+                                <th>User Level Name /<br />
+                                    उपयोगकर्ता स्तर का नाम</th>
                                 <th>Role Name (In English)</th>
                                 <th>रोल का नाम (हिंदी में)</th>
-                                <th>Role sequence No. / 
-                                 रोल अनुक्रम संख्या</th>
-                                <th>Applicable to all User's of Selected User level / चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू</th>
-                                <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                <th>Role sequence No. /<br />
+                                    रोल अनुक्रम संख्या</th>
+                                <th>Applicable to all User's of Selected User level /<br />
+                                    चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू</th>
+                                <th>Status(Active / InActive) /<br />
+                                    स्थिति (सक्रिय/निष्क्रिय)</th>
                                 <th>Action</th>
                             </tr>
                             <tr>
@@ -146,8 +153,8 @@
                 </div>
             </div>
         </fieldset>
-   </div>
-   
+    </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

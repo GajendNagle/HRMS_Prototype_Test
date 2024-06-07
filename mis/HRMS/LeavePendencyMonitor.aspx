@@ -9,57 +9,54 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Monitor Pendency for Action on Leave Applications
- 
-            </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Reports</a></li>
-                    <li class="breadcrumb-item active"><a href="LeavePendencyMonitor.aspx" title="click to go on">Monitor Pendency for Action on Leave Applications</a></li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#LeaveReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Leave Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Monitor Pendency for Action on Leave Applications</li>
+                    </ol>
+                </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h4 class="card-title">Monitor Pendency for Action on Leave Applications
+                        <br />
+                        अवकाश आवेदनों पर कार्यवाही के लिए लंबित मामलों की निगरानी करें</h4>
+                </div>
             </div>
-            <div class="card-body">
+        </div>
+        <div class="card-body">
 
-                <nav class="navbar navbar-expand-lg navbar-dark topbar">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white" href="LeavePendencyMonitor.aspx" role="button" aria-expanded="false">
-                                        <b class="font-16 font-bold">Pendency Report</b>
-                                    </a>
 
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white" href="DEOMonitoringGrid.aspx" role="button" aria-expanded="false">
-                                        <b class="font-16 font-bold">DEO Monitoring Grid</b>
-                                    </a>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="mt-3">
-                    <fieldset>
-                        <legend>Monitor Pendency for Action on Leave Applications</legend>
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-md-3">
-                                <label class="font-bold">District :<span style="color: red">*</span></label>
+            <div class="mt-3">
+                <fieldset>
+                    <legend>Monitor Pendency for Action on Leave Applications
+                        <br />
+                        अवकाश आवेदनों पर कार्यवाही के लिए लंबित मामलों की निगरानी करें</legend>
+                    <div class="row align-items-end">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select District Name /<br />
+                                    जिला का चयन करें :<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="">--Select--</option>
                                     <option value="51">AGAR MALWA </option>
@@ -80,142 +77,173 @@
                                     <option value="25">DHAR  </option>
                                 </select>
                             </div>
+                        </div>
 
 
-                            <div class="col-md-3">
-                                <label class="font-bold">Block :<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Block Name /<br />
+                                    ब्लॉक का चयन करें:<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="1">ANUPPUR </option>
                                     <option value="2">JAITHARI </option>
                                     <option value="3">KOTMA </option>
                                     <option value="3">PUSHPRAJ GARH </option>
-
-
                                 </select>
                             </div>
+                        </div>
 
-                            <div class="col-md-3">
-                                <label class="font-bold">Sankul :<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Sankul Name /<br />
+                                    संकुल का चयन करें:<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="1">All</option>
                                     <option value="1">Berasiya</option>
                                     <option value="1">Phanda Old City</option>
                                     <option value="1">Raushanpura</option>
-
-
-
                                 </select>
                             </div>
-                            <div class="row justify-content-center mt-2">
-                                <div class="col-lg-12 mt-2">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-3 text-center">
-                                            <img src="../../img/captcha.png" width="150" />
-                                        </div>
-                                        <div class="col-lg-12"></div>
-                                        <div class="col-lg-4 text-center">
-                                            <label class="font-bold">Please enter the code shown above</label>
-                                        </div>
-                                        <div class="col-lg-12"></div>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-lg-12">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3 text-center">
+                                        <img src="../../img/captcha.png" width="150" />
+                                    </div>
+                                    <div class="col-lg-12"></div>
+                                    <div class="col-lg-4 text-center">
+                                        <label class="font-bold">Please enter the code shown above</label>
+                                    </div>
+                                    <div class="col-lg-12"></div>
 
-                                        <div class="col-lg-1 ">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control text-center" />
-                                            </div>
+                                    <div class="col-lg-1 ">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control text-center" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 text-center">
+                        </div>
+                        <hr />
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="button" id="btnShowStudentDetails" class="btn w-lg btn-success btn-border" onclick="Show();">Get Details</button>
+                                <a href="LeavePendencyMonitor.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div id="Report">
+                    <fieldset>
+                        <legend>Leave Applications Details /अवकाश आवेदनो का विवरण</legend>
+                        <div class="row justify-content-end">
+                            <div class="col-md-4 text-end">
                                 <div class="form-group">
-                                    <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-rounded" onclick="Show();">Get Details</button>
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table text-center">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No./<br />
+                                                    सरल क्र.</th>
+                                                <th>Sankul /
+                                                    <br />
+                                                    संकुल</th>
+                                                <th>Name of Applicant /<br />
+                                                    आवेदक का नाम</th>
+                                                <th>Designation of Applicant/<br />
+                                                    आवेदक का पदनाम</th>
+                                                <th>Type of Leave /<br />
+                                                    अवकाश का प्रकार</th>
+                                                <th>Date of Application Submission/<br />
+                                                    आवेदन जमा करने की तिथि</th>
+                                                <th>Leave Begin Date /<br />
+                                                    अवकाश की आरंभ तिथि </th>
+                                                <th>Leave End Date /<br />
+                                                    अवकाश की समाप्ति तिथि</th>
+                                                <th>No. of Leave Days /<br />
+                                                    अवकाश के दिनों की संख्या</th>
+                                                <th>Pending with /<br />अपेक्षा में लंबित</th>
+                                                <th>Pending from (Date) /<br />
+                                                    (तिथि) से लंबित</th>
+                                                <th>No. of Days Pending/<br />
+                                                    लंबित दिनों की संख्या</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Berasiya</td>
+                                                <td>K.K Sharma</td>
+                                                <td>Primary Teacher</td>
+                                                <td>Study</td>
+                                                <td>10-12-2020</td>
+                                                <td>12-12-2020</td>
+                                                <td>24-12-2020</td>
+                                                <td>12</td>
+                                                <td>HM</td>
+                                                <td>10-12-2020</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Phanda Old City</td>
+                                                <td>M.K Pandey</td>
+                                                <td>Principal</td>
+                                                <td>Medical</td>
+                                                <td>17-12-2020</td>
+                                                <td>13-12-2020</td>
+                                                <td>25-12-2020</td>
+                                                <td>12</td>
+                                                <td>Sankul P</td>
+                                                <td>17-12-2020</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Raushanpura</td>
+                                                <td>S.H.Asthana</td>
+                                                <td>Head Master</td>
+                                                <td>CCL</td>
+                                                <td>17-12-2020</td>
+                                                <td>13-12-2020</td>
+                                                <td>25-12-2020</td>
+                                                <td>12</td>
+                                                <td>Sankul P</td>
+                                                <td>17-12-2020</td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
-                    <div id="Report">
-                        <fieldset>
-                            <legend>Leave Applications Details</legend>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table text-center table-bordered table-hover text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th>S.No.</th>
-                                                    <th>Sankul</th>
-                                                    <th>Name of Applicant</th>
-                                                    <th>Designation of Applicant</th>
-                                                    <th>Type of Leave</th>
-                                                    <th>Date of Application Submission</th>
-                                                    <th>Leave Begin Date</th>
-                                                    <th>Leave End Date</th>
-                                                    <th>No. of Leave Days</th>
-                                                    <th>Pending with</th>
-                                                    <th>Pending from (Date)</th>
-                                                    <th>No. of Days Pending</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Berasiya</td>
-                                                    <td>K.K Sharma</td>
-                                                    <td>Primary Teacher</td>
-                                                    <td>Study</td>
-                                                    <td>10-12-2020</td>
-                                                    <td>12-12-2020</td>
-                                                    <td>24-12-2020</td>
-                                                    <td>12</td>
-                                                    <td>HM</td>
-                                                    <td>10-12-2020</td>
-                                                    <td>7</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Phanda Old City</td>
-                                                    <td>M.K Pandey</td>
-                                                    <td>Principal</td>
-                                                    <td>Medical</td>
-                                                    <td>17-12-2020</td>
-                                                    <td>13-12-2020</td>
-                                                    <td>25-12-2020</td>
-                                                    <td>12</td>
-                                                    <td>Sankul P</td>
-                                                    <td>17-12-2020</td>
-                                                    <td>2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Raushanpura</td>
-                                                    <td>S.H.Asthana</td>
-                                                    <td>Head Master</td>
-                                                    <td>CCL</td>
-                                                    <td>17-12-2020</td>
-                                                    <td>13-12-2020</td>
-                                                    <td>25-12-2020</td>
-                                                    <td>12</td>
-                                                    <td>Sankul P</td>
-                                                    <td>17-12-2020</td>
-                                                    <td>2</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
 
 
-                    </div>
                 </div>
-
-
             </div>
+
+
         </div>
     </div>
+
     <script>
         function Show() {
             var element = document.getElementById("Report");

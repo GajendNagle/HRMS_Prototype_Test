@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-   
+
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -15,7 +15,7 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Module Mapping</li>
                     </ol>
@@ -49,15 +49,16 @@
                     </div>
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <label>Enter Module Sequence No. / मॉड्यूल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Module Sequence No. /<br />
+                                मॉड्यूल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Module Sequence No." />
                         </div>
                     </div>
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Select Module Icon / 
-मॉड्यूल आइकन का चयन करें<span style="color: red">*</span></label>
+                                Select Module Icon /<br />
+                                मॉड्यूल आइकन का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-select select2">
                                 <option value="0">Select</option>
                                 <option value="1">Hrms.png</option>
@@ -107,12 +108,16 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
+                                    <th>Sr.No./<br />
+                                        सरल क्र.</th>
                                     <th>Module Name (In English)</th>
                                     <th>मॉड्यूल का नाम (हिंदी में)</th>
-                                    <th>Module Sequence No. / मॉड्यूल अनुक्रम संख्या</th>
-                                    <th>Module Icon / मॉड्यूल आइकन</th>
-                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Module Sequence No./<br />
+                                        मॉड्यूल अनुक्रम संख्या</th>
+                                    <th>Module Icon /<br />
+                                        मॉड्यूल आइकन</th>
+                                    <th>Status(Active / InActive)/<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
@@ -122,7 +127,7 @@
                                     <td>01</td>
                                     <td>User Management.png</td>
                                     <td>Active</td>
-                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -131,7 +136,7 @@
                                     <td>02</td>
                                     <td>Hrms.png</td>
                                     <td>Active</td>
-                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -140,7 +145,7 @@
                                     <td>03</td>
                                     <td>Master.png</td>
                                     <td>Active</td>
-                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

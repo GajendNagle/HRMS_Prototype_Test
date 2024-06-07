@@ -13,7 +13,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Role Wise Module Mapping</li>
                     </ol>
@@ -35,39 +35,43 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                        <label>Select Module Name / मॉड्यूल का चयन करें <span style="color: red">*</span></label>
-                        <select id="ddlparentmenu" class="form-control select2">
-                            <option value="--Select--">--Select--</option>
-                            <option value="1">Master Data</option>
-                        </select>
-                            </div>
+                            <label>Select Module Name /<br />
+                                मॉड्यूल का चयन करें <span style="color: red">*</span></label>
+                            <select id="ddlparentmenu" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="1">Master Data</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                        <label>Select Menu Name / मेनू का चयन करें<span style="color: red">*</span></label>
-                        <select id="dates-field2" class="form-control select2">
-                            <option value="--Select--">--Select--</option>
-                            <option value="1">State Master</option>
-                        </select>
-                            </div>
+                            <label>Select Menu Name /<br />
+                                मेनू का चयन करें<span style="color: red">*</span></label>
+                            <select id="dates-field2" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="1">State Master</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                        <label>Select User level Name / उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
-                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                            <option value="--Select--">--Select--</option>
-                            <option value="Rajasthan">JD Office</option>
-                        </select>
-                            </div>
+                            <label>Select User level Name /<br />
+                                उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
+                            <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Rajasthan">JD Office</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                        <label>Select User Role / उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
-                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                            <option value="--Select--">--Select--</option>
-                            <option value="Rajasthan">JD Admin</option>
-                        </select>
-                            </div>
+                            <label>Select User Role /<br />
+                                उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
+                            <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Rajasthan">JD Admin</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-3 ms-4">
                         <div class="form-group">
@@ -78,7 +82,7 @@
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
-                   </div>
+                    </div>
                     <hr />
                     <div class="col-md-12">
                         <div class="form-group">
@@ -108,12 +112,18 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>Module Name / मोड्यूल का नाम</th>
-                                    <th>Menu Name / मेनू का नाम</th>
-                                    <th>User level Name / उपयोगकर्ता स्तर का नाम</th>
-                                    <th>User Role / उपयोगकर्ता का रोल</th>
-                                     <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Sr.No./<br />
+                                        सरल क्र.</th>
+                                    <th>Module Name /<br />
+                                        मोड्यूल का नाम</th>
+                                    <th>Menu Name /<br />
+                                        मेनू का नाम</th>
+                                    <th>User level Name /<br />
+                                        उपयोगकर्ता स्तर का नाम</th>
+                                    <th>User Role /<br />
+                                        उपयोगकर्ता का रोल</th>
+                                    <th>Status(Active / InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
@@ -123,7 +133,7 @@
                                     <td>JD Office </td>
                                     <td>JD Admin</td>
                                     <td>Active</td>
-                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

@@ -15,7 +15,7 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Create User Level</li>
                     </ol>
@@ -38,7 +38,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select User Type / उपयोगकर्ता के प्रकार का चयन करें<span style="color: red">*</span></label>
+                            <label>Select User Type /<br />
+                                उपयोगकर्ता प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">Select</option>
                                 <option value="1">Admin</option>
@@ -51,7 +52,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter User Level Name / उपयोगकर्ता स्तर का नाम दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter User Level Name /<br />
+                                उपयोगकर्ता स्तर का नाम दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" placeholder="Enter User Level Name" />
                         </div>
                     </div>
@@ -96,10 +98,15 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>User Type / उपयोगकर्ता का प्रकार</th>
-                                    <th>Level Name / स्तर का नाम</th>
-                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>User Type /<br />
+                                        उपयोगकर्ता का प्रकार</th>
+                                    <th>Level Name /<br />
+                                        स्तर का नाम</th>
+                                    <th>Status(Active / InActive) /
+                                        <br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
