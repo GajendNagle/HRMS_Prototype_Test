@@ -200,7 +200,7 @@
                                     <fieldset>
                                         <legend>Personal Information / 
 व्यक्तिगत जानकारी</legend>
-                                        <div class="row align-items-end">
+                                        <div class="row align-items-end mb-0">
                                             <div class="col-md-9">
                                                 <div class="row align-items-end">
                                                     <div class="col-md-4" hidden="hidden">
@@ -1470,7 +1470,7 @@
                                             <div id="idDeptName" class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Deputation Department Name /
+                                                        Deputation Department Name/
                                                         <br />
                                                         प्रतिनियुक्ति विभाग का नाम<span style="color: red">*</span></label>
                                                     <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
@@ -1774,7 +1774,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
-                                                Current Appointment Division /
+                                                Current Appointment Division/
                                                 <br />
                                                 वर्तमान नियुक्ति प्रभाग<span style="color: red">*</span></label>
                                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
@@ -1953,7 +1953,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
-                                                Employee’s Designation Type /<br />
+                                                Employee’s Designation Type/<br />
                                                 कर्मचारी का पदनाम प्रकार<span style="color: red">*</span></label>
                                             <select class="form-control select2">
                                                 <option value="----">--Select--</option>
@@ -2094,7 +2094,7 @@
                                     <div id="idCurDeptName" class="col-md-3 mt-3">
                                         <div class="form-group">
                                             <label>
-                                                Deputation Department Name /<br />
+                                                Deputation Department Name/<br />
                                                 प्रतिनियुक्ति विभाग का नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
                                         </div>
@@ -2357,7 +2357,7 @@
                                     <fieldset>
                                         <legend>Employee Account Info / कर्मचारी खाता जानकारी</legend>
                                         <div class="row align-items-end">
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
                                                         IFSC Code /<br />
