@@ -3,125 +3,146 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">School Type Master</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                        <li class="breadcrumb-item"><a href="../menu.aspx?ID=Masters&SubID=OfficeMaster" title="click to go on">Office Masters</a></li>
-                        <li class="breadcrumb-item active">School Type Master</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span>Master Data</span>
+                        </li>
+                        <li class="breadcrumb-item">Office Master Data</li>
+                        <li class="breadcrumb-item">School Type Master Data</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                इस पेज के माध्यम से स्कूल का प्रकार को  Registered  किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+            </marquee>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="card-title">School Type Master / स्कूल प्रकार मास्टर</h4>
+                </div>
             </div>
-            <div class="card-body">
-
-                <fieldset>
-                    <legend>School Type Master</legend>
-
-                    <div class="row form-group">
-                        <div class="col-md-3">
-                            <label class="font-weight-bold">School Type Name  (In English)<span style="color: red">*</span></label>
+        </div>
+        <div class="card-body">
+            <fieldset>
+                <legend>Add School Type / स्कूल प्रकार जोड़े</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter School Type Name  (In English)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter School Type" onkeypress="return lettersOnly();" />
                         </div>
-                        <div class="col-md-3">
-                            <label class="font-weight-bold">स्कूल का प्रकार (हिंदी में)<span style="color: red">*</span></label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+
+                            <label>स्कूल का प्रकार (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="स्कूल का प्रकार दर्ज करे" />
                         </div>
-                        <div class="col-md-2">
-                            <label class="font-weight-bold">School Type Code No.<span style="color: red">*</span></label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                School Type Code No. /<br />
+                                स्कूल प्रकार कोड दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder=" Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
-                        <div class="col-md-1 ">
-                            <label class="font-weight-bold">Is Active</label>
-                            <br />
-                            <input id="ContentBody_ctl03" type="checkbox" checked="checked" />
-                        </div>
-
-                        <div class="col-md-3 mt-4">
-                            <div class="form-group">
-
-                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-
-                                <a href="Mst_Off_SchoolType.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                Status
+								<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
                         </div>
                     </div>
-                    <div class="row">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>School Type Details </legend>
-                    <div class="row justify-content-end">
-
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
+                            <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
-
-
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>School Type Name </th>
-                                        <th>स्कूल का प्रकार का नाम</th>
-                                        <th>School Type Code No.</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Boys</td>
-                                        <td>बालक</td>
-                                        <td>1</td>
-                                        <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Girls</td>
-                                        <td>बालिका</td>
-                                        <td>2</td>
-                                        <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Co-Educational</td>
-                                        <td>सह-शिक्षा</td>
-                                        <td>3</td>
-                                        <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                </table>
-                            </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>School Type Details / स्कूल प्रकार विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                </fieldset>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <tr>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>School Type Name</th>
+                                    <th>स्कूल का प्रकार का नाम</th>
+                                    <th>School Type Code No. /<br />
+                                        स्कूल प्रकार कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Boys</td>
+                                    <td>बालक</td>
+                                    <td>1</td>
+                                    <td>Active</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Girls</td>
+                                    <td>बालिका</td>
+                                    <td>2</td>
+                                    <td>InActive</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Co-Educational</td>
+                                    <td>सह-शिक्षा</td>
+                                    <td>3</td>
+                                    <td>InActive</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
 
-                <%--<fieldset>
+            <%--<fieldset>
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -232,8 +253,8 @@
                         </div>
                     </div>
                 </fieldset>--%>
-            </div>
         </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
