@@ -1107,15 +1107,56 @@
                                 </a>
                                 <div class="collapse menu-dropdown" id="Payroll">
                                     <ul class="nav nav-sm flex-column">
+
+                                        <li class="nav-item"><a href="../Payroll/AttendanceProcess.aspx" class="nav-link">Attendance Process</a></li>
+                                        <li class="nav-item"><a href="../Payroll/SalaryFinalizationProcess.aspx" class="nav-link">Salary Finalization </a></li>
+                                        <li class="nav-item"><a href="../HRMS/AddIncrement.aspx" class="nav-link">Add Increment </a></li>
                                         <li class="nav-item">
+                                            <a href="#SalaryGenerate" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SalaryGenerate"><i class="ri-dashboard-2-line"></i>Salary Generate</a>
+                                            <div class="collapse menu-dropdown" id="SalaryGenerate">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Payroll/SalaryGenerateProcess_MonthlySalaryProcess.aspx" class="nav-link">Monthly Salary Process </a></li>
+                                                    <li class="nav-item"><a href="../Payroll/SalaryGenerateProcess_SupplymentrySalaryProcess.aspx" class="nav-link">Supplementary Salary Process</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="nav-item">
+                                            <a href="#ArrearCalculation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="ArrearCalculation"><i class="ri-dashboard-2-line"></i>Arrear Calculation</a>
+                                            <div class="collapse menu-dropdown" id="ArrearCalculation">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Payroll/ArrearCalculation.aspx" class="nav-link">Arrear Calculation </a></li>
+                                                    <li class="nav-item"><a href="../Payroll/ArrearFinalSubmission.aspx" class="nav-link">Arrear Final Submission </a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#SalaryFinalization" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SalaryFinalization"><i class="ri-dashboard-2-line"></i>Payment File</a>
+                                            <div class="collapse menu-dropdown" id="SalaryFinalization">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="../Payroll/Bank_PaymentByTreasury.aspx" class="nav-link">Payment By Treasury </a></li>
+                                                    <li class="nav-item"><a href="#" class="nav-link">DSC Verification </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <%--  <li class="nav-item">
                                             <a href="#SetEmployeeAttendance" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SetEmployeeAttendance">Set Employee Attendance</a>
+                                                aria-controls="SetEmployeeAttendance"><i class="ri-dashboard-2-line"></i>Set Employee Attendance</a>
                                             <div class="collapse menu-dropdown" id="SetEmployeeAttendance">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="#" class="nav-link">Set Employee Attendance</a></li>
                                                 </ul>
                                             </div>
                                         </li>
+
+
+
                                         <li class="nav-item">
                                             <a href="#SetEarningDeduction" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="SetEarningDeduction">Set Earning & Deduction</a>
@@ -1127,16 +1168,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="#SalaryGenerateReset" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SalaryGenerateReset">Salary Generate / Reset</a>
-                                            <div class="collapse menu-dropdown" id="SalaryGenerateReset">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="#" class="nav-link">Salary Generate</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Reset Salary Status</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
+
 
                                         <li class="nav-item">
                                             <a href="#ArrerCalculation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -1160,38 +1192,37 @@
 
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#PayrollReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="PayrollReports">Payroll Reports</a>
                                             <div class="collapse menu-dropdown" id="PayrollReports">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="#" class="nav-link">Final Summery Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Monthly Pay Bill Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Bank Advice Letter</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">EPF Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Employee Salary Slip</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">PT Challan Process</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Loan Details</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Form 16</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Type Wise Report </a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Office Wise Arrer EPF Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Month Wise Arrer EPF Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">GPF Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Office Wise Income Tax Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Employee Wise Income Tax Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Employee Final Statement</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Monthly Policy Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">NPS Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Salary Generation Reports</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Single Salary Slip</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Payroll Salary Ledger</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">EDLI for Year (1st Jan)</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">FY Wise Earn Deduction</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Office Wise Monthly Head Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">ESIC Report</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Monthly Earning & Deduction Details</a></li>
-
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_FinalSummary.aspx">Final Summary</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_MonthlyPayBill.aspx">Monthly Pay Bill</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_BankAdviceLetter.aspx">Bank Advice Letter</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_EPFReport.aspx">EPF Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_EmployeeSalarySlip.aspx">Employee Salary Slip</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_ProfessionalTaxChallan.aspx">PT Challan Process</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_LoanDetails.aspx">Loan Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_Form16.aspx">Form 16</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_ArrearTypewise.aspx">Arrear Type Wise Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_OfficeWiseArrearEPF.aspx">Office Wise Arrear EPF Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_ArrearEPFMonthWise.aspx">Month Wise Arrear EPF Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_GPF.aspx">GPF Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_IncomeTax.aspx">Office Wise Income Tax Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_IncomeTaxEmployeeWise.aspx">Employee Wise Income Tax Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_EmployeeFinalStatementFromAndToYearOrMonth.aspx">Employee Final Statement</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_MonthlyPolicyReport.aspx">Monthly Policy Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_NpsReport.aspx">NPS Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_SalaryGenerationStatus.aspx">Salary Generation Status</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_SingleSalarySlip.aspx">Single Salary Slip</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_PayrollSalaryLedger.aspx">Payroll Salary Ledger</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_EDLIReport.aspx">EDLI For Year (1st Jan)</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_FYEarnDeduction.aspx">FY Wise Earn Deduction</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_MonthlyOfficeWiseEarnDed.aspx">Office Wise Monthly Head Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_ESICReport.aspx">ESIC Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="../Payroll/Rpt_MonthlyEarnDedDetail.aspx">Monthly Earning &amp; Deduction Details</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1199,7 +1230,6 @@
                                 </div>
                             </li>
                             <%--Payroll--%>
-
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#StudentDirectory" data-bs-toggle="collapse" role="button"
                                     aria-expanded="false" aria-controls="StudentDirectory">
@@ -2301,6 +2331,13 @@
         </asp:ContentPlaceHolder>
         <%--   </div>--%>
         <script>
+            function SidebarToggle(id) {
+                var parentLi = document.getElementById(id);
+                if (!parentLi.classList.contains('show')) {
+                    // If HRMS is not open, open it
+                    parentLi.classList.add('show');
+                }
+            }
 
             $('.select2').select2()
             !function ($) {
