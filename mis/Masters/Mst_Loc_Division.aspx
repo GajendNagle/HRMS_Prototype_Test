@@ -13,10 +13,10 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <span>Master Data</span>
                         </li>
-                        <li class="breadcrumb-item">Location Master</li>
-                        <li class="breadcrumb-item">Division Master</li>
+                        <li class="breadcrumb-item">Location Master Data</li>
+                        <li class="breadcrumb-item">Division Master Data</li>
                     </ol>
                 </div>
             </div>
@@ -30,7 +30,6 @@
             </marquee>
         </div>
     </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -42,61 +41,76 @@
         <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Division Master</legend>
+                <legend>Division Master / संभाग जोड़े</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label class="font-bold">State Name <span style="color: red">*</span></label>
-                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                            <option value="--Select--">--Select--</option>
-                            <option value="Rajasthan">Rajasthan</option>
-                            <option value="Maharashtra">Maharashtra</option>
-                            <option value="Nagaland">Nagaland</option>
-                            <option value="Nashik">Nashik</option>
-                            <option value="West">West</option>
-                            <option value="Bengal">Bengal</option>
-                            <option value="Telangana">Telangana</option>
-                            <option value="Assam">Assam</option>
-                            <option value="Tripura">Tripura</option>
-                            <option value="Madhya">Madhya Pradesh</option>
-                            <option value="Tamil">Tamil</option>
-                            <option value="Nadu">Nadu</option>
-                            <option value="Gujarat">Gujarat</option>
-                            <option value="Sikkim">Sikkim</option>
-                            <option value="Andhra">Andhra Pradesh</option>
-                            <option value="Uttar">Uttar Pradesh</option>
-                            <option value="Punjab">Punjab</option>
-                            <option value="Karnataka">Karnataka</option>
-                            <option value="Meghalaya">Meghalaya</option>
-                            <option value="Uttarakhand">Uttarakhand</option>
-                            <option value="Goa">Goa</option>
-                            <option value="Haryana">Haryana</option>
-                            <option value="Mizoram">Mizoram</option>
-                            <option value="Arunachal">Arunachal Pradesh</option>
-                            <option value="Bihar">Bihar</option>
-                            <option value="Himachal">Himachal </option>
-                            <option value="Kerala">Kerala</option>
-                            <option value="Jharkhand">Jharkhand</option>
-                            <option value="Orissa">Orissa</option>
+                        <div class="form-group">
+                            <label>Select State Name /<br> राज्य का चयन करे<span style="color: red">*</span></label>
+                            <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Nashik">Nashik</option>
+                                <option value="West">West</option>
+                                <option value="Bengal">Bengal</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Madhya">Madhya Pradesh</option>
+                                <option value="Tamil">Tamil</option>
+                                <option value="Nadu">Nadu</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Andhra">Andhra Pradesh</option>
+                                <option value="Uttar">Uttar Pradesh</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Arunachal">Arunachal Pradesh</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Himachal">Himachal </option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Orissa">Orissa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
 
-                        </select>
+                            <label>Enter Division Name (In English)<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="Enter Division Name" />
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-weight-bold">Division Name (In English)<span style="color: red">*</span></label>
-                        <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="Enter Division Name" />
+                        <div class="form-group">
+
+                            <label>संभाग का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder="संभाग का नाम दर्ज करे" />
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-weight-bold">संभाग का नाम (हिंदी में)<span style="color: red">*</span></label>
-                        <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder="संभाग का नाम दर्ज करे" />
+                        <div class="form-group">
+
+                            <label>Select Division Code No. /<br> संभाग कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Code No." />
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-weight-bold">Division Code No.<span style="color: red">*</span></label>
-                        <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Code No." />
-                    </div>
-                    <div class="col-md-3">
-                        <label class="font-weight-bold">IsActive</label>
-                        <br />
-                        <input id="ContentBody_ctl04" type="checkbox" name="ctl00$ContentBody$ctl04" checked="checked" />
+                        <div class="form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                Status
+								<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <hr />
@@ -105,14 +119,11 @@
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg">Save</button>
                         <a href="Mst_Loc_Division.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Division Details</legend>
-
+                <legend>Division Details / संभाग विवरण</legend>
                 <div class="row justify-content-end">
-
                     <div class="col-md-4 text-end">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
@@ -124,19 +135,18 @@
                             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No.</th>
-                                    <th>State Name</th>
+                                    <th>Sr.No. /<br> सरल क्र.</th>
+                                    <th>State Name /<br> राज्य का नाम</th>
                                     <th>Division Name</th>
                                     <th>संभाग का नाम</th>
-                                    <th>Division Code No.</th>
-                                    <th>Status</th>
+                                    <th>Division Code No. /<br> संभाग कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br> स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
@@ -146,7 +156,7 @@
                                     <td>भोपाल</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -155,7 +165,7 @@
                                     <td>ग्वालियर</td>
                                     <td>02</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

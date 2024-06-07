@@ -14,10 +14,10 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <span>Master Data</span>
                         </li>
-                        <li class="breadcrumb-item">Location Master</li>
-                        <li class="breadcrumb-item">Nagar Nigam Master</li>
+                        <li class="breadcrumb-item">Location Master Data</li>
+                        <li class="breadcrumb-item">Nagar Nigam Master Data</li>
                     </ol>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <legend>Add Nagar Nigam / नगर निगम जोड़े</legend>
                 <div class="row ">
                     <div class="col-md-3 ">
-                        <label>Select State Name / राज्य का चयन करे<span style="color: red">*</span></label>
+                        <label>Select State Name /<br /> राज्य का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Rajasthan">Rajasthan</option>
@@ -82,7 +82,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Division Name / संभाग का चयन करे<span style="color: red">*</span></label>
+                        <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -98,7 +98,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select District Name / जिला का चयन करे<span style="color: red">*</span></label>
+                        <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -155,7 +155,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Block Name / विकासखण्ड का चयन करे<span style="color: red">*</span></label>
+                        <label>Select Block Name /<br /> विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Agar">Agar</option>
@@ -192,7 +192,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Enter Nagar Nigam Code No. / नगर निगम कोड संख्या<span style="color: red">*</span></label>
+                            <label>Enter Nagar Nigam Code No. /<br /> नगर निगम कोड संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -235,15 +235,15 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /सरल  क्र.</th>
-                                    <th>State Name / राज्य का नाम</th>
-                                    <th>Division Name / संभाग का नाम</th>
-                                    <th>District Name / जिला का नाम</th>
-                                    <th>Block Name / विकासखण्ड का नाम</th>
+                                    <th>Sr.No. /<br />सरल  क्र.</th>
+                                    <th>State Name /<br /> राज्य का नाम</th>
+                                    <th>Division Name /<br /> संभाग का नाम</th>
+                                    <th>District Name /<br /> जिला का नाम</th>
+                                    <th>Block Name /<br /> विकासखण्ड का नाम</th>
                                     <th>Nagar Nigam Name</th>
                                     <th>नगर निगम का नाम</th>
-                                    <th>Nagar Nigam Code No. / नगर निगम कोड संख्या</th>
-                                    <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Nagar Nigam Code No. /<br /> नगर निगम कोड संख्या</th>
+                                    <th>Status(Active / InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>
@@ -256,7 +256,7 @@
                                     <td>मंडीदीप</td>
                                     <td>24</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -268,7 +268,7 @@
                                     <td>बैरसिया</td>
                                     <td>42</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
