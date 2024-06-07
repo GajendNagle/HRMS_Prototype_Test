@@ -121,7 +121,11 @@
         .table td, .table th {
             border: 1px solid #ddd;
         }
-
+         .table th{
+           background-color: var(--primary) !important;
+               color: var(--vz-body-color);
+        }
+            
         .table tbody {
             border-top: 2px solid #ddd;
         }
@@ -262,9 +266,9 @@
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
                                     <h6 class="dropdown-header">Welcome User!</h6>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i><span class="align-middle">Profile</span></a>
+                                    <a class="nav-link" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i><span class="align-middle">Profile</span></a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="../../Login.aspx"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span></a>
+                                    <a class="nav-link" href="../../Login.aspx"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span></a>
                                 </div>
                             </div>
                         </div>
@@ -338,11 +342,11 @@
                     <div class="dropdown-menu dropdown-menu-end">
                         <!-- item-->
                         <h6 class="dropdown-header">Welcome User!</h6>
-                        <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i><span class="align-middle">Profile</span></a>
+                        <a class="nav-link" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i><span class="align-middle">Profile</span></a>
 
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i><span class="align-middle">Lock screen</span></a>
-                        <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <a class="nav-link" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i><span class="align-middle">Lock screen</span></a>
+                        <a class="nav-link" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
                 </div>
                 <div id="scrollbar">
@@ -359,20 +363,20 @@
                                 <div class="collapse menu-dropdown" id="sidebarDashboards">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/AdminDashboard.aspx" class="nav-link" data-key="t-analytics">Admin Dashboard </a>
+                                            <a href="/mis/Dashboard/AdminDashboard.aspx" class="nav-link" >Admin Dashboard </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/HRMSDashboard.aspx" class="nav-link" data-key="t-crm">HRMS Dashboard </a>
+                                            <a href="/mis/Dashboard/HRMSDashboard.aspx" class="nav-link" >HRMS Dashboard </a>
                                         </li>
                                         <li class="nav-item">
 
-                                            <a href="/mis/Dashboard/EmployeeDashBoard.aspx" class="nav-link" data-key="t-crm">Employee Dashboard </a>
+                                            <a href="/mis/Dashboard/EmployeeDashBoard.aspx" class="nav-link" >Employee Dashboard </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/SchoolDirectoryDashboard.aspx" class="nav-link" data-key="t-ecommerce">School Directory Dashboard</a>
+                                            <a href="/mis/Dashboard/SchoolDirectoryDashboard.aspx" class="nav-link" >School Directory Dashboard</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/StudentDashboard.aspx" class="nav-link" data-key="t-crypto">Student/Scheme Dashboard</a>
+                                            <a href="/mis/Dashboard/StudentDashboard.aspx" class="nav-link" >Student/Scheme Dashboard</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -641,8 +645,8 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="#SchoolDirectoryReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="SchoolDirectoryReports" data-key="t-SchoolDirectoryReports"><i class="ri-dashboard-2-line"></i>Reports</a>
-                                            <div class="collapse menu-dropdown" id="SchoolDirectoryReports">
+                                            <a href="#SchoolReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="SchoolReports" data-key="t-SchoolReports"><i class="ri-dashboard-2-line"></i>School Reports</a>
+                                            <div class="collapse menu-dropdown" id="SchoolReports">
                                                 <ul class="nav nav-sm flex-column">
                                                     <%--School Reports Start--%>
                                                     <li class="nav-item"><a href="/mis/Registration/Rpt_PublishSchoolDetails.aspx" class="nav-link">Publish School Report</a></li>
@@ -669,8 +673,15 @@
                                                     <li class="nav-item"><a href="/mis/HRMS/SchoolWithoutSankul.aspx" class="nav-link">School Without Sankul Report</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/Rpt_SchoolDetail.aspx" class="nav-link">School Detail Report Card</a></li>
                                                     <%--School Reports End--%>
-                                                    <%--OIS Setup Reports Start--%>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#RptOISSetup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="RptOISSetup" data-key="t-RptOISSetup"><i class="ri-dashboard-2-line"></i>OIS Setup Reports</a>
+                                            <div class="collapse menu-dropdown" id="RptOISSetup">
+                                                <ul class="nav nav-sm flex-column">
 
+                                                    <%--OIS Setup Reports Start--%>
                                                     <li class="nav-item"><a href="/mis/HRMS/ZeroTeacher.aspx" class="nav-link">Zero Teachers </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/SingleTeacherManagementSystem.aspx" class="nav-link">Single Teachers</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/SurplusTeacherManagementSystem.aspx" class="nav-link">Surplus Teachers</a></li>
@@ -678,17 +689,17 @@
                                                     <li class="nav-item"><a href="/mis/Report/DistWiseSummaryOfPublishedSchools.aspx" class="nav-link">District Wise Publish School </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_SchoolSetup.aspx" class="nav-link">OIS Report Card </a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/ZeroStaffSchool_Report.aspx" class="nav-link">School Low Staff Report </a></li>
-                                                    <%--OIS Setup Reports End--%>
-                                                    <li class="nav-item"><a href="/mis/HRMS/Rpt_OfficeReport.aspx" class="nav-link">Office Report </a></li>
-                                                    <li class="nav-item"><a href="/mis/Transaction/Rpt_InstituteManagement.aspx" class="nav-link">Institute Management Report </a></li>
                                                 </ul>
                                             </div>
                                         </li>
+
+                                        <li class="nav-item"><a href="/mis/HRMS/Rpt_OfficeReport.aspx" class="nav-link">Office Report </a></li>
+                                        <li class="nav-item"><a href="/mis/Transaction/Rpt_InstituteManagement.aspx" class="nav-link">Institute Management Report </a></li>
+
                                     </ul>
                                 </div>
                             </li>
                             <%--School Directory--%>
-
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRMS">
                                     <i class="ri-dashboard-2-line"></i><span data-key="t-apps">HRMS</span>
@@ -696,25 +707,44 @@
                                 <div class="collapse menu-dropdown" id="HRMS">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a href="/mis/Masters/Mst_HREmpRetirement.aspx" class="nav-link">Retirement Or Separation</a></li>
-
-
                                         <li class="nav-item">
-                                            <a href="#Employee" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Employee"><i class="ri-dashboard-2-line"></i>Employee</a>
+                                            <a href="#Employee" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Employee"><i class="ri-dashboard-2-line"></i>Employee Registration</a>
                                             <div class="collapse menu-dropdown" id="Employee">
                                                 <ul class="nav nav-sm flex-column">
-
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeRegImportantNotes.aspx" class="nav-link">About Employee Registration</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/EmployeeRegistration.aspx" class="nav-link">Employee Registration</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#EmployeeVerification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="EmployeeVerification" data-key="t-EmployeeVerification"><i class="ri-dashboard-2-line"></i>Employee Verification</a>
+                                            <div class="collapse menu-dropdown" id="EmployeeVerification">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeVerificationNotes.aspx" class="nav-link">About Employee Verification</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/EmployeeVerification.aspx" class="nav-link">Employee Verification</a></li>
                                                 </ul>
                                             </div>
                                         </li>
-
+                                        <li class="nav-item">
+                                            <a href="#Curriculum" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Curriculum" data-key="t-Curriculum"><i class="ri-dashboard-2-line"></i>Employee Other Curriculum Activities</a>
+                                            <div class="collapse menu-dropdown" id="Curriculum">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeOtherCurriculumActivitiesNotw.aspx" class="nav-link">About Other Curriculum Activities </a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeOtherCurriculumActivities.aspx" class="nav-link">National/State Level Training </a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab2.aspx" class="nav-link">National/State Level Awards </a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab3.aspx" class="nav-link">Training Details </a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/Rpt_EmployeeDetails.aspx" class="nav-link">Employee Details Report </a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/Rpt_EmployeeHandicap.aspx" class="nav-link">Employee Handicap Report </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                         <li class="nav-item">
                                             <a href="#LeaveProcess" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="LeaveProcess" data-key="t-LeaveProcess"><i class="ri-dashboard-2-line"></i>Leave Process</a>
                                             <div class="collapse menu-dropdown" id="LeaveProcess">
                                                 <ul class="nav nav-sm flex-column">
-
                                                     <li class="nav-item"><a href="/mis/HRMS/Mst_LeaveType.aspx" class="nav-link">Leave Type</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/LeaveStatus.aspx" class="nav-link">Leave Status</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Mst_LeaveAllocation.aspx" class="nav-link">Leave Allocation</a></li>
@@ -735,7 +765,6 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/HRMS/LeavePendencyMonitor.aspx" class="nav-link">Leave Pendency Monitor Report</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/DEOMonitoringGrid.aspx" class="nav-link">DEO Monitoring Grid Report </a></li>
-
                                                 </ul>
                                             </div>
                                         </li>
@@ -744,12 +773,13 @@
                                                 aria-controls="VoluntaryTransfer" data-key="t-VoluntaryTransfer"><i class="ri-dashboard-2-line"></i>Employee Voluntary Transfer</a>
                                             <div class="collapse menu-dropdown" id="VoluntaryTransfer">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/HRMS/ApplicationForVoluntaryTransfer.aspx" class="nav-link">About Voluntary Transfer</a></li>
+                                                    <%--Jun. 7, 2024 --%>
                                                     <li class="nav-item"><a href="/mis/HRMS/Trn_ApplyVoluntaryTransfer.aspx" class="nav-link">Apply Voluntary Transfer</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx" class="nav-link">Print Draft Application or Update</a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/VoluntaryTransferLock_Applicatin.aspx.aspx" class="nav-link">Lock Application</a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/VoluntaryTransferLock_Applicatin.aspx" class="nav-link">Lock Application</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/VoluntaryTransferStatus.aspx" class="nav-link">Voluntary Transfer Application Status </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/Trn_ViewPostCodeWithVacancies.aspx" class="nav-link"><i class="ri-dashboard-2-line"></i>View Post Code With Vacancie </a></li>
-
+                                                    <li class="nav-item"><a href="/mis/HRMS/Trn_ViewPostCodeWithVacancies.aspx" class="nav-link">View Post Code With Vacancie </a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -758,10 +788,12 @@
                                                 aria-controls="EmployeeMutualTransfer" data-key="t-EmployeeMutualTransfer"><i class="ri-dashboard-2-line"></i>Employee Mutual Transfer</a>
                                             <div class="collapse menu-dropdown" id="EmployeeMutualTransfer">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/HRMS/Trn_MutualTransferApplication.aspx" class="nav-link">About Mutual Transfer </a></li>
+                                                    <%--Jun. 7, 2024 --%>
                                                     <li class="nav-item"><a href="/mis/HRMS/Trn_MutualTransferApply.aspx" class="nav-link">Mutual Transfer Apply</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/MutualTransferDraftApplication.aspx" class="nav-link">Print Draft Application or Update Application</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/MutualTransLockApplication.aspx" class="nav-link">Lock Application</a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/MutualTransferApplicationStatus.aspx" class="nav-link"><i class="ri-dashboard-2-line"></i>Mutual Transfer Application Status</a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/MutualTransferApplicationStatus.aspx" class="nav-link">Mutual Transfer Application Status</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -770,13 +802,15 @@
                                                 aria-controls="AdministrativeLevelTransfer" data-key="t-AdministrativeLevelTransfer"><i class="ri-dashboard-2-line"></i>Administrative Level Transfer</a>
                                             <div class="collapse menu-dropdown" id="AdministrativeLevelTransfer">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/HRMS/Trn_AdministrativeTransfer.aspx" class="nav-link">About Administrative Level Transfer </a></li>
+                                                    <%--Jun. 7, 2024 --%>
                                                     <li class="nav-item"><a href="/mis/HRMS/Trn_AdministrativeTransferApply.aspx" class="nav-link">Transfer </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/AdministrativeTransferDraftLetter.aspx" class="nav-link">Print Draft Transfer Or Update Application </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/AdministrativeGenerateTransferOrder.aspx" class="nav-link">Generate Transfer Order </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/AdministrativePrintTransferOrder.aspx" class="nav-link">Print Transfer Order </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Trn_AdministrativePostCodeWithVacancies.aspx" class="nav-link">View Post Code With Vacancies </a></li>
-                                                    <li class="nav-item"><a href="/mis/Transaction/Rpt_DistWiseCounting.aspx" class="nav-link">District Wise Counting </a></li>
-                                                    <li class="nav-item"><a href="/mis/Transaction/Rpt_BlockWiseCounting.aspx" class="nav-link">Block Wise Counting </a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/Rpt_DistWiseCounting.aspx" class="nav-link">District Wise Counting Report</a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/Rpt_BlockWiseCounting.aspx" class="nav-link">Block Wise Counting Report</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_AdministrativeTransferReport.aspx" class="nav-link">Transfer Report </a></li>
                                                 </ul>
                                             </div>
@@ -786,6 +820,8 @@
                                                 aria-controls="DEOTransferApproval" data-key="t-DEOTransferApproval"><i class="ri-dashboard-2-line"></i>DEO Transfer Approval</a>
                                             <div class="collapse menu-dropdown" id="DEOTransferApproval">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/DEO_TransferApproval.aspx" class="nav-link">About DEO Level Transfer Approval </a></li>
+                                                    <%--Jun. 7, 2024 --%>
                                                     <li class="nav-item"><a href="/mis/HRMS/DEOMutalTransferApprove.aspx" class="nav-link">Mutual Transfer Approve </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/DEOMutalTransferPrint.aspx" class="nav-link">Mutual Transfer Print </a></li>
 
@@ -797,6 +833,7 @@
                                                 aria-controls="ApprovalByHeadOffice" data-key="t-ApprovalByHeadOffice"><i class="ri-dashboard-2-line"></i>Transfer Approval by Head Office</a>
                                             <div class="collapse menu-dropdown" id="ApprovalByHeadOffice">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/HRMS/HeadOfficeTransferApproveAplication.aspx" class="nav-link">About HO Level Transfer Approval </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/HeadOfficeTransferApproval.aspx" class="nav-link">View Transfer Request & Approve </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/HeadOfficFinalVoluntaryTransferApprove.aspx" class="nav-link">Voluntary Transfer Final Approve </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/HeadOfficeTransferPrint.aspx" class="nav-link">Voluntary Transfer Print </a></li>
@@ -810,6 +847,7 @@
                                                 aria-controls="AutoTransferSys" data-key="t-AutoTransferSys"><i class="ri-dashboard-2-line"></i>Automatic Transfer System</a>
                                             <div class="collapse menu-dropdown" id="AutoTransferSys">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/OIS_Transfer1Notes.aspx" class="nav-link">About Automatic Transfer System </a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/OIS_Transfer1.aspx" class="nav-link">OIS Generate Transfer </a></li>
                                                 </ul>
                                             </div>
@@ -819,6 +857,7 @@
                                                 aria-controls="CancelTransferOrder" data-key="t-CancelTransferOrder"><i class="ri-dashboard-2-line"></i>Cancel Transfer Order</a>
                                             <div class="collapse menu-dropdown" id="CancelTransferOrder">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/Trn_CancleTransferOrderApplication.aspx" class="nav-link">About Cancel Transfer Order </a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/Trn_CancelTransferOrder.aspx" class="nav-link">Cancel Transfer Order </a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/CanceledTransferOrderPrint.aspx" class="nav-link">Print Cancel Transfer Order </a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/Rpt_CancelTransfer.aspx" class="nav-link">Report </a></li>
@@ -830,6 +869,7 @@
                                                 aria-controls="EmployeeJoiningInOffice" data-key="t-EmployeeJoiningInOffice"><i class="ri-dashboard-2-line"></i>Employee Joining In Office</a>
                                             <div class="collapse menu-dropdown" id="EmployeeJoiningInOffice">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmployeeJoiningInOfficeNotes.aspx" class="nav-link">About Employee Joining</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/EmployeeJoiningInOffice.aspx" class="nav-link">Add Employee to Office </a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/Rpt_EmployeeJoining.aspx" class="nav-link">Report </a></li>
                                                 </ul>
@@ -840,6 +880,7 @@
                                                 aria-controls="Tour" data-key="t-Tour"><i class="ri-dashboard-2-line"></i>Tour</a>
                                             <div class="collapse menu-dropdown" id="Tour">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/EmpTourApplyNotes.aspx" class="nav-link">About Tour</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/EmpTourApply.aspx" class="nav-link">Apply Tour</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/EmpTourGenerateOrder.aspx" class="nav-link">Tour Approve</a></li>
                                                 </ul>
@@ -885,6 +926,7 @@
                                                 aria-controls="DepartmentalEnquiry" data-key="t-DepartmentalEnquiry"><i class="ri-dashboard-2-line"></i>Departmental Enquiry</a>
                                             <div class="collapse menu-dropdown" id="DepartmentalEnquiry">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/DepartmentEnquiryNotes.aspx" class="nav-link">About Departmental Enquiry</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/DepartmentEnquiry.aspx" class="nav-link">Departmental Enquiry</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/DepartmentEnquiryList.aspx" class="nav-link">Departmental Enquiry List</a></li>
                                                     <li class="nav-item"><a href="/mis/Transaction/Rpt_DepartmentEnquiry.aspx" class="nav-link">Departmental Enquiry Report</a></li>
@@ -896,6 +938,7 @@
                                                 aria-controls="ACR" data-key="t-ACR"><i class="ri-dashboard-2-line"></i>ACR</a>
                                             <div class="collapse menu-dropdown" id="ACR">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/HRMS/ConfedicialReportNotes.aspx" class="nav-link">About ACR </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/ConfedicialReport.aspx" class="nav-link">Employee Apply ACR </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/EmployeeDetails.aspx" class="nav-link">Resend/Print Application </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/ReportingOfficerFill.aspx" class="nav-link">ACR Report Fill By Reporting Officer </a></li>
@@ -904,61 +947,58 @@
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_ReportingOfficer.aspx" class="nav-link">Reporting Officer ACR Report </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_AcceptingAuthority.aspx" class="nav-link">Accepting Authority ACR Report </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_DistrictWiseAcr.aspx" class="nav-link">District Wise ACR Report </a></li>
-
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#CompassionateAppointment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="CompassionateAppointment" data-key="t-CompassionateAppointment"><i class="ri-dashboard-2-line"></i>Compassionate Appointment</a>
-                                            <div class="collapse menu-dropdown" id="CompassionateAppointment">
+                                            <a href="#EmployeeCompassionate" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="EmployeeCompassionate" data-key="t-EmployeeCompassionate"><i class="ri-dashboard-2-line"></i>Employee Compassionate Application</a>
+                                            <div class="collapse menu-dropdown" id="EmployeeCompassionate">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <%--Employee Compassionate Application  Start--%>
-                                                    <li class="nav-item"><a href="/mis/HRMS/AnukampaNuktiMainPage.aspx" class="nav-link">Compassionate Appointment Home </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/Trn_CompassionateAppointment.aspx" class="nav-link">Apply for compassionate appointment </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/CompassionateAppointmentPrintApplication.aspx" class="nav-link">Print Status of Compassionate Appointment Application </a></li>
-                                                    <%--Employee Compassionate Application  End--%>
-
-                                                    <%-- DEO Compassionate Application Approval Start--%>
+                                                    <%--Employee Compassionate Application Start--%>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnukampaNuktiMainPage.aspx">Compassionate Appointment Home</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_CompassionateAppointment.aspx">Apply for compassionate appointment</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/CompassionateAppointmentPrintApplication.aspx">Print Status of Compassionate Appointment Application</a></li>
+                                                    <%--Employee Compassionate Application End--%>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#DEOCompassionate" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="DEOCompassionate" data-key="t-DEOCompassionate"><i class="ri-dashboard-2-line"></i>DEO Compassionate Application Approval</a>
+                                            <div class="collapse menu-dropdown" id="DEOCompassionate">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <%--DEO Compassionate Application Approval Start--%>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCaseForDEO.aspx">DEO Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_DeoCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DeoPrintApplicationReport.aspx">Print Application </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ProcessApplicationListDeo.aspx">Action on Compassionate Appointment</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCase.aspx">Decide on Application</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorDeo.aspx">NOC sent to District Collector</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DEOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DEOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportDeo.aspx">NOC Report</a></li>
-                                                    <%--DEO Compassionate Application Approval  End--%>
-
-                                                    <%--JD Compassionate Application Approval  Start--%>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DeoPrintApplicationReport.aspx">Print Application</a></li>
+                                                    <%--DEO Compassionate Application Approval End--%>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#JDCompassionate" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="JDCompassionate" data-key="t-JDCompassionate"><i class="ri-dashboard-2-line"></i>JD Compassionate Application Approval</a>
+                                            <div class="collapse menu-dropdown" id="JDCompassionate">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <%--JD Compassionate Application Approval Start--%>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicatonCaseForJD.aspx">JD Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_JDCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/JDPrintApplicationReport.aspx">Print Application</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ProcessApplicationListJD.aspx">Action on Compassionate Appointment</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForJD.aspx">Decide on Application</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorJD.aspx">NOC sent to District Collector</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/JDLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportJD.aspx">NOC Report</a></li>
-                                                    <%--JD Compassionate Application Approval  End--%>
-
-                                                    <%--Head Office Compassionate Application Approval  Start--%>
+                                                    <%--JD Compassionate Application Approval End--%>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#HeadOfficeCompassionate" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="HeadOfficeCompassionate" data-key="t-HeadOfficeCompassionate"><i class="ri-dashboard-2-line"></i>Head Office Compassionate Application Approval</a>
+                                            <div class="collapse menu-dropdown" id="HeadOfficeCompassionate">
+                                                <%--Ho Compassionate Application Approval Start--%>
+                                                <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCaseForHO.aspx">Head Office Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HOCompassionateApproval.aspx">Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOPrintApplicationReport.aspx">Print Application</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ProcessApplicationListHO.aspx">Action on Compassionate Appointment</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForHO.aspx">Decide on Application</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorHO.aspx">NOC sent to District Collector</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportHO.aspx">NOC Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HoRpt_CompassionateAppointment.aspx">Compassionate Appointment Report</a></li>
-                                                    <li class="nav-item"><a href="/mis/" class="nav-link">-- </a></li>
-                                                    <%--Head Office Compassionate Application Approval  End--%>
+                                                    <%--Ho Compassionate Application Approval end--%>
                                                 </ul>
                                             </div>
                                         </li>
@@ -969,19 +1009,16 @@
                                             <div class="collapse menu-dropdown" id="DashboardDisplay">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/HRMS/AllOrderDetails.aspx" class="nav-link">All Order Details </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/HRMS/Mst_CircularOrder.aspx" class="nav-link">Circular Order </a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/Mst_CircularOrder.aspx" class="nav-link">Circular Order </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Mst_Order.aspx" class="nav-link">Order Master </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Mst_TenderDetail.aspx" class="nav-link">Tender Master </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/PhotoAlbumDetails.aspx" class="nav-link">Photo Master </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/NewsDetails.aspx" class="nav-link">News Master</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/EventInformation.aspx" class="nav-link">Event Information Master</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/MessageInformation.aspx" class="nav-link">Message Information Master </a></li>
-
-
                                                 </ul>
                                             </div>
                                         </li>
-
                                         <li class="nav-item">
                                             <a href="#Grievance" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="Grievance" data-key="t-Grievance"><i class="ri-dashboard-2-line"></i>Grievance Management System</a>
@@ -993,9 +1030,9 @@
                                                     <li class="nav-item"><a href="/mis/HRMS/PrintComplaint.aspx" class="nav-link">Print Complaint </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/ViewAccumulatedComplaints.aspx" class="nav-link">Grievances Processing </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/GrievancesDispose.aspx" class="nav-link">Grievances Dispose </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/DisposedGrievances.aspx" class="nav-link">List of Resolved Complaints </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/RejectedGrievances.aspx" class="nav-link">List of Rejected Grievance </a></li>
-                                                    <li class="nav-item"><a href="/mis/HRMS/ForwardedGrievances%20.aspx" class="nav-link">District Wise Forwarded Grievances </a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/DisposedGrievances.aspx" class="nav-link">List of Resolved Complaints Report </a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/RejectedGrievances.aspx" class="nav-link">List of Rejected Grievance Report</a></li>
+                                                    <li class="nav-item"><a href="/mis/HRMS/ForwardedGrievances%20.aspx" class="nav-link">District Wise Forwarded Grievances Report</a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/CPIGrievancesDetails.aspx" class="nav-link">Details of Grievances forwarded from CPI </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/DistrictWiseProcessReport.aspx" class="nav-link">District Wise Progress Report </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/SectionWiseGrievanceReports.aspx" class="nav-link">Section Wise Pending Report </a></li>
@@ -1003,14 +1040,21 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#APRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="APRMS" data-key="t-APRMS"><i class="ri-dashboard-2-line"></i>APRMS</a>
-                                            <div class="collapse menu-dropdown" id="APRMS">
+                                            <a href="#EmpAPRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="EmpAPRMS" data-key="t-EmpAPRMS"><i class="ri-dashboard-2-line"></i>Employee APRMS</a>
+                                            <div class="collapse menu-dropdown" id="EmpAPRMS">
                                                 <ul class="nav nav-sm flex-column">
                                                     <%--Employee APRMS--%>
                                                     <li class="nav-item"><a href="/mis/HRMS/EmpAprNotes.aspx" class="nav-link">Employee APRMS Home </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Trn_EmpAprFill.aspx" class="nav-link">Employee APR Fill </a></li>
-
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#HOAPRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="HOAPRMS" data-key="t-HOAPRMS"><i class="ri-dashboard-2-line"></i>Head Office APRMS</a>
+                                            <div class="collapse menu-dropdown" id="HOAPRMS">
+                                                <ul class="nav nav-sm flex-column">
                                                     <%--Head Office APRMS--%>
                                                     <li class="nav-item"><a href="/mis/HRMS/HOAprNotes.aspx" class="nav-link">Head Office APRMS Home </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Trn_HoAprFill.aspx" class="nav-link">Head Office APR Fill </a></li>
@@ -1023,6 +1067,7 @@
                                                 aria-controls="IDCard" data-key="t-IDCard"><i class="ri-dashboard-2-line"></i>Employee ID Card Management System</a>
                                             <div class="collapse menu-dropdown" id="IDCard">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/HRMS/EmployeeIDcardmanagementNotes.aspx" class="nav-link">About ID Card </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/EmployeeIDcardmanagementSystem.aspx" class="nav-link">Employee ID Card Management System </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/GenerateIDCard.aspx" class="nav-link">Print Employee ID Card </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/EmployeeIDcardMissingDetails.aspx" class="nav-link">Employee Missing Details </a></li>
@@ -1040,35 +1085,19 @@
                                                     <li class="nav-item"><a href="/mis/Transaction/Rpt_EmployeeIncrement.aspx" class="nav-link">Employee Increment Report </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_EServiceBookReport.aspx" class="nav-link">E-Service Book Report </a></li>
                                                     <li class="nav-item"><a href="/mis/HRMS/Rpt_HREmpRetirementList.aspx" class="nav-link">Employee Retirement Report </a></li>
-
-
                                                 </ul>
                                             </div>
                                         </li>
-                                        <%-- <li class="nav-item">
-                                            <a href="#Transfer" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="Transfer" data-key="t-Promotion"><i class="ri-dashboard-2-line"></i>Transfer</a>
-                                            <div class="collapse menu-dropdown" id="Transfer">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="/mis/HRMS/" class="nav-link"> -- </a></li>
-
-
-                                                </ul>
-                                            </div>
-                                        </li>--%>
                                     </ul>
                                 </div>
                             </li>
                             <%--HRMS--%>
-
-
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Payroll">
                                     <i class="ri-dashboard-2-line"></i><span data-key="t-Payroll">Payroll</span>
                                 </a>
                                 <div class="collapse menu-dropdown" id="Payroll">
                                     <ul class="nav nav-sm flex-column">
-
                                         <li class="nav-item"><a href="/mis/Payroll/AttendanceProcess.aspx" class="nav-link">Attendance Process</a></li>
                                         <li class="nav-item"><a href="/mis/Payroll/SalaryFinalizationProcess.aspx" class="nav-link">Salary Finalization </a></li>
                                         <li class="nav-item"><a href="/mis/HRMS/AddIncrement.aspx" class="nav-link">Add Increment </a></li>
@@ -1082,8 +1111,6 @@
                                                 </ul>
                                             </div>
                                         </li>
-
-
                                         <li class="nav-item">
                                             <a href="#ArrearCalculation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="ArrearCalculation"><i class="ri-dashboard-2-line"></i>Arrear Calculation</a>
@@ -1091,11 +1118,9 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Payroll/ArrearCalculation.aspx" class="nav-link">Arrear Calculation </a></li>
                                                     <li class="nav-item"><a href="/mis/Payroll/ArrearFinalSubmission.aspx" class="nav-link">Arrear Final Submission </a></li>
-
                                                 </ul>
                                             </div>
                                         </li>
-
                                         <li class="nav-item">
                                             <a href="#SalaryFinalization" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="SalaryFinalization"><i class="ri-dashboard-2-line"></i>Payment File</a>
@@ -1106,54 +1131,6 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <%--  <li class="nav-item">
-                                            <a href="#SetEmployeeAttendance" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SetEmployeeAttendance"><i class="ri-dashboard-2-line"></i>Set Employee Attendance</a>
-                                            <div class="collapse menu-dropdown" id="SetEmployeeAttendance">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="#" class="nav-link">Set Employee Attendance</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-
-
-                                        <li class="nav-item">
-                                            <a href="#SetEarningDeduction" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SetEarningDeduction">Set Earning & Deduction</a>
-                                            <div class="collapse menu-dropdown" id="SetEarningDeduction">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="#" class="nav-link">Set Earning & Deduction Master</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Update Single Head</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Copy From Previous Month</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-
-                                        <li class="nav-item">
-                                            <a href="#ArrerCalculation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SalaryGenerateReset">Arrer Calculation</a>
-                                            <div class="collapse menu-dropdown" id="ArrerCalculation">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Calculation</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Auto Calculation</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">DA Arrers</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Arrer Manual Entry</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#MontlyPayBill" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="MontlyPayBill">Montly Pay Bill</a>
-                                            <div class="collapse menu-dropdown" id="MontlyPayBill">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a href="#" class="nav-link">Paybill Monthly Branch Wise Bank Advice</a></li>
-                                                    <li class="nav-item"><a href="#" class="nav-link">Paybill With All Heads</a></li>
-
-                                                </ul>
-                                            </div>
-                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#PayrollReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="PayrollReports"><i class="ri-dashboard-2-line"></i>Payroll Reports</a>
@@ -1212,27 +1189,23 @@
                                 </a>
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="SchemeManagement">
                                     <ul class="nav nav-sm flex-column">
-
-                                        <li class="nav-item"><a class="nav-link" href="https://dpihrms.tserver.co.in/dashboard/mis/newdashboard.aspx">Dashboard</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/Scheme_Department.aspx">Scheme Department Master</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/Trn_SchemeApplication.aspx">Scheme Master</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/StudentProfileLocking.aspx">Student Profile View/Edit/Lock</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/SSDDO_Scholarship.aspx">SSDDO Scholarship</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/Student_Tracking.aspx">Student Tracking</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/Scheme_Details.aspx">Scheme Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/ListOfStudentRegisteredInSambal.aspx">Sambal Scheme</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/SchemeCriteriasByClass.aspx">Scholarship Benefit Sanction Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/GanaveshDBTReportBlockWise.aspx">Uniform Distribution Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Department.aspx"> Scheme  Department Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Trn_SchemeApplication.aspx">Scheme Master</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/StudentProfileLocking.aspx">Student Profile View/ Edit/ Lock</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SSDDO_Scholarship.aspx">SSDDO Scholarship</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Student_Tracking.aspx">Student Tracking</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Details.aspx">Scheme Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/ListOfStudentRegisteredInSambal.aspx">Sambal Scheme</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SchemeCriteriasByClass.aspx">Scholarship Benefit Sanction Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/GanaveshDBTReportBlockWise.aspx">Uniform Distribution Management</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Text Book Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="Scheme/CheckEligibilityForLaptopScheme.aspx">Laptop Scheme</a></li>
-
-
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/CheckEligibilityForLaptopScheme.aspx">Laptop Scheme</a></li>
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#SchemeManagement_AdmissionMgmt" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="SchemeManagement_AdmissionMgmt">
                                                 <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Admission Management</span>
                                             </a>
-
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="SchemeManagement_AdmissionMgmt">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Scheme/PromoteStudents1A.aspx" class="nav-link">Promote Students to Higher Class (Format - 1A) </a></li>
@@ -1246,7 +1219,6 @@
                                                 aria-expanded="false" aria-controls="StudentProfileMgmt">
                                                 <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Student Profile Management</span>
                                             </a>
-
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="StudentProfileMgmt">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Scheme/StudentsProfile.aspx" class="nav-link">Update Student Profile for Scholarships</a></li>
@@ -1254,14 +1226,11 @@
                                             </div>
                                         </li>
                                         <%--Student Profile Management--%>
-
-
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#CycleDistribution" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="CycleDistribution">
                                                 <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Cycle Distribution Management</span>
                                             </a>
-
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="CycleDistribution">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Scheme/9thClassCycleSelectionStudent.aspx" class="nav-link">9th Class Students Selected for Cycle Distribution </a></li>
@@ -1270,13 +1239,11 @@
                                             </div>
                                         </li>
                                         <%--Cycle Distribution Management--%>
-
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#StudentManagement" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="StudentManagement">
                                                 <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Student Management System</span>
                                             </a>
-
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="StudentManagement">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Scheme/TransferCertificate.aspx" class="nav-link">Transfer Certificate </a></li>
@@ -1290,14 +1257,12 @@
                                                 aria-expanded="false" aria-controls="E_KYC">
                                                 <i class="ri-dashboard-2-line"></i><span data-key="t-apps">E-KYC</span>
                                             </a>
-
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="E_KYC">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Scheme/eKycVerifivation.aspx" class="nav-link">eKyc Verification</a></li>
                                                     <li class="nav-item"><a href="/mis/Scheme/StudentDetailseKYC.aspx" class="nav-link">Student Details kyc</a></li>
                                                     <li class="nav-item"><a href="/mis/Scheme/eKYC-Approval.aspx" class="nav-link">eKYC Approval</a></li>
                                                     <li class="nav-item"><a href="/mis/Scheme/StudentSamagrae-KYC_Approval.aspx" class="nav-link">Student Samagra e-KYC Approval</a></li>
-
                                                 </ul>
                                             </div>
                                         </li>
@@ -1307,7 +1272,6 @@
                                                 aria-expanded="false" aria-controls="BankMaster">
                                                 <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Bank Master</span>
                                             </a>
-
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="BankMaster">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Scheme/Mst_BankMaster.aspx" class="nav-link">Bank Master</a></li>
@@ -1321,12 +1285,12 @@
                                         </li>
                                         <%--Bank Master--%>
                                         <li class="nav-item">
-                                            <a class="nav-link menu-link" href="#SchemeManagement_Reports" data-bs-toggle="collapse" role="button"
-                                                aria-expanded="false" aria-controls="SchemeManagement_Reports">
-                                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Reports</span>
+                                            <a class="nav-link menu-link" href="#ControlReport" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="ControlReport">
+                                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Control Report</span>
                                             </a>
 
-                                            <div class="collapse menu-dropdown dropdown-custom-left" id="SchemeManagement_Reports">
+                                            <div class="collapse menu-dropdown dropdown-custom-left" id="ControlReport">
                                                 <ul class="nav nav-sm flex-column">
                                                     <%--Control Report Start--%>
                                                     <li class="nav-item"><a href="/mis/Scheme/DistrictWiseeKYCStatisticalReport.aspx" class="nav-link">District Wise eKYC Statistical Report</a></li>
@@ -1336,26 +1300,34 @@
                                                     <li class="nav-item"><a href="/mis/Scheme/BriefReportOfDistrictWiseClassWiseEnrollment.aspx" class="nav-link">Brief Report Of District Wise Class Wise Enrollment</a></li>
                                                     <li class="nav-item"><a href="#" class="nav-link">Brief Report of District Wise Profile Update</a></li>
                                                     <%--Control Report end--%>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link menu-link" href="#AnalyticalReport" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="AnalyticalReport">
+                                                <i class="ri-dashboard-2-line"></i><span data-key="t-apps">Analytical Report</span>
+                                            </a>
+
+                                            <div class="collapse menu-dropdown dropdown-custom-left" id="AnalyticalReport">
+                                                <ul class="nav nav-sm flex-column">
                                                     <%--Analytical Report Start--%>
-                                                    <li class="nav-item"><a href="Scheme/SchemeWiseBriefReport.ASPX" class="nav-link">Scheme Wise Brief Report</a></li>
+                                                    <li class="nav-item"><a href="/mis/Scheme/SchemeWiseBriefReport.ASPX" class="nav-link">Scheme Wise Brief Report</a></li>
                                                     <li class="nav-item"><a href="#" class="nav-link">District Wise Summary Report For The Scheme</a></li>
-                                                    <li class="nav-item"><a href="Scheme/DistrictAndSchemeWiseScholarshipSummaryReport.aspx" class="nav-link">District and Scheme Wise Scholarship Summary Report</a></li>
-                                                    <li class="nav-item"><a href="Scheme/DistrictWiseScholarshipBriefReport.aspx" class="nav-link">District Wise Scholarship Brief Report</a></li>
+                                                    <li class="nav-item"><a href="/mis/Scheme/DistrictAndSchemeWiseScholarshipSummaryReport.aspx" class="nav-link">District and Scheme Wise Scholarship Summary Report</a></li>
+                                                    <li class="nav-item"><a href="/mis/Scheme/DistrictWiseScholarshipBriefReport.aspx" class="nav-link">District Wise Scholarship Brief Report</a></li>
                                                     <%--Analytical Report end--%>
                                                 </ul>
                                             </div>
-
                                         </li>
                                         <%--Reports--%>
                                     </ul>
                                 </div>
-
                             </li>
                         </ul>
                     </div>
                     <!-- Sidebar -->
                 </div>
-
                 <div class="sidebar-background"></div>
             </div>
             <!-- Left Sidebar End -->
@@ -1366,25 +1338,20 @@
             <!-- Start right Content here -->
             <!-- ============================================================== -->
             <div class="main-content">
-
                 <div class="page-content">
                     <div class="container-fluid">
                         <asp:ContentPlaceHolder ID="ContentBody" runat="server">
                         </asp:ContentPlaceHolder>
-
-
                     </div>
                     <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
-
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6">
                                 <script>document.write(new Date())</script>
                                 © Madhya Pradesh State Education Portal 3.0.
-                       
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-sm-end d-none d-sm-block">
@@ -1395,21 +1362,15 @@
                         </div>
                     </div>
                 </footer>
-
             </div>
             <!-- end main content-->
-
         </div>
         <!-- END layout-wrapper -->
-
-
-
         <!--start back-to-top-->
         <button onclick="topFunction()" type="button" class="btn btn-danger btn-icon" id="back-to-top">
             <i class="ri-arrow-up-line"></i>
         </button>
         <!--end back-to-top-->
-
         <!--preloader-->
         <div id="preloader">
             <div id="status">
@@ -1418,18 +1379,15 @@
                 </div>
             </div>
         </div>
-
         <div class="customizer-setting d-none d-md-block">
             <div class="btn-info rounded-pill shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
                 <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
             </div>
         </div>
-
         <!-- Theme Settings -->
         <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
             <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
                 <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
-
                 <button type="button" class="btn-close btn-close-white ms-auto" id="customizerclose-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body p-0">
@@ -1437,7 +1395,6 @@
                     <div class="p-4">
                         <h6 class="mb-0 fw-semibold text-uppercase">Layout</h6>
                         <p class="text-muted">Choose your layout</p>
-
                         <div class="row gy-3">
                             <div class="col-4">
                                 <div class="form-check card-radio">
@@ -1513,7 +1470,6 @@
                                 <h5 class="fs-13 text-center mt-2">Two Column</h5>
                             </div>
                             <!-- end col -->
-
                             <div class="col-4">
                                 <div class="form-check card-radio">
                                     <input id="customizer-layout04" name="data-layout" type="radio" value="semibox" class="form-check-input">
@@ -1540,15 +1496,12 @@
                             </div>
                             <!-- end col -->
                         </div>
-
                         <div class="form-check form-switch form-switch-md mb-3 mt-4">
                             <input type="checkbox" class="form-check-input" id="sidebarUserProfile">
                             <label class="form-check-label" for="sidebarUserProfile">Sidebar User Profile Avatar</label>
                         </div>
-
                         <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Theme</h6>
                         <p class="text-muted">Choose your suitable Theme.</p>
-
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-check card-radio">
@@ -1556,7 +1509,6 @@
                                     <label class="form-check-label p-0" for="customizer-theme01">
                                         <img src="../assets/images/demos/default.png" alt="" class="img-fluid">
                                     </label>
-
                                 </div>
                                 <h5 class="fs-13 text-center fw-medium mt-2">Default</h5>
                             </div>
@@ -1566,8 +1518,6 @@
                                     <label class="form-check-label p-0" for="customizer-theme02">
                                         <img src="../assets/images/demos/saas.png" alt="" class="img-fluid">
                                     </label>
-
-
                                 </div>
                                 <h5 class="fs-13 text-center fw-medium mt-2">Sass</h5>
                             </div>
@@ -1636,7 +1586,6 @@
                                 <h5 class="fs-13 text-center fw-medium mt-2">Interactive</h5>
                             </div>
                             <!-- end col -->
-
                             <div class="col-6">
                                 <div class="form-check card-radio">
                                     <input id="customizer-theme10" name="data-theme" type="radio" value="classic" class="form-check-input">
@@ -1647,7 +1596,6 @@
                                 <h5 class="fs-13 text-center fw-medium mt-2">Classic</h5>
                             </div>
                             <!-- end col -->
-
                             <div class="col-6">
                                 <div class="form-check card-radio">
                                     <input id="customizer-theme11" name="data-theme" type="radio" value="vintage" class="form-check-input">
@@ -1659,10 +1607,8 @@
                             </div>
                             <!-- end col -->
                         </div>
-
                         <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Color Scheme</h6>
                         <p class="text-muted">Choose Light or Dark Scheme.</p>
-
                         <div class="colorscheme-cardradio">
                             <div class="row">
                                 <div class="col-4">
@@ -1689,7 +1635,6 @@
                                     </div>
                                     <h5 class="fs-13 text-center mt-2">Light</h5>
                                 </div>
-
                                 <div class="col-4">
                                     <div class="form-check card-radio dark">
                                         <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-mode-dark" value="dark">
@@ -1716,11 +1661,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="sidebar-visibility">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Visibility</h6>
                             <p class="text-muted">Choose show or Hidden sidebar.</p>
-
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-check card-radio">
@@ -1764,11 +1707,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="layout-width">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Layout Width</h6>
                             <p class="text-muted">Choose Fluid or Boxed layout.</p>
-
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-check card-radio">
@@ -1820,22 +1761,18 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="layout-position">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Layout Position</h6>
                             <p class="text-muted">Choose Fixed or Scrollable Layout Position.</p>
-
                             <div class="btn-group radio" role="group">
                                 <input type="radio" class="btn-check" name="data-layout-position" id="layout-position-fixed" value="fixed">
                                 <label class="btn btn-light w-sm" for="layout-position-fixed">Fixed</label>
-
                                 <input type="radio" class="btn-check" name="data-layout-position" id="layout-position-scrollable" value="scrollable">
                                 <label class="btn btn-light w-sm ms-0" for="layout-position-scrollable">Scrollable</label>
                             </div>
                         </div>
                         <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Topbar Color</h6>
                         <p class="text-muted">Choose Light or Dark Topbar Color.</p>
-
                         <div class="row">
                             <div class="col-4">
                                 <div class="form-check card-radio">
@@ -1886,11 +1823,9 @@
                                 <h5 class="fs-13 text-center mt-2">Dark</h5>
                             </div>
                         </div>
-
                         <div id="sidebar-size">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Size</h6>
                             <p class="text-muted">Choose a size of Sidebar.</p>
-
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio">
@@ -1916,7 +1851,6 @@
                                     </div>
                                     <h5 class="fs-13 text-center mt-2">Default</h5>
                                 </div>
-
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio">
                                         <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-compact" value="md">
@@ -1941,7 +1875,6 @@
                                     </div>
                                     <h5 class="fs-13 text-center mt-2">Compact</h5>
                                 </div>
-
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio">
                                         <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-small" value="sm">
@@ -1966,7 +1899,6 @@
                                     </div>
                                     <h5 class="fs-13 text-center mt-2">Small (Icon View)</h5>
                                 </div>
-
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio">
                                         <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-small-hover" value="sm-hover">
@@ -1993,11 +1925,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="sidebar-view">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar View</h6>
                             <p class="text-muted">Choose Default or Detached Sidebar view.</p>
-
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio">
@@ -2053,7 +1983,6 @@
                         <div id="sidebar-color">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Color</h6>
                             <p class="text-muted">Choose a color of Sidebar.</p>
-
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio" data-bs-toggle="collapse" data-bs-target="#collapseBgGradient.show">
@@ -2126,10 +2055,8 @@
                                 </div>
                             </div>
                             <!-- end row -->
-
                             <div class="collapse" id="collapseBgGradient">
                                 <div class="d-flex gap-2 flex-wrap img-switch p-2 px-3 bg-light rounded">
-
                                     <div class="form-check sidebar-setting card-radio">
                                         <input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient" value="gradient">
                                         <label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient">
@@ -2157,11 +2084,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="sidebar-img">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Images</h6>
                             <p class="text-muted">Choose a image of Sidebar.</p>
-
                             <div class="d-flex gap-2 flex-wrap img-switch">
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-none" value="none">
@@ -2171,7 +2096,6 @@
                                         </span>
                                     </label>
                                 </div>
-
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-01" value="img-1">
                                     <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
@@ -2199,11 +2123,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="sidebar-color">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Primary Color</h6>
                             <p class="text-muted">Choose a color of Primary.</p>
-
                             <div class="d-flex flex-wrap gap-2">
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-theme-colors" id="themeColor-01" value="default">
@@ -2223,11 +2145,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="preloader-menu">
                             <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Preloader</h6>
                             <p class="text-muted">Choose a preloader.</p>
-
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-check sidebar-setting card-radio">
@@ -2285,7 +2205,6 @@
                                     <h5 class="fs-13 text-center mt-2">Disable</h5>
                                 </div>
                             </div>
-
                         </div>
                         <!-- end preloader-menu -->
 
@@ -2409,6 +2328,7 @@
         </asp:ContentPlaceHolder>
         <%--   </div>--%>
         <script>
+
             function SidebarToggle(id) {
                 var parentLi = document.getElementById(id);
                 if (!parentLi.classList.contains('show')) {

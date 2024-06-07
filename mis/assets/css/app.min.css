@@ -20578,6 +20578,7 @@ fieldset {
     margin-bottom: 1.5rem;
     border-radius: 5px;
     padding-left: 20px;
+    width:100%;
 }
 
 .form-select {
