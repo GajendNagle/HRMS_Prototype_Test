@@ -436,83 +436,49 @@
 
                         <legend>Grade</legend>
                         <div class="row">
-                            <div class="col-md-4">
-                                <label>
+                            <div class="col-md-4 mt-3">
+                                <label for="message">
                                     Allegiance
                                     <br />
-                                    सन्निष्ठा</label>
-                                <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+                                    सन्निष्ठा<span style="color: red">*</span></label>
+                                <textarea class="form-control mt-1   fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" required name="message"></textarea>
                             </div>
                             <div class="col-md-4">
                                 <label>
                                     Please comment on overall assessment of the Teacher<br />
-                                    शिक्षक के समग्र मूल्यांकन पर टिप्पणी</label>
-                                <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+                                    शिक्षक के समग्र मूल्यांकन पर टिप्पणी<span style="color: red">*</span></label>
+                                <textarea class="form-control mb-5  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mt-3">
                                 <label>
-                                    Grade
+                                    Grading
                                     <br />
-                                    शिक्षक के समग्र मूल्यांकन श्रेणी</label>
-                                <asp:DropDownList runat="server" CssClass="select2 form-control ">
-
-                                    <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
-
-                                </asp:DropDownList>
+                                    शिक्षक के समग्र मूल्यांकन श्रेणी<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlGrading" onchange="myFunction()">
+     <option value="0">--Select--</option>
+     <option value="1">A+/उत्कृष्ट</option>
+     <option value="2">A/बहुत अच्छा</option>
+     <option value="3">B/अच्छा</option>
+     <option value="4">C/संतोषप्रद</option>
+     <option value="5">D/असंतोषप्रद</option>
+ </select>
                             </div>
+                               <div class="col-md-4" style="display: none;" id="OfficerName">
+       <label>Enter Remark For  Outstanding Grading
+           <br />
+           उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
+       <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+
+   </div>
                         </div>
 
                     </fieldset>
-                    <fieldset>
-
-                        <legend>Part-3 Review / भाग-3 समीक्षा
-                            <br />
-                            (समीक्षक अधिकारी द्वारा भरा जाये)  </legend>
-
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>
-                                    Do you agree with the remarks of the reporting officer ?<br />
-                                    क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</label>
-                                <asp:DropDownList runat="server" CssClass="select2 form-control">
-                                    <asp:ListItem>--Select--</asp:ListItem>
-                                    <asp:ListItem>Yes/हाँ</asp:ListItem>
-                                    <asp:ListItem>No/नही</asp:ListItem>
-                                    <%--  <asp:ListItem>No/या</asp:ListItem>--%>
-                                    <asp:ListItem>Partially/आंशिक</asp:ListItem>
-
-                                </asp:DropDownList>
-                            </div>
-                            <div class="col-md-4">
-                                <label>
-                                    If no or agree partially give reasons for disagreement<br />
-                                    यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण
-                                </label>
-                                <textarea class="form-control" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label>Grading<br />
-                                    ग्रेड</label>
-                                <asp:DropDownList runat="server" CssClass="select2 form-control">
-                                    <asp:ListItem>--Select--</asp:ListItem>
-                                    <asp:ListItem>Outstanding/उत्कृष्ट</asp:ListItem>
-                                    <asp:ListItem>Very good/बहुत अच्छा</asp:ListItem>
-                                    <asp:ListItem>good/अच्छा</asp:ListItem>
-                                    <asp:ListItem>Satisfactory/संतोषप्रद</asp:ListItem>
-                                    <asp:ListItem>Below satisfaction/असंतोषप्रद</asp:ListItem>
-
-                                </asp:DropDownList>
-                            </div>
-
-                        </div>
-                    </fieldset>
+                 
                 </fieldset>
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="form-group">
-                            <button type="button" class=" btn btn-success btn-rounded " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button  class=" btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                                Save
                             </button>
                             <a href="ReportingOfficerFill.aspx" class="btn btn-danger  btn-rounded">Clear</a>
@@ -542,18 +508,18 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Accepting Authority Officer Unique ID <br />स्वीकारकर्ता प्राधिकारी की यूनिक आईडी <span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction1()"></asp:TextBox>
 
                             </div>
 
-                            <div class="col-md-4" style="display: none;" id="OfficerName">
+                            <div class="col-md-4" style="display: none;" id="OfficerName1">
                                 <label>Accepting Authority Officer Name <br />स्वीकारकर्ता प्राधिकारी का नाम <span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
 
                             </div>
 
-                            <div class="col-md-4" style="display: none;" id="SankulCode">
-                                <label>Accepting Authority Officer Sankul Code <br /> स्वीकारकर्ता प्राधिकारी का संकुल कोड</label>
+                            <div class="col-md-4" style="display: none;" id="SankulCode1">
+                                <label>Accepting Authority Officer Sankul Code <br /> स्वीकारकर्ता प्राधिकारी का संकुल कोड<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="GOVT. HSS SHYAMPUR-23010804504"></asp:TextBox>
                             </div>
                         </div>
@@ -581,165 +547,7 @@
    
 
     <!-- Modal -->
-    <%--<div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #1B5B5C;">
 
-                    <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
-
-                    <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">EMPLOYEE PERSONAL INFORMATION</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <fieldset>
-                        <legend>EMPLOYEE PERSONAL INFORMATION</legend>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Financial Year
-                                        <br />
-                                        (वार्षिक प्रतिवेदन अवधि वर्ष) <span style="color: red">*</span> </label>
-                                    <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
-                                        <asp:ListItem>2020-2021</asp:ListItem>
-                                        <asp:ListItem>2021-2022</asp:ListItem>
-                                        <asp:ListItem>2022-2023</asp:ListItem>
-                                        <asp:ListItem>2023-2024</asp:ListItem>
-                                        <asp:ListItem>2024-2025</asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Name
-                                        <br />
-                                        (नाम)  <span class="fa-pull-right" style="color: red">*</span> </label>
-                                    <asp:TextBox runat="server" ID="txtName" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Designation
-                                        <br />
-                                        (पद नाम) <span style="color: red">*</span> </label>
-                                    <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
-                                        <asp:ListItem>सहायक शिक्षक</asp:ListItem>
-                                        <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
-                                        <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
-                                        <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
-                                    </asp:DropDownList>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Unique ID<br />
-                                        (कर्मचारी आई.डी)
-                           <span class="fa-pull-right" style="color: red">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox4" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        <br />
-                                        Date of Birth<br />
-                                        (जन्मतिथि)/अंकों में <span class="fa-pull-right" style="color: red">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TXTDOB" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
-
-                                </div>
-                            </div>
-               <div class="col-md-3">
-                       <div class="form-group">
-                           <label>Date of Birth(जन्मतिथि)/ शब्दों में <span class="fa-pull-right" style="color: red">*</span> </label>
-                           <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
-
-                       </div>
-                   </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        <br />
-                                        Institution of Posting<br />
-                                        (पदस्थी शाला/स्थान)<span style="color: red;">*</span></label>
-                                    <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 select2" autocomplete="off">
-                                        <asp:ListItem>भोपाल</asp:ListItem>
-                                        <asp:ListItem>बैतूल</asp:ListItem>
-                                        <asp:ListItem>इंदौर </asp:ListItem>
-                                        <asp:ListItem>जबलपुर</asp:ListItem>
-                                    </asp:DropDownList>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="fs-6">
-                                        <br />
-                                        Dise Code of Institution<br />
-                                        (पदस्थी शाला का डाइस कोड)<span style="color: red;">*</span></label>
-                                    <asp:TextBox runat="server" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Date OF First Posting and designation<br />
-                                        (प्रथम नियुक्ति का दिनांक एवं पद)<span style="color: red;">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="row">
-
-                            <div class="col-md-3 mt-2">
-                                <div class="form-group">
-                                    <label>
-                                        Date OF  Posting/Pramotion<br />
-                                        (वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक)<span style="color: red;">*</span>
-                                    </label>
-                                    <br />
-                                    <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control mt-1" autocomplete="off" value="1996-12-23" TextMode="Date" Style="position: relative; top: 5px;"></asp:TextBox>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-1">
-                                <div class="form-group">
-                                    <label>
-                                        Date OF Filiing of annual Immovabel Property Return
-                               (स्थाई संपत्ती विवरण दाखिल करनेका दिनांक)<span style="color: red;">*</span>
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox5" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date" Style="position: relative; bottom: 4px;"></asp:TextBox>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </fieldset>
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-success" onclick="window.print()">Print</button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>--%>
 
     <%--  employee view--%>
 
@@ -1693,10 +1501,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+   <%-- <script>
+        function opnmodel() {
+            $('#exampleModal').model('show')
+        }
+    </script>--%>
     <script>
-        function myFunction() {
-            document.getElementById('OfficerName').style.display = "block";
-            document.getElementById('SankulCode').style.display = "block";
+        function myFunction1() {
+            document.getElementById('OfficerName1').style.display = "block";
+            document.getElementById('SankulCode1').style.display = "block";
             document.getElementById('btn1').style.display = "block";
         }
         function openPDF() {
@@ -1764,4 +1577,14 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
+       <script>
+           function myFunction() {
+               var ForwordTo = document.getElementById("ddlGrading").value;
+               if (ForwordTo == "1") {
+                   document.getElementById('OfficerName').style.display = "block";
+               } else {
+                   document.getElementById('OfficerName').style.display = "none";
+               }
+           }
+       </script>
 </asp:Content>

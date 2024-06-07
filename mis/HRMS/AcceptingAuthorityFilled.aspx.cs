@@ -16,12 +16,14 @@ public partial class mis_Transaction_AcceptingAuthorityFilled : System.Web.UI.Pa
     {
         show2.Visible = false;
         Fieldset1.Visible = true;
+        Fieldset2.Visible = true;
     }
 
     protected void Unnamed_Click1(object sender, EventArgs e)
     {
         show2.Visible = false;
         Fieldset1.Visible = true;
+        Fieldset2.Visible = true;
 
     }
 }

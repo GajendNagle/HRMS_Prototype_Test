@@ -113,7 +113,7 @@
                 </div>
             </nav>
             <br />
-            
+
             <fieldset id="show2" runat="server">
                 <legend>Review and filling of ACR report by the Accepting Authority / स्वीकारकर्ता प्राधिकारी द्वारा एसीआर रिपोर्ट की समीक्षा करना और भरना</legend>
                 <div class="row justify-content-end">
@@ -188,7 +188,7 @@
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click" />
 
                                         </td>
-                                       <%-- <td>
+                                        <%-- <td>
                                             <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>--%>
                                     </tr>
                                 </tbody>
@@ -214,12 +214,70 @@
                                         <td>
                                             <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click1" />
                                         </td>
-                                      <%--  <td>
+                                        <%--  <td>
                                             <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>--%>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset runat="server" id="Fieldset2" visible="false">
+
+                <legend>Part-3 Review (To Be Filled By Reviewing Authorities)<br />  भाग-3 समीक्षा
+        
+                    (समीक्षक अधिकारी द्वारा भरा जाये)  </legend>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>
+                            Do you agree with the remarks of the reporting officer ?<br />
+                            क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|<span style="color: red">*</span></label>
+                        <asp:DropDownList runat="server" CssClass="select2 form-control">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Yes/हाँ</asp:ListItem>
+                            <asp:ListItem>No/नही</asp:ListItem>
+                            <%--  <asp:ListItem>No/या</asp:ListItem>--%>
+                            <asp:ListItem>Partially/आंशिक</asp:ListItem>
+
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-4">
+                        <label>
+                            If no or agree partially give reasons for disagreement<br />
+                            यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण<span style="color: red">*</span>
+                        </label>
+                         <asp:DropDownList runat="server" CssClass="select2 form-control">
+     <asp:ListItem>--Select--</asp:ListItem>
+     <asp:ListItem>Yes/हाँ</asp:ListItem>
+     <asp:ListItem>No/नही</asp:ListItem>
+     <%--  <asp:ListItem>No/या</asp:ListItem>--%>
+     <asp:ListItem>Partially/आंशिक</asp:ListItem>
+
+ </asp:DropDownList>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>
+                            Grading<br />
+                            ग्रेड<span style="color: red">*</span></label>
+                     <select class="form-control select2" id="ddlfsgrade" onchange="myFunction1()">
+     <option value="0">--Select--</option>
+     <option value="1">Outstanding/उत्कृष्ट</option>
+     <option value="2">Very good/बहुत अच्छा</option>
+     <option value="3">good/अच्छा</option>
+     <option value="4">Satisfactory/संतोषप्रद</option>
+     <option value="5">Below satisfaction/असंतोषप्रद</option>
+ </select>
+                    </div>
+                    <div class="col-md-4" style="display: none;" id="OfficerName1">
+                        <label>Enter Remark For  Outstanding Grading
+                            <br />
+                            उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
+                        <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+
                     </div>
                 </div>
             </fieldset>
@@ -237,13 +295,13 @@
                         <div class="col-md-4">
                             <label class="mt-3 fw-bold">
                                 Employee Name/Unique ID<br />
-                                कर्मचारी का नाम/कर्मचारी आई.डी</label>
+                                कर्मचारी का नाम/कर्मचारी आई.डी<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control mt-2 fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
                         </div>
                         <div class="col-md-4 mt-4">
                             <label>
                                 Do you agree with the remarks of the reporting officer ?<br />
-                                क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?</label>
+                                क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="select2 form-control">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Yes/हाँ</asp:ListItem>
@@ -255,7 +313,7 @@
                         <div class="col-md-4 mt-4">
                             <label>
                                 If no or agree partially give reasons for disagreement<br />
-                                यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण
+                                यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण<span style="color: red">*</span>
                             </label>
                             <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
                             <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
@@ -266,7 +324,7 @@
                         <div class="col-md-4">
                             <label>
                                 Grading<br />
-                                ग्रेड</label>
+                                ग्रेड<span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlGrading" onchange="myFunction()">
                                 <option value="0">--Select--</option>
                                 <option value="1">Outstanding/उत्कृष्ट</option>
@@ -277,7 +335,9 @@
                             </select>
                         </div>
                         <div class="col-md-4" style="display: none;" id="OfficerName">
-                            <label>Enter Remark For  Outstanding Grading <br />उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
+                            <label>Enter Remark For  Outstanding Grading
+                                <br />
+                                उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
 
                         </div>
@@ -755,7 +815,8 @@
                                                 <th colspan="5">Previous class annual examination Result grade wises Student number<br />
                                                     पूर्व कक्षा के परीक्षा परिणाम के अनुसार छात्रों की ग्रेडवार संख्या
                                                 </th>
-                                                <th colspan="5">Achievement on the basis of annual examination result                           <br />
+                                                <th colspan="5">Achievement on the basis of annual examination result                          
+                                                    <br />
                                                     वार्षिक परीक्षा के
 आधार पर उपलब्धि<br />
                                                     (Student in Grade)<br />
@@ -1207,7 +1268,7 @@
                         </fieldset>
 
 
-                      
+
                     </div>
 
 
@@ -1419,6 +1480,7 @@
                                 </tr>
 
                             </table>
+
                             <fieldset style="position: relative; right: 10px;">
 
                                 <legend>Grade</legend>
@@ -1427,14 +1489,14 @@
                                         <label>
                                             Allegiance
                                             <br />
-                                            सन्निष्ठा</label>
+                                            सन्निष्ठा<span style="color: red">*</span></label>
                                         <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                     </div>
 
                                     <div class="col-md-4">
                                         <label>
                                             Please comment on overall assessment of the Teacher<br />
-                                            शिक्षक के समग्र मूल्यांकन पर टिप्पणी</label>
+                                            शिक्षक के समग्र मूल्यांकन पर टिप्पणी<span style="color: red">*</span></label>
                                         <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                     </div>
 
@@ -1442,18 +1504,18 @@
                                         <label>
                                             Grade
                                             <br />
-                                            शिक्षक के समग्र मूल्यांकन श्रेणी</label>
-                                        <asp:DropDownList runat="server" CssClass=" form-control select2">
+                                            शिक्षक के समग्र मूल्यांकन श्रेणी<span style="color: red">*</span></label>
+                                        <asp:DropDownList runat="server" CssClass=" form-control ">
 
                                             <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
-                                            <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
+                                           
 
                                         </asp:DropDownList>
                                     </div>
                                 </div>
                             </fieldset>
 
-                            <fieldset style="position: relative; right: 10px;">
+                        <%--    <fieldset style="position: relative; right: 10px;">
 
                                 <legend>Part-3 Review / भाग-3 समीक्षा
                                     <br />
@@ -1498,7 +1560,7 @@
                                 </div>
 
 
-                            </fieldset>
+                            </fieldset>--%>
                             <%--   <div class="justify-content-center" style="position: relative; left: 500px;" id="button">
                    <div class="modal-footer justify-content-center" style="display: none;" id="buttons">
                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
@@ -1565,6 +1627,16 @@
                 document.getElementById('OfficerName').style.display = "block";
             } else {
                 document.getElementById('OfficerName').style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function myFunction1() {
+            var ForwordTo = document.getElementById("ddlfsgrade").value;
+            if (ForwordTo == "1") {
+                document.getElementById('OfficerName1').style.display = "block";
+            } else {
+                document.getElementById('OfficerName1').style.display = "none";
             }
         }
     </script>

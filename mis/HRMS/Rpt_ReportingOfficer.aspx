@@ -477,7 +477,7 @@ relations<br />
                             </div>
 
                         </div>
-                        <div class="col-md-12 mb-5">
+                     <%--   <div class="col-md-12 mb-5">
                             <h4 class="text-center mt-3 font-bold"><u>: : Part-3 Review : :</u></h4>
                             <h6 class="text-center mt-2 font-bold"><u>: : भाग-3 समीक्षा : :</u></h6>
                         </div>
@@ -501,7 +501,7 @@ relations<br />
                             </tr>
 
 
-                        </table>
+                        </table>--%>
                     </fieldset>
 
 

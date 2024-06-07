@@ -288,7 +288,31 @@
                                                     <span class="fw-bold">09-03-2024</span>
 
                                                 </div>
+                                                                       <div class="col-md-12 mb-5">
+                           <h4 class="text-center mt-3 font-bold"><u>: : Part-3 Review (To Be Filled By Reviewing Authorities) : :</u></h4>
+                           <h6 class="text-center mt-2 font-bold"><u>: : भाग-3 समीक्षा (समीक्षक अधिकारी द्वारा भरा जाये) : :</u></h6>
+                       </div>
+                       <table class="table table-bordered modal-table table-st fs-5">
+                           <tr class="mt-3">
 
+                               <th>Do you agree with the remarks of the reporting officer ?<br />
+                                   क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
+                               <td class="text-center ">Yes/हाँ</td>
+                           </tr>
+                           <tr>
+                               <th> If no or agree partially give reasons for disagreement<br />
+यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण</th>
+                               <td class="text-center ">Nil</td>
+                           </tr>
+
+                           <tr>
+
+                               <th>Grading<br />ग्रेड</th>
+                               <td class="text-center ">Outstanding/उत्कृष्ट</td>
+                           </tr>
+
+
+                       </table>
 
                                             </div>
 
