@@ -15,7 +15,7 @@
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
-      
+
         #ddlPosition {
             position: relative;
             bottom: 20px;
@@ -24,8 +24,22 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
-    <div id="dv_Masters_LocationMasters" runat="server">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                        <li class="breadcrumb-item active">ACR</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%-- <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
                 <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
@@ -33,7 +47,7 @@
                     </u>
                 </p>
                <%-- <h6 style="font-size: 15px; margin-left: 25px">PART-4 Acceptance<br />
-                    भाग चार-स्वीकृतकर्ता</h6>--%>
+                    भाग चार-स्वीकृतकर्ता</h6>
             </div>
             <div class="col-md-7 align-self-center text-end">
                 <div class="d-flex justify-content-end align-items-center">
@@ -45,8 +59,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card mt-3 shadow">
+    </div>--%>
+    <%--  <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
@@ -87,19 +101,33 @@
                     </div>
                 </div>
             </nav>
-            <br />
+            <br />--%>
+    <%--  <div class="row page-titles mb-4">--%>
+      <div class="col-md-5 align-self-center">
+          <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+              <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+              </u>
+          </p>
+          </div>
+         
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">PART-4 Acceptance
+                    भाग चार-स्वीकृतकर्ता</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
 
             <fieldset id="show2" runat="server">
                 <legend>Review and filling of ACR report by the Accepting Authority / स्वीकारकर्ता प्राधिकारी द्वारा एसीआर रिपोर्ट की समीक्षा करना और भरना</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -111,7 +139,7 @@
                         <div class="col-md-12">
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                    <tr valign="middle" class="text-white">
                                         <th>S.No
                                             <br />
                                             सरल क्र.</th>
@@ -205,7 +233,7 @@
                     समीक्षक अधिकारी द्वारा भरा जाये </legend>
 
 
-                <div class="row">
+                <div class="row  align-items-end">
                     <div class="col-md-4">
                         <label>
                             Do you agree with the remarks of the reporting officer ?<br />
@@ -224,38 +252,40 @@
                             If no or agree partially give reasons for disagreement<br />
                             यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण<span style="color: red">*</span>
                         </label>
-                         <asp:DropDownList runat="server" CssClass="select2 form-control">
-     <asp:ListItem>--Select--</asp:ListItem>
-     <asp:ListItem>Yes/हाँ</asp:ListItem>
-     <asp:ListItem>No/नही</asp:ListItem>
-     <%--  <asp:ListItem>No/या</asp:ListItem>--%>
-     <asp:ListItem>Partially/आंशिक</asp:ListItem>
+                        <asp:DropDownList runat="server" CssClass="select2 form-control">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Yes/हाँ</asp:ListItem>
+                            <asp:ListItem>No/नही</asp:ListItem>
+                            <%--  <asp:ListItem>No/या</asp:ListItem>--%>
+                            <asp:ListItem>Partially/आंशिक</asp:ListItem>
 
- </asp:DropDownList>
+                        </asp:DropDownList>
                     </div>
 
                     <div class="col-md-4">
                         <label>
                             Grading<br />
                             ग्रेड<span style="color: red">*</span></label>
-                     <select class="form-control select2" id="ddlfsgrade" onchange="myFunction1()">
-     <option value="0">--Select--</option>
-     <option value="1">Outstanding/उत्कृष्ट</option>
-     <option value="2">Very good/बहुत अच्छा</option>
-     <option value="3">good/अच्छा</option>
-     <option value="4">Satisfactory/संतोषप्रद</option>
-     <option value="5">Below satisfaction/असंतोषप्रद</option>
- </select>
+                        <select class="form-control select2" id="ddlfsgrade" onchange="myFunction1()">
+                            <option value="0">--Select--</option>
+                            <option value="1">Outstanding/उत्कृष्ट</option>
+                            <option value="2">Very good/बहुत अच्छा</option>
+                            <option value="3">good/अच्छा</option>
+                            <option value="4">Satisfactory/संतोषप्रद</option>
+                            <option value="5">Below satisfaction/असंतोषप्रद</option>
+                        </select>
                     </div>
                     <div class="col-md-4" style="display: none;" id="OfficerName1">
-                        <label>Enter Remark For  Outstanding Grading
+                        <label>
+                            Enter Remark For  Outstanding Grading
                             <br />
                             उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
                         <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
 
                     </div>
                 </div>
-            </fieldset><br />
+            </fieldset>
+            <br />
 
             <div runat="server" id="Fieldset1" visible="false">
                 <%-- <div class="ROW">
@@ -267,7 +297,7 @@
                 <fieldset>
                     <legend>PART-4 Acceptance
                    To Be Filled By Accepting Authority /  भाग-4 स्वीकृत अधिकारी द्वारा भरा जाये</legend>
-                    <div class="row">
+                    <div class="row  align-items-end">
                         <div class="col-md-4">
                             <label class="mt-3 fw-bold">
                                 Employee Name/Unique ID<br />
@@ -311,7 +341,8 @@
                             </select>
                         </div>
                         <div class="col-md-4" style="display: none;" id="OfficerName">
-                            <label>Enter Remark For  Outstanding Grading
+                            <label>
+                                Enter Remark For  Outstanding Grading
                                 <br />
                                 उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
@@ -319,17 +350,13 @@
                         </div>
                     </div>
                 </fieldset>
-                <div class="row">
-                    <div class="col-5"></div>
-                    <div class="col-md-3 text-center mt-4">
-                        <div class="form-group">
-                            <button type="button" class="Alert-Save btn btn-success btn-rounded  ">
-                                Save
-                            </button>
-                            <a href="AcceptingAuthorityFilled.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
+               <hr />
+  <div class="col-md-12">
+      <div class="form-group">
+          <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+          <a href="Mst_Loc_Parliamentary.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+      </div>
+  </div>
             </div>
         </div>
     </div>
@@ -337,18 +364,18 @@
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: #1B5B5C;">
+                <div class="modal-header" style="background-color: var(--vz-primary);">
 
                     <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
                     <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">EMPLOYEE  ACR FORM</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div runat="server" id="show">
                         <fieldset>
                             <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
-                            <div class="row">
+                            <div class="row  align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -403,7 +430,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row  align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -415,7 +442,7 @@
 
                                     </div>
                                 </div>
-                              <div class="col-md-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             <br />
@@ -479,7 +506,7 @@
                             </div>
                         </fieldset>
                         <br />
-                        <h5 class="fw-bold ml-3" style="color: #416a59;">PART-2 Self-Evaluation
+                        <h5 class="fw-bold ml-3" style="color: var(--vz-primary);">PART-2 Self-Evaluation
   <br />
                             भाग दो-स्वमूल्यांकन</h5>
                         <br />
@@ -491,7 +518,7 @@
                                 <div class="col-md-12">
                                     <table id="Table5" class="table table-bordered table-responsive-lg text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                            <tr valign="middle"  class="text-white">
                                                 <th rowspan="2">S.No.<br />
                                                     सरल.क्र </th>
                                                 <th rowspan="2">Class being taught<br />
@@ -505,7 +532,7 @@
                                                     टिप्पणी</th>
                                             </tr>
 
-                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                            <tr valign="middle"  class="text-white">
                                                 <td>Previous Session<br />
                                                     विगत सत्र</td>
                                                 <td>Present Session<br />
@@ -630,7 +657,7 @@
                                 <div class="col-md-12 table-responsive">
                                     <table id="Table2" class="table table-bordered  text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                            <tr valign="middle"  class="text-white">
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
                                                 <th>Class<br />
@@ -770,7 +797,7 @@
                                 <div class="col-md-12 table-responsive">
                                     <table id="Table3" class="table table-bordered  text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                            <tr valign="middle"  class="text-white">
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
                                                 <th>Class<br />
@@ -1153,27 +1180,27 @@
                         <fieldset>
                             <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
 
-                            <div class="row mt-3">
+                            <div class="row  align-items-end">
                                 <div class="col-md-4">
                                     <label>
                                         Sports/Literary/Cultural Activities
     <br />
                                         खेल/साहित्यिक/सांस्कृतिक गतिविधियाँ 
                                     </label>
-                                    <asp:TextBox runat="server" ID="TextBox15" CssClass="form-control mt-3 fw-bold" Style="position: relative; top: 6px;" placeholder="Nil"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="TextBox15" CssClass="form-control mt-3 fw-bold"  placeholder="Nil"></asp:TextBox>
                                 </div>
                                 <div class="col-md-4">
                                     <label>
                                         Extra Ordinary Work in Hygiene/Environment
     <br />
                                         स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य</label>
-                                    <asp:TextBox runat="server" ID="TextBox16" CssClass="form-control mt-5 fw-bold" Style="position: relative; bottom: 26px;" placeholder="Nil"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="TextBox16" CssClass="form-control  fw-bold" placeholder="Nil"></asp:TextBox>
                                 </div>
                                 <div class="col-md-4">
                                     <label>
                                         Use of ICT in teaching and learning<br />
                                         शिक्षण एवं सिखने में आई सी टी का उपयोग</label>
-                                    <asp:TextBox runat="server" ID="TextBox17" CssClass="form-control mt-4 fw-bold" Style="position: relative; bottom: 3px;" placeholder="Nil"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="TextBox17" CssClass="form-control  fw-bold"  placeholder="Nil"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -1188,7 +1215,7 @@
                                 <div class="col-md-12">
                                     <table id="Table4" class="table table-bordered table-responsive-lg text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                            <tr valign="middle"  class="text-white">
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
                                                 <th>Name of Training<br />
@@ -1252,12 +1279,12 @@
     <div class="modal  fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: #1B5B5C;">
+                <div class="modal-header" style="background-color: var(--vz-primary);">
 
                     <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
                     <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">EMPLOYEE  ACR FORM</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div runat="server" id="Div1">
@@ -1270,12 +1297,12 @@
                             <br />
                             <div class="row">
                                 <div class="col-md-3">
-                                    <label class="fw-bold fs-4">Employee Name/Unique ID</label>
+                                    <label class="fw-bold fs-5">Employee Name/Unique ID</label>
                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
 
                                 </div>
 
-                            </div>
+                            </div><br />
                             <legend>To be filled by reporting officer / प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
 
 
@@ -1477,7 +1504,7 @@
                                         <asp:DropDownList runat="server" CssClass=" form-control ">
 
                                             <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
-                                           
+
 
                                         </asp:DropDownList>
                                     </div>
@@ -1489,12 +1516,12 @@
                 </div>
             </div>
 
-       
+
         </div>
     </div>
 
 
-   
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
