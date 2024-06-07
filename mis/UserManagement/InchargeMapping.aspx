@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-   
+
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -14,7 +14,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>User Management</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>User Management</span></a>
                         </li>
                         <li class="breadcrumb-item">Incharge Mapping</li>
                     </ol>
@@ -36,13 +36,15 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Employee Code/OIS Code /<br /> कर्मचारी कोड/ओआईएस कोड दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Employee Code/OIS Code /<br />
+                                कर्मचारी कोड/ओआईएस कोड दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Employee Code/OIS Code" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select  User Level Name /<br /> उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
+                            <label>Select  User Level Name /<br />
+                                उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Rajasthan">S/w admin</option>
@@ -63,7 +65,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select User Role /<br /> उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
+                            <label>Select User Role /<br />
+                                उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Rajasthan">JD Sports</option>
@@ -112,11 +115,16 @@
                     <div class="table-responsive">
                         <table class="table text-center">
                             <tr>
-                                <th>Sr.No./<br /> सरल क्र.</th>
-                                <th>Employee Code/OIS Code /<br /> कर्मचारी कोड/ओआईएस कोड</th>
-                                <th>User Level Name /<br /> उपयोगकर्ता स्तर का नाम</th>
-                                <th>Role Name /<br /> रोल का नाम</th>
-                                 <th>Status(Active / InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
+                                <th>Sr.No./<br />
+                                    सरल क्र.</th>
+                                <th>Employee Code/OIS Code /<br />
+                                    कर्मचारी कोड/ओआईएस कोड</th>
+                                <th>User Level Name /<br />
+                                    उपयोगकर्ता स्तर का नाम</th>
+                                <th>Role Name /<br />
+                                    रोल का नाम</th>
+                                <th>Status(Active / InActive) /<br />
+                                    स्थिति (सक्रिय/निष्क्रिय)</th>
                                 <th>Action</th>
                             </tr>
                             <tr>
@@ -125,7 +133,7 @@
                                 <td>JD Section Incharge</td>
                                 <td>JD Sports</td>
                                 <td>Active</td>
-                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                             </tr>
                         </table>
                     </div>
