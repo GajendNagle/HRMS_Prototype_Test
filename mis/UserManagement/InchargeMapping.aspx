@@ -36,13 +36,13 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Employee Code/OIS Code / कर्मचारी कोड/ओआईएस कोड दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Employee Code/OIS Code /<br /> कर्मचारी कोड/ओआईएस कोड दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Employee Code/OIS Code" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select  User Level Name / उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
+                            <label>Select  User Level Name /<br /> उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Rajasthan">S/w admin</option>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select User Role / उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
+                            <label>Select User Role /<br /> उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Rajasthan">JD Sports</option>
@@ -112,11 +112,11 @@
                     <div class="table-responsive">
                         <table class="table text-center">
                             <tr>
-                                <th>Sr.No. / सरल क्र.</th>
-                                <th>Employee Code/OIS Code / कर्मचारी कोड/ओआईएस कोड</th>
-                                <th>User Level Name / उपयोगकर्ता स्तर का नाम</th>
-                                <th>Role Name / रोल का नाम</th>
-                                 <th>Status(Active / InActive) / स्थिति (सक्रिय/निष्क्रिय)</th>
+                                <th>Sr.No./<br /> सरल क्र.</th>
+                                <th>Employee Code/OIS Code /<br /> कर्मचारी कोड/ओआईएस कोड</th>
+                                <th>User Level Name /<br /> उपयोगकर्ता स्तर का नाम</th>
+                                <th>Role Name /<br /> रोल का नाम</th>
+                                 <th>Status(Active / InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
                                 <th>Action</th>
                             </tr>
                             <tr>
