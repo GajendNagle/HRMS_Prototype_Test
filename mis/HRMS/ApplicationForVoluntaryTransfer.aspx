@@ -4,70 +4,39 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">स्वैच्छिक स्थानांतरण हेतु आवेदन</p>
-        </div>
-        <div class="col-md-4 align-self-center">
-
-
-
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active">Application For Voluntary Transfer</li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#VoluntaryTransfer" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Voluntary Transfer</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Application For Voluntary Transfer</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-8">
+                    <h4 class="card-title">Application For Voluntary Transfer / स्वैच्छिक स्थानांतरण हेतु आवेदन</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link  text-white " href="ApplicationForVoluntaryTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                        Voluntary Transfer Application</b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a id="diva" class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                        <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
-
-                                        </a></li>
-                                        <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                                    </ul>
-                                </li>
-
-
-
-                                <a class="nav-link  text-white " href="VoluntaryTransferStatus.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Voluntary Transfer Application Status</b></a>
-
-                                <a class="nav-link  text-white " href="Trn_ViewPostCodeWithVacancies.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>View Post Code With Vacancie</b></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-            <br />
-            <br />
+            
             <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 20%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;स्वैच्छिक स्थानांतरण दिशानिर्देश:-</h4>
 
             <div>
