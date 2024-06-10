@@ -20,7 +20,7 @@
                             <a href="#VoluntaryTransfer" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee Voluntary Transfer</span></a>
                         </li>
-                        <li class="breadcrumb-item">Application For Voluntary Transfer</li>
+                        <li class="breadcrumb-item">About Voluntary Transfer</li>
                     </ol>
                 </div>
             </div>
@@ -31,7 +31,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <h4 class="card-title">Application For Voluntary Transfer / स्वैच्छिक स्थानांतरण हेतु आवेदन</h4>
+                    <h4 class="card-title">About Voluntary Transfer / स्वैच्छिक स्थानांतरण के बारे में</h4>
                 </div>
             </div>
         </div>

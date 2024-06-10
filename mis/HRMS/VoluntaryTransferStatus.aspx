@@ -2,11 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-       
         table-bordered th, .table-bordered td {
             border: 1px solid #808080d2;
         }
-   
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -27,7 +25,8 @@
                             <a href="#VoluntaryTransfer" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee Voluntary Transfer</span></a>
                         </li>
-                        <li class="breadcrumb-item">Voluntary Transfer Status</li>
+                        <li class="breadcrumb-item">Voluntary Transfer
+application Status</li>
                     </ol>
                 </div>
             </div>
@@ -37,16 +36,19 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-7">
-                    <h4 class="card-title">Voluntary Transfer Status /
-         स्वैच्छिक स्थानांतरण स्थिति
-                    </h4>
+                <div class="col-lg-9">
+                    <h4 class="card-title">Voluntary Transfer
+                  application Status /
+                          स्वैच्छिक स्थानांतरण आवेदन की स्थिति
+
+                   </h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Voluntary Transfer Status / स्वैच्छिक स्थानांतरण स्थिति
+              <legend>Voluntary Transfer
+                  application Status / स्वैच्छिक स्थानांतरण आवेदन की स्थिति
                 </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
