@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 form-group ">
-                        <button id="Button1" type="button" class="btn btn-outline-success w-lg btn-border" onclick="myFunction()">View Employee Information</button>
+                        <button id="Button1" type="button" class="btn btn-outline-success w-lg btn-border" onclick="myFunction()">View</button>
                         <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                     </div>
                 </div>
@@ -142,10 +142,10 @@
                                 <table class="table text-center">
                                     <tbody>
                                         <tr>
-                                            <th>Sr. No.<br />सरल क्र.</th>
-                                            <th>Source Group Area<br />स्त्रोत समूह क्षेत्र</th>
-                                            <th>National Level Working Day<br />राष्ट्रीय स्तर पर कार्य दिवस</th>
-                                            <th>State Level Working Day<br />राज्य स्तर पर कार्य दिवस</th>
+                                            <th>Sr. No. /<br />सरल क्र.</th>
+                                            <th>Source Group Area /<br />स्त्रोत समूह क्षेत्र</th>
+                                            <th>National Level Working Day /<br />राष्ट्रीय स्तर पर कार्य दिवस</th>
+                                            <th>State Level Working Day /<br />राज्य स्तर पर कार्य दिवस</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
