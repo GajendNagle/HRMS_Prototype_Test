@@ -123,7 +123,7 @@
         }
 
         .table th {
-            background-color: #ffffff !important;
+            background-color: var(--vz-light);
             color: var(--vz-body-color);
         }
 

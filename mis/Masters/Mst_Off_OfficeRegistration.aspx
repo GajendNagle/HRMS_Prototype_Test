@@ -38,8 +38,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-7">
-                    <h4 class="card-title">Office Registration Master / 
-कार्यालय पंजीकरण मास्टर
+                    <h4 class="card-title">Office Registration Master / कार्यालय पंजीकरण मास्टर
                     </h4>
                 </div>
             </div>
@@ -168,8 +167,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                select Office Type /<br />
-                                कार्यालय का चयन करे<span style="color: red;"> *</span></label>
+                                Select Office Type /<br />
+                                कार्यालय का चयन करे<span style="color: red;">*</span></label>
                             <select name="ctl00$ContentBody$ctl04" class="form-control">
                                 <option value=" -Select-">-Select-</option>
                                 <option value="Bhopal">Head Office</option>
@@ -254,7 +253,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Office Contact No. /<br />
-                                कार्यालय संपर्क नं. दर्ज करे</label>
+                                कार्यालय संपर्क नं. दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl12" type="text" class="form-control" placeholder="Enter Office Contact No." />
                         </div>
                     </div>
@@ -292,7 +291,7 @@
                         <div class="form-group">
                             <label>
                                 Latitude /<br />
-                                अक्षरेखा दर्ज करे</label>
+                                अक्षरेखा दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl15" type="text" class="form-control" placeholder="Enter Latitude" />
                         </div>
                     </div>
@@ -300,7 +299,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Longitude /<br />
-                                देशान्तर दर्ज करे</label>
+                                देशान्तर दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl16" type="text" class="form-control" placeholder="Enter Longitude" />
                         </div>
                     </div>
@@ -316,7 +315,7 @@
                     </div>
                     <hr />
                     <div class="col-md-12">
-                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
+                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border"/>
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
