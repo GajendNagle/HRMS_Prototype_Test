@@ -1,103 +1,115 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_EmployeeHandicap.aspx.cs" Inherits="mis_Transaction_Rpt_EmployeeHandicap" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-   <style>
-       th{
-           white-space:nowrap;
-       }
-   </style>
+    <style>
+        th {
+            white-space: nowrap;
+        }
+    </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Employee Handicap Report</h4>
-
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                        <li class="breadcrumb-item active">Employee Handicap Report</li>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Other Curriculum Activities</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Employee Handicap Report</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <fieldset>
-                <legend>Search Handicapped Employee/विकलांग कर्मचारी खोजें
-                </legend>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-
-                            <label class="font-bold">District/जिला</label>
-                            <select class="form-control select2" id="ddlDist" required>
-                                <option value="--Select--">--Select--</option>
-                                <option value="All">--All--</option>
-                                <option value="Bhopal">Bhopal</option>
-                                <option value="Raisen">Raisen</option>
-                                <option value="Rajgarh">Rajgarh</option>
-                                <option value="Sehore">Sehore</option>
-                                <option value="Vidisha">Vidisha</option>
-                                <option value="Ashoknagar">Ashoknagar</option>
-                                <option value="Shivpuri">Shivpuri</option>
-                                <option value="Datia">Datia</option>
-                                <option value="Guna">Guna</option>
-                                <option value="Gwalior">Gwalior</option>
-                                <option value="Harda">Harda</option>
-                                <option value="Hoshangabad">Hoshangabad</option>
-                                <option value="Betul">Betul</option>
-                                <option value="Morena">Morena</option>
-                                <option value="Sheopur">Sheopur</option>
-                                <option value="Bhind">Bhind</option>
-                                <option value="Barwani">Barwani</option>
-                                <option value="Burhanpur">Burhanpur</option>
-                                <option value="Dhar">Dhar</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Jhabua">Jhabua</option>
-                                <option value="Khandwa">Khandwa</option>
-                                <option value="Khargone">Khargone</option>
-                                <option value="Alirajpur">Alirajpur</option>
-                                <option value="Balaghat">Balaghat</option>
-                                <option value="Chhindwara">Chhindwara</option>
-                                <option value="Jabalpur">Jabalpur</option>
-                                <option value="Katni">Katni</option>
-                                <option value="Mandla">Mandla</option>
-                                <option value="Narsinghpur">Narsinghpur</option>
-                                <option value="Seoni">Seoni</option>
-                                <option value="Rewa">Rewa</option>
-                                <option value="Satna">Satna</option>
-                                <option value="Sidhi">Sidhi</option>
-                                <option value="Singroli">Singroli</option>
-                                <option value="Chhatarpur">Chhatarpur</option>
-                                <option value="Damoh">Damoh</option>
-                                <option value="Panna">Panna</option>
-                                <option value="Sagar">Sagar</option>
-                                <option value="Tikamgarh">Tikamgarh</option>
-                                <option value="Shahdol">Shahdol</option>
-                                <option value="Umaria">Umaria</option>
-                                <option value="Dindori">Dindori</option>
-                                <option value="Anuppur">Anuppur</option>
-                                <option value="Dewas">Dewas</option>
-                                <option value="Mandsaur">Mandsaur</option>
-                                <option value="Neemuch">Neemuch</option>
-                                <option value="Ratlam">Ratlam</option>
-                                <option value="Shajapur">Shajapur</option>
-                                <option value="Ujjain">Ujjain</option>
-
-                            </select>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4 class="card-title">Employee Handicap Report<br />
+                                कर्मचारी विकलांगता रिपोर्ट</h4>
                         </div>
                     </div>
+                </div>
+                <div class="card-body">
+                    <fieldset>
+                        <legend>Search Handicapped Employee / विकलांग कर्मचारी खोजें</legend>
+                        <div class="row align-items-end">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        District /<br />
+                                        जिला<span style="color: red">*</span></label>
+                                    <select class="form-control select2" id="ddlDist" required="required">
+                                        <option value="--Select--">--Select--</option>
+                                        <option value="All">--All--</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Raisen">Raisen</option>
+                                        <option value="Rajgarh">Rajgarh</option>
+                                        <option value="Sehore">Sehore</option>
+                                        <option value="Vidisha">Vidisha</option>
+                                        <option value="Ashoknagar">Ashoknagar</option>
+                                        <option value="Shivpuri">Shivpuri</option>
+                                        <option value="Datia">Datia</option>
+                                        <option value="Guna">Guna</option>
+                                        <option value="Gwalior">Gwalior</option>
+                                        <option value="Harda">Harda</option>
+                                        <option value="Hoshangabad">Hoshangabad</option>
+                                        <option value="Betul">Betul</option>
+                                        <option value="Morena">Morena</option>
+                                        <option value="Sheopur">Sheopur</option>
+                                        <option value="Bhind">Bhind</option>
+                                        <option value="Barwani">Barwani</option>
+                                        <option value="Burhanpur">Burhanpur</option>
+                                        <option value="Dhar">Dhar</option>
+                                        <option value="Indore">Indore</option>
+                                        <option value="Jhabua">Jhabua</option>
+                                        <option value="Khandwa">Khandwa</option>
+                                        <option value="Khargone">Khargone</option>
+                                        <option value="Alirajpur">Alirajpur</option>
+                                        <option value="Balaghat">Balaghat</option>
+                                        <option value="Chhindwara">Chhindwara</option>
+                                        <option value="Jabalpur">Jabalpur</option>
+                                        <option value="Katni">Katni</option>
+                                        <option value="Mandla">Mandla</option>
+                                        <option value="Narsinghpur">Narsinghpur</option>
+                                        <option value="Seoni">Seoni</option>
+                                        <option value="Rewa">Rewa</option>
+                                        <option value="Satna">Satna</option>
+                                        <option value="Sidhi">Sidhi</option>
+                                        <option value="Singroli">Singroli</option>
+                                        <option value="Chhatarpur">Chhatarpur</option>
+                                        <option value="Damoh">Damoh</option>
+                                        <option value="Panna">Panna</option>
+                                        <option value="Sagar">Sagar</option>
+                                        <option value="Tikamgarh">Tikamgarh</option>
+                                        <option value="Shahdol">Shahdol</option>
+                                        <option value="Umaria">Umaria</option>
+                                        <option value="Dindori">Dindori</option>
+                                        <option value="Anuppur">Anuppur</option>
+                                        <option value="Dewas">Dewas</option>
+                                        <option value="Mandsaur">Mandsaur</option>
+                                        <option value="Neemuch">Neemuch</option>
+                                        <option value="Ratlam">Ratlam</option>
+                                        <option value="Shajapur">Shajapur</option>
+                                        <option value="Ujjain">Ujjain</option>
 
-                    <%-- <div class="col-md-3">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <%-- <div class="col-md-3">
                         <div class="form-group">
                             <label class="font-bold">Handicapped Type</label>
                             <select id="ddlHandiCaped" class="form-control select2">
@@ -128,104 +140,115 @@
                         </div>
                     </div>--%>
 
-                    <div class="col-md-6 align-self-end ">
-                        <div class="form-group">
-                            <button type="button" class=" btn btn-success btn-rounded " onclick="fillMainTable(generateDummyData(document.getElementById('ddlDist').value));">Search</button>
-
-                            <a runat="server" id="A1" href="Rpt_EmployeeHandicap.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset id="fs_Details" style="display: none">
-                <legend>Details/विवरण</legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Sr. No.<br />सरल क्र.</th>
-                                        <th>District<br />जिला</th>
-                                        <th>Total Handicapped Employees<br />कुल विकलांग कर्मचारी</th>
-                                        <th>Handicapped Type<br />विकलांग का प्रकार</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody id="tbody_districtTable">
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-
-            <div class="modal fade" id="EmpModal" tabindex="-1" role="dialog" aria-labelledby="EmpModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xxl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="EmpModalLabel">Handicapped Employees-<span id="ModaldistName"></span></h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row justify-content-end">
-                                <div class="col-md-6 text-end">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                        <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Sr. No.<br />सरल क्र.</th>
-                                                    <th>Name<br />नाम</th>
-                                                    <th>Sankul<br />संकुल</th>
-                                                    <th>School<br />स्कुल</th>
-                                                    <th>Handicapped Type<br />विकलांग प्रकार </th>
-                                                    <th>Handicapped Percentage<br />विकलांग प्रतिशत</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            </tbody>
-
-
-                                        </table>
-                                    </div>
+                            <div class="col-md-6 align-self-end ">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="fillMainTable(generateDummyData(document.getElementById('ddlDist').value));">Search</button>
+                                    <a runat="server" id="A1" href="Rpt_EmployeeHandicap.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </fieldset>
+                    <fieldset id="fs_Details" style="display: none">
+                        <legend>Details / विवरण</legend>
+                        <div class="row justify-content-end">
+                            <div class="col-md-4 text-end">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr. No. /<br />
+                                                    सरल क्र.</th>
+                                                <th>District /<br />
+                                                    जिला</th>
+                                                <th>Total Handicapped Employees /<br />
+                                                    कुल विकलांग कर्मचारी</th>
+                                                <th>Handicapped Type /<br />
+                                                    विकलांग का प्रकार</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody id="tbody_districtTable">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="modal fade" id="EmpModal" tabindex="-1" role="dialog" aria-labelledby="EmpModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xxl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="EmpModalLabel">Handicapped Employees-<span id="ModaldistName"></span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-end">
+                                        <div class="col-md-6 text-end">
+                                            <div class="form-group">
+                                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Sr. No.<br />
+                                                                सरल क्र.</th>
+                                                            <th>Name<br />
+                                                                नाम</th>
+                                                            <th>Sankul<br />
+                                                                संकुल</th>
+                                                            <th>School<br />
+                                                                स्कुल</th>
+                                                            <th>Handicapped Type<br />
+                                                                विकलांग प्रकार </th>
+                                                            <th>Handicapped Percentage<br />
+                                                                विकलांग प्रतिशत</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+
+
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
     </div>
 </asp:Content>

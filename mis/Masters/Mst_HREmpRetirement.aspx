@@ -22,23 +22,7 @@
         </div>
     </div>
     <div class="content-wrapper">
-        <!-- Main content -->
         <div class="container-fluid">
-            <%--<div class="row page-titles mb-4">
-                <div class="col-md-5 align-self-center">
-                    <h4 class="text-themecolor ">Retirement/Separation</h4>
-                </div>
-                <div class="col-md-7 align-self-center text-end">
-                    <div class="d-flex justify-content-end align-items-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                            <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-
-                            <li class="breadcrumb-item active">Retirement/Separation</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>--%>
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
