@@ -36,76 +36,53 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-
-            <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                    </u>
-                </p>
-                <h6 style="font-size: 15px; margin-left: 25px">PART-2 Self-Evaluation<br />
-                    भाग दो-स्वमूल्यांकन</h6>
-            </div>
-
-
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active">Annual Confidential Report (ACR)</li>
+       <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>ACR</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Employee ACR Apply</span></li>
                     </ol>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
-                                </ul>
-                            </li>
-                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
 
+    <%--  <div class="row page-titles mb-4">--%>
+    <div class="col-md-5 align-self-center">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+            <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <div class="card-title color_black">
+                     PART-2 Self-Evaluation/
+भाग दो-स्वमूल्यांकन
                     </div>
                 </div>
-            </nav>
+            </div>
+        </div>
             <br />
 
 
 
+          <div class="card-body">
 
 
             <div runat="server" id="Fieldset1" style="display: block">
@@ -134,7 +111,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                    <tr valign="middle"  class="text-white">
                                         <td>Previous Session<br />
                                             विगत सत्र</td>
                                         <td>Present Session
@@ -167,9 +144,9 @@
                                             <input maxlength="4" autocomplete="off" id="a2" class="form-control datepickerYear2" type="text" data-val="true" required="required" />
                                         </td>
                                         <td>
-                                            <input type="email" id="a3" class="form-control" style="width: 160px;"></td>
+                                            <input type="email" id="a3" class="form-control"></td>
                                         <td>
-                                            <textarea class="form-control mt-1" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                            <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                         <td style="display: none;" id="btnaction">
 
                                             <button type="button" onclick="addData()" class="btn btn-success">Add</button>
@@ -187,18 +164,19 @@
                 <label>
                     <span class="fa-pull-left" style="color: red; font-size: 15px; position: relative; bottom: 3px;">Note:-</span>The Column Menttioning last year average attendance Will Not Apply for class<br />
                     कक्षा 1 के पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|</label>
+                 <hr />
+ <div class="col-md-12">
+     <div class="form-group">
+         <button type="button" class="Alert-Save1  btn w-lg btn-success btn-border">
+             Save/Next
+         </button>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-3 text-center mt-4">
-                        <div class="form-group">
-                            <button type="button" class="Alert-Save1 btn btn-success btn-rounded ">
-                                Save/Next
-                            </button>
-                            <%-- <asp:Button runat="server" class="Alert-Save2 btn btn-success btn-rounded" Text="Save/Next"  />--%>
-                            <a href="TeacherFillReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
+
+         <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+     </div>
+ </div>
+
+                
             </div>
             <div runat="server" id="fieldset2" style="display: none">
                 <fieldset>
@@ -247,7 +225,7 @@
                                         <td>
                                             <input type="email" id="b1" class="form-control"></td>
                                         <td>
-                                            <input type="email" id="b2" placeholder="100%" class="form-control text-center"></td>
+                                            <input type="email" id="b2" placeholder="100%" class="form-control  align-content-center"></td>
                                         <td>
                                             <input type="email" id="b3" class="form-control"></td>
                                         <td style="display: none;" id="btnaction2">
@@ -270,17 +248,18 @@
                         </div>
                     </div>
                 </fieldset>
+                 <hr />
+ <div class="col-md-12">
+     <div class="form-group">
+         <button type="button" class="Alert-Save2  btn w-lg btn-success btn-border">
+             Save/Next
+         </button>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-3 text-center mt-4">
-                        <div class="form-group">
-                            <button type="button" class="Alert-Save2 btn btn-success btn-rounded ">
-                                Save/Next
-                            </button>
-                            <a href="TeacherFillReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
+
+         <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+     </div>
+ </div>
+
             </div>
             <div runat="server" id="fieldset3" style="display: none">
                 <fieldset>
@@ -288,9 +267,9 @@
 
                     <div class="row">
                         <div class="col-md-12 table-responsive">
-                            <table id="Table3" class="table table-bordered  text-center  " runat="server" style="border: 2px solid #1B5B5C;">
+                            <table id="Table3" class="table table-bordered  text-center  " runat="server" >
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C; border: 2PX solid #1B5B5C;" class="text-white">
+                                    <tr valign="middle"   class="text-white">
                                         <th>S.No.<br />
                                             सरल.क्र</th>
                                         <th>Class<br />
@@ -301,18 +280,18 @@
                      Student<br />
                                             छात्र संख्या
                                         </th>
-                                        <th colspan="5">Previous class annual
-examination Result grade
-wises Student number<br />
+                                        <th colspan="5">Previous Class Annual
+Examination Result Grade
+Wises Student Number<br />
                                             पूर्व कक्षा के परीक्षा परिणाम के
 अनुसार छात्रों की ग्रेडवार संख्या
                                         </th>
-                                        <th colspan="5">Achievement on the basis
-of annual examination result
+                                        <th colspan="5">Achievement On The Basis
+Of Annual Examination Result
                                             <br />
                                             वार्षिक परीक्षा के
 आधार पर उपलब्धि<br />
-                                            (Student in Grade)<br />
+                                            (Student In Grade)<br />
                                             (ग्रेडवार छात्र संख्या)</th>
                                         <th style="display: none;" id="action3">Action</th>
                                     </tr>
@@ -408,7 +387,7 @@ of annual examination result
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                                Reasons Of Not achieving target
+                                Reasons Of Not Achieving Target
                                 <br />
                                 लक्ष्य  से कम उपलब्धि के करण<span style="color: red">*</span></label>
                             <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maxmum 100 words"></textarea>
@@ -424,16 +403,19 @@ of annual examination result
                         &emsp; &emsp; &emsp;<span>2.कक्षा 5वी 8वी 10वी 12वी हेतु बोर्ड पैटर्न/बोर्ड परीक्षा  के परिणाम अंकित किये जाये </span>|</label>
 
                 </fieldset>
-                <div class="row justify-content-center">
-                    <div class="col-md-12 text-center ">
-                        <div class="form-group">
-                            <button type="button" class="Alert-Save3 btn btn-success btn-rounded ">
-                                Save/Next
-                            </button>
-                            <a href="TeacherFillReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
+
+                 <hr />
+ <div class="col-md-12">
+     <div class="form-group">
+         <button type="button" class="Alert-Save3  btn w-lg btn-success btn-border">
+             Save/Next
+         </button>
+
+
+         <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+     </div>
+ </div>
+                
             </div>
             <div runat="server" id="fieldset4" style="display: none">
 
@@ -506,7 +488,7 @@ of annual examination result
                 <fieldset>
                     <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
 
-                    <div class="row mt-3">
+                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 Sports/Literary/Cultural Activities
@@ -589,19 +571,19 @@ of annual examination result
                     </div>
 
                 </fieldset>
-                <div class="row justify-content-center">
-                    <div class="col-md-3 text-center mt-3" style="position: relative; top: 20px;">
-                        <div class="form-group">
-                            <%-- <button type="button" class="btn btn-success btn-rounded " data-toggle="modal" data-target="#myModal">
-                                Send to Officer
+                 <hr />
+ <div class="col-md-12">
+     <div class="form-group">
+         <button type="button" class="  btn w-lg btn-success btn-border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             Save
+         </button>
 
-                            </button>--%>
 
-                            <button type="button" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">Save  </button>
-                            <a href="TeacherFillReport.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                        </div>
-                    </div>
-                </div>
+         <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+     </div>
+ </div>
+
+                
             </div>
         </div>
     </div>
@@ -609,7 +591,7 @@ of annual examination result
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: #1B5B5C;">
+                <div class="modal-header" style="background-color: #7c4baf;">
 
                     <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
@@ -625,7 +607,7 @@ of annual examination result
                                     Reporting Officer Unique ID 
                                  <br />
                                     रिपोर्टिंग अधिकारी यूनिक आईडी<span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                                <asp:TextBox runat="server" CssClass="form-control" AutoComplete="OFF" onchange="myFunction()"></asp:TextBox>
 
                             </div>
 
@@ -646,12 +628,21 @@ of annual examination result
                             </div>
                         </div>
                     </fieldset>
+
+
+                     <hr />
+ 
+
                     <div class="modal-footer justify-content-center">
+                        <div class="col-md-12">
+    <div class="form-group">
                         <div style="display: none;" id="btn1">
-                            <button type="button" class="btn btn-success Alert-Save btn-rounded">Send To Officer</button>
-                            <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <button type="button" class="Alert-Save  btn w-lg btn-success btn-border">Send To Officer</button>
+                            <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
+                            </div>
+                        </div>
                 </div>
 
             </div>

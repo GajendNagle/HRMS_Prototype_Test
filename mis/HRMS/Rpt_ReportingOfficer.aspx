@@ -3,12 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
         @media print {
+              @page {
+      size: A4;
+      margin: 10mm;
+  }
             .page-break {
                 page-break-after: always;
             }
 
             td {
-                font-size: 11px;
+                font-size: 0.4rem;
             }
         }
 
@@ -19,86 +23,68 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-            <h6 style="font-size: 15px; margin-left: 25px">PART-3 Assessment<br />भाग तीन- मूल्यांकन</h6>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="ConfedicialReportNotes.aspx" title="click to go on">Annual Confidential Report (ACR)</a></li>
-                    <li class="breadcrumb-item active">Report</li>
-                </ol>
+ 
+          <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>ACR</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Reporting Officer Fill By ACR  Report Print</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
-                                </ul>
-                            </li>
-                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+    <%--  <div class="row page-titles mb-4">--%>
+    <div class="col-md-5 align-self-center">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+            <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
 
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <div class="card-title color_black">
+                   PART-3 Assessment  Report/
+                    भाग तीन- मूल्यांकन रिपोर्ट
                     </div>
                 </div>
-            </nav>
+            </div>
+        </div>
             <br />
+
+
+
+          <div class="card-body">
+            <br />
+
 
 
             <fieldset id="show2">
                 <legend>
 ACR report filled by the reporting officer / रिपोर्टिंग अधिकारी द्वारा भरी गई एसीआर रिपोर्ट </legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
+                                       <div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
@@ -178,16 +164,12 @@ ACR report filled by the reporting officer / रिपोर्टिंग अ�
     <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title w-100 text-center"></h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                
                 <div class="modal-body" id="printArea">
                     <fieldset>
-                        <br />
-                        <br />
+                       
                         <div class="row text-center">
-                            <br />
+                     
                             <div class="col-sm-2">
                                 <img id="imgLogoP1" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto;" />
                             </div>
@@ -211,7 +193,8 @@ ACR report filled by the reporting officer / रिपोर्टिंग अ�
                                 <h3 class="text-center mt-3 font-bold"><u>:: Information filled by reporting officer ::</u></h3>
                                 <h5 class="text-center  mb-3 font-bold"><u>:: प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरी गई जानकारी ::</u></h5>
                             </div>
-                                                                                                        <div class="col text-start" >
+                                                                                                        
+                            <div class="col text-start">
     <span class="fw-bold">वार्षिक प्रतिवेदन अवधि वर्ष :-</span>
 
     <span class="fw-bold">2023-2024</span>
@@ -224,26 +207,11 @@ ACR report filled by the reporting officer / रिपोर्टिंग अ�
 </div>
                         </div>
                                                                            
-                        <%--  <div class="row">
-                            <div class="col-md-4">
-                                <label class="fw-bold fs-5">Employee Name/Unique ID</label>
-                                <input type="text" class="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445">
-                            </div>
-                                </div>--%>
-                        <%--     <div><h5><b>Employee Name/Unique ID :-</b> गोपाल वर्मा/EDP4454445</h5>--%>
+                       
                         <fieldset>
                             <legend>Employee Name/Unique ID : गोपाल वर्मा/EDP4454445</legend>
 
-                            <%--<div class="row">
-                                <div class="col text-start">
-                                    <span class="fw-bold fs-4">Employee Name/Unique ID :-</span>
-
-                                    <span class="fw-bold fs-4"></span>
-                                </div>
-
-
-                            </div>--%>
-
+                       
 
                             <div class="row">
                                 <div class="col-12">
@@ -491,31 +459,7 @@ relations<br />
                             </div>
 
                         </div>
-                     <%--   <div class="col-md-12 mb-5">
-                            <h4 class="text-center mt-3 font-bold"><u>: : Part-3 Review : :</u></h4>
-                            <h6 class="text-center mt-2 font-bold"><u>: : भाग-3 समीक्षा : :</u></h6>
-                        </div>
-                        <table class="table table-bordered modal-table table-st fs-5">
-                            <tr class="mt-3">
-
-                                <th>Do you agree with the remarks of the reporting officer ?<br />
-                                    क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
-                                <td class="text-center ">Yes/हाँ</td>
-                            </tr>
-                            <tr>
-                                <th> If no or agree partially give reasons for disagreement<br />
- यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण</th>
-                                <td class="text-center ">Nil</td>
-                            </tr>
-
-                            <tr>
-
-                                <th>Grading<br />ग्रेड</th>
-                                <td class="text-center ">Outstanding/उत्कृष्ट</td>
-                            </tr>
-
-
-                        </table>--%>
+               
                     </fieldset>
 
 

@@ -8,69 +8,51 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                    </u>
-                </p>
-                <%--<h6 style="font-size: 15px; margin-left: 25px">PART-1 Basic Information(भाग एक- सामान्य जानकारी)</h6>--%>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="ConfedicialReportNotes.aspx" title="click to go on">Annual Confidential Report (ACR)</a></li>
-                        <li class="breadcrumb-item active">Report</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>ACR</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>District Wise ACR Report</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
-                                </ul>
-                            </li>
-                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
 
+    <%--  <div class="row page-titles mb-4">--%>
+    <div class="col-md-5 align-self-center">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+            <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <div class="card-title color_black">
+                        District Wise ACR Report
                     </div>
                 </div>
-            </nav>
+            </div>
+        </div>
+        <br />
+        <div class="card-body">
             <br />
+
             <fieldset runat="server" id="DDL">
                 <legend>District Wise ACR Report</legend>
                 <div class="row">
@@ -95,14 +77,16 @@
 
                         </div>
                     </div>
-                    <div class="col-md-3 mt-4">
-                        <%--   <div class="form-group">--%>
-                        <asp:Button runat="server" type="button" class="Alert-Save2 btn btn-success btn-rounded " Text="Search" OnClick="Unnamed_Click" />
-
-                        <a href="Rpt_DistrictWiseAcr.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                    </div>
-
                 </div>
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <asp:Button runat="server" type="button" class="Alert-Save2 btn w-lg btn-success btn-border" Text="Search" OnClick="Unnamed_Click" />
+
+                        <a href="Rpt_DistrictWiseAcr.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    </div>
+                </div>
+
 
             </fieldset>
             <br />
@@ -112,75 +96,70 @@
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
-                                <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>District Name</th>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr valign="middle" class="text-white">
+                                    <th>Sr.No</th>
+                                    <th>District Name</th>
 
-                                        <th>Financial Year</th>
-                                        <th>Total Numbers</th>
+                                    <th>Financial Year</th>
+                                    <th>Total Numbers</th>
 
-                                        <%--<th>प्रिंट</th--%>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
-                                        <td>Bhopal</td>
-                                        <td>2023-2024</td>
-                                        <td>
-                                            <asp:Button runat="server" Text="4" OnClick="Unnamed_Click1" ID="btn1" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>2</td>
-                                        <td>Indore</td>
-                                        <td>2023-2024</td>
-                                        <td>
-                                            <asp:Button runat="server" Text="6" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-white  text-info  " /></td>
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>3</td>
-                                        <td>Sagar</td>
-                                        <td>2023-2024</td>
-                                        <td>
-                                            <asp:Button runat="server" Text="6" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>4</td>
-                                        <td>Sehore</td>
-                                        <td>2023-2024</td>
-                                        <td>
-                                            <asp:Button runat="server" Text="6" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="middle">
+                                    <td>1</td>
+                                    <td>Bhopal</td>
+                                    <td>2023-2024</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="4" OnClick="Unnamed_Click1" ID="btn1" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
 
+                                </tr>
+                                <tr valign="middle">
+                                    <td>2</td>
+                                    <td>Indore</td>
+                                    <td>2023-2024</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="6" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-white  text-info  " /></td>
+
+                                </tr>
+                                <tr valign="middle">
+                                    <td>3</td>
+                                    <td>Sagar</td>
+                                    <td>2023-2024</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="6" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-white  text-info" /></td>
+                                </tr>
+                                <tr valign="middle">
+                                    <td>4</td>
+                                    <td>Sehore</td>
+                                    <td>2023-2024</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="6" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
 
-                                    </tr>
-                                </tbody>
 
-                            </table>
-                        </div>
+
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -189,14 +168,10 @@
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -204,59 +179,60 @@
                             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <table id="Table6" class="table table-bordered table-responsive-lg text-center" runat="server">
-                                <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>District Name</th>
+                            <div class="table-responsive">
+                                <table id="Table6" class="table table-bordered  text-center" runat="server">
+                                    <thead>
+                                        <tr valign="middle" class="text-white">
+                                            <th>Sr.No</th>
+                                            <th>District Name</th>
 
-                                        <th>Financial Year</th>
-                                        <th>Total Numbers</th>
+                                            <th>Financial Year</th>
+                                            <th>Total Numbers</th>
 
-                                        <%--<th>प्रिंट</th--%>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
-                                        <td>Bhopal</td>
-                                        <td>2023-2024</td>
-                                        <td>
-                                            <asp:Button runat="server" Text="4" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-
+                                            <%--<th>प्रिंट</th--%>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr valign="middle">
+                                            <td>1</td>
+                                            <td>Bhopal</td>
+                                            <td>2023-2024</td>
+                                            <td>
+                                                <asp:Button runat="server" Text="4" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-white  text-info" /></td>
 
 
-                                    </tr>
 
-                                </tbody>
 
-                            </table>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
+           
 
             </fieldset>
             <fieldset runat="server" visible="false" id="show2">
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <input type="text" id="searchInput9" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
+
+                    </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -289,21 +265,17 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                
 
             </fieldset>
             <fieldset runat="server" visible="false" id="show3">
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -311,6 +283,7 @@
                             <input type="text" id="searchInput11" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table8" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -340,21 +313,15 @@
                             </table>
                         </div>
                     </div>
-                </div>
-
             </fieldset>
             <fieldset runat="server" visible="false" id="show4">
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -362,6 +329,7 @@
                             <input type="text" id="searchInput10" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table9" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -391,7 +359,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+             
 
             </fieldset>
 
@@ -399,14 +367,10 @@
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -414,6 +378,7 @@
                             <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -479,7 +444,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+             
 
             </fieldset>
 
@@ -487,14 +452,10 @@
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -502,6 +463,7 @@
                             <input type="text" id="searchInput6" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table5" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -578,21 +540,16 @@
                             </table>
                         </div>
                     </div>
-                </div>
-
+         
             </fieldset>
             <fieldset runat="server" id="Fieldset3" visible="false">
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -600,6 +557,7 @@
                             <input type="text" id="searchInput7" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table3" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -673,21 +631,16 @@
                             </table>
                         </div>
                     </div>
-                </div>
-
+              
             </fieldset>
             <fieldset runat="server" id="Fieldset4" visible="false">
                 <legend>Details</legend>
 
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -695,6 +648,7 @@
                             <input type="text" id="searchInput8" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table4" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -768,7 +722,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+               
 
             </fieldset>
         </div>

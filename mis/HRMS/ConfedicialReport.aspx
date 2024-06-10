@@ -52,20 +52,7 @@
                 </div>
             </div>
         </div>
-        <%-- <div class="card-body">--%>
-
-        <%--       <div class="row">
-                <div class="col-md-12">
-        --%>    <%--      <h4 class="fw-bold">For Teacher's Cadre (Class 1st to 12th)<br />  शिक्षक संवर्ग के लिए (कक्षा 1 से 12)</h4>--%>
-        <%--       <div class="card">
-                        <div class="card-body">--%>
-
-        <%--                            <div class="row page-titles mb-4">
-                                <div class="col-md-5 align-self-center">
-                                </div>
-
-                                <div class="card-header card-border-info">
-                                </div>--%>
+   
         <div class="card-body">
 
             <div runat="server" id="show">

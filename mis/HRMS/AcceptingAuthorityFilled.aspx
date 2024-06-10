@@ -60,9 +60,9 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h5 class="card-title"> PART-3 Review
-                    भाग-3 समीक्षा<br />PART-4 Acceptance
-                    भाग-4 स्वीकृतकर्ता</h5>
+                    <h5 class="card-title">Reviewing Officer/
+                     Acceptanceing Officer
+                    </h5>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
                                     <tr valign="middle" class="text-white">
-                                        <th>S.No
+                                        <th>S.No.
                                             <br />
                                             सरल क्र.</th>
                                         <th>Unique ID/Name
@@ -246,12 +246,12 @@
                    To Be Filled By Accepting Authority /  भाग-4 स्वीकृत अधिकारी द्वारा भरा जाये</legend>
                     <div class="row  align-items-end">
                         <div class="col-md-4">
-                            <label class="mt-3 fw-bold">
+                            <label class=" fw-bold">
                                 Employee Name/Unique ID<br />
                                 कर्मचारी का नाम/ यूनिक आई.डी<span style="color: red">*</span></label>
-                            <asp:TextBox runat="server" CssClass="form-control mt-2 fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+                            <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
                         </div>
-                        <div class="col-md-4 mt-4">
+                        <div class="col-md-4">
                             <label>
                                 Do you agree with the remarks of the reporting officer ?<br />
                                 क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?<span style="color: red">*</span></label>
@@ -263,7 +263,7 @@
                                 <asp:ListItem>Partially/आंशिक</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-4 mt-4">
+                        <div class="col-md-4 ">
                             <label>
                                 If no or agree partially give reasons for disagreement<br />
                                 यदि नही या आंशिक रूप से सहमत होने पर बसहमति का कारण<span style="color: red">*</span>
@@ -272,7 +272,7 @@
                             <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row  align-items-end">
 
                         <div class="col-md-4">
                             <label>

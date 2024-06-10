@@ -38,9 +38,9 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <div class="card-title color_black">
+                    <class="card-title color_black">
                          Annual Confidential Report /वार्षिक गोपनीय रिपोर्ट
-                    </div>
+                    </>
                 </div>
             </div>
         </div>
