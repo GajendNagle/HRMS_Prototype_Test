@@ -24,21 +24,29 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active">ACR</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>ACR</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Accepting Authority ACR Report</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+
   
     <%--  <div class="row page-titles mb-4">--%>
       <div class="col-md-5 align-self-center">
@@ -52,8 +60,9 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">PART-4 Acceptance
-                    भाग चार-स्वीकृतकर्ता</h4>
+                    <h5 class="card-title"> PART-3 Review
+                    भाग-3 समीक्षा<br />PART-4 Acceptance
+                    भाग-4 स्वीकृतकर्ता</h5>
                 </div>
             </div>
         </div>
