@@ -136,8 +136,9 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
+
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">Location Master Data</li>
                         <li class="breadcrumb-item">Office Type Master Data</li>
@@ -146,6 +147,7 @@
             </div>
         </div>
     </div>
+
     <div class="marqueecontainer">
         <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
         <div>
@@ -156,6 +158,12 @@
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Office/Institute/School Registration/कार्यालय/संस्थान/विद्यालय पंजीकरण
+                    </h4>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <h4 class="card-title"></h4>
@@ -164,11 +172,11 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Office/Institute/School Registration</legend>
-                <div class="row">
+                <legend>Office/Institute/School Registration/कार्यालय/संस्थान/विद्यालय पंजीकरण</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Registration Type <span style="color: red">*</span></label>
+                            <label>Select Registration Type/पंजीकरण प्रकार चुनें <span style="color: red">*</span></label>
                             <%--     <select class="form-control">
                                 <option selected="selected" value="0">--Select--</option>
                                 <option value="2">Office Registration</option>
@@ -186,7 +194,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Financial Year <span style="color: red">*</span></label>
+                            <label>Select Financial Year/वित्तीय वर्ष चुनें <span style="color: red">*</span></label>
 
                             <asp:DropDownList runat="server" ID="ddlFinancialYear" CssClass="form-control">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -202,11 +210,11 @@
             </fieldset>
             <div runat="server" id="divOffice">
                 <fieldset>
-                    <legend>Office Basic Details</legend>
-                    <div class="row">
+                    <legend>Office Basic Details/कार्यालय का मूल विवरण</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Office Type<span style="color: red;">*</span></label>
+                                <label>Select Office Type/कार्यालय प्रकार का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Head Office</option>
@@ -242,13 +250,13 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Office Code No.<span style="color: red;">*</span></label>
+                                <label>Office Code No./कार्यालय कोड नं.<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Office Code No." />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Division <span style="color: red">*</span></label>
+                                <label>Select Division/संभाग का चयन करें <span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -266,7 +274,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>District<span style="color: red">*</span></label>
+                                <label>Select District/जिला का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -325,7 +333,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Block<span style="color: red">*</span></label>
+                                <label>Select Block/ब्लॉक चुनें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Agar">Agar</option>
@@ -347,7 +355,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Village<span style="color: red">*</span></label>
+                                <label>Select Village/गांव का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="BARODI">BARODI</option>
@@ -364,19 +372,19 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Address (Line 1)<span style="color: red;">*</span></label>
+                                <label>Address (Line 1)/पता (1)<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter School Address (Line 1)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Address (Line 2)</label>
+                                <label>Address (Line 2)/पता (2)</label>
                                 <input type="text" class="form-control" placeholder="Enter School Address (Line 2)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Pincode</label>
+                                <label>Pincode/पिन कोड</label>
                                 <input type="text" class="form-control" placeholder="Enter Pincode" />
                             </div>
                         </div>
@@ -384,38 +392,39 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Office Landline Number<span style="color: red;">*</span></label>
+                                <label>Office Landline Number/ऑफिस लैंडलाइन नंबर<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Office Landline No." />
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Office Email ID<span style="color: red;">*</span></label>
+                                <label>Office Email ID/ऑफिस ईमेल आईडी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Office Email ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Office Establishment Date</label>
+                                <label>Office Establishment Date/कार्यालय स्थापना तिथि</label>
                                 <input type="date" class="form-control" placeholder="" />
                             </div>
                         </div>
 
-                        <div class="col-md-1 mt-3">
-                            <label>IsActive<i style="color: red;">*</i></label>
-                            <br />
+                        <div class="col-md-3 ">
+                            <div class="form-group">
+                            <label>
+                                IsActive/सक्रिय है
+                                <i style="color: red;">*</i></label>
+                            
                             <asp:CheckBox Checked="true" runat="server" />
-                        </div>
-
-                    </div>
+                        </div>  </div> 
                 </fieldset>
                 <fieldset>
-                    <legend>Office Bank Details</legend>
-                    <div class="row">
+                    <legend>Office Bank Details/कार्यालय बैंक विवरण</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Type<span style="color: red;">*</span></label>
+                                <label>Select Bank Type/बैंक प्रकार चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
                                     <option value="" data-select2-id="64">Select</option>
                                     <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
@@ -429,7 +438,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>IFSC Code<span style="color: red;">*</span></label>
+                                <label>Select IFSC Code/IFSC कोड चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="">--Select--</option>
                                     <option value="SBIN0001308">SBIN0001308</option>
@@ -442,7 +451,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Name<span style="color: red;">*</span></label>
+                                <label>Select Bank Name/बैंक का नाम चुनें<span style="color: red;">*</span></label>
                                 <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
                                 <select class="form-control select2">
                                     <option value="">--Select--</option>
@@ -458,65 +467,66 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Account Number<span style="color: red;">*</span></label>
+                                <label>Account Number/खाता संख्या<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Account No." />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Office Geographical Details</legend>
-                    <div class="row">
+                    <legend>Office Geographical Details/कार्यालय भौगोलिक विवरण</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Latitude<span style="color: red;">*</span></label>
+                                <label>Latitude/अक्षांश <span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Latitude" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Longitude<span style="color: red;">*</span></label>
+                                <label>Longitude/देशांतर<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Longitude" />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Office Incharge Details</legend>
-                    <div class="row">
+                    <legend>Office Incharge Details/कार्यालय प्रभारी का विवरण</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Unique Id<span style="color: red;">*</span></label>
+                                <label>In Charge Unique Id/प्रभारी यूनिक आईडी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter In Charge Unique ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Name<span style="color: red;"> *</span></label>
+                                <label>In Charge Name/प्रभारी का नाम<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="Enter In Charge Name" />
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Mobile Number <span style="color: red;">*</span></label>
+                                <label>In Charge Mobile Number/प्रभारी मोबाइल नंबर <span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter In Charge Mobile No." />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Email ID<span style="color: red;">*</span></label>
+                                <label>In Charge Email ID/प्रभारी ईमेल आई.डी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter In Charge Email ID" />
                             </div>
                         </div>
                     </div>
                 </fieldset>
-                <div class="row justify-content-center">
-                    <div class="col-md-3 mt-4 text-center">
-                        <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                        <a href="Mst_SchoolRegistration.aspx" class="btn btn-danger btn-rounded">Clear</a>
+
+                   <div class="col-md-12">
+                        <div class="form-group text-center">
+                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border">Save</button>
+                            <a href="Mst_SchoolRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        </div>
                     </div>
-                </div>
 
                 <%--<fieldset>
                         <legend>Description</legend>
@@ -690,11 +700,11 @@
             </div>
             <div runat="server" id="divInstitute">
                 <fieldset>
-                    <legend>Institute Basic Information</legend>
-                    <div class="row">
+                    <legend>Institute Basic Information/संस्थान की जानकारी</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Type<span style="color: red;"> *</span></label>
+                                <label>Select Institute Type/संस्थान का प्रकार चुनें<span style="color: red;"> *</span></label>
                                 <select class="form-select form-control select2">
                                     <option>-select-</option>
                                     <option>Maharshi Pathanjali Sanskrit Sansthan, Bhopal</option>
@@ -707,7 +717,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Code<span style="color: red;"> *</span></label>
+                                <label>Institute Code/संस्थान कोड<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Code" />
                             </div>
                         </div>
@@ -725,7 +735,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Year of Establishment<span style="color: red;">*</span></label>
+                                <label>Year of Establishment/स्थापना वर्ष<span style="color: red;">*</span></label>
 
                                 <input type="date" class="form-control your-selector" />
 
@@ -733,7 +743,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Management Group<span style="color: red;"> *</span></label>
+                                <label>Select Management Group/प्रबंधन समूह का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="A-State Govt">A-State Govt</option>
@@ -748,7 +758,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Management Group Details<span style="color: red;"> *</span></label>
+                                <label>Select Management Group Details/प्रबंधन समूह विवरण चुनें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="1-Department of Education">1-Department of Education</option>
@@ -778,7 +788,7 @@
                             </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Shift <span style="color: red;">*</span></label>
+                                <label>Select Institute Shift/संस्थान शिफ्ट का चयन करें <span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Morning">Morning</option>
@@ -790,7 +800,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Is Institute Residential<span style="color: red;">*</span></label>
+                                <label>Select Is Institute Residential/क्या संस्थान आवासीय है का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Yes">Yes</option>
@@ -813,7 +823,7 @@
                             </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Hostel Facility<span style="color: red;">*</span></label>
+                                <label>Select Hostel Facility/छात्रावास सुविधा का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Yes">Yes</option>
@@ -823,7 +833,9 @@
                             </div>
                         </div>
                         <div class="col-md-1 mt-3">
-                            <label>IsActive<i style="color: red;">*</i></label>
+                            <label>
+                                IsActive/सक्रिय है
+                                <i style="color: red;">*</i></label>
                             <br />
                             <asp:CheckBox Checked="true" runat="server" />
                         </div>
@@ -831,11 +843,11 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Institute Address Information</legend>
-                    <div class="row">
+                    <legend>Institute Address Information/संस्थान के पते की जानकारी</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Division <span style="color: red">*</span></label>
+                                <label>Select Division/संभाग का चयन करें <span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -853,7 +865,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>District<span style="color: red">*</span></label>
+                                <label>Select District/ जिले का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -912,7 +924,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Block<span style="color: red">*</span></label>
+                                <label>Select Block/ब्लॉक का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Agar">Agar</option>
@@ -935,7 +947,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Parliament<span style="color: red;"> *</span></label>
+                                <label>Select Parliament/संसद का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -973,7 +985,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Assembly <span style="color: red;">*</span></label>
+                                <label>Select Assembly /विधानसभा का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Govindpura">Govindpura</option>
@@ -984,7 +996,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Area <span style="color: red;">*</span></label>
+                                <label>Select Area /क्षेत्र का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">-Select-</option>
                                     <option value="1-Urban">1-Urban</option>
@@ -995,7 +1007,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Nagar Nigam<span style="color: red">*</span></label>
+                                <label>Select Nagar Nigam/नगर निगम का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -1015,7 +1027,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Nagar Palika<span style="color: red">*</span></label>
+                                <label>Select Nagar Palika/नगर पालिका का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -1035,7 +1047,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Zila Panchayat<span style="color: red">*</span></label>
+                                <label>Select Zila Panchayat/जिला पंचायत का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Berasia">Berasia</option>
@@ -1051,7 +1063,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Janpad Panchayat<span style="color: red">*</span></label>
+                                <label>Select Janpad Panchayat/जनपद पंचायत का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="BARODI">BARODI</option>
@@ -1067,7 +1079,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Gram Panchayat<span style="color: red">*</span></label>
+                                <label>Select Gram Panchayat/ग्राम पंचायत का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="AMARPUR">AMARPUR</option>
@@ -1089,7 +1101,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Village<span style="color: red">*</span></label>
+                                <label>Select Village/गांव का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="BARODI">BARODI</option>
@@ -1107,7 +1119,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Habitation </label>
+                                <label>Select Habitation /आवास का चयन करें</label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Berasia">Berasia</option>
@@ -1118,31 +1130,35 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Address (Line 1)<span style="color: red;">*</span></label>
+                                <label>
+                                    Address (Line 1)/पता (1)
+                                    <span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Address (Line 1)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Address (Line 2)</label>
+                                <label>Address (Line 2)/पता (2)</label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Address (Line 2)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Pincode</label>
+                                <label>
+                                    Pincode/पिन कोड
+                                </label>
                                 <input type="text" class="form-control" placeholder="Enter Pincode No." />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Institute Contact Details</legend>
-                    <div class="row">
+                    <legend>Institute Contact Details/संस्थान संपर्क विवरण</legend>
+                    <div class="row align-items-end">
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Type<span style="color: red;"> *</span></label>
+                                <label>Select In Charge Type/इन चार्ज प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                 <%--      <select class="form-control select2">
                                         <option value=" -Select-">-Select-</option>
                                         <option value="1-Head Master / Principal ">1-Head Master / Principal </option>
@@ -1163,13 +1179,13 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Unique Id<span style="color: red;">*</span></label>
+                                <label>In Charge Unique Id/प्रभारी यूनिक आई.डी<span style="color: red;">*</span></label>
                                 <asp:TextBox runat="server" ID="InChargeUniqueId" class="form-control" placeholder="Enter In Charge Unique ID" OnTextChanged="InChargeUniqueId_TextChanged" AutoPostBack="true"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Name<span style="color: red;"> *</span></label>
+                                <label>In Charge Name/प्रभारी का नाम<span style="color: red;"> *</span></label>
 
                                 <asp:TextBox runat="server" ID="txtInst_InChargeName" class="form-control" placeholder="Enter In Charge Name"></asp:TextBox>
 
@@ -1178,7 +1194,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Mobile Number <span style="color: red;">*</span></label>
+                                <label>In Charge Mobile Number /प्रभारी मोबाइल नंबर<span style="color: red;">*</span></label>
 
                                 <asp:TextBox runat="server" ID="txtInst_InchargeMobile" class="form-control" placeholder="Enter In Charge Mobile No."></asp:TextBox>
 
@@ -1186,14 +1202,14 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Email ID<span style="color: red;">*</span></label>
+                                <label>In Charge Email ID/प्रभारी ईमेल आई.डी<span style="color: red;">*</span></label>
                                 <asp:TextBox runat="server" ID="txtInst_InchargeEmail" class="form-control" placeholder="Enter In Charge Email ID"></asp:TextBox>
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>In Charge Designation<span style="color: red;">*</span></label>
+                                <label>Select In Charge Designation/प्रभारी पदनाम का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option selected value="1-Head Master / Principal ">1-Head Master / Principal </option>
@@ -1206,20 +1222,20 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Landline Number<span style="color: red;">*</span></label>
+                                <label>Institute Landline Number/संस्थान का लैंडलाइन नंबर<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Landline No." />
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Email ID<span style="color: red;">*</span></label>
+                                <label>Institute Email ID/संस्थान ईमेल आई.डी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Email ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Website</label>
+                                <label>Institute Website/संस्थान की वेबसाइट</label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Website" />
                             </div>
                         </div>
@@ -1227,12 +1243,12 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Institute Bank Details</legend>
+                    <legend>Institute Bank Details/संस्थान बैंक विवरण</legend>
 
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Type<span style="color: red;">*</span></label>
+                                <label>Select Bank Type/बैंक प्रकार चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
                                     <option value="" data-select2-id="64">Select</option>
                                     <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
@@ -1246,7 +1262,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>IFSC Code<span style="color: red;">*</span></label>
+                                <label>Select IFSC Code/IFSC कोड चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="">--Select--</option>
                                     <option value="SBIN0001308">SBIN0001308</option>
@@ -1259,7 +1275,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Name<span style="color: red;">*</span></label>
+                                <label>Select Bank Name/बैंक का नाम चुनें<span style="color: red;">*</span></label>
                                 <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
                                 <select class="form-control select2">
                                     <option value="">--Select--</option>
@@ -1275,24 +1291,24 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Account Number<span style="color: red;">*</span></label>
+                                <label>Account Number/खाता संख्या<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Account No." />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Institute Geographical Data</legend>
-                    <div class="row">
+                    <legend>Institute Geographical Data/संस्थान भौगोलिक डेटा</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Latitude<span style="color: red;">*</span></label>
+                                <label>Latitude/देशांतर<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Latitude" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Longitude<span style="color: red;">*</span></label>
+                                <label>Longitude/अक्षांश <span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Longitude" />
                             </div>
                         </div>
@@ -1300,8 +1316,8 @@
                 </fieldset>
                 <div class="row justify-content-center">
                     <div class="col-md-2 mt-4">
-                        <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                        <a href="Mst_SchoolRegistration.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <button type="button" class="Alert-Confirmation w-lg btn btn-success btn-rounded">Save</button>
+                        <a href="Mst_SchoolRegistration.aspx" class="btn w-lg btn-danger btn-rounded">Clear</a>
                     </div>
                 </div>
                 <%--<fieldset>
@@ -1585,11 +1601,11 @@
             </div>
             <div runat="server" id="divSchool">
                 <fieldset>
-                    <legend>School Basic Information</legend>
-                    <div class="row">
+                    <legend>School Basic Information/स्कूल की बुनियादी जानकारी</legend>
+                    <div class="row  align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter UDISE Code<span style="color: red;"> *</span></label>
+                                <label>Enter UDISE Code/UDISE कोड दर्ज करें<span style="color: red;"> *</span></label>
                                 <input type="text" id="ContentBody_ir" class="form-control" placeholder="Enter UDISE Code" />
                             </div>
                         </div>
@@ -1607,7 +1623,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Year of Establishment<span style="color: red;">*</span></label>
+                                <label>Select Year of Establishment/स्थापना का वर्ष चुनें<span style="color: red;">*</span></label>
 
                                 <%-- <select class="form-control select2">
                                         <option value="-Select-">-Select-</option>
@@ -1628,7 +1644,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Board Type<span style="color: red;"> *</span></label>
+                                <label>Select Board Type/बोर्ड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="1-CBSE">1-CBSE</option>
@@ -1641,13 +1657,13 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Board Code</label>
+                                <label>Board Code/बोर्ड कोड</label>
                                 <input type="text" class="form-control" placeholder="Enter Board Code" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Type<span style="color: red;"> *</span></label>
+                                <label>Select School Type/स्कूल का प्रकार चुनें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="1-Boy">1-Boy</option>
@@ -1659,7 +1675,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Category<span style="color: red;"> *</span></label>
+                                <label>Select School Category/स्कूल श्रेणी का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="1-Primary">1-Pre-Primary</option>
@@ -1672,7 +1688,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Category Details<span style="color: red;"> *</span></label>
+                                <label>Select School Category Details/स्कूल श्रेणी विवरण का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="1-Primary only with grades 1 to 5 (PRY)">1-Primary only with grades 1 to 5 (PRY)</option>
@@ -1693,7 +1709,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Management Group<span style="color: red;"> *</span></label>
+                                <label>Select Management Group/प्रबंधन समूह का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="A-State Govt">A-State Govt</option>
@@ -1708,7 +1724,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Management Group Details<span style="color: red;"> *</span></label>
+                                <label>Select Management Group Details/प्रबंधन समूह विवरण चुनें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="1">1-Department of Education</option>
@@ -1738,26 +1754,28 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Recognition No. <span style="color: red;">*</span></label>
+                                <label>Recognition No. /मान्यता नं.<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" placeholder="Enter Recognition No." />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Recognition  Valid From<span style="color: red;">*</span></label>
+                                <label>Recognition  Valid From/मान्यता से मान्य<span style="color: red;">*</span></label>
                                 <input class="form-control" type="date" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Recognition  Valid To<span style="color: red;">*</span></label>
+                                <label>Recognition  Valid To/मान्यता के लिए मान्य<span style="color: red;">*</span></label>
                                 <input class="form-control" type="date" />
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Medium<span style="color: red;">*</span></label>
+                                <label>
+                                    Select School Medium/
+स्कूल माध्यम का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2" data-live-search="true">
                                     <option value="0">Select</option>
                                     <option value="19">19-English</option>
@@ -1771,7 +1789,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Minority Community <span style="color: red;">*</span></label>
+                                <label>Select Minority Community /अल्पसंख्यक समुदाय का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="1-Muslim">1-Muslim</option>
@@ -1785,7 +1803,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Shift <span style="color: red;">*</span></label>
+                                <label>Select School Shift/स्कूल शिफ्ट का चयन करें <span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Morning">Morning</option>
@@ -1797,7 +1815,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Is School Residential<span style="color: red;">*</span></label>
+                                <label>Select Is School Residential/क्या विद्यालय आवासीय है का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Yes">Yes</option>
@@ -1808,7 +1826,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Special School<span style="color: red;">*</span></label>
+                                <label>Select Special School/विशेष विद्यालय का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="CM Rise">01-CM Rise School</option>
@@ -1826,7 +1844,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>JSK<span style="color: red;">*</span></label>
+                                <label>Select JSK/जेएसके का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
 
@@ -1836,7 +1854,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Status<span style="color: red;">*</span></label>
+                                <label>Select School Status/स्कूल की स्थिति का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Functional">Functional</option>
@@ -1848,7 +1866,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Hostel Attach<span style="color: red;">*</span></label>
+                                <label>Select Hostel Attach/हॉस्टल अटैच का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Yes">Yes</option>
@@ -1860,7 +1878,8 @@
                         <div class="col-md-1 ">
                             <div class="form-group">
 
-                                <label>IsActive<i style="color: red;">*</i></label>
+                                <label>IsActive/सक्रिय है
+<i style="color: red;">*</i></label>
                                 <br />
                                 <asp:CheckBox Checked="true" runat="server" />
                             </div>
@@ -1869,11 +1888,11 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>School Address Information</legend>
-                    <div class="row">
+                    <legend>School Address Information/स्कूल के पते की जानकारी</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Division <span style="color: red">*</span></label>
+                                <label>Select Division /प्रभाग का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -1891,7 +1910,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>District<span style="color: red">*</span></label>
+                                <label>Select District/जिला चुनें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -1950,7 +1969,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Block<span style="color: red">*</span></label>
+                                <label>Select Block/ब्लॉक चुनें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Agar">Agar</option>
@@ -1973,7 +1992,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Parliament<span style="color: red;"> *</span></label>
+                                <label>Select Parliament/संसद का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -2011,7 +2030,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Assembly (Vidhansabha) <span style="color: red;">*</span></label>
+                                <label>Select Assembly (Vidhansabha)/विधानसभा का चयन करें <span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Govindpura">Govindpura</option>
@@ -2022,7 +2041,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Area (Urban/Rural) <span style="color: red;">*</span></label>
+                                <label>Select Area (Urban/Rural)/क्षेत्र चुनें (शहरी/ग्रामीण) <span style="color: red;">*</span></label>
                                 <select class="form-control select2" id="dropdown" onchange="showHideDiv()">
                                     <option value="3">-Select-</option>
                                     <option value="1">Urban</option>
@@ -2032,7 +2051,7 @@
                         </div>
                         <div id="divnagarnigam" class="col-md-3">
                             <div class="form-group">
-                                <label>Nagar Nigam<span style="color: red">*</span></label>
+                                <label>Select Nagar Nigam/नगर निगम का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -2052,7 +2071,7 @@
                         </div>
                         <div id="divnagarpalika" class="col-md-3">
                             <div class="form-group">
-                                <label>Nagar Palika<span style="color: red">*</span></label>
+                                <label>Select Nagar Palika/नगर पालिका का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -2072,14 +2091,14 @@
                         </div>
                         <div id="divward" class="col-md-3">
                             <div class="form-group">
-                                <label>Ward No./Name<span style="color: red">*</span></label>
+                                <label>Ward No./Name/वार्ड क्रमांक/नाम<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Ward No./Name" />
 
                             </div>
                         </div>
                         <div id="divZilapanchayat" class="col-md-3">
                             <div class="form-group">
-                                <label>Zila Panchayat<span style="color: red">*</span></label>
+                                <label>Select Zila Panchayat/जिला पंचायत का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Berasia">Berasia</option>
@@ -2096,7 +2115,7 @@
                         </div>
                         <div id="divjanpad" class="col-md-3">
                             <div class="form-group">
-                                <label>Janpad Panchayat<span style="color: red">*</span></label>
+                                <label>Select Janpad Panchayat/जनपद पंचायत का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="BARODI">BARODI</option>
@@ -2113,7 +2132,7 @@
                         </div>
                         <div id="divgram" class="col-md-3">
                             <div class="form-group">
-                                <label>Gram Panchayat<span style="color: red">*</span></label>
+                                <label>Select Gram Panchayat/ग्राम पंचायत का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="AMARPUR">AMARPUR</option>
@@ -2135,7 +2154,7 @@
                         </div>
                         <div id="divvillage" class="col-md-3">
                             <div class="form-group">
-                                <label>Village<span style="color: red">*</span></label>
+                                <label>Select Village/गांव का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="BARODI">BARODI</option>
@@ -2152,7 +2171,7 @@
                         </div>
                         <div id="divhabitation" class="col-md-3">
                             <div class="form-group">
-                                <label>Habitation </label>
+                                <label>Select Habitation /आवास का चयन करें</label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Berasia">Berasia</option>
@@ -2162,7 +2181,7 @@
                         </div>
                         <div id="divdistance" class="col-md-3">
                             <div class="form-group">
-                                <label>Habitation to School (By Air)</label>
+                                <label>Habitation to School (By Air)/स्कूल तक आवास (हवाई मार्ग से)</label>
                                 <%--<input type="text" class="form-control" />--%>
                                 <%--   <select class="form-control select2">
                                         <option value="-Select-">-Select-</option>
@@ -2174,7 +2193,7 @@
                         </div>
                         <div id="divdistanceByRoad" class="col-md-3">
                             <div class="form-group">
-                                <label>Habitation to School (By Road)<span style="color: red">*</span></label>
+                                <label>Habitation to School (By Road)/स्कूल तक आवास (सड़क मार्ग से)<span style="color: red">*</span></label>
                                 <input type="text" placeholder="Enter Distance in Meter" class="form-control" />
 
                             </div>
@@ -2183,30 +2202,31 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Address (Line 1)<span style="color: red;">*</span></label>
+                                <label>Address (Line 1)/पता (1)<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter School Address (Line 1)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Address (Line 2)</label>
+                                <label>Address (Line 2)/पता (2)</label>
                                 <input type="text" class="form-control" placeholder="Enter School Address (Line 2)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Pincode</label>
+                                <label>Pincode/पिन कोड
+</label>
                                 <input type="text" class="form-control" placeholder="Enter Pincode" />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset data-select2-id="105">
-                    <legend>Sankul Information</legend>
+                    <legend>Sankul Information/संकुल सूचना</legend>
                     <div class="row" data-select2-id="104">
                         <div class="col-md-3" data-select2-id="103">
                             <div class="form-group" data-select2-id="102">
-                                <label class="control-label" for="SankulId">Sankul/AEO Code</label>
+                                <label class="control-label" for="SankulId">Select Sankul/AEO Code/संकुल/एईओ कोड चुनें</label>
                                 <select class="form-control select2 select2-hidden-accessible" id="SankulId" name="SankulId" data-select2-id="SankulId" tabindex="-1" aria-hidden="true">
                                     <option value="" data-select2-id="109">Select</option>
                                     <option value="4" data-select2-id="113"></option>
@@ -2215,31 +2235,31 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="control-label">Board Type</label>
+                                <label class="control-label">Board Type/बोर्ड का प्रकार</label>
                                 <input id="SankulBoardType" class="form-control valid" readonly aria-invalid="false">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="control-label">Management Group</label>
+                                <label class="control-label">Management Group/प्रबंधन समूह</label>
                                 <input id="SankulManagementGroup" readonly class="form-control">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="control-label">Management Group Details</label>
+                                <label class="control-label">Management Group Details/प्रबंधन समूह विवरण</label>
                                 <input id="SankulManagementGroupDetails" readonly class="form-control">
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>School Contact Details</legend>
-                    <div class="row">
+                    <legend>School Contact Details/स्कूल संपर्क विवरण</legend>
+                    <div class="row align-items-end">
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Head Type<span style="color: red;"> *</span></label>
+                                <label>Select School Head Type/स्कूल प्रमुख प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="1-Head Master / Principal ">1-Head Master / Principal </option>
@@ -2252,19 +2272,19 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Employee Unique Id<span style="color: red;">*</span></label>
+                                <label>Employee Unique Id/कर्मचारी यूनिक आई.डी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Employee Name<span style="color: red;"> *</span></label>
+                                <label>Employee Name/कर्मचारी का नाम<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Employee Name" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Employee Designation<span style="color: red;">*</span></label>
+                                <label>Select Employee Designation/कर्मचारी पदनाम चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value=" -Select-">-Select-</option>
                                     <option value="1-Head Master / Principal ">1-Head Master / Principal </option>
@@ -2276,13 +2296,13 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Employee Mobile Number <span style="color: red;">*</span></label>
+                                <label>Employee Mobile Number/कर्मचारी मोबाइल नंबर <span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Employee Mobile No." />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Employee Email ID<span style="color: red;">*</span></label>
+                                <label>Employee Email ID/कर्मचारी ईमेल आई.डी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Employee Email ID" />
                             </div>
                         </div>
@@ -2291,20 +2311,20 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Landline Number<span style="color: red;">*</span></label>
+                                <label>School Landline Number/स्कूल का लैंडलाइन नंबर<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter School Landline No." />
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Email ID<span style="color: red;">*</span></label>
+                                <label>School Email ID/स्कूल ईमेल आई.डी<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter School Email ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Website</label>
+                                <label>School Website/स्कूल की वेबसाइट</label>
                                 <input type="text" class="form-control" placeholder="Enter School Website" />
                             </div>
                         </div>
@@ -2312,12 +2332,12 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>School Bank Details</legend>
+                    <legend>School Bank Details/स्कूल बैंक विवरण</legend>
 
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Type<span style="color: red;">*</span></label>
+                                <label>Select Bank Type/बैंक प्रकार चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2 " id="BankTypeId" name="BankTypeId" data-select2-id="BankTypeId" tabindex="-1" aria-hidden="true">
                                     <option value="" data-select2-id="64">Select</option>
                                     <option value="1" data-select2-id="147">Public Sector Commercial Banks</option>
@@ -2331,7 +2351,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>IFSC Code<span style="color: red;">*</span></label>
+                                <label>Select IFSC Code/IFSC कोड चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="">--Select--</option>
                                     <option value="SBIN0001308">SBIN0001308</option>
@@ -2344,7 +2364,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Name<span style="color: red;">*</span></label>
+                                <label>Select Bank Name/बैंक का नाम चुनें<span style="color: red;">*</span></label>
                                 <%--<input type="text" class="form-control" placeholder="Enter Bank Name" />--%>
                                 <select class="form-control select2">
                                     <option value="">--Select--</option>
@@ -2360,24 +2380,24 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Account Number<span style="color: red;">*</span></label>
+                                <label>Account Number/खाता संख्या<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Account No." />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>School Geographical Data</legend>
-                    <div class="row">
+                    <legend>School Geographical Data/स्कूल भौगोलिक डेटा</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Latitude</label>
+                                <label>Latitude/अक्षांश </label>
                                 <input type="text" class="form-control" placeholder="Enter Latitude" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Longitude</label>
+                                <label>Longitude/देशांतर</label>
                                 <input type="text" class="form-control" placeholder="Enter Longitude" />
                             </div>
                         </div>
@@ -2385,8 +2405,8 @@
                 </fieldset>
                 <div class="row justify-content-center">
                     <div class="col-md-2 mt-4">
-                        <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                        <a href="Mst_SchoolRegistration.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-rounded">Save</button>
+                        <a href="Mst_SchoolRegistration.aspx" class="btn w-lg btn-danger btn-rounded">Clear</a>
                     </div>
                 </div>
 
@@ -2701,7 +2721,6 @@
         </div>
     </div>
 
-    </div>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
