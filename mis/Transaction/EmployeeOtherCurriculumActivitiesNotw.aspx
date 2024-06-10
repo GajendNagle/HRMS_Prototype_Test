@@ -3,17 +3,32 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <%-- <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
-        </div>--%>
-        <div class="col-md-5 align-self-center">
-     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-         <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-         </u>
-     </p>
- </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Other Curriculum Activities</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>About Other Curriculum Activities</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <%-- <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-7 align-self-center">
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
@@ -24,10 +39,10 @@
                 </ol>
             </div>
         </div>
-    </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
+    </div>--%>
+    <div class="card card-border-primary">
+      <%--  <div class="card-header ">
+        </div>--%>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">

@@ -87,8 +87,8 @@
                                 <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="#Employee" id="employeeBreadcrumb" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                    <span>Employee</span></a>
+                                <a href="#EmployeeVerification" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                    <span>Employee Verification</span></a>
                             </li>
                             <li class="breadcrumb-item"><span>Employee Verification</span></li>
                         </ol>

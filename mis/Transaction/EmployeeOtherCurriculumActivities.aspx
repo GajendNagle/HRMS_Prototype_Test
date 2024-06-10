@@ -16,34 +16,31 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <%-- <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
-        </div>--%>
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center">
-
-
-
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                    <li class="breadcrumb-item active">Employee Other Curriculum Activities</li>
-                </ol>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Other Curriculum Activities</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>National/State Level Training</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
+    <div class="card card-border-primary">
+       <%-- <div class="card-header">
+        </div>--%>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -77,22 +74,22 @@
             </nav>
             <br />
             <br />
-
-            <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-
-
             <fieldset>
-                <legend>राष्ट्रीय/राज्य स्तरीय प्रशिक्षण
+                <legend>National/State Level Training
+                    <br />
+                    राष्ट्रीय/राज्य स्तरीय प्रशिक्षण
                 </legend>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Uniq Id /कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
+                            <label>Employee Uniq Id /
+                                <br />
+                                कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                             <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
                         </div>
                     </div>
-                    <div class="col-md-3 mt-4 py-2">
-                        <button id="Button1" type="button" class="btn btn-success btn-rounded" onclick="myFunction()">View Employee Information</button>
+                    <div class="col-md-3 form-group ">
+                        <button id="Button1" type="button" class="btn btn-outline-success w-lg btn-border" onclick="myFunction()">View Employee Information</button>
                         <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                     </div>
                 </div>
@@ -100,9 +97,8 @@
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-                    <legend>Employee Personal Information 
-                    </legend>
-                    <div class="row mt-2">
+                    <legend>Employee Personal Information / कर्मचारी की व्यक्तिगत जानकारी </legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
@@ -127,29 +123,29 @@
                                 <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Sankul Code/ Name
-      <br />
+                                    <br />
                                     संकुल कोड / नाम<span style="color: red">*</span></label>
                                 <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151236526-GOV VINAYAK PUBLIC SCHOOL TARRAKHURD" />
                             </div>
                         </div>
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <legend>क्या आप राष्ट्रीय/राज्य स्तरीय प्रशिक्षण/राज्य स्तरीय समूह में शामिल हैं -:</legend>
+                    <legend>क्या आप राष्ट्रीय/राज्य स्तरीय प्रशिक्षण/राज्य स्तरीय समूह में शामिल हैं  <br />Are You Involved in National/State Level Training/State Level Group</legend>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive table-bordered">
                                 <table class="table text-center">
                                     <tbody>
                                         <tr>
-                                            <th>क्र.</th>
-                                            <th>स्त्रोत समूह क्षेत्र</th>
-                                            <th>राष्ट्रीय स्तर पर कार्य दिवस</th>
-                                            <th>राज्य स्तर पर कार्य दिवस</th>
+                                            <th>Sr. No.<br />सरल क्र.</th>
+                                            <th>Source Group Area<br />स्त्रोत समूह क्षेत्र</th>
+                                            <th>National Level Working Day<br />राष्ट्रीय स्तर पर कार्य दिवस</th>
+                                            <th>State Level Working Day<br />राज्य स्तर पर कार्य दिवस</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -225,7 +221,7 @@
 
                     <div class="col-md-2">
 
-                        <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Save</button>
+                        <button id="Button2" type="button" class="btn btn-outline-success btn-border Alert-Save w-lg" onclick="myFunction()">Save</button>
                     </div>
 
 

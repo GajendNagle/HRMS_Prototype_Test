@@ -43,7 +43,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Retirement / Separation<br />विभाजन / सेवानिवृत्त</h4>
+                            <h4 class="card-title">Retirement / Separation<br />सेवानिवृत्त / विभाजन</h4>
                         </div>
                     </div>
                 </div>

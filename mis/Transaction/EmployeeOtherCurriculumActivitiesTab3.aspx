@@ -16,34 +16,31 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <%-- <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
-        </div>--%>
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center">
-
-
-
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                    <li class="breadcrumb-item active">Employee Other Curriculum Activities</li>
-                </ol>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Other Curriculum Activities</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Training Details</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
+    <div class="card card-border-primary">
+        <%-- <div class="card-header">
+</div>--%>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
@@ -53,19 +50,6 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-                            <%--                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                  
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
-
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                               
-                                </ul>
-                            </li>--%>
                             <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesNotw.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                             <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivities.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तरीय प्रशिक्षण</b></a>
                             &nbsp; <i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i><a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab2.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तर के पुरस्कार</b></a>
@@ -82,17 +66,18 @@
 
 
             <fieldset>
-                <legend>प्रशिक्षण का विवरण
+                <legend>Training Details / प्रशिक्षण का विवरण
                 </legend>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Uniq Id /कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
+                            <label>Employee Uniq Id /<br />
+                                कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                             <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
                         </div>
                     </div>
-                    <div class="col-md-3 mt-4 py-2">
-                        <button id="Button1" type="button" class="btn btn-success btn-rounded" onclick="myFunction()">View Employee Information</button>
+                    <div class="col-md-3 form-group">
+                        <button id="Button1" type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">View Employee Information</button>
                         <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                     </div>
                 </div>
@@ -100,9 +85,8 @@
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-                    <legend>Employee Personal Information 
-                    </legend>
-                    <div class="row mt-2">
+                    <legend>Employee Personal Information / कर्मचारी की व्यक्तिगत जानकारी </legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
@@ -137,6 +121,7 @@
                                 <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151236526-GOV VINAYAK PUBLIC SCHOOL TARRAKHURD" />
                             </div>
                         </div>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>प्रशिक्षण का विवरण (In-service, induction, CWSN, Computer, Dakshata, ABL, 90 Days IED) :-</legend>
@@ -146,10 +131,10 @@
                                 <table class="table text-center">
                                     <tbody>
                                         <tr>
-                                            <th>क्र.</th>
-                                            <th>प्रशिक्षण प्रकार</th>
-                                            <th>प्रशिक्षण का स्तर (राज्य/संभाग/जिला/विकासखंड)</th>
-                                            <th>प्रशिक्षण की अवधि (दिनों में)</th>
+                                            <th>Sr. No. /<br/>सरल क्र.</th>
+                                            <th>Training Type /<br/>प्रशिक्षण प्रकार</th>
+                                            <th>Level of Training (State/Division/District/Development Block) /<br/>प्रशिक्षण का स्तर (राज्य/संभाग/जिला/विकासखंड)</th>
+                                            <th>Duration of Training (in days) /<br/>प्रशिक्षण की अवधि (दिनों में)</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -245,7 +230,7 @@
 
                     <div class="col-md-2">
 
-                        <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Save</button>
+                        <button id="Button2" type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="myFunction()">Save</button>
                     </div>
 
 
