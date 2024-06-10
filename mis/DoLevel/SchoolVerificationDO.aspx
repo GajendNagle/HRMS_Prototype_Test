@@ -132,7 +132,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group text-center">
                                 <asp:Button ID="btnSubmit" CssClass="btn btn-success w-lg btn-border" runat="server" OnClick="btnSubmit_Click" Text="Search" />
                                 <a runat="server" id="clearfirst" href="SchoolVerificationDO.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -698,7 +698,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn w-lg btn-success" data-bs-dismiss="modal">Update</button>
-                                <button type="button" class="btn w-lg btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn w-lg btn-danger" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
 
