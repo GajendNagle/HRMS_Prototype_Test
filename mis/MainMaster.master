@@ -121,11 +121,12 @@
         .table td, .table th {
             border: 1px solid #ddd;
         }
-         .table th{
-           background-color: var(--primary) !important;
-               color: var(--vz-body-color);
+
+        .table th {
+            background-color: #ffffff !important;
+            color: var(--vz-body-color);
         }
-            
+
         .table tbody {
             border-top: 2px solid #ddd;
         }
@@ -152,6 +153,12 @@
         .topbar {
             background: var(--vz-primary);
             content: "";
+        }
+
+        .w-lg ,.btn-success{
+            min-width: 140px;
+            font-size: large;
+            font-weight: bold;
         }
 
         /* .row {
@@ -363,20 +370,20 @@
                                 <div class="collapse menu-dropdown" id="sidebarDashboards">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/AdminDashboard.aspx" class="nav-link" >Admin Dashboard </a>
+                                            <a href="/mis/Dashboard/AdminDashboard.aspx" class="nav-link">Admin Dashboard </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/HRMSDashboard.aspx" class="nav-link" >HRMS Dashboard </a>
+                                            <a href="/mis/Dashboard/HRMSDashboard.aspx" class="nav-link">HRMS Dashboard </a>
                                         </li>
                                         <li class="nav-item">
 
-                                            <a href="/mis/Dashboard/EmployeeDashBoard.aspx" class="nav-link" >Employee Dashboard </a>
+                                            <a href="/mis/Dashboard/EmployeeDashBoard.aspx" class="nav-link">Employee Dashboard </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/SchoolDirectoryDashboard.aspx" class="nav-link" >School Directory Dashboard</a>
+                                            <a href="/mis/Dashboard/SchoolDirectoryDashboard.aspx" class="nav-link">School Directory Dashboard</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/mis/Dashboard/StudentDashboard.aspx" class="nav-link" >Student/Scheme Dashboard</a>
+                                            <a href="/mis/Dashboard/StudentDashboard.aspx" class="nav-link">Student/Scheme Dashboard</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1190,7 +1197,7 @@
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="SchemeManagement">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Department.aspx"> Scheme  Department Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Department.aspx">Scheme  Department Master </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Trn_SchemeApplication.aspx">Scheme Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/StudentProfileLocking.aspx">Student Profile View/ Edit/ Lock</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SSDDO_Scholarship.aspx">SSDDO Scholarship</a></li>
