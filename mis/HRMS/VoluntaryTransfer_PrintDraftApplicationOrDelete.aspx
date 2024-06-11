@@ -141,7 +141,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <p class="font-16"><span style="color: blue">नोट:- स्वैच्छिक स्थानांतरण ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षर करें ।</span></p>
+                        <p class="font-16"><span style="color: red">नोट:- स्वैच्छिक स्थानांतरण ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षर करें ।</span></p>
                     </div>
                 </div>
             </fieldset>
