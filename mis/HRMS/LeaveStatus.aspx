@@ -194,7 +194,7 @@
                                                 <th>Year /<br />वर्ष</th>
                                                 <th>From Date /<br />दिनांक से</th>
                                                 <th>To Date /<br />दिनांक तक</th>
-                                                <th>Supporting Document /<br /></th>
+                                                <th>Supporting Document /<br />सहायक दस्तावेज</th>
                                                 <th>Reason of Leave /<br />लीव का कारण</th>
                                                 <th>Status /<br />स्टेटस</th>
                                                 <th>Action (<b>Approve/Reject</b>)</th>
@@ -259,24 +259,24 @@
                         </div>
                     </fieldset>--%>
                     <fieldset id="LeaveStatus">
-                        <legend>Leave Status</legend>
+                        <legend>Leave Status / लीव स्टेटस</legend>
                         <div>
 
                             <div class="row">
-                                <div class="col-md-1 text-center">
+                                <div class="col-md-2 text-center">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
                                     <img src="../dist/images/RightMark.jpg" alt="Alternate Text" />
                                     <div class="text-center">
                                         <label id="status1">Leave Applied</label>
                                     </div>
                                 </div>
-                                <div class="col-sm-1 text-center">
+                                <div class="col-md-1">
                                     <label>Farward to Principal </label>
                                     <br />
                                     <hr width="150%" color="green" />
 
                                 </div>
-                                <div class="col-md-1 text-center ">
+                                <div class="col-md-2 text-center ">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
                                     <img src="../dist/images/RightMark.jpg" alt="Alternate Text" />
                                     <div class="text-center">
@@ -296,7 +296,7 @@
                                     <label>Time:16:34 </label>
                                 </div>
                                 <div class="col-md-1 text-center ">
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 159px; width: 159px;" />
+                                    <img src="../dist/images/lightgreencircle.png" style="height: 139px; width: 139px;" />
                                     <div class="text-center">
                                         <label id="status3">DEO</label>
                                     </div>
@@ -316,7 +316,7 @@
                                 </div>
                                 <div class="col-md-1 text-center ">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 159px; width: 159px;" />
+                                    <img src="../dist/images/lightgreencircle.png" style="height: 139px; width: 139px;" />
                                     <div class="text-center">
                                         <label id="status4">DPI</label>
                                     </div>
@@ -336,7 +336,7 @@
                                 </div>
                                 <div class="col-md-1 text-center ">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 159px; width: 159px;" />
+                                    <img src="../dist/images/lightgreencircle.png" style="height: 139px; width: 139px;" />
                                     <div class="text-center">
                                         <label id="status5">CPI</label>
                                     </div>
