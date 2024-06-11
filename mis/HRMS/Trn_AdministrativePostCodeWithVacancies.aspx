@@ -264,7 +264,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                                 </div>
                             </div>
                         </div>
