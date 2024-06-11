@@ -13,20 +13,6 @@ public partial class mis_Report_InstituteSetup : System.Web.UI.Page
         divDesignation.Visible = false;
     }
 
-
-    protected void ddlOISType_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        if(ddlOISType.SelectedValue == "2")
-        {
-            Response.Redirect("Rpt_OfficeSetup.aspx");
-        }
-        else if (ddlOISType.SelectedValue == "3")
-        {
-            Response.Redirect("Rpt_SchoolSetup.aspx");
-        }
-    }
-
-
     protected void ddlDivision_SelectedIndexChanged(object sender, EventArgs e)
     {
 
@@ -109,7 +95,7 @@ public partial class mis_Report_InstituteSetup : System.Web.UI.Page
         if (ddlMngmntGrp.SelectedItem.Text == "Central Government")
         {
             ddlMngmntGrpDtls.ClearSelection();
-            FillLocation(ddlMngmntGrpDtls, new[] { "Central Tibetan Institute", "Jawahar Navodaya Vidyalaya", "Kendriya Vidyalaya", " Railway Institute" });
+            FillLocation(ddlMngmntGrpDtls, new[] { "Central Tibetan Institute", "Jawahar Navodaya Vidyalaya", "Kendriya Vidyalaya"," Railway Institute" });
         }
         else if (ddlMngmntGrp.SelectedItem.Text == "Government Aided")
         {
@@ -136,6 +122,22 @@ public partial class mis_Report_InstituteSetup : System.Web.UI.Page
         {
             ddlDistrict.Items.Clear();
             ddlDistrict.Items.Insert(0, "--Select--");
+        }
+    }
+
+    protected void ddlOISType_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (ddlOISType.SelectedValue == "1")
+        {
+            Response.Redirect("Rpt_OfficeSetup.aspx");
+        }
+        else if (ddlOISType.SelectedValue == "2")
+        {
+            Response.Redirect("Rpt_InstituteSetup.aspx");
+        }
+        else if (ddlOISType.SelectedValue == "3")
+        {
+            Response.Redirect("Rpt_SchoolSetup.aspx");
         }
     }
 }

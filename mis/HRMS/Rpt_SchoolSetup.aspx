@@ -6,23 +6,20 @@
                           <div class="row">
      <div class="col-12">
          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-             <h4 class="mb-sm-0"></h4>
-             <div class="=page-title-right">
-                 <ol class="breadcrumb m-0">
-                     <li class="breadcrumb-item">
-                         <span>Home</span>
-                     </li>
-                    <li class="breadcrumb-item">
-    <a href="#SchoolDirectoryDashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-</li>
-<li class="breadcrumb-item">
-    <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('OISSetup')">
-        <span>OIS Setup Reports</span></a>
-</li>
-<%--                     <li class="breadcrumb-item">
-    <a href="#Reports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Reports')">
-        <span>Reports</span></a>
-</li>--%>
+                      <h4 class="mb-sm-0"></h4>
+<div class="=page-title-right">
+    <ol class="breadcrumb m-0">
+        <li class="breadcrumb-item">
+            <span>Home</span>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
+                <span>OIS Setup Reports</span></a>
+        </li>
+               
                      <li class="breadcrumb-item"><span>School Setup Report</span></li>
                  </ol>
              </div>
@@ -48,8 +45,8 @@
  
         <div class="card-header card-border-info">
             <div class="row form-group m-2">
-                <div class="col-md-2">
-                    <label class="font-bold text-dark">OIS Type<span style="color: red">*</span></label>
+                <div class="col-md-3">
+                    <label class="font-bold text-dark">OIS Type/<br />ओ.आई.एस प्रकार<span style="color: red">*</span></label>
                     <asp:DropDownList ID="ddlOISType" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlOISType_SelectedIndexChanged" AutoPostBack="true">
                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                         <asp:ListItem Value="1">Office</asp:ListItem>
@@ -64,7 +61,7 @@
                 <legend>School Setup Report</legend>
                 <div class="row form-group">
                     <div class="col-md-3">
-                        <label class="font-bold">Division Name<span style="color: red">*</span></label>
+                        <label class="font-bold">Division Name/<br />संभाग का नाम <span style="color: red">*</span></label>
                         <asp:DropDownList ID="ddlDivision" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlDivision_SelectedIndexChanged" AutoPostBack="true">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -72,13 +69,14 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">District Name<span style="color: red">*</span></label>
+                        <label class="font-bold">District Name/<br />
+जिले का नाम<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" AutoPostBack="true" CssClass="form-control select2" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" ID="ddlDistrict">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Block Name</label>
+                        <label class="font-bold">Block Name/<br />विकासखण्ड का नाम</label>
                         <asp:DropDownList ID="ddlBlock" runat="server" AutoPostBack="true"
                             CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -86,7 +84,7 @@
                     </div>
                     <div class="col-md-3">
                         <label class="font-bold">
-                            Management Group
+                            Management Group/<br />प्रबंधन समूह 
                         </label>
                         <asp:DropDownList ID="ddlMngmntGrp" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMngmntGrp_SelectedIndexChanged"
                             CssClass="form-control select2">
@@ -100,14 +98,14 @@
                     </div>
                     <div class="col-md-3">
                         <label class="font-bold">
-                            Management Details
+                            Management Details/<br />प्रबंधन विवरण 
                         </label>
                         <asp:DropDownList ID="ddlMngmntGrpDtls" runat="server" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Category </label>
+                        <label class="font-bold">Category/<br />श्रेणी </label>
                         <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true" ID="ddlCategory" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                             <asp:ListItem Value="1">Primary</asp:ListItem>
@@ -117,14 +115,16 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3 ">
-                        <label class="font-bold">Category Details</label>
+                        <label class="font-bold">Category Details/<br />
+श्रेणी विवरण</label>
                         <asp:DropDownList runat="server" Disabled="true" ID="ddlCateDtls" CssClass="form-control ">
                             <%--<asp:ListItem Value="0">--Select--</asp:ListItem>--%>
                             <%--<asp:ListItem Value="1">1st to 5th </asp:ListItem>--%>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-weight-bold">School-Dise<span style="color: red">*</span></label>
+                        <label class="font-weight-bold">School-Dise Code/<br />
+स्कूल-डिस कोड<span style="color: red">*</span></label>
                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
