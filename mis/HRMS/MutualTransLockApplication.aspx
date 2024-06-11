@@ -12,112 +12,87 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-4 mt-4 ">
-            <p style="font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; text-align: center">पारस्परिक स्थानांतरण लॉक एप्लीकेशन</p>
-        </div>
-        <div class="col-md-4 align-self-center">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
 
-                    <li class="breadcrumb-item active">Mutual Transfer Lock Application</li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeMutualTransfer" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Mutual Transfer</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Mutual Transfer Lock Application</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Mutual Transfer Lock Application / पारस्परिक स्थानांतरण लॉक एप्लीकेशन
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link  text-white " href="Trn_MutualTransferApplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle  font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>
-                            Mutual Transfer Application</b></strong></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Trn_MutualTransferApply.aspx">Mutual Transfer Apply</a></li>
-                            <li><a class="dropdown-item" href="MutualTransferDraftApplication.aspx">Print Draft Application or Update Application</a></li>
-                            <li><a class="dropdown-item" href="MutualTransLockApplication.aspx">Lock Application</a></li>
-                        </ul>
-                    </li>
-                    <a class="nav-link  text-white " href="MutualTransferApplicationStatus.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Mutual Transfer Application Status</b></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-            <br />
-            <br />
             <fieldset>
-                <legend>Mutual Transfer Lock Application / म्युचुअल ट्रांसफर लॉक एप्लीकेशन</legend>
+                <legend>Mutual Transfer Lock Application / पारस्परिक स्थानांतरण लॉक एप्लीकेशन</legend>
                 <div class="row justify-content-end">
-    <div class="col-md-1">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-100">Excel</button>
-        </div>
-    </div>
-    <div class="col-md-1">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-100">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-        </div>
-    </div>
-</div>
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
                 <div id="table1">
                     <div class="table-responsive">
                         <table class="table table-bordered text-center">
                             <tbody>
 
                                 <tr class="card-header">
-                                    <th>Sr. No.<br />
+                                    <th>Sr. No. /<br />
                                         सरल क्र.</th>
-                                    <th style="width:50px">Date<br />
+                                    <th style="width: 50px">Date /<br />
                                         दिनांक </th>
-                                    <th>Unique
+                                    <th>Unique /
                                     <br />
                                         युनिक आई.डी.</th>
-                                    <th>Name And Designation
+                                    <th>Name And Designation /
                                     <br />
                                         नाम एवं पद</th>
-                                    <th>Subject<br />
+                                    <th>Subject /<br />
                                         विषय</th>
-                                    <th>Working Institute And UDISE Code<br />
+                                    <th>Working Institute And UDISE Code /<br />
                                         कार्यरत संस्था एवं डाइस कोड</th>
-                                    <th>Working District<br />
+                                    <th>Working District /<br />
                                         कार्यरत जिला</th>
-                                    <th>New Organization And UDICE Code<br />
+                                    <th>New Organization And UDICE Code /<br />
                                         नवीन संस्था एवं डाइम कोड</th>
-                                    <th>District Of New Posting
+                                    <th>District Of New Posting /
                                     <br />
                                         नवीन पदस्थापना का जिला</th>
-                                    <th>Lock Application<br />
+                                    <th>Lock Application /<br />
                                         लॉक एप्लीकेशन</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td style="width:50px">09/03/2024</td>
+                                    <td style="width: 50px">09/03/2024</td>
                                     <td>BT921</td>
                                     <td>Arjun Talwar / Teacher (UDT) </td>
                                     <td>Hindi</td>
@@ -156,9 +131,15 @@
                         </table>
                     </div>
 
-                    <p style="color: red" class="font-16"><b>नोट :- पारस्परिक स्थानान्तरण आवेदन लॉक करने हेतु संबंधित दोनों कर्मचारी ड्राफ्ट आवेदन पर स्वतः हस्ताक्षर कर फाइल अपलोड करें ।</b></p>
+                    <p style="color: red" class="font-16 mt-2"><b>नोट :- पारस्परिक स्थानान्तरण आवेदन लॉक करने हेतु संबंधित दोनों कर्मचारी ड्राफ्ट आवेदन पर स्वतः हस्ताक्षर कर फाइल अपलोड करें ।</b></p>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button id="Button2" type="button" class="btn btn-success btn w-lg btn-border Alert-Save" onclick="myFunction()">Lock Application</button>
 
-                    <button id="Button2" type="button" class="btn btn-success btn-rounded mt-3 Alert-Save" onclick="myFunction()">Lock Application</button>
+                            <a href="MutualTransLockApplication.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        </div>
+                    </div>
                 </div>
                 <b>
                     <p id="note" class="font-18"></p>
