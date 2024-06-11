@@ -82,6 +82,7 @@
                             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
@@ -171,7 +172,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+               
             </fieldset>
             <fieldset runat="server" id="Fieldset2" visible="false">
 

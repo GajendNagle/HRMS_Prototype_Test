@@ -1,9 +1,51 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SchoolSetupMaster.aspx.cs" Inherits="mis_Report_SchoolSetupMaster" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SchoolSetupMaster.aspx.cs" Inherits="mis_Report_SchoolSetupMaster" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+                  <div class="row">
+     <div class="col-12">
+         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+             <h4 class="mb-sm-0"></h4>
+             <div class="=page-title-right">
+                 <ol class="breadcrumb m-0">
+                     <li class="breadcrumb-item">
+                         <span>Home</span>
+                     </li>
+                    <li class="breadcrumb-item">
+    <a href="#SchoolDirectoryDashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+</li>
+<li class="breadcrumb-item">
+    <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+        <span>OIS Setup Reports</span></a>
+</li>
+                     <li class="breadcrumb-item">
+    <a href="#Reports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+        <span>Reports</span></a>
+</li>
+                     <li class="breadcrumb-item"><span>School Setup Master</span></li>
+                 </ol>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ 
+   <%--  <div class="row page-titles mb-4">--%>
+    
+        
+   <div class="card card-border-primary">
+       <div class="card-header">
+           <div class="row align-items-end">
+               <div class="col-lg-6">
+                   <h5 class="card-title">School Setup Master
+                   </h5>
+               </div>
+           </div>
+       </div>
+       <div class="card-body">
+
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">School Setup Master</h4>
         </div>
@@ -18,13 +60,13 @@
                 </ol>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-body">
+        <div class="card mt-3 shadow">--%>
+         <%--   <div class="card-body">--%>
                 <fieldset>
                     <legend>School Setup Master</legend>
-                    <div class="row form-group">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
-                            <label class="font-bold">Financial Year<span style="color: red">*</span></label>
+                            <label class="font-bold">Financial Year/<br />वित्तीय वर्ष<span style="color: red">*</span></label>
                             <asp:DropDownList ID="FinancialYear" runat="server" CssClass="form-control select2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem>2024-25</asp:ListItem>
@@ -35,7 +77,8 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">District Name<span style="color: red">*</span></label>
+                            <label class="font-bold">District Name/<br />
+जिले का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" AutoPostBack="true" CssClass="form-control select2" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" ID="ddlDistrict">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1">Bhopal</asp:ListItem>
@@ -43,7 +86,8 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">Block Name</label>
+                            <label class="font-bold">Block Name/<br />विकासखण्ड  
+ का नाम</label>
                             <asp:DropDownList ID="ddlBlock" runat="server" AutoPostBack="true"
                                 CssClass="form-control select2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -51,7 +95,7 @@
                         </div>
                         <div class="col-md-3">
                             <label class="font-bold">
-                                Management Group
+                                Management Group/<br />प्रबंधन समूह
                             </label>
                             <asp:DropDownList ID="ddlMngmntGrp" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMngmntGrp_SelectedIndexChanged"
                                 CssClass="form-control select2">
@@ -63,17 +107,18 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <label class="font-bold">
-                                Management Details
+                                Management Details/<br />
+प्रबंधन विवरण
                             </label>
                             <asp:DropDownList ID="ddlMngmntGrpDtls" runat="server" CssClass="form-control select2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">School Category</label>
+                            <label class="font-bold">School Category/<br />स्कूल श्रेणी</label>
                             <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlSchoolCategory_SelectedIndexChanged1" AutoPostBack="true" ID="ddlSchoolCategory" CssClass="form-control select2 ">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1">01-Primary School</asp:ListItem>
@@ -84,24 +129,31 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">School Sub Category Details</label>
+                            <label class="font-bold">School Sub Category Details/<br />स्कूल उप श्रेणी विवरण </label>
                             <asp:DropDownList runat="server" ID="ddlSchoolSubCateDtls" CssClass="form-control select2 fs-4">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">School/Dise</label>
+                            <label class="font-bold">School/Dise Code/<br />स्कूल/डिस कोड</label>
                             <asp:DropDownList runat="server" ID="ddlSchool" CssClass="form-control select2 fs-4">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                                 <hr />
+<div class="col-md-12">
+    <div class="form-group">
+   <asp:Button Text="Search" runat="server" ID="btnSearch" class="btn w-lg btn-success btn-border" OnClick="btnSearch_Click" />
+           <a class="btn btn-outline-danger w-lg btn-border" href="SchoolSetupMaster.aspx">Clear</a>
+    </div>
+</div>
+                    <%--<div class="row justify-content-center">
                         <div class="col-md mt-4 text-center">
-                            <asp:Button Text="Search" runat="server" ID="btnSearch" class="btn btn-success  btn-rounded" OnClick="btnSearch_Click" />
+                            <asp:Button Text="Search" runat="server" ID="btnSearch" class="Alert-Confirmation btn w-lg btn-success btn-border" OnClick="btnSearch_Click" />
                             <a class="btn btn-danger btn-rounded m-3" href="SchoolSetupMaster.aspx">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </fieldset>
                 <fieldset runat="server" id="div_details" visible="false">
                     <legend>Details</legend>
@@ -255,9 +307,8 @@
                         </div>
                     </div>
                 </fieldset>
-            </div>
-        </div>
-    </div>
+            </div></div>
+      
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
