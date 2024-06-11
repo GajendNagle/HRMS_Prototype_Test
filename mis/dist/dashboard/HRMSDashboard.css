@@ -132,10 +132,10 @@
 
 .card-body-caharts {
     min-height: 20rem;
-    /* box-shadow: rgb(47 47 229 / 25%) 0px 30px 60px -12px inset,
-        rgb(151 216 255 / 30%) 0px 18px 36px -18px inset;*/
+   /*  box-shadow: rgb(47 47 229 / 25%) 0px 30px 60px -12px inset,
+        rgb(151 216 255 / 30%) 0px 18px 36px -18px inset;
     box-shadow: rgb(151 161 169 / 15%) 0px 30px 60px -12px inset, rgb(151 161 169 / 15%) 0px 30px 60px -12px;
-    margin-top: -1.5rem;
+    margin-top: -1.5rem;*/
 }
 
 .card-body-caharts, .card-body, .card {

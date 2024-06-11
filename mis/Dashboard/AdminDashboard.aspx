@@ -14,7 +14,7 @@
 
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                            <li class="breadcrumb-item"><a  href="#sidebarDashboards" data-bs-toggle="collapse" role="button">Dashboards</a></li>
                             <li class="breadcrumb-item active">Admin Dashboard</li>
                         </ol>
                     </div>
