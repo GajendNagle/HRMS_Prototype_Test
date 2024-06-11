@@ -3,126 +3,151 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Qualification Master</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                        <li class="breadcrumb-item"><a href="../menu.aspx?ID=Masters&SubID=HRMaster" title="click to go on">HR Masters</a></li>
-                        <li class="breadcrumb-item active">Qualification Master</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
+                                <span>HR Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Qualification Master Data</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+इस पेज के माध्यम से सभी प्रकार  Qualification का रजिस्ट्रेशन किया जाता हैं, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |           </marquee>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Qualification Master / योग्यता मास्टर</h4>
+                </div>
             </div>
-            <div class="card-body">
-                <span id="ContentBody_lblMsg"></span>
-                <fieldset>
-                    <legend>Qualification Master</legend>
-                    <div class="row form-group">
-                        <div class="col-md-3">
+        </div>
+        <div class="card-body">
+            <span id="ContentBody_lblMsg"></span>
+            <fieldset>
+                <legend>Add Qualification / योग्यता जोड़े</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <label>Qualification (In English)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Qualification" onkeypress="return hindiOnly();" />
                         </div>
-
-                        <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <label>योग्यता का नाम (हिंदी में) <span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="योग्यता का नाम दर्ज करे" onkeypress="return lettersOnly();" />
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Subject Name</label>
-                                <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Subject Name" />
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter Subject Name /<br />विषय का नाम दर्ज करे<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Subject Name" />
                         </div>
-                        <div class="col-md-3">
-                            <label>Qualification Code No.<span style="color: red">*</span></label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter Qualification Code No. /<br />योग्यता कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." />
                         </div>
-                        <div class="col-md-1 mt-4">
-                            <label>Is Active<span style="color: red">*</span></label>
-                            <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
-                        </div>
-                          <div class="col-md-3 mt-4 ">
-
-                            <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                                 <a href="Mst_HR_Qualification.aspx" class="btn btn-rounded btn-danger">Clear</a>
+                    </div>
+                    <div class="col-md-3 ms-3">
+                        <div class="form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                Status
+								<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
                         </div>
                     </div>
-                  
-                </fieldset>
-
-                <fieldset>
-                    <legend>Qualification Details</legend>
-                    <div class="row justify-content-end">
-
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-
+                    <hr />
+                    <div class="col-md-12">
+                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
+                        <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Qualification Name</th>
-                                        <th>योग्यता का  नाम</th>
-                                        <th>Subject</th>
-                                        <th>Qualification Code No.</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                </div>
 
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>B.ED</td>
+            </fieldset>
 
-                                        <td>बी. एड</td>
-                                        <td>---</td>
-                                        <td>01</td>
-                                        <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>MBA</td>
-
-                                        <td>ऍम.बी.ए</td>
-                                        <td>Finance</td>
-                                        <td>02</td>
-                                        <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                </table>
-                            </div>
+            <fieldset>
+                <legend>Qualification Details / योग्यता विवरण </legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                </fieldset>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <tr>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>Qualification Name</th>
+                                    <th>योग्यता का  नाम</th>
+                                    <th>Subject /<br />
+                                        विषय</th>
+                                    <th>Qualification Code No. /<br />
+                                        योग्यता कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Action</th>
 
-                <%-- <fieldset>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>B.ED</td>
+
+                                    <td>बी. एड</td>
+                                    <td>---</td>
+                                    <td>01</td>
+                                    <td>Active</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>MBA</td>
+
+                                    <td>ऍम.बी.ए</td>
+                                    <td>Finance</td>
+                                    <td>02</td>
+                                    <td>InActive</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <%-- <fieldset>
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -232,8 +257,8 @@
                         </div>
                     </div>
                 </fieldset>--%>
-            </div>
         </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

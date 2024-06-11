@@ -3,258 +3,159 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Grade Pay Master</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                        <li class="breadcrumb-item"><a href="../menu.aspx?ID=Masters&SubID=HRMaster" title="click to go on">HR Masters</a></li>
-                        <li class="breadcrumb-item active">Grade Pay Master</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
+                                <span>HR Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Pay Grade Master Data</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                इस पेज के माध्यम से कर्मचारियों के Grade pay  का रजिस्ट्रेशन किया जाता हैं, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+            </marquee>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Pay Grade Master / वेतन श्रेणी मास्टर</h4>
+                </div>
             </div>
-            <div class="card-body">
-                <span id="ContentBody_lblMsg"></span>
-                <fieldset>
-                    <legend>Grade Pay Master</legend>
-                    <div class="row form-group">
-                        <div class="col-md-3">
-                            <label>Pay Commission<span style="color: red">*</span></label>
+        </div>
+        <div class="card-body">
+            <span id="ContentBody_lblMsg"></span>
+            <fieldset>
+                <legend>Add Grade Pay / वेतन श्रेणी जोड़े</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Select Pay Commission /<br />
+                                वेतन आयोग का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="6th Pay">6th Pay</option>
                                 <option value="7th Pay">7th Pay</option>
-
                             </select>
                         </div>
-                        <div class="col-md-3">
-                            <label>Pay Scale<span style="color: red">*</span></label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Select Pay Scale /<br />
+                                वेतनमान का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="4440-7440">4440-7440</option>
                                 <option value="5200-20200">5200-20200</option>
-
                             </select>
                         </div>
-                        <div class="col-md-3">
-                            <label>Grade Pay<span style="color: red">*</span></label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter Grade Pay /<br />
+                                ग्रेड पे दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder="Enter Grade Pay" />
                         </div>
-                        <div class="col-md-2">
-                            <div class="">
-                                <label class="form-label">Effective Date<span style="color: red;">*</span></label>
-                                <input name="ctl00$ContentBody$TextBox1" type="text" id="ContentBody_TextBox1" class="datepicker form-control" placeholder="Select Date..." />
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <label>IsActive<i style="color: red;">*</i></label>
-                            <br />
-                            <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Enter Effective Date /<br />
+                                प्रभावी तिथि दर्ज करें<span style="color: red;">*</span></label>
+                            <input name="ctl00$ContentBody$TextBox1" type="text" id="ContentBody_TextBox1" class="datepicker form-control" placeholder="Select Date..." />
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-
-
-
-                        <div class="col-md-3 form-group">
-                            <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                            <a href="Mst_HR_GradePay.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                        </div>
-
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Grade Pay Details</legend>
-                    <div class="row justify-content-end">
-
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Pay Commission</th>
-                                        <th>Pay Scale</th>
-                                        <th>Grade Pay</th>
-                                        <th>Effective Date</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>6th Pay</td>
-                                        <td>4440-7440</td>
-                                        <td>1400</td>
-                                        <td>01/04/2022</td>
-                                        <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>7th Pay</td>
-                                        <td>5200-20200</td>
-                                        <td>1800</td>
-                                        <td>01/04/2022</td>
-                                        <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                </table>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                Status
+								<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
                         </div>
                     </div>
-                </fieldset>
-
-
-                <%--<fieldset>
-                    <legend>Description</legend>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="main-ul">
-                                <li>
-                                    <strong>Pay Commission</strong>
-
-                                    <ul>
-                                        <li>User should be able to select<strong> Pay Commission </strong>from dropdown. and data populated from <strong>Pay Commission Master</strong>  </li>
-                                    </ul>
-
-                                </li>
-                                <li>
-                                    <strong>Pay Scale</strong>
-
-                                    <ul>
-                                        <li>User should be able to select<strong> Pay Scale </strong>from dropdown. and data populated from <strong>Pay Scale Master</strong>  </li>
-                                    </ul>
-
-                                </li>
-                                <li>
-                                    <strong>Grade Pay</strong>
-
-                                    <ul>
-                                        <li>User should be able to enter the <strong>Grade Pay</strong> and the text field should accept <strong>Numeric only.</strong> </li>
-                                    </ul>
-
-                                </li>
-
-                                <li>
-                                    <strong>Effective Date</strong>
-
-                                    <ul>
-                                        <li>User should be able to enter or select the <strong>Effective Date</strong>  and the text field should accept<strong> only date format</strong>.</li>
-                                    </ul>
-
-                                </li>
-
-
-                                <li>
-                                    <strong>Is Active (Checkbox)</strong>
-                                    <ul>
-                                        <li>If <strong>Is Active (Checkbox)</strong> is checked then need to show in every dependent <strong>Report / Dropdown Field / In Calculations</strong>.</li>
-                                        <li><strong>Is Active checkbox</strong> is always be <strong>Checked/Active</strong>.</li>
-                                        <li>The user must have the right to check or uncheck the Is Active Checkbox. </li>
-                                    </ul>
-
-                                </li>
-
-                                <li>
-                                    <strong>Save</strong>
-                                    <ul>
-                                        <li>User should be able to click on save button.</li>
-                                        <li>On save button click form field should be validated. </li>
-                                        <li>After all fields Validate the Confirmation popup should be open with Message Format ("Are you sure?"  "Do you want to save this record?").</li>
-                                        <li>If click on <strong>Yes</strong> – Data will be saved and message will appear on the screen – Message ("Success!" "Record Saved Successfully!").</li>
-                                        <li>If click on <strong>NO</strong> the data will not be saved and will return to the same page. </li>
-                                    </ul>
-
-                                </li>
-                                <li>
-                                    <strong>Clear</strong>
-                                    <ul>
-                                        <li>User should be able to click on Clear button. </li>
-                                        <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Excel</strong>
-                                    <ul>
-                                        <li>Excel button should be visible and user should be able to click.</li>
-                                        <li>After clicking on Excel button grid view data export in Excel.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>PDF</strong>
-                                    <ul>
-                                        <li>PDF button should be visible and user should be able to click.</li>
-                                        <li>After clicking on PDF button grid view data export in PDF.</li>
-                                    </ul>
-                                </li>
-
-
-                                <li>
-                                    <strong>Searchbox</strong>
-                                    <ul>
-                                        <li>Users can search for any text value, and only the relevant text related to the search will be <strong>displayed</strong> . </li>
-                                    </ul>
-                                </li>
-
-
-                                <li>
-                                    <strong>Action (Edit)</strong>
-                                    <ul>
-                                        <li>On Clicking The Edit Icon - A Pop Up Message Will Open -Popup Message - Do You Want To Update The Form?</li>
-                                        <li>On Choose Yes Button, The Form Will Come In The Editable Format.</li>
-                                        <li>After Editing The Form, On Clicking The Update Button,( A Pop Up Message Will Open. )- Message- Do You Want To Update.</li>
-                                        <li>Choose YES - Popup Message - Data Updated Successfully.</li>
-                                        <li>On Doing Cancel,</li>
-                                        <li>The data will not be edited.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Action (Delete)</strong>
-                                    <ul>
-                                        <li>If User Wants To Delete Any Data - Then User Can Clicking The Delete Icon</li>
-                                        <li>A Pop Up Message Will Be Shown - Popup Message - Do You Want To Delete The Data?</li>
-                                        <li>On Doing YES,</li>
-                                        <li>The Data Will Be Deleted And The Popup Message Will Be Shown</li>
-                                        <li>Popup Message - Data Deleted Successfully.</li>
-                                        <li>On Doing Cancel,</li>
-                                        <li>The data will not be deleted.</li>
-
-                                    </ul>
-                                </li>
-                            </ul>
+                    <hr />
+                    <div class="col-md-12">
+                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
+                        <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Grade Pay Details / ग्रेड पे विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                </fieldset>--%>
-
-            </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <tr>
+                                    <th>Sr.No. /<br />सरल क्र.
+                                    </th>
+                                    <th>Pay Commission /<br />वेतन आयोग
+                                    </th>
+                                    <th>Pay Scale /<br />वेतनमान
+                                    </th>
+                                    <th>Grade Pay /<br />ग्रेड पे
+                                    </th>
+                                    <th>Effective Date /<br />प्रभावी तिथि
+                                    </th>
+                                    <th>Status(Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>6th Pay</td>
+                                    <td>4440-7440</td>
+                                    <td>1400</td>
+                                    <td>01/04/2022</td>
+                                    <td>Active</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>7th Pay</td>
+                                    <td>5200-20200</td>
+                                    <td>1800</td>
+                                    <td>01/04/2022</td>
+                                    <td>Active</td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
         </div>
     </div>
 </asp:Content>

@@ -217,9 +217,9 @@
                                     <th>State Name /<br /> राज्य का नाम</th>
                                     <th>Division Name /<br /> संभाग का नाम</th>
                                     <th>District Name /<br /> जिला का नाम</th>
-                                    <th>Block Name /<br /> विकासखण्ड का नाम</th>
+                                    <th>Block Name</th>
                                     <th>विकासखंड का नाम</th>
-                                    <th>Block Code No.</th>
+                                    <th>Block Code No. /<br />विकासखण्ड कोड संख्या</th>
                                     <th>Status(Active/InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
