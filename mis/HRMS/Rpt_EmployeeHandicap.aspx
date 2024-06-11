@@ -139,12 +139,10 @@
                             </select>
                         </div>
                     </div>--%>
-
-                            <div class="col-md-6 align-self-end ">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="fillMainTable(generateDummyData(document.getElementById('ddlDist').value));">Search</button>
-                                    <a runat="server" id="A1" href="Rpt_EmployeeHandicap.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                                </div>
+                            <hr />
+                            <div class="col-md-12 form-group">
+                                <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="fillMainTable(generateDummyData(document.getElementById('ddlDist').value));">Search</button>
+                                <a runat="server" id="A1" href="Rpt_EmployeeHandicap.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
                         </div>
                     </fieldset>
@@ -248,8 +246,8 @@
                     </div>
 
                 </div>
-            </div>
         </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

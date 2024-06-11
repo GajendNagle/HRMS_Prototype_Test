@@ -69,7 +69,8 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>OIS Type /
+                                    <label>
+                                        OIS Type /
                                         <br />
                                         ओ.आई.एस का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
@@ -82,7 +83,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Office Type /<br />
+                                    <label>
+                                        Office Type /<br />
                                         कार्यालय का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -108,7 +110,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Designation /<br />
+                                    <label>
+                                        Designation /<br />
                                         पद<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -140,7 +143,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Type of Post /<br />
+                                    <label>
+                                        Type of Post /<br />
                                         पद का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -463,13 +467,10 @@
                                     </div>
                                 </div>
                             </fieldset>
-                            <div class="row ">
-                                <div class="col-md-12 mt-4">
-                                    <div class="form-group">
-                                        <button type="button" onclick="toggleDivs()" class="btn btn-outline-success btn-border w-lg">Search</button>
-                                        <a href="Rpt_EmployeeDetails.aspx" class=" btn btn-outline-danger btn-border w-lg">Clear</a>
-                                    </div>
-                                </div>
+                            <hr />
+                            <div class="col-md-12 form-group">
+                                <button type="button" onclick="toggleDivs()" class="btn btn-outline-success btn-border w-lg">Search</button>
+                                <a href="Rpt_EmployeeDetails.aspx" class=" btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
                         </div>
                     </div>
