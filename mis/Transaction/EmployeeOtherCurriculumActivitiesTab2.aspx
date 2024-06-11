@@ -87,7 +87,8 @@
                             <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
                         </div>
                     </div>
-                    <div class="col-md-3 form-group">
+                    <hr />
+                    <div class="col-md-12 form-group">
                         <button id="Button1" type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">View</button>
                         <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                     </div>

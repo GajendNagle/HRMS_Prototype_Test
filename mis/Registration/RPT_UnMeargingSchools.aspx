@@ -15,38 +15,46 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">School Unmerge Report</h4>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
 
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
-                        <li class="breadcrumb-item active">School Unmerge Report</li>
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        <li class="breadcrumb-item">School Reports</li>
                     </ol>
-                    <asp:Label ID="lblMsg" runat="server" Text="" Visible="true"></asp:Label>
                 </div>
             </div>
         </div>
+    </div>
+     
 
         <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+            <div class="card-header">
+                <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">School Unmerge Report/स्कूल अनमर्ज रिपोर्ट
+                    </h4>
+                </div>
+            </div>
             </div>
             <div class="card-body">
-
+                <asp:Label runat="server" ID="lblMsg"></asp:Label>
                 <fieldset>
-                    <legend>School Unmerge Report</legend>
+                    <legend>School Unmerge Report/स्कूल अनमर्ज रिपोर्ट</legend>
 
-                    <div class="row">
+                    <div class="row align-items-end">
 
                         <div class="col-md-3">
-                            <label class="font-bold">Division Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -61,7 +69,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">District Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -117,7 +125,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">Block Name</label>
+                            <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Agar</asp:ListItem>
@@ -137,8 +145,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="font-bold">UDISE Code</label>
+                                <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
                                     <asp:ListItem>All</asp:ListItem>
                                     <asp:ListItem>23450404101</asp:ListItem>
@@ -147,31 +154,30 @@
                                     <asp:ListItem>23450900404</asp:ListItem>
                                     <asp:ListItem>23450300635</asp:ListItem>
                                 </asp:DropDownList>
-                            </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-bold">From Date</label>
+                                <label class="font-bold">From Date/की तिथि से</label>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-bold">To Date</label>
+                                <label class="font-bold">To Date/तारीख तक</label>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="form-group ">
-                                <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
-                                <a href="RPT_UnMeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
+                                <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset runat="server" id="report" visible="false">
-                    <legend>Details</legend>
+                    <legend>Details/विवरण</legend>
                     <div class="row justify-content-end">
 
                         <div class="col-md-1">
@@ -192,7 +198,7 @@
 
                     </div>
 
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-6">
                         </div>
                         <table class="table table-bordered table-responsive-lg" style="border: 2px">
@@ -203,17 +209,17 @@
 
                                 </tr>
                                 <tr>
-                                    <th style="width: 5%">Sr.No.</th>
-                                    <th>UDISE Code</th>
-                                    <th>School Name</th>
-                                    <th>Category</th>
-                                    <th>Sr.No.</th>
-                                    <th>Effective Date</th>
-                                    <th>UDISE Code</th>
-                                    <th>School Name</th>
-                                    <th>Category</th>
-                                    <th>Merge Status</th>
-                                    <th>Action </th>
+                                    <th style="width: 5%">Sr.No./क्रमांक</th>
+                                    <th>UDISE Code/UDISE कोड</th>
+                                    <th>School Name/स्कूल के नाम</th>
+                                     <th>Category/वर्ग</th>
+                                   <th>Sr. No./क्रमांक</th>
+                                    <th>Effective Date/प्रभावी तिथि</th>
+                                    <th>UDISE Code/UDISE कोड</th>
+                                     <th>School Name/स्कूल के नाम</th>
+                                     <th>Category/वर्ग</th>
+                                    <th>Merge Status/मर्ज स्थिति</th>
+                                    <th>Action/कार्रवाई</th>
 
                                 </tr>
                                 <tr>
@@ -309,18 +315,18 @@
                                             <div class="modal-dialog modal-xl">
                                                 <div class="modal-content">
                                                     <div class="modal-header" id="myDIV">
-                                                        <h4 class="modal-title" id="myLargeModalLabel1">Unmerge Details</h4>
+                                                        <h4 class="modal-title" id="myLargeModalLabel1">Unmerge Details/विवरण अलग करें</h4>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                                                     </div>
                                                     <div class="modal-body">
 
-                                                        <div class="row form-group">
+                                                        <div class="row form-group align-items-end">
                                                             <div class="col-md-4">
-                                                                <label>Date</label>
+                                                                <label>Date/तारीख</label>
                                                                 <asp:TextBox ID="TextBox3" ReadOnly="true" placeholder="Select Date..." runat="server" Text="09/01/2024" CssClass="datepicker form-control"></asp:TextBox>
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <label>Order No</label>
+                                                                <label>Order No/आदेश संख्या</label>
                                                                 <asp:TextBox ID="TextBox4" ReadOnly="true" placeholder="Order No" runat="server" Text="2365" CssClass=" form-control"></asp:TextBox>
 
                                                             </div>
@@ -342,8 +348,8 @@
                                                     </div>
                                                     <div class="modal-footer">
 
-                                                        <button type="button" class="btn btn-success" onclick="FbotonOn()">Confirm</button>
-                                                        <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn w-lg btn-outline-success btn-rounded" onclick="FbotonOn()">Confirm</button>
+                                                        <button type="button" class="btn w-lg btn-outline-danger btn-border" data-bs-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                                 <!-- /.modal-content -->
@@ -451,7 +457,6 @@
                 </fieldset>--%>
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <%--    <script type="text/javascript">

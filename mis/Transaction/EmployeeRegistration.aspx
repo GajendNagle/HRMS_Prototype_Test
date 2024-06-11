@@ -155,7 +155,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
@@ -167,7 +167,7 @@
             </div>
         </div>
     </div>
- 
+
     <%--<div class="marqueecontainer">
         <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
         <div>
@@ -612,130 +612,138 @@
                                                     </legend>
                                                     <div class="row form-group">
                                                         <div class="col-md-3">
-                                                            <label>
-                                                                State /<br />
-                                                                राज्य<span style="color: red">*</span></label>
-                                                            <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                                                                <option value="--Select--">--Select--</option>
-                                                                <option value="Rajasthan">Rajasthan</option>
-                                                                <option value="Maharashtra">Maharashtra</option>
-                                                                <option value="Nagaland">Nagaland</option>
-                                                                <option value="Nashik">Nashik</option>
-                                                                <option value="West">West</option>
-                                                                <option value="Bengal">Bengal</option>
-                                                                <option value="Telangana">Telangana</option>
-                                                                <option value="Assam">Assam</option>
-                                                                <option value="Tripura">Tripura</option>
-                                                                <option value="Madhya">Madhya</option>
-                                                                <option value="Pradesh">Pradesh</option>
-                                                                <option value="Tamil">Tamil</option>
-                                                                <option value="Nadu">Nadu</option>
-                                                                <option value="Gujarat">Gujarat</option>
-                                                                <option value="Sikkim">Sikkim</option>
-                                                                <option value="Andhra">Andhra</option>
-                                                                <option value="Uttar">Uttar</option>
-                                                                <option value="Punjab">Punjab</option>
-                                                                <option value="Karnataka">Karnataka</option>
-                                                                <option value="Meghalaya">Meghalaya</option>
-                                                                <option value="Uttarakhand">Uttarakhand</option>
-                                                                <option value="Goa">Goa</option>
-                                                                <option value="Haryana">Haryana</option>
-                                                                <option value="Mizoram">Mizoram</option>
-                                                                <option value="Arunachal">Arunachal</option>
-                                                                <option value="Pradesh">Pradesh</option>
-                                                                <option value="Chhattisgarh">Chhattisgarh</option>
-                                                                <option value="Bihar">Bihar</option>
-                                                                <option value="Himachal">Himachal</option>
-                                                                <option value="Kerala">Kerala</option>
-                                                                <option value="Jharkhand">Jharkhand</option>
-                                                                <option value="Orissa">Orissa</option>
-                                                            </select>
+                                                            <div class="form-group">
+                                                                <label>
+                                                                    State /<br />
+                                                                    राज्य<span style="color: red">*</span></label>
+                                                                <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                                                    <option value="--Select--">--Select--</option>
+                                                                    <option value="Rajasthan">Rajasthan</option>
+                                                                    <option value="Maharashtra">Maharashtra</option>
+                                                                    <option value="Nagaland">Nagaland</option>
+                                                                    <option value="Nashik">Nashik</option>
+                                                                    <option value="West">West</option>
+                                                                    <option value="Bengal">Bengal</option>
+                                                                    <option value="Telangana">Telangana</option>
+                                                                    <option value="Assam">Assam</option>
+                                                                    <option value="Tripura">Tripura</option>
+                                                                    <option value="Madhya">Madhya</option>
+                                                                    <option value="Pradesh">Pradesh</option>
+                                                                    <option value="Tamil">Tamil</option>
+                                                                    <option value="Nadu">Nadu</option>
+                                                                    <option value="Gujarat">Gujarat</option>
+                                                                    <option value="Sikkim">Sikkim</option>
+                                                                    <option value="Andhra">Andhra</option>
+                                                                    <option value="Uttar">Uttar</option>
+                                                                    <option value="Punjab">Punjab</option>
+                                                                    <option value="Karnataka">Karnataka</option>
+                                                                    <option value="Meghalaya">Meghalaya</option>
+                                                                    <option value="Uttarakhand">Uttarakhand</option>
+                                                                    <option value="Goa">Goa</option>
+                                                                    <option value="Haryana">Haryana</option>
+                                                                    <option value="Mizoram">Mizoram</option>
+                                                                    <option value="Arunachal">Arunachal</option>
+                                                                    <option value="Pradesh">Pradesh</option>
+                                                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                                                    <option value="Bihar">Bihar</option>
+                                                                    <option value="Himachal">Himachal</option>
+                                                                    <option value="Kerala">Kerala</option>
+                                                                    <option value="Jharkhand">Jharkhand</option>
+                                                                    <option value="Orissa">Orissa</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <label>
-                                                                Division /<br />
-                                                                संभाग<span style="color: red">*</span></label>
-                                                            <select name="ctl00$ContentBody$ctl01" class="form-control select2">
-                                                                <option value="--Select--">--Select--</option>
-                                                                <option value="Bhopal">Bhopal</option>
-                                                                <option value="Gwalior">Gwalior</option>
-                                                                <option value="Narmadapuram">Narmadapuram</option>
-                                                                <option value="Indore">Indore</option>
-                                                                <option value="Jabalpur">Jabalpur</option>
-                                                                <option value="Rewa">Rewa</option>
-                                                                <option value="Sagar">Sagar</option>
-                                                                <option value="Shahdol">Shahdol</option>
-                                                                <option value="Ujjain">Ujjain</option>
-                                                            </select>
+                                                            <div class="form-group">
+                                                                <label>
+                                                                    Division /<br />
+                                                                    संभाग<span style="color: red">*</span></label>
+                                                                <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                                    <option value="--Select--">--Select--</option>
+                                                                    <option value="Bhopal">Bhopal</option>
+                                                                    <option value="Gwalior">Gwalior</option>
+                                                                    <option value="Narmadapuram">Narmadapuram</option>
+                                                                    <option value="Indore">Indore</option>
+                                                                    <option value="Jabalpur">Jabalpur</option>
+                                                                    <option value="Rewa">Rewa</option>
+                                                                    <option value="Sagar">Sagar</option>
+                                                                    <option value="Shahdol">Shahdol</option>
+                                                                    <option value="Ujjain">Ujjain</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <label>
-                                                                District /<br />
-                                                                जिला<span style="color: red">*</span></label>
-                                                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                                <option value="--Select--">--Select--</option>
-                                                                <option value="Bhopal">Bhopal</option>
-                                                                <option value="Raisen">Raisen</option>
-                                                                <option value="Rajgarh">Rajgarh</option>
-                                                                <option value="Sehore">Sehore</option>
-                                                                <option value="Vidisha">Vidisha</option>
-                                                                <option value="Ashoknagar">Ashoknagar</option>
-                                                                <option value="Shivpuri">Shivpuri</option>
-                                                                <option value="Datia">Datia</option>
-                                                                <option value="Guna">Guna</option>
-                                                                <option value="Gwalior">Gwalior</option>
-                                                                <option value="Harda">Harda</option>
-                                                                <option value="Hoshangabad">Hoshangabad</option>
-                                                                <option value="Betul">Betul</option>
-                                                                <option value="Morena">Morena</option>
-                                                                <option value="Sheopur">Sheopur</option>
-                                                                <option value="Bhind">Bhind</option>
-                                                                <option value="Barwani">Barwani</option>
-                                                                <option value="Burhanpur">Burhanpur</option>
-                                                                <option value="Dhar">Dhar</option>
-                                                                <option value="Indore">Indore</option>
-                                                                <option value="Jhabua">Jhabua</option>
-                                                                <option value="Khandwa">Khandwa</option>
-                                                                <option value="Khargone">Khargone</option>
-                                                                <option value="Alirajpur">Alirajpur</option>
-                                                                <option value="Balaghat">Balaghat</option>
-                                                                <option value="Chhindwara">Chhindwara</option>
-                                                                <option value="Jabalpur">Jabalpur</option>
-                                                                <option value="Katni">Katni</option>
-                                                                <option value="Mandla">Mandla</option>
-                                                                <option value="Narsinghpur">Narsinghpur</option>
-                                                                <option value="Seoni">Seoni</option>
-                                                                <option value="Rewa">Rewa</option>
-                                                                <option value="Satna">Satna</option>
-                                                                <option value="Sidhi">Sidhi</option>
-                                                                <option value="Singroli">Singroli</option>
-                                                                <option value="Chhatarpur">Chhatarpur</option>
-                                                                <option value="Damoh">Damoh</option>
-                                                                <option value="Panna">Panna</option>
-                                                                <option value="Sagar">Sagar</option>
-                                                                <option value="Tikamgarh">Tikamgarh</option>
-                                                                <option value="Shahdol">Shahdol</option>
-                                                                <option value="Umaria">Umaria</option>
-                                                                <option value="Dindori">Dindori</option>
-                                                                <option value="Anuppur">Anuppur</option>
-                                                                <option value="Dewas">Dewas</option>
-                                                                <option value="Mandsaur">Mandsaur</option>
-                                                                <option value="Neemuch">Neemuch</option>
-                                                                <option value="Ratlam">Ratlam</option>
-                                                                <option value="Shajapur">Shajapur</option>
-                                                                <option value="Ujjain">Ujjain</option>
-                                                            </select>
+                                                            <div class="form-group">
+                                                                <label>
+                                                                    District /<br />
+                                                                    जिला<span style="color: red">*</span></label>
+                                                                <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                                    <option value="--Select--">--Select--</option>
+                                                                    <option value="Bhopal">Bhopal</option>
+                                                                    <option value="Raisen">Raisen</option>
+                                                                    <option value="Rajgarh">Rajgarh</option>
+                                                                    <option value="Sehore">Sehore</option>
+                                                                    <option value="Vidisha">Vidisha</option>
+                                                                    <option value="Ashoknagar">Ashoknagar</option>
+                                                                    <option value="Shivpuri">Shivpuri</option>
+                                                                    <option value="Datia">Datia</option>
+                                                                    <option value="Guna">Guna</option>
+                                                                    <option value="Gwalior">Gwalior</option>
+                                                                    <option value="Harda">Harda</option>
+                                                                    <option value="Hoshangabad">Hoshangabad</option>
+                                                                    <option value="Betul">Betul</option>
+                                                                    <option value="Morena">Morena</option>
+                                                                    <option value="Sheopur">Sheopur</option>
+                                                                    <option value="Bhind">Bhind</option>
+                                                                    <option value="Barwani">Barwani</option>
+                                                                    <option value="Burhanpur">Burhanpur</option>
+                                                                    <option value="Dhar">Dhar</option>
+                                                                    <option value="Indore">Indore</option>
+                                                                    <option value="Jhabua">Jhabua</option>
+                                                                    <option value="Khandwa">Khandwa</option>
+                                                                    <option value="Khargone">Khargone</option>
+                                                                    <option value="Alirajpur">Alirajpur</option>
+                                                                    <option value="Balaghat">Balaghat</option>
+                                                                    <option value="Chhindwara">Chhindwara</option>
+                                                                    <option value="Jabalpur">Jabalpur</option>
+                                                                    <option value="Katni">Katni</option>
+                                                                    <option value="Mandla">Mandla</option>
+                                                                    <option value="Narsinghpur">Narsinghpur</option>
+                                                                    <option value="Seoni">Seoni</option>
+                                                                    <option value="Rewa">Rewa</option>
+                                                                    <option value="Satna">Satna</option>
+                                                                    <option value="Sidhi">Sidhi</option>
+                                                                    <option value="Singroli">Singroli</option>
+                                                                    <option value="Chhatarpur">Chhatarpur</option>
+                                                                    <option value="Damoh">Damoh</option>
+                                                                    <option value="Panna">Panna</option>
+                                                                    <option value="Sagar">Sagar</option>
+                                                                    <option value="Tikamgarh">Tikamgarh</option>
+                                                                    <option value="Shahdol">Shahdol</option>
+                                                                    <option value="Umaria">Umaria</option>
+                                                                    <option value="Dindori">Dindori</option>
+                                                                    <option value="Anuppur">Anuppur</option>
+                                                                    <option value="Dewas">Dewas</option>
+                                                                    <option value="Mandsaur">Mandsaur</option>
+                                                                    <option value="Neemuch">Neemuch</option>
+                                                                    <option value="Ratlam">Ratlam</option>
+                                                                    <option value="Shajapur">Shajapur</option>
+                                                                    <option value="Ujjain">Ujjain</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <label>
-                                                                Block /<br />
-                                                                विकासखण्ड<span style="color: red">*</span></label>
-                                                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                                <option value="--Select--">--Select--</option>
-                                                                <option value="Bhopal">Huzur</option>
-                                                                <option value="Raisen">Fanda</option>
-                                                                <option value="Govindapura">Govindapura</option>
-                                                            </select>
+                                                            <div class="form-group">
+                                                                <label>
+                                                                    Block /<br />
+                                                                    विकासखण्ड<span style="color: red">*</span></label>
+                                                                <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                                    <option value="--Select--">--Select--</option>
+                                                                    <option value="Bhopal">Huzur</option>
+                                                                    <option value="Raisen">Fanda</option>
+                                                                    <option value="Govindapura">Govindapura</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                         <div class="col-md-3">
                                                             <div class="form-group">
@@ -776,133 +784,141 @@
                                             </legend>
                                             <div class="row align-items-end">
                                                 <div class="col-md-3">
-                                                    <label>
-                                                        State /
+                                                    <div class="form-group">
+                                                        <label>
+                                                            State /
                                                         <br />
-                                                        राज्य<span style="color: red">*</span></label>
-                                                    <select name="ctl00$ContentBody$ctl00" class="form-control select2">
-                                                        <option value="--Select--">--Select--</option>
-                                                        <option value="Rajasthan">Rajasthan</option>
-                                                        <option value="Maharashtra">Maharashtra</option>
-                                                        <option value="Nagaland">Nagaland</option>
-                                                        <option value="Nashik">Nashik</option>
-                                                        <option value="West">West</option>
-                                                        <option value="Bengal">Bengal</option>
-                                                        <option value="Telangana">Telangana</option>
-                                                        <option value="Assam">Assam</option>
-                                                        <option value="Tripura">Tripura</option>
-                                                        <option value="Madhya">Madhya</option>
-                                                        <option value="Pradesh">Pradesh</option>
-                                                        <option value="Tamil">Tamil</option>
-                                                        <option value="Nadu">Nadu</option>
-                                                        <option value="Gujarat">Gujarat</option>
-                                                        <option value="Sikkim">Sikkim</option>
-                                                        <option value="Andhra">Andhra</option>
-                                                        <option value="Uttar">Uttar</option>
-                                                        <option value="Punjab">Punjab</option>
-                                                        <option value="Karnataka">Karnataka</option>
-                                                        <option value="Meghalaya">Meghalaya</option>
-                                                        <option value="Uttarakhand">Uttarakhand</option>
-                                                        <option value="Goa">Goa</option>
-                                                        <option value="Haryana">Haryana</option>
-                                                        <option value="Mizoram">Mizoram</option>
-                                                        <option value="Arunachal">Arunachal</option>
-                                                        <option value="Pradesh">Pradesh</option>
-                                                        <option value="Chhattisgarh">Chhattisgarh</option>
-                                                        <option value="Bihar">Bihar</option>
-                                                        <option value="Himachal">Himachal</option>
-                                                        <option value="Kerala">Kerala</option>
-                                                        <option value="Jharkhand">Jharkhand</option>
-                                                        <option value="Orissa">Orissa</option>
-                                                    </select>
+                                                            राज्य<span style="color: red">*</span></label>
+                                                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Rajasthan">Rajasthan</option>
+                                                            <option value="Maharashtra">Maharashtra</option>
+                                                            <option value="Nagaland">Nagaland</option>
+                                                            <option value="Nashik">Nashik</option>
+                                                            <option value="West">West</option>
+                                                            <option value="Bengal">Bengal</option>
+                                                            <option value="Telangana">Telangana</option>
+                                                            <option value="Assam">Assam</option>
+                                                            <option value="Tripura">Tripura</option>
+                                                            <option value="Madhya">Madhya</option>
+                                                            <option value="Pradesh">Pradesh</option>
+                                                            <option value="Tamil">Tamil</option>
+                                                            <option value="Nadu">Nadu</option>
+                                                            <option value="Gujarat">Gujarat</option>
+                                                            <option value="Sikkim">Sikkim</option>
+                                                            <option value="Andhra">Andhra</option>
+                                                            <option value="Uttar">Uttar</option>
+                                                            <option value="Punjab">Punjab</option>
+                                                            <option value="Karnataka">Karnataka</option>
+                                                            <option value="Meghalaya">Meghalaya</option>
+                                                            <option value="Uttarakhand">Uttarakhand</option>
+                                                            <option value="Goa">Goa</option>
+                                                            <option value="Haryana">Haryana</option>
+                                                            <option value="Mizoram">Mizoram</option>
+                                                            <option value="Arunachal">Arunachal</option>
+                                                            <option value="Pradesh">Pradesh</option>
+                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                            <option value="Bihar">Bihar</option>
+                                                            <option value="Himachal">Himachal</option>
+                                                            <option value="Kerala">Kerala</option>
+                                                            <option value="Jharkhand">Jharkhand</option>
+                                                            <option value="Orissa">Orissa</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <label>
-                                                        Division /<br />
-                                                        संभाग<span style="color: red">*</span></label>
-                                                    <select name="ctl00$ContentBody$ctl01" class="form-control select2">
-                                                        <option value="--Select--">--Select--</option>
-                                                        <option value="Bhopal">Bhopal</option>
-                                                        <option value="Gwalior">Gwalior</option>
-                                                        <option value="Narmadapuram">Narmadapuram</option>
-                                                        <option value="Indore">Indore</option>
-                                                        <option value="Jabalpur">Jabalpur</option>
-                                                        <option value="Rewa">Rewa</option>
-                                                        <option value="Sagar">Sagar</option>
-                                                        <option value="Shahdol">Shahdol</option>
-                                                        <option value="Ujjain">Ujjain</option>
-                                                    </select>
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Division /<br />
+                                                            संभाग<span style="color: red">*</span></label>
+                                                        <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Bhopal</option>
+                                                            <option value="Gwalior">Gwalior</option>
+                                                            <option value="Narmadapuram">Narmadapuram</option>
+                                                            <option value="Indore">Indore</option>
+                                                            <option value="Jabalpur">Jabalpur</option>
+                                                            <option value="Rewa">Rewa</option>
+                                                            <option value="Sagar">Sagar</option>
+                                                            <option value="Shahdol">Shahdol</option>
+                                                            <option value="Ujjain">Ujjain</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <label>
-                                                        District /
+                                                    <div class="form-group">
+                                                        <label>
+                                                            District /
                                                         <br />
-                                                        जिला<span style="color: red">*</span></label>
-                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                        <option value="--Select--">--Select--</option>
-                                                        <option value="Bhopal">Bhopal</option>
-                                                        <option value="Raisen">Raisen</option>
-                                                        <option value="Rajgarh">Rajgarh</option>
-                                                        <option value="Sehore">Sehore</option>
-                                                        <option value="Vidisha">Vidisha</option>
-                                                        <option value="Ashoknagar">Ashoknagar</option>
-                                                        <option value="Shivpuri">Shivpuri</option>
-                                                        <option value="Datia">Datia</option>
-                                                        <option value="Guna">Guna</option>
-                                                        <option value="Gwalior">Gwalior</option>
-                                                        <option value="Harda">Harda</option>
-                                                        <option value="Hoshangabad">Hoshangabad</option>
-                                                        <option value="Betul">Betul</option>
-                                                        <option value="Morena">Morena</option>
-                                                        <option value="Sheopur">Sheopur</option>
-                                                        <option value="Bhind">Bhind</option>
-                                                        <option value="Barwani">Barwani</option>
-                                                        <option value="Burhanpur">Burhanpur</option>
-                                                        <option value="Dhar">Dhar</option>
-                                                        <option value="Indore">Indore</option>
-                                                        <option value="Jhabua">Jhabua</option>
-                                                        <option value="Khandwa">Khandwa</option>
-                                                        <option value="Khargone">Khargone</option>
-                                                        <option value="Alirajpur">Alirajpur</option>
-                                                        <option value="Balaghat">Balaghat</option>
-                                                        <option value="Chhindwara">Chhindwara</option>
-                                                        <option value="Jabalpur">Jabalpur</option>
-                                                        <option value="Katni">Katni</option>
-                                                        <option value="Mandla">Mandla</option>
-                                                        <option value="Narsinghpur">Narsinghpur</option>
-                                                        <option value="Seoni">Seoni</option>
-                                                        <option value="Rewa">Rewa</option>
-                                                        <option value="Satna">Satna</option>
-                                                        <option value="Sidhi">Sidhi</option>
-                                                        <option value="Singroli">Singroli</option>
-                                                        <option value="Chhatarpur">Chhatarpur</option>
-                                                        <option value="Damoh">Damoh</option>
-                                                        <option value="Panna">Panna</option>
-                                                        <option value="Sagar">Sagar</option>
-                                                        <option value="Tikamgarh">Tikamgarh</option>
-                                                        <option value="Shahdol">Shahdol</option>
-                                                        <option value="Umaria">Umaria</option>
-                                                        <option value="Dindori">Dindori</option>
-                                                        <option value="Anuppur">Anuppur</option>
-                                                        <option value="Dewas">Dewas</option>
-                                                        <option value="Mandsaur">Mandsaur</option>
-                                                        <option value="Neemuch">Neemuch</option>
-                                                        <option value="Ratlam">Ratlam</option>
-                                                        <option value="Shajapur">Shajapur</option>
-                                                        <option value="Ujjain">Ujjain</option>
-                                                    </select>
+                                                            जिला<span style="color: red">*</span></label>
+                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Bhopal</option>
+                                                            <option value="Raisen">Raisen</option>
+                                                            <option value="Rajgarh">Rajgarh</option>
+                                                            <option value="Sehore">Sehore</option>
+                                                            <option value="Vidisha">Vidisha</option>
+                                                            <option value="Ashoknagar">Ashoknagar</option>
+                                                            <option value="Shivpuri">Shivpuri</option>
+                                                            <option value="Datia">Datia</option>
+                                                            <option value="Guna">Guna</option>
+                                                            <option value="Gwalior">Gwalior</option>
+                                                            <option value="Harda">Harda</option>
+                                                            <option value="Hoshangabad">Hoshangabad</option>
+                                                            <option value="Betul">Betul</option>
+                                                            <option value="Morena">Morena</option>
+                                                            <option value="Sheopur">Sheopur</option>
+                                                            <option value="Bhind">Bhind</option>
+                                                            <option value="Barwani">Barwani</option>
+                                                            <option value="Burhanpur">Burhanpur</option>
+                                                            <option value="Dhar">Dhar</option>
+                                                            <option value="Indore">Indore</option>
+                                                            <option value="Jhabua">Jhabua</option>
+                                                            <option value="Khandwa">Khandwa</option>
+                                                            <option value="Khargone">Khargone</option>
+                                                            <option value="Alirajpur">Alirajpur</option>
+                                                            <option value="Balaghat">Balaghat</option>
+                                                            <option value="Chhindwara">Chhindwara</option>
+                                                            <option value="Jabalpur">Jabalpur</option>
+                                                            <option value="Katni">Katni</option>
+                                                            <option value="Mandla">Mandla</option>
+                                                            <option value="Narsinghpur">Narsinghpur</option>
+                                                            <option value="Seoni">Seoni</option>
+                                                            <option value="Rewa">Rewa</option>
+                                                            <option value="Satna">Satna</option>
+                                                            <option value="Sidhi">Sidhi</option>
+                                                            <option value="Singroli">Singroli</option>
+                                                            <option value="Chhatarpur">Chhatarpur</option>
+                                                            <option value="Damoh">Damoh</option>
+                                                            <option value="Panna">Panna</option>
+                                                            <option value="Sagar">Sagar</option>
+                                                            <option value="Tikamgarh">Tikamgarh</option>
+                                                            <option value="Shahdol">Shahdol</option>
+                                                            <option value="Umaria">Umaria</option>
+                                                            <option value="Dindori">Dindori</option>
+                                                            <option value="Anuppur">Anuppur</option>
+                                                            <option value="Dewas">Dewas</option>
+                                                            <option value="Mandsaur">Mandsaur</option>
+                                                            <option value="Neemuch">Neemuch</option>
+                                                            <option value="Ratlam">Ratlam</option>
+                                                            <option value="Shajapur">Shajapur</option>
+                                                            <option value="Ujjain">Ujjain</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <label>
-                                                        Block /
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Block /
                                                         <br />
-                                                        विकासखण्ड<span style="color: red">*</span></label>
-                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-                                                        <option value="--Select--">--Select--</option>
-                                                        <option value="Bhopal">Huzur</option>
-                                                        <option value="Raisen">Fanda</option>
-                                                        <option value="Govindapura">Govindapura</option>
-                                                    </select>
+                                                            विकासखण्ड<span style="color: red">*</span></label>
+                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Huzur</option>
+                                                            <option value="Raisen">Fanda</option>
+                                                            <option value="Govindapura">Govindapura</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
@@ -991,7 +1007,9 @@
                                         <div class="row align-items-end">
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label>Qualification /<br />योग्यता<span style="color: red">*</span></label>
+                                                    <label>
+                                                        Qualification /<br />
+                                                        योग्यता<span style="color: red">*</span></label>
                                                     <select id="Education" class="form-control select2">
                                                         <option value="----">--Select--</option>
                                                         <option value="BALLB">BALLB</option>
@@ -1106,11 +1124,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row align-items-end">
-                                            <div class="col-md-12 text-center">
-                                                <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Save & Next</button>
-                                                <a runat="server" id="clearfirst" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                                            </div>
+                                        <hr />
+                                        <div class="col-md-12 form-group">
+                                            <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Save & Next</button>
+                                            <a runat="server" id="clearfirst" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                         </div>
                                     </fieldset>
                                 </div>
@@ -2343,11 +2360,10 @@
                                                     </div>
                                                 </div>--%>
                                 </div>
-                                <div class="row align-items-end">
-                                    <div class="col-md-12 text-center">
-                                        <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border ">Save & Next</button>
-                                        <a runat="server" id="A2" href="EmployeeRegistration.aspx" class="btn btn-outline-danger  w-lg btn-border">Clear</a>
-                                    </div>
+                                <hr />
+                                <div class="col-md-12 form-group">
+                                    <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border ">Save & Next</button>
+                                    <a runat="server" id="A2" href="EmployeeRegistration.aspx" class="btn btn-outline-danger  w-lg btn-border">Clear</a>
                                 </div>
                             </fieldset>
                         </div>
@@ -2510,11 +2526,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row align-items-end mt-5">
-                                            <div class="col-md-12 text-center">
-                                                <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border ">Save & Next</button>
-                                                <a runat="server" id="A1" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                                            </div>
+                                        <hr />
+                                        <div class="col-md-12 form-group">
+                                            <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border ">Save & Next</button>
+                                            <a runat="server" id="A1" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                         </div>
                                     </fieldset>
                                 </div>
@@ -2757,13 +2772,12 @@
                                                         <a class="Alert-Delete"><span class="btn btn-outline-danger"><i class="ri-delete-bin-line"></i></span></a>
                                     </div>
                                 </div>
-                                <div class="row align-items-end mt-5">
-                                    <div class="col-md-12 text-center">
-                                        <button type="button" class="btn  btn-outline-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            Save
-                                        </button>
-                                        <a runat="server" id="A3" href="EmployeeRegistration.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
-                                    </div>
+                                <hr />
+                                <div class="col-md-12 form-group">
+                                    <button type="button" class="btn  btn-outline-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Save
+                                    </button>
+                                    <a runat="server" id="A3" href="EmployeeRegistration.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                                 </div>
                             </fieldset>
                             <!-- Modal -->

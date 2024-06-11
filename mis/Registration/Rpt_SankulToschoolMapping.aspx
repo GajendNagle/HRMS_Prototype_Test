@@ -3,35 +3,43 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Sankul To School Mapping Report</h4>
+     <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
 
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                         <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
-                        <li class="breadcrumb-item active">Sankul To School Mapping Report</li>
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        <li class="breadcrumb-item">School Reports</li>
                     </ol>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Sankul To School Mapping Report/संकुल टू स्कूल मैपिंग रिपोर्ट
+                    </h4>
+                </div>
+            </div>
             </div>
             <div class="card-body">
                 <asp:Label runat="server" ID="lblMsg"></asp:Label>
                 <fieldset>
-                    <legend>Sankul To School Mapping Report</legend>
-                    <div class="row form-group">
+                    <legend>Sankul To School Mapping Report/संकुल टू स्कूल मैपिंग रिपोर्ट</legend>
+                    <div class="row form-group align-items-end">
                         <div class="col-md-3">
-                            <label class="font-bold">Division Name <span style="color: red">*</span></label>
+                            <label class="font-bold">Select Division Name/संभाग का नाम चुनें <span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -46,7 +54,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">District Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -102,7 +110,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">Block Name</label>
+                            <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Agar</asp:ListItem>
@@ -121,27 +129,25 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="font-bold">From Date</label>
+                                <label class="font-bold">From Date/की तिथि से</label>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
                             </div>
-                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-bold">To Date</label>
+                                <label class="font-bold">To Date/तारीख तक</label>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                         <div class="form-group">
-                            <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />             
-                            <a href="Rpt_SankulToschoolMapping.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />             
+                            <a href="Rpt_SankulToschoolMapping.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset runat="server" id="data" visible="false">
-                    <legend>Report</legend>
+                    <legend>Reports / रिपोर्ट</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -160,13 +166,13 @@
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <tr class="card-header">
-                                        <th>Sr.No.</th>
-                                        <th>Division Name</th>
-                                        <th>District Name</th>
-                                        <th>Block Name</th>
-                                        <th>Sankul Name</th>
-                                        <th>School Name</th>
-                                        <th>View More</th>
+                                       <th>Sr. No./क्रमांक</th>
+                                        <th> Division Name/संभाग का नाम </th>
+                                        <th>District Name/जिले का नाम </th>
+                                        <th>Block Name/ब्लॉक का नाम </th>
+                                        <th>Sankul Name/संकुल का नाम </th>
+                                           <th>School Name/स्कूल के नाम</th>
+                                        <th>View More/और देखें</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
@@ -193,7 +199,6 @@
                 </fieldset>
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

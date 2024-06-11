@@ -3,23 +3,49 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">School Setup Report</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">OIS Setup Reports</a></li>
-                    <li class="breadcrumb-item active">School Setup Report</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="card mt-3 shadow">
+                          <div class="row">
+     <div class="col-12">
+         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+             <h4 class="mb-sm-0"></h4>
+             <div class="=page-title-right">
+                 <ol class="breadcrumb m-0">
+                     <li class="breadcrumb-item">
+                         <span>Home</span>
+                     </li>
+                    <li class="breadcrumb-item">
+    <a href="#SchoolDirectoryDashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+</li>
+<li class="breadcrumb-item">
+    <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('OISSetup')">
+        <span>OIS Setup Reports</span></a>
+</li>
+<%--                     <li class="breadcrumb-item">
+    <a href="#Reports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Reports')">
+        <span>Reports</span></a>
+</li>--%>
+                     <li class="breadcrumb-item"><span>School Setup Report</span></li>
+                 </ol>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ 
+   <%--  <div class="row page-titles mb-4">--%>
+    
+   <div class="card card-border-primary">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-6">
+                  <h5 class="card-title">School Setup Report
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
+
+
+ 
         <div class="card-header card-border-info">
             <div class="row form-group m-2">
                 <div class="col-md-2">
@@ -33,8 +59,8 @@
                 </div>
             </div>
         </div>
-        <div class="card-body">
-            <fieldset>
+        <%--<div class="card-body">
+   --%>         <fieldset>
                 <legend>School Setup Report</legend>
                 <div class="row form-group">
                     <div class="col-md-3">
@@ -102,13 +128,23 @@
                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+       <hr />
+       <div class="col-md-12">
+    <div class="form-group">
+   <asp:Button  runat="server"  class="btn w-lg btn-success btn-border" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
+           <a class="btn btn-outline-danger w-lg btn-border" href="Rpt_SchoolSetup.aspx">Clear</a>
+    </div>
+</div>
+           
+
+
+            <%--    <div class="row justify-content-center">
                     <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <asp:Button runat="server" CssClass="btn btn-success btn-rounded" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
                         </div>
                     </div>
-                </div>
+                </div>--%>
 
             </fieldset>
 
@@ -116,22 +152,18 @@
             <fieldset runat="server" id="div_details" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1 ">
-                        <div class="form-group">
-                            <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <asp:Button ID="Button3" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+    </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -210,22 +242,18 @@
             <fieldset runat="server" id="divUpperPrimary" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1 ">
-                        <div class="form-group">
-                            <asp:Button ID="Button1" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <asp:Button ID="Button4" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+    </div>
 
                 <div class="row">
                     <div class="col-md-12">
@@ -365,22 +393,18 @@
             <fieldset runat="server" id="divSecondary" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1 ">
-                        <div class="form-group">
-                            <asp:Button ID="Button5" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <asp:Button ID="Button6" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+    </div>
 
                 <div class="row">
                     <div class="col-md-12">
@@ -520,22 +544,18 @@
             <fieldset runat="server" id="divUprSec" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1 ">
-                        <div class="form-group">
-                            <asp:Button ID="Button7" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <asp:Button ID="Button8" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+    </div>
 
                 <div class="row">
                     <div class="col-md-12">

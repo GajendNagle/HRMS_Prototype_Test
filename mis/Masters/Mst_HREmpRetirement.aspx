@@ -14,7 +14,7 @@
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li> 
+                        </li>
                         <li class="breadcrumb-item">Retirement/Separation</li>
                     </ol>
                 </div>
@@ -27,7 +27,8 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Retirement / Separation<br />सेवानिवृत्त / विभाजन</h4>
+                            <h4 class="card-title">Retirement / Separation<br />
+                                सेवानिवृत्त / विभाजन</h4>
                         </div>
                     </div>
                 </div>
@@ -82,7 +83,6 @@
                                         <option value="Sahil">Sahil</option>
                                     </select>
                                 </div>
-
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -99,8 +99,6 @@
                                     </select>
                                 </div>
                             </div>
-
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -119,7 +117,6 @@
                                         ऑर्डर संख्या<span style="color: red">*</span></label>
                                     <input id="TxtOrderno" class="form-control" placeholder="Enter Order No." />
                                 </div>
-
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -146,14 +143,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-4 text-center">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-success  btn-border Alert-Confirmation">Save</button>
-                                    <a href="Mst_HREmpRetirement.aspx" class="btn btn-outline-danger  w-lg btn-border">Clear</a>
-                                </div>
-                            </div>
-
+                        <hr />
+                        <div class="col-md-12 ">
+                            <button type="button" class="btn btn-success  btn-border Alert-Confirmation">Save</button>
+                            <a href="Mst_HREmpRetirement.aspx" class="btn btn-outline-danger  w-lg btn-border">Clear</a>
                         </div>
                     </fieldset>
                     <fieldset id="ContentBody_dcp">

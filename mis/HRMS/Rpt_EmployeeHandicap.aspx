@@ -108,43 +108,10 @@
                                     </select>
                                 </div>
                             </div>
-
-                            <%-- <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="font-bold">Handicapped Type</label>
-                            <select id="ddlHandiCaped" class="form-control select2">
-                                <option>--Select--</option>
-                                <option value="Cancer/ कैंसर">Blindnes/अंधापन</option>
-                                <option value="Low Vision/कम दृष्टि">Low Vision/कम दृष्टि</option>
-                                <option value="Hearing Impaiment/ श्रवण हानि">Hearing Impaiment/ श्रवण हानि</option>
-                                <option value="Speech and Language / वाणी और भाषा">Speech  Language / वाणी और भाषा</option>
-                                <option value="Loco Moto Disability / लोको मोटो विकलांगता">Loco Moto Disability / लोको मोटो विकलांगता</option>
-                                <option value="Mental Illness /मानसिक बिमारी">Mental Illness /मानसिक बिमारी</option>
-                                <option value="Specipic Illness /विशिष्ट बीमारी">Specipic Illness /विशिष्ट बीमारी</option>
-                                <option value="Intellectual Disability / बौद्धिक विकलांगता">Intellectual Disability / बौद्धिक विकलांगता</option>
-                                <option value="Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति">Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति</option>
-                                <option value="Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर">Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर</option>
-                                <option value="Multiple Disability / एकाधिक विकलांगता">Multiple Disability / एकाधिक विकलांगता</option>
-                                <option value="Cerebral Palsy / मस्तिष्क पक्षाघात">Cerebral Palsy / मस्तिष्क पक्षाघात</option>
-                                <option value="Dwarfism / बौनापन">Dwarfism / बौनापन</option>
-                                <option value="Muscular Dystrophy">Muscular Dystrophy</option>
-                                <option value="Chronic Disease / मांसपेशीय दुर्विकास">Chronic Disease / मांसपेशीय दुर्विकास</option>
-                                <option value="Multiple Sclerosis / मल्टीपल स्क्लेरोसिस">Multiple Sclerosis / मल्टीपल स्क्लेरोसिस</option>
-                                <option value="Thalassemia / थैलेसीमिया">Thalassemia / थैलेसीमिया</option>
-                                <option value="Hemophilia / हीमोफीलिया">Hemophilia / हीमोफीलिया</option>
-                                <option value="Sickle Cell Disease / सिकल सेल रोग">Sickle Cell Disease / सिकल सेल रोग</option>
-                                <option value="Acid Attack Victim / एसिड अटैक पीड़िता">Acid Attack Victim / एसिड अटैक पीड़िता</option>
-                                <option value="Parkinson's Disease / पार्किंसंस रोग">Parkinson's Disease / पार्किंसंस रोग</option>
-
-                            </select>
-                        </div>
-                    </div>--%>
-
-                            <div class="col-md-6 align-self-end ">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="fillMainTable(generateDummyData(document.getElementById('ddlDist').value));">Search</button>
-                                    <a runat="server" id="A1" href="Rpt_EmployeeHandicap.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                                </div>
+                            <hr />
+                            <div class="col-md-12 form-group">
+                                <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="fillMainTable(generateDummyData(document.getElementById('ddlDist').value));">Search</button>
+                                <a runat="server" id="A1" href="Rpt_EmployeeHandicap.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
                         </div>
                     </fieldset>
@@ -248,8 +215,8 @@
                     </div>
 
                 </div>
-            </div>
         </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

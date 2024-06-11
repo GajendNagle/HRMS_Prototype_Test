@@ -43,7 +43,7 @@
                             <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>OIS Setup Reports</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>District-wise Zero Teachers</span></li>
+                        <li class="breadcrumb-item"><span>District-wise Zero Teachers Report</span></li>
                     </ol>
                 </div>
             </div>
@@ -58,11 +58,14 @@
             <div class="row align-items-end">
                 <div class="col-lg-6">
                     <div class="card-title color_black">
-                  Zero Teachers
+                 District-wise Zero Teachers Report
                     </div>
                 </div>
             </div>
         </div><br />
+        <%-- <center>
+     <h3 class="alert alert-success">District-wise Zero Teachers Report</h3>
+ </center><br />--%>
         
 
     <div class="row">
@@ -149,11 +152,11 @@
         </div>
     </div>
    
-    <div class="row">
+    <div class="row" id="BlockofAgarMalwa" style="display: none">
         <div class="col-md-12">
             <div class="table-responsive">
 
-                <table class="table table-bordered table-hover bg-white" id="BlockofAgarMalwa" style="display: none">
+                <table class="table table-bordered table-hover bg-white" >
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -209,10 +212,10 @@
         </div>
     </div>
  
-    <div class="row">
+    <div class="row" id="BlockofAshoknagar" style="display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" id="BlockofAshoknagar" style="display: none">
+                <table class="table table-bordered table-hover bg-white" >
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -270,10 +273,10 @@
         </div>
     </div>
  
-    <div class="row">
+    <div class="row" id="BlockofBalaghat" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofBalaghat" style=" display: none">
+                <table class="table table-bordered table-hover bg-white"  >
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -331,10 +334,10 @@
         </div>
     </div>
   
-    <div class="row">
+    <div class="row" id="BlockofBetul" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofBetul" style=" display: none">
+                <table class="table table-bordered table-hover bg-white">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -393,10 +396,10 @@
         </div>
     </div>
  
-    <div class="row">
+    <div class="row"  id="BlockofBhind" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofBhind" style=" display: none">
+                <table class="table table-bordered table-hover bg-white">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -455,10 +458,10 @@
         </div>
     </div>
  
-    <div class="row">
+    <div class="row"  id="BlockofBhopal" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofBhopal" style=" display: none">
+                <table class="table table-bordered table-hover bg-white" >
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -516,10 +519,10 @@
         </div>
     </div>
    
-    <div class="row">
+    <div class="row"   id="BlockofBurhanpur" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofBurhanpur" style=" display: none">
+                <table class="table table-bordered table-hover bg-white">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -577,10 +580,10 @@
         </div>
     </div>
     
-    <div class="row">
+    <div class="row" id="BlockofChhatarpur" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofChhatarpur" style=" display: none">
+                <table class="table table-bordered table-hover bg-white">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -654,10 +657,10 @@
         </div>
     </div>
    
-    <div class="row">
+    <div class="row"  id="BlockofChhindwara" style=" display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofChhindwara" style=" display: none">
+                <table class="table table-bordered table-hover bg-white">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -715,10 +718,10 @@
         </div>
     </div>
  
-    <div class="row">
+    <div class="row"   id="BlockofDamoh" style="display: none">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white"  id="BlockofDamoh" style="display: none">
+                <table class="table table-bordered table-hover bg-white">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
