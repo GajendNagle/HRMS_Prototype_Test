@@ -27,42 +27,48 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Surplus Teachers Management System</h4>
+           <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchoolDirectoryDashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>OIS Setup Reports</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>District-wise Zero Teachers</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports2" title="click to go on">OIS Setup Reports</a></li>
-                    <li class="breadcrumb-item active">Zero Teachers Management System</li>
-                </ol>
+    <%--  <div class="row page-titles mb-4">--%>
+    
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <div class="card-title color_black">
+                  Zero Teachers
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div>
-        <div class="row nav">
-            <div class="col-md-12 justify-content-around">
-                <a class="head" href="ZeroTeacher.aspx">Zero Teachers </a>
-                <a class="head" href="SingleTeacherManagementSystem.aspx">Single Teachers</a>
-                <a class="head" href="SurplusTeacherManagementSystem.aspx">Surplus Status</a>
-            </div>
-        </div>
-    </div>
-    <br />
-    <div class="row">
-        <h3 class="col-md-12 alert alert-success text-center">District-wise Zero Teachers</h3>
-    </div>
-    <%--table of District Start--%>
+        </div><br />
+        
 
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white " cellspacing="0" rules="all" border="1" id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
+                <table class="table table-bordered table-hover bg-white "  id="GrdSchoolDetails" style="">
                     <thead>
                         <tr>
                             <th scope="col" class="w-25">S.No.</th>
@@ -142,13 +148,12 @@
             </div>
         </div>
     </div>
-    <%--table of District End--%>
-    <%--table of Block for Agar Malwa district Start--%>
+   
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
 
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofAgarMalwa" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white" id="BlockofAgarMalwa" style="display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -203,11 +208,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Ashoknagar District Start--%>
+ 
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofAshoknagar" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white" id="BlockofAshoknagar" style="display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -264,12 +269,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Ashoknagar District End--%>
-    <%--table of Block for Balaghat District Start--%>
+ 
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofBalaghat" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofBalaghat" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -326,12 +330,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Balaghat District End--%>
-    <%--table of Block for Betul District Start--%>
+  
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofBetul" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofBetul" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -389,12 +392,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Betul District End--%>
-    <%--table of Block for Bhind District Start--%>
+ 
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofBhind" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofBhind" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -452,12 +454,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Bhind District End--%>
-    <%--table of Block for Bhopal District Start--%>
+ 
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofBhopal" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofBhopal" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -514,12 +515,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Bhind District End--%>
-    <%--table of Block for Burhanpur District Start--%>
+   
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofBurhanpur" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofBurhanpur" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -576,12 +576,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for Bhind District End--%>
-    <%--table of Block for 	Chhatarpur District End--%>
+    
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofChhatarpur" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofChhatarpur" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -654,12 +653,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for 	Chhatarpur District End--%>
-    <%--table of Block for 	Chhindwara District Start--%>
+   
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofChhindwara" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofChhindwara" style=" display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -716,12 +714,11 @@
             </div>
         </div>
     </div>
-    <%--table of Block for 	Chhindwara District End--%>
-    <%--table of Block for 	Damoh District Start--%>
+ 
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="BlockofDamoh" style="width: 100%; border-collapse: collapse; display: none">
+                <table class="table table-bordered table-hover bg-white"  id="BlockofDamoh" style="display: none">
                     <thead>
                         <tr>
                             <th scope="col">S.No.</th>
@@ -777,8 +774,8 @@
                 </table>
             </div>
         </div>
-    </div>
-    <%--table of Block for 	Damoh District End--%>
+    </div></div>
+  
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
