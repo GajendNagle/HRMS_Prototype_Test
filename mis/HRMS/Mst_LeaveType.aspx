@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space:nowrap;
+        }
         #show {
             display: none;
         }
@@ -43,9 +46,7 @@
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Add Leave /
-                            <br />
-                            अवकाश जोड़ें</legend>
+                        <legend>Add Leave / अवकाश जोड़ें</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -123,12 +124,12 @@
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
-                                            <th>Sr.No.</th>
-                                            <th>Leave Type</th>
-                                            <th>Impact On Payroll</th>
-                                            <th>Leave Carry Forward</th>
-                                            <th>Impact On Earning & Deduction</th>
-                                            <th>Effective Date</th>
+                                            <th>Sr.No. / <br />सरल क्र.</th>
+                                            <th>Leave Type / <br />अवकाश का प्रकार</th>
+                                            <th>Impact On Payroll / <br />पेरोल पर प्रभाव</th>
+                                            <th>Leave Carry Forward / <br /></th>
+                                            <th>Impact On Earning & Deduction / <br />अर्निंग और कटौती पर प्रभाव</th>
+                                            <th>Effective Date / <br />प्रभावी दिनांक</th>
                                             <th>Action</th>
                                         </tr>
                                         <tr>
