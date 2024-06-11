@@ -4,35 +4,43 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Close School Report</h4>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
 
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
-                        <li class="breadcrumb-item active">Close School Report</li>
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        <li class="breadcrumb-item">School Reports</li>
                     </ol>
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+            <div class="card-header">
+                <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Close School Report/स्कूल रिपोर्ट बंद करें
+                    </h4>
+                </div>
+            </div>
             </div>
             <div class="card-body">
                 <fieldset>
-                    <legend>Close School Report</legend>
+                    <legend>Close School Report/स्कूल रिपोर्ट बंद करें</legend>
 
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
-                            <label class="font-bold">Division Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -47,7 +55,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">District Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -103,7 +111,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">Block Name</label>
+                            <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Agar</asp:ListItem>
@@ -123,24 +131,22 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="font-bold">From Date</label>
+                                <label class="font-bold">From Date/की तिथि से</label>
                                 <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
 
-                            </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-bold">To Date</label>
+                                <label class="font-bold">To Date/तारीख तक</label>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
 
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="form-group">
-                                <asp:Button ID="View1" CssClass="btn btn-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
-                                <a href="RPT_UnMeargingSchools.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
+                                <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                             </div>
                         </div>
                     </div>
@@ -150,8 +156,8 @@
                 <div class="row form-group">
                     <div class="col-md-12">
                         <fieldset runat="server" id="report" visible="false">
-                            <legend>Details</legend>
-                            <div class="row justify-content-end">
+                            <legend>Details/विवरण</legend>
+                            <div class="row justify-content-end align-items-end">
                                 <div class="col-md-4 text-end">
                                     <div class="form-group">
                                         <button class="btn btn-info btn-rounded w-55">Excel</button>
@@ -164,22 +170,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row align-items-end">
                                 <div class="col-md-12">
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
                                             <tr class="card-header">
-                                                <th>Sr. No</th>
-                                                <th>Division</th>
+                                                <th>Sr. No./क्रमांक</th>
+                                                <th> Division/संभाग </th>
                                                 <th>District</th>
-                                                <th>Block</th>
-                                                <th>Dise Code</th>
-                                                <th>School Name</th>
-                                                <th>Management</th>
-                                                <th>Category</th>
-                                                <th>Sankul(DDO)</th>
-                                                <th>Incharge Name</th>
-                                                <th>Functional</th>
+                                                <th>Block/ ब्लॉक</th>
+                                                <th>Dise Code/डिस कोड</th>
+                                                <th>School Name/स्कूल के नाम</th>
+                                                <th>Management/प्रबंधन</th>
+                                                <th>Category/वर्ग</th>
+                                                <th>Sankul(DDO)/संकुल</th>
+                                                <th>Incharge Name/प्रभारी का नाम</th>
+                                                <th>Functional/कार्यात्मक</th>
 
                                             </tr>
                                             <tr>
@@ -304,7 +310,6 @@
 
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="server">
 </asp:Content>

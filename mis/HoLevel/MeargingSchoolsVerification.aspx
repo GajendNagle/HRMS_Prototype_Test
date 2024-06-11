@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <div class="card ">
+    <div class="card">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
@@ -45,7 +45,7 @@
             <fieldset>
                 <legend>Merge School Verification/मर्ज स्कूल सत्यापन</legend>
 
-                <div class="row justify-content-center">
+                <div class="row align-items-end">
 
                     <div class="col-md-3">
                         <label class="font-bold">Select Division Name/संभाग का नाम चुनें</label>
@@ -153,13 +153,11 @@
                             </div>
                         </div>--%>
                     <div class="col-md-3">
-                        <div class="form-group">
                             <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
                             <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
                         </div>
-                    </div>
                     <div class="col-md-12">
-                        <div class="form-group text-center">
+                        <div class="form-group text-center"><br />
                             <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn w-lg btn-outline-success btn-rounded" />
                             <a href="#" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>
