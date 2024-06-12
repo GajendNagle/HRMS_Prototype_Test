@@ -39,7 +39,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div class="content-wrapper">
+  <%--  <div class="content-wrapper">
         <!-- Main content -->
         <div class="container-fluid">
             <div class="row page-titles mb-4">
@@ -82,27 +82,56 @@
                             </div>
                         </div>
                     </nav>
-                    <br />
+                    <br />--%>
+
+            <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Tour" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Tour</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Tour Generate</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Tour Generate</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+
                     <fieldset id="show">
                         <legend>Tour Generate Details</legend>
-                        <div class="row justify-content-end">
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                                </div>
-                            </div>
-                        </div>
-
+                                                <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group"> 
+        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
+             
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -180,12 +209,20 @@
                                 </div>
                                 <br />
                             </div>
-                        <div id="btnApproveBEO" class="row justify-content-center">
+                                     <hr />
+<div class="col-md-12"  id="btnApproveBEO" >
+    <div class="form-group">
+        <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn w-lg btn-success btn-border">Approve</button>
+         <button type="button" class="btn btn-outline-danger w-lg btn-border" data-toggle="modal" data-target="#myModal">Reject</button>
+       <%-- <a href="AcceptingAuthorityFilled.aspx" class="">Clear</a>--%>
+    </div>
+</div>
+                       <%-- <div id="btnApproveBEO" class="row justify-content-center">
                             <div class="col-md-12 text-center">
                                 <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn btn-success  btn-rounded">Approve</button>
-                                <button type="button" class="btn btn-danger  btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button>
+                               
                             </div>
-                        </div>
+                        </div>--%>
                         <br />
                         <%--<div id="GenerateorderDetails" class="row justify-content-center">
                             <div class="col-md-12">
@@ -326,8 +363,19 @@
                 </div>
                 <!-- Modal Footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success Alert-RejectT" data-dismiss="modal" id="saveButton">Save</button>
+
+                                                         <hr />
+<div class="col-md-12" >
+    <div class="form-group">
+         <button type="button" class=" w-lg  btn btn-success btn-border" data-dismiss="modal" id="saveButton">Save</button>
+        <buttondata-dismiss="modal" type="button" class=" btn w-lg btn btn-outline-secondary btn-border">Close</buttondata-dismiss="modal">
+         <%--<button type="button" class="btn btn-outline-danger w-lg btn-border" data-toggle="modal" data-target="#myModal">Reject</button>--%>
+       <%-- <a href="AcceptingAuthorityFilled.aspx" class="">Clear</a>--%>
+    </div>
+</div>
+
+<%--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success Alert-RejectT" data-dismiss="modal" id="saveButton">Save</button>--%>
                 </div>
             </div>
         </div>

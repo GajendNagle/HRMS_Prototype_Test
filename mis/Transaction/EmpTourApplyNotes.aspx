@@ -6,7 +6,7 @@
  }</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="content-wrapper">
+   <%-- <div class="content-wrapper">
         <!-- Main content -->
         <div class="container-fluid">
             <div class="row page-titles mb-4">
@@ -40,13 +40,45 @@
                                         <a class="nav-link  text-white " href="EmpTourApplyNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                                     </li>
                                     <li>
-                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i><%--Tour Apply--%>यात्रा के लिए आवेदन करें</b></a>
+                                        <a class="nav-link  text-white " href="EmpTourApply.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i><%--Tour Applyयात्रा के लिए आवेदन करें</b></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
-                    <br />
+                    <br />--%>
+
+        <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Tour" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Tour</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Tour Apply</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Tour Apply/यात्रा के लिए आवेदन करें</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
                             <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;Tour Apply दिशानिर्देश :-</h4>
