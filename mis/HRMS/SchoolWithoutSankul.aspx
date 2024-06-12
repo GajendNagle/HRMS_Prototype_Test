@@ -98,7 +98,7 @@
 
                         </div>
                     </div>
-                    <div class="row mt-4">
+                    <div class="row align-items-end">
 
                         <div class="col-md-3">
                             <label class="font-bold">Select Management Group Details/प्रबंधन समूह विवरण चुनें</label>
