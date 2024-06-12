@@ -40,56 +40,40 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Employee Joining In Office</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item active">Employee Joining In Office</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeJoiningInOffice" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Joining In Office</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Add Employee to Office</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Add Employee to Office /
+कर्मचारी को कार्यालय में जोड़ें</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li>
 
-                                <a class="nav-link  text-white " href="EmployeeJoiningInOfficeNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            </li>
-                            <li>
-
-                                <a class="nav-link  text-white " href="EmployeeJoiningInOffice.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Add Employee to Office
-                                </b></a>
-                            </li>
-
-                            <li>
-
-                                <a class="nav-link  text-white " href="Rpt_EmployeeJoining.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                    Report
-                                </b></a>
-
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-            <br />
             <div id="Approve">
                 <fieldset>
                     <legend>Approve Details</legend>
@@ -189,62 +173,71 @@
                     <legend>Pending Details / लंबित विवरण</legend>
 
                     <div class="row justify-content-end">
-                        <div class="col-md-1">
+                        <div class="col-md-4 text-end">
                             <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search...">
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th rowspan="2">Sr.No.<br />सरल क्र. </th>
-                                            <th rowspan="2">Office Type<br />कार्यालय का प्रकार</th>
-                                            <th rowspan="2">Employee Name<br />
+                                            <th rowspan="2">Sr.No. /<br />
+                                                सरल क्र. </th>
+                                            <th rowspan="2">Office Type /<br />
+                                                कार्यालय का प्रकार</th>
+                                            <th rowspan="2">Employee Name /<br />
                                                 कर्मचारी का नाम</th>
-                                            <th rowspan="2">Employee Designation<br />
+                                            <th rowspan="2">Employee Designation /<br />
                                                 कर्मचारी पदनाम</th>
-                                            <th rowspan="2">Employee Department<br />
+                                            <th rowspan="2">Employee Department /<br />
                                                 कर्मचारी विभाग</th>
-                                            <th rowspan="2">Employee Subject<br />कर्मचारी विषय</th>
-                                            <th colspan="5">Current Location<br />वर्तमान स्थान</th>
-                                            <th colspan="5">Preference Location<br /></th>
-                                            <th rowspan="2">Action<br /></th>
+                                            <th rowspan="2">Employee Subject /<br />
+                                                कर्मचारी विषय</th>
+                                            <th colspan="5">Current Location /<br />
+                                                वर्तमान स्थान</th>
+                                            <th colspan="5">Preference Location /<br />
+                                                वरीयता स्थान
+                                            </th>
+                                            <th rowspan="2">Action<br />
+                                            </th>
                                         </tr>
 
                                         <tr>
-                                            <th>Office Type<br />
+                                            <th>Office Type /<br />
                                                 कार्यालय का प्रकार</th>
-                                            <th>Posted From<br />से कार्यरत </th>
-                                            <th>District<br />जिला </th>
-                                            <th>Block<br />विकासखण्ड </th>
-                                            <th>Sankul Code<br />
+                                            <th>Posted From /<br />
+                                                से कार्यरत </th>
+                                            <th>District /<br />
+                                                जिला </th>
+                                            <th>Block /<br />
+                                                विकासखण्ड </th>
+                                            <th>Sankul Code /<br />
                                                 संकुल कोड
                                             </th>
-                                            <th>Office Type<br />कार्यालय का प्रकार</th>
-                                            <th>Reason For Transfer<br />
+                                            <th>Office Type /<br />
+                                                कार्यालय का प्रकार</th>
+                                            <th>Reason For Transfer /<br />
                                                 स्थानांतरण का कारण</th>
-                                            <th>District<br />जिला</th>
-                                            <th>Block<br />विकासखण्ड</th>
-                                            <th>Sankul Code<br />संकुल कोड</th>
+                                            <th>District /<br />
+                                                जिला</th>
+                                            <th>Block /<br />
+                                                विकासखण्ड</th>
+                                            <th>Sankul Code /<br />
+                                                संकुल कोड</th>
                                         </tr>
                                     </thead>
                                     <tr>
-                                        <th>1</th>
+                                        <td>1</td>
                                         <td>Head Office</td>
                                         <td>Rajan Singh</td>
                                         <td>Teacher</td>
@@ -262,13 +255,13 @@
                                         <td>6564545</td>
 
                                         <td>
-                                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;">Joining</asp:LinkButton>
+                                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-success btn w-lg" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;">Joining</asp:LinkButton>
                                             <%-- <button type="button" class=" Alert-Save btn btn-success btn-rounded" onclick="showhide()">Comfirm Joining</button>--%>
 
                                             <%--     <a class="Alert-Delete">Confoirm Joining</a></td>--%>
                                     </tr>
                                     <tr>
-                                        <th>2</th>
+                                        <td>2</td>
                                         <td>Head Office</td>
                                         <td>Lokendra kumar</td>
                                         <td>Teacher</td>
@@ -285,7 +278,7 @@
                                         <td>Agar</td>
                                         <td>6564545</td>
                                         <td>
-                                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;">Joining</asp:LinkButton>
+                                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-success btn w-lg" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;">Joining</asp:LinkButton>
                                             <%-- <button type="button" class=" Alert-Save btn btn-success btn-block btn-rounded" onclick="showhide()">Comfirm Joining</button>--%></td>
                                     </tr>
                                 </table>
@@ -302,26 +295,37 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                         </div>
                         <div class="modal-body">
+                            <fieldset>
+                                <legend>Employee Joining Approval / कर्मचारी के शामिल होने की मंजूरी</legend>
+                                <div class="row align-items-end">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>
+                                                New Joining Date /
+                                            <br />
+                                                नई ज्वाइनिंग दिनांक
+                                            </label>
+                                            <input type="date" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
 
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>New Joining Date <br /> नई ज्वाइनिंग दिनांक </label>
-                                        <input type="date" class="form-control" />
+                                            <label>
+                                                Remark /
+                                            <br />
+                                                टिप्पणी</label>
+                                            <input type="text" class="form-control" placeholder="Enter Remark" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mt-5 ">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-success Alert-request" data-bs-dismiss="modal">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger waves-effect text-start  btn-border" data-bs-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <label>Remark <br /> टिप्पणी</label>
-                                        <input type="text" class="form-control" placeholder="Enter Remark" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mt-5 ">
-                                    <button type="button" class="btn btn-success Alert-request" data-bs-dismiss="modal">Approve</button>
-                                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+                            </fieldset>
                             <%--<div class="row m-l-5 mt-4">
                                 <div class="col-md-12">
                                     <label class="form-check m-b-0">
@@ -343,7 +347,7 @@
 
             <!--Description-->
             <fieldset id="dcp" runat="server">
-                <legend>Description</legend>
+                <legend>Description / विवरण</legend>
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="main-ul">
