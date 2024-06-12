@@ -34,8 +34,8 @@
             <div class="card-header">
                  <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">School Without Sankul/संकुल विहीन विद्यालय
-                    </h4>
+                  <%--  <h4 class="card-title">School Without Sankul/संकुल विहीन विद्यालय
+                    </h4>--%>
                 </div>
             </div>
             </div>
