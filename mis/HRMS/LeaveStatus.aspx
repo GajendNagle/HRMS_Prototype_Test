@@ -136,36 +136,45 @@
                         <div class="row align-items-end">
                             <div class="col-md-3 my-2">
                                 <label class="font-bold">Employee Name /<br />कर्मचारी का नाम : </label><br />
-                                <label>Shobhit Namdeo</label>
+                                <asp:TextBox runat="server" Placeholder="Shobhit Namdeo" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col-md-3 my-2">
                                 <label class="font-bold">Department /<br />विभाग : </label><br />
-                                <label>Physics</label>
+                                <asp:TextBox runat="server" Placeholder="Physics" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col-md-3 my-2">
                                 <label class="font-bold">Designation /<br />पद का नाम : </label><br />
-                                <label>Teacher</label>
+                                <asp:TextBox runat="server" Placeholder="Teacher" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col-md-3 my-2">
                                 <label class="font-bold">Office Location /<br />कार्यालय स्थान : </label><br />
-                                <label>Bhopal</label>
+                                <asp:TextBox runat="server" Placeholder="Bhopal" CssClass="form-control"></asp:TextBox>
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-md-3 my-2">
                                 <label class="font-bold">Class /<br />कक्षा :</label><br />
-                                <label>Claas-III</label>
+                                <asp:TextBox runat="server" Placeholder="Claas-III" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col-md-3 my-2">
                                 <label class="font-bold">School Name /<br />स्कूल का नाम : </label><br />
-                                <label>Carmel Convert Senior Secondary School</label>
+                                <asp:TextBox runat="server" Placeholder="Girls.High.Secondary School" CssClass="form-control"></asp:TextBox>
                             </div>
-                            <div class="col-md-3">
+                             <hr />
+ <div class="col-md-12" runat="server" id="btnSave">
+     <div class="form-group">
+          <input id="btnLeaveDetails"  type="button" name="button" value="Leave History " class="btn w-lg btn-success btn-border" onclick="HideShow()" />
+     <%--    <asp:Button runat="server" class="btn w-lg btn-success btn-border" Text="Search" OnClick="btnSubmit_Click" ID="btnSubmit" />--%>
+         <a class="btn btn-outline-danger w-lg btn-border" href="LeaveStatus.aspx">Clear</a>
+     </div>
+ </div>
+
+                            <%--<div class="col-md-3">
                                 <label class="font-bold">Leave History /<br />लीव हिस्ट्री : </label><br />
                                 <input id="btnLeaveDetails" type="button" name="button" value="Click here" class="btn btn-info" onclick="HideShow()" />
-                            </div>
+                            </div>--%>
                         </div>
-                        <hr />
+                      
 
                     </fieldset>
                     <fieldset id="EmployeeDetails1">
@@ -209,7 +218,7 @@
                                                 <td>
                                                     <label id="lblstatus">Pending</label>
                                                     <td>
-                                                        <input id="btnview" type="button" name="button" value="View" onclick="ShowLeaveStatus()" class="btn btn-info" />
+                                                        <input id="btnview" type="button" name="button" value="View" onclick="ShowLeaveStatus()" class="btn btn-info ml-5" />
                                                         <%--   <input id="btnApprov" type="button" name="button" value="Approved" onclick="ShowApprovalPopup()" class="btn btn-success" />
                                         <input id="btnReject" type="button" name="button" value="Reject" onclick="ShowRejectionPopup()" class="btn btn-danger" />--%>
                                                         <%--<a href="ShowLeaveStatus()">View</a>--%>
@@ -223,132 +232,101 @@
 
                         </div>
                     </fieldset>
-                    <%--  <fieldset>
-                        <legend>Comment Details</legend>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <tr>
-                                            <th>Sr.No.</th>
-
-                                            <th id="tdh1">Principle</th>
-                                            <th id="tdh2">Sankul Pracharya</th>
-                                            <th id="tdh3">DEO</th>
-
-                                            <th>Status</th>
-                                            <th>Action(<b>Approve/Reject</b>)</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-
-                                            <td id="tdh1a">For Bad Behaviour</td>
-                                            <td id="tdh2a">For Bad Behaviour</td>
-                                            <td id="tdh3a">For Bad Behaviour</td>
-
-                                            <td>
-                                                <label id="lblstatus1">Pending</label>
-                                            <td>
-                                                <input id="btnApprov" type="button" name="button" value="Approved" onclick="ShowApprovalPopup()" class="btn btn-success" />
-                                                <input id="btnReject" type="button" name="button" value="Reject" onclick="ShowRejectionPopup()" class="btn btn-danger" />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>--%>
+                    
                     <fieldset id="LeaveStatus">
                         <legend>Leave Status / लीव स्टेटस</legend>
-                        <div>
-
-                            <div class="row">
-                                <div class="col-md-2 text-center">
+                        
+                            <div class="row align-items-end" style="font-size:5px !important;">
+                                <div class="col-md-1 text-center">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text" />
-                                    <div class="text-center">
+                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text"   style="position:relative; right:20px; width:130px;" />
+                                    <div class="text-center"  style="position:relative; right:5px; white-space:nowrap;">
                                         <label id="status1">Leave Applied</label>
                                     </div>
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-md-2 ml-4 ">
                                     <label>Farward to Principal </label>
                                     <br />
-                                    <hr width="150%" color="green" />
+                              <hr class="w-50"  />
 
                                 </div>
                                 <div class="col-md-2 text-center ">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text" />
-                                    <div class="text-center">
+                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text"  style="position:relative; right:70px; width:130px;" />
+                                    <div class="text-center"  style ="position:relative; right:65px;">
                                         <label id="status2">Principal </label>
                                     </div>
+
+                                      <div class="col-md-1" style="white-space:nowrap; position:relative;bottom:
+    200px; left:100px;">
+   
+  
+   
+
+  </div>
                                 </div>
-                                <div class="col-md-1 text-center">
+                              <div class="col-md-1 text-center fs-6" style="white-space:nowrap; position:relative; top:10px; right:120px;" >
                                     <label>
-                                        Pending from
-                            <br />
-                                        DEO
-                                    </label>
-                                    <br />
-                                    <hr width="150%" color="green" />
-                                    <label>Comment 1</label>
-                                    <label>Date: 02/04/2024 </label>
-                                    <label>Time:16:34 </label>
+                                        Pending <br />from DEO
+                                               <hr  color="green"/>
+
+                                  Comment 1<br />
+                                   Date: 02/04/2024 <br />
+                                   Time:16:34 </label>
                                 </div>
-                                <div class="col-md-1 text-center ">
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 139px; width: 139px;" />
-                                    <div class="text-center">
+                               <div class="col-md-2 text-center ">
+                                    <img src="../dist/images/lightgreencircle.png" style="height: 120px; width:120px; position:relative; right:90px;" />
+                                    <div class="text-center" style="position:relative;  right:90px;">
                                         <label id="status3">DEO</label>
                                     </div>
                                 </div>
-                                <div class="col-md-1 text-center">
+                                <div class="col-md-1 text-center" style="white-space:nowrap; position:relative; top:10px; right:150px;">
                                     <label>
-                                        Pending from
-                            <br />
-                                        DPI  
-                                    </label>
-                                    <br />
-                                    <hr width="150%" color="green" />
-                                    <label>Comment 2</label>
-                                    <label>Date: 02/04/2024 </label>
-                                    <label>Time:16:34 </label>
+                                        pending <br /> from
+                           
+                                        dpi  
+                                 
+<hr class="w-50 ml-4" />
+                                   comment 2<br />
+                                   date: 02/04/2024 <br />
+                                   time:16:34 </label>
 
                                 </div>
-                                <div class="col-md-1 text-center ">
-                                    <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 139px; width: 139px;" />
-                                    <div class="text-center">
+                                <div class="col-md-2 text-center ">
+                                   
+                                   <img src="../dist/images/lightgreencircle.png" style="height: 120px; width: 120px; position:relative; right:120px;" />
+                                    <div class="text-center" style="position:relative; bottom:80px; right:120px;">
                                         <label id="status4">DPI</label>
                                     </div>
                                 </div>
-                                <div class="col-md-1 text-center">
-                                    <label>
-                                        Pending from
-                            <br />
-                                        CPI 
-                                    </label>
-                                    <br />
-                                    <hr width="150%" color="green" height="7px" style="background-color: #632772f7;" />
-                                    <label>Comment 3</label>
-                                    <label>Date: 02/04/2024 </label>
-                                    <label>Time:16:34 </label>
+                                 <div class="col-md-1 text-center fs-6" style="position:relative; left:750PX; bottom:150px; white-space:nowrap">
+                                                                      <label>
+                                        pending  <br /> from
+                          
+                                        CPI  
+                                 
+<hr width="150%" color="green" />
+                                   comment 3<br />
+                                   date: 02/04/2024 <br />
+                                   time:16:34 </label>
 
                                 </div>
-                                <div class="col-md-1 text-center ">
-                                    <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 139px; width: 139px;" />
+                                <div class="col-md- text-center ">
+                                 
+                                   <img src="../dist/images/lightgreencircle.png" style="height: 120px; width: 120px; position:relative; left:700px;" />
                                     <div class="text-center">
                                         <label id="status5">CPI</label>
                                     </div>
                                 </div>
 
                             </div>
-                        </div>
+                        
+                
                     </fieldset>
                 </div>
             </div>
         </div>
-    </div>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script type="text/javascript">

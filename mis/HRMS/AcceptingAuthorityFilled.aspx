@@ -59,7 +59,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <h5 class="card-title">Reviewing Officer/
                      Acceptanceing Officer
                     </h5>

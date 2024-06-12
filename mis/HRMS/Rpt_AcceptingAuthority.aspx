@@ -71,10 +71,10 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <div class="card-title">Reviewing Officer/
+                <div class="col-lg-12">
+                    <h4 class="card-title">Reviewing Officer/
                      Acceptanceing Officer Report
-                    </div>
+                    </h4>
                 </div>
             </div>
         </div>

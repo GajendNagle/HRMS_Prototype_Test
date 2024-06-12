@@ -37,8 +37,8 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <class="card-title color_black">
+                <div class="col-lg-12">
+                    <h4 class="card-title color_black">
                          Annual Confidential Report /वार्षिक गोपनीय रिपोर्ट
                     </>
                 </div>
