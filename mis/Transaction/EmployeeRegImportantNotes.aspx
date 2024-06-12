@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                 <h4 class="mb-sm-0"></h4>
+                <h4 class="mb-sm-0"></h4>
                 <div class="=page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
@@ -26,10 +26,18 @@
         </div>
     </div>
     <div class="card card-border-primary">
-       <%-- <div class="card-header card-border-info">
-        </div>--%>
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="card-title">About Employee Registration
+                        <br />
+                        कर्मचारी पंजीकरण के बारे में
+                    </h4>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
+            <%--<nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +49,14 @@
 
                             <a class="nav-link  text-white " href="EmployeeRegImportantNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                             <a class="nav-link  text-white " href="EmployeeRegistration.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>&nbsp;कर्मचारी पंजीकरण</b></a>
-                            <%--<a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold">Employee Verification</b></a>--%>
+                         
                         </ul>
 
                     </div>
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
             <div class="row">
                 <div class="col-md-12">
                     <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>

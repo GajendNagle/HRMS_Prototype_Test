@@ -40,9 +40,17 @@
     </div>
     <div class="card card-border-primary">
         <%-- <div class="card-header">
-</div>--%>
+</div>--%>            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="card-title">Training Details / प्रशिक्षण का विवरण<br />
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
+            <%--<nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +68,7 @@
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
 
             <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
 
@@ -71,11 +79,13 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Uniq Id /<br />
+                            <label>
+                                Employee Uniq Id /<br />
                                 कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                             <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
                         </div>
-                    </div><hr />
+                    </div>
+                    <hr />
                     <div class="col-md-12 form-group">
                         <button id="Button1" type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">View</button>
                         <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
@@ -131,10 +141,14 @@
                                 <table class="table text-center">
                                     <tbody>
                                         <tr>
-                                            <th>Sr. No. /<br/>सरल क्र.</th>
-                                            <th>Training Type /<br/>प्रशिक्षण प्रकार</th>
-                                            <th>Level of Training (State/Division/District/Development Block) /<br/>प्रशिक्षण का स्तर (राज्य/संभाग/जिला/विकासखंड)</th>
-                                            <th>Duration of Training (in days) /<br/>प्रशिक्षण की अवधि (दिनों में)</th>
+                                            <th>Sr. No. /<br />
+                                                सरल क्र.</th>
+                                            <th>Training Type /<br />
+                                                प्रशिक्षण प्रकार</th>
+                                            <th>Level of Training (State/Division/District/Development Block) /<br />
+                                                प्रशिक्षण का स्तर (राज्य/संभाग/जिला/विकासखंड)</th>
+                                            <th>Duration of Training (in days) /<br />
+                                                प्रशिक्षण की अवधि (दिनों में)</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
