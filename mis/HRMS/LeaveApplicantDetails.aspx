@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Leave Approval/Farward/Reject</h4>
         </div>
@@ -19,11 +19,43 @@
                 </ol>
             </div>
         </div>
-    </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    </div>--%>
+                        <div class="row">
+    <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Leave Process</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Leave Applicant Details</span></li>
+                </ol>
+            </div>
         </div>
-        <div class="card-body">
+    </div>
+</div>
+
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Leave Approval/Farward/Reject/छुट्टी का
+                       अनुमोदन/प्रस्ताव/
+अग्रेषित/अस्वीकृत</h4>
+                    </div>
+                </div>
+            </div>
+              <div class="card-body">
+        
+   
             <fieldset>
                 <legend>Apply Leave</legend>
                 <div class="row">
@@ -39,38 +71,44 @@
                             </select>
                         </div>
                     </div>
+                    </div>
+                    <hr />
+                    
+                                  <div class="row justify-content-center">
 
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button"  onclick="HideShow()"  class="Alert-Save btn w-lg btn-success btn-border">Submit</button>
+        <a href="LeaveApplicantDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
                     <%--</div>
                 <div class="row justify-content-center">--%>
-                    <div class="col-md-3 mt-4 ">
+                   <%-- <div class="col-md-3 mt-4 ">
                         <div class="form-group">
                             <button type="button" class=" Alert-Save btn btn-success btn-rounded" onclick="HideShow()">Submit</button>
                             <a href="LeaveApplicantDetails.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
             <div id="EmployeeDetails1">
                 <fieldset id="show">
                     <legend>Leave Details</legend>
-                    <div class="row justify-content-end">
-
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                                                  <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group"> 
+        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
+      
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
@@ -117,89 +155,7 @@
                 </fieldset>
                
 
-            </div>
-            <!--Description-->
-            <%--<fieldset id="dcp" runat="server">
-                <legend>Description</legend>
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="main-ul">
-
-                            <li><strong>Leave Type </strong>
-                                <ul>
-                                    <li>User will be able to Select the <strong>Leave Type </strong>. Data popolate from Leave Type Master</li>
-                                </ul>
-                            </li>
-                            <li><strong>Year</strong>
-                                <ul>
-                                    <li>User will be able to Select <strong>Year </strong>from Dropdown. Data popolate from Year Master</li>
-                                </ul>
-                            </li>
-                            <li><strong>From Date</strong>
-                                <ul>
-                                    <li>User will be able to Select the <strong>From Date </strong>from Calendar .</li>
-                                </ul>
-                            </li>
-                            <li><strong>To Date</strong>
-                                <ul>
-                                    <li>User will be able to Select the <strong>To Date </strong>from Calendar .</li>
-                                </ul>
-                            </li>
-                            <li><strong>Leave Approval Authority</strong>
-                                <ul>
-                                    <li>User will be able to Select the <strong>Leave Approval Authority</strong> from Dropdown. Data popolate from Department wise Leave Approval Master</li>
-                                </ul>
-                            </li>
-                            <li><strong>Attach Supporting Document</strong>
-                                <ul>
-                                    <li>User will be able to Upload the <strong>Document</strong>.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Reason Of Leave</strong>
-                                <ul>
-                                    <li>User will be able to enter the <strong>Reason Of Leave</strong>.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Save (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on save button.</li>
-                                    <li>Click on save button form all mandatory filed should be validate in process.</li>
-                                    <li>After all fields Validate the Confirmation popup should be open with Message Format ("Are you sure?" "Do you want to save this record?").</li>
-                                    <li>If click on Yes – record will be saved and message will appear on the screen – Message ("Success!" "Record Saved Successfully!")..</li>
-                                    <li>If click on NO the record will not be saved and will return to the same page.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Clear (Button)</strong>
-                                <ul>
-                                    <li>User will be able to click on Clear button.</li>
-                                    <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
-                                </ul>
-                            </li>
-                            <li><strong>Excel</strong>
-                                <ul>
-                                    <li>Excel button should be visible and user should be able to click.</li>
-                                    <li>After clicking on Excel button grid view data export in Excel.</li>
-                                </ul>
-                            </li>
-                            <li><strong>PDF</strong>
-                                <ul>
-                                    <li>PDF button should be visible and user should be able to click.</li>
-                                    <li>After clicking on PDF button grid view data export in PDF.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Searchbox</strong>
-                                <ul>
-                                    <li>Users can search for any text value, and only the relevant text related to the search will be displayed .</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </fieldset>--%>
-            <!-- End Description -->
-
-        </div>
-    </div>
+    
     <div class="modal" tabindex="-1" role="dialog" id="ApprovalModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -246,6 +202,14 @@
             </div>
         </div>
     </div>
+                
+            </div>
+         
+
+        </div>
+            </div>
+    
+             
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

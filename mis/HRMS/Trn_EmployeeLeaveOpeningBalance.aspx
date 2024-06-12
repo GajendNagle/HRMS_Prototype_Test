@@ -18,7 +18,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Employee Leave Opening Balance</h4>
         </div>
@@ -36,15 +36,50 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
-            <fieldset>
-                <legend>Leave Opening Balance</legend>
+        <div class="card-body">--%>
+
+                        <div class="row">
+    <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Leave Process</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Employee Leave Opening Balance</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
                 <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Employee Leave Opening Balance/
+                        कर्मचारी अवकाश प्रारंभिक शेष</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+            <fieldset>
+                <legend>Leave Opening Balance/अवकाश प्रारंभिक शेष</legend>
+                <div class="row align-items-end">
 
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">HO</option>
@@ -55,7 +90,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>Employee Name/<br />कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Krishna Tiwari - 38938</option>
@@ -65,17 +100,27 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Date<span style="color: red">*</span></label>
+                            <label>Date/<br />दिंनाक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
+                    <hr />
+                    
+                                  <div class="row justify-content-center">
 
-                     <div class="col-md-3 mt-4">
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button" onclick="showhide()"  class=" btn w-lg btn-success btn-border">Search</button>
+        <a href="Trn_EmployeeLeaveOpeningBalance.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
+
+                     <%--<div class="col-md-3 mt-4">
                         <div class="form-group">
                              <button type="button" onclick="showhide()" class="btn btn-success btn-rounded">Search</button>
                               <a href="Trn_EmployeeLeaveOpeningBalance.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
             <fieldset id="show">
@@ -143,14 +188,24 @@
                     </div>
 
                 </div>
-                 <div class="row justify-content-center">
+
+                <hr />
+                                  <div class="row justify-content-center">
+
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button"   class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+        <a href="Trn_EmployeeLeaveOpeningBalance.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
+               <%--  <div class="row justify-content-center">
 
                           <div class="col-md-3">
                         <div class="form-group">
                                <button type="button" class="Alert-Confirmation  btn btn-success  btn-rounded">Save</button>
                              <a href="Trn_EmployeeLeaveOpeningBalance.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                     </div>
             </fieldset>
             <!--Description-->
@@ -212,6 +267,9 @@
             </fieldset>
             <!-- End Description -->
         </div>
+            </div>
+        </div>
+    
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

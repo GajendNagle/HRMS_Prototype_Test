@@ -239,21 +239,21 @@
                             <div class="row align-items-end" style="font-size:5px !important;">
                                 <div class="col-md-1 text-center">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text"   style="position:relative; right:20px; width:130px;" />
+                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text"   style="position:relative; right:20px; width:120px;" />
                                     <div class="text-center"  style="position:relative; right:5px; white-space:nowrap;">
                                         <label id="status1">Leave Applied</label>
                                     </div>
                                 </div>
-                                <div class="col-md-2 ml-4 ">
+                                <div class="col-md-2 ml-3 mb-5">
                                     <label>Farward to Principal </label>
                                     <br />
-                              <hr class="w-50"  />
+                              <hr class="w-50 ml-1"  />
 
                                 </div>
                                 <div class="col-md-2 text-center ">
                                     <%--<i class="fa fa-check-circle fa-8x fa-white" aria-hidden="true"></i>--%>
-                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text"  style="position:relative; right:70px; width:130px;" />
-                                    <div class="text-center"  style ="position:relative; right:65px;">
+                                    <img src="../dist/images/RightMark.jpg" alt="Alternate Text"  style="position:relative; right:90px; width:120px;" />
+                                    <div class="text-center"  style ="position:relative; right:100px;">
                                         <label id="status2">Principal </label>
                                     </div>
 
@@ -265,28 +265,28 @@
 
   </div>
                                 </div>
-                              <div class="col-md-1 text-center fs-6" style="white-space:nowrap; position:relative; top:10px; right:120px;" >
+                              <div class="col-md-1 text-center fs-6" style="white-space:nowrap; position:relative; top:10px; right:150px;" >
                                     <label>
                                         Pending <br />from DEO
-                                               <hr  color="green"/>
+                                               <hr  class="w-50 ml-4"/>
 
                                   Comment 1<br />
                                    Date: 02/04/2024 <br />
                                    Time:16:34 </label>
                                 </div>
                                <div class="col-md-2 text-center ">
-                                    <img src="../dist/images/lightgreencircle.png" style="height: 120px; width:120px; position:relative; right:90px;" />
-                                    <div class="text-center" style="position:relative;  right:90px;">
+                                    <img src="../dist/images/lightgreencircle.png" style="height: 110px; width:110px; position:relative; right:110px;" />
+                                    <div class="text-center" style="position:relative;  right:110px;">
                                         <label id="status3">DEO</label>
                                     </div>
                                 </div>
-                                <div class="col-md-1 text-center" style="white-space:nowrap; position:relative; top:10px; right:150px;">
+                                <div class="col-md-1 text-center" style="white-space:nowrap; position:relative; top:10px; right:175px;">
                                     <label>
                                         pending <br /> from
                            
                                         dpi  
                                  
-<hr class="w-50 ml-4" />
+<hr class="w-50 ml-5" />
                                    comment 2<br />
                                    date: 02/04/2024 <br />
                                    time:16:34 </label>
@@ -294,18 +294,18 @@
                                 </div>
                                 <div class="col-md-2 text-center ">
                                    
-                                   <img src="../dist/images/lightgreencircle.png" style="height: 120px; width: 120px; position:relative; right:120px;" />
-                                    <div class="text-center" style="position:relative; bottom:80px; right:120px;">
+                                   <img src="../dist/images/lightgreencircle.png" style="height: 110px; width: 110px; position:relative; right:140px;" />
+                                    <div class="text-center" style="position:relative;  right:140px;">
                                         <label id="status4">DPI</label>
                                     </div>
                                 </div>
-                                 <div class="col-md-1 text-center fs-6" style="position:relative; left:750PX; bottom:150px; white-space:nowrap">
+                                 <div class="col-md-1 text-center fs-6" style="position:relative; left:700PX; bottom:150px; white-space:nowrap">
                                                                       <label>
                                         pending  <br /> from
                           
                                         CPI  
                                  
-<hr width="150%" color="green" />
+<hr class="w-50 ml-4" />
                                    comment 3<br />
                                    date: 02/04/2024 <br />
                                    time:16:34 </label>
@@ -313,8 +313,8 @@
                                 </div>
                                 <div class="col-md- text-center ">
                                  
-                                   <img src="../dist/images/lightgreencircle.png" style="height: 120px; width: 120px; position:relative; left:700px;" />
-                                    <div class="text-center">
+                                   <img src="../dist/images/lightgreencircle.png" style="height: 110px; width: 110px; position:relative; left:750px; bottom:160px;" />
+                                    <div class="text-center" style="position:relative; left:750px; bottom:160px;">
                                         <label id="status5">CPI</label>
                                     </div>
                                 </div>

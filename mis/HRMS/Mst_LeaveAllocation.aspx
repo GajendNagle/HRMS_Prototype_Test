@@ -112,7 +112,8 @@
                                         <option value="Job Rate Employee">Job Rate Employee</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div></div>
+                           <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Period /<br />
@@ -135,13 +136,13 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Total Leave Days Year Wise<span style="color: red">*</span></label>
-                                    <input id="result" type="text" disabled class="form-control" autocomplete="off" />
+                                    <label>Total Leave Days Year Wise/<br />वर्षवार कुल छुट्टी के दिन<span style="color: red">*</span></label>
+                                      <input type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Balance" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Carry Forward<span style="color: red">*</span></label>
+                                    <label>Leave Carry Forward/<br />छुट्टी आगे बढ़ाएँ<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Bhopal">Yes</option>
@@ -149,13 +150,17 @@
                                     </select>
                                 </div>
                             </div>
+                               </div>
+                           <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Max Leave Balance<span style="color: red">*</span></label>
+                                    <label>Max Leave Balance/<br />अधिकतम अवकाश शेष<span style="color: red">*</span></label>
                                     <input type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Balance" />
                                 </div>
                             </div>
+                               </div>
                             <hr />
+                           <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <button type="button" class=" Alert-Save btn btn-outline-success btn-border w-lg">Save</button>
@@ -167,23 +172,18 @@
                     <fieldset id="show">
                         <legend>Leave Allocation Details</legend>
                         <div class="row justify-content-end">
-
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                                </div>
-                            </div>
-                        </div>
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+    </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">

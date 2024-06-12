@@ -18,8 +18,42 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
+   
+            <div class="row">
+    <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Leave Process</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>View Leave Request & Approve Leave</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">View Leave Request & Approve Leave/
+                          छुट्टी का अनुरोध देखें और छुट्टी स्वीकृत करें</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+  <%--      <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">View Leave Request & Approve Leave</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
@@ -36,7 +70,7 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
             <fieldset>
                 <legend>View Leave Request</legend>
                 <div class="row">
@@ -51,36 +85,43 @@
                             <label>To Date<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
+                        </div>
                     </div>
+                    <br />
+                    <hr />
 
-                    <div class="col-md-3 mt-4">
+                                  <div class="row justify-content-center">
+
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button"  onclick="showhide()"  class="Alert-Save btn w-lg btn-success btn-border">Save</button>
+        <a href="Trn_ViewLeaveRequest_Approve.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
+
+                   <%-- <div class="col-md-3 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="showhide()" class=" btn btn-success btn-rounded">Search</button>
                             <a href="Trn_ViewLeaveRequest_Approve.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
             <fieldset id="show">
                 <legend>Details</legend>
-                <div class="row justify-content-end">
-
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
+                                 <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group"> 
+        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -129,14 +170,22 @@
                         <label style="color: red;">Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन को अनुमोदन करें|</label>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+               <%-- <div class="row justify-content-center">
 
                     <div class="col-md-4 ">
                         <div class="form-group">
                             <button type="button" class=" Alert-Approve btn btn-success  btn-rounded">Approve Leave Request</button>
                             <a class="Alert-Reject  btn btn-danger  btn-rounded">Reject Leave</a>
                         </div>
-                    </div>
+                    </div>--%><hr />
+                              <div class="row justify-content-center">
+
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button" class=" Alert-Approve btn w-lg btn-success btn-border">Approve Leave Request</button>
+        <a href="#" class=" Alert-Reject btn btn-outline-danger w-lg btn-border">Reject Leave</a>
+    </div>
+</div>
                 </div>
             </fieldset>
             <!--Description-->
@@ -194,6 +243,10 @@
             <!-- End Description -->
         </div>
     </div>
+        </div>
+    </div>
+       
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>

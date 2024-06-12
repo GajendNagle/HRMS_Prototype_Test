@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+   <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Department Wise Leave Approval Master</h4>
         </div>
@@ -26,13 +26,48 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+
+      <div class="row">
+      <div class="col-md-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>Leave Process</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Department Wise Leave Approval Master</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="content-wrapper">
+      <div class="container-fluid">
+          <div class="card card-border-primary">
+              <div class="card-header">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <h4 class="card-title">Department Wise Leave Approval Master / विभागवार अवकाश स्वीकृति मास्टर
+                          </h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body">
             <fieldset>
-                <legend>Set Leave approver</legend>
-                <div class="row">
+                <legend>Set Leave approver/अवकाश अनुमोदक सेट करें</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="DepartmentId">Department Name</label><span style="color: red;">*</span>
+                            <label class="control-label fs-6" for="DepartmentId">Department Name/<br />विभाग का नाम <span class="mr-5" style="color: red;">*</span></label>
                             <select class="form-select select2" data-val="true" data-val-required="Field is required." id="DepartmentId" name="DepartmentId">
                                 <option value="">Select</option>
                                 <option value="1">1-Department of Education </option>
@@ -61,7 +96,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>OIS Type<span style="color: red">*</span></label>
+                            <label>OIS Type/<br />ओ.आई.एस. प्रकार
+<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Office">Office</option>
@@ -72,7 +108,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Leave Type<span style="color: red">*</span></label>
+                            <label>Leave Type/<br />छुट्टी का प्रकार <span style="color: red">*</span></label>
                             <select class="form-select select2" data-val="true" data-val-required="Field is required." id="LeaveTypeId" name="LeaveTypeId">
                                 <option value="">Select</option>
                                 <option value="4">4-Earned Leave</option>
@@ -93,23 +129,25 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="UserId">First Level Approval Officer / HM Pricipal</label><span style="color: red;">*</span>
+                            <label class="control-label" for="UserId">First Level Approval Officer HM Pricipal/<br />प्रथम स्तर अनुमोदन अधिकारी  एच.एम प्रिंसिपल <span style="color: red;">*</span></label>
                             <select class="form-select select2" data-val="true" data-val-required="Field is required." id="UserId" name="UserId">
                                 <option value="">Select</option>
                             </select>
                             <span class="text-danger field-validation-valid" data-valmsg-for="UserId" data-valmsg-replace="true"></span>
                         </div>
-                    </div>
+                    </div></div>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="LeaveLimit">Enter First Approver Leave Limit</label><span style="color: red;">*</span>
+                            <label class="control-label" for="LeaveLimit">Enter First Approver Leave Limit/<br />प्रथम अनुमोदक अवकाश सीमा दर्ज करें <span style="color: red;">*</span></label>
                             <input autocomplete="off" class="form-control number" placeholder="Enter Leave Limit" type="text" data-val="true" data-val-number="The field Enter First Approver Leave Limit must be a number." data-val-required="Field is required." id="LeaveLimit" name="LeaveLimit" value="" />
                             <span class="text-danger field-validation-valid" data-valmsg-for="LeaveLimit" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="SecondUserId">Second Level Approval Officer / Sankul Pricipal</label><span style="color: red;">*</span>
+                            <label class="control-label" for="SecondUserId">Second Level Approval Officer / Sankul Pricipal/<br />द्वितीय स्तर अनुमोदन अधिकारी/संकुल प्राचार्य
+<span style="color: red;">*</span></label>
                             <select class="form-select select2" data-val="true" data-val-required="Field is required." id="SecondUserId" name="SecondUserId">
                                 <option value="">Select</option>
                             </select>
@@ -118,14 +156,14 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="SecondLeaveLimit">Enter Second Approver Leave Limit</label><span style="color: red;">*</span>
+                            <label class="control-label" for="SecondLeaveLimit">Enter Second Approver Leave Limit/<br />दूसरा अनुमोदनकर्ता अवकाश सीमा दर्ज करें<span style="color: red;">*</span></label>
                             <input autocomplete="off" class="form-control number" placeholder="Enter Leave Limit" type="text" data-val="true" data-val-number="The field Enter Second Approver Leave Limit must be a number." data-val-required="Field is required." id="SecondLeaveLimit" name="SecondLeaveLimit" value="" />
                             <span class="text-danger field-validation-valid" data-valmsg-for="SecondLeaveLimit" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="ThirdUserId">Third Level Approval Officer / DEO</label>
+                            <label class="control-label" for="ThirdUserId">Third Level Approval Officer / DEO/<br />तृतीय स्तर अनुमोदन अधिकारी/डी.ई.ओ<span style="color: red;">*</span></label>
                             <select class="form-select select2" data-val="true" id="ThirdUserId" name="ThirdUserId">
                                 <option value="">Select</option>
                                 <option value="32256">32256-Tej Bali Soni (DEO)</option>
@@ -134,17 +172,18 @@
                             </select>
                             <span class="text-danger field-validation-valid" data-valmsg-for="ThirdUserId" data-valmsg-replace="true"></span>
                         </div>
-                    </div>
+                    </div></div>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="ThirdLeaveLimit">Enter Third Approver Leave Limit</label>
+                            <label class="control-label" for="ThirdLeaveLimit">Enter Third Approver Leave Limit/<br />तृतीय अनुमोदक अवकाश सीमा दर्ज करें<span style="color: red;">*</span></label>
                             <input autocomplete="off" class="form-control number" placeholder="Enter Leave Limit" type="text" data-val="true" data-val-number="The field Enter Third Approver Leave Limit must be a number." id="ThirdLeaveLimit" name="ThirdLeaveLimit" value="" />
                             <span class="text-danger field-validation-valid" data-valmsg-for="ThirdLeaveLimit" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="FourthUserId">Fourth Level Approval Officer / CPI</label>
+                            <label class="control-label" for="FourthUserId">Fourth Level Approval Officer CPI/<br />चतुर्थ स्तरीय अनुमोदन अधिकारी/सीपीआई<span style="color: red;">*</span></label>
                             <select class="form-select select2" data-val="true" id="FourthUserId" name="FourthUserId">
                                 <option value="">Select</option>
                                 <option value="284263">284263-Vimala  Sharma (CPI)</option>
@@ -156,40 +195,42 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="control-label" for="FourthLeaveLimit">Enter Fourth Approver Leave Limit</label>
+                            <label class="control-label" for="FourthLeaveLimit">Enter Fourth Approver Leave Limit/<br />चतुर्थ अनुमोदक अवकाश सीमा दर्ज करें<span style="color: red;">*</span></label>
                             <input autocomplete="off" class="form-control number" placeholder="Enter Leave Limit" type="text" data-val="true" data-val-number="The field Enter Fourth Approver Leave Limit must be a number." id="FourthLeaveLimit" name="FourthLeaveLimit" value="" />
                             <span class="text-danger field-validation-valid" data-valmsg-for="FourthLeaveLimit" data-valmsg-replace="true"></span>
                         </div>
                     </div>
-                    <div class="col-md-3 mt-4">
+                    <hr />
+                    <br />
+                <div class="col-md-12">
+     <div class="form-group">
+         <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+         <a href="Mst_DepartmentWiseLeaveApproval.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+     </div>
+ </div>
+              <%--      <div class="col-md-3 mt-4">
                         <div class="form-group">
                             <button type="button" class=" Alert-Save btn btn-success btn-rounded">Save</button>
                             <a href="Mst_DepartmentWiseLeaveApproval.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
             <fieldset >
                 <legend>Leave Details</legend>
-                <div class="row justify-content-end">
-
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+              <div class="row justify-content-end">
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+    </div>  <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table">
@@ -244,6 +285,7 @@
                     </div>
                 </div>
             </fieldset>
+                  </div>
             <!--Description-->
           <%--  <fieldset id="dcp" runat="server">
                 <legend>Description</legend>
@@ -317,7 +359,7 @@
             </fieldset>--%>
             <!-- End Description -->
         </div>
-    </div>
+    </div></div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>

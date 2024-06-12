@@ -38,8 +38,8 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">Leave Type Master<br />
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Leave Type Master/
                                 लीव टाइप मास्टर</h4>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Carry Forward /<br />
+                                    <label>Leave Carry Forward /<br />छुट्टी आगे बढ़ाएँ
                                         <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -85,7 +85,8 @@
                                         <option value="12">No</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div></div>
+                         <div class="row align-items-end">
                             <div class="col-md-3  ">
                                 <div class="form-group ml-3 ">
                                     <input class="form-check-input" type="checkbox" />
@@ -93,15 +94,22 @@
                                         <label>Impact On Earning & Deduction/<br />
                                             अर्निंग और कटौती पर प्रभाव<span style="color: red">*</span></label></span>
                                 </div>
-                            </div>
+                            </div></div>
                             <hr />
-                            <div class="col-md-12 ">
+                             <div class="col-md-12">
+     <div class="form-group">
+         <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+         <a href="Mst_LeaveType.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+     </div>
+ </div>
+
+                           <%-- <div class="col-md-12 ">
                                 <div class="form-group">
                                     <button type="button" class=" Alert-Save btn btn-outline-success btn-border w-lg">Save</button>
                                     <a href="Mst_LeaveType.aspx" class=" btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                     </fieldset>
                     <fieldset id="show">
                         <legend>Leave Details / अवकाश विवरण</legend>

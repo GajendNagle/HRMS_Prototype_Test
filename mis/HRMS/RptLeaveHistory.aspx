@@ -19,7 +19,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+   <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Leave History</h4>
         </div>
@@ -37,13 +37,47 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+                        <div class="row">
+    <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Leave Process</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Leave History</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Leave History/
+                           छुट्टी  का इतिहास </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
             <fieldset>
-                <legend>Leave History</legend>
+                <legend>Leave History/ छुट्टी  का इतिहास</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year/<br />वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -53,7 +87,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type/<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Principal Secretary</option>
@@ -74,7 +108,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Dsesignation Type<span style="color: red">*</span></label>
+                            <label>Dsesignation Type/<br />पदनाम का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Clerical">Clerical</option>
@@ -88,7 +122,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name/ID<span style="color: red">*</span></label>
+                            <label>Employee Name/ID/<br />कर्मचारी का नाम/आई.डी<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Krishna Tiwari - 38938</option>
@@ -96,34 +130,41 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    </DIV>
+                    <hr />
+                
+                                  <div class="row justify-content-center">
+
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button" onclick="showhide()"  class="Alert-Save btn w-lg btn-success btn-border">Search</button>
+        <a href="RptLeaveHistory.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div></div>
+               
+                   <%-- <div class="col-md-3">
                         <div class="form-group">
                             <button type="button" onclick="showhide()" class=" Alert-Save btn btn-success btn-rounded">Search</button>
                             <a href="RptLeaveHistory.aspx" class=" btn  btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>
-                </div>
+                </div>--%>
             </fieldset>
             <fieldset id="show">
                 <legend>Details</legend>
-                <div class="row justify-content-end">
-
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
+                                           <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group"> 
+        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -249,6 +290,7 @@
             </fieldset>
             <!-- End Description -->
         </div>
+    </div></div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

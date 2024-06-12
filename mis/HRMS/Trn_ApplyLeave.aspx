@@ -5,10 +5,51 @@
         #show {
             display: none;
         }
+         textarea {
+     resize: vertical;
+     min-height: 40px; /* Set a minimum height */
+ }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <div class="row">
+    <div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Leave Process</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Apply Leave</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Leave Type Master/
+                            लीव टाइप मास्टर</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+
+
+
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Apply Leave</h4>
         </div>
@@ -26,14 +67,14 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
             <fieldset>
-                <legend>Apply Leave</legend>
-                <div class="row">
+                <legend>Apply Leave/ छुट्टी के आवेदन करना</legend>
+                <div class="row align-items-end">
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Leave Type<span style="color: red">*</span></label>
+                            <label>Leave Type/<br />छुट्टी प्रकार <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Casual Leave</option>
@@ -48,7 +89,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year/<br />
+वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -62,19 +104,21 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Date<span style="color: red">*</span></label>
+                            <label>From Date/<br />तिथि से<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Date<span style="color: red">*</span></label>
+                            <label>To Date/<br /> तिथि तक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
+                    </div>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Leave Approval Authority<span style="color: red">*</span></label>
+                            <label>Leave Approval Authority/<br />अवकाश अनुमोदन प्राधिकारी<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Ashutosh Sharma - 11265</option>
@@ -83,51 +127,52 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Attach Supporting Document</label>
+                            <label>Attach Supporting Document/<br />सहायक दस्तावेज़ संलग्न करें</label>
                             <input type="file" name="name" class="form-control" value="" />
-                            <span style="color: red; font-size: 12px;">Only JPEG/PNG/JPG/PDF/DOC/DOCX Formats are allowed.
-Maximum Allowed Filesize (2MB)</span>
+                            <%--<span style="color: red; font-size: 12px;">Only JPEG/PNG/JPG/PDF/DOC/DOCX Formats are allowed.
+Maximum Allowed Filesize (2MB)</span>--%>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Reason of Leave<span style="color: red">*</span></label>
-                            <textarea rows="3" class="form-control" placeholder=""></textarea>
+                            <label>Reason of Leave/<br />छुट्टी का कारण<span style="color: red">*</span></label>
+                            <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
                         </div>
                     </div>
 
                 </div>
+                <hr />
                 <div class="row justify-content-center">
 
-
-                    <div class="col-md-3 ">
+                      <div class="col-md-12">
+      <div class="form-group">
+          <button type="button" class="Alert-Save btn w-lg btn-success btn-border">Save</button>
+          <a href="Trn_ApplyLeave.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+      </div>
+  </div>
+                  <%--  <div class="col-md-3 ">
                         <div class="form-group">
                             <button type="button" class=" Alert-Save btn btn-success btn-rounded">Apply for Leave</button>
                             <a href="Trn_ApplyLeave.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
             <fieldset id="show">
-                <legend>Leave Details</legend>
-                <div class="row justify-content-end">
-
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
+                <legend>Leave Details/छुट्टी का विवरण </legend>
+               <div class="row justify-content-end">
+      <div class="col-md-4 text-end">
+          <div class="form-group">
+              <button class="btn btn-info btn-rounded w-55">Excel</button>
+              <button class="btn btn-info btn-rounded w-55">PDF</button>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="form-group"> 
+              <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+          </div>
+      </div>
+      </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -236,6 +281,8 @@ Maximum Allowed Filesize (2MB)</span>
                 </div>
             </fieldset>
             <!-- End Description -->
+        </div>
+    </div>
         </div>
     </div>
 </asp:Content>
@@ -354,6 +401,10 @@ Maximum Allowed Filesize (2MB)</span>
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
+      <script>function autoResize(textarea) {
+              textarea.style.height = 'auto'; // Reset height to auto
+              textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
+          }</script>
 </asp:Content>
 
 
