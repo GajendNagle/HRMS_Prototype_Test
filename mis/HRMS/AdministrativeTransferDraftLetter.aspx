@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <nav class="navbar navbar-expand-lg topbar ">
+                    <%--<nav class="navbar navbar-expand-lg topbar ">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,7 +115,7 @@
                     </nav>
 
                     <br />
-                    <br />
+                    <br />--%>
                     <fieldset>
                         <legend>Print Draft Letter or Update / ड्राफ्ट लेटर प्रिंट करें या अपडेट करें</legend>
                         <div class="row align-items-end">

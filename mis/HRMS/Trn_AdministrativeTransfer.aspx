@@ -28,8 +28,18 @@
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4 class="card-title">About Administrative Level Transfer <br /> प्रशासनिक स्तर पर स्थानांतरण के बारे में
+<br />
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card-body">
-                    <nav class="navbar navbar-expand-lg topbar ">
+                    <%--<nav class="navbar navbar-expand-lg topbar ">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +75,7 @@
                         </div>
                     </nav>
                     <br />
-                    <br />
+                    <br />--%>
                     <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;प्रशासनिक स्थानांतरण दिशानिर्देश:-</h4>
 
                     <div>
