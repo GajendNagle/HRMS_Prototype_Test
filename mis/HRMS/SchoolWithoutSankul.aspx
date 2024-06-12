@@ -3,38 +3,52 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+      <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
 
-    <div class="container-fluid">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">School Without Sankul</h4>
-
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
-                        <li class="breadcrumb-item active">School Without Sankul</li>
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        <li class="breadcrumb-item">School Reports</li>
                     </ol>
                 </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+    <div class="container-fluid">
+        <div class="row page-titles mb-4">
+            <div class="col-md-5 align-self-center">
+                <h4 class="text-themecolor ">School Without Sankul/संकुल विहीन विद्यालय</h4>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                 <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">School Without Sankul/संकुल विहीन विद्यालय
+                    </h4>
+                </div>
+            </div>
             </div>
             <div class="card-body">
 
                 <fieldset>
 
-                    <legend>School Without Sankul</legend>
+                    <legend>School Without Sankul/संकुल विहीन विद्यालय</legend>
 
-                    <div class="row">
+                    <div class="row align-items-end">
 
                         <div class="col-md-3">
-                            <label class="font-bold">Division Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator5"
                                 ErrorMessage="Select School Name" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>"
                                 ControlToValidate="ddlDivision" Display="Dynamic" runat="server">
@@ -48,7 +62,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label class="font-bold">District Name<span style="color: red">*</span></label>
+                            <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
                                 ErrorMessage="Select School Name" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>"
                                 ControlToValidate="ddlDistrict" Display="Dynamic" runat="server">
@@ -61,7 +75,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label class="font-bold">Block Name</label>
+                            <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें</label>
                             <asp:DropDownList runat="server" ID="ddlBlock" CssClass="form-control select2 mt-2">
                                 <asp:ListItem>--Select--</asp:ListItem>
 
@@ -70,7 +84,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label class="font-bold">Management Group</label>
+                            <label class="font-bold">Select Management Group/प्रबंधन समूह चुनें</label>
                             <asp:DropDownList runat="server" ID="ddMGt" CssClass="form-control select2 mt-2" OnSelectedIndexChanged="ddMGt_SelectedIndexChanged" AutoPostBack="true">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Central Government</asp:ListItem>
@@ -87,7 +101,7 @@
                     <div class="row mt-4">
 
                         <div class="col-md-3">
-                            <label class="font-bold">Management Group Details</label>
+                            <label class="font-bold">Select Management Group Details/प्रबंधन समूह विवरण चुनें</label>
                             <asp:DropDownList runat="server" ID="ddlMgtGroupD" CssClass="form-control select2 mt-2">
                                 <asp:ListItem>--Select--</asp:ListItem>
 
@@ -96,7 +110,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label class="font-bold">Category</label>
+                            <label class="font-bold">Select Category/श्रेणी चुनना</label>
                             <asp:DropDownList runat="server" ID="ddlCategory" CssClass="form-control select2 mt-2" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Primary School</asp:ListItem>
@@ -106,7 +120,7 @@
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">Category Detail</label>
+                            <label class="font-bold">Select Category Detail/श्रेणी विवरण चुनें</label>
                             <asp:DropDownList runat="server" ID="ddlCategoryDetail" CssClass="form-control select2 mt-2">
                                 <asp:ListItem>--Select--</asp:ListItem>
 
@@ -115,7 +129,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label class="font-bold">School Dise Code</label>
+                            <label class="font-bold">Select School Dise Code/स्कूल डीआईएसई कोड का चयन करें</label>
                             <asp:DropDownList runat="server" ID="ddlSchoolDise" CssClass="form-control select2 mt-2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>23320400117-GOVT HSS AHAMDABAD</asp:ListItem>
@@ -136,16 +150,16 @@
                         <div class="col-4"></div>
                         <div class="col-md-4">
                             <div class="form-group text-center">
-                                <asp:Button runat="server" Text="Search" CssClass="btn btn-success  btn-rounded" OnClick="Unnamed_Click" />
+                                <asp:Button runat="server" Text="Search" CssClass="btn w-lg btn-outline-success btn-border" OnClick="Unnamed_Click" />
 
-                                <a href="SchoolWithoutSankul.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                <a href="SchoolWithoutSankul.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                             </div>
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset runat="server" id="Schoolreport" visible="false">
-                    <legend>Details</legend>
+                    <legend>Details/विवरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -160,15 +174,15 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-12">
                             <div class=" table-responsive">
                                 <table class="table table-bordered text-center" id="districtD">
                                     <thead>
                                         <tr>
-                                            <th>S.NO.</th>
-                                            <th>District Name</th>
-                                            <th>School No.</th>
+                                            <th>S.NO./क्र.सं</th>
+                                            <th>District Name/जिले का नाम</th>
+                                            <th>School No./स्कूल नं.</th>
 
                                         </tr>
                                     </thead>
@@ -192,9 +206,9 @@
                                     <tbody>
                                     <thead>
                                         <tr>
-                                            <th>S.No</th>
-                                            <th>Block Name</th>
-                                            <th>School No.</th>
+                                          <th>S.NO./क्र.सं</th>
+                                            <th>Block Name/ब्लॉक का नाम</th>
+                                            <th>School No./स्कूल नं.</th>
                                         </tr>
                                     </thead>
                                     <tr>
@@ -213,9 +227,9 @@
 
                                     <thead>
                                         <tr>
-                                            <th>S.No</th>
-                                            <th>Block Name</th>
-                                            <th>School No.</th>
+                                            <th>S.NO./क्र.सं</th>
+                                            <th>Block Name/ब्लॉक का नाम</th>
+                                            <th>School No./स्कूल नं.</th>
                                         </tr>
                                     </thead>
                                     <tr>
@@ -235,12 +249,12 @@
                                 <table class="table table-bordered text-center" style="display: none;" id="SclDetail">
                                     <thead>
                                         <tr>
-                                            <th>S.NO.</th>
-                                            <th>School Dise/School Name</th>
-                                            <th>Management Group</th>
-                                            <th>Management Detail</th>
-                                            <th>Category</th>
-                                            <th>Category Detail</th>
+                                            <th>S.NO./क्र.सं</th>
+                                            <th>School Dise/School Name/स्कूल का नाम/स्कूल का नाम</th>
+                                            <th>Management Group/प्रबंधन समूह</th>
+                                            <th>Management Detail/प्रबंधन विवरण</th>
+                                            <th>Category/वर्ग</th>
+                                            <th>Category Detail/श्रेणी विवरण</th>
                                         </tr>
                                     </thead>
 
@@ -257,12 +271,12 @@
                                 <table class="table table-bordered text-center" style="display: none;" id="RaisenSclD">
                                     <thead>
                                         <tr>
-                                            <th>S.NO.</th>
-                                            <th>School Dise Code/School Name</th>
-                                            <th>Management Group</th>
-                                            <th>Management Detail</th>
-                                            <th>Category</th>
-                                            <th>Category Detail</th>
+                                             <th>S.NO./क्र.सं</th>
+                                            <th>School Dise Code/School Name/स्कूल डीआईएसई कोड/स्कूल का नाम</th>
+                                            <th>Management Group/प्रबंधन समूह</th>
+                                            <th>Management Detail/प्रबंधन विवरण</th>
+                                            <th>Category/वर्ग</th>
+                                            <th>Category Detail/श्रेणी विवरण</th>
                                         </tr>
                                     </thead>
 
@@ -280,12 +294,12 @@
                                 <table class="table table-bordered text-center" style="display: none;" id="GairatganjD">
                                     <thead>
                                         <tr>
-                                            <th>S.NO.</th>
-                                            <th>School Dise Code/School Name</th>
-                                            <th>Management Group</th>
-                                            <th>Management Detail</th>
-                                            <th>Category</th>
-                                            <th>Category Detail</th>
+                                           <th>S.NO./क्र.सं</th>
+                                            <th>School Dise Code/School Name/स्कूल डीआईएसई कोड/स्कूल का नाम</th>
+                                            <th>Management Group/प्रबंधन समूह</th>
+                                            <th>Management Detail/प्रबंधन विवरण</th>
+                                            <th>Category/वर्ग</th>
+                                            <th>Category Detail/श्रेणी विवरण</th>
                                         </tr>
                                     </thead>
 

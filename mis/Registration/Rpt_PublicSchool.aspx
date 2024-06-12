@@ -6,7 +6,7 @@
     <link href="../dist/css/bootstrap-select.css" rel="stylesheet" />
     <link href="../dist/css/multi-select.css" rel="stylesheet" />
     <link href="../dist/css/select2.min.css" rel="stylesheet" />
-    <link href="../dist/css/site.css" rel="stylesheet" />
+    <%--<link href="../dist/css/site.css" rel="stylesheet" />--%>
     <style>
         @media print {
             .noprint {
@@ -26,37 +26,46 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">School Summary Report</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
-                        <li class="breadcrumb-item active">School Summary Report</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        <li class="breadcrumb-item">School Reports</li>
+                          <li class="breadcrumb-item ">School Summary Report</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+        <div class="card">
+            <div class="card-header">
+                 <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">School Summary Report/स्कूल सारांश रिपोर्ट
+                    </h4>
+                </div>
+            </div>
             </div>
             <div class="card-body">
                 <div runat="server">
                     <fieldset>
-                        <legend>School Summary Report</legend>
-                        <div class="row">
+                        <legend>School Summary Report/स्कूल सारांश रिपोर्ट</legend>
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Division <span style="color: red">*</span></label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Division /प्रभाग का चयन करें<span style="color: red">*</span></label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Gwalior">Gwalior</option>
                                         <option value="Narmadapuram">Narmadapuram</option>
@@ -72,9 +81,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>District</label><span style="color: red">*</span>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select District/जिला चुनें</label><span style="color: red">*</span>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Raisen">Raisen</option>
                                         <option value="Rajgarh">Rajgarh</option>
@@ -130,9 +139,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Block</label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Block/ब्लॉक चुनें</label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="Agar">Agar</option>
                                         <option value="Barod">Barod</option>
                                         <option value="Nalkheda">Nalkheda</option>
@@ -152,9 +161,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Board Type</label>
-                                    <select class="form-control select2">
-                                        <option value=" All">All</option>
+                                    <label>Select Board Type/बोर्ड प्रकार का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value=" All">Select</option>
                                         <option value="1-CBSE">1-CBSE</option>
                                         <option value="2-State Board">2-State Board</option>
                                         <option value="3-ICSE ">3-ICSE </option>
@@ -164,9 +173,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>School Type</label>
-                                    <select class="form-control select2">
-                                        <option value=" All">All</option>
+                                    <label>Select School Type/स्कूल का प्रकार चुनें</label>
+                                    <select class="form-control">
+                                        <option value=" All">Select</option>
                                         <option value="1-Boy">1-Boy</option>
                                         <option value="2-Girls">2-Girls</option>
                                         <option value="3-Co-Ed">3-Co-Ed</option>
@@ -175,9 +184,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>School Category</label>
-                                    <select class="form-control select2">
-                                        <option value=" All">All</option>
+                                    <label>Select School Category/स्कूल श्रेणी का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value=" All">Select</option>
                                         <option value="1-Primary">1-Primary</option>
                                         <option value="2-Upper Primary">2-Upper Primary</option>
                                         <option value="3-Higher Secondary">3-Higher Secondary</option>
@@ -187,9 +196,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>School Category Details</label>
-                                    <select class="form-control select2">
-                                        <option value=" All">All</option>
+                                    <label>Select School Category Details/स्कूल श्रेणी विवरण का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value=" All">Select</option>
                                         <option value="1-Primary only with grades 1 to 5 (PRY)">1-Primary only with grades 1 to 5 (PRY)</option>
                                         <option value="2-Upper Primary with grades 1 to 8 (PRY-UPR) ">2-Upper Primary with grades 1 to 8 (PRY-UPR) </option>
                                         <option value="3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)">3-Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</option>
@@ -200,9 +209,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Management Group</label>
-                                    <select class="form-control select2">
-                                        <option value=" All">All</option>
+                                    <label>Select Management Group/प्रबंधन समूह का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value=" All">Select</option>
                                         <option value="A-State Govt">A-State Govt</option>
                                         <option value="B-Govt Aided">B-Govt Aided</option>
                                         <option value="C-Private UnAided ">C-Private UnAided </option>
@@ -213,9 +222,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Management Group Details</label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Management Group Details/प्रबंधन समूह विवरण चुनें</label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="1-Department of Education (SED)">1-Department of Education (SED)</option>
                                         <option value="2-Tribal Welfare Department (TWD)">2-Tribal Welfare Department (TWD)</option>
                                         <option value="3-Local Body ">3-Local Body </option>
@@ -227,9 +236,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>School Medium</label>
-                                    <select class="form-control select2" data-live-search="true">
-                                        <option value="0">All</option>
+                                    <label>Select School Medium/स्कूल माध्यम का चयन करें</label>
+                                    <select class="form-control" data-live-search="true">
+                                        <option value="0">Select</option>
                                         <option value="19">19-English</option>
                                         <option value="04">04-Hindi</option>
                                         <option value="18">18-Urdu</option>
@@ -240,9 +249,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Sankul Name</label>
-                                    <asp:DropDownList runat="server" CssClass="form-control select2">
-                                        <asp:ListItem>All</asp:ListItem>
+                                    <label>Select Sankul Name/संकुल नाम का चयन करें</label>
+                                    <asp:DropDownList runat="server" CssClass="form-control">
+                                        <asp:ListItem>Select</asp:ListItem>
                                         <asp:ListItem>AKBARPUR GOVT. HS</asp:ListItem>
                                         <asp:ListItem>BERASIA (BOYS) GOVT.HSS</asp:ListItem>
                                         <asp:ListItem>DHAMARRA GOVT. HS</asp:ListItem>
@@ -258,9 +267,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Parliament</label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Parliament/संसद का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Rajgarh">Rajgarh</option>
                                         <option value="Vidisha">Vidisha</option>
@@ -295,9 +304,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Assembly </label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Assembly /विधानसभा का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="Govindpura">Govindpura</option>
                                         <option value="Huzur">Huzur</option>
                                     </select>
@@ -305,9 +314,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Location </label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Location /स्थान चुनें</label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="1-Urban">1-Urban</option>
                                         <option value="2-Rural">2-Rural</option>
                                     </select>
@@ -315,8 +324,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Nagar Nigam</label>
-                                    <select class="form-control select2">
+                                    <label>Select Nagar Nigam/नगर निगम का चयन करें</label>
+                                    <select class="form-control">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Indore">Indore</option>
@@ -334,8 +343,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Nagar Palika</label>
-                                    <select class="form-control select2">
+                                    <label>Select Nagar Palika/नगर पालिका का चयन करें</label>
+                                    <select class="form-control">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Berasia">Berasia</option>
@@ -353,8 +362,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Zila Panchayat</label>
-                                    <select class="form-control select2">
+                                    <label>Select Zila Panchayat/जिला पंचायत का चयन करें</label>
+                                    <select class="form-control">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Berasia">Berasia</option>
                                         <option value="Phanda">Phanda</option>
@@ -368,8 +377,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Janpad Panchayat</label>
-                                    <select class="form-control select2">
+                                    <label>Select Janpad Panchayat/जनपद पंचायत का चयन करें</label>
+                                    <select class="form-control">
                                         <option value="--Select--">--Select--</option>
                                         <option value="BARODI">BARODI</option>
                                         <option value="DEPALPUR ">DEPALPUR </option>
@@ -383,9 +392,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Gram Panchayat</label>
-                                    <select class="form-control select2">
-                                        <option value="All">All</option>
+                                    <label>Select Gram Panchayat/ग्राम पंचायत का चयन करें</label>
+                                    <select class="form-control">
+                                        <option value="All">Select</option>
                                         <option value="AMARPUR">AMARPUR</option>
                                         <option value="ANKIA">ANKIA</option>
                                         <option value="ARJUNKHEDI">ARJUNKHEDI</option>
@@ -404,8 +413,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Village</label>
-                                    <select class="form-control select2">
+                                    <label>Select Village/गांव का चयन करें</label>
+                                    <select class="form-control">
                                         <option value="--Select--">--Select--</option>
                                         <option value="BARODI">BARODI</option>
                                         <option value="Agra">Agra</option>
@@ -420,8 +429,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Habitation </label>
-                                    <select class="form-control select2">
+                                    <label>Select Habitation/आवास का चयन करें </label>
+                                    <select class="form-control">
                                         <option value="All">All</option>
                                         <option value="Berasia">Berasia</option>
                                     </select>
@@ -429,8 +438,8 @@
                             </div>
                             <div class="col-md-4 mt-4">
                                 <div class="form-group">
-                                    <button type="button" class="Alert-Download btn btn-success btn-rounded">Download</button>
-                                    <a href="Rpt_PublicSchool.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                    <button type="button" class="Alert-Download btn w-lg btn-outline-success btn-border">Download</button>
+                                    <a href="Rpt_PublicSchool.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -471,7 +480,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 

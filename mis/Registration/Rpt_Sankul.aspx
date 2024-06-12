@@ -42,7 +42,7 @@
 
                 <div class="row form-group align-items-end">
                     <div class="col-md-3">
-                        <label class="font-bold">Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
+                        <label>Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -57,7 +57,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
+                        <label >Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -113,7 +113,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें<span style="color: red">*</span></label>
+                        <label>Select Block Name/ ब्लॉक का नाम चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Agar</asp:ListItem>
@@ -133,17 +133,15 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                    
-                            <label class="font-bold">From Date/की तिथि से</label>
-                            <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
+                            <label>From Date/की तिथि से</label>
                             <input type="date" class="form-control" placeholder="17/11/2023" />
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">To Date/तारीख तक</label>
+                        <label>To Date/तारीख तक</label>
                         <input type="date" class="form-control" placeholder="17/11/2023" />
-                    </div>
-                    <div class="col-md-6 mt-5">
-                            <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
+                    </div><hr />
+                    <div class="col-md-12">
+                            <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-border" OnClick="View1_Click" runat="server" Text="Search" />
                             <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>
                 </div>
@@ -163,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered">
@@ -268,7 +266,7 @@
                                         </div>
                                         <!-- /.modal -->
                                         <%--<asp:Button runat="server" Text="View" CssClass="btn btn-info btn-rounded" /></td>--%>
-                                        <asp:LinkButton ID="btndata1" runat="server" CssClass="btn w-lg btn-outline-success btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">View Detail</asp:LinkButton>
+                                        <asp:LinkButton ID="btndata1" runat="server" CssClass="btn w-lg btn-outline-success btn-border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">View Detail</asp:LinkButton>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -279,7 +277,7 @@
                                     <td>23328546454</td>
                                     <td>04</td>
                                     <td>
-                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn w-lg btn-outline-success btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">View Detail</asp:LinkButton></td>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn w-lg btn-outline-success btn-border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">View Detail</asp:LinkButton></td>
                                 </tr>
 
                             </table>

@@ -5,108 +5,122 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
 
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">School Report Card</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=Reports" title="click to go on">Reports</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=SchoolReports" title="click to go on">School Reports</a></li>
-                        <li class="breadcrumb-item active">School Report Card</li>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        <li class="breadcrumb-item">School Reports</li>
                     </ol>
                 </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+        <div class="row page-titles mb-4">
+            <div class="col-md-5 align-self-center">
+                <h4 class="text-themecolor ">School Report Card/स्कूल रिपोर्ट कार्ड</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                 <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">School Report Card/स्कूल रिपोर्ट कार्ड
+                    </h4>
+                </div>
+            </div>
             </div>
             <div class="card-body">
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-6">
-                        <label class="font-weight-bold">DISE Code<span style="color: red">*</span></label>
+                        <label>DISE Code/डीआईएसई कोड<span style="color: red">*</span></label>
                         <input type="text" class="form-control" placeholder="23510817802" />
                     </div>
                     <div class="col-md-6">
-                        <label class="font-weight-bold">Confirm DISE Code<span style="color: red">*</span></label>
+                        <label>Confirm DISE Code/डीआईएसई कोड की पुष्टि करें<span style="color: red">*</span></label>
                         <input type="text" class="form-control" placeholder="23510817802" />
                     </div>
                 </div>
                 <div class="row text-center">
                     <div class="col-12 mt-4">
                         <div class="form-group">
-                            <asp:Button runat="server" CssClass="btn btn-success btn-rounded" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
+                            <asp:Button runat="server" CssClass="btn w-lg btn-outline-success btn-border" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
                         </div>
                     </div>
                 </div>
                 <div class="row form-group" id="dv_rpt" runat="server">
-                    <div class="row mt-2">
+                    <div class="row align-items-end">
                         <div class="col-md-4">
-                            <label class="font-weight-bold">District Name<span style="color: red">*</span></label>
+                            <label> District Name/ जिले का नाम <span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control">Bhopal</asp:TextBox>
                         </div>
                         <div class="col-md-4">
-                            <label class="font-weight-bold">Block Name<span style="color: red">*</span></label>
+                            <label> Block Name/ ब्लॉक का नाम <span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control">Berasia</asp:TextBox>
                         </div>
                         <div class="col-md-4">
-                            <label class="font-bold">
-                                Management Group<span style="color: red">*</span>
+                            <label>
+                                Management Group/प्रबंधन समूह<span style="color: red">*</span>
                             </label>
 
-                            <asp:TextBox runat="server" CssClass="form-control">Central Government</asp:TextBox>
+                            <asp:TextBox runat="server" CssClass="form-control">Central Government/केंद्र सरकार</asp:TextBox>
                         </div>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-md-4">
-                            <label class="font-bold">
-                                Management Details<span style="color: red">*</span>
+                    <div class="row align-items-end">
+                        <div class="col-md-3">
+                            <label>
+                                Management Details/प्रबंधन विवरण<span style="color: red">*</span>
                             </label>
                             <%--<asp:DropDownList ID="ddlMngmntGrpDtls" runat="server" CssClass="form-control select2">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                             </asp:DropDownList>--%>
                             <asp:TextBox runat="server" CssClass="form-control">Jawahar Navodaya Vidyalaya</asp:TextBox>
                         </div>
-                        <div class="col-md-4">
-                            <label class="font-weight-bold">Cateogry<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label>Cateogry/वर्ग<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control">Primary to Higher Secondary School</asp:TextBox>
                         </div>
-                        <div class="col-md-4">
-                            <label class="font-weight-bold">Cateogry Details<span style="color: red">*</span></label>
+                        <div class="col-md-3">
+                            <label>Cateogry Details/श्रेणी विवरण<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control">Class 1 to 12</asp:TextBox>
                         </div>
-                        <div class="row ms-1 mt-2">
+                        <div class="row ms-1 mt-2 align-items-end">
                             <div class="col-md-4">
-                                <label class="font-weight-bold">Urban/Rural<span style="color: red">*</span></label>
+                                <label>Urban/Rural/शहरी ग्रामीण<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control">Urban</asp:TextBox>
                             </div>
                             <div class="col-md-4">
-                                <label class="font-weight-bold">Special School<span style="color: red">*</span></label>
+                                <label>Special School/विशेष विद्यालय<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control">Yes</asp:TextBox>
                             </div>
                             <div class="col-md-4">
-                                <label class="font-weight-bold">School-Dise<span style="color: red">*</span></label>
+                                <label>School-Dise/स्कूल-डीआईएसई<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control">JNV-23510817802</asp:TextBox>
                             </div>
                         </div>
                         <div runat="server" class="mt-4" id="divTables" visible="false">
                             <fieldset>
-                                <legend>Enrollments in the Current Year</legend>
+                                <legend>Enrollments in the Current Year/करंट वर्ष में नामांकन</legend>
                                 <%--<h5 class="fw-normal">Enrollments in Current Year</h5>--%>
-                                <div class="row">
+                                <div class="row align-items-end">
                                     <div class="col-md-12">
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <tr class="card-header text-center">
-                                                    <th>Sr. No.</th>
-                                                    <th>1st - 5th</th>
-                                                    <th>6th - 10th</th>
-                                                    <th>9th - 10th</th>
-                                                    <th>11th - 12th</th>
+                                                    <th>Sr. No./क्र.सं</th>
+                                                    <th>1st - 5th/पहली-पांचवीं</th>
+                                                    <th>6th - 10th/छठी-दसवीं </th>
+                                                    <th>9th - 10th/9वीं-10वीं</th>
+                                                    <th>11th - 12th/11वीं-12वीं</th>
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
@@ -138,21 +152,21 @@
 
 
                             <fieldset class="mt-5">
-                                <legend>Active Employees Status</legend>
+                                <legend>Active Employees Status/सक्रिय कर्मचारी स्थिति</legend>
                                 <%--                        <h5 class="fw-normal">Active Employees Panel</h5>--%>
-                                <div class="row">
+                                <div class="row align-items-end">
                                     <div class="col-md-12">
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <tr class="card-header">
-                                                    <th>Sr. No.</th>
-                                                    <th>Employee</th>
-                                                    <th>Name</th>
-                                                    <th>Present Posting Date</th>
-                                                    <th>Designation</th>
-                                                    <th>Panel</th>
-                                                    <th>Subject</th>
-                                                    <th>Status</th>
+                                                    <th>Sr. No./क्र.सं</th>
+                                                    <th>Employee/कर्मचारी</th>
+                                                    <th>Name/नाम</th>
+                                                    <th>Present Posting Date/वर्तमान पोस्टिंग तिथि</th>
+                                                    <th>Designation/पद</th>
+                                                    <th>Panel/पैनल</th>
+                                                    <th>Subject/विषय</th>
+                                                    <th>Status/स्थिति</th>
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
@@ -364,20 +378,20 @@
 
 
                             <fieldset class="mt-5">
-                                <legend>Vacancy Status in School</legend>
-                                <div class="row">
+                                <legend>Vacancy Status in School/विद्यालय में रिक्ति की स्थिति</legend>
+                                <div class="row align-items-end">
                                     <div class="col-md-12">
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <tr class="card-header">
-                                                    <th>Sr. No.</th>
-                                                    <th>Panel</th>
-                                                    <th>Post Code</th>
-                                                    <th>Sanctioned Posts</th>
-                                                    <th>Working</th>
-                                                    <th>Vacant</th>
-                                                    <th>Surplus</th>
-                                                    <th>Remarks</th>
+                                                    <th>Sr. No./क्र.सं</th>
+                                                    <th>Panel/पैनल</th>
+                                                    <th>Post Code/पोस्ट कोड</th>
+                                                    <th>Sanctioned Posts/स्वीकृत पद</th>
+                                                    <th>Working/कार्यरत</th>
+                                                    <th>Vacant/रिक्त</th>
+                                                    <th>Surplus/आधिक्य</th>
+                                                    <th>Remarks/टिप्पणी</th>
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
@@ -610,26 +624,26 @@
 
 
                             <fieldset class="mt-5">
-                                <legend>Employee History</legend>
+                                <legend>Employee History/कर्मचारी इतिहास</legend>
                                 <%--                        <h5 class="fw-normal">Total Employees in School</h5>--%>
-                                <div class="row">
+                                <div class="row align-items-end">
                                     <div class="col-md-12">
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <tr class="card-header">
-                                                    <th>Sr. No.</th>
-                                                    <th>Employee Code</th>
-                                                    <th>Employee Name</th>
-                                                    <th>Designation</th>
-                                                    <th>Panel</th>
-                                                    <th>Present Posting Date</th>
-                                                    <th>DOB</th>
-                                                    <th>Age</th>
-                                                    <th>Stop Payment Reason Code</th>
-                                                    <th>Stop Payment Reason</th>
-                                                    <th>Stop By</th>
-                                                    <th>Status</th>
-                                                    <th>Remark</th>
+                                                    <th>Sr. No./क्र.सं</th>
+                                                    <th>Employee Code/कर्मचारी कोड</th>
+                                                    <th>Employee Name/कर्मचारी का नाम</th>
+                                                    <th>Designation/पद </th>
+                                                    <th>Panel/पैनल</th>
+                                                    <th>Present Posting Date/वर्तमान पोस्टिंग तिथि</th>
+                                                    <th>DOB/जन्म तिथि</th>
+                                                    <th>Age/आयु</th>
+                                                    <th>Stop Payment Reason Code/भुगतान रोकें कारण कोड</th>
+                                                    <th>Stop Payment Reason/भुगतान रोकने का कारण</th>
+                                                    <th>Stop By/द्वारा रोका</th>
+                                                    <th>Status/स्थिति</th>
+                                                    <th>Remark/टिप्पणी</th>
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
@@ -822,7 +836,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
