@@ -34,7 +34,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <h4 class="card-title">District Wise Counting Report /<br />
-                                    जिला वार सांख्यिकी रिपोर्ट<br />
+                                    जिला वार सांख्यिकी रिपोर्ट
                                 </h4>
                             </div>
                         </div>

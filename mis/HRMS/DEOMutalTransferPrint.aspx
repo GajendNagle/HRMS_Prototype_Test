@@ -85,10 +85,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <%--<div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
@@ -117,41 +113,10 @@
         <div class="card-header card-border-info">
         </div>--%>
                 <div class="card-body">
-                    <%--<nav class="navbar navbar-expand-lg topbar ">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#"></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                    <li class="nav-item dropdown ">
-                                        <a class="nav-link  text-white " href="../Transaction/DEO_TransferApproval.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                        <li class="nav-item dropdown ">
-                                            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Mutal Transfer Approval</b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="../HRMS/DEOMutalTransferApprove.aspx">Mutual Transfer Approve</a></li>
-
-                                                <li><a class="dropdown-item" href="../HRMS/DEOMutalTransferPrint.aspx">Mutual Transfer Print</a></li>
-
-
-                                            </ul>
-                                        </li>
-
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </nav>
-                    <br />
-                    <br />--%>
                     <fieldset>
                         <legend>Mutual Transfer Print / पारस्परिक ट्रांसफर प्रिंट
                         </legend>
                         <div class="row">
-
-
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -161,7 +126,6 @@
                                     <input class="form-control" placeholder="Enter Employee Unique-Id " />
                                 </div>
                             </div>
-
                             <hr />
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -170,9 +134,7 @@
                                 </div>
                             </div>
                         </div>
-
                     </fieldset>
-
                     <fieldset id="vacaniesDetail" style="display: none;">
                         <legend>Detail / विवरण</legend>
                         <div class="row justify-content-end">
@@ -216,7 +178,7 @@
                                                 नवीन पदस्थापना का जिला</th>
                                             <th>Order Print /<br />
                                                 आदेश प्रिंट   </th>
-                                            </tr>
+                                        </tr>
                                         <tr>
                                             <td>09/03/2024</td>
                                             <td>BT921</td>
@@ -244,24 +206,9 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </fieldset>
-                    <%--      <div class="row" id="btnprint" style="display: none;">
-               <div class="col-md-12 text-center">
-
-                   <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Approve</button>
-
-               </div>
-
-
-
-           </div>--%>
                 </div>
-
             </div>
-
             <%--adesg--%>
             <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
@@ -303,15 +250,11 @@
                                                     <h4 class="text-center mt-4 mb-4 font-bold"><u>:: आदेश ::</u></h4>
 
                                                     <p class="text-center">मध्यप्रदेश शासन स्कूल शिक्षा विभाग के परिपत्र 01-09/2022/20-1 दिनांक 08/09/2022 के द्वारा स्कूल शिक्षा विभाग अंतर्गत कार्यरत अमले के स्थानान्तरण हेतु निर्धारित नीति के तहत निस्रांकित लोक सेवक को उनके नाम के मम्मुख तालिका के कॉलम क्रमांक 7 एवं 8 में अंकित संस्था एवं जिले में समान सामर्थ्य एवं वेतनमान में स्थानान्तरित कर अस्थायी रूप से आगामी आदेश तक पदस्थ किया जाता है।</p>
-
                                                 </div>
-
                                                 <div class="row">
-
                                                     <div class="col-md-12">
                                                         <div class="table-responsive">
                                                             <table class="table">
-
                                                                 <tr>
                                                                     <th>सरल क्र.</th>
                                                                     <th>यूनिक आई.डी</th>
@@ -327,7 +270,6 @@
                                                                     <td>BT7956</td>
                                                                     <td>Arjun Talwar<br />
                                                                         Prathmik Shikshak</td>
-
                                                                     <td>Hindi</td>
                                                                     <td>(2327100059) Modal Public School BISTAN</td>
                                                                     <td>Bhopal</td>
@@ -347,13 +289,10 @@
                                                                     <td>Bhopal</td>
                                                                 </tr>
                                                             </table>
-
                                                         </div>
-
                                                     </div>
                                                     <div>
                                                         <h3>उक्त स्थानांतरण निम्न शर्तों के अधीन रहेगाः-   </h3>
-
                                                         <p class="font-16 font-bold">
                                                             01. संबंधित लोक सेवकः का स्थानान्तरण आदेश जारी होने पर उनकी ई-मेबा पुस्तिका /सेवा पुस्तिका से स्थानान्तरण आदेश में उल्लेखित जानकारी का मिलान करने के उपरांत सही पाये जाने पर ही कार्य मुक्त किया जाए, इसका संपूर्ण उत्तरदायित्व संबंधित संकुल प्राचार्य<br />
                                                             02. स्थानान्तरित भोक मेवक, नवीन जिले के जिला शिक्षा अधिकारी कार्यालय में उपस्थित होने के उपरांत अगले कार्यदिवस पर स्थानान्तरित संग्धा में कार्यभार ग्रहण करेगा तथा इसकी लिखित सूचना संकुल केन्द्र के माध्यम से विकास खण्ड शिक्षा अधिकारी एवं जिला शिक्षा अधिकारी को देना सुनिश्चित करेगा।<br />
@@ -362,19 +301,12 @@
                                                             05. यदि संबंधित लोक सेवक अध्यापक संवर्ग का है तथा स्कूल शिक्षा विभाग के अंतर्गत नवीन संवर्ग में नियुक्ति नहीं हुई है, ऐसी स्थिति में यह आदेश म्बनः ही निरस्त माना आयेगा |<br />
                                                             06. सम्बंधित लोक मेवक जनजातीय कार्य विभाग द्वारा संचालित शाला में कार्यरत हैं, तो उनका स्थानान्तरण स्कूल शिक्षा विभाग में मान्य नहीं होगा तथा यह आदेश स्वतः ही निरस्त माना जायेगा |<br />
                                                             07. कार्यमुक्त होने के पश्चात एवं नवीन पदस्थापना पर कार्यभार ग्रहण करने के मध्य की अवधि के किसी भी प्रकार का अवकाश प्रशासकीय विभाग के माध्यम से सामान्य प्रशासन विभाग का अभिमत प्राप्त करने के पश्चात ही स्वीकृत किया जा सकेगा |<br />
-
                                                         </p>
-
-
                                                         <table style="width: 100%;">
-
                                                             <tr>
-
-
                                                                 <td class="text-end font-16 ">(शिल्पा गुप्ता)<br />
                                                                     <span class="text-center ">आयुक्त<br />
                                                                     </span>
-
                                                                     लोक शिक्षण, मध्यप्रदेश
                                                                 </td>
                                                             </tr>
@@ -386,48 +318,27 @@
                                                                     Reason :<br />
                                                                     Location:
                                                                 </td>
-
-
                                                             </tr>
-
-
                                                         </table>
-
                                                     </div>
-
-
                                                 </div>
-
-
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-
                             </fieldset>
                             <div class="modal-footer text-center">
-
                                 <button type="button" class="btn btn-outline-success w-lg btn-border" onclick="window.print()">Print</button>
                                 <button type="button" class="btn btn-outline-warning w-lg btn-border" data-bs-dismiss="modal">Close</button>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
-
-
-
     <script>
         function myFunction() {
-
             document.getElementById("vacaniesDetail").style.display = "block";
             document.getElementById("generateorder").style.display = "block";
         }
