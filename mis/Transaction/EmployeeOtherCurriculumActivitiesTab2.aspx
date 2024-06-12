@@ -40,9 +40,17 @@
     </div>
     <div class="card card-border-primary">
         <%-- <div class="card-header">
-    </div>--%>
+    </div>--%>            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="card-title">National/State Level Award <br /> राष्ट्रीय/राज्य स्तर के पुरस्कार<br />
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
+            <%--<nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,19 +58,6 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-                            <%--                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                  
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
-
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                               
-                                </ul>
-                            </li>--%>
                             <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesNotw.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                             <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivities.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तरीय प्रशिक्षण</b></a>
                             &nbsp; <i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i><a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab2.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तर के पुरस्कार</b></a>
@@ -73,7 +68,7 @@
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
             <fieldset>
                 <legend>National/State Level Awards / राष्ट्रीय/राज्य स्तर के पुरस्कार
                 </legend>

@@ -61,56 +61,51 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Print Cancel Order<br />
-                प्रिंट रद्द आदेश </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Transfer" title="click to go on">Transfer</a></li>
-                    <li class="breadcrumb-item"><a href="Trn_CancleTransferOrderApplication.aspx" title="click to go on">Cancel Transfer Order</a></li>
-                    <li class="breadcrumb-item active">Canceled Transfer Order Print</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#CancelTransferOrder" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Cancel Transfer Order</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Print Canceled Transfer Order </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Print Canceled Transfer Order /
+ रद्द किए गए स्थानांतरण आदेश को प्रिंट करें</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <a class="nav-link  text-white " href="Trn_CancleTransferOrderApplication.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            <a class="nav-link  text-white " href="Trn_CancelTransferOrder.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                Cancel Transfer Order</b></a>
-                            <a class="nav-link  text-white " href="CanceledTransferOrderPrint.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Print Cancel Transfer Order</b></a>
-                            <a class="nav-link  text-white " href="Rpt_CancelTransfer.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-
 
             <fieldset>
-                <legend>Cancel Order Detail / रद्द स्थानांतरण आदेश</legend>
-                <div class="row">
+                <legend>Cancel Order Detail / आदेश विवरण रद्द करें</legend>
+                <div class="row align-items-end">
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Choose an option / एक विकल्प चुनें<span style="color: red">*</span></label>
-                            <select id="dropdown" onchange="showTextBox()" class="form-control">
+                            <label>
+                                Choose an option /<br />
+                                एक विकल्प का चयन करें<span style="color: red">*</span></label>
+                            <select id="dropdown" onchange="showTextBox()" class="form-control select2">
                                 <option value="Select">Select</option>
                                 <option value="Order No">Order No.</option>
                                 <option value="Employee ID">Employee-ID </option>
@@ -119,44 +114,46 @@
                     </div>
                     <div class="col-md-3" id="orderNoInput" style="display: none;">
                         <div class="form-group">
-                            <label>Order No. / आदेश संख्या<span style="color: red">*</span></label>
+                            <label>
+                                Enter Order No. /<br />
+                                आदेश संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Order No.">
                         </div>
                     </div>
                     <div class="col-md-3" id="employeeIDInput" style="display: none;">
                         <div class="form-group">
-                            <label>Employee-ID / कर्मचारी आई <span style="color: red">*</span> </label>
+                            <label>
+                                Enter Employee-ID /<br />
+                                कर्मचारी आई दर्ज करें<span style="color: red">*</span>
+                            </label>
                             <input type="text" class="form-control" placeholder="Enter Employee-ID">
                         </div>
                     </div>
-
-                    <div class="col-md-3 mt-4">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group ">
-                            <button type="button" onclick="HideShow()" class=" btn btn-success btn-rounded ">Search</button>
-                            <a href="CanceledTransferOrderPrint.aspx" class=" btn btn-danger btn-rounded">Clear</a>
+                            <button type="button" onclick="HideShow()" class=" btn btn-success btn w-lg btn-border ">Search</button>
+                            <a href="CanceledTransferOrderPrint.aspx" class=" btn btn-outline-danger btn w-lg btn-border">Clear</a>
                         </div>
-                        <%--</div>--%>
                     </div>
-                    <div class="row">
-                    </div>
+                </div>
+
             </fieldset>
 
             <fieldset id="ShowOrders">
-                <legend>Detail</legend>
+                <legend>Detail / विवरण</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-2">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
@@ -164,13 +161,13 @@
                     <div class="table-responsive">
                         <table class="table table-bordered text-center">
                             <tr class="card-header">
-                                <th>Sr.No.<br />
+                                <th>Sr.No. /<br />
                                     सरल क्र.</th>
-                                <th>Cancel Order No.<br />
-                                    आदेश संख्या </th>
-                                <th>Date Of Cancellation<br />
+                                <th>Cancel Order No. /<br />
+                                    आदेश संख्या रद्द करें</th>
+                                <th>Date Of Cancellation /<br />
                                     रद्दीकरण का दिनांक </th>
-                                <th>Generate Cancel Order<br />
+                                <th>Generate Cancel Order /<br />
                                     रद्द आदेश जनरेट करें</th>
                             </tr>
                             <tr>
@@ -263,7 +260,7 @@
                                                         <tr>
                                                             <td>BB1530</td>
                                                             <td>Arvindra Varma Prathmik Shikshak</td>
-                                                            <th>-- </th>
+                                                            <td>-- </td>
                                                             <td>GMS NO.1 KHANJYADHANA (1 To 8)[23060530301]</td>
                                                             <td>Shivpuri</td>
                                                             <td>GPS AGARRA (1 TO 5)  [23060600901]</td>

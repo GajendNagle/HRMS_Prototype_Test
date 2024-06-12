@@ -39,10 +39,23 @@
         </div>
     </div>
     <div class="card card-border-primary">
-       <%-- <div class="card-header">
+        <%-- <div class="card-header">
         </div>--%>
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="card-title">National/State Level Training
+                        <br />
+                        राष्ट्रीय/राज्य स्तरीय प्रशिक्षण
+                    </h4>
+                </div>
+            </div>
+        </div>
+
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
+
+
+            <%--<nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,18 +64,6 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                            <%--                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold">Voluntary Transfer Application</b></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ApplyVoluntaryTransfer.aspx">Apply Voluntary Transfer</a></li>
-                                  
-                                    <li><a class="dropdown-item" href="VoluntaryTransfer_PrintDraftApplicationOrDelete.aspx">Print Draft Application or Update
-
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="VoluntaryTransferLock_Applicatin.aspx">Lock Application</a></li>
-                               
-                                </ul>
-                            </li>--%>
                             <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesNotw.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
                             <a class="nav-link  text-white " href="EmployeeOtherCurriculumActivities.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तरीय प्रशिक्षण</b></a>
                             &nbsp; <i class="fa fa-circle text-white" style="font-size: 7px; margin-top: 17px;"></i><a class="nav-link  text-white " href="EmployeeOtherCurriculumActivitiesTab2.aspx" role="button"><b class="font-16 font-bold">राष्ट्रीय/राज्य स्तर के पुरस्कार</b></a>
@@ -73,7 +74,7 @@
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
             <fieldset>
                 <legend>National/State Level Training
                     <br />
@@ -82,7 +83,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Uniq Id /
+                            <label>
+                                Employee Uniq Id /
                                 <br />
                                 कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                             <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
@@ -136,17 +138,23 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>क्या आप राष्ट्रीय/राज्य स्तरीय प्रशिक्षण/राज्य स्तरीय समूह में शामिल हैं  <br />Are You Involved in National/State Level Training/State Level Group</legend>
+                    <legend>क्या आप राष्ट्रीय/राज्य स्तरीय प्रशिक्षण/राज्य स्तरीय समूह में शामिल हैं 
+                        <br />
+                        Are You Involved in National/State Level Training/State Level Group</legend>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive table-bordered">
                                 <table class="table text-center">
                                     <tbody>
                                         <tr>
-                                            <th>Sr. No. /<br />सरल क्र.</th>
-                                            <th>Source Group Area /<br />स्त्रोत समूह क्षेत्र</th>
-                                            <th>National Level Working Day /<br />राष्ट्रीय स्तर पर कार्य दिवस</th>
-                                            <th>State Level Working Day /<br />राज्य स्तर पर कार्य दिवस</th>
+                                            <th>Sr. No. /<br />
+                                                सरल क्र.</th>
+                                            <th>Source Group Area /<br />
+                                                स्त्रोत समूह क्षेत्र</th>
+                                            <th>National Level Working Day /<br />
+                                                राष्ट्रीय स्तर पर कार्य दिवस</th>
+                                            <th>State Level Working Day /<br />
+                                                राज्य स्तर पर कार्य दिवस</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
