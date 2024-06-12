@@ -35,10 +35,8 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">Mutual Transfer Approval
-                                <br />
-                                पारस्परिक स्थानांतरण अनुमोदन<br />
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Mutual Transfer Approval / पारस्परिक स्थानांतरण अनुमोदन<br />
                             </h4>
                         </div>
                     </div>
@@ -76,7 +74,7 @@
         <div class="card-header card-border-info">
         </div>--%>
                 <div class="card-body">
-                    <nav class="navbar navbar-expand-lg topbar ">
+                    <%--<nav class="navbar navbar-expand-lg topbar ">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,9 +96,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </nav>
-                    <br />
-                    <br />
+                    </nav>--%>
+                   
                     <fieldset>
                         <legend>Mutual Transfer Final Approval / पारस्परिक स्थानांतरण का  अंतिम अनुमोदन</legend>
                         <div class="row">
@@ -175,7 +172,7 @@
                                             <td>Bhapal</td>
                                             <td>(233201023)Girls Pachore(Class 1 to 12)</td>
                                             <td>Rajgarh</td>
-                                            <td rowspan="2" class="text-center"><a class="btn btn-warning" href="../Document/MutalTransfer.pdf" target="_blank">View</a></td>
+                                            <td rowspan="2" class="text-center"><a class="btn btn-warning mt-4" href="../Document/MutalTransfer.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>09/03/2024</td>
@@ -227,9 +224,8 @@
                                         </div>
                                     </fieldset>
                                     <div class="modal-footer text-center">
-                                        <%--             <button type="button" class=" Alert-Save btn btn-success btn-rounded Alert-Save " onclick="myFunction()">Approve</button>--%>
-                                        <button type="button" class="btn btn-outline-success btn-border" data-bs-dismiss="modal">Submit</button>
-                                        <button type="button" class="btn btn-warning btn-border" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-success btn-border w-lg" data-bs-dismiss="modal">Submit</button>
+                                        <button type="button" class="btn btn-outline-warning btn-border w-lg" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>

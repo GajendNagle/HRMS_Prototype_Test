@@ -117,7 +117,7 @@
         <div class="card-header card-border-info">
         </div>--%>
                 <div class="card-body">
-                    <nav class="navbar navbar-expand-lg topbar ">
+                    <%--<nav class="navbar navbar-expand-lg topbar ">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,7 +145,7 @@
                         </div>
                     </nav>
                     <br />
-                    <br />
+                    <br />--%>
                     <fieldset>
                         <legend>Mutual Transfer Print / पारस्परिक ट्रांसफर प्रिंट
                         </legend>
@@ -227,7 +227,7 @@
                                             <td>(233201023)Girls Pachore(Class 1 to 12)</td>
                                             <td>Rajgarh</td>
                                             <td rowspan="2" class="text-center">
-                                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Print</button></td>
+                                                <button type="button" class="btn btn-warning mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Print</button></td>
                                         </tr>
                                         <tr>
                                             <td>09/03/2024</td>
@@ -408,8 +408,8 @@
                             </fieldset>
                             <div class="modal-footer text-center">
 
-                                <button type="button" class="btn btn-outline-success btn-border" onclick="window.print()">Print</button>
-                                <button type="button" class="btn btn-warning btn-border" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-success w-lg btn-border" onclick="window.print()">Print</button>
+                                <button type="button" class="btn btn-outline-warning w-lg btn-border" data-bs-dismiss="modal">Close</button>
 
                             </div>
                         </div>
