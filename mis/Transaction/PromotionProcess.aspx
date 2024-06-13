@@ -43,7 +43,7 @@
                 <fieldset>
                     <legend>Employee Promotion / कर्मचारी का पदोन्नति
                     </legend>
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Promotion with Transfer<br />स्थानांतरण के साथ पदोन्नति<span style="color: red">*</span></label>
@@ -73,7 +73,7 @@
                 <div id="div1">
                     <fieldset>
                         <legend>CURRENT PAYSCALE / वर्तमान वेतनमान</legend>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Designation / पद<span style="color: red">*</span></label>
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Level / स्तर<span style="color: red">*</span></label>
@@ -158,7 +158,7 @@
                 <div id="div2">
                     <fieldset>
                         <legend>NEW PROMOTION DETAILS / नई पदोन्नति विवरण</legend>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Class / श्रेणी<span style="color: red">*</span></label>
@@ -248,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Pay Commission / वेतन आयोग<span style="color: red">*</span></label>
@@ -333,7 +333,7 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row align-items-end">
 
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -347,7 +347,7 @@
                         <div id="div3">
                             <fieldset>
                                 <legend>Select Transfer Location / स्थानांतरण स्थान का चयन करें </legend>
-                                <div class="row">
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Division / संभाग<span style="color: red">*</span></label>
@@ -420,7 +420,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>School / विद्यालय<span style="color: red">*</span></label>
