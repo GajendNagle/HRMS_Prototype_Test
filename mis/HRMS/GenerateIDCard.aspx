@@ -73,31 +73,80 @@
             font-weight: 500;
             line-height: normal;
         }
+
         .form-control {
-    height: -26px;
-    margin: 2px;
-}
+            height: -26px;
+            margin: 2px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles">
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/IDCARD.png" style="height: 90px" title="Employee ID Card Management System"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item active">Print Employee ID Card </li>
-                </ol>
+
+    <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>Employee ID Card Missing Details Report</span></a>
+                      </li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+    <%--<div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>Print Employee ID Card</span></a>
+                      </li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>--%>
+    <div class="col-md-5 " style="position: relative; bottom: 30px; right: 25px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
+            <img src="../../img/IDCARD.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
+
+   
+    <div class="card">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Print Employee ID Card/
+                    कर्मचारी आई.डी कार्ड प्रिंट करें
+                    </h5>
+                </div>
             </div>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-lg topbar">
+
+        <div class="card-body">
+             <nav class="navbar navbar-expand-lg topbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,9 +179,6 @@
         </div>
     </nav>
     <br />
-    <div class="card mt-3 shadow">
-
-        <div class="card-body">
             <div>
                 <div class="row mt-2">
                     <div class="col-md-3">
@@ -146,14 +192,14 @@
                     </div>
                 </div>
                 <fieldset>
-                    <legend>Print Employee Details</legend>
+                    <legend>Print Employee Details/कर्मचारी विवरण प्रिंट करें</legend>
                     <div class="row justify-content-end">
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <button class="btn btn-info btn-rounded w-100">Excel</button>
                             </div>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <button class="btn btn-info btn-rounded w-100">PDF</button>
                             </div>
@@ -164,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-lg-12" runat="server" id="dvStudentDetails">
                             <div class="row" id="idCard">
                                 <div class="col-lg-12">
@@ -245,16 +291,16 @@
                                                         <input type="date" class="form-control" style="height: 9px;" value="2024-06-03">
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto">
-                                                        <input type="date" class="form-control" value="2028-06-03"/>
+                                                        <input type="date" class="form-control" value="2028-06-03" />
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature2.png" alt="Image" style="width: 50px; height: 50px;">
                                                     </td>
                                                     <td align="center" valign="middle">
-                                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Print</button>
+                                                        <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Print</button>
                                                     </td>
                                                 </tr>
-                                                <tr id="row3">
+                                                <tr id="row3 align-items-end">
                                                     <td align="center" valign="middle">
                                                         <img src="../../img/112.png" alt="Image" style="width: 50px; height: 50px;" id="photo">
                                                     </td>
@@ -262,7 +308,7 @@
                                                         <a class="tabledata">Rahul Yadav</a>
                                                     </td>
                                                     <td align="center" valign="middle" id="employeeCode">
-                                                        <Span class="tabledata">AI3333</Span>
+                                                        <span class="tabledata">AI3333</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="fname">
                                                         <span class="tabledata">Mr. Bulbul Yadav</span>
@@ -287,18 +333,18 @@
                                                         <span class="tabledata">18/2 Patel<br />
                                                             Nagar Rajkot</span>
                                                     </td>
-                                                    <td align="center" valign="middle" id="validfrom3" >
-                                                        <input type="date" class="form-control" value="2022-01-01"/>
+                                                    <td align="center" valign="middle" id="validfrom3">
+                                                        <input type="date" class="form-control" value="2022-01-01" />
                                                     </td>
-                                                    <td align="center" valign="middle" id="validupto3" >
+                                                    <td align="center" valign="middle" id="validupto3">
                                                         <input type="date" class="form-control" value="2028-06-03" />
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature3.jpg" alt="Image" style="width: 50px; height: 50px;">
                                                     </td>
                                                     <td align="center" valign="middle">
-                                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Print</button>
-                                                       
+                                                        <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Print</button>
+
                                                     </td>
                                                 </tr>
                                                 <tr id="row3">
@@ -335,17 +381,17 @@
                                                             Devri, MP</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom2">
-                                                        <input type="date" class="form-control" value="2024-01-02"/>
+                                                        <input type="date" class="form-control" value="2024-01-02" />
                                                     </td>
-                                                    <td align="center" valign="middle" id="validupto2" >
-                                                        <input type="date" class="form-control" value="2028-06-03"/>
+                                                    <td align="center" valign="middle" id="validupto2">
+                                                        <input type="date" class="form-control" value="2028-06-03" />
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature4.jpg" alt="Image" style="width: 50px; height: 50px;">
                                                     </td>
                                                     <td align="center" valign="middle">
                                                         <br />
-                                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Print</button>
+                                                        <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Print</button>
 
                                                     </td>
                                                 </tr>
@@ -387,7 +433,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn btn-outline-danger w-lg btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <style>
@@ -640,8 +686,8 @@
                                     </div>
                                 </fieldset>
                                 <div class="modal-footer text-center">
-                                    <button type="button" class=" btn btn-success" onclick="window.print()">Print</button>
-                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class=" btn btn-success w-lg btn-border" onclick="window.print()">Print</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border btn-warning" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -651,7 +697,7 @@
                     <div class="modal-dialog ">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn btn-outline-danger w-lg btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <fieldset class="lh-1">
@@ -764,8 +810,8 @@
                                     </div>
                                 </fieldset>
                                 <div class="modal-footer text-center">
-                                    <button type="button" class=" btn btn-success" onclick="window.print()">Print</button>
-                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class=" btn btn-success w-lg btn-border" onclick="window.print()">Print</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -776,7 +822,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn btn-outline-danger w-lg btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
 
@@ -891,8 +937,8 @@ Devri, MP</span></td>
                                     </div>
                                 </fieldset>
                                 <div class="modal-footer text-center">
-                                    <button type="button" class=" btn btn-success" onclick="window.print()">Print</button>
-                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class=" btn btn-success w-lg btn-border" onclick="window.print()">Print</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border btn-warning" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -950,11 +996,11 @@ Devri, MP</span></td>
                 printWindow.close();
             }
 
-    </script>
+        </script>
 
 
     </div>
-    </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

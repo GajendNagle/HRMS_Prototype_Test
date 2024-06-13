@@ -3,25 +3,45 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-    <div class="row page-titles">
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/IDCARD.png" style="height: 90px" title="Employee ID Card Missing Details Report"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item active">Employee ID Card Missing Details Report</li>
-                </ol>
+    <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>Employee ID Card Missing Details Report</span></a>
+                      </li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+    <%--  <div class="row page-titles mb-4">--%>
+      <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
+          <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
+              <img src="../../img/IDCARD.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+              </u>
+          </p>
+          </div>
+    
+   
+    <div class="card">
+        <div class="card-header">
+             <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Employee ID Card Missing Details Report/
+                    कर्मचारी आईडी कार्ड गुम विवरण रिपोर्ट
+                    </h5>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="card shadow">
-        <div class="card-header card-border-info">
         </div>
         <div class="card-body">
             <nav class="navbar navbar-expand-lg topbar">
@@ -69,14 +89,14 @@
             </div>
 
              <fieldset>
-                <legend>Employee Missing Details</legend>
+                <legend>Employee Missing Details/कर्मचारी का गुम विवरण</legend>
                  <div class="row justify-content-end">
-                    <div class="col-md-1">
+                    <div class="col-md-2">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-100">Excel</button>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-2">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-100">PDF</button>
                         </div>
@@ -87,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
 
                     <div class="col-lg-12" runat="server" id="dvStudentDetails">
                         <div class="row">
