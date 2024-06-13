@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_SchoolDetail.aspx.cs" Inherits="mis_Transaction_Rpt_SchoolDetail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        th{
+            white-space:nowrap;
+
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -120,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div runat="server" class="mt-4" id="divTables" visible="false">
+                <div runat="server" class="mt-4 col-12" id="divTables" visible="false">
                     <fieldset>
                         <legend>Enrollments in the Current Year/करंट वर्ष में नामांकन</legend>
                         <%--<h5 class="fw-normal">Enrollments in Current Year</h5>--%>
@@ -128,13 +134,14 @@
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
+                                        <thead>
                                         <tr class="card-header text-center">
                                             <th>Sr. No./क्र.सं</th>
                                             <th>1st - 5th/पहली-पांचवीं</th>
                                             <th>6th - 10th/छठी-दसवीं </th>
                                             <th>9th - 10th/9वीं-10वीं</th>
                                             <th>11th - 12th/11वीं-12वीं</th>
-                                        </tr>
+                                        </tr></thead>
                                         <tr>
                                             <td>1</td>
                                             <td>55</td>
@@ -435,7 +442,7 @@
                                             <td>6</td>
                                             <td>7</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">1</td>
+                                            <td style="color: #fa382b">1</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -480,7 +487,7 @@
                                             <td>9</td>
                                             <td>10</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">1</td>
+                                            <td style="color: #fa382b">1</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -491,7 +498,7 @@
                                             <td>8</td>
                                             <td>10</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">2</td>
+                                            <td style="color: #fa382b">2</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -502,7 +509,7 @@
                                             <td>9</td>
                                             <td>10</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">1</td>
+                                            <td style="color: #fa382b">1</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -524,7 +531,7 @@
                                             <td>7</td>
                                             <td>10</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">3</td>
+                                            <td style="color: #fa382b">3</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -557,7 +564,7 @@
                                             <td>11</td>
                                             <td>13</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">2</td>
+                                            <td style="color: #fa382b">2</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -580,7 +587,7 @@
                                             <td>10</td>
                                             <td>15</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">5</td>
+                                            <td style="color: #fa382b">5</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -613,7 +620,7 @@
                                             <td>8</td>
                                             <td>12</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">4</td>
+                                            <td style="color: #fa382b">4</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -624,7 +631,7 @@
                                             <td>10</td>
                                             <td>12</td>
                                             <td>0</td>
-                                            <td style="color: #fa382b" class="fw-bold fs-4">2</td>
+                                            <td style="color: #fa382b" >2</td>
                                             <td>
                                                 <input class="form-control" /></td>
                                         </tr>
@@ -860,7 +867,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
