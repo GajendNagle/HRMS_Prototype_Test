@@ -308,33 +308,6 @@ table th {
     margin-top:30px;
 }
 
-.section-title {
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-    .section-title h2 {
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 0px;
-        padding-bottom: 12px;
-        position: relative;
-        font-family: "Poppins", sans-serif;
-        color: #1b5b5c;
-    }
-
-        .section-title h2::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 70px;
-            height: 3.5px;
-            background: #e96b56;
-            bottom: 0;
-            left: calc(50% - 43px);
-        }
-
 
 
 .topbar .dropdown-menu .dropdown-item:focus {

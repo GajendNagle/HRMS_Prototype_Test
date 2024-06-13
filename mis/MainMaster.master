@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
 
     <title>SED- School Education Portal 3.0</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="SED- School Education Portal 3.0" name="description" />
     <meta content="SED" name="author" />
     <!-- App favicon -->
@@ -35,6 +35,33 @@
 
 
     <style>
+        .section-title {
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+
+            .section-title h2 {
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 0px;
+                padding-bottom: 12px;
+                position: relative;
+                font-family: "Poppins", sans-serif;
+                color: #1b5b5c;
+            }
+
+                .section-title h2::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 70px;
+                    height: 3.5px;
+                    background: #e96b56;
+                    bottom: 0;
+                    left: calc(50% - 43px);
+                }
+
         .Requiredfeedback {
             color: red;
         }
@@ -110,13 +137,13 @@
             white-space: nowrap
         }
 
-        .table tr:nth-child(even) {
-            background-color: rgba(0, 0, 0, 0.03); /* Striped rows */
-        }
+        /*.table tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.03);*/ /* Striped rows */
+        /*}
 
         .table tbody tr:hover {
-            background: rgba(0, 0, 0, 0.05); /* Hover effect */
-        }
+            background: rgba(0, 0, 0, 0.05);*/ /* Hover effect */
+        /*}
 
         .table td, .table th {
             border: 1px solid #ddd;
@@ -133,7 +160,7 @@
 
         .table thead {
             border-bottom: 2px solid #ddd;
-        }
+        }*/
 
         .card-border-primary {
             border: 1px solid var(--vz-primary);
@@ -146,7 +173,7 @@
             }
 
             .card-border-primary .card-body {
-                margin-top: 1rem;
+                /*margin-top: 1rem;*/
                 padding: 1rem;
             }
 
@@ -155,7 +182,7 @@
             content: "";
         }
 
-        .w-lg ,.btn-success{
+        .w-lg, .btn-success {
             min-width: 140px;
             font-size: large;
             font-weight: bold;
@@ -906,7 +933,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
+                                        <%--<li class="nav-item">
                                             <a href="#Increment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="Increment" data-key="t-Increment"><i class="ri-dashboard-2-line"></i>Increment</a>
                                             <div class="collapse menu-dropdown" id="Increment">
@@ -916,7 +943,7 @@
                                                     <li class="nav-item"><a href="/mis/Transaction/IncrementCancel.aspx" class="nav-link">Increment Cancel Orders</a></li>
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
 
                                         <li class="nav-item">
                                             <a href="#E-ServiceBook" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -1125,6 +1152,17 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Payroll/ArrearCalculation.aspx" class="nav-link">Arrear Calculation </a></li>
                                                     <li class="nav-item"><a href="/mis/Payroll/ArrearFinalSubmission.aspx" class="nav-link">Arrear Final Submission </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Increment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Increment" data-key="t-Increment"><i class="ri-dashboard-2-line"></i>Increment</a>
+                                            <div class="collapse menu-dropdown" id="Increment">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/IncrementProcess.aspx" class="nav-link">Increment Process</a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/IncrementOrders.aspx" class="nav-link">Increment Order</a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/IncrementCancel.aspx" class="nav-link">Increment Cancel Orders</a></li>
                                                 </ul>
                                             </div>
                                         </li>

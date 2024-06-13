@@ -60,13 +60,13 @@
     </div>
 
     <%--  <div class="row page-titles mb-4">--%>
-    <div class="col-md-5 align-self-center">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-            <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
-    </div>
-
+   <%--  <div class="row page-titles mb-4">--%>
+  <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
+      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
+          <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+          </u>
+      </p>
+      </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">

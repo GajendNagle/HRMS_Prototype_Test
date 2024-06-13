@@ -49,7 +49,7 @@ function loadCharts() {
     s = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min; a.push({ x: o, y: s }), r++ } return a } (e = getChartColorsArray("audiences_metrics_charts")) &&
         (e = {
             series: [{ name: "Total Upcoming Retirements", data: [105, 38, 22, 48, 98, 34, 15, 68, 110, 98, 78, 140] },
-            { name: "Total Retired", data: [105, 38, 22, 15, 0, 0, 0, 0, 0, 0, 0, 0] }],
+            { name: "Total Retired", data: [70, 38, 22, 15, 15, 7, 6, 12, 7, 45, 9, 5] }],
             chart: { type: "bar", height: 309, stacked: !0, toolbar: { show: !1 } },
             plotOptions: { bar: { horizontal: !1, columnWidth: "20%", borderRadius: 6 } },
             dataLabels: { enabled: !1 }, legend: {
@@ -66,10 +66,14 @@ function loadCharts() {
         "" != audiencesMetricsCharts && audiencesMetricsCharts.destroy(),
             (audiencesMetricsCharts = new ApexCharts(document.querySelector("#audiences_metrics_charts"), e)).render());
     var r; (e = getChartColorsArray("audiences-sessions-country-charts")) && (r = {
-        series: [{ name: "Sat", data: t(18, { min: 0, max: 90 }) },
-        { name: "Fri", data: t(18, { min: 0, max: 90 }) }, { name: "Thu", data: t(18, { min: 0, max: 90 }) },
-        { name: "Wed", data: t(18, { min: 0, max: 90 }) }, { name: "Tue", data: t(18, { min: 0, max: 90 }) },
-        { name: "Mon", data: t(18, { min: 0, max: 90 }) }, { name: "Sun", data: t(18, { min: 0, max: 90 }) }],
+        series: [
+            { name: "Sat", data: t(18, { min: 0, max: 90 }) },
+            { name: "Fri", data: t(18, { min: 0, max: 90 }) },
+            { name: "Thu", data: t(18, { min: 0, max: 90 }) },
+            { name: "Wed", data: t(18, { min: 0, max: 90 }) },
+            { name: "Tue", data: t(18, { min: 0, max: 90 }) },
+            { name: "Mon", data: t(18, { min: 0, max: 90 }) },
+            { name: "Sun", data: t(18, { min: 0, max: 90 }) }],
         chart: { height: 400, type: "heatmap", offsetX: 0, offsetY: -8, toolbar: { show: !1 } },
         plotOptions: { heatmap: { colorScale: { ranges: [{ from: 0, to: 50, color: e[0] }, { from: 51, to: 100, color: e[1] }] } } },
         dataLabels: { enabled: !1 }, legend: {

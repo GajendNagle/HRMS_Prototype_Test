@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_ServiceBookSearchReport.aspx.cs" Inherits="mis_HRMS_Rpt_ServiceBookSearchReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_ServiceBookSearchReport.aspx.cs" Inherits="mis_HRMS_Rpt_ServiceBookSearchReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
@@ -39,7 +39,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">E-Service Book Report</h4>
         </div>
@@ -54,17 +54,57 @@
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+   
+        <div class="card-header card-border-info"> 
+
+        </div>--%>
+                <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#E-ServiceBook" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>E-Service Book </span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>E-Service Book Report</span></li>
+                </ol>
+            </div>
         </div>
+    </div>
+</div>
+
+
+<%--  <div class="row page-titles mb-4">--%>
+
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="card-title">E-Service Book Report/
+
+ई-सर्विस बुक रिपोर्ट
+                </h5>
+            </div>
+        </div>
+    </div>
+
         <div class="card-body">
 
             <fieldset>
-                <legend>E-Service Book Report</legend>
-                <div class="row">
+                <legend>E-Service Book Report/
+ई-सर्विस बुक रिपोर्ट</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District<span style="color: red">*</span></label>
+                            <label>Distric/<br />ज़िलाt<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2 select2-hidden-accessible" data-select2-id="32" tabindex="-1" aria-hidden="true">
                             <option value="--Select--" data-select2-id="34">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -122,7 +162,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Department<span style="color: red">*</span></label>
+                            <label>Department/<br />विभाग<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="Bhopal">--Select--</option>
                                 <option value="Bhopal">Head Office</option>                               
@@ -146,7 +186,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Designation<span style="color: red">*</span></label>
+                            <label>Designation/<br />पद का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Additional Director">Additional Director</option>
@@ -178,7 +218,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Udice Code</label>
+                            <label>Udice Code/<br />डाइस कोड</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>59865895680</asp:ListItem>
@@ -195,16 +235,19 @@
                                 <asp:ListItem>65234265250</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                       <span class="row">
+                     <%--  <span class="row">
                             <asp:HyperLink runat="server" Text="Please check dice code if not known" NavigateUrl="https://shikshaportal.mp.gov.in/Public/Reports/StudentScholarshipStatusByDiseCode.aspx" Target="_blank"></asp:HyperLink>
-                       </span>
-                    </div>                
+                       </span>--%>
+                    </div>    
+                    </div>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Date of Joining<span style="color: red">*</span></label>
+                            <label>Date of Joining/<br />जोइनिंग दिंनाक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
+                    
                  <%--   <div class="col-md-3">
                     <div class="form-group">
                         <span class="row">
@@ -212,36 +255,44 @@
                         </span>
                     </div>
                 </div>--%>
-                    <div class="row justify-content-center">
+                     </div>
+                    <hr />
+                     <div class="row align-items-end">
+     <div class="col-md-12">
+         <div class="form-group">
+          <%--   <input type="button" value="Search" class=" btn w-lg btn-success btn-border" id="searchButton" onclick="checkDropdown(); return false;" />--%>
+               <button type="button" onclick="myFunction()" class="Alert-Save btn w-lg btn-success btn-border">Search</button>
+             <%--  <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
+             <a href="Rpt_ServiceBookSearchReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+         </div>
+     </div>
+<%--                    <div class="row justify-content-center">
                         <div class="col-md-4 text-center">
                             <div class="form-group">
                                 <button type="button" onclick="myFunction()" class="Alert-Save btn btn-success btn-rounded">Search</button>
                                 <a href="Rpt_ServiceBookSearchReport.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                             </div>
-                        </div>
+                        </div>--%>
                     </div>
-                </div>
+               
             </fieldset>
             <br />         
              <fieldset id="show" style="display:none;">                 
                  <legend>Service Book list</legend>
-                 <div class="row justify-content-end">
-                     <div class="col-md-1">
-                        <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-
+                                     <div class="row justify-content-end">
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+</div>
+                 
                          <div class="row">
                              <div class="col-md-12">
                                  <table id="tblList" class="table table-bordered table-responsive-lg text-center">
@@ -397,9 +448,13 @@
                                  </table>
                              </div>
                          </div>
-                       </div>
+                   
+    
+    
  </fieldset>
         </div>
+   
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>

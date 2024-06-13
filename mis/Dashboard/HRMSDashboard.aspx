@@ -45,7 +45,7 @@
                     <div class="single_element">
                         <div class="quick_activity">
                             <div class="row justify-content-center">
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 one">
@@ -61,7 +61,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 five">
@@ -75,7 +75,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 two">
@@ -89,7 +89,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 one">
@@ -104,7 +104,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 five">
@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 two">
@@ -134,7 +134,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 three">
                                             <h4 class="">Out Source Staff
@@ -148,7 +148,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xxl-2">
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 four">
                                             <h4 class="">Registered Guest Faculty
@@ -169,7 +169,7 @@
             <div class="section-title">
                 <h2>Staff Wise Leave Details</h2>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-right" data-aos-duration="1500">
                 <div class="card shadow ">
 
                     <div class="card-body card-body-caharts ">
@@ -179,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="fade-up" data-aos-duration="1500">
                 <div class="card shadow ">
 
                     <div class="card-body card-body-caharts ">
@@ -189,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-left" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-left" data-aos-duration="1500">
                 <div class="card shadow ">
 
                     <div class="card-body card-body-caharts ">
@@ -199,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-right" data-aos-duration="1500">
                 <div class="card shadow ">
 
                     <div class="card-body card-body-caharts ">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="fade-up" data-aos-duration="1500">
                 <div class="card shadow ">
 
                     <div class="card-body card-body-caharts ">
@@ -219,7 +219,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-left" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-left" data-aos-duration="1500">
                 <div class="card shadow ">
 
                     <div class="card-body card-body-caharts ">
@@ -257,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-left" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-left" data-aos-duration="1500">
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row">
@@ -269,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-right" data-aos-duration="1500">
                 <div class="card shadow">
 
                     <div class="card-body">
@@ -282,7 +282,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="fade-up" data-aos-duration="1500">
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row">
@@ -293,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-left" data-aos-duration="1500">
+            <div class="col-xl-6 col-xxl-4 " data-aos="flip-left" data-aos-duration="1500">
                 <div class="card shadow">
 
                     <div class="card-body">
