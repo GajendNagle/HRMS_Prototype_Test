@@ -26,7 +26,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
 
-        <div class="row page-titles mb-4">
+<%--        <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
                 <h4 class="text-themecolor ">Promotion With Transfer Order Reports<br />
                     स्थानांतरण आदेश रिपोर्ट के साथ पदोन्नति</h4>
@@ -45,31 +45,123 @@
         <div class="card mt-3 shadow">
             <div class="card-header card-border-info">
             </div>
-            <div class="card-body">
+            <div class="card-body">--%>
 
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Promotion" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Promotion</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Promotion With Transfer Order Reports</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%--  <div class="row page-titles mb-4">--%>
+
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="card-title">Promotion With Transfer Order Reports/
+     स्थानांतरण आदेश रिपोर्ट के साथ पदोन्नति
+                </h5>
+            </div>
+        </div>
+    </div>
+  <%--  <div class="card-body">
+          <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#Promotion" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>Promotion</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Promotion Hold Orders</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>--%>
+
+
+  <%--  <div class="row page-titles mb-4">--%>
+
+<%--  <div class="card card-border-primary">
+      <div class="card-header">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Promotion Hold Orders/
+              पदोन्नति होल्ड आदेश
+                  </h5>
+              </div>
+          </div>
+      </div>--%>
+      <div class="card-body">
                 <div>
                     <fieldset>
                         <legend>Promotion With Transfer Order / स्थानांतरण आदेश के साथ पदोन्नति</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>From Date / दिनांक से <span style="color: red">*</span></label>
+                                    <label>From Date /<br /> दिनांक से <span style="color: red">*</span></label>
                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>To Date / दिनांक तक <span style="color: red">*</span></label>
+                                    <label>To Date /<br /> दिनांक तक <span style="color: red">*</span></label>
                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                 </div>
-                            </div>
-                            <div class="col-md-3 mt-4">
+                            </div></div>
+                               <hr />
+   <div class="row align-items-end">
+       <div class="col-md-12">
+           <div class="form-group">
+               <%--   <input type="button" value="Search" class=" btn w-lg btn-success btn-border" id="searchButton" onclick="checkDropdown(); return false;" />--%>
+
+                 <asp:Button runat="server" class="btn w-lg btn-success btn-border" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
+                                
+             <%--  <button type="button" class=" btn w-lg btn-success btn-border" onclick="Hideshow()" validationgroup="a">Search</button>--%>
+               <a href="PromotionWithTransfer.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+           </div>
+       </div>
+
+
+
+
+
+
+                            <%--<div class="col-md-3 mt-4">
                                 <div class="form-group">
                                     <%--<button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>--%>
-                                    <asp:Button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
+                                  <%--  <asp:Button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
                                     <a href="Promotion.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                                 </div>
-                            </div>
+                            </div>--%>
                         </div>
                     </fieldset>
                 </div>
@@ -78,24 +170,19 @@
                     <fieldset>
                         <legend>Employee Details / कर्मचारी का विवरण</legend>
 
-                        <div class="row justify-content-end">
-
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                                </div>
-                            </div>
-                        </div>
+                     <div class="row justify-content-end">
+     <div class="col-md-4 text-end">
+         <div class="form-group">
+             <button class="btn btn-info btn-rounded w-55">Excel</button>
+             <button class="btn btn-info btn-rounded w-55">PDF</button>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="form-group">
+             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+         </div>
+     </div>
+ </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -281,9 +368,12 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </fieldset>
+                    
                 </div>
                 <fieldset>
+
                     <legend>Description / विवरण</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -368,6 +458,8 @@
                     </div>
                 </fieldset>
             </div>
+      </div></div>
+           
         </div>
     </div>
 </asp:Content>

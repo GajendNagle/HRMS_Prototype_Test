@@ -25,7 +25,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+<%--    <div id="dv_Masters_LocationMasters" runat="server">
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
@@ -47,7 +47,44 @@
         <div class="card mt-3 shadow">
             <div class="card-header card-border-info">
             </div>
-            <div class="card-body">
+            <div class="card-body">--%>
+        <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Promotion" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Promotion</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Promotion Order Reports</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%--  <div class="row page-titles mb-4">--%>
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Promotion Order Reports/
+              पदोन्नति आदेश रिपोर्ट
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
                 <div>
                     <fieldset>
                         <legend>Promotion Order / पदोन्नति आदेश </legend>
@@ -64,13 +101,26 @@
                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col-md-3 mt-4">
+                               <hr />
+   <div class="row align-items-end">
+       <div class="col-md-12">
+           <div class="form-group">
+                   <asp:Button runat="server" class="btn w-lg btn-success btn-border" OnClick="btnSearch_Click" Text="Search" ID="Button1" />
+               <a href="Promotion.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+           </div>
+       </div>
+
+
+
+
+
+                            <%--<div class="col-md-3 mt-4">
                                 <div class="form-group">
                                     <%--<button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>--%>
-                                    <asp:Button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
+                                   <%-- <asp:Button runat="server" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text="Search" ID="btnSearch" />
                                     <a href="Promotion.aspx" class=" btn btn-danger btn-rounded">Clear</a>
                                 </div>
-                            </div>
+                            </div>--%>
                         </div>
                     </fieldset>
                 </div>
@@ -79,23 +129,18 @@
                     <fieldset>
                         <legend>Employee Details / कर्मचारी का विवरण</legend>
                         <div class="row justify-content-end">
-
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                                </div>
-                            </div>
-                        </div>
+     <div class="col-md-4 text-end">
+         <div class="form-group">
+             <button class="btn btn-info btn-rounded w-55">Excel</button>
+             <button class="btn btn-info btn-rounded w-55">PDF</button>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="form-group">
+             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+         </div>
+     </div>
+ </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
