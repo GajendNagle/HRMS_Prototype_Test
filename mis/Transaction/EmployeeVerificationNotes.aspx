@@ -25,6 +25,13 @@
             </div>
         </div>
     </div>
+    <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
+
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1.5rem;">
+            <img src="../../img/Employee%20Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
+            </u>
+        </p>
+    </div>
     <div class="card card-border-primary">
         <%--        <div class="card-header card-border-info">
         </div>--%>

@@ -214,7 +214,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">E-ServiceBook / ई-सेवा पुस्तिका</h4>
+                            <h4 class="card-title">Employee E-ServiceBook <br />कर्मचारी ई-सेवा पुस्तिका</h4>
                         </div>
                     </div>
                 </div>
