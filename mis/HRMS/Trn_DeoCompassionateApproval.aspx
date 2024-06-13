@@ -49,7 +49,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Register Application For Compassionate Appointment on DEO Level<br />
+                    <h4 class="card-title">Register Application For Compassionate Appointment on D.E.O. Level<br />
                         डी.ई.ओ. स्तर पर अनुकंपा नियुक्ति हेतु आवेदन पंजीकृत करें</h4>
                 </div>
             </div>
@@ -291,8 +291,7 @@
                             </fieldset>
                             <fieldset>
                                 <legend>Details of the Family Member Who has Applied for Appointment
-            <br />
-                                    परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
+            <br />परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
                                 <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
@@ -312,7 +311,6 @@
                                                 <option value="Bhopal">Male</option>
                                                 <option value="Indore">Female</option>
                                                 <option value="Gwalior">Other</option>
-
                                             </select>
                                         </div>
                                     </div>

@@ -70,8 +70,8 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Compassionate Appointment On DO Level Print Apply<br />
-                        डी.ओ. स्तर पर अनुकंपा नियुक्ति प्रिंट आवेदन करें</h4>
+                    <h4 class="card-title">Compassionate Appointment On D.E.O. Level Print Apply<br />
+                        डी.ई.ओ. स्तर पर अनुकंपा नियुक्ति प्रिंट आवेदन करें</h4>
                 </div>
             </div>
         </div>
