@@ -25,7 +25,12 @@
             </div>
         </div>
     </div>
-
+    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;  margin-bottom: -4rem;">
+            <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
 
 
     <%-- <div class="row page-titles" style="margin-bottom: -30px">
@@ -40,23 +45,25 @@
             </div>
         </div>
     </div>--%>
-    <div class="card card-border-primary">
-        <%--  <div class="card-header ">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="card card-border-primary">
+                <%--  <div class="card-header ">
         </div>--%>
-        <div class="card-header">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">About Other Curriculum Activities
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4 class="card-title">About Other Curriculum Activities
                         <br />
-                        अन्य पाठ्यचर्या गतिविधियों के बारे में</h4>
+                                अन्य पाठ्यचर्या गतिविधियों के बारे में</h4>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="card-body">
+                <div class="card-body">
 
 
 
-            <%--<nav class="navbar navbar-expand-lg topbar ">
+                    <%--<nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,24 +82,26 @@
             </nav>
             <br />
             <br />--%>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी अन्य पाठयक्रम गतिविधियां संबंधी जानकारी:-</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी अन्य पाठयक्रम गतिविधियां संबंधी जानकारी:-</h4>
+                        </div>
+                    </div>
+                    <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
+
+                    <div>
+                        <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
+                            <b>1)</b> समस्त जानकारी सावधानी पूर्वक भरें |<br />
+                            <b>2)</b> किसी भी प्रकार के त्रुटि होने पर मुख्यालय संपर्क करें |<br />
+                            <b>3)</b> कर्मचारी  राष्ट्रीय और राज्य स्तरीय प्रशिक्षण में सम्मिलित हुए हैं संबंधी जानकारी फार्म में भरी जाएगी।<br />
+                            <b>4)</b> कर्मचारी की प्रशिक्षण का विवरण (In-service, induction, CWSN, Computer, Dakshata, ABL, 90 Days IED) फार्म के अंतर्गत भरा जाएगा |<br />
+                            <b>5)</b> कर्मचारियों को यदि कोई पुरस्कार राष्ट्रीय एवं राज्य स्तर पर मिला है या अन्य कोई पुरस्कार विभाग द्वारा मिला है उसकी जानकारी फॉर्म में भारी जा सकती है।<br />
+                            <b>6)</b> समस्त जानकारी कर्मचारी की सर्विस बुक में अपडेट की जाएगी |<br />
+
+
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-
-            <div>
-                <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
-                    <b>1)</b> समस्त जानकारी सावधानी पूर्वक भरें |<br />
-                    <b>2)</b> किसी भी प्रकार के त्रुटि होने पर मुख्यालय संपर्क करें |<br />
-                    <b>3)</b> कर्मचारी  राष्ट्रीय और राज्य स्तरीय प्रशिक्षण में सम्मिलित हुए हैं संबंधी जानकारी फार्म में भरी जाएगी।<br />
-                    <b>4)</b> कर्मचारी की प्रशिक्षण का विवरण (In-service, induction, CWSN, Computer, Dakshata, ABL, 90 Days IED) फार्म के अंतर्गत भरा जाएगा |<br />
-                    <b>5)</b> कर्मचारियों को यदि कोई पुरस्कार राष्ट्रीय एवं राज्य स्तर पर मिला है या अन्य कोई पुरस्कार विभाग द्वारा मिला है उसकी जानकारी फॉर्म में भारी जा सकती है।<br />
-                    <b>6)</b> समस्त जानकारी कर्मचारी की सर्विस बुक में अपडेट की जाएगी |<br />
-
-
-                </p>
             </div>
         </div>
     </div>
