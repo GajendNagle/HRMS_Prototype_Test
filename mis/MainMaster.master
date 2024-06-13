@@ -933,7 +933,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
+                                        <%--<li class="nav-item">
                                             <a href="#Increment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="Increment" data-key="t-Increment"><i class="ri-dashboard-2-line"></i>Increment</a>
                                             <div class="collapse menu-dropdown" id="Increment">
@@ -943,7 +943,7 @@
                                                     <li class="nav-item"><a href="/mis/Transaction/IncrementCancel.aspx" class="nav-link">Increment Cancel Orders</a></li>
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
 
                                         <li class="nav-item">
                                             <a href="#E-ServiceBook" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -1152,6 +1152,17 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a href="/mis/Payroll/ArrearCalculation.aspx" class="nav-link">Arrear Calculation </a></li>
                                                     <li class="nav-item"><a href="/mis/Payroll/ArrearFinalSubmission.aspx" class="nav-link">Arrear Final Submission </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Increment" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Increment" data-key="t-Increment"><i class="ri-dashboard-2-line"></i>Increment</a>
+                                            <div class="collapse menu-dropdown" id="Increment">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a href="/mis/Transaction/IncrementProcess.aspx" class="nav-link">Increment Process</a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/IncrementOrders.aspx" class="nav-link">Increment Order</a></li>
+                                                    <li class="nav-item"><a href="/mis/Transaction/IncrementCancel.aspx" class="nav-link">Increment Cancel Orders</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -2609,78 +2620,78 @@
                 }(window.jQuery);
         </script>
         <script>
-        !function ($) {
-            "use strict";
-            var SweetAlert = function () { };
-            //examples
-            SweetAlert.prototype.init = function () {
-                $('.Alert-Delete').click(function () {
-                    Swal.fire({
-                        title: 'Are you sure?',
-                        text: "Do you want to Delete Details?",
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085D6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes'
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
-                    }).then((result) => {
-                        if (result.value) {
-                            Swal.fire({
-                                type: 'success',
-                                title: 'Success!',
-                                text: 'Details Deleted Successfully!',
-                                timer: 2000
-                                // animation: false,
-                                // customClass: {
-                                //     popup: 'animated tada'
-                                // }
-                            }
-                            )
-                        }
-                    })
-                });
-                $('.Alert-Edit').click(function () {
-                    Swal.fire({
-                        title: 'Are you sure?',
-                        text: "Do you want to Edit Details?",
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085D6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes'
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
-                    }).then((result) => {
-                        //if (result.value) {
-                        //    Swal.fire({
-                        //        type: 'success',
-                        //        title: 'Success!',
-                        //        text: 'Salary Generated Successfully!',
-                        //        timer: 2000
-                        //        // animation: false,
-                        //        // customClass: {
-                        //        //     popup: 'animated tada'
-                        //        // }
-                        //    }
-                        //    )
-                        //}
-                    })
-                });
-            },
-                //init
-                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
-        }(window.jQuery),
-            //initializing
-            function ($) {
+            !function ($) {
                 "use strict";
-                $.SweetAlert.init()
-            }(window.jQuery);
+                var SweetAlert = function () { };
+                //examples
+                SweetAlert.prototype.init = function () {
+                    $('.Alert-Delete').click(function () {
+                        Swal.fire({
+                            title: 'Are you sure?',
+                            text: "Do you want to Delete Details?",
+                            type: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085D6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Yes'
+                            // animation: false,
+                            // customClass: {
+                            //     popup: 'animated tada'
+                            // }
+                        }).then((result) => {
+                            if (result.value) {
+                                Swal.fire({
+                                    type: 'success',
+                                    title: 'Success!',
+                                    text: 'Details Deleted Successfully!',
+                                    timer: 2000
+                                    // animation: false,
+                                    // customClass: {
+                                    //     popup: 'animated tada'
+                                    // }
+                                }
+                                )
+                            }
+                        })
+                    });
+                    $('.Alert-Edit').click(function () {
+                        Swal.fire({
+                            title: 'Are you sure?',
+                            text: "Do you want to Edit Details?",
+                            type: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085D6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Yes'
+                            // animation: false,
+                            // customClass: {
+                            //     popup: 'animated tada'
+                            // }
+                        }).then((result) => {
+                            //if (result.value) {
+                            //    Swal.fire({
+                            //        type: 'success',
+                            //        title: 'Success!',
+                            //        text: 'Salary Generated Successfully!',
+                            //        timer: 2000
+                            //        // animation: false,
+                            //        // customClass: {
+                            //        //     popup: 'animated tada'
+                            //        // }
+                            //    }
+                            //    )
+                            //}
+                        })
+                    });
+                },
+                    //init
+                    $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+            }(window.jQuery),
+                //initializing
+                function ($) {
+                    "use strict";
+                    $.SweetAlert.init()
+                }(window.jQuery);
         </script>
     </form>
 </body>
