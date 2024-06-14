@@ -13,10 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">Nagar Panchayat Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Nagar Panchayat Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -44,7 +46,8 @@
                 <legend>Add Nagar Panchayat / नगर पंचायत जोड़े</legend>
                 <div class="row align-items-end form-group">
                     <div class="col-md-3">
-                        <label>Select State Name /<br /> राज्य का चयन करे<span style="color: red">*</span></label>
+                        <label>Select State Name /<br />
+                            राज्य का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Rajasthan">Rajasthan</option>
@@ -80,7 +83,8 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
+                        <label>Select Division Name /<br />
+                            संभाग का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -95,7 +99,8 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
+                        <label>Select District Name /<br />
+                            जिला का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -151,7 +156,8 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Block Name /<br /> विकासखण्ड का चयन करे<span style="color: red">*</span></label>
+                        <label>Select Block Name /<br />
+                            विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Agar">Agar</option>
@@ -185,7 +191,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Nagar Panchayat Code No. /<br /> नगर पंचायत कोड संख्या<span style="color: red">*</span></label>
+                            <label>Enter Nagar Panchayat Code No. /<br />
+                                नगर पंचायत कोड संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -230,15 +237,22 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
-                                    <th>State Name /<br /> राज्य का नाम</th>
-                                    <th>Division Name /<br /> संभाग का नाम</th>
-                                    <th>District Name /<br /> जिला का नाम </th>
-                                    <th>Block Name /<br /> विकासखण्ड का नाम </th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>State Name /<br />
+                                        राज्य का नाम</th>
+                                    <th>Division Name /<br />
+                                        संभाग का नाम</th>
+                                    <th>District Name /<br />
+                                        जिला का नाम </th>
+                                    <th>Block Name /<br />
+                                        विकासखण्ड का नाम </th>
                                     <th>Nagar Panchayat Name</th>
                                     <th>नगर पंचायत का नाम</th>
-                                    <th>Nagar Panchayat Code No. /<br /> नगर पंचायत कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Nagar Panchayat Code No. /<br />
+                                        नगर पंचायत कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

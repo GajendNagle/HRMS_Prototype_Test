@@ -13,10 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">Habitation Master Date</li>
+                        <li class="breadcrumb-item">
+                            <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Habitation Master Date</span></li>
                     </ol>
                 </div>
             </div>
@@ -45,7 +47,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Division Name /<br />
+                                संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -62,7 +65,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
+                            <label>Select District Name /<br />
+                                जिला का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -120,7 +124,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Block Name /<br /> विकासखण्ड का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Block Name /<br />
+                                विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Agar">Agar</option>
@@ -141,7 +146,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Gram Panchayat Name /<br /> ग्राम पंचायत का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Gram Panchayat Name /<br />
+                                ग्राम पंचायत का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Amarpur">Amarpur</option>
@@ -164,7 +170,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Village Name /<br /> गाँव का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Village Name /<br />
+                                गाँव का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl04" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Amarpur">Amarpur</option>
@@ -203,7 +210,7 @@
                             <input name="ctl00$ContentBody$ctl07" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                   <div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -220,7 +227,7 @@
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
-                    </div>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Habitation Details /बसाहट विवरण</legend>
@@ -242,16 +249,24 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
-                                    <th>Division Name /<br/> संभाग का नाम</th>
-                                    <th>District Name /<br/> जिला का नाम</th>
-                                    <th>Block Name /<br/> विकासखण्ड का नाम</th>
-                                    <th>Gram Panchayat Name /<br/> ग्राम पंचायत का नाम</th>
-                                    <th>Village Name /<br/> गाँव का नाम</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>Division Name /<br />
+                                        संभाग का नाम</th>
+                                    <th>District Name /<br />
+                                        जिला का नाम</th>
+                                    <th>Block Name /<br />
+                                        विकासखण्ड का नाम</th>
+                                    <th>Gram Panchayat Name /<br />
+                                        ग्राम पंचायत का नाम</th>
+                                    <th>Village Name /<br />
+                                        गाँव का नाम</th>
                                     <th>Habitation Name</th>
                                     <th>बसाहट का नाम</th>
-                                    <th>Habitation Code No. /<br />बसाहट कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br/>स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Habitation Code No. /<br />
+                                        बसाहट कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

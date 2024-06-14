@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -14,10 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">State Master</li>
+                        <li class="breadcrumb-item">
+                            <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>State Master</span></li>
                     </ol>
                 </div>
             </div>
@@ -59,7 +60,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter State Code No. /<br /> राज्य कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>
+                                Enter State Code No. /<br />
+                                राज्य कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -102,11 +105,14 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
                                     <th>State Name</th>
                                     <th>राज्य का नाम</th>
-                                    <th>State Code No. /<br /> राज्य कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>State Code No. /<br />
+                                        राज्य कोड संख्या</th>
+                                    <th>Status(Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

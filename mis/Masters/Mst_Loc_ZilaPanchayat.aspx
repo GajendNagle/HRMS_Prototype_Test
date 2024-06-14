@@ -13,10 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">Jila Panchayat Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Jila Panchayat Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -44,7 +46,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Division Name /<br />
+                                संभाग का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -61,7 +64,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
+                            <label>Select District Name /<br />
+                                जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -132,7 +136,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Jila Panchayat Code No. /<br /> जिला पंचायत कोड संख्या<span style="color: red">*</span></label>
+                            <label>Enter Jila Panchayat Code No. /<br />
+                                जिला पंचायत कोड संख्या<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -156,7 +161,8 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Jila Panchayat Details /<br /> जिला पंचायत विवरण</legend>
+                <legend>Jila Panchayat Details /<br />
+                    जिला पंचायत विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -175,13 +181,18 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
-                                    <th>Division Name /<br /> संभाग का नाम</th>
-                                    <th>District Name /<br /> जिला का नाम </th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>Division Name /<br />
+                                        संभाग का नाम</th>
+                                    <th>District Name /<br />
+                                        जिला का नाम </th>
                                     <th>Jila Panchayat Name</th>
                                     <th>जिला पंचायत का नाम</th>
-                                    <th>Jila Panchayat Code No. /<br /> जिला पंचायत कोड न.</th>
-                                    <th>Status (Active/InActive) /<br />  स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Jila Panchayat Code No. /<br />
+                                        जिला पंचायत कोड न.</th>
+                                    <th>Status (Active/InActive) /<br />
+                                        स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

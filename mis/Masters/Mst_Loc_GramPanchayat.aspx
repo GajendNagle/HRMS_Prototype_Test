@@ -13,10 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">Gram Panchayat Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Gram Panchayat Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -45,7 +47,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Division Name /<br />
+                                संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -62,7 +65,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
+                            <label>Select District Name /<br />
+                                जिला का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -120,7 +124,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Block Name /<br />विकासखण्ड का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Block Name /<br />
+                                विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Agar">Agar</option>
@@ -154,7 +159,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Gram Panchayat Code No. /<br /> ग्राम पंचायत कोड संख्या<span style="color: red">*</span></label>
+                            <label>Enter Gram Panchayat Code No. /<br />
+                                ग्राम पंचायत कोड संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" placeholder="Enter Code No." />
                         </div>
                     </div>
@@ -197,39 +203,45 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
-                                    <th>Division Name /<br /> संभाग का नाम</th>
-                                    <th>District Name /<br />जिला का नाम</th>
-                                    <th>Block Name /<br /> विकासखण्ड का नाम</th>
-                                    <th>Gram Panchayat Name</th>
-                                    <th>ग्राम पंचायत का नाम</th>
-                                    <th>Gram Panchayat Code No. /<br />ग्राम पंचायत कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Bhopal</td>
-                                    <td>Bhopal</td>
-                                    <td>Bersia</td>
-                                    <td>Amarpur</td>
-                                    <td>अमरपुर</td>
-                                    <td>15</td>
-                                    <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Dewas</td>
-                                    <td>Dewas</td>
-                                    <td>Dewas</td>
-                                    <td>Patadi</td>
-                                    <td>पतादी</td>
-                                    <td>10</td>
-                                    <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
+                                    <tr>
+                                        <th>Sr.No. /<br />
+                                            सरल क्र.</th>
+                                        <th>Division Name /<br />
+                                            संभाग का नाम</th>
+                                        <th>District Name /<br />
+                                            जिला का नाम</th>
+                                        <th>Block Name /<br />
+                                            विकासखण्ड का नाम</th>
+                                        <th>Gram Panchayat Name</th>
+                                        <th>ग्राम पंचायत का नाम</th>
+                                        <th>Gram Panchayat Code No. /<br />
+                                            ग्राम पंचायत कोड संख्या</th>
+                                        <th>Status(Active/InActive) /<br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Bhopal</td>
+                                        <td>Bhopal</td>
+                                        <td>Bersia</td>
+                                        <td>Amarpur</td>
+                                        <td>अमरपुर</td>
+                                        <td>15</td>
+                                        <td>Active</td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Dewas</td>
+                                        <td>Dewas</td>
+                                        <td>Dewas</td>
+                                        <td>Patadi</td>
+                                        <td>पतादी</td>
+                                        <td>10</td>
+                                        <td>InActive</td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
                             </table>
                         </div>
                     </div>
