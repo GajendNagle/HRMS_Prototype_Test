@@ -1,7 +1,6 @@
 ﻿function getChartColorsArray(e) {
     if (null !== document.getElementById(e)) {
-        var t = "data-colors" + ("-" + document.documentElement.getAttribute("data-theme") ?? ""), t = document.getElementById(e).getAttribute(t) ?? document.getElementById(e).getAttribute("data-colors"); if (t) return (t = JSON.parse(t)).map(function (e)
-        { var t = e.replace(" ", ""); return -1 === t.indexOf(",") ? getComputedStyle(document.documentElement).getPropertyValue(t) || t : 2 == (e = e.split(",")).length ? "rgba(" + getComputedStyle(document.documentElement).getPropertyValue(e[0]) + "," + e[1] + ")" : t }); console.warn("data-colors attributes not found on", e)
+        var t = "data-colors" + ("-" + document.documentElement.getAttribute("data-theme") ?? ""), t = document.getElementById(e).getAttribute(t) ?? document.getElementById(e).getAttribute("data-colors"); if (t) return (t = JSON.parse(t)).map(function (e) { var t = e.replace(" ", ""); return -1 === t.indexOf(",") ? getComputedStyle(document.documentElement).getPropertyValue(t) || t : 2 == (e = e.split(",")).length ? "rgba(" + getComputedStyle(document.documentElement).getPropertyValue(e[0]) + "," + e[1] + ")" : t }); console.warn("data-colors attributes not found on", e)
     }
 } var worldemapmarkers = "", countriesChart = "", audiencesSessionsCountryChart = "", audiencesMetricsCharts = "", userDevicePieCharts = "";
 function loadCharts() {
@@ -28,7 +27,7 @@ function loadCharts() {
             , colors: e, dataLabels: {
                 enabled: !0, offsetX: 32,
                 style: { fontSize: "12px", fontWeight: 600, colors: ["#fff"] }
-                , 
+                ,
             }, legend: { show: !1 }, grid: { show: !1 },
             xaxis: {
                 categories: ["सामान्य निर्धन वर्ग छात्रवृत्ति योजना", "राज्य शासन अनु. जनजाति छात्रवृत्ति", "निःशक्तजन छात्रवृत्ति योजना",
@@ -36,8 +35,8 @@ function loadCharts() {
             },
             yaxis: {
                 labels: {
-                    formatter: function (e) { return " &nbsp&nbsp "+ e + "M" },
-           
+                    formatter: function (e) { return " &nbsp&nbsp " + e + "M" },
+
                 }
             }
         };
@@ -45,8 +44,12 @@ function loadCharts() {
 
 
         "" != countriesChart && countriesChart.destroy(), (countriesChart = new ApexCharts(document.querySelector("#countries_charts"), r)).render()
-    } function t(e, t) { for (var r = 0, a = []; r < e;) { var o = (r + 1).toString() + "h", 
-    s = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min; a.push({ x: o, y: s }), r++ } return a } (e = getChartColorsArray("audiences_metrics_charts")) &&
+    } function t(e, t) {
+        for (var r = 0, a = []; r < e;) {
+            var o = (r + 1).toString() + "h",
+            s = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min; a.push({ x: o, y: s }), r++
+        } return a
+    } (e = getChartColorsArray("audiences_metrics_charts")) &&
         (e = {
             series: [{ name: "Total Upcoming Retirements", data: [105, 38, 22, 48, 98, 34, 15, 68, 110, 98, 78, 140] },
             { name: "Total Retired", data: [70, 38, 22, 15, 15, 7, 6, 12, 7, 45, 9, 5] }],
@@ -60,10 +63,10 @@ function loadCharts() {
                 categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 axisTicks: { show: !1 }, axisBorder: { show: !0, strokeDashArray: 1, height: 1, width: "100%", offsetX: 0, offsetY: 0 }
             }, yaxis: { show: !1 }, fill: { opacity: 1 }
-    },
+        },
 
 
-        "" != audiencesMetricsCharts && audiencesMetricsCharts.destroy(),
+            "" != audiencesMetricsCharts && audiencesMetricsCharts.destroy(),
             (audiencesMetricsCharts = new ApexCharts(document.querySelector("#audiences_metrics_charts"), e)).render());
     var r; (e = getChartColorsArray("audiences-sessions-country-charts")) && (r = {
         series: [
