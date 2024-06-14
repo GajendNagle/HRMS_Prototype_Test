@@ -26,7 +26,7 @@
     <div class="content-wrapper">
         <!-- Main content -->
         <div class="container-fluid">
-            <div class="row page-titles mb-4">
+            <%--<div class="row page-titles mb-4">
                 <div class="col-md-5 align-self-center">
                     <h4 class="text-themecolor ">Employee Retirement Detail</h4>
                 </div>
@@ -40,17 +40,47 @@
                         </ol>
                     </div>
                 </div>
+            </div>--%>
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                        <h4 class="mb-sm-0"></h4>
+                        <div class="=page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item">
+                                    <span>Home</span>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#Reports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                        <span>Reports</span></a>
+                                </li>
+                                <li class="breadcrumb-item">Employee Retirement Detail</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card mt-3 shadow">
-                <div class="card-header card-border-info">
+
+            <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row align-items-end">
+                        <div class="col-lg-8">
+                            <h4 class="card-title">Employee Retirement Detail / कर्मचारी का सेवानिवृत्ति विवरण</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Employee Retirement Detail</legend>
+                        <legend>Employee Retirement Detail / कर्मचारी का सेवानिवृत्ति विवरण</legend>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Office Type<span style="color: red;"> *</span></label>
+                                    <label>
+                                        Select Office Type /<br />
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="0">Select</option>
                                         <option value="1">Head Office</option>
@@ -62,31 +92,24 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-2 mt-4">
-                                <div class="form-group">
-                                    <button type="button" onclick="myFunction()" class="btn btn-success btn-block  btn-rounded">Search</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2 mt-4">
-                                <div class="form-group">
-                                    <a href="Rpt_HREmpRetirementList.aspx" class="btn btn-danger btn-block  btn-rounded">Clear</a>
-                                </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" onclick="myFunction()" class="btn btn-success btn w-lg  btn-border">Search</button>
+
+                                <a href="Rpt_HREmpRetirementList.aspx" class="btn btn-outline-danger btn w-lg btn-border">Clear</a>
                             </div>
                         </div>
+
                     </fieldset>
                     <fieldset id="show">
-                        <legend>Employee Retirement Detail (Report)</legend>
-                        <div class="row justify-content-end">
-
-
-                            <div class="col-md-1">
+                        <legend>Employee Retirement Detail (Report) / कर्मचारी का सेवानिवृत्ति विवरण (रिपोर्ट)</legend>
+                        <div class="row mt-4 justify-content-end">
+                            <div class="col-md-4 text-end">
                                 <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -94,23 +117,21 @@
                                     <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table">
 
                                     <tr>
-                                        <th>Sr.No</th>
-                                        <th>Employee Name</th>
-                                        <th>Seperation Type</th>
-                                        <th>Retirement Date</th>
-                                        <th>Office Type</th>
-                                        <th>Order Date</th>
-                                        <th>Order No</th>
-                                        <th>Remark</th>
-                                        <th>Document</th>
+                                        <th>Sr.No/<br />सरल क्र.</th>
+                                        <th>Employee Name /<br />कर्मचारी का नाम</th>
+                                        <th>Seperation Type /<br />पृथक्करण प्रकार</th>
+                                        <th>Retirement Date /<br />सेवानिवृत्ति तिथि</th>
+                                        <th>Office Type /<br />कार्यालय का प्रकार</th>
+                                        <th>Order Date /<br />आदेश की तारीख</th>
+                                        <th>Order No /<br />आदेश संख्या</th>
+                                        <th>Remark /<br />टिप्पणी</th>
+                                        <th>Document/<br />दस्तावेज़</th>
 
 
                                     </tr>
@@ -148,7 +169,7 @@
                         </div>
                     </fieldset>
                     <fieldset id="ContentBody_dcp">
-                        <legend>Description</legend>
+                        <legend>Description / विवरण</legend>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="main-ul">
