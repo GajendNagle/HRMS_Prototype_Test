@@ -158,7 +158,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            School /<br>
+                                            School /<br/>
                                             स्कूल <span style="color: red">*</span></label>
                                         <input name="txtBlock" type="text" class="form-control" readonly="" autocomplete="off" placeholder="VINAYAK PUBLIC SCHOOL TARRAKHURD SCHOOL" />
                                     </div>
