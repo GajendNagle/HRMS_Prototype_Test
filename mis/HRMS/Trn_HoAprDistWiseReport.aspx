@@ -93,7 +93,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="fw-bold text-dark">
+                                    <label>
                                         <%--<label class="font-bold">--%>
                                     District Name /<br />
                                         जिला का नाम</label>
@@ -156,7 +156,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="fw-bold text-dark">
+                                    <label>
                                         Department Name /<br />
                                         विभाग का नाम</label>
                                     <select class="form-control select2">
@@ -176,7 +176,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="fw-bold text-dark">
+                                    <label>
                                         Annual Year /
    <br />
                                         वित्तीय वर्ष<span style="color: red;"> *</span>
