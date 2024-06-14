@@ -10,7 +10,6 @@
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
-            background-color: #1b5a5b !important;
             color: white;
         }
     </style>
