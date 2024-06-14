@@ -39,7 +39,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Enter Hostel Name<br />छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Office Name" />
+                            <input type="text" class="form-control" placeholder="Enter Hostel Name<br />छात्रावास का नाम दर्ज करें" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -49,7 +49,7 @@
                                 <option value="--Select--">--Select--</option>
                                 <option value="Boy">Boy</option>
                                 <option value="Girl">Girl</option>
-                                <option value="UniSex">UniSex</option>
+                                <option value="UniSex">Combine</option>
                             </select>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Enter Intake Capacity of Students<br />छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="कार्यालय का नाम दर्ज करे" />
+                            <input type="text" class="form-control" placeholder="Enter Intake Capacity of Students" />
                         </div>
                     </div>
                     <div class="col-md-3">

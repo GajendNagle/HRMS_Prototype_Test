@@ -40,7 +40,7 @@
                             <div class="form-group">
                                 <label>Enter Room Number/ Name<br />
                                     कक्ष संख्या/नाम दर्ज करें<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" placeholder="Enter Office Name" />
+                                <input type="text" class="form-control" placeholder="Enter Room Number/ Name" />
                             </div>
                         </div>
                          <div class="col-md-3">
