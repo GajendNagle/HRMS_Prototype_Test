@@ -12,42 +12,45 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Salary Finalization</h4>
-        </div>
-        <%--<div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Payroll" title="click to go on">Payroll</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=Payroll&SubID=SalaryFinalization" title="click to go on">Salary Finalization</a></li>
-                    <li class="breadcrumb-item active">Salary Finalization Process</li>
-                </ol>
-            </div>
-        </div>--%>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Payroll" title="click to go on">Payroll</a></li>
-                    <li class="breadcrumb-item active">Salary Finalization</li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                           <li class="breadcrumb-item"><a href="../Module.aspx?ID=Payroll" title="click to go on">Payroll</a></li>
+                        </li>
+                        <li class="breadcrumb-item">Location Master Data</li>
+                        <li class="breadcrumb-item">Salary Finalization</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    
+    <div class="card">
+        <div class="card-header">
+             <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Salary Finalization/वेतन निर्धारण
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Reset Or Finalize Salary</legend>
-                <div class="row justify-content-center">
+                <legend>Salary Finalization/वेतन निर्धारण</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
-                                <label class="form-check-label" for="customRadio11">Reset Salary</label>
+                                <label class="form-check-label" for="customRadio11">Reset Salary/वेतन रीसेट करें</label>
                             </div>
                         </div>
                     </div>
@@ -55,7 +58,7 @@
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
-                                <label class="form-check-label" for="customRadio11">Generate Supplementary Salary</label>
+                                <label class="form-check-label" for="customRadio11">Generate Supplementary Salary/अनुपूरक वेतन उत्पन्न करें</label>
                             </div>
                         </div>
                     </div>
@@ -63,16 +66,17 @@
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio3" name="customRadio" class="form-check-input">
-                                <label class="form-check-label" for="customRadio11">Generate Final Salary</label>
+                                <label class="form-check-label" for="customRadio11">Generate Final Salary/अंतिम वेतन उत्पन्न करें</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type</label>
+                            <label>Select Office Type/
+कार्यालय प्रकार का चयन करें</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                     <option value="Bhopal">Head Office</option>
@@ -96,7 +100,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post</label>
+                            <label>Select Type of Post/पोस्ट का प्रकार चुनें</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Additional Director">Additional Director</option>
@@ -127,7 +131,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year</label>
+                            <label>Select Year/वर्ष चुनें</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -141,7 +145,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month</label>
+                            <label>Select Month/माह चुनें</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -159,20 +163,18 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <hr />
+
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <button type="button" onclick="toggleDivs()" class=" btn-block btn btn-success  btn-rounded">Search</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mt-4">
-                        <div class="form-group">
-                            <a href="SalaryFinalizationProcess.aspx" class=" btn-block btn btn-danger btn-rounded">Clear</a>
+                            <button type="button" onclick="toggleDivs()" class=" btn btn btn-success w-lg btn-border">Search</button>
+                            <a href="SalaryFinalizationProcess.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="hidden" id="resetsalary">
-                <legend>Reset Salary</legend>
+                <legend>Reset Salary/वेतन रीसेट करें</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -186,23 +188,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="form-group">
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>All<br />
+                                        <th>All/सभी<br />
                                             <input id="ContentBody_ctl08e" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                        <th>Sr.No.</th>
-                                        <th>Employee-ID</th>
-                                        <th>Employee Name</th>
-                                        <th>Basic Salary ⟨₹⟩</th>
-                                        <th>Payable Days</th>
-                                        <th>Earning Total ⟨₹⟩</th>
-                                        <th>Deduction Total ⟨₹⟩</th>
-                                        <th>Net Salary ⟨₹⟩</th>
-                                        <th>Action</th>
+                                        <th>Sr.No./क्र.सं.</th>
+                                        <th>Employee-ID/कर्मचारी आय.डी</th>
+                                        <th>Employee Name/कर्मचारी का नाम</th>
+                                        <th>Basic Salary ⟨₹⟩/मूल वेतन</th>
+                                        <th>Payable Days/देय दिन</th>
+                                        <th>Earning Total ⟨₹⟩/कुल कमाई</th>
+                                        <th>Deduction Total ⟨₹⟩/कटौती कुल</th>
+                                        <th>Net Salary ⟨₹⟩/निवल वेतन</th>
+                                        <th>Action/कार्रवाई</th>
                                     </tr>
                                     <tr>
                                         <td>
@@ -241,13 +243,13 @@
                     <div class="col-md-2 mt-4">
                         <div class="form-group">
 
-                            <button type="button" class=" btn-block Alert-Reset btn btn-success btn-rounded">Reset Salary</button>
+                            <button type="button" class=" btn-block Alert-Reset btn btn-success w-lg btn-border">Reset Salary</button>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="hidden" id="supplementarysalary">
-                <legend>Generate Supplementary Salary</legend>
+                <legend>Generate Supplementary Salary/अनुपूरक वेतन उत्पन्न करें</legend>
                 <div class="row justify-content-end">
 
                     <div class="col-md-1">
@@ -266,23 +268,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="form-group">
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>All<br />
+                                        <th>All/सभी<br />
                                             <input id="ContentBody_ctdl08e" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                        <th>Sr.No.</th>
-                                        <th>Employee-ID</th>
-                                        <th>Employee Name</th>
-                                        <th>Basic Salary ⟨₹⟩</th>
-                                        <th>Payable Days</th>
-                                        <th>Earning Total ⟨₹⟩</th>
-                                        <th>Deduction Total ⟨₹⟩</th>
-                                        <th>Net Salary ⟨₹⟩</th>
-                                        <th>Action</th>
+                                        <th>Sr.No./क्र.सं.</th>
+                                        <th>Employee-ID/कर्मचारी आय.डी</th>
+                                        <th>Employee Name/कर्मचारी का नाम</th>
+                                        <th>Basic Salary ⟨₹⟩/मूल वेतन</th>
+                                        <th>Payable Days/देय दिन</th>
+                                        <th>Earning Total ⟨₹⟩/कुल कमाई</th>
+                                        <th>Deduction Total ⟨₹⟩/कटौती कुल</th>
+                                        <th>Net Salary ⟨₹⟩/निवल वेतन</th>
+                                        <th>Action/कार्रवाई</th>
+
+
+
+
                                     </tr>
                                     <tr>
                                         <td>
@@ -320,13 +326,13 @@
                 <div class="row justify-content-center">
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <button type="button" class=" btn-block Alert-Supplymentry btn btn-success btn-rounded">Generate Supplementary Salary</button>
+                            <button type="button" class=" btn-block Alert-Supplymentry btn btn-success w-lg btn-border">Generate Supplementary Salary</button>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="hidden" id="finalsalary">
-                <legend>Generate Final Salary</legend>
+                <legend>Generate Final Salary/अंतिम वेतन उत्पन्न करें</legend>
                 <div class="row justify-content-end">
 
                     <div class="col-md-1">
@@ -345,23 +351,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="form-group">
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>All<br />
+                                        <th>All/सभी<br />
                                             <input id="ContentBody_ctld08e" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                        <th>Sr.No.</th>
-                                        <th>Employee-ID</th>
-                                        <th>Employee Name</th>
-                                        <th>Basic Salary ⟨₹⟩</th>
-                                        <th>Payable Days</th>
-                                        <th>Earning Total ⟨₹⟩</th>
-                                        <th>Deduction Total ⟨₹⟩</th>
-                                        <th>Net Salary ⟨₹⟩</th>
-                                        <th>Action</th>
+                                        <th>Sr.No./क्र.सं.</th>
+                                        <th>Employee-ID/कर्मचारी आय.डी</th>
+                                        <th>Employee Name/कर्मचारी का नाम</th>
+                                        <th>Basic Salary ⟨₹⟩/मूल वेतन</th>
+                                        <th>Payable Days/देय दिन</th>
+                                        <th>Earning Total ⟨₹⟩/कुल कमाई</th>
+                                        <th>Deduction Total ⟨₹⟩/कटौती कुल</th>
+                                        <th>Net Salary ⟨₹⟩/निवल वेतन</th>
+                                        <th>Action/कार्रवाई</th>
                                     </tr>
                                     <tr>
                                         <td>
@@ -399,15 +405,15 @@
                 <div class="row justify-content-center">
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <button type="button" class=" btn-block Alert-Final btn btn-success btn-rounded">Generate Final Salary</button>
+                            <button type="button" class=" btn-block Alert-Final btn btn-success w-lg btn-border">Generate Final Salary</button>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <!--Description-->
             <fieldset>
-                <legend>Description</legend>
-                <div class="row">
+                <legend>Description/विवरण</legend>
+                <div class="row align-items-end">
 
                     <div class="col-md-12">
                         <ul class="main-ul">

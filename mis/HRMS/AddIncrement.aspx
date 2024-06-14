@@ -9,35 +9,43 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+       <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
 
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Add Increment</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Increment" title="click to go on">Add Increment</a></li>
-                        <li class="breadcrumb-item active">Add Increment</li>
+                        <li class="breadcrumb-item">
+                           <li class="breadcrumb-item"><a href="../Module.aspx?ID=Payroll" title="click to go on">Payroll</a></li>
+                        </li>
+                        <li class="breadcrumb-item">Add Increment/वेतन वृद्धि जोड़ें</li>
                     </ol>
                 </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+
+        <div class="card">
+            <div class="card-header">
+                 <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Add Increment/वेतन वृद्धि जोड़ें
+                    </h4>
+                </div>
+            </div>
             </div>
 
             <div class="card-body">
                 <fieldset>
-                    <legend>ADD INCREMENT</legend>
-                    <div class="row">
-
+                    <legend>Add Increment/वेतन वृद्धि जोड़ें</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Select OIS Type<span style="color: red">*</span></label>
+                                <label>Select OIS Type/OIS प्रकार चुनें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="--Select--">Office</option>
