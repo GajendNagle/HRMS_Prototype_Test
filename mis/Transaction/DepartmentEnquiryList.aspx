@@ -296,7 +296,7 @@
                                                 placeholder="Witness Email-Id" class="form-control" maxlength="50" autocomplete="off"/>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mt-4">
+                                    <div class="col-md-12">
                                         <button type="button" class="btn-success btn-rounded" onclick="addData()">Add Details</button>
                                     </div>
                                 </div>
