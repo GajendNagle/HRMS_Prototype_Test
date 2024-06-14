@@ -201,7 +201,7 @@
                                     <button class="btn btn-info btn-rounded w-55">PDF</button>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="form-group">
                                     <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                 </div>
@@ -257,7 +257,7 @@
                                                 <button class="btn btn-info btn-rounded w-55">PDF</button>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <div class="form-group">
                                                 <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                             </div>
