@@ -52,7 +52,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="container-fluid">
+   <%-- <div class="container-fluid">
         <span class="hidden-sm-up">
             <br />
             <br />
@@ -129,48 +129,90 @@
                         </div>
                     </div>
                 </nav>
-                <br />
+                <br />--%>
+
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Grievance Management System</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Print Complaint</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <%--  <div class="row page-titles mb-4">--%>
+       <div class="col-md-5"  style="position:relative;bottom:20px; right:15px;">
+ <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
+              <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
+           <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
+           </u>
+       </p>
+   </div>
+    
+       
+  <div class="card   card-border-primary radius-defalt">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Print Complaint/
+             शिकायत प्रिंट करें
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
+
                 <fieldset>
                     <legend>Print Details
                     </legend>
-                    <div class="row">
-                        <div class="row justify-content-end">
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-
-                            </div>
+                       <div class="row justify-content-end">
+       <div class="col-md-4 text-end">
+           <div class="form-group">
+               <button class="btn btn-info btn-rounded w-55">Excel</button>
+               <button class="btn btn-info btn-rounded w-55">PDF</button>
+           </div>
+       </div>
+       <div class="col-md-3">
+           <div class="form-group">
+               <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+           </div>
+       </div>
+       </div>
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Sr.No.<br />
+                                                <th>Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th>Name of Employee or Teacher<br />
+                                                <th>Name of Employee or Teacher/<br />
                                                     कर्मचारी या शिक्षक का नाम</th>
-                                                <th>Grievance No.<br />
+                                                <th>Grievance No./<br />
                                                     शिकायत क्र.</th>
-                                                <th>Date<br />
+                                                <th>Date/<br />
                                                     दिनांक</th>
-                                                <th>Department<br />
+                                                <th>Department/<br />
                                                     विभाग </th>
-                                                <th>Type of Grievance<br />
+                                                <th>Type of Grievance/<br />
                                                     शिकायत का प्रकार</th>
-                                                <th>Subject of Grievance<br />
+                                                <th>Subject of Grievance/<br />
                                                     शिकायत का विषय</th>
-                                                <th>View<br />
+                                                <th>View/<br />
                                                     देखें</th>
                                             </tr>
                                         </thead>
@@ -187,11 +229,12 @@
                                     </table>
                                 </div>
                             </div>
+                    </fieldset>
                         </div>
+      
                     </div>
-                </fieldset>
-            </div>
-        </div>
+            
+     
 
 
         <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">

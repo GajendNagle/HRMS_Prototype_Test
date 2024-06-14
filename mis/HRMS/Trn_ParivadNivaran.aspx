@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="container-fluid">
+  <%--  <div class="container-fluid">
         <span class="hidden-sm-up">
             <br />
             <br />
@@ -76,9 +76,57 @@
                     </div>
                 </nav>
 
-                <br />
+                <br />--%>
+
+        <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Grievance Management System</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Complaint Filed</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <%--  <div class="row page-titles mb-4">--%>
+       <div class="col-md-5"  style="position:relative;bottom:20px; right:15px;">
+ <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
+              <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
+           <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
+           </u>
+       </p>
+   </div>
+
+
+       
+  <div class="card   card-border-primary radius-defalt">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Complaint Filed/
+              शिकायत दर्ज
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
+
                 <fieldset>
-                    <legend>Grievances Register/शिकायत दर्ज करे</legend>
+                    <legend>Grievances Register/शिकायत दर्ज करे</legend><br />
                     <fieldset>
                         <legend>Office Information/कार्यालय का विवरण
                         </legend>
@@ -87,14 +135,14 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                   <label class="font-bold">
-                                 Name of Office<br /> कार्यालय का नाम <span style="color: red">*</span></label>
+                                 Name of Office/<br /> कार्यालय का नाम <span style="color: red">*</span></label>
                                     <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" value="GMS KUDANA 1 TO 8" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                   <label class="font-bold">
-                                 Department    <br />   विभाग<span style="color: red">*</span></label>
+                                 Department   / <br />   विभाग<span style="color: red">*</span></label>
                                     <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" value="Education" />
                                 </div>
                             </div>
@@ -102,7 +150,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                   <label class="font-bold">
-                                District<br />जिला<span style="color: red">*</span></label>
+                                District/<br />जिला<span style="color: red">*</span></label>
                                     <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Shajapur" />
                                 </div>
                             </div>
@@ -113,37 +161,36 @@
                     <fieldset>
                         <legend>Employee Personal Details/कर्मचारी व्यक्तिगत विवरण
                         </legend>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <label class="font-bold">
-                      Name of Employee or Teacher         <br />     कर्मचारी या शिक्षक का नाम <span style="color: red">*</span></label>
+                      Name of Employee or Teacher     /    <br />     कर्मचारी या शिक्षक का नाम <span style="color: red">*</span></label>
                                 <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Ashok Verma" />
                             </div>
 
 
                             <div class="col-md-3">
                                 <label class="font-bold">
-                                 Unique Code <br />  यूनिक कोड<span style="color: red">*</span></label>
+                                 Unique Code /<br />  यूनिक कोड<span style="color: red">*</span></label>
                                 <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="BT1253" />
                             </div>
 
                             <div class="col-md-3">
                                 <label class="font-bold">
-                                   Email Id<br /> ई-मेल आईडी<span style="color: red">*</span></label>
+                                   Email Id/<br /> ई-मेल आईडी<span style="color: red">*</span></label>
                                 <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Ashok@gmail.com" />
                             </div>
                             <div class="col-md-3">
-                                <div class="form-group">
+                                
                                   <label class="font-bold">
-                              Mobile    <br />      मोबाइल<span style="color: red">*</span></label>
-                                    <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="9926355644" />
-                                </div>
+                              Mobile /   <br />  मोबाइल<span style="color: red">*</span></label>
+                                    <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="form-group">
-                                  <label class="font-bold">Enter Any Alternate Telephone Numbers. If Not Then Enter Your Mobile Number<br />कोई भी वैकल्पिक टेलीफोन नंबर है तो दर्ज करें। यदि नही है तो अपना मोबाइल नंबर दर्ज करे <span style="color: red">*</span></label>
+                                  <label class="font-bold">Enter Any Alternate Telephone Numbers. If Not Then Enter Your Mobile Number/<br />कोई भी वैकल्पिक टेलीफोन नंबर है तो दर्ज करें। यदि नही है तो अपना मोबाइल नंबर दर्ज करे <span style="color: red">*</span></label>
                                     <input name="txtPresentParentInstitution" type="text" class="form-control" autocomplete="off" placeholder="कोई भी वैकल्पिक टेलीफोन नंबर है तो दर्ज करें। यदि नही है तो अपना मोबाइल नंबर दर्ज करे " />
                                 </div>
                             </div>
@@ -158,7 +205,7 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                  <label class="font-bold">Type of Complaint<br />
+                                  <label class="font-bold">Type of Complaint/<br />
                                         शिकायत का प्रकार<span style="color: red">*</span></label>
                                     <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlGrievanceType" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_ddlGrievanceType" class="form-control vd_DDL_required">
                                         <option value="0">-Select-</option>
@@ -171,7 +218,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                  <label class="font-bold">Subject of Complaint<br />
+                                  <label class="font-bold">Subject of Complaint/<br />
                                         शिकायत का विषय<span style="color: red">*</span></label>
                                     <select id="salaryOptions" name="salaryOptions" class="form-control">
                                         <option value="0">-Select-</option>
@@ -193,7 +240,7 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                  <label class="font-bold">Forward It<br />
+                                  <label class="font-bold">Forward It/<br />
                                         फॉरवर्ड करे
                                 <span style="color: red">*</span></label>
 
@@ -215,7 +262,7 @@
 
                             <div class="col-md-3" runat="server" id="AuthorityName" visible="false">
                                 <div class="form-group">
-                                  <label class="font-bold">Section Name<br />
+                                  <label class="font-bold">Section Name/<br />
                                         अनुभाग का नाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="Select">-Select-</option>
@@ -242,7 +289,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                  <label class="font-bold">Upload Document<br />
+                                  <label class="font-bold">Upload Document/<br />
                                         दस्तावेज़ अपलोड करे<span style="color: red">*</span></label>
                                     <input name="txtPanel" type="file" class="form-control" />
                                 </div>
@@ -250,8 +297,14 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
+
+
+
+
+
+
                                 <div class="form-group">
-                                  <label class="font-bold">File Complaint Here<br />
+                                  <label class="font-bold">File Complaint Here/<br />
                                         यहां शिकायत दर्ज करें<span style="color: red">*</span></label>
 
                                     <textarea class="form-control" id="workdescription" rows="1" placeholder="यहां शिकायत दर्ज करें" oninput="autoResize(this)"></textarea>
@@ -274,11 +327,12 @@
 
 
                     </fieldset>
+                    <hr />
                     <div class="row">
-                        <div class="col-md-12 text-center">
+                        <div class="col-md-12">
 
-                            <button runat="server" type="button" class="Alert-Confirmation  btn btn-success btn-rounded">Register Complaint</button>
-                            <a runat="server"  class="btn btn-danger btn-rounded" href="Trn_ParivadNivaran.aspx">Clear</a>
+                            <button runat="server" type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Register Complaint</button>
+                            <a runat="server"  class="btn btn-outline-danger w-lg btn-border" href="Trn_ParivadNivaran.aspx">Clear</a>
                         </div>
                     </div>
 
@@ -286,7 +340,7 @@
             </div>
         </div>
 
-    </div>
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 

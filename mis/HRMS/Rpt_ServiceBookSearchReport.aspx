@@ -218,7 +218,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Udice Code/<br />डाइस कोड</label>
+                            <label>Udice Code/<br />डाइस कोड<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>59865895680</asp:ListItem>
@@ -298,15 +298,15 @@
                                  <table id="tblList" class="table table-bordered table-responsive-lg text-center">
                                      <thead>
                                          <tr valign="middle">
-                                             <th>Sr.No.</th>
-                                             <th>Employee Name</th>
-                                             <th>Department</th>
-                                             <th>Designation</th>                     
-                                             <th>District</th>
-                                             <th>Block</th>
-                                             <th>UDISE Code</th>
-                                             <th>DOJ</th>
-                                             <th>Check Report</th>
+                                             <th>Sr.No./<br />सरल क्र.</th>
+                                             <th>Employee Name/<br />कर्मचारी का नाम</th>
+                                             <th>Department/<br />विभाग</th>
+                                             <th>Designation/<br />पद का नाम</th>                     
+                                             <th>District/<br />ज़िला</th>
+                                             <th>Block/<br />विकासखंड </th>
+                                             <th>U-DISE Code/<br />यू-डीआईएसई कोड</th>
+                                             <th>Date Of Joing/<br />जोइनिंग दिंनाक</th>
+                                             <th>Check Report/<br />रिपोर्ट जांचें</th>
                                          </tr>
                                      </thead>
                                      <tbody>

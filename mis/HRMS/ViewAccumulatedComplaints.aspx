@@ -53,11 +53,56 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Grievance Management System</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Grievances Processing</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <%--  <div class="row page-titles mb-4">--%>
+       <div class="col-md-5"  style="position:relative;bottom:20px; right:15px;">
+ <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
+              <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
+           <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
+           </u>
+       </p>
+   </div>
+    
+       
+  <div class="card   card-border-primary radius-defalt">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Grievances Processing/
+            शिकायत प्रोसेसिंग
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
 
     <%-- <div class="col-md-5  ">
             <p style="color: brown; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">शिकायत प्रोसेसिंग </p>
         </div>--%>
-    <div class="container-fluid">
+  <%--  <div class="container-fluid">
         <span class="hidden-sm-up">
             <br />
             <br />
@@ -138,7 +183,7 @@
                         </div>
                     </div>
                 </nav>
-                <br />
+                <br />--%>
                 <fieldset>
                     <legend>Grievances Processing/शिकायत प्रोसेसिंग 
                     </legend>
@@ -236,35 +281,39 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3 mt-4 py-2" style="position:relative;top:1rem;">
+                                     <hr />
+<div class="col-md-12">
+    <div class="form-group">
+        <button type="button" d="Button1"  onclick="myFunction()" class="Alert-Confirmation btn w-lg btn-success btn-border">Search</button>
+        <a href="ViewAccumulatedComplaints.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
+
+
+                       <%-- <div class="col-md-3 mt-4 py-2" style="position:relative;top:1rem;">
                             <button id="Button1" type="button" class="btn btn-success btn-rounded " onclick="myFunction()">Search</button>
                             <a class="btn btn-danger btn-rounded" href="ViewAccumulatedComplaints.aspx">Clear</a>
-                        </div>
+                        </div>--%>
                     </div>
 
                 </fieldset>
                 <div>
                     <fieldset>
-                        <legend>Grievances Processing Details
+                        <legend>Grievances Processing Details/शिकायत प्रसंस्करण विवरण
                         </legend>
-                        <div class="row form-group">
-                            <div class="row justify-content-end">
-                                <div class="col-md-1">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                    </div>
-
-                                </div>
+                         <div class="row justify-content-end">
+       <div class="col-md-4 text-end">
+           <div class="form-group">
+               <button class="btn btn-info btn-rounded w-55">Excel</button>
+               <button class="btn btn-info btn-rounded w-55">PDF</button>
+           </div>
+       </div>
+       <div class="col-md-3">
+           <div class="form-group">
+               <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+           </div>
+       </div>
+       </div>
                                 <div class="col-md-12">
                                     <div class="table-responsive">
                                         <table class="table  table-bordered text-center">
@@ -311,7 +360,7 @@
                                                 <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                                 <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
                                                 <td><a href="#"><i class="fas fa-eye"></i></a></td>
-                                                <td><a href="#" style="background-color: teal; color: white" class="btn btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
+                                               <td><a href="#" class="btn btn-rounded" style="background-color: teal; color: white" data-bs-toggle="modal" data-bs-target=". bs-example-modal-lg1">Forword</a></td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
@@ -325,7 +374,7 @@
                                                 <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                                 <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
                                                 <td><a href="#"><i class="fas fa-eye"></i></a></td>
-                                                <td><a href="#" class="btn btn-rounded" style="background-color: teal; color: white" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
+                                              <td><a href="#" class="btn btn-rounded" style="background-color: teal; color: white" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
 
                                             </tr>
 
@@ -333,12 +382,12 @@
                                         </table>
                                     </div>
                                 </div>
+                        </fieldset>
                             </div>
                         </div>
-                    </fieldset>
+                 
                 </div>
-            </div>
-        </div>
+          
         <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -410,12 +459,20 @@
                             </div>
                         </fieldset>
 
-
+                        </div>
                     </div>
                     <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                                     <hr />
+<div class="col-md-12">
+    <div class="form-group">
+        <button type="button" class="btn w-lg btn-success btn-border" onclick="window.print()">Print</button>
+         <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
+    </div>
+</div>
+
+                      <%--  <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
                         <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                    </div>
+                    </div>--%>
                 </div>
                 <!-- /.modal-content -->
             </div>
@@ -520,15 +577,24 @@
 
                     </div>
                     <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                                     <hr />
+<div class="col-md-12">
+    <div class="form-group">
+        <button type="button" class="btn w-lg btn-success btn-border" onclick="window.print()">Print</button>
+      <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
+    </div>
+</div>
+
+
+<%--                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
                         <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                    </div>
+                    </div>--%>
                 </div>
                 <!-- /.modal-content -->
             </div>
             <!-- /.modal-dialog -->
         </div>
-        <div class="modal bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel2" aria-hidden="true" style="display: none;">
+        <div class="modal bs-example-modal-lg1 show" tabindex="-1" aria-labelledby="myLargeModalLabel2" style="display: block;" aria-modal="true" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -589,7 +655,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Type Note Here :<span style="color: red">*</span></label>
-                                        <input class="form-control" />
+                                        <input class="form-control">
                                     </div>
                                 </div>
                             </div>

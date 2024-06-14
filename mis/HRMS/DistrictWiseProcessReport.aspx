@@ -53,7 +53,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
+ <%--   <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)"><u><br>
@@ -115,25 +115,73 @@
                     </div>
                 </div>
             </nav>
-            <br />
+            <br />--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Management System</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>District Wise Progress Report</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%--  <div class="row page-titles mb-4">--%>
+    <div class="col-md-5" style="position: relative; bottom: 20px; right: 15px;">
+        <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
+            <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
+            </u>
+        </p>
+    </div>
+
+
+
+    <div class="card   card-border-primary radius-defalt">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">District Wise Progress Report/
+
+जिलेवार प्रगति रिपोर्ट
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
 
             <div runat="server" id="show">
             </div>
             <fieldset id="fdSetSummaryReport" runat="server">
                 <legend>District Wise Progress Status/ जिलावार
 प्रगति की स्थिति</legend>
-                <div class="row">
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
+                                <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
@@ -146,23 +194,23 @@
                                 <table class="table  table-bordered text-center">
                                     <thead class="text-center">
                                         <tr>
-                                            <th>Sr.No.<br />
+                                            <th>Sr.No./<br />
                                                 सरल क्रमांक
                                             </th>
-                                            <th>District
+                                            <th>District/
                                                 <br />
                                                 जिला</th>
-                                            <th>Total Applications
+                                            <th>Total Applications/
                                                 <br />
                                                 कुल आवेदन</th>
-                                            <th>Pending For Action
+                                            <th>Pending For Action/
                                                 <br />
                                                 कार्रवाई हेतु लंबित</th>
-                                            <th>Rejected Grievances<br />
+                                            <th>Rejected Grievances/<br />
                                                 अस्वीकृत शिकायतें</th>
-                                            <th>Disposed Grievances<br />
+                                            <th>Disposed Grievances/<br />
                                                 निस्तारित शिकायतें</th>
-                                            <th>Percent Pendency<br />
+                                            <th>Percent Pendency/<br />
                                                 प्रतिशत पेंडेंसी</th>
                                         </tr>
                                     </thead>
@@ -260,17 +308,18 @@
 
                             </div>
                         </div>
+                </fieldset>
                         <%-- first time Data End--%>
-                    </div>
-                </div>
-            </fieldset>
+           
+                  
+           
             <%--Pending Complaint Status Data start--%>
             <fieldset id="fdSetPendingForActin" runat="server" visible="false">
                 <legend>District Wise Pending Complaint Status/जिला वार लंबित की  शिकायत स्थिति </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <label class="font-bold">
-                            District<br />
+                            District/<br />
                             जिला
                             <span style="color: red">*</span>
                         </label>
@@ -330,55 +379,58 @@
                             <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-3 mt-5">
+                   <%-- <div class="col-md-3 mt-5">
                         <asp:Button runat="server" CssClass="btn btn-success btn-rounded" Text="Search" OnClick="BtndistrictWiseData_Click" ID="BtndistrictWiseData" />
                         <a href="DistrictWiseProcessReport.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                    </div>
+                    </div>--%>
+                                                                    <hr />
+<div class="col-md-12">
+    <div class="form-group">
+        <%-- <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
+        <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" Text="Search" OnClick="BtndistrictWiseData_Click" ID="BtndistrictWiseData" />
+        <a href="DistrictWiseProcessReport .aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
                 </div>
             </fieldset>
+            
             <%--here new code start--%>
             <fieldset runat="server" visible="false" id="ReportOfPendingComplaint">
-                <legend>Pending Complaint Details</legend>
+                <legend>Pending Complaint Details/लंबित शिकायत विवरण</legend>
                 <%--here new code start--%>
-                <div class="row mt-2">
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-
-                        </div>
-                        <%-- pending Complain Table data Start--%>
+                                             <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+        <input type="text" id="searchInput13" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div><%-- pending Complain Table data Start--%>
                         <div class="col-md-12">
                             <div class="table-responsive" id="BeforeClickInPendingComplain" runat="server" visible="false">
                                 <table class="table table-bordered text-center" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance" style="border-collapse: collapse;">
                                     <thead class="text-center">
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                            <th data-class="expand" scope="col">Sr.No./<br />
                                                 सरल क्र.</th>
-                                            <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                            <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                 शिकायत क्रमांक</th>
-                                            <th data-hide="phone,tablet" scope="col">Date<br />
+                                            <th data-hide="phone,tablet" scope="col">Date/<br />
                                                 दिनाँक</th>
-                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                 लोकसेवक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                 शिकायत का प्रकार </th>
-                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                 शिकायत का विषय </th>
-                                            <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                            <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                 शिकायत  की स्थिति</th>
-                                            <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                            <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                 शिकायत देखे<br />
                                             </th>
                                         </tr>
@@ -460,21 +512,21 @@
                                         <tr>
 
 
-                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                            <th data-class="expand" scope="col">Sr.No./<br />
                                                 सरल क्र.</th>
-                                            <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                            <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                 शिकायत क्रमांक</th>
-                                            <th data-hide="phone,tablet" scope="col">Date<br />
+                                            <th data-hide="phone,tablet" scope="col">Date/<br />
                                                 दिनाँक</th>
-                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                 लोकसेवक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                 शिकायत का प्रकार </th>
-                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                 शिकायत का विषय </th>
-                                            <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                            <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                 शिकायत  की स्थिति</th>
-                                            <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                            <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                 शिकायत देखे<br />
                                             </th>
                                         </tr>
@@ -520,21 +572,21 @@
                                 <table class="table table-bordered text-center">
                                     <thead class="text-center">
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                            <th data-class="expand" scope="col">Sr.No./<br />
                                                 सरल क्र.</th>
-                                            <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                            <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                 शिकायत क्रमांक</th>
-                                            <th data-hide="phone,tablet" scope="col">Date<br />
+                                            <th data-hide="phone,tablet" scope="col">Date/<br />
                                                 दिनाँक</th>
-                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                 लोकसेवक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                 शिकायत का प्रकार </th>
-                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                 शिकायत का विषय </th>
-                                            <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                            <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                 शिकायत  की स्थिति</th>
-                                            <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                            <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                 शिकायत देखे<br />
                                             </th>
                                         </tr>
@@ -583,21 +635,21 @@
                                 <table class="table table-bordered text-center">
                                     <thead class="text-center">
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                            <th data-class="expand" scope="col">Sr.No./<br />
                                                 सरल क्र.</th>
-                                            <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                            <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                 शिकायत क्रमांक</th>
-                                            <th data-hide="phone,tablet" scope="col">Date<br />
+                                            <th data-hide="phone,tablet" scope="col">Date/<br />
                                                 दिनाँक</th>
-                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                 लोकसेवक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                 शिकायत का प्रकार </th>
-                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                 शिकायत का विषय </th>
-                                            <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                            <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                 शिकायत  की स्थिति</th>
-                                            <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                            <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                 शिकायत देखे<br />
                                             </th>
                                         </tr>
@@ -666,8 +718,7 @@
                             </div>
                         </div>
                         <%-- Dropdown Base Data End --%>
-                    </div>
-                </div>
+                   
             </fieldset>
 
             <%--Pending Complaint Status Data End--%>
@@ -677,7 +728,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label class="font-bold">
-                            District
+                            District/
                             <br />
                             जिला
              <span style="color: red">*</span>
@@ -742,56 +793,60 @@
                         </asp:DropDownList>
 
                     </div>
-                    <div class="col-md-2 mt-5">
-                        <asp:Button runat="server" CssClass="btn btn-success btn-rounded" Text="Search" ID="BtnRejectData" OnClick="BtnRejectData_Click" />
+                      <hr />
+  <div class="row">
+      <div class="col-md-12">
+
+         <asp:Button runat="server" CssClass="btn btn-outline-success w-lg btn-border" Text="Search" ID="BtnRejectData" OnClick="BtnRejectData_Click" />
+          <a runat="server"  class="btn btn-outline-danger w-lg btn-border" href="DistrictWiseProcessReport.aspx">Clear</a>
+      </div>
+  </div></div>
+
+                   <%-- <div class="col-md-2 mt-5">
+                        
 
 
 
                         <a href="DistrictWiseProcessReport.aspx" class="btn btn-danger btn-rounded">Clear</a>
                     </div>
-                </div>
+                </div>--%>
             </fieldset>
+    
             <fieldset runat="server" visible="false" id="ReportOfRejectedDetails">
-                <legend>Rejected Details</legend>
-                <div class="row mt-2">
-                    <div class="row justify-content-end">
-                        <div class="row justify-content-end">
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-
-                            </div>
+                <legend>Rejected Details/अस्वीकृत विवरण</legend>
+                                             <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
                             <div class="col-md-12">
                                 <div class="table-responsive" id="BeforeClickInRejectComplain" runat="server" visible="false">
                                     <table class="table table-bordered text-center">
                                         <thead class="text-center">
                                             <tr>
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
-                                                <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                                <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                     शिकायत देखे<br />
                                                 </th>
                                             </tr>
@@ -843,21 +898,21 @@
                                     <table class="table table-bordered text-center">
                                         <thead class="text-center">
                                             <tr>
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
-                                                <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                                <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                     शिकायत देखे<br />
                                                 </th>
                                             </tr>
@@ -904,21 +959,21 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
-                                                <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                                <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                     शिकायत देखे<br />
                                                 </th>
                                             </tr>
@@ -966,21 +1021,21 @@
                                     <table class="table table-bordered text-center">
                                         <thead class="text-center">
                                             <tr>
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
-                                                <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                                <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                     शिकायत देखे<br />
                                                 </th>
                                             </tr>
@@ -1022,10 +1077,10 @@
                                 </div>
                             </div>
                             <%-- Dropdown Base Data End --%>
-                        </div>
-                    </div>
-                </div>
+                        
             </fieldset>
+
+ 
             <%--Rejected  Status Data End--%>
             <%--Disposed  Status Data start--%>
             <fieldset id="fdSetDisposedGrievances" runat="server" visible="false">
@@ -1033,7 +1088,7 @@
                 <div class="row ">
                     <div class="col-md-3">
                         <label class="font-bold">
-                            District
+                            District/
                             <br />
                             जिला
              <span style="color: red">*</span>
@@ -1095,51 +1150,56 @@
                             <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2 mt-5">
+                  <%--  <div class="col-md-2 mt-5">
                         <asp:Button runat="server" CssClass="btn btn-success btn-rounded" Text="Search" ID="BtnDisposeCase" OnClick="BtnDisposeCase_Click" />
                         <a href="DistrictWiseProcessReport.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                    </div>
+                    </div>--%>
+                      <hr />
+  <div class="row">
+      <div class="col-md-12">
+
+      <asp:Button runat="server" CssClass="btn btn-outline-success w-lg btn-border" Text="Search" ID="BtnDisposeCase" OnClick="BtnDisposeCase_Click" />
+          <a runat="server"  class="btn btn-outline-danger w-lg btn-border" href="DistrictWiseProcessReport.aspx">Clear</a>
+      </div>
+  </div>
+
                 </div>
             </fieldset>
 
+
             <fieldset runat="server" visible="false" id="ReportOfDisposedDetails">
                 <legend>Disposed Details</legend>
-                <div class="row mt-2">
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-
-                        </div>
+                                              <div class="row justify-content-end">
+<div class="col-md-4 text-end">
+    <div class="form-group">
+        <button class="btn btn-info btn-rounded w-55">Excel</button>
+        <button class="btn btn-info btn-rounded w-55">PDF</button>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+        <input type="text" id="searchInput37" oninput="searchFunction()" class="form-control" placeholder="Search...">
+    </div>
+</div>
+</div>
                         <div class="col-md-12">
                             <div class="table-responsive" id="BeforeClickInDisposeCase" runat="server" visible="false">
                                 <table class="table table-bordered text-center">
                                     <thead class="text-center">
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No.<br />
+                                            <th data-class="expand" scope="col">Sr.No./<br />
                                                 सरल क्र.</th>
-                                            <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                            <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                 शिकायत क्रमांक</th>
-                                            <th data-hide="phone,tablet" scope="col">Date<br />
+                                            <th data-hide="phone,tablet" scope="col">Date/<br />
                                                 दिनाँक</th>
-                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                            <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                 लोकसेवक का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                 शिकायत का प्रकार </th>
-                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                            <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                 शिकायत का विषय </th>
-                                            <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                            <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                 शिकायत  की स्थिति</th>
                                             <th data-class="phone,tablet" scope="col">View Complaint<br />
                                                 शिकायत देखे<br />
@@ -1188,19 +1248,19 @@
                                     <table class="table table-bordered text-center">
                                         <thead class="text-center">
                                             <tr>
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
                                                 <th data-class="phone,tablet" scope="col">View Complaint<br />
                                                     शिकायत देखे<br />
@@ -1252,21 +1312,21 @@
                                             <tr>
 
 
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
-                                                <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                                <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                     शिकायत देखे<br />
                                                 </th>
                                             </tr>
@@ -1314,21 +1374,21 @@
                                     <table class="table table-bordered text-center">
                                         <thead class="text-center">
                                             <tr>
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.</th>
-                                                <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                                <th data-class="phone,tablet" scope="col">Complaint Number/<br />
                                                     शिकायत क्रमांक</th>
-                                                <th data-hide="phone,tablet" scope="col">Date<br />
+                                                <th data-hide="phone,tablet" scope="col">Date/<br />
                                                     दिनाँक</th>
-                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                                <th data-hide="phone,tablet" scope="col">Name of Public Servant/<br />
                                                     लोकसेवक का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Type of Complaint/<br />
                                                     शिकायत का प्रकार </th>
-                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                                <th data-hide="phone,tablet" scope="col">Subject of Complaint/<br />
                                                     शिकायत का विषय </th>
-                                                <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                                <th data-hide="phone,tablet" scope="col">Complaint Status/<br />
                                                     शिकायत  की स्थिति</th>
-                                                <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                                <th data-class="phone,tablet" scope="col">View Complaint/<br />
                                                     शिकायत देखे<br />
                                                 </th>
                                             </tr>
@@ -1369,12 +1429,12 @@
                             </div>
                             <%-- Dropdown Base Data End of anuppur--%>
                             <%-- Dropdown Base Data End --%>
-                        </div>
+                        </div></fieldset>
                     </div>
                 </div>
-            </fieldset>
             <%--Disposed  Status Data End--%>
-        </div>
+         
+    
         <%-- Pop Up model View --%>
         <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-xl">
@@ -1449,9 +1509,9 @@
             </div>
             <!-- /.modal-dialog -->
         </div>
+    
         <%-- Pop Up model View --%>
-    </div>
-
+        
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

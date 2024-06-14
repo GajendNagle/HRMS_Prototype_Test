@@ -12,7 +12,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
+   <%-- <div class="row page-titles" style="margin-bottom: -30px">
 
 
         <div class="col-md-4 align-self-center">
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <%--<h4 class="fw-bold">List of Disposded Grievance</h4>--%>
+    <%--<h4 class="fw-bold">List of Disposded Grievance</h4>
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
@@ -84,8 +84,54 @@
                     </div>
                 </div>
             </nav>
-            <br />
+            <br />--%>
+        <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Management System</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>List of Resolved Grievance</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <%--  <div class="row page-titles mb-4">--%>
+    <div class="col-md-5" style="position: relative; bottom: 20px; right: 15px;">
+        <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
+            <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
+            </u>
+        </p>
+    </div>
+
+
+
+    <div class="card   card-border-primary radius-defalt">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">List of Resolved Grievance/
+           
+निराकृत शिकायतों की सूची
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
             <div runat="server" id="show">
                 <fieldset>
                     <legend>List of Resolved Grievance/समाधान की गई शिकायतों की सूची</legend>
@@ -93,7 +139,7 @@
 
                         <div class="col-md-3">
                             <label class="font-bold">
-                                District
+                                District/
                                 <br />
                                 जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
@@ -110,7 +156,7 @@
                         </div>
                         <div class="col-md-3">
                             <label class="font-bold">
-                                Section  Name<br />
+                                Section  Name/<br />
                                 अनुभाग का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
                                 <asp:ListItem>--select--</asp:ListItem>
@@ -134,62 +180,70 @@
                                 <asp:ListItem>TMC</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-4 mt-3" style="position: relative; top: 2rem;">
+                           <hr />
+   <div class="col-md-12">
+       <div class="form-group">
+            <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="btnSearch_Click" Text=" Search" ID="btnSearch" />
+           <%-- <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
+          <%-- <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />--%>
+           <a href="DisposedGrievances.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+       </div>
+   </div>
+
+                       <%-- <div class="col-md-4 mt-3" style="position: relative; top: 2rem;">
                             <div class="form-group">
                                 <asp:Button runat="server" type="button" class="btn btn-success btn-rounded" OnClick="btnSearch_Click" Text=" Search" ID="btnSearch" />
                                 <a href="DisposedGrievances.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                             </div>
-                        </div>
+                        </div>--%>
                     </div>
                     <br />
                 </fieldset>
             </div>
             <div runat="server" id="show2" visible="false">
                 <fieldset>
-                    <legend>Dispose Action Details</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
+                    <legend>Dispose Action Details/
+निपटान कार्रवाई विवरण</legend>
+                     <div class="row justify-content-end">
+     <div class="col-md-4 text-end">
+         <div class="form-group">
+             <button class="btn btn-info btn-rounded w-55">Excel</button>
+             <button class="btn btn-info btn-rounded w-55">PDF</button>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="form-group">
+             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+         </div>
+     </div>
+ </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table id="Table4" class="table table-bordered text-center m-1" runat="server">
                                         <thead>
-                                            <tr style="background-color: #1B5B5C; color: white;">
-                                                <th data-class="expand" scope="col">Sr.No.<br />
+                                            <tr>
+                                                <th data-class="expand" scope="col">Sr.No./<br />
                                                     सरल क्र.
                                                 </th>
-                                                <th data-class="phone,tablet" scope="col">Grievance No.<br />
+                                                <th data-class="phone,tablet" scope="col">Grievance No./<br />
                                                     शिकायत क्र.
                                                 </th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Employee Name<br />
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Employee Name/<br />
                                                     कर्मचारी का नाम</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Type<br />
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Type/<br />
                                                     प्रकार</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Subject<br />
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Subject/<br />
                                                     विषय</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed On<br>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed On/<br>
                                                     पर निस्तारण किया गया</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed By<br>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed By/<br>
                                                     द्वारा निस्तारित</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Dispose Details<br>
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Dispose Details/<br>
                                                     निपटान विवरण</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Status<br />
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Status/<br />
                                                     स्थिति</th>
-                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">View Document<br />
+                                                <th data-hide="phone,tablet" scope="col" style="display: table-cell;">View Document/<br />
                                                     दस्तावेज़ देखें </th>
                                             </tr>
                                         </thead>
@@ -335,8 +389,9 @@
                                 </div>
                             </div>
                         </div>
+                    </fieldset>
                     </div>
-                </fieldset>
+               
             </div>
             <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
@@ -416,8 +471,8 @@
 
             </div>
         </div>
-    </div>
-
+    
+    
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

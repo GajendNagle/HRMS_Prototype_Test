@@ -3,9 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
+    <style>
+        .radius-defalt
+        {
+                border-radius: var(--vz-card-border-radius)!important;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="container-fluid">
+  <%--  <div class="container-fluid">
         <span class="hidden-sm-up">
             <br />
             <br />
@@ -81,7 +87,58 @@
                         </div>
                     </div>
                 </nav>
-                <br />
+                <br />--%>
+    <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Grievance Management System</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Grievance Management System Home</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <%--  <div class="row page-titles mb-4">--%>
+       <div class="col-md-5"  style="position:relative;bottom:20px; right:15px;">
+ <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
+              <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
+           <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
+           </u>
+       </p>
+   </div>
+
+<%--    <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
+            <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+        </div>--%>
+       
+  <div class="card   card-border-primary radius-defalt">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Grievance Management System About Information/
+                 शिकायत प्रबंधन प्रणाली के बारे में सूचना 
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
 
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-sm-12 col-md-12">
@@ -178,7 +235,7 @@
 
 
                 <fieldset>
-                    <legend>परिवेदना निवारण
+                    <legend>परिवेदना निवारण/Grievance Redressal
                     </legend>
 
 
@@ -219,7 +276,6 @@
 
 
 
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
