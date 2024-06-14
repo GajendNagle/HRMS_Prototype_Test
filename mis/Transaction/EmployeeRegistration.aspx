@@ -169,7 +169,7 @@
     </div>
     <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
         <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <img src="../../img/Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"/><u><br />
             </u>
         </p>
     </div>
@@ -783,7 +783,7 @@
                                                 </div>
                                                 <div class="col-md-4 mb-4">
                                                     <div class="form-group">
-                                                        <input type="checkbox" id="vehicle1" name="vehicle1" checked value="Bike">
+                                                        <input type="checkbox" id="vehicle1" name="vehicle1" checked="checked" value="Bike"/>
                                                         <b>Permanent Address same as Present Address</b>
                                                     </div>
                                                 </div>
@@ -2596,7 +2596,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="DocCaste1" class="col-md-4">
-                                                        <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                        <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
                                                     </div>
                                                     <div id="DocCaste2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2613,7 +2613,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="DocPresentpost1" class="col-md-4">
-                                                        <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                        <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
                                                     </div>
                                                     <div id="DocPresentpost2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2629,7 +2629,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="Dochandicapped1" class="col-md-4">
-                                                        <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                        <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
                                                     </div>
                                                     <div id="Dochandicapped2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2645,7 +2645,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="CriticalIllness1" class="col-md-4">
-                                                        <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                        <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
                                                     </div>
                                                     <div id="CriticalIllness3" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2662,7 +2662,7 @@
                                                     </div>
                                                     <div id="DocMarried1" class="col-md-4">
 
-                                                        <input type="file" id="fileInput5" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
+                                                        <input type="file" id="fileInput5" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
                                                     </div>
                                                     <div id="DocMarried2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>

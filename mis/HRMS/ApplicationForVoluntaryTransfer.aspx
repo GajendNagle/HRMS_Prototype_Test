@@ -26,6 +26,12 @@
             </div>
         </div>
     </div>
+    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
 
     <div class="card card-border-primary">
         <div class="card-header">
@@ -36,7 +42,7 @@
             </div>
         </div>
         <div class="card-body">
-            
+
             <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 20%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;स्वैच्छिक स्थानांतरण दिशानिर्देश:-</h4>
 
             <div>

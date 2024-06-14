@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
-        
         table-bordered th, .table-bordered td {
             border: 1px solid #808080d2;
         }
@@ -51,11 +50,18 @@
             </div>
         </div>
     </div>
+    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-7">
-                    <h4 class="card-title">Apply for employee voluntary transfer /<br /> कर्मचारी स्वैच्छिक स्थानांतरण आवेदन करें</h4>
+                    <h4 class="card-title">Apply for employee voluntary transfer /<br />
+                        कर्मचारी स्वैच्छिक स्थानांतरण आवेदन करें</h4>
                 </div>
             </div>
         </div>
@@ -72,9 +78,7 @@
                             कर्मचारी का नाम<span style="color: red">*</span></label>
                         <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" value="Arjun Talwar" />
                     </div>
-
                     <div class="col-md-3">
-
                         <label>
                             Unique ID /
                                 <br />
@@ -195,11 +199,11 @@
                         <ul style="list-style-type: disc">
                             <li>
                                 <%--<div class="row">--%>
-                                    <div class="col-md-12">
-                                        <label>Are You Suffering From Serious Illness (If yes, give details) / क्या आप गंभीर बीमारी से पीड़ित हैं (यदि हाँ तो विवरण दें)<span style="color: red">*</span></label>&emsp;
+                                <div class="col-md-12">
+                                    <label>Are You Suffering From Serious Illness (If yes, give details) / क्या आप गंभीर बीमारी से पीड़ित हैं (यदि हाँ तो विवरण दें)<span style="color: red">*</span></label>&emsp;
             <input type="radio" name="SeriousIllness" value="Yes" onchange="SeriousIllnessChange(this);" /><label>Yes</label>&emsp;
             <input type="radio" name="SeriousIllness" value="No" checked onchange="SeriousIllnessChange(this);" /><label>No</label>&emsp;&emsp;&emsp;
-                                    </div>
+                                </div>
                                 <%--</div>--%>
                                 <div class="row align-items-end" id="divSeriousIllness" style="display: none;">
                                     <div class="col-md-3">
@@ -241,34 +245,34 @@
                                                 <div id="fileCertMedicalBoard" style="display: none;">
                                                     <div class="row align-items-end">
                                                         <div class="col-md-3">
-                                                                <label>
-                                                                    Select Handicapped Type /<br />
-                                                                    विकलांगता का चयन करें<span style="color: red;">*</span></label>
-                                                                <select id="ddlHandiCaped" class="form-control select2">
-                                                                    <option>--Select--</option>
-                                                                    <option value="Cancer/ कैंसर">Blindnes/अंधापन</option>
-                                                                    <option value="Low Vision/कम दृष्टि">Low Vision/कम दृष्टि</option>
-                                                                    <option value="Hearing Impaiment/ श्रवण हानि">Hearing Impaiment/ श्रवण हानि</option>
-                                                                    <option value="Speech and Language / वाणी और भाषा">Speech  Language / वाणी और भाषा</option>
-                                                                    <option value="Loco Moto Disability / लोको मोटो विकलांगता">Loco Moto Disability / लोको मोटो विकलांगता</option>
-                                                                    <option value="Mental Illness /मानसिक बिमारी">Mental Illness /मानसिक बिमारी</option>
-                                                                    <option value="Specipic Illness /विशिष्ट बीमारी">Specipic Illness /विशिष्ट बीमारी</option>
-                                                                    <option value="Intellectual Disability / बौद्धिक विकलांगता">Intellectual Disability / बौद्धिक विकलांगता</option>
-                                                                    <option value="Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति">Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति</option>
-                                                                    <option value="Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर">Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर</option>
-                                                                    <option value="Multiple Disability / एकाधिक विकलांगता">Multiple Disability / एकाधिक विकलांगता</option>
-                                                                    <option value="Cerebral Palsy / मस्तिष्क पक्षाघात">Cerebral Palsy / मस्तिष्क पक्षाघात</option>
-                                                                    <option value="Dwarfism / बौनापन">Dwarfism / बौनापन</option>
-                                                                    <option value="Muscular Dystrophy">Muscular Dystrophy</option>
-                                                                    <option value="Chronic Disease / मांसपेशीय दुर्विकास">Chronic Disease / मांसपेशीय दुर्विकास</option>
-                                                                    <option value="Multiple Sclerosis / मल्टीपल स्क्लेरोसिस">Multiple Sclerosis / मल्टीपल स्क्लेरोसिस</option>
-                                                                    <option value="Thalassemia / थैलेसीमिया">Thalassemia / थैलेसीमिया</option>
-                                                                    <option value="Hemophilia / हीमोफीलिया">Hemophilia / हीमोफीलिया</option>
-                                                                    <option value="Sickle Cell Disease / सिकल सेल रोग">Sickle Cell Disease / सिकल सेल रोग</option>
-                                                                    <option value="Acid Attack Victim / एसिड अटैक पीड़िता">Acid Attack Victim / एसिड अटैक पीड़िता</option>
-                                                                    <option value="Parkinson's Disease / पार्किंसंस रोग">Parkinson's Disease / पार्किंसंस रोग</option>
+                                                            <label>
+                                                                Select Handicapped Type /<br />
+                                                                विकलांगता का चयन करें<span style="color: red;">*</span></label>
+                                                            <select id="ddlHandiCaped" class="form-control select2">
+                                                                <option>--Select--</option>
+                                                                <option value="Cancer/ कैंसर">Blindnes/अंधापन</option>
+                                                                <option value="Low Vision/कम दृष्टि">Low Vision/कम दृष्टि</option>
+                                                                <option value="Hearing Impaiment/ श्रवण हानि">Hearing Impaiment/ श्रवण हानि</option>
+                                                                <option value="Speech and Language / वाणी और भाषा">Speech  Language / वाणी और भाषा</option>
+                                                                <option value="Loco Moto Disability / लोको मोटो विकलांगता">Loco Moto Disability / लोको मोटो विकलांगता</option>
+                                                                <option value="Mental Illness /मानसिक बिमारी">Mental Illness /मानसिक बिमारी</option>
+                                                                <option value="Specipic Illness /विशिष्ट बीमारी">Specipic Illness /विशिष्ट बीमारी</option>
+                                                                <option value="Intellectual Disability / बौद्धिक विकलांगता">Intellectual Disability / बौद्धिक विकलांगता</option>
+                                                                <option value="Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति">Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति</option>
+                                                                <option value="Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर">Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर</option>
+                                                                <option value="Multiple Disability / एकाधिक विकलांगता">Multiple Disability / एकाधिक विकलांगता</option>
+                                                                <option value="Cerebral Palsy / मस्तिष्क पक्षाघात">Cerebral Palsy / मस्तिष्क पक्षाघात</option>
+                                                                <option value="Dwarfism / बौनापन">Dwarfism / बौनापन</option>
+                                                                <option value="Muscular Dystrophy">Muscular Dystrophy</option>
+                                                                <option value="Chronic Disease / मांसपेशीय दुर्विकास">Chronic Disease / मांसपेशीय दुर्विकास</option>
+                                                                <option value="Multiple Sclerosis / मल्टीपल स्क्लेरोसिस">Multiple Sclerosis / मल्टीपल स्क्लेरोसिस</option>
+                                                                <option value="Thalassemia / थैलेसीमिया">Thalassemia / थैलेसीमिया</option>
+                                                                <option value="Hemophilia / हीमोफीलिया">Hemophilia / हीमोफीलिया</option>
+                                                                <option value="Sickle Cell Disease / सिकल सेल रोग">Sickle Cell Disease / सिकल सेल रोग</option>
+                                                                <option value="Acid Attack Victim / एसिड अटैक पीड़िता">Acid Attack Victim / एसिड अटैक पीड़िता</option>
+                                                                <option value="Parkinson's Disease / पार्किंसंस रोग">Parkinson's Disease / पार्किंसंस रोग</option>
 
-                                                                </select>
+                                                            </select>
                                                         </div>
                                                         <div id="HandicapePercentage" class="col-md-3">
                                                             <label>
@@ -315,24 +319,24 @@
                                                     <input name="txtPostOfSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of Spouse" />
                                                 </div>
                                                 <div class="col-md-3">
-                                                        <label>
-                                                            Enter Post of Spouse<br />
-                                                            स्पाउस का मूल पद दर्ज करें<span style="color: red">*</span>&nbsp;</label>
-                                                        <input name="txtPostOfSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter Post of Spouse" />
-                                                    </div>
+                                                    <label>
+                                                        Enter Post of Spouse<br />
+                                                        स्पाउस का मूल पद दर्ज करें<span style="color: red">*</span>&nbsp;</label>
+                                                    <input name="txtPostOfSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter Post of Spouse" />
+                                                </div>
                                                 <div class="col-md-3">
-                                                        <label>
-                                                            Enter Spouse Department
+                                                    <label>
+                                                        Enter Spouse Department
                                                                 <br />
-                                                            स्पाउस का विभाग दर्ज करें<span style="color: red">*</span>&nbsp;</label>
-                                                        <input name="txtPlacePostingSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter  Spouse Department " />
-                                                    </div>
+                                                        स्पाउस का विभाग दर्ज करें<span style="color: red">*</span>&nbsp;</label>
+                                                    <input name="txtPlacePostingSpouse" type="text" class="form-control" autocomplete="off" placeholder="Enter  Spouse Department " />
+                                                </div>
 
                                                 <div class="col-md-3">
-                                                        <label>
-                                                            Enter Spouse Office Address<br />
-                                                            स्पाउस कार्यालय का पता दर्ज करें<span style="color: red">*</span>&nbsp;</label>
-                                                        <input name="txtDistancePostingPlaces" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Office Address" />
+                                                    <label>
+                                                        Enter Spouse Office Address<br />
+                                                        स्पाउस कार्यालय का पता दर्ज करें<span style="color: red">*</span>&nbsp;</label>
+                                                    <input name="txtDistancePostingPlaces" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Office Address" />
                                                 </div>
                                             </div>
                                         </div>
@@ -343,9 +347,9 @@
 
                             <li>
                                 <div class="col-md-12">
-                                        <label>Enter Reason for Seeking Transfer / स्थानांतरण चाहने का कारण दर्ज करें<span style="color: red">*</span></label>
-                                        <input name="txtTransferReason" maxlength="250" type="text" class="form-control" autocomplete="off" placeholder="Enter Reason for Seeking Transfer (In 200 Words)" />
-                                    </div>
+                                    <label>Enter Reason for Seeking Transfer / स्थानांतरण चाहने का कारण दर्ज करें<span style="color: red">*</span></label>
+                                    <input name="txtTransferReason" maxlength="250" type="text" class="form-control" autocomplete="off" placeholder="Enter Reason for Seeking Transfer (In 200 Words)" />
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -357,7 +361,8 @@
                     <legend>Voluntary Transfer Detail / स्वैच्छिक स्थानांतरण का विवरण</legend>
                     <%--                    <div class="row align-items-end">--%>
                     <div class="col-md-12">
-                        <label>Enter the Information about the Vacant Places Desired for Transfer in the Following Table /<br />
+                        <label>
+                            Enter the Information about the Vacant Places Desired for Transfer in the Following Table /<br />
                             स्थानांतरण हेतु चाहे गये रिक्त स्थानों की जानकारी निम्न तालिका में अंकित करे -</label>
                         <%--</div>--%>
                     </div>

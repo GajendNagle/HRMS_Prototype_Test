@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-      
         table-bordered th, .table-bordered td {
             border: 1px solid #808080d2;
         }
@@ -77,7 +76,12 @@
             </div>
         </div>
     </div>
-
+    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
@@ -131,7 +135,7 @@
                                     <td>
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                     </td>
-                                    <td><a class="Alert-Edit" ><i class="fa fa-edit"></i></a></td>
+                                    <td><a class="Alert-Edit"><i class="fa fa-edit"></i></a></td>
 
                                 </tr>
                             </table>

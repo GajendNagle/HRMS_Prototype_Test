@@ -72,7 +72,7 @@
         </div>
     </div><div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
-        <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"/><u><br />
         </u>
     </p>
 </div>
@@ -237,7 +237,7 @@
                                         From Date /<br />
                                         दिनांक से
                                     </label>
-                                    <input type="Date" class="form-control" />
+                                    <input type="date" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -246,7 +246,7 @@
                                         To Date /<br />
                                         दिनांक तक
                                     </label>
-                                    <input type="Date" class="form-control" />
+                                    <input type="date" class="form-control" />
                                 </div>
                             </div>
                             <hr />
@@ -271,7 +271,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
                                 </div>
                             </div>
                         </div>
@@ -496,8 +496,8 @@
                                     </fieldset>
                                     <div class="modal-footer text-center">
                                         <%--             <button type="button" class=" Alert-Save btn btn-success btn-rounded Alert-Save " onclick="myFunction()">Approve</button>--%>
-                                        <button type="button" class="btn btn-success" onclick="window.print()">Print</button>
-                                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-success" onclick="window.print()">Print</button>
+                                        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
 
                                     </div>
                                 </div>

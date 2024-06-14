@@ -307,7 +307,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table table-bordered">
                                     <tr>
                                         <td class="firstCol align-content-center">
@@ -515,7 +515,7 @@
                     <fieldset>
                         <legend>Present Address / वर्तमान पता</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td class="align-content-center">
@@ -584,7 +584,7 @@
                     <fieldset>
                         <legend>Permanent Address / स्थायी पता</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td class="align-content-center">
@@ -653,7 +653,7 @@
                     <fieldset>
                         <legend>Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -705,44 +705,44 @@
                     <fieldset>
                         <legend>Education Qualification / शैक्षणिक योग्यता</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Sr.No./<br />सरल क्र.
                                                 सरल क्र.
                                             </label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Qualification /<br />
                                                 योग्यता</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Suject /<br />
                                                 विषय
                                             </label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Board /<br />
                                                 बोर्ड</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Year /<br />
                                                 वर्ष</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Grade /<br />
                                                 ग्रेड</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">
+                                            <label>
                                                 Comments /<br />
                                                 टिप्पणियाँ</label>
                                         </td>
@@ -829,7 +829,7 @@
                     <fieldset id="idFirstAppointment">
                         <legend>First Appointment Details / प्रथम नियुक्ति विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -1045,7 +1045,7 @@
                     <fieldset id="idCurrentAppointment">
                         <legend>Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -1121,7 +1121,7 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                Office/Institute/School Code & Name /<br />
+                                                Office/Institute/School Code & Name/<br />
                                                 कार्यालय/संस्थान/विद्यालय कोड एवं नाम</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1271,7 +1271,7 @@
                     <fieldset>
                         <legend>Bank Account Details / बैंक के खाते का विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -1394,51 +1394,51 @@
                     <fieldset>
                         <legend>Promotion Details / प्रमोशन विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table-responsive table">
                                     <tr>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Sr.No./<br />
                                                 सरल क्र.</label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Order No. /<br />
                                                 आदेश संख्या
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Order Date /<br />
                                                 आदेश दिनांक
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Name of Issuing Office/<br />
                                                 जारीकर्ता कार्यालय का नाम
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Direct In Case Of District/Division Level Authority /<br />
                                                 जिला/मंडल स्तरीय प्राधिकरण के मामले में प्रत्यक्ष</label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Designation/<br />
                                                 पदनाम</label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Basic Pay /<br />
                                                 मूल वेतन
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Date of Assumption of Office /<br />
                                                 कार्यभार ग्रहण करने का दिनांक
                                             </label>
@@ -1456,44 +1456,44 @@
                     <fieldset>
                         <legend>Pay Scale Details / वेतनमान विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table-responsive table">
                                     <tr>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Sr.No./<br />
                                                 सरल क्र.</label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Order No./<br />
                                                 आदेश संख्या
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Order Date/<br />
                                                 आदेश दिनांक
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Name of Issuing Office /<br />
                                                 जारीकर्ता कार्यालय का नाम
                                             </label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Direct In Case Of District/Division Level Authority /<br />
                                                 जिला/मंडल स्तरीय प्राधिकरण के मामले में प्रत्यक्ष</label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Designation/<br />
                                                 पदनाम</label>
                                             </th>
                                         <th>
-                                            <label class="font-bold">
+                                            <label>
                                                 Pay Scale/<br />
                                                 वेतनमान</label>
                                         </th>
@@ -1529,23 +1529,23 @@
                     <fieldset>
                         <legend>Annual Increment Details / वार्षिक वेतन वृद्धि विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr .No. /<br />सरल क्र. </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Year /<br />वर्ष </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Month /<br />माह </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">New Basic Pay /<br />
+                                        <th>
+                                            <label>Sr .No. /<br />सरल क्र. </label>
+                                        </th>
+                                        <th>
+                                            <label>Year /<br />वर्ष </label>
+                                        </th>
+                                        <th>
+                                            <label>Month /<br />माह </label>
+                                        </th>
+                                        <th>
+                                            <label>New Basic Pay /<br />
                                                 नया मूल वेतन
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td>
@@ -1583,44 +1583,44 @@
                     <fieldset>
                         <legend>Special Increment Order Details / विशेष वेतन वृद्धि आदेश विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Order No./<br />आदेश संख्या </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Order Date/<br />आदेश दिनांक </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Increment Type/<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Order No./<br />आदेश संख्या </label>
+                                        </th>
+                                        <th>
+                                            <label>Order Date/<br />आदेश दिनांक </label>
+                                        </th>
+                                        <th>
+                                            <label>Increment Type/<br />
                                                 वृद्धि प्रकार
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Name of Issuing Office /<br />
+                                        </th>
+                                        <th>
+                                            <label>Name of Issuing Office /<br />
                                                 जारीकर्ता कार्यालय का नाम
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Month /<br />माह </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Year /<br />वर्ष</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">New Basic Pay /<br />
+                                        </th>
+                                        <th>
+                                            <label>Month /<br />माह </label>
+                                        </th>
+                                        <th>
+                                            <label>Year /<br />वर्ष</label>
+                                        </th>
+                                        <th>
+                                            <label>New Basic Pay /<br />
                                                 नया मूल वेतन
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">View Order /<br />
+                                        </th>
+                                        <th>
+                                            <label>View Order /<br />
                                                 आर्डर देखें
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="9" class="text-center">
@@ -1636,25 +1636,25 @@
                     <fieldset>
                         <legend>Transfer Details / स्थानांतरण विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No. /<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Order No. /<br />आदेश संख्या</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Order Date /<br />आदेश दिनांक</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Designation Type /<br />
+                                        <th>
+                                            <label>Sr.No. /<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Order No. /<br />आदेश संख्या</label>
+                                        </th>
+                                        <th>
+                                            <label>Order Date /<br />आदेश दिनांक</label>
+                                        </th>
+                                        <th>
+                                            <label>Designation Type /<br />
                                                 पदनाम प्रकार</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Posted School/Institute/Office Name (DISE Code) /<br />पोस्ट किया गया स्कूल/संस्थान/कार्यालय का नाम (डीआईएसई कोड)</label>
-                                        </td>
+                                        </th>
+                                        <th>
+                                            <label>Posted School/Institute/Office Name (DISE Code) /<br />पोस्ट किया गया स्कूल/संस्थान/कार्यालय का नाम (डीआईएसई कोड)</label>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="5" class="text-center">
@@ -1669,25 +1669,25 @@
                     <fieldset>
                         <legend>Nomination Details / नामांकन विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Nominee Name /<br />नामांकित व्यक्ति का नाम
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Nominee Name /<br />नामांकित व्यक्ति का नाम
 </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Relation with Nominee /<br />नामांकित व्यक्ति के साथ संबंध
+                                        </th>
+                                        <th>
+                                            <label>Relation with Nominee /<br />नामांकित व्यक्ति के साथ संबंध
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Nominee Percentage /<br />
+                                        </th>
+                                        <th>
+                                            <label>Nominee Percentage /<br />
                                                 नामांकित व्यक्ति का प्रतिशत
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="4" class="text-center">
@@ -1701,30 +1701,30 @@
 
 
                     <fieldset>
-                        <legend>Earned Leave Records</legend>
+                        <legend>Earned Leave Records / अर्जित अवकाश रिकार्ड</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Year /<br />वर्ष </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Month /<br />माह </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Earned Leave (In Days) /<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Year /<br />वर्ष </label>
+                                        </th>
+                                        <th>
+                                            <label>Month /<br />माह </label>
+                                        </th>
+                                        <th>
+                                            <label>Earned Leave (In Days) /<br />
                                                 अर्जित अवकाश (दिनों में)
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Available Leave (In Days) /<br />
+                                        </th>
+                                        <th>
+                                            <label>Available Leave (In Days) /<br />
                                                 उपलब्ध अवकाश (दिनों में)
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="5" class="text-center">
@@ -1737,46 +1737,46 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Half Pay Leave Records</legend>
+                        <legend>Half Pay Leave Record / आधा वेतन अवकाश रिकॉर्डs</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Year /<br />वर्ष </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Month /<br />माह </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Half Pay leave Earned (In Days) /<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Year /<br />वर्ष </label>
+                                        </th>
+                                        <th>
+                                            <label>Month /<br />माह </label>
+                                        </th>
+                                        <th>
+                                            <label>Half Pay leave Earned (In Days) /<br />
                                                 अर्जित आधा वेतन अवकाश (दिनों में)
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Available Leave (In Days) /<br />
+                                        </th>
+                                        <th>
+                                            <label>Available Leave (In Days) /<br />
                                                 उपलब्ध अवकाश (दिनों में)
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <label class="font-bold">1</label>
+                                            <label>1</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">2022</label>
+                                            <label>2022</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">April</label>
+                                            <label>April</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">20</label>
+                                            <label>20</label>
                                         </td>
                                         <td>
-                                            <label class="font-bold">0</label>
+                                            <label>0</label>
                                         </td>
                                     </tr>
                                 </table>
@@ -1786,42 +1786,42 @@
 
 
                     <fieldset>
-                        <legend>Approved Leave Details</legend>
+                        <legend>Approved Leave Details / स्वीकृत अवकाश विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Leave Type/<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Leave Type/<br />
                                                 लीव प्रकार </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Days/<br />दिन </label>
-                                        </td>
+                                        </th>
+                                        <th>
+                                            <label>Days/<br />दिन </label>
+                                        </th>
 
-                                        <td>
-                                            <label class="font-bold">Date From/<br />दिनांक से </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Date To /<br />दिनांक तक </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Acceptance Date/<br />
+                                        <th>
+                                            <label>Date From/<br />दिनांक से </label>
+                                        </th>
+                                        <th>
+                                            <label>Date To /<br />दिनांक तक </label>
+                                        </th>
+                                        <th>
+                                            <label>Acceptance Date/<br />
                                                 स्वीकृति दिनांक 
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Approver /<br />
+                                        </th>
+                                        <th>
+                                            <label>Approver /<br />
                                                 स्वीकृति दिनांक
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Date of return from leave/<br />
+                                        </th>
+                                        <th>
+                                            <label>Date of return from leave/<br />
                                                 छुट्टी से लौटने का दिनांक</label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="8" class="text-center">
@@ -1834,28 +1834,28 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Unauthorized Absence Details</legend>
+                        <legend>Unauthorized Absence Details / अनधिकृत अनुपस्थिति विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12  table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Days /<br />दिन </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Date From /<br />दिनांक से </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Date To /<br />दिनांक तक </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Date of return /<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Days /<br />दिन </label>
+                                        </th>
+                                        <th>
+                                            <label>Date From /<br />दिनांक से </label>
+                                        </th>
+                                        <th>
+                                            <label>Date To /<br />दिनांक तक </label>
+                                        </th>
+                                        <th>
+                                            <label>Date of return /<br />
                                                 लौटने की दिनांक
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="5" class="text-center">
@@ -1868,43 +1868,43 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Punishment Details</legend>
+                        <legend>Punishment Details / सज़ा का विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Type of Punishment/<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Type of Punishment/<br />
                                                 सज़ा का प्रकार
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Punishment Description/<br />
+                                        </th>
+                                        <th>
+                                            <label>Punishment Description/<br />
                                                 सज़ा का प्रकार</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Issuing Officer /<br />
+                                        </th>
+                                        <th>
+                                            <label>Issuing Officer /<br />
                                                 जारीकर्ता अधिकारी
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Order No./<br />
+                                        </th>
+                                        <th>
+                                            <label>Order No./<br />
                                                 आदेश संख्या
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Issue Date/<br />
+                                        </th>
+                                        <th>
+                                            <label>Issue Date/<br />
                                                 जारी दिनांक
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">View Order/<br />
+                                        </th>
+                                        <th>
+                                            <label>View Order/<br />
                                                 आर्डर देखें
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="7" class="text-center">
@@ -1917,39 +1917,39 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Disciplinary Action Details</legend>
+                        <legend>Disciplinary Action Details / अनुशासनात्मक कार्रवाई विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र. </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Type of Case /<br />
+                                        <th>
+                                            <label>Sr.No. /<br />सरल क्र. </label>
+                                          </th>
+                                        <th>
+                                            <label>Type of Case /<br />
                                                 केस का प्रकार
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Case Description /<br />
+                                          </th>
+                                        <th>
+                                            <label>Case Description /<br />
                                                 केस विवरण
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Before Whom the Case are Pending /<br />
+                                          </th>
+                                        <th>
+                                            <label>Before Whom the Case are Pending /<br />
                                                 जिनके समक्ष मामले लंबित हैं
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">From Which Date the Proceedings are Pending /<br />
+                                          </th>
+                                        <th>
+                                            <label>From Which Date the Proceedings are Pending /<br />
                                                 कार्यवाही किस दिनांक से लंबित है
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">View Order /<br />
+                                          </th>
+                                        <th>
+                                            <label>View Order /<br />
                                                 आर्डर देखें
                                             </label>
-                                        </td>
+                                          </th>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="text-center">
@@ -1962,38 +1962,38 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Award Details</legend>
+                        <legend>Award Details / पुरस्कार विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Award Name /<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Award Name /<br />
                                                 पुरस्कार का नाम
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Award Level /<br />
+                                        </th>
+                                        <th>
+                                            <label>Award Level /<br />
                                                 पुरस्कार स्तर</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Award Year /<br />
+                                        </th>
+                                        <th>
+                                            <label>Award Year /<br />
                                                 पुरस्कार वर्ष
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Award Order No. /<br />
+                                        </th>
+                                        <th>
+                                            <label>Award Order No. /<br />
                                                 पुरस्कार आदेश क्रमांक
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">View Order /<br />
+                                        </th>
+                                        <th>
+                                            <label>View Order /<br />
                                                 आर्डर देखें
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="text-center">
@@ -2006,40 +2006,41 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Training Details</legend>
+                        <legend>Training Details / प्रशिक्षण विवरण
+                        </legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Training Type /<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Training Type /<br />
                                                 प्रशिक्षण प्रकार
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Training Level /<br />
+                                        </th>
+                                        <th>
+                                            <label>Training Level /<br />
                                                 प्रशिक्षण स्तर
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Total Days /<br />
+                                        </th>
+                                        <th>
+                                            <label>Total Days /<br />
                                                 कुल दिन
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">From /<br />से </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">To /<br />तक </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">View Order /<br />
+                                        </th>
+                                        <th>
+                                            <label>From /<br />से </label>
+                                        </th>
+                                        <th>
+                                            <label>To /<br />तक </label>
+                                        </th>
+                                        <th>
+                                            <label>View Order /<br />
                                                 आर्डर देखें
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="7" class="text-center">
@@ -2051,29 +2052,29 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Resource Group Details</legend>
+                        <legend>Resource Group Details / संसाधन समूह विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र.</label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">Resource Group /<br />
+                                        <th>
+                                            <label>Sr.No./<br />सरल क्र.</label>
+                                        </th>
+                                        <th>
+                                            <label>Resource Group /<br />
                                                 संसाधन समूह
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">National Days /<br />
+                                        </th>
+                                        <th>
+                                            <label>National Days /<br />
                                                 राष्ट्रीय दिवस
                                             </label>
-                                        </td>
-                                        <td>
-                                            <label class="font-bold">State Days /<br />
+                                        </th>
+                                        <th>
+                                            <label>State Days /<br />
                                                 राज्य दिवस
                                             </label>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td colspan="4" class="text-center">

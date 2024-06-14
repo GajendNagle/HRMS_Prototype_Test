@@ -76,6 +76,12 @@
             </div>
         </div>
     </div>
+    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
@@ -106,36 +112,36 @@
                 </div>
                 <div class="table-responsive">
                     <table class="table table-bordere text-center">
-                        
-                            <tr>
-                                <th>Sr. No. /<br />
-                                    सरल क्र. </th>
-                                <th>Application Number /
+
+                        <tr>
+                            <th>Sr. No. /<br />
+                                सरल क्र. </th>
+                            <th>Application Number /
                                     <br />
-                                    आवेदन संख्या</th>
-                                <th>Employ Name /<br />
-                                    कर्मचारी का नाम </th>
-                                <th>Unique Id /<br />
-                                    यूनिक आईडी </th>
-                                <th>Print Draft Application /<br />
-                                    ड्राफ्ट आवेदन प्रिंट करें</th>
-                                <th>Update Application /<br />
-                                    एप्लिकेशन अपडेट करें</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
+                                आवेदन संख्या</th>
+                            <th>Employ Name /<br />
+                                कर्मचारी का नाम </th>
+                            <th>Unique Id /<br />
+                                यूनिक आईडी </th>
+                            <th>Print Draft Application /<br />
+                                ड्राफ्ट आवेदन प्रिंट करें</th>
+                            <th>Update Application /<br />
+                                एप्लिकेशन अपडेट करें</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
 
-                                <td>1234567</td>
+                            <td>1234567</td>
 
-                                <td>Rounak Nath</td>
+                            <td>Rounak Nath</td>
 
-                                <td>AR4781</td>
+                            <td>AR4781</td>
 
-                                <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                </td>
-                                 <td><a class="Alert-Edit" ><i class="fa fa-edit"></i></a></td>
-                            </tr> 
+                            <td>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
+                            </td>
+                            <td><a class="Alert-Edit"><i class="fa fa-edit"></i></a></td>
+                        </tr>
 
                     </table>
                 </div>
