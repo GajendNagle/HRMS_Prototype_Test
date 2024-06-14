@@ -109,7 +109,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Unique Id-Name
+                                        Unique Id-Name /
                                 <br />
                                         यूनिक आई.डी. - नाम
                                     </label>
@@ -121,7 +121,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        District Name
+                                        District Name /
   <br />
                                         जिला का नाम
                                     </label>
@@ -131,7 +131,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Sankul Name
+                                        Sankul Name /
   <br />
                                         संकुल का नाम
                                     </label>
@@ -141,7 +141,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Office / Institute / School
+                                        Office / Institute / School /
                         <br />
                                         कार्यालय / संस्था/ स्कूल
                                     </label>
@@ -151,7 +151,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Department Name
+                                        Department Name /
                         <br />
                                         विभाग का नाम
                                     </label>
@@ -163,7 +163,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Designation Name
+                                        Designation Name /
                                 <br />
                                         पदनाम
 
@@ -184,45 +184,39 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Year of APR
+                                        Year of APR /
                 <br />
                                         अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                                     </label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
-                                    <br />
-                                    <br />
-                                    <br />
+                                   
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                    <label>
-                                        Uplode APR form
+                                        Upload APR form /
                 <br />
                                         अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                                     </label>
                                     <input type="file" class="form-control" accept=".pdf" onchange="checkFileSize('FuAprForm', 200, 'MsgErr')" id="FuAprForm" />
                                     <div style="color: red; font-size: 12px; margin: 0px; padding: 0px; display: inline" id="MsgErr">
-                                        <br />
-                                        <br />
-                                        <br />
+                                     
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="button" value="Save" onclick="document.getElementById('FS_Details').style.display = 'block';" class="Alert-Confirmation btn btn-success btn-rounded">
+                                    <input type="button" value="Save" onclick="document.getElementById('FS_Details').style.display = 'block';" class="Alert-Confirmation btn btn-outline-success btn-border w-lg"/>
 
-                                    <a href="Trn_HoAprFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                                    <br />
-                                    <br />
-                                    <br />
+                                    <a href="Trn_HoAprFill.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                                   
                                 </div>
                             </div>
                         </div>
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
-                        <legend>APR Details</legend>
+                        <legend>APR Details / एपीआर विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -230,7 +224,7 @@
                                     <button class="btn btn-info btn-rounded w-55">PDF</button>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="form-group">
                                     <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                 </div>
@@ -243,27 +237,27 @@
                                     <table class="table  table-hover table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Sr. No<br />
+                                                <th>Sr. No. /<br />
                                                     सरल क्र.</th>
-                                                <th>Employee<br />
+                                                <th>Employee /<br />
                                                     कर्मचारी</th>
-                                                <th>District<br />
+                                                <th>District /<br />
                                                     जिला</th>
-                                                <th>Sankul<br />
+                                                <th>Sankul /<br />
                                                     संकुल</th>
-                                                <th>Office / Institute / School
+                                                <th>Office / Institute / School /
                                             <br />
                                                     कार्यालय / संस्था/ स्कूल</th>
-                                                <th>Department 
+                                                <th>Department / 
                                             <br />
                                                     विभाग</th>
-                                                <th>Designation
+                                                <th>Designation /
                                             <br />
                                                     पद</th>
-                                                <th>Financial Year
+                                                <th>Financial Year /
                                             <br />
                                                     वित्तीय वर्ष</th>
-                                                <th>Detail
+                                                <th>Detail /
                                             <br />
                                                     विवरण</th>
                                             </tr>
