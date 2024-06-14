@@ -25,14 +25,18 @@
             background-color: #1b5a5b !important;
             color: white;
         }
+          .radius-defalt
+  {
+          border-radius: var(--vz-card-border-radius)!important;
+  }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
+   <%-- <div class="row page-titles" style="margin-bottom: -30px">--%>
         <%-- <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
-        </div>--%>
+        </div>
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -120,7 +124,45 @@
             <br />
 
             <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
+        <div class="row">
+       <div class="col-12">
+           <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+               <h4 class="mb-sm-0"></h4>
+               <div class="=page-title-right">
+                   <ol class="breadcrumb m-0">
+                       <li class="breadcrumb-item">
+                           <span>Home</span>
+                       </li>
+                       <li class="breadcrumb-item">
+                           <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                       </li>
+                       <li class="breadcrumb-item">
+                           <a href="#JDCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                               <span>JD Compassionate Appointment </span></a>
+                       </li>
+                       <li class="breadcrumb-item"><span>Compassionate Appointment Print Application JD</span></li>
+                   </ol>
+               </div>
+           </div>
+       </div>
+   </div>
 
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+        <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        </u>
+    </p>
+</div>
+   <div class="card card-border-primary radius-defalt">
+       <div class="card-header">
+           <div class="row">
+               <div class="col-lg-12">
+                   <h4 class="card-title">Compassionate Appointment On J.D. Level Print Apply<br />
+                       जे. डी. स्तर पर अनुकंपा नियुक्ति प्रिंट आवेदन करें</h4>
+               </div>
+           </div>
+       </div>
+       <div class="card-body">
 
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12 col-md-12">

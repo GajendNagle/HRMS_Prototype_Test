@@ -22,7 +22,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+ <%--   <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -40,16 +40,45 @@
                 </div>
             </div>
         </div>
+    </div>--%>
+                    <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Compassionate Appointment </span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Register Application For Compassionate Appointment</span></li>
+                </ol>
+            </div>
+        </div>
     </div>
+</div>
+        <div class="col-md-5" style="position:relative; bottom:20px;">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom:-0.2rem;">
+        <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        </u>
+    </p>
+</div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Register Application For Compassionate Appointment<br />
-                        अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</h4>
+                    <h5 class="card-title">Register Application For Compassionate Appointment/
+                        अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</h5>
                 </div>
             </div>
         </div>
+
         <div class="card-body">
             <div id="divDataofAU5693" runat="server">
                 <ul class="nav nav-pills" style="margin-top: -7px; margin-bottom: 28px;">
@@ -59,8 +88,8 @@
                 <div class="tab-content br-n pn">
                     <div id="navpills-1" class="tab-pane active">
                         <fieldset style="margin-top: 1.1rem">
-                            <legend>Details of Deceased Officer-Employee
-                                                    <br />
+                            <legend>Details of Deceased Officer-Employee/
+                                                 
                                 दिवंगत अधिकारी - कर्मचारी का विवरण  </legend>
                             <div class="row align-items-end">
                                 <div class="col-md-3">

@@ -12,6 +12,10 @@
             fill: white !important;
             text-decoration: none !important;
         }
+
+        .radius-defalt {
+            border-radius: var(--vz-card-border-radius) !important;
+        }
     </style>
     <style>
         #empDetail {
@@ -28,7 +32,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
+    <%--  <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -106,113 +110,152 @@
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#DEOCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>DEO Compassionate Appointment </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>DEO Compassionate Application Approval</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
 
-            <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
+    <%--  <div class="row page-titles mb-4">--%>
 
+    <div class="card   card-border-primary radius-defalt">
 
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="card-title">DEO Compassionate Application Approval/
 
-                    <div class="single_element">
-                        <div class="quick_activity">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-4">
+डी.ई.ओ अनुकंपा आवेदन की स्वीकृति
+                    </h5>
+                </div>
+            </div>
+        </div>
 
-                                    <div class="card-wrap">
-                                        <div class="card-header card-header1 one">
-                                            <h4 class="">प्राप्त आवेदन संख्या</h4>
+        <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
+           <div class="card-body">
 
-                                        </div>
-                                        <div class="card-content">
-                                            <button class="card-btn one">1250</button>
-                                        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+             
+                  
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+
+                                <div class="card-wrap">
+                                    <div class="card-header card-header1 one">
+                                        <h4 class="">प्राप्त आवेदन संख्या</h4>
+
                                     </div>
-
-                                </div>
-                                <div class="col-lg-4">
-
-                                    <div class="card-wrap">
-                                        <div class="card-header card-header1 five">
-                                            <h4 class="">अनुमोदित आवेदन संख्या</h4>
-
-                                        </div>
-                                        <div class="card-content">
-
-                                            <button class="card-btn five">500</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-
-                                    <div class="card-wrap">
-                                        <div class="card-header card-header1 two">
-                                            <h4 class="">प्रतीक्षारत आवेदन संख्या</h4>
-
-                                        </div>
-                                        <div class="card-content">
-
-                                            <button class="card-btn two">750</button>
-                                        </div>
+                                    <div class="card-content">
+                                        <button class="card-btn one">1250</button>
                                     </div>
                                 </div>
 
                             </div>
+                            <div class="col-lg-4">
+
+                                <div class="card-wrap">
+                                    <div class="card-header card-header1 five">
+                                        <h4 class="">अनुमोदित आवेदन संख्या</h4>
+
+                                    </div>
+                                    <div class="card-content">
+
+                                        <button class="card-btn five">500</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+
+                                <div class="card-wrap">
+                                    <div class="card-header card-header1 two">
+                                        <h4 class="">प्रतीक्षारत आवेदन संख्या</h4>
+
+                                    </div>
+                                    <div class="card-content">
+
+                                        <button class="card-btn two">750</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+            
+        </div>
+        <fieldset>
+            <legend>Compassionate Appointment / अनुकंपा नियुक्ति
+            </legend>
+
+            <%-- <h1>अनुकंपा नियुक्ति और निगरानी</h1>--%>
+            <div class="row">
+
+
+                <div class="col-md-8">
+                    <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 38%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति आवेदन के लिए आवश्यक दस्तावेज़:</h4>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a style="background-color: DarkKhaki; height: 30px; color: white; font-weight: bold; width: 45%; border-radius: 6px; padding: 10px" href="../Document/anukampa%20adesh.pdf" target="_blank">अनुकंपा नियुक्ति संबंधित आदेश</a>
                 </div>
             </div>
-            <fieldset>
-                <legend>Compassionate Appointment / अनुकंपा नियुक्ति
-                </legend>
+            <ol style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;">
+                <li>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</li>
+                <li>आवेदक का जन्म तिथि का प्रमाण पत्र</li>
+                <li>आवेदक का मध्यप्रदेश के स्थानीय निवास/मूल निवासी होने का प्रमाण पत्र</li>
+                <li>आवेदक के अनुसूचित जाति, जनजाति अथवा अन्य पिछड़े वर्ग का होने पर जाती प्रमाण पत्र</li>
+                <li>मध्यप्रदेश स्थित विद्यालय / महाविद्यालय से हायर सेकेण्डरी / स्नातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र</li>
+                <li>परिवार के मुखिया द्वारा सहमति प्रमाण पत्र</li>
+                <li>आवेदक का फोटो</li>
+                <li>राशन कार्ड<span style="color: blue;"> आवेदन करने से पूर्व उपरोक्त दस्तावेज तैयार करलें और 500 kb तक के साइज़ मे pdf प्रारूप में अपलोड किए जाएंगे</span></li>
+            </ol>
 
-                <%-- <h1>अनुकंपा नियुक्ति और निगरानी</h1>--%>
-                <div class="row">
-
-
-                    <div class="col-md-8">
-                        <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 38%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति आवेदन के लिए आवश्यक दस्तावेज़:</h4>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <a style="background-color: DarkKhaki; height: 30px; color: white; font-weight: bold; width: 45%; border-radius: 6px; padding: 10px" href="../Document/anukampa%20adesh.pdf" target="_blank">अनुकंपा नियुक्ति संबंधित आदेश</a>
-                    </div>
-                </div>
-                <ol style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;">
-                    <li>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</li>
-                    <li>आवेदक का जन्म तिथि का प्रमाण पत्र</li>
-                    <li>आवेदक का मध्यप्रदेश के स्थानीय निवास/मूल निवासी होने का प्रमाण पत्र</li>
-                    <li>आवेदक के अनुसूचित जाति, जनजाति अथवा अन्य पिछड़े वर्ग का होने पर जाती प्रमाण पत्र</li>
-                    <li>मध्यप्रदेश स्थित विद्यालय / महाविद्यालय से हायर सेकेण्डरी / स्नातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र</li>
-                    <li>परिवार के मुखिया द्वारा सहमति प्रमाण पत्र</li>
-                    <li>आवेदक का फोटो</li>
-                    <li>राशन कार्ड<span style="color: blue;"> आवेदन करने से पूर्व उपरोक्त दस्तावेज तैयार करलें और 500 kb तक के साइज़ मे pdf प्रारूप में अपलोड किए जाएंगे</span></li>
-                </ol>
-
-                <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4>
-                <p style="font-weight: bold; background-color: #F0FFFF; padding: 10px; border-radius: 10px;">
-                    मध्यप्रदेश शासन स्कूल शिक्षा विभाग के अंतर्गत प्रदेश भर में 3.5 लाख से अधिक अधिकारी/कर्मचारी कार्यरत है। शासकीय कर्मचारी के असामयिक मृत्यु होने पर उनके आश्रितों को नियम अनुसार अनुकंपा नियुक्ति दिये जाने का प्रावधान है।  
+            <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4>
+            <p style="font-weight: bold; background-color: #F0FFFF; padding: 10px; border-radius: 10px;">
+                मध्यप्रदेश शासन स्कूल शिक्षा विभाग के अंतर्गत प्रदेश भर में 3.5 लाख से अधिक अधिकारी/कर्मचारी कार्यरत है। शासकीय कर्मचारी के असामयिक मृत्यु होने पर उनके आश्रितों को नियम अनुसार अनुकंपा नियुक्ति दिये जाने का प्रावधान है।  
                 अधिकारी/कर्मचारी की असामायिक मृत्यु होने पर उनके आश्रितों द्वारा अनुकंपा नियुक्ति हेतु आवेदन पत्र प्रस्तुत किये जाते है, जिनका निराकरण विभिन्न स्तरों पर संबंधित कार्यालयों द्वारा शासन नियमानुसार तथा आवेदक की पात्रता के अनुसार किया जाता है।
                     अनुकंपा नियुक्ति संबंधी सभी प्रकरणों के पारदर्शी एवं समय सीमा में निराकरण सुनिश्चित करने तथा सभी प्रकरणों की अद्तन स्थिति तथा राज्य व अन्य स्तरों पर मोनिटरिंग करने के उद्देश से विभाग ने एजूकेशन पोर्टल पर अनुकंपा नियुक्ति संबंधी ऑनलाइन 
                     प्रणाली का क्रियान्वयन करने का निर्णय लिया है ।
-                </p>
+            </p>
 
-                <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति बिंदु विशिष्ट :</h4>
-                <ul style="font: bold; list-style-type: none; margin-left: -30px">
-                    <li style="background-color: #F0F8FF; padding: 10px 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अध्यापक संवर्ग के लिए अनुकम्पा नियुक्ति के सम्बन्ध में पूर्व प्रावधान के अनुसार आवेदक का D.Ed. / B.Ed. के साथ 'शिक्षक पात्रता परीक्षा उत्तीर्ण' होना आवश्यक है, अब अध्यापक संवर्ग से नवीन कैडर में नियुक्ति के बाद अनुकम्पा नियुक्ति के 
+            <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति बिंदु विशिष्ट :</h4>
+            <ul style="font: bold; list-style-type: none; margin-left: -30px">
+                <li style="background-color: #F0F8FF; padding: 10px 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अध्यापक संवर्ग के लिए अनुकम्पा नियुक्ति के सम्बन्ध में पूर्व प्रावधान के अनुसार आवेदक का D.Ed. / B.Ed. के साथ 'शिक्षक पात्रता परीक्षा उत्तीर्ण' होना आवश्यक है, अब अध्यापक संवर्ग से नवीन कैडर में नियुक्ति के बाद अनुकम्पा नियुक्ति के 
                         लिए नियम भर्ती" 2018 के प्रावधानों के अधीन नियुक्त किये गये शिक्षकों की शासकीय सेवा में रहते हुए निधन होने पर तत्समय सामान्य प्रशासन विभाग द्वारा प्रभावशील अनुकंपा नियुक्ति की नीति के अनुसार पात्रता होगी । </li>
-                    <li style="background-color: #F8F8FF; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;उक्त प्रणाली के माध्यम से समस्त संबंधित कार्यालयों द्वारा अनुकंपा नियुक्ति के आवेदन पत्रों को पंजीकृत करना होगा। पंजीकृत आवेदन पत्र में कमी होने या नियमानुसार पात्रता न होने के कारण कार्यालय द्वारा प्रकरण के लंबितपोर्टल विवरण विस्तृत उसका
+                <li style="background-color: #F8F8FF; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;उक्त प्रणाली के माध्यम से समस्त संबंधित कार्यालयों द्वारा अनुकंपा नियुक्ति के आवेदन पत्रों को पंजीकृत करना होगा। पंजीकृत आवेदन पत्र में कमी होने या नियमानुसार पात्रता न होने के कारण कार्यालय द्वारा प्रकरण के लंबितपोर्टल विवरण विस्तृत उसका
                         में स्थिति की होने निरस्त / पर दर्ज किया जावेगा। जिससे कि प्रकरण लंबितनिरस्त / होने के कारणों की जानकारी आवेदक एवं वरिष्ट कार्यालय को मिल सकेंगी तथा प्रकरण के निराकरण में सुगमता आवेगी। समस्त कार्यालयों द्वारा नियमानुसार पात्रता रखने
                         वाले सभी प्रकरणों के विरूद्व जारी किये गये समस्त अनुकंपा नियुक्ति आदेशों का विवरण तथा आदेश की स्केण्ड प्रति भी पोर्टल पर अपलोड की जावेगी जिससे कि सभी स्तरों पर प्रकरण की अद्यतन स्थिति प्राप्त हो सकेंगी। </li>
-                    <li style="background-color: #FFFAF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अनुकंपा नियुक्ति से संबंधित समस्त प्रकरणों की सूची, निरस्तकारण का होने लंबित /, वर्तमान स्थिति, नियुक्ति आदेश पोर्टल पर आवेदक एवं जन सामान्य के लिए सहज रूप से उपलब्ध रहेगें। प्रणाली के सफल क्रियान्वयन से प्रकरणों का तय समय सीमा
+                <li style="background-color: #FFFAF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अनुकंपा नियुक्ति से संबंधित समस्त प्रकरणों की सूची, निरस्तकारण का होने लंबित /, वर्तमान स्थिति, नियुक्ति आदेश पोर्टल पर आवेदक एवं जन सामान्य के लिए सहज रूप से उपलब्ध रहेगें। प्रणाली के सफल क्रियान्वयन से प्रकरणों का तय समय सीमा
                         में त्वरित निराकरण किया जाकर दिवंगत कर्मचारी के आश्रितों को लाभ सुनिश्चित हो सकेगा। अनुकंपा नियुक्ति के संबंध में समयमध्यप जारी समय-प्रदेश शासन के नियम है। उपलब्ध पर पोर्टल भी निर्देश-</li>
-                    <li style="background-color: #F0FFF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;इस प्रणाली के प्रारंभ होने के पश्चात शिक्षकोंआवेदन अपना को कर्मचारियों/ संबंधित कार्यालयों को मैन्युअल रूप से प्रस्तुत न करते हुये इस प्रणाली के तहत ऑनलाइन प्रस्तुत करनी होगी।</li>
-                    <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
+                <li style="background-color: #F0FFF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;इस प्रणाली के प्रारंभ होने के पश्चात शिक्षकोंआवेदन अपना को कर्मचारियों/ संबंधित कार्यालयों को मैन्युअल रूप से प्रस्तुत न करते हुये इस प्रणाली के तहत ऑनलाइन प्रस्तुत करनी होगी।</li>
+                <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
 
-                </ul>
-            </fieldset>
-        </div>
-    </div>
-
+            </ul>
+        </fieldset></div></div>
+   
     <script>
         function myFunction() {
             document.getElementById("empDetail").style.display = "block";

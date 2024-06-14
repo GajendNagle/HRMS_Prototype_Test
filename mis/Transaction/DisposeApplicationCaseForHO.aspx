@@ -25,15 +25,19 @@
             background-color: #1b5a5b !important;
             color: white;
         }
+
+        .radius-defalt {
+            border-radius: var(--vz-card-border-radius) !important;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <%-- <div class="col-md-4 align-self-center">
+    <%-- <div class="row page-titles" style="margin-bottom: -30px">--%>
+    <%-- <div class="col-md-4 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
         </div>--%>
-        <div class="col-md-5 align-self-center">
+    <%--    <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
@@ -108,7 +112,45 @@
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Decision on Application HO</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
+    <div class="card card-border-primary radius-defalt">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="card-title">Decision on Application H.O/
+                        आवेदन पर निर्णय एच.ओ</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12 col-md-12">
 

@@ -12,12 +12,17 @@
             fill: white !important;
             text-decoration: none !important;
         }
-    </style>
+   
+      .radius-defalt
+      {
+              border-radius: var(--vz-card-border-radius)!important;
+      }
+  </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
 
-    <div class="row page-titles" style="margin-bottom: -30px">
+<%--    <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -63,7 +68,52 @@
                 </div>
             </nav>
             <br />
-            <br />
+            <br />--%>
+                <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Compassionate Appointment </span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Employee Compassionate Application</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+     <div class="col-md-5" style="position:relative; bottom:20px;">
+     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom:-0.2rem;">
+         <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+         </u>
+     </p>
+ </div>
+
+<%--  <div class="row page-titles mb-4">--%>
+
+  <div class="card   card-border-primary radius-defalt">
+
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="card-title">Compassionate Appointment/
+
+अनुकम्पा नियुक्ति
+                </h5>
+            </div>
+        </div>
+    </div>
+
+        <div class="card-body">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12 col-md-12">
 
@@ -137,7 +187,7 @@
                     <li>राशन कार्ड<span style="color: blue;"> आवेदन करने से पूर्व उपरोक्त दस्तावेज तैयार करलें और 500 kb तक के साइज़ मे pdf प्रारूप में अपलोड किए जाएंगे</span></li>
                 </ol>
 
-                <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4>
+                <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4><br />
                 <p style="font-weight: bold; background-color: #F0FFFF; padding: 10px; border-radius: 10px;">
                     मध्यप्रदेश शासन स्कूल शिक्षा विभाग के अंतर्गत प्रदेश भर में 3.5 लाख से अधिक अधिकारी/कर्मचारी कार्यरत है। शासकीय कर्मचारी के असामयिक मृत्यु होने पर उनके आश्रितों को नियम अनुसार अनुकंपा नियुक्ति दिये जाने का प्रावधान है।  
                 अधिकारी/कर्मचारी की असामायिक मृत्यु होने पर उनके आश्रितों द्वारा अनुकंपा नियुक्ति हेतु आवेदन पत्र प्रस्तुत किये जाते है, जिनका निराकरण विभिन्न स्तरों पर संबंधित कार्यालयों द्वारा शासन नियमानुसार तथा आवेदक की पात्रता के अनुसार किया जाता है।

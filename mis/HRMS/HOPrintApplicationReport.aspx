@@ -43,7 +43,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+   <%-- <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
             <h4 class="mb-sm-0"></h4>
@@ -71,7 +71,44 @@
                 </div>
             </div>
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+        <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>HO Compassionate Appointment </span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Compassionate Appointment Print Application HO</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+<div class="col-md-5" style="position: relative; bottom: 15px;">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+        <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        </u>
+    </p>
+</div>
+<div class="card card-border-primary radius-defalt">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 class="card-title">Register Application For Compassionate Appointment on HO Level/<br />
+                       एच.ओ. स्तर पर अनुकंपा नियुक्ति हेतु आवेदन पंजीकृत करें</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
             <fieldset>
                 <legend>Print Application /आवेदन प्रिंट करें
                 </legend>

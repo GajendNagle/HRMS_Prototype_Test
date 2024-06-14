@@ -45,8 +45,8 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">About DEO Transfer Approval<br /> डीईओ स्थानांतरण अनुमोदन के बारे में
+                        <div class="col-lg-12">
+                            <h4 class="card-title">About DEO Transfer Approval/ डी.ई.ओ स्थानांतरण अनुमोदन के बारे में
 <br />
                             </h4>
                         </div>
