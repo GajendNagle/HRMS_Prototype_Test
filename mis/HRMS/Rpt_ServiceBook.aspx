@@ -307,7 +307,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table table-bordered">
                                     <tr>
                                         <td class="firstCol align-content-center">
@@ -515,7 +515,7 @@
                     <fieldset>
                         <legend>Present Address / वर्तमान पता</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td class="align-content-center">
@@ -584,7 +584,7 @@
                     <fieldset>
                         <legend>Permanent Address / स्थायी पता</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td class="align-content-center">
@@ -653,7 +653,7 @@
                     <fieldset>
                         <legend>Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -705,7 +705,7 @@
                     <fieldset>
                         <legend>Education Qualification / शैक्षणिक योग्यता</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -829,7 +829,7 @@
                     <fieldset id="idFirstAppointment">
                         <legend>First Appointment Details / प्रथम नियुक्ति विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -1045,7 +1045,7 @@
                     <fieldset id="idCurrentAppointment">
                         <legend>Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -1121,7 +1121,7 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                Office/Institute/School Code & Name /<br />
+                                                Office/Institute/School Code & Name/<br />
                                                 कार्यालय/संस्थान/विद्यालय कोड एवं नाम</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1271,7 +1271,7 @@
                     <fieldset>
                         <legend>Bank Account Details / बैंक के खाते का विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table">
                                     <tr>
@@ -1394,7 +1394,7 @@
                     <fieldset>
                         <legend>Promotion Details / प्रमोशन विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
 
                                 <table class="table-bordered table-responsive table">
                                     <tr>
@@ -1456,7 +1456,7 @@
                     <fieldset>
                         <legend>Pay Scale Details / वेतनमान विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table-responsive table">
                                     <tr>
                                         <th>
@@ -1529,7 +1529,7 @@
                     <fieldset>
                         <legend>Annual Increment Details / वार्षिक वेतन वृद्धि विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1583,7 +1583,7 @@
                     <fieldset>
                         <legend>Special Increment Order Details / विशेष वेतन वृद्धि आदेश विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1636,7 +1636,7 @@
                     <fieldset>
                         <legend>Transfer Details / स्थानांतरण विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1669,7 +1669,7 @@
                     <fieldset>
                         <legend>Nomination Details / नामांकन विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1701,9 +1701,9 @@
 
 
                     <fieldset>
-                        <legend>Earned Leave Records</legend>
+                        <legend>Earned Leave Records / अर्जित अवकाश रिकार्ड</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1737,9 +1737,9 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Half Pay Leave Records</legend>
+                        <legend>Half Pay Leave Record / आधा वेतन अवकाश रिकॉर्डs</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1786,9 +1786,9 @@
 
 
                     <fieldset>
-                        <legend>Approved Leave Details</legend>
+                        <legend>Approved Leave Details / स्वीकृत अवकाश विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1834,9 +1834,9 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Unauthorized Absence Details</legend>
+                        <legend>Unauthorized Absence Details / अनधिकृत अनुपस्थिति विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12  table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1868,9 +1868,9 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Punishment Details</legend>
+                        <legend>Punishment Details / सज़ा का विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -1917,39 +1917,39 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Disciplinary Action Details</legend>
+                        <legend>Disciplinary Action Details / अनुशासनात्मक कार्रवाई विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
-                                        <td>
-                                            <label class="font-bold">Sr.No./<br />सरल क्र. </label>
-                                        </td>
-                                        <td>
+                                        <th>
+                                            <label class="font-bold">Sr.No. /<br />सरल क्र. </label>
+                                          </th>
+                                        <th>
                                             <label class="font-bold">Type of Case /<br />
                                                 केस का प्रकार
                                             </label>
-                                        </td>
-                                        <td>
+                                          </th>
+                                        <th>
                                             <label class="font-bold">Case Description /<br />
                                                 केस विवरण
                                             </label>
-                                        </td>
-                                        <td>
+                                          </th>
+                                        <th>
                                             <label class="font-bold">Before Whom the Case are Pending /<br />
                                                 जिनके समक्ष मामले लंबित हैं
                                             </label>
-                                        </td>
-                                        <td>
+                                          </th>
+                                        <th>
                                             <label class="font-bold">From Which Date the Proceedings are Pending /<br />
                                                 कार्यवाही किस दिनांक से लंबित है
                                             </label>
-                                        </td>
-                                        <td>
+                                          </th>
+                                        <th>
                                             <label class="font-bold">View Order /<br />
                                                 आर्डर देखें
                                             </label>
-                                        </td>
+                                          </th>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="text-center">
@@ -1962,9 +1962,9 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Award Details</legend>
+                        <legend>Award Details / पुरस्कार विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -2006,9 +2006,10 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Training Details</legend>
+                        <legend>Training Details / प्रशिक्षण विवरण
+                        </legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>
@@ -2051,9 +2052,9 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Resource Group Details</legend>
+                        <legend>Resource Group Details / संसाधन समूह विवरण</legend>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 table-responsive">
                                 <table class="table-bordered table">
                                     <tr>
                                         <td>

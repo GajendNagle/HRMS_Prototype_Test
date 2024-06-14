@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        th {
+            white-space: nowrap;
+        }
+
         .deschide {
             display: none;
         }
@@ -54,7 +58,7 @@
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
         <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
-            <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
             </u>
         </p>
     </div>
@@ -175,11 +179,11 @@
                         <div class="col-md-12">
                             <fieldset>
                                 <legend>PERSONAL DETAILS / व्यक्तिगत जानकारी
-                    <input id="Checkbox1" checked onclick="Checkedbox1()" type="checkbox" /></legend>
+                    <input id="Checkbox1" checked="checked" onclick="Checkedbox1()" type="checkbox" /></legend>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <input disabled checked type="checkbox" name="Chk" />
+                                            <input disabled="disabled" checked="checked" type="checkbox" name="Chk" />
                                             <label>Name of Employee</label>
                                         </div>
                                     </div>
@@ -324,7 +328,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
-                                <legend>OFFICIAL DETAILS / आधिकारिक विवरण<input id="Checkbox2" checked onclick="Checkedbox2()" type="checkbox" /></legend>
+                                <legend>OFFICIAL DETAILS / आधिकारिक विवरण<input id="Checkbox2" checked="checked" onclick="Checkedbox2()" type="checkbox" /></legend>
                                 <div class="row">
                                     <div class="col-md-2">
                                         <div class="form-group">
@@ -438,7 +442,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
-                                <legend>ACCOUNT INFORMATION / खाता संबंधी जानकारी<input id="Checkbox7" checked onclick="Checkedbox2()" type="checkbox" /></legend>
+                                <legend>ACCOUNT INFORMATION / खाता संबंधी जानकारी<input id="Checkbox7" checked="checked" onclick="Checkedbox2()" type="checkbox" /></legend>
                                 <div class="row">
                                     <div class="col-md-2">
                                         <div class="form-group">
@@ -484,81 +488,131 @@
                     <div id="showAll" class="row">
                         <div class="form-group">
                             <fieldset>
-                                <legend>Details</legend>
+                                <legend>Details / विवरण</legend>
                                 <div class="row justify-content-end">
-                                    <div class="col-md-1">
+
+                                    <div class="col-md-4 text-end">
                                         <div class="form-group">
-                                            <button class="btn btn-info btn-rounded w-100">Excel</button>
+                                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-1">
+                                    <div class="col-md-2">
                                         <div class="form-group">
-                                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table">
 
-                                        <tr style="background: #416a59; color: white">
-                                            <th>Sr.No.</th>
-                                            <th>Profile Image</th>
-                                            <th>Employee ID/Name</th>
+                                        <tr>
+                                            <th>Sr.No. /<br />
+                                                सरक क्र. </th>
+                                            <th>Profile Image /<br />
+                                                प्रोफ़ाइल फोटो </th>
+                                            <th>Employee ID/Name /<br />
+                                                कर्मचारी आईडी/नाम</th>
                                             <%--<th>Name of Employee</th>--%>
-                                            <th>Gender</th>
-                                            <th>Date of Birth</th>
-                                            <th>Blood group	</th>
-                                            <th>Father's / Husband's Name</th>
-                                            <th>Marital Status</th>
-                                            <th>Mobile No.</th>
-                                            <th>Aadhaar No.</th>
-                                            <th>Pan card no.</th>
-                                            <th>Email ID</th>
-                                            <th>Husband / Wife's Name</th>
+                                            <th>Gender /<br />
+                                                लिंग</th>
+                                            <th>Date of Birth /<br />
+                                                जन्म दिनांक </th>
+                                            <th>Blood group /<br />
+                                                ब्लड ग्रुप
+                                            </th>
+                                            <th>Father's / Husband's Name /<br />
+                                                पिता/पति का नाम</th>
+                                            <th>Marital Status /<br />
+                                                वैवाहिक स्थिति
+                                            </th>
+                                            <th>Mobile No. /<br />
+                                                मोबाइल नंबर </th>
+                                            <th>Aadhaar No. /<br />
+                                                आधार नंबर</th>
+                                            <th>Pan card no. /<br />
+                                                पैन कार्ड नं
+                                            </th>
+                                            <th>Email ID /<br />
+                                                ईमेल आईडी
+                                            </th>
+                                            <th>Husband / Wife's Name /<br />
+                                                पति/पत्नी का नाम</th>
                                             <%--<th>Job/Business</th>--%>
-                                            <th>Post/Department</th>
+                                            <th>Post/Department /<br />
+                                                पद/विभाग</th>
                                             <%--<th>Social class</th>--%>
-                                            <th>Caste</th>
-                                            <th>Physical Disability	</th>
-                                            <th>Type of Disability</th>
-                                            <th>Current State</th>
-                                            <th>Current City	</th>
-                                            <th>Current Pin Code</th>
-                                            <th>Current Address</th>
-                                            <th>Permanent State</th>
-                                            <th>Permanent City</th>
-                                            <th>Permanent PinCode	</th>
-                                            <th>Permanent Address</th>
-                                            <th>Office Type</th>
+                                            <th>Caste /<br />
+                                                जाति</th>
+                                            <th>Physical Disability /<br />
+                                                शारीरिक विकलांगता</th>
+                                            <th>Type of Disability /<br />
+                                                विकलांगता का प्रकार
+                                            </th>
+                                            <th>Current State /<br />
+                                                वर्तमान राज्य 
+                                            </th>
+                                            <th>Current City /<br />
+                                                वर्तमान शहर</th>
+                                            <th>Current Pin Code /<br />
+                                                वर्तमान पिन कोड</th>
+                                            <th>Current Address /<br />
+                                                वर्तमान पता
+                                            </th>
+                                            <th>Permanent State /<br />
+                                                स्थायी राज्य </th>
+                                            <th>Permanent City /<br />
+                                                स्थायी शहर</th>
+                                            <th>Permanent PinCode /<br />
+                                                स्थायी पिन कोड</th>
+                                            <th>Permanent Address /<br />
+                                                स्थायी पता</th>
+                                            <th>Office Type /<br />
+                                                कार्यालय का प्रकार</th>
                                             <%--<th>Office</th>--%>
-                                            <th>Level</th>
-                                            <th>Category</th>
-                                            <th>Post</th>
-                                            <th>Pay Scale</th>
-                                            <th>Grade Pay</th>
-                                            <th>Basic salary</th>
-                                            <th>Joining Date	</th>
-                                            <th>Posting Date</th>
-                                            <th>Retirement Date	</th>
-                                            <th>Recruitment Type </th>
+                                            <th>Level /<br />
+                                                लेवल </th>
+                                            <th>Category /<br />
+                                                वर्ग</th>
+                                            <th>Post /<br />
+                                                पद </th>
+                                            <th>Pay Scale /<br />
+                                                वेतनमान</th>
+                                            <th>Grade Pay /<br />
+                                                ग्रेड पे</th>
+                                            <th>Basic Salary /<br />
+                                                मूल वेतन</th>
+                                            <th>Joining Date /<br />
+                                                जॉइनिंग दिनांक</th>
+                                            <th>Posting Date /<br />
+                                                पोस्टिंग दिनांक </th>
+                                            <th>Retirement Date /<br />
+                                                सेवानिवृत्ति दिनांक </th>
+                                            <th>Recruitment Type /<br />
+                                                भर्ती प्रकार
+                                            </th>
 
-                                            <th>Account No.</th>
-                                            <th>IFSC Code</th>
-                                            <th>GPF No.</th>
-                                            <th>DPF No.</th>
-                                            <th>Treasury No.</th>
-                                            <th>Sankul Code</th>
-                                            <th>Panel</th>
+                                            <th>Account No. /<br />
+                                                खाता नंबर</th>
+                                            <th>IFSC Code /<br />
+                                                आईएफएससी कोड</th>
+                                            <th>GPF No. /<br />
+                                                जीपीएफ नंबर</th>
+                                            <th>DPF No. /<br />
+                                                डीपीएफ नंबर</th>
+                                            <th>Treasury No. /<br />
+                                                राजकोष संख्या
+                                            </th>
+                                            <th>Sankul Code /<br />
+                                                संकुल कोड
+                                            </th>
+                                            <th>Panel /<br />
+                                                पैनल</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
                                             <td>
-                                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage2" alt="Image Not Available"></td>
+                                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage2" alt="Image Not Available" /></td>
                                             <td>E0561-Dindori User2</td>
 
                                             <td>Male</td>
@@ -610,7 +664,7 @@
                                         <tr>
                                             <td>2</td>
                                             <td>
-                                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage3" alt="Image Not Available"></td>
+                                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage3" alt="Image Not Available" /></td>
                                             <td>E0565-Raj User</td>
 
                                             <td>Male</td>
@@ -708,7 +762,7 @@
                                             <td>(Fatder) test</td>
                                             <td>Married</td>
                                             <td>
-                                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available"></td>
+                                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" /></td>
                                             <td>9893055295</td>
                                             <td>xxxx-xxxx-1236	</td>
                                             <td>xxx-xxx-ALLP</td>
