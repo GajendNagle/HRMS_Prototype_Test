@@ -44,7 +44,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Vehicle Number /<br />गाडी नंबर<span style="color: red">*</span></span>
+                            <span>Vehicle Number /<br />
+                                गाडी नंबर<span style="color: red">*</span></span>
                             <select name="ctl00$ContentBody$ddlVehicleNumber" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlVehicleNumber\',\'\')', 0)" id="ctl00_ContentBody_ddlVehicleNumber" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
                                 <option selected="selected" value="0">Select</option>
                             </select>
@@ -52,19 +53,22 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                         Vehicle Type /<br />वाहन का प्रकार<span style="color: red">*</span>
+                            Vehicle Type /<br />
+                            वाहन का प्रकार<span style="color: red">*</span>
                             <input name="ctl00$ContentBody$txtVehicleType" type="text" id="ctl00_ContentBody_txtVehicleType" class="form-control" readonly="readonly">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                          Vehicle Model /<br />वाहन मॉडल<span style="color: red">*</span>
+                            Vehicle Model /<br />
+                            वाहन मॉडल<span style="color: red">*</span>
                             <input name="ctl00$ContentBody$txtVehicleModel" type="text" id="ctl00_ContentBody_txtVehicleModel" class="form-control" readonly="readonly">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                         Vehicle Chassis Number /<br />वाहन चेसिस नंबर<span style="color: red">*</span>
+                            Vehicle Chassis Number /<br />
+                            वाहन चेसिस नंबर<span style="color: red">*</span>
                             <input name="ctl00$ContentBody$txtVehicleChassisNumber" type="text" id="ctl00_ContentBody_txtVehicleChassisNumber" class="form-control" readonly="readonly">
                         </div>
                     </div>
@@ -72,19 +76,22 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                          Vehicle Registration Number /<br />वाहन पंजीकरण संख्या<span style="color: red">*</span>
+                            Vehicle Registration Number /<br />
+                            वाहन पंजीकरण संख्या<span style="color: red">*</span>
                             <input name="ctl00$ContentBody$txtVehicleRegNumber" type="text" id="ctl00_ContentBody_txtVehicleRegNumber" class="form-control" readonly="readonly">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                          Vehicle Company /<br />वाहन कंपनी<span style="color: red">*</span>
+                            Vehicle Company /<br />
+                            वाहन कंपनी<span style="color: red">*</span>
                             <input name="ctl00$ContentBody$txtVehicleCompany" type="text" id="ctl00_ContentBody_txtVehicleCompany" class="form-control" readonly="readonly">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            Year Of Manufacture /<br />निर्माण वर्ष<span style="color: red">*</span>
+                            Year Of Manufacture /<br />
+                            निर्माण वर्ष<span style="color: red">*</span>
                             <input name="ctl00$ContentBody$txtYearOfManufacture" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control" readonly="readonly">
                         </div>
                     </div>
@@ -94,25 +101,29 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Order Number /<br />आदेश संख्या<span style="color: red">*</span></span>
+                                <span>Order Number /<br />
+                                    आदेश संख्या<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtOrderNumber" type="text" maxlength="20" id="ctl00_ContentBody_txtOrderNumber" class="form-control" autocomplete="off" placeholder="Enter Order Number" onkeypress="return isAlphaNumeric(str)" onpaste="return false">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Order Date /<br />आदेश की तारीख<span style="color: red">*</span></span>
+                                <span>Order Date /<br />
+                                    आदेश की तारीख<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtOrderDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtOrderDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtOrderDate" class="form-control" data-provide="datepicker" data-date-end-date="0d" data-date-autoclose="true" data-date-format="dd/mm/yyyy" autocomplete="off" placeholder="dd/mm/yyyy">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Current Reading(Km) /<br />वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
+                                <span>Current Reading(Km) /<br />
+                                    वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtCurrentReadingKm" type="text" maxlength="7" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtCurrentReadingKm\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return validateNum(event)" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" placeholder="Enter Current Reading(Km)" onpaste="return false">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Selling Amount /<br />विक्रय राशि<span style="color: red">*</span></span>
+                                <span>Selling Amount /<br />
+                                    विक्रय राशि<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtSellingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtSellingAmount" class="form-control" autocomplete="off" placeholder="Enter Selling Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
                             </div>
                         </div>
@@ -124,13 +135,15 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Buying Amount /<br />क्रय राशि<span style="color: red">*</span></span>
+                                <span>Buying Amount /<br />
+                                    क्रय राशि<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtBuyingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtBuyingAmount" class="form-control" autocomplete="off" placeholder="Enter Buying Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Name Of Buyer /<br />खरीददार का नाम<span style="color: red">*</span></span>
+                                <span>Name Of Buyer /<br />
+                                    खरीददार का नाम<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name Of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
                             </div>
                         </div>
@@ -139,18 +152,99 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="fw-bold Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+                            <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border">Save</button>
                         <a href="VehicleSurrender.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details / विवरण</legend>
-                <div class="row">
+                <legend>Details/विवरण</legend>
+                <div class="row" id="FisrtTimetbl">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
+                                <tbody>
+                                    <tr>
+                                        <td>No Recods Found</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="display: none" id="Serchtbl">
+                    <br />
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <div>
+                                <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleInsuranceYr" style="border-collapse: collapse; text-align: center;">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col">S.No.<br />
+    सरल क्र.</th>
+                                            <th scope="col">Vehicle Number<br />गाडी नंबर</th>
+                                            <th scope="col">Vehicle Model<br />वाहन मॉडल</th>
+                                            <th scope="col">Vehicle Chassis Number<br />वाहन चेसिस नंबर</th>
+                                            <th scope="col">Order Number<br />आदेश संख्या</th>
+                                            <th scope="col">Order Date<br />आदेश तारीख</th>
+                                            <th scope="col">Selling Amount<br />विक्रय राशि</th>
+                                            <th scope="col">Buying Amount<br />क्रय राशि</th>
+                                            <th scope="col">Name Of Buyer<br />क्रेता का नाम</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>1</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblVehicle_Number">MP04CB4473</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblVehicle_Model">2007</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblVehicle_Chassis_Number">MA3ECA12S02671501</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblOrder_Number">444</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblOrder_Date">01/06/2024</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblSelling_Amount">25000.00</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblBuying_Amount">65000.00</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblName_Of_Buyer">Raj</span>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary"><i class="fa fa-edit"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -160,4 +254,11 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+    document.getElementById("toggleButton").addEventListener("click", function () {
+        //var content2 = document.getElementById("Serchtbl");
+        document.getElementById("Serchtbl").style.display = "block";
+        document.getElementById("FisrtTimetbl").style.display = "none";
+    });
+    </script>
 </asp:Content>

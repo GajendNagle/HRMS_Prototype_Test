@@ -1158,7 +1158,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleRegistrationReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Registration Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleAllotmentReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Allotment Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleMaintenanceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Maintenance Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/MaintenanceStatusReport.aspx"><i class="ri-file-list-3-line"></i>Maintenance Status Report</a></li>
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/Transaction/MaintenanceStatusReport.aspx"><i class="ri-file-list-3-line"></i>Maintenance Status Report</a></li>--%>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleInsuranceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Insurance Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleSurrenderReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Surrender Report</a></li>
                                                 </ul>

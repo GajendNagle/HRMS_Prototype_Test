@@ -11,4 +11,10 @@ public partial class mis_Transaction_VehicleAllotmentReport : System.Web.UI.Page
     {
 
     }
+
+    protected void btnSearchRcd_Click(object sender, EventArgs e)
+    {
+        hideTable.Visible = true;
+        NoRcdTable.Visible = false;
+    }
 }

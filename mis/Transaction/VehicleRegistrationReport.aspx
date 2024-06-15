@@ -45,6 +45,26 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
+                            <span>From Date /<br />
+                                की तिथि से<span style="color: red">*</span></span>
+                            <span class="left">
+                                <span id="ctl00_ContentBody_RequiredFieldValidator6" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Select Order Date !"></i></span>
+                            </span>
+                            <input name="ctl00$ContentBody$txtFromDate" type="date" id="ctl00_ContentBody_txtFromDate" class="form-control " data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>To Date /<br />
+                                तारीख तक<span style="color: red">*</span></span>
+                            <span class="left">
+                                <span id="ctl00_ContentBody_RequiredFieldValidator1" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Select Order Date !"></i></span>
+                            </span>
+                            <input name="ctl00$ContentBody$txtTodate" type="date" id="ctl00_ContentBody_txtTodate" class="form-control " data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <span>Vehicle Number /<br />
                                 गाडी नंबर<span style="color: red">*</span></span>
                             <span class="left">
@@ -80,26 +100,6 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>From Date /<br />
-                                की तिथि से<span style="color: red">*</span></span>
-                            <span class="left">
-                                <span id="ctl00_ContentBody_RequiredFieldValidator6" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Select Order Date !"></i></span>
-                            </span>
-                            <input name="ctl00$ContentBody$txtFromDate" type="date" id="ctl00_ContentBody_txtFromDate" class="form-control " data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>To Date /<br />
-                                तारीख तक<span style="color: red">*</span></span>
-                            <span class="left">
-                                <span id="ctl00_ContentBody_RequiredFieldValidator1" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Select Order Date !"></i></span>
-                            </span>
-                            <input name="ctl00$ContentBody$txtTodate" type="date" id="ctl00_ContentBody_txtTodate" class="form-control " data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
-                        </div>
-                    </div>
                     <hr />
                     <div class="row">
                         <div class="col-md-12">
@@ -114,7 +114,7 @@
                 <legend>Details/विवरण</legend>
                 <div class="row">
                     <div class="col-md-12">
-                        <div>
+                        <div class="table-responsive"> 
                             <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
                                 <tbody>
                                     <tr>

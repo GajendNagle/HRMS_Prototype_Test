@@ -12,8 +12,9 @@ public partial class mis_Transaction_VehicleMaintenance : System.Web.UI.Page
 
     }
 
-    protected void ddlOptions_SelectedIndexChanged(object sender, EventArgs e)
+    protected void btSaveRcd_Click(object sender, EventArgs e)
     {
-
+        SearchTimeData.Visible= true;
+        fisrtTimeData.Visible= false;
     }
 }

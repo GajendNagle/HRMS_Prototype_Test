@@ -61,29 +61,29 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Vehicle Number /<br />
-                                    गाडी नंबर<span style="color: red">*</span></span>
+                                    गाडी का नंबर<span style="color: red">*</span></span>
                                 <input type="text" maxlength="10" class="form-control " placeholder="Enter Vehicle Number" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Class /<br />
-                                    वाहन का वर्ग <span style="color: red">*</span></span>
-                                <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Class">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Vehicle Company (Maker) /<br />
-                                    वाहन कंपनी<span style="color: red">*</span></span>
+                                <span>Vehicle Company Name /<br />
+                                    वाहन कंपनी का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Company" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Model /<br />
-                                    वाहन मॉडल<span style="color: red">*</span></span>
+                                <span>Vehicle Model Name /<br />
+                                    वाहन मॉडल का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Model" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Vehicle Variants /<br />
+                                    वाहन का प्रकार <span style="color: red">*</span></span>
+                                <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Class">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -100,21 +100,6 @@
                                     <input type="radio" id="four">
                                     <label for="four">Electric</label>
                                 </div>
-                        </div>
-                            </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Vehicle Type /<br />
-                                    वाहन का प्रकार<span style="color: red">*</span></span>
-                                <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Type" autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Vehicle Chassis Number /<br />
-                                    वाहन चेसिस नंबर<span style="color: red">*</span></span>
-                                <input type="text" maxlength="17" class="form-control " placeholder="Enter Vehicle Chassis Number" autocomplete="off">
-                                <span style="color: Red; display: none;">Invalid Chassis Number.</span>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -122,7 +107,7 @@
                                 <span>Year Of Manufacture /<br />
                                     निर्माण वर्ष<span style="color: red">*</span></span>
                                 <select class="form-control">
-                                    <option selected="selected" value="0">Select</option>
+                                    <option value="0">--Select--</option>
                                     <option value="1">2000</option>
                                     <option value="2">2001</option>
                                     <option value="3">2002</option>
@@ -150,6 +135,56 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Motor Vehicle /<br />
+                                    मोटर गाड़ी<span style="color: red">*</span></span>
+                                <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                    <option value="0">Select</option>
+                                    <option value="1">New Vehicle</option>
+                                    <option value="2">XL Vehicle</option>
+                                    <option value="3">Imported Vehicle</option>
+                                    <option value="4">E-Rickshaw/E-Cart</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Type Of Body /<br />
+                                    बॉडी का प्रकार<span style="color: red">*</span></span>
+                                <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">Hatchback</option>
+                                    <option value="2">Sedan</option>
+                                    <option value="3">SUV</option>
+                                    <option value="4">MUV</option>
+                                    <option value="4">Commercial Vehicle</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Vehicle Color /<br />
+                                    वाहन का रंग<span style="color: red">*</span></span>
+                                <input type="text" maxlength="30" class="form-control" placeholder="Enter Vehicle Color" autocomplete="off">
+                            </div>
+                        </div>
+                        <%--<div class="col-md-3">
+                            <div class="form-group">
+                                <span>Vehicle Type /<br />
+                                    वाहन का प्रकार<span style="color: red">*</span></span>
+                                <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Type" autocomplete="off">
+                            </div>
+                        </div>--%>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Vehicle Chassis Number /<br />
+                                    वाहन चेसिस नंबर<span style="color: red">*</span></span>
+                                <input type="text" maxlength="17" class="form-control " placeholder="Enter Vehicle Chassis Number" autocomplete="off">
+                                <span style="color: Red; display: none;">Invalid Chassis Number.</span>
+                            </div>
+                        </div>
+
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Seating Capacity /<br />
@@ -213,6 +248,23 @@
                                 <input type="Date" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
+
+                        <%--<div class="col-md-3">
+                            <div class="form-group">
+                                <span>Type /<br />
+                                    प्रकार<span style="color: red">*</span></span>
+                                <select class="form-control">
+                                    <option value="0">Select</option>
+                                    <option value="1">New</option>
+                                    <option value="2">Old</option>
+                                </select>
+                            </div>
+                        </div>--%>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Insurance Details / बीमा का विवरण</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Insurance Company Name /<br />
@@ -248,21 +300,10 @@
                                 <input type="text" maxlength="9" class="form-control" placeholder="Enter Insurance Amount" autocomplete="off">
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Type /<br />
-                                    प्रकार<span style="color: red">*</span></span>
-                                <select class="form-control">
-                                    <option value="0">Select</option>
-                                    <option value="1">New</option>
-                                    <option value="2">Old</option>
-                                </select>
-                            </div>
-                        </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Dealer Details/डीलर का विवरण</legend>
+                    <legend>Dealer Details / डीलर का विवरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
@@ -278,33 +319,7 @@
                                 <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Dealer Address" autocomplete="off">
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Motor Vehicle /<br />
-                                    मोटर गाड़ी<span style="color: red">*</span></span>
-                                <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                    <option value="0">Select</option>
-                                    <option value="1">New Vehicle</option>
-                                    <option value="2">XL Vehicle</option>
-                                    <option value="3">Imported Vehicle</option>
-                                    <option value="4">E-Rickshaw/E-Cart</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Type Of Body /<br />
-                                    बॉडी का प्रकार<span style="color: red">*</span></span>
-                                <input type="text" maxlength="15" class="form-control" placeholder="Enter Type Of Body" autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Vehicle Color /<br />
-                                    वाहन का रंग<span style="color: red">*</span></span>
-                                <input type="text" maxlength="30" class="form-control" placeholder="Enter Vehicle Color" autocomplete="off">
-                            </div>
-                        </div>
+
                     </div>
                 </fieldset>
                 <hr />
@@ -318,7 +333,20 @@
             <br />
             <div>
                 <fieldset>
-                    <legend>Details/विवरण</legend>
+                    <legend>Details / विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
@@ -330,8 +358,6 @@
                                                     सरल क्र. </th>
                                                 <th scope="col">Vehicle Number<br />
                                                     गाडी नंबर</th>
-                                                <th scope="col">Vehicle Class<br />
-                                                    वाहन वर्ग</th>
                                                 <th scope="col">Chassis Number
                                                     <br />
                                                     चेसिस नंबर</th>
@@ -341,9 +367,6 @@
                                                 <th scope="col">Dealer Name
                                                     <br />
                                                     विक्रेता का नाम</th>
-                                                <th scope="col">Motor Vehicle
-                                                    <br />
-                                                    मोटर गाड़ी</th>
                                                 <th scope="col">Vehicle Color
                                                     <br />
                                                     वाहन का रंग</th>
@@ -351,22 +374,19 @@
                                                     <br />
                                                 </th>
                                             </tr>
-                                            <tr class="text-left">
-                                                <td>1
+                                            <tr>
+                                                <td><span>1</span>
                                                 </td>
                                                 <td>MP04ZB8290
-                                                </td>
-                                                <td>L1e-A
                                                 </td>
                                                 <td>MAT631139NWH69961
                                                 </td>
                                                 <td class="text-right">1901003122P105135
                                                 </td>
                                                 <td>TATA MOTORS </td>
-                                                <td>New Vehicle</td>
                                                 <td>DOOR STEEL SHELL </td>
                                                 <td>
-                                                    <a class="Alert-Edit"><i class="fa fa-pen"></i></a>|  <a class="Alert-eye" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye"></i></a>
+                                                    <a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-eye" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye"></i></a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -375,13 +395,10 @@
                                                 </td>
                                                 <td>MP04ZD2758
                                                 </td>
-                                                <td>L1e-A
-                                                </td>
                                                 <td>MAT631139NWJ71982</td>
                                                 <td>1901003122P105825
                                                 </td>
                                                 <td>TATA MOTORS</td>
-                                                <td>New Vehicle </td>
                                                 <td>DAY GREY </td>
                                                 <td>
                                                     <a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-eye" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye"></i></a>
@@ -392,7 +409,6 @@
                                                     <span>3</span>
                                                 </td>
                                                 <td>MP04ZB8269 </td>
-                                                <td>L1e-A</td>
                                                 <td>MAT631139NWH69963
                                                 </td>
                                                 <td>1901003122P105134
@@ -400,7 +416,6 @@
                                                 </td>
                                                 <td>TATA MOTORS
                                                 </td>
-                                                <td>New Vehicle </td>
                                                 <td>DAY GREY</td>
                                                 <td>
                                                     <a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-eye" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye"></i></a>
@@ -414,9 +429,6 @@
                                                     <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblVehicle_Number">MP04ZB8211</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblCategoryName">L1e-A</span>
-                                                </td>
-                                                <td>
                                                     <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblVehicle_Chassis_Number">MAT631139NWH67251</span>
                                                 </td>
                                                 <td>
@@ -424,9 +436,6 @@
                                                 </td>
                                                 <td>
                                                     <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblDealer_Name">Varenyam motor car</span></td>
-                                                <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblMotorVeh_Name">New Vehicle</span>
-                                                </td>
                                                 <td>
                                                     <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblVehicle_Color">White</span></td>
                                                 <td>
@@ -438,22 +447,16 @@
                                                     <span>5</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblVehicle_Number">MP04HC4163</span>
+                                                    <span>MP04HC4163</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblCategoryName">D</span>
+                                                    <span>1995990</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblVehicle_Chassis_Number">1995990</span>
-                                                </td>
-                                                <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblInsurance_Number">1901003122P105404432</span>
-
+                                                    <span>1901003122P105404432</span>
                                                 </td>
                                                 <td>
                                                     <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblDealer_Name">MY CAR bhopal  </span></td>
-                                                <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblMotorVeh_Name">New Vehicle</span> </td>
                                                 <td>
                                                     <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblVehicle_Color">White</span> </td>
                                                 <td>
@@ -471,6 +474,7 @@
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
+                                <h2 class="text-center">Vehicle Information</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -545,8 +549,8 @@
                                                     <td><span>BHOPAL</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span>Motor Vehicle:</span></th>
-                                                    <td><span>New Vehicle</span></td>
+                                                    <%-- <th><span>Motor Vehicle:</span></th>
+                                                    <td><span>New Vehicle</span></td>--%>
                                                     <th><span>Type Of Body:</span></th>
                                                     <td><span>DAY GREY</span></td>
                                                     <th><span>Vehicle Color:</span></th>
