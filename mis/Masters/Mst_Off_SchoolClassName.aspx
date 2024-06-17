@@ -16,10 +16,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">School Class Name Master Data</li>
+                        <li class="breadcrumb-item"><span>School Class Name Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -115,7 +114,8 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.<br />
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.<br />
                                     </th>
                                     <th>School Class Name</th>
                                     <th>कक्षा का नाम</th>

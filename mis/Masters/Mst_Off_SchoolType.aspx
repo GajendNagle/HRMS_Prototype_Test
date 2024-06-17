@@ -13,10 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Office Master Data</li>
-                        <li class="breadcrumb-item">School Type Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>School Type Master Data</span></li>
                     </ol>
                 </div>
             </div>

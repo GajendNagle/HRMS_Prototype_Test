@@ -17,10 +17,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster"  data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">School  Management Group Master Data</li>
+                        <li class="breadcrumb-item"><span>School Type Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -39,7 +38,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h4 class="card-title">School Management Group Master 
-                        <br />स्कूल प्रबंधन समूह मास्टर</h4>
+                        <br />
+                        स्कूल प्रबंधन समूह मास्टर</h4>
                 </div>
             </div>
         </div>
@@ -61,7 +61,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Management Code No. /<br />प्रबंधन कोड संख्या<span style="color: red">*</span></label>
+                            <label>Management Code No. /<br />
+                                प्रबंधन कोड संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -104,10 +105,12 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
                                     <th>Management Group (In English)</th>
                                     <th>प्रबंधन का नाम (हिंदी में)</th>
-                                    <th>Management Code No. /<br /> प्रबंधन कोड संख्या</th>
+                                    <th>Management Code No. /<br />
+                                        प्रबंधन कोड संख्या</th>
                                     <th>Status(Active/InActive) /<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>

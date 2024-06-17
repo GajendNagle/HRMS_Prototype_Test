@@ -16,10 +16,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Directory Master Data</li>
+                        <li class="breadcrumb-item"><span>Directory Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -48,7 +47,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br />जिला का चयन करे<span style="color: red">*</span></label>
+                            <label>Select District Name /<br />
+                                जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -106,7 +106,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Office Type /<br />कार्यालय प्रकार का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Office Type /<br />
+                                कार्यालय प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -118,7 +119,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Type of Post /<br />पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
+                            <label>Select Type of Post /<br />
+                                पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="DEO">DEO</option>
@@ -129,14 +131,16 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Employee Name /<br />कमचारी का नाम दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Employee Name /<br />
+                                कमचारी का नाम दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Name" />
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Email Address /<br />ईमेल पता दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Email Address /<br />
+                                ईमेल पता दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Email Address" />
                         </div>
                     </div>
@@ -148,7 +152,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Landline No. /<br />लैंडलाइन नंबर दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Landline No. /<br />
+                                लैंडलाइन नंबर दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Landline No." />
                         </div>
                     </div>
@@ -189,14 +194,22 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />सरल क्र.</th>
-                                    <th>District /<br>जिला</th>
-                                    <th>Office Type /<br>कार्यालय का प्रकार</th>
-                                    <th>Type of Post /<br>पोस्ट का प्रकार</th>
-                                    <th>Name /<br>नाम</th>
-                                    <th>Email /<br>ईमेल</th>
-                                    <th>Mobile No. /<br>मोबाइल न.</th>
-                                    <th>Landline No. /<br>लैंडलाइन न.</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>District /<br>
+                                        जिला</th>
+                                    <th>Office Type /<br>
+                                        कार्यालय का प्रकार</th>
+                                    <th>Type of Post /<br>
+                                        पोस्ट का प्रकार</th>
+                                    <th>Name /<br>
+                                        नाम</th>
+                                    <th>Email /<br>
+                                        ईमेल</th>
+                                    <th>Mobile No. /<br>
+                                        मोबाइल न.</th>
+                                    <th>Landline No. /<br>
+                                        लैंडलाइन न.</th>
                                     <th>Status(Active/InActive) /<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>

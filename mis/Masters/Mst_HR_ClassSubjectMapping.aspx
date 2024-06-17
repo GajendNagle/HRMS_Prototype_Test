@@ -16,10 +16,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Class To Subject Mapping Master Data</li>
+                        <li class="breadcrumb-item"><span>Class To Subject Mapping Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -49,7 +48,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Class Name /<br />
+                            <label>
+                                Select Class Name /<br />
                                 कक्षा का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -64,7 +64,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Subject Name /<br />
+                            <label>
+                                Select Subject Name /<br />
                                 विषय का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -79,7 +80,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Effective Date /<br />
+                            <label>
+                                Enter Effective Date /<br />
                                 प्रभावी तिथि दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$TextBox1" type="date" id="ContentBody_TextBox1" class="form-control" placeholder="Select Date..." />
                         </div>
@@ -121,10 +123,15 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />सरल क्र.</th>
-                                    <th>Class Name /<br>कक्षा का नाम</th>
-                                    <th>Subject Name /<br />विषय का नाम<br></th>
-                                    <th>Effective Date /<br>प्रभावी तिथि</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
+                                    <th>Class Name /<br>
+                                        कक्षा का नाम</th>
+                                    <th>Subject Name /<br />
+                                        विषय का नाम<br>
+                                    </th>
+                                    <th>Effective Date /<br>
+                                        प्रभावी तिथि</th>
                                     <th>Status(Active/InActive) /<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>

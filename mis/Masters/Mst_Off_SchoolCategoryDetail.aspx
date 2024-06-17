@@ -16,10 +16,10 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">School Category Detail Master Data</li>
+                        <li class="breadcrumb-item"><span>School Category Detail Master Data
+                        </span></li>
                     </ol>
                 </div>
             </div>
@@ -48,7 +48,9 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select School Category /<br />स्कूल श्रेणी का चयन करे<span style="color: red">*</span></label>
+                            <label>
+                                Select School Category /<br />
+                                स्कूल श्रेणी का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control">
                                 <option value="-select-">-select-</option>
                                 <option value="Pre-Primary School">Pre-Primary School</option>
@@ -61,13 +63,17 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter School Category Detail /<br />स्कूल श्रेणी विवरण दर्ज करे<span style="color: red">*</span></label>
+                            <label>
+                                Enter School Category Detail /<br />
+                                स्कूल श्रेणी विवरण दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="Enter School Category Detail" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Category Detail Code No. /<br />श्रेणी विवरण कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>
+                                Enter Category Detail Code No. /<br />
+                                श्रेणी विवरण कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -114,8 +120,10 @@
                                         सरल क्र.</th>
                                     <th>School Category /<br />
                                         स्कूल श्रेणी</th>
-                                    <th>School Category Detail /<br />स्कूल श्रेणी विवरण</th>
-                                    <th>Category Detail Code No. /<br />श्रेणी विवरण कोड संख्या</th>
+                                    <th>School Category Detail /<br />
+                                        स्कूल श्रेणी विवरण</th>
+                                    <th>Category Detail Code No. /<br />
+                                        श्रेणी विवरण कोड संख्या</th>
                                     <th>Status(Active/InActive) /<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>

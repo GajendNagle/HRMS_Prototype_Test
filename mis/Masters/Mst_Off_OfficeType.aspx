@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -13,10 +14,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">Office Type Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Office Type Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -160,7 +163,6 @@
                 </div>
             </fieldset>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

@@ -17,15 +17,15 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Office Registration Master Data</li>
+                        <li class="breadcrumb-item"><span>Office Registration Master Data</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="marqueecontainer">
         <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
         <div>
@@ -315,7 +315,7 @@
                     </div>
                     <hr />
                     <div class="col-md-12">
-                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border"/>
+                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>

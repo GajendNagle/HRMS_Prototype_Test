@@ -16,10 +16,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">School Medium Master Data</li>
+                        <li class="breadcrumb-item"><span>School Medium Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -59,7 +58,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Medium Code No. /<br />माध्यम कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Medium Code No. /<br />
+                                माध्यम कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -103,10 +103,12 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />सरल क्र.</th>
+                                    <th>Sr.No. /<br />
+                                        सरल क्र.</th>
                                     <th>School Medium Name (In English)</th>
                                     <th>स्कूल माध्यम का नाम(हिंदी में)</th>
-                                    <th>Medium Code No. /<br>माध्यम कोड संख्या</th>
+                                    <th>Medium Code No. /<br>
+                                        माध्यम कोड संख्या</th>
                                     <th>Status(Active/InActive) /<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>

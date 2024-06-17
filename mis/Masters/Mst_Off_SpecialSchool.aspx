@@ -16,10 +16,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Special School Master Data</li>
+                        <li class="breadcrumb-item"><span>Special School Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -59,7 +58,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Special School Code No. /<br />विशेष स्कूल कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Special School Code No. /<br />
+                                विशेष स्कूल कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>

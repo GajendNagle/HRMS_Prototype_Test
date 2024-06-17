@@ -16,10 +16,9 @@
                             <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Office Master Data</span></a>
+                            <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">School Incharge Type Master Data</li>
+                        <li class="breadcrumb-item"><span>School Incharge Type Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -37,7 +36,9 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">School Incharge Type Master <br /> स्कूल प्रभारी का प्रकार मास्टर</h4>
+                    <h4 class="card-title">School Incharge Type Master
+                        <br />
+                        स्कूल प्रभारी का प्रकार मास्टर</h4>
                 </div>
             </div>
         </div>
@@ -60,7 +61,8 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Incharge Code No. /<br />
+                            <label>
+                                Enter Incharge Code No. /<br />
                                 प्रभारी कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -107,7 +109,9 @@
                                     <th>Sr.No.</th>
                                     <th>School Incharge Type Name (In English)</th>
                                     <th>स्कूल प्रभारी का प्रकार नाम(हिंदी में)</th>
-                                    <th>Incharge Code No. <br />प्रभारी कोड संख्या</th>
+                                    <th>Incharge Code No.
+                                        <br />
+                                        प्रभारी कोड संख्या</th>
                                     <th>Status(Active/InActive) /<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
