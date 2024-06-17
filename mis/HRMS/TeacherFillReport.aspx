@@ -163,8 +163,8 @@
 
                 </fieldset>
                 <label>
-                    <span class="fa-pull-left" style="color: red; font-size: 15px; position: relative; bottom: 3px;">Note:-</span>The Column Menttioning last year average attendance Will Not Apply for class<br />
-                    कक्षा 1 के पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|</label>
+                    <span class="fa-pull-left" style="color: red; font-size: 15px; position: relative; bottom: 3px;">Note:-</span>The Column Mentioning last year average attendance Will Not Apply for class<br />
+                    कक्षा 1 के लिये पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|</label>
                  <hr />
  <div class="col-md-12">
      <div class="form-group">
@@ -244,7 +244,7 @@
                             <label>
                                 Reasons, if any, for not completing the target 
                                 <br />
-                                लक्ष्य  प्राप्ति न होने के करण<span style="color: red">*</span></label>
+                                (लक्ष्य  प्राप्ति न होने के करण)<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons  Maxmum 100 words"></textarea>
                         </div>
                     </div>
