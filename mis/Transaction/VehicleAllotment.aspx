@@ -381,27 +381,27 @@
                                 <table class="datatable table table-bordered dataTable no-footer" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;" role="grid" aria-describedby="ctl00_ContentBody_grvVehicleAllotment_info">
                                     <thead>
                                         <tr role="row">
-                                            <th scope="col">Sr.No. /<br />
+                                            <th scope="col">Sr.No. <br />
                                                 सरल क्र.</th>
-                                            <th scope="col">Vehicle Number /<br />
+                                            <th scope="col">Vehicle Number <br />
                                                 गाडी नंबर</th>
-                                            <th scope="col">Office Type /<br />
+                                            <th scope="col">Office Type <br />
                                                 कार्यालय का प्रकार</th>
-                                            <th scope="col">Office Name /<br />
+                                            <th scope="col">Office Name <br />
                                                 कार्यालय का नाम</th>
-                                            <th scope="col">Designation /<br />
+                                            <th scope="col">Designation <br />
                                                 पद का नाम</th>
-                                            <th scope="col">Order Number /<br />
+                                            <th scope="col">Order Number <br />
                                                 आदेश संख्या</th>
-                                            <th scope="col">Order Date /<br />
+                                            <th scope="col">Order Date <br />
                                                 आर्डर की तारीख</th>
-                                            <th scope="col">Vehicle Type /<br />
+                                            <th scope="col">Vehicle Type <br />
                                                 वाहन का प्रकार</th>
-                                            <th scope="col">Driver Name /<br />
+                                            <th scope="col">Driver Name <br />
                                                 चालक का नाम</th>
-                                            <th scope="col">Driver Contact No. /<br />
+                                            <th scope="col">Driver Contact No. <br />
                                                 ड्राइवर संपर्क नंबर</th>
-                                            <th scope="col">Order Document /<br />
+                                            <th scope="col">Order Document <br />
                                                 आदेश दस्तावेज़</th>
                                             <th scope="col">Action</th>
                                         </tr>
