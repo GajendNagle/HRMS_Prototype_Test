@@ -208,35 +208,35 @@
                         <div class="form-group">
                             <span>Vehicle Model Name /<br />
                                 वाहन मॉडल का नाम<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" value="Maruti 800"  readonly="readonly" autocomplete="off">
+                            <input type="text" maxlength="20" class="form-control" value="Tiago" readonly="readonly" autocomplete="off">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Variants /<br />
                                 वाहन का प्रकार <span style="color: red">*</span></span>
-                            <input type="text" maxlength="50" class="form-control" value="HATCHBACK" readonly="readonly">
+                            <input type="text" maxlength="50" class="form-control" value="Hatchback" readonly="readonly" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Color /<br />
                                 वाहन का रंग<span style="color: red">*</span></span>
-                            <input type="text" maxlength="30" class="form-control" value="white" readonly="readonly" autocomplete="off">
+                            <input type="text" maxlength="30" class="form-control" value="Midnight Plum" readonly="readonly" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <span>Fuel Type /<br />
                                 ईंधन का प्रकार<span style="color: red">*</span></span>
-                            <div class="form-control">
-                                <input type="radio" id="one">
+                            <div class="form-control" disabled="true">
+                                <input type="radio" disabled="disabled" id="one"/>
                                 <label for="one">Diesel</label>
-                                <input type="radio" id="two">
+                                <input type="radio" disabled="disabled" id="two"/>
                                 <label for="option-2">Petrol</label>
-                                <input type="radio" id="three">
+                                <input type="radio" disabled="disabled" id="three" checked="checked"/>
                                 <label for="three">CNG</label>
-                                <input type="radio" id="four" checked="checked">
+                                <input type="radio" disabled="disabled" id="four"/>
                                 <label for="four">Electric</label>
                             </div>
                         </div>
@@ -259,7 +259,7 @@
                         <div class="form-group">
                             <span>Vehicle Number /<br />
                                 वाहन का नंबर<span style="color: red">*</span></span>
-                            <input type="text" maxlength="50" value="MP04CB4473" readonly="readonly" class="form-control" autocomplete="off">
+                            <input type="text" maxlength="50" value="MP04CB4473" readonly="readonly" class="form-control" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -271,7 +271,7 @@
                                 <option value=" -Select-">CPI</option>
                                 <option value=" -Select-">DPI</option>
                                 <option value="Bhopal">Head Office</option>
-                                <option value="Bhopal" selected="selected" >JOINT DIRECTORS</option>
+                                <option value="Bhopal" selected="selected">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
                             </select>
@@ -286,39 +286,41 @@
                             </select>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Number /<br />
-                                आदेश नंबर<span style="color: red">*</span></span> 
-                            <input type="text" maxlength="20" id="ctl00_ContentBody_txtOrederNumber" value="111-9244735-1237858" readonly="readonly" class="form-control" placeholder="Enter Order Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off">
+                                आदेश नंबर<span style="color: red">*</span></span>
+                            <input type="text" maxlength="20" id="ctl00_ContentBody_txtOrederNumber" class="form-control" placeholder="Enter Order Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Date /<br />
                                 आदेश की तारीख<span style="color: red">*</span></span>
-                            <input type="text" class="form-control" data-provide="datepicker" readonly="readonly" data-date-end-date="0d" value="12/05/2023" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
+                            <input type="date" class="form-control" data-provide="datepicker" data-date-end-date="0d" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Type /<br />
                                 वाहन का प्रकार<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtVehicleType" value="car"  type="text" id="ctl00_ContentBody_txtVehicleType" class="form-control" readonly="readonly">
+                            <input name="ctl00$ContentBody$txtVehicleType" type="text" placeholder="Enter Vehicle Type" id="ctl00_ContentBody_txtVehicleType" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Driver Name /<br />
                                 चालक का नाम<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtDrivername" type="text" value="LAKSHMI NARAYAN" readonly="readonly" maxlength="50" id="ctl00_ContentBody_txtDrivername" class="form-control" placeholder="Enter Driver Name" onpaste="return false;" autocomplete="off">
+                            <input name="ctl00$ContentBody$txtDrivername" type="text" maxlength="50" id="ctl00_ContentBody_txtDrivername" class="form-control" placeholder="Enter Driver Name" onpaste="return false;" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Driver Contact no /<br />
                                 ड्राइवर संपर्क नंबर<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtDriverContactNo" type="text" value="07411655945" readonly="readonly" maxlength="50" id="ctl00_ContentBody_txtDriverContactNo" class="form-control" placeholder="Enter Driver Contact no" onpaste="return false;" autocomplete="off">
+                            <input name="ctl00$ContentBody$txtDriverContactNo" type="text" maxlength="10" id="ctl00_ContentBody_txtDriverContactNo" class="form-control" placeholder="Enter Driver Contact No." onpaste="return false;" autocomplete="off" />
                         </div>
                     </div>
                     <%--<div class="col-md-3">
@@ -373,27 +375,27 @@
                                 <table class="datatable table table-bordered dataTable no-footer" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;" role="grid" aria-describedby="ctl00_ContentBody_grvVehicleAllotment_info">
                                     <thead>
                                         <tr role="row">
-                                            <th scope="col">S.No.<br />
+                                            <th scope="col">Sr.No. /<br />
                                                 सरल क्र.</th>
-                                            <th scope="col">Vehicle Number<br />
+                                            <th scope="col">Vehicle Number /<br />
                                                 गाडी नंबर</th>
-                                            <th scope="col">Office Type<br />
+                                            <th scope="col">Office Type /<br />
                                                 कार्यालय का प्रकार</th>
-                                            <th scope="col">Office Name<br />
+                                            <th scope="col">Office Name /<br />
                                                 कार्यालय का नाम</th>
-                                            <th scope="col">Designation<br />
+                                            <th scope="col">Designation /<br />
                                                 पद का नाम</th>
-                                            <th scope="col">Order Number<br />
+                                            <th scope="col">Order Number /<br />
                                                 आदेश संख्या</th>
-                                            <th scope="col">Order Date<br />
+                                            <th scope="col">Order Date /<br />
                                                 आर्डर की तारीख</th>
-                                            <th scope="col">Vehicle Type<br />
+                                            <th scope="col">Vehicle Type /<br />
                                                 वाहन का प्रकार</th>
-                                            <th scope="col">Driver Name<br />
+                                            <th scope="col">Driver Name /<br />
                                                 चालक का नाम</th>
-                                            <th scope="col">Driver Contact no<br />
+                                            <th scope="col">Driver Contact No. /<br />
                                                 ड्राइवर संपर्क नंबर</th>
-                                            <th scope="col">Order Document<br />
+                                            <th scope="col">Order Document /<br />
                                                 आदेश दस्तावेज़</th>
                                             <th scope="col">Action</th>
                                         </tr>
@@ -422,13 +424,13 @@
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblOrder_Date">12/05/2023</span>
                                             </td>
                                             <td style="width: 10%;" class="sorting_1">
-                                                <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblVehicletype">MARUTI 800</span>
+                                                <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblVehicletype">Tiago</span>
                                             </td>
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblDrivername">LAKSHMI NARAYAN</span>
                                             </td>
                                             <td>
-                                                <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblDriverContactNo">07411655945</span>
+                                                <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblDriverContactNo">7411655945</span>
                                             </td>
                                             <td>
                                                 <button type="button" class="btn btn-primary">
