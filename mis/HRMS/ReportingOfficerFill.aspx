@@ -1404,7 +1404,7 @@
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे सहभागिता</legend>
+                            <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता</legend>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -1415,10 +1415,10 @@
                                                     सरल.क्र</th>
                                                 <th>Name of Training<br />
                                                     प्रशिक्षण का नाम</th>
-                                                <th>Subject<br />
-                                                    विषय</th>
-                                                <th>Period of Training<br />
-                                                    प्रशिक्षण की अवधि</th>
+                                               <%-- <th>Subject<br />
+                                                    विषय</th>--%>
+                                                <th>Period of Training (Days)<br />
+                                                     प्रशिक्षण की अवधि (दिन में)</th>
                                                 <th>Result/Grade<br />
                                                     उपलब्धि/ग्रेड</th>
                                             </tr>
@@ -1428,10 +1428,10 @@
                                                 <td>1</td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="स्कूली शिक्षा"></asp:TextBox></td>
+                                              <%--  <td>
+                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>--%>
                                                 <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>
-                                                <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="1 वर्ष"></asp:TextBox></td>
+                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="45 दिन"></asp:TextBox></td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="A"></asp:TextBox></td>
 

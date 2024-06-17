@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <style>
-        #workdescription, #workdescription1, #workdescription2, #workdescription3, #workdescription4, #workdescription5, #workdescription6, #workdescription7, #workdescription8 {
+        textarea{
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
@@ -32,6 +32,7 @@
             margin-bottom: 20px;
             width: 100%;
         }
+        
     </style>
 </asp:Content>
 
@@ -517,47 +518,52 @@ Of Annual Examination Result
                 </fieldset>
                 <br />
                 <div>
-                    <fieldset>
-                        <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे सहभागिता</legend>
+                                   <fieldset>
+                   <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता</legend>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <table id="Table4" class="table table-bordered table-responsive-lg text-center " runat="server">
-                                    <thead>
-                                        <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                            <th>S.No.<br />
-                                                सरल.क्र</th>
-                                            <th>Name of Training<br />
-                                                प्रशिक्षण का नाम</th>
-                                            <th>Subject<br />
-                                                विषय</th>
-                                            <th>Period of Training<br />
-                                                प्रशिक्षण की अवधि</th>
-                                            <th>Result/Grade<br />
-                                                उपलब्धि/ग्रेड</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr valign="middle">
-                                            <td>1</td>
-                                            <td>
-                                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                            <td>
-                                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                            <td>
-                                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
-                                            <td>
-                                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>
+                   <div class="row">
+                       <div class="col-md-12">
+                           <table id="Table4" class="table table-bordered table-responsive-lg text-center " runat="server">
+                               <thead>
+                                   <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                       <th>S.No./<br />
+                                           सरल.क्र</th>
+                                       <th>Name of Training/<br />
+                                           प्रशिक्षण का नाम</th>
+                                       <%--<th>Subject/<br />
+                                           विषय</th>--%>
+                                       <th>Period of Training (Days)/<br />
+                                           प्रशिक्षण की अवधि (दिन में)</th>
+                                       <th>Result/Grade<br />
+                                           उपलब्धि/ग्रेड</th>
+                                       <th>Action</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr valign="middle">
+                                       <td>1</td>
+                                       <td>
+                                           <asp:TextBox runat="server" ID="D1" CssClass="form-control"></asp:TextBox></td>
+                                       <td>
+                                           <asp:TextBox runat="server" ID="D2" CssClass="form-control"></asp:TextBox></td>
+                                      <%-- <td>
+                                           <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>--%>
+                                       <td>
+                                           <asp:TextBox runat="server" ID="D3" CssClass="form-control"></asp:TextBox></td>
+                                        <td id="btnaction5">
 
-                                        </tr>
-                                    </tbody>
+<button type="button" onclick="addData5()" class="btn btn-success">Add</button></td>
 
-                                </table>
-                            </div>
-                        </div>
 
-                        <label><span class="fa-pull-left" style="color: red; font-size: 15px; position: relative; bottom: 3px;">Note:-</span> * यदि प्रशिक्षण  में किये गये मूल्यांकन में ग्रेड प्राप्त  हुआ है, तो उल्लेखित किया जाए है|</label>
-                    </fieldset>
+                                   </tr>
+                               </tbody>
+
+                           </table>
+                       </div>
+                   </div>
+
+                   <label><span class="fa-pull-left" style="color: red; font-size: 15px; position: relative; bottom: 3px;">Note:-</span> * यदि प्रशिक्षण  में किये गये मूल्यांकन में ग्रेड प्राप्त  हुआ है, तो उल्लेखित किया जाए है|</label>
+               </fieldset>
                 </div>
                 <br />
                 <fieldset>
@@ -661,6 +667,52 @@ Of Annual Examination Result
             //var x = document.getElementById("mySelect").value;
             //document.getElementById("demo").innerHTML = "You selected: " + x;
         }
+    </script>
+    <script>
+        function addData5() {
+            // Get input values
+            let email = document.getElementById('<%=D1.ClientID%>').value;
+        let mobile = document.getElementById('<%=D2.ClientID%>').value;
+        let PreviousGradea = document.getElementById('<%=D3.ClientID%>').value;
+        //let PreviousGradeab = document.getElementById("D4").value;
+        //let PreviousGradec = document.getElementById("D5").value;
+
+        // Get the table reference
+        let table = document.getElementById('<%=Table4.ClientID%>') ; // Assuming "Table4" is the ID of your table element
+
+        // Check if the maximum number of rows (5) has been reached
+        if (table.rows.length - 1 > 5) {
+            alert("Maximum 5 rows allowed.");
+            return; // Exit the function if the maximum limit is reached
+        }
+
+        // Insert a new row at the end
+        let newRow = table.insertRow(table.rows.length);
+
+        // Insert data into cells of the new row
+        let cellIndex = newRow.insertCell(0);
+        cellIndex.innerHTML = table.rows.length-2; // Adjust based on your table structure
+
+        newRow.insertCell(1).innerHTML = email;
+        newRow.insertCell(2).innerHTML = mobile;
+        newRow.insertCell(3).innerHTML = PreviousGradea;
+        //newRow.insertCell(4).innerHTML = PreviousGradeab;
+        //newRow.insertCell(5).innerHTML = PreviousGradec;
+
+        clearInputs5();
+    }
+
+    function clearInputs5() {
+        // Clear input fields
+        document.getElementById('<%=D1.ClientID%>').value = "";
+        document.getElementById('<%=D2.ClientID%>').value = "";
+        document.getElementById('<%=D3.ClientID%>').value = "";
+
+        // You may choose to clear more input fields if needed
+    }
+
+    // Adding event listener to a button with id "addButton"
+    ////////document.getElementById('<%=btnaction5.ClientID%>').addEventListener("click", addData5);
     </script>
     <script>
         document.getElementById('btnaction').style.display = "block";

@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_EmployeeACR.aspx.cs" Inherits="mis_Transaction_Rpt_EmployeeACR" %>
 
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
         #ddlPosition {
@@ -935,7 +937,7 @@
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे सहभागिता</legend>
+                            <legend>Academic trsining attended during Appraisal period /प्रतिवेदित अवधि मे प्रशिक्षण मे सहभागिता</legend>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -946,10 +948,10 @@
                                                     सरल.क्र</th>
                                                 <th>Name of Training<br />
                                                     प्रशिक्षण का नाम</th>
-                                                <th>Subject<br />
-                                                    विषय</th>
-                                                <th>Period of Training<br />
-                                                    प्रशिक्षण की अवधि</th>
+                                               <%-- <th>Subject<br />
+                                                    विषय</th>--%>
+                                                <th>Period of Training (Days)<br />
+                                                     प्रशिक्षण की अवधि (दिन में)</th>
                                                 <th>Result/Grade<br />
                                                     उपलब्धि/ग्रेड</th>
                                             </tr>
@@ -959,10 +961,10 @@
                                                 <td>1</td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="स्कूली शिक्षा"></asp:TextBox></td>
+                                               <%-- <td>
+                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>--%>
                                                 <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>
-                                                <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="1 वर्ष"></asp:TextBox></td>
+                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="45 दिन"></asp:TextBox></td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="A"></asp:TextBox></td>
 
@@ -1835,60 +1837,60 @@ of annual examination result
                     </fieldset>
 
                     <fieldset>
-                        <div class="row">
-                            <div class="col-12">
-                                <h5 class=" font-bold"><u>Academic trsining attended during Appraisal period / प्रतिवेदित अवधि मे सहभागिता </u>:-</h5>
-                            </div>
+    <div class="row">
+        <div class="col-12">
+            <h5 class=" font-bold"><u>Academic trsining attended during Appraisal period /प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता </u>:-</h5>
+        </div>
+        <br />
+        <div class="col-md-12">
+            <table class="table table-bordered th-left">
+                <tbody>
+                    <tr valign="middle">
+                        <th>S.No.<br />
+                            सरल.क्र</th>
+                        <th>Name of Training<br />
+                            प्रशिक्षण का नाम</th>
+                       <%-- <th>Subject<br />
+                            विषय</th>--%>
+                        <th>Period of Training (Days)<br />
+                            प्रशिक्षण की अवधि (दिन में)</th>
+                        <th>Result/Grade<br />
+                            उपलब्धि/ग्रेड</th>
+                    </tr>
+
+
+                    <tr valign="middle">
+                        <td>1</td>
+                        <td>स्कूली शिक्षा</td>
+                     <%--   <td>जीव विज्ञान</td>--%>
+                        <td>45 दिन</td>
+                        <td>"A"</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered th-left">
+                <tbody>
+                    <tr valign="middle" style="width: 50%">
+                        <th>Any Other Work Which You Want to Mention as an Outstanding Contribution
                             <br />
-                            <div class="col-md-12">
-                                <table class="table table-bordered th-left">
-                                    <tbody>
-                                        <tr valign="middle">
-                                            <th>S.No.<br />
-                                                सरल.क्र</th>
-                                            <th>Name of Training<br />
-                                                प्रशिक्षण का नाम</th>
-                                            <th>Subject<br />
-                                                विषय</th>
-                                            <th>Period of Training<br />
-                                                प्रशिक्षण की अवधि</th>
-                                            <th>Result/Grade<br />
-                                                उपलब्धि/ग्रेड</th>
-                                        </tr>
+                            कोई अन्य कार्य जिसे आप एक उत्कृष्ट योगदान के रूप में उल्लेख करना चाहते है </th>
+                        <td style="width: 50%" class="text-center">Nill</td>
+                    </tr>
+                </tbody>
+            </table>
 
 
-                                        <tr valign="middle">
-                                            <td>1</td>
-                                            <td>स्कूली शिक्षा</td>
-                                            <td>जीव विज्ञान</td>
-                                            <td>1 वर्ष</td>
-                                            <td>"A"</td>
-
-                                        </tr>
-                                    </tbody>
-
-                                </table>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table table-bordered th-left">
-                                    <tbody>
-                                        <tr valign="middle" style="width: 50%">
-                                            <th>Any Other Work Which You Want to Mention as an Outstanding Contribution
-                                                <br />
-                                                कोई अन्य कार्य जिसे आप एक उत्कृष्ट योगदान के रूप में उल्लेख करना चाहते है </th>
-                                            <td style="width: 50%" class="text-center">Nill</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-
-                            </div>
-                        </div>
-                        <br />
-                    </fieldset>
+        </div>
+    </div>
+    <br />
+</fieldset>
 
                 </div>
                 <div class="modal-footer justify-content-center d-print-none">

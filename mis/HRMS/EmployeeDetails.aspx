@@ -170,19 +170,19 @@
             </fieldset>
         </div>
     </div>
-    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: #7c4baf;">
+                <div class="modal-header" style="background-color: var(--vz-primary);">
 
                     <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
                     <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">EMPLOYEE  ACR FORM</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div runat="server" id="show">
-                                            <fieldset>
+                        <fieldset>
                             <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
                             <div class="row  align-items-end">
                                 <div class="col-md-3">
@@ -1018,7 +1018,7 @@
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे सहभागिता</legend>
+                            <legend>Academic trsining attended during  Appraisal period /प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता</legend>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -1029,10 +1029,10 @@
                                                     सरल.क्र</th>
                                                 <th>Name of Training<br />
                                                     प्रशिक्षण का नाम</th>
-                                                <th>Subject<br />
-                                                    विषय</th>
-                                                <th>Period of Training<br />
-                                                    प्रशिक्षण की अवधि</th>
+                                               <%-- <th>Subject<br />
+                                                    विषय</th>--%>
+                                                <th>Period of Training (Days)<br />
+                                                   प्रशिक्षण की अवधि (दिन में)</th>
                                                 <th>Result/Grade<br />
                                                     उपलब्धि/ग्रेड</th>
                                             </tr>
@@ -1042,10 +1042,10 @@
                                                 <td>1</td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="स्कूली शिक्षा"></asp:TextBox></td>
+                                             <%--   <td>
+                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>--%>
                                                 <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>
-                                                <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="1 वर्ष"></asp:TextBox></td>
+                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="45 दिन"></asp:TextBox></td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="A"></asp:TextBox></td>
 
@@ -1072,14 +1072,6 @@
 
                         </fieldset>
 
-
-
-                    </div>
-                    <hr />
-                    <div class="modal-footer" id="exampleModalFooter" style="display: none;">
-                        <button type="button" class="Alert-Confirmation   btn w-lg btn-success btn-border">Send To Officer</button>
-
-                        <a href="EmployeeDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
 
 
                     </div>
