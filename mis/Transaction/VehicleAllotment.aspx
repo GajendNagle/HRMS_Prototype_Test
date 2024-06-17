@@ -185,7 +185,8 @@
                             <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off"/>
                         </div>
                     </div>
-                    <div class="col-md-4" style="margin-top: 2.5rem !important;">
+                    <hr />
+                    <div class="col-md-12">
                         <div class="form-group">
                             <button id="toggleButton2" type="button" class="btn  btn-success btn-border">Search</button>
                         </div>
@@ -340,7 +341,7 @@
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details/विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row" id="FisrtTimetbl">
                     <div class="col-md-12">
                         <div>
