@@ -178,7 +178,6 @@
 
                                         </div>
                                         <div class="card-content">
-
                                             <button class="card-btn five">500</button>
                                         </div>
                                     </div>
