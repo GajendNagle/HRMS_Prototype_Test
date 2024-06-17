@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_ZilaPanchayat.aspx.cs" Inherits="mis_Masters_Mst_ZilaPanchayat" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -136,7 +141,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Jila Panchayat Code No. /<br />
+                            <label>Enter Jila Panchayat Code No./<br />
                                 जिला पंचायत कोड संख्या<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>

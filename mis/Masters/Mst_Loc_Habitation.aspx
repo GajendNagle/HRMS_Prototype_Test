@@ -146,7 +146,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Gram Panchayat Name /<br />
+                            <label>Select Gram Panchayat Name/<br />
                                 ग्राम पंचायत का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
