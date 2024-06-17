@@ -47,7 +47,7 @@
                         <div class="form-group">
                             <span>Employee ID /<br />
                                 कर्मचारी की आई.डी.<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$ddlOfficeType" class="form-control">
+                            <input name="ctl00$ContentBody$ddlOfficeType" class="form-control"/>
                         </div>
                     </div>
                     <hr />
@@ -66,7 +66,7 @@
                         <div class="form-group">
                             <span>Employee Name With Code /<br />
                                 कर्मचारी का नाम कोड सहित<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" readonly="readonly" value="E0561-Raj" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off">
+                            <input type="text" maxlength="20" class="form-control" readonly="readonly" value="E0561-Raj" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -182,7 +182,7 @@
                         <div class="form-group">
                             <span>Vehicle Number /<br />
                                 वाहन संख्या<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off">
+                            <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-md-4" style="margin-top: 2.5rem !important;">
@@ -201,14 +201,14 @@
                         <div class="form-group">
                             <span>Vehicle Company Name /<br />
                                 वाहन कंपनी का नाम<span style="color: red">*</span></span>
-                            <input type="text" maxlength="50" value="Tata Motors" readonly="readonly" class="form-control" autocomplete="off">
+                            <input type="text" maxlength="50" value="Tata Motors" readonly="readonly" class="form-control" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Model Name /<br />
                                 वाहन मॉडल का नाम<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" value="Tiago" readonly="readonly" autocomplete="off">
+                            <input type="text" maxlength="20" class="form-control" value="Tiago" readonly="readonly" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -365,7 +365,7 @@
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
                             </div>
                         </div>
                     </div>
