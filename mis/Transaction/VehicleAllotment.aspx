@@ -47,7 +47,7 @@
                         <div class="form-group">
                             <span>Employee ID /<br />
                                 कर्मचारी की आई.डी.<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$ddlOfficeType" class="form-control"/>
+                            <input name="ctl00$ContentBody$ddlOfficeType" class="form-control" />
                         </div>
                     </div>
                     <hr />
@@ -66,7 +66,7 @@
                         <div class="form-group">
                             <span>Employee Name With Code /<br />
                                 कर्मचारी का नाम कोड सहित<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" readonly="readonly" value="E0561-Raj" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off"/>
+                            <input type="text" maxlength="20" class="form-control" readonly="readonly" value="E0561-Raj" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -182,7 +182,7 @@
                         <div class="form-group">
                             <span>Vehicle Number /<br />
                                 वाहन संख्या<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off"/>
+                            <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                         </div>
                     </div>
                     <hr />
@@ -202,14 +202,14 @@
                         <div class="form-group">
                             <span>Vehicle Company Name /<br />
                                 वाहन कंपनी का नाम<span style="color: red">*</span></span>
-                            <input type="text" maxlength="50" value="Tata Motors" readonly="readonly" class="form-control" autocomplete="off"/>
+                            <input type="text" maxlength="50" value="Tata Motors" readonly="readonly" class="form-control" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Model Name /<br />
                                 वाहन मॉडल का नाम<span style="color: red">*</span></span>
-                            <input type="text" maxlength="20" class="form-control" value="Tiago" readonly="readonly" autocomplete="off"/>
+                            <input type="text" maxlength="20" class="form-control" value="Tiago" readonly="readonly" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -231,13 +231,13 @@
                             <span>Fuel Type /<br />
                                 ईंधन का प्रकार<span style="color: red">*</span></span>
                             <div class="form-control" disabled="true">
-                                <input type="radio" disabled="disabled" id="one"/>
+                                <input type="radio" disabled="disabled" id="one" />
                                 <label for="one">Diesel</label>
-                                <input type="radio" disabled="disabled" id="two"/>
+                                <input type="radio" disabled="disabled" id="two" />
                                 <label for="option-2">Petrol</label>
-                                <input type="radio" disabled="disabled" id="three" checked="checked"/>
+                                <input type="radio" disabled="disabled" id="three" checked="checked" />
                                 <label for="three">CNG</label>
-                                <input type="radio" disabled="disabled" id="four"/>
+                                <input type="radio" disabled="disabled" id="four" />
                                 <label for="four">Electric</label>
                             </div>
                         </div>
@@ -260,7 +260,7 @@
                         <div class="form-group">
                             <span>Vehicle Number /<br />
                                 वाहन का नंबर<span style="color: red">*</span></span>
-                            <input type="text" maxlength="50" value="MP04CB4473" readonly="readonly" class="form-control" autocomplete="off"/>
+                            <input type="text" maxlength="50" value="MP04CB4473" readonly="readonly" class="form-control" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -366,7 +366,7 @@
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                             </div>
                         </div>
                     </div>
@@ -487,14 +487,14 @@
             //var content2 = document.getElementById("Serchtbl");
             document.getElementById("Serchtbl").style.display = "none";
             document.getElementById("EmployeeDetailsData").style.display = "block";
-            document.getElementById("dataSearchEmp").style.display = "none";
+            //document.getElementById("dataSearchEmp").style.display = "none";
             document.getElementById("VehicleAllotementNo").style.display = "block";
             //document.getElementById("FisrtTimetbl").style.display = "none";
         });
         document.getElementById("toggleButton2").addEventListener("click", function () {
             document.getElementById("Serchtbl").style.display = "none";
             document.getElementById("VEHICLEALLOTMENTData").style.display = "block";
-            document.getElementById("dataSearchEmp").style.display = "none";
+            //document.getElementById("dataSearchEmp").style.display = "none";
             document.getElementById("VehicleAllotementNo").style.display = "block";
         });
         document.getElementById("toggleButton").addEventListener("click", function () {
