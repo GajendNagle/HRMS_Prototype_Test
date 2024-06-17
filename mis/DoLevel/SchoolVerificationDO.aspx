@@ -131,18 +131,14 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group text-center">
                                 <asp:Button ID="btnSubmit" CssClass="btn btn-success w-lg btn-border" runat="server" OnClick="btnSubmit_Click" Text="Search" />
                                 <a runat="server" id="clearfirst" href="SchoolVerificationDO.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
-                         
                     </div>
                 </fieldset>
-
-
                 <fieldset runat="server" id="datatable" visible="false">
                     <legend>School Verification Details/स्कूल सत्यापन विवरण</legend>
                     <div class="row justify-content-end">
@@ -164,7 +160,6 @@
                                 <table class="table">
                                     <tbody>
                                         <tr>
-
                                             <th>Sr. No./क्रमांक</th>
                                             <th>Division/संभाग </th>
                                             <th>District/जिला </th>
@@ -179,10 +174,8 @@
                                             <th>Incharge Name/प्रभारी का नाम</th>
                                             <th>Incharge Number/प्रभारी क्रमांक</th>
                                             <th>Action/कार्रवाई</th>
-
                                         </tr>
                                         <tr>
-
                                             <td>1</td>
                                             <td>Bhopal</td>
                                             <td>Bhopal</td>
@@ -276,7 +269,6 @@
 
                                     </div>
                                     <div class="modal-footer justify-content-center">
-
                                         <button type="button" class="btn w-lg btn-success Alert-Sendrequest" data-bs-dismiss="modal">Save</button>
                                         <button type="button" class="btn w-lg btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
@@ -791,10 +783,6 @@
                     </div>
                 </fieldset>--%>
                 <!-- End Description -->
-
-
-
-
             </div>
         </div>
 </asp:Content>

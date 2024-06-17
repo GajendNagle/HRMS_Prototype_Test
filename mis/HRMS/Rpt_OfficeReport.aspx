@@ -60,54 +60,54 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-2">
-                            <label class="font-bold">Select Office Type/कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
-                            <span class="fa-pull-right">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ValidationGroup="a"
-                                    ErrorMessage="Select Office Type" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Office Type !'></i>"
-                                    ControlToValidate="ddlOffice" Display="Dynamic" runat="server">
-                                </asp:RequiredFieldValidator>
-                            </span>
-                            <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlOffice">
-                                <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                <asp:ListItem>BEO,BAROD</asp:ListItem>
-                                <asp:ListItem>BRC,BAROD</asp:ListItem>
-                                <asp:ListItem>BEO,NALKHEDA</asp:ListItem>
-                                <asp:ListItem>BRC,NALKHEDA</asp:ListItem>
-                                <asp:ListItem>BEO,SUSNER</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                        <label class="font-bold">Select Office Type/कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
+                        <span class="fa-pull-right">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ValidationGroup="a"
+                                ErrorMessage="Select Office Type" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Office Type !'></i>"
+                                ControlToValidate="ddlOffice" Display="Dynamic" runat="server">
+                            </asp:RequiredFieldValidator>
+                        </span>
+                        <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlOffice">
+                            <asp:ListItem Value="0">--Select--</asp:ListItem>
+                            <asp:ListItem>BEO,BAROD</asp:ListItem>
+                            <asp:ListItem>BRC,BAROD</asp:ListItem>
+                            <asp:ListItem>BEO,NALKHEDA</asp:ListItem>
+                            <asp:ListItem>BRC,NALKHEDA</asp:ListItem>
+                            <asp:ListItem>BEO,SUSNER</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
                     <div class="col-md-2">
-                            <label class="font-bold">Select U-Dise Code/यू-डाइस कोड चुनें<span style="color: red">*</span></label>
-                            <span class="fa-pull-right">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ValidationGroup="a"
-                                    ErrorMessage="Select UDise Code" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select UDise Code !'></i>"
-                                    ControlToValidate="ddlUDiceCode" Display="Dynamic" runat="server">
-                                </asp:RequiredFieldValidator>
-                            </span>
-                            <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlUDiceCode">
-                                <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                <asp:ListItem>232201OBS01-BEO,BAROD</asp:ListItem>
-                                <asp:ListItem>232201OBS02-BRC,BAROD</asp:ListItem>
-                                <asp:ListItem>232202OBS01-BEO,NALKHEDA</asp:ListItem>
-                                <asp:ListItem>232202OBS02-BRC,NALKHEDA</asp:ListItem>
-                                <asp:ListItem>232203OBS01-BEO,SUSNER</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                        <label class="font-bold">Select U-Dise Code/यू-डाइस कोड चुनें<span style="color: red">*</span></label>
+                        <span class="fa-pull-right">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ValidationGroup="a"
+                                ErrorMessage="Select UDise Code" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select UDise Code !'></i>"
+                                ControlToValidate="ddlUDiceCode" Display="Dynamic" runat="server">
+                            </asp:RequiredFieldValidator>
+                        </span>
+                        <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlUDiceCode">
+                            <asp:ListItem Value="0">--Select--</asp:ListItem>
+                            <asp:ListItem>232201OBS01-BEO,BAROD</asp:ListItem>
+                            <asp:ListItem>232201OBS02-BRC,BAROD</asp:ListItem>
+                            <asp:ListItem>232202OBS01-BEO,NALKHEDA</asp:ListItem>
+                            <asp:ListItem>232202OBS02-BRC,NALKHEDA</asp:ListItem>
+                            <asp:ListItem>232203OBS01-BEO,SUSNER</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
                     <div class="col-md-2">
-                            <label class="font-bold">Select Designation Type/पदनाम प्रकार का चयन करें<span style="color: red">*</span></label>
-                            <span class="fa-pull-right">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="a"
-                                    ErrorMessage="Select Designation" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Designation !'></i>"
-                                    ControlToValidate="ddlDesignation" Display="Dynamic" runat="server">
-                                </asp:RequiredFieldValidator>
-                            </span>
-                            <asp:DropDownList CssClass="form-control select2" runat="server" OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged" AutoPostBack="true" ID="ddlDesignation">
-                                <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                <asp:ListItem Value="1">Clerical</asp:ListItem>
-                                <asp:ListItem Value="2">Teaching</asp:ListItem>
-                                <asp:ListItem Value="3">Executive</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                        <label class="font-bold">Select Designation Type/पदनाम प्रकार का चयन करें<span style="color: red">*</span></label>
+                        <span class="fa-pull-right">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="a"
+                                ErrorMessage="Select Designation" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Designation !'></i>"
+                                ControlToValidate="ddlDesignation" Display="Dynamic" runat="server">
+                            </asp:RequiredFieldValidator>
+                        </span>
+                        <asp:DropDownList CssClass="form-control select2" runat="server" OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged" AutoPostBack="true" ID="ddlDesignation">
+                            <asp:ListItem Value="0">--Select--</asp:ListItem>
+                            <asp:ListItem Value="1">Clerical</asp:ListItem>
+                            <asp:ListItem Value="2">Teaching</asp:ListItem>
+                            <asp:ListItem Value="3">Executive</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
                     <div runat="server" id="divDesignation" visible="false">
                         <div class="row align-items-end">
                             <div class="col-md-12">
@@ -120,7 +120,6 @@
                                             <th>Working /वर्किंग </th>
                                             <th>Vacant /रिक्त </th>
                                             <th>Surplus /अधिशेष </th>
-
                                         </tr>
                                         <tr>
                                             <td>1.</td>
