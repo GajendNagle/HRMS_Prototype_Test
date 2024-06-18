@@ -48,6 +48,7 @@
                                 <br />
                                 गाडी नंबर<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>MP04HC4163</option>
                                 <option>MP04CV7194</option>
                                 <option>MP04CG9580</option>
@@ -62,7 +63,7 @@
                                 <br />
                                 बीमा प्रकार<span style="color: red">*</span></span>
                             <select name="ctl00$ContentBody$ddlInsuranceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlInsuranceType\',\'\')', 0)" id="ctl00_ContentBody_ddlInsuranceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                <option selected="selected" value="0">Select</option>
+                                <option selected="selected" value="0">--Select--</option>
                                 <option value="1">General Insurance</option>
                                 <option value="2">Claim</option>
                             </select>
@@ -89,7 +90,7 @@
                             <span>Insurance Start Date
                                 <br />
                                 बीमा आरंभ तिथि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtInsuranceStartDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtInsuranceStartDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtInsuranceStartDate" class="form-control " data-date-end-date="0d" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" readonly="readonly">
+                            <input name="ctl00$ContentBody$txtInsuranceStartDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtInsuranceStartDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtInsuranceStartDate" class="form-control " data-date-end-date="0d" data-provide="datepicker" value="05/07/2023" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" readonly="readonly">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -97,7 +98,7 @@
                             <span>Insurance End Date
                                 <br />
                                 बीमा समाप्ति तिथि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtInsuranceEndDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtInsuranceEndDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtInsuranceEndDate" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" readonly="readonly">
+                            <input name="ctl00$ContentBody$txtInsuranceEndDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtInsuranceEndDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtInsuranceEndDate" class="form-control disableFuturedate" data-provide="datepicker" value="05/07/2024" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" readonly="readonly">
                         </div>
                     </div>
                     <div class="col-md-3">

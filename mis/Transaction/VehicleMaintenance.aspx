@@ -49,6 +49,7 @@
                                 <br />
                                 वाहन संख्या<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>MP04HC4163</option>
                                 <option>MP04CV7194</option>
                                 <option>MP04CG9580</option>
@@ -64,7 +65,7 @@
                                 <br />
                                 प्रकार<span style="color: red">*</span></span>
                             <select class="form-control select2">
-                                <option value="0">--Select--</option>
+                                <option>--Select--</option>
                                 <option value="1" selected="selected">Hatchback</option>
                                 <option value="2">Sedan</option>
                                 <option value="3">SUV</option>
@@ -79,6 +80,7 @@
                                 <br />
                                 रखरखाव का प्रकार<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>Servicing</option>
                                 <option>Battery</option>
                                 <option>Headlights</option>
@@ -201,6 +203,20 @@
                     </div>
                 </div>
                 <div class="row" id="SearchTimeData" runat="server" visible="false">
+                    <br />
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <div>
