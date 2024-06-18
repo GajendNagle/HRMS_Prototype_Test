@@ -1146,7 +1146,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleAllotment.aspx"><i class="ri-file-list-3-line"></i>Vehicle Allotment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleMaintenance.aspx"><i class="ri-file-list-3-line"></i>Vehicle Maintenance</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleInsurance.aspx"><i class="ri-file-list-3-line"></i>Vehicle Insurance </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleSurrender.aspx"><i class="ri-file-list-3-line"></i>Vehicle Surrender </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleDispose.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose </a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1161,7 +1161,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleMaintenanceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Maintenance Report</a></li>
                                                     <%--<li class="nav-item"><a class="nav-link" href="/mis/Transaction/MaintenanceStatusReport.aspx"><i class="ri-file-list-3-line"></i>Maintenance Status Report</a></li>--%>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleInsuranceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Insurance Report </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleSurrenderReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Surrender Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a></li>
                                                 </ul>
                                             </div>
                                         </li>
