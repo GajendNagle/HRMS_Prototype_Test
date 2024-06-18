@@ -48,6 +48,7 @@
                                 <br />
                                 गाडी नंबर<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>MP04HC4163</option>
                                 <option>MP04CV7194</option>
                                 <option>MP04CG9580</option>
@@ -130,13 +131,7 @@
                                 <span>Order Number
                                     <br />
                                     आदेश संख्या<span style="color: red">*</span></span>
-                                <select class="form-control select2">
-                                    <option value="1">444</option>
-                                    <option value="2">543</option>
-                                    <option value="3">241</option>
-                                    <option value="4">664</option>
-                                    <option value="4">143</option>
-                                </select>
+                                <input name="ctl00$ContentBody$txtYearOfManufacture" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-4">
