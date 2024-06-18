@@ -233,7 +233,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" clientmode="static" class="needs-validation" name="event-form" novalidate="">
         <%-- <div>--%>
         <!-- Begin page -->
         <div id="layout-wrapper">
@@ -969,7 +969,7 @@
                                                 aria-controls="ACRReport" data-key="t-ACRReport"><i class="ri-menu-line"></i>ACR Report</a>
                                             <div class="collapse menu-dropdown" id="ACRReport">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeACR.aspx"><i class="ri-file-list-3-line"></i><i class="ri-file-list-3-line"></i>Employee ACR Report </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeACR.aspx"><i class="ri-file-list-3-line"></i>Employee ACR Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_ReportingOfficer.aspx"><i class="ri-file-list-3-line"></i>Reporting Officer ACR Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_AcceptingAuthority.aspx"><i class="ri-file-list-3-line"></i>Accepting Authority ACR Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_DistrictWiseAcr.aspx"><i class="ri-file-list-3-line"></i>District Wise ACR Report </a></li>
@@ -998,6 +998,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCaseForDEO.aspx"><i class="ri-file-list-3-line"></i>DEO Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_DeoCompassionateApproval.aspx"><i class="ri-file-list-3-line"></i>Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DeoPrintApplicationReport.aspx"><i class="ri-file-list-3-line"></i>Print Application</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="Trn_ProcessApplicationListDeo.aspx" ><i class="ri-file-list-3-line"></i>अनुकंपा नियुक्ति पर कार्यवाही </a>
                                                     <%--DEO Compassionate Application Approval End--%>
                                                 </ul>
                                             </div>
@@ -2416,7 +2417,6 @@
         <script src="../assets/libs/fullcalendar/index.global.min.js"></script>--%>
 
 
-        <script src="../Registration/js/bootstrap.min.js"></script>
         <script src="../dist/js/select2.full.min.js"></script>
         <script src="../dist/js/sweet-alert.init.js"></script>
         <script src="../dist/js/sweetalert2.all.min.js"></script>
