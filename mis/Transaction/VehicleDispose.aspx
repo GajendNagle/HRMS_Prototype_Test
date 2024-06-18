@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <button id="toggleButton2" type="button" class="btn  btn-success btn-border">Search</button>
+                        <button id="toggleButton2" type="button" class="btn btn-success btn-border">Search</button>
                     </div>
                 </div>
             </div>
