@@ -60,29 +60,38 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Type <br />
+                            <span>Type
+                                <br />
                                 प्रकार<span style="color: red">*</span></span>
-                            <select name="ctl00$ContentBody$ddlType" id="ctl00_ContentBody_ddlType" disabled="disabled" class="form-control " tabindex="-1" aria-hidden="true">
+                            <select class="form-control select2">
+                                <option value="0">--Select--</option>
+                                <option value="1" selected="selected">Hatchback</option>
+                                <option value="2">Sedan</option>
+                                <option value="3">SUV</option>
+                                <option value="4">MUV</option>
+                                <option value="4">Commercial Vehicle</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Maintenance Type <br />
+                            <span>Maintenance Type
+                                <br />
                                 रखरखाव का प्रकार<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
                                 <option>Servicing</option>
                                 <option>Battery</option>
                                 <option>Headlights</option>
                             </select>
-                          <%--  <select name="ctl00$ContentBody$ddlMaintenanceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlMaintenanceType\',\'\')', 0)" id="ctl00_ContentBody_ddlMaintenanceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                            <%--  <select name="ctl00$ContentBody$ddlMaintenanceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlMaintenanceType\',\'\')', 0)" id="ctl00_ContentBody_ddlMaintenanceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
                                 <option selected="selected" value="0">Select</option>
                             </select>--%>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Previous Reading(Km) <br />
+                            <span>Previous Reading(Km)
+                                <br />
                                 पिछली रीडिंग(किमी)</span>
                             <input name="ctl00$ContentBody$txtPrevReadingKm" type="text" value="0" id="ctl00_ContentBody_txtPrevReadingKm" class="form-control" readonly="readonly">
                         </div>
@@ -92,22 +101,25 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Previous Bill Date <br />
+                            <span>Previous Bill Date
+                                <br />
                                 पिछला बिल दिनांक</span>
                             <input type="date" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Previous Bill Amount <br />
+                            <span>Previous Bill Amount
+                                <br />
                                 पिछला बिल राशि</span>
-                            <input name="ctl00$ContentBody$txtPrevBillAmount" type="text" id="ctl00_ContentBody_txtPrevBillAmount" class="form-control" readonly="readonly">
+                            <input name="ctl00$ContentBody$txtPrevBillAmount" id="ctl00_ContentBody_txtPrevBillAmount" value="0" class="form-control" readonly="readonly" />
                         </div>
                     </div>
 
                     <div id="ctl00_ContentBody_showReaingKm" class="col-md-3">
                         <div class="form-group">
-                            <span>Current Reading(Km) <br />
+                            <span>Current Reading(Km)
+                                <br />
                                 वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
 
                             <input name="ctl00$ContentBody$txtCurrentReadingKm" type="text" maxlength="9" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtCurrentReadingKm\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return validateNum(event)" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off" onpaste="return false">
@@ -115,7 +127,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Bill Number <br />
+                            <span>Bill Number
+                                <br />
                                 बिल संख्या<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtBillNumber" type="text" maxlength="20" id="ctl00_ContentBody_txtBillNumber" class="form-control" placeholder="Enter Bill Number" autocomplete="off" onkeypress="return validateNum(event)" onpaste="return false">
                         </div>
@@ -126,21 +139,24 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Bill Date <br />
+                            <span>Bill Date
+                                <br />
                                 बिल की तिथि<span style="color: red">*</span></span>
                             <input type="date" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtBillDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtBillDate" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Bill Amount <br />
+                            <span>Bill Amount
+                                <br />
                                 बिल राशि<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtBillAmount" type="text" maxlength="9" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtBillAmount\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return isNumberKey(this, event);" id="ctl00_ContentBody_txtBillAmount" class="form-control" placeholder="Enter Bill Amount" autocomplete="off" oninput="validate(this)" onpaste="return false">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Upload File <br />
+                            <span>Upload File
+                                <br />
                                 फ़ाइल अपलोड करें<span style="color: red">*</span> <span id="ctl00_ContentBody_filesizeTechnical" style="color: red;"></span></span>
                             <input type="file" name="ctl00$ContentBody$BillBookUpload" id="ctl00_ContentBody_BillBookUpload" class="form-control">
                         </div>
@@ -151,7 +167,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <span>Vehicle Expenses Details <br />
+                            <span>Vehicle Expenses Details
+                                <br />
                                 वाहन व्यय विवरण<span style="color: red">*</span></span>
                             <textarea name="ctl00$ContentBody$txtVehicleExpensesDetails" rows="4" cols="60" id="ctl00_ContentBody_txtVehicleExpensesDetails" class="form-control" placeholder="Enter Vehicle Expenses Details" onkeyup="countChars(this);"></textarea>
                             <p id="charNum">0 characters</p>
@@ -236,7 +253,8 @@
                                             </td>
                                             <td>
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblBill_Amount">5000.00</span>
-                                            </td><td>
+                                            </td>
+                                            <td>
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblRequestremarks">test</span>
                                             </td>
                                             <td>
@@ -248,7 +266,7 @@
                                         <tr style="font-weight: bold;">
                                             <td align="right" colspan="9">Total</td>
                                             <td>5000.00</td>
-                                          
+
                                         </tr>
                                     </tbody>
                                 </table>
