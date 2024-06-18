@@ -41,7 +41,7 @@
         <div class="card-body">
             <fieldset>
                 <legend>Vehicle Dispose / वाहन डिस्पोज़ </legend>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Number
@@ -56,134 +56,161 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
-                            Vehicle Type
-                            <br />
-                            वाहन का प्रकार<span style="color: red">*</span>
-                            <select class="form-control" disabled="disabled">
-                                <option value="0" selected="selected"></option>
-                                <option value="1">Hatchback</option>
-                                <option value="2">Sedan</option>
-                                <option value="3">SUV</option>
-                                <option value="4">MUV</option>
-                                <option value="4">Commercial Vehicle</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            Vehicle Model
-                            <br />
-                            वाहन मॉडल<span style="color: red">*</span>
-                            <input name="ctl00$ContentBody$txtVehicleModel" type="text" id="ctl00_ContentBody_txtVehicleModel" class="form-control" readonly="readonly">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            Vehicle Chassis Number
-                            <br />
-                            वाहन चेसिस नंबर<span style="color: red">*</span>
-                            <input name="ctl00$ContentBody$txtVehicleChassisNumber" type="text" id="ctl00_ContentBody_txtVehicleChassisNumber" class="form-control" readonly="readonly">
+                            <button id="toggleButton4" type="button" class=" fw-bold btn w-lg btn-outline-success btn-border">Search</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            Vehicle Registration Number
+                <div id="EmployeeDetailsData" style="display: none">
+                    <div class="row align-items-end">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                Vehicle Type
                             <br />
-                            वाहन पंजीकरण संख्या<span style="color: red">*</span>
-                            <input name="ctl00$ContentBody$txtVehicleRegNumber" type="text" id="ctl00_ContentBody_txtVehicleRegNumber" class="form-control" readonly="readonly">
+                                वाहन का प्रकार<span style="color: red">*</span>
+                                <select class="form-control" disabled="disabled">
+                                    <option value="1">Hatchback</option>
+                                    <option value="2">Sedan</option>
+                                    <option value="3">SUV</option>
+                                    <option value="4">MUV</option>
+                                    <option value="4">Commercial Vehicle</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                Vehicle Model
+                            <br />
+                                वाहन मॉडल<span style="color: red">*</span>
+                                <input name="ctl00$ContentBody$txtVehicleModel" type="text" value="Tiago" id="ctl00_ContentBody_txtVehicleModel" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                Vehicle Chassis Number
+                            <br />
+                                वाहन चेसिस नंबर<span style="color: red">*</span>
+                                <input name="ctl00$ContentBody$txtVehicleChassisNumber" value="1HGCM82633A123456" type="text" id="ctl00_ContentBody_txtVehicleChassisNumber" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                Vehicle Registration Number
+                            <br />
+                                वाहन पंजीकरण संख्या<span style="color: red">*</span>
+                                <input name="ctl00$ContentBody$txtVehicleRegNumber" value="MH 14 AB 4587" type="text" id="ctl00_ContentBody_txtVehicleRegNumber" class="form-control" readonly="readonly">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            Vehicle Company
-                            <br />
-                            वाहन कंपनी<span style="color: red">*</span>
-                            <input name="ctl00$ContentBody$txtVehicleCompany" type="text" id="ctl00_ContentBody_txtVehicleCompany" class="form-control" readonly="readonly">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            Year Of Manufacture
-                            <br />
-                            निर्माण वर्ष<span style="color: red">*</span>
-                            <input name="ctl00$ContentBody$txtYearOfManufacture" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control" readonly="readonly">
-                        </div>
-                    </div>
-                </div>
-                <fieldset>
-                    <legend>Office / कार्यालय</legend>
                     <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                Vehicle Company
+                            <br />
+                                वाहन कंपनी<span style="color: red">*</span>
+                                <input name="ctl00$ContentBody$txtVehicleCompany" type="text" value="Tata Motors" id="ctl00_ContentBody_txtVehicleCompany" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                Year Of Manufacture
+                            <br />
+                                निर्माण वर्ष<span style="color: red">*</span>
+                                <input name="ctl00$ContentBody$txtYearOfManufacture" value="2023" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset id="VehicleAllotementNo" style="display: none">
+                    <legend>Office / कार्यालय</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Order Number
                                     <br />
                                     आदेश संख्या<span style="color: red">*</span></span>
-                                <input name="ctl00$ContentBody$txtOrderNumber" type="text" maxlength="20" id="ctl00_ContentBody_txtOrderNumber" class="form-control" autocomplete="off" placeholder="Enter Order Number" onkeypress="return isAlphaNumeric(str)" onpaste="return false">
+                                <select class="form-control select2">
+                                    <option value="1">444</option>
+                                    <option value="2">543</option>
+                                    <option value="3">241</option>
+                                    <option value="4">664</option>
+                                    <option value="4">143</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
-                                <span>Order Date
-                                    <br />
-                                    आदेश की तारीख<span style="color: red">*</span></span>
-                                <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                <button id="toggleButton2" type="button" class="btn  btn-success btn-border">Search</button>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Current Reading(Km)
+                    </div>
+                    <div id="VEHICLEALLOTMENTData" style="display: none">
+                        <div class="row align-items-end">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span>Order Date
                                     <br />
-                                    वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
-                                <input name="ctl00$ContentBody$txtCurrentReadingKm" type="text" maxlength="7" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtCurrentReadingKm\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return validateNum(event)" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" placeholder="Enter Current Reading(Km)" onpaste="return false">
+                                        आदेश की तारीख<span style="color: red">*</span></span>
+                                    <input type="text" value="04/06/2024" readonly="" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Selling Amount
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span>Current Reading(Km)
                                     <br />
-                                    विक्रय राशि<span style="color: red">*</span></span>
-                                <input name="ctl00$ContentBody$txtSellingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtSellingAmount" class="form-control" autocomplete="off" placeholder="Enter Selling Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
+                                        वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
+                                    <input name="ctl00$ContentBody$txtCurrentReadingKm" readonly="" type="text" maxlength="7" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtCurrentReadingKm\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return validateNum(event)" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" value="25000" onpaste="return false">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span>Selling Amount
+                                    <br />
+                                        विक्रय राशि<span style="color: red">*</span></span>
+                                    <input name="ctl00$ContentBody$txtSellingAmount" readonly="" type="text" value="RS 3.8 Lakh" maxlength="10" id="ctl00_ContentBody_txtSellingAmount" class="form-control" autocomplete="off" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <br />
-                <fieldset>
-                    <legend>Bidding / बिडिंग</legend>
+                <div id="VEHICLEALLOTMENTDetails" style="display: none">
+
+                    <fieldset>
+                        <legend>Bidding / बिडिंग</legend>
+                        <div class="row align-items-end">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span>Buying Amount
+                                    <br />
+                                        क्रय राशि<span style="color: red">*</span></span>
+                                    <input name="ctl00$ContentBody$txtBuyingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtBuyingAmount" class="form-control" autocomplete="off" placeholder="Enter Buying Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span>Name Of Buyer
+                                    <br />
+                                        खरीददार का नाम<span style="color: red">*</span></span>
+                                    <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name Of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <hr />
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Buying Amount
-                                    <br />
-                                    क्रय राशि<span style="color: red">*</span></span>
-                                <input name="ctl00$ContentBody$txtBuyingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtBuyingAmount" class="form-control" autocomplete="off" placeholder="Enter Buying Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
-                            </div>
+                        <div class="col-md-12">
+                            <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border">Save</button>
+                            <a href="VehicleDispose.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <span>Name Of Buyer
-                                    <br />
-                                    खरीददार का नाम<span style="color: red">*</span></span>
-                                <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name Of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-                <hr />
-                <div class="row">
-                    <div class="col-md-12">
-                        <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border">Save</button>
-                        <a href="VehicleDispose.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
+
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details/विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row" id="FisrtTimetbl">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -293,4 +320,30 @@
             document.getElementById("FisrtTimetbl").style.display = "none";
         });
     </script>
+
+    <script>
+        document.getElementById("toggleButton4").addEventListener("click", function () {
+            //var content2 = document.getElementById("Serchtbl");
+            document.getElementById("Serchtbl").style.display = "none";
+            document.getElementById("EmployeeDetailsData").style.display = "block";
+            //document.getElementById("dataSearchEmp").style.display = "none";
+            document.getElementById("VehicleAllotementNo").style.display = "block";
+            //document.getElementById("FisrtTimetbl").style.display = "none";
+        });
+        document.getElementById("toggleButton2").addEventListener("click", function () {
+            document.getElementById("Serchtbl").style.display = "none";
+            document.getElementById("VEHICLEALLOTMENTData").style.display = "block";
+            document.getElementById("VEHICLEALLOTMENTDetails").style.display = "block";
+            //document.getElementById("dataSearchEmp").style.display = "none";
+            document.getElementById("VehicleAllotementNo").style.display = "block";
+        });
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            document.getElementById("Serchtbl").style.display = "block";
+            document.getElementById("VEHICLEALLOTMENTData").style.display = "block";
+            //document.getElementById("dataSearchEmp").style.display = "none";
+            document.getElementById("VehicleAllotementNo").style.display = "block";
+            document.getElementById("FisrtTimetbl").style.display = "none";
+        });
+    </script>
+
 </asp:Content>
