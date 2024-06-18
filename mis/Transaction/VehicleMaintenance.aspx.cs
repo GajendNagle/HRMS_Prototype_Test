@@ -14,7 +14,6 @@ public partial class mis_Transaction_VehicleMaintenance : System.Web.UI.Page
 
     protected void btSaveRcd_Click(object sender, EventArgs e)
     {
-        SearchTimeData.Visible= true;
-        fisrtTimeData.Visible= false;
+       
     }
 }

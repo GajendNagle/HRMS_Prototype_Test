@@ -22,7 +22,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentBody" runat="Server">
- <%--   <div class="row">
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -32,43 +32,24 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Compassionate Appointment</li>
-                        <li class="breadcrumb-item">Register Application For Compassionate Appointment</li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassionate Appointment </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Register Application For Compassionate Appointment</span></li>
                     </ol>
                 </div>
             </div>
         </div>
-    </div>--%>
-                    <div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                            <span>Compassionate Appointment </span></a>
-                    </li>
-                    <li class="breadcrumb-item"><span>Register Application For Compassionate Appointment</span></li>
-                </ol>
-            </div>
-        </div>
     </div>
-</div>
-        <div class="col-md-5" style="position:relative; bottom:20px;">
-    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom:-0.2rem;">
-        <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-        </u>
-    </p>
-</div>
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -78,7 +59,6 @@
                 </div>
             </div>
         </div>
-
         <div class="card-body">
             <div id="divDataofAU5693" runat="server">
                 <ul class="nav nav-pills" style="margin-top: -7px; margin-bottom: 28px;">
@@ -89,14 +69,12 @@
                     <div id="navpills-1" class="tab-pane active">
                         <fieldset style="margin-top: 1.1rem">
                             <legend>Details of Deceased Officer-Employee/
-                                                 
                                 दिवंगत अधिकारी - कर्मचारी का विवरण  </legend>
                             <div class="row align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Deceased Officer/Employee Code/
-                                                                <br />
+                                            Deceased Officer/Employee Code/<br />
                                             दिवंगत अधिकारी / कर्मचारी कोड<span style="color: red">*</span></label>
                                         <input placeholder="दिवंगत अधिकारी / कर्मचारी कोड" id="Code" readonly name="ename" value="AU5693" type="text" class="form-control" autocomplete="off" />
                                     </div>
@@ -133,7 +111,6 @@
                                             Select Last Posting District /<br />
                                             अंतिम पोस्टिंग जिला का चयन करे<span style="color: red">*</span></label>
                                         <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname3" value="Bhopal" readonly />
-
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -142,7 +119,6 @@
                                             Deceased Officer/Staff Cadre /<br />
                                             दिवंगत अधिकारी / कर्मचारी कैडर<span style="color: red" id="ddlcader">*</span></label>
                                         <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname4" value="Class 3" readonly />
-
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -151,7 +127,6 @@
                                             Deceased Officer/Employee Designation /<br />
                                             दिवंगत अधिकारी/कर्मचारी पदनाम<span style="color: red">*</span></label>
                                         <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname5" value="Teacher (UDT)" readonly />
-
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -270,8 +245,7 @@
                                                 <tr class="card-header">
                                                     <th>Sr.No.<br />
                                                         सरल क्र.</th>
-                                                    <th>Check box
-                                                                            <br />
+                                                    <th>Check box<br />
                                                         चेक बॉक्स</th>
                                                     <th>Name of Member<br />
                                                         सदस्य का नाम</th>
@@ -293,14 +267,13 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <legend>Details of the Family Member Who has Applied for Appointment
-                                                    <br />
+                            <legend>Details of the Family Member Who has Applied for Appointment<br />
                                 परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
                             <div class="row align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Name of the Applicant Family Member for Compassionate Appointment/<br />
+Name of the Applicant Family Member for Compassionate Appointment/<br />
                                             अनुकंपा नियुक्ति हेतु परिवार के आवेदक सदस्य का नाम<span style="color: red">*</span></label>
                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="अनुकंपा नियुक्ति हेतु परिवार के आवेदक सदस्य का नाम" />
                                     </div>
@@ -315,7 +288,6 @@
                                             <option value="Bhopal">Male</option>
                                             <option value="Indore">Female</option>
                                             <option value="Gwalior">Other</option>
-
                                         </select>
                                     </div>
                                 </div>
@@ -343,8 +315,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Applicant's Relationship With Deceased Public Servant/Teacher /
-                                                                        <br />
+                                            Applicant's Relationship With Deceased Public Servant/Teacher /<br />
                                             आवेदक का दिवंगत लोकसेवक/ शिक्षक के साथ संबंध<span style="color: red">*</span></label>
                                         <select class="form-control select2" id="">
                                             <option value="----">--Select--</option>
@@ -357,8 +328,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Applicant's Qualification
-                                                                        <br />
+                                            Applicant's Qualification<br />
                                             आवेदक की योग्यता<span style="color: red">*</span></label>
                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="आवेदक की योग्यता" />
                                     </div>
@@ -422,7 +392,6 @@
                                 </div>
                                 <div class="col-md-3" style="display: none" id="Divyear">
                                     <div class="form-group">
-
                                         <label>
                                             Year of Eligibility Test /<br />
                                             पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>
@@ -467,7 +436,6 @@
                                 </div>
                                 <br />
                                 <br />
-
                             </div>
                             <div class="row align-items-end">
                                 <div id="DocAppointment" class="col-md-6">
@@ -485,8 +453,7 @@
                             <div class="row align-items-end">
                                 <div id="DocBirth" class="col-md-6">
                                     <label>
-                                        Birth Certificate of the Applicant
-                                                            <br />
+                                        Birth Certificate of the Applicant<br />
                                         आवेदक का जन्म तिथि का प्रमाण पत्र :<span style="color: red">*</span></label>
                                 </div>
                                 <div id="DocBirth1" class="col-md-4">

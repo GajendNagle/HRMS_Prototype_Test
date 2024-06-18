@@ -5,125 +5,72 @@
         #empDetail {
             display: none;
         }
-
-        th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #1b5a5b !important;
-            color: white;
-            white-space: nowrap;
-        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
-                    <li class="breadcrumb-item active">Personal Information</li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassionate Appointment
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Decision on Pending Applications</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <%-- Navbar --%>
-    <%-- Navbar --%>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Decision on Pending Applications / लंबित आवेदनों पर निर्णय करें</h5>
+                </div>
+            </div>
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar " style="position: relative; bottom: 26px;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item"><a class="nav-link  text-white " href="DisposeApplicationCaseForDEO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन/सुधार करें</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">प्रिंट आवेदन </a></li>
-                                            </ul>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </li>
-                            <li class="nav-item" style="position: relative; right: 20px;">
-                                <a class="nav-link  font-16 text-white" href="../HRMS/Trn_ProcessApplicationListDeo.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति पर कार्यवाही </b></strong></a>
-                            </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link  text-white " href="../Transaction/DisposeApplicationCase.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a></li>
-
-                            <li class="nav-item mr-3">
-                                <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorDeo.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
-                            <li class="nav-item">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
             <fieldset>
                 <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Employee Code<br />
-                                कर्मचारी कोड :<span style="color: red">*</span></label>
+                                Employee Code /<br />
+                                कर्मचारी कोड <span style="color: red">*</span></label>
                             <input name="ename" value="BA3784" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Deceased Employee Name<br />
-                                दिवंगत कर्मचारी का नाम: <span style="color: red">*</span></label>
+                                Deceased Employee Name /<br />
+                                दिवंगत कर्मचारी का नाम <span style="color: red">*</span></label>
                             <input name="ename" value="Iqbal Husain Mansuri" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Gender<br />
-                                लिंग:<span style="color: red">*</span></label>
+                                Gender /<br />
+                                लिंग<span style="color: red">*</span></label>
                             <select class="form-control select2">
-
                                 <option value="--Select--">Male</option>
                                 <option value="--Select--">Female</option>
                                 <option value="--Select--">Other</option>
@@ -133,10 +80,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Cast<br />
-                                कैटेगरी:<span style="color: red">*</span></label>
+                                Cast /<br />
+                                कैटेगरी<span style="color: red">*</span></label>
                             <select class="form-control select2">
-
                                 <option value="--Select--">OBC</option>
                                 <option value="--Select--">GENERAL</option>
                                 <option value="--Select--">SC</option>
@@ -148,8 +94,8 @@
                         <div class="form-group">
                             <br />
                             <label>
-                                Last Posting Disrict<br />
-                                अंतिम पोस्टिंग जिला:<span style="color: red">*</span></label>
+                                Last Posting Disrict /<br />
+                                अंतिम पोस्टिंग जिला<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Shajapur</option>
                             </select>
@@ -159,8 +105,8 @@
                         <div class="form-group">
                             <br />
                             <label>
-                                Deceased Employee Cadre<br />
-                                दिवंगत कर्मचारी कैडर:<span style="color: red">*</span></label>
+                                Deceased Employee Cadre /<br />
+                                दिवंगत कर्मचारी कैडर<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Regular Class-III</option>
                             </select>
@@ -169,117 +115,118 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Deceased Officer / Employee Designation<br />
-                                दिवंगत अधिकारी / कर्मचारी पदनाम :<span style="color: red">*</span></label>
+                                Deceased Officer / Employee Designation /<br />
+                                दिवंगत अधिकारी / कर्मचारी पदनाम <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Accountant</option>
-
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Last School / Office and Employee Address<br />
-                                अंतिम स्कूल / कार्यालय और कर्मचारी का पता:<span style="color: red">*</span></label>
+                                Last School / Office and Employee Address /<br />
+                                अंतिम स्कूल / कार्यालय और कर्मचारी का पता<span style="color: red">*</span></label>
                             <input class="form-control" type="text" value="BEO, SHAJAPUR" />
                         </div>
                     </div>
                     <div id="handipaceType" class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Cause of Death<br />
-                                मृत्यु का कारण :<span style="color: red">*</span></label>
+                                Cause of Death /<br />
+                                मृत्यु का कारण <span style="color: red">*</span></label>
                             <input class="form-control" value="कोविड-19 संक्रमण" type="text" />
                         </div>
                     </div>
                     <div id="HandicapePercentage" class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Death Date<br />
-                                मृत्यु दिनाँक :<span style="color: red">*</span></label>
+                                Death Date /<br />
+                                मृत्यु दिनाँक <span style="color: red">*</span></label>
                             <input class="form-control" value="27/04/2021" type="text" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Number of Family Members of Deceased Employee<br />
-                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या:<span style="color: red">*</span></label>
+                                Number of Family Members of Deceased Employee /<br />
+                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>7</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3" id="DivCriticalIllness">
-
                         <div class="form-group">
                             <label>
-                                Department Name<br />
-                                विभाग का नामः<span style="color: red">*</span></label>
+                                Department Name /<br />
+                                विभाग का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>Education</option>
-
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Application Received Date<br />
-                                आवेदन प्राप्त तिथि:<span style="color: red">*</span></label>
+                                Application Received Date /<br />
+                                आवेदन प्राप्त तिथि<span style="color: red">*</span></label>
                             <input class="form-control" type="text" value="12/06/2021" />
                         </div>
                     </div>
                 </div>
-                <div class="row form-group">
+            </fieldset>
+            <fieldset>
+                <div class="row align-items-end">
                     <div class="col-md-12">
-                        <div class="table-responsive table-bordered">
-                            <table class="table text-center">
-                                <tbody>
-                                    <tr>
-                                        <th class="text-center">Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th class="text-center">Member Name<br />
-                                            सदस्य का नाम</th>
-                                        <th class="text-center">Relation With Deceased<br />
-                                            दिवंगत के साथ संबंध</th>
-                                        <th class="text-center">Business<br />
-                                            व्यवसाय</th>
-                                        <th class="text-center">Date of Birth<br />
-                                            जन्म दिनांक</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>NASREEN MANSURI</td>
-                                        <td>Wife Husband</td>
-                                        <td>कोई व्यवसाय नहीं</td>
-                                        <td>23/04/1968</td>
+                        <div class="table-responsive">
+                            <div class="table table-bordered">
+                                <table class="table text-center">
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-center">Sr. No.<br />
+                                                सरल क्र.</th>
+                                            <th class="text-center">Member Name<br />
+                                                सदस्य का नाम</th>
+                                            <th class="text-center">Relation With Deceased<br />
+                                                दिवंगत के साथ संबंध</th>
+                                            <th class="text-center">Business<br />
+                                                व्यवसाय</th>
+                                            <th class="text-center">Date of Birth<br />
+                                                जन्म दिनांक</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>NASREEN MANSURI</td>
+                                            <td>Wife Husband</td>
+                                            <td>कोई व्यवसाय नहीं</td>
+                                            <td>23/04/1968</td>
 
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>ARSHAD MANSURI</td>
-                                        <td>Son</td>
-                                        <td>कोई व्यवसाय नहीं</td>
-                                        <td>06/05/1993</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>ASHRAF MANSURI</td>
-                                        <td>Son</td>
-                                        <td>कोई व्यवसाय नहीं</td>
-                                        <td>21/09/1993</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>AAJAM MANSURI</td>
-                                        <td>Son</td>
-                                        <td>कोई व्यवसाय नहीं</td>
-                                        <td>03/07/1997</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>ARSHAD MANSURI</td>
+                                            <td>Son</td>
+                                            <td>कोई व्यवसाय नहीं</td>
+                                            <td>06/05/1993</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>ASHRAF MANSURI</td>
+                                            <td>Son</td>
+                                            <td>कोई व्यवसाय नहीं</td>
+                                            <td>21/09/1993</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>AAJAM MANSURI</td>
+                                            <td>Son</td>
+                                            <td>कोई व्यवसाय नहीं</td>
+                                            <td>03/07/1997</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,7 +297,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Remark / टिप्पणी :<span style="color: red">*</span></label>
+                            <label>Remark / टिप्पणी <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="शाजापुर जिले एवं संभाग में पद रिक्त नहीं होने से" autocomplete="off" />
                         </div>
                     </div>
@@ -453,7 +400,7 @@
                             <label>
                                 Reason of Rejectance/ Return
             <br />
-                                अस्वीकार्य / वापसी के कारण :<span style="color: red">*</span></label>
+                                अस्वीकार्य / वापसी के कारण <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
@@ -465,92 +412,92 @@
                     </div>
                     <div class="col-md-4" id="MydocuNote" style="display: none;">
                         <div class="form-group">
-                            <h5 style="font-weight: 500;">Note  :<span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
+                            <h5 style="font-weight: 500;">Note  <span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
                         </div>
                     </div>
                 </div>
                 <div class="row align-items-end" id="div1">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Appointment Letter Number<br />
-                                    नियुक्ति पत्र संख्या :<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Appointment Order Number<br />
-                                    नियुक्ति आदेश संख्या:<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>
-                                    Date of Letter<br />
-                                    पत्र का दिनांक :<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>
-                                    Position Appointed to Applicant<br />
-                                    आवेदक नियुक्त पद:<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>
-                                    Place of Posting<br />
-                                    पोस्टिंग की जगह:<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Appointment Letter Number<br />
+                                नियुक्ति पत्र संख्या <span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
-                    <div class="row" id="div3">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Order Number
-                                <br />
-                                    क्रम संख्या:<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Check No.
-                                <br />
-                                    चेक नंबर:<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Payment Date
-                                <br />
-                                    भुगतान तिथि:<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Payment
-                                <br />
-                                    भुगतान :<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Appointment Order Number<br />
+                                नियुक्ति आदेश संख्या<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>
+                                Date of Letter<br />
+                                पत्र का दिनांक <span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>
+                                Position Appointed to Applicant<br />
+                                आवेदक नियुक्त पद<span style="color: red">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>
+                                Place of Posting<br />
+                                पोस्टिंग की जगह<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="div3">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Order Number
+                                <br />
+                                क्रम संख्या<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Check No.
+                                <br />
+                                चेक नंबर<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Payment Date
+                                <br />
+                                भुगतान तिथि<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Payment
+                                <br />
+                                भुगतान <span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
+                        </div>
+                    </div>
+                </div>
             </fieldset>
             <div class="row justify-content-center">
                 <div class="col-md-2">

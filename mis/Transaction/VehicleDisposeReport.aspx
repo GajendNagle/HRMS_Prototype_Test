@@ -47,19 +47,81 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>From Date /<br />
-                                की तिथि से<span style="color: red">*</span></span>
+                            <span>From Date <br />
+                                 दिनांक से<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtFromDate" type="date" id="ctl00_ContentBody_txtFromDate" class="form-control " data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>To Date /<br />
-                                तारीख तक<span style="color: red">*</span></span>
+                            <span>To Date <br />
+                                दिनांक तक<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtTodate" type="date" id="ctl00_ContentBody_txtTodate" class="form-control " data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                     <div class="col-md-3">
+     <div class="form-group">
+         <span>District
+             <br />
+             ज़िला<span style="color: red">*</span></span>
+         <select class="select2 form-control">
+             <option value="0">--Select--</option>
+             <option value="51">Agar Malwa</option>
+             <option value="49">Alirajpur</option>
+             <option value="47">Anuppur</option>
+             <option value="46">Ashoknagar</option>
+             <option value="45">Balaghat</option>
+             <option value="28">Barwani</option>
+             <option value="35">Betul</option>
+             <option value="3">Bhind</option>
+             <option value="32">Bhopal</option>
+             <option value="48">Burhanpur</option>
+             <option value="9">Chhatarpur</option>
+             <option value="43">Chhindwara</option>
+             <option value="12">Damoh</option>
+             <option value="5">Datia</option>
+             <option value="23">Dewas</option>
+             <option value="25">Dhar</option>
+             <option value="41">Dindori</option>
+             <option value="7">Guna</option>
+             <option value="4">Gwalior</option>
+             <option value="36">Harda</option>
+             <option value="26">Indore</option>
+             <option value="39">Jabalpur</option>
+             <option value="24">Jhabua</option>
+             <option value="38">Katni</option>
+             <option value="29">Khandwa</option>
+             <option value="27">Khargone</option>
+             <option value="42">Mandla</option>
+             <option value="19">Mandsaur</option>
+             <option value="2">Morena</option>
+             <option value="37">Narmadapuram</option>
+             <option value="40">Narsinghpur</option>
+             <option value="18">Neemuch</option>
+             <option value="52">Niwari</option>
+             <option value="10">Panna</option>
+             <option value="34">Raisen</option>
+             <option value="30">Rajgarh</option>
+             <option value="20">Ratlam</option>
+             <option value="14">Rewa</option>
+             <option value="11">Sagar</option>
+             <option value="13">Satna</option>
+             <option value="33">Sehore</option>
+             <option value="44">Seoni</option>
+             <option value="16">Shahdol</option>
+             <option value="22">Shajapur</option>
+             <option value="1">Sheopur</option>
+             <option value="6">Shivpuri</option>
+             <option value="17">Sidhi</option>
+             <option value="50">Singrauli</option>
+             <option value="8">Tikamgarh</option>
+             <option value="21">Ujjain</option>
+             <option value="15">Umaria</option>
+             <option value="31">Vidisha</option>
+         </select>
+     </div>
+ </div>
+                   <%-- <div class="col-md-3">
                         <div class="form-group">
                             <span>Office Type /<br />
                                 कार्यालय का प्रकार<span style="color: red">*</span></span>
@@ -86,16 +148,16 @@
                                 <option value="Bhopal">SCHOOL</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    </div>--%>
+                    <%--<div class="col-md-3">
                         <div class="form-group">
-                            <span>Vehicle Number /<br />
+                            <span>Vehicle Number <br />
                                 गाडी नंबर<span style="color: red">*</span></span>
                             <select name="ctl00$ContentBody$ddlVehicleNumber" disabled="disabled" id="ctl00_ContentBody_ddlVehicleNumber" class="form-control" tabindex="-1" aria-hidden="true">
                                 <option value="1" selected="selected">MP04CB4473</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
                 <hr />
                 <div class="row">
