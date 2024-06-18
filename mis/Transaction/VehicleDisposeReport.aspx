@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="VehicleSurrenderReport.aspx.cs" Inherits="mis_Transaction_VehicleSurrenderReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="VehicleDisposeReport.aspx.cs" Inherits="mis_Transaction_VehicleDisposeReport" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
@@ -25,7 +25,7 @@
                             <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Transport Management Report</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Vehicle Surrender  Report </span></li>
+                        <li class="breadcrumb-item"><span>Vehicle Dispose  Report </span></li>
                     </ol>
                 </div>
             </div>
@@ -35,15 +35,15 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Surrender Report/ 
-वाहन समर्पण रिपोर्ट</h4>
+                    <h4 class="card-title">Vehicle Dispose Report/ 
+वाहन डिस्पोज़  रिपोर्ट</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Vehicle Surrender Report/ 
-वाहन समर्पण रिपोर्ट</legend>
+                <legend>Vehicle Dispose Report/ 
+वाहन डिस्पोज़  रिपोर्ट</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -101,7 +101,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <asp:Button runat="server" type="button" class="fw-bold btn w-lg btn-success btn-border" Text="Search" OnClick="btnSearchRcd_Click" ID="btnSearchRcd" />
-                        <a href="VehicleSurrenderReport.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <a href="VehicleDisposeReport.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
@@ -139,7 +139,7 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <div>
-                                    <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_gvVehicleSurrender" style="border-collapse: collapse; text-align: center;">
+                                    <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_gvVehicleDispose" style="border-collapse: collapse; text-align: center;">
                                         <tbody>
                                             <tr>
                                                 <th scope="col">S.No.<br />
@@ -174,25 +174,25 @@
                                                 <td>Head Office
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblVehicle_Number">MP04CB4473</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Number">MP04CB4473</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblVehicle_Model">2007</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Model">2007</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblVehicle_Chassis_Number">MA3ECA12S02671501</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Chassis_Number">MA3ECA12S02671501</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblOrder_Number">444</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblOrder_Number">444</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblSelling_Amount">25000.00</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblSelling_Amount">25000.00</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblBuying_Amount">65000.00</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblBuying_Amount">65000.00</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_gvVehicleSurrender_ctl02_lblName_Of_Buyer">Raj</span>
+                                                    <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblName_Of_Buyer">Raj</span>
                                                 </td>
                                                 <td>
                                                     <a class="btn btn-primary"><i class="fa fa-edit"></i></a>
