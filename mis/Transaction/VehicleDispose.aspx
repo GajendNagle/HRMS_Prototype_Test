@@ -122,7 +122,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            Year Of Manufacture
+                            Year of Manufacture
                             <br />
                             निर्माण वर्ष<span style="color: red">*</span>
                             <asp:TextBox class="form-control" ReadOnly="true" ID="txt6" runat="server" Text="" />
@@ -193,10 +193,10 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Name Of Buyer
+                                <span>Name of Buyer
                                     <br />
                                     खरीददार का नाम<span style="color: red">*</span></span>
-                                <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name Of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
+                                <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
                             </div>
                         </div>
                     </div>
@@ -262,7 +262,7 @@
                                                 विक्रय राशि</th>
                                             <th scope="col">Buying Amount<br />
                                                 क्रय राशि</th>
-                                            <th scope="col">Name Of Buyer<br />
+                                            <th scope="col">Name of Buyer<br />
                                                 क्रेता का नाम</th>
                                             <th scope="col">Action</th>
                                         </tr>
