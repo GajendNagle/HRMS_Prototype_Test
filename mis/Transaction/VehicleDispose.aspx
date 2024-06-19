@@ -139,7 +139,7 @@
                             <span>Order Number
                                     <br />
                                 आदेश संख्या<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtYearOfManufacture" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
+                            <input name="ctl00$ContentBody$txtYearOfManufacture" placeholder="Enter Order No." type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
                         </div>
                     </div>
                     <%--<div class="col-md-4">
