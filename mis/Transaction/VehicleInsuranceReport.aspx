@@ -201,7 +201,7 @@
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details/विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row" id="NoRcdTable">
                     <div class="col-md-12">
                         <div class="table-responsive">

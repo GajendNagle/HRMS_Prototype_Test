@@ -90,7 +90,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District /<br /> जिला <span style="color: red"></span></label>
+                            <label>District /<br /> जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1">Bhopal</asp:ListItem>

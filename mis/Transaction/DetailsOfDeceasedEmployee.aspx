@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        #empDetail {
-            display: none;
+        th {
+            white-space: nowrap;
         }
     </style>
 </asp:Content>
@@ -25,7 +25,7 @@
                                 <span>Compassionate Appointment
                                 </span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Decision on Pending Applications</span></li>
+                        <li class="breadcrumb-item"><span>Decide on Pending Applications at DEO Level</span></li>
                     </ol>
                 </div>
             </div>
@@ -41,7 +41,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Decision on Pending Applications / लंबित आवेदनों पर निर्णय करें</h5>
+                    <h5 class="card-title">Decide on Pending Applications at DEO Level / डी.ई.ओ. लेवल पर लंबित आवेदनों पर निर्णय करें </h5>
                 </div>
             </div>
         </div>
@@ -170,71 +170,71 @@
                         <div class="form-group">
                             <label>
                                 Application Received Date /<br />
-                                आवेदन प्राप्त तिथि<span style="color: red">*</span></label>
+                                आवेदन प्राप्त दिनांक<span style="color: red">*</span></label>
                             <input class="form-control" type="text" value="12/06/2021" />
                         </div>
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="mt-5">
+                <legend>Details / विवरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <div class="table table-bordered">
-                                <table class="table text-center">
-                                    <tbody>
-                                        <tr>
-                                            <th class="text-center">Sr. No.<br />
-                                                सरल क्र.</th>
-                                            <th class="text-center">Member Name<br />
-                                                सदस्य का नाम</th>
-                                            <th class="text-center">Relation With Deceased<br />
-                                                दिवंगत के साथ संबंध</th>
-                                            <th class="text-center">Business<br />
-                                                व्यवसाय</th>
-                                            <th class="text-center">Date of Birth<br />
-                                                जन्म दिनांक</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>NASREEN MANSURI</td>
-                                            <td>Wife Husband</td>
-                                            <td>कोई व्यवसाय नहीं</td>
-                                            <td>23/04/1968</td>
+                            <table class="table table-bordered text-center">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center">Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th class="text-center">Member Name<br />
+                                            सदस्य का नाम</th>
+                                        <th class="text-center">Relation With Deceased<br />
+                                            दिवंगत के साथ संबंध</th>
+                                        <th class="text-center">Business<br />
+                                            व्यवसाय</th>
+                                        <th class="text-center">Date of Birth<br />
+                                            जन्म दिनांक</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>NASREEN MANSURI</td>
+                                        <td>Wife Husband</td>
+                                        <td>कोई व्यवसाय नहीं</td>
+                                        <td>23/04/1968</td>
 
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>ARSHAD MANSURI</td>
-                                            <td>Son</td>
-                                            <td>कोई व्यवसाय नहीं</td>
-                                            <td>06/05/1993</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>ASHRAF MANSURI</td>
-                                            <td>Son</td>
-                                            <td>कोई व्यवसाय नहीं</td>
-                                            <td>21/09/1993</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>AAJAM MANSURI</td>
-                                            <td>Son</td>
-                                            <td>कोई व्यवसाय नहीं</td>
-                                            <td>03/07/1997</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>ARSHAD MANSURI</td>
+                                        <td>Son</td>
+                                        <td>कोई व्यवसाय नहीं</td>
+                                        <td>06/05/1993</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>ASHRAF MANSURI</td>
+                                        <td>Son</td>
+                                        <td>कोई व्यवसाय नहीं</td>
+                                        <td>21/09/1993</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>AAJAM MANSURI</td>
+                                        <td>Son</td>
+                                        <td>कोई व्यवसाय नहीं</td>
+                                        <td>03/07/1997</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="card-header bg-success">परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया हे</div>
-                    </div>
-                </div>
+            </fieldset>
+            <fieldset class="mt-5">
+                <legend>Details of Family Member who has Applied for Appointment
+            <br />
+                    परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है
+                </legend>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row form-group">
@@ -250,7 +250,7 @@
                                                 <th class="text-center">Gender<br />
                                                     लिंग</th>
                                                 <th class="text-center">Date of Birth<br />
-                                                    जन्म तिथि</th>
+                                                    जन्म दिनांक</th>
                                                 <th class="text-center">Mobile No.<br />
                                                     मोबाईल नं. </th>
                                                 <th class="text-center">Applicant's Relation With Deceased Teacher<br />
@@ -291,13 +291,17 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>आवेदन की स्थिति / Application Status<span style="color: red">*</span></label>
+                            <label>आवेदन की स्थिति /
+                                <br />
+                                Application Status<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="आवेदन को संभागीय आयुक्त लोक शिक्षण फॉरवर्ड किया गया है" autocomplete="off" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Remark / टिप्पणी <span style="color: red">*</span></label>
+                            <label>Remark /
+                                <br />
+                                टिप्पणी <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="शाजापुर जिले एवं संभाग में पद रिक्त नहीं होने से" autocomplete="off" />
                         </div>
                     </div>
@@ -364,15 +368,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="card-header bg-success">Action :</div>
-                    </div>
-                </div>
+            </fieldset>
+            <fieldset class="mt-5">
+                <legend>Action / कार्रवाई </legend>
                 <div class="row form-group align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Action / कार्रवाई करें<span style="color: red">*</span></label>
+                            <label>
+                                Action /<br />
+                                कार्रवाई करें<span style="color: red">*</span></label>
                             <select class="form-control select2" id="Actionddl" onchange="ShowHideHandicape()">
                                 <option>--Select--</option>
                                 <option value="Appointment order issued">Appointment order issued</option>
@@ -385,7 +389,7 @@
                     <div class="col-md-3" id="div2">
                         <div class="form-group">
                             <label>
-                                To which Post Does the Applicant Want to be Appointed?<br />
+                                To which Post Does the Applicant Want to be Appointed? /<br />
                                 आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
                                 <option value="">--Select--</option>
@@ -406,7 +410,9 @@
                     </div>
                     <div class="col-md-4" id="Mydocu" style="display: none;">
                         <div class="form-group">
-                            <label>Upload Document / दस्तावेज अपलोड करें:</label>
+                            <label>
+                                Upload Document /<br />
+                                दस्तावेज अपलोड करें<span style="color: red">*</span></label>
                             <asp:FileUpload runat="server" CssClass="form-control"></asp:FileUpload>
                         </div>
                     </div>
@@ -420,7 +426,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Appointment Letter Number<br />
+                                Appointment Letter Number /<br />
                                 नियुक्ति पत्र संख्या <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -428,7 +434,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Appointment Order Number<br />
+                                Appointment Order Number /<br />
                                 नियुक्ति आदेश संख्या<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -436,7 +442,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>
-                                Date of Letter<br />
+                                Date of Letter /<br />
                                 पत्र का दिनांक <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -444,7 +450,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>
-                                Position Appointed to Applicant<br />
+                                Position Appointed to Applicant /<br />
                                 आवेदक नियुक्त पद<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -454,7 +460,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>
-                                Place of Posting<br />
+                                Place of Posting /<br />
                                 पोस्टिंग की जगह<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -464,7 +470,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Order Number
+                                Order Number /
                                 <br />
                                 क्रम संख्या<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
@@ -473,7 +479,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Check No.
+                                Check No. /
                                 <br />
                                 चेक नंबर<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
@@ -482,16 +488,16 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Payment Date
+                                Payment Date /
                                 <br />
-                                भुगतान तिथि<span style="color: red">*</span></label>
+                                भुगतान दिनांक<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Payment
+                                Payment /
                                 <br />
                                 भुगतान <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
@@ -499,15 +505,15 @@
                     </div>
                 </div>
             </fieldset>
-            <div class="row justify-content-center">
-                <div class="col-md-2">
-                    <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Update</button>
+            <hr />
+            <div class="row ">
+                <div class="col-md-12">
+                    <button id="Button2" type="button" class="fw-bold btn w-lg btn-outline-success btn-border Alert-Save" onclick="myFunction()">Update</button>
+                    <a href="DetailsOfDeceasedEmployee.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <%--new script start--%>
     <script>
         function ShowHide() {
             var div1 = document.getElementById("ddlSapthpatr5");
@@ -557,28 +563,22 @@
             }
         }
         function ShowHide2() {
-
             var Div5 = document.getElementById("Divyear");
             var div6 = document.getElementById("DivQualification");
             var Div7 = document.getElementById("ddlSapthpatr1");
-            /* var Div5 = document.getElementById("Divbutton");*/
             if (Div7.value === '1') {
-
                 div6.style.display = "block";
                 Div5.style.display = "block";
             }
-
             else {
                 div6.style.display = "none";
                 Div5.style.display = "none";
             }
         }
     </script>
-    <%--new script start--%>
     <script>
         function myFunction() {
             document.getElementById("empDetail").style.display = "block";
-
         }
     </script>
 </asp:Content>
@@ -594,7 +594,7 @@
                 $('.Alert-Save').click(function () {
                     Swal.fire({
                         title: 'Are you sure?',
-                        text: "Do you want to Save This Record?",
+                        text: "Do you want to Update This Record?",
                         type: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085D6',
@@ -653,8 +653,6 @@
             div3.style.display = "none";
             Mydocu.style.display = "none";
             MydocuNote.style.display = "none";
-
-
             if (ddlHandicape.value == "Paid Amount") {
                 div1.style.display = "none";
                 div2.style.display = "none";
@@ -677,7 +675,6 @@
                 div3.style.display = "none";
                 Mydocu.style.display = "none";
                 MydocuNote.style.display = "none";
-
             }
             else if (ddlHandicape.value == "NOC has been released, the case has been sent to the District Collector") {
                 div1.style.display = "none";

@@ -5,20 +5,7 @@
         th {
             white-space: nowrap;
         }
-
-        /*   tbody, td, tfoot, th, thead, tr {
-            padding-top: 19px;
-        }
-
-        table th {
-            font-weight: 800;
-        }
-
-        tbody, td, tfoot, th, thead, tr {
-            border-color: aliceblue;
-            border-style: solid;
-            border-width: 10px;
-        }*/
+     
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">

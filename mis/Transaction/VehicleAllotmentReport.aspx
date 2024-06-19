@@ -153,8 +153,22 @@
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details/विवरण</legend>
-                <br />
+                <legend>Details / विवरण</legend>
+                <div class="col-md-12">
+                    <div class="row justify-content-end" id="grdFormate" style="display: none;">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" id="NoRcdTable">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -172,19 +186,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <div class="row justify-content-end">
-                                    <div class="col-md-4 text-end">
-                                        <div class="form-group">
-                                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                            <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group">
-                                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                        </div>
-                                    </div>
-                                </div>
                                 <table class="datatable table table-bordered dataTable no-footer" cellspacing="0" rules="all" border="1" style="border-collapse: collapse; text-align: center;" role="grid" aria-describedby="ctl00_ContentBody_grvVehicleAllotment_info">
                                     <thead>
                                         <tr role="row">
@@ -264,6 +265,7 @@
     <script>
         document.getElementById("toggleButton").addEventListener("click", function () {
             document.getElementById("SearchTable").style.display = "block";
+            document.getElementById("grdFormate").style.display = "flex";
             document.getElementById("NoRcdTable").style.display = "none";
         });
     </script>

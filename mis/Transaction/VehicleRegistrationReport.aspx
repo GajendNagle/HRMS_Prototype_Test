@@ -177,10 +177,25 @@
             <br />
             <fieldset>
                 <legend>Details / विवरण</legend>
-                <div class="row" id="NoRcdTable">
+                <div class="col-md-12">
+                    <div class="row justify-content-end" id="GrdFormate" style="display: none">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" id="NoRcdTable">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
+                            <table class=" table table-bordered text-center">
                                 <tbody>
                                     <tr>
                                         <td>No Recods Found</td>
@@ -191,90 +206,66 @@
                     </div>
                 </div>
                 <div class="row" id="SearchTable" style="display: none">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <div class="row justify-content-end">
-                                <div class="col-md-4 text-end">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                        <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <div>
-                                            <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehiclRegistration" style="border-collapse: collapse; text-align: center;">
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="col">Sr.No.<br />
-                                                            सरल क्र. </th>
-                                                        <th scope="col">Vehicle Number<br />
-                                                            गाडी नंबर</th>
-                                                        <th scope="col">Chassis Number
+                    <div class="table-responsive">
+                        <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehiclRegistration" style="border-collapse: collapse; text-align: center;">
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Sr.No.<br />
+                                        सरल क्र. </th>
+                                    <th scope="col">Vehicle Number<br />
+                                        गाडी नंबर</th>
+                                    <th scope="col">Chassis Number
          <br />
-                                                            चेसिस नंबर</th>
-                                                        <th scope="col">Insurance Number
+                                        चेसिस नंबर</th>
+                                    <th scope="col">Insurance Number
          <br />
-                                                            बीमा संख्या</th>
-                                                        <th scope="col">Dealer Name
+                                        बीमा संख्या</th>
+                                    <th scope="col">Dealer Name
          <br />
-                                                            विक्रेता का नाम</th>
-                                                        <th scope="col">Vehicle Color
+                                        विक्रेता का नाम</th>
+                                    <th scope="col">Vehicle Color
          <br />
-                                                            वाहन का रंग</th>
-                                                        <th scope="col">Action
+                                        वाहन का रंग</th>
+                                    <th scope="col">Action
          <br />
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span>1</span>
-                                                        </td>
-                                                        <td>
-                                                            <span>MP04ZB8290</span>
-                                                        </td>
-                                                        <td>
-                                                            <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblVehicle_Chassis_Number">MAT631139NWH69961</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>MP04ZB8290</span>
+                                    </td>
+                                    <td>
+                                        <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblVehicle_Chassis_Number">MAT631139NWH69961</span>
 
-                                                        </td>
-                                                        <td>
-                                                            <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblInsurance_Number">1901003122P105135</span>
-                                                        </td>
-                                                        <td>
-                                                            <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblDealer_Name">TATA MOTORS</span>
-                                                        </td>
-                                                        <td>
-                                                            <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblVehicle_Color">DOOR STEEL SHELL</span>
-                                                        </td>
-                                                        <td>
-                                                            <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="fa fa-edit"></i></a>
-                                                            <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="fa fa-eye"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </td>
+                                    <td>
+                                        <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblInsurance_Number">1901003122P105135</span>
+                                    </td>
+                                    <td>
+                                        <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblDealer_Name">TATA MOTORS</span>
+                                    </td>
+                                    <td>
+                                        <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblVehicle_Color">DOOR STEEL SHELL</span>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="fa fa-edit"></i></a>
+                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="fa fa-eye"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </fieldset>
-        </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
         document.getElementById("toggleButton").addEventListener("click", function () {
             document.getElementById("SearchTable").style.display = "block";
+            document.getElementById("GrdFormate").style.display = "flex";
             document.getElementById("NoRcdTable").style.display = "none";
         });
     </script>

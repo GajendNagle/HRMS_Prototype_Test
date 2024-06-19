@@ -42,7 +42,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Vehicle Dispose Report/ 
+                <legend>Vehicle Dispose Report / 
 वाहन डिस्पोज़  रिपोर्ट</legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -169,7 +169,7 @@
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details/विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row" runat="server" id="NoRcdTable">
                     <div class="col-md-12">
                         <div>

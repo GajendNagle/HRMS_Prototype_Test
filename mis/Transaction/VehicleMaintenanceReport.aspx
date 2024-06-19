@@ -200,27 +200,29 @@
                     </div>
                 </div>
                 <div class="row" id="SearchTable" style="display: none">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <div class="row justify-content-end">
-                                <div class="col-md-4 text-end">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                        <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                    </div>
-                                </div>
+                    <div class="mt-4 row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="table-responsive">
                             <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval" style="border-collapse: collapse; text-align: center;">
                                 <thead>
                                     <tr>
                                         <th scope="col">S.No.<br />
                                             सरल क्र.</th>
-                                        <th scope="col">Financial Year <br />
+                                        <th scope="col">Financial Year
+                                            <br />
                                             वित्तीय वर्ष</th>
                                         <th scope="col">Office Type<br />
                                             कार्यालय का प्रकार</th>
@@ -299,7 +301,7 @@
     <script>
         document.getElementById("toggleButton").addEventListener("click", function () {
             document.getElementById("SearchTable").style.display = "block";
-          document.getElementById("NoRcdTable").style.display = "none";
+            document.getElementById("NoRcdTable").style.display = "none";
         });
     </script>
 </asp:Content>
