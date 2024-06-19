@@ -1,11 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_HostelRoom.aspx.cs" Inherits="mis_HostelManagment_Mst_HostelRoom" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_RoomRegistration.aspx.cs" Inherits="mis_HostelManagment_Mst_RoomRegistration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        .hidden {
-            display: none;
-        }
-    </style>
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
@@ -17,7 +13,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
                     <li class="breadcrumb-item"><a href="../Module.aspx?ID=HostelManagement" title="click to go on">Hostel Management</a></li>
-                    <li class="breadcrumb-item active"><a href="Mst_HostelRegistration.aspx" title="click to go on">Hostel Room Details</a></li>
+                    <li class="breadcrumb-item active"><a href="Mst_RoomRegistration.aspx" title="click to go on">Room Registration</a></li>
                 </ol>
             </div>
 
@@ -27,7 +23,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Hostel Room Details /छात्रावास कक्ष का विवरण
+                    <h4 class="card-title"> Room Registration / कक्ष पंजीकरण
                     </h4>
                 </div>
             </div>
@@ -35,19 +31,19 @@
         <div class="card-body">
             <div runat="server" id="divOffice">
                 <fieldset>
-                    <legend>Hostel Room Details /छात्रावास कक्ष का विवरण</legend>
+                    <legend> Room Registration / कक्ष पंजीकरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select Hostel Name/<br />
                                     हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="1">Boys Hostel</option>
-                                    <option value="2">Girls Hostel</option>
-                                    <option value="3">Combine </option>
-                                </select>
+                                 <select class="form-control select2">
+                        <option selected="selected" value="0">--Select --</option>
+                        <option value="1">KGBV Girls Hostel</option>
+                        <option value="2">KGBV Boys Hostel</option>
+                        <option value="3">KGBV Combine Hostel</option>
+                    </select>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -57,7 +53,7 @@
                                     <br />
                                     कक्ष के प्रकार चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
-                                   
+
                                     <option value="--Select--">--Select--</option>
                                     <option value="Single">Single</option>
                                     <option value="Double">Double</option>
@@ -69,36 +65,97 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Hostel Room Number/<br />
-                                    हॉस्टल कक्ष नंबर चुनें<span style="color: red;">*</span></label>
-                                <select class="form-control select2">
+                                    Enter Room Number/<br />
+                                     कक्ष नंबर दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Hostel Room Number" />
+                                <%--<select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="101">101</option>
                                     <option value="201">201</option>
                                     <option value="102">102</option>
                                     <option value="202">202</option>
+                                </select>--%>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                    <div class="col-sm-5">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr role="row">
+                                        <th scope="col">Sr.No./<br />
+                                            क्र.सं.</th>
+                                        <th scope="col">Bed Number/<br />
+                                            बिस्तर नंबर</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr role="row">
+                                        <td align="center" valign="middle"><span>1</span>
+                                        </td>
+                                        <td><input type="text" name="input1" placeholder="Enter Bed Number" Class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td align="center" valign="middle"><span>2</span>
+                                        </td>
+                                        <td><input type="text" name="input1" placeholder="Enter Bed Number" Class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td align="center" valign="middle" ><span>3</span>
+                                        </td>
+                                        <td><input type="text" name="input1" placeholder="Enter Bed Number" Class="form-control">
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                         <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Is Active &nbsp</label>
+                                <br />
+                                <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
+                            </div>
+                        </div>
+                     </div>
+
+                        <%--<div class="col-md-4">
+                            <div class="form-group">
+                                <label>
+                                    Select No. of Bed<br />
+                                    बिस्तर की संख्या चुनें<span style="color: red;">*</span></label>
+                                <%--<input type="text" class="form-control" placeholder="Enter No. of Bed" />--%>
+                               <%-- <div class="form-control">
+                                    <input type="checkbox" id="one">
+                                    <label for="one">1 Bed</label>
+                                    <input type="checkbox" id="two">
+                                    <label for="option-2">2 Bed</label>
+                                    <input type="checkbox" id="three">
+                                    <label for="three">3 Bed</label>
+                                    <input type="checkbox" id="four">
+                                    <label for="four">4 Bed</label>
+                                </div>
+                            </div>
+                        </div>--%>
+                       <%-- <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Rent Per Bed<br />
+                                    प्रति बिस्तर किराया<span style="color: red;">*</span></label>
+                                <%--<input type="text" class="form-control" placeholder="Enter Rent per Bed" />--%>
+                                <%--<select class="form-control select2" id="fees">
+                                    <option value="--Select--">--Select--</option>
+                                    <option value="1">700</option>
+                                    <option value="2">500</option>
+                                    <option value="3">Free</option>
+                                    <option value="4">Free</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Enter No. of Bed/<br />
-                                    बिस्तर की संख्या दर्ज करें<span style="color: red;">*</span></label>
-                                 <input type="text" class="form-control" placeholder="Enter No. of Bed" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Rent Per Bed/<br />
-                                    प्रति बिस्तर किराया<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" placeholder="Enter Rent per Bed" />
-                            </div>
-                        </div>
-                    </div>
+                        </div>--%>
                 </fieldset>
                 <div class="col-md-12">
                     <div class="form-group text-center">
@@ -110,7 +167,7 @@
         </div>
     </div>
     <fieldset id="HostlInfo" style="display: none;">
-        <legend>Hostel Room Detail/छात्रावास कक्ष विवरण</legend>
+        <legend> Room Detail/ कक्ष विवरण</legend>
         <div class="row justify-content-end">
             <div class="col-md-1">
                 <div class="form-group">
@@ -143,12 +200,10 @@
                                             हॉस्टल नाम</th>
                                         <th scope="col">Room Type<br />
                                             कक्ष प्रकार   </th>
-                                        <th scope="col">Hostel Room Number<br />
-                                            हॉस्टल कक्ष नंबर </th>
+                                        <th scope="col"> Room Number<br />
+                                             कक्ष नंबर </th>
                                         <th scope="col">No. of Bed<br />
                                             बिस्तर की संख्या </th>
-                                        <th scope="col">Rent Per Bed<br />
-                                            प्रति बिस्तर किराया</th>
                                         <th scope="col">Action
                                             <br />
                                             कार्रवाई </th>
@@ -159,7 +214,7 @@
                                         <td align="center" valign="middle"><span>1</span>
                                         </td>
                                         <td align="center" valign="middle">
-                                            <span>Girls Hostel</span>
+                                            <span>KGBV Girls Hostel</span>
                                         </td>
                                         <td align="center" valign="middle">
                                             <a>Single</a>
@@ -170,11 +225,9 @@
                                         </td>
 
                                         <td align="center" valign="middle">
-                                            <span>150</span>
+                                            <span>2 Bed</span>
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>Rs.1000/-</span>
-                                        </td>
+                                       
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
@@ -192,76 +245,25 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
-        //function showTextBoxes() {
-        //    var dropdown = document.getElementById("dropdown");
-        //    var textBoxes = document.getElementById("textBoxes");
-        //    var textBoxes1 = document.getElementById("textBoxes1");
 
-        //    if (dropdown.value === "show") {
-        //        textBoxes.style.display = "block";
-        //        textBoxes1.style.display = "block";
-        //    } else if (dropdown.value === "show1") {
-        //        textBoxes1.style.display = "block";
-        //        textBoxes.style.display = "block";
-        //    } else {
-        //        textBoxes.style.display = "none";
-        //        textBoxes1.style.display = "none";
-        //    }
-        //}
 
-        //function showTextBoxes() {
-        //    const bedroomDropdown = document.getElementById('bedroomDropdown');
-        //    const dropdown = document.getElementById('dropdown');
-        //    const selectedValue = dropdown.value;
+        function updateFees() {
+            var category = document.getElementById('category').value;
+            var feesSelect = document.getElementById('fees');
 
-        //    // Clear existing options
-        //    bedroomDropdown.innerHTML = '';
+            if (category === 'General') {
+                feesSelect.value = '1';
+            } else if (category === 'OBC') {
+                feesSelect.value = '2';
+            } else if (category === 'ST' || category === 'SC') {
+                feesSelect.value = '3';
+            } else {
+                feesSelect.value = '--Select--';
+            }
 
-        //    // Create options based on the selected value
-        //    let options = [];
-        //    switch (selectedValue) {
-        //        case 'Single':
-        //            options = [
-        //                { value: '1', text: '1 bed room' }
-        //            ];
-        //            break;
-        //        case 'Double':
-        //            options = [
-        //                { value: '2', text: '2 bed room' }
-        //            ];
-        //            break;
-        //        case 'Triple':
-        //            options = [
-        //                { value: '3', text: '3 bed room' }
-        //            ];
-        //            break;
-        //        case 'Quad':
-        //            options = [
-        //                { value: '4', text: '4 bed room' }
-        //            ];
-        //            break;
-        //        default:
-        //            options = [
-        //                { value: '--Select--', text: '--Select--' }
-        //            ];
-        //    }
-
-        //    // Append new options to the bedroom dropdown
-        //    options.forEach(option => {
-        //        const opt = document.createElement('option');
-        //        opt.value = option.value;
-        //        opt.textContent = option.text;
-        //        bedroomDropdown.appendChild(opt);
-        //    });
-
-        //    // Reinitialize Select2 plugin
-        //    $(bedroomDropdown).select2();
-        //}
-
-        //// Initialize Select2 on page load
-        //$(document).ready(function () {
-        //    $('.select2').select2();
-        //});
+            // Trigger change event for select2 to update display
+            $('#fees').trigger('change');
+        }
     </script>
 </asp:Content>
 

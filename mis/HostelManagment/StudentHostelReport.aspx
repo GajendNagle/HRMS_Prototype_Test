@@ -3,50 +3,42 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                            <span>Home</span>
-                        </li>
-
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
-                        </li>
-                        <li class="breadcrumb-item">Hostel Management</li>
-                    </ol>
-                </div>
+    <div class="row page-titles mb-4">
+        <div class="col-md-5 align-self-center">
+            <h4 class="text-themecolor"></h4>
+        </div>
+        <div class="col-md-7 align-self-center text-end">
+            <div class="d-flex justify-content-end align-items-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HostelManagement" title="click to go on">Hostel Management</a></li>
+                    <li class="breadcrumb-item active"><a href="Mst_HostelRegistration.aspx" title="click to go on">School Hostel Report</a></li>
+                </ol>
             </div>
+
         </div>
     </div>
     <fieldset>
-        <legend>Student Hostel Report /  छात्र छात्रावास रिपोर्ट</legend>
+        <legend>School Hostel Report /  स्कूल छात्रावास रिपोर्ट</legend>
         <div class="row align-items-end">
             <div class="col-md-3">
                 <div class="form-group">
                     <label class="fw-bold text-dark">
-                        Class /<br />
-                        कक्षा</label>
-                    <select class="form-control select2" id="ddlclass">
-                        <option selected="selected" value="All">--Select --</option>
-                        <option value="1">Class 1</option>
-                        <option value="2">Class 2</option>
-                        <option value="3">Class 3</option>
-                        <option value="4">Class 4</option>
-                        <option value="5">Class 5</option>
-                        <option value="6">Class 6</option>
-                        <option value="7">Class 7</option>
+                        Select Hostel Name /<br />
+                        हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
+                     <select class="form-control select2">
+                        <option selected="selected" value="0">--Select --</option>
+                        <option value="1">KGBV Girls Hostel</option>
+                        <option value="2">KGBV Boys Hostel</option>
+                        <option value="3">KGBV Combine Hostel</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
                     <label class="fw-bold text-dark">
-                        Hostel Type /<br />
-                        छात्रावास का प्रकार</label>
+                        Select Hostel Type /<br />
+                        छात्रावास का प्रकार चुनें</label>
                     <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
                         <option value="1">Girls </option>
@@ -55,19 +47,20 @@
                     </select>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="form-group">
                     <label class="fw-bold text-dark">
-                        Room Type/
+                       Select Room Type/
    <br />
-                        कक्ष प्रकार
+                        कक्ष प्रकार चुनें
                     </label>
                     <select class="form-control select2">
-                        <option selected="selected" value="0">--Select --</option>
-                        <option value="1">One Bed </option>
-                        <option value="2">AC One Bed</option>
-                        <option value="3">Two Bed</option>
-                        <option value="4">AC Two Bed</option>
+                        <option value="--Select--">--Select--</option>
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Triple">Triple</option>
+                        <option value="Quad">Quad</option>
                     </select>
                 </div>
             </div>
@@ -105,64 +98,63 @@
                                     <br />
                                     क्र.सं.
                                 </th>
-                                <th>Class
-                                    <br />
-                                    कक्षा</th>
-                                <th>Student Name 
-                                            <br />
-                                    छात्र का नाम</th>
-                                <th>Mobile Number 
-                                            <br />
-                                    मोबाइल नंबर</th>
-                                <th>Parent Name 
-                                            <br />
-                                    अभिभावक का नाम
-                                </th>
                                 <th>Hostel Name 
                                             <br />
                                     छात्रावास का नाम
                                 </th>
-                                <th>Room No./ Name 
+                                <th>Hostel Type 
                                             <br />
-                                    कक्ष नंबर/ नाम
+                                    छात्रावास का प्रकार
                                 </th>
-                                <th>Room Type <br />
-                                    कक्ष प्रकार
-                                </th>
-                                <th>Cost Per Bed 
+                                <th>Student ID/Name 
                                             <br />
-                                    प्रति बिस्तर लागत
+                                    छात्र का आई.डी/नाम</th>
+                                <th>Room Type 
+                                            <br />
+                                    कक्ष प्रकार</th>
+                                <th>Room No. 
+                                            <br />
+                                    कक्ष नंबर
                                 </th>
-                            </tr>
+                                <th>Bed No. 
+                                            <br />
+                                    बिस्तर नंबर
+                                </th>
+                                  <th>Room Rent 
+                                            <br />
+                                    कक्ष का किराया
+                                </th>
+                                <th>Parent Name 
+                                            <br />
+                                    अभिभावक का नाम
+                                </th>
+                            </tr></thead>
+                         <tbody>
                             <tr>
                                 <td> 1</td>
-                                <td> Class 5</td>
-                                <td> Rohan Sharma</td>
-                                <td> 9898978787</td>
-                                <td> V.S Sharma</td>
-                                <td> Boys Hostel</td>
-                                <td> 101, B Block</td>
-                                <td> AC Two Bed</td>
-                                <td> Rs. 8000/-</td>
+                                <td> Girls Hostel Phutera</td>
+                                <td> Girls</td>
+                                <td> 112772962 Rohan Sharma</td>
+                                <td> Single</td>
+                                <td> 101</td>
+                                <td> 34</td>
+                                <td> Rs.1000/-</td>
+                                <td> J.J Sharma</td>
                             </tr>
                             <tr>
                                 <td> 2</td>
-                                <td> Class 4</td>
-                                <td> Jay Verma</td>
-                                <td> 7878989897</td>
+                                <td> Boys Hostel Phutera</td>
+                                <td> Boys</td>
+                                <td> 188416561 Jay Verma</td>
+                                <td> Double</td>
+                                <td> 201</td>
+                                <td> 14</td>
+                                <td> Rs. 500/-</td>
                                 <td> J.K Verma</td>
-                                <td> Boys Hostel</td>
-                                <td> 102, A Block</td>
-                                <td> Non AC Two Bed</td>
-                                <td> Rs. 5000/-</td>
                             </tr>
-                        </thead>
-                        <tbody>
-
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
     </fieldset>

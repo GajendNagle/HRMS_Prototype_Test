@@ -24,7 +24,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <h4 class="card-title">Role Wise Right's Assign / रोल के अनुसार अधिकार असाइन करें</h4>
                 </div>
             </div>
