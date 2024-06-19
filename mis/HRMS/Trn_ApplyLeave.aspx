@@ -178,14 +178,14 @@ Maximum Allowed Filesize (2MB)</span>--%>
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Year</th>
-                                    <th>From Date</th>
-                                    <th>To Date</th>
-                                    <th>Leave Approval Authority</th>
-                                    <th>Supporting Document</th>
-                                    <th>Reason of Leave</th>
-                                    <th>Status</th>
+                                    <th>Sr.No./<br />सरल क्र.</th>
+                                    <th>Year/<br />वर्ष</th>
+                                    <th>From Date/<br />दिंनाक से</th>
+                                    <th>To Date/<br />दिंनाक तक</th>
+                                    <th>Leave Approval Authority/<br />अवकाश अनुमोदन प्राधिकारी</th>
+                                    <th>Supporting Document/<br />सहायक दस्तावेज़</th>
+                                    <th>Reason of Leave/<br />अवकाश का कारण</th>
+                                    <th>Status/<br />स्थिति</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

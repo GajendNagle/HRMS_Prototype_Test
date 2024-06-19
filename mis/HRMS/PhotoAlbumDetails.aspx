@@ -197,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <button type="button" id="view" class="btn btn-success btn-rounded" onclick="myFunction()">View More...</button>
+                    <button type="button" id="view" class="btn btn-success btn-rounded" onclick="myFunction()">View More</button>
                 </div>
             </fieldset>
         </div>

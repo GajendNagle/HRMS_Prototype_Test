@@ -24,7 +24,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <h4 class="card-title">Role Wise Module Mapping / रोल के अनुसार मॉड्यूल मैपिंग</h4>
                 </div>
             </div>

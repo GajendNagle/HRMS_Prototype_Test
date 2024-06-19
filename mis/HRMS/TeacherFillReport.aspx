@@ -80,21 +80,13 @@
                 <div class="col-lg-12">
                     <h4 class="card-title color_black">
                       PART-2 Self-Evaluation
-भाग दो-स्वमूल्यांकन
+                      भाग दो-स्वमूल्यांकन
                     </h4>
                          
                 </div>
             </div>
         </div>
         <div class="card-body">
-      
-
- 
-
-
-
-
-
             <div runat="server" id="Fieldset1" style="display: block">
                 <fieldset>
                     <legend>Improving Attendance Of Childdren / छात्र उपिस्थिति में वृद्धि </legend>
@@ -1382,14 +1374,8 @@ of annual examination result
           window.location.href = 'ConfedicialReport.aspx';
       }
 
-        }
-
+      }
 
     </script>
-
-
-
-
-    
 </asp:Content>
 
