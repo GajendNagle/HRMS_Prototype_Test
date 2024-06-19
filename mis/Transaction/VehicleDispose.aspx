@@ -130,32 +130,32 @@
                     </div>
                 </div>
             </fieldset>
-        </div>
-        <fieldset runat="server" id="VehicleAllotementNo" visible="false">
-            <legend>Office / कार्यालय</legend>
-            <div class="row align-items-end">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <span>Order Number
+
+            <fieldset runat="server" id="VehicleAllotementNo" visible="false">
+                <legend>Office / कार्यालय</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Order Number
                                     <br />
-                            आदेश संख्या<span style="color: red">*</span></span>
-                        <input name="ctl00$ContentBody$txtYearOfManufacture" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
+                                आदेश संख्या<span style="color: red">*</span></span>
+                            <input name="ctl00$ContentBody$txtYearOfManufacture" type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                    <%--<div class="col-md-4">
                     <div class="form-group">
                         <button id="toggleButton2" type="button" class="btn btn-success btn-border">Search</button>
                     </div>
-                </div>
-            </div>
-            <div id="VEHICLEALLOTMENTData" style="display: none">
-                <div class="row align-items-end">
+                </div>--%>
+                    <%--</div>
+            <div id="VEHICLEALLOTMENTData" style="display: block">
+                <div class="row align-items-end">--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Date
                                     <br />
                                 आदेश की तारीख<span style="color: red">*</span></span>
-                            <input type="text" value="04/06/2024" readonly="" class="form-control">
+                            <input type="date" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -163,7 +163,7 @@
                             <span>Current Reading(Km)
                                     <br />
                                 वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtCurrentReadingKm" readonly="" type="text" maxlength="7" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtCurrentReadingKm\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return validateNum(event)" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" value="25000" onpaste="return false">
+                            <input name="ctl00$ContentBody$txtCurrentReadingKm" placeholder="Enter Current Reading" type="text" maxlength="7" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" onpaste="return false"/>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -171,145 +171,146 @@
                             <span>Selling Amount
                                     <br />
                                 विक्रय राशि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtSellingAmount" readonly="" type="text" value="RS 3.8 Lakh" maxlength="10" id="ctl00_ContentBody_txtSellingAmount" class="form-control" autocomplete="off" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
+                            <input name="ctl00$ContentBody$txtSellingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtSellingAmount" class="form-control" autocomplete="off" placeholder="Enter Selling Amount" onpaste="return false;">
                         </div>
                     </div>
-                </div>
-            </div>
-        </fieldset>
-        <br />
-        <div id="VEHICLEALLOTMENTDetails" style="display: none">
-
-            <fieldset>
-                <legend>Bidding / बिडिंग</legend>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Buying Amount
-                                    <br />
-                                क्रय राशि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtBuyingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtBuyingAmount" class="form-control" autocomplete="off" placeholder="Enter Buying Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Name Of Buyer
-                                    <br />
-                                खरीददार का नाम<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name Of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
-                        </div>
-                    </div>
+                    <%--</div>--%>
                 </div>
             </fieldset>
-            <hr />
-            <div class="row">
-                <div class="col-md-12">
-                    <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border">Save</button>
-                    <a href="VehicleDispose.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
-                </div>
-            </div>
-        </div>
-        <br />
-        <fieldset>
-            <legend>Details / विवरण</legend>
-            <div class="row" id="FisrtTimetbl">
-                <div class="col-md-12">
-                    <div class="table-responsive">
-                        <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
-                            <tbody>
-                                <tr>
-                                    <td>No Recods Found</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="display: none" id="Serchtbl">
-                <br />
-                <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+           
+            <div runat="server" id="VEHICLEALLOTMENTDetails" visible="false">
+
+                <fieldset>
+                    <legend>Bidding / बिडिंग</legend>
+                    <div class="row align-items-end">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Buying Amount
+                                    <br />
+                                    क्रय राशि<span style="color: red">*</span></span>
+                                <input name="ctl00$ContentBody$txtBuyingAmount" type="text" maxlength="10" id="ctl00_ContentBody_txtBuyingAmount" class="form-control" autocomplete="off" placeholder="Enter Buying Amount" onkeypress="return isNumberKey(this, event);" oninput="validate(this)" onpaste="return false;">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Name Of Buyer
+                                    <br />
+                                    खरीददार का नाम<span style="color: red">*</span></span>
+                                <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name Of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
+                </fieldset>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border">Save</button>
+                        <a href="VehicleDispose.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="table-responsive">
-                        <div>
-                            <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleInsuranceYr" style="border-collapse: collapse; text-align: center;">
+            </div>
+            <br />
+            <fieldset>
+                <legend>Details / विवरण</legend>
+                <div class="row" id="FisrtTimetbl">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
                                 <tbody>
                                     <tr>
-                                        <th scope="col">S.No.<br />
-                                            सरल क्र.</th>
-                                        <th scope="col">Vehicle Number<br />
-                                            गाडी नंबर</th>
-                                        <th scope="col">Vehicle Model<br />
-                                            वाहन मॉडल</th>
-                                        <th scope="col">Vehicle Chassis Number<br />
-                                            वाहन चेसिस नंबर</th>
-                                        <th scope="col">Order Number<br />
-                                            आदेश संख्या</th>
-                                        <th scope="col">Order Date<br />
-                                            आदेश तारीख</th>
-                                        <th scope="col">Selling Amount<br />
-                                            विक्रय राशि</th>
-                                        <th scope="col">Buying Amount<br />
-                                            क्रय राशि</th>
-                                        <th scope="col">Name Of Buyer<br />
-                                            क्रेता का नाम</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span>1</span>
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Number">MP04CB4473</span>
-
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Model">2007</span>
-
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Chassis_Number">MA3ECA12S02671501</span>
-
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblOrder_Number">444</span>
-
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblOrder_Date">01/06/2024</span>
-
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblSelling_Amount">25000.00</span>
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblBuying_Amount">65000.00</span>
-                                        </td>
-                                        <td>
-                                            <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblName_Of_Buyer">Raj</span>
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                                        </td>
+                                        <td>No Recods Found</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-            </div>
-        </fieldset>
+                <div class="row" style="display: none" id="Serchtbl">
+                    <br />
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <div>
+                                <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleInsuranceYr" style="border-collapse: collapse; text-align: center;">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col">S.No.<br />
+                                                सरल क्र.</th>
+                                            <th scope="col">Vehicle Number<br />
+                                                गाडी नंबर</th>
+                                            <th scope="col">Vehicle Model<br />
+                                                वाहन मॉडल</th>
+                                            <th scope="col">Vehicle Chassis Number<br />
+                                                वाहन चेसिस नंबर</th>
+                                            <th scope="col">Order Number<br />
+                                                आदेश संख्या</th>
+                                            <th scope="col">Order Date<br />
+                                                आदेश तारीख</th>
+                                            <th scope="col">Selling Amount<br />
+                                                विक्रय राशि</th>
+                                            <th scope="col">Buying Amount<br />
+                                                क्रय राशि</th>
+                                            <th scope="col">Name Of Buyer<br />
+                                                क्रेता का नाम</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>1</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Number">MP04CB4473</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Model">2007</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblVehicle_Chassis_Number">MA3ECA12S02671501</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblOrder_Number">444</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblOrder_Date">01/06/2024</span>
+
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblSelling_Amount">25000.00</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblBuying_Amount">65000.00</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_gvVehicleDispose_ctl02_lblName_Of_Buyer">Raj</span>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary"><i class="fa fa-edit"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
