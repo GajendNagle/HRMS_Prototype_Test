@@ -166,7 +166,7 @@
                                         <th>Message Date /   
                                                     <br />
                                             संदेश दिनांक  </th>
-                                        <th>view Upload File /
+                                        <th>View Upload File /
                                                     <br />
                                             अपलोड फ़ाइल देखें  </th>
                                         <th>Action          
