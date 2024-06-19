@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
    <%--     <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Balance Leave</h4>
         </div>
@@ -22,7 +21,29 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">--%>
-                    <div class="row">
+                <%--    <div class="row">--%>
+    <%--<div class="col-md-12">
+        <div class="page-title-box d-sm-flex align-items-end justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Leave Process</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Balance Leaves</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>--%>
+<%--</div>--%>
+                                    <div class="row">
     <div class="col-md-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
             <h4 class="mb-sm-0"></h4>
@@ -87,12 +108,12 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Leave Type</th>
-                                    <th>Opening As On 1st Jan of Selected Year</th>
-                                    <th>Leave Credit For Selected Year</th>
-                                    <th>Total Taken Leave (By ERP)</th>
-                                    <th>Total Leave Balance Till Date</th>
+                                    <th>Sr.No./<br />सरल क्र.</th>
+                                    <th>Leave Type/<br />अवकाश का प्रकार</th>
+                                    <th>Opening As On 1st Jan of Selected Year/<br />चयनित वर्ष की पहली जनवरी को खुलना</th>
+                                    <th>Leave Credit For Selected Year/<br />चयनित वर्ष के लिए क्रेडिट छोड़ें</th>
+                                    <th>Total Taken Leave (By ERP)/<br />कुल ली गई छुट्टी (ईआरपी द्वारा)</th>
+                                    <th>Total Leave Balance Till Date/<br />अब तक कुल अवकाश शेष</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

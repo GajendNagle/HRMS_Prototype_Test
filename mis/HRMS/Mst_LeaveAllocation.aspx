@@ -189,16 +189,17 @@
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
-                                            <th>Sr.No.</th>
-                                            <th>Year</th>
-                                            <th>Leave Type</th>
-                                            <th>Class</th>
-                                            <th>Type Of Post</th>
-                                            <th>Period</th>
-                                            <th>Leave Days Period Wise</th>
-                                            <th>Total Leave Days Year Wise</th>
-                                            <th>Leave Carry Forward</th>
-                                            <th>Max Leave Balance</th>
+                                            <th>Sr.No./<br />सरल क्र.</th>
+                                            <th>Year/<br />वर्ष</th>
+                                            <th>Leave Type/<br />लीव का प्रकार</th>
+                                            <th>Class/<br />कक्षा</th>
+                                            <th>Type Of Post/<br />पोस्ट का प्रकार</th>
+                                            <th>Period/<br />अवधि</th>
+                                            <th>Leave Days Period Wise/<br />अवधि के अनुसार छुट्टी के दिन</th>
+                                            <th>Total Leave Days Year Wise/<br />वर्षवार कुल छुट्टी के दिन</th>
+                                            <th>Leave Carry Forward/<br />छुट्टी आगे बढ़ाएँ</th>
+                                            <th>Max Leave Balance/<br />
+अधिकतम अवकाश शेष</th>
                                             <th>Action</th>
                                         </tr>
                                         <tr>

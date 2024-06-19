@@ -143,9 +143,9 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Leave Type</th>
-                                    <th>Remaining Leaves</th>
+                                    <th>Sr.No./<br />सरल क्र.</th>
+                                    <th>Leave Type/<br /> अवकाश का प्रकार</th>
+                                    <th>Remaining Leaves/<br /> शेष अवकाश</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

@@ -234,19 +234,23 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table">
-                                <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Department Name</th>
-                                    <th>OIS Type</th>
-                                    <th>Leave Type</th>
-                                    <th>First Level Approval Officer / HM Pricipal</th>
-                                    <th> First Approver Leave Limit</th>
-                                    <th>Second Level Approval Officer / Sankul Pricipal</th>
-                                    <th> Second Approver Leave Limit</th>
-                                    <th>Third Level Approval Officer / DEO</th>
-                                    <th>Third Approver Leave Limit</th>
-                                    <th>Fourth Level Approval Officer / CPI </th>
-                                    <th>Enter Fourth Approver Leave Limit </th>
+                                <tr style="white-space:nowrap !important;">
+                                    <th>Sr.No./<br />सरल क्र.</th>
+                                    <th>Department Name/<br />
+विभाग का नाम </th>
+                                    <th>OIS Type/<br />
+ओ.आई.एस प्रकार</th>
+                                    <th>Leave Type/<br />छुट्टी  का प्रकार</th>
+                                    <th>First Level Approval Officer / HM Pricipal/<br />प्रथम स्तर अनुमोदन अधिकारी / एचएम प्रिंसिपल</th>
+                                    <th> First Approver Leave Limit/<br />प्रथम अनुमोदक अवकाश सीमा</th>
+                                    <th>Second Level Approval Officer / Sankul Pricipal/<br />
+द्वितीय स्तर अनुमोदन अधिकारी/संकुल प्राचार्य</th>
+                                    <th> Second Approver Leave Limit/<br />द्वितीय अनुमोदक अवकाश सीमा</th>
+                                    <th>Third Level Approval Officer / DEO/<br />
+तृतीय स्तर अनुमोदन अधिकारी/डी.ई.ओ</th>
+                                    <th>Third Approver Leave Limit/<br />तृतीय अनुमोदक अवकाश सीमा</th>
+                                    <th>Fourth Level Approval Officer / CPI /<br />चतुर्थ स्तरीय अनुमोदन अधिकारी/सी.पी.आई</th>
+                                    <th>Enter Fourth Approver Leave Limit/<br />चतुर्थ अनुमोदक अवकाश सीमा दर्ज करें </th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

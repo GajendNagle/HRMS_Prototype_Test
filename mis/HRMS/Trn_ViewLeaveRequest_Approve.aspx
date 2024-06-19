@@ -129,13 +129,14 @@
                                 <tr>
                                     <th>
                                         <input type="checkbox" /></th>
-                                    <th>Sr.No.</th>
-                                    <th>Employee Name</th>
-                                    <th>Department </th>
-                                    <th>From Date </th>
-                                    <th>To Date </th>
-                                    <th>Total Days </th>
-                                    <th>Approve Status </th>
+                                    <th>Sr.No./<br />सरल क्र.</th>
+                                    <th>Employee Name/<br />कर्मचारी का नाम</th>
+                                    <th>Department/<br />
+विभाग </th>
+                                    <th>From Date/<br />दिनांक से </th>
+                                    <th>To Date/<br /> दिनांक तक  </th>
+                                    <th>Total Days/<br />कुल दिन </th>
+                                    <th>Approve Status/<br />स्थिति स्वीकृत करें </th>
                                 </tr>
                                 <tr>
                                     <td>
