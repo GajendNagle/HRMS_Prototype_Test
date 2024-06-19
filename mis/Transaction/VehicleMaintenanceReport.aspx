@@ -185,7 +185,7 @@
             </fieldset>
             <br />
             <fieldset>
-                <legend>Details/विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row" id="NoRcdTable">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -220,7 +220,7 @@
                                     <tr>
                                         <th scope="col">S.No.<br />
                                             सरल क्र.</th>
-                                        <th scope="col">Financial Year /<br />
+                                        <th scope="col">Financial Year <br />
                                             वित्तीय वर्ष</th>
                                         <th scope="col">Office Type<br />
                                             कार्यालय का प्रकार</th>
@@ -230,11 +230,11 @@
                                             रखरखाव का प्रकार</th>
                                         <th scope="col">Previous Reading Km
                                         <br />
-                                            पिछला रीडिंग किमी</th>
+                                            पिछला रीडिंग किलोमीटर में</th>
                                         <th scope="col">Current Reading Km<br />
-                                            वर्तमान रीडिंग किमी</th>
+                                            वर्तमान रीडिंग किलोमीटर में</th>
                                         <th scope="col">Difference Km Reading<br />
-                                            अंतर किमी पढ़ना</th>
+                                            किलोमीटर रीडिंग में अंतर </th>
                                         <th scope="col">Bill Amount<br />
                                             बिल राशि</th>
                                         <th scope="col">Vehicle Expenses Details<br />
@@ -260,13 +260,13 @@
                                             <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblMaintenance_Type">Servicing</span>
                                         </td>
                                         <td>
-                                            <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblPreviousReadingKm">0</span>
+                                            <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblPreviousReadingKm">20000</span>
                                         </td>
                                         <td>
-                                            <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKm_Reading">250000</span>
+                                            <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKm_Reading">35000</span>
                                         </td>
                                         <td>
-                                            <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKM_ReadingDiff">250000</span>
+                                            <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKM_ReadingDiff">15000</span>
                                         </td>
                                         <td>
                                             <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblBill_Amount">5000.00</span>
@@ -283,6 +283,8 @@
                                     <tr style="font-weight: bold;">
                                         <td align="right" colspan="6">Total</td>
                                         <td>5000.00</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                     </tr>

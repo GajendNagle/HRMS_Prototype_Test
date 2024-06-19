@@ -251,9 +251,9 @@
                                             <th scope="col">New Insurance Number<br />
                                                 नया बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
-                                                बीमा आरंभ तिथि</th>
+                                                बीमा आरंभ दिनांक</th>
                                             <th scope="col">Insurance End Date<br />
-                                                बीमा समाप्ति तिथि</th>
+                                                बीमा समाप्ति दिनांक</th>
                                             <th scope="col">Insurance Claim Date<br />
                                                 बीमा दावा दिनांक</th>
                                             <th scope="col">Insurance Amount<br />
