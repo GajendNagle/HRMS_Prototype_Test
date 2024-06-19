@@ -44,19 +44,21 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>From Date /<br />
-                                की तिथि से<span style="color: red">*</span></span>
+                            <span>From Date
+                                <br />
+                                दिनांक से<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtFromDate" type="date" id="ctl00_ContentBody_txtFromDate" class="form-control " data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>To Date /<br />
-                                तारीख तक<span style="color: red">*</span></span>
+                            <span>To Date
+                                <br />
+                                दिनांक तक<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtTodate" type="date" id="ctl00_ContentBody_txtTodate" class="form-control " data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <div class="form-group">
                             <span>Office Type /<br />
                                 कार्यालय का प्रकार<span style="color: red">*</span></span>
@@ -68,12 +70,13 @@
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>District /<br />
+                            <span>District
+                                <br />
                                 ज़िला<span style="color: red">*</span></span>
-                            <select id="ContentBody_ddlDistrict" class="form-select form-control">
+                            <select class="form-select form-control">
                                 <option value="0">--Select--</option>
                                 <option value="51">Agar Malwa</option>
                                 <option value="49">Alirajpur</option>
@@ -130,7 +133,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Number /<br />
                                 गाडी नंबर<span style="color: red">*</span></span>
@@ -138,12 +141,12 @@
                                 <option value="1" selected="selected">MP04CB4473</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <asp:Button runat="server" type="button" class="fw-bold btn w-lg btn-success btn-border" Text="Search" OnClick="btnSearchRcd_Click" ID="btnSearchRcd" />
+                        <button id="toggleButton" type="button" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
                         <a href="VehicleAllotmentReport.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
@@ -151,7 +154,8 @@
             <br />
             <fieldset>
                 <legend>Details/विवरण</legend>
-                <div class="row" id="NoRcdTable" runat="server">
+                <br />
+                <div class="row" id="NoRcdTable">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
@@ -164,23 +168,23 @@
                         </div>
                     </div>
                 </div>
-                <div runat="server" id="hideTable" visible="false">
-                    <div class="row justify-content-end">
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                <div id="SearchTable" style="display: none">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-4 text-end">
+                                        <div class="form-group">
+                                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                        </div>
+                                    </div>
+                                </div>
                                 <table class="datatable table table-bordered dataTable no-footer" cellspacing="0" rules="all" border="1" style="border-collapse: collapse; text-align: center;" role="grid" aria-describedby="ctl00_ContentBody_grvVehicleAllotment_info">
                                     <thead>
                                         <tr role="row">
@@ -191,7 +195,8 @@
                                                 आर्डर की तारीख</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Office Type: activate to sort column ascending" style="width: 56.2197px;">Office Type<br />
                                                 कार्यालय का प्रकार</th>
-                                            <th scope="col" style="width: 59.7542px;">District <br />
+                                            <th scope="col" style="width: 59.7542px;">District
+                                                <br />
                                                 ज़िला</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Vehicle Number: activate to sort column ascending" style="width: 80.355px;">Vehicle Number<br />
                                                 गाडी नंबर</th>
@@ -210,40 +215,40 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1">
+                                        <tr role="row">
+                                            <td>
                                                 <span>1</span>
                                             </td>
                                             <td>
-                                                <span id="">13/06/2024</span>
+                                                <span>13/06/2024</span>
                                             </td>
 
                                             <td>
-                                                <span id="">Head Office</span>
+                                                <span>Head Office</span>
                                             </td>
                                             <td>
-                                                <span id="">Barwani</span>
+                                                <span>Barwani</span>
                                             </td>
                                             <td>
-                                                <span id="">MP04CB4473</span>
+                                                <span>MP04CB4473</span>
                                             </td>
                                             <td>
-                                                <span id="">test</span>
+                                                <span>Joint Director</span>
                                             </td>
                                             <td>
-                                                <span id="">56565656</span>
+                                                <span>56565656</span>
                                             </td>
                                             <td>
-                                                <span id="">MARUTI 800</span>
+                                                <span>MARUTI 800</span>
                                             </td>
                                             <td>
-                                                <span id="">test</span>
+                                                <span>LAKSHMI NARAYAN</span>
                                             </td>
                                             <td>
-    <button type="button" class="btn btn-primary" >
-        <i class="fa fa-eye" aria-hidden="true"></i>
-    </button>
-</td>
+                                                <button type="button" class="btn btn-primary">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -256,5 +261,11 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            document.getElementById("SearchTable").style.display = "block";
+            document.getElementById("NoRcdTable").style.display = "none";
+        });
+    </script>
 </asp:Content>
 

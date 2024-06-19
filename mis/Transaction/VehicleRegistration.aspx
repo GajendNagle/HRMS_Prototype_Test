@@ -6,7 +6,7 @@
             white-space: nowrap;
         }
 
-        tbody, td, tfoot, th, thead, tr {
+        /*   tbody, td, tfoot, th, thead, tr {
             padding-top: 19px;
         }
 
@@ -18,7 +18,7 @@
             border-color: aliceblue;
             border-style: solid;
             border-width: 10px;
-        }
+        }*/
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -59,35 +59,40 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Number <br />
+                                <span>Vehicle Number
+                                    <br />
                                     गाडी का नंबर<span style="color: red">*</span></span>
                                 <input type="text" maxlength="10" class="form-control " placeholder="Enter Vehicle Number" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Company Name <br />
+                                <span>Vehicle Company Name
+                                    <br />
                                     वाहन कंपनी का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Company" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Model Name <br />
+                                <span>Vehicle Model Name
+                                    <br />
                                     वाहन मॉडल का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Model" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Variants <br />
+                                <span>Vehicle Variants
+                                    <br />
                                     वाहन का प्रकार <span style="color: red">*</span></span>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Class">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <span>Fuel Type <br />
+                                <span>Fuel Type
+                                    <br />
                                     ईंधन का प्रकार<span style="color: red">*</span></span>
                                 <div class="form-control">
                                     <input type="radio" id="one">
@@ -103,7 +108,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Year Of Manufacture <br />
+                                <span>Year Of Manufacture
+                                    <br />
                                     निर्माण वर्ष<span style="color: red">*</span></span>
                                 <select class="form-control">
                                     <option value="0">--Select--</option>
@@ -136,7 +142,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Motor Vehicle <br />
+                                <span>Motor Vehicle
+                                    <br />
                                     मोटर गाड़ी<span style="color: red">*</span></span>
                                 <select class="form-control">
                                     <option value="0">Select</option>
@@ -149,7 +156,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Type Of Body <br />
+                                <span>Type Of Body
+                                    <br />
                                     बॉडी का प्रकार<span style="color: red">*</span></span>
                                 <select class="form-control">
                                     <option value="0">--Select--</option>
@@ -163,7 +171,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Color <br />
+                                <span>Vehicle Color
+                                    <br />
                                     वाहन का रंग<span style="color: red">*</span></span>
                                 <input type="text" maxlength="30" class="form-control" placeholder="Enter Vehicle Color" autocomplete="off">
                             </div>
@@ -177,7 +186,8 @@
                         </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Chassis Number <br />
+                                <span>Vehicle Chassis Number
+                                    <br />
                                     वाहन चेसिस नंबर<span style="color: red">*</span></span>
                                 <input type="text" maxlength="17" class="form-control " placeholder="Enter Vehicle Chassis Number" autocomplete="off">
                                 <span style="color: Red; display: none;">Invalid Chassis Number.</span>
@@ -186,63 +196,72 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Seating Capacity <br />
+                                <span>Seating Capacity
+                                    <br />
                                     बैठने की क्षमता<span style="color: red">*</span></span>
                                 <input type="text" maxlength="2" class="form-control" onpaste="return false;" placeholder="Enter Seat Capacity" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Engine Number <br />
+                                <span>Vehicle Engine Number
+                                    <br />
                                     वाहन का इंजन नंबर<span style="color: red">*</span></span>
                                 <input type="text" maxlength="20" class="form-control " placeholder="Enter Vehicle Engine Number" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Weight(Unladen weight) KG <br />
+                                <span>Vehicle Weight(Unladen weight) KG
+                                    <br />
                                     वाहन का वजन कि.ग्रा.<span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Vehicle Weight" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Cubic Capacity <br />
+                                <span>Cubic Capacity
+                                    <br />
                                     घन क्षमता<span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Cubic Capacity" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Horse power (BHP/KW) <br />
+                                <span>Horse power (BHP/KW)
+                                    <br />
                                     अश्वशक्ति (बीएचपी/किलोवाट)<span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Horse power" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Wheel Base (mm) <br />
+                                <span>Wheel Base (mm)
+                                    <br />
                                     व्हील बेस (मि.मी.)<span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Wheel Base" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Registration No. <br />
+                                <span>Registration No.
+                                    <br />
                                     पंजीकरण संख्या<span style="color: red">*</span></span>
                                 <input type="text" maxlength="15" class="form-control" placeholder="Enter Registration No." autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Registration Date <br />
+                                <span>Registration Date
+                                    <br />
                                     पंजीकरण की तारीख<span style="color: red">*</span></span>
                                 <input type="Date" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Registration Validity <br />
+                                <span>Registration Validity
+                                    <br />
                                     पंजीकरण की वैधता<span style="color: red">*</span></span>
                                 <input type="Date" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
@@ -266,7 +285,8 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Company Name <br />
+                                <span>Insurance Company Name
+                                    <br />
                                     बीमा कंपनी का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Insurance Company Name" autocomplete="off">
                             </div>
@@ -280,21 +300,24 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Start Date <br />
+                                <span>Insurance Start Date
+                                    <br />
                                     बीमा आरंभ तिथि<span style="color: red">*</span></span>
                                 <input type="date" class="form-control disableFuturedate" data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance End Date <br />
+                                <span>Insurance End Date
+                                    <br />
                                     बीमा समाप्ति तिथि<span style="color: red">*</span></span>
                                 <input type="date" class="form-control disableFuturedate" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Amount(Rs) <br />
+                                <span>Insurance Amount(Rs)
+                                    <br />
                                     बीमा राशि(रु.)<span style="color: red">*</span></span>
                                 <input type="text" maxlength="9" class="form-control" placeholder="Enter Insurance Amount" autocomplete="off">
                             </div>
@@ -306,14 +329,16 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Dealer Name <br />
+                                <span>Dealer Name
+                                    <br />
                                     डीलर का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="45" class="form-control" placeholder="Enter Dealer Name" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-9">
                             <div class="form-group">
-                                <span>Dealer Address <br />
+                                <span>Dealer Address
+                                    <br />
                                     डीलर का पता<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Dealer Address" autocomplete="off">
                             </div>
@@ -473,21 +498,21 @@
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2 class="text-center">Vehicle Information</h2>
+                                <h2 class="text-center "><u>Vehicle Information</u></h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <table>
+                                            <table class="table">
                                                 <tr>
-                                                    <th><span>Vehicle Number :</span></th>
-                                                    <td><span>MP04ZB8290</span></td>
-                                                    <th><span>Vehicle Class :</span></th>
-                                                    <td><span>L1e-A</span></td>
-                                                    <th><span>Vehicle Company (Maker):</span></th>
-                                                    <td><span>TATA MOTORS</span></td>
+                                                    <th>Vehicle Number :</th>
+                                                    <td>MP04ZB8290</td>
+                                                    <th>Vehicle Class :</th>
+                                                    <td>L1e-A</td>
+                                                    <th>Vehicle Company (Maker):</th>
+                                                    <td>TATA MOTORS</td>
                                                 </tr>
                                                 <tr>
                                                     <th><span>Fuel Type :</span></th>
@@ -540,20 +565,22 @@
                                                 <tr>
                                                     <th><span>Insurance Amount:</span></th>
                                                     <td><span>57593.00</span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Dealer Name:</span></th>
                                                     <td><span>TATA MOTORS</span></td>
                                                     <th><span>Dealer Address:</span></th>
                                                     <td><span>BHOPAL</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <%-- <th><span>Motor Vehicle:</span></th>
-                                                    <td><span>New Vehicle</span></td>--%>
+
+
                                                     <th><span>Type Of Body:</span></th>
                                                     <td><span>DAY GREY</span></td>
                                                     <th><span>Vehicle Color:</span></th>
                                                     <td><span>DOOR STEEL SHELL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <%-- <th><span>Motor Vehicle:</span></th>
+                                                    <td><span>New Vehicle</span></td>--%>
                                                 </tr>
                                             </table>
                                         </div>

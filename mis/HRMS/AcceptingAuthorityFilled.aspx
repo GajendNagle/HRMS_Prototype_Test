@@ -6,57 +6,81 @@
             display: none;
         }
 
-        #workdescription2 {
+        /*textarea {
             resize: vertical;
-            min-height: 40px; /* Set a minimum height */
-        }
+            min-height: 40px;*/ /* Set a minimum height */
+        /*}*/
 
         textarea {
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
-
+      
         #ddlPosition {
             position: relative;
             bottom: 20px;
         }
+      /*  .table th, .table td {
+            padding: 0rem !important  ;
+        }
+        textarea{
+              padding: 0rem !important  ;
+        }*/
     </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-  <div class="row">
-      <div class="col-12">
-          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-              <h4 class="mb-sm-0"></h4>
-              <div class="=page-title-right">
-                  <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                          <span>Home</span>
-                      </li>
-                      <li class="breadcrumb-item">
-                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                      </li>
-                      <li class="breadcrumb-item">
-                          <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                              <span>ACR</span></a>
-                      </li>
-                      <li class="breadcrumb-item"><span>Accepting Authority ACR Report</span></li>
-                  </ol>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>ACR</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Accepting Authority ACR Report</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+  <%--  <div class="row page-titles mb-4">--%>
+    <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
+            <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+        </div>
 
-  
-    <%--  <div class="row page-titles mb-4">--%>
-      <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
-          <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-              <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-              </u>
-          </p>
-          </div>
-         
-    <div class="card card-border-primary">
+    <%--<div id="dv_Masters_LocationMasters" runat="server">
+        <div class="row page-titles mb-4">
+            <div class="col-md-5 align-self-center">
+                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
+                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                    </u>
+                </p>
+               
+            </div>
+            <div class="col-md-7 align-self-center text-end">
+                <div class="d-flex justify-content-end align-items-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
+                        <li class="breadcrumb-item active">Annual Confidential Report (ACR)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>--%>
+<div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
@@ -67,28 +91,68 @@
             </div>
         </div>
         <div class="card-body">
+      
+            <%--<nav class="navbar navbar-expand-lg topbar ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-3mb-lg-0">
+                            <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
+                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
+                                </ul>
+                            </li>
+                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
+                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
+                                    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
+                                    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
+                                    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>--%>
+            <br />
 
             <fieldset id="show2" runat="server">
                 <legend>Review and filling of ACR report by the Accepting Authority / स्वीकारकर्ता प्राधिकारी द्वारा एसीआर रिपोर्ट की समीक्षा करना और भरना</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                    </div>
+     <div class="col-md-4 text-end">
+         <div class="form-group">
+             <button class="btn btn-info btn-rounded w-55">Excel</button>
+             <button class="btn btn-info btn-rounded w-55">PDF</button>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="form-group">
+             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+         </div>
+     </div>
+ </div>
+                    
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" class="text-white">
-                                        <th>S.No.
+                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                        <th>S.No
                                             <br />
                                             सरल क्र.</th>
                                         <th>Unique ID/Name
@@ -173,6 +237,7 @@
                         </div>
                     </div>
                
+
             </fieldset>
             <fieldset runat="server" id="Fieldset2" visible="false">
 
@@ -181,59 +246,57 @@
                     समीक्षक अधिकारी द्वारा भरा जाये </legend>
 
 
-                <div class="row  align-items-end">
+                <div class="row align-items-end">
                     <div class="col-md-4">
                         <label>
                             Do you agree with the remarks of the reporting officer ?<br />
                             क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|<span style="color: red">*</span></label>
-                        <asp:DropDownList runat="server" CssClass="select2 form-control">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Yes/हाँ</asp:ListItem>
-                            <asp:ListItem>No/नही</asp:ListItem>
+                        <select class="form-control select2" id="ddlremark1" onchange="myFunctionRemark1()">
+                            <option value="0">--Select--</option>
+                            <option value="1">Yes/हाँ</option>
+                            <option value="2">No/नही</option>
                             <%--  <asp:ListItem>No/या</asp:ListItem>--%>
-                            <asp:ListItem>Partially/आंशिक</asp:ListItem>
+                            <option value="3">Partially/आंशिक</option>
 
-                        </asp:DropDownList>
+                        </select>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="remark" style="display:none;">
                         <label>
                             If no or agree partially give reasons for disagreement<br />
                             यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण<span style="color: red">*</span>
                         </label>
-                        <asp:DropDownList runat="server" CssClass="select2 form-control">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Yes/हाँ</asp:ListItem>
-                            <asp:ListItem>No/नही</asp:ListItem>
-                            <%--  <asp:ListItem>No/या</asp:ListItem>--%>
-                            <asp:ListItem>Partially/आंशिक</asp:ListItem>
+                     
+                               <textarea class="form-control"   rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
+    <%-- <asp:ListItem>--Select--</asp:ListItem>
+     <asp:ListItem>Yes/हाँ</asp:ListItem>
+     <asp:ListItem>No/नही</asp:ListItem>
+     <%--  <asp:ListItem>No/या</asp:ListItem>
+     <asp:ListItem>Partially/आंशिक</asp:ListItem>--%>
 
-                        </asp:DropDownList>
                     </div>
 
                     <div class="col-md-4">
                         <label>
                             Grading<br />
                             ग्रेड<span style="color: red">*</span></label>
-                        <select class="form-control select2" id="ddlfsgrade" onchange="myFunction1()">
-                            <option value="0">--Select--</option>
-                            <option value="1">Outstanding/उत्कृष्ट</option>
-                            <option value="2">Very good/बहुत अच्छा</option>
-                            <option value="3">good/अच्छा</option>
-                            <option value="4">Satisfactory/संतोषप्रद</option>
-                            <option value="5">Below satisfaction/असंतोषप्रद</option>
-                        </select>
+                     <select class="form-control select2" id="ddlfsgrade" onchange="myFunction1()">
+     <option value="0">--Select--</option>
+     <option value="1">Outstanding/उत्कृष्ट</option>
+     <option value="2">Very good/बहुत अच्छा</option>
+     <option value="3">good/अच्छा</option>
+     <option value="4">Satisfactory/संतोषप्रद</option>
+     <option value="5">Below satisfaction/असंतोषप्रद</option>
+ </select>
                     </div>
                     <div class="col-md-4" style="display: none;" id="OfficerName1">
-                        <label>
-                            Enter Remark For  Outstanding Grading
+                        <label>Enter Remark For  Outstanding Grading
                             <br />
                             उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
-                        <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+                        <textarea class="form-control"  rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
 
                     </div>
                 </div>
-            </fieldset>
-            <br />
+            </fieldset><br />
 
             <div runat="server" id="Fieldset1" visible="false">
                 <%-- <div class="ROW">
@@ -245,35 +308,36 @@
                 <fieldset>
                     <legend>PART-4 Acceptance
                    To Be Filled By Accepting Authority /  भाग-4 स्वीकृत अधिकारी द्वारा भरा जाये</legend>
-                    <div class="row  align-items-end">
+                    <div class="row align-items-end">
                         <div class="col-md-4">
-                            <label class=" fw-bold">
+                            <label class="fw-bold">
                                 Employee Name/Unique ID<br />
                                 कर्मचारी का नाम/ यूनिक आई.डी<span style="color: red">*</span></label>
-                            <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+                            <asp:TextBox runat="server" CssClass="form-control  fw-bold" ReadOnly="true" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
                         </div>
                         <div class="col-md-4">
                             <label>
                                 Do you agree with the remarks of the reporting officer ?<br />
                                 क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?<span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" CssClass="select2 form-control">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Yes/हाँ</asp:ListItem>
-                                <asp:ListItem>No/नही</asp:ListItem>
-                                <%--   <asp:ListItem>No/या</asp:ListItem>--%>
-                                <asp:ListItem>Partially/आंशिक</asp:ListItem>
-                            </asp:DropDownList>
+                              <select class="form-control select2" id="ddlremark2" onchange="myFunctionRemark2()">
+       <option value="0">--Select--</option>
+       <option value="1">Yes/हाँ</option>
+       <option value="2">No/नही</option>
+       <%--  <asp:ListItem>No/या</asp:ListItem>--%>
+       <option value="3">Partially/आंशिक</option>
+
+   </select>
                         </div>
-                        <div class="col-md-4 ">
+                        <div class="col-md-4" id="remark2" style="display:none;">
                             <label>
                                 If no or agree partially give reasons for disagreement<br />
                                 यदि नही या आंशिक रूप से सहमत होने पर बसहमति का कारण<span style="color: red">*</span>
                             </label>
                             <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
-                            <textarea class="form-control mb-2" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
+                            <textarea class="form-control" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
                         </div>
-                    </div>
-                    <div class="row  align-items-end">
+                    
+                  
 
                         <div class="col-md-4">
                             <label>
@@ -289,22 +353,23 @@
                             </select>
                         </div>
                         <div class="col-md-4" style="display: none;" id="OfficerName">
-                            <label>
-                                Enter Remark For  Outstanding Grading
+                            <label>Enter Remark For  Outstanding Grading
                                 <br />
                                 उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
 
                         </div>
-                    </div>
+                 </div>
                 </fieldset>
-               <hr />
-  <div class="col-md-12">
-      <div class="form-group">
-          <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
-          <a href="AcceptingAuthorityFilled.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-      </div>
-  </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+    <div class="form-group">
+        <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+        <a href="AcceptingAuthorityFilled.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+    </div>
+</div>
+                </div>
             </div>
         </div>
     </div>
@@ -312,149 +377,183 @@
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: var(--vz-primary);">
+               <div class="modal-header" style="background-color: var(--vz-primary);">
 
                     <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
                     <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">EMPLOYEE  ACR FORM</h3>
-                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div runat="server" id="show">
-                        <fieldset>
-                            <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
-                            <div class="row  align-items-end">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Financial Year<br />
-                                            वार्षिक प्रतिवेदन अवधि वर्ष <span class="fa-pull-right" style="color: red">*</span>
-                                        </label>
-                                        <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
-                                            <asp:ListItem>2020-2021</asp:ListItem>
-                                            <asp:ListItem>2021-2022</asp:ListItem>
-                                            <asp:ListItem>2022-2023</asp:ListItem>
-                                            <asp:ListItem>2023-2024</asp:ListItem>
-                                            <asp:ListItem>2024-2025</asp:ListItem>
-                                        </asp:DropDownList>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Name
+                                        <div runat="server" id="show">
+                                                               <fieldset>
+                     <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
+                     <div class="row align-items-end">
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     Financial Year<br />
+                                     वार्षिक प्रतिवेदन अवधि वर्ष <span style="color: red">*</span>
+                                 </label>
+                                 <asp:DropDownList runat="server" ID="ddlyera" CssClass="form-control select2">
+                                     <asp:ListItem>2020-2021</asp:ListItem>
+                                     <asp:ListItem>2021-2022</asp:ListItem>
+                                     <asp:ListItem>2022-2023</asp:ListItem>
+                                     <asp:ListItem>2023-2024</asp:ListItem>
+                                     <asp:ListItem>2024-2025</asp:ListItem>
+                                 </asp:DropDownList>
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     Name
                                      <br />
-                                            नाम  <span class="fa-pull-right" style="color: red">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="txtName" class="form-control" autocomplete="off" placeholder="गोपाल वर्मा"></asp:TextBox>
+                                     नाम  <span style="color: red">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ReadOnly="true" ID="txtName" class="form-control" autocomplete="off" value="गोपाल वर्मा"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Designation
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     Unique ID<br />
+                                     कर्मचारी आई.डी
+                                     <span style="color: red">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="TextBox4" ReadOnly="true" class="form-control" autocomplete="off" value="EDP4561231556"></asp:TextBox>
+
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     Designation
                                      <br />
-                                            पद नाम <span style="color: red">*</span>
-                                        </label>
-                                        <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
-                                            <asp:ListItem>सहायक शिक्षक</asp:ListItem>
-                                            <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
-                                            <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
-                                            <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
-                                        </asp:DropDownList>
+                                     पद नाम <span style="color: red">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="DropDownList1" class="form-control " autocomplete="off" ReadOnly="true" value="सहायक शिक्षक"></asp:TextBox>
+                                 <%-- <asp:DropDownList runat="server" ID="DropDownList1" class="form-control select2" autocomplete="off">
+                                     <asp:ListItem>सहायक शिक्षक</asp:ListItem>
+                                     <asp:ListItem>प्राथमिक अध्यापक(PRT)</asp:ListItem>
+                                     <asp:ListItem>स्नातकोत्तर शिक्षक(PGT)</asp:ListItem>
+                                     <asp:ListItem>स्नातकोत्तर शिक्षक (TCT)</asp:ListItem>
+                                 </asp:DropDownList>--%>
+                             </div>
+                         </div>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Unique ID<br />
-                                            कर्मचारी आई.डी
-        <span class="fa-pull-right" style="color: red">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="TextBox4" class="form-control" autocomplete="off" placeholder="EDP4561231556"></asp:TextBox>
+                     </div>
+                     <div class="row align-items-end">
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     <br />
+                                     Date of Birth<br />
+                                     जन्मतिथि<span style="color: red">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ReadOnly="true" ID="TXTDOB" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row  align-items-end">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            <br />
-                                            Date of Birth<br />
-                                            जन्मतिथि<span class="fa-pull-right" style="color: red">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="TXTDOB" class="form-control" autocomplete="off" value="1999-12-03" TextMode="date"></asp:TextBox>
+                             </div>
+                         </div>
+                         <%--  <div class="col-md-3">
+    <div class="form-group">
+        <label>Date of Birth(जन्मतिथि)/ शब्दों में <spanstyle="color: red">*</span> </label>
+        <asp:TextBox runat="server" ID="txtDobHindi" class="form-control  mt-4" autocomplete="off"  placeholder=""></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            <br />
-                                            Institution of Posting<br />
-                                            पदस्थी शाला/स्थान<span style="color: red;">*</span></label>
-                                        <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 select2" autocomplete="off">
-                                            <asp:ListItem>भोपाल</asp:ListItem>
-                                            <asp:ListItem>बैतूल</asp:ListItem>
-                                            <asp:ListItem>इंदौर </asp:ListItem>
-                                            <asp:ListItem>जबलपुर</asp:ListItem>
-                                        </asp:DropDownList>
+    </div>
+</div>--%>
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     <br />
+                                     Institution of Posting<br />
+                                     पदस्थी शाला/स्थान<span style="color: red;">*</span></label>
+                                 <asp:TextBox runat="server" ReadOnly="true" ID="ddlPosting" value="भोपाल" class="form-control" autocomplete="off"></asp:TextBox>
+                                 <%--  <asp:DropDownList runat="server" ID="ddlPosting" class="form-control mb-5 " autocomplete="off" >--%>
+                                 <%-- <asp:ListItem>भोपाल</asp:ListItem>
+                                <asp:ListItem>बैतूल</asp:ListItem>
+                                     <asp:ListItem>इंदौर </asp:ListItem>
+                                     <asp:ListItem>जबलपुर</asp:ListItem>
+                                 </asp:DropDownList>--%>
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label class="fs-6">
+                                     <br />
+                                     Dise Code of Institution<br />
+                                     पदस्थी शाला का डाइस कोड<span style="color: red;">*</span></label>
+                                 <asp:TextBox runat="server" ReadOnly="true" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" value="St Theresa Girls School/489754554"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="fs-6">
-                                            <br />
-                                            Dise Code of Institution<br />
-                                            पदस्थी शाला का डाइस कोड<span style="color: red;">*</span></label>
-                                        <asp:TextBox runat="server" ID="txtpriviesdesinnetion" class="form-control" autocomplete="off" placeholder="St Theresa Girls School/489754554"></asp:TextBox>
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     <br />
+                                     Date Of First Posting<br />
+                                     प्रथम नियुक्ति का दिनांक<span style="color: red;">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="txtFirstPosting" class="form-control" autocomplete="off" ReadOnly="true" value="1992-09-17" TextMode="Date"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            <br />
-                                            Date OF First Posting and designation<br />
-                                            प्रथम नियुक्ति का दिनांक एवं पद<span style="color: red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17" TextMode="Date"></asp:TextBox>
-
-                                    </div>
-                                </div>
+                             </div>
+                         </div>
 
 
-                            </div>
-                            <div class="row align-items-end">
+                     </div>
+                     <div class="row align-items-end">
+                         <div class="col-md-3">
+                             <div class="form-group">
+                                 <label>
+                                     <br />
+                                     First Posting  designation<br />
+                                     प्रथम नियुक्ति का पद<span style="color: red;">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="TextBox2" ReadOnly="true" class="form-control" autocomplete="off" value="प्राथमिक अध्यापक"></asp:TextBox>
 
-                                <div class="col-md-3 ">
-                                    <div class="form-group">
-                                        <label>
-                                            Date OF  Posting/Pramotion<br />
-                                            वर्तमान पद पर नियुक्ति/ पदोन्नति दिनांक<span style="color: red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control mt-1" autocomplete="off" value="1996-12-23" TextMode="Date"></asp:TextBox>
+                             </div>
+                         </div>
+                         <div class="col-md-3 ">
+                             <div class="form-group">
+                                 <label>
+                                    Current Date Of Promotion
+                                     <br />
+                                     वर्तमान पद पर नियुक्ति का  दिनांक<span style="color: red;">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="TextBox3" class="form-control " autocomplete="off" ReadOnly="true" value="2024-01-23" TextMode="Date"></asp:TextBox>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3 ">
-                                    <div class="form-group">
-                                        <label>
-                                            Date OF Filiing of annual Immovabel Property Return<br />
-                                            स्थाई संपत्ती विवरण दाखिल करने का दिनांक<span style="color: red;">*</span>
-                                        </label>
-                                        <asp:TextBox runat="server" ID="TextBox5" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date"></asp:TextBox>
+                             </div>
+                         </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
+
+
+                         <div class="col-md-3 ">
+                             <div class="form-group">
+                                 <label>
+                                     Date Of Promotion
+                                     <br />
+                                     पदोन्नति का दिनांक<span style="color: red;">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control " autocomplete="off" value="2024-01-23" TextMode="Date"></asp:TextBox>
+
+                             </div>
+                         </div>
+                         <div class="col-md-3 ">
+                             <div class="form-group">
+                                 <label>
+                                     Date OF Filiing Of Annual Immovabel Property Return<br />
+                                     स्थाई संपत्ती विवरण दाखिल करने का दिनांक<span style="color: red;">*</span>
+                                 </label>
+                                 <asp:TextBox runat="server" ID="TextBox5" class="form-control" autocomplete="off" value="1989-12-10" TextMode="Date"></asp:TextBox>
+
+                             </div>
+                         </div>
+                     </div>
+
+                 </fieldset>
                         <br />
-                        <h5 class="fw-bold ml-3" style="color: var(--vz-primary);">PART-2 Self-Evaluation
+                        <h5 class="fw-bold ml-3" style="color:  var(--vz-primary);">PART-2 Self-Evaluation
   <br />
                             भाग दो-स्वमूल्यांकन</h5>
                         <br />
@@ -466,7 +565,7 @@
                                 <div class="col-md-12">
                                     <table id="Table5" class="table table-bordered table-responsive-lg text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle"  class="text-white">
+                                            <tr valign="middle">
                                                 <th rowspan="2">S.No.<br />
                                                     सरल.क्र </th>
                                                 <th rowspan="2">Class being taught<br />
@@ -480,7 +579,7 @@
                                                     टिप्पणी</th>
                                             </tr>
 
-                                            <tr valign="middle"  class="text-white">
+                                            <tr valign="middle">
                                                 <td>Previous Session<br />
                                                     विगत सत्र</td>
                                                 <td>Present Session<br />
@@ -605,7 +704,7 @@
                                 <div class="col-md-12 table-responsive">
                                     <table id="Table2" class="table table-bordered  text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle"  class="text-white">
+                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
                                                 <th>Class<br />
@@ -745,7 +844,7 @@
                                 <div class="col-md-12 table-responsive">
                                     <table id="Table3" class="table table-bordered  text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle"  class="text-white">
+                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
                                                 <th>Class<br />
@@ -1058,7 +1157,7 @@
                                         Reasons Of Not achieving target
                                  <br />
                                         लक्ष्य  से कम उपलब्धि के करण</label>
-                                    <textarea class="form-control mb-2 fw-bold" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+                                    <textarea class="form-control mb-3fw-bold" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                 </div>
                             </div>
 
@@ -1067,103 +1166,237 @@
                         </fieldset>
                         <br />
 
-                        <fieldset>
-                            <legend>Role in academic / अकादमिक कार्यो में भूमिका</legend>
-                            <div class="row mt-3">
-                                <div class="col-md-4">
-                                    <label>
-                                        Use of  teaching  learning aid
-                                 <br />
-                                        शिक्षक सहायक सामग्री का उपयोग
-                                    </label>
-                                    <asp:TextBox runat="server" ID="txtteaching" CssClass="form-control fw-bold" placeholder="Nil"></asp:TextBox>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>
-                                        Use of  lesson plan<br />
-                                        पाठ्य योजना का उपयोग  
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox10" CssClass="form-control  fw-bold" placeholder="Nil"></asp:TextBox>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>
-                                        Innovation and impect<br />
-                                        नवाचार तथा उसका प्रभाव  
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox11" CssClass="form-control  fw-bold" S placeholder="Nil"></asp:TextBox>
-                                </div>
-                            </div>
+                                      <fieldset>
+                  <legend>Role in academic/ 
+                    
+                      अकादमिक कार्यो में भूमिका</legend>
+                  <%--  <div class="row ">
+                      <div class="col-md-4">
+                          <label>
+                              Use of  teaching  learning aid
+                              <br />
+                              शिक्षक सहायक सामग्री का उपयोग 
+                          </label>
+                          <asp:TextBox runat="server" ID="txtteaching" CssClass="form-control"></asp:TextBox>
+                      </div>
+                      <div class="col-md-4">
+                          <label>
+                              Use of  lesson plan<br />
+                              पाठ्य योजना का उपयोग  
+                          </label>
+                          <asp:TextBox runat="server" ID="TextBox1" CssClass="form-control"></asp:TextBox>
+                      </div>
+                      <div class="col-md-4">
+                          <label>
+                              Innovation and impect<br />
+                              नवाचार तथा उसका प्रभाव  
+                          </label>
+                          <asp:TextBox runat="server" ID="TextBox2" CssClass="form-control"></asp:TextBox>
+                      </div>
+                  </div>
 
 
-                            <div class="row mt-3">
-                                <div class="col-md-4">
-                                    <label>
-                                        Checking of notebook's of students<br />
-                                        छात्रों की अभ्यास पुस्तिका की जांच
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox12" CssClass="form-control fw-bold" placeholder="Nil"></asp:TextBox>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>
-                                        Remedial teaching
-                                 <br />
-                                        निदात्मक शिक्ष
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox13" CssClass="form-control  fw-bold" placeholder="Nil"></asp:TextBox>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>
-                                        Extra Classes<br />
-                                        अतिरिक्त कक्षा संचालन
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox14" CssClass="form-control fw-bold" placeholder="Nil"></asp:TextBox>
-                                </div>
-                            </div>
+                  <div class="row mt-3">
+                      <div class="col-md-4">
+                          <label>
+                              Checking of notebook's of students<br />
+                              छात्रों की अभ्यास पुस्तिका की जांच 
+                          </label>
+                          <asp:TextBox runat="server" ID="TextBox3" CssClass="form-control"></asp:TextBox>
+                      </div>
+                      <div class="col-md-4">
+                          <label>
+                              Remedial teaching
+                              <br />
+                              निदात्मक शिक्षण
+                          </label>
+                          <asp:TextBox runat="server" ID="TextBox4" CssClass="form-control "></asp:TextBox>
+                      </div>
+                      <div class="col-md-4">
+                          <label>
+                              Extra Classes<br />
+                              अतिरिक्त कक्षा संचालन
+                          </label>
+                          <asp:TextBox runat="server" ID="TextBox5" CssClass="form-control "></asp:TextBox>
+                      </div>
+                  </div>--%>
+                  <table class="table table-bordered mt-3">
+                      <thead>
+                          <tr>
+
+                              <th>S.No.<br />
+                                  सरल क्र.</th>
+                              <th>Role in academic<br />
+
+                                  अकादमिक कार्यो में भूमिका</th>
+                              <th>Please give details of the notable works done on the following points<br />
+                                  कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्यो का विवरण दे</th>
+
+                          </tr>
+                      </thead>
+                      <tr>
+                          <td class="text-center" style="position: relative; top: 10px">1</td>
+                          <td>Use of  teaching  learning aid
+<br />
+                              शिक्षक सहायक सामग्री का उपयोग 
+                          </td>
+                          <td>
+                              <textarea class="form-control" placeholder="Nil" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
 
 
-                        </fieldset>
+                      </tr>
+                      <tr>
+                          <td class="text-center" style="position: relative; top: 10px">2</td>
+                          <td>Use of  lesson plan<br />
+                              पाठ्य योजना का उपयोग 
+                          </td>
+                          <td>
+                              <textarea class="form-control " placeholder="Nil" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+
+
+                      </tr>
+
+                      <tr>
+
+                          <td class="text-center" style="position: relative; top: 10px">3</td>
+                          <td>Innovation and impect<br />
+                              नवाचार तथा उसका प्रभाव  
+                          </td>
+                          <td>
+                              <textarea class="form-control" placeholder="Nil" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                      </tr>
+
+
+
+                      <tr>
+                          <td class="text-center" style="position: relative; top: 10px">4</td>
+                          <td>Checking of notebook's of students<br />
+                              छात्रों की अभ्यास पुस्तिका की जांच 
+                          </td>
+                          <td>
+                              <textarea class="form-control" placeholder="Nil" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+
+
+                      </tr>
+                      <tr>
+                          <td class="text-center" style="position: relative; top: 10px">5</td>
+                          <td>Remedial teaching
+ <br />
+                              निदात्मक शिक्षण
+                          </td>
+                          <td>
+                              <textarea class="form-control " placeholder="Nil" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+
+
+                      </tr>
+
+                      <tr>
+
+                          <td class="text-center" style="position: relative; top: 10px">6</td>
+                          <td>Extra Classes<br />
+                              अतिरिक्त कक्षा संचालन
+                          </td>
+                          <td>
+                              <textarea class="form-control" rows="1" placeholder="Nil" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                      </tr>
+
+
+
+                  </table>
+
+
+              </fieldset>
                         <br />
 
 
-                        <fieldset>
-                            <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
+                                       <fieldset>
+                   <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
 
-                            <div class="row  align-items-end">
-                                <div class="col-md-4">
-                                    <label>
-                                        Sports/Literary/Cultural Activities
-    <br />
-                                        खेल/साहित्यिक/सांस्कृतिक गतिविधियाँ 
-                                    </label>
-                                    <asp:TextBox runat="server" ID="TextBox15" CssClass="form-control mt-3 fw-bold"  placeholder="Nil"></asp:TextBox>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>
-                                        Extra Ordinary Work in Hygiene/Environment
-    <br />
-                                        स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य</label>
-                                    <asp:TextBox runat="server" ID="TextBox16" CssClass="form-control  fw-bold" placeholder="Nil"></asp:TextBox>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>
-                                        Use of ICT in teaching and learning<br />
-                                        शिक्षण एवं सिखने में आई सी टी का उपयोग</label>
-                                    <asp:TextBox runat="server" ID="TextBox17" CssClass="form-control  fw-bold"  placeholder="Nil"></asp:TextBox>
-                                </div>
-                            </div>
+                   <%-- <div class="row mt-3">
+                       <div class="col-md-4">
+                           <label>
+                               Sports/Literary/Cultural Activities
+                               <br />
+                               खेल/साहित्यिक/सांस्कृतिक गतिविधियाँ 
+                           </label>
+                           <asp:TextBox runat="server" ID="TextBox6" CssClass="form-control "></asp:TextBox>
+                       </div>
+                       <div class="col-md-4">
+                           <label>
+                               Extra Ordinary Work in Hygiene/Environment
+                               <br />
+                               स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य</label>
+                           <asp:TextBox runat="server" ID="TextBox7" CssClass="form-control "></asp:TextBox>
+                       </div>
+                       <div class="col-md-4">
+                           <label>
+                               Use of ICT in teaching and learning<br />
+                               शिक्षण एवं सिखने में आई सी टी का उपयोग</label>
+                           <asp:TextBox runat="server" ID="TextBox8" CssClass="form-control "></asp:TextBox>
+                       </div>
+                   </div>--%>
+                   <table class="table table-bordered mt-3">
+                       <thead>
+                           <tr>
+
+                               <th>S.No.<br />
+                                   सरल क्र.</th>
+                               <th>Extraacurricular Activities
+                                   <br />
+                                   पाठ्येत्तर गतिविधियों मे भूमिका
+                                   <br />
+
+                                   अकादमिक कार्यो में भूमिका</th>
+                               <th>Please give details of the notable works done on the following points<br />
+                                   कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्यो का विवरण दे</th>
+
+                           </tr>
+                       </thead>
+                       <tr>
+                           <td class="text-center" style="position: relative; top: 10px">1</td>
+                           <td>Sports/Literary/Cultural Activities
+ <br />
+                               खेल/साहित्यिक/सांस्कृतिक गतिविधियाँ 
+                           </td>
+                           <td>
+                               <textarea class="form-control" rows="1" placeholder="Nil" oninput="autoResize(this)" autocomplete="off"></textarea></td>
 
 
+                       </tr>
+                       <tr>
+                           <td class="text-center" style="position: relative; top: 10px">2</td>
+                           <td>Extra Ordinary Work in Hygiene/Environment
+<br />
+                               स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य
+                           </td>
+                           <td>
+                               <textarea class="form-control " rows="1" placeholder="Nil" oninput="autoResize(this)" autocomplete="off"></textarea></td>
 
-                        </fieldset>
+
+                       </tr>
+
+                       <tr>
+
+                           <td class="text-center" style="position: relative; top: 10px">3</td>
+                           <td>Use of ICT in teaching and learning<br />
+                               शिक्षण एवं सिखने में आई सी टी का उपयोग
+                           </td>
+                           <td>
+                               <textarea class="form-control " placeholder="Nil" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                       </tr>
+                   </table>
+
+
+               </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Academic trsining attended during  Appraisal period /प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता</legend>
+                            <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे सहभागिता</legend>
 
                             <div class="row">
                                 <div class="col-md-12">
                                     <table id="Table4" class="table table-bordered table-responsive-lg text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle"  class="text-white">
+                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
                                                 <th>Name of Training<br />
@@ -1171,7 +1404,7 @@
                                                <%-- <th>Subject<br />
                                                     विषय</th>--%>
                                                 <th>Period of Training (Days)<br />
-                                                   प्रशिक्षण की अवधि (दिन में)</th>
+                                                    प्रशिक्षण की अवधि (दिन में)</th>
                                                 <th>Result/Grade<br />
                                                     उपलब्धि/ग्रेड</th>
                                             </tr>
@@ -1181,9 +1414,9 @@
                                                 <td>1</td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="स्कूली शिक्षा"></asp:TextBox></td>
-                                             <%--   <td>
-                                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>--%>
                                                 <td>
+                                                    <%--<asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="जीव विज्ञान"></asp:TextBox></td>
+                                                <td>--%>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="45 दिन"></asp:TextBox></td>
                                                 <td>
                                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="A"></asp:TextBox></td>
@@ -1205,7 +1438,7 @@
                                 <div class="col-md-12">
                                     <label>
                                     </label>
-                                    <textarea class="form-control mb-2 fw-bold" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+                                    <textarea class="form-control mb-3fw-bold" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                 </div>
                             </div>
 
@@ -1225,251 +1458,242 @@
     <%-- reporting officer--%>
 
     <div class="modal  fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: var(--vz-primary);">
+     <div class="modal-dialog modal-xl">
+         <div class="modal-content">
+             <div class="modal-header" style="background-color: var(--vz-primary);">
+                 <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                 <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">EMPLOYEE  ACR FORM</h3>
+                 <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div runat="server" id="Div1">
+                     <fieldset>
+                         <div class="fw-bold">Please give comment of agreement or disagreement on the achievement mentioned by the officer reported upon in self assessment.Please give reasons in case of disagreement and refer to communication made to the officer reported upon in this regard</div>
+                         <div class="fw-bold">आवेदक अधिकारी/शिक्षक द्वारा स्वमूल्यांकन में उल्लेखित उपलब्धि के संबंध में सहमति/असहमति की टिप्पणी | असहमति की स्थिति में कारण एवं इस संबंध में किये गये पत्राचार का विवरण एवं स्केल पॉइंट में प्रदर्शन </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-md-3">
+                                 <label class="fw-bold fs-5">Employee Name/Unique ID</label>
+                                 <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+                             </div>
+                         </div><br />
+                         <legend>To be filled by reporting officer / प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
+                         <table class="table table-bordered mt-3">
+    <thead>
+        <tr>
 
-                    <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+            <th>S.No.<br />
+                सरल क्र.</th>
+            <th>Achievement shown in self assessment<br />
+                स्वमूल्यांकन में दर्शित उपलब्धि</th>
+            <th>Scale Point<br />
+                स्केल बिन्दु</th>
+            <th>Assessment<br />
+                मूल्यांकन</th>
+            <th style="width:400px;">Remark<br />
+                अभियुक्ति</th>
+        </tr>
+    </thead>
+    <tr>
+        <td class="text-center" style="position: relative; top: 10px">1</td>
+        <td>
+            <h4 class="fw-bold">Completion of curriculum<br />
+                पाठ्यक्रम को पूरा करना</h4>
+        </td>
+        <td class="text-center">15</td>
+        <td class="text-center">
+            <asp:TextBox runat="server" placeholder="10" CssClass="form-control w-100 text-center"></asp:TextBox>
 
-                    <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">EMPLOYEE  ACR FORM</h3>
-                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div runat="server" id="Div1">
-                        <fieldset>
+        </td>
+        <td>
+            <textarea
+                class="form-control  w-100" id="workdescription9" placeholder="hardworking student " rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
 
+        </td>
 
+    </tr>
+    <tr>
+        <td class="text-center" style="position: relative; top: 10px">2</td>
+        <td>
+            <h4 class="fw-bold">Improving attendance <br />of children<br />
+                छात्र उपस्थिति में वृध्दि</h4>
+        </td>
+        <td class="text-center">05</td>
+         <td class="text-center">
+            <asp:TextBox runat="server" placeholder="3" CssClass="form-control text-center w-100"></asp:TextBox></td>
+        <td>
+            <textarea class="form-control  w-100" placeholder="hardworking student " id="workdescription10" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
 
-                            <div class="fw-bold">Please give comment of agreement or disagreement on the achievement mentioned by the officer reported upon in self assessment.Please give reasons in case of disagreement and refer to communication made to the officer reported upon in this regard</div>
-                            <div class="fw-bold">आवेदक अधिकारी/शिक्षक द्वारा स्वमूल्यांकन में उल्लेखित उपलब्धि के संबंध में सहमति/असहमति की टिप्पणी | असहमति की स्थिति में कारण एवं इस संबंध में किये गये पत्राचार का विवरण एवं स्केल पॉइंट में प्रदर्शन </div>
-                            <br />
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <label class="fw-bold fs-5">Employee Name/Unique ID</label>
-                                    <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+    </tr>
 
-                                </div>
+    <tr>
 
-                            </div><br />
-                            <legend>To be filled by reporting officer / प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
-
-
-
-                            <table class="table table-bordered mt-3">
-                                <thead>
-                                    <tr>
-
-                                        <th>S.No.<br />
-                                            सरल क्र.</th>
-                                        <th>Achievement shown in self assessment<br />
-                                            स्वमूल्यांकन में दर्शित उपलब्धि</th>
-                                        <th>Scale Point<br />
-                                            स्केल बिन्दु</th>
-                                        <th>Assessment<br />
-                                            मूल्यांकन</th>
-                                        <th>Remark<br />
-                                            अभियुक्ति</th>
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td>
-                                        <h4 class="fw-bold">Completion of curriculum<br />
-                                            पाठ्यक्रम को पूरा करना</h4>
-                                    </td>
-                                    <td class="text-center">15</td>
-                                    <td>
-                                        <asp:TextBox runat="server" CssClass="form-control text-center fw-bold" placeholder="10"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold " ID="workdescription9" autocomplete="off" placeholder="hardworking student"></asp:TextBox>
-
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td class="text-center">2</td>
-                                    <td>
-                                        <h4 class="fw-bold">Improving attendance of children<br />
-                                            छात्र उपस्थिति में वृध्दि</h4>
-                                    </td>
-                                    <td class="text-center">05</td>
-                                    <td>
-                                        <asp:TextBox runat="server" CssClass="form-control  text-center fw-bold" placeholder="3"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox runat="server" class="form-control  text-center fw-bold  text-center fw-bold" ID="workdescription10" autocomplete="off" placeholder="hardworking student "></asp:TextBox></td>
-                                </tr>
-                                <tr>
-
-                                    <td class="text-center">3</td>
-                                    <td>
-                                        <h4 class="fw-bold">Role in academic<br />
-                                            अकादमिक कार्यो में भूमिका:-<br />
-                                        </h4>
-                                        (a) Use of teaching learning aid<br />
-                                        शिक्षण सहायक सामग्री का उपयोग<br />
-                                        (b)Use of lesson plan<br />
-                                        पाठय योजना का उपयोग<br />
-                                        (c)Innovation and Impact<br />
-                                        नवाचार तथा उसका प्रभाव<br />
-                                        (d)checking  of notebook of student<br />
-                                        छात्रो की अभ्यास पुस्तिका की जाँच<br />
-                                        (e)Remendial teaching<br />
-                                        निदानात्मक शिक्षण<br />
-                                        (f)Extra classes<br />
-                                        अतिरिक्त कक्षा संचालन<br />
-                                    </td>
-                                    <td class="text-center">30</td>
-                                    <td style="position: relative; top: 40px;">
-                                        <asp:TextBox runat="server" CssClass="form-control  text-center fw-bold" placeholder="5"></asp:TextBox>
-                                        <br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox>
-                                        <br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox><br />
-                                    </td>
-                                    <td style="position: relative; top: 40px;">
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold" ID="TextBox1" autocomplete="off" placeholder="hardworking student"></asp:TextBox><br />
-
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold mt-2" ID="workdescription4" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold mt-2" ID="workdescription5" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2 " ID="workdescription6" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control  text-center  fw-bold mt-2 " ID="workdescription7" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold mt-2 " ID="workdescription8" autocomplete="off" placeholder="hardworking student "></asp:TextBox>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">4</td>
-                                    <td>
-                                        <h4 class="fw-bold">Extracurricular activities<br />
-                                            पाठयेत्तर गतिविधियो में भूमिका:-</h4>
-
-                                        (a)Sports/Literacy/Cultural Activities<br />
-                                        खेल/साहित्यिक/सास्कृतिक गतिविधियाँ<br />
-                                        (b)Extra ordinary workin Hygiene/Environment<br />
-                                        स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य<br />
-                                        (c)Use of ICT in teaching and learning<br />
-                                        शिक्षण एवं सिखाने में आई सी टी उपयोग
-                                    </td>
-                                    <td class="text-center" style="position: relative; top: 100px;">15</td>
-                                    <td style="position: relative; top: 50px">
-                                        <asp:TextBox runat="server" CssClass="form-control   text-center fw-bold" placeholder="5"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2  text-center fw-bold" placeholder="5"></asp:TextBox></td>
-                                    <td style="position: relative; top: 50px">
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold " ID="workdescription17" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control   fw-bold  mt-2" ID="workdescription18" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2" ID="workdescription19" autocomplete="off" placeholder="hardworking student "></asp:TextBox></td>
-
-                                </tr>
-
-                                <tr>
-                                    <td class="text-center" style="position: relative; top: 100px">5</td>
-                                    <td>
-                                        <h4 class="fw-bold">Individual Qualities<br />
-                                            व्यक्तिगत विशिष्टताये:-</h4>
+        <td class="text-center" style="position: relative; top: 130px">3</td>
+        <td>
+            <h4 class="fw-bold">Role in academic<br />
+                अकादमिक कार्यो में भूमिका:-<br />
+            </h4>
+            (a) Use of teaching learning aid<br />
+            शिक्षण सहायक सामग्री का उपयोग<br />
+            (b)Use of lesson plan<br />
+            पाठय योजना का उपयोग<br />
+            (c)Innovation and Impact<br />
+            नवाचार तथा उसका प्रभाव<br />
+            (d)checking  of notebook of student<br />
+            छात्रो की अभ्यास पुस्तिका की जाँच<br />
+            (e)Remendial teaching<br />
+            निदानात्मक शिक्षण<br />
+            (f)Extra classes<br />
+            अतिरिक्त कक्षा संचालन<br />
+        </td>
+        <td class="text-center" style="position: relative; top: 130px;">30</td>
+        <td style="position: relative; top: 40px;" class="text-center">
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox>
+            <br />                     
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control text-center mt-2 w-100"></asp:TextBox>
+            <br />                                            
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control text-center mt-2 w-100"></asp:TextBox><br />          
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control text-center mt-2 w-100"></asp:TextBox><br />         
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control text-center mt-2 w-100"></asp:TextBox><br />         
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control text-center mt-2 w-100"></asp:TextBox><br />
+        </td>
 
 
-                                        (a)Attitude of work and sense of responsibility<br />
-                                        कार्य के प्रति अभिव्यक्ति एवं जिम्मेदारी का बोध<br />
-                                        (b)Maintenance of discipline<br />
-                                        अनुशासन<br />
-                                        (c)Communication skill<br />
-                                        संप्रेषण कौशल<br />
-                                        (d)Capacity to work in a team with team spirit and inter Personal
-                                   relations<br />
-                                        टीम में टीम भावना में काम करने की क्षमता एवं परस्परसंबंध
 
-                                    </td>
-                                    <td class="text-center" style="position: relative; top: 100px;">30</td>
-                                    <td style="position: relative; top: 60px;">
-                                        <asp:TextBox runat="server" CssClass="form-control text-center fw-bold " placeholder="5"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2 text-center fw-bold" placeholder="3"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control  mt-2 text-center fw-bold" placeholder="7"></asp:TextBox><br />
-                                        <asp:TextBox runat="server" CssClass="form-control mt-2 text-center fw-bold" placeholder="5"></asp:TextBox></td>
-                                    <td style="position: relative; top: 60px;">
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold" ID="workdescription13" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control  text-center fw-bold  mt-2" ID="workdescription14" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2" ID="workdescription15" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold  mt-2 " ID="workdescription16" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
+        <td style="position: relative; top: 40px;">
+            <textarea class="form-control  w-100" id="workdescription3" placeholder="hardworking student " rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1 w-100" id="workdescription4" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1 w-100" id="workdescription5" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1 w-100" id="workdescription6" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1 w-100" id="workdescription7" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1 w-100" id="workdescription8" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+    </tr>
+    <tr>
+        <td class="text-center" style="position: relative; top: 100px">4</td>
+        <td>
+            <h4 class="fw-bold">Extracurricular activities<br />
+                पाठयेत्तर गतिविधियो में भूमिका:-</h4>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center mt-2">6</td>
-                                    <td>
-                                        <h4 class="fw-bold">Participation in academic tranning<br />
-                                            अवधि में प्रशिक्षण में सहभागिता </h4>
-                                    </td>
-                                    <td class="text-center mt-2">05</td>
-                                    <td>
-                                        <asp:TextBox runat="server" CssClass="form-control text-center fw-bold" placeholder="3"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold " ID="workdescription123" autocomplete="off" placeholder="hardworking student"></asp:TextBox><br />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">Total
-                                        <br />
-                                        योग</td>
-                                    <td class="text-center">100</td>
-                                    <td>
-                                        <asp:TextBox runat="server" CssClass="form-control text-center fw-bold" placeholder="81"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox runat="server" class="form-control text-center fw-bold " ID="workdescription11" autocomplete="off" placeholder="hardworking student "></asp:TextBox><br />
-                                    </td>
-                                </tr>
+            (a)Sports/Literacy/Cultural Activities<br />
+            खेल/साहित्यिक/सास्कृतिक गतिविधियाँ<br />
+            (b)Extra ordinary workin<br /> Hygiene/Environment<br />
+            स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य<br />
+            (c)Use of ICT in teaching and learning<br />
+            शिक्षण एवं सिखाने में आई सी टी उपयोग
+        </td>
+        <td class="text-center" style="position: relative; top: 100px;">15</td>
+        <td style="position: relative; top: 50px" class="text-center">
+            <asp:TextBox runat="server" placeholder="5"  CssClass="form-control  text-center w-100"></asp:TextBox><br />
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox><br />
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox></td>
+        <td style="position: relative; top: 50px">
+            <textarea class="form-control  w-100"placeholder="hardworking student "id="workdescription17" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />                    
+            <textarea class="form-control  w-100  mt-1" placeholder="hardworking student" id="workdescription18" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />                  
+            <textarea class="form-control  w-100 mt-1" placeholder="hardworking student" id="workdescription19" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
 
-                            </table>
+    </tr>
 
-                            <fieldset style="position: relative; right: 10px;">
+    <tr>
 
-                                <legend>Grade</legend>
-                                <div class="row align-items-end">
-                                    <div class="col-md-4 ">
-                                        <label>
-                                            Allegiance
-                                            <br />
-                                            सन्निष्ठा<span style="color: red">*</span></label>
-                                        <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <label>
-                                            Please comment on overall assessment of the Teacher<br />
-                                            शिक्षक के समग्र मूल्यांकन पर टिप्पणी<span style="color: red">*</span></label>
-                                        <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
-                                    </div>
-
-                                    <div class="col-md-4 ">
-                                        <label>
-                                            Grade
-                                            <br />
-                                            शिक्षक के समग्र मूल्यांकन श्रेणी<span style="color: red">*</span></label>
-                                        <asp:DropDownList runat="server" CssClass=" form-control ">
-
-                                            <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
+        <td class="text-center" style="position: relative; top: 100px">5</td>
+        <td>
+            <h4 class="fw-bold">Individual Qualities<br />
+                व्यक्तिगत विशिष्टताये:-</h4>
 
 
-                                        </asp:DropDownList>
-                                    </div>
-                                </div>
-                            </fieldset>
+            (a)Attitude of work and <br />sense of responsibility<br />
+            कार्य के प्रति अभिव्यक्ति एवं जिम्मेदारी का बोध<br />
+            (b)Maintenance of discipline<br />
+            अनुशासन<br />
+            (c)Communication skill<br />
+            संप्रेषण कौशल<br />
+            (d)Capacity to work in a team with<br /> team spirit and inter Personal
+                relations<br />
+            टीम में टीम भावना में काम <br />करने की क्षमता एवं परस्परसंबंध
 
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
+        </td>
+        <td class="text-center" style="position: relative; top: 100px;">30</td>
+        <td style="position: relative; top: 60px;" class="text-center">
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control  text-center   w-100"></asp:TextBox><br />
+            <asp:TextBox runat="server" placeholder="3" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox><br />
+            <asp:TextBox runat="server" placeholder="7" CssClass="form-control  text-center  mt-2 w-100"></asp:TextBox><br />
+            <asp:TextBox runat="server" placeholder="5" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox></td>
+        <td style="position: relative; top: 60px;">
+            <textarea class="form-control " id="workdescription13" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control mt-1" id="workdescription14" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1" id="workdescription15" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+            <textarea class="form-control  mt-1 " id="workdescription16" placeholder="hardworking student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+
+        </td>
+    </tr>
+    <tr>
+
+        <td class="text-center mt-2">6</td>
+        <td>
+            <h4 class="fw-bold">Participation in <br />academic tranning<br />
+                अवधि में प्रशिक्षण में सहभागिता </h4>
+        </td>
+        <td class="text-center mt-2">05</td>
+         <td class="text-center">
+            <asp:TextBox runat="server" placeholder="3" CssClass="form-control text-center w-100"></asp:TextBox></td>
+        <td>
+            <textarea class="form-control  w-100" placeholder="hardworking student" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+        </td>
+    </tr>
+    <tr>
+        <td class="text-center">7</td>
+        <td class="text-center">Total
+            <br />
+            योग</td>
+        <td class="text-center">
+        100
+         <td class="text-center">
+            <asp:TextBox runat="server" placeholder="81" CssClass="form-control text-center w-100"></asp:TextBox></td>
+        <td>
+            <textarea class="form-control  w-100" placeholder="hardworking student" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+        </td>
+    </tr>
+
+</table>
 
 
+                        <fieldset style="position: relative; right: 10px;">
+    <legend>Grade</legend>
+    <div class="row align-items-end">
+        <div class="col-md-4 ">
+            <label>
+                Allegiance
+                <br />
+                सन्निष्ठा</label>
+            <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+        </div>
+        <div class="col-md-4">
+            <label>
+                Please comment on overall assessment of the Teacher<br />
+                शिक्षक के समग्र मूल्यांकन पर टिप्पणी</label>
+            <textarea class="form-control  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
+        </div>
+        <div class="col-md-4 ">
+            <label>
+                Grade
+                <br />
+                शिक्षक के समग्र मूल्यांकन श्रेणी</label>
+            <asp:DropDownList runat="server" CssClass=" form-control select2">
+                <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
+                <asp:ListItem>A+/उत्कृष्ट</asp:ListItem>
+            </asp:DropDownList>
         </div>
     </div>
+</fieldset>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-
+   
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -1495,6 +1719,38 @@
             }
         }
     </script>
+
+     <script>
+         function myFunctionRemark1() {
+             var ForwordTo = document.getElementById("ddlremark1").value;
+             if (ForwordTo == "2") {
+                 document.getElementById('remark').style.display = "block";
+             }
+             else if (ForwordTo == "3") {
+
+                 document.getElementById('remark').style.display = "block";
+             }
+             else {
+                 document.getElementById('remark').style.display = "none";
+             }
+         }
+     </script>
+      <script>
+          function myFunctionRemark2() {
+              var ForwordTo = document.getElementById("ddlremark2").value;
+              if (ForwordTo == "2") {
+                  document.getElementById('remark2').style.display = "block";
+              }
+              else if (ForwordTo == "3") {
+
+                  document.getElementById('remark2').style.display = "block";
+              }
+              else {
+                  document.getElementById('remark2').style.display = "none";
+              }
+          }
+      </script>
+
 
     <script>
         debugger;

@@ -89,7 +89,7 @@ ACR report filled by the reporting officer / रिपोर्टिंग अ�
                         <div class="form-group">
                             <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
-                    </div>
+                    </div></div>
                     <div class="row">
                         <div class="col-md-12">
                             <table id="Table1" class="table table-bordered text-center" runat="server">
@@ -150,7 +150,7 @@ ACR report filled by the reporting officer / रिपोर्टिंग अ�
                             </table>
                         </div>
                     </div>
-                </div>
+                
             </fieldset>
         </div>
     </div>

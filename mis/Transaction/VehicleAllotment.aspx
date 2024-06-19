@@ -187,6 +187,7 @@
                                 <br />
                                 वाहन संख्या<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>MP04HC4163</option>
                                 <option>MP04CV7194</option>
                                 <option>MP04CG9580</option>
@@ -308,14 +309,14 @@
             <fieldset id="VEHICLEALLOTMENTDetails" style="display: none">
                 <legend>VEHICLE ALLOTMENT / वाहन आवंटन </legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <div class="form-group">
                             <span>Order Number
                                 <br />
                                 आदेश नंबर<span style="color: red">*</span></span>
                             <input type="text" maxlength="20" id="ctl00_ContentBody_txtOrederNumber" class="form-control" placeholder="Enter Order Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Date
@@ -357,7 +358,7 @@
                     </div>--%>
                     <div class="col-md-5">
                         <div class="form-group">
-                            <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Vehicle Allotted</button>
+                            <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Search</button>
                         </div>
                     </div>
                 </div>

@@ -49,6 +49,7 @@
                                 <br />
                                 वाहन संख्या<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>MP04HC4163</option>
                                 <option>MP04CV7194</option>
                                 <option>MP04CG9580</option>
@@ -64,7 +65,7 @@
                                 <br />
                                 प्रकार<span style="color: red">*</span></span>
                             <select class="form-control select2">
-                                <option value="0">--Select--</option>
+                                <option>--Select--</option>
                                 <option value="1" selected="selected">Hatchback</option>
                                 <option value="2">Sedan</option>
                                 <option value="3">SUV</option>
@@ -79,6 +80,7 @@
                                 <br />
                                 रखरखाव का प्रकार<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
                                 <option>Servicing</option>
                                 <option>Battery</option>
                                 <option>Headlights</option>
@@ -178,7 +180,9 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <asp:Button runat="server" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border" OnClick="btSaveRcd_Click" Text="Save" ID="btSaveRcd" />
+                        <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
+
+                        <%--<asp:Button runat="server" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border" OnClick="btSaveRcd_Click" Text="Save" ID="btSaveRcd" />--%>
                         <%--<button type="button" class="fw-bold Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
                         <a href="VehicleMaintenance.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
@@ -187,7 +191,7 @@
             <br />
             <fieldset>
                 <legend>Details / विवरण</legend>
-                <div class="row" id="fisrtTimeData" runat="server">
+                <div class="row" id="NoRcdTable">
                     <div class="col-md-12">
                         <div>
                             <table class="datatable table table-bordered dataTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
@@ -200,7 +204,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" id="SearchTimeData" runat="server" visible="false">
+                <div class="row" id="SearchTable" style="display: none">
+                    <br />
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <div>
@@ -216,11 +234,11 @@
                                             <th scope="col">Maintenance Type<br />
                                                 रखरखाव प्रकार</th>
                                             <th scope="col">Previous Reading Km<br />
-                                                पिछला रीडिंग किमी</th>
+                                                पिछला रीडिंग किलोमीटर में</th>
                                             <th scope="col">Current Reading Km<br />
-                                                वर्तमान रीडिंग किमी</th>
+                                                वर्तमान रीडिंग किलोमीटर में</th>
                                             <th scope="col">Difference Km Reading<br />
-                                                रीडिंग</th>
+                                                किलोमीटर रीडिंग में अंतर</th>
                                             <th scope="col">Bill Amount<br />
                                                 बिल राशि</th>
                                             <th scope="col">Vehicle Expenses Details<br />
@@ -243,13 +261,13 @@
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblMaintenance_Type">Servicing</span>
                                             </td>
                                             <td>
-                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblPreviousReadingKm">0</span>
+                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblPreviousReadingKm">20000</span>
                                             </td>
                                             <td>
-                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKm_Reading">250000</span>
+                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKm_Reading">35000</span>
                                             </td>
                                             <td>
-                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKM_ReadingDiff">250000</span>
+                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblKM_ReadingDiff">15000</span>
                                             </td>
                                             <td>
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblBill_Amount">5000.00</span>
@@ -264,9 +282,11 @@
                                             </td>
                                         </tr>
                                         <tr style="font-weight: bold;">
-                                            <td align="right" colspan="9">Total</td>
+                                            <td align="right" colspan="7">Total</td>
                                             <td>5000.00</td>
-
+                                           
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -279,5 +299,11 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            document.getElementById("SearchTable").style.display = "block";
+            document.getElementById("NoRcdTable").style.display = "none";
+        });
+    </script>
 </asp:Content>
 
