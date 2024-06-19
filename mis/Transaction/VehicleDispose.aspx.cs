@@ -23,6 +23,7 @@ public partial class mis_Transaction_VehicleDisposeReport : System.Web.UI.Page
             txt5.Text = "Tata Motors";
             txt6.Text = "2022";
             VehicleAllotementNo.Visible= true;
+            VEHICLEALLOTMENTDetails.Visible= true;
         }
         else if (ddlVehicleNumber.SelectedValue == "2")
         {
@@ -33,6 +34,8 @@ public partial class mis_Transaction_VehicleDisposeReport : System.Web.UI.Page
             txt5.Text = "Tata Motors";
             txt6.Text = "2023";
             VehicleAllotementNo.Visible = true;
+            VEHICLEALLOTMENTDetails.Visible = true;
+
         }
         else
         {
@@ -43,6 +46,7 @@ public partial class mis_Transaction_VehicleDisposeReport : System.Web.UI.Page
             txt5.Text = "";
             txt6.Text = "";
             VehicleAllotementNo.Visible = false;
+            VEHICLEALLOTMENTDetails.Visible= false; 
         }
         
     }
