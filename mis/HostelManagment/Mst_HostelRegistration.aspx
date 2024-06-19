@@ -35,33 +35,33 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter Hostel Name<br />
+                                <label>Enter Hostel Name/<br />
                                     छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Hostel Name" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter Total Number of Rooms<br />
+                                <label>Enter Total Number of Rooms/<br />
                                     कक्ष की कुल संख्या दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Total Number of Rooms" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Select Hostel Type<br />
+                                <label>Select Hostel Type/<br />
                                     छात्रावास का प्रकार चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option selected="selected" value="0">--Select --</option>
-                                    <option value="1">KGBV Girls Hostel</option>
-                                    <option value="2">KGBV Boys Hostel</option>
-                                    <option value="3">KGBV Combine Hostel</option>
+                                    <option value="1"> Girls </option>
+                                    <option value="2"> Boys </option>
+                                    <option value="3"> Combine </option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter Intake Capacity of Students<br />
+                                <label>Enter Intake Capacity of Students/<br />
                                     छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Intake Capacity of Students" />
                             </div>
@@ -70,23 +70,34 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter Hostel Address<br />
+                                <label>Enter Hostel Address/<br />
                                     छात्रावास पता दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Address" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter Hostel Incharge Name<br />
+                                <label>Enter Hostel Incharge Name/<br />
                                     छात्रावास प्रभारी का नाम दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Hostel Incharge Name" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Enter Mobile Number<br />
+                                <label>Enter Mobile Number/<br />
                                     मोबाइल नंबर दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Mobile Number" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Select Mess Facility Available/ <br />
+                                    मेस सुविधा उपलब्ध चुनें<span style="color: red;">*</span></label>
+                                <select class="form-control select2">
+                                    <option selected="selected" value="0">--Select --</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -162,7 +173,7 @@
 
                                         </td>
                                         <td align="center" valign="middle">
-                                            <a>KGBV Girls Hostel</a>
+                                            <a> Girls </a>
 
                                         </td>
                                         <td align="center" valign="middle">

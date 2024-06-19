@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="RoomAllocation.aspx.cs" Inherits="mis_HostelManagment_RoomAllocation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row page-titles mb-4">
@@ -22,23 +23,52 @@
         <div class="row align-items-end">
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="fw-bold text-dark">
-                        Select Student ID/Name /<br />
-                        छात्र आई.डी/नाम चुनें</label>
+                    <label >
+                        Select Student Name(ID)/
+                        <br />
+                        छात्र नाम(आई.डी) चयन करे</label>
                     <select class="form-control select2">
-                        <option value="--Select--">--Select--</option>
-                        <option value="1">103201441 Raadha Dawar</option>
-                        <option value="2">188599791 JEANA RAWAT</option>
-                        <option value="3">108875539 Ramesh Nargawa </option>
-                        <option value="4">112772962 SANGEETA DAWAR</option>
+                        <option value="1"> Raadha Dawar(103201441)</option>
+                        <option value="2"> JEANA RAWAT(188599791)</option>
+                        <option value="3"> Ramesh Nargawa (108875539)</option>
+                        <option value="4"> SANGEETA DAWAR (112772962)</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="fw-bold text-dark">
-                        Select Hostel Name /<br />
-                        छात्रावास का नाम चुनें</label>
+                    <label >
+                        Category/<br />
+                        वर्ग
+                    </label>
+                   <input type="text" class="form-control" Value="OBC" />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label >
+                        Gender/<br />
+                        लिंग
+                    </label>
+                    <input type="text" class="form-control" Value="Female" />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label >
+                        Select Academic Year/<br />
+                        शैक्षणिक वर्ष चयन करे</label>
+                       <input maxlength="4" autocomplete="off" id="a1" placeholder="2024-25" class="form-control datepickerYear" type="text" data-val="true" required="required" />
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label >
+                        Select Hostel Name/
+                        <br />
+                        छात्रावास का नाम चयन करे</label>
                     <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
                         <option value="1">KGBV Girls Hostel</option>
@@ -50,10 +80,10 @@
 
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="fw-bold text-dark">
+                    <label>
                         Select Room Type/
    <br />
-                        कक्ष प्रकार चुनें
+                        कक्ष प्रकार चयन करे
                     </label>
                     <select class="form-control select2">
                         <option value="--Select--">--Select--</option>
@@ -66,10 +96,10 @@
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="fw-bold text-dark">
+                    <label>
                         Select Room Number/
    <br />
-                        कक्ष नंबर चुनें
+                        कक्ष नंबर चयन करे
                     </label>
                     <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
@@ -82,15 +112,12 @@
                     </select>
                 </div>
             </div>
-
-        </div>
-        <div class="row align-items-end">
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="fw-bold text-dark">
+                    <label>
                         Select Bed Number/
    <br />
-                        बिस्तर नंबर चुनें
+                        बिस्तर नंबर चयन करे
                     </label>
                     <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
@@ -103,6 +130,27 @@
                         <option value="7">7 bed </option>
                         <option value="8">8 bed </option>
                     </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Current Rent/<br />
+                        वर्तमान किराया
+                    </label>
+                    <input type="text" class="form-control" value="500/-" />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Current Mess Fees/<br />
+                        वर्तमान मेस शुल्क
+                    </label>
+                    <input type="text" class="form-control" value="1000/-" />
                 </div>
             </div>
         </div>
@@ -145,9 +193,18 @@
                                     <br />
                                             क्र.सं.
                                         </th>
-                                        <th>Student ID/Name 
+                                        <th>Student Name(ID) 
                                             <br />
-                                            छात्र का आई.डी/नाम</th>
+                                            छात्र नाम(आई.डी)</th>
+                                        <th>Category
+                                            <br />
+                                            वर्ग</th>
+                                        <th>Gender 
+                                            <br />
+                                            लिंग</th>
+                                        <th>Academic Year 
+                                            <br />
+                                            शैक्षणिक वर्ष</th>
                                         <th>Hostel Name 
                                             <br />
                                             छात्रावास का नाम
@@ -163,6 +220,14 @@
                                             <br />
                                             बिस्तर नंबर
                                         </th>
+                                         <th>Current Rent 
+                                            <br />
+                                            वर्तमान किराया
+                                        </th>
+                                         <th>Current Mess Fees 
+                                            <br />
+                                            वर्तमान मेस शुल्क
+                                        </th>
                                         <th scope="col">Action
                                             <br />
                                             कार्रवाई </th>
@@ -171,11 +236,16 @@
                                 <tbody>
                                     <tr role="row" class="odd">
                                         <td>1</td>
-                                        <td>112772962 SANGEETA DAWAR</td>
+                                        <td> SANGEETA DAWAR(112772962)</td>
+                                        <td>ST</td>
+                                        <td>Female</td>
+                                        <td>2024-25</td>
                                         <td>KGBV Girls Hostel</td>
                                         <td>Single</td>
                                         <td>101</td>
-                                        <td>2</td>
+                                        <td>2 Bed</td>
+                                        <td>500/-</td>
+                                        <td>1000/-</td>
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
@@ -193,5 +263,58 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+      <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $('.datepickerYear').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+                var nextYear = selectedYear + 1;
+                var financialYear = selectedYear + '-' + (nextYear % 100); // Example: 2023-24 for financial year 2023-2024
+                $(".datepickerYear").val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                //setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
+            }
+        });
+        $('.datepickerYear2').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+                var nextYear = selectedYear + 1;
+                var financialYear = selectedYear + '-' + (nextYear); // Example: 2023-24 for financial year 2023-2024
+                $(".datepickerYear2").val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                //setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
+            }
+        });
+        // Function to set default value to current financial year
+        function setDefaultFinancialYear() {
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            var nextYear = currentYear + 1;
+            var financialYear = currentYear + '-' + (nextYear);
+            $(".datepickerYear").val(financialYear);
+        }
+        // Set default value to current financial year on page load
+        $(document).ready(function () {
+            //setDefaultFinancialYear();
+        });</script>
 </asp:Content>
 

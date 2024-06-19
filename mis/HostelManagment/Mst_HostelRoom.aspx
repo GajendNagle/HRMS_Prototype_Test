@@ -40,7 +40,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Hostel Name<br />
+                                    Select Hostel Name/<br />
                                     हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -53,7 +53,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Room Type
+                                    Select Room Type/
                                     <br />
                                     कक्ष के प्रकार चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
@@ -69,7 +69,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Hostel Room Number<br />
+                                    Select Hostel Room Number/<br />
                                     हॉस्टल कक्ष नंबर चुनें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -85,7 +85,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter No. of Bed<br />
+                                    Enter No. of Bed/<br />
                                     बिस्तर की संख्या दर्ज करें<span style="color: red;">*</span></label>
                                  <input type="text" class="form-control" placeholder="Enter No. of Bed" />
                             </div>
@@ -93,7 +93,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Rent Per Bed<br />
+                                    Rent Per Bed/<br />
                                     प्रति बिस्तर किराया<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Rent per Bed" />
                             </div>
