@@ -73,7 +73,7 @@
                 <div class="card-body">
                     <fieldset>
                         <legend>Leave History / अवकाश का इतिहास</legend>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Select Year/<br />
