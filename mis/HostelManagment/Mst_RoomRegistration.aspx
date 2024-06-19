@@ -201,9 +201,9 @@
                                         <th scope="col">Room Type<br />
                                             कक्ष प्रकार   </th>
                                         <th scope="col"> Room Number<br />
-                                             कक्ष नंबर </th>
-                                        <th scope="col">No. of Bed<br />
-                                            बिस्तर की संख्या </th>
+                                             कक्ष संख्या </th>
+                                        <th scope="col">Bed Number<br />
+                                            बिस्तर संख्या </th>
                                         <th scope="col">Action
                                             <br />
                                             कार्रवाई </th>
@@ -221,11 +221,31 @@
 
                                         </td>
                                         <td align="center" valign="middle">
-                                            <a>201 </a>
+                                            <a>102</a>
                                         </td>
 
                                         <td align="center" valign="middle">
-                                            <span>2 Bed</span>
+                                            <span>1011</span>
+                                        </td>
+                                       
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td align="center" valign="middle"><span>1</span>
+                                        </td>
+                                        <td align="center" valign="middle">
+                                            <span>KGBV Girls Hostel</span>
+                                        </td>
+                                        <td align="center" valign="middle">
+                                            <a>Double</a>
+
+                                        </td>
+                                        <td align="center" valign="middle">
+                                            <a>201</a>
+                                        </td>
+
+                                        <td align="center" valign="middle">
+                                            <span>2011, 2012</span>
                                         </td>
                                        
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>

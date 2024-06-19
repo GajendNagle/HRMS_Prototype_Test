@@ -171,18 +171,13 @@
                                             क्र.सं.</th>
                                         <th scope="col">Hostel Name<br />
                                             हॉस्टल नाम</th>
-                                        <th scope="col">Hostel Type<br />
-                                            हॉस्टल प्रकार</th>
                                         <th scope="col">Room Type<br />
                                             कक्ष प्रकार </th>
                                         <th scope="col">No. of Bed<br />
                                             बिस्तर की संख्या</th>
-                                        <th scope="col">Category<br />
-                                            वर्ग </th>
-                                        <th scope="col">Rent Per Bed<br />
-                                            प्रति बिस्तर किराया</th>
                                         <th scope="col">Action<br />
                                             कार्रवाई </th>
+                                       
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -193,21 +188,13 @@
                                             <span>KGBV Boys hostel</span>
                                         </td>
                                         <td align="center" valign="middle">
-                                            <span>Boys</span>
-                                        </td>
-                                        <td align="center" valign="middle">
                                             <span>Double</span>
                                         </td>
                                         <td align="center" valign="middle">
                                             <span>2 Bed</span>
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>ST</span>
-                                        </td>
-                                        <td align="center" valign="middle">
-                                            <span>400/-</span>
-                                        </td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-eye" aria-hidden="true"></i>|<i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+
                                     </tr>
                                     <tr role="row" class="odd">
                                         <td align="center" valign="middle"><span>2</span>
@@ -216,21 +203,12 @@
                                             <span>KGBV Girls hostel</span>
                                         </td>
                                         <td align="center" valign="middle">
-                                            <span> Girls </span>
-                                        </td>
-                                        <td align="center" valign="middle">
                                             <span>Single</span>
                                         </td>
                                         <td align="center" valign="middle">
                                             <span>1 Bed</span>
                                         </td>
-                                         <td align="center" valign="middle">
-                                            <span>General</span>
-                                        </td>
-                                        <td align="center" valign="middle">
-                                            <span>600/-</span>
-                                        </td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-eye" aria-hidden="true"></i>|<i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 
                                 </tbody>

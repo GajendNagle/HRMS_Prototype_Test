@@ -56,9 +56,10 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label >
-                        Select Academic Year/<br />
-                        शैक्षणिक वर्ष चयन करे</label>
-                       <input maxlength="4" autocomplete="off" id="a1" placeholder="2024-25" class="form-control datepickerYear" type="text" data-val="true" required="required" />
+                         Academic Year/<br />
+                        शैक्षणिक वर्ष </label>
+                    <input type="text" class="form-control" Value="2024-25" />
+                       <%--<input maxlength="4" autocomplete="off" id="a1" placeholder="2024-25" class="form-control datepickerYear" type="text" data-val="true" required="required" />--%>
                 </div>
             </div>
         </div>
@@ -86,9 +87,8 @@
                         कक्ष प्रकार चयन करे
                     </label>
                     <select class="form-control select2">
-                        <option value="--Select--">--Select--</option>
-                        <option value="Single">Single</option>
                         <option value="Double">Double</option>
+                        <option value="Single">Single</option>
                         <option value="Triple">Triple</option>
                         <option value="Quad">Quad</option>
                     </select>
@@ -109,6 +109,7 @@
                         <option value="4">104</option>
                         <option value="5">105</option>
                         <option value="6">106</option>
+                        <option value="7">201</option>
                     </select>
                 </div>
             </div>
@@ -121,14 +122,8 @@
                     </label>
                     <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
-                        <option value="1">1 bed </option>
-                        <option value="2">2 bed </option>
-                        <option value="3">3 bed </option>
-                        <option value="4">4 bed </option>
-                        <option value="5">5 bed </option>
-                        <option value="6">6 bed </option>
-                        <option value="7">7 bed </option>
-                        <option value="8">8 bed </option>
+                        <option value="2">2011  </option>
+                        <option value="1">2012</option>
                     </select>
                 </div>
             </div>
@@ -141,7 +136,7 @@
                         Current Rent/<br />
                         वर्तमान किराया
                     </label>
-                    <input type="text" class="form-control" value="500/-" />
+                    <input type="text" class="form-control" value="400/-" />
                 </div>
             </div>
             <div class="col-md-3">
@@ -241,10 +236,10 @@
                                         <td>Female</td>
                                         <td>2024-25</td>
                                         <td>KGBV Girls Hostel</td>
-                                        <td>Single</td>
-                                        <td>101</td>
-                                        <td>2 Bed</td>
-                                        <td>500/-</td>
+                                        <td>Double</td>
+                                        <td>201</td>
+                                        <td>2011,2012</td>
+                                        <td>400/-</td>
                                         <td>1000/-</td>
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>

@@ -45,7 +45,7 @@
                     </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                       <%-- <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select Mess Fees Gender/
@@ -57,7 +57,7 @@
                                     <option value="Double">Girls</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
@@ -131,9 +131,9 @@
                                         <th> Hostel Name 
                                             <br />
                                             हॉस्टल नाम </th>
-                                        <th>Mess Fees Gender
+                                        <%--<th>Mess Fees Gender
                                             <br />
-                                            लिंग के अनुसार मेस</th>
+                                            लिंग के अनुसार मेस</th>--%>
                                         <th>Applicable Category 
                                             <br />
                                             उपयुक्त वर्ग</th>
@@ -153,7 +153,7 @@
                                     <tr role="row" class="odd">
                                         <td>1</td>
                                         <td>KGBV Girls Hostel</td>
-                                        <td>Girls</td>
+                                        <%--<td>Girls</td>--%>
                                         <td>Primary</td>
                                         <td>1000/-</td>
                                         <td>4/6/2024</td>
