@@ -281,12 +281,10 @@
                                         </td>
                                     </tr>
                                     <tr style="font-weight: bold;">
-                                        <td align="right" colspan="6">Total</td>
+                                        <td align="right" colspan="8">Total</td>
                                         <td>5000.00</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
