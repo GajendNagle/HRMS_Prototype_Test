@@ -69,7 +69,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Enter Role sequence No. /<br />
-                                रोल अनुक्रम संख्या दर्ज करें.<span style="color: red">*</span></label>
+                                रोल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Role sequence No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
