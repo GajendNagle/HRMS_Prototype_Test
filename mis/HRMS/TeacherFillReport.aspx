@@ -1382,14 +1382,8 @@ of annual examination result
           window.location.href = 'ConfedicialReport.aspx';
       }
 
-        }
-
+      }
 
     </script>
-
-
-
-
-    
 </asp:Content>
 
