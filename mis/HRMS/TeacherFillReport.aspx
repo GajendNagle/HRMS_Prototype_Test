@@ -833,7 +833,7 @@ of annual examination result
                         <div style="display: none;" id="btn1">
                    <div class="col-md-12">
     <div class="form-group">
-        <button type="button" class="Alert-Save1  btn w-lg btn-success btn-border">
+        <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
            Send To Officer
         </button>
         <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -1363,28 +1363,24 @@ of annual examination result
 
 
     <script>  function Backclickfn() {
+                var fieldset1 = document.getElementById('<%= Fieldset1.ClientID %>');
+                var fieldset2 = document.getElementById('<%= fieldset2.ClientID %>');
+                var fieldset3 = document.getElementById('<%= fieldset3.ClientID %>');
+                var fieldset4 = document.getElementById('<%= fieldset4.ClientID %>');
 
+      if (fieldset4.style.display === 'block') {
+          fieldset4.style.display = 'none';
+          fieldset3.style.display = 'block';
+      } else if (fieldset3.style.display === 'block') {
+          fieldset3.style.display = 'none';
+          fieldset2.style.display = 'block';
+      } else if (fieldset2.style.display === 'block') {
+          fieldset2.style.display = 'none';
+          fieldset1.style.display = 'block';
+      } else {
 
-
-
-            var fieldset1 = document.getElementById('<%= Fieldset1.ClientID %>');
-      var fieldset2 = document.getElementById('<%= fieldset2.ClientID %>');
-      var fieldset3 = document.getElementById('<%= fieldset3.ClientID %>');
-      var fieldset4 = document.getElementById('<%= fieldset4.ClientID %>');
-
-            if (fieldset4.style.display === 'block') {
-                fieldset4.style.display = 'none';
-                fieldset3.style.display = 'block';
-            } else if (fieldset3.style.display === 'block') {
-                fieldset3.style.display = 'none';
-                fieldset2.style.display = 'block';
-            } else if (fieldset2.style.display === 'block') {
-                fieldset2.style.display = 'none';
-                fieldset1.style.display = 'block';
-            } else {
-
-                window.location.href = 'ConfedicialReport.aspx';
-            }
+          window.location.href = 'ConfedicialReport.aspx';
+      }
 
         }
 
@@ -1394,55 +1390,6 @@ of annual examination result
 
 
 
-    <%--<script>// Function to handle moving between fieldsets
-        function moveBetweenFieldsets(currentFieldset, nextFieldset) {
-            currentFieldset.style.display = 'none';  // Hide current fieldset
-            nextFieldset.style.display = 'block';   // Show next fieldset
-        }
-
-        // Initialize your fieldsets and buttons
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get references to all fieldsets
-            var fieldset1 = document.getElementById('<%= Fieldset1.ClientID %>').style.display;
-            var fieldset2 = document.getElementById('<%= fieldset2.ClientID %>').style.display;
-            var fieldset3 = document.getElementById('<%= fieldset3.ClientID %>').style.display;
-            var fieldset4 = document.getElementById('<%= fieldset4.ClientID %>').style.display;
-
-            // Get references to all buttons
-            var btnToFieldset2 = document.getElementById('btnToFieldset2');
-            var btnToFieldset3 = document.getElementById('btnToFieldset3');
-            var btnToFieldset4 = document.getElementById('btnToFieldset4');
-
-            // Button click event listeners
-            btnToFieldset2.addEventListener('click', function () {
-                moveBetweenFieldsets(fieldset1, fieldset2);
-            });
-
-            btnToFieldset3.addEventListener('click', function () {
-                moveBetweenFieldsets(fieldset2, fieldset3);
-            });
-
-            btnToFieldset4.addEventListener('click', function () {
-                moveBetweenFieldsets(fieldset3, fieldset4);
-            });
-
-            // Back button functionality (assuming you have a back button for each step)
-            var backToFieldset1 = document.getElementById('backToFieldset1');
-            var backToFieldset2 = document.getElementById('backToFieldset2');
-            var backToFieldset3 = document.getElementById('backToFieldset3');
-
-            backToFieldset1.addEventListener('click', function () {
-                moveBetweenFieldsets(fieldset2, fieldset1);
-            });
-
-            backToFieldset2.addEventListener('click', function () {
-                moveBetweenFieldsets(fieldset3, fieldset2);
-            });
-
-            backToFieldset3.addEventListener('click', function () {
-                moveBetweenFieldsets(fieldset4, fieldset3);
-            });
-        });
-    </script>--%>
+    
 </asp:Content>
 
