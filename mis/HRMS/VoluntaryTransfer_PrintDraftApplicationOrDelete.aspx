@@ -113,18 +113,18 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr class="card-header">
-                                    <th>Sr.No /<br />
+                                    <th>Sr.No <br />
                                         सरल क्र.</th>
-                                    <th>Application No. /<br />
-                                        आवेदन नंबार</th>
-                                    <th>Employee Name /<br />
+                                    <th>Application No. <br />
+                                        आवेदन नंबर</th>
+                                    <th>Employee Name <br />
                                         कर्मचारी का नाम</th>
-                                    <th>Unique Id /
+                                    <th>Unique Id 
     <br />
                                         यूनिक आईडी</th>
-                                    <th>Print /<br />
+                                    <th>Print <br />
                                         प्रिंट</th>
-                                    <th>Update /<br />
+                                    <th>Update <br />
                                         अपडेट</th>
                                 </tr>
                                 <tr>

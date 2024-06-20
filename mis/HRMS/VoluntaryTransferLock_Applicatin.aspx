@@ -69,16 +69,16 @@
                         <div class="">
                             <table class="table text-center table-responsive table-bordered">
                                 <tr class="card-header">
-                                    <th>Sr.No /<br />
+                                    <th>Sr.No <br />
                                         सरल क्र.</th>
-                                    <th>Application No. /<br />
+                                    <th>Application No. <br />
                                         आवेदन नंबार</th>
-                                    <th>Employee Name /<br />
+                                    <th>Employee Name <br />
                                         कर्मचारी का नाम</th>
-                                    <th>Unique Id /
+                                    <th>Unique Id 
                                         <br />
                                         यूनिक आईडी</th>
-                                    <th>Upload Application /
+                                    <th>Upload Application 
                                         <br />
                                         आवेदन अपलोड करें</th>
                                 </tr>

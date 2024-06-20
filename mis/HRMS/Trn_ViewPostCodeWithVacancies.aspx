@@ -60,7 +60,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select District Name /<br />
+                                Select District Name <br />
                                 ज़िला का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -122,7 +122,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Block Name /<br />
+                                Select Block Name <br />
                                 ब्लॉक का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -135,7 +135,7 @@
                     <div class="col-md-3" id="divtxtpanelname">
                         <div class="form-group">
                             <label>
-                                Select School Category /
+                                Select School Category 
                                 <br />
                                 स्कूल का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
@@ -160,7 +160,7 @@
                     <div class="col-md-3" id="divtxtpdanelname">
                         <div class="form-group">
                             <label>
-                                Select Panal Name /<br />
+                                Select Panal Name <br />
                                 पैनल का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">--Select--</option>
@@ -247,39 +247,39 @@
 
 
                                 <tr class="text-center card-header">
-                                    <th>Sr.No /
+                                    <th>Sr.No 
                                         <br />
                                         सरल क्र.</th>
-                                    <th>District /<br />
+                                    <th>District <br />
                                         ज़िला</th>
-                                    <th>Block /<br />
+                                    <th>Block <br />
                                         ब्लॉक</th>
-                                    <th>School /
+                                    <th>School 
                                         <br />
                                         स्कूल</th>
 
-                                    <th>Panal /<br />
+                                    <th>Panal <br />
                                         पैनल</th>
-                                    <th>Post Code /
+                                    <th>Post Code 
                                         <br />
                                         पोस्ट कोड</th>
                                     <th style="width: 10%">Sanctioned Posts<br />
                                         अनुमोदित पोस्ट</th>
-                                    <th>Working /
+                                    <th>Working 
                                         <br />
                                         काम कर रहा</th>
-                                    <th>Reserved /<br />
+                                    <th>Reserved <br />
                                         आरक्षित</th>
-                                    <th>Vacancies /
+                                    <th>Vacancies 
                                         <br />
                                         रिक्तियां</th>
-                                    <th>Transferred Employees /
+                                    <th>Transferred Employees 
                                         <br />
                                         स्थानांतरित कर्मचारी</th>
-                                    <th>New Joining /
+                                    <th>New Joining 
                                         <br />
                                         नई ज्वाइनिंग</th>
-                                    <th>New Postings /
+                                    <th>New Postings 
                                         <br />
                                         नई पोस्टिंग्स</th>
 

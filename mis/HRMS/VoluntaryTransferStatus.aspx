@@ -76,29 +76,29 @@ application Status</li>
 
 
                                 <tr class="card-header">
-                                    <th>Sr. No./
+                                    <th>Sr. No.
                                             <br />
                                         सरल क्र.</th>
-                                    <th>Date /<br />
+                                    <th>Date <br />
                                         दिनांक</th>
-                                    <th style="width: 10%">Unique ID/
+                                    <th style="width: 10%">Unique ID
                                             <br />
                                         युनिक आई.डी.</th>
-                                    <th>Name And Designation/
+                                    <th>Name And Designation
                                             <br />
                                         नाम एवं पद</th>
-                                    <th>Subject/<br />
+                                    <th>Subject<br />
                                         विषय</th>
-                                    <th>Working Institute and UDISE Code /<br />
+                                    <th>Working Institute and UDISE Code <br />
                                         कार्यरत संस्था एवं डाइस कोड</th>
-                                    <th>Working District/<br />
+                                    <th>Working District<br />
                                         कार्यरत जिला</th>
-                                    <th style="width: 15%">New Organization and UDICE Code/<br />
+                                    <th style="width: 15%">New Organization and UDICE Code<br />
                                         नवीन संस्था एवं डाइम कोड</th>
-                                    <th style="width: 15%!important">District of New Posting /
+                                    <th style="width: 15%!important">District of New Posting 
                                             <br />
                                         नवीन पदस्थापना का जिला</th>
-                                    <th>Status /<br />
+                                    <th>Status <br />
                                         स्थिति</th>
                                 </tr>
 
