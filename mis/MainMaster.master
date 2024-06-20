@@ -998,8 +998,14 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCaseForDEO.aspx"><i class="ri-file-list-3-line"></i>DEO Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_DeoCompassionateApproval.aspx"><i class="ri-file-list-3-line"></i>Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DeoPrintApplicationReport.aspx"><i class="ri-file-list-3-line"></i>Print Application</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="Trn_ProcessApplicationListDeo.aspx" ><i class="ri-file-list-3-line"></i>अनुकंपा नियुक्ति पर कार्यवाही </a>
-                                                    <%--DEO Compassionate Application Approval End--%>
+                                                    <li class="nav-item"><a class="nav-link" href="Trn_ProcessApplicationListDeo.aspx"><i class="ri-file-list-3-line"></i>Action on Compassionate Appointment </a>
+                                                        <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCase.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
+                                                            <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorDeo.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
+                                                                <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DEOLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
+                                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DEOLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DEOLevelReportSection.aspx?ID=DistrictWiseCounting"><i class="ri-file-list-3-line"></i>District-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportDeo.aspx"><i class="ri-file-list-3-line"></i>NOC Report </a>
+                                                        <%--DEO Compassionate Application Approval End--%>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1012,7 +1018,15 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicatonCaseForJD.aspx"><i class="ri-file-list-3-line"></i>JD Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_JDCompassionateApproval.aspx"><i class="ri-file-list-3-line"></i>Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/JDPrintApplicationReport.aspx"><i class="ri-file-list-3-line"></i>Print Application</a></li>
-                                                    <%--JD Compassionate Application Approval End--%>
+                                                    <li class="nav-item"><a class="nav-link" href="Trn_ProcessApplicationListJD.aspx"><i class="ri-file-list-3-line"></i>Action on Compassionate Appointment </a>
+                                                        <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForJD.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
+                                                            <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorJD.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
+                                                                <li class="nav-item"><a class="nav-link" href="/mis/Transaction/JDLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
+                                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/JDLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/JDLevelReportSection.aspx?ID=DistrictWiseCounting"><i class="ri-file-list-3-line"></i>District-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportJD.aspx"><i class="ri-file-list-3-line"></i>NOC Report </a>
+
+                                                        <%--JD Compassionate Application Approval End--%>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1025,7 +1039,15 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DisposeApplicationCaseForHO.aspx"><i class="ri-file-list-3-line"></i>Head Office Compassionate Application Approval Home</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HOCompassionateApproval.aspx"><i class="ri-file-list-3-line"></i>Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOPrintApplicationReport.aspx"><i class="ri-file-list-3-line"></i>Print Application</a></li>
-                                                    <%--Ho Compassionate Application Approval end--%>
+                                                    <li class="nav-item"><a class="nav-link" href="Trn_ProcessApplicationListHO.aspx"><i class="ri-file-list-3-line"></i>Action on Compassionate Appointment </a>
+                                                        <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForHO.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
+                                                            <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
+                                                                <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
+                                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting"><i class="ri-file-list-3-line"></i>District-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report </a>
+
+                                                        <%--Ho Compassionate Application Approval end--%>
                                                 </ul>
                                             </div>
                                         </li>
