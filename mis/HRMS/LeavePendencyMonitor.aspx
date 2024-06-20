@@ -55,8 +55,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select District Name /<br />
-                                    जिला का चयन करें :<span style="color: red">*</span></label>
+                                    Select District Name <br />
+                                    जिला का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="">--Select--</option>
                                     <option value="51">AGAR MALWA </option>
@@ -83,8 +83,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Block Name /<br />
-                                    ब्लॉक का चयन करें:<span style="color: red">*</span></label>
+                                    Select Block Name <br />
+                                    ब्लॉक का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="1">ANUPPUR </option>
@@ -98,8 +98,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Sankul Name /<br />
-                                    संकुल का चयन करें:<span style="color: red">*</span></label>
+                                    Select Sankul Name <br />
+                                    संकुल का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="1">All</option>
@@ -160,29 +160,29 @@
                                     <table class="table text-center">
                                         <thead>
                                             <tr>
-                                                <th>S.No./<br />
+                                                <th>S.No.<br />
                                                     सरल क्र.</th>
-                                                <th>Sankul /
+                                                <th>Sankul 
                                                     <br />
                                                     संकुल</th>
-                                                <th>Name of Applicant /<br />
+                                                <th>Name of Applicant <br />
                                                     आवेदक का नाम</th>
-                                                <th>Designation of Applicant/<br />
+                                                <th>Designation of Applicant<br />
                                                     आवेदक का पदनाम</th>
-                                                <th>Type of Leave /<br />
+                                                <th>Type of Leave <br />
                                                     अवकाश का प्रकार</th>
-                                                <th>Date of Application Submission/<br />
-                                                    आवेदन जमा करने की तिथि</th>
-                                                <th>Leave Begin Date /<br />
-                                                    अवकाश की आरंभ तिथि </th>
-                                                <th>Leave End Date /<br />
-                                                    अवकाश की समाप्ति तिथि</th>
-                                                <th>No. of Leave Days /<br />
+                                                <th>Date of Application Submission<br />
+                                                    आवेदन जमा करने की दिनांक</th>
+                                                <th>Leave Begin Date <br />
+                                                    अवकाश की आरंभ दिनांक </th>
+                                                <th>Leave End Date <br />
+                                                    अवकाश की समाप्ति दिनांक</th>
+                                                <th>No. of Leave Days <br />
                                                     अवकाश के दिनों की संख्या</th>
-                                                <th>Pending with /<br />अपेक्षा में लंबित</th>
-                                                <th>Pending from (Date) /<br />
-                                                    (तिथि) से लंबित</th>
-                                                <th>No. of Days Pending/<br />
+                                                <th>Pending with <br />अपेक्षा में लंबित</th>
+                                                <th>Pending from (Date) <br />
+                                                    (दिनांक) से लंबित</th>
+                                                <th>No. of Days Pending<br />
                                                     लंबित दिनों की संख्या</th>
                                             </tr>
                                         </thead>

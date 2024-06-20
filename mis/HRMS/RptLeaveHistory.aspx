@@ -76,7 +76,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Year/<br />
+                                    <label>Select Year<br />
                                         वर्ष का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -87,8 +87,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Office Type/<br />
-                                        कार्यालय का चयन करें<span style="color: red">*</span></label>
+                                    <label>Select Office Type<br />
+                                        कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="1">Principal Secretary</option>
@@ -109,8 +109,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Designation Type/<br />
-                                        पदनाम का चयन करें<span style="color: red">*</span></label>
+                                    <label>Select Designation Type<br />
+                                        पदनाम प्रकार का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Clerical">Clerical</option>
@@ -124,7 +124,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Employee Name/ID /<br />
+                                    <label>Select Employee Name/ID <br />
                                         कर्मचारी का नाम/आई.डी का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>

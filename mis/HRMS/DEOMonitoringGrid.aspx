@@ -48,8 +48,8 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
-                                Select District Name /<br />
-                                जिला का चयन करें :<span style="color: red">*</span></label>
+                                Select District Name <br />
+                                जिला का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2" id="district">
                                 <option value="">--Select--</option>
                                 <option value="51">AGAR MALWA </option>
@@ -73,8 +73,8 @@
 
                         <div class="col-md-3">
                             <label>
-                                Select Block Name /<br />
-                                ब्लॉक का चयन करें :<span style="color: red">*</span></label>
+                                Select Block Name <br />
+                                ब्लॉक का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2" id="block">
                                 <option value="">--Select--</option>
                                 <option value="1">ANUPPUR </option>
@@ -137,16 +137,16 @@
                                     <table class="table text-center table-bordered table-hover text-center">
                                         <thead>
                                             <tr>
-                                                <th>Block/ <br />ब्लॉक</th>
-                                                <th>Sankul/<br />संकुल</th>
-                                                <th>School/<br />स्कूल</th>
-                                                <th>UID /<br />यूआईडी</th>
-                                                <th>Teacher Name /<br />शिक्षक का नाम</th>
-                                                <th>Designation /<br />पद का नाम</th>
-                                                <th>Sankul/<br />संकुल</th>
-                                                <th>School /<br />स्कूल</th>
-                                                <th>Subject /<br />विषय</th>
-                                                <th>Leave Period /<br />अवकाश की अवधि</th>
+                                                <th>Block <br />ब्लॉक</th>
+                                                <th>Sankul<br />संकुल</th>
+                                                <th>School<br />स्कूल</th>
+                                                <th>UID <br />यूआईडी</th>
+                                                <th>Teacher Name <br />शिक्षक का नाम</th>
+                                                <th>Designation <br />पद का नाम</th>
+                                                <th>Sankul<br />संकुल</th>
+                                                <th>School <br />स्कूल</th>
+                                                <th>Subject <br />विषय</th>
+                                                <th>Leave Period <br />अवकाश की अवधि</th>
                                             </tr>
                                         </thead>
                                         <tbody>
