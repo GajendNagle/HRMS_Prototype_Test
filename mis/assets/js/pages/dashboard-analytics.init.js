@@ -47,14 +47,31 @@ function loadCharts() {
     } function t(e, t) {
         for (var r = 0, a = []; r < e;) {
             var o = (r + 1).toString() + "h",
-            s = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min; a.push({ x: o, y: s }), r++
+                s = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min; a.push({ x: o, y: s }), r++
         } return a
     } (e = getChartColorsArray("audiences_metrics_charts")) &&
         (e = {
-            series: [{ name: "Total Upcoming Retirements", data: [105, 38, 22, 48, 98, 34, 15, 68, 110, 98, 78, 140] },
-            { name: "Total Retired", data: [70, 38, 22, 15, 15, 7, 6, 12, 7, 45, 9, 5] }],
-            chart: { type: "bar", height: 309, stacked: !0, toolbar: { show: !1 } },
-            plotOptions: { bar: { horizontal: !1, columnWidth: "20%", borderRadius: 6 } },
+            series:
+                [
+                    { name: "Total Upcoming Retirements", data: [0, 0, 0, 0, 0, 0, 71, 80, 70, 81, 60, 64] },
+                    { name: "Total Retired", data: [67, 53, 78, 82, 68, 80, 0, 0, 0, 0, 0, 0] }],
+            chart: {
+                type: "bar",
+                height: 309,
+                stacked: !0,
+                toolbar: {
+                    show: !1
+                }
+            },
+            plotOptions:
+            {
+                bar:
+                {
+                    horizontal: !1,
+                    columnWidth: "50%",
+                    borderRadius: 6
+                }
+            },
             dataLabels: { enabled: !1 }, legend: {
                 show: !0, position: "bottom", horizontalAlign: "center", fontWeight: 400, fontSize: "8px", offsetX: 0, offsetY: 0,
                 markers: { width: 9, height: 9, radius: 4 }
