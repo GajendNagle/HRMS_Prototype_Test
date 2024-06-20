@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <label>Enter Module Sequence No. /<br />
+                            <label>Enter Module Sequence No. <br />
                                 मॉड्यूल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Module Sequence No." />
                         </div>
@@ -57,7 +57,7 @@
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Select Module Icon /<br />
+                                Select Module Icon <br />
                                 मॉड्यूल आइकन का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-select select2">
                                 <option value="0">Select</option>
@@ -108,15 +108,15 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No./<br />
+                                    <th>Sr.No.<br />
                                         सरल क्र.</th>
                                     <th>Module Name (In English)</th>
                                     <th>मॉड्यूल का नाम (हिंदी में)</th>
-                                    <th>Module Sequence No./<br />
+                                    <th>Module Sequence No.<br />
                                         मॉड्यूल अनुक्रम संख्या</th>
-                                    <th>Module Icon /<br />
+                                    <th>Module Icon <br />
                                         मॉड्यूल आइकन</th>
-                                    <th>Status(Active / InActive)/<br />
+                                    <th>Status(Active / InActive)<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

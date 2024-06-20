@@ -35,7 +35,7 @@
                 <legend>Role Creation / रोल का निर्माण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3 form-group">
-                        <label>Select  User Level Name /<br />
+                        <label>Select  User Level Name <br />
                             उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                             <option value="--Select--">--Select--</option>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Role sequence No. /<br />
+                            <label>Enter Role sequence No. <br />
                                 रोल अनुक्रम संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Role sequence No." onkeypress="return lettersOnly();" />
                         </div>
@@ -77,7 +77,7 @@
                         <div class="col-md-3 ms-4">
                             <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive1" name="IsActive" value="true">
-                                Applicable to all User's of Selected User level /<br />
+                                Applicable to all User's of Selected User level <br />
                                 चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू
                             </label>
                         </div>
@@ -124,17 +124,17 @@
                     <div class="table-responsive">
                         <table class="table text-center">
                             <tr>
-                                <th>Sr.No./<br />
+                                <th>Sr.No.<br />
                                     सरल क्र.</th>
-                                <th>User Level Name /<br />
+                                <th>User Level Name <br />
                                     उपयोगकर्ता स्तर का नाम</th>
                                 <th>Role Name (In English)</th>
                                 <th>रोल का नाम (हिंदी में)</th>
-                                <th>Role sequence No. /<br />
+                                <th>Role sequence No. <br />
                                     रोल अनुक्रम संख्या</th>
-                                <th>Applicable to all User's of Selected User level /<br />
+                                <th>Applicable to all User's of Selected User level <br />
                                     चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू</th>
-                                <th>Status(Active / InActive) /<br />
+                                <th>Status(Active / InActive) <br />
                                     स्थिति (सक्रिय/निष्क्रिय)</th>
                                 <th>Action</th>
                             </tr>

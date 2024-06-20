@@ -35,7 +35,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Module Name /<br />
+                            <label>Select Module Name <br />
                                 मॉड्यूल का चयन करें <span style="color: red">*</span></label>
                             <select id="ddlparentmenu" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Menu Name /<br />
+                            <label>Select Menu Name <br />
                                 मेनू का चयन करें<span style="color: red">*</span></label>
                             <select id="dates-field2" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select User level Name /<br />
+                            <label>Select User level Name <br />
                                 उपयोगकर्ता स्तर का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select User Role /<br />
+                            <label>Select User Role <br />
                                 उपयोगकर्ता रोल का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -112,17 +112,17 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No./<br />
+                                    <th>Sr.No.<br />
                                         सरल क्र.</th>
-                                    <th>Module Name /<br />
+                                    <th>Module Name <br />
                                         मोड्यूल का नाम</th>
-                                    <th>Menu Name /<br />
+                                    <th>Menu Name <br />
                                         मेनू का नाम</th>
-                                    <th>User level Name /<br />
+                                    <th>User level Name <br />
                                         उपयोगकर्ता स्तर का नाम</th>
-                                    <th>User Role /<br />
+                                    <th>User Role <br />
                                         उपयोगकर्ता का रोल</th>
-                                    <th>Status(Active / InActive) /<br />
+                                    <th>Status(Active / InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

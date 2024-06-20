@@ -37,7 +37,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Module Name /<br />
+                            <label>Select Module Name <br />
                                 मॉड्यूल का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">Select</option>
@@ -62,14 +62,14 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Parent Menu Sequence No. /<br />
+                            <label>Enter Parent Menu Sequence No. <br />
                                 पेरेंट मेनू का  अनुक्रम क्रमांक दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Parent Menu Sequence No." />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Parent Menu Icon /<br />
+                            <label>Select Parent Menu Icon <br />
                                 पेरेंट मेनू के आइकॉन का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="0">Select</option>
@@ -120,17 +120,17 @@
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <tr>
-                                    <th>Sr.No./<br />
+                                    <th>Sr.No.<br />
                                         सरल क्र.</th>
-                                    <th>Module Name /<br />
+                                    <th>Module Name <br />
                                         मोड्यूल का नाम</th>
                                     <th>Parent Menu Name (In English)</th>
                                     <th>पेरेंट मेनू का नाम (हिंदी में)</th>
-                                    <th>Parent Menu Sequence No. /<br />
+                                    <th>Parent Menu Sequence No. <br />
                                         पेरेंट मेनू का  अनुक्रम क्रमांक</th>
-                                    <th>Parent Menu Icon/<br />
+                                    <th>Parent Menu Icon<br />
                                         पेरेंट मेनू का आइकॉन</th>
-                                    <th>Status(Active / InActive) /<br />
+                                    <th>Status(Active / InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
