@@ -41,7 +41,14 @@
                 </div>
             </div>
         </div>
-
+        <div class="marqueecontainer">
+            <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+            <div>
+                <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                    इस पेज के माध्यम से नए ऑफिस/इंस्टीट्यूट/स्कूल सेटअप को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+                </marquee>
+            </div>
+        </div>
         <div class="card card-border-primary">
             <div class="card-header">
                 <div class="row align-items-end">
@@ -441,7 +448,8 @@
                         </div>
                         <div class="col-md-3" runat="server" id="pnlschoolcategory" visible="false">
                             <div class="form-group">
-                                <label>Select School Category /<br />
+                                <label>
+                                    Select School Category /<br />
                                     स्कूल श्रेणी का चयन करें<span style="color: red">*</span></label>
                                 <asp:DropDownList ID="ddlSchoolType" OnSelectedIndexChanged="ddlSchoolType_SelectedIndexChanged" AutoPostBack="true" runat="server" CssClass="form-control select2">
                                     <asp:ListItem>--Select--</asp:ListItem>
