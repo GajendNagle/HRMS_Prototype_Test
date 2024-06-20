@@ -13,7 +13,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--   <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Loan Master</h4>
         </div>
@@ -31,17 +31,62 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Loan Master</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                इस पेज के माध्यम से नए Set Loan को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+            </marquee>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h6 class="card-title">Loan Mastere/सेट 
+
+ऋण मास्टर</h6>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
+            <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Set Loan Master</legend>
+                <legend>Set Loan Master/
+
+                   ऋण मास्टर</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>
+                                Office Type/<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-             		
-								 <option value="Bhopal">Head Office</option>
+
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -62,7 +107,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>
+                                Office Name/<br />
+                                कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -76,7 +123,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>
+                                Employee Name/<br />
+                                कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Manish</option>
@@ -90,7 +139,10 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Loan Head<span style="color: red">*</span></label>
+                            <label>
+                                Loan Head/<br />
+                                
+ऋण मुखिया <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Grain Advance</option>
@@ -100,31 +152,44 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Loan Amount<span style="color: red">*</span></label>
+                            <label>
+                                Loan Amount/<br />
+                                  
+राशि<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Loan Amount" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Installment Amount<span style="color: red">*</span></label>
+                            <label>
+                                Installment Amount/<br />
+                                किस्त
+राशि<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Installment Amount" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Installment No.<span style="color: red">*</span></label>
+                            <label>
+                                Installment No./<br />
+                                किस्त संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Installment No." />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Interest Amount</label>
+                            <label>
+                                Interest Amount/<br />
+
+                                ब्याज राशि</label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Interest Amount" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Loan Deduction Year<span style="color: red">*</span></label>
+                            <label>
+                                Loan Deduction Year/<br />
+                                ऋण कटौती वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -139,7 +204,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Loan Deduction Month<span style="color: red">*</span></label>
+                            <label>
+                                Loan Deduction Month/<br />
+                                ऋण कटौती महा<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -157,7 +224,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <%-- <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" class="btn-block Alert-Save btn btn-success btn-rounded">Save</button>
                         </div>
@@ -166,11 +233,16 @@
                         <div class="form-group">
                             <a href="Mst_LoanMaster.aspx" class="btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <button type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+                        <a href="Mst_LoanMaster.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
             <fieldset id="show">
-                <legend>Details</legend>
+                <legend>Details/विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -188,19 +260,31 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table">
-                                <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Office Type</th>
-                                    <th>Office Name </th>
-                                    <th>Employee Name</th>
-                                    <th>Loan Head</th>
-                                    <th>Loan Amount ⟨₹⟩</th>
-                                    <th>Installment Amount ⟨₹⟩</th>
-                                    <th>Installment No.</th>
-                                    <th>Interest Amount ⟨₹⟩</th>
-                                    <th>Loan Deduction Year</th>
-                                    <th>Loan Deduction Month</th>
-                                    <th>Action</th>
+                                <tr style="white-space:nowrap !important">
+                                    <th>Sr.No./<br />
+                                        सरल क्र</th>
+                                    <th>Office Type/<br />
+                                        कार्यालय का प्रकार</th>
+                                    <th>Office Name/<br />
+                                        कार्यालय का नाम</th>
+                                    <th>Employee Name/<br />
+                                        कर्मचारी का नाम</th>
+                                    <th>Loan Head/<br />
+                                        ऋण  मुखिया </th>
+                                    <th>Loan Amount ⟨₹⟩/<br />ऋण  
+राशि  ⟨₹⟩</th>
+                                    <th>Installment Amount ⟨₹⟩/<br />
+                                        किस्त 
+राशि ⟨₹⟩</th>
+                                    <th>Installment No./<br />
+                                        किस्त संख्या</th>
+                                    <th>Interest Amount ⟨₹⟩/ब्याज राशि  ⟨₹⟩<br />
+                                    </th>
+                                    <th>Loan Deduction Year/<br />ऋण कटौती वर्ष
+                                    </th>
+                                    <th>Loan Deduction Month/<br />ऋण कटौती महा
+                                    </th>
+                                    <th>Action/<br />सक्रिय है</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

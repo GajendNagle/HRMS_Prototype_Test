@@ -465,7 +465,7 @@ of annual examination result
                     <br />
                     अकादमिक एवं पाठ्येत्तर गतिविधियों मे भूमिका<br />
                 </h4>
-                <span class="fw-bold">कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्य का विवरण दे:-</span>
+           <%--     <span class="fw-bold">कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्य का विवरण दे:-</span>--%>
                 <fieldset>
                     <legend>Role in academic/ 
                       

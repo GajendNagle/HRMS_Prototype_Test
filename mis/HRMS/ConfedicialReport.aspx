@@ -56,8 +56,8 @@
 
             <div class="row ">
                 <div class="col-md-12">
-                    <h4 class="fw-bold">For Teacher's Cadre (Class 1st to 12th)<br>
-                        शिक्षक संवर्ग के लिए (कक्षा 1 से 12)</h4>
+                    <h5 class="fw-bold">For Teacher's Cadre (Class 1st to 12th)<br>
+                        शिक्षक संवर्ग के लिए (कक्षा 1 से 12)</h5>
                     <div class="card">
                         <div class="card-body">
 
