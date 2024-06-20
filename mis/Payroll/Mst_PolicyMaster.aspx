@@ -13,7 +13,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Policy Master</h4>
         </div>
@@ -31,13 +31,52 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+         <div class="row">
+     <div class="col-12">
+         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+             <h4 class="mb-sm-0"></h4>
+             <div class="=page-title-right">
+                 <ol class="breadcrumb m-0">
+                     <li class="breadcrumb-item">
+                         <span>Home</span>
+                     </li>
+                     <li class="breadcrumb-item">
+                         <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                     </li>
+                     <li class="breadcrumb-item">
+                         <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                     </li>
+                     <li class="breadcrumb-item"><span>Policy Master</span></li>
+                 </ol>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="marqueecontainer">
+     <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+     <div>
+         <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+             इस पेज के माध्यम से नए Policy  को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+         </marquee>
+     </div>
+ </div>
+ <div class="card card-border-primary">
+     <div class="card-header">
+         <div class="row align-items-end">
+             <div class="col-lg-12">
+                 <h4 class="card-title">Policy Master/नीति मास्टर</h4>
+             </div>
+         </div>
+     </div>
+     <div class="card-body">
+         <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Add Policy Details</legend>
+                <legend>Add Policy Details/नीति विवरण जोड़ें</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type/<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">District Office</option>
@@ -48,7 +87,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                   		
@@ -73,7 +112,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>Employee Name/<br />कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Ramji Pandey</option>
@@ -83,7 +122,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Policy Type<span style="color: red">*</span></label>
+                            <label>Policy Type/<br />
+नीति  प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">LIC</option>
@@ -92,26 +132,27 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Policy No.<span style="color: red">*</span></label>
+                            <label>Policy No./<br />नीति संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Policy No." />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Policy Name<span style="color: red">*</span></label>
+                            <label>Policy Name/<br />नीति का नाम<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Policy Name" />
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Premium Amount<span style="color: red">*</span></label>
+                            <label>Premium Amount/<br />अधिमूल्य  राशि<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Premium Amount" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Premium Frequency<span style="color: red">*</span></label>
+                            <label>Premium Frequency/<br />अधिमूल्य 
+आवृत्ति<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Monthly</option>
@@ -123,18 +164,18 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Policy Start Date<span style="color: red">*</span></label>
+                            <label>Policy Start Date/<br />पॉलिसी आरंभ तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Policy End  Date<span style="color: red">*</span></label>
+                            <label>Policy End  Date/<br />पॉलिसी समाप्ति तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
 
-                    <div class="col-md-2 mt-4">
+<%--                    <div class="col-md-2 mt-4">
                         <div class="form-group">
 
                             <button type="button" class="btn-block Alert-Save btn btn-success  btn-rounded">Save</button>
@@ -144,7 +185,12 @@
                         <div class="form-group">
                             <a href="Mst_PolicyMaster.aspx" class="btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                     <hr />
+ <div class="col-md-12">
+     <button type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+     <a href="Mst_PolicyMaster.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+ </div>
                 </div>
 
             </fieldset>
@@ -167,19 +213,19 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table">
-                                <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Office Type</th>
-                                    <th>Office Name </th>
-                                    <th>Employee Name</th>
-                                    <th>Policy Type</th>
-                                    <th>Policy No</th>
-                                    <th>Policy Name</th>
-                                    <th>Premium Amount ⟨₹⟩</th>
-                                    <th>Premium Frequency</th>
-                                    <th>Policy Start Date</th>
-                                    <th>Policy End Date</th>
-                                    <th>Action</th>
+                                <tr style="white-space:nowrap !important">
+                                    <th>Sr.No./<br />सरल क्र</th>
+                                    <th>Office Type/<br />कार्यालय का प्रकार</th>
+                                    <th>Office Name/<br />कार्यालय का नाम </th>
+                                    <th>Employee Name/<br />कर्मचारी का नाम</th>
+                                    <th>Policy Type/<br />नीति प्रकार</th>
+                                    <th>Policy No/<br />नीति संख्या</th>
+                                    <th>Policy Name/<br />नीति का नाम</th>
+                                    <th>Premium Amount ⟨₹⟩/<br />अधिमूल्य  राशि ⟨₹⟩</th>
+                                    <th>Premium Frequency/<br />अधिमूल्य आवृत्ति</th>
+                                    <th>Policy Start Date/<br />पॉलिसी आरंभ तिथि</th>
+                                    <th>Policy End Date/<br />पॉलिसी समाप्ति तिथि</th>
+                                    <th>Action/<br />सक्रिय है</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

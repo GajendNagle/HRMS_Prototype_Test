@@ -13,7 +13,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+   <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Earning & Deduction Master</h4>
         </div>
@@ -31,13 +31,52 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+  <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Earning & Deduction Master</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="marqueecontainer">
+      <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+      <div>
+          <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+              इस पेज के माध्यम से नए Earning & Deduction को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+          </marquee>
+      </div>
+  </div>
+  <div class="card card-border-primary">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h4 class="card-title">Earning & Deduction Master/ कमाई और कटौती  मास्टर</h4>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
+          <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Earning & Deduction Master</legend>
+                <legend>Earning & Deduction Master/कमाई और कटौती  मास्टर</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Earning & Deduction Type <span style="color: red">*</span></label>
+                            <label>Earning & Deduction Type/<br />कमाई और कटौती का प्रकार <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Earning</option>
@@ -48,13 +87,13 @@
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Name<span style="color: red">*</span></label>
+                            <label>Name/<br />नाम<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Calculation Process<span style="color: red">*</span></label>
+                            <label>Calculation Process/<br />गणना प्रक्रिया<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Percentage (%) (Basic)</option>
@@ -64,54 +103,56 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Effective Date<span style="color: red">*</span></label>
+                            <label>Effective Date/<br />प्रभावी तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Calculate b/w range</label>
+                            <label>Calculate b/w range/<br />बी/डब्ल्यू रेंज की गणना करें</label>
                             <br />
                             <input id="ContentBody_ctl05" type="checkbox" name="ctl00$ContentBody$ctl06" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Optional</label>
+                            <label>Optional/<br />वैकल्पिक</label>
                             <br />
                             <input id="ContentBody_ctl06" type="checkbox" name="ctl00$ContentBody$ctl06" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>DA</label>
+                            <label>DA/<br />डी.ए</label>
                             <br />
                             <input id="ContentBody_ctl07" type="checkbox" name="ctl00$ContentBody$ctl06" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Impact On Leave</label>
+                            <label>Impact On Leave/<br />अवकाश का 
+प्रभाव</label>
                             <br />
                             <input id="ContentBody_ctl08" type="checkbox" name="ctl00$ContentBody$ctl06" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>EPF</label>
+                            <label>EPF/<br />
+ई.पी.एफ</label>
                             <br />
                             <input id="ContentBody_ctl09" type="checkbox" name="ctl00$ContentBody$ctl06" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>NPS</label>
+                            <label>NPS/<br />एन.पी.एस</label>
                             <br />
                             <input id="ContentBody_ctl0610" type="checkbox" name="ctl00$ContentBody$ctl06" />
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                  <%--  <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" class="btn-block Alert-Save btn btn-success btn-rounded">Save</button>
                         </div>
@@ -120,11 +161,16 @@
                         <div class="form-group">
                             <a href="Mst_EarningAndDeduction.aspx" class="btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                     <hr />
+ <div class="col-md-12">
+     <button type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+     <a href="Mst_EarningAndDeduction.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+ </div>
                 </div>
             </fieldset>
             <fieldset id="show">
-                <legend>Details</legend>
+                <legend>Details/विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -142,20 +188,21 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table">
-                                <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Type </th>
-                                    <th>Head Name</th>
-                                    <th>Calculation</th>
-                                    <th>Calculate b/w range</th>
-                                    <th>Optional</th>
-                                    <th>Impact On Leave</th>
-                                    <th>DA</th>
-                                    <th>EPF</th>
-                                    <th>Other Head</th>
-                                    <th>Effective Date</th>
-                                    <th>Priority (Order By)</th>
-                                    <th>Action</th>
+                                <tr style="white-space:nowrap !important;">
+                                    <th>Sr.No./<br />सरल क्र</th>
+                                    <th>Type/<br />प्रकार </th>
+                                    <th>Head Name/<br />मुखिया का नाम</th>
+                                    <th>Calculation/<br />गणना</th>
+                                    <th>Calculate b/w range/<br />बी/डब्ल्यू रेंज की गणना करें</th>
+                                    <th>Optional/<br />वैकल्पिक</th>
+                                    <th>Impact On Leave/<br />अवकाश का प्रभाव
+</th>
+                                    <th>DA/<br />डी.ए</th>
+                                    <th>EPF/<br />ई.पी.एफ<br /></th>
+                                    <th>Other Head/<br />अन्य प्रमुख</th>
+                                    <th>Effective Date/<br />प्रभावी तिथि</th>
+                                    <th>Priority (Order By)/<br />प्राथमिकता (क्रमानुसार)</th>
+                                    <th>Action/<br />सक्रिय है</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

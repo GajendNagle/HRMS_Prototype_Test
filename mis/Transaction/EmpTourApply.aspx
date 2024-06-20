@@ -208,7 +208,7 @@
                                          <hr />
 <div class="col-md-12">
     <div class="form-group">
-        <button type="button"  onclick="myFunction()" class="Alert-Confirmation btn w-lg btn-success btn-border">Apply</button>
+        <button type="button"  onclick="myFunction()" class="btn w-lg btn-success btn-border">Apply</button>
         <a href="EmpTourApply.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
     </div>
 </div>
@@ -219,7 +219,7 @@
                         </div>
                     </fieldset>
                     <fieldset id="show">
-                        <legend>Tour Detail</legend>
+                        <legend>Tour Detail/यात्रा विवरण</legend>
                                                    <div class="row justify-content-end">
 <div class="col-md-4 text-end">
     <div class="form-group">

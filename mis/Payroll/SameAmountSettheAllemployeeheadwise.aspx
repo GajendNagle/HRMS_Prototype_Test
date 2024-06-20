@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Same Amount Set All the Employee Head Wise</h4>
         </div>
@@ -41,13 +41,52 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Same Amount Set All the Employee Head Wise</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="marqueecontainer">
+    <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+    <div>
+        <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+            इस पेज के माध्यम से नए Same Amount Set All the Employee Head Wise को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+        </marquee>
+    </div>
+</div>
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h6 class="card-title">Same Amount Set All the Employee Head Wise/सभी कर्मचारी मदवार समान राशि निर्धारित करें</h6>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <span id="ContentBody_lblMsg"></span>
             <fieldset>
                 <legend>Set Head Wise Earning/Deduction </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type/<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
               			 <option value="Bhopal">Head Office</option>
@@ -71,7 +110,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -85,7 +124,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year/<br />वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2022</option>
@@ -100,7 +139,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month/<br />
+महीना<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -120,7 +160,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Earning & Deduction Head<span style="color: red">*</span></label>
+                            <label>Earning & Deduction Head/<br />कमाई एवं कटौती का मुखिया<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">HRA</option>
@@ -131,7 +171,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post/<br />पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Regular/Permanent">Regular/Permanent</option>
@@ -148,7 +188,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                   <%-- <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn-block btn btn-success   btn-rounded">Search</button>
                         </div>
@@ -157,21 +197,27 @@
                         <div class="form-group">
                             <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                    
+                                    <hr />
+<div class="col-md-12">
+    <button type="button"  onclick="myFunction()" class="btn btn-outline-success w-lg btn-border">Save</button>
+    <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+</div>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Details </legend>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" placeholder="Set Amount" autocomplete="off" />
-                            </div>
-                        </div>
+                    <legend>Details/विवरण </legend>
+                    <div class="row justify-content-end">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <button type="button" class="btn-block btn btn-success   btn-rounded">Set Same Amount for All Employee</button>
+                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" placeholder="Set Amount" autocomplete="off"  style="position:relative; left:300px;"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 justify-content-end" style="position:relative; left:300px;">
+                            <div class="form-group">
+                                <button type="button" class=" btn btn-outline-success fs-6 w-lg btn-border">Set Same Amount <br />for All Employee</button>
                             </div>
                         </div>
                         <div class="table-responsive col-md-12">
@@ -179,10 +225,10 @@
                                 <tr>
                                     <th>All<br />
                                         <input id="ContentBody_cstl08" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                    <th>Sr.No.</th>
-                                    <th>Employee Name</th>
-                                    <th>Designation</th>
-                                    <th>Amount⟨₹⟩</th>
+                                    <th>Sr.No./<br />सरल क्र</th>
+                                    <th>Employee Name/<br />कर्मचारी का नाम</th>
+                                    <th>Designation<br />पद का नाम</th>
+                                    <th>Amount⟨₹⟩/<br />राशि ⟨₹⟩</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -214,7 +260,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <%--<div class="row justify-content-center">
                         <div class="col-md-2 mt-4">
                             <div class="form-group">
                                 <button type="button" class="Alert-Save btn-block btn btn-success  btn-rounded">Save</button>
@@ -225,10 +271,15 @@
                                 <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                             </div>
                         </div>
-                    </div>
+                    </div>--%>
+                                                        <hr />
+<div class="col-md-12">
+    <button type="button"  onclick="myFunction()" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+    <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+</div>
                 </fieldset>
                 <fieldset id="Details">
-                    <legend>Set Head Wise Amount Details (Report):-</legend>
+                    <legend>Set Head Wise Amount Details (Report)/शीर्षवार राशि विवरण निर्धारित करें (रिपोर्ट):-</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -247,14 +298,14 @@
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Office Type</th>
-                                        <th>Office Name</th>
-                                        <th>Year </th>
-                                        <th>Month </th>
-                                        <th>Head Name </th>
-                                        <th>Type Of Post </th>
-                                        <th>Action</th>
+                                        <th>Sr.No./<br />सरल क्र</th>
+                                        <th>Office Type/<br />कार्यालय का प्रकार</th>
+                                        <th>Office Name/<br />कार्यालय का नाम</th>
+                                        <th>Year/<br />वर्ष </th>
+                                        <th>Month/<br />महीना </th>
+                                        <th>Head Name/<br />मुखिया का नाम </th>
+                                        <th>Type Of Post /<br />पोस्ट का प्रकार</th>
+                                        <th>Action/<br />सक्रिय है</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>

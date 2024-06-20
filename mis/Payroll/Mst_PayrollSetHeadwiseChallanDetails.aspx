@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+   <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Set Head wise Challan Details</h4>
         </div>
@@ -23,13 +23,52 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+      <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Set Head wise Challan Details</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="marqueecontainer">
+    <div class="headertext">Set Head wise Challan Details / पेज के बारे में विवरण</div>
+    <div>
+        <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+            इस पेज के माध्यम से नए Set Head wise Challan Details  को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+        </marquee>
+    </div>
+</div>
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h4 class="card-title">Set Head wise Challan Details/हेडवार चालान विवरण सेट करें</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Set Head wise Challan Details</legend>
+                <legend>Set Head wise Challan Details/हेडवार चालान विवरण सेट करें</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type/<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                    		
@@ -54,7 +93,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post <span style="color: red;">*</span></label>
+                            <label>Type of Post/<br /> पोस्ट का प्रकार<span style="color: red;">*</span></label>
                             <select class="form-control select2 ">
                                 <option value="--Select--">--Select--</option>
                    								<option value="Bhopal">All</option>
@@ -74,7 +113,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year/<br />वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -88,7 +127,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month <span style="color: red;">*</span></label>
+                            <label>Month/<br />महा <span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -110,7 +149,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>Employee Name/<br />कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Ramji">Ramji</option>
@@ -119,7 +158,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1 mt-4">
+                  <%--  <div class="col-md-1 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -128,7 +167,12 @@
                         <div class="form-group">
                             <a href="SetHeadwiseChallanDetails.aspx" class=" btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                                        <hr />
+<div class="col-md-12">
+    <button type="button"  onclick="myFunction()"  class=" btn btn-outline-success w-lg btn-border">Search</button>
+    <a href="SetHeadwiseChallanDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+</div>
                 </div>
             </fieldset>
             <fieldset id="ContentBody_dcp">
