@@ -399,6 +399,7 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/Dashboard/AdminDashboard.aspx"><i class="ri-file-list-3-line"></i>Admin Dashboard </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Dashboard/HRMSDashboard.aspx"><i class="ri-file-list-3-line"></i>HRMS Dashboard </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Dashboard/EmployeeDashBoard.aspx"><i class="ri-file-list-3-line"></i>Employee Dashboard </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Dashboard/EmployeesDashBoard.aspx"><i class="ri-file-list-3-line"></i>Employee Dashboard </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Dashboard/SchoolDirectoryDashboard.aspx"><i class="ri-file-list-3-line"></i>School Directory Dashboard</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Dashboard/StudentDashboard.aspx"><i class="ri-file-list-3-line"></i>Student/Scheme Dashboard</a></li>
                                     </ul>

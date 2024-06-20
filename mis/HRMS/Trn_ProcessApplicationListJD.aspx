@@ -6,15 +6,6 @@
             white-space: nowrap;
         }
 
-        #ACR_Details_Graph .highcharts-data-label text {
-            color: white !important;
-            font-size: 0.65rem !important;
-            font-weight: bold !important;
-            text-align: center !important;
-            fill: white !important;
-            text-decoration: none !important;
-        }
-
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -54,7 +45,6 @@
                 display: none;
             }
         }
-        
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -68,14 +58,24 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Compassionate Appointment</li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassionate Appointment
+                                </span></a>
+                        </li>
                         <li class="breadcrumb-item">Action Report on Compassionate Appointment at J.D. Level</li>
                     </ol>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
     </div>
     <div class="card card-border-primary" runat="server" clientidmode="static" id="DataFirstTime">
         <div class="card-header">
@@ -529,7 +529,7 @@
                     </div>
                 </div>
             </fieldset>
-           <%-- <br />
+            <%-- <br />
             <fieldset>
                 <legend>परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
                 <div class="row">
@@ -606,7 +606,8 @@
                 </div>
             </fieldset>--%>
             <br />
-            <fieldset><legend>परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
+            <fieldset>
+                <legend>परिवार के सदस्य का विवरण जिन्होंने नियुक्ति के लिए आवेदन किया है</legend>
                 <div class="row">
                     <div class="col-md-12 table-responsive">
                         <table class="table table-striped table-bordered" style="border-collapse: collapse;">
@@ -702,7 +703,7 @@
                 </div>
                 <div class="row align-items-end" id="DisctrictCollectDetails" style="display: none;">
                     <div class="col-md-3">
-                        <label >
+                        <label>
                             To which Post Does the Applicant Want to be Appointed? /<br />
                             आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
@@ -712,7 +713,7 @@
                         </select>
                     </div>
                     <div class="col-md-3 " style="display: none" id="DivDesignation">
-                        <label >
+                        <label>
                             Designation /<br />
                             पदनाम<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr6" onchange="ShowHide1()">
@@ -722,7 +723,7 @@
                         </select>
                     </div>
                     <div class="col-md-3" style="display: none" id="DivQualificationStatus">
-                        <label >
+                        <label>
                             Have Passed The Primary Teacher Eligibility Test For Primary Teacher /<br />
                             क्या प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की है<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr1" onchange="ShowHide2()">
@@ -732,13 +733,13 @@
                         </select>
                     </div>
                     <div class="col-md-3" style="display: none" id="Divyear">
-                        <label >
+                        <label>
                             Year of Eligibility Test /<br />
                             पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>
                         <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="पात्रता परीक्षा का वर्ष" />
                     </div>
                     <div class="col-md-3" style="display: none" id="DivQualification">
-                        <label >
+                        <label>
                             Professional Qualification /<br />
                             व्यावसायिक योग्यता<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr2">
@@ -750,7 +751,7 @@
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <label >
+                        <label>
                             <b>Remark /<br />
                                 रिमार्क </b><span style="color: Red;">*</span>
                         </label>
@@ -763,7 +764,7 @@
                     </div>
                 </div>
                 <div class="col-md-6" id="RemarkView" style="display: none">
-                    <label >
+                    <label>
                         <b>Remark /<br />
                             रिमार्क </b><span style="color: Red;">*</span>
                     </label>
@@ -792,7 +793,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label >
+                                    <label>
                                         <b>Objection Details /<br />
                                             आपत्ति का विवरण</b><span style="color: Red;">*</span>
                                     </label>

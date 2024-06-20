@@ -6,15 +6,6 @@
             white-space: nowrap;
         }
 
-        #ACR_Details_Graph .highcharts-data-label text {
-            color: white !important;
-            font-size: 0.65rem !important;
-            font-weight: bold !important;
-            text-align: center !important;
-            fill: white !important;
-            text-decoration: none !important;
-        }
-
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -67,16 +58,25 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Compassionate Appointment</li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassionate Appointment
+                                </span></a>
+                        </li>
                         <li class="breadcrumb-item">Action Report on Compassionate Appointment at H.O. Level</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
     <div class="card card-border-primary" runat="server" clientidmode="static" id="DataFirstTime">
         <div class="card-header">
             <div class="row">

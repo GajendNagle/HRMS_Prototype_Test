@@ -1,21 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Trn_ProcessApplicationListDeo.aspx.cs" Inherits="mis_HRMS_Trn_ProcessApplicationList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        #ACR_Details_Graph .highcharts-data-label text {
-            color: white !important;
-            font-size: 0.65rem !important;
-            font-weight: bold !important;
-            text-align: center !important;
-            fill: white !important;
-            text-decoration: none !important;
-        }
-
-        .alert-success {
-            background-color: #23a181;
-        }
-
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -59,10 +45,6 @@
                 display: none;
             }
         }
-
-        .card-body-caharts, .card-body, .card {
-            margin-bottom: 0.1px;
-        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -76,14 +58,24 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Compassionate Appointment</li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassionate Appointment
+                                </span></a>
+                        </li>
                         <li class="breadcrumb-item">Action Report on Compassionate Appointment at DEO Level</li>
                     </ol>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
     </div>
     <div class="card card-border-primary" runat="server" clientidmode="static" id="DataFirstTime">
         <div class="card-header">
@@ -611,7 +603,7 @@
                     <div class="col-md-3">
                         <label>
                             Action /<br />
-                                कार्रवाई<span style="color: Red;">*</span></label>
+                            कार्रवाई<span style="color: Red;">*</span></label>
                         <select id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
                             <option value="0">--Select--</option>
                             <option value="1">आवेदन मे आपत्ति/लंबित किया जाना है</option>
@@ -704,7 +696,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
-                                    <a href="Trn_ProcessApplicationListDeo.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    <a href="Trn_ProcessApplicationListDeo.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                 </div>
             </div>
         </div>
