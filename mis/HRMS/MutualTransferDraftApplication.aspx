@@ -114,18 +114,18 @@
                     <table class="table table-bordere text-center">
 
                         <tr>
-                            <th>Sr. No. /<br />
+                            <th>Sr. No. <br />
                                 सरल क्र. </th>
-                            <th>Application Number /
+                            <th>Application Number 
                                     <br />
                                 आवेदन संख्या</th>
-                            <th>Employ Name /<br />
+                            <th>Employ Name <br />
                                 कर्मचारी का नाम </th>
-                            <th>Unique Id /<br />
+                            <th>Unique Id <br />
                                 यूनिक आईडी </th>
-                            <th>Print Draft Application /<br />
+                            <th>Print Draft Application <br />
                                 ड्राफ्ट आवेदन प्रिंट करें</th>
-                            <th>Update Application /<br />
+                            <th>Update Application <br />
                                 एप्लिकेशन अपडेट करें</th>
                         </tr>
                         <tr>

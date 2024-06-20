@@ -57,7 +57,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Employee Name /<br />
+                                Employee Name <br />
                                 कर्मचारी का नाम<span style="color: red">*</span></label>
                             <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Arjun Talwar" />
                         </div>
@@ -65,7 +65,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Unique ID /<br />
+                                Unique ID <br />
                                 यूनिक आई.डी<span style="color: red">*</span></label>
                             <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4781" />
                         </div>
@@ -73,7 +73,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Designation /<br />
+                                Designation <br />
                                 पदनाम<span style="color: red">*</span></label>
                             <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                         </div>
@@ -81,7 +81,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District /<br />
+                                District <br />
                                 ज़िला<span style="color: red">*</span></label>
                             <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
                         </div>
@@ -90,7 +90,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Block /<br />
+                                Block <br />
                                 विकासखण्ड<span style="color: red">*</span></label>
                             <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Block" value="Govindapura" />
                         </div>
@@ -99,7 +99,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Area /<br />
+                                Area <br />
                                 क्षेत्र<span style="color: red">*</span></label>
                             <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
                         </div>
@@ -107,7 +107,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Sankul Code/ Name /
+                                Sankul Code/ Name 
                  <br />
                                 संकुल कोड / नाम<span style="color: red">*</span></label>
                             <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
@@ -116,7 +116,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                School Code/ Name /
+                                School Code/ Name 
                  <br />
                                 स्कूल कोड / नाम<span style="color: red">*</span></label>
                             <input name="txtSchoolName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter School Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
@@ -125,7 +125,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Subject /
+                                Subject 
                             <br />
                                 विषय<span style="color: red">*</span></label>
                             <input name="txtSubject" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Subject" value="Mathematics" />
@@ -135,7 +135,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date of Birth /
+                                Date of Birth 
                                     <br />
                                 जन्मतिथि<span style="color: red">*</span></label>
                             <input name="DOB" id="txtDOB1" class="form-control" readonly autocomplete="off" value="17/07/1992" />
@@ -144,7 +144,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Age (As On 01.07.2024) /<br />
+                                Age (As On 01.07.2024) <br />
                                 आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
                             <input name="DOB" id="txtAgeCrrnt1" class="form-control" readonly autocomplete="off" value="32 years" />
                         </div>
@@ -152,7 +152,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Professional Qualifications /
+                                Professional Qualifications 
                                 <br />
                                 शैक्षणिक योग्यता<span style="color: red">*</span></label>
                             <input name="txtQualification" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="B Tech" />
@@ -162,7 +162,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Panel Group /
+                                Panel Group 
                                 <br />
                                 पैनल समूह<span style="color: red">*</span></label>
                             <input name="txtPanel" type="text" class="form-control" readonly autocomplete="off" value="SSS-1 Mathematics" />
@@ -172,7 +172,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date Posted in Current Organization /
+                                Date Posted in Current Organization 
                               <br />
                                 वर्तमान संस्था में पदस्थ दिनांक<span style="color: red">*</span></label>
                             <input name="DOB" id="txtDatePostedCrrnOrg1" class="form-control" readonly autocomplete="off" value="15/04/2002" />
@@ -181,7 +181,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Total Duration in Years /
+                                Total Duration in Years 
                                 <br />
                                 कुल अवधि वर्षो में<span style="color: red">*</span></label>
                             <input name="txtTotalDurantionYears" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Total Duration in Years" value="4" />
@@ -198,7 +198,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>
-                                Unique code of the person with whom mutual transfer is desired / 
+                                Unique code of the person with whom mutual transfer is desired  
                                 <br />
                                 जिसके साथ पारस्परिक स्थानांतरण चाहा गया है उसका यूनिक कोड<span style="color: red">*</span></label>
                             <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
@@ -223,7 +223,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Name /<br />
+                                    Employee Name <br />
                                     कर्मचारी का नाम<span style="color: red">*</span></label>
                                 <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Aman Patidar" />
                             </div>
@@ -231,7 +231,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Unique ID /<br />
+                                    Unique ID <br />
                                     यूनिक आई.डी<span style="color: red">*</span></label>
                                 <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4890" />
                             </div>
@@ -239,7 +239,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Designation /<br />
+                                    Designation <br />
                                     पदनाम<span style="color: red">*</span></label>
                                 <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                             </div>
@@ -247,7 +247,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    District /<br />
+                                    District <br />
                                     ज़िला<span style="color: red">*</span></label>
                                 <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
                             </div>
@@ -256,7 +256,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Block /<br />
+                                    Block <br />
                                     ब्लॉक<span style="color: red">*</span></label>
                                 <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Block" value="Govindapura" />
                             </div>
@@ -265,7 +265,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Area /<br />
+                                    Area <br />
                                     क्षेत्र<span style="color: red">*</span></label>
                                 <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
                             </div>
@@ -273,7 +273,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Sankul Code/ Name /
+                                    Sankul Code/ Name 
                  <br />
                                     संकुल कोड / नाम<span style="color: red">*</span></label>
                                 <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151236526-GOV VINAYAK PUBLIC SCHOOL TARRAKHURD" />
@@ -282,7 +282,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    School Code/ Name /
+                                    School Code/ Name 
                  <br />
                                     स्कूल कोड / नाम<span style="color: red">*</span></label>
                                 <input name="txtSchoolName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter School Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
@@ -291,7 +291,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Subject /
+                                    Subject 
                                 <br />
                                     विषय <span style="color: red">*</span></label>
                                 <input name="txtSubject" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Subject" value="Mathematics" />
@@ -300,7 +300,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Date of Birth /
+                                    Date of Birth 
                                     <br />
                                     जन्मतिथि<span style="color: red">*</span></label>
                                 <input name="DOB" id="txtDOB" class="form-control" readonly autocomplete="off" value="17/07/1992" />
@@ -309,7 +309,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Age (As On 01.07.2024) /<br />
+                                    Age (As On 01.07.2024) <br />
                                     आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
                                 <input name="DOB" id="txtAgeCrrnt" class="form-control" readonly autocomplete="off" value="32 years" />
                             </div>
@@ -317,7 +317,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Professional Qualifications /
+                                    Professional Qualifications 
                                     <br />
                                     शैक्षणिक योग्यता<span style="color: red">*</span></label>
                                 <input name="txtQualification" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="B Tech" />
@@ -327,7 +327,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Panel Group /
+                                    Panel Group 
                                     <br />
                                     पैनल समूह<span style="color: red">*</span></label>
                                 <input name="txtPanel" type="text" class="form-control" readonly autocomplete="off" value="SSS-1 Mathematics" />
@@ -337,7 +337,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Date Posted in Current Organization /
+                                    Date Posted in Current Organization 
                               <br />
                                     वर्तमान संस्था में पदस्थ दिनांक<span style="color: red">*</span></label>
                                 <input name="DOB" id="txtDatePostedCrrnOrg" class="form-control" readonly autocomplete="off" value="15/04/2002" />
@@ -346,7 +346,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Total Duration in Years /
+                                    Total Duration in Years 
                                     <br />
                                     कुल अवधि वर्षो में<span style="color: red">*</span></label>
                                 <input name="txtTotalDurantionYears" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Total Duration in Years" value="4" />
