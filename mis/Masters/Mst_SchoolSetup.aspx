@@ -18,30 +18,43 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
 
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">OIS Setup Master</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                        <%--<li class="breadcrumb-item"><a href="../menu.aspx?ID=Masters&SubID=LocationMaster" title="click to go on">Office / School Setup Masters</a></li>--%>
-                        <li class="breadcrumb-item active">OIS Setup Master</li>
-                    </ol>
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
+                                    <span>OIS Setup Master</span></a>
+                            </li>
+                            <li class="breadcrumb-item">School Setup</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <h4 class="card-title">OIS Setup Master / ओआईएस सेटअप मास्टर</h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <asp:Label runat="server" ID="lblMsg"></asp:Label>
                 <fieldset>
-                    <legend>OIS Setup Master</legend>
-                    <div class="row">
+                    <legend>OIS Setup Master / ओआईएस सेटअप मास्टर</legend>
+                    <div class="row align-items-end">
                         <%--   <div class="col-md-3">
                             <div class="form-group">
                                 <label>Setup <span style="color: red">*</span></label>
@@ -56,8 +69,11 @@
                         </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Financial Year<span style="color: red">*</span></label>
-                                <asp:DropDownList runat="server" ID="ddlFinancialYear" CssClass="form-control">
+                                <label>
+                                    Select Financial Year /<br />
+                                    वित्तीय वर्ष का चयन करें<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="ddlFinancialYear" CssClass="form-control select2">
+                                    <asp:ListItem Value="2024-25">--Select--</asp:ListItem>
                                     <asp:ListItem Value="2024-25">2024-25</asp:ListItem>
                                     <asp:ListItem Value="2023-24">2023-24</asp:ListItem>
                                 </asp:DropDownList>
@@ -65,8 +81,10 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>OIS Type <span style="color: red">*</span></label>
-                                <asp:DropDownList runat="server" ID="ddlOISType" AutoPostBack="true" OnSelectedIndexChanged="ddlOISType_SelectedIndexChanged" CssClass="form-control">
+                                <label>
+                                    Select OIS Type /<br />
+                                    ओआईएस प्रकार का चयन करें<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="ddlOISType" AutoPostBack="true" OnSelectedIndexChanged="ddlOISType_SelectedIndexChanged" CssClass="form-control select2">
                                     <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem Value="1">Office Setup</asp:ListItem>
                                     <asp:ListItem Value="2">Institute Setup</asp:ListItem>
@@ -74,9 +92,11 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="Div_ddlDivision" visible="false">
+                        <div class="col-md-3" runat="server" id="Div_ddlDivision" visible="false">
                             <div class="form-group">
-                                <label class="font-bold">Division Name <span style="color: red">*</span></label>
+                                <label>
+                                    Select Division Name /<br />
+                                    संभाग का चयन करें<span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" ID="ddlDivision" CssClass="form-control select2">
                                     <asp:ListItem>--Select--</asp:ListItem>
                                     <asp:ListItem>Bhopal</asp:ListItem>
@@ -91,9 +111,11 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="Div_ddlDistrict" visible="false">
+                        <div class="col-md-3" runat="server" id="Div_ddlDistrict" visible="false">
                             <div class="form-group">
-                                <label class="font-bold">District Name<span style="color: red">*</span></label>
+                                <label>
+                                    District Name /<br />
+                                    जिला का चयन करें<span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" ID="ddlDistrict" CssClass="form-control select2">
                                     <asp:ListItem>--Select--</asp:ListItem>
                                     <asp:ListItem>Bhopal</asp:ListItem>
@@ -149,9 +171,11 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="Div_ddlBlock" visible="false">
+                        <div class="col-md-3" runat="server" id="Div_ddlBlock" visible="false">
                             <div class="form-group">
-                                <label class="font-bold">Block Name<span style="color: red">*</span></label>
+                                <label>
+                                    Select Block Name/<br />
+                                    ब्लॉक का चयन करें<span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" ID="ddlBlock" CssClass="form-control select2">
                                     <asp:ListItem>--Select--</asp:ListItem>
                                     <asp:ListItem>Agar</asp:ListItem>
@@ -173,7 +197,9 @@
                         </div>
                         <div class="col-md-3" runat="server" id="div_officetype" visible="false">
                             <div class="form-group">
-                                <label class="font-bold">Office Type<span style="color: red;"> *</span></label>
+                                <label>
+                                    Select Office Type /<br />
+                                    कार्यालय प्रकार का चयन करें<span style="color: red;">*</span></label>
                                 <asp:DropDownList runat="server" ID="ddlofficetype" CssClass="form-control select2">
                                     <asp:ListItem Value=" -Select-">-Select-</asp:ListItem>
                                     <asp:ListItem Value="Bhopal">Head Office</asp:ListItem>
@@ -198,7 +224,9 @@
                         </div>
                         <div class="col-md-3" runat="server" id="div_OfficeName" visible="false">
                             <div class="form-group">
-                                <label class="font-bold">Office Name<span style="color: red;"> *</span></label>
+                                <label>
+                                    Select Office Name /<br />
+                                    कार्यालय का चयन करें<span style="color: red;">*</span></label>
                                 <asp:DropDownList runat="server" ID="ddlofficeName" CssClass="form-control select2">
                                     <asp:ListItem Value=" -Select-">-Select-</asp:ListItem>
                                     <asp:ListItem Value="School Education Department, Mantralaya - 233203OSS02">School Education Department, Mantralaya - 233203OSS02</asp:ListItem>
@@ -213,7 +241,9 @@
                         </div>
                         <div class="col-md-3" runat="server" id="Div_Designation" visible="false">
                             <div class="form-group">
-                                <label>Designation Type<span style="color: red">*</span></label>
+                                <label>
+                                    Select Designation Type /<br />
+                                    पदनाम प्रकार का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Regular">Ministry</option>
@@ -228,8 +258,10 @@
                         </div>
                         <div class="col-md-3" id="pnlOISCategoryType" runat="server" style="display: none;">
                             <div class="form-group">
-                                <label>OIS Category Type  <span style="color: red">*</span></label>
-                                <asp:DropDownList runat="server" ID="ddlOISCategoryType" CssClass="form-control">
+                                <label>
+                                    Select OIS Category Type /<br />
+                                    OIS श्रेणी प्रकार का चयन करें <span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="ddlOISCategoryType" CssClass="form-control select2">
                                     <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem Value="1">CPI</asp:ListItem>
                                     <asp:ListItem Value="2">DPI </asp:ListItem>
@@ -240,8 +272,10 @@
                         </div>
                         <div class="col-md-3" id="pnlEmpClass" runat="server">
                             <div class="form-group">
-                                <label>Employee  Class  <span style="color: red">*</span></label>
-                                <asp:DropDownList runat="server" ID="ddlEmployeeClass" AutoPostBack="true" OnSelectedIndexChanged="ddlEmployeeClass_SelectedIndexChanged" CssClass="form-control">
+                                <label>
+                                    Select Employee Class /<br />
+                                    कर्मचारी वर्ग का चयन करें<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="ddlEmployeeClass" AutoPostBack="true" OnSelectedIndexChanged="ddlEmployeeClass_SelectedIndexChanged" CssClass="form-control select2">
                                     <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem Value="Class-1">Class-1</asp:ListItem>
                                     <asp:ListItem Value="Class-2">Class-2 </asp:ListItem>
@@ -253,13 +287,23 @@
                         <div class="col-md-12" id="pnlOfficeSetupDetails" runat="server">
                             <div class="form-group">
                                 <div class="table-responsive">
-                                     <table class="table">
+                                    <table class="table">
                                         <tr>
-                                            <th>S.No.</th>
-                                            <th>Designation </th>
-                                            <th>Sanction Post</th>
-                                            <th>Working Post</th>
-                                            <th>Vacant Post</th>
+                                            <th>S.No.
+                                                <br />
+                                                सरल क्र.</th>
+                                            <th>Designation
+                                                <br />
+                                                पद का नाम </th>
+                                            <th>Sanction Post
+                                                <br />
+                                                स्वीकृत पोस्ट</th>
+                                            <th>Working Post
+                                                <br />
+                                                वर्किंग पोस्ट</th>
+                                            <th>Vacant Post
+                                                <br />
+                                                रिक्त पोस्ट</th>
                                         </tr>
                                         <tr>
 
@@ -347,7 +391,7 @@
                                         </tr>
 
                                     </table>
-                                   <%-- <table class="table">
+                                    <%-- <table class="table">
                                         <tr>
                                             <th>S.No.</th>
                                             <th>Designation </th>
@@ -397,7 +441,8 @@
                         </div>
                         <div class="col-md-3" runat="server" id="pnlschoolcategory" visible="false">
                             <div class="form-group">
-                                <label>School Category<span style="color: red">*</span></label>
+                                <label>Select School Category /<br />
+                                    स्कूल श्रेणी का चयन करें<span style="color: red">*</span></label>
                                 <asp:DropDownList ID="ddlSchoolType" OnSelectedIndexChanged="ddlSchoolType_SelectedIndexChanged" AutoPostBack="true" runat="server" CssClass="form-control select2">
                                     <asp:ListItem>--Select--</asp:ListItem>
                                     <asp:ListItem Value="1">Primary School</asp:ListItem>
@@ -409,77 +454,102 @@
                         </div>
                         <div class="col-md-3" id="divmin" runat="server">
                             <div class="form-group">
-                                <label>Student Count Minimum <span style="color: red">*</span></label>
+                                <label>
+                                    Enter Minimum Student Count/<br />
+                                    न्यूनतम छात्र संख्या दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox ID="ddlstudentcount" runat="server" CssClass="form-control" placeholder="Enter Count"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-md-3" id="divMax" runat="server">
                             <div class="form-group">
-                                <label>Student Count Maximum<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Maximum Student Count/<br />
+                                    अधिकतम छात्र संख्या दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox ID="Count2" runat="server" CssClass="form-control" placeholder="Enter Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" id="divHM" runat="server">
+                        <div class="col-md-3" id="divHM" runat="server">
                             <div class="form-group">
-                                <label>Head Master Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Head Master Count /<br />
+                                    हेड मास्टर संख्या दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Head Count"></asp:TextBox>
                             </div>
                         </div>
 
 
-                        <div class="col-md-2" runat="server" id="divmd1">
+                        <div class="col-md-3" runat="server" id="divmd1">
                             <div class="form-group">
-                                <label>Maths Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Maths Teacher Count /<br />
+                                    गणित शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="divmd2">
+                        <div class="col-md-3" runat="server" id="divmd2">
                             <div class="form-group">
-                                <label>English Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter English Teacher Count /<br />
+                                    अंग्रेजी शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-md-3" runat="server" id="divmd3">
                             <div class="form-group">
-                                <label>Social Science Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Social Science Teacher Count/<br />
+                                    सामाजिक विज्ञान शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="divmd4">
+                        <div class="col-md-3" runat="server" id="divmd4">
                             <div class="form-group">
-                                <label>Sanskrit Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Sanskrit Teacher Count /<br />
+                                    संस्कृत शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="divmd5">
+                        <div class="col-md-3" runat="server" id="divmd5">
                             <div class="form-group">
-                                <label>Biology Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Biology Teacher Count /<br />
+                                    जीवविज्ञान शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="divmd6">
+                        <div class="col-md-3" runat="server" id="divmd6">
                             <div class="form-group">
-                                <label>Hindi Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Hindi Teacher Count /<br />
+                                    हिंदी शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" runat="server" id="divmd7">
+                        <div class="col-md-3" runat="server" id="divmd7">
                             <div class="form-group">
-                                <label>Urdu Teacher Count<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Urdu Teacher Count /<br />
+                                    उर्दू शिक्षक गणना दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-2" id="divTeacher" runat="server">
+                        <div class="col-md-3" id="divTeacher" runat="server">
                             <div class="form-group">
-                                <label>Total Teacher<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Total Teacher /<br />
+                                    कुल शिक्षक दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Teacher Count"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="col-md-3 mt-4">
-                            <div class="form-group">
-                                <%-- <asp:Button runat="server" ID="btnSave" CssClass="btn btn-block btn-success btn-rounded" Text="Save" OnClientClick="return confirm('Are you sure you want to save this record?')" />--%>
-                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                                <a href="Mst_SchoolSetup.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <%-- <asp:Button runat="server" ID="btnSave" CssClass="btn btn-block btn-success btn-rounded" Text="Save" OnClientClick="return confirm('Are you sure you want to save this record?')" />--%>
+                                    <button type="button" class="Alert-Confirmation btn btn-success btn-border btn w-lg">Save</button>
+                                    <a href="Mst_SchoolSetup.aspx" class="btn btn-outline-danger btn-border btn w-lg">Clear</a>
+                                </div>
                             </div>
                         </div>
 
@@ -488,7 +558,7 @@
 
                 <div id="show" runat="server" visible="false">
                     <fieldset>
-                        <legend>Reports</legend>
+                        <legend>Report / रिपोर्ट</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -506,12 +576,20 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="table text-center">
                                         <tr>
-                                            <th>School Category</th>
-                                            <th>Student Count </th>
-                                            <th>Head Master No.</th>
+                                            <th>School Category
+                                                <br />
+                                                स्कूल श्रेणी</th>
+                                            <th>Student Count
+                                                <br />
+                                                छात्र संख्या</th>
+                                            <th>Head Master No.
+                                                <br />
+                                                हेड मास्टर नंबर</th>
                                             <th>Total Teacher
+                                                <br />
+                                                कुल शिक्षक
                                             </th>
                                             <th>Action</th>
 
@@ -545,7 +623,7 @@
                 </div>
                 <div id="Middle" runat="server" visible="false">
                     <fieldset>
-                        <legend>Reports</legend>
+                        <legend>Report / रिपोर्ट</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -563,20 +641,36 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="table text-center">
                                         <tr>
-                                            <th>School Category</th>
-                                            <th>Student Count </th>
-                                            <th>Head Master No.</th>
+                                            <th>School Category
+                                                <br />
+                                                स्कूल श्रेणी</th>
+                                            <th>Student Count
+                                                <br />
+                                                छात्र संख्या</th>
+                                            <th>Head Master No.
+                                                <br />
+                                                हेड मास्टर नंबर</th>
 
-                                            <th>Maths Teacher Count</th>
-                                            <th>English Teacher Count</th>
-                                            <th>Social Science Teacher Count</th>
-                                            <th>Sanskrit Teacher Count</th>
-                                            <th>Biology Teacher Count</th>
-                                            <th>Hindi Teacher Count</th>
-                                            <th>Urdu Teacher Count</th>
-                                            <th>Total Teacher</th>
+                                            <th>Maths Teacher Count<br />
+                                                गणित शिक्षक गणना</th>
+                                            <th>English Teacher Count
+                                                <br />
+                                                अंग्रेजी शिक्षक गणना</th>
+                                            <th>Social Science Teacher Count<br />
+                                                सामाजिक विज्ञान शिक्षक गणना</th>
+                                            <th>Sanskrit Teacher Count<br />
+                                                संस्कृत शिक्षक गणना</th>
+                                            <th>Biology Teacher Count<br />
+                                                जीवविज्ञान शिक्षक गणना</th>
+                                            <th>Hindi Teacher Count<br />
+                                                हिंदी शिक्षक गणना</th>
+                                            <th>Urdu Teacher Count<br />
+                                                उर्दू शिक्षक गणना</th>
+                                            <th>Total Teacher
+                                                <br />
+                                                कुल शिक्षक</th>
                                             <th>Action</th>
 
                                         </tr>
@@ -633,7 +727,7 @@
                 </div>
                 <div id="High" runat="server" visible="false">
                     <fieldset>
-                        <legend>Reports</legend>
+                        <legend>Report / रिपोर्ट</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -651,20 +745,31 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="table text-center">
                                         <tr>
-                                            <th>School Category</th>
-                                            <th>Student Count </th>
+                                            <th>School Category<br />
+                                                स्कूल श्रेणी</th>
+                                            <th>Student Count
+                                                <br />
+                                                छात्र संख्या</th>
 
 
-                                            <th>Maths Teacher Count</th>
-                                            <th>English Teacher Count</th>
-                                            <th>Social Science Teacher Count</th>
-                                            <th>Sanskrit Teacher Count</th>
-                                            <th>Biology Teacher Count</th>
-                                            <th>Hindi Teacher Count</th>
-                                            <th>Urdu Teacher Count</th>
-                                            <th>Total Teacher</th>
+                                            <th>Maths Teacher Count<br />
+                                                गणित शिक्षक गणना</th>
+                                            <th>English Teacher Count<br />
+                                                अंग्रेजी शिक्षक गणना</th>
+                                            <th>Social Science Teacher Count<br />
+                                                सामाजिक विज्ञान शिक्षक गणना</th>
+                                            <th>Sanskrit Teacher Count<br />
+                                                संस्कृत शिक्षक गणना</th>
+                                            <th>Biology Teacher Count<br />
+                                                जीवविज्ञान शिक्षक गणना</th>
+                                            <th>Hindi Teacher Count<br />
+                                                हिंदी शिक्षक गणना</th>
+                                            <th>Urdu Teacher Count<br />
+                                                उर्दू शिक्षक गणना</th>
+                                            <th>Total Teacher<br />
+                                                कुल शिक्षक</th>
                                             <th>Action</th>
 
                                         </tr>
