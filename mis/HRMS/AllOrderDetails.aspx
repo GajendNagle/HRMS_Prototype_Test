@@ -64,7 +64,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Circular Issued By /<br />
+                                Select Circular Issued By <br />
                                 परिपत्र का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -81,7 +81,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Category /<br />
+                                Select Category <br />
                                 श्रेणी का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--" disabled selected>--Select--</option>
@@ -202,25 +202,25 @@
                                 <table class="table text-center table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No. /            
+                                            <th>Sr.No.             
                                                     <br />
                                                 सरल क्र.</th>
-                                            <th>Order No. /         
+                                            <th>Order No.          
                                                     <br />
                                                 आदेश क्र.</th>
-                                            <th>Order Issue Date /  
+                                            <th>Order Issue Date   
                                                     <br />
                                                 आदेश जारी करने की तिथि  </th>
-                                            <th>Order Expiry Date / 
+                                            <th>Order Expiry Date 
                                                     <br />
                                                 ऑर्डर की समाप्ति तिथि   </th>
-                                            <th>Order Subject /     
+                                            <th>Order Subject      
                                                     <br />
                                                 आदेश विषय    </th>
-                                            <th>Upload By /         
+                                            <th>Upload By         
                                                     <br />
                                                 द्वारा अपलोड करें       </th>
-                                            <th>View Attachment /   
+                                            <th>View Attachment   
                                                     <br />
                                                 संलग्न देखें    </th>
 

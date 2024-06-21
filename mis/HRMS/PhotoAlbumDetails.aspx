@@ -75,7 +75,7 @@
                         <div class="form-group">
                             <label>
                                 Album Date<br />
-                                एलबम दिनांक <span style="color: red">*</span></label>
+                                एलबम दिनांक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" />
                         </div>
                     </div>
@@ -121,13 +121,13 @@
                             <table class="table text-center table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>ID /<br />
+                                        <th>ID <br />
                                             आई डी</th>
-                                        <th>Album Name /<br />
+                                        <th>Album Name <br />
                                             एलबम का नाम</th>
-                                        <th>Album Date /<br />
+                                        <th>Album Date <br />
                                             एलबम दिनांक </th>
-                                        <th>View Upload Photo /<br />
+                                        <th>View Upload Photo <br />
                                             फोटो अपलोड देखें
                                         </th>
                                         <th>Action<br />

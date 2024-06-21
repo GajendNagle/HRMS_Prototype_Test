@@ -71,9 +71,8 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>
-                                Enter Name and Address of The Issuing Office /<br />
-                                जारीकर्ता कार्यालय का नाम और पता दर्ज करें 
-                                 <span style="color: red">*</span></label>
+                                Enter Name and Address of The Issuing Office <br />
+                                जारीकर्ता कार्यालय का नाम और पता दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Name and Address of The Issuing Office" />
 
                         </div>
@@ -81,7 +80,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Tender  Issue Date /<br />
+                                Tender  Issue Date <br />
                                 टेंडर जारी करने की तिथि <span style="color: red">*</span></label>
                             <input class="form-control" type="date" />
                         </div>
@@ -89,7 +88,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Last Date Of Submission /<br />
+                                Last Date Of Submission <br />
                                 जमा करने की अंतिम तिथि<span style="color: red">*</span></label>
                             <input class="form-control" type="date" />
                         </div>
@@ -98,7 +97,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Tender Expiry Date /<br />
+                                Tender Expiry Date <br />
                                 टेंडर समाप्ति तिथि<span style="color: red">*</span></label>
                             <input class="form-control" type="date" />
                         </div>
@@ -114,7 +113,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Tender Type /<br />
+                                Select Tender Type <br />
                                 टेंडर प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select id="" name="circular-category" class="form-control select2">
                                 <option value="Academic">Select</option>
@@ -127,7 +126,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Tender Title /<br />
+                                Enter Tender Title <br />
                                 टेंडर का शीर्षक दर्ज करें <span style="color: red">*</span></label>
                             <input class="form-control" placeholder="Enter Tender Title" />
                         </div>
@@ -135,7 +134,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Tender Value /<br />
+                                Enter Tender Value <br />
                                 टेंडर का मान दर्ज करें <span style="color: red">*</span></label>
                             <input class="form-control" placeholder="Enter Tender Value" />
                         </div>
@@ -144,7 +143,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter EMD /<br />
+                                Enter EMD <br />
                                 ई.एम.डी दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter EMD" />
                         </div>
@@ -152,7 +151,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Document Cost /<br />
+                                Enter Document Cost <br />
                                 दस्तावेज़ लागत दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter Document Cost" />
                         </div>
@@ -168,7 +167,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Search Key Words /<br />
+                                Enter Search Key Words <br />
                                 सर्च कीवर्ड दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter Search Key Words " />
                         </div>
@@ -176,7 +175,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Tender Issued By /<br />
+                                Tender Issued By <br />
                                 द्वारा टेंडर जारी किया गया
                                  <span style="color: red">*</span></label>
                             <select id="tender_issued_by" name="tender_issued_by" class="form-control select2">
@@ -200,7 +199,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Upload File /<br />
+                                Upload File <br />
                                 फ़ाइल अपलोड करें<span style="color: red">*</span></label>
                             <input type="file" class="form-control" />
 
@@ -209,7 +208,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>
-                                Enter Work Description /<br />
+                                Enter Work Description <br />
                                 कार्य विवरण दर्ज करें<span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" placeholder="Enter Work Description" oninput="autoResize(this)"></textarea>
 
@@ -223,8 +222,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Name /<br />
-                                नाम दर्ज करें <span style="color: red">*</span></label>
+                                Enter Name <br />
+                                नाम दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter Name " />
                         </div>
 
@@ -233,7 +232,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Email /<br />
+                                Enter Email <br />
                                 ई-मेल दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter Email-ID" />
                         </div>
@@ -243,7 +242,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Phone No. /<br />
+                                Enter Phone No. <br />
                                 फोन नंबर दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter Phone No" />
                         </div>
@@ -254,7 +253,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Mobile No /
+                                Enter Mobile No
                                 <br />
                                 मोबाईल नंबर दर्ज करें<span style="color: red">*</span></label>
                             <input class="form-control" type="text" placeholder="Enter Phone No" />
@@ -292,30 +291,30 @@
                             <table class="table text-center table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr.No /          
+                                        <th>Sr.No           
                                                 <br />
                                             सरल क्र.</th>
-                                        <th>ID /             
+                                        <th>ID              
                                                 <br />
                                             आई.डी.</th>
-                                        <th>Tender No. /     
+                                        <th>Tender No.     
                                                 <br />
                                             टेंडर क्र.</th>
-                                        <th>Tender Date /    
+                                        <th>Tender Date   
                                                 <br />
                                             टेंडर दिनांक</th>
-                                        <th>Work Discription /<br />
+                                        <th>Work Discription<br />
                                             कार्य विवरण  </th>
-                                        <th>Issued By /     
+                                        <th>Issued By      
                                                 <br />
                                             जारीकर्ता  </th>
-                                        <th>District /       
+                                        <th>District        
                                                 <br />
                                             जिला   </th>
-                                        <th>Total View /    
+                                        <th>Total View     
                                                 <br />
                                             कुल देखे  </th>
-                                        <th>Tender Document /
+                                        <th>Tender Document 
                                                 <br />
                                             टेंडर दस्तावेज़   </th>
                                         <th>Action         

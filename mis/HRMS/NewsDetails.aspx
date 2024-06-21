@@ -122,8 +122,7 @@
                         <div class="form-group">
                             <label>
                                 Upload File<br />
-                                फ़ाइल अपलोड करें
-                            <span style="color: red">*</span></label>
+                                फ़ाइल अपलोड करें<span style="color: red">*</span></label>
                             <input type="file" class="form-control" />
                         </div>
                     </div>
@@ -160,18 +159,18 @@
                                 <thead>
                                     <tr>
 
-                                        <th>ID /<br />
+                                        <th>ID <br />
                                             आई डी</th>
-                                        <th>News Paper /     
+                                        <th>News Paper      
                                                 <br />
                                             अखबार</th>
-                                        <th>News Date /     
+                                        <th>News Date      
                                                 <br />
                                             समाचार की दिनांक</th>
-                                        <th>News Subject /   
+                                        <th>News Subject    
                                                 <br />
                                             समाचार का विषय </th>
-                                        <th>View Upload News /<br />
+                                        <th>View Upload News <br />
                                             अपलोड समाचार देखें   </th>
                                         <th>Action         
                                                 <br />

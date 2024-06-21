@@ -154,19 +154,19 @@
                             <table class="table text-center table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>ID /             
+                                        <th>ID              
                                                     <br />
                                             आई डी  </th>
-                                        <th>Message Title /  
+                                        <th>Message Title   
                                                     <br />
                                             संदेश शीर्षक</th>
-                                        <th>Message From /   
+                                        <th>Message From    
                                                     <br />
                                             संदेश प्रेषक</th>
-                                        <th>Message Date /   
+                                        <th>Message Date    
                                                     <br />
                                             संदेश दिनांक  </th>
-                                        <th>View Upload File /
+                                        <th>View Upload File 
                                                     <br />
                                             अपलोड फ़ाइल देखें  </th>
                                         <th>Action          

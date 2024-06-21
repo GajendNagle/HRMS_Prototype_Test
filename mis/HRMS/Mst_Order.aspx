@@ -74,14 +74,14 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Enter Order Number /<br />
+                            Enter Order Number <br />
                             आदेश नंबर दर्ज करें<span style="color: red">*</span></label>
                         <input type="text" class="form-control" placeholder="Enter Order Number " />
 
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Enter Subject /<br />
+                            Enter Subject <br />
                             विषय दर्ज करें<span style="color: red">*</span></label>
                         <textarea class="form-control" id="workdescription" rows="1" placeholder="Enter Subject Description" oninput="autoResize(this)"></textarea>
                     </div>
@@ -94,7 +94,7 @@
                     </script>
                     <div class="col-md-3">
                         <label>
-                            Select Order Category /
+                            Select Order Category 
                                 <br />
                             आदेश श्रेणी का चयन करें<span style="color: red">*</span></label>
                         <select id="" name="circular-category" class="form-control select2">
@@ -182,7 +182,7 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Select Isseued By /<br />
+                            Select Isseued By <br />
                             जारीकर्ता का चयन करें<span style="color: red">*</span></label>
                         <select id="tender_issued_by" name="tender_issued_by" class="form-control select2">
                             <option>-Select-</option>
@@ -205,7 +205,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label>
-                            From Whom /<br />
+                            From Whom <br />
                             जिस से<span style="color: red">*</span></label>
                         <select id="for-whom" name="for-whom" class="form-control select2">
                             <option value="Academic">Select</option>
@@ -218,7 +218,7 @@
 
                     <div class="col-md-3">
                         <label>
-                            Select Priority /<br />
+                            Select Priority <br />
                             प्राथमिकता का चयन करें<span style="color: red">*</span></label>
                         <select id="" name="for-whom" class="form-control select2">
                             <option value="Academic">Select</option>
@@ -231,14 +231,14 @@
 
                     <div class="col-md-3">
                         <label>
-                            Issue Date /
+                            Issue Date 
                                 <br />
                             जारी करने की तिथि<span style="color: red">*</span></label>
                         <input type="date" class="form-control" />
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Expiry Date /
+                            Expiry Date 
                                 <br />
                             समाप्ति तिथि<span style="color: red">*</span></label>
                         <input type="date" class="form-control" />
@@ -248,7 +248,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label>
-                            Upload File /  
+                            Upload File   
                                 <br />
                             फ़ाइल अपलोड करें<span style="color: red">*</span></label>
                         <input type="file" class="form-control" />
@@ -287,22 +287,22 @@
                             <table class="table text-center table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr.No /        
+                                        <th>Sr.No        
                                             <br />
                                             सरल क्र.</th>
-                                        <th>Order-ID /      
+                                        <th>Order-ID       
                                             <br />
                                             आदेश आई.डी.</th>
-                                        <th>Order-No /      
+                                        <th>Order-No       
                                             <br />
                                             आदेश क्र.</th>
-                                        <th>Issue Date /    
+                                        <th>Issue Date     
                                             <br />
                                             जारी करने की तिथि</th>
-                                        <th>Expiry Date /   
+                                        <th>Expiry Date    
                                             <br />
                                             समाप्ति तिथि</th>
-                                        <th>Order Document /
+                                        <th>Order Document 
                                             <br />
                                             आदेश दस्तावेज़ </th>
                                         <th>Action        

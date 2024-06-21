@@ -244,19 +244,19 @@
                                 <thead>
                                     <tr>
 
-                                        <th>ID /                 
+                                        <th>ID                  
                                                 <br />
                                             आई डी</th>
-                                        <th>Event Name /        
+                                        <th>Event Name         
                                                 <br />
                                             इवेंट का नाम</th>
-                                        <th>Event Date /        
+                                        <th>Event Date         
                                                 <br />
                                             इवेंट</th>
-                                        <th>Event By /          
+                                        <th>Event By           
                                                 <br />
                                             इवेंट द्वारा</th>
-                                        <th>view Upload Events /
+                                        <th>view Upload Events 
                                                 <br />
                                             अपलोड इवेंट देखें</th>
                                         <th>Action             

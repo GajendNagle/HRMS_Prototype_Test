@@ -433,7 +433,7 @@
                                 <label>
                                     Select Block Name 
                                 <br />
-                                    विकासखण्ड का चयन करें <span style="color: red">*</span></label>
+                                    विकासखण्ड का चयन करें<span style="color: red">*</span></label>
                                 <select id="ddlBlock" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Agar">Agar</option>
@@ -458,7 +458,7 @@
                                 <label>
                                     Select Sankul Name 
                                     <br />
-                                    संकुल का चयन करें 
+                                    संकुल का चयन करें<span style="color: red">*</span> 
                                 </label>
                                 <select class="form-control select2" id="ddlOffice" onchange="BindSankul();">
                                     <option>--Select--</option>
@@ -474,8 +474,7 @@
                             <div class="form-group">
                                 <label>
                                     Select Office/Institute/School (UDISE Code) <br />
-                                    कार्यालय/संस्था/विद्यालय का चयन करें
-                                       <span style="color: red">*</span></label>
+                                    कार्यालय/संस्था/विद्यालय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="ddlOfficce" onchange="BindSankul();">
                                     <option>--Select--</option>
                                     <option value="(2345040410) AAMAI HS NEW JSK">(2345040410) AAMAI HS NEW JSK</option>
@@ -492,7 +491,7 @@
                                     Select Post Code 
                                     <br />
 
-                                    पद कोड का चयन करें <span style="color: red">*</span></label>
+                                    पद कोड का चयन करें<span style="color: red">*</span></label>
                                 <%--<input onchange="ShowVacantPost()" placeholder="Enter Post Code" name="txtPostCode" value="" type="text" class="form-control" autocomplete="off" />--%>
                                 <select class="form-control select2" id="ddlPostCode" onchange="ShowVacantPost();">
                                     <option value="0">Select</option>

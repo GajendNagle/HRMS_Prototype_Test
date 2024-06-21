@@ -113,7 +113,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Enter Circular Number /<br />
+                            Enter Circular Number <br />
                             परिपत्र नंबर दर्ज करें<span style="color: red">*</span>
                         </label>
                         <input type="text" class="form-control" placeholder="Enter Circular Number " />
@@ -122,7 +122,7 @@
 
                     <div class="col-md-3">
                         <label>
-                            Issue Date /<br />
+                            Issue Date <br />
                             जारी करने की तिथि <span style="color: red">*</span>
 
                         </label>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                           Select Isseued By /
+                           Select Isseued By 
                                 <br />
                             जारीकर्ता का चयन करें<span style="color: red">*</span>
                         </label>
@@ -156,8 +156,8 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Select Circular Related Module/<br />
-                            परिपत्र संबंधित मॉड्यूल का चयन करें <span style="color: red">*</span>
+                            Select Circular Related Module<br />
+                            परिपत्र संबंधित मॉड्यूल का चयन करें<span style="color: red">*</span>
                         </label>
                         <asp:DropDownList ID="ddlmedium" runat="server" multiple="multiple" CssClass="select2 form-control" ToolTip="Select Circular Related Module">
                             <asp:ListItem Value="" Text="Select options..." />
@@ -207,7 +207,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label>
-                           Select Circular Category /<br />
+                           Select Circular Category <br />
                             परिपत्र श्रेणी का चयन करें<span style="color: red">*</span></label>
                         <select id="" name="circular-category" class="form-control select2">
                             <option value="Academic">--Select--</option>
@@ -294,7 +294,7 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            From Whom /
+                            From Whom 
                                 <br />
                             जिस से<span style="color: red">*</span></label>
                         <select id="for-whom" name="for-whom" class="form-control select2">
@@ -308,7 +308,7 @@
 
                     <div class="col-md-3">
                         <label>
-                            Select Priority /
+                            Select Priority 
                                 <br />
                             प्राथमिकता का चयन करें<span style="color: red">*</span></label>
                         <select id="" name="for-whom" class="form-control select2">
@@ -321,7 +321,7 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Upload File /<br />
+                            Upload File <br />
                             फ़ाइल अपलोड करें<span style="color: red">*</span></label>
                         <input type="file" class="form-control" />
                     </div>
@@ -329,7 +329,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <label>
-                            Enter Subject /<br />
+                            Enter Subject <br />
                             विषय दर्ज करें<span style="color: red">*</span></label>
                         <textarea class="form-control" id="workdescription" rows="1" placeholder="Enter Subject Description" oninput="autoResize(this)"></textarea>
                     </div>
@@ -376,18 +376,18 @@
                             <table class="table text-center table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr.No. /<br />
+                                        <th>Sr.No. <br />
                                             सरल क्र.</th>
-                                        <th>ID /              
+                                        <th>ID               
                                             <br />
                                             आई डी</th>
-                                        <th>Circular Number /
+                                        <th>Circular Number 
                                             <br />
                                             परिपत्र नंबर </th>
-                                        <th>Circular Date /   
+                                        <th>Circular Date    
                                             <br />
                                             परिपत्र दिनांक </th>
-                                        <th>Circular Document /<br />
+                                        <th>Circular Document <br />
                                             परिपत्र दस्तावेज़</th>
                                         <th>Action          
                                             <br />
