@@ -55,7 +55,7 @@
                                 </li>
                                 <li class="breadcrumb-item">
                                     <a href="#Reports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                        <span>Reports</span></a>
+                                        <span>HRMS Reports</span></a>
                                 </li>
                                 <li class="breadcrumb-item">Employee Retirement Detail</li>
                             </ol>
@@ -79,7 +79,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type /<br />
+                                        Select Office Type <br />
                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="0">Select</option>
@@ -120,18 +120,18 @@
                         </div>
                         <div class="row">
                             <div class="table-responsive">
-                                <table class="table">
+                                <table class="table text-center">
 
                                     <tr>
-                                        <th>Sr.No/<br />सरल क्र.</th>
-                                        <th>Employee Name /<br />कर्मचारी का नाम</th>
-                                        <th>Seperation Type /<br />पृथक्करण प्रकार</th>
-                                        <th>Retirement Date /<br />सेवानिवृत्ति तिथि</th>
-                                        <th>Office Type /<br />कार्यालय का प्रकार</th>
-                                        <th>Order Date /<br />आदेश की तारीख</th>
-                                        <th>Order No /<br />आदेश संख्या</th>
-                                        <th>Remark /<br />टिप्पणी</th>
-                                        <th>Document/<br />दस्तावेज़</th>
+                                        <th>Sr.No<br />सरल क्र.</th>
+                                        <th>Employee Name <br />कर्मचारी का नाम</th>
+                                        <th>Seperation Type <br />पृथक्करण प्रकार</th>
+                                        <th>Retirement Date <br />सेवानिवृत्ति तिथि</th>
+                                        <th>Office Type <br />कार्यालय का प्रकार</th>
+                                        <th>Order Date <br />आदेश की तारीख</th>
+                                        <th>Order No <br />आदेश संख्या</th>
+                                        <th>Remark <br />टिप्पणी</th>
+                                        <th>Document<br />दस्तावेज़</th>
 
 
                                     </tr>
