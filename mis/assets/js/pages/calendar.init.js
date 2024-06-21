@@ -49,8 +49,8 @@ function eventClicked() {
         document.getElementById("btn-save-event").setAttribute("hidden", !0)
 }
 function editEvent(e) {
-    document.getElementById("event-details").style.display = 'none';
-    document.getElementById("event-form").style.display = 'block';
+    //document.getElementById("event-details").style.display = 'none';
+    //document.getElementById("event-form").style.display = 'block';
     var t = e.getAttribute("data-id");
     (
         "new-event" == t ?
@@ -62,6 +62,8 @@ function editEvent(e) {
             )
             : "edit-event" == t ?
                 (
+                    document.getElementById("event-details").style.display = 'none',
+                    document.getElementById("event-form").style.display = 'block',
                     e.innerHTML = "Cancel",
                     e.setAttribute("data-id", "cancel-event"),
                     document.getElementById("btn-save-event").innerHTML = "Update Event",
@@ -70,6 +72,11 @@ function editEvent(e) {
                 )
                 : (
                     e.innerHTML = "Edit",
+                    document.getElementById("event-details").style.display = 'block',
+                    document.getElementById("event-form").style.display = 'none',
+          
+
+
                     e.setAttribute("data-id", "edit-event"),
                     eventClicked
                 )

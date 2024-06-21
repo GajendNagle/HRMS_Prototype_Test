@@ -3,7 +3,38 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <link href="~\css\dashboard.css" rel="stylesheet" />
+    <style>
+        /* #upcoming-event-list .card {
+        margin: unset 1.5rem inherit inherit;
+    }*/
+        #DvcircularOrdersList .card,#upcoming-event-list .card  {
+            border-radius: 14px;
+        }
 
+        .offcanvas.offcanvas-custom.show .simplebar-content-wrapper {
+            visibility: visible;
+        }
+
+        .offcanvas.offcanvas-custom .simplebar-content-wrapper {
+            visibility: hidden;
+        }
+
+        .offcanvas-custom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-right: var(--vz-gray-600) solid 1px;
+            border-radius: var(--vz-border-radius);
+            padding-bottom: 1rem;
+            /* Adjust width as needed */
+            height: 100%;
+            z-index: 100;
+            visibility: hidden;
+            background-color: var(--vz-body-bg);
+            transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+    </style>
     <style>
         .btn-check:focus + .btn-secondary, .btn-secondary:focus {
             color: var(--vz-btn-active-color);
@@ -21,7 +52,7 @@
 
         .top-heading h3 {
             margin: 0;
-            font-family: 'Eczar-SemiBold';
+            font-family: var(--vz-font-sans-serif) !important;
             font-size: 16px;
             color: #fff;
             padding: 0 11px;
@@ -31,7 +62,8 @@
         .top-heading {
             position: relative;
             display: flex;
-            background-color: var(--vz-primary);
+            /*background-color: var(--vz-primary);*/
+            background-image: url(../assets/images/svg/CardHeader.svg);
             justify-content: center;
             border-radius: 120px;
             box-shadow: 8px 0px 12px 7px rgba(100, 100, 111, 0.2);
@@ -45,38 +77,54 @@
             background-image: url(../assets/images/svg/CardHeader.svg);
         }
 
-            .card-header > * {
-                color: var(--vz-gray-200);
-            }
+        .crm-widget .card-header-border {
+            border-top: 0.5rem solid #321e46;
+            border-radius: 30px 30px 0 0 !important;
+            height: 25px;
+        }
 
+        .card-footer-border {
+            border-bottom: 0.5rem solid #321e46;
+            border-radius: 0 0 30px 30px !important;
+            height: 25px;
+        }
+
+        .card-header > * {
+            color: var(--vz-gray-200);
+        }
+
+        /* Custom Scrollbar Styles */
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 12px;
         }
 
         ::-webkit-scrollbar-track {
-            /*background-color: ;*/
-            -webkit-border-radius: 10px;
             border-radius: 10px;
         }
 
         ::-webkit-scrollbar-thumb {
-            -webkit-border-radius: 10px;
             border-radius: 10px;
-            background: #6d6d6d;
+            background: linear-gradient(45deg,transparent, var(--vz-primary));
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         }
 
-        .crm-widget {
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(75deg,transparent, var(--vz-primary));
+                background: linear-gradient(75deg,transparent, var(--vz-primary));
+            }
+
+
+        /*.crm-widget {
             display: block;
             top: 0px;
             position: relative;
-            /* &:hover{
+        &:hover{
                 transition: all 0.2s ease-out;
                 box-shadow: none;
                 top: -6px;
                 background-color: white;
             }
-*/
-            /*    &:before
+   &:before
 
         {
             content: "";
@@ -95,10 +143,10 @@
 
         &:hover:before {
             transform: scale(2.15);
-        }*/
         }
+   }
 
-            /*  .col:nth-child(2n) .crm-widget .ag-courses-item_bg {
+       .col:nth-child(2n) .crm-widget .ag-courses-item_bg {
             background-color: #3ecd5e;
         }
 
@@ -119,29 +167,38 @@
         }
 */
 
-            .crm-widget .text-muted {
-                font-weight: bold;
-                opacity: 1 !important;
-                color: var(--vz-primary) !important;
-            }
+        .crm-widget .text-muted {
+            font-weight: bold;
+            opacity: 1 !important;
+            color: var(--vz-primary) !important;
+        }
 
-            .crm-widget .card-body {
-                height: 100%;
-                /* padding-top: 1.5rem;
-                padding-right: 1rem;
-                padding-left: 1rem ;*/
-            }
+        .crm-widget .card-body {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between
+        }
 
         .card {
             box-shadow: 8px 0px 12px 7px rgba(100, 100, 111, 0.2);
             border-radius: 27px;
-            overflow: hidden
+            overflow: hidden;
+            border: 1px, var(--vz-gray-600) solid;
+            --vz-card-cap-padding-y: 0.5rem;
         }
 
         #Chart_Payroll .apexcharts-legend, #Chart_Transfer .apexcharts-legend {
             display: flex;
             flex-direction: column; /* Arrange legend items in a column */
             align-items: flex-start; /* Align legend items to the left */
+        }
+
+        .apexcharts-text tspan {
+            font-family: var(--vz-font-sans-serif) !important;
+            font-weight: bolder;
+            font-size: 14px;
+            fill: var(--vz-body-color);
         }
 
         .apexcharts-legend-text {
@@ -179,9 +236,7 @@
             font-weight: 900;
         }
 
-        .card {
-            --vz-card-cap-padding-y: 0.5rem;
-        }
+
 
         #tooltip {
             font-weight: 700;
@@ -198,12 +253,29 @@
             display: none;
         }
 
-        #Chart_Scheme g text {
+        .highcharts-xaxis-labels > *, .highcharts-breadcrumbs-button > text, .highcharts-drilldown-data-label > text {
+            fill: var(--vz-body-color) !important;
+            font-weight: bold !important;
             text-decoration: none !important;
-            fill: #000 !important;
-            flex-wrap: wrap;
         }
 
+
+        /*   .highcharts-label tspan, .highcharts-xaxis-labels text, .highcharts-breadcrumbs-button text {
+            fill: var(--vz-body-color) !important;
+        }
+
+        .highcharts-label text, .highcharts-xaxis-labels text {
+            text-decoration: none !important;
+        }*/
+
+
+        /* #Chart_Scheme g text, #SchemeApplicants_Charts g text {
+           
+            fill: var(--vz-body-color) !important;
+            font-size: 14px !important;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }*/
         .row {
             margin-bottom: 0rem !important;
         }
@@ -408,31 +480,35 @@
         </div>
     </div>
     <%--    <div class="row">
-        <div class="col-xxl-12">
+        <div class="col-xl-12">
             <h4 class="">Status as on Year : 2024</h4>
         </div>
     </div>
     --%>
 
 
-    <div class="row row-cols-xxl-5 row-cols-md-3 row-cols-1">
+    <div class="row row-cols-xl-5 row-cols-md-3 row-cols-1 justify-content-center">
         <div class="col ">
 
             <div class="card crm-widget card-height-100">
-                <div class="card-body">
-
-
+                <div class="card-header-border"></div>
+                <div class="card-body ">
                     <h5 class=" text-muted item-bottom  fs-21">Registered Offices</h5>
-                    <span class="text-muted fs-13 align-middle">(in No's)</span>
-                    <div class="d-flex item-bottom align-items-center">
+                    <div>
+
+                        <span class="text-muted fs-14 align-middle">(in No's)</span>
+                        <h2 class="mb-0 cfs-22"><i class="ri-building-line display-6 text-muted cfs-22"></i><span class="counter-value" data-target="911">0</span></h2>
+                    </div>
+                    <%--<div class="d-flex item-bottom align-items-center">
                         <div class="flex-shrink-0">
-                            <i class="ri-building-line display-6 text-muted cfs-22"></i>
+                           
                         </div>
                         <div class="flex-grow-1 ms-3">
-                            <h2 class="mb-0 cfs-22"><span class="counter-value" data-target="911">0</span></h2>
+                           
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
+                <div class="card-footer-border"></div>
                 <!-- end card body -->
             </div>
             <!-- end card -->
@@ -440,20 +516,24 @@
         <!-- end col -->
         <div class="col">
             <div class="card crm-widget card-height-100">
+                <div class="card-header-border"></div>
+
                 <div class="card-body">
-
-
                     <h5 class="text-muted item-bottom  fs-21">Registered Institutes </h5>
-                    <span class="text-muted fs-13 align-middle">(in No's)</span>
-                    <div class="d-flex item-bottom align-items-center">
+                    <div>
+                        <span class="text-muted fs-14 align-middle">(in No's)</span>
+                        <h2 class="mb-0 cfs-22"><i class="ri-building-4-line display-6 text-muted cfs-22"></i><span class="counter-value" data-target="1090">0</span></h2>
+                        <%--  <div class="d-flex item-bottom align-items-center">
                         <div class="flex-shrink-0">
-                            <i class="ri-building-4-line display-6 text-muted cfs-22"></i>
+                            
                         </div>
                         <div class="flex-grow-1 ms-3">
-                            <h2 class="mb-0 cfs-22"><span class="counter-value" data-target="1090">0</span></h2>
+                            
                         </div>
+                    </div>--%>
                     </div>
                 </div>
+                <div class="card-footer-border"></div>
                 <!-- end card body -->
             </div>
             <!-- end card -->
@@ -461,20 +541,24 @@
         <!-- end col -->
         <div class="col">
             <div class="card crm-widget card-height-100">
+                <div class="card-header-border"></div>
+
                 <div class="card-body">
-
                     <h5 class="text-muted item-bottom  fs-21">Registered Schools</h5>
-                    <span class="text-muted fs-13  align-middle">(in No's)</span>
-
-                    <div class="d-flex align-items-center">
+                    <div>
+                        <span class="text-muted fs-14  align-middle">(in No's)</span>
+                        <h2 class="mb-0 cfs-22"><i class="ri-community-line display-6 text-muted cfs-22"></i><span class="counter-value" data-target="122938">0</span></h2>
+                        <%--<div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                            <i class="ri-community-line display-6 text-muted cfs-22"></i>
+                            
                         </div>
                         <div class="flex-grow-1 ms-3">
-                            <h2 class="mb-0 cfs-22"><span class="counter-value" data-target="122938">0</span></h2>
+                           
                         </div>
+                    </div>--%>
                     </div>
                 </div>
+                <div class="card-footer-border"></div>
                 <!-- end card body -->
             </div>
             <!-- end card -->
@@ -482,19 +566,23 @@
         <!-- end col -->
         <div class="col">
             <div class="card crm-widget card-height-100">
+                <div class="card-header-border"></div>
                 <div class="card-body">
                     <h5 class="text-muted item-bottom  fs-21">Registered Sankuls </h5>
-                    <span class="text-muted fs-13  align-middle">(in No's)</span>
-
-                    <div class="d-flex align-items-center">
+                    <div>
+                        <span class="text-muted fs-14  align-middle">(in No's)</span>
+                        <h2 class="mb-0 cfs-22"><i class="ri-community-line display-6 text-muted cfs-22"></i><span class="counter-value" data-target="18088">0</span></h2>
+                        <%-- <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                            <i class="ri-community-line display-6 text-muted cfs-22"></i>
+                           
                         </div>
                         <div class="flex-grow-1 ms-3">
-                            <h2 class="mb-0 cfs-22"><span class="counter-value" data-target="18088">0</span></h2>
+                           
                         </div>
+                    </div>--%>
                     </div>
                 </div>
+                <div class="card-footer-border"></div>
                 <!-- end card body -->
             </div>
             <!-- end card -->
@@ -502,20 +590,25 @@
         <!-- end col -->
         <div class="col">
             <div class="card crm-widget card-height-100">
+                <div class="card-header-border"></div>
                 <div class="card-body ">
 
-                    <h5 class="text-muted item-bottom  fs-21 no-wrap">Registered Special Schools </h5>
-                    <span class="text-muted fs-13  align-middle">(in No's)</span><div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center">
+                    <h5 class="text-muted item-bottom  fs-21">Registered Special Schools </h5>
+                    <div>
+                        <span class="text-muted fs-14  align-middle">(in No's)</span><div class="d-flex align-items-center">
+                            <h2 class="mb-0 cfs-22"><i class="ri-community-line display-6 text-muted cfs-22"></i><span class="counter-value" data-target="19">0</span></h2>
+                            <%--  <div class="d-flex align-items-center">
                             <div class="flex-shrink-0">
-                                <i class="ri-community-line display-6 text-muted cfs-22"></i>
+                                
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                <h2 class="mb-0 cfs-22"><span class="counter-value" data-target="19">0</span></h2>
+                               
                             </div>
+                        </div>--%>
                         </div>
                     </div>
                 </div>
+                <div class="card-footer-border"></div>
                 <!-- end card body -->
             </div>
             <!-- end card -->
@@ -527,7 +620,7 @@
 
 
     <div class="row mt-3">
-        <div class="col-xxl-3 col-md-6">
+        <div class="col-xxl-3 col-xl-6">
             <div class="card card-height-100 ">
                 <div class="card-header border-bottom border-primary  align-items-center d-flex">
                     <h4 class="card-title mb-0 flex-grow-1">Employee Transfer Details </h4>
@@ -558,9 +651,11 @@
                     </div>
                     <div id="Chart_Transfer" data-colors='["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]' data-colors-minimal='["--vz-primary", "--vz-primary-rgb, 0.85", "--vz-primary-rgb, 0.70", "--vz-primary-rgb, 0.60", "--vz-primary-rgb, 0.45"]' data-colors-interactive='["--vz-primary", "--vz-primary-rgb, 0.85", "--vz-primary-rgb, 0.70", "--vz-primary-rgb, 0.60", "--vz-primary-rgb, 0.45"]' data-colors-galaxy='["--vz-primary", "--vz-primary-rgb, 0.85", "--vz-primary-rgb, 0.70", "--vz-primary-rgb, 0.60", "--vz-primary-rgb, 0.45"]' class="apex-charts" dir="ltr" style="height: 100%"></div>
                 </div>
+
+                <div class="card-footer-border"></div>
             </div>
         </div>
-        <div class="col-xxl-3 col-md-6">
+        <div class="col-xxl-3 col-xl-6">
             <div class="card card-height-100">
                 <div class="card-header  border-bottom border-primary align-items-center d-flex">
                     <h4 class="card-title mb-0 flex-grow-1">Payroll Details</h4>
@@ -591,6 +686,8 @@
                     </div>
                     <div id="Chart_Payroll" data-colors='["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]' class="apex-charts" dir="ltr"></div>
                 </div>
+
+                <div class="card-footer-border"></div>
             </div>
         </div>
         <div class="col-xxl-6 col-md-12">
@@ -1980,6 +2077,8 @@
                     </div>
                 </div>
                 <!-- end card body -->
+                <div class="card-footer-border"></div>
+
             </div>
             <!-- end card -->
         </div>
@@ -1989,7 +2088,7 @@
 
     <div class="row">
         <!-- end col -->
-        <div class="col-xxl-6 col-md-12">
+        <div class="col-xl-6 col-md-12">
             <div class="card card-height-100">
                 <div class="card-header  border-bottom border-primary align-items-center d-flex">
                     <h4 class="card-title mb-0 flex-grow-1">Schemes</h4>
@@ -1998,12 +2097,14 @@
                 <div class="card-body pb-0">
                     <div id="Chart_Scheme"></div>
                 </div>
+                <div class="card-footer-border"></div>
+
             </div>
             <!-- end card -->
         </div>
         <%--Schemes--%>
-        <div class="col-xxl-6 col-md-12 h-auto">
-            <div class="card border card-height-100 ">
+        <div class="col-xl-6 col-md-12 h-auto">
+            <div class="card card-height-100 ">
                 <div class="card-header border-bottom border-primary align-items-center d-flex ">
                     <h4 class="card-title mb-0 flex-grow-1">Students Applied for Scheme</h4>
                 </div>
@@ -2014,6 +2115,8 @@
                     </div>
                 </div>
                 <!-- end card body -->
+                <div class="card-footer-border"></div>
+
             </div>
         </div>
         <%--Students Applied for Scheme--%>
@@ -2021,10 +2124,10 @@
     <!-- end row -->
 
     <div class="row">
-        <div class="col-xxl-6 col-md-12">
+        <div class="col-xl-12  col-md-12">
             <div class="card card-height-100 ">
                 <div class="card-header border-bottom border-primary align-items-center d-flex ">
-                    <h4 class="card-title mb-0 flex-grow-1"> Upcoming Retirements</h4>
+                    <h4 class="card-title mb-0 flex-grow-1">Employee Retirements</h4>
                 </div>
                 <!-- end card header -->
                 <div class="card-body pt-0">
@@ -2032,16 +2135,14 @@
                         <div class="row g-0 text-center">
                             <div class="col-6 col-sm-4">
                                 <div class="p-3 border border-dashed border-start-0">
-                                    <h5 class="mb-1">
+                                    <h5 class="mb-1 fw-bold">
                                         <span class="counter-value" data-target="854">0</span>
 
                                     </h5>
-                                    <p class=" mb-0">Total Retirements (No's)</p>
+                                    <p class=" mb-0  fw-bold">Total Retirements (No's)</p>
                                 </div>
                             </div>
-                            <!--end col-->
-                            <!--end col-->
-                            <!--end col-->
+                          
                         </div>
                     </div>
                     <!-- end card header -->
@@ -2051,6 +2152,8 @@
                     </div>
                 </div>
                 <!-- end card body -->
+                <div class="card-footer-border"></div>
+
             </div>
             <!-- end card -->
         </div>
@@ -2059,6 +2162,12 @@
 
 
 
+
+
+    </div>
+    <!-- end row -->
+
+    <div class="row" style="max-height: fit-content">
 
         <div class="col-xxl-6 col-md-12">
             <div class="card card-height-100 ">
@@ -2079,85 +2188,173 @@
                     </div>
                 </div>
                 <!-- end card header -->
-                <div class="card-body">
-                    <div class="row  overflow-auto" style="max-height: 384px">
-
+                <div class="card-body p-0 ">
+                    <div class="row  overflow-auto ticker1" id="DvcircularOrdersList" style="max-height: 527px; height: 100%; margin-right: 1px;">
                         <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
+                            <div class="card card-border-primary my-2 mx-3">
                                 <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">1</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
+                            <div class="card card-border-primary my-2 mx-3">
                                 <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">2</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
+                            <div class="card card-border-primary my-2 mx-3">
                                 <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">3</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
+                            <div class="card card-border-primary my-2 mx-3">
                                 <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">4</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
+                            <div class="card card-border-primary my-2 mx-3">
                                 <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">5</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-border-primary my-2 mx-3">
+                                <div class="card-body">
+                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i>शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                     
 
 
 
                     <!-- end -->
                 </div>
                 <!-- end cardbody -->
+                <div class="card-footer-border"></div>
             </div>
-            <!-- end card -->
+
         </div>
-    </div>
-    <!-- end row -->
-
-    <div class="row">
-
-        <div class="col-xxl-12 col-md-12">
+        <div class="col-xxl-6 col-md-12">
             <div class="card card-height-100 ">
                 <div class="card-header border-bottom border-primary align-items-center d-flex">
                     <h4 class="card-title mb-0 flex-grow-1">Monthly Event Calendar</h4>
-                    <div class="flex-shrink-0">
+                    <div class="flex-grow-1 text-end">
+                        <button class="btn btn-secondary w-auto me-2" id="btn-new-event" title="Create Event" type="button"><i class="mdi mdi-plus"></i> Add Event</button>
                     </div>
-                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventList"><i class="ri-menu-line"></i>Upcoming Events</button>
+
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventList"><i class="ri-menu-line"></i> Upcoming Events</button>
 
                 </div>
                 <!-- end card header -->
@@ -2166,99 +2363,58 @@
 
                     <div class="offcanvas offcanvas-custom " style="min-width: 350px" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEventList" aria-labelledby="offcanvasScrollingLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasEventListLabel"></h5>
+
+
+                            <h5 class="offcanvas-title" id="offcanvasEventListLabel">Upcoming Events</h5>
 
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body py-3">
+                        <div class="offcanvas-body" style="margin-right:1PX">
 
                             <div id="external-events">
                                 <%-- <br>
-                                        <p class="text-muted">Drag and Create your event or click in the calendar</p>
-                                        <div class="external-event fc-event bg-success-subtle text-success" data-class="bg-success-subtle">
-                                            <i class="mdi mdi-checkbox-blank-circle me-2"></i>New Event Planning
-                                        </div>
-                                        <div class="external-event fc-event bg-info-subtle text-info" data-class="bg-info-subtle">
-                                            <i class="mdi mdi-checkbox-blank-circle me-2"></i>Meeting
-                                        </div>
-                                        <div class="external-event fc-event bg-warning-subtle text-warning" data-class="bg-warning-subtle">
-                                            <i class="mdi mdi-checkbox-blank-circle me-2"></i>Generating Reports
-                                        </div>
-                                        <div class="external-event fc-event bg-danger-subtle text-danger" data-class="bg-danger-subtle">
-                                            <i class="mdi mdi-checkbox-blank-circle me-2"></i>Create New theme
-                                        </div>--%>
+                                  <p class="text-muted">Drag and Create your event or click in the calendar</p>
+                                  <div class="external-event fc-event bg-success-subtle text-success" data-class="bg-success-subtle">
+                                      <i class="mdi mdi-checkbox-blank-circle me-2"></i>New Event Planning
+                                  </div>
+                                  <div class="external-event fc-event bg-info-subtle text-info" data-class="bg-info-subtle">
+                                      <i class="mdi mdi-checkbox-blank-circle me-2"></i>Meeting
+                                  </div>
+                                  <div class="external-event fc-event bg-warning-subtle text-warning" data-class="bg-warning-subtle">
+                                      <i class="mdi mdi-checkbox-blank-circle me-2"></i>Generating Reports
+                                  </div>
+                                  <div class="external-event fc-event bg-danger-subtle text-danger" data-class="bg-danger-subtle">
+                                      <i class="mdi mdi-checkbox-blank-circle me-2"></i>Create New theme
+                                  </div>--%>
                             </div>
 
 
                             <div>
                                 <div class="row">
-                                    <div class="col-xl-6 col-md-7 m-0">
+                                    <%-- <div class="col-xl-6 col-md-7 m-0">
                                         <h5 class="mb-1">Upcoming Events</h5>
-                                    </div>
-                                    <div class="col-xl-6 col-md-5 text-end m-0">
+                                    </div>--%>
 
-                                        <button class="btn btn-outline-secondary w-auto mb-2" id="btn-new-event" type="button"><i class="mdi mdi-plus"></i>Create Event</button>
+                                    <%--  <div class="col-xl-6 col-md-6 text-end">
+
+                                     <button class="btn btn-outline-secondary w-auto mb-2 me-3 " id="btn-new-event" type="button"><i class="mdi mdi-plus"></i>Create Event</button>
+                                    </div>--%>
+                                    <div class="col-xl-12 col-md-12 ">
+                                        <p class="text-muted ms-3">Don't miss scheduled events</p>
                                     </div>
                                 </div>
 
-                                <p class="text-muted">Don't miss scheduled events</p>
-                                <div class="pe-2 me-n1 mb-3 simplebar-scrollable-y" data-simplebar="init">
-                                    <div class="simplebar-wrapper" style="margin: 0px -8px 0px 0px;">
-                                        <div class="simplebar-height-auto-observer-wrapper">
-                                            <div class="simplebar-height-auto-observer"></div>
-                                        </div>
-                                        <div class="simplebar-mask">
-                                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
-                                                <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;">
-                                                    <div class="simplebar-content" style="padding: 0px 8px 0px 0px;">
-                                                        <div id="upcoming-event-list">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="simplebar-placeholder" style="width: 249px; height: 2521px;"></div>
-                                    </div>
-                                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
-                                        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
-                                    </div>
-                                    <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
-                                        <div class="simplebar-scrollbar" style="height: 63px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
-                                    </div>
+
+                                <div id="upcoming-event-list">
                                 </div>
+
                             </div>
-
-
                         </div>
                     </div>
 
-                    <style>
-                        .offcanvas.offcanvas-custom.show .simplebar-content-wrapper {
-                            visibility: visible;
-                        }
 
-                        .offcanvas.offcanvas-custom .simplebar-content-wrapper {
-                            visibility: hidden;
-                        }
-
-                        .offcanvas-custom {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            border-right: var(--primary) solid 1px;
-                            border-radius: var(--vz-border-radius);
-                            padding-bottom: 1rem;
-                            /* Adjust width as needed */
-                            height: 100%;
-                            z-index: 100;
-                            visibility: hidden;
-                            background-color: var(--vz-body-bg);
-                            transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-                            transform: translateX(-100%);
-                        }
-                    </style>
                     <div>
-                        <div id="calendar" style="width: 100%; max-height: 550px"></div>
+                        <div id="calendar" style="width: 100%; max-height: 500px"></div>
 
                     </div>
 
@@ -2266,8 +2422,10 @@
                 </div>
                 <!-- end cardbody -->
 
+                <div class="card-footer-border"></div>
 
             </div>
+            <!-- end card -->
 
         </div>
     </div>
@@ -2418,177 +2576,107 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
+     <script type="text/javascript">
+         // script For  Auto Scroll in  Circular Orders list 
+         function ticker1() {
+             $('#DvcircularOrdersList div:first').slideUp(function () {
+                 $(this).appendTo($('#DvcircularOrdersList')).slideDown();
+             });
+         }
+         setInterval(function () { ticker1(); }, 2000);
+     </script>
     <script>
 
-
         Highcharts.chart('Chart_Scheme', {
-            chart: {
-                type: 'column',
-            },
-            title: {
-                align: 'left',
-                text: 'Schemes'
-            },
-            subtitle: {
-                align: 'left',
-                text: ' <a href="http://statcounter.com" target="_blank"></a>'
-            },
-            accessibility: {
-                announceNewData: {
-                    enabled: true
-                }
-            },
+            chart: { type: 'column', },
+            title: { text: '' },
+            accessibility: { announceNewData: { enabled: true } },
             xAxis: {
                 type: 'category',
-            },
-
-            yAxis: {
-                title: {
-                    text: ''
-                }
 
             },
+            yAxis: { title: { text: '' } },
             legend: {
-                enabled: false,
-                height: 100
+                enabled: false, height: 100,
+
             },
-            credits: {
-                enabled: false
-            },
-            plotOptions: {
-                series: {
+            credits: { enabled: false },
+            plotOptions:
+            {
+                series:
+                {
                     borderWidth: 0,
-                    dataLabels: {
+                    dataLabels:
+                    {
                         enabled: true,
                         formatter: function () {
-                            return this.point.name + ' : ' + this.y;
-
+                            return "<span class='fs-14 '>" + this.point.name + ' : ' + this.y + "</span>";
                         }
-                    },
-
-
-                    pointWidth: 50,
+                    }, pointWidth: 50,
                 }
             },
-
-
-
             series: [
                 {
                     name: 'Total Schemes',
                     colorByPoint: true,
-
                     data: [
-                        {
-                            name: 'Registered Scheme',
-                            y: 6,
-                            drilldown: 'Registered Scheme',
-
-                        },
-
-                        {
-                            name: 'On going Scheme',
-                            y: 5,
-                            drilldown: 'On going Scheme'
-                        },
-
+                        { name: 'Registered Scheme', y: 6, drilldown: 'Registered Scheme', },
+                        { name: 'On going Scheme', y: 5, drilldown: 'On going Scheme' },
                     ],
-                    tooltip: {
-                        headerFormat: '<span style="font-size:11px">{point.name}</span><br>',
-                        pointFormat: '<span style="color:{point.color}"><br/></span> ' +
-                            '<b>{point.name}</b><br/>Total {point.name}s: {point.y}<br/>'
+                    tooltip:
+                    {
+                        headerFormat: '{point.name}',
+                        pointFormat: '<span class=" fs-13"><br/><b>{point.name}</b><br/>Total {point.name}s: {point.y}<br/></span>'
                     },
-                }
-            ],
+                }],
             drilldown: {
-
-                breadcrumbs: {
-                    position: {
-                        align: 'right'
-                    }
-                },
+                breadcrumbs:
+                    { position: { align: 'right' } },
                 series: [
                     {
                         name: 'On going Scheme',
                         id: 'On going Scheme',
-
                         data: [
-                            [
-                                'Sudama Pre Matric Scheme',
-                                4000
-                            ],
-                            [
-                                'Scholarship scheme for disabled students',
-                                5600
-                            ],
-                            [
-                                'General Poor Category Scholarship Scheme',
-                                7000
-                            ],
-                            [
-                                'Postmatric Scholarship (Non-Hostel)',
-                                2700
-                            ],
-                            [
-                                'Girls Literacy Incentive Amount Class 11th',
-                                10000,
-                            ],
+                            ['Sudama Pre Matric Scheme', 4000],
+                            ['Scholarship scheme for disabled students', 5600],
+                            ['General Poor Category Scholarship Scheme', 7000],
+                            ['Postmatric Scholarship (Non-Hostel)', 2700],
+                            ['Girls Literacy Incentive Amount Class 11th', 10000,],
                         ],
+
                         dataLabels: {
                             formatter: function () {
-                                return 'Applicants: ' + this.y;
+                                return '<span class="fw-bold fs-13">Applicants: ' + this.y + '</span>';
                             }
                         },
                         tooltip: {
-                            headerFormat: '<span style="font-size:11px">{point.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}"><br/></span> ' +
-                                '<b>{point.name}</b><br/>Total Applicants: {point.y}<br/>'
+                            headerFormat: '<span class="fw-bold fs-14">{point.name}</span><br>',
+                            pointFormat: '<span class=" fs-13"><br/> ' + '<b>{point.name}</b><br/>Total Total Applicants: {point.y}<br/></span>'
                         },
                     },
-
                     {
                         name: 'Registered Scheme',
                         id: 'Registered Scheme',
-                        data: [
-                            [
-                                'State Scholarship (Primary Level)',
-                                6000
-                            ],
-                            [
-                                'Dead/Disabled/Senior Scholarship to children of government employees',
-                                4500
-                            ],
-                            [
-                                'Postmatric Scholarship (Non-Hostel)',
-                                2700
-                            ],
-                            [
-                                'Postmatric Scholarship (Hostel)',
-                                8000
-                            ],
-                            [
-                                'Girls Literacy Incentive Amount Class 11th',
-                                10000
-                            ],
-                            [
-                                'State Government Scheduled Tribe Scholarship',
-                                12000
-                            ]
+                        data: [['State Scholarship (Primary Level)', 6000],
+                        ['Dead/ Disabled/ Senior Scholarship to children of government employees', 4500],
+                        ['Postmatric Scholarship (Non-Hostel)', 2700],
+                        ['Postmatric Scholarship (Hostel)', 8000],
+                        ['Girls Literacy Incentive Amount Class 11th', 10000],
+                        ['State Government Scheduled Tribe Scholarship', 12000],
                         ],
+
+                        format: '<b>{point.name}</b>',
                         dataLabels: {
                             formatter: function () {
-                                return 'Applicants: ' + this.y;
+                                return '<span class="fw-bold fs-13">Applicants: ' + this.y + '</span>';
                             }
                         },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{point.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}"><br/></span> ' +
-                                '<b>{point.name}</b><br/>Total Applicants: {point.y}<br/>'
+                        tooltip:
+                        {
+                            headerFormat: '<span class="fw-bold fs-14">{point.name}</span><br>',
+                            pointFormat: '<span class=" fs-13"><br/><b>{point.name}</b> <br/>Total Total Applicants: {point.y} <br/></span> '
                         },
-
                     },
-
                 ]
             }
         });
@@ -2656,8 +2744,9 @@
                     format: ' <b>Students: {point.y} </b>',
                 },
                 tooltip: {
+                    headerFormat: '',
                     pointFormatter: function () {
-                        return 'Total Students: <b>' + this.y + '</b><br>' +
+                        return '<b>' + this.name + '</b><br/>Total Students: <b>' + this.y + '</b><br>' +
                             'Boys: <b>' + (this.y - this.z) + '</b><br>' +
                             'Girls: <b>' + this.z + '</b><br>';
                     }
@@ -2700,8 +2789,8 @@
         var PayrollChart = getChartColorsArray("Chart_Payroll");
         if (PayrollChart) {
             var options = {
-                series: [102569, 8630, 789, 4001],
-                labels: ["Salary Generated", "On Hold Salary", "On Suplymentory Salary", "Payment Process"],
+                series: [102569, 8630, 789],
+                labels: ["Salary Generated", "On Hold Salary", "On Suplymentory Salary"],
                 chart: { height: 450, type: "donut" },
                 plotOptions: {
                     pie: {
@@ -2744,7 +2833,7 @@
                 dataLabels: { enabled: true },
                 legend: { position: "bottom", height: 100 },
                 title: { style: { fontWeight: 500 } },
-                colors: ["#ff6888", "#fedd69", "#f7b84b", "#b04732"],
+                colors: ["#FF0080", "#FC4100", "#f7b84b", "#b04732"],
             };
             var chart = new ApexCharts(document.querySelector("#Chart_Transfer"), options);
             chart.render();
