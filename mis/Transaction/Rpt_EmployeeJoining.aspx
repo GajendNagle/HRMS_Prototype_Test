@@ -49,7 +49,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select District Name /<br />
+                                    Select District Name <br />
                                     जिला का चयन करें <span style="color: red">*</span></label>
 
                                 <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="ddlDistrictN" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -103,34 +103,34 @@
                                 <thead>
                                     <tr>
 
-                                        <th rowspan="2">Sr.No. /<br />
+                                        <th rowspan="2">Sr.No. <br />
                                             सरल क्र.</th>
-                                        <th rowspan="2">Employee ID-Name /
+                                        <th rowspan="2">Employee ID-Name 
                                     <br />
                                             कर्मचारी आईडी-नाम</th>
-                                        <th rowspan="2">Employee Designation /<br />
+                                        <th rowspan="2">Employee Designation <br />
                                             कर्मचारी के पद का नाम</th>
-                                        <th rowspan="2">Panel /<br />
+                                        <th rowspan="2">Panel <br />
                                             पैनल</th>
-                                        <th colspan="3" class="text-center">Current Location /<br />
+                                        <th colspan="3" class="text-center">Current Location <br />
                                             वर्तमान स्थान</th>
 
-                                        <th colspan="3" class="text-center">New Location /<br />
+                                        <th colspan="3" class="text-center">New Location <br />
                                             नया स्थान</th>
 
                                     </tr>
                                     <tr>
-                                        <td>District/<br />
+                                        <td>District<br />
                                             जिला</td>
-                                        <td>Block/<br />
+                                        <td>Block<br />
                                             ब्लॉक</td>
-                                        <td>Sankul Code /<br />
+                                        <td>Sankul Code <br />
                                             संकुल कोड</td>
-                                        <td>District/<br />
+                                        <td>District<br />
                                             जिला</td>
-                                        <td>Block/<br />
+                                        <td>Block<br />
                                             तहसील</td>
-                                        <td>Sankul Code /<br />
+                                        <td>Sankul Code <br />
                                             संकुल कोड</td>
                                     </tr>
 

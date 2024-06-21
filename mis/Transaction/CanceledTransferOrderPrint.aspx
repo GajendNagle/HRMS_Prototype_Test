@@ -103,7 +103,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Choose an option /<br />
+                                Choose an option <br />
                                 एक विकल्प का चयन करें<span style="color: red">*</span></label>
                             <select id="dropdown" onchange="showTextBox()" class="form-control select2">
                                 <option value="Select">Select</option>
@@ -115,7 +115,7 @@
                     <div class="col-md-3" id="orderNoInput" style="display: none;">
                         <div class="form-group">
                             <label>
-                                Enter Order No. /<br />
+                                Enter Order No. <br />
                                 आदेश संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Order No.">
                         </div>
@@ -123,7 +123,7 @@
                     <div class="col-md-3" id="employeeIDInput" style="display: none;">
                         <div class="form-group">
                             <label>
-                                Enter Employee-ID /<br />
+                                Enter Employee-ID <br />
                                 कर्मचारी आई दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Employee-ID">
@@ -161,13 +161,13 @@
                     <div class="table-responsive">
                         <table class="table table-bordered text-center">
                             <tr class="card-header">
-                                <th>Sr.No. /<br />
+                                <th>Sr.No. <br />
                                     सरल क्र.</th>
-                                <th>Cancel Order No. /<br />
+                                <th>Cancel Order No. <br />
                                     आदेश संख्या रद्द करें</th>
-                                <th>Date Of Cancellation /<br />
+                                <th>Date Of Cancellation <br />
                                     रद्दीकरण का दिनांक </th>
-                                <th>Generate Cancel Order /<br />
+                                <th>Generate Cancel Order <br />
                                     रद्द आदेश जनरेट करें</th>
                             </tr>
                             <tr>

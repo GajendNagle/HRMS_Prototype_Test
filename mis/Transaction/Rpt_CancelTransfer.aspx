@@ -95,7 +95,7 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Sr. No./<br />
+                                            <th>Sr. No.<br />
                                                 सरल क्र.</th>
                                             <th>Current Location<br />
                                                 वर्तमान स्थान</th>
@@ -190,21 +190,21 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No./<br />
+                                        <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Current Location /<br />
+                                        <th>Current Location <br />
                                             वर्तमान स्थान</th>
-                                        <th>Employee ID-Name/<br />
+                                        <th>Employee ID-Name<br />
                                             कर्मचारी का आई.डी-नाम</th>
-                                        <th>Promotion Order No. /<br />
+                                        <th>Promotion Order No. <br />
                                             पदोन्नति आदेश क्र.</th>
-                                        <th>Promotion Order Date /<br />
+                                        <th>Promotion Order Date <br />
                                             पदोन्नति आदेश दिनांक</th>
-                                        <th>New Location/<br />
+                                        <th>New Location<br />
                                             नया स्थान</th>
-                                        <th>Cancel Order No. /<br />
+                                        <th>Cancel Order No. <br />
                                             निरस्त आदेश क्र.</th>
-                                        <th>Cancel Order Date /<br />
+                                        <th>Cancel Order Date <br />
                                             निरस्त आदेश दिनांक</th>
                                     </tr>
                                 </thead>
@@ -394,21 +394,21 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No./<br />
+                                        <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Current Location /<br />
+                                        <th>Current Location <br />
                                             वर्तमान स्थान</th>
-                                        <th>ID-Employee Name /<br />
+                                        <th>ID-Employee Name <br />
                                             कर्मचारी का नाम-आई.डी.</th>
-                                        <th>Promotion Order No. /<br />
+                                        <th>Promotion Order No. <br />
                                             पदोन्नति आदेश क्र.</th>
-                                        <th>Promotion Order Date /<br />
+                                        <th>Promotion Order Date <br />
                                             पदोन्नति आदेश दिनांक</th>
-                                        <th>New Location/<br />
+                                        <th>New Location<br />
                                             नया स्थान</th>
-                                        <th>Cancel Order No. /<br />
+                                        <th>Cancel Order No. <br />
                                             निरस्त आदेश क्र.</th>
-                                        <th>Cancel Order Date /<br />
+                                        <th>Cancel Order Date <br />
                                             निरस्त आदेश दिनांक</th>
                                     </tr>
                                 </thead>
@@ -488,21 +488,21 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No./<br />
+                                        <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Current Location /<br />
+                                        <th>Current Location <br />
                                             वर्तमान स्थान</th>
-                                        <th>Employee ID-Name /<br />
+                                        <th>Employee ID-Name <br />
                                             कर्मचारी का आई.डी-नाम</th>
-                                        <th>Promotion Order No. /<br />
+                                        <th>Promotion Order No. <br />
                                             पदोन्नति आदेश क्र.</th>
-                                        <th>Promotion Order Date /<br />
+                                        <th>Promotion Order Date <br />
                                             पदोन्नति आदेश दिनांक</th>
-                                        <th>New Location/<br />
+                                        <th>New Location<br />
                                             नया स्थान</th>
-                                        <th>Cancel Order No. /<br />
+                                        <th>Cancel Order No. <br />
                                             निरस्त आदेश क्र.</th>
-                                        <th>Cancel Order Date /<br />
+                                        <th>Cancel Order Date <br />
                                             निरस्त आदेश दिनांक</th>
                                     </tr>
                                 </thead>
@@ -582,21 +582,21 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No./<br />
+                                        <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Current Location /<br />
+                                        <th>Current Location <br />
                                             वर्तमान स्थान</th>
-                                        <th>Employee ID-Name /<br />
+                                        <th>Employee ID-Name <br />
                                             कर्मचारी का आई.डी-नाम</th>
-                                        <th>Promotion Order No./<br />
+                                        <th>Promotion Order No.<br />
                                             पदोन्नति आदेश क्र.</th>
-                                        <th>Promotion Order Date /<br />
+                                        <th>Promotion Order Date <br />
                                             पदोन्नति आदेश दिनांक</th>
-                                        <th>New Location/<br />
+                                        <th>New Location<br />
                                             नया स्थान</th>
-                                        <th>Cancel Order No. /<br />
+                                        <th>Cancel Order No. <br />
                                             निरस्त आदेश क्र.</th>
-                                        <th>Cancel Order Date /<br />
+                                        <th>Cancel Order Date <br />
                                             निरस्त आदेश दिनांक</th>
                                     </tr>
                                 </thead>

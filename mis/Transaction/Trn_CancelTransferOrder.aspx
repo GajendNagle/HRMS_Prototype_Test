@@ -130,7 +130,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Choose an option /<br />
+                                Choose an option <br />
                                 एक विकल्प का चयन करें<span style="color: red">*</span></label>
                             <select id="dropdown" onchange="showTextBox()" class="form-control select2">
                                 <option value="Select">Select</option>
@@ -142,7 +142,7 @@
                     <div class="col-md-3" id="orderNoInput" style="display: none;">
                         <div class="form-group">
                             <label>
-                                Enter Order No. /<br />
+                                Enter Order No. <br />
                                 आदेश संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Order No.">
                         </div>
@@ -150,7 +150,7 @@
                     <div class="col-md-3" id="employeeIDInput" style="display: none;">
                         <div class="form-group">
                             <label>
-                                Enter Employee-ID /<br />
+                                Enter Employee-ID <br />
                                 कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Employee-ID">
@@ -192,29 +192,29 @@
                             <div class="table-responsive">
                                 <table class="table text-center table-bordered">
                                     <tr class="card-header">
-                                        <th>Sr.No. /<br />
+                                        <th>Sr.No. <br />
                                             सरल क्र.</th>
-                                        <th>Employee ID-Name /<br />
+                                        <th>Employee ID-Name <br />
                                             कर्मचारी आईडी-नाम</th>
-                                        <th>Order No. /<br />
+                                        <th>Order No. <br />
                                             आदेश संख्या</th>
-                                        <th>Order Date /<br />
+                                        <th>Order Date <br />
                                             आदेश दिनांक </th>
-                                        <th>Existing Office Name /<br />
+                                        <th>Existing Office Name <br />
                                             वर्तमान कार्यालय का नाम</th>
-                                        <th>Existing Designation Name /<br />
+                                        <th>Existing Designation Name <br />
                                             वर्तमान पद का नाम</th>
-                                        <th>Existing Posting Date /<br />
+                                        <th>Existing Posting Date <br />
                                             वर्तमान पोस्टिंग दिनांक</th>
-                                        <th>Current Location /<br />
+                                        <th>Current Location <br />
                                             वर्तमान स्थान</th>
                                         <th>New Office Name /<br />
                                             नये कार्यालय का नाम</th>
-                                        <th>New Designation Name /<br />
+                                        <th>New Designation Name <br />
                                             नये पद का नाम</th>
-                                        <th>New Effective Date /<br />
+                                        <th>New Effective Date <br />
                                             नई प्रभावी दिनांक </th>
-                                        <th>Promoted location /<br />
+                                        <th>Promoted location <br />
                                             पदोन्नत स्थान</th>
                                         <th>Action</th>
                                     </tr>
@@ -255,14 +255,14 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Cancel Order No. /<br />
+                                <label>Cancel Order No. <br />
                                     आदेश नंबर<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." value="546545" readonly />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Date Of Cancellation /<br />
+                                <label>Date Of Cancellation <br />
                                     रद्द करने की दिनांक<span style="color: red">*</span></label>
                                 <input name="ename" type="date" class="form-control" autocomplete="off" />
                             </div>
@@ -270,7 +270,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Upload Documents /<br />
+                                <label>Upload Documents <br />
                                     दस्तावेज़ अपलोड करें<span style="color: red">*</span></label>
                                 <input name="ename" type="file" class="form-control" autocomplete="off" />
                             </div>
@@ -278,7 +278,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Remark /<br />
+                                <label>Remark <br />
                                     टिप्पणी</label>
                                 <input type="text" class="form-control" placeholder="Enter Remark" autocomplete="off" />
                             </div>

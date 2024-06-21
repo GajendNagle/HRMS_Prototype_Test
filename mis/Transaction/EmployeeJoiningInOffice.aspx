@@ -191,21 +191,21 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th rowspan="2">Sr.No. /<br />
+                                            <th rowspan="2">Sr.No. <br />
                                                 सरल क्र. </th>
-                                            <th rowspan="2">Office Type /<br />
+                                            <th rowspan="2">Office Type <br />
                                                 कार्यालय का प्रकार</th>
-                                            <th rowspan="2">Employee Name /<br />
+                                            <th rowspan="2">Employee Name <br />
                                                 कर्मचारी का नाम</th>
-                                            <th rowspan="2">Employee Designation /<br />
+                                            <th rowspan="2">Employee Designation <br />
                                                 कर्मचारी पदनाम</th>
-                                            <th rowspan="2">Employee Department /<br />
+                                            <th rowspan="2">Employee Department <br />
                                                 कर्मचारी विभाग</th>
-                                            <th rowspan="2">Employee Subject /<br />
+                                            <th rowspan="2">Employee Subject <br />
                                                 कर्मचारी विषय</th>
-                                            <th colspan="5">Current Location /<br />
+                                            <th colspan="5">Current Location <br />
                                                 वर्तमान स्थान</th>
-                                            <th colspan="5">Preference Location /<br />
+                                            <th colspan="5">Preference Location <br />
                                                 वरीयता स्थान
                                             </th>
                                             <th rowspan="2">Action<br />
@@ -213,26 +213,26 @@
                                         </tr>
 
                                         <tr>
-                                            <th>Office Type /<br />
+                                            <th>Office Type <br />
                                                 कार्यालय का प्रकार</th>
-                                            <th>Posted From /<br />
+                                            <th>Posted From <br />
                                                 से कार्यरत </th>
-                                            <th>District /<br />
+                                            <th>District <br />
                                                 जिला </th>
-                                            <th>Block /<br />
+                                            <th>Block <br />
                                                 विकासखण्ड </th>
-                                            <th>Sankul Code /<br />
+                                            <th>Sankul Code <br />
                                                 संकुल कोड
                                             </th>
-                                            <th>Office Type /<br />
+                                            <th>Office Type<br />
                                                 कार्यालय का प्रकार</th>
-                                            <th>Reason For Transfer /<br />
+                                            <th>Reason For Transfer <br />
                                                 स्थानांतरण का कारण</th>
-                                            <th>District /<br />
+                                            <th>District <br />
                                                 जिला</th>
-                                            <th>Block /<br />
+                                            <th>Block <br />
                                                 विकासखण्ड</th>
-                                            <th>Sankul Code /<br />
+                                            <th>Sankul Code <br />
                                                 संकुल कोड</th>
                                         </tr>
                                     </thead>
@@ -291,17 +291,17 @@
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header" id="myDIV">
-                            <h4 class="modal-title text-" id="myLargeModalLabel1"><b>Employee Joining Approval</b></h4>
+                            <h4 class="modal-title text-" id="myLargeModalLabel1"><b>Employee Joining Approval / कर्मचारी के शामिल होने की स्वीकृति</b></h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                         </div>
                         <div class="modal-body">
                             <fieldset>
-                                <legend>Employee Joining Approval / कर्मचारी के शामिल होने की मंजूरी</legend>
+                                <legend>Employee Joining Approval / कर्मचारी के शामिल होने की स्वीकृति</legend>
                                 <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
-                                                New Joining Date /
+                                                New Joining Date 
                                             <br />
                                                 नई ज्वाइनिंग दिनांक
                                             </label>
@@ -312,7 +312,7 @@
                                         <div class="form-group">
 
                                             <label>
-                                                Remark /
+                                                Remark 
                                             <br />
                                                 टिप्पणी</label>
                                             <input type="text" class="form-control" placeholder="Enter Remark" />
