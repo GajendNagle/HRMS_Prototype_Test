@@ -2,22 +2,25 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .profile-setting-img {
+            position: relative !important;
+            height: 150px !important;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="position-relative mx-n4 mt-n4">
         <div class="profile-wid-bg profile-setting-img">
-            <img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">
-            <div class="overlay-content">
-                <div class="text-end p-3">
+            <%--<img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">--%>
+            <%--  <div class="overlay-content">--%>
+            <%--<div class="text-end p-3">
                     <div class="p-0 ms-auto rounded-circle profile-photo-edit">
                         <input id="profile-foreground-img-file-input" type="file" class="profile-foreground-img-file-input">
-                        <%--  <label for="profile-foreground-img-file-input" class="profile-photo-edit btn btn-light">
-                                            <i class="ri-image-edit-line align-bottom me-1"></i> Change Cover
-                                        </label>--%>
                     </div>
-                </div>
-            </div>
+                </div>--%>
+            <%--</div>--%>
         </div>
     </div>
 
@@ -37,39 +40,18 @@
                                 </label>
                             </div>
                         </div>
-                        <h5 class="fs-16 mb-1">Mahaveer Sisodiya</h5>
+                        <h5 class="fs-16 mb-1">Rajesh Rajput</h5>
                         <p class="text-muted mb-0"><b>Employee Code - EF-0225</b></p>
                         <p class="text-muted mb-0">Designation - Teacher</p>
                     </div>
                 </div>
             </div>
-            <!--end card-->
-            <%-- <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-5">
-                                        <div class="flex-grow-1">
-                                            <h5 class="card-title mb-0">Complete Your Profile</h5>
-                                        </div>
-                                        <div class="flex-shrink-0">
-                                            <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><i class="ri-edit-box-line align-bottom me-1"></i> Edit</a>
-                                        </div>
-                                    </div>
-                                    <div class="progress animated-progress custom-progress progress-label">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="label">30%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>--%>
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-4">
                         <div class="flex-grow-1">
                             <h5 class="card-title mb-0">Contact Details</h5>
                         </div>
-                        <%-- <div class="flex-shrink-0">
-                                            <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><i class="ri-add-fill align-bottom me-1"></i> Add</a>
-                                        </div>--%>
                     </div>
                     <div class="mb-3 d-flex">
                         <div class="avatar-xs d-block flex-shrink-0 me-3">
@@ -96,14 +78,9 @@
                         <label class="fs-14 mt-1">
                             56B, Shanti Nagar Sector 12, Dwarka New Delhi, Delhi 110075 India</label>
                     </div>
-
-
-
                 </div>
             </div>
-            <!--end card-->
         </div>
-        <!--end col-->
         <div class="col-xl-9">
             <div class="card mt-xl-n5">
                 <div class="card-header">
@@ -123,11 +100,6 @@
                                 <%--<i class="far fa-envelope"></i>--%>Nominee Details
                             </a>
                         </li>
-                        <%--<li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#privacy" role="tab">
-                                <i class="far fa-envelope"></i>Privacy Policy
-                            </a>
-                        </li>--%>
                     </ul>
                 </div>
                 <div class="card-body p-4">
@@ -142,7 +114,7 @@
                                                     <label>Father's Name </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: Vikram Sisodiya</label>
+                                                    <label>: Vikram Rajput</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,10 +184,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--end row-->
-
                         </div>
-                        <!--end tab-pane-->
                         <div class="tab-pane" id="changePassword" role="tabpanel">
                             <div class="row">
                                 <div class="col-12">
@@ -226,7 +195,7 @@
                                                     <label>OIS Name </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: </label>
+                                                    <label>: Innovatech Solutions Pvt. Ltd.</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,7 +205,7 @@
                                                     <label>Class </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: </label>
+                                                    <label>: 1</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -258,16 +227,14 @@
                                                     <label>Office Address </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: </label>
+                                                    <label>:Tower B Infinity Business Park Road, New Delhi, Delhi 110075 India</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--end row-->
                         </div>
-                        <!--end tab-pane-->
                         <div class="tab-pane" id="experience" role="tabpanel">
                             <div class="row">
                                 <div class="col-12">
@@ -278,17 +245,17 @@
                                                     <label>Nominee Name </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: </label>
+                                                    <label>: Aditi Rajput</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <label>Relation with Nominee </label>
+                                                    <label>Relationship with Nominee </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: </label>
+                                                    <label>: Wife</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -298,17 +265,7 @@
                                                     <label>Nominee Percentage </label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <label>: </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <label>Office Address </label>
-                                                </div>
-                                                <div class="col-6">
-                                                    <label>: </label>
+                                                    <label>: 50 %</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -320,10 +277,7 @@
                 </div>
             </div>
         </div>
-        <!--end col-->
     </div>
-    <!--end row-->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
-
