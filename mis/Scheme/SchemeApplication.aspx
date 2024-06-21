@@ -806,9 +806,9 @@
                                 <div class="col-md-4" id="AdditionalBenefitAmount" style="display: none;">
                                     <div class="form-group">
                                         <label>
-                                            Additional Benefit Amount for Physically Challanged<br />
+                                            Additional Benefit Amount for Physically Challenged<br />
                                             शारीरिक रूप से विकलांगों के लिए अतिरिक्त लाभ राशि<span style="color: red">*</span></label>
-                                        <select class="form-control select2" id="GenderChooser">
+                                        <select class="form-control select2" id="Challenged">
                                             <option value="Select">Select</option>
                                             <option value="10%">10%</option>
                                             <option value="20%">20%</option>
