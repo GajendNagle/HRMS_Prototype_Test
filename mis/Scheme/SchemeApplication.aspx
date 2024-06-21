@@ -447,6 +447,7 @@
                                             <option value="Muslim">Muslim</option>
                                             <option value="Sikh">Sikh</option>
                                             <option value="Others">Others</option>
+                                            <option value="None">None</option>
                                         </select>
                                     </div>
                                 </div>
@@ -694,6 +695,19 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
+                                            School Type<br />
+                                            स्कूल का प्रकार <span style="color: red">*</span></label>
+                                        <select class="form-control select2">
+                                            <option value="--Select--">--Select--</option>
+                                            <option value="Government">Government</option>
+                                            <option value="Private">Private</option>
+                                            <option value="Both">Both</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
                                             Applicable for School Category<br />
                                             लागू स्कूल श्रेणी <span style="color: red">*</span></label>
                                         <select id="dates-field2" class="multiselect-ui " multiple="multiple">
@@ -794,7 +808,17 @@
                                         <label>
                                             Additional Benefit Amount for Physically Challanged<br />
                                             शारीरिक रूप से विकलांगों के लिए अतिरिक्त लाभ राशि<span style="color: red">*</span></label>
-                                        <input name="ename" type="text" class="form-control" autocomplete="off" value="1110" />
+                                        <select class="form-control select2" id="GenderChooser">
+                                            <option value="Select">Select</option>
+                                            <option value="10%">10%</option>
+                                            <option value="20%">20%</option>
+                                            <option value="30%">30%</option>
+                                            <option value="40%">40%</option>
+                                            <option value="50%">50%</option>
+                                            <option value="60%">60%</option>
+                                            <option value="70%">70%</option>
+                                            <option value="80%">80%</option>
+                                        </select>
 
                                     </div>
                                 </div>
