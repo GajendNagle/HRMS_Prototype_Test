@@ -1304,7 +1304,7 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Department.aspx"><i class="ri-file-list-3-line"></i>Scheme  Department Master </a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Trn_SchemeApplication.aspx"><i class="ri-file-list-3-line"></i>Scheme Master</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SchemeApplication.aspx"><i class="ri-file-list-3-line"></i>Scheme Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/StudentProfileLocking.aspx"><i class="ri-file-list-3-line"></i>Student Profile View/ Edit/ Lock</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SSDDO_Scholarship.aspx"><i class="ri-file-list-3-line"></i>SSDDO Scholarship</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Student_Tracking.aspx"><i class="ri-file-list-3-line"></i>Student Tracking</a></li>

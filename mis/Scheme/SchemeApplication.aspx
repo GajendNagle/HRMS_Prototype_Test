@@ -6,9 +6,9 @@
         .multiselect.dropdown-toggle.btn-block {
             border: 1px solid #7c4baf;
         }
-        .multiselect-container.dropdown-menu{
-            border: 1px solid #7c4baf !important;
 
+        .multiselect-container.dropdown-menu {
+            border: 1px solid #7c4baf !important;
         }
 
         legend {
@@ -377,7 +377,8 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Scheme Owned Department
+                                        <label>
+                                            Scheme Owned Department
                                             <br />
                                             योजना स्वामित्व विभाग<span style="color: red">*</span></label>
                                         <select id="dates-field2" class="multiselect-ui " multiple="multiple">
@@ -561,6 +562,19 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
+                                            Applicable for Single Girl Child<br />
+                                            इकलौती बेटी के लिए लागू
+                                        <span style="color: red">*</span></label>
+                                        <select class="form-control select2">
+                                            <option>--Select--</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
                                             Applicable for Father-less Students<br />
                                             पिता रहित छात्रों के लिए लागू
                                         <span style="color: red">*</span></label>
@@ -711,11 +725,11 @@
                                         <label>
                                             Applicable for School Category Details<br />
                                             लागू स्कूल श्रेणी विवरण<span style="color: red">*</span></label>
-                                        <select class="form-control select2">
-                                            <option value="--Select--">--Select--</option>
+                                        <select  id="dates-field2" class="multiselect-ui " multiple="multiple">
                                             <option value="1-5">1-5</option>
                                             <option value="6-8">6-8</option>
                                             <option value="9-10">9-10</option>
+                                            <option value="9-12">9-12</option>
                                             <option value="11-12">11-12</option>
                                             <option value="1-8">1-8</option>
                                             <option value="1-10">1-10</option>
@@ -736,6 +750,20 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Applicable for Student Residence<br />
+                                            छात्र निवास के लिए लागू का चयन करें<span style="color: red">*</span></label>
+                                        <select class="form-control select2" id="StudentResidence">
+                                            <option value="--Select--">--Select--</option>
+                                            <option value="Day Scholar">Day Scholar</option>
+                                            <option value="Hosteller">Hosteller</option>
+                                            <option value="Both">Both</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="col-md-4" id="SelectApplicableGender">
                                     <div class="form-group">
                                         <label>
@@ -767,24 +795,21 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-md-4" style="display: none" id="Hostller">
                                     <div class="form-group">
                                         <label>
-                                            Select Applicable for Student Residence<br />
-                                            छात्र निवास के लिए लागू का चयन करें<span style="color: red">*</span></label>
-                                        <select class="form-control select2">
-                                            <option value="--Select--">--Select--</option>
-                                            <option>Day Scholar</option>
-                                            <option>Hosteller</option>
-                                        </select>
+                                            Enter Beneficiary Amount (Hostller)<br />
+                                            लाभार्थी राशि दर्ज करें (छात्रावास)<span style="color: red">*</span></label>
+                                        <input name="ename" id="Amount" type="text" class="form-control" autocomplete="off" placeholder="Enter Beneficiary Amount" />
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4" id="AdditionalBenefitAmount" style="display:none;">
                                     <div class="form-group">
                                         <label>
-                                            Enter Beneficiary Amount<br />
-                                            लाभार्थी राशि दर्ज करें<span style="color: red">*</span></label>
-                                        <input name="ename" id="Amount" type="text" class="form-control" autocomplete="off" placeholder="Enter Beneficiary Amount" />
+                                            Additional Benefit Amount for Physically Challanged<br />
+                                            शारीरिक रूप से विकलांगों के लिए अतिरिक्त लाभ राशि<span style="color: red">*</span></label>
+                                        <input name="ename" type="text" class="form-control" autocomplete="off" value="1110" />
+
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -827,13 +852,16 @@
             var selectedValue = this.value;
             var disabilityType = document.getElementById('ApplicableforDisabilityType');
             var disabilityPercentage = document.getElementById('SelectDisabilityPercentage');
+            var AdditionalBenefitAmount = document.getElementById('AdditionalBenefitAmount');
 
             if (selectedValue === 'Yes') {
                 disabilityType.style.display = 'block';
                 disabilityPercentage.style.display = 'block';
+                AdditionalBenefitAmount.style.display = 'block';
             } else {
                 disabilityType.style.display = 'none';
                 disabilityPercentage.style.display = 'none';
+                AdditionalBenefitAmount.style.display = 'none';
             }
         });
     </script>
@@ -867,6 +895,21 @@
             else {
                 forBoys.style.display = 'none';
                 forGirls.style.display = 'none';
+            }
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('StudentResidence').addEventListener('change', function () {
+            var selectedValue = this.value;
+            var Hostller = document.getElementById('Hostller');
+
+            if (selectedValue === 'Both') {
+                Hostller.style.display = 'block';
+            } 
+            else {
+                Hostller.style.display = 'none';
             }
         });
     </script>
