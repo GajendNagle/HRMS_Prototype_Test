@@ -24,12 +24,9 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-                        </li>
-                        <li class="breadcrumb-item">Reports</li>
-                        <li class="breadcrumb-item">School Reports</li>
+                        <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Reports</span></a></li>
+                        <li class="breadcrumb-item">School Unmerge Reports</li>
                     </ol>
                 </div>
             </div>
@@ -37,7 +34,7 @@
     </div>
      
 
-        <div class="card mt-3 shadow">
+        <div class="card card-border-primary">
             <div class="card-header">
                 <div class="row align-items-end">
                 <div class="col-lg-6">
@@ -155,6 +152,8 @@
                                     <asp:ListItem>23450300635</asp:ListItem>
                                 </asp:DropDownList>
                         </div>
+                        </div>
+                        <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-bold">From Date/की तिथि से</label>

@@ -40,7 +40,7 @@
                                 <div class="form-group">
                                     <label>
                                     Select Date /
-                                        दिनांक चुनें</label>
+                                        दिनांक चुनें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -48,10 +48,10 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप चुनें</label>
+                                        हेड टाइप चुनें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
-                                        <option value="1">Annual</option>
+                                        <option value="1">Income</option>
                                     </select>
                                 </div>
                             </div>

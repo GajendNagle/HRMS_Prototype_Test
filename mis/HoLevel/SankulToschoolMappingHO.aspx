@@ -22,9 +22,10 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
                         </li>
-                        <li class="breadcrumb-item">HO Level Request</li>
+                        <li class="breadcrumb-item"> <a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
                         <li class="breadcrumb-item">Sankul To School Mapping Verification</li>
                     </ol>
                 </div>
@@ -158,6 +159,7 @@
                         <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
 
                     </div>
+                    <hr />
                     <div class="col-md-12">
                         <div class="form-group text-center">
                             <br />

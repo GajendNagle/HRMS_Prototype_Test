@@ -25,10 +25,8 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-                        </li>
-                        <li class="breadcrumb-item">OIS Verification</li>
+                        <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
                         <li class="breadcrumb-item">Unmerge School</li>
                     </ol>
                 </div>
@@ -37,7 +35,7 @@
     </div>
 
 
-    <div class="card">
+   <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">

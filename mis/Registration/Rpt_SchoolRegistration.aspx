@@ -14,11 +14,9 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-                        </li>
-                        <li class="breadcrumb-item">Reports</li>
-                        <li class="breadcrumb-item">School Reports</li>
+                        <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Reports</span></a></li>
+                        <li class="breadcrumb-item">School Details</li>
                     </ol>
                 </div>
             </div>
@@ -26,7 +24,7 @@
     </div>
 
 
-    <div class="card">
+     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
@@ -271,25 +269,19 @@
 
                     <fieldset>
                         <legend>School Details/स्कूल विवरण</legend>
-
-                        <div class="row justify-content-end">
-                            <div class="col-md-1 ">
-                                <div class="form-group">
-
-                                    <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <asp:Button ID="Button3" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
+                         <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
                         </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
 
                         <table class="table table-responsive">
                             <tr class="card-header">
@@ -321,7 +313,7 @@
                                 <td>Mr.Rammohan Yadav</td>
                                 <td>Yes/No</td>
                                 <td>
-                                    <asp:LinkButton ID="lnkOpenModal" runat="server" CssClass="view-but btn btn-success" OnClientClick="return false;"><i class="fas fa-eye"></i><br />View</asp:LinkButton>
+                                    <asp:LinkButton ID="lnkOpenModal" runat="server" CssClass="view-but btn btn-outline-success w-lg btn-border" OnClientClick="return false;"><i class="fas fa-eye"></i><br />View</asp:LinkButton>
 
                                 </td>
                             </tr>
@@ -1052,7 +1044,7 @@
                 <div class="modal-footer">
 
                     <%--<button type="button" class="btn btn-success" onclick="FbotonOn()">Conform</button>--%>
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             <!-- /.modal-content -->

@@ -40,7 +40,7 @@
                                 <div class="form-group">
                                     <label>
                                     Select Financial Year /
-                                        वित्तीय वर्ष का चयन करें</label>
+                                        वित्तीय वर्ष का चयन करें<span style="color: red;"> *</span></label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                 <div class="form-group">
                                     <label>
                                     Select Month /
-                                        महीना का चयन करें</label>
+                                        महीना का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                          <option value="6">June </option>
                                         <option value="1">January </option>
@@ -70,7 +70,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप का चयन करें</label>
+                                        हेड टाइप का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Annual</option>

@@ -25,10 +25,8 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-                        </li>
-                        <li class="breadcrumb-item">OIS Verification</li>
+                        <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
                         <li class="breadcrumb-item">Unmerge School</li>
                     </ol>
                 </div>
@@ -36,7 +34,7 @@
         </div>
     </div>
 
-    <div class="card ">
+   <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
@@ -51,7 +49,7 @@
             <fieldset>
                 <legend>School Unmerge/स्कूल अनमर्ज </legend>
 
-                <div class="row justify-content-center">
+                <div class="row align-items-end">
 
                     <div class="col-md-3">
                         <label class="font-bold">Select Division Name/संभाग का नाम चुनें</label>
@@ -159,11 +157,10 @@
                             </div>
                         </div>--%>
                     <div class="col-md-3">
-                        <div class="form-group">
                             <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
                             <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
                         </div>
-                    </div>
+                    <hr />
                     <div class="col-md-12">
                         <div class="form-group text-center">
                             <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
@@ -399,8 +396,8 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-danger Alert-UnMergeschool" data-bs-dismiss="modal">Submit</button>
-                            <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-success w-lg btn-border Alert-UnMergeschool" data-bs-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -423,8 +420,8 @@
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-danger Alert-Reject" data-bs-dismiss="modal">Reject</button>
-                            <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-danger Alert-Reject" data-bs-dismiss="modal">Reject</button>
+                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -587,7 +584,7 @@
                     <fieldset>
                         <legend>School Basic Information/स्कूल की जानकारी</legend>
 
-                        <div class="row">
+                        <div class="row align-items-end">
 
                             <div class="col-md-3">
                                 <div class="form-group">

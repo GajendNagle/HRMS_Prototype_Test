@@ -124,27 +124,27 @@
                             <table class="table table-bordered text-center">
                                 <thead>
                                     <tr role="row">
-                                        <th>Sr. No.
+                                        <th>Sr. No./
                                     <br />
                                             क्र.सं.
                                         </th>
-                                        <th> Hostel Name 
+                                        <th> Hostel Name /
                                             <br />
                                             हॉस्टल नाम </th>
                                         <%--<th>Mess Fees Gender
                                             <br />
                                             लिंग के अनुसार मेस</th>--%>
-                                        <th>Applicable Category 
+                                        <th>Applicable Category /
                                             <br />
                                             उपयुक्त वर्ग</th>
-                                        <th>Mess Fees 
+                                        <th>Mess Fees /
                                             <br />
                                             मेस शुल्क</th>
-                                        <th>Applicable From 
+                                        <th>Applicable From /
                                             <br />
                                             दिनांक से लागू
                                         </th>
-                                        <th scope="col">Action
+                                        <th scope="col">Action/
                                             <br />
                                             कार्रवाई </th>
                                     </tr>

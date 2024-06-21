@@ -23,9 +23,9 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
                         </li>
-                        <li class="breadcrumb-item">HO Level Request</li>
+                        <li class="breadcrumb-item"> <a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
                         <li class="breadcrumb-item">Sankul Verification</li>
                     </ol>
                 </div>
@@ -171,6 +171,7 @@
                             <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
                         
                     </div>
+                    <hr />
                     <div class="col-md-12">
                         <div class="form-group text-center"><br />
 
@@ -272,6 +273,7 @@
                                                 <label>Effective Date/प्रभावी तिथि</label>
                                                 <asp:TextBox ID="TextBox4" placeholder="20/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
                                             </div>
+                                         
                                             <div class="col-md-1 mt-2">
 
                                                 <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn view-but border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="openPDF()"><i class="fas fa-eye"></i>Document</asp:LinkButton>
@@ -280,7 +282,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                                 <!-- /.modal-content -->
@@ -297,7 +299,7 @@
                                 <button type="button" class="btn w-lg btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Create Sankul</button>
 
 
-                                <button type="button" class="btn w-lg btn-danger btn-rounded  " onclick="openBootstrapModal()">Reject Request</button>
+                                <button type="button" class="btn w-lg btn-danger btn-rounded " onclick="openBootstrapModal()">Reject Request</button>
                             </div>
                         </div>
                     </div>
@@ -322,8 +324,8 @@
                                     </fieldset>
                                 </div>
                                 <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-danger Alert-Sankul" data-bs-dismiss="modal">Submit</button>
-                                    <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-success w-lg btn-border Alert-Sankul" data-bs-dismiss="modal">Submit</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -346,8 +348,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-danger Alert-Reject" data-bs-dismiss="modal">Reject</button>
-                                    <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border Alert-Reject" data-bs-dismiss="modal">Reject</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>

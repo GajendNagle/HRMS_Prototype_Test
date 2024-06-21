@@ -56,8 +56,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Alias/<br />
-                                उपनाम दर्ज करें</label>
+                                Enter Ledger Alias/<br />
+                                बहीखाता उपनाम दर्ज करें</label>
                             <input type="text" class="form-control" placeholder="Enter Alias" />
                         </div>
                     </div>
@@ -66,8 +66,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Group Name/<br />
-                                समूह का नाम दर्ज करें.<span style="color: red;">*</span></label>
+                                Select Group Name/<br />
+                                समूह का नाम चयन करे.<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Direct Expenses(Expenses)</option>
@@ -83,7 +83,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                   <%-- <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Select Type/<br />
@@ -92,7 +92,7 @@
                                 <option selected="selected" value="0">--Other --</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
@@ -164,14 +164,14 @@
                                 Enter Name/<br />
                                 नाम दर्ज करें
                             </label>
-                            <input type="text" class="form-control" Value="Ram Yadav" />
+                            <input type="text" class="form-control"  placeholder="Enter Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Select State/<br />
-                                राज्य दर्ज करें
+                                राज्य का चयन करे
                             </label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
@@ -191,7 +191,7 @@
                         <div class="form-group">
                             <label>
                                 Enter City/<br />
-                                शहर दर्ज करें</label>
+                                शहर का नाम दर्ज करें</label>
                             <input type="text" class="form-control" placeholder="Enter City" />
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                         <div class="form-group">
                             <label>
                                 Select Applicable From/<br />
-                                दिनांक से लागू का चयन करें
+                                 लागू होने की दिनांक का चयन करें
                             </label>
                             <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" placeholder="2/2/2024" />
                         </div>
@@ -284,7 +284,7 @@
                         <div class="form-group">
                             <label>
                                 Select GST Applicable/<br />
-                                जीएसटी लागू का चयन करें
+                                जी.एस.टी का प्रकार चयन करें
                                     <span style="color: red;">*</span></label>
                             <select id="reverseCharge" class="form-control select2">
                                 <option value="1">No</option>

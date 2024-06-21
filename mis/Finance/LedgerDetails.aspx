@@ -34,6 +34,16 @@
                     <fieldset>
                         <legend>Ledger Details/बही विवरण</legend>
                         <div class="row align-items-end">
+                             <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        </label>
+                                    <select class="form-control select2">
+                                        <option value="2">Unmapped</option>
+                                        <option value="1">Mapped</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -43,14 +53,15 @@
                                     <input type="text" class="form-control" placeholder="Enter Ledger Name" />
                                 </div>
                             </div>
-                            <div class="col-md-2 ">
+                            <div class="col-md-6 ">
                                 <div class="form-group ">
-                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
+                                    <button type="button" class="btn btn-outline-success btn-border w-lg" >Search</button>
+                                    <a href="LedgerDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset id="FS_Details" style="display: none">
+                    <fieldset id="FS_Details">
                         <legend>Ledger Details/बही विवरण </legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
@@ -99,46 +110,46 @@
                                         </thead>
                                         <tbody>
                                             <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>1</span>
+                                                <td ><span>1</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <span>Basic Pay/Special Pay/Dearness Allowance</span>
                                                     <br />
                                                     <span style="font-size: smaller;">Grp: Establishment Expenses, BB:No,CC:Yes</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <a>10.01.01</a>
 
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <a>22AAAAA0000A1Z5</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <a>Head Office</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <span>Approve</span>
                                                 </td>
 
                                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>2</span>
+                                                <td ><span>2</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <span>Gratuity Premium Payment
 </span>
                                                     <br />
                                                     <span style="font-size: smaller;">Grp:Establishment Expenses, BB:No, CC:Yes</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <a>10.01.02</a>
 
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td>
                                                     <a>45AAAAA0000A1Z5</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td>
                                                     <a>Head Office</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -148,25 +159,25 @@
                                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>3</span>
+                                                <td ><span>3</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td >
                                                     <span>Gratuity Payment
 </span>
                                                     <br />
                                                     <span style="font-size: smaller;">Grp:Gratuty Payable, BB:No, CC:Yes </span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td>
                                                     <a>10.01.03</a>
 
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td>
                                                     <a>11AAAAA0000A1Z5</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td>
                                                     <a>Head Office</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td>
                                                     <span>Approve</span>
                                                 </td>
 

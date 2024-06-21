@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="card mt-3 shadow">
+        <div class="card card-border-primary">
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">

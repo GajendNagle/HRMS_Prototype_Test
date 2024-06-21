@@ -13,11 +13,9 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-                        </li>
-                        <li class="breadcrumb-item">Reports</li>
-                        <li class="breadcrumb-item">School Reports</li>
+                         <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Reports</span></a></li>
+                        <li class="breadcrumb-item">Sankul Detail Report</li>
                     </ol>
                 </div>
             </div>
@@ -25,7 +23,7 @@
     </div>
 
 
-    <div class="card">
+    <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
@@ -135,15 +133,18 @@
                     <div class="col-md-3">
                             <label>From Date/की तिथि से</label>
                             <input type="date" class="form-control" placeholder="17/11/2023" />
-                    </div>
+                    </div></div>
+                    <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>To Date/तारीख तक</label>
                         <input type="date" class="form-control" placeholder="17/11/2023" />
-                    </div><hr />
-                    <div class="col-md-12">
+                    </div>
+                    <hr />
+                    <div class="col-md-12 justify-content-center">
+                        <div class="form-group text-center">
                             <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-border" OnClick="View1_Click" runat="server" Text="Search" />
                             <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
-                        </div>
+                        </div> </div>
                 </div>
             </fieldset>
             <fieldset runat="server" id="data" visible="false">

@@ -8,8 +8,6 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -21,21 +19,24 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
                         </li>
-                        <li class="breadcrumb-item">HO Level Request</li>
+                        <li class="breadcrumb-item"><a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
                         <li class="breadcrumb-item">Merge School Verification</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card">
+
+    <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Merge School Verification/मर्ज स्कूल सत्यापन
-                    </h4>
+                    <div class="card-title color_black">
+                        Merge School Verification/मर्ज स्कूल सत्यापन
+                   
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,11 +154,13 @@
                             </div>
                         </div>--%>
                     <div class="col-md-3">
-                            <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
-                            <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
-                        </div>
+                        <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
+                        <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
+                    </div>
+                    <hr />
                     <div class="col-md-12">
-                        <div class="form-group text-center"><br />
+                        <div class="form-group text-center">
+                            <br />
                             <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn w-lg btn-outline-success btn-rounded" />
                             <a href="#" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>

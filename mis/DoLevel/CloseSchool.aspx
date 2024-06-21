@@ -20,20 +20,15 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-                        </li>
-                        <li class="breadcrumb-item">OIS Verification</li>
+                       <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                         <li class="breadcrumb-item"> <a href="#OISVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>OIS Verification</span></a></li>
                         <li class="breadcrumb-item">Close School</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-        
-
-        <div class="card ">
+        <div class="card card-border-primary">
             <div class="card-header">
                 <div class="row align-items-end">
                 <div class="col-lg-6">

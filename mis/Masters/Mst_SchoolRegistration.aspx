@@ -127,7 +127,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+   <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -136,12 +136,10 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-
                         <li class="breadcrumb-item">
-                            <a href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
-                        <li class="breadcrumb-item">Office Type Master Data</li>
+                         <li class="breadcrumb-item">OIS Registration</li>
                     </ol>
                 </div>
             </div>
@@ -156,7 +154,7 @@
             </marquee>
         </div>
     </div>
-    <div class="card card-border-primary">
+        <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
@@ -164,12 +162,8 @@
                     </h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title"></h4>
-                </div>
-            </div>
         </div>
+
         <div class="card-body">
             <fieldset>
                 <legend>Office/Institute/School Registration/कार्यालय/संस्थान/विद्यालय पंजीकरण</legend>
