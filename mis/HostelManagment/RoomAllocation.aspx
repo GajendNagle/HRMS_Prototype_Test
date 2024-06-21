@@ -133,17 +133,29 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Current Rent/<br />
-                        वर्तमान किराया
+                        Room Rent Per Month/<br />
+                        प्रति माह कक्ष का किराया
                     </label>
                     <input type="text" class="form-control" value="400/-" />
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Availing Mess Facility/<br />
+                        मेस सुविधा ले रहा है
+                    </label>
+                   <select class="form-control select2">
+                        <option value="2">Yes  </option>
+                        <option value="1">No</option>
+                    </select>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Current Mess Fees/<br />
-                        वर्तमान मेस शुल्क
+                         Mess Charges/<br />
+                         मेस शुल्क
                     </label>
                     <input type="text" class="form-control" value="1000/-" />
                 </div>
@@ -215,9 +227,13 @@
                                             <br />
                                             बिस्तर नंबर
                                         </th>
-                                         <th>Current Rent 
+                                         <th>Room Rent 
                                             <br />
-                                            वर्तमान किराया
+                                            कक्ष किराया
+                                        </th>
+                                         <th>Availing Mess Facility 
+                                            <br />
+                                            मेस सुविधा ले रहा है
                                         </th>
                                          <th>Current Mess Fees 
                                             <br />
@@ -238,9 +254,25 @@
                                         <td>KGBV Girls Hostel</td>
                                         <td>Double</td>
                                         <td>201</td>
-                                        <td>2011,2012</td>
+                                        <td>2011</td>
                                         <td>400/-</td>
+                                        <td>Yes</td>
                                         <td>1000/-</td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td>1</td>
+                                        <td> Radha Yadav(112772963)</td>
+                                        <td>ST</td>
+                                        <td>Female</td>
+                                        <td>2024-25</td>
+                                        <td>KGBV Girls Hostel</td>
+                                        <td>Double</td>
+                                        <td>201</td>
+                                        <td>2012</td>
+                                       <td>400/-</td>
+                                        <td>No</td>
+                                        <td>NA</td>
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 

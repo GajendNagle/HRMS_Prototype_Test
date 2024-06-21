@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Ledger Name (English)/<br />
-                                बहीखाता  का नाम अंग्रेजी में दर्ज करें
+                                बहीखाता का नाम अंग्रेजी में दर्ज करें
                                     <span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Ledger Name in English" />
                         </div>
@@ -171,7 +171,7 @@
                         <div class="form-group">
                             <label>
                                 Select State/<br />
-                                खाता संख्या दर्ज करें
+                                राज्य दर्ज करें
                             </label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
