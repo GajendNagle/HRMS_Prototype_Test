@@ -24,36 +24,48 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">School-Wise Summary of Enrollment</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=StudentProfileMgmt" title="click to go on">Student Profile Management</a></li>--%>
-                    <li class="breadcrumb-item active">School-Wise Summary of Enrollment</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">SSDDO Scholarship</li>
+                        <li class="breadcrumb-item">School-Wise Summary of Enrollment</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-8">
+                    <h4 class="card-title">School-Wise Summary of Enrollment / नामांकन का स्कूल-वार सारांश
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
             <fieldset>
-                <legend>School-wise Summary of Enrollment</legend>
+                <legend>School-wise Summary of Enrollment / नामांकन का स्कूल-वार सारांश</legend>
                 <div class="row">
 
                     <div class="col-lg-12">
-                        <div class="row justify-content-center">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                                    <label>Select Academic Year<br />शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="2024-25">2024-25</option>
@@ -73,7 +85,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">District <span style="color: red">*</span></label>
+                                    <label >Select District<br />जिला का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option>--Select--</option>
                                         <option>Gwalior</option>
@@ -89,7 +101,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">DDO <span style="color: red">*</span></label>
+                                    <label>DDO<br />डीडीओ<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option>DABRA.BEO DABRA</option>
@@ -101,7 +113,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">School </label>
+                                    <label>School<br />स्कूल</label>
                                     <select class="form-control select2">
                                         <option>--Select--</option>
                                         <option>MS Barotha</option>
@@ -127,7 +139,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2 ">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -135,11 +147,12 @@
 
                                 </div>
                             </div>
-
-                            <div class="col-md-4 text-center">
+                            </div>
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-rounded" Text="Show" OnClick="btnShowSummary_Click" />
-                                    <a href="SchoolWiseSummaryOfEnrollment.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                    <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-border btn w-lg" Text="Show" OnClick="btnShowSummary_Click" />
+                                    <a href="SchoolWiseSummaryOfEnrollment.aspx" class="btn btn-outline-danger btn-border btn w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -148,26 +161,26 @@
 
             </fieldset>
             <fieldset runat="server" id="dv_SchoolSummary">
-                <legend>School-wise Summary of Enrollment Details</legend>
+                <legend>School-wise Summary of Enrollment Details / नामांकन विवरण का स्कूल-वार सारांश</legend>
                 <div class="row">
                     <div class="col-lg-12">
-                        <table class="table table-bordered ">
+                        <table class="table table-bordered table-responsive">
                             <thead>
                                 <tr>
-                                    <th>S.No.</th>
-                                    <th>School Name</th>
-                                    <th>School Type</th>
-                                    <th>HM/Principal/OIC</th>
-                                    <th>Mobile No.</th>
-                                    <th>Enrolled Students</th>
-                                    <th>Students with Registered/ Updated Profiles</th>
-                                    <th>Pending Profile Registration/Updation</th>
-                                    <th>Profiles Proccessed for Scholerships</th>
-                                    <th>Total No. of Profile sent by back DDO</th>
-                                    <th>Students awarded a Scholarship</th>
-                                    <th>**Total Disbursal</th>
-                                    <th>**Total M1 Click Disbursal </th>
-                                    <th>**Total M1 Click Disbursal Amount</th>
+                                    <th>S.No.<br />सरल क्र.</th>
+                                    <th>School Name<br />स्कूल नाम</th>
+                                    <th>School Type<br />स्कूल का प्रकार</th>
+                                    <th>HM/Principal/OIC<br />एचएम/प्रिंसिपल/ओआईसी</th>
+                                    <th>Mobile No.<br />मोबाइल नंबर</th>
+                                    <th>Enrolled Students<br />नामांकित छात्र</th>
+                                    <th>Students with Registered/ Updated Profiles<br />पंजीकृत/अद्यतन प्रोफाइल वाले छात्र</th>
+                                    <th>Pending Profile Registration/Updation<br />लंबित प्रोफ़ाइल पंजीकरण/अद्यतन</th>
+                                    <th>Profiles Proccessed for Scholerships<br />छात्रवृत्ति के लिए प्रोफ़ाइल तैयार की गई</th>
+                                    <th>Total No.of Profile sent by back DDO<br />वापस डीडीओ द्वारा भेजी गई प्रोफाइल की कुल संख्या</th>
+                                    <th>Students awarded a Scholarship<br />विद्यार्थियों को छात्रवृत्ति प्रदान की गई</th>
+                                    <th>**Total Disbursal<br />कुल संवितरण</th>
+                                    <th>**Total M1 Click Disbursal<br />कुल एम1 क्लिक संवितरण</th>
+                                    <th>**Total M1 Click Disbursal Amount<br />कुल एम1 क्लिक संवितरण राशि</th>
 
 
                                 </tr>

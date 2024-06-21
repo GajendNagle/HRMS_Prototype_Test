@@ -3,34 +3,48 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">View Scholarship Sanction Approval</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item active">View Scholarship Sanction Application</li>
-                </ol>
+   
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">SSDDO Scholarship</li>
+                        <li class="breadcrumb-item">View Scholarship Sanction Application</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h4 class="card-title">View Scholarship Sanction for Approval <br />
+ अनुमोदन के लिए छात्रवृत्ति स्वीकृति देखें
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>View Scholarship Sanction for Approval</legend>
+                <legend>View Scholarship Sanction for Approval / अनुमोदन के लिए छात्रवृत्ति स्वीकृति देखें</legend>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <table class="table table-responsive-lg table-bordered">
+                            <table class="table table-responsive-lg table-bordered text-center">
                                 <tr>
-                                    <th>Proposal No</th>
-                                    <th>School Type</th>
-                                    <th>School</th>
+                                    <th>Proposal No<br />प्रस्ताव संख्या</th>
+                                    <th>School Type<br />स्कूल का प्रकार</th>
+                                    <th>School<br />स्कूल</th>
                                 </tr>
                                 <tr>
                                     <td>1/351/7709</td>
@@ -50,26 +64,26 @@ application from the list of sanctioned cases.
                 </p>
             </div>
 
-            <fieldset id="ScholershipApplicationList">
-                <legend>Scholership Applications to be Sanctioned</legend>
-                <table class="table">
+            <fieldset id="ScholershipApplicationList" class="mt-4">
+                <legend>Scholership Applications to be Sanctioned / छात्रवृत्ति आवेदन स्वीकृत किये जायेंगे</legend>
+                <table class="table table-responsive">
                     <tr>
-                        <th>Sr.No.</th>
-                        <th>Class</th>
-                        <th>Member ID</th>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Category</th>
-                        <th>BPL</th>
-                        <th>Hostal</th>
-                        <th>Father Occupation</th>
-                        <th>Last Year %</th>
-                        <th>Disability Type %</th>
-                        <th>Schemes</th>
-                        <th>Amount</th>
-                        <th>Account Details</th>
-                        <th>Remarks</th>
-                        <th>Select</th>
+                        <th>Sr.No.<br />सरल क्र.</th>
+                        <th>Class <br />कक्षा</th>
+                        <th>Member ID<br />सदस्य आईडी</th>
+                        <th>Name<br />नाम</th>
+                        <th>Gender<br />जेंडर</th>
+                        <th>Category<br />श्रेणी</th>
+                        <th>BPL<br />गरीबी रेखा से नीचे</th>
+                        <th>Hostal<br />छात्रावास</th>
+                        <th>Father Occupation<br />पिता का व्यवसाय</th>
+                        <th>Last Year %<br />पिछले साल का प्रतिशत</th>
+                        <th>Disability Type %<br />विकलांगता प्रकार %</th>
+                        <th>Schemes<br />योजनाओं</th>
+                        <th>Amount<br />राशि</th>
+                        <th>Account Details<br />खाता विवरण</th>
+                        <th>Remarks<br />टिप्पणी</th>
+                        <th>Select<br />चयन</th>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -136,10 +150,10 @@ application from the list of sanctioned cases.
                     </tr>
                 </table>
             </fieldset>
-
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <input type="button" id="btnPropSend" name="button" value="Sanction the Above Selected Applications and Recommended for Payment" class="btn btn-primary" />
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="button" id="btnPropSend" name="button" value="Sanction the Above Selected Applications and Recommended for Payment" class="btn btn-success btn-border" />
                 </div>
 
             </div>

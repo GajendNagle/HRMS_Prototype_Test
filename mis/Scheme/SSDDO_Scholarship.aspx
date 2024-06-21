@@ -2,9 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        .accordion_container {
+        /* .accordion_container {
             width: 389px;
-        }
+        }*/
 
         .accordion_head {
             background-color: #1b5b5c;
@@ -15,19 +15,19 @@
             margin: 0 0 1px 0;
             padding: 7px 11px;
             font-weight: bold;
-            width: 1200px;
+            width: auto;
         }
 
-        .accordion_body {
+        /*.accordion_body {
             background: lightgray;
-            width: 1200px;
-        }
+            width: 900px;
+        }*/
 
-            .accordion_body p {
-                padding: 8px 5px;
-                margin: 0px;
-                font-weight: bold;
-            }
+        .accordion_body p {
+            padding: 8px 5px;
+            margin: 0px;
+            font-weight: bold;
+        }
 
         .plusminus {
             float: right;
@@ -39,24 +39,35 @@
     <script src="js/accordion.js" type="text/javascript"></script>
     <link rel="STYLESHEET" href="css/style.css" type="text/css">
     <div id="dv_Masters_LocationMasters" runat="server">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
 
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Scholarship Dashboard </h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">SchemeManagement</a></li>
-                        <li class="breadcrumb-item active">Scholarship Dashboard</li>
-                    </ol>
+                            <li class="breadcrumb-item">
+                                <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                            </li>
+                            <li class="breadcrumb-item">Scholarship Dashboard</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <h4 class="card-title">Scholarship Dashboard /
+                            छात्रवृत्ति डैशबोर्ड
+                        </h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <span id="ContentBody_lblMsg"></span>
@@ -112,13 +123,13 @@
                         </div>
                         <div class="accordion_body" style="display: none;">
                             <p><a class="custom-btn btn-4" href="DDOWiseSummaryOfEnrollment.aspx">1. DDO Wise Summary of Enrollments in Schools</a></p>
-                        
+
                             <p><a class="custom-btn btn-4" href="SchoolWiseSummaryOfEnrollment.aspx">2. School wise summary of Enrollments</a></p>
-                      
+
                             <p><a class="custom-btn btn-4" href="SankulwisesamagrascholershipstudentStatusUsingDiseCode.aspx">3. Enrollments Summary for All Schools with a DDO</a></p>
-                        
+
                             <p><a class="custom-btn btn-4" href="RPT_DistrictwiseAcceptedEnrollments.aspx">4.District wise Enrollments Acceptance</a></p>
-                       
+
                             <p><a class="custom-btn btn-4" href="Rpt_DepartMentSchemewiseApplication.aspx">5.Scheme wise Brief report </a></p>
                         </div>
                         <%--<div class="accordion_body" style="display: none;">

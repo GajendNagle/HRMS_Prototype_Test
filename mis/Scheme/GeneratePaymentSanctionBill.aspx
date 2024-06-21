@@ -8,42 +8,62 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">View Generate Payment Sanction Bill</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item active">View Generate Payment Sanction Bill</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">SSDDO Scholarship</li>
+                        <li class="breadcrumb-item">View Generate Payment Sanction Bill</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">View Generate Payment Sanction Bill / जनरेट भुगतान स्वीकृति बिल देखें 
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>List of Locked Proposal</legend>
-                <div class="row">
+                <legend>List of Locked Proposal / लॉक प्रस्ताव की सूची</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Date<span style="color: red">*</span></label>
+                            <label>
+                                Enter From Date
+                                <br />
+                                दिनांक से दर्ज करें<span style="color: red">*</span></label>
                             <input type="date" name="date" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Date<span style="color: red">*</span></label>
+                            <label>
+                                To Date<br />
+                                दिनाँक तक दर्ज करें<span style="color: red">*</span></label>
                             <input type="date" name="date" value="" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>School Type<span style="color: red">*</span></label>
+                            <label>
+                                Select School Type<br />
+                                स्कूल प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select id="ddlApplicant" class="form-control select2" onchange="ShowComment()">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Govt.</option>
@@ -54,7 +74,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>School<span style="color: red">*</span></label>
+                            <label>
+                                Select School<br />
+                                स्कूल का चयन करें<span style="color: red">*</span></label>
                             <select id="ddlSchool" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Sushila Devi Hr. Sec. School</option>
@@ -63,27 +85,35 @@
                         </div>
                     </div>
                 </div>
+                <hr />
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <input type="button" name="button" value="Show Proposals" class="btn btn-primary" onclick="HideShow()" />
-                            <a href="GeneratePaymentSanctionBill.aspx" class=" btn btn-danger">Clear</a>
+                            <input type="button" name="button" value="Show Proposals" class="btn btn-success btn-border btn w-lg" onclick="HideShow()" />
+                            <a href="GeneratePaymentSanctionBill.aspx" class=" btn btn-outline-danger btn w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset id="ProposalDetails">
-                <legend>Scholership Proposal for Lock and Sanction List</legend>
-                <table class="table">
+                <legend>Scholership Proposal for Lock and Sanction List / लॉक और स्वीकृति सूची के लिए छात्रवृत्ति प्रस्ताव</legend>
+                <table class="table table-responsive-lg text-center">
                     <tr>
-                        <th>Sr.No.</th>
-                        <th>School Name</th>
-                        <th>School Type</th>
-                        <th>Sanction Date</th>
-                        <th>Total Students</th>
-                        <th>Total Amount</th>
-                        <th>View</th>
+                        <th>Sr.No.<br />
+                            सरल क्र.</th>
+                        <th>School Name<br />
+                            स्कूल का नाम</th>
+                        <th>School Type<br />
+                            स्कूल का प्रकार</th>
+                        <th>Sanction Date<br />
+                            स्वीकृति दिनाँक</th>
+                        <th>Total Students<br />
+                            कुल छात्र</th>
+                        <th>Total Amount<br />
+                            कुल राशि</th>
+                        <th>View<br />
+                            देखना</th>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -108,6 +138,7 @@
                         </td>
                     </tr>
                 </table>
+
             </fieldset>
         </div>
     </div>
@@ -115,7 +146,7 @@
         <div class="modal-dialog" role="document" style="max-width: 1000px;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Schemes Details in Proposal</h5>
+                    <h5 class="modal-title">Schemes Details in Proposal / प्रस्ताव में योजनाओं का विवरण</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -123,9 +154,12 @@
                             <div class="form-group">
                                 <table class="table table-responsive-lg table-bordered">
                                     <tr>
-                                        <th>Proposal No</th>
-                                        <th>School Type</th>
-                                        <th>School</th>
+                                        <th>Proposal No<br />
+                                            प्रस्ताव संख्या</th>
+                                        <th>School Type<br />
+                                            स्कूल का प्रकार</th>
+                                        <th>School<br />
+                                            स्कूल</th>
                                     </tr>
                                     <tr>
                                         <td>1/351/7709</td>
@@ -136,15 +170,21 @@
                             </div>
                         </div>
                         <fieldset style="width: 966px;">
-                            <legend>Schemes Details</legend>
+                            <legend>Schemes Details / योजनाओं का विवरण</legend>
                             <table class="table">
                                 <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Scheme Code</th>
-                                    <th>Scheme Name</th>
-                                    <th>Total Student</th>
-                                    <th>Scholarship Amount</th>
-                                    <th>Print</th>
+                                    <th>Sr.No.<br />
+                                        सरल क्र.</th>
+                                    <th>Scheme Code<br />
+                                        योजना कोड</th>
+                                    <th>Scheme Name<br />
+                                        योजना का नाम</th>
+                                    <th>Total Student<br />
+                                        कुल छात्र</th>
+                                    <th>Scholarship Amount<br />
+                                        छात्रवृत्ति राशि</th>
+                                    <th>Print<br />
+                                        प्रिंट</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

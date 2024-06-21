@@ -2,92 +2,121 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        body{
-  margin:0;
-  padding:0;
-  font-family: 'Roboto Condensed', sans-serif;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            /*font-family: 'Roboto Condensed', sans-serif;*/
+        }
 
-/* Overlay Styles */
-.overlay {
-  background:rgba(0,0,0,0.8);
-  opacity:0.8;
-  filter:alpha(opacity=80);
-  position:absolute;
-  top:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  z-index:100;
-}
+        /* Overlay Styles */
+        .overlay {
+            background: rgba(0,0,0,0.8);
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 100;
+        }
 
-/* Popup */
-.popup{
-  background:white;
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  z-index:101;
-  width:580px; /*Change your width here*/
-  height:250px; /*Change your height here*/
-  margin:auto;
-  
-  @media(max-width:768px){
-    width:90%;
-    margin:auto 5%;
-  }
-  /* Popup Inner */
-  .popup-inner{
-    position:relative;
-    padding:1em;
-    
-    input.s3-btn-close{
-      position:absolute;
-      top:-0.5em;
-      right:-0.5em;
-      
-      background:black;
-      border:solid 2px white;
-      color:white;
-      cursor:pointer;
-      
-      border-radius:15px;
-      
-      outline:none;
-    } // s3-btn-close
-  } // popup-inner
-} // popup
+        /* Popup */
+        .popup {
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 101;
+            width: 580px; /*Change your width here*/
+            height: 250px; /*Change your height here*/
+            margin: auto;
 
+            @media(max-width:768px) {
+                width:90%;
+                margin:auto 5%;
+            }
+            /* Popup Inner */
+            .popup-inner
 
-/*************
+        {
+            position: relative;
+            padding: 1em;
+            input .s3-btn-close
+
+        {
+            position: absolute;
+            top: -0.5em;
+            right: -0.5em;
+            background: black;
+            border: solid 2px white;
+            color: white;
+            cursor: pointer;
+            border-radius: 15px;
+            outline: none;
+        }
+
+        // s3-btn-close
+        }
+        // popup-inner
+        }
+
+        // popup
+        /*************
   S3 Button
 *************/
-input.s3-btn{
-  background:#f1f1f1;
-  border:none;
-  width:200px;
-  height:50px;
-  cursor:pointer;
-  
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  margin:auto;
-}
+        input.s3-btn {
+            background: #f1f1f1;
+            border: none;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
 
-.s3-center{
-  text-align:center;
-}
+        .s3-center {
+            text-align: center;
+        }
+
+
+        @media print {
+            /* Show modal content in full page */
+            .modal-dialog {
+                width: 200%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+
+            .modal-content {
+                height: 200%;
+                border: none;
+                box-shadow: none;
+            }
+
+            .modal-body {
+                width: 210%;
+                height: auto;
+                overflow: visible !important;
+                zoom: 90%;
+            }
+            /* Hide unnecessary elements */
+            body.modal-open {
+                visibility: hidden;
+            }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
 
-        <div class="row page-titles mb-4">
+        <%-- <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
                 <h4 class="text-themecolor ">Paid Scholarship List</h4>
             </div>
@@ -101,30 +130,60 @@ input.s3-btn{
                     </ol>
                 </div>
             </div>
+        </div>--%>
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                            </li>
+                            <li class="breadcrumb-item">SSDDO Scholarship</li>
+                            <li class="breadcrumb-item">Paid Scholarship List</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <h4 class="card-title">Paid Scholarship List / भुगतान की गई छात्रवृत्ति सूची
+                        </h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <span id="ContentBody_lblMsg"></span>
                 <fieldset id="PaidScholarship" runat="server">
-                    <legend>Paid Scholarship List</legend>
+                    <legend>Paid Scholarship List / भुगतान की गई छात्रवृत्ति सूची</legend>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label class="font-weight-bold">DISE Code<span style="color: red">*</span></label>
+                            <label>
+                                Enter DISE Code<br />
+                                डाइस कोड दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" max="12" class="form-control" autocomplete="off" placeholder="Enter DISE Code" />
                         </div>
-                        <div class="col-md-3 mt-4">
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
 
-                            <asp:Button Text="Get List Of Students" type="button" runat="server" OnClick="GetListOfStudents_Click" ID="GetListOfStudents" class="btn btn-success btn-rounded"></asp:Button>
-                            <a href="Paid_Scholarship.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <asp:Button Text="Get List Of Students" type="button" runat="server" OnClick="GetListOfStudents_Click" ID="GetListOfStudents" class="btn btn-success btn-border btn w-lg"></asp:Button>
+                            <a href="Paid_Scholarship.aspx" class="btn btn-outline-danger btn-border btn w-lg">Clear</a>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset runat="server" id="Studenttraking" visible="false">
-                    <legend>School Details</legend>
+                    <legend>School Details / स्कूल का विवरण</legend>
                     <div class="student-profile py-12">
                         <div class="container">
                             <div class="row">
@@ -140,23 +199,28 @@ input.s3-btn{
                                                     <div style="min-height: 0rem;" class="card-body pt-0">
                                                         <table class="table table-bordered">
                                                             <tr>
-                                                                <th width="30%">School Name : </th>
+                                                                <th width="30%">School Name<br />
+                                                                    स्कूल का नाम : </th>
                                                                 <td width="2%">:</td>
                                                                 <td>SAGAR PUBLIC SCHOOL [SPS]</td>
-                                                                <th width="30%" class="text-gray-lighter">DISE Code</th>
+                                                                <th width="30%" class="text-gray-lighter">DISE Code<br />
+                                                                    डाइस कोड</th>
                                                                 <td width="2%">:</td>
                                                                 <td>1234567</td>
                                                             </tr>
                                                             <tr>
-                                                                <th width="30%">District </th>
+                                                                <th width="30%">District<br />
+                                                                    जिला  </th>
                                                                 <td width="2%">:</td>
                                                                 <td>Bhoapl</td>
-                                                                <th width="30%">Block</th>
+                                                                <th width="30%">Block<br />
+                                                                    ब्लॉक</th>
                                                                 <td width="2%">:</td>
                                                                 <td>Bairasia</td>
                                                             </tr>
                                                             <tr>
-                                                                <th>पता</th>
+                                                                <th>Address<br />
+                                                                    पता</th>
                                                                 <td>:</td>
                                                                 <td colspan="4">ग्राम / वार्ड -Birha Shym Khedi  जिला -Bhopal</td>
                                                             </tr>
@@ -183,18 +247,19 @@ input.s3-btn{
                                         <div id="exTab3" class="container">
                                             <ul class="nav nav-pills">
                                                 <li class="active">
-                            <asp:Button Text="Print List Of Students Whose payment was Successful" type="button" runat="server" OnClick="Button1_Click" ID="Button1" class="btn btn-warning"></asp:Button>
 
-                                                    
-                                                </li>
-                                                <li>
-                            <asp:Button Text="Print List Of Students Whose payment was Failed" type="button2" runat="server" OnClick="Button2_Click" ID="Button2" class="btn btn-success"></asp:Button>
+                                                    <asp:Button Text="Print List Of Students Whose payment was Successful" type="button" runat="server" OnClick="Button1_Click" ID="Button1" class="btn btn-warning w-lg"></asp:Button>
 
-                                               
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-danger" href="#3b" data-toggle="tab">Print List Of Students Who have been Sanctioned Schemes </button>
+                                                    <asp:Button Text="Print List Of Students Whose payment was Failed" type="button2" runat="server" OnClick="Button2_Click" ID="Button2" class="btn btn-success w-lg"></asp:Button>
+
+
+
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btn btn-outline-danger w-lg" href="#3b" data-toggle="tab">Print List Of Students Who have been Sanctioned Schemes </button>
 
                                                 </li>
                                             </ul>
@@ -203,20 +268,29 @@ input.s3-btn{
                                                 <div class="tab-pane active" id="Successful" runat="server" visible="false">
                                                     <div class="card-body pt-0">
 
-                                                        <table class="table table-bordered">
+                                                        <table class="table table-bordered table-responsive mt-3">
                                                             <thead>
                                                                 <tr>
 
-                                                                    <th style="color: white" scope="col">#</th>
-                                                                    <th style="color: white" scope="col">SamagraID</th>
-                                                                    <th style="color: white" scope="col">Name</th>
-                                                                    <th style="color: white" scope="col">Fathers Name</th>
-                                                                    <th style="color: white" scope="col">Class</th>
-                                                                    <th style="color: white" scope="col">Scheme</th>
-                                                                    <th style="color: white" scope="col">IFSC</th>
-                                                                    <th style="color: white" scope="col">Ac.NO.</th>
-                                                                    <th style="color: white" scope="col">Amount</th>
-                                                                    <th style="color: white" scope="col">Payment Stetus</th>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">SamagraID<br />
+                                                                        समग्र आईडी</th>
+                                                                    <th scope="col">Name<br />
+                                                                        नाम</th>
+                                                                    <th scope="col">Fathers Name<br />
+                                                                        पिता का नाम</th>
+                                                                    <th scope="col">Class<br />
+                                                                        कक्षा</th>
+                                                                    <th scope="col">Scheme<br />
+                                                                        योजना</th>
+                                                                    <th scope="col">IFSC<br />
+                                                                        आईएफएससी</th>
+                                                                    <th scope="col">Ac.NO.<br />
+                                                                        खाता नंबर</th>
+                                                                    <th scope="col">Amount<br />
+                                                                        राशि</th>
+                                                                    <th scope="col">Payment Stetus<br />
+                                                                        भुगतान की स्थिति</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -248,19 +322,24 @@ input.s3-btn{
                                                         </table>
                                                     </div>
                                                 </div>
-                                                <div  id="PaymentFailed" runat="server" visible="false">
-                                                    <div class="table-responsive"> 
-                                                        <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
+                                                <div id="PaymentFailed" runat="server" visible="false">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table mt-3 table-striped table-bordered" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                                             <thead>
                                                                 <tr>
-                                                                    <th style="color: white" scope="col">#</th>
-                                                                    <th style="color: white" scope="col">Class</th>
-                                                                    <th style="color: white" scope="col">SamagraID</th>
-                                                                    <th style="color: white" scope="col">Name</th>
-                                                                    <th style="color: white" scope="col">Father Name</th>
-                                                                    <th style="color: white" scope="col">IFSC</th>
-                                                                    <th style="color: white" scope="col">Acount NO</th>
-                                                                    <th style="color: white" scope="col">Action</th>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">Class<br />
+                                                                        कक्षा</th>
+                                                                    <th scope="col">SamagraID</th>
+                                                                    <th scope="col">Name<br />
+                                                                        नाम</th>
+                                                                    <th scope="col">Father Name<br />
+                                                                        पिता का नाम</th>
+                                                                    <th scope="col">IFSC<br />
+                                                                        आईएफएससी</th>
+                                                                    <th scope="col">Acount NO<br />
+                                                                        खाता नंबर</th>
+                                                                    <th scope="col">Action</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -272,7 +351,10 @@ input.s3-btn{
                                                                     <td>Abhijit</td>
                                                                     <td>HD000032</td>
                                                                     <td>6575757575768</td>
-                                                                    <td> <input type="button" class="s3-btn" name="Open" onclick="popupOpen();"  value="Edit"></td>
+                                                                    <%--<td>
+                                                                        <input type="button" class="s3-btn" name="Open" onclick="popupOpen();" value="Edit"></td>--%>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-danger btn-rounded" data-toggle="modal" data-target="#myModal">Edit</button></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
@@ -282,7 +364,10 @@ input.s3-btn{
                                                                     <td>Pravin</td>
                                                                     <td>HD000032</td>
                                                                     <td>6575757575768</td>
-                                                                    <td> <input type="button" class="s3-btn" name="Open" onclick="popupOpen();"  value="Edit"></td>
+                                                                    <%--<td>
+                                                                        <input type="button" class="s3-btn" name="Open" onclick="popupOpen();" value="Edit"></td>--%>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-danger btn-rounded" data-toggle="modal" data-target="#myModal">Edit</button></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
@@ -292,7 +377,11 @@ input.s3-btn{
                                                                     <td>Pravin</td>
                                                                     <td>HD000032</td>
                                                                     <td>6575757575768</td>
-                                                                    <td> <input type="button" class="s3-btn" name="Open" onclick="popupOpen();"  value="Edit"></td>
+                                                                    <%--<td>
+                                                                        <input type="button" class="s3-btn" name="Open" onclick="popupOpen();" value="Edit"></td>--%>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-danger btn-rounded" data-toggle="modal" data-target="#myModal">Edit</button></td>
+
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
@@ -302,66 +391,107 @@ input.s3-btn{
                                                                     <td>Ramarao</td>
                                                                     <td>HD000032</td>
                                                                     <td>6575757575768</td>
-                                                                    <td> <input type="button" class="s3-btn" name="Open" onclick="popupOpen();"  value="Edit"></td>
+                                                                    <%--<td>--%>
+                                                                    <%--<input type="button" class="s3-btn" name="Open" onclick="popupOpen();" value="Edit"></td>--%>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-danger btn-rounded" data-toggle="modal" data-target="#myModal">Edit</button></td>
                                                                 </tr>
                                                             </tbody>
-                                                        </table> 
+                                                        </table>
                                                     </div>
-                                                </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
-<!-- Overlay -->
-<div class="overlay" id="overlay" style="display:none;"></div>
+                    <!-- Overlay -->
+                    <%--<div class="overlay" id="overlay" style="display: none;"></div>--%>
 
-<!-- Popup -->
-<div class="popup" id="popup" style="display:none;">
-  <div class="popup-inner">
-    <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
-    
-    
-      
-         
-                              <table class="table table-bordered">
-                                  <tr>
-                                      <th width="30%">IFSC Code : </th>
-                                      <td width="2%">:</td>
-                                      <td>HD0000RT</td>
-                                      <th width="30%" class="text-gray-lighter">Bank Name</th>
-                                      <td width="2%">:</td>
-                                      <td> 
-        <select style="width: 100px;">
-            <option value='Bank of Baroda'>Bank of Baroda</option>
-            <option value='H d f c bank'>H d f c bank</option>
-            <option value='Punjab National Bank'>Punjab National Bank</option>
-            <option value='Bank of Maharashtra'>Bank of Maharashtra</option> 
-        </select>
-     </td>
-                                  </tr>
-                                  <tr>
-                                      <th width="30%">Account NO </th>
-                                      <td width="2%">:</td>
-                                      <td>2255664466</td>
-                                      <th width="30%">Account NO Retype</th>
-                                      <td width="2%">:</td>
-                                      <td>2255664466</td>
-                                  </tr> 
-                                   
-     
-   
- 
-                                    
-                              </table>
-     <asp:Button Text="Save Bank Account Details" type="button" runat="server"  ID="Button3" class="btn btn-success"></asp:Button>
+                    <!-- Popup -->
+                    <%--<div class="popup" id="popup" style="display: none;">
+                        <div class="popup-inner">
+                            <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
 
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th width="30%">IFSC Code : </th>
+                                    <td width="2%">:</td>
+                                    <td>HD0000RT</td>
+                                    <th width="30%" class="text-gray-lighter">Bank Name</th>
+                                    <td width="2%">:</td>
+                                    <td>
+                                        <select style="width: 100px;">
+                                            <option value='Bank of Baroda'>Bank of Baroda</option>
+                                            <option value='H d f c bank'>H d f c bank</option>
+                                            <option value='Punjab National Bank'>Punjab National Bank</option>
+                                            <option value='Bank of Maharashtra'>Bank of Maharashtra</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">Account NO </th>
+                                    <td width="2%">:</td>
+                                    <td>2255664466</td>
+                                    <th width="30%">Account NO Retype</th>
+                                    <td width="2%">:</td>
+                                    <td>2255664466</td>
+                                </tr>
+                            </table>
+                            <asp:Button Text="Save Bank Account Details" type="button" runat="server" ID="Button3" class="btn btn-success"></asp:Button>
 
-                          </div> 
-</div>   
+                        </div>
+
+                       
+                    </div>--%>
+
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                                    <h4 class="modal-title text-white"></h4>
+                                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th width="30%">IFSC Code  </th>
+                                            <td width="2%">:</td>
+                                            <td>HD0000RT</td>
+                                            <th width="30%" class="text-gray-lighter">Bank Name</th>
+                                            <td width="2%">:</td>
+                                            <td>
+                                                <select style="width: 100px;">
+                                                    <option value='Bank of Baroda'>Bank of Baroda</option>
+                                                    <option value='H d f c bank'>H d f c bank</option>
+                                                    <option value='Punjab National Bank'>Punjab National Bank</option>
+                                                    <option value='Bank of Maharashtra'>Bank of Maharashtra</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="30%">Account NO </th>
+                                            <td width="2%">:</td>
+                                            <td>2255664466</td>
+                                            <th width="30%">Account NO Retype</th>
+                                            <td width="2%">:</td>
+                                            <td>2255664466</td>
+                                        </tr>
+                                    </table>
+                                    <asp:Button Text="Save Bank Account Details" type="button" runat="server" ID="Button3" class="btn btn-success"></asp:Button>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
             </div>
         </div>
@@ -370,17 +500,18 @@ input.s3-btn{
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-     <script>
-         // Popup Open
-         function popupOpen() {
-             document.getElementById("popup").style.display = "block";
-             document.getElementById("overlay").style.display = "block";
-         }
-         // Popup Close
-         function popupClose() {
-             document.getElementById("popup").style.display = "none";
-             document.getElementById("overlay").style.display = "none";
-         }
-     </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <%--<script>
+        // Popup Open
+        function popupOpen() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+        // Popup Close
+        function popupClose() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>--%>
 </asp:Content>
 

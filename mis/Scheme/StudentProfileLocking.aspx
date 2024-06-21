@@ -13,33 +13,44 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Student Profile View/Edit/Lock</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=AdmissionMgmt" title="click to go on">Admission Management</a></li>--%>
-                    <li class="breadcrumb-item active">Student Profile View/Edit/Lock</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Student Profile View/Edit/Lock</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Student Profile View/Edit/Lock <br /> छात्र प्रोफ़ाइल देखें/संपादित करें/लॉक करें
+                    </h4>
+                </div>
+            </div>
         </div>
-        <div class="card-body ">
+        <div class="card-body">
             <fieldset>
-                <legend>Student List Of Newly Enrolled Students</legend>
+                <legend>Student List Of Newly Enrolled Students / नवनामांकित छात्रों की छात्र सूची</legend>
 
-                <div class="row justify-content-center">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Acadmic Year <span style="color: red">*</span></label>
+                            <label>Select Acadmic Year<br />शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="2024-25">2024-25</option>
@@ -59,7 +70,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">DISE Code<span style="color: red">*</span></label>
+                            <label>Enter DISE Code <br />डायस कोड दर्ज करें<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" ID="txtStudentSamagraID" AutoComplete="off" CssClass="form-control" placeholder="Enter DISE Code" MaxLength="9"></asp:TextBox>
                         </div>
                     </div>
@@ -77,7 +88,7 @@
                                 <li style="color: red">कक्षा ११ एवं १२वी के विद्यार्थी का विषय</li>
                             </ol>
                         </div>
-                        <div class="col-md-2 justify-content-end">
+                        <div class="col-md-3">
                             <asp:Button CssClass="btn btn-warning" runat="server" ID="btns" Text="Click Here to Find School Dise Code" Style="margin-right: 0px;" />
                         </div>
 
@@ -97,20 +108,21 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2 ">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
                             </div>
 
-
+                           </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 text-center">
+                    <hr />
+                    <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-rounded" Text="जानकारी देखे" OnClick="btnShowStudentDetails_Click" />
-                            <a href="StudentProfileLocking.aspx" class="btn btn-rounded btn-danger">Clear</a>
+                            <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-border w-lg" Text="जानकारी देखे" OnClick="btnShowStudentDetails_Click" />
+                            <a href="StudentProfileLocking.aspx" class="btn btn-border btn-outline-danger w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -118,109 +130,109 @@
 
             </fieldset>
             <div id="table" runat="server">
-            <fieldset runat="server" id="dvPersonalDetails">
-                <legend>Students Details</legend>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <table class="table table-bordered ">
-                            <thead>
-                            <tr>
-                                <th>S.No.</th>
-                                <th>Student Samagra ID</th>
-                                <th>Student Name</th>
-                                <th>Gender</th>
-                                <th>Category</th>
-                                <th>BPL</th>
-                                <th>Hostel</th>
-                                <th>Father's Name</th>
-                                <th>Occupation</th>
-                                <th>Income</th>
-                                <th>Last Year%</th>
-                                <th>Disabled</th>
-                                <th>Bank Account No.</th>
-                                <th>Bank IFSC Code</th>
-                                <th>Schemes</th>
-                                <th>Amt</th>
-                                <th>Print</th>
-                                <th>Action</th>
-                                <th>
-                                    <asp:CheckBox runat="server" ID="cbx1" OnCheckedChanged="cbx1_CheckedChanged" AutoPostBack="true"/></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1 </td>
-                                    <td>125654555 </td>
-                                    <td>Rajendra</td>
-                                    <td>M</td>
-                                    <td>General</td>
-                                    <td>Y</td>
-                                    <td>No</td>
-                                    <td>Ramesh</td>
-
-                                    <td>Farmer</td>
-                                    <td>100000</td>
-                                    <td>65.00</td>
-                                    <td>No</td>
-                                    <td>636763589665</td>
-                                    <td>CNRB0006367</td>
-                                    <td>पात्र नहीं</td>
-                                    <td>0</td>
-                                    <td><a class="fa fa-print"></a></td>
-                                    <td><a class="fa fa-edit"></a>&nbsp <a class="fa fa-trash"></a></td>
-                                    <td>
-                                        <asp:CheckBox runat="server" ID="Cbx2" /></td>
-
-
-                                </tr>
-
-                                <tr>
-                                    <td>2 </td>
-                                    <td>133654466 </td>
-                                    <td>Ankur</td>
-                                    <td>M</td>
-                                    <td>General</td>
-                                    <td>Y</td>
-                                    <td>No</td>
-                                    <td>Ajay</td>
-                                    <td>Farmer</td>
-                                    <td>10000</td>
-                                    <td>65.00</td>
-                                    <td>No</td>
-                                    <td>636763589654</td>
-                                    <td>CNRB0006367</td>
-                                    <td>पात्र नहीं</td>
-                                    <td>0</td>
-                                    <td><a class="fa fa-print"></a></td>
-                                    <td><a class="fa fa-edit"></a>&nbsp <a class="fa fa-trash"></a></td>
-                                    <td>
-                                        <asp:CheckBox runat="server" ID="Cbx3" /></td>
-
-
-                                </tr>
+                <fieldset runat="server" id="dvPersonalDetails">
+                    <legend>Students Details / छात्रों का विवरण</legend>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>S.No.<br />सरल क्र.</th>
+                                        <th>Student Samagra ID<br />विद्यार्थी समग्र आईडी</th>
+                                        <th>Student Name<br />छात्र का नाम</th>
+                                        <th>Gender<br />जेंडर</th>
+                                        <th>Category<br />श्रेणी</th>
+                                        <th>BPL<br />गरीबी रेखा से नीचे</th>
+                                        <th>Hostel<br />छात्रावास</th>
+                                        <th>Father's Name<br />पिता का नाम</th>
+                                        <th>Occupation<br />व्यवसाय</th>
+                                        <th>Income<br />आय</th>
+                                        <th>Last Year%<br />पिछले साल का प्रतिशत</th>
+                                        <th>Disabled<br />अक्षम</th>
+                                        <th>Bank Account No.<br />बैंक खाता नम्बर।</th>
+                                        <th>Bank IFSC Code<br />बैंक IFSC कोड</th>
+                                        <th>Schemes<br />योजनाओं</th>
+                                        <th>Amt<br />राशि</th>
+                                        <th>Print<br />प्रिंट</th>
+                                        <th>Action</th>
+                                        <th>
+                                            <asp:CheckBox runat="server" ID="cbx1" OnCheckedChanged="cbx1_CheckedChanged" AutoPostBack="true" /></th>
+                                    </tr>
+                                </thead>
                                 <tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row" runat="server" id="checkbox">
-                    <div class="col-md-12 text-center">
-                        <span style="color: red"><b>उपरोक्त चुने गये अवेदन सही हे </b></span>
-                        <asp:CheckBox runat="server" ID="CheckBtn" AutoPostBack="true" OnCheckedChanged="CheckBtn_CheckedChanged" />
+                                    <tr>
+                                        <td>1 </td>
+                                        <td>125654555 </td>
+                                        <td>Rajendra</td>
+                                        <td>M</td>
+                                        <td>General</td>
+                                        <td>Y</td>
+                                        <td>No</td>
+                                        <td>Ramesh</td>
 
+                                        <td>Farmer</td>
+                                        <td>100000</td>
+                                        <td>65.00</td>
+                                        <td>No</td>
+                                        <td>636763589665</td>
+                                        <td>CNRB0006367</td>
+                                        <td>पात्र नहीं</td>
+                                        <td>0</td>
+                                        <td><a class="fa fa-print"></a></td>
+                                        <td><a class="fa fa-edit"></a>&nbsp <a class="fa fa-trash"></a></td>
+                                        <td>
+                                            <asp:CheckBox runat="server" ID="Cbx2" /></td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>2 </td>
+                                        <td>133654466 </td>
+                                        <td>Ankur</td>
+                                        <td>M</td>
+                                        <td>General</td>
+                                        <td>Y</td>
+                                        <td>No</td>
+                                        <td>Ajay</td>
+                                        <td>Farmer</td>
+                                        <td>10000</td>
+                                        <td>65.00</td>
+                                        <td>No</td>
+                                        <td>636763589654</td>
+                                        <td>CNRB0006367</td>
+                                        <td>पात्र नहीं</td>
+                                        <td>0</td>
+                                        <td><a class="fa fa-print"></a></td>
+                                        <td><a class="fa fa-edit"></a>&nbsp <a class="fa fa-trash"></a></td>
+                                        <td>
+                                            <asp:CheckBox runat="server" ID="Cbx3" /></td>
+
+
+                                    </tr>
+                                    <tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-            </fieldset>
-            
+                    <div class="row" runat="server" id="checkbox">
+                        <div class="col-md-12 text-center">
+                            <span style="color: red"><b>उपरोक्त चुने गये आवेदन सही है </b></span>
+                            <asp:CheckBox runat="server" ID="CheckBtn" AutoPostBack="true" OnCheckedChanged="CheckBtn_CheckedChanged" />
+
+                        </div>
+                    </div>
+                </fieldset>
+
 
                 <div class="row" visible="false" runat="server" id="lockbtn">
                     <div class="col-lg-12 text-center">
-                        <a class="btn btn-warning" href="StudentProfileLocking.aspx"><i class="fa fa-lock"> आवेदनो को लॉक करे</i></a>
+                        <a class="btn btn-warning" href="StudentProfileLocking.aspx"><i class="fa fa-lock">आवेदनो को लॉक करे</i></a>
 
                     </div>
-                </div> 
-
-
                 </div>
+
+
+            </div>
         </div>
     </div>
 
