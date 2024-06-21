@@ -822,19 +822,6 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-
-    <script>
-        document.getElementById('dates-field2').addEventListener('change', function () {
-            var selectedValues = Array.from(this.selectedOptions).map(option => option.value);
-            var uploadDiv = document.getElementById('UploadIncomeTax');
-
-            if (selectedValues.includes('350000-500000') || selectedValues.includes('more than 500000')) {
-                uploadDiv.style.display = 'block';
-            } else {
-                uploadDiv.style.display = 'none';
-            }
-        });
-    </script>
     <script>
         document.getElementById('disabilityChooser').addEventListener('change', function () {
             var selectedValue = this.value;
@@ -934,7 +921,7 @@
                             ).then(() => {
         // Redirect to another page after success message is closed
                             <%--    document.getElementById('<%= navpills-4.ClientID %>').style.display = "none";--%>
-                                document.getElementById("EligibilityConditions").click();
+                                document.getElementById("NavUploadCertificate").click();
                             });
                         }
                     })
