@@ -447,6 +447,7 @@
                                             <option value="Muslim">Muslim</option>
                                             <option value="Sikh">Sikh</option>
                                             <option value="Others">Others</option>
+                                            <option value="None">None</option>
                                         </select>
                                     </div>
                                 </div>
@@ -480,17 +481,24 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Applicable for Single Child<br />
-                                            एकल बच्चे के लिए लागू
+                                            Applicable for Maximum Sibling Count<br />
+                                            अधिकतम भाई-बहन की संख्या के लिए लागू
                                         <span style="color: red">*</span></label>
                                         <select class="form-control select2">
                                             <option>--Select--</option>
-                                            <option>Yes</option>
-                                            <option>No</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
                                         </select>
                                     </div>
                                 </div>
-
                                 <div class="col-md-4" id="ApplicableforDisability">
                                     <div class="form-group">
                                         <label>
@@ -535,27 +543,6 @@
                                             <option>50 %</option>
                                             <option>60 %</option>
                                             <option>70 %</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Applicable for Maximum Sibling Count<br />
-                                            अधिकतम भाई-बहन की संख्या के लिए लागू
-                                        <span style="color: red">*</span></label>
-                                        <select class="form-control select2">
-                                            <option>--Select--</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
                                         </select>
                                     </div>
                                 </div>
@@ -708,9 +695,22 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
+                                            School Type<br />
+                                            स्कूल का प्रकार <span style="color: red">*</span></label>
+                                        <select class="form-control select2">
+                                            <option value="--Select--">--Select--</option>
+                                            <option value="Government">Government</option>
+                                            <option value="Private">Private</option>
+                                            <option value="Both">Both</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
                                             Applicable for School Category<br />
                                             लागू स्कूल श्रेणी <span style="color: red">*</span></label>
-                                        <select class="form-control select2">
+                                        <select id="dates-field2" class="multiselect-ui " multiple="multiple">
                                             <option value="--Select--">--Select--</option>
                                             <option value="Primary">Primary</option>
                                             <option value="Upper Primary">Upper Primary</option>
@@ -725,7 +725,7 @@
                                         <label>
                                             Applicable for School Category Details<br />
                                             लागू स्कूल श्रेणी विवरण<span style="color: red">*</span></label>
-                                        <select  id="dates-field2" class="multiselect-ui " multiple="multiple">
+                                        <select id="dates-field2" class="multiselect-ui " multiple="multiple">
                                             <option value="1-5">1-5</option>
                                             <option value="6-8">6-8</option>
                                             <option value="9-10">9-10</option>
@@ -803,12 +803,22 @@
                                         <input name="ename" id="Amount" type="text" class="form-control" autocomplete="off" placeholder="Enter Beneficiary Amount" />
                                     </div>
                                 </div>
-                                <div class="col-md-4" id="AdditionalBenefitAmount" style="display:none;">
+                                <div class="col-md-4" id="AdditionalBenefitAmount" style="display: none;">
                                     <div class="form-group">
                                         <label>
                                             Additional Benefit Amount for Physically Challanged<br />
                                             शारीरिक रूप से विकलांगों के लिए अतिरिक्त लाभ राशि<span style="color: red">*</span></label>
-                                        <input name="ename" type="text" class="form-control" autocomplete="off" value="1110" />
+                                        <select class="form-control select2" id="GenderChooser">
+                                            <option value="Select">Select</option>
+                                            <option value="10%">10%</option>
+                                            <option value="20%">20%</option>
+                                            <option value="30%">30%</option>
+                                            <option value="40%">40%</option>
+                                            <option value="50%">50%</option>
+                                            <option value="60%">60%</option>
+                                            <option value="70%">70%</option>
+                                            <option value="80%">80%</option>
+                                        </select>
 
                                     </div>
                                 </div>
@@ -907,7 +917,7 @@
 
             if (selectedValue === 'Both') {
                 Hostller.style.display = 'block';
-            } 
+            }
             else {
                 Hostller.style.display = 'none';
             }
