@@ -14,7 +14,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+    <%--  <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -44,13 +44,45 @@
                 </div>
             </div>
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                      <%--  <li class="breadcrumb-item">
+                            <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>ACR</span></a>
+                        </li>--%>
+                        <li class="breadcrumb-item"><span>Employee Attendance Process</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Employee Attendance/कर्मचारी उपस्थिति
+                    </h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
                 <legend>Employee Attendance/कर्मचारी उपस्थिति</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Office Type/कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
+                            <label>Select Office Type<br />कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -74,7 +106,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Year/वर्ष चुनें<span style="color: red">*</span></label>
+                            <label>Select Year<br />वर्ष चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -88,7 +120,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Month/माह चुनें<span style="color: red">*</span></label>
+                            <label>Select Month<br />माह चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -108,7 +140,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Type of Post/पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
+                            <label>Select Type of Post<br />पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">All</option>
@@ -127,8 +159,8 @@
                         </div>
                     </div>
                     <hr />
-                    <div class="col-md-12 justify-content-center">
-                        <div class="form-group text-center">
+                    <div class="col-md-12">
+                        <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn btn btn-success w-lg btn-border">Search</button>
                             <a href="AttendanceProcess.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>
@@ -155,25 +187,25 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr>
-                                        <th>Sr.No./क्र.सं.</th>
-                                        <th>Action All/सभी कार्रवाई 
-                                                    <br />
-                                            <input id="ContentBody_dctl07" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                        <th>Add Leave/अवकाश जोड़ें</th>
-                                        <th>Generate e Status/ई स्टेटस जनरेट करें</th>
-                                        <th>Emp Name/कर्मचारी का नाम</th>
-                                        <th>Total Days/कुल दिन</th>
-                                        <th>Total Leave/कुल छुट्टी</th>
-                                        <th>Payable Days/देय दिन</th>
+                                    <tr style="white-space:nowrap !important;">
+                                        <th>Sr.No <br />क्र.सं.</th>
+                                        <th>Action All <br />सभी कार्रवाई 
+                                                    <%--<br />
+                                            <input id="ContentBody_dctl07" type="checkbox" name="ctl00$ContentBody$ctl06" />--%></th>
+                                        <th>Add Leave <br />अवकाश जोड़ें</th>
+                                        <th>Generate e Status <br />ई स्टेटस जनरेट करें</th>
+                                        <th>Emp Name <br />कर्मचारी का नाम</th>
+                                        <th>Total Days <br />कुल दिन</th>
+                                        <th>Total Leave <br />कुल छुट्टी</th>
+                                        <th>Payable Days <br />देय दिन</th>
                                         <th>Earned Leave/अर्जित अवकाश</th>
-                                        <th>LWP/एलडब्ल्यूपी</th>
-                                        <th>Medical Leave/चिकित्सा छुट्टी</th>
-                                        <th>Casual Leave/आकस्मिक अवकाश</th>
-                                        <th>Paternity Leave/पितृत्व अवकाश</th>
-                                        <th>Marriage Leave/शादी के लिए छुट्टी</th>
-                                        <th>other/अन्य</th>
-                                        <th>Maternity Leave/प्रसूति अवकाश</th>
+                                        <th>LWP <br />एलडब्ल्यूपी</th>
+                                        <th>Medical Leave <br />चिकित्सा छुट्टी</th>
+                                        <th>Casual Leave <br />आकस्मिक अवकाश</th>
+                                        <th>Paternity Leave <br />पितृत्व अवकाश</th>
+                                        <th>Marriage Leave <br />शादी के लिए छुट्टी</th>
+                                        <th>other <br />अन्य</th>
+                                        <th>Maternity Leave <br />प्रसूति अवकाश</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
@@ -221,9 +253,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row ">
                         <div class="col-md-12">
-                            <div class="form-group text-center">
+                            <div class="form-group">
                                 <button type="button" class=" Alert-Confirmation btn btn-success w-lg btn-border">Generate Attendance</button>
                                 <a href="AttendanceProcess.aspx" class=" btn w-lg btn-outline-danger btn-border">Clear</a>
                             </div>
@@ -390,14 +422,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                </fieldset>
+                                    </fieldset>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <div class="row fa-pull-right">
-                                    <div class="col-md-2">
-                                        <asp:Button runat="server" ID="btnclose" CssClass="btn btn-outline-danger w-lg btn-border" Text="Close" />
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <div class="row fa-pull-right">
+                                        <div class="col-md-2">
+                                            <asp:Button runat="server" ID="btnclose" CssClass="btn btn-outline-danger w-lg btn-border" Text="Close" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -406,7 +439,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

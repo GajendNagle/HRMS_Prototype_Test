@@ -18,7 +18,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+ <%--   <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Supplymentry Salary Process</h4>
         </div>
@@ -36,14 +36,46 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                    </li>
+                  <li class="breadcrumb-item">
+                        <a href="#SalaryGenerate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                            <span>Salary Generate</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Supplymentry Salary Process</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h5 class="card-title">Supplymentry Salary Process/सप्लाईमेंट्री वेतन प्रक्रिया
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
             <fieldset>
-                <legend>Supplymentry Salary Generate</legend>
+                <legend>Supplymentry Salary Generate/सप्लाईमेंट्री वेतन जनरेट करें</legend>
                 <div class="row">
                    
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type</label>
+                            <label>Office Type<br />कार्यालय का प्रकार</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                   <option value="Bhopal">Head Office</option>
@@ -67,7 +99,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year</label>
+                            <label>Year<br />वर्ष</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -81,7 +113,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month</label>
+                            <label>Month<br />
+माह</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -101,7 +134,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post</label>
+                            <label>Type of Post<br />पोस्ट का प्रकार</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">All</option>
@@ -119,7 +152,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                  <%--  <div class="col-md-2 mt-4">
                         <div class="form-group">
 
                             <button type="button" onclick="myFunction()" class=" btn-block btn btn-success  btn-rounded">Search</button>
@@ -129,7 +162,15 @@
                         <div class="form-group">
                             <a href="SalaryGenerateProcess_SupplymentrySalaryProcess.aspx" class=" btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%><hr />
+                                        <div class="col-md-12">
+    <div class="form-group">
+        <!-- Search button triggers search and toggles divs -->
+        <button type="button"  onclick="myFunction()" class="btn btn-success w-lg btn-border">Search</button>
+        <!-- Clear button (link) -->
+        <a href="SalaryGenerateProcess_SupplymentrySalaryProcess.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+    </div>
+</div>
                 </div>
             </fieldset>
             <div id="show">
@@ -151,19 +192,20 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr>
-                                        <th>All<input id="ContentBody_ctl08e" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                        <th>Sr.No.</th>
-                                        <th>Employee ID</th>
-                                        <th>Employee Name [Attendance Status]</th>
-                                        <th>Basic Salary ⟨₹⟩</th>
-                                        <th>Payabl Day’s</th>
-                                        <th>Earning Total ⟨₹⟩</th>
-                                        <th>Deduction Total ⟨₹⟩</th>
-                                        <th>Net Salary ⟨₹⟩</th>
-                                        <th>Salary Status</th>
-                                        <th>Detail’s</th>
-                                        <th>Action</th>
+                                  <tr style="white-space:nowrap !important;">
+                                        <th>All<br />सब<input id="ContentBody_ctl08e" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
+                                        <th>Sr.No.<br />सरल क्र</th>
+
+                                        <th>Employee ID/<br />कर्मचारी आयडी</th>
+                                        <th>Employee Name [Attendance Status]<br />कर्मचारी का नाम [उपस्थिति स्थिति]</th>
+                                        <th>Basic Salary ⟨₹⟩<br />मूल वेतन ⟨₹⟩</th>
+                                        <th>Payabl Day’s<br />देय दिवस</th>
+                                        <th>Earning Total ⟨₹⟩<br />कुल कमाई ⟨₹⟩</th>
+                                        <th>Deduction Total ⟨₹⟩<br />कटौती कुल ⟨₹⟩</th>
+                                        <th>Net Salary ⟨₹⟩<br />शुद्ध वेतन ⟨₹⟩</th>
+                                        <th>Salary Status<br />वेतन स्थिति</th>
+                                        <th>Detail’s<br />विवरण</th>
+                                        <th>Action<br />कार्रवाई</th>
                                     </tr>
                                     <tr>
                                         <td>
@@ -185,11 +227,11 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 justify-content-center">
+                    </div><hr />
+                    <div class="row mt-12">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <button type="button" class=" btn-block Alert-Generate btn btn-success  btn-rounded">Generate Supplymentry Salary</button>
+                                <button type="button" class=" w-lg Alert-Generate btn btn-success  btn-rounded">Generate Supplymentry Salary</button>
                             </div>
                         </div>
                     </div>

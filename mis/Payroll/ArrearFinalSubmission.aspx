@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+   <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Arrear Final Submission</h4>
         </div>
@@ -26,15 +26,49 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+      <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#ArrearCalculation" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                              <span>Arrear</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Arrear Final Submission</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card card-border-primary">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Arrear Final Submission/
+बकाया अंतिम प्रस्तुति
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
             <fieldset>
-                <legend>Arrear Final Submission</legend>
-                <div class="row justify-content-center">
+                <legend>Arrear Final Submission/
+बकाया अंतिम प्रस्तुति</legend>
+                <div class="row">
                     <div class="col-md-2">
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
-                                <label class="form-check-label" for="customRadio11">Delete Arrear</label>
+                                <label class="form-check-label" for="customRadio11">Delete Arrear<br />बकाया हटाएं</label>
                             </div>
                         </div>
                     </div>
@@ -42,7 +76,7 @@
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
-                                <label class="form-check-label" for="customRadio11">Generate Arrear </label>
+                                <label class="form-check-label" for="customRadio11">Generate Arrear <br />बकाया जनरेट  </label>
                             </div>
                         </div>
                     </div>
@@ -51,7 +85,7 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -75,7 +109,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />वर्ष <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -88,7 +122,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br /> माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -108,7 +142,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Arrear Type<span style="color: red">*</span></label>
+                            <label>Arrear Type<br />बकाया प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Salary Arrear</option>
@@ -118,7 +152,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <%--<div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="toggleDivs()" class=" btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -127,37 +161,47 @@
                         <div class="form-group">
                             <a href="ArrearFinalSubmission.aspx" class=" btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                       <hr />
+   <div class="col-md-12">
+       <div class="form-group">
+           <!-- Search button triggers search and toggles divs -->
+           <button type="button"  onclick="toggleDivs()" class="btn btn-success w-lg btn-border">Search</button>
+           <!-- Clear button (link) -->
+           <a href="ArrearFinalSubmission.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+       </div>
+   </div>
                 </div>
             </fieldset>
             <div id="DeleteArrear" class="hidden">
                 <fieldset>
-                    <legend>Delete Arrear Process</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                    <legend>Delete Arrear Process/बकाया राशि हटाने की प्रक्रिया</legend>
+                       <div class="row justify-content-end">
+        <div class="col-md-4 text-end">
+            <div class="form-group">
+                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                <button class="btn btn-info btn-rounded w-55">PDF</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Name</th>
-                                        <th>Total Earning ⟨₹⟩</th>
-                                        <th>Total Deduction ⟨₹⟩</th>
-                                        <th>Net Amount ⟨₹⟩</th>
-                                        <th>Arrear Type</th>
-                                        <th>Action</th>
+                                        <th>Sr.No.<br />सरल क्र</th>
+                                        <th>Employee Name<br />कर्मचारी नाम</th>
+                                        <th>Total Earning ⟨₹⟩<br />कुल कमाई ⟨₹⟩</th>
+                                        <th>Total Deduction ⟨₹⟩<br />कुल कटौती ⟨₹⟩</th>
+                                        <th>Net Amount ⟨₹⟩<br />शुद्ध राशि ⟨₹⟩</th>
+                                        <th>Arrear Type<br />
+बकाया प्रकार</th>
+                                        <th>Action<br />कार्रवाई</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
@@ -185,39 +229,38 @@
             </div>
             <div id="GenerateArrear" class="hidden">
                 <fieldset>
-                    <legend>Generate Arrear Process</legend>
-                    <div class="row justify-content-end">
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                    <legend>Generate Arrear Process/बकाया राशि उत्पन्न करने की प्रक्रिया</legend>
+                        <div class="row justify-content-end">
+        <div class="col-md-4 text-end">
+            <div class="form-group">
+                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                <button class="btn btn-info btn-rounded w-55">PDF</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>All
+                                        <th>All <br />सभी
+
                                                     <br />
                                             <input id="ContentBody_ctls08" type="checkbox" name="ctl00$ContentBody$ctl06" />
                                         </th>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Name</th>
-                                        <th>Total Earning ⟨₹⟩</th>
-                                        <th>Total Deduction ⟨₹⟩</th>
-                                        <th>Net Amount ⟨₹⟩</th>
-                                        <th>Arrear Type</th>
+                                                                             <th>Sr.No.<br />सरल क्र</th>
+                                        <th>Employee Name<br />कर्मचारी नाम</th>
+                                        <th>Total Earning ⟨₹⟩<br />कुल कमाई ⟨₹⟩</th>
+                                        <th>Total Deduction ⟨₹⟩<br />कुल कटौती ⟨₹⟩</th>
+                                        <th>Net Amount ⟨₹⟩<br />शुद्ध राशि ⟨₹⟩</th>
+                                        <th>Arrear Type<br />
+बकाया प्रकार</th>
+                                       
                                     </tr>
                                     <tr>
                                         <td>

@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Arrear Calculation</h4>
         </div>
@@ -26,14 +26,47 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ArrearCalculation" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Arrear</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Arrear Calculation</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Arrear Calculation/बकाया गणना
+                    </h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Auto Arrear Calculation</legend>
+                <legend>Auto Arrear Calculation/अपना बकाया गणना</legend>
                 <div class="row">
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -57,7 +90,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />
+                                पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Regular/Permanent">Regular/Permanent</option>
@@ -77,7 +111,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Pay Commission<span style="color: red">*</span></label>
+                            <label>Pay Commission<br />
+                                वेतन आयोग<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Fourth Pay Commission">Fourth Pay Commission</option>
@@ -89,7 +124,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Year<span style="color: red">*</span></label>
+                            <label>From Year<br />
+                                वर्ष से<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -103,7 +139,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Month<span style="color: red">*</span></label>
+                            <label>From Month<br />
+                                माह से<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -123,7 +160,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Year<span style="color: red">*</span></label>
+                            <label>To Year<br />
+                                साल तक<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -137,7 +175,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Month<span style="color: red">*</span></label>
+                            <label>To Month<br />
+                                माह  तक<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -157,7 +196,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Arrear Type<span style="color: red">*</span></label>
+                            <label>Arrear Type<br />
+                                बकाया प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Salary Arrear</option>
@@ -167,7 +207,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <%--<div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class=" btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -176,84 +216,101 @@
                         <div class="form-group">
                             <a href="ArrearCalculation.aspx" class=" btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <!-- Search button triggers search and toggles divs -->
+                            <button type="button" onclick="myFunction()" class="btn btn-success w-lg btn-border">Search</button>
+                            <!-- Clear button (link) -->
+                            <a href="ArrearCalculation.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+                        </div>
                     </div>
                 </div>
             </fieldset>
             <br />
             <div id="show">
-                <div class="row justify-content-center">
+                <%--   <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="form-group">
                             <h4>
                                 <b>Detail of DA from April-2023 to July-2023 for Head Office</b></h4>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                </div>--%>
+                <fieldset>
+                    <legend>Detail of DA from April-2023 to July-2023 for Head Office/प्रधान कार्यालय के लिए अप्रैल-2023 से जुलाई-2023 तक डीए का विवरण</legend>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>ORDER NUMBER AND DATE/ऑर्डर संख्या और दिनांक</legend>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Order No.<br />ऑर्डर संख्या<span style="color: red"></span></label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Order  Date<br />ऑर्डर  दिनांक<span style="color: red"></span></label>
+                                                <input type="date" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
                             <fieldset>
-                                <legend>ORDER NUMBER AND DATE</legend>
+                                <legend>PAYMENT MONTH AND YEAR/भुगतान माह और वर्ष
+ </legend>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Order No.<span style="color: red"></span></label>
-                                            <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." />
+                                            <label>Year<br />भुगतान  वर्ष
+ </label>
+                                            <select class="form-control select2">
+                                                <option value="--Select--">--Select--</option>
+                                                <option value="Bhopal">2023</option>
+                                                <option value="Bhopal">2024</option>
+                                                <option value="Bhopal">2025</option>
+                                                <option value="Bhopal">2026</option>
+                                                <option value="Bhopal">2027</option>
+                                                <option value="Bhopal">2028</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Order  Date<span style="color: red"></span></label>
-                                            <input type="date" class="form-control" placeholder="" />
+                                            <label>Month<br />भुगतान माह 
+ </label>
+                                            <select class="form-control select2">
+                                                <option value="--Select--">--Select--</option>
+                                                <option value="1">January</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                             </fieldset>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <fieldset>
-                            <legend>PAYMENT MONTH AND YEAR</legend>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Year</label>
-                                        <select class="form-control select2">
-                                            <option value="--Select--">--Select--</option>
-                                            <option value="Bhopal">2023</option>
-                                            <option value="Bhopal">2024</option>
-                                            <option value="Bhopal">2025</option>
-                                            <option value="Bhopal">2026</option>
-                                            <option value="Bhopal">2027</option>
-                                            <option value="Bhopal">2028</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Month</label>
-                                        <select class="form-control select2">
-                                            <option value="--Select--">--Select--</option>
-                                            <option value="1">January</option>
-                                            <option value="2">February</option>
-                                            <option value="3">March</option>
-                                            <option value="4">April</option>
-                                            <option value="5">May</option>
-                                            <option value="6">June</option>
-                                            <option value="7">July</option>
-                                            <option value="8">August</option>
-                                            <option value="9">September</option>
-                                            <option value="10">October</option>
-                                            <option value="11">November</option>
-                                            <option value="12">December</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
+                </fieldset>
                 <fieldset>
+                    <legend>Details/ विवरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -272,20 +329,25 @@
                             <div class="form-group">
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <tr>
-                                            <th>Sr.No.</th>
-                                            <th>Employee Name</th>
-                                            <th>Previous DA %</th>
-                                            <th>Current DA %</th>
-                                            <th>Diff_DA arrear %</th>
-                                            <th>April-2023 ⟨₹⟩</th>
-                                            <th>May-2023 ⟨₹⟩</th>
-                                            <th>June-2023 ⟨₹⟩</th>
-                                            <th>Total DA ⟨₹⟩</th>
-                                            <th>Total EPF ⟨₹⟩</th>
-                                            <th>Net Amount ⟨₹⟩</th>
-                                            <th>Total Basic Salary⟨₹⟩</th>
-                                            <th>Action</th>
+                                        <tr style="white-space:nowrap !important">
+                                            <th>Sr.No.<br />
+                                                सरल क्र</th>
+                                            <th>Employee Name<br />
+                                                कर्मचारी नाम</th>
+                                            <th>Previous DA %<br />
+                                                पिछला डीए %</th>
+                                            <th>Current DA %<br />
+                                                वर्तमान डीए %</th>
+                                            <th>Diff_DA arrear %<br />डिफ_डीए बकाया %</th>
+                                            <th>April-2023 ⟨₹⟩<br />अप्रैल-2023 ⟨₹⟩</th>
+                                            <th>May-2023 ⟨₹⟩<br />
+मई-2023 ⟨₹⟩</th>
+                                            <th>June-2023 ⟨₹⟩<br />जून-2023 ⟨₹⟩</th>
+                                            <th>Total DA ⟨₹⟩<br />कुल डीए ⟨₹⟩</th>
+                                            <th>Total EPF ⟨₹⟩<br />कुल ई.पी.एफ ⟨₹⟩</th>
+                                            <th>Net Amount ⟨₹⟩<br />शुद्ध राशि ⟨₹⟩</th>
+                                            <th>Total Basic Salary⟨₹⟩<br />कुल मूल वेतन⟨₹⟩</th>
+                                            <th>Action<br />कार्रवाई</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -322,7 +384,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <%--     <div class="row justify-content-center">
                         <div class="col-md-2 mt-4">
                             <div class="form-group">
                                 <button type="button" class="Alert-Confirmation btn-block btn btn-success  btn-rounded">Save</button>
@@ -332,6 +394,14 @@
                             <div class="form-group">
                                 <a href="ArrearCalculation.aspx" class=" btn-block btn btn-danger btn-rounded">Clear</a>
                             </div>
+                        </div>
+                    </div>--%><hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <!-- Search button triggers search and toggles divs -->
+                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border">Save</button>
+                            <!-- Clear button (link) -->
+                            <a href="ArrearCalculation.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div>
                     </div>
                 </fieldset>

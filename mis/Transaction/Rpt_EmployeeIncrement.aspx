@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+<%--    <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -39,13 +39,46 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body">
+            <div class="card-body">--%>
+      
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Increment" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                            <span>Increment</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Employee Increment Report </span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="card-title">Employee Increment Report / कर्मचारी वेतन वृद्धि रिपोर्ट
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
                 <fieldset>
                     <legend>Employee Increment Report / कर्मचारी वेतन वृद्धि रिपोर्ट</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
-                                Select Division Name /<br />
+                                Select Division Name <br />
                                 संभाग का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -65,7 +98,7 @@
 
                         <div class="col-md-3">
                             <label>
-                                Select District /<br />
+                                Select District<br />
                                 जिला का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -123,7 +156,7 @@
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <label>Select Block Name / विकासखंड का चयन करें<span style="color: red">*</span></label>
+                            <label>Select Block Name <br /> विकासखंड का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Agar">Agar</option>
@@ -151,7 +184,7 @@
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <label>Select School UDISE Code/ स्कूल कोड का चयन करें<span style="color: red">*</span></label>
+                            <label>Select School UDISE Code<br /> स्कूल कोड का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Yes">1214548455-Sarasvati Gyan Mandir</option>
@@ -165,13 +198,13 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
-                                From Date /<br />
+                                From Date <br />
                                 तिथि से<span style="color: red">*</span></label>
                             <input name="ename" id="firstDate" type="date" class="form-control" autocomplete="off" onchange="updateSecondDate()" />
                         </div>
                         <div class="col-md-3">
                             <label>
-                                To Date /<br />
+                                To Date <br />
                                 तिथि तक<span style="color: red">*</span></label>
                             <input name="ename" id="firstDate1" type="date" class="form-control" autocomplete="off" onchange="updateSecondDate()" />
                         </div>
@@ -199,25 +232,25 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Employee Unique ID /<br />
+                                                Employee Unique ID <br />
                                                 कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="5859685" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                First Name /<br />
+                                                First Name <br />
                                                 पहला नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Shyam" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Middle Name /<br />
+                                                Middle Name <br />
                                                 मध्य नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Kumar" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Last Name /<br />
+                                                Last Name <br />
                                                 उपनाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Verma" />
                                         </div>
@@ -225,19 +258,19 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Father's/Husband Name /<br />
+                                                Father's/Husband Name <br />
                                                 पिता/पति का नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Kunal Verma" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Designation /<br />
+                                                Designation <br />
                                                 पद का नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Administrator" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Subject /<br />
+                                                Subject <br />
                                                 विषय<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Chemistry" />
                                         </div>
@@ -251,25 +284,25 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Sankul /<br />
+                                                Sankul <br />
                                                 संकुल<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Reema Vidhya" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Date of Birth /<br />
+                                                Date of Birth <br />
                                                 जन्म की तारीख<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/07/1999" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Gender /<br />
+                                                Gender <br />
                                                 जेंडर<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Male" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Height /<br />
+                                                Height <br />
                                                 ऊंचाई<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6.4" />
                                         </div>
@@ -277,25 +310,25 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Caste /<br />
+                                                Caste <br />
                                                 जाति<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="General" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Sub Caste /<br />
+                                                Sub Caste <br />
                                                 उप जाति<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="General" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Identification Mark /<br />
+                                                Identification Mark <br />
                                                 पहचान चिह्न<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Mole on Face" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Blood Group /<br />
+                                                Blood Group <br />
                                                 ब्लड ग्रुप<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="O+" />
                                         </div>
@@ -303,25 +336,25 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Handicapped (PWD) /<br />
+                                                Handicapped (PWD) <br />
                                                 विकलांग (पीडब्ल्यूडी)<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="No" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Critical Illness /<br />
+                                                Critical Illness <br />
                                                 गंभीर बीमारी<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="No" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                GPF NO /<br />
+                                                GPF NO <br />
                                                 जीपीएफ नं<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="PLKK5695L" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                PAN No(E) /<br />
+                                                PAN No(E) <br />
                                                 पैन नंबर(ई)<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="SDEKK5695G" />
                                         </div>
@@ -329,26 +362,26 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Aadhaar No(E) /<br />
+                                                Aadhaar No(E) <br />
                                                 आधार नंबर(ई)<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="362596836495" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Employee Treasury Code /<br />
+                                                Employee Treasury Code <br />
                                                 कर्मचारी कोष कोड<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="56958369" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Hobbies /<br />
+                                                Hobbies <br />
                                                 शौक़<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Dancing, Singing" />
                                         </div>
 
                                         <div class="col-md-3">
                                             <label>
-                                                Certification Date /<br />
+                                                Certification Date <br />
                                                 प्रमाणीकरण तिथि<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/01/2023" />
                                         </div>
@@ -374,25 +407,25 @@
 
                                                     <div class="col-md-3">
                                                         <label>
-                                                            Address line 1 /<br />
+                                                            Address line 1 <br />
                                                             पता लाइन 1<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>
-                                                            Address line 2 /<br />
+                                                            Address line 2 <br />
                                                             पता लाइन 2<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>
-                                                            City /<br />
+                                                            City <br />
                                                             शहर<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>
-                                                            Pincode /<br />
+                                                            Pincode <br />
                                                             पिन कोड<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="462010" />
                                                     </div>
@@ -400,13 +433,13 @@
                                                 <div class="row align-items-end">
                                                     <div class="col-md-3">
                                                         <label>
-                                                            State /<br />
+                                                            State <br />
                                                             राज्य<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Madhya Pradesh" />
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>
-                                                            District /<br />
+                                                            District <br />
                                                             ज़िला<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                     </div>
@@ -434,27 +467,27 @@
 
                                                     <div class="col-md-3">
                                                         <label>
-                                                            Address line 1 /<br />
+                                                            Address line 1 <br />
                                                             पता लाइन 1<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                     </div>
 
                                                     <div class="col-md-3">
                                                         <label>
-                                                            Address line 2 /<br />
+                                                            Address line 2 <br />
                                                             पता लाइन 2<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>
-                                                            City /<br />
+                                                            City <br />
                                                             शहर<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                     </div>
 
                                                     <div class="col-md-3">
                                                         <label>
-                                                            Pincode /<br />
+                                                            Pincode <br />
                                                             पिन कोड<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="462010" />
                                                     </div>
@@ -469,7 +502,7 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>
-                                                            District /<br />
+                                                            District <br />
                                                             ज़िला<span style="color: red">*</span></label>
                                                         <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                     </div>
@@ -487,7 +520,7 @@
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Email /<br />
+                                                Email <br />
                                                 ईमेल<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="ABC@GMAIL.COM" />
                                         </div>
@@ -508,13 +541,13 @@
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Spouse Name /<br />
+                                                Spouse Name <br />
                                                 जीवनसाथी का नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Ruchita " />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Is Spouse Government Employee/<br />
+                                                Is Spouse Government Employee<br />
                                                 क्या पति/पत्नी सरकारी कर्मचारी हैं?<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="No" />
                                         </div>
@@ -522,29 +555,29 @@
                                 </fieldset>
 
                                 <fieldset>
-                                    <legend>Education Qualification / शैक्षणिक योग्यता</legend>
+                                    <legend>Education Qualification  शैक्षणिक योग्यता</legend>
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Qualification Type /<br />
+                                                Qualification Type <br />
                                                 योग्यता प्रकार<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Post Graduate" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Degree / Diploma /<br />
+                                                Degree / Diploma <br />
                                                 डिग्री / प्रमाणपत्र<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="MCA" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Board / Univercity name /<br />
+                                                Board / Univercity name <br />
                                                 बोर्ड/यूनिवर्सिटी का नाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Makhanlal Chaturvedi" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Passing Year /<br />
+                                                Passing Year <br />
                                                 पासिंग ईयर<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="2022" />
                                         </div>
@@ -552,7 +585,7 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Grade / Percentage /<br />
+                                                Grade / Percentage <br />
                                                 ग्रेड / प्रतिशत<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="99%" />
                                         </div>
@@ -574,26 +607,26 @@
 
                                         <div class="col-md-3">
                                             <label>
-                                                First Appointment Department /<br />
+                                                First Appointment Department <br />
                                                 प्रथम नियुक्ति विभाग<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="IT" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Employee’s Designation Type /<br />
+                                                Employee’s Designation Type <br />
                                                 कर्मचारी का पदनाम प्रकार<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Permanent" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                First Appointment Designation /<br />
+                                                First Appointment Designation <br />
                                                 प्रथम नियुक्ति पदनाम<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Administrator" />
                                         </div>
 
                                         <div class="col-md-3">
                                             <label>
-                                                First Appointment Order Date /<br />
+                                                First Appointment Order Date <br />
                                                 प्रथम नियुक्ति आदेश दिनांक<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/01/2022" />
                                         </div>
@@ -601,27 +634,27 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3 mt-4">
                                             <label>
-                                                First Appointment Pay scale /<br />
+                                                First Appointment Pay scale <br />
                                                 प्रथम नियुक्ति वेतनमान<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20600" />
                                         </div>
                                         <div class="col-md-3 mt-4">
                                             <label>
-                                                Parent Department /<br />
+                                                Parent Department <br />
                                                 मूल विभाग<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="-" />
                                         </div>
 
                                         <div class="col-md-3">
                                             <label>
-                                                School/Institute/Office Address of first Posting /<br />
+                                                School/Institute/Office Address of first Posting <br />
                                                 पहली पोस्टिंग का स्कूल/संस्थान/कार्यालय का पता<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="101 Arera Hills, Bhopal" />
                                         </div>
 
                                         <div class="col-md-3">
                                             <label>
-                                                Recent Appointment Department /
+                                                Recent Appointment Department 
                                                     <br />
                                                 नया नियुक्ति विभाग<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="IT" />
@@ -630,25 +663,25 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-3">
                                             <label>
-                                                Pay Scale /<br />
+                                                Pay Scale <br />
                                                 वेतनमान<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20600" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Samvilian Order No /<br />
+                                                Samvilian Order No <br />
                                                 संविलियन आदेश क्रमांक<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="569894545" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Samvilian Order Date /<br />
+                                                Samvilian Order Date <br />
                                                 संविलियन ऑर्डर दिनांक<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/11/2022" />
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                Employee Retirement Date /<br />
+                                                Employee Retirement Date <br />
                                                 कर्मचारी सेवानिवृत्ति तिथि<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/11/2082" />
                                         </div>
@@ -656,13 +689,13 @@
                                     <div class="row align-items-end">
                                         <div class="col-md-4">
                                             <label>
-                                                Whether working/Posted in other department on Deputation/transfer /<br />
+                                                Whether working/Posted in other department on Deputation/transfer <br />
                                                 क्या प्रतिनियुक्ति पर अन्य विभाग में कार्यरत/नियुक्त है<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                         </div>
                                         <div class="col-md-4">
                                             <label>
-                                                Working in other Department/Organization on Deputation Transfer /<br />
+                                                Working in other Department/Organization on Deputation Transfer <br />
                                                 प्रतिनियुक्ति स्थानान्तरण पर अन्य विभाग/संगठन में कार्य करना<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                         </div>
@@ -703,25 +736,25 @@
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
-                                            <th>Sr.No./<br />
+                                            <th>Sr.No.<br />
                                                 सरल क्र.</th>
-                                            <th>Employee Name /<br />
+                                            <th>Employee Name <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Order No. /<br />
+                                            <th>Order No. <br />
                                                 आदेश संख्या</th>
-                                            <th>Order Date /<br />
+                                            <th>Order Date <br />
                                                 आदेश की तारीख</th>
-                                            <th>Existing Level /<br />
+                                            <th>Existing Level <br />
                                                 मौजूदा स्तर</th>
-                                            <th>Existing Basic Salary /<br />
+                                            <th>Existing Basic Salary <br />
                                                 मौजूदा मूल वेतन</th>
-                                            <th>New Level /<br />
+                                            <th>New Level <br />
                                                 नया स्तर</th>
-                                            <th>New Basic Salary /<br />
+                                            <th>New Basic Salary <br />
                                                 नया मूल वेतन</th>
-                                            <th>Effective Date/<br />
+                                            <th>Effective Date<br />
                                                 प्रभावी तिथि</th>
-                                            <th>View/<br />
+                                            <th>View<br />
                                                 देखे</th>
                                         </tr>
                                         <tr>

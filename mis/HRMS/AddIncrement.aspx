@@ -9,7 +9,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-       <div class="row">
+    <%--    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -39,150 +39,198 @@
             </div>
             </div>
 
-            <div class="card-body">
-                <fieldset>
-                    <legend>Add Increment/वेतन वृद्धि जोड़ें</legend>
-                    <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Select OIS Type/OIS प्रकार चुनें<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="--Select--">Office</option>
-                                </select>
-                            </div>
+            <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Increment" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Increment</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Add Increment</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Add Increment/वेतन वृद्धि जोड़ें
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <fieldset>
+                <legend>Add Increment/वेतन वृद्धि जोड़ें</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Select OIS Type<br />
+                                OIS प्रकार चुनें<span style="color: red">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="--Select--">Office</option>
+                            </select>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Select Office Type<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="--Select--">BEO</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Select Office Name<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="--Select--">GOVT. HSS NAGANDEORI</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Select Type of Post<span style="color: red">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="--Select--">Regular</option>
-                                    <option value="--Select--">Samvidha</option>
-                                </select>
-                            </div>
-                        </div>
-
                     </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Select Office Type<br />
+                                कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="--Select--">BEO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Select Office Name<br />
+                                कार्यालय का नाम चुनें<span style="color: red">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="--Select--">GOVT. HSS NAGANDEORI</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Select Type of Post<br />
+                                पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="--Select--">Regular</option>
+                                <option value="--Select--">Samvidha</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter Order Number<br />
+                                ऑर्डर नंबर दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order Number" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter Order Date<br />
+                                ऑर्डर दिनांक दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ename" type="date" class="form-control" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Enter Effective Date<br />
+                                प्रभावी तिथि दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ename" type="date" class="form-control" autocomplete="off" />
+                        </div>
+                    </div>
+
+
+                </div>
+                <fieldset>
+                    <legend>CURRENT PAY SCALE/वर्तमान वेतनमान</legend>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Enter Order Number<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order Number" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Enter Order Date<span style="color: red">*</span></label>
-                                <input name="ename" type="date" class="form-control" autocomplete="off" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Enter Effective Date<span style="color: red">*</span></label>
-                                <input name="ename" type="date" class="form-control" autocomplete="off" />
-                            </div>
-                        </div>
+                                <label>Select Employee Name
+                                    <br />
+                                    कर्मचारी का नाम चुनें<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlEmpName" onchange="getEmpDetail()">
+                                    <option value="--Select--">--Select--</option>
+                                    <option value="Bharat">Bharat Kumar</option>
 
+                                </select>
+                            </div>
+                        </div>
+                        <script>
+                            function setSelectedIndex(s, v) {
+                                for (var i = 0; i < s.options.length; i++) {
+                                    if (s.options[i].value == v) {
+                                        s.options[i].selected = true;
+                                    }
+                                }
+                            }
+                            function getEmpDetail() {
+                                var name = document.getElementById('ddlEmpName').value;
+                                if (name == "Bharat") {
+                                    document.getElementById('txtCurrentLevel').value = "5";
+                                    document.getElementById('txtCurrentBasic').value = "35000";
+                                } else {
+                                    document.getElementById('txtCurrentLevel').value = "";
+                                    document.getElementById('txtCurrentBasic').value = "";
+                                }
+                            }
+
+
+                        </script>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>
+                                    Current Level
+                                    <br />
+                                    वर्तमान स्तर<span style="color: red">*</span></label>
+                                <input name="ename" class="form-control" id="txtCurrentLevel" value="" autocomplete="off" placeholder="Enter Current Level" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>
+                                    Current Basic<br />
+                                    वर्तमान मूल<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" id="txtCurrentBasic" value="" autocomplete="off" placeholder="Enter Basic Salary" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>NEW PAY SCALE/नया वेतनमान</legend>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>New Level<br />
+                                    नया स्तर <span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlNewLevel">
+                                    <option value="--Select--">--Select--</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>New Basic<br />
+                                    नया बुनियादी<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlNewBasic">
+                                    <option value="--Select--">--Select--</option>
+                                    <option value="35500">35500</option>
+                                    <option value="36000">36000</option>
+
+                                </select>
+                            </div>
+                        </div>
 
                     </div>
-                    <fieldset>
-                        <legend>CURRENT PAY SCALE</legend>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Select Employee Name <span style="color: red">*</span></label>
-                                    <select class="form-control select2" id="ddlEmpName" onchange="getEmpDetail()">
-                                        <option value="--Select--">--Select--</option>
-                                        <option value="Bharat">Bharat Kumar</option>
-
-                                    </select>
-                                </div>
-                            </div>
-                            <script>
-                                function setSelectedIndex(s, v) {
-                                    for (var i = 0; i < s.options.length; i++) {
-                                        if (s.options[i].value == v) {
-                                            s.options[i].selected = true;
-                                        }
-                                    }
-                                }
-                                function getEmpDetail() {
-                                    var name = document.getElementById('ddlEmpName').value;
-                                    if (name == "Bharat") {
-                                        document.getElementById('txtCurrentLevel').value = "5";
-                                        document.getElementById('txtCurrentBasic').value = "35000";
-                                    } else {
-                                        document.getElementById('txtCurrentLevel').value = "";
-                                        document.getElementById('txtCurrentBasic').value = "";
-                                    }
-                                }
-
-
-                            </script>
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Current Level <span style="color: red">*</span></label>
-                                    <input name="ename" class="form-control" id="txtCurrentLevel" value="" autocomplete="off" placeholder="Enter Current Level" />
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Current Basic<span style="color: red">*</span></label>
-                                    <input name="ename" type="text" class="form-control" id="txtCurrentBasic" value="" autocomplete="off" placeholder="Enter Basic Salary" />
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>NEW PAY SCALE</legend>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>New Level <span style="color: red">*</span></label>
-                                    <select class="form-control select2" id="ddlNewLevel">
-                                        <option value="--Select--">--Select--</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-
-                                    </select>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>New Basic<span style="color: red">*</span></label>
-                                    <select class="form-control select2" id="ddlNewBasic">
-                                        <option value="--Select--">--Select--</option>
-                                        <option value="35500">35500</option>
-                                        <option value="36000">36000</option>
-
-                                    </select>
-                                </div>
-                            </div>
-
-                        </div>
-                    </fieldset>
-                    <div class="row ps-4 pt-4">
+                </fieldset>
+                <%--   <div class="row ps-4 pt-4">
 
                         <div class="col-md-4 text-start">
                             <div class="form-group">
@@ -192,53 +240,80 @@
                             </div>
                         </div>
 
+                    </div>--%>
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <!-- Search button triggers search and toggles divs -->
+                        <button type="button" class="btn btn-success w-lg btn-border Alert-Save">Add Employee</button>
+                        <!-- Clear button (link) -->
+                        <a id="clearfirst" href="AddIncrement.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                     </div>
-                </fieldset>
-                <fieldset id="fildDetails" hidden="hidden">
-                    <legend>Details</legend>
-                    <div class="row">
-                        <div class="col-md-12">
-                    <table cellspacing="0" rules="all" class="table  " border="1" id="ctl00_ContentBody_GridView1" style="border-collapse: collapse;">
-                        <tbody>
-                            <tr>
-                                <th scope="col">SNo.</th>
-                                <th scope="col">Employee Name</th>
-                                <th scope="col">Order No</th>
-                                <th scope="col">Order Date</th>
-                                <th scope="col">Current Level</th>
-                                <th scope="col">Current Basic Salary</th>
-                                <th scope="col">New Level</th>
-                                <th scope="col">New Basic Salary</th>
-                                <th scope="col">Effective Date</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                            <tr>
-                                <td style="width: 5%;">
-                                    <span>1</span>
-                                </td>
-                                <td>BHARAT KUMAR</td>
-                                <td>202327</td>
-                                <td>14/05/2024</td>
-                                <td>Level 5</td>
-                                <td>35000.00</td>
-                                <td>Level 5</td>
-                                <td>35500.00</td>
-                                <td>30/05/2024</td>
-                                <td>
-                                    <i class="fa fa-edit Alert-Edit" aria-hidden="true"></i>
-                                    &nbsp;
+                </div>
+            </fieldset>
+            <fieldset id="fildDetails" hidden="hidden">
+                <legend>Details/विवरण</legend>
+                   <div class="row justify-content-end">
+       <div class="col-md-4 text-end">
+           <div class="form-group">
+               <button class="btn btn-info btn-rounded w-55">Excel</button>
+               <button class="btn btn-info btn-rounded w-55">PDF</button>
+           </div>
+       </div>
+       <div class="col-md-3">
+           <div class="form-group">
+               <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+           </div>
+       </div>
+   </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        <table cellspacing="0" rules="all" class="table  " border="1" id="ctl00_ContentBody_GridView1" style="border-collapse: collapse;">
+                            <tbody>
+                               <tr style="white-space:nowrap !important;">
+                                    <th>SNo.<br />
+                                        सं.क्र.</th>
+                                    <th>Employee Name<br />
+                                        कर्मचारी का नाम</th>
+                                    <th>Order No<br />
+                                        आदेश संख्या</th>
+                                    <th>Order Date<br />ऑर्डर दिनांक</th>
+                                    <th>Current Level<br />वर्तमान स्तर</th>
+                                    <th>Current Basic Salary<br />वर्तमान मूल वेतन</th>
+                                    <th>New Level<br />नया स्तर</th>
+                                    <th>New Basic Salary<br />नया मूल वेतन</th>
+                                    <th>Effective Date<br />
+प्रभावी तिथि</th>
+                                    <th>Action<br />कार्रवाई</th>
+                                </tr>
+                                <tr>
+                                    <td style="width: 5%;">
+                                        <span>1</span>
+                                    </td>
+                                    <td>BHARAT KUMAR</td>
+                                    <td>202327</td>
+                                    <td>14/05/2024</td>
+                                    <td>Level 5</td>
+                                    <td>35000.00</td>
+                                    <td>Level 5</td>
+                                    <td>35500.00</td>
+                                    <td>30/05/2024</td>
+                                    <td>
+                                        <i class="fa fa-edit Alert-Edit" aria-hidden="true"></i>
+                                        &nbsp;
                                     <i class=" Alert-Delete fa fa-trash" aria-hidden="true"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                </fieldset>
-            </div>
+                </div>
+                </div>
+            </fieldset>
         </div>
     </div>
+   
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

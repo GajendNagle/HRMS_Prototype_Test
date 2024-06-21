@@ -12,7 +12,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+  <%--  <div id="dv_Masters_LocationMasters" runat="server">
 
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
@@ -33,12 +33,46 @@
             <div class="card-header card-border-info">
             </div>
             <div class="card-body">
-                <fieldset>
-                    <legend>Generate Increment Cancel</legend>
+
+  --%>    
+            <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#Increment" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                            <span>Increment</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>Increment Cancel Orders</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="card-title">Increment Cancel Orders/वेतन वृद्धि आदेश रद्द करें
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+    <fieldset>
+                    <legend>Generate Increment Cancel/वेतन वृद्धि रद्द करें</legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Division / संभाग <span style="color: red">*</span></label>
+                                <label>Division <br /> संभाग <span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">Bhopal</option>
@@ -56,7 +90,8 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <label>District<span style="color: red">*</span></label>
+                            <label>District<br />
+ज़िला<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -114,7 +149,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Designation Type/पदनाम का प्रकार <span style="color: red">*</span></label>
+                                <label>Designation Type<br />पदनाम का प्रकार <span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Indore">Ministry (मंत्रालय)</option>
@@ -125,7 +160,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Designation Name/पदनाम<span style="color: red">*</span></label>
+                                <label>Designation Name<br />पदनाम<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Additional Director">Additional Director</option>
@@ -157,7 +192,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Name-Code /
+                                    Employee Name-Code 
                                     <br />
                                     कर्मचारी का नाम-कोड<span style="color: red">*</span></label>
                                 <select class="form-control select2">
@@ -168,54 +203,60 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-5 mt-5 ">
+                       <%-- <div class="col-md-5 mt-5 ">
                             <div class="form-group ">
                                 <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded">Search</button>
                                 <a href="IncrementCancel.aspx" class="btn btn-danger btn-rounded">Clear</a>
                             </div>
-                        </div>
+                        </div>--%>
+                                                <hr />
+                                               
+<div class="col-md-12">
+    <div class="form-group">
+        <!-- Search button triggers search and toggles divs -->
+        <button type="button" onclick="Hideshow()" class="btn btn-success w-lg btn-border ">Search</button>
+        <!-- Clear button (link) -->
+        <a " href="IncrementCancel.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+    </div>
+</div>
                     </div>
                 </fieldset>
 
                 <div id="showdetails">
 
                     <fieldset>
-                        <legend>Details</legend>
-                        <div class="row justify-content-end">
-
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">Excel</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-                            </div>
-
-                        </div>
+                        <legend>Details/विवरण</legend>
+       <div class="row justify-content-end">
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+</div>
                         <div class="row justify-content-center">
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <tr>
-                                            <th>Sr.No.</th>
-                                            <th>Action</th>
-                                            <th>Employee Name</th>
-                                            <th>Office Name</th>
-                                            <th>Order No.</th>
-                                            <th>Order Date</th>
-                                            <th>Existing Level</th>
-                                            <th>Existing Basic Salary</th>
-                                            <th>New Level</th>
-                                            <th>New Basic Salary</th>
-                                            <th>Effective Date</th>
+                                        <tr style="white-space:nowrap !important;">
+                                            <th>Sr.No.<br />सं.क्र.</th>
+                                            <th>Action<br />कार्रवाई</th>
+                                            <th>Employee Name<br />कर्मचारी का नाम</th>
+                                            <th>Office Name<br />कार्यालय का नाम</th>
+                                            <th>Order No.<br />आदेश संख्या</th>
+                                            <th>Order Date<br />आर्डर की तारीख</th>
+                                            <th>Existing Level<br />मौजूदा स्तर</th>
+                                            <th>Existing Basic Salary<br />मौजूदा मूल वेतन</th>
+                                            <th>New Level<br />
+नया स्तर</th>
+                                            <th>New Basic Salary<br />
+नया मूल वेतन</th>
+                                            <th>Effective Date<br />प्रभावी तिथि</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -252,10 +293,10 @@
                                 <div>
                                     <p id="note"><b>Cancel The Application After Clicking On The Checkbox / चेक बॉक्स पर क्लिक करने के उपरांत आवेदन को निरस्त  करें|</b></p>
                                 </div>
-                            </div>
-                            <div class="col-md-2 mt-2">
+                            </div><hr />
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <a class="btn btn-danger btn-rounded Alert-Cancel">Cancel Increment</a>
+                                    <a class="btn btn-outline-danger w-lg btn-rounded Alert-Cancel">Cancel Increment</a>
                                 </div>
                             </div>
                         </div>
