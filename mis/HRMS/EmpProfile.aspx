@@ -3,12 +3,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .nav-tabs-custom.card-header-tabs {
+            margin-top: -0.6em;
+            margin-left: 1rem;
+        }
+
+        .nav-tabs-custom .nav-item .nav-link {
+            border: 1px solid transparent;
+            font-weight: var(--vz-font-weight-medium);
+            border-top-left-radius: 33px;
+            border-top-right-radius: 29px;
+        }   
+
         .profile-setting-img {
             position: relative !important;
             height: 150px !important;
         }
-        .profile-wid-bg::before{
-            background-image:url(../assets/images/svg/CardHeader.svg)!important;
+
+        .profile-wid-bg::before {
+            background-image: url(../assets/images/svg/CardHeader.svg) !important;
         }
     </style>
 </asp:Content>
@@ -28,7 +41,7 @@
     </div>
 
     <div class="row">
-        <div class="col-xl-3">
+        <div class="col-md-4 col-lg-4">
             <div class="card mt-n5">
                 <div class="card-body p-4">
                     <div class="text-center">
@@ -70,7 +83,7 @@
                                 <i class="ri-mail-fill"></i>
                             </span>
                         </div>
-                        <label class="fs-14 mt-1">mahaveer0725@gmail.com</label>
+                        <label class="fs-14 mt-1">ram07@gmail.com</label>
                     </div>
                     <div class="mb-3 d-flex">
                         <div class="avatar-xs d-block flex-shrink-0 me-3">
@@ -84,9 +97,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-9">
-            <div class="card mt-xl-n5">
-                <div class="card-header">
+        <div class="col-md-8 col-lg-8">
+            <div class="card mt-lg-n5">
+                <div class="card-header-">
                     <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="tab" href="#personalDetails" role="tab">
@@ -111,7 +124,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Father's Name </label>
@@ -121,7 +134,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Gender </label>
@@ -133,7 +146,7 @@
                                         </div>
 
 
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Date of Birth </label>
@@ -143,7 +156,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Blood Group </label>
@@ -153,7 +166,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Pan Card No. </label>
@@ -163,7 +176,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Adhar Card No. </label>
@@ -173,7 +186,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label>Marital Status </label>
