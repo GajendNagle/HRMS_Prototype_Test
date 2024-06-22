@@ -152,7 +152,7 @@
 
             <fieldset>
                 <legend>Promotion Order / पदोन्नति आदेश</legend>
-                <div class="row align-content-end">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Promotion With Transfer <br /> स्थानांतरण के साथ पदोन्नति<span style="color: red">*</span></label>

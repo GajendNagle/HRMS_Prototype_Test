@@ -42,27 +42,37 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Student Tracking</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Student Tracking</a></li>
-                       <%-- <li class="breadcrumb-item active">Student Tracking</li>--%>
-                          <li class="breadcrumb-item"><a href="Student_Tracking.aspx" title="click to go on">Student Tracking</a></li>
-                    </ol>
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                            </li>
+                            <li class="breadcrumb-item">Student Tracking</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-9">
+                        <h4 class="card-title">Student Tracking / छात्र ट्रैकिंग
+                        </h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <fieldset runat="server" id="Student">
-                    <legend >Student Tracking  </legend>
+                    <legend>Student Tracking / छात्र ट्रैकिंग</legend>
                     <div class="student-profile py-12">
                         <div class="container">
                             <div class="row">
@@ -70,16 +80,17 @@
                                     <div class="card shadow-sm">
                                         <div class="col-md-12">
                                             <div class="col-md-3">
-                                                <label class="font-weight-bold">
-                                                    समग्र आईडी
+                                                <label>
+                                                    Enter Samagra Id<br />
+                                                    समग्र आईडी दर्ज करें
                                                     <span style="color: red">*</span></label>
-                                                <input type="text" class="form-control" autocomplete="off" placeholder="Enter samagr ID" />
+                                                <input type="text" class="form-control" autocomplete="off" placeholder="Enter samagra ID" />
                                             </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-md-3 form-group"> 
-                                                    <asp:Button Text="Search"  runat="server" onclick="btnSerch_Click" id="btnSerch" class="Alert-Confirmation btn btn-success btn-rounded"></asp:Button>
-                                                    <a href="Student_Tracking.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                            <hr />
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <asp:Button Text="Search" runat="server" OnClick="btnSerch_Click" ID="btnSerch" class="Alert-Confirmation btn btn-success btn-border w-lg"></asp:Button>
+                                                    <a href="Student_Tracking.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                                 </div>
 
                                             </div>
@@ -93,7 +104,7 @@
 
                 </fieldset>
                 <fieldset runat="server" id="Studenttraking" visible="false">
-                    <legend>Student Tracking</legend>
+                    <legend>Student Tracking / छात्र ट्रैकिंग</legend>
                     <div class="student-profile py-12">
                         <div class="container">
                             <div class="row">
@@ -117,30 +128,32 @@
                                                         <h3 style="color: black;"><i class="far fa-clone pr-1"></i>General Information</h3>
                                                     </div>
                                                     <div style="min-height: 0rem;" class="card-body pt-0">
-                                                        <table class="table table-bordered">
-                                                            <tr>
-                                                                <th width="30%">जन्म-दिनांक : </th>
-                                                                <td width="2%">:</td>
-                                                                <td>03/03/2007</td>
-                                                                <th width="30%" class="text-gray-lighter">लिंग	</th>
-                                                                <td width="2%">:</td>
-                                                                <td>Boy</td>
-                                                            </tr>  
-                                                            <tr>
-                                                                <th width="30%">पिता का नाम </th>
-                                                                <td width="2%">:</td>
-                                                                <td>Bhagvan Singh</td> 
-                                                                <th width="30%">माता का नाम</th>
-                                                                <td width="2%">:</td>
-                                                                <td>Gulab Bai</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>पता</th>
-                                                                <td>:</td>
-                                                                <td colspan="4">ग्राम / वार्ड -Birha Shym Khedi  जिला -Bhopal</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div> 
+                                                        <div class="table-responsive-lg">
+                                                            <table class="table table-bordered">
+                                                                <tr>
+                                                                    <th width="30%">Date of birth<br />जन्म-दिनांक : </th>
+                                                                    <td width="2%">:</td>
+                                                                    <td>03/03/2007</td>
+                                                                    <th width="30%" class="text-gray-lighter">Gender<br />लिंग	</th>
+                                                                    <td width="2%">:</td>
+                                                                    <td>Boy</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th width="30%">Father's Name<br />पिता का नाम </th>
+                                                                    <td width="2%">:</td>
+                                                                    <td>Bhagvan Singh</td>
+                                                                    <th width="30%">Mother's Name<br />माता का नाम</th>
+                                                                    <td width="2%">:</td>
+                                                                    <td>Gulab Bai</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Address<br />पता</th>
+                                                                    <td>:</td>
+                                                                    <td colspan="4">ग्राम / वार्ड -Birha Shym Khedi  जिला -Bhopal</td>
+                                                                </tr>
+                                                            </table>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,23 +176,23 @@
                                             <ul class="nav nav-pills">
                                                 <li class="active">
                                                     <button type="button" class="btn btn-primary" href="#1b" data-toggle="tab">अकादमिक ट्रैकिंग</button>
-                                                   
+
                                                 </li>
                                                 <li>
                                                     <button type="button" class="btn btn-success" href="#2b" data-toggle="tab">छात्रवृत्ति</button>
-                                                 
+
                                                 </li>
                                                 <li>
                                                     <button type="button" class="btn btn-danger" href="#3b" data-toggle="tab">साइकिल (9 th)</button>
-                                              
+
                                                 </li>
                                                 <li>
                                                     <button type="button" class="btn btn-warning" href="#4a" data-toggle="tab">साइकिल (6 th)</button>
-                                                    
+
                                                 </li>
                                                 <li>
                                                     <button type="button" class="btn btn-info" href="#5a" data-toggle="tab">CWSN ट्रैकिंग</button>
-                                                  
+
                                                 </li>
                                                 <li>
                                                     <button type="button" class="btn btn-dark" href="#6a" data-toggle="tab">गणवेश वितरण</button>
@@ -195,17 +208,17 @@
                                                 <div class="tab-pane active" id="1b">
                                                     <div class="card-body pt-0">
 
-                                                        <table class="table table-bordered">
+                                                        <table class="table table-bordered table-responsive">
                                                             <thead>
                                                                 <tr>
 
-                                                                    <th style="color: white" scope="col">#</th>
-                                                                    <th style="color: white" scope="col">शैक्षणिक वर्ष</th>
-                                                                    <th style="color: white" scope="col">जिला</th>
-                                                                    <th style="color: white" scope="col">ब्लॉक</th>
-                                                                    <th style="color: white" scope="col">शाला</th>
-                                                                    <th style="color: white" scope="col">कक्षा</th>
-                                                                    <th style="color: white" scope="col">%</th>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">Academic Year<br />शैक्षणिक वर्ष</th>
+                                                                    <th scope="col">District<br />जिला</th>
+                                                                    <th scope="col">Block<br />ब्लॉक</th>
+                                                                    <th scope="col">School<br />शाला</th>
+                                                                    <th scope="col">Class<br />कक्षा</th>
+                                                                    <th scope="col">%</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -318,14 +331,14 @@
                                                         <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                                             <thead>
                                                                 <tr>
-                                                                    <th style="color: white" scope="col">#</th>
-                                                                    <th style="color: white" scope="col">क्लास</th>
-                                                                    <th style="color: white" scope="col">शैक्षणिक वर्ष</th>
-                                                                    <th style="color: white" scope="col">विभाग</th>
-                                                                    <th style="color: white" scope="col">योजना</th>
-                                                                    <th style="color: white" scope="col">स्वीकृत दिनाँक</th>
-                                                                    <th style="color: white" scope="col">राशि</th>
-                                                                    <th style="color: white" scope="col">विवरण</th>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">Class<br />क्लास</th>
+                                                                    <th scope="col">Academic Year<br />शैक्षणिक वर्ष</th>
+                                                                    <th scope="col">Department<br />विभाग</th>
+                                                                    <th scope="col">Scheme<br />योजना</th>
+                                                                    <th  scope="col">Approved Date<br />स्वीकृत दिनाँक</th>
+                                                                    <th scope="col">Amount<br />राशि</th>
+                                                                    <th scope="col">Description<br />विवरण</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -431,7 +444,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="7b">
-                                                    <div class="table-responsive"> 
+                                                    <div class="table-responsive">
                                                         <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                                             <tr>
                                                                 <td>
@@ -444,12 +457,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </fieldset>
             </div>
         </div>
@@ -457,7 +470,7 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </asp:Content>
 

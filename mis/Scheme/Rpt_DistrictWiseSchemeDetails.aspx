@@ -23,36 +23,49 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">District Wise Scheme Details</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=StudentProfileMgmt" title="click to go on">Student Profile Management</a></li>--%>
-                    <li class="breadcrumb-item active">District Wise Scheme Details</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">SSDDO Scholarship</li>
+                        <li class="breadcrumb-item">District Wise Scheme Details</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">District Wise Scheme Details / जिलेवार योजना विवरण
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
             <fieldset>
-                <legend>District Wise Scheme Details</legend>
+                <legend>District Wise Scheme Details / जिलेवार योजना विवरण</legend>
                 <div class="row">
 
                     <div class="col-lg-12">
-                        <div class="row justify-content-center">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                                    <label> Academic Year<br />
+                                        शैक्षणिक वर्ष <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="2023-24">2023-24</option>
                                         <option value="2024-25">2024-25</option>
@@ -72,7 +85,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Scheme </label>
+                                    <label>
+                                         Scheme<br />
+                                        योजना </label>
                                     <select class="form-control select2">
                                         <%-- <option>--Select--</option>--%>
                                         <option>सामान्य निर्धन वर्ग छात्रवृत्ति योजना (1.1)</option>
@@ -87,7 +102,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Report Date: <span style="color: red">*</span></label>
+                                    <label>Report Date<br /> रिपोर्ट दिनांक<span style="color: red">*</span></label>
                                     <input type="datetime" class="form-control" value="05/04/2024" autocomplete="off" placeholder="Report Date" />
                                 </div>
                             </div>
@@ -104,7 +119,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -125,21 +140,19 @@
 
             </fieldset>
             <fieldset runat="server" id="dv_ApplicationsSummary">
-                <legend>District Wise Scheme Details</legend>
+                <legend>District Wise Scheme Details / जिलेवार योजना विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered ">
                             <thead>
                                 <tr>
-                                    <th>S.No.</th>
-                                    <th>जिला</th>
+                                    <th>S.No.<br />सरल क्र.</th>
+                                    <th>District<br />जिला</th>
 
-                                    <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना के कुल स्वीकृत आवेदन</th>
-                                    <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत भुगतान (M1Click)</th>
-                                    <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना की कुल स्वीकृत राशि</th>
-                                    <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत राशि का भुगतान (M1Click)</th>
-
-
+                                    <th>Total accepted applications of General Poor Category Scholarship Scheme<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना के कुल स्वीकृत आवेदन</th>
+                                    <th>Payment under General Poor Category Scholarship Scheme<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत भुगतान (M1Click)</th>
+                                    <th>Total sanctioned amount of General Poor Category Scholarship Scheme<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना की कुल स्वीकृत राशि</th>
+                                    <th>Payment of amount under General Poor Category Scholarship Scheme (M1Click)<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत राशि का भुगतान (M1Click)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -151,7 +164,7 @@
                                     <td>0 </td>
                                     <td>0 </td>
                                     <td>5.0</td>
-                                  
+
                                 </tr>
                                 <tr>
                                     <td>2 </td>

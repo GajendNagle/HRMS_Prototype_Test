@@ -23,36 +23,53 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">Summary of Scholership Aplications for all schemes of  a Department </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=StudentProfileMgmt" title="click to go on">Student Profile Management</a></li>--%>
-                    <li class="breadcrumb-item active">Summary of Scholership Aplications for all schemes of  a Department</li>
-                </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">SSDDO Scholarship</li>
+                        <li class="breadcrumb-item">Summary of Scholership Aplications for all schemes of  a Department</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Summary of Scholership Aplications for all schemes of  a Department
+                        <br />
+                        किसी विभाग की सभी योजनाओं के लिए छात्रवृत्ति आवेदनों का सारांश 
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
             <fieldset>
-                <legend>Summary of Scholership Aplications for all schemes of  a Department</legend>
+                <legend>Summary of Scholership Aplications for all schemes of  a Department<br />
+                    किसी विभाग की सभी योजनाओं के लिए छात्रवृत्ति आवेदनों का सारांश</legend>
                 <div class="row">
 
                     <div class="col-lg-12">
-                        <div class="row justify-content-center">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                                    <label>
+                                        Select Academic Year<br />
+                                        शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="2024-25">2024-25</option>
@@ -72,7 +89,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Department </label>
+                                    <label>
+                                        Select Department<br />
+                                        विभाग का चयन करें</label>
                                     <select class="form-control select2">
                                         <option>--Select--</option>
                                         <option>स्कूल शिक्षा विभाग </option>
@@ -85,7 +104,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Report Date: <span style="color: red">*</span></label>
+                                    <label>
+                                        Report Date<br />
+                                        रिपोर्ट दिनांक<span style="color: red">*</span></label>
                                     <input type="datetime" class="form-control" value="05/04/2024" autocomplete="off" placeholder="Report Date" />
                                 </div>
                             </div>
@@ -102,7 +123,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -110,11 +131,13 @@
 
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
 
                             <div class="col-md-4 text-center">
                                 <div class="form-group">
-                                    <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-rounded" Text="Show" OnClick="btnShowSummary_Click" />
-                                    <a href="Rpt_DepartMentSchemewiseApplication.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                    <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-border w-lg" Text="Show" OnClick="btnShowSummary_Click" />
+                                    <a href="Rpt_DepartMentSchemewiseApplication.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -123,20 +146,29 @@
 
             </fieldset>
             <fieldset runat="server" id="dv_ApplicationsSummary">
-                <legend>Summary of Scholership Aplications for all schemes of  a Department</legend>
+                <legend>Summary of Scholership Aplications for all schemes of a Department<br />
+                    किसी विभाग की सभी योजनाओं के लिए छात्रवृत्ति आवेदनों का सारांश</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered ">
                             <thead>
                                 <tr>
-                                    <th>S.No.</th>
-                                    <th>Department</th>
-                                    <th>Scheme</th>
-                                    <th>Total Sanctioned Applications</th>
-                                    <th>Total Sanctioned Amount</th>
-                                    <th>Total Paid Applications (M1 Click)</th>
-                                    <th>Total Paid Amount (M1 Click)</th>
-                                    <th>View District Wise Report</th>
+                                    <th>S.No.<br />
+                                        सरल क्र.</th>
+                                    <th>Department<br />
+                                        विभाग</th>
+                                    <th>Scheme<br />
+                                        योजना</th>
+                                    <th>Total Sanctioned Applications<br />
+                                        कुल स्वीकृत आवेदन</th>
+                                    <th>Total Sanctioned Amount<br />
+                                        कुल स्वीकृत राशि</th>
+                                    <th>Total Paid Applications (M1 Click)<br />
+                                        कुल भुगतान आवेदन (एम1 क्लिक)</th>
+                                    <th>Total Paid Amount (M1 Click)<br />
+                                        कुल भुगतान राशि (एम1 क्लिक)</th>
+                                    <th>View District Wise Report<br />
+                                        जिलावार रिपोर्ट देखें</th>
 
                                 </tr>
                             </thead>
@@ -149,7 +181,7 @@
                                     <td>123000 </td>
                                     <td>14045 </td>
                                     <td>121345</td>
-                                    <td><a href="Rpt_DistrictWiseSchemeDetails.aspx" ><i class="fa fa-eye"></i></a></td>
+                                    <td><a href="Rpt_DistrictWiseSchemeDetails.aspx"><i class="fa fa-eye"></i></a></td>
 
 
                                 </tr>

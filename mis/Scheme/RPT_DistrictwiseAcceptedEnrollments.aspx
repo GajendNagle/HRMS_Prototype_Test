@@ -23,36 +23,48 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संछिप्त रिपोर्ट </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <%-- <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=StudentProfileMgmt" title="click to go on">Student Profile Management</a></li>--%>
-                    <li class="breadcrumb-item active">छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संछिप्त रिपोर्ट </li>
-                </ol>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">SSDDO Scholarship</li>
+                        <li class="breadcrumb-item">Brief report of District wise acceptance of students receiving scholarship</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Brief report of District wise acceptance of students receiving scholarship <br /> छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संक्षिप्त रिपोर्ट 
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
             <fieldset>
-                <legend>छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संछिप्त रिपोर्ट </legend>
+                <legend>Brief report of District wise acceptance of students receiving<br />छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संक्षिप्त रिपोर्ट </legend>
                 <div class="row">
 
                     <div class="col-lg-12">
-                        <div class="row justify-content-center">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                                    <label>Select Academic Year<br />शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <%-- <option value="--Select--">--Select--</option>--%>
                                         <option value="2021-22">2021-22</option>
@@ -85,7 +97,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2 ">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -93,11 +105,11 @@
 
                                 </div>
                             </div>
-
+                            <hr />
                             <div class="col-md-4 text-center">
                                 <div class="form-group">
-                                    <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-rounded" Text="छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संछिप्त रिपोर्ट देखें" OnClick="btnShowSummary_Click" />
-                                    <a href="RPT_DistrictwiseAcceptedEnrollments.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                    <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-border w-lg" Text="View Report" OnClick="btnShowSummary_Click" />
+                                    <a href="RPT_DistrictwiseAcceptedEnrollments.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -106,25 +118,25 @@
 
             </fieldset>
             <fieldset runat="server" id="dv_StudentSummary">
-                <legend>छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संछिप्त रिपोर्ट</legend>
+                <legend>Brief report of District wise acceptance of students receiving<br />छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला बार स्वीकृति की संक्षिप्त रिपोर्ट</legend>
                 <div class="row">
                     <div class="col-lg-12">
-                        <table class="table table-bordered ">
+                        <table class="table table-bordered table-responsive">
                             <thead>
                                 <tr>
                                     <th></th>
                                     <th></th>
-                                    <th>Total Enrollment Reported [Admissions/Promotions to Higher Class]</th>
-                                    <th>Student whose Profile [Income,% of marks obtained in previousclass, occupation of parents] has been Updated/Reported</th>
-                                    <th>Student [Out of B], who are eligible and entiteled for one or more Scholarships</th>
-                                    <th>Amount [ Scholarships/Financial assistance] entiteled to the eligible Students</th>
-                                    <th>Student [Out of C], who has been sanctioned one or more Scholarship//Financial assistance</th>
-                                    <th>Amount [ Scholarships/Financial assistance] sanctioned to students</th>
+                                    <th>Total Enrollment Reported [Admissions/Promotions to Higher Class]<br />रिपोर्ट किया गया कुल नामांकन [उच्च कक्षा में प्रवेश/पदोन्नति]</th>
+                                    <th>Student whose Profile [Income,% of marks obtained in previousclass, occupation of parents] has been Updated/Reported<br />छात्र जिसका प्रोफ़ाइल [आय, पिछली कक्षा में प्राप्त अंकों का प्रतिशत, माता-पिता का व्यवसाय] अपडेट/रिपोर्ट किया गया है</th>
+                                    <th>Student [Out of B], who are eligible and entiteled for one or more Scholarships<br />छात्र [बी में से], जो एक या अधिक छात्रवृत्ति के लिए पात्र और हकदार हैं</th>
+                                    <th>Amount [ Scholarships/Financial assistance] entiteled to the eligible Students<br />पात्र छात्रों के लिए पात्र राशि [छात्रवृत्ति/वित्तीय सहायता]</th>
+                                    <th>Student [Out of C], who has been sanctioned one or more Scholarship/Financial assistance<br />छात्र [सी में से], जिसे एक या अधिक छात्रवृत्ति/वित्तीय सहायता स्वीकृत की गई है</th>
+                                    <th>Amount [ Scholarships/Financial assistance] sanctioned to students<br />छात्रों को स्वीकृत राशि [छात्रवृत्ति/वित्तीय सहायता]</th>
 
                                 </tr>
                                 <tr>
-                                    <th>S.No.</th>
-                                    <th>District</th>
+                                    <th>S.No.<br />सरल क्र.</th>
+                                    <th>District<br />जिला</th>
                                     <th>(A)</th>
                                     <th>(B)</th>
                                     <th>(C)</th>

@@ -248,22 +248,22 @@
                                             <ul class="nav nav-pills">
                                                 <li class="active">
 
-                                                    <asp:Button Text="Print List Of Students Whose payment was Successful" type="button" runat="server" OnClick="Button1_Click" ID="Button1" class="btn btn-warning w-lg"></asp:Button>
+                                                    <asp:Button Text="Successful payments List" type="button" runat="server" OnClick="Button1_Click" ID="Button1" class="btn btn-outline-warning w-lg"></asp:Button>
 
 
                                                 </li>
                                                 <li>
-                                                    <asp:Button Text="Print List Of Students Whose payment was Failed" type="button2" runat="server" OnClick="Button2_Click" ID="Button2" class="btn btn-success w-lg"></asp:Button>
+                                                    <asp:Button Text="Failed payments List" type="button2" runat="server" OnClick="Button2_Click" ID="Button2" class="btn btn-success w-lg"></asp:Button>
 
 
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-outline-danger w-lg" href="#3b" data-toggle="tab">Print List Of Students Who have been Sanctioned Schemes </button>
+                                                    <button type="button" class="btn btn-outline-danger w-lg" href="#3b" data-toggle="tab">Sanctioned Schemes List </button>
 
                                                 </li>
                                             </ul>
-
+                                          
                                             <div class="tab-content clearfix">
                                                 <div class="tab-pane active" id="Successful" runat="server" visible="false">
                                                     <div class="card-body pt-0">

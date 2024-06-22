@@ -91,27 +91,40 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Scheme Details</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">SchemeManagement</a></li>
-                        <li class="breadcrumb-item active">Scheme Details</li>
-                    </ol>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                            </li>
+                            <li class="breadcrumb-item">Scheme Details</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <h4 class="card-title">Scheme Details / 
+                             योजना विवरण
+                        </h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <span id="ContentBody_lblMsg"></span>
                 <fieldset>
-                    <legend>Scheme Details</legend>
+                    <legend>Scheme Details /  योजना विवरण</legend>
                     <div class="row form-group">
 
                         <div class="col-md-12">

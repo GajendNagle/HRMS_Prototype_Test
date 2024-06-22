@@ -8,28 +8,36 @@
             display: none;
         }
     </style>
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें
- 
-            </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item active"><a href="AdmissionOfOutOfStateEdit.aspx" title="click to go on">कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</a></li>
-
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>View class-wise overall scholarship schemes</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="card-title">View class-wise overall scholarship schemes
+                <br />
+                       कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</h5>
+                </div>
+            </div>
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg navbar-dark topbar">
+            <%--<nav class="navbar navbar-expand-lg navbar-dark topbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,17 +50,17 @@
                                     <b class="font-16 font-bold">कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="SchemeCriteriasByClass.aspx">कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</a></li>
+                                    <li><a class="dropdown-item" href="SchemeCriteriasByClass.aspx">कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</a></li>--%>
                                     <%--                                    <li><a class="dropdown-item" href="AdmissionOfOutOfStateEdit.aspx">[1.2] Edit Profile of the Other State Student</a></li>--%>
-                                </ul>
+                                <%--</ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav>--%>
             <div class="mt-5">
                 <fieldset>
-                    <legend>कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</legend>
+                    <legend>View class-wise overall scholarship schemes / कक्षा-वार समग्र छात्रवृत्ति योजनायें देखें</legend>
                     <div class="row justify-content-center mt-3">
                         <div class="col-md-10">
                             <h5><b>नोट</b><span style="color: red;">
@@ -63,9 +71,9 @@
 
                     </div>
                     <hr />
-                    <div class="row justify-content-center">
+                    <div class="row align-items-end">
                         <div class="col-md-3">
-                            <label class="font-bold">Academic Year :<span style="color: red">*</span></label>
+                            <label >Academic Year <br />शैक्षणिक वर्ष<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="2024">2024-25</option>
@@ -77,7 +85,7 @@
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <label class="font-bold">कक्षा :<span style="color: red">*</span></label>
+                            <label>Class<br />कक्षा<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">1 st </option>
@@ -102,10 +110,12 @@
                         </div>
 
                     </div>
-                    <div class="row justify-content-center mt-4">
-                        <div class="col-md-4 text-center">
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-rounded" onclick="toggleStudentDetails()">छात्रवृत्ति योजनाओं की जानकारी देखे</button>
+                                <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-border w-lg" onclick="toggleStudentDetails()">छात्रवृत्ति योजनाओं की जानकारी देखे</button>
+                                <a href="SchemeCriteriasByClass.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
                     </div>
@@ -113,32 +123,32 @@
 
                 <div id="Show">
                     <fieldset>
-                        <legend>छात्रवृत्ति योजनाओं की जानकारी </legend>
+                        <legend>Information about scholarship schemes / छात्रवृत्ति योजनाओं की जानकारी </legend>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered table-hover">
                                         <thead>
                                             <tr>
-                                                <th>Sr.No.</th>
-                                                <th>Stream</th>
-                                                <th>Category</th>
-                                                <th>Minority</th>
-                                                <th>For Govt. School</th>
-                                                <th>BPL</th>
-                                                <th>PwD</th>
+                                                <th>Sr.No.<br />सरल क्र.</th>
+                                                <th>Stream<br />स्ट्रीम</th>
+                                                <th>Category<br />श्रेणी</th>
+                                                <th>Minority<br />अल्पसंख्यक</th>
+                                                <th>For Govt. School<br />सरकारी स्कूल के लिए</th>
+                                                <th>BPL<br />गरीबी रेखा से नीचे</th>
+                                                <th>PwD<br />लोक निर्माण विभाग</th>
                                                 <th>PwD %</th>
-                                                <th>Father Occupation</th>
-                                                <th>Vimukt Status</th>
-                                                <th>Income</th>
-                                                <th>Siblings</th>
-                                                <th>Last Year %</th>
-                                                <th>GAP</th>
-                                                <th>Remarks</th>
-                                                <th>DayScholar   M</th>
-                                                <th>Hosteller    M</th>
-                                                <th>DayScholar   F</th>
-                                                <th>Hosteller  F</th>
+                                                <th>Father Occupation<br />पिता का व्यवसाय</th>
+                                                <th>Vimukt Status<br />विमुक्त स्थिति</th>
+                                                <th>Income<br />आय</th>
+                                                <th>Siblings<br />भाई-बहन</th>
+                                                <th>Last Year %<br />पिछले साल का प्रतिशत</th>
+                                                <th>GAP<br />गैप</th>
+                                                <th>Remarks<br />टिप्पणी</th>
+                                                <th>DayScholar   M<br />डेस्कॉलर</th>
+                                                <th>Hosteller    M<br />छात्रावासी</th>
+                                                <th>DayScholar   F<br />डेस्कॉलर</th>
+                                                <th>Hosteller  F<br />छात्रावासी</th>
                                             </tr>
                                         </thead>
                                         <tbody>
