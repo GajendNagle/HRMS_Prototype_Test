@@ -3,8 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
         th {
-            white-space:nowrap;
+            white-space: nowrap;
         }
+
         #show {
             display: none;
         }
@@ -50,7 +51,8 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Type /
+                                    <label>
+                                        Leave Type 
                                         <br />
                                         अवकाश का प्रकार<span style="color: red">*</span></label>
                                     <input type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Type" />
@@ -58,7 +60,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Effective Date /
+                                    <label>
+                                        Effective Date 
                                         <br />
                                         प्रभावी दिनांक<span style="color: red">*</span></label>
                                     <input type="date" class="form-control" placeholder="" />
@@ -66,7 +69,10 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Carry Forward /<br />छुट्टी आगे बढ़ाएँ
+                                    <label>
+                                        Leave Carry Forward
+                                        <br />
+                                        छुट्टी आगे बढ़ाएँ
                                         <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -77,7 +83,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Impact On Payroll /<br />
+                                    <label>
+                                        Impact On Payroll
+                                        <br />
                                         पेरोल पर प्रभाव<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -85,25 +93,28 @@
                                         <option value="12">No</option>
                                     </select>
                                 </div>
-                            </div></div>
-                         <div class="row align-items-end">
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
                             <div class="col-md-3  ">
                                 <div class="form-group ml-3 ">
                                     <input class="form-check-input" type="checkbox" />
                                     <span>
-                                        <label>Impact On Earning & Deduction/<br />
+                                        <label>
+                                            Impact On Earning & Deduction<br />
                                             अर्निंग और कटौती पर प्रभाव<span style="color: red">*</span></label></span>
                                 </div>
-                            </div></div>
-                            <hr />
-                             <div class="col-md-12">
-     <div class="form-group">
-         <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
-         <a href="Mst_LeaveType.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-     </div>
- </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+                                <a href="Mst_LeaveType.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
+                        </div>
 
-                           <%-- <div class="col-md-12 ">
+                        <%-- <div class="col-md-12 ">
                                 <div class="form-group">
                                     <button type="button" class=" Alert-Save btn btn-outline-success btn-border w-lg">Save</button>
                                     <a href="Mst_LeaveType.aspx" class=" btn btn-outline-danger btn-border w-lg">Clear</a>
@@ -132,12 +143,24 @@
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
-                                            <th>Sr.No. / <br />सरल क्र.</th>
-                                            <th>Leave Type / <br />अवकाश का प्रकार</th>
-                                            <th>Impact On Payroll / <br />पेरोल पर प्रभाव</th>
-                                            <th>Leave Carry Forward / <br /></th>
-                                            <th>Impact On Earning & Deduction / <br />अर्निंग और कटौती पर प्रभाव</th>
-                                            <th>Effective Date / <br />प्रभावी दिनांक</th>
+                                            <th>Sr.No. 
+                                                <br />
+                                                सरल क्र.</th>
+                                            <th>Leave Type 
+                                                <br />
+                                                अवकाश का प्रकार</th>
+                                            <th>Impact On Payroll 
+                                                <br />
+                                                पेरोल पर प्रभाव</th>
+                                            <th>Leave Carry Forward 
+                                                <br />
+                                            </th>
+                                            <th>Impact On Earning & Deduction 
+                                                <br />
+                                                अर्निंग और कटौती पर प्रभाव</th>
+                                            <th>Effective Date 
+                                                <br />
+                                                प्रभावी दिनांक</th>
                                             <th>Action</th>
                                         </tr>
                                         <tr>

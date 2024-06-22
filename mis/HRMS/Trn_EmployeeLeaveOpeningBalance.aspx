@@ -66,20 +66,19 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h4 class="card-title">Employee Leave Opening Balance/
-                        कर्मचारी अवकाश प्रारंभिक शेष</h4>
+                        <h4 class="card-title">Employee Leave Opening Balance / कर्मचारी अवकाश प्रारंभिक शेष</h4>
                     </div>
                 </div>
             </div>
             <div class="card-body">
             <fieldset>
-                <legend>Leave Opening Balance/अवकाश प्रारंभिक शेष</legend>
+                <legend>Leave Opening Balance / अवकाश प्रारंभिक शेष</legend>
                 <div class="row align-items-end">
 
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
+                            <label>Office Name<br />कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">HO</option>
@@ -90,7 +89,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name/<br />कर्मचारी का नाम<span style="color: red">*</span></label>
+                            <label>Employee Name<br />कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Krishna Tiwari - 38938</option>
@@ -100,7 +99,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Date/<br />दिंनाक<span style="color: red">*</span></label>
+                            <label>Date<br />दिंनाक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
@@ -143,9 +142,9 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>Sr.No./<br />सरल क्र.</th>
-                                    <th>Leave Type/<br /> अवकाश का प्रकार</th>
-                                    <th>Remaining Leaves/<br /> शेष अवकाश</th>
+                                    <th>Sr.No.<br />सरल क्र.</th>
+                                    <th>Leave Type<br /> अवकाश का प्रकार</th>
+                                    <th>Remaining Leaves<br /> शेष अवकाश</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

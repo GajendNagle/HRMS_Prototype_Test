@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="~/mis/HRMS/LeaveApplicantDetails.aspx.cs" Inherits="mis_HRMS_LeaveApplicantDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -20,71 +19,66 @@
             </div>
         </div>
     </div>--%>
-                        <div class="row">
-    <div class="col-md-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                            <span>Leave Process</span></a>
-                    </li>
-                    <li class="breadcrumb-item"><span>Leave Applicant Details</span></li>
-                </ol>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#LeaveProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Leave Process</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Leave Applicant Details</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-        <div class="card card-border-primary">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="card-title">Leave Approval/Farward/Reject/छुट्टी का
-                       अनुमोदन/प्रस्ताव/
-अग्रेषित/अस्वीकृत</h4>
-                    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="card-title">Leave Approval/Farward/Reject<br />
+                        छुट्टी का अनुमोदन/प्रस्ताव/अग्रेषित/अस्वीकृत</h4>
                 </div>
             </div>
-              <div class="card-body">
-        
-   
+        </div>
+        <div class="card-body">
             <fieldset>
-                <legend>Apply Leave</legend>
+                <legend>Apply Leave / छुट्टी के लिए आवेदन करें</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Leave Applicant<span style="color: red">*</span></label>
+                            <label>Leave Applicant<br />
+                                आवेदक<span style="color: red">*</span></label>
                             <select id="ddlApplicant" class="form-control select2" onchange="ShowComment()">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Teacher</option>
                                 <option value="2">HM/Principal</option>
                                 <option value="3">Sankul Pracharya</option>
-
                             </select>
                         </div>
                     </div>
-                    </div>
-                    <hr />
-                    
-                                  <div class="row justify-content-center">
-
+                </div>
+                <hr />
+                <div class="row justify-content-center">
                     <div class="col-md-12">
-    <div class="form-group">
-        <button type="button"  onclick="HideShow()"  class="Alert-Save btn w-lg btn-success btn-border">Submit</button>
-        <a href="LeaveApplicantDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
+                        <div class="form-group">
+                            <button type="button" onclick="HideShow()" class="Alert-Save btn w-lg btn-success btn-border">Submit</button>
+                            <a href="LeaveApplicantDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        </div>
+                    </div>
                     <%--</div>
                 <div class="row justify-content-center">--%>
-                   <%-- <div class="col-md-3 mt-4 ">
+                    <%-- <div class="col-md-3 mt-4 ">
                         <div class="form-group">
                             <button type="button" class=" Alert-Save btn btn-success btn-rounded" onclick="HideShow()">Submit</button>
                             <a href="LeaveApplicantDetails.aspx" class=" btn btn-danger btn-rounded">Clear</a>
@@ -95,34 +89,34 @@
             <div id="EmployeeDetails1">
                 <fieldset id="show">
                     <legend>Leave Details</legend>
-                                                  <div class="row justify-content-end">
-<div class="col-md-4 text-end">
-    <div class="form-group">
-        <button class="btn btn-info btn-rounded w-55">Excel</button>
-        <button class="btn btn-info btn-rounded w-55">PDF</button>
-    </div>
-</div>
-<div class="col-md-3">
-    <div class="form-group"> 
-        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-    </div>
-</div>
-</div>
-      
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Year</th>
-                                        <th>From Date</th>
-                                        <th>To Date</th>
-                                        <th>Leave Approval Authority</th>
-                                        <th>Leave Type</th>
-                                        <th>No. of Days</th>
-                                        <th>Supporting Document</th>
-                                        <th>Reason of Leave</th>
+                                        <th>Sr.No.<br />सरल क्र.</th>
+                                        <th>Year<br />वर्ष </th>
+                                        <th>From Date<br />दिनांक से </th>
+                                        <th>To Date<br />दिनांक तक </th>
+                                        <th>Leave Approval Authority<br />छुट्टी स्वीकृति प्राधिकरण</th>
+                                        <th>Leave Type<br />छुट्टी का प्रकार</th>
+                                        <th>No. of Days<br />दिनों की संख्या</th>
+                                        <th>Supporting Document<br />सहायक दस्तावेज़</th>
+                                        <th>Reason of Leave<br />छुट्टी का कारण</th>
                                         <%--<th>Comment By</th>
                                         <th>Comment</th>--%>
                                         <%--  <th>Status</th>--%>
@@ -153,63 +147,63 @@
                         </div>
                     </div>
                 </fieldset>
-               
 
-    
-    <div class="modal" tabindex="-1" role="dialog" id="ApprovalModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Approval Remark</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label>Remark</label>
-                            <asp:TextBox ID="TextBox2" placeholder="Enter Approval Remark" runat="server" CssClass="form-control"></asp:TextBox>
+
+
+                <div class="modal" tabindex="-1" role="dialog" id="ApprovalModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Approval Remark</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>Remark</label>
+                                        <asp:TextBox ID="TextBox2" placeholder="Enter Approval Remark" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <%-- <button type="button" class="btn btn-success Alert-ApprovelT" onclientclick="return false;" onclick="()" data-bs-dismiss="modal">Forward To DEO</button>--%>
+                                <button onclientclick="return false;" type="button" onclick="Approved()" class="Alert-ApproveT btn btn-success " data-bs-dismiss="modal">Forward To HO</button>
+                                <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer justify-content-center">
-                    <%-- <button type="button" class="btn btn-success Alert-ApprovelT" onclientclick="return false;" onclick="()" data-bs-dismiss="modal">Forward To DEO</button>--%>
-                    <button onclientclick="return false;" type="button" onclick="Approved()" class="Alert-ApproveT btn btn-success " data-bs-dismiss="modal">Forward To HO</button>
-                    <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal" tabindex="-1" role="dialog" id="RejectionModel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Rejection Remark</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label>Remark</label>
-                            <asp:TextBox ID="TextBox1" placeholder="Enter Reject Remark" runat="server" CssClass="form-control"></asp:TextBox>
+                <div class="modal" tabindex="-1" role="dialog" id="RejectionModel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Rejection Remark</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>Remark</label>
+                                        <asp:TextBox ID="TextBox1" placeholder="Enter Reject Remark" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <%-- <button type="button" class="btn btn-success Alert-ApprovelT" onclientclick="return false;" onclick="()" data-bs-dismiss="modal">Forward To DEO</button>--%>
+                                <button onclientclick="return false;" type="button" onclick="Rejected()" class="Alert-ApproveT btn btn-success " data-bs-dismiss="modal">Forward To HO</button>
+                                <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer justify-content-center">
-                    <%-- <button type="button" class="btn btn-success Alert-ApprovelT" onclientclick="return false;" onclick="()" data-bs-dismiss="modal">Forward To DEO</button>--%>
-                    <button onclientclick="return false;" type="button" onclick="Rejected()" class="Alert-ApproveT btn btn-success " data-bs-dismiss="modal">Forward To HO</button>
-                    <button type="button" class="btn btn-danger  waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                </div>
+
             </div>
-        </div>
-    </div>
-                
-            </div>
-         
+
 
         </div>
-            </div>
-    
-             
+    </div>
+
+
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -246,23 +240,23 @@
             var ddlApplicant = document.getElementById("ddlApplicant");
             var tdh1 = document.getElementById("tdh1");
             var tdh2 = document.getElementById("tdh2");
-        
+
             var tdh1a = document.getElementById("tdh1a");
             var tdh2a = document.getElementById("tdh2a");
 
             if (ddlApplicant.value === "2") {
                 tdh1.style.display = "none";
                 tdh1a.style.display = "none";
-              
+
             }
-          
+
             if (ddlApplicant.value === "3") {
                 tdh2.style.display = "none";
                 tdh2a.style.display = "none";
 
             }
             else {
-              
+
             }
         }
 

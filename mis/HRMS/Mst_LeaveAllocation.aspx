@@ -36,18 +36,19 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Leave Allocation / लीव स्टेटस<br />
+                            <h4 class="card-title">Leave Allocation / लीव एलोकेशन<br />
                             </h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Leave Allocation</legend>
+                        <legend>Leave Allocation / लीव एलोकेशन</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Year /<br />
+                                    <label>
+                                        Year<br />
                                         वर्ष<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -62,7 +63,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Type /
+                                    <label>
+                                        Leave Type 
                                         <br />
                                         लीव का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
@@ -79,7 +81,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Class /
+                                    <label>
+                                        Class 
                                         <br />
                                         कक्षा<span style="color: red">*</span></label>
                                     <select class="form-control select2">
@@ -94,7 +97,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Type of Post /
+                                    <label>
+                                        Type of Post 
                                         <br />
                                         पोस्ट का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
@@ -112,11 +116,13 @@
                                         <option value="Job Rate Employee">Job Rate Employee</option>
                                     </select>
                                 </div>
-                            </div></div>
-                           <div class="row align-items-end">
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Period /<br />
+                                    <label>
+                                        Period<br />
                                         अवधि<span style="color: red">*</span></label>
                                     <select id="dropdown" onchange="calculateResult()" class="form-control select2">
                                         <option value="0">--Select--</option>
@@ -129,20 +135,23 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Days Period Wise /<br />
+                                    <label>
+                                        Leave Days Period Wise<br />
                                         अवधि के अनुसार छुट्टी के दिन<span style="color: red">*</span></label>
                                     <input id="inputNumber" oninput="calculateResult()" runat="server" type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Days" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Total Leave Days Year Wise/<br />वर्षवार कुल छुट्टी के दिन<span style="color: red">*</span></label>
-                                      <input type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Balance" />
+                                    <label>Total Leave Days Year Wise<br />
+                                        वर्षवार कुल छुट्टी के दिन<span style="color: red">*</span></label>
+                                    <input type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Balance" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Leave Carry Forward/<br />छुट्टी आगे बढ़ाएँ<span style="color: red">*</span></label>
+                                    <label>Leave Carry Forward<br />
+                                        छुट्टी आगे बढ़ाएँ<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Bhopal">Yes</option>
@@ -150,17 +159,18 @@
                                     </select>
                                 </div>
                             </div>
-                               </div>
-                           <div class="row align-items-end">
+                        </div>
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Max Leave Balance/<br />अधिकतम अवकाश शेष<span style="color: red">*</span></label>
+                                    <label>Max Leave Balance<br />
+                                        अधिकतम अवकाश शेष<span style="color: red">*</span></label>
                                     <input type="text" class="form-control" autocomplete="off" placeholder="Enter Leave Balance" />
                                 </div>
                             </div>
-                               </div>
-                            <hr />
-                           <div class="row align-items-end">
+                        </div>
+                        <hr />
+                        <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <button type="button" class=" Alert-Save btn btn-outline-success btn-border w-lg">Save</button>
@@ -172,34 +182,43 @@
                     <fieldset id="show">
                         <legend>Leave Allocation Details</legend>
                         <div class="row justify-content-end">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-    </div>
+                            <div class="col-md-4 text-end">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
-                                            <th>Sr.No./<br />सरल क्र.</th>
-                                            <th>Year/<br />वर्ष</th>
-                                            <th>Leave Type/<br />लीव का प्रकार</th>
-                                            <th>Class/<br />कक्षा</th>
-                                            <th>Type Of Post/<br />पोस्ट का प्रकार</th>
-                                            <th>Period/<br />अवधि</th>
-                                            <th>Leave Days Period Wise/<br />अवधि के अनुसार छुट्टी के दिन</th>
-                                            <th>Total Leave Days Year Wise/<br />वर्षवार कुल छुट्टी के दिन</th>
-                                            <th>Leave Carry Forward/<br />छुट्टी आगे बढ़ाएँ</th>
-                                            <th>Max Leave Balance/<br />
-अधिकतम अवकाश शेष</th>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
+                                            <th>Year<br />
+                                                वर्ष</th>
+                                            <th>Leave Type<br />
+                                                लीव का प्रकार</th>
+                                            <th>Class<br />
+                                                कक्षा</th>
+                                            <th>Type Of Post<br />
+                                                पोस्ट का प्रकार</th>
+                                            <th>Period<br />
+                                                अवधि</th>
+                                            <th>Leave Days Period Wise<br />
+                                                अवधि के अनुसार छुट्टी के दिन</th>
+                                            <th>Total Leave Days Year Wise<br />
+                                                वर्षवार कुल छुट्टी के दिन</th>
+                                            <th>Leave Carry Forward<br />
+                                                छुट्टी आगे बढ़ाएँ</th>
+                                            <th>Max Leave Balance<br />
+                                                अधिकतम अवकाश शेष</th>
                                             <th>Action</th>
                                         </tr>
                                         <tr>
