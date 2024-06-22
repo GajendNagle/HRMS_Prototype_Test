@@ -20,7 +20,7 @@
                         <li class="breadcrumb-item">
                             <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>View class-wise overall scholarship schemes</span></li>
+                        <li class="breadcrumb-item"><span>Scholarship Benefit Sanction Management</span></li>
                     </ol>
                 </div>
             </div>
