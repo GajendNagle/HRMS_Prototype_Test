@@ -7,7 +7,7 @@
         /* #upcoming-event-list .card {
         margin: unset 1.5rem inherit inherit;
     }*/
-        #DvcircularOrdersList .card,#upcoming-event-list .card  {
+        #DvcircularOrdersList .card, #upcoming-event-list .card {
             border-radius: 14px;
         }
 
@@ -80,13 +80,13 @@
         .crm-widget .card-header-border {
             border-top: 0.5rem solid #321e46;
             border-radius: 30px 30px 0 0 !important;
-            height: 25px;
+            height: 30px;
         }
 
         .card-footer-border {
             border-bottom: 0.5rem solid #321e46;
             border-radius: 0 0 30px 30px !important;
-            height: 25px;
+            height: 30px;
         }
 
         .card-header > * {
@@ -168,12 +168,15 @@
 */
 
         .crm-widget .text-muted {
+            margin-bottom: 0rem;
             font-weight: bold;
             opacity: 1 !important;
             color: var(--vz-primary) !important;
         }
 
         .crm-widget .card-body {
+            margin: -.3rem 0 -1rem 0;
+            padding: 0 .5rem;
             height: 100%;
             display: flex;
             flex-flow: column;
@@ -2142,7 +2145,7 @@
                                     <p class=" mb-0  fw-bold">Total Retirements (No's)</p>
                                 </div>
                             </div>
-                          
+
                         </div>
                     </div>
                     <!-- end card header -->
@@ -2335,7 +2338,7 @@
                             </div>
                         </div>
                     </div>
-                     
+
 
 
 
@@ -2576,15 +2579,15 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-     <script type="text/javascript">
-         // script For  Auto Scroll in  Circular Orders list 
-         function ticker1() {
-             $('#DvcircularOrdersList div:first').slideUp(function () {
-                 $(this).appendTo($('#DvcircularOrdersList')).slideDown();
-             });
-         }
-         setInterval(function () { ticker1(); }, 2000);
-     </script>
+    <script type="text/javascript">
+        // script For  Auto Scroll in  Circular Orders list 
+        function ticker1() {
+            $('#DvcircularOrdersList div:first').slideUp(function () {
+                $(this).appendTo($('#DvcircularOrdersList')).slideDown();
+            });
+        }
+        setInterval(function () { ticker1(); }, 2000);
+    </script>
     <script>
 
         Highcharts.chart('Chart_Scheme', {

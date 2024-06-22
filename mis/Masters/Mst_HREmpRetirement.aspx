@@ -15,7 +15,7 @@
                         <li class="breadcrumb-item">
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Retirement/Separation</li>
+                        <li class="breadcrumb-item">Retirement or Separation</li>
                     </ol>
                 </div>
             </div>
@@ -26,32 +26,24 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">Retirement / Separation<br />
-                                सेवानिवृत्त / विभाजन</h4>
+                        <div class="col-12">
+                            <h4 class="card-title">Retirement or Separation /
+                                सेवानिवृत्त या विभाजन</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Retirement/Separation
-                            <br />
-                            विभाजन/सेवानिवृत्त</legend>
+                        <legend>Retirement or Separation /
+                                सेवानिवृत्त या विभाजन</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Office Type /
-                                        <br />
-                                        कार्यालय का प्रकार<span style="color: red;"> *</span></label>
+                                        Office Type 
+                                        <br />कार्यालय का प्रकार <span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="0">--Select--</option>
-                                        <%--<option value="1">Head Office</option>
-                                        <option value="3">Bhopal- Circle Office</option>
-                                        <option value="4">Hoshangabad- Circle Office</option>
-                                        <option value="5">Betul- Circle Office</option>
-                                        <option value="6">Chhindwara- Circle Office</option>
-                                        <option value="7">seoni- Circle Office</option>--%>
                                         <option value="7">Principal Secretary</option>
                                         <option value="7">Secretary</option>
                                         <option value="7">Deputy Secretary</option>
@@ -71,9 +63,9 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Name /
-                                        <br />
-                                        कर्मचारी का नाम<span style="color: red">*</span></label>
+                                        Employee Name <br />
+                                      
+                                        कर्मचारी का नाम <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Mr Ram Gopal Sharma">Mr Ram Gopal Sharma</option>
@@ -87,8 +79,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Separation Type /<br />
-                                        विभाजन प्रकार<span style="color: red">*</span></label>
+                                        Separation Type <br />
+                                        विभाजन प्रकार <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="Death">Death</option>
@@ -102,8 +94,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Separation / Retired on /<br />
-                                        विभाजन / सेवानिवृत्त<span style="color: red">*</span></label>
+                                        Separation or Retired Date <br />
+                                        विभाजन या सेवानिवृत्त दिनांक <span style="color: red">*</span></label>
                                     <input id="date" type="date" class="form-control" />
                                 </div>
 
@@ -113,7 +105,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Order No. /<br />
+                                        Order No. <br />
                                         ऑर्डर संख्या<span style="color: red">*</span></label>
                                     <input id="TxtOrderno" class="form-control" placeholder="Enter Order No." />
                                 </div>
@@ -121,7 +113,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Order Date /<br />
+                                        Order Date <br />
                                         ऑर्डर दिनांक <span style="color: red">*</span></label>
                                     <input id="Orderdate" type="date" class="form-control" />
                                 </div>
@@ -129,15 +121,15 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Upload Supporting Document/<br />
-                                        सहायक दस्तावेज़ अपलोड करें<span style="color: red">*</span></label>
+                                        Upload Supporting Document <br />
+                                        सहायक दस्तावेज़ अपलोड करें <span style="color: red">*</span></label>
                                     <input id="UploadDocument" type="file" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Remark /<br />
+                                        Remark <br />
                                         टिप्पणी</label>
                                     <textarea id="txtArea" class="form-control" rows="1" placeholder="Enter  Remark"></textarea>
                                 </div>

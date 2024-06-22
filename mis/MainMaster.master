@@ -1311,7 +1311,55 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Details.aspx"><i class="ri-file-list-3-line"></i>Scheme Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/ListOfStudentRegisteredInSambal.aspx"><i class="ri-file-list-3-line"></i>Sambal Scheme</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SchemeCriteriasByClass.aspx"><i class="ri-file-list-3-line"></i>Scholarship Benefit Sanction Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Scheme/GanaveshDBTReportBlockWise.aspx"><i class="ri-file-list-3-line"></i>Uniform Distribution Management</a></li>
+
+                                        <%--<li class="nav-item"><a class="nav-link" href="/mis/Scheme/GanaveshDBTReportBlockWise.aspx"><i class="ri-file-list-3-line"></i>Uniform Distribution Management</a></li>--%>
+                                        <li class="nav-item">
+                                            <a class="nav-link menu-link" href="#GBTReports" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="GBTReports">
+                                                <i class="ri-menu-line"></i>Uniform Distribution Management GBT Reports
+                                            </a>
+                                            <div class="collapse menu-dropdown " id="GBTReports">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <!-- DBT Reports -->
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Scheme/GanaveshDBTReportDistrictWise.aspx">
+                                                            <i class="ri-file-list-3-line"></i>District Wise Uniform Distribution Report</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Scheme/GanaveshDBTReportBlockWise.aspx">
+                                                            <i class="ri-file-list-3-line"></i>Block wise Uniform Distribution Report</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Scheme/GanaveshDBTReportSchoolWise.aspx">
+                                                            <i class="ri-file-list-3-line"></i>School wise Uniform Distribution Report</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link menu-link" href="#SHGReports" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="SHGReports">
+                                                <i class="ri-menu-line"></i>Uniform Distribution Management SHG Reports
+                                            </a>
+                                            <div class="collapse menu-dropdown " id="SHGReports">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <!-- SHG Reports -->
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Scheme/GanaveshSHGReportDistrictWise.aspx">
+                                                            <i class="ri-file-list-3-line"></i>District wise Uniform Demand and Distribution Progress</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Scheme/GanaveshSHGReportBlockWise.aspx">
+                                                            <i class="ri-file-list-3-line"></i>Block wise Uniform Demand and Distribution Progress</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Scheme/GanaveshSHGReportSchoolWise.aspx">
+                                                            <i class="ri-file-list-3-line"></i>School wise Uniform Demand and Distribution Progress
+</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Text Book Management</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/CheckEligibilityForLaptopScheme.aspx"><i class="ri-file-list-3-line"></i>Laptop Scheme</a></li>
                                         <li class="nav-item">
