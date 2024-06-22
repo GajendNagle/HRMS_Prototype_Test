@@ -7,6 +7,9 @@
             position: relative !important;
             height: 150px !important;
         }
+        .profile-wid-bg::before{
+            background-image:url(../assets/images/svg/CardHeader.svg)!important;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
