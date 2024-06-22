@@ -54,7 +54,7 @@
                             <a href="#LeaveReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Leave Report</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Leave History</span></li>
+                        <li class="breadcrumb-item"><span>Leave History </span></li>
                     </ol>
                 </div>
             </div>
