@@ -1,40 +1,38 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DemandDetails.aspx.cs" Inherits="mis_Finance_DemandDetails" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="BudgetUtilizationReport.aspx.cs" Inherits="mis_Finance_BudgetUtilizationReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
-     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+       <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                            <span>Home</span>
-                        </li>
-                       <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="Group_Master.aspx" title="click to go on"> Demand Details</a></li>
-                    </ol>
-                </div>
+    <div class="row page-titles mb-4">
+        <div class="col-md-5 align-self-center">
+            <h4 class="text-themecolor"></h4>
+        </div>
+        <div class="col-md-7 align-self-center text-end">
+            <div class="d-flex justify-content-end align-items-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
+                    <li class="breadcrumb-item active"><a href="PaymentVoucher.aspx" title="click to go on">Budget Utilization Report</a></li>
+                </ol>
             </div>
         </div>
     </div>
-     <div class="content-wrapper">
+    <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Demand Details /
-                                मांग राशि विवरण</h4>
+                            <h4 class="card-title">Budget Utilization Report /
+                                बजट उपयोगिता रिपोर्ट</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                     <fieldset>
-                        <legend>Demand Details /
-                                मांग राशि विवरण</legend>
+     <fieldset>
+                        <legend>Budget Utilization Report /
+                                बजट उपयोगिता रिपोर्ट</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -48,7 +46,7 @@
                                 <div class="form-group">
                                     <label>
                                     Select Month /
-                                        माह का चयन करें<span style="color: red;"> *</span></label>
+                                        महीना का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                          <option value="6">June </option>
                                         <option value="1">January </option>
@@ -82,7 +80,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
+                                         ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -100,7 +98,7 @@
                         <div class="form-group">
                             <label>
                                 Select Office Name/<br />
-                                कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -116,27 +114,27 @@
                             <div class="col-md-12 justify-content-center">
                             <div class="form-group text-center">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                <a id="clearfirst" href="BudgetDemandRequest.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                <a id="clearfirst" href="BudgetUtilizationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
                         </div>
 
                         </div>
                     </fieldset>
-                        <fieldset id="FS_Details" style="display: none">
-                        <legend>Demand Details /
-                                मांग विवरण </legend>
-                        <div class="row justify-content-end">
-                            <div class="col-md-4 text-end">
+                      <fieldset id="FS_Details" style="display: none">
+                        <legend>Budget Utilization Report /
+                                बजट उपयोगिता रिपोर्ट</legend>
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                    <button class="btn btn-outline-secondary btn-sm btn-rounded w-55" onclick="openPDF()">Print</button>
+                                    <button class="btn btn-outline-success btn-sm btn-rounded w-55" onclick="exportFile()">Export</button>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-                            </div>
+                        </div>
+                          <div class="row justify-content-center">
+                            <h5>Budget Utilization Report(April -24-25)<br />
+                                [Head Office]
+                            </h5>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
@@ -153,17 +151,17 @@
                                                     बहीखाता कोड
                                                 <th>Ledger Name /<br />
                                                     बहीखाता नाम</th>
-                                                <th>Date /
+                                                <th>Allocation /
                                             <br />
-                                                    दिनांक 
+                                                    आवंटन 
                                                 </th>
-                                                <th>Date Wise Total /
+                                                <th>Utilization /
                                             <br />
-                                                    दिनांकवार राशि
+                                                    उपयोगीकरण
                                                 </th>
-                                                <th>Status/
+                                                <th>% of Utilization/
                                             <br />
-                                                    स्थिति
+                                                    % उपयोगीकरण
                                                 </th>
                                             </tr>
                                         </thead>
@@ -178,51 +176,51 @@
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>12-2-2023</a>
+                                                    <a>58745783.00</a>
                                                 </td>
                                                  <td align="center" valign="middle">
-                                                    <a>543000.00</a>
+                                                    <a>9913187.50</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>Pending</a>
+                                                    <a>16.87%</a>
                                                 </td>
                                             </tr>
                                           <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <span>10.02.01</span>
+                                                    <span>10.01.02</span>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Medical Expense Reimbursement</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>04-04-2023</a>
-                                                </td>
-                                                 <td align="center" valign="middle">
-                                                    <a>100054.00</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>Approve</a>
-                                                </td>
-                                            </tr>
-                                        <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>3</span>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <span>10.03.01</span>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>Stationery, Font Copy, Bidding</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>01-05-2023</a>
+                                                    <a>12985757.00</a>
                                                 </td>
                                                  <td align="center" valign="middle">
                                                     <a>0.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>Approve</a>
+                                                    <a>0.00%</a>
+                                                </td>
+                                            </tr>
+                                             <tr role="row" class="odd">
+                                                <td align="center" valign="middle"><span>3</span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <span>10.01.03</span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>Stationery, Font Copy, Bidding</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>12985757.00</a>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <a>0.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>0.00%</a>
                                                 </td>
                                             </tr>
                                             <!-- Add more rows as needed -->
@@ -233,14 +231,16 @@
                             </div>
                         </div>
                     </fieldset>
+
+
                 </div>
-            </div>
-        </div>
-    </div>
+                 </div>
+             </div>
+         </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+       <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
         $('.datepickerYear').datepicker({
@@ -252,7 +252,7 @@
             if (/^\d+$/.test(inputYear)) {
                 var selectedYear = parseInt(inputYear);
                 var nextYear = selectedYear + 1;
-                var financialYear = selectedYear + '-' + (nextYear % 100); // Example: 2023-24 for financial year 2023-2024
+                var financialYear = selectedYear + '-' + (nextYear); // Example: 2023-24 for financial year 2023-2024
                 $(".datepickerYear").val(financialYear);
             }
             else if (inputYear === '') { // If input is empty

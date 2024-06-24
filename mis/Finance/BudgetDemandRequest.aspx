@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h4 class="card-title">Budget Demand Request /
-                                बजट मांग अनुरोध</h4>
+                                बजट मांग राशि अनुरोध</h4>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Name/
+                                        Select Head (Ledger)Name/
    <br />
                                         हेड नाम चुनें<span style="color: red;"> *</span>
                                     </label>

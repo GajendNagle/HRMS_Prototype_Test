@@ -23,30 +23,26 @@
                 <legend>Payment Voucher /भुगतान वाउचर</legend>
 
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <label>
+                            <label style="color: blue;">
                                 (Previous Voucher No : H024-25VR442)/<br />
                                 (पिछला वाउचर नंबर: H024-25VR442)</label>
-                            <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+                            <textarea rows="4" cols="90" name="comment" form="usrform"></textarea>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
+                <div class="row align-items-end justify-content-between">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label>
                                 Voucher/Bill No./<br />
                                 वाउचर/बिल नंबर
-                           
                             </label>
-                            <input type="text" class="form-control form-control-inline" value="H024-25VR442" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-
-                            <input type="text" class="form-control form-control-inline" placeholder="443" />
+                            <div class="form-group  input-group">
+                                <input type="text" class="form-control " value="H024-25VR442" />
+                                <input type="text" class="form-control " value="308" />
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -196,7 +192,7 @@
                         <label>
                             Narration /<br />
                             वर्णन</label>
-                        <textarea name="comments" id="comments" style="font-family: sans-serif; font-size: 1.2em;">
+                        <textarea name="comments" id="comments" rows="5" cols="120" style="font-family: sans-serif; font-size: 1.2em;">
 </textarea>
                     </div>
                 </div>
@@ -209,10 +205,11 @@
                             <input type="file" id="fileInput" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <label>
-                            Maximum Allowed File Size(2MB) /<br />
-                            दस्तावेज़ अपलोड करें</label>
+                    <div class="col-md-6 mt-5">
+                        <label style="color: blue;">
+                            भुगतान से संबंधित इनवॉइस या अन्य दस्तावेज पीडीएफ(PDF) फॉर्मेट में यहाँ अपलोड किया जा सकता है|<br />
+                            Maximum Allowed File Size(2MB) 
+                        </label>
                     </div>
                 </div>
                 <!-- Add more rows as needed -->
@@ -221,7 +218,7 @@
                     <div class="col-md-12">
                         <div class="form-group text-center">
                             <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Accept</button>
-                            <a href="BudgetDemandRequest.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            <a href="PaymentVoucher.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
