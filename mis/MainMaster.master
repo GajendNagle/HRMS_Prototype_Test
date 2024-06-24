@@ -1302,7 +1302,7 @@
                                 </a>
                                 <div class="collapse menu-dropdown " id="SchemeManagement">
                                     <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#"><i class="ri-grid-line"></i>Dashboard</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Department.aspx"><i class="ri-file-list-3-line"></i>Scheme  Department Master </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SchemeApplication.aspx"><i class="ri-file-list-3-line"></i>Scheme Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/StudentProfileLocking.aspx"><i class="ri-file-list-3-line"></i>Student Profile View/ Edit/ Lock</a></li>
@@ -1355,7 +1355,7 @@
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Scheme/GanaveshSHGReportSchoolWise.aspx">
                                                             <i class="ri-file-list-3-line"></i>School wise Uniform Demand and Distribution Progress
-</a>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1387,6 +1387,8 @@
                                             </div>
                                         </li>
                                         <%--Student Profile Management--%>
+
+
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#CycleDistribution" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="CycleDistribution">
@@ -1394,8 +1396,17 @@
                                             </a>
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="CycleDistribution">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/9thClassCycleSelectionStudent.aspx"><i class="ri-file-list-3-line"></i>9th Class Students Selected for Cycle Distribution </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/6thClassCycleSelectionStudent.aspx"><i class="ri-file-list-3-line"></i>6th Class Students Selected for Cycle Distribution </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/MerchantRegistration.aspx"><i class="ri-file-list-3-line"></i>Register Merchant</a></li>
+
+                                                    <%-- CYCLE 9TH--%>
+
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/9thClassAllStudent.aspx"><i class="ri-file-list-3-line"></i>All Students in 9th Class</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/9thClassCycleSelectionStudent.aspx"><i class="ri-file-list-3-line"></i>9th Class Students Selected for Cycle Distribution</a></li>
+                                                    <%--   CYCLE 6TH--%>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/6thClassAllStudent.aspx"><i class="ri-file-list-3-line"></i>All Students in 6th Class</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/6thClassCycleSelectionStudent.aspx"><i class="ri-file-list-3-line"></i>6th Class Students Selected for Cycle Distribution</a></li>
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/Scheme/9thClassCycleSelectionStudent.aspx"><i class="ri-file-list-3-line"></i>9th Class Students Selected for Cycle Distribution </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/6thClassCycleSelectionStudent.aspx"><i class="ri-file-list-3-line"></i>6th Class Students Selected for Cycle Distribution </a></li>--%>
                                                 </ul>
                                             </div>
                                         </li>
