@@ -22,25 +22,13 @@
         .top-heading {
             position: relative;
             display: flex;
-            /* background-color: var(--vz-primary); */
             background-image: url(../assets/images/svg/CardHeader.svg);
             justify-content: center;
             border-radius: 120px;
             box-shadow: inset 0px 0px 12px 6px rgb(168 168 201 / 44%);
             padding: 8px 16px;
-            margin : 2.0rem ;
+            margin: 2.0rem;
         }
-
-        /*position: relative;
-        display: flex;*/
-        /*background-color: var(--vz-primary);*/
-        /*background-image: url(../assets/images/svg/CardHeader.svg);
-        justify-content: center;
-        border-radius: 120px;
-        box-shadow: 8px 0px 12px 7px rgba(100, 100, 111, 0.2);
-        padding: 8px 16px;
-        margin: 1.5rem 0;
-        }*/
 
         .nav-tabs-custom.card-header-tabs {
             margin-top: -0.6em;
@@ -83,7 +71,6 @@
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-4 col-lg-4">
             <div class="card mt-n5">
@@ -91,14 +78,6 @@
                     <div class="text-center">
                         <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
                             <img src="../assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xl img-thumbnail user-profile-image material-shadow" alt="user-profile-image" />
-                            <%--<div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                                <input id="profile-img-file-input" type="file" class="profile-img-file-input" />--%>
-                            <%--<label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
-                                    <%--<span class="avatar-title rounded-circle bg-light text-body material-shadow">
-                                                        <i class="ri-camera-fill"></i>
-                                                    </span>
-                                </label>
-                            </div>--%>
                         </div>
                         <h5 class="fs-16 mb-1">Rajesh Rajput</h5>
                         <p class="text-muted mb-0"><b>Employee Code - EF-0225</b></p>
@@ -188,8 +167,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                         <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-6">
@@ -240,7 +217,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -269,8 +245,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                         <div class="col-md-6">
                                             <div class="row">
                                                 <div class="col-6">
