@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -141,7 +141,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation Type /<br />
+                                        Designation Type <br />
                                         पदनाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="----">--Select--</option>
@@ -156,7 +156,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District /<br />
+                                        District <br />
                                         ज़िला<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -217,7 +217,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Block /<br />
+                                        Block <br />
                                         ब्लॉक</label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -230,7 +230,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Unique-Id /
+                                        Employee Unique-Id 
                                 <br />
                                         कर्मचारी यूनिक आईडी</label>
                                     <input class="form-control" placeholder="Enter Employee Unique-Id " />
@@ -240,7 +240,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">Search</button>
-                                    <a class="btn btn-outline-danger btn-border w-lg" href="HeadOfficeTransferApproval.aspx">Clear</a>
+                                    <a class="btn btn-outline-danger btn-border w-lg" href="HeadOfficFinalVoluntaryTransferApprove.aspx">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -268,20 +268,20 @@
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered">
                                         <tr class="card-header">
-                                            <th>Sr.No. /<br />
+                                            <th>Sr.No. <br />
                                                 सरल क्र.</th>
-                                            <th>Get DSC /<br />
+                                            <th>Get DSC <br />
                                                 डी. एस. सी. प्राप्त करें
                                             </th>
-                                            <th>Application No. /<br />
+                                            <th>Application No. <br />
                                                 आवेदन संख्या</th>
-                                            <th>Employee Name /<br />
+                                            <th>Employee Name <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Unique Id /<br />
+                                            <th>Unique Id <br />
                                                 यूनीक आई डी</th>
-                                            <th>Current DDO/Shankul /<br />
+                                            <th>Current DDO/Shankul <br />
                                                 वर्तमान डीडीओ/शंकुल</th>
-                                            <th>New DDO/Shankul /<br />
+                                            <th>New DDO/Shankul <br />
                                                 नया डीडीओ/शंकुल</th>
                                         </tr>
                                         <tr>

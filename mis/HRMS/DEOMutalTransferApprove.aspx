@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -110,7 +110,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Unique-Id /
+                                        Employee Unique-Id 
                                 <br />
                                         कर्मचारी यूनिक आईडी</label>
                                     <input class="form-control" placeholder="Enter Employee Unique-Id " />
@@ -147,26 +147,26 @@
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered">
                                         <tr class="card-header">
-                                            <th>Date /<br />
+                                            <th>Date <br />
                                                 दिनांक</th>
                                             <th>Unique
                                         <br />
                                                 युनिक आई.डी.</th>
-                                            <th>Name And Designation /
+                                            <th>Name And Designation 
                                         <br />
                                                 नाम एवं पद</th>
-                                            <th>Subject /<br />
+                                            <th>Subject <br />
                                                 विषय</th>
-                                            <th>Working Institute And UDISE Code /<br />
+                                            <th>Working Institute And UDISE Code <br />
                                                 कार्यरत संस्था एवं डाइस कोड</th>
-                                            <th>Working District /<br />
+                                            <th>Working District <br />
                                                 कार्यरत जिला</th>
-                                            <th>New Organization And UDICE Code /<br />
+                                            <th>New Organization And UDICE Code <br />
                                                 नवीन संस्था एवं डाइम कोड</th>
-                                            <th>District Of New Posting /
+                                            <th>District Of New Posting 
                                         <br />
                                                 नवीन पदस्थापना का जिला</th>
-                                            <th>Application /<br />
+                                            <th>Application <br />
                                                 आवेदन </th>
                                         </tr>
                                         <tr>

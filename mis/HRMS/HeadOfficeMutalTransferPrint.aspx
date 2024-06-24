@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -184,7 +184,7 @@ Voluntary Transfer Approval</b></a>
                                     <table class="table text-center table-bordered">
                                         <tr class="card-header">
 
-                                            <th>Date /<br />
+                                            <th>Date <br />
                                                 दिनांक</th>
                                             <th>Unique ID /
                                        <br />
@@ -192,18 +192,18 @@ Voluntary Transfer Approval</b></a>
                                             <th>Name And Designation /
                                        <br />
                                                 नाम एवं पद</th>
-                                            <th>Subject /<br />
+                                            <th>Subject <br />
                                                 विषय</th>
-                                            <th>Working Institute And UDISE Code /<br />
+                                            <th>Working Institute And UDISE Code <br />
                                                 कार्यरत संस्था एवं डाइस कोड</th>
-                                            <th>Working District /<br />
+                                            <th>Working District <br />
                                                 कार्यरत जिला</th>
-                                            <th>New Organization And UDICE Code /<br />
+                                            <th>New Organization And UDICE Code <br />
                                                 नवीन संस्था एवं डाइम कोड</th>
                                             <th>District Of New Posting /
                                        <br />
                                                 नवीन पदस्थापना का जिला</th>
-                                            <th>Order Print /<br />
+                                            <th>Order Print <br />
                                                 आदेश प्रिंट   </th>
                                         </tr>
                                         <tr>
