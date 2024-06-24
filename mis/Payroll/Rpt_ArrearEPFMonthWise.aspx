@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_ArrearEPFMonthWise.aspx.cs" Inherits="mis_Payroll_Rpt_ArrearEPFMonthWise" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_ArrearEPFMonthWise.aspx.cs" Inherits="mis_Payroll_Rpt_ArrearEPFMonthWise" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
@@ -10,7 +10,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Monthly Arrear EPF Report</h4>
         </div>
@@ -28,16 +28,51 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Monthly Arrear EPF Report</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Monthly Arrear EPF Report/
+
+मासिक बकाया ईपीएफ रिपोर्ट</h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Monthly Arrear EPF Report</legend>
+                <legend>Monthly Arrear EPF Report/मासिक बकाया ईपीएफ रिपोर्ट</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>Office Name<br />
+                                कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                         	 <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -58,7 +93,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />
+                                वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -71,7 +107,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />
+                                माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -91,7 +128,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />
+                                पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Regular/Permanent">Regular/Permanent</option>
@@ -110,7 +148,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Arrear Type<span style="color: red">*</span></label>
+                            <label>Arrear Type<br />
+                                बकाया प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">DA Arrear</option>
@@ -120,17 +159,25 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <%--<div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class=" btn btn-success btn-rounded">Search</button>
                             <a href="Rpt_ArrearEPFMonthWise.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                            <a href="Rpt_ArrearEPFMonthWise.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Report:</legend>
+                    <legend>Report/
+रिपोर्ट:</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -149,19 +196,31 @@
                             <div class="table-responsive">
                                 <table class="table">
 
-                                    <tr>
-                                        <th>S.No.</th>
-                                        <th>UAN</th>
-                                        <th>EPF No.</th>
-                                        <th>Branch</th>
-                                        <th>Member Name</th>
-                                        <th>Arrear EPF Wages</th>
-                                        <th>Arrear EPS Wages</th>
-                                        <th>Arrear EDLI Wages</th>
-                                        <th>Arrear EPF EE Share</th>
-                                        <th>Arrear EPF ER Share</th>
-                                        <th>Arrear EPS Share</th>
+                                    <tr style="white-space:nowrap;">
+                                        <th>S.No.<br />
+                                            क्रमांक</th>
+                                        <th>UAN<br />
+                                            यूएएन</th>
+                                        <th>EPF No.<br />
+                                            ई.पी.एफ नंबर</th>
+                                        <th>Branch<br />
+                                            शाखा</th>
+                                        <th>Member Name<br />
+                                            सदस्य का नाम</th>
+                                        <th>Arrear EPF Wages<br />
+                                            अतिरिक्त ईपीएफ वेतन</th>
+                                        <th>Arrear EPS Wages<br />
+                                            अतिरिक्त ईपीएस वेतन</th>
+                                        <th>Arrear EDLI Wages<br />
+                                            अतिरिक्त ईडीएलआई वेतन</th>
+                                        <th>Arrear EPF EE Share<br />
+                                            अतिरिक्त ईपीएफ ईई हिस्सा</th>
+                                        <th>Arrear EPF ER Share<br />
+                                            अतिरिक्त ईपीएफ ईआर हिस्सा</th>
+                                        <th>Arrear EPS Share<br />
+                                            अतिरिक्त ईपीएस हिस्सा</th>
                                     </tr>
+
                                     <tr>
                                         <td>1</td>
                                         <td>100111789081</td>
@@ -176,7 +235,7 @@
                                         <td>0</td>
                                     </tr>
                                     <tr>
-                                     <td>2</td>
+                                        <td>2</td>
                                         <td>100111659586</td>
                                         <td>000555830000010321</td>
                                         <td>Head Office</td>
@@ -217,7 +276,7 @@
                                     <li>User will be able to select the  <strong>Office Name</strong> from the dropdown which will automatically reflect from Office Master.</li>
                                 </ul>
                             </li>
-                              <li><strong>Year (Dropdown)</strong>
+                            <li><strong>Year (Dropdown)</strong>
                                 <ul>
                                     <li>User will be able to select <strong>Year </strong>from dropdown. Year populated from <strong>Year Master</strong>. </li>
                                 </ul>

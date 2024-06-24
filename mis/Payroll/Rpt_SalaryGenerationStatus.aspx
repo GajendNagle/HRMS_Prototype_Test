@@ -18,7 +18,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--    <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Salary Genration Status</h4>
         </div>
@@ -36,13 +36,49 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Salary Genration Status</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Salary Genration Status/
+
+वेतन सृजन स्थिति</h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Salary Status</legend>
+                <legend>Salary Status/
+वेतन स्थिति</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />
+                                वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -56,7 +92,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />
+                                माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -74,7 +111,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1 mt-2">
+                    <%--<div class="col-md-1 mt-2">
                         <br />
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn btn-success  btn-rounded">Search</button>
@@ -85,12 +122,20 @@
                         <div class="form-group">
                             <a href="Rpt_SalaryGenerationStatus.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                            <a href="Rpt_SalaryGenerationStatus.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+                        </div>
                     </div>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Salary Status (Report)</legend>
+                    <legend>Salary Status (Report)/
+वेतन स्थिति(रिपोर्ट)</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -109,12 +154,18 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>SNo.</th>
-                                    <th>Office Name</th>
-                                    <th>Total Employee in Office</th>
-                                    <th>Generated Salary (For Total Employee)</th>
-                                    <th>Salary Genrated Status</th>
+                                    <th>S.No.<br />
+                                        क्रमांक</th>
+                                    <th>Office Name<br />
+                                        कार्यालय का नाम</th>
+                                    <th>Total Employee in Office<br />
+                                        कार्यालय में कुल कर्मचारी</th>
+                                    <th>Generated Salary (For Total Employee)<br />
+                                        कुल कर्मचारी के लिए उत्पन्न वेतन</th>
+                                    <th>Salary Generated Status<br />
+                                        वेतन उत्पन्न स्थिति</th>
                                 </tr>
+
                                 <tr>
                                     <td>1</td>
                                     <td>DPI Office</td>
