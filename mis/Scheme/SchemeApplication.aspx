@@ -382,7 +382,7 @@
                                             <br />
                                             योजना स्वामित्व विभाग<span style="color: red">*</span></label>
                                         <select id="dates-field2" class="multiselect-ui " multiple="multiple">
-                                            <option value="School Educstion Department">School Educstion Department</option>
+                                            <option value="School Educstion Department">School Education Department</option>
                                             <option value="Scheduled Cast Welfare Department">Scheduled Cast Welfare Department</option>
                                             <option value="Tribal Affairs Department">Tribal Affairs Department</option>
                                             <option value="GOVT BEEJ NIGAM">GOVT BEEJ NIGAM</option>
