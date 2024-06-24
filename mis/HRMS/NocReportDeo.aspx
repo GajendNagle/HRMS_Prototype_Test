@@ -90,173 +90,174 @@
             </div>
         </div>
         <div class="card-body">
-                <div>
-                    <fieldset>
-                        <legend>NOC Report / एन.ओ.सी. रिपोर्ट</legend>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>District Name
+            <div>
+                <fieldset>
+                    <legend>NOC Report / एन.ओ.सी. रिपोर्ट</legend>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    District Name
                                         <br />
-                                        जिला का नाम <span style="color: red">*</span></label>
-                                    <asp:DropDownList runat="server" CssClass="form-control" Enabled="false" ID="ddlDistrict">
-                                        <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
-                                        <asp:ListItem Value="32" Selected="True">Bhopal</asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row ">
-                                <div class="col-md-12">
-                                    <button type="button" class=" fw-bold btn w-lg btn-outline-success btn-border">Search</button>
-                                    <a href="NocReportDeo.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
-                                </div>
+                                    जिला का नाम <span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" CssClass="form-control" Enabled="false" ID="ddlDistrict">
+                                    <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
+                                    <asp:ListItem Value="32" Selected="True">Bhopal</asp:ListItem>
+                                </asp:DropDownList>
                             </div>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Details / विवरण</legend>
-                        <div class="row justify-content-end">
-                            <div class="col-md-3 text-end">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded ">Excel</button>
-                                    <button class="btn btn-info btn-rounded ">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
+                        <hr />
+                        <div class="row ">
                             <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
-                                            <thead>
-
-                                                <tr>
-                                                    <th scope="col">Sr. No.<br>
-                                                        सरल क्र.</th>
-                                                    <th scope="col">Deceased Employee / Officer<br>
-                                                        दिवंगत कर्मचारी / अधिकरी </th>
-                                                    <th scope="col">Designation<br>
-                                                        पद</th>
-                                                    <th scope="col">Death Date<br>
-                                                        मृत्यु दिनांक</th>
-                                                    <th scope="col">Applicant Name<br>
-                                                        आवेदक का नाम</th>
-                                                    <th scope="col">Gender<br>
-                                                        लिंग</th>
-                                                    <th scope="col">Applicant D.O.B.<br>
-                                                        आवेदक की जन्म तिथि </th>
-                                                    <th scope="col">Mobile Number<br>
-                                                        मोबाईल  नंबर</th>
-                                                    <th scope="col">Applicant's Relation with Deceased Teacher<br>
-                                                        आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                                    <th scope="col">Applicant's Marital Status<br>
-                                                        आवेदक की वैवाहिक स्थिति</th>
-                                                    <th scope="col">Selected Option of Post for Appointment<br>
-                                                        नियुक्ति हेतु पद का चयनित विकल्प</th>
-                                                    <th scope="col">Educational Qualification of Applicant<br>
-                                                        आवेदक की शैक्षणिक योग्यता </th>
-                                                    <th scope="col">Status of Passing Primary Teacher Eligibility Test<br>
-                                                        for Primary Teacher<br>
-                                                        प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
-                                                    <th scope="col">Status<br>
-                                                        स्थिति</th>
-                                                    <th scope="col">Appointment Department Name<br>
-                                                        नियुक्ति विभाग का नाम</th>
-
-                                                    <th scope="col">NOC Document<br />
-                                                        एन.ओ.सी. दस्तावेज़</th>
-                                                    <th scope="col">Appointment Document<br />
-                                                        नियुक्ति दस्तावेज़</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Puran Singh Kushawah</td>
-                                                    <td>Asstt Teacher(LDT)</td>
-                                                    <td>28/12/2021</td>
-                                                    <td>BRAJESH KUSHVAH</td>
-                                                    <td>Male</td>
-                                                    <td>10/08/1997</td>
-                                                    <td>70477701125</td>
-                                                    <td>Son</td>
-                                                    <td>अविवाहित  </td>
-                                                    <td>शैक्षणिक संवर्ग </td>
-                                                    <td>12 PCM B SC COMPUTER SCIENCE</td>
-                                                    <td>नहीं </td>
-                                                    <td>Pending by collector</td>
-                                                    <td>Nil</td>
-                                                    <td>
-                                                        <button class="btn btn-success">View</button>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-success">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Satendra Bahadur Singh</td>
-                                                    <td>Madhyami8k Shaishak</td>
-                                                    <td>15/04/2022</td>
-                                                    <td>SHAKSHAM SHINGH </td>
-                                                    <td>Male</td>
-                                                    <td>12/12/1996</td>
-                                                    <td>70477701125</td>
-                                                    <td>Son</td>
-                                                    <td>अविवाहित  </td>
-                                                    <td>लिपिकीय संवर्ग  </td>
-                                                    <td>GRADUATE</td>
-                                                    <td>नहीं </td>
-                                                    <td>Pending by DEO</td>
-                                                    <td>Nil</td>
-                                                    <td>
-                                                        <button class="btn btn-success">View</button>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-success">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Achhe Lal patel </td>
-                                                    <td>Asstt Grade-2</td>
-                                                    <td>16/01/2023</td>
-                                                    <td>PRAMOD KUMAR PATEL</td>
-                                                    <td>Male</td>
-                                                    <td>02/10/2000</td>
-                                                    <td>70477701125</td>
-                                                    <td>Son</td>
-                                                    <td>अविवाहित  </td>
-                                                    <td>लिपिकीय संवर्ग  </td>
-                                                    <td>GRADUATE</td>
-                                                    <td>नहीं </td>
-                                                    <td>Got a job</td>
-                                                    <td>Health department</td>
-                                                    <td>
-                                                        <button class="btn btn-success">View</button>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-success">View</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-
-                                </div>
+                                <button type="button" class=" fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                                <a href="NocReportDeo.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
-
                         </div>
-                    </fieldset>
-                </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Details / विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-3 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded ">Excel</button>
+                                <button class="btn btn-info btn-rounded ">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover bg-white " id="GrdSchoolDetails" style="width: 100%; border-collapse: collapse;">
+                                        <thead>
+
+                                            <tr>
+                                                <th scope="col">Sr. No.<br>
+                                                    सरल क्र.</th>
+                                                <th scope="col">Deceased Employee / Officer<br>
+                                                    दिवंगत कर्मचारी / अधिकरी </th>
+                                                <th scope="col">Designation<br>
+                                                    पद</th>
+                                                <th scope="col">Death Date<br>
+                                                    मृत्यु दिनांक</th>
+                                                <th scope="col">Applicant Name<br>
+                                                    आवेदक का नाम</th>
+                                                <th scope="col">Gender<br>
+                                                    लिंग</th>
+                                                <th scope="col">Applicant D.O.B.<br>
+                                                    आवेदक की जन्म तिथि </th>
+                                                <th scope="col">Mobile Number<br>
+                                                    मोबाईल  नंबर</th>
+                                                <th scope="col">Applicant's Relation with Deceased Teacher<br>
+                                                    आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
+                                                <th scope="col">Applicant's Marital Status<br>
+                                                    आवेदक की वैवाहिक स्थिति</th>
+                                                <th scope="col">Selected Option of Post for Appointment<br>
+                                                    नियुक्ति हेतु पद का चयनित विकल्प</th>
+                                                <th scope="col">Educational Qualification of Applicant<br>
+                                                    आवेदक की शैक्षणिक योग्यता </th>
+                                                <th scope="col">Status of Passing Primary Teacher Eligibility Test<br>
+                                                    for Primary Teacher<br>
+                                                    प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता  परीछा उत्तीर्ण की स्थिति</th>
+                                                <th scope="col">Status<br>
+                                                    स्थिति</th>
+                                                <th scope="col">Appointment Department Name<br>
+                                                    नियुक्ति विभाग का नाम</th>
+
+                                                <th scope="col">NOC Document<br />
+                                                    एन.ओ.सी. दस्तावेज़</th>
+                                                <th scope="col">Appointment Document<br />
+                                                    नियुक्ति दस्तावेज़</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Puran Singh Kushawah</td>
+                                                <td>Asstt Teacher(LDT)</td>
+                                                <td>28/12/2021</td>
+                                                <td>BRAJESH KUSHVAH</td>
+                                                <td>Male</td>
+                                                <td>10/08/1997</td>
+                                                <td>70477701125</td>
+                                                <td>Son</td>
+                                                <td>अविवाहित  </td>
+                                                <td>शैक्षणिक संवर्ग </td>
+                                                <td>12 PCM B SC COMPUTER SCIENCE</td>
+                                                <td>नहीं </td>
+                                                <td>Pending by collector</td>
+                                                <td>Nil</td>
+                                                <td>
+                                                    <button class="btn btn-success">View</button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-success">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Satendra Bahadur Singh</td>
+                                                <td>Madhyami8k Shaishak</td>
+                                                <td>15/04/2022</td>
+                                                <td>SHAKSHAM SHINGH </td>
+                                                <td>Male</td>
+                                                <td>12/12/1996</td>
+                                                <td>70477701125</td>
+                                                <td>Son</td>
+                                                <td>अविवाहित  </td>
+                                                <td>लिपिकीय संवर्ग  </td>
+                                                <td>GRADUATE</td>
+                                                <td>नहीं </td>
+                                                <td>Pending by DEO</td>
+                                                <td>Nil</td>
+                                                <td>
+                                                    <button class="btn btn-success">View</button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-success">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Achhe Lal patel </td>
+                                                <td>Asstt Grade-2</td>
+                                                <td>16/01/2023</td>
+                                                <td>PRAMOD KUMAR PATEL</td>
+                                                <td>Male</td>
+                                                <td>02/10/2000</td>
+                                                <td>70477701125</td>
+                                                <td>Son</td>
+                                                <td>अविवाहित  </td>
+                                                <td>लिपिकीय संवर्ग  </td>
+                                                <td>GRADUATE</td>
+                                                <td>नहीं </td>
+                                                <td>Got a job</td>
+                                                <td>Health department</td>
+                                                <td>
+                                                    <button class="btn btn-success">View</button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-success">View</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
         </div>
     </div>
 </asp:Content>

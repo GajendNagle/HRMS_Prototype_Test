@@ -20,31 +20,45 @@
         .table-custom td {
             width: 30% !important;
         }
+        th{
+            white-space:nowrap;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">Brief Report of District-Class Wise eKYC</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=StudentReports" title="click to go on">Reports</a></li>
-                    <li class="breadcrumb-item active">Brief Report of District-Class Wise eKYC</li>
+    <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                        <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#ControlReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Control Report</span></a>
+                    </li>
+                    <li class="breadcrumb-item">Brief Report of District-Class Wise eKYC</li>
                 </ol>
             </div>
         </div>
     </div>
-
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+</div>
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-7">
+                <h4 class="card-title">Brief Report of District-Class Wise eKYC <br /> जिला-वर्गवार ई.के.वाई.सी. की संक्षिप्त रिपोर्ट</h4>
+            </div>
         </div>
+    </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row">
 
                     <div class="col-lg-12" runat="server" id="dvStudentDetails">
@@ -55,47 +69,47 @@
                                     <table class="table table-bordered table-striped">
                                         <thead>
                                             <tr role="row">
-                                                <th scope="col" class="sorting_asc" tabindex="0" aria-controls="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_GrdVacancies" rowspan="1" colspan="1" aria-sort="ascending" aria-label="स. क्र.: activate to sort column descending" style="width: 15px;">स. क्र.</th>
-                                                <th  aria-label="जिला: activate to sort column ascending" style="width: 79px;">जिला</th>
-                                                <th  aria-label="कुल छात्र: activate to sort column ascending" style="width: 45px;">कुल छात्र</th>
-                                                <th  aria-label="कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="कुल अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">कुल अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="1st कक्षा के कुल छात्र: activate to sort column ascending" style="width: 25px;">1st कक्षा के कुल छात्र</th>
-                                                <th  aria-label="1st कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">1st कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="1st कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">1st कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="2nd कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">2nd कक्षा कुल छात्र</th>
-                                                <th  aria-label="2nd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">2nd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="2nd कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">2nd कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="3rd कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">3rd कक्षा कुल छात्र</th>
-                                                <th  aria-label="3rd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">3rd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="3rd कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">3rd कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="4th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">4th कक्षा कुल छात्र</th>
-                                                <th  aria-label="4th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">4th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="4th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">4th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="5th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">5th कक्षा कुल छात्र</th>
-                                                <th  aria-label="5th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">5th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="5th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">5th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="6th कक्षा कुल छात्र: activate to sort column ascending" style="width: 25px;">6th कक्षा कुल छात्र</th>
-                                                <th  aria-label="6th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">6th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="6th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">6th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="7th कक्षा कुल छात्र: activate to sort column ascending" style="width: 25px;">7th कक्षा कुल छात्र</th>
-                                                <th  aria-label="7th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">7th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="7th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">7th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="8th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">8th कक्षा कुल छात्र</th>
-                                                <th  aria-label="8th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">8th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="8th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">8th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="9th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">9th कक्षा कुल छात्र</th>
-                                                <th  aria-label="9th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">9th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="9th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">9th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="10th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">10th कक्षा कुल छात्र</th>
-                                                <th  aria-label="10th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">10th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="10th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">10th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="11th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">11th कक्षा कुल छात्र</th>
-                                                <th  aria-label="11th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">11th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="11th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">11th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
-                                                <th  aria-label="12th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">12th कक्षा कुल छात्र</th>
-                                                <th  aria-label="12th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">12th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
-                                                <th  aria-label="12th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">12th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th scope="col" class="sorting_asc" tabindex="0" aria-controls="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_GrdVacancies" rowspan="1" colspan="1" aria-sort="ascending" aria-label="स. क्र.: activate to sort column descending" style="width: 15px;">Sr.No.<br />सरल. क्र.</th>
+                                                <th  aria-label="जिला: activate to sort column ascending" style="width: 79px;">District<br />जिला</th>
+                                                <th  aria-label="कुल छात्र: activate to sort column ascending" style="width: 45px;">Total Students<br />कुल छात्र</th>
+                                                <th  aria-label="कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total Students by whom eKYC was done<br />कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="कुल अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;"><br />Total approved eKYC Number<br />कुल अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="1st कक्षा के कुल छात्र: activate to sort column ascending" style="width: 25px;">Total students of 1st Class<br />1st कक्षा के कुल छात्र</th>
+                                                <th  aria-label="1st कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total Students of 1st lass by whom eKYC done<br />1st कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="1st कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">1st Class approved eKYC Number<br />1st कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="2nd कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">2nd class total students <br />2nd कक्षा कुल छात्र</th>
+                                                <th  aria-label="2nd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 2nd class by whom eKYC done<br />2nd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="2nd कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">2nd class approved eKYC Number<br />2nd कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="3rd कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">3rd class total students <br />3rd कक्षा कुल छात्र</th>
+                                                <th  aria-label="3rd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 3rd class by whom eKYC done<br />3rd कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="3rd कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">3rd class approved eKYC Number<br />3rd कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="4th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">4th class total students<br /> 4th कक्षा कुल छात्र</th>
+                                                <th  aria-label="4th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 4th class by whom eKYC done<br />4th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="4th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">4th class approved eKYC Number<br />4th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="5th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">5th class total students<br>5th कक्षा कुल छात्र</th>
+                                                <th  aria-label="5th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 5th class by whom eKYC done<br />5th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="5th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">5th class approved eKYC Number<br />5th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="6th कक्षा कुल छात्र: activate to sort column ascending" style="width: 25px;">6thclass total students <br />6th कक्षा कुल छात्र</th>
+                                                <th  aria-label="6th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 6th class by whom eKYC done<br />6th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="6th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">6th class approved eKYC Number<br />6th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="7th कक्षा कुल छात्र: activate to sort column ascending" style="width: 25px;">7th class total students <br />7th कक्षा कुल छात्र</th>
+                                                <th  aria-label="7th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 7th class by whom eKYC done<br />7th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="7th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">7th class approved eKYC Number<br />7th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="8th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">8th class total students <br />8th कक्षा कुल छात्र</th>
+                                                <th  aria-label="8th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 8th class by whom eKYC done<br />8th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="8th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">8th class approved eKYC Number<br />8th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="9th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">9th class total students<br /> 9th कक्षा कुल छात्र</th>
+                                                <th  aria-label="9th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 9th class by whom eKYC done<br />9th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="9th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">9th class approved eKYC Number<br />9th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="10th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">10th class total students<br />10th कक्षा कुल छात्र</th>
+                                                <th  aria-label="10th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total students of 10th class by whom eKYC was done<br />10th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="10th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">10th class approved eKYC Number<br />10th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="11th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">11th class total students<br />11th कक्षा कुल छात्र</th>
+                                                <th  aria-label="11th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total Students of 11th Class by whom eKYC was done<br />11th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="11th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">11th Class approved eKYC Number<br />11th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
+                                                <th  aria-label="12th कक्षा कुल छात्र: activate to sort column ascending" style="width: 33px;">12th Class total Students<br />12th कक्षा कुल छात्र</th>
+                                                <th  aria-label="12th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया: activate to sort column ascending" style="width: 51px;">Total Students of 12th Class by whom eKYC was done<br />12th कक्षा के कुल छात्र जिनके द्वारा ईकेवाईसी किया गया</th>
+                                                <th  aria-label="12th कक्षा अनुमोदित ई.के.वाई.सी. संख्या: activate to sort column ascending" style="width: 64px;">12th Class approved eKYC Number<br />12th कक्षा अनुमोदित ई.के.वाई.सी. संख्या</th>
                                             </tr>
                                         </thead>
                                         <tbody>

@@ -33,41 +33,32 @@ public partial class mis_Transaction_HOLevelReportSection : System.Web.UI.Page
         BlockWiseCounting.Visible = false;
         DistrictWiseCounting.Visible = false;
         ApplicationNirakrutData.Visible = false;
-        AvedankoForwordKiyagya.Visible = false;
-         AvedankoForwordKiyagya.Visible = false;
-        AcceptedApplicationData.Visible = false;
-        TotalReceivedCases.Visible = false;
         divBlockWiseCountingtbl.Visible = false;
         divOfDropdownDistrict.Visible= false;
         divBlockWiseCountingtbl.Visible= false;
-        //dv_HRMS.Visible = false;
-
-        if (ViewState["ModuleID"] != null)
+             if (ViewState["ModuleID"] != null)
         {
-
             if (ViewState["ModuleID"].ToString() == "DisposeCasesNOC")
             {
                 DisposeCasesNOC.Visible = true;
+                brdcmDisposeCases.Visible=true;
             }
             else if (ViewState["ModuleID"].ToString() == "BlockWiseCounting")
             {
                 divBlockWiseCountingtbl.Visible=false;
                 divOfDropdownDistrict.Visible= true;
                 BlockWiseCounting.Visible=true;
-
-
+                brdcmBloackWise.Visible=true;
             }
             else if (ViewState["ModuleID"].ToString() == "DistrictWiseCounting")
             {
                 DistrictWiseCounting.Visible = true;
+                brdcmDistrictWise.Visible=true;
             }
-
             else
             {
                 Response.Redirect("HOLevelReportSection.aspx?ID=DisposeCasesNOC");
             }
-
-
         }
     }
 
@@ -3098,64 +3089,42 @@ public partial class mis_Transaction_HOLevelReportSection : System.Web.UI.Page
             tbldataUjjain.Visible=false;
             tbldataUmaria.Visible=false;
             tbldataofChhindwara.Visible=false;
-
-
         }
-
     }
-
-
-
     protected void hideshowAcceptedApplicationData_Click(object sender, EventArgs e)
     {
-
         DistrictWiseCounting.Visible=false;
-        AcceptedApplicationData.Visible=true;
-    }
+          }
 
     protected void hideShowAavendalMeApptiDarjReport_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
-        //AavendalMeApptiDarjReport.Visible=true;
-    }
-
+          }
     protected void hideShowAvedankoForwordKiyagya_Click(object sender, EventArgs e)
     {
-
         DistrictWiseCounting.Visible=false;
-        AvedankoForwordKiyagya.Visible=true;
+        //AvedankoForwordKiyagya.Visible=true;
     }
-
     protected void hideshowApplicationNirakrutData_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
         ApplicationNirakrutData.Visible=true;
-
     }
-
-
-
     protected void hideshowTotalReceivedCases_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
-        TotalReceivedCases.Visible=true;
-    }
-
+          }
     protected void hidshowDisposeAavedan_Click(object sender, EventArgs e)
     {
         DistrictWiseCounting.Visible=false;
-        DisposeAavedan.Visible=true;
-    }
-
+          }
     protected void hideshowDarjYaLambitReport_Click(object sender, EventArgs e)
     {
-        DarjYaLambitReport.Visible=true;
-        DistrictWiseCounting.Visible=false;
+             DistrictWiseCounting.Visible=false;
     }
-
     protected void hideShowAvedankoForwordKiyagya_Click1(object sender, EventArgs e)
     {
-        AvedankoForwordKiyagya.Visible=true;
+       // AvedankoForwordKiyagya.Visible=true;
         DistrictWiseCounting.Visible=false;                    
     }
 }
