@@ -420,6 +420,7 @@
             }
         }
     </script>
+
     <script>
         !function ($) {
             "use strict";
