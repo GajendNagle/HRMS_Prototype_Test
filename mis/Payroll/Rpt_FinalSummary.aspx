@@ -79,7 +79,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Final Summary Report</h4>
         </div>
@@ -97,7 +97,41 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+          <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                              <span>Reports
+</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Final Summary Report</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card card-border-primary">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Final Summary Report/
+
+अंतिम सारांश रिपोर्ट                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
             <fieldset>
                 <legend>Final Summary Report</legend>
 
@@ -106,7 +140,7 @@
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" onchange="handleRadioChange(this)">
-                                <label class="form-check-label" for="customRadio11">Department</label>
+                                <label class="form-check-label" for="customRadio11">Department<br />विभाग</label>
                             </div>
                         </div>
                     </div>
@@ -114,7 +148,7 @@
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio2" name="customRadio" class="form-check-input" onchange="handleRadioChange(this)">
-                                <label class="form-check-label" for="customRadio11">Section </label>
+                                <label class="form-check-label" for="customRadio11">Section<br />अनुभाग </label>
                             </div>
                         </div>
                     </div>
@@ -122,7 +156,7 @@
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio3" name="customRadio" class="form-check-input" onchange="handleRadioChange(this)">
-                                <label class="form-check-label" for="customRadio11">Post Type </label>
+                                <label class="form-check-label" for="customRadio11">Post Type<br />पद प्रकार </label>
                             </div>
                         </div>
                     </div>
@@ -131,7 +165,8 @@
 
                     <div class="col-md-2">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />
+वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -145,7 +180,8 @@
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />
+माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -165,7 +201,7 @@
                     </div>
                     <div class="col-md-3" id="Departmentddl">
                         <div class="form-group">
-                            <label>Department<span style="color: red">*</span></label>
+                            <label>Department<br />विभाग<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option selected value="Bhopal">DPI</option>
                             </select>
@@ -173,7 +209,7 @@
                     </div>
                     <div class="col-md-3" id="Sectionddl">
                         <div class="form-group">
-                            <label>Section<span style="color: red">*</span></label>
+                            <label>Section<br />अनुभाग<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">All</option>
@@ -185,7 +221,7 @@
                     </div>
                     <div class="col-md-3" id="Postddl">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">All</option>
@@ -203,7 +239,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <%--<div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="toggleDivs()" class=" btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -212,15 +248,23 @@
                         <div class="form-group">
                             <a href="Rpt_EarningsDeduction.aspx" class=" btn-block btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                      <hr />
+<div class="col-md-12">
+      <div class="form-group">
+          <button type="button" onclick="toggleDivs()" class=" btn btn-success w-lg btn-rounded">Search</button>
+     <a href="Rpt_FinalSummary.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+      </div>
+  </div>
+
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
                     <legend>
-                        <label id="regular"><strong>Department </strong>wise earnng and deduction report April Month <strong>2023</strong></label>
-                        <label id="supplymentary"><strong>Section</strong> wise earnng and deduction report April Month <strong>2023</strong></label>
-                        <label id="Post"><strong>Post</strong> wise earnng and deduction report April Month <strong>2023</strong></label>
+                        <label id="regular"><strong>Department </strong>wise earnng and deduction report April Month <strong>2023</strong>/विभागवार आय एवं कटौती रिपोर्ट अप्रैल माह 2023</label>
+                        <label id="supplymentary"><strong>Section</strong> wise earnng and deduction report April Month <strong>2023</strong>/विभागवार आय एवं कटौती रिपोर्ट अप्रैल माह 2023</label>
+                        <label id="Post"><strong>Post</strong> wise earnng and deduction report April Month <strong>2023</strong>/विभागवार आय एवं कटौती रिपोर्ट अप्रैल माह 2023</label>
                     </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
@@ -238,7 +282,7 @@
                                         <th colspan="2">
                                             <div class="row justify-content-center ">
                                                 <div class="col-md-3">
-                                                    <h4><b>EARNINGS</b></h4>
+                                                    <h6><b>EARNINGS<br />आय</b></h6>
                                                 </div>
                                             </div>
                                         </th>
@@ -289,7 +333,8 @@
                                         <th colspan="2">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-3">
-                                                    <h4><b>Deduction</b></h4>
+                                                    <h6><b>Deduction<br />
+कटौती</b></h6>
                                                 </div>
                                             </div>
 

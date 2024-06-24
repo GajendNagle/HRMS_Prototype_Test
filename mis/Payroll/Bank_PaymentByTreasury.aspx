@@ -18,7 +18,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Payment By Treasury</h4>
         </div>
@@ -37,25 +37,60 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+      <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#SalaryFinalization" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                              <span>Payment File
+</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Payment By Treasury</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card card-border-primary">
+      <div class="card-header">
+          <div class="row align-items-end">
+              <div class="col-lg-12">
+                  <h5 class="card-title">Payment By Treasury/
+राजकोष द्वारा भुगतान
+                  </h5>
+              </div>
+          </div>
+      </div>
+      <div class="card-body">
             <fieldset>
-                <legend>Payment By Treasury</legend>
+                <legend>Payment By Treasury/
+राजकोष द्वारा भुगतान</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Date<span style="color: red">*</span></label>
+                            <label>From Date<br />तिथि से<span style="color: red">*</span></label>
                             <input type="date" class="form-control " placeholder="DD/MM/YYYY" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Date<span style="color: red">*</span></label>
+                            <label>To Date<br />तारीख तक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="DD/MM/YYYY" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -79,7 +114,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Payment Type</label><span style="color: red">*</span>
+                            <label>Payment Type<br />भुगतान प्रकार</label><span style="color: red">*</span>
                             <select name="ctl00$ContentBody$rbtnUserType" id="ctl00_ContentBody_rbtnUserType" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">Vendor Payment</option>
@@ -92,16 +127,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <br />
+                    <hr />
+                  <div class="col-md-12">
                         <div class="form-group">
-                            <button type="button" onclick="myFunction()" class=" btn btn-block btn-success btn-rounded">Search</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <br />
-                        <div class="form-group">
-                            <a href="Rpt_MonthlyPolicyReport.aspx" class=" btn btn-block btn-danger btn-rounded">Clear</a>
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                       <a href="Bank_PaymentByTreasury.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
                         </div>
                     </div>
 
@@ -109,7 +139,7 @@
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Payment By Treasury</legend>
+                    <legend>Payment By Treasury Details /राजकोष द्वारा भुगतान विवरण </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">

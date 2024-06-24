@@ -31,7 +31,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Bank Advice Letter</h4>
         </div>
@@ -49,14 +49,48 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+        <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Bank Advice Letter</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Bank Advice Letter/
+बैंक सलाह पत्र       </h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Bank Advice Letter</legend>
+                <legend>Bank Advice Letter/बैंक सलाह पत्र</legend>
                 <div class="row">
                    
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                    <option value="Bhopal">Head Office</option>
@@ -78,9 +112,10 @@
                             </select>
                         </div>
                     </div>
+
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -94,7 +129,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -114,7 +149,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />
+पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                    								<option value="Bhopal">All</option>
@@ -135,7 +171,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Bank Name<span style="color: red">*</span></label>
+                            <label>Bank Name<br />बैंक का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">State Bank of India</option>
@@ -146,7 +182,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                   <%-- <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class=" btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -155,24 +191,40 @@
                         <div class="form-group">
                             <a href="Rpt_BankAdviceLetter.aspx" class=" btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+
+                                                              <hr />
+<div class="col-md-12">
+      <div class="form-group">
+          <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+     <a href="Rpt_BankAdviceLetter.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+      </div>
+  </div>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <div class="row justify-content-end">
+               <%--     <div class="row justify-content-end">
                         <div class="col-md-8 align-self-start">
                             <div class="form-group">
-                                <button type="button" class=" btn btn-info    btn-rounded">Print Bank wise Paybill</button>
+                               
                             </div>
-                        </div>
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                    </div>
+                        </div></div>--%>
+                        <div class="row justify-content-end">
+                            
+     <div class="col-md-4 text-end">
+         <div class="form-group">
+           
+             <button class="btn btn-info btn-rounded w-55">Excel</button>
+             <button class="btn btn-info btn-rounded w-55">PDF</button>
+         </div>
+     </div>
+     <div class="col-md-2">
+         <div class="form-group">
+             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+         </div>
+     </div>
+ </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">

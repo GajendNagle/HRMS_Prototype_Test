@@ -18,7 +18,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Monthly Pay Bill</h4>
         </div>
@@ -36,14 +36,49 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Monthly Pay Bill</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Monthly Pay Bill/
+
+मासिक वेतन बिल          </h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Monthly Pay Bill</legend>
+                <legend>Monthly Pay Bill/मासिक वेतन बिल</legend>
                 <div class="row">
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -67,7 +102,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />
+वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -81,7 +117,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -101,7 +137,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Regular/Permanent">Regular/Permanent</option>
@@ -119,7 +155,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                   <%-- <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class=" btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -128,10 +164,19 @@
                         <div class="form-group">
                             <a href="Rpt_MonthlyPayBill.aspx" class=" btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+
+                                          <hr />
+<div class="col-md-12">
+      <div class="form-group">
+          <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+     <a href="Rpt_MonthlyPayBill.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+      </div>
+  </div>
                 </div>
             </fieldset>
             <fieldset id="show">
+                <legend>Monthly Pay Bill Details (Report)/मासिक वेतन बिल विवरण (रिपोर्ट)</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -147,64 +192,65 @@
                 </div>
                 <div class="row">
 
-                    <div class="row justify-content-center">
+                 <%--   <div class="row justify-content-center">
                         <div class="col-md-4">
                             <h4><b>Monthly Pay Bill Details (Report)</b></h4>
                         </div>
-                    </div>
+                    </div>--%>
+
                     <div class="table-responsive">
                         <table class="table">
-                            <tr>
-                                <th>SNo.</th>
-                                <th>Name Of Employee</th>
-                                <th>Employee Code</th>
-                                <th>Designation</th>
-                                <th>PAN No.</th>
-                                <th>IFSC Code</th>
-                                <th>Bank Account No.</th>
-                                <th>EPF No.</th>
-                                <th>UAN No.</th>
-                                <th>GI No.</th>
-                                <th>Basic Pay ⟨₹⟩</th>
-                                <th>DEARNESS ALLOWANCE⟨₹⟩</th>
-                                <th>HOUSE RENT ALLOWANCE ⟨₹⟩</th>
-                                <th>CONVEYANCE ALLOWANCE ⟨₹⟩</th>
-                                <th>ORD ALLOWANCE ⟨₹⟩</th>
-                                <th>WASHING ALLOWANCE ⟨₹⟩</th>
-                                <th>SPECIAL PAY ⟨₹⟩</th>
-                                <th>OTHER ALLOWANCE ⟨₹⟩</th>
-                                <th>TRIB ALLOWANCE⟨₹⟩</th>
-                                <th>Total Pay ⟨₹⟩</th>
-                                <th>HANDICAP ALLOWANCE ⟨₹⟩</th>
-                                <th>CTC ⟨₹⟩</th>
-                                <th>HOUSE LICENSE FEE ⟨₹⟩</th>
-                                <th>EPF DEDUCTION ⟨₹⟩</th>
-                                <th>A.D.A. DEDUCTION ⟨₹⟩</th>
-                                <th>GROUP INSURANCE (GIS) ⟨₹⟩</th>
-                                <th>INCOME TAX ⟨₹⟩</th>
-                                <th>PROFESSIONAL TAX</th>
-                                <th>RUNG. CHARGE</th>
-                                <th>Total Ded ⟨₹⟩</th>
-                                <th>VEHICLE ADVANCE ⟨₹⟩</th>
-                                <th>STAFF ADVANCE ⟨₹⟩</th>
-                                <th>MISC. DEDUCTION ⟨₹⟩</th>
-                                <th>GRAIN ADVANCE ⟨₹⟩</th>
-                                <th>FESTIVAL ADVANCE ⟨₹⟩</th>
-                                <th>HOUSE RENT/ LICENSE FEE ⟨₹⟩</th>
-                                <th>H.B. LOAN⟨₹⟩</th>
-                                <th>RECOVERY⟨₹⟩</th>
-                                <th>VPF CONTRIBUTION ⟨₹⟩</th>
-                                <th>Net Pay ⟨₹⟩</th>
-                                <th>GENERAL PROVIDENT FUND (GPF) ⟨₹⟩</th>
-                                <th>WATER CHARGES ⟨₹⟩</th>
-                                <th>PETROL CHARGE ⟨₹⟩</th>
-                                <th>EMPLOYEE INSURANCE⟨₹⟩</th>
-                                <th>SPL. ADVANCE INTEREST ⟨₹⟩</th>
-                                <th>NATIONAL PENSION SYSTEM (NPS) ⟨₹⟩</th>
-                                <th>INTEREST PAY ADVANCE ⟨₹⟩</th>
-                                <th>PAY ADVANCE ⟨₹⟩</th>
-                                <th>MPEISS / ESIC ⟨₹⟩</th>
-                            </tr>
+                               <tr style="white-space:nowrap !important;">
+            <th>S.No.<br/>सरल क्र.</th>
+            <th>Name Of Employee<br/>कर्मचारी का नाम</th>
+            <th>Employee Code<br/>कर्मचारी कोड</th>
+            <th>Designation<br/>पदनाम</th>
+            <th>PAN No.<br/>पैन नंबर</th>
+            <th>IFSC Code<br/>IFSC कोड</th>
+            <th>Bank Account No.<br/>बैंक खाता संख्या</th>
+            <th>EPF No.<br/>ईपीएफ नंबर</th>
+            <th>UAN No.<br/>यूएएन नंबर</th>
+            <th>GI No.<br/>जीआई नंबर</th>
+            <th>Basic Pay ⟨₹⟩<br/>मूल वेतन ⟨₹⟩</th>
+            <th>DEARNESS ALLOWANCE ⟨₹⟩<br/>महंगाई भत्ता ⟨₹⟩</th>
+            <th>HOUSE RENT ALLOWANCE ⟨₹⟩<br/>घर किराए की सवारी ⟨₹⟩</th>
+            <th>CONVEYANCE ALLOWANCE ⟨₹⟩<br/>यातायात भत्ता ⟨₹⟩</th>
+            <th>ORD ALLOWANCE ⟨₹⟩<br/>ऑर्ड भत्ता ⟨₹⟩</th>
+            <th>WASHING ALLOWANCE ⟨₹⟩<br/>कपड़े धोने की सवारी ⟨₹⟩</th>
+            <th>SPECIAL PAY ⟨₹⟩<br/>विशेष वेतन ⟨₹⟩</th>
+            <th>OTHER ALLOWANCE ⟨₹⟩<br/>अन्य भत्ता ⟨₹⟩</th>
+            <th>TRIB ALLOWANCE ⟨₹⟩<br/>जनजातीय भत्ता ⟨₹⟩</th>
+            <th>Total Pay ⟨₹⟩<br/>कुल वेतन ⟨₹⟩</th>
+            <th>HANDICAP ALLOWANCE ⟨₹⟩<br/>विकलांगता भत्ता ⟨₹⟩</th>
+            <th>CTC ⟨₹⟩<br/>सीटीसी ⟨₹⟩</th>
+            <th>HOUSE LICENSE FEE ⟨₹⟩<br/>घर लाइसेंस शुल्क ⟨₹⟩</th>
+            <th>EPF DEDUCTION ⟨₹⟩<br/>ईपीएफ कटौती ⟨₹⟩</th>
+            <th>A.D.A. DEDUCTION ⟨₹⟩<br/>ए.डी.ए. कटौती ⟨₹⟩</th>
+            <th>GROUP INSURANCE (GIS) ⟨₹⟩<br/>समूह बीमा (जीआईएस) ⟨₹⟩</th>
+            <th>INCOME TAX ⟨₹⟩<br/>आयकर ⟨₹⟩</th>
+            <th>PROFESSIONAL TAX<br/>व्यावसायिक कर</th>
+            <th>RUNG. CHARGE<br/>रंग शुल्क</th>
+            <th>Total Ded ⟨₹⟩<br/>कुल कटौती ⟨₹⟩</th>
+            <th>VEHICLE ADVANCE ⟨₹⟩<br/>वाहन अग्रिम ⟨₹⟩</th>
+            <th>STAFF ADVANCE ⟨₹⟩<br/>कर्मचारी अग्रिम ⟨₹⟩</th>
+            <th>MISC. DEDUCTION ⟨₹⟩<br/>विविध कटौती ⟨₹⟩</th>
+            <th>GRAIN ADVANCE ⟨₹⟩<br/>अनाज अग्रिम ⟨₹⟩</th>
+            <th>FESTIVAL ADVANCE ⟨₹⟩<br/>त्योहार अग्रिम ⟨₹⟩</th>
+            <th>HOUSE RENT/ LICENSE FEE ⟨₹⟩<br/>घर किराया / लाइसेंस शुल्क ⟨₹⟩</th>
+            <th>H.B. LOAN ⟨₹⟩<br/>एच.बी. ऋण ⟨₹⟩</th>
+            <th>RECOVERY ⟨₹⟩<br/>वसूली ⟨₹⟩</th>
+            <th>VPF CONTRIBUTION ⟨₹⟩<br/>वीपीएफ योगदान ⟨₹⟩</th>
+            <th>Net Pay ⟨₹⟩<br/>नेट वेतन ⟨₹⟩</th>
+            <th>GENERAL PROVIDENT FUND (GPF) ⟨₹⟩<br/>सामान्य भविष्य निधि (जीपीएफ) ⟨₹⟩</th>
+            <th>WATER CHARGES ⟨₹⟩<br/>पानी का शुल्क ⟨₹⟩</th>
+            <th>PETROL CHARGE ⟨₹⟩<br/>पेट्रोल का शुल्क ⟨₹⟩</th>
+            <th>EMPLOYEE INSURANCE ⟨₹⟩<br/>कर्मचारी बीमा ⟨₹⟩</th>
+            <th>SPL. ADVANCE INTEREST ⟨₹⟩<br/>विशेष अग्रिम ब्याज ⟨₹⟩</th>
+            <th>NATIONAL PENSION SYSTEM (NPS) ⟨₹⟩<br/>राष्ट्रीय पेंशन योजना (एनपीएस) ⟨₹⟩</th>
+            <th>INTEREST PAY ADVANCE ⟨₹⟩<br/>अग्रिम ब्याज भुगतान ⟨₹⟩</th>
+            <th>PAY ADVANCE ⟨₹⟩<br/>वेतन अग्रिम ⟨₹⟩</th>
+            <th>MPEISS / ESIC ⟨₹⟩<br/>एमपीईआईएस / ईएसआईसी ⟨₹⟩</th>
+        </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Dilip Kumar </td>

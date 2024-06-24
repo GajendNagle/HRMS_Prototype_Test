@@ -2,6 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style type="text/css">
+        .declaration-label {
+    display: block;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    line-height: 1.4; /* Adjust line height as needed */
+}
         .customtxtbox {
             min-height: 30px !important;
             border-radius: 0rem;
@@ -54,7 +60,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+ <%--   <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Form - 16</h4>
         </div>
@@ -72,13 +78,50 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+        <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Form - 16</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Form - 16/
+
+फॉर्म-16     </h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Employee Salary Slip</legend>
+                <legend>Form - 16/
+
+फॉर्म-16 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
 								 <option value="Bhopal">Head Office</option>
@@ -102,7 +145,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>Office Name<br />कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
 								 <option value="Bhopal">Head Office</option>
@@ -126,7 +169,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee ID<span style="color: red">*</span></label>
+                            <label>Employee ID<br />कर्मचारी आय.डी<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">234343</option>
@@ -140,7 +183,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -154,7 +197,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />
+माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -172,7 +216,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                   <%-- <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -181,11 +225,19 @@
                         <div class="form-group">
                             <a href="Rpt_EmployeeSalarySlip.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                        <hr />
+    <div class="col-md-12">
+        <div class="form-group">
+            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+            <a href="Rpt_Form16.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+        </div>
+    </div>
                 </div>
             </fieldset>
             <fieldset id="show">
-                <legend>Form-16</legend>
+                <legend>Form-16/
+फॉर्म-16</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -386,9 +438,9 @@
                                         <label>Note: (1)Employees claiming exemption for H.R.A. have to enclose original receipt of rent paid to the owner for evidence.</label></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">
-                                        <label>DECLARATION:I declare that the infoirmation given as above is bassed on my best possible estimate and proposed investments payments/deposits will be made by end of financial year. </label>
-                                    </td>
+                                   <td colspan="4">
+    <label class="declaration-label">DECLARATION: I declare that the information given above is based on my best possible estimate and proposed investment payments/deposits will be made by the end of the financial year.</label>
+</td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" rowspan="1">
