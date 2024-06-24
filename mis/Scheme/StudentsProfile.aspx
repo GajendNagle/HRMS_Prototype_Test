@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Update Student Profile for Scholarships</h4>
         </div>
@@ -37,15 +37,46 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#StudentProfileMgmt" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Student Profile Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Update Student Profile for Scholarships</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Update Student Profile for Scholarships
+                        <br />
+                        छात्रवृत्ति के लिए छात्र प्रोफ़ाइल अपडेट करें</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
             <fieldset>
-                <legend>Academics Details </legend>
+                <legend>Academics Details / शैक्षणिक विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
@@ -64,10 +95,11 @@
                         </table>
                     </div>
                     <div class="col-lg-12">
-                        <div class="row justify-content-center">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                                    <label>Select Academic Year<br />
+                                        शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="2024-25">2024-25</option>
@@ -87,7 +119,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Class </label>
+                                    <label>Select Class<br />
+                                        कक्षा का चयन करें</label>
                                     <select class="form-control select2">
                                         <option>--Select--</option>
                                         <option>1st</option>
@@ -114,7 +147,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -122,12 +155,14 @@
 
                                 </div>
                             </div>
-
-                            <div class="col-md-4 text-center">
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-rounded" Text="Show Student Details" OnClick="btnShowStudentDetails_Click" />
-                             <a href="StudentsProfile.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                                    </div>
+                                    <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-border w-lg" Text="Show Student Details" OnClick="btnShowStudentDetails_Click" />
+                                    <a href="StudentsProfile.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,21 +170,30 @@
 
             </fieldset>
             <fieldset runat="server" id="dv_StudentDetails">
-                <legend>Students Details</legend>
+                <legend>Students Details / छात्रों का विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered ">
                             <thead>
                                 <tr>
-                                    <th>S.No.</th>
-                                    <th>Student Samagra Id</th>
-                                    <th>Student Name</th>
-                                    <th>Father's Name</th>
-                                    <th>DOB</th>
-                                    <th>Gender</th>
-                                    <th>Category</th>
-                                    <th>Class</th>
-                                    <th>Last Class Percentage </th>
+                                    <th>S.No.<br />
+                                        सरल क्र.</th>
+                                    <th>Student Samagra Id<br />
+                                        विद्यार्थी समग्र आईडी</th>
+                                    <th>Student Name<br />
+                                        छात्र का नाम</th>
+                                    <th>Father's Name<br />
+                                        पिता का नाम</th>
+                                    <th>DOB<br />
+                                        जन्म तिथि</th>
+                                    <th>Gender<br />
+                                        जेंडर</th>
+                                    <th>Category<br />
+                                        श्रेणी</th>
+                                    <th>Class<br />
+                                        कक्षा</th>
+                                    <th>Last Class Percentage<br />
+                                        अंतिम कक्षा का प्रतिशत </th>
                                     <th>Action</th>
 
                                 </tr>

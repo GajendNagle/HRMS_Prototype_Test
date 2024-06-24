@@ -23,24 +23,39 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">Promote Students to Higher Class (Format - 1A)</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=AdmissionMgmt" title="click to go on">Admission Management</a></li>
-                    <li class="breadcrumb-item active">Promote Students to Higher Class (Format - 1A)</li>
-                </ol>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement_AdmissionMgmt" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Admission Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Promote Students to Higher Class (Format - 1A)</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Promote Students to Higher Class (Format - 1A)
+                <br />
+                       विद्यार्थियों को उच्च कक्षा में पदोन्नत करें (प्रारूप - 1ए)</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
@@ -51,25 +66,25 @@
                 </div>
             </div>
             <fieldset>
-                <legend>School Details</legend>
+                <legend>School Details / स्कूल का विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom ">
                             <tbody>
                                 <tr>
-                                    <th>District :</th>
+                                    <th>District<br />जिला :</th>
                                     <td>Bhopal</td>
-                                    <th>Block :</th>
+                                    <th>Block <br />ब्लॉक:</th>
                                     <td>Barasia</td>
                                 </tr>
                                 <tr>
-                                    <th>School Name :</th>
+                                    <th>School Name<br />स्कूल का नाम :</th>
                                     <td>K.D. Memorial School</td>
-                                    <th>UDISE Code :</th>
+                                    <th>UDISE Code <br />यू-डाइस कोड:</th>
                                     <td>23304068112</td>
                                 </tr>
                                 <tr>
-                                    <th>School Type :</th>
+                                    <th>School Type<br />स्कूल का प्रकार :</th>
                                     <td>Primary With Middle School (1 to 8)</td>
                                     <th></th>
                                     <td></td>
@@ -80,11 +95,11 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Class Wise List of Students who have joined your School </legend>
+                <legend>Class Wise List of Students who have joined your School<br /> आपके स्कूल में शामिल होने वाले छात्रों की कक्षावार सूची </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                            <label >Select Academic Year<br />शैक्षणिक वर्ष का चयन करें <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="2024-25">2024-25</option>
@@ -104,7 +119,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Previous Class <span style="color: red">*</span></label>
+                            <label >Select Previous Class<br />पिछली कक्षा का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>--Select--</option>
                                 <option>1st</option>
@@ -124,7 +139,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Gender </label>
+                            <label >Gender<br />जेंडर<span style="color: red">*</span> </label>
                             <select class="form-control select2">
                                 <option>--Select--</option>
                                 <option>Boy</option>
@@ -135,7 +150,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Category</label>
+                            <label>Category<br />श्रेणी<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>--Select--</option>
                                 <option>SC</option>
@@ -149,8 +164,8 @@
                     <div class="col-lg-12 text-center">
                         <div class="form-group">
 
-                            <asp:Button Text="Show Student" ID="btnShowStudent" runat="server" CssClass="btn btn-info btn-rounded" OnClick="btnShowStudent_Click" />
-                            <asp:Button Text="Generate Format - 1A" ID="btnGenerateFormat1A" runat="server" CssClass="btn btn-info btn-rounded" />
+                            <asp:Button Text="Show Student" ID="btnShowStudent" runat="server" CssClass="btn btn-outline-info btn-rounded" OnClick="btnShowStudent_Click" />
+                            <asp:Button Text="Generate Format - 1A" ID="btnGenerateFormat1A" runat="server" CssClass="btn btn-outline-info btn-rounded" />
                         </div>
                     </div>
                     <hr />
@@ -161,15 +176,16 @@
                                     <table class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>S.No.</th>
-                                                <th>Samagra Member ID</th>
-                                                <th>Student Name/ Father Name</th>
-                                                <th>Gender</th>
-                                                <th>DOB</th>
-                                                <th>Category</th>
-                                                <th>Result</th>
-                                                <th>Percentage(%)</th>
-                                                <th>School Status</th>
+                                                <th>S.No.<br />सरल क्र.</th>
+                                                <th>Samagra Member ID<br />समग्र सदस्य आईडी</th>
+                                                <th>Student Name/ Father Name<br />छात्र का नाम/पिता का नाम</th>
+                                                <th>Gender<br />जेंडर</th>
+                                                <th>DOB<br />
+जन्म तिथि</th>
+                                                <th>Category<br />श्रेणी</th>
+                                                <th>Result<br />परिणाम</th>
+                                                <th>Percentage(%)<br />प्रतिशत(%)</th>
+                                                <th>School Status<br />स्कूल की स्थिति</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -308,7 +324,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -317,9 +333,13 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-12 text-center">
+                            </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <asp:Button runat="server" ID="btnRegisterStudents" Text="Register Students" CssClass="btn btn-success btn-rounded" OnClick="btnRegisterStudents_Click" />
+                                    <a href="PromoteStudents1A.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
                             </div>
                         </div>

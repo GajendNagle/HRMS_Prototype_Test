@@ -8,48 +8,61 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">6th Class Students Selected for Cycle Distribution
- 
-            </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Free Cycle Scheme</a></li>
-                    <li class="breadcrumb-item active"><a href="6thClassCycleSelectionStudent.aspx" title="click to go on">6th Class Students Selected for Cycle Distribution</a></li>
-                </ol>
+    
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#CycleDistribution" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                    <span>Cycle Distribution Management </span></a>
+                            </li>
+                            <li class="breadcrumb-item">6th Class Students Selected for Cycle Distribution</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-9">
+                        <h4 class="card-title">6th Class Students Selected for Cycle Distribution <br />
+                6वीं कक्षा के विद्यार्थियों का साइकिल वितरण के लिए चयन</h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
-                <nav class="navbar navbar-expand-lg navbar-dark topbar">
+                <%--<nav class="navbar navbar-expand-lg navbar-dark topbar">
                     <div class="container-fluid">
-                        <a class="navbar-brand"  ></a>
+                        <a class="navbar-brand"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">--%>
                                 <%--fsf--%>
-                                <li class="nav-item dropdown">
+                                <%--<li class="nav-item dropdown">
                                     <a class="nav-link text-white " role="button" aria-expanded="false">
                                         <b class="font-16 font-bold"><i class="fa fa-home"></i></b>
                                     </a>
-                                </li>
+                                </li>--%>
                                 <%--fsf--%>
-                                <li class="nav-item dropdown">
+                               <%-- <li class="nav-item dropdown">
                                     <a class="nav-link  text-white" role="button" aria-expanded="false">
                                         <b class="font-16 font-bold">Admin</b>
                                     </a>
-                                </li>
+                                </li>--%>
                                 <%--fsf--%>
-                                <li class="nav-item dropdown">
+                               <%-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <b class="font-16 font-bold">Merchants Registrations</b>
                                     </a>
@@ -58,7 +71,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white"   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <b class="font-16 font-bold">CYCLE 9TH</b>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -71,16 +84,16 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white"   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <b class="font-16 font-bold">CYCLE 6TH</b>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="6thClassAllStudent.aspx">All Students in 6th Class</a></li>
                                         <li><a class="dropdown-item" href="6thClassCycleSelectionStudent.aspx">6th Class Students Selected for Cycle Distribution</a></li>
                                     </ul>
-                                </li>
+                                </li>--%>
                                 <%--fsf--%>
-                                <li class="nav-item dropdown">
+                                <%--<li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <b class="font-16 font-bold">HS/ HSS Teachers Cycle 9th</b>
                                     </a>
@@ -114,21 +127,21 @@
                                         <b class="font-16 font-bold">Help</b>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" >Manual for Free Cycle Distribution for Class 9th Students (0.9 MB)</a></li>
+                                        <li><a class="dropdown-item">Manual for Free Cycle Distribution for Class 9th Students (0.9 MB)</a></li>
                                     </ul>
                                 </li>
 
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </nav>--%>
 
                 <div class="mt-3">
                     <fieldset>
-                        <legend>6th Class Students Selected for Cycle Distribution</legend>
-                        <div class="row justify-content-center">
+                        <legend>6th Class Students Selected for Cycle Distribution / 6वीं कक्षा के विद्यार्थियों का साइकिल वितरण के लिए चयन</legend>
+                        <div class="row align-items-end">
                             <div class="col-md-3">
-                                <label class="font-bold">Academic Year : <span style="color: red">*</span></label>
+                                <label>Select Academic Year <br /> शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal">2024-25</option>
@@ -142,7 +155,7 @@
 
 
                             <div class="col-md-3">
-                                <label class="font-bold">School Type :<span style="color: red">*</span></label>
+                                <label> Select School Type <br />स्कूल प्रकार का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="0">-Select-</option>
                                     <option value="3">Primary&#160;to&#160;Higher&#160;Secondary&#160;School(Class 1 to 12)</option>
@@ -158,7 +171,7 @@
                             </div>
 
                             <div class="col-md-3">
-                                <label class="font-bold">School :<span style="color: red">*</span></label>
+                                <label>Select School <br />स्कूल का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="1">GHSS MODEL  GHATIGAON (6-12)</option>
@@ -170,27 +183,30 @@
                             </div>
                             <div class="col-lg-12 mt-5">
                             </div>
-                            <div class="col-md-4 text-center">
+                            </div>
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-rounded" onclick="Show();">Get All Students </button>
+                                    <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-border w-lg" onclick="Show();">Get All Students </button>
+                                    <a href="6thClassCycleSelectionStudent.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
                     <div id="Report">
                         <fieldset>
-                            <legend>School Details</legend>
+                            <legend>School Details / स्कूल विवरण</legend>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="table-responsive">
                                         <table class="table text-center table-bordered table-hover text-center">
                                             <thead>
                                                 <tr>
-                                                    <th>School Name </th>
-                                                    <th>DISE</th>
-                                                    <th>Village</th>
-                                                    <th>Gram Panchayat/Zones</th>
-                                                    <th>Local Body</th>
+                                                    <th>School Name <br /> स्कूल का नाम</th>
+                                                    <th>DISE<br />डाइस</th>
+                                                    <th>Village<br />गाँव</th>
+                                                    <th>Gram Panchayat/Zones<br />ग्राम पंचायत/क्षेत्र</th>
+                                                    <th>Local Body<br />स्थानीय निकाय</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -211,7 +227,7 @@
                         </fieldset>
 
                         <fieldset>
-                            <legend>Students Details </legend>
+                            <legend>Students Details / छात्रों का विवरण</legend>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="table-responsive">
@@ -220,16 +236,16 @@
                                         <table class="table text-center table-bordered table-hover text-center">
                                             <thead>
                                                 <tr>
-                                                    <th>S.No.</th>
-                                                    <th>Samagra Id</th>
-                                                    <th>Name</th>
-                                                    <th>Father Name</th>
-                                                    <th>Date of Birth</th>
-                                                    <th>Gender</th>
-                                                    <th>Mobile Number</th>
-                                                    <th>Local Body</th>
-                                                    <th>Gram Panchayat/Zones</th>
-                                                    <th>Village/Ward</th>
+                                                    <th>S.No.<br />सरल क्र.</th>
+                                                    <th>Samagra Id<br />समग्र आईडी</th>
+                                                    <th>Name<br />नाम</th>
+                                                    <th>Father Name<br />पिता का नाम</th>
+                                                    <th>Date of Birth<br />जन्म की तारीख</th>
+                                                    <th>Gender<br />जेंडर</th>
+                                                    <th>Mobile Number<br />मोबाइल नंबर</th>
+                                                    <th>Local Body<br />स्थानीय निकाय</th>
+                                                    <th>Gram Panchayat/Zones<br />ग्राम पंचायत/क्षेत्र</th>
+                                                    <th>Village/Ward<br /> ग्राम/वार्ड</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -259,7 +275,7 @@
 
             </div>
         </div>
-    </div>
+   
     <script>
         function Show() {
             var element = document.getElementById("Report");

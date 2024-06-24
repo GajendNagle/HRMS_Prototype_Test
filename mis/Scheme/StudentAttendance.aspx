@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Student Attendance</h4>
         </div>
@@ -37,34 +37,67 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#StudentManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Student Management System</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Student Attendance</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Student Attendance /
+        छात्र उपस्थिति</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
 
 
             <fieldset>
-                <legend>School Details</legend>
+                <legend>School Details / स्कूल विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom ">
                             <tbody>
                                 <tr>
-                                    <th>District :</th>
+                                    <th>District<br />
+                                        ज़िला :</th>
                                     <td>Bhopal</td>
-                                    <th>Block :</th>
+                                    <th>Block<br />
+                                        ब्लॉक :</th>
                                     <td>Barasia</td>
                                 </tr>
                                 <tr>
-                                    <th>School Name :</th>
+                                    <th>School Name<br />
+                                        स्कूल का नाम :</th>
                                     <td>K.D. Memorial School</td>
-                                    <th>UDISE Code :</th>
+                                    <th>UDISE Code<br />
+                                        यू डाइस कोड :</th>
                                     <td>23304068112</td>
                                 </tr>
                                 <tr>
-                                    <th>School Type :</th>
+                                    <th>School Type<br />
+                                        स्कूल का प्रकार :</th>
                                     <td>Primary With Middle School (1 to 8)</td>
                                     <th></th>
                                     <td></td>
@@ -75,20 +108,23 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Class Wise Attendance</legend>
-                <div class="row">
+                <legend>Class Wise Attendance / कक्षावार उपस्थिति</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                            <label>Select Academic Year<br />
+                                शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2" disabled="disabled">
-              
+
                                 <option value="2023-24">2023-24</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Class <span style="color: red">*</span></label>
+                            <label>Class
+                                <br />
+                                कक्षा <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>--Select--</option>
                                 <option>1st</option>
@@ -108,7 +144,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Gender </label>
+                            <label>Gender<br />
+                                जेंडर </label>
                             <select class="form-control select2">
                                 <option>--Select--</option>
                                 <option>Boy</option>
@@ -119,15 +156,16 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Date</label>
-                          <input class="form-control" type="date"/>
+                            <label>Date<br />
+                                दिनांक</label>
+                            <input class="form-control" type="date" />
                         </div>
                     </div>
 
                     <div class="col-lg-12 text-center">
                         <div class="form-group">
 
-                            <asp:Button Text="Show Student" ID="btnShowStudent" runat="server" CssClass="btn btn-info btn-rounded" OnClick="btnShowStudent_Click" />
+                            <asp:Button Text="Show Student" ID="btnShowStudent" runat="server" CssClass="btn btn-success btn-border w-lg" OnClick="btnShowStudent_Click" />
                             <%--<asp:Button Text="Generate Format - 1A" ID="btnGenerateFormat1A" runat="server" CssClass="btn btn-info btn-rounded" />--%>
                         </div>
                     </div>
@@ -139,12 +177,16 @@
                                     <table class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>S.No.</th>
-                                                <th>Samagra Member ID</th>
-                                                <th>Student Name/ Father Name</th>
-                                                <th>Gender</th>
+                                                <th>S.No. <br />सरल क्र.</th>
+                                                <th>Samagra Member ID<br />
+                                                    समग्र सदस्य आईडी</th>
+                                                <th>Student Name/ Father Name<br />
+                                                    छात्र का नाम/पिता का नाम</th>
+                                                <th>Gender<br />
+                                                    जेंडर</th>
 
-                                                <th>Attendance</th>
+                                                <th>Attendance<br />
+                                                    उपस्थिति</th>
 
                                             </tr>
                                         </thead>
@@ -241,7 +283,7 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
+                                    <div class="col-lg-2">
                                         <div class="form-group">
                                             <input type="text" class="form-control text-center" />
                                         </div>
@@ -250,13 +292,17 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-12 text-center">
+                            </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <asp:Button runat="server" ID="btnRegisterStudents" Text="Submit" CssClass="btn btn-success btn-rounded" OnClick="btnRegisterStudents_Click" />
+                                    <a href="StudentAttendance.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                   </div>
                 </div>
 
             </fieldset>
