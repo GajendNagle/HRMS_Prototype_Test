@@ -33,7 +33,7 @@ application Status</li>
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -79,7 +79,8 @@ application Status</li>
                                     <th>Sr. No.
                                             <br />
                                         सरल क्र.</th>
-                                    <th>Date <br />
+                                    <th>Date
+                                        <br />
                                         दिनांक</th>
                                     <th style="width: 10%">Unique ID
                                             <br />
@@ -89,7 +90,8 @@ application Status</li>
                                         नाम एवं पद</th>
                                     <th>Subject<br />
                                         विषय</th>
-                                    <th>Working Institute and UDISE Code <br />
+                                    <th>Working Institute and UDISE Code
+                                        <br />
                                         कार्यरत संस्था एवं डाइस कोड</th>
                                     <th>Working District<br />
                                         कार्यरत जिला</th>
@@ -98,7 +100,8 @@ application Status</li>
                                     <th style="width: 15%!important">District of New Posting 
                                             <br />
                                         नवीन पदस्थापना का जिला</th>
-                                    <th>Status <br />
+                                    <th>Status
+                                        <br />
                                         स्थिति</th>
                                 </tr>
 

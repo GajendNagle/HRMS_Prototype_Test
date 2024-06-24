@@ -31,7 +31,7 @@
             </div>
         </div>
     </div><div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
         <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
         </u>
     </p>
@@ -42,7 +42,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">View Post Code With Vacancies /<br />
+                            <h4 class="card-title">View Post Code With Vacancies <br />
                                 रिक्तियों के साथ पोस्ट कोड देखें<br />
                             </h4>
                         </div>
@@ -92,7 +92,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District /<br />
+                                        District <br />
                                         ज़िला<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -154,7 +154,7 @@
                                 <div class="form-group">
 
                                     <label>
-                                        Block /<br />
+                                        Block <br />
                                         ब्लॉक<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -170,7 +170,7 @@
                             <div class="col-md-3" id="divtxtpanelname">
                                 <div class="form-group">
                                     <label>
-                                        School Category /
+                                        School Category 
                                 <br />
                                         शाला का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
@@ -195,7 +195,7 @@
                             <div class="col-md-3" id="divtxtpdanelname">
                                 <div class="form-group">
                                     <label>
-                                        Panal Name /<br />
+                                        Panal Name <br />
                                         पैनल का नाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="">--Select--</option>
@@ -251,7 +251,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">Search</button>
-                                    <a class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                                    <a class="btn btn-outline-danger btn-border w-lg" href="Trn_AdministrativePostCodeWithVacancies.aspx">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -301,40 +301,40 @@
                                 </tr>--%>
 
                                         <tr>
-                                            <th>Sr.No. /
+                                            <th>Sr.No. 
                                         <br />
                                                 सरल क्र.</th>
-                                            <th>District /<br />
+                                            <th>District <br />
                                                 ज़िला</th>
-                                            <th>Block /<br />
+                                            <th>Block <br />
                                                 ब्लॉक</th>
-                                            <th>School /
+                                            <th>School 
                                         <br />
                                                 स्कूल</th>
 
-                                            <th>Panal /<br />
+                                            <th>Panal <br />
                                                 पैनल</th>
-                                            <th>Post Code /
+                                            <th>Post Code 
                                         <br />
                                                 पोस्ट कोड</th>
-                                            <th>Sanctioned Posts /
+                                            <th>Sanctioned Posts 
                                         <br />
                                                 अनुमोदित पोस्ट</th>
-                                            <th>Working /
+                                            <th>Working 
                                         <br />
                                                 काम कर रहा</th>
-                                            <th>Reserved /<br />
+                                            <th>Reserved <br />
                                                 आरक्षित</th>
-                                            <th>Vacancies /
+                                            <th>Vacancies 
                                         <br />
                                                 रिक्तियां</th>
-                                            <th>Transferred Employees /
+                                            <th>Transferred Employees 
                                         <br />
                                                 स्थानांतरित कर्मचारी</th>
-                                            <th>New Joining /
+                                            <th>New Joining
                                         <br />
                                                 नई ज्वाइनिंग</th>
-                                            <th>New Postings /
+                                            <th>New Postings 
                                         <br />
                                                 नई पोस्टिंग्स</th>
 

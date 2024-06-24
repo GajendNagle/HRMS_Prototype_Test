@@ -71,7 +71,7 @@
             </div>
         </div>
     </div><div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
         <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"/><u><br />
         </u>
     </p>
@@ -82,7 +82,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Print Transfer Order /<br />
+                            <h4 class="card-title">Print Transfer Order <br />
                                 स्थानांतरण आदेश प्रिंट करें<br />
                             </h4>
                         </div>
@@ -133,7 +133,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation Type /<br />
+                                        Designation Type <br />
                                         पदनाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="----">--Select--</option>
@@ -148,7 +148,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District /<br />
+                                        District <br />
                                         ज़िला<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -211,7 +211,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Block /<br />
+                                        Block <br />
                                         ब्लॉक</label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -225,7 +225,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Unique ID/<br />
+                                        Employee Unique ID<br />
                                         कर्मचारी यूनिक आईडी.
                                     </label>
                                     <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
@@ -234,7 +234,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        From Date /<br />
+                                        From Date <br />
                                         दिनांक से
                                     </label>
                                     <input type="date" class="form-control" />
@@ -243,7 +243,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        To Date /<br />
+                                        To Date <br />
                                         दिनांक तक
                                     </label>
                                     <input type="date" class="form-control" />
@@ -253,7 +253,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">Search</button>
-                                    <a class="btn btn-outline-danger btn-border w-lg" href="HeadOfficeTransferApproval.aspx">Clear</a>
+                                    <a class="btn btn-outline-danger btn-border w-lg" href="AdministrativePrintTransferOrder.aspx">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -280,19 +280,19 @@
                                 <div class="table-responsive">
                                     <table class="table table-hover">
                                         <tr>
-                                            <th>Sr.No. /<br />
+                                            <th>Sr.No. <br />
                                                 सरल क्र.</th>
-                                            <th>Order No. /<br />
+                                            <th>Order No. <br />
                                                 आदेश संख्या</th>
-                                            <th>Employee Name /<br />
+                                            <th>Employee Name <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Unique Id /<br />
+                                            <th>Unique Id <br />
                                                 यूनीक आई डी </th>
-                                            <th>Current DDO/Shankul /<br />
+                                            <th>Current DDO/Shankul <br />
                                                 वर्तमान डीडीओ/शंकुल</th>
-                                            <th>Privious DDO/Shankul /<br />
+                                            <th>Privious DDO/Shankul <br />
                                                 पूर्व डीडीओ/शंकुल</th>
-                                            <th>Final Order Print Or Approve /<br />
+                                            <th>Final Order Print Or Approve <br />
                                                 अंतिम आदेश प्रिंट या स्वीकृत करें</th>
                                         </tr>
                                         <tr>

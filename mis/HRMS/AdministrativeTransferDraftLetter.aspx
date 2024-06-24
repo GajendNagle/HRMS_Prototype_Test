@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
             </u>
         </p>
@@ -78,7 +78,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Print Draft Letter or Update /<br />
+                            <h4 class="card-title">Print Draft Letter or Update <br />
                                 ड्राफ्ट लेटर प्रिंट करें या अपडेट करें</h4>
                         </div>
                 </div>
@@ -127,7 +127,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Designation Type /<br />
+                                    Designation Type <br />
                                     पदनाम<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="----">--Select--</option>
@@ -142,7 +142,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    District /<br />
+                                    District <br />
                                     ज़िला<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -203,7 +203,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Block /<br />
+                                    Block <br />
                                     ब्लॉक</label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -217,7 +217,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Unique ID /<br />
+                                    Employee Unique ID <br />
                                     कर्मचारी यूनिक आईडी
                                 </label>
                                 <input type="text" class="form-control" placeholder="Enter Employee Unique ID" />
@@ -227,7 +227,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">Search</button>
-                                <a class="btn btn-outline-danger btn-border w-lg" href="HeadOfficeTransferApproval.aspx">Clear</a>
+                                <a class="btn btn-outline-danger btn-border w-lg" href="AdministrativeTransferDraftLetter.aspx">Clear</a>
                             </div>
                         </div>
                     </div>
@@ -241,17 +241,17 @@
                         <table class="table table-bordered text-center ">
                             <tbody>
                                 <tr>
-                                    <th>Sr. No. /<br />
+                                    <th>Sr. No. <br />
                                         सरल क्र.</th>
-                                    <th>Order Number /<br />
+                                    <th>Order Number <br />
                                         आदेश क्र.</th>
-                                    <th>Employ Name /<br />
+                                    <th>Employ Name <br />
                                         कर्मचारी का नाम</th>
-                                    <th>Unique Id /<br />
+                                    <th>Unique Id <br />
                                         यूनीक आई डी</th>
-                                    <th>Print Draft Letter /<br />
+                                    <th>Print Draft Letter <br />
                                         ड्राफ्ट लेटर प्रिंट करें</th>
-                                    <th>Update Letter /<br />
+                                    <th>Update Letter <br />
                                         लेटर अपडेट करें</th>
                                 </tr>
                                 <tr>

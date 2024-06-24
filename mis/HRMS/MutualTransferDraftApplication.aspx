@@ -77,7 +77,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -86,7 +86,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <h4 class="card-title">Print Draft Application or Update Application Of Mutual Transfer  ड्राफ्ट आवेदन प्रिंट करें या पारस्परिक स्थानान्तरण का आवेदन अपडेट करें
+                    <h4 class="card-title">Print Draft Application or Update Application Of Mutual Transfer <br /> ड्राफ्ट आवेदन प्रिंट करें या पारस्परिक स्थानान्तरण का आवेदन अपडेट करें
                     </h4>
                 </div>
             </div>

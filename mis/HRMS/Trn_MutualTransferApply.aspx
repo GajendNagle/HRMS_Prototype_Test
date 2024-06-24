@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -206,7 +206,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="form-group">
-                            <button id="Button1" type="button" class="btn w-lg btn-success btn-border" onclick="myFunction()">View Employee Information</button>
+                            <button id="Button1" type="button" class="btn w-lg btn-success btn-border" onclick="myFunction()">View</button>
 
                         </div>
                     </div>

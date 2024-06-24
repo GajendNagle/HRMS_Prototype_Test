@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -109,7 +109,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Name/ Unique ID /<br />
+                                        Employee Name/ Unique ID <br />
                                         कर्मचारी का नाम यूनिक आई.डी<span style="color: red">*</span></label>
                                     <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Name/ Unique ID" />
                                 </div>
@@ -130,7 +130,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee Name/ Unique ID /<br />
+                                            Employee Name/ Unique ID <br />
                                             कर्मचारी का नाम यूनिक आई.डी<span style="color: red">*</span></label>
                                         <input name="txtEmpName" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Enter Employee Name" value="AU5236-Arjun Talwar" />
                                     </div>
@@ -138,7 +138,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Gender /<br />
+                                            Gender <br />
                                             लिंग<span style="color: red">*</span></label>
                                         <input name="txtDistrict" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Enter District" value="Male" />
                                     </div>
@@ -165,7 +165,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Panal Name /<br />
+                                            Panal Name <br />
                                             पैनल का नाम
                                      <span style="color: red">*</span></label>
                                         <input disabled="disabled" value="SSS-1 Mathematics" readonly="" type="text" class="form-control" autocomplete="off" />
@@ -175,7 +175,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Designation /<br />
+                                            Designation <br />
                                             पदनाम <span style="color: red">*</span></label>
                                         <input name="txtDesignation" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                                     </div>
@@ -183,7 +183,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            District/<br />
+                                            District<br />
                                             ज़िला<span style="color: red">*</span></label>
                                         <input name="txtDistrict" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Enter District" value="Bhopal" />
                                     </div>
@@ -197,7 +197,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            District Name /<br />
+                                            District Name <br />
                                             जिले  का नाम <span style="color: red">*</span></label>
                                         <select class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -250,7 +250,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Post Code /<br />
+                                            Post Code <br />
 
                                             पद कोड<span style="color: red">*</span></label>
                                         <%--<input onchange="ShowVacantPost()" placeholder="Enter Post Code" name="txtPostCode" value="" type="text" class="form-control" autocomplete="off" />--%>
@@ -266,7 +266,7 @@
                                 <div class="col-md-3" id="divtxtpanelname">
                                     <div class="form-group">
                                         <label>
-                                            Panal Name /<br />
+                                            Panal Name <br />
                                             पैनल का नाम
                                      <span style="color: red">*</span></label>
                                         <input disabled="disabled" value="SSS-1 Mathematics" id="txtpanelname" type="text" class="form-control" autocomplete="off" />
@@ -310,7 +310,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Remark /<br />
+                                            Remark <br />
                                             टिप्पणी<span style="color: red">*</span></label>
                                         <input name="txtDistrict" type="text" aria-multiline="true" class="form-control" autocomplete="off" placeholder="Enter Remark" />
                                     </div>
@@ -332,21 +332,21 @@
                             <table class="table table-bordered table-responsive text-center">
                                 <tbody>
                                     <tr>
-                                        <th>Sr. No. /<br />
+                                        <th>Sr. No. <br />
                                             सरल क्र.</th>
-                                        <th>Employee ID-Name /<br />
+                                        <th>Employee ID-Name <br />
                                             कर्मचारी का आईडी-नाम</th>
-                                        <th>Current OIS-Udise Code /<br />
+                                        <th>Current OIS-Udise Code <br />
                                             वर्तमान ओ.आई.एस.कोड</th>
-                                        <th>Current Sankul Code /
+                                        <th>Current Sankul Code 
                                     <br />
                                             वर्तमान संकुल कोड</th>
-                                        <th>New OIS-Udise Code /<br />
+                                        <th>New OIS-Udise Code <br />
                                             नवीन ओ.आई.एस.कोड</th>
-                                        <th>New Sankul Code /
+                                        <th>New Sankul Code 
                                     <br />
                                             नवीन संकुल कोड</th>
-                                        <th>Delete /
+                                        <th>Delete 
                                     <br />
                                             हटाएं</th>
                                     </tr>
@@ -370,7 +370,7 @@
                                     <div class="form-group">
                                         <div class="form-group">
                                             <label>
-                                                Order No./<br />
+                                                Order No.<br />
                                                 आदेश नंबर <span style="color: red">*</span></label>
                                             <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="546545" />
                                         </div>
@@ -379,7 +379,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Order Date /<br />
+                                            Order Date <br />
                                             आदेश दिनांक <span style="color: red">*</span></label>
                                         <input name="txtDistrict" type="date" class="form-control" autocomplete="off" placeholder="Enter District" />
                                     </div>
@@ -406,7 +406,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Upload Document/<br />
+                                            Upload Document<br />
                                             दस्तावेज़ अपलोड करें <span style="color: red">*</span></label>
                                         <input name="txtDesignation" type="file" class="form-control" autocomplete="off" placeholder="Enter Designation" />
                                     </div>
@@ -414,7 +414,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Remark /<br />
+                                            Remark <br />
                                             टिप्पणी<span style="color: red">*</span></label>
                                         <input name="txtDistrict" type="text" aria-multiline="true" class="form-control" autocomplete="off" placeholder="Enter Remark" />
                                     </div>

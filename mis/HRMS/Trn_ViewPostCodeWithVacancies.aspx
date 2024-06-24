@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -5rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -46,8 +46,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <h4 class="card-title">View Post Code With Vacancies /
-रिक्तियों के साथ पोस्ट कोड देखें
+                    <h4 class="card-title">View Post Code With Vacancies / रिक्तियों के साथ पोस्ट कोड देखें
                     </h4>
                 </div>
             </div>
@@ -60,7 +59,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select District Name <br />
+                                Select District Name
+                                <br />
                                 ज़िला का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -122,7 +122,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Block Name <br />
+                                Select Block Name
+                                <br />
                                 ब्लॉक का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -160,7 +161,8 @@
                     <div class="col-md-3" id="divtxtpdanelname">
                         <div class="form-group">
                             <label>
-                                Select Panal Name <br />
+                                Select Panal Name
+                                <br />
                                 पैनल का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="">--Select--</option>
@@ -250,15 +252,18 @@
                                     <th>Sr.No 
                                         <br />
                                         सरल क्र.</th>
-                                    <th>District <br />
+                                    <th>District
+                                        <br />
                                         ज़िला</th>
-                                    <th>Block <br />
+                                    <th>Block
+                                        <br />
                                         ब्लॉक</th>
                                     <th>School 
                                         <br />
                                         स्कूल</th>
 
-                                    <th>Panal <br />
+                                    <th>Panal
+                                        <br />
                                         पैनल</th>
                                     <th>Post Code 
                                         <br />
@@ -268,7 +273,8 @@
                                     <th>Working 
                                         <br />
                                         काम कर रहा</th>
-                                    <th>Reserved <br />
+                                    <th>Reserved
+                                        <br />
                                         आरक्षित</th>
                                     <th>Vacancies 
                                         <br />
