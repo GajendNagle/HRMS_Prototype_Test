@@ -741,8 +741,8 @@
                                             <div class="collapse menu-dropdown" id="Curriculum">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivitiesNotw.aspx"><i class="ri-file-info-line"></i>About Other Curriculum Activities </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivities.aspx"><i class="ri-file-list-3-line"></i>National/State Level Training </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab2.aspx"><i class="ri-file-list-3-line"></i>National/State Level Awards </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivities.aspx"><i class="ri-file-list-3-line"></i>National Or State Level Training </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab2.aspx"><i class="ri-file-list-3-line"></i>National Or State Level Awards </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab3.aspx"><i class="ri-file-list-3-line"></i>Training Details </a></li>
                                                     <%--<li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Details Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report </a></li>--%>
@@ -853,8 +853,8 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficeTransferApproval.aspx"><i class="ri-file-list-3-line"></i>View Transfer Request & Approve </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficFinalVoluntaryTransferApprove.aspx"><i class="ri-file-list-3-line"></i>Voluntary Transfer Final Approve </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficeTransferPrint.aspx"><i class="ri-file-list-3-line"></i>Voluntary Transfer Print </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficeMutalTransferApprove.aspx"><i class="ri-file-list-3-line"></i>Mutal Transfer Approve </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficeMutalTransferPrint.aspx"><i class="ri-file-list-3-line"></i>Mutal Transfer Print </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficeMutalTransferApprove.aspx"><i class="ri-file-list-3-line"></i>Mutual Transfer Approve </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HeadOfficeMutalTransferPrint.aspx"><i class="ri-file-list-3-line"></i>Mutual Transfer Print </a></li>
                                                 </ul>
                                             </div>
                                         </li>

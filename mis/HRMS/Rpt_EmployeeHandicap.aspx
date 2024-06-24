@@ -22,16 +22,17 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Employee Other Curriculum Activities</span></a>
+                            <a href="#EmployeeReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Reports</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Employee Handicap Report</span></li>
                     </ol>
                 </div>
             </div>
         </div>
-    </div>    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;  margin-bottom: -4rem;">
+    </div>
+    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
             <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -54,7 +55,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District /<br />
+                                        District <br />
                                         जिला<span style="color: red">*</span></label>
                                     <select class="form-control select2" id="ddlDist" required="required">
                                         <option value="--Select--">--Select--</option>
@@ -142,13 +143,13 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Sr. No. /<br />
+                                                <th>Sr. No. <br />
                                                     सरल क्र.</th>
-                                                <th>District /<br />
+                                                <th>District <br />
                                                     जिला</th>
-                                                <th>Total Handicapped Employees /<br />
+                                                <th>Total Handicapped Employees <br />
                                                     कुल विकलांग कर्मचारी</th>
-                                                <th>Handicapped Type /<br />
+                                                <th>Handicapped Type <br />
                                                     विकलांग का प्रकार</th>
                                             </tr>
                                         </thead>
@@ -162,7 +163,7 @@
                     </fieldset>
 
                     <div class="modal fade" id="EmpModal" tabindex="-1" role="dialog" aria-labelledby="EmpModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xxl" role="document">
+                        <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h3 class="modal-title" id="EmpModalLabel">Handicapped Employees-<span id="ModaldistName"></span></h3>
@@ -220,8 +221,8 @@
                     </div>
 
                 </div>
+            </div>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -256,7 +257,8 @@
                     for (let i = 0; i < 2; i++) {
                         const totalEmployees = Math.floor(Math.random() * 5) + 1;
                         const typeIndex = Math.floor(Math.random() * handicappedTypes.length);
-                        const type = handicappedTypes[typeIndex];
+                        let type = handicappedTypes[typeIndex];
+                        type = type.replace("/", "<br/>")
                         data.push({
                             id: id++,
                             district,

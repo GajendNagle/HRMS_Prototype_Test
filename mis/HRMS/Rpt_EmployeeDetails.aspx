@@ -47,8 +47,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Employee Other Curriculum Activities</span></a>
+                            <a href="#EmployeeReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee Reports</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Employee Details Report</span></li>
                     </ol>
@@ -68,7 +68,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Employee Details Report<br />
+                            <h4 class="card-title">Employee Details Report /
                                 कर्मचारी विवरण रिपोर्ट</h4>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        OIS Type /
+                                        OIS Type 
                                         <br />
                                         ओ.आई.एस का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
@@ -94,7 +94,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Office Type /<br />
+                                        Office Type <br />
                                         कार्यालय का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -121,7 +121,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation /<br />
+                                        Designation <br />
                                         पद<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -154,7 +154,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Type of Post /<br />
+                                        Type of Post <br />
                                         पद का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -507,106 +507,106 @@
                                     <table class="table">
 
                                         <tr>
-                                            <th>Sr.No. /<br />
+                                            <th>Sr.No. <br />
                                                 सरक क्र. </th>
-                                            <th>Profile Image /<br />
+                                            <th>Profile Image <br />
                                                 प्रोफ़ाइल फोटो </th>
-                                            <th>Employee ID/Name /<br />
+                                            <th>Employee ID/Name <br />
                                                 कर्मचारी आईडी/नाम</th>
                                             <%--<th>Name of Employee</th>--%>
-                                            <th>Gender /<br />
+                                            <th>Gender <br />
                                                 लिंग</th>
-                                            <th>Date of Birth /<br />
+                                            <th>Date of Birth <br />
                                                 जन्म दिनांक </th>
-                                            <th>Blood group /<br />
+                                            <th>Blood group <br />
                                                 ब्लड ग्रुप
                                             </th>
-                                            <th>Father's / Husband's Name /<br />
+                                            <th>Father's / Husband's Name <br />
                                                 पिता/पति का नाम</th>
-                                            <th>Marital Status /<br />
+                                            <th>Marital Status <br />
                                                 वैवाहिक स्थिति
                                             </th>
-                                            <th>Mobile No. /<br />
+                                            <th>Mobile No. <br />
                                                 मोबाइल नंबर </th>
-                                            <th>Aadhaar No. /<br />
+                                            <th>Aadhaar No. <br />
                                                 आधार नंबर</th>
-                                            <th>Pan card no. /<br />
+                                            <th>Pan card no. <br />
                                                 पैन कार्ड नं
                                             </th>
-                                            <th>Email ID /<br />
+                                            <th>Email ID <br />
                                                 ईमेल आईडी
                                             </th>
-                                            <th>Husband / Wife's Name /<br />
+                                            <th>Husband / Wife's Name <br />
                                                 पति/पत्नी का नाम</th>
                                             <%--<th>Job/Business</th>--%>
-                                            <th>Post/Department /<br />
+                                            <th>Post/Department <br />
                                                 पद/विभाग</th>
                                             <%--<th>Social class</th>--%>
-                                            <th>Caste /<br />
+                                            <th>Caste <br />
                                                 जाति</th>
-                                            <th>Physical Disability /<br />
+                                            <th>Physical Disability <br />
                                                 शारीरिक विकलांगता</th>
-                                            <th>Type of Disability /<br />
+                                            <th>Type of Disability <br />
                                                 विकलांगता का प्रकार
                                             </th>
-                                            <th>Current State /<br />
+                                            <th>Current State <br />
                                                 वर्तमान राज्य 
                                             </th>
-                                            <th>Current City /<br />
+                                            <th>Current City <br />
                                                 वर्तमान शहर</th>
-                                            <th>Current Pin Code /<br />
+                                            <th>Current Pin Code <br />
                                                 वर्तमान पिन कोड</th>
-                                            <th>Current Address /<br />
+                                            <th>Current Address <br />
                                                 वर्तमान पता
                                             </th>
-                                            <th>Permanent State /<br />
+                                            <th>Permanent State <br />
                                                 स्थायी राज्य </th>
-                                            <th>Permanent City /<br />
+                                            <th>Permanent City <br />
                                                 स्थायी शहर</th>
-                                            <th>Permanent PinCode /<br />
+                                            <th>Permanent PinCode <br />
                                                 स्थायी पिन कोड</th>
-                                            <th>Permanent Address /<br />
+                                            <th>Permanent Address <br />
                                                 स्थायी पता</th>
-                                            <th>Office Type /<br />
+                                            <th>Office Type <br />
                                                 कार्यालय का प्रकार</th>
                                             <%--<th>Office</th>--%>
-                                            <th>Level /<br />
+                                            <th>Level <br />
                                                 लेवल </th>
-                                            <th>Category /<br />
+                                            <th>Category <br />
                                                 वर्ग</th>
-                                            <th>Post /<br />
+                                            <th>Post <br />
                                                 पद </th>
-                                            <th>Pay Scale /<br />
+                                            <th>Pay Scale <br />
                                                 वेतनमान</th>
-                                            <th>Grade Pay /<br />
+                                            <th>Grade Pay <br />
                                                 ग्रेड पे</th>
-                                            <th>Basic Salary /<br />
+                                            <th>Basic Salary <br />
                                                 मूल वेतन</th>
-                                            <th>Joining Date /<br />
+                                            <th>Joining Date <br />
                                                 जॉइनिंग दिनांक</th>
-                                            <th>Posting Date /<br />
+                                            <th>Posting Date <br />
                                                 पोस्टिंग दिनांक </th>
-                                            <th>Retirement Date /<br />
+                                            <th>Retirement Date <br />
                                                 सेवानिवृत्ति दिनांक </th>
-                                            <th>Recruitment Type /<br />
+                                            <th>Recruitment Type <br />
                                                 भर्ती प्रकार
                                             </th>
 
-                                            <th>Account No. /<br />
+                                            <th>Account No. <br />
                                                 खाता नंबर</th>
-                                            <th>IFSC Code /<br />
+                                            <th>IFSC Code <br />
                                                 आईएफएससी कोड</th>
-                                            <th>GPF No. /<br />
+                                            <th>GPF No. <br />
                                                 जीपीएफ नंबर</th>
-                                            <th>DPF No. /<br />
+                                            <th>DPF No. <br />
                                                 डीपीएफ नंबर</th>
-                                            <th>Treasury No. /<br />
+                                            <th>Treasury No. <br />
                                                 राजकोष संख्या
                                             </th>
-                                            <th>Sankul Code /<br />
+                                            <th>Sankul Code <br />
                                                 संकुल कोड
                                             </th>
-                                            <th>Panel /<br />
+                                            <th>Panel <br />
                                                 पैनल</th>
                                         </tr>
                                         <tr>

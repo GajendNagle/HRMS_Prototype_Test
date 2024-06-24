@@ -31,7 +31,7 @@
                             <a href="#Curriculum" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee Other Curriculum Activities</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>National/State Level Award</span></li>
+                        <li class="breadcrumb-item"><span>National Or State Level Award</span></li>
                     </ol>
                 </div>
             </div>
@@ -51,9 +51,9 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">National/State Level Award
-                                <br />
-                                राष्ट्रीय/राज्य स्तर के पुरस्कार<br />
+                            <h4 class="card-title">National Or State Level Award
+                               /
+                                राष्ट्रीय या राज्य स्तर के पुरस्कार<br />
                             </h4>
                         </div>
                     </div>
@@ -80,13 +80,13 @@
             <br />
             <br />--%>
                     <fieldset>
-                        <legend>National/State Level Awards / राष्ट्रीय/राज्य स्तर के पुरस्कार
+                        <legend>National Or State Level Awards / राष्ट्रीय या राज्य स्तर के पुरस्कार
                         </legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Uniq Id /
+                                        Employee Uniq Id 
                                 <br />
                                         कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                                     <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
@@ -107,7 +107,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee Name/<br />
+                                            Employee Name<br />
                                             कर्मचारी का नाम<span style="color: red">*</span></label>
                                         <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Aman Patidar" />
                                     </div>
@@ -115,7 +115,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Unique ID /<br />
+                                            Unique ID
+                                            <br />
                                             यूनिक आई.डी<span style="color: red">*</span></label>
                                         <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4890" />
                                     </div>
@@ -123,7 +124,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Designation /<br />
+                                            Designation
+                                            <br />
                                             पदनाम <span style="color: red">*</span></label>
                                         <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                                     </div>
@@ -140,22 +142,22 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <legend>Details of National / State Level Awards / Honors
-                                <br />
-                                राष्ट्रीय/राज्य स्तर के पुरस्कार/सम्मान का विवरण </legend>
+                            <legend>Details of National or State Level Awards And Honors
+                             /
+                                राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <div class="table-responsive table-bordered">
                                         <table class="table text-center table table-hover table-bordered">
                                             <tbody>
                                                 <tr>
-                                                    <th>Sr. No./<br />
+                                                    <th>Sr. No.<br />
                                                         सरल क्र.</th>
-                                                    <th>Name of Honor/Award/<br />
-                                                        सम्मान/पुरस्कार का नाम</th>
-                                                    <th>Year of Award/<br />
+                                                    <th>Name of Honor and Award<br />
+                                                        सम्मान व पुरस्कार का नाम</th>
+                                                    <th>Year of Award<br />
                                                         पुरस्कार प्राप्ति का वर्ष</th>
-                                                    <th>Order number if Any/<br />
+                                                    <th>Order number if Any<br />
                                                         आदेश क्रमांक यदि है तो</th>
                                                 </tr>
                                                 <tr>
@@ -205,7 +207,7 @@
 
                             <div class="col-md-2">
 
-                                <button id="Button2" type="button" class="btn btn-outline-success w-lg btn-border Alert-Save" onclick="myFunction()">Save</button>
+                                <button id="Button2" type="button" class="btn btn-outline-success w-lg btn-border Alert-Confirmation" onclick="myFunction()">Save</button>
                             </div>
 
 
@@ -225,7 +227,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>
+    <%--<script>
         debugger;
         !function ($) {
             "use strict";
@@ -272,5 +274,5 @@
                 "use strict";
                 $.SweetAlert.init()
             }(window.jQuery);
-    </script>
+    </script>--%>
 </asp:Content>
