@@ -3,6 +3,45 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .top-heading i {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            color: #fff;
+        }
+
+        .top-heading h3 {
+            margin: 0;
+            font-family: var(--vz-font-sans-serif) !important;
+            font-size: 16px;
+            color: #fff;
+            padding: 0 11px;
+            border-radius: 120px;
+        }
+
+        .top-heading {
+            position: relative;
+            display: flex;
+            /* background-color: var(--vz-primary); */
+            background-image: url(../assets/images/svg/CardHeader.svg);
+            justify-content: center;
+            border-radius: 120px;
+            box-shadow: inset 0px 0px 12px 6px rgb(168 168 201 / 44%);
+            padding: 8px 16px;
+            margin : 2.0rem ;
+        }
+
+        /*position: relative;
+        display: flex;*/
+        /*background-color: var(--vz-primary);*/
+        /*background-image: url(../assets/images/svg/CardHeader.svg);
+        justify-content: center;
+        border-radius: 120px;
+        box-shadow: 8px 0px 12px 7px rgba(100, 100, 111, 0.2);
+        padding: 8px 16px;
+        margin: 1.5rem 0;
+        }*/
+
         .nav-tabs-custom.card-header-tabs {
             margin-top: -0.6em;
             margin-left: 1rem;
@@ -13,7 +52,7 @@
             font-weight: var(--vz-font-weight-medium);
             border-top-left-radius: 33px;
             border-top-right-radius: 29px;
-        }   
+        }
 
         .profile-setting-img {
             position: relative !important;
@@ -21,6 +60,10 @@
         }
 
         .profile-wid-bg::before {
+            background-image: none;
+        }
+
+        .profile-wid-bg {
             background-image: url(../assets/images/svg/CardHeader.svg) !important;
         }
     </style>
@@ -28,15 +71,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="position-relative mx-n4 mt-n4">
-        <div class="profile-wid-bg profile-setting-img">
-            <%--<img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">--%>
-            <%--  <div class="overlay-content">--%>
-            <%--<div class="text-end p-3">
-                    <div class="p-0 ms-auto rounded-circle profile-photo-edit">
-                        <input id="profile-foreground-img-file-input" type="file" class="profile-foreground-img-file-input">
+        <div class="profile-wid-bg profile-setting-img text-center">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="top-heading">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <h3>Employee Profile</h3>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
                     </div>
-                </div>--%>
-            <%--</div>--%>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -47,14 +91,14 @@
                     <div class="text-center">
                         <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
                             <img src="../assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xl img-thumbnail user-profile-image material-shadow" alt="user-profile-image" />
-                            <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                                <input id="profile-img-file-input" type="file" class="profile-img-file-input" />
-                                <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                            <%--<div class="avatar-xs p-0 rounded-circle profile-photo-edit">
+                                <input id="profile-img-file-input" type="file" class="profile-img-file-input" />--%>
+                            <%--<label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
                                     <%--<span class="avatar-title rounded-circle bg-light text-body material-shadow">
                                                         <i class="ri-camera-fill"></i>
-                                                    </span>--%>
+                                                    </span>
                                 </label>
-                            </div>
+                            </div>--%>
                         </div>
                         <h5 class="fs-16 mb-1">Rajesh Rajput</h5>
                         <p class="text-muted mb-0"><b>Employee Code - EF-0225</b></p>
