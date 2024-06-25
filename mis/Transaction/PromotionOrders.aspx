@@ -26,9 +26,10 @@
         #note2 {
             color: red;
         }
-          th {
-        white-space: nowrap;
-    }
+
+        th {
+            white-space: nowrap;
+        }
     </style>
 
 
@@ -90,7 +91,7 @@
     </script>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-   <%-- <div class="row page-titles mb-4">
+    <%-- <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Promotion Order<br />पदोन्नति आदेश</h4>
         </div>
@@ -111,51 +112,53 @@
         </div>
         <div class="card-body">--%>
 
-    
-     <div class="row">
-     <div class="col-12">
-         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-             <h4 class="mb-sm-0"></h4>
-             <div class="=page-title-right">
-                 <ol class="breadcrumb m-0">
-                     <li class="breadcrumb-item">
-                         <span>Home</span>
-                     </li>
-                     <li class="breadcrumb-item">
-                         <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                     </li>
-                     <li class="breadcrumb-item">
-                         <a href="#Promotion" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                             <span>Promotion</span></a>
-                     </li>
-                     <li class="breadcrumb-item"><span>Promotion Order</span></li>
-                 </ol>
-             </div>
-         </div>
-     </div>
- </div>
 
- 
-   <%--  <div class="row page-titles mb-4">--%>
-     
-   <div class="card card-border-primary">
-       <div class="card-header">
-           <div class="row align-items-end">
-               <div class="col-lg-12">
-                   <h5 class="card-title">Promotion Order/
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Promotion" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Promotion</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Promotion Order</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%--  <div class="row page-titles mb-4">--%>
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Promotion Order/
                   पदोन्नति आदेश
-                   </h5>
-               </div>
-           </div>
-       </div>
-       <div class="card-body">
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
 
             <fieldset>
                 <legend>Promotion Order / पदोन्नति आदेश</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Promotion With Transfer <br /> स्थानांतरण के साथ पदोन्नति<span style="color: red">*</span></label>
+                            <label>Promotion With Transfer
+                                <br />
+                                स्थानांतरण के साथ पदोन्नति<span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlApprove">
                                 <%--<option value="--Select--">--Select--</option>--%>
                                 <option value="0">Select</option>
@@ -167,20 +170,22 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Unique ID <br />कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
+                            <label>Employee Unique ID
+                                <br />
+                                कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control" />
                         </div>
                     </div>
 
-                                 <hr />
-<div class="col-md-12">
-    <div class="form-group">
-        <button type="button"  onclick="checkDropdown()" class="btn w-lg btn-success btn-border">Search</button>
-        <a href="PromotionOrders.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="checkDropdown()" class="btn w-lg btn-success btn-border">Search</button>
+                            <a href="PromotionOrders.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        </div>
+                    </div>
 
-                  <%--  <div class="col-md-3 mt-5">
+                    <%--  <div class="col-md-3 mt-5">
                         <div class="form-group">
                             <button type="button" class="btn btn-success btn-rounded" onclick="checkDropdown()">Search</button>
                             <a href="PromotionOrders.aspx" class=" btn btn-danger btn-rounded">Clear</a>
@@ -197,36 +202,46 @@
             <div id="Approve">
                 <fieldset>
                     <legend>Employee Promotion With Transfer Details / स्थानांतरण विवरण के साथ कर्मचारी का पदोन्नति</legend>
-   <div class="row justify-content-end">
-       <div class="col-md-4 text-end">
-           <div class="form-group">
-               <button class="btn btn-info btn-rounded w-55">Excel</button>
-               <button class="btn btn-info btn-rounded w-55">PDF</button>
-           </div>
-       </div>
-       <div class="col-md-3">
-           <div class="form-group">
-               <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-           </div>
-       </div>
-       </div>
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No.<br />सरल क्र.</th>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
                                             <%--<th rowspan="2">Office Type</th>--%>
-                                            <th>Employee Id-Name<br />कर्मचारी आईडी-नाम</th>
-                                            <th>File No.<br />दस्तावेज संख्या</th>
-                                            <th>Current Grade Level<br />वर्तमान ग्रेड स्तर</th>
-                                            <th>New Grade Level<br />नया ग्रेड स्तर</th>
-                                            <th>Current School UdiseCode-Name<br />वर्तमान स्कूल का यूडाइसकोड-नाम</th>
-                                            <th>New School UdiseCode-Name<br />नये स्कूल का यूडाइसकोड-नाम</th>
-                                            <th>Current PayScale<br />वर्तमान वेतनमान</th>
-                                            <th>New PayScale<br />नया वेतनमान</th>
-                                            <th>Action</th>
+                                            <th>Employee Id-Name<br />
+                                                कर्मचारी आईडी-नाम</th>
+                                            <th>File No.<br />
+                                                दस्तावेज संख्या</th>
+                                            <th>Current Grade Level<br />
+                                                वर्तमान ग्रेड स्तर</th>
+                                            <th>New Grade Level<br />
+                                                नया ग्रेड स्तर</th>
+                                            <th>Current School UdiseCode-Name<br />
+                                                वर्तमान स्कूल का यूडाइसकोड-नाम</th>
+                                            <th>New School UdiseCode-Name<br />
+                                                नये स्कूल का यूडाइसकोड-नाम</th>
+                                            <th>Current PayScale<br />
+                                                वर्तमान वेतनमान</th>
+                                            <th>New PayScale<br />
+                                                नया वेतनमान</th>
+                                            <th>Action <br />
+                                                कार्यवाहीं</th>
 
                                         </tr>
                                     </thead>
@@ -275,44 +290,54 @@
                             <div class="row  align-content-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Order No. / <BR />आदेश नंबर<span style="color: red">*</span></label>
+                                        <label>Order No.
+                                            <br />
+                                            आदेश नंबर<span style="color: red">*</span></label>
 
                                         <input name="ename" disabled="disabled" placeholder="58965" type="text" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Order Date / <br />आदेश दिनांक<span style="color: red">*</span></label>
+                                        <label>Order Date
+                                            <br />
+                                            आदेश दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Effective Date / <br />प्रभावी दिनांक<span style="color: red">*</span></label>
+                                        <label>Effective Date
+                                            <br />
+                                            प्रभावी दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Relieving Date /<br /> कार्यमुक्ति दिनांक<span style="color: red">*</span></label>
+                                        <label>Relieving Date
+                                            <br />
+                                            कार्यमुक्ति दिनांक<span style="color: red">*</span></label>
                                         <input name="ename" type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Document /<br /> दस्तावेज़<span style="color: red">*</span></label>
+                                        <label>Document
+                                            <br />
+                                            दस्तावेज़<span style="color: red">*</span></label>
                                         <input name="ename" type="file" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                     </div>
                                 </div>
-                                                                 <hr />
-<div class="col-md-12">
-    <div class="form-group">
-        <button type="button"  class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
-        <a href="PromotionOrders.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
+                                <hr />
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+                                        <a href="PromotionOrders.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                    </div>
+                                </div>
 
-                            <%--    <div class="col-md-3" style=" top:1.9rem;">
+                                <%--    <div class="col-md-3" style=" top:1.9rem;">
                                     <div class="form-group">
                                         <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
                                     </div>
@@ -360,16 +385,26 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No.<br />सरल क्र.</th>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
                                             <%--<th rowspan="2">Office Type</th>--%>
-                                            <th>Employee Id-Name<br />कर्मचारी आईडी-नाम</th>
-                                            <th>File No.<br />दस्तावेज संख्या</th>
-                                            <th>Current Grade Level<br />वर्तमान ग्रेड स्तर</th>
-                                            <th>New Grade Level<br />नया ग्रेड स्तर</th>
-                                            <th>Current School UdiseCode-Name<br />वर्तमान स्कूल यूडाइसकोड-नाम</th>
-                                            <th>Current PayScale<br />वर्तमान वेतनमान</th>
-                                            <th>New PayScale<br />नया वेतनमान</th>
-                                            <th>Action</th>
+                                            <th>Employee Id-Name<br />
+                                                कर्मचारी आईडी-नाम</th>
+                                            <th>File No.<br />
+                                                दस्तावेज संख्या</th>
+                                            <th>Current Grade Level<br />
+                                                वर्तमान ग्रेड स्तर</th>
+                                            <th>New Grade Level<br />
+                                                नया ग्रेड स्तर</th>
+                                            <th>Current School UdiseCode-Name<br />
+                                                वर्तमान स्कूल यूडाइसकोड-नाम</th>
+                                            <th>Current PayScale<br />
+                                                वर्तमान वेतनमान</th>
+                                            <th>New PayScale<br />
+                                                नया वेतनमान</th>
+                                            <th>Action
+                                                <br />
+                                                कार्यवाहीं</th>
 
                                         </tr>
                                     </thead>
@@ -447,7 +482,7 @@
                                         <input name="ename" type="file" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                     </div>
                                 </div>
-                                <div class="col-md-2"  style=" top:1.9rem;">
+                                <div class="col-md-2" style="top: 1.9rem;">
                                     <div class="form-group">
                                         <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
                                     </div>

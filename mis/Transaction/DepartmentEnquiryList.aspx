@@ -132,56 +132,55 @@
                                     <table id="tblList" class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Sr.No. /<br />
+                                                <th>Sr.No. <br />
                                                     सरल क्र.</th>
-                                                <th>Name of Delinquent Public Servant /
+                                                <th>Name of Delinquent Public Servant 
                                             <br />
                                                     अपचारी लोक सेवक का नाम
                                                 </th>
-                                                <th>District /<br />
+                                                <th>District <br />
                                                     जिला</th>
-                                                <th>Development Block /
-                                            <br />
+                                                <th>Development Block                                              <br />
                                                     विकासखंड</th>
-                                                <th>Name of Departmental Investigating Officer /<br />
+                                                <th>Name of Departmental Investigating Officer <br />
                                                     विभागीय जांचकर्ता अधिकारी का नाम </th>
-                                                <th>Name of Presenting Officer /<br />
+                                                <th>Name of Presenting Officer <br />
                                                     प्रस्तुतकर्ता अधिकारी का नाम </th>
                                                 <th>Notice of Appearance of Delinquent Officer Before the<br />
-                                                      Investigating Oficer /<br />
+                                                      Investigating Oficer <br />
                                                     जांच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सूचना</th>
-                                                <th>Date of Suspension /<br />
+                                                <th>Date of Suspension <br />
                                                     निलंबन दिनांक </th>
-                                                <th>Imputed Date /<br />
+                                                <th>Imputed Date <br />
                                                     आरोपित दिनांक </th>
-                                                <th>Date of Departmental Inquiry /
+                                                <th>Date of Departmental Inquiry 
                                             <br />
                                                     विभागीय जांच की संक्षिप्त दिनांक </th>
                                                 <th>First Hearing of Delinquent Before the Investigating Officer and
                                                     <br />
-                                                       Reading of the Charge Sheet /<br />
+                                                       Reading of the Charge Sheet <br />
                                                     जांच आधिकारी के समक्ष अपचारी की प्रथम सुनवाई एवं आरोप पत्र का वाचन </th>
                                                 <th>Presentation and Cross-Examination of<br />
-                                                    Prosecution Evidence /<br />
+                                                    Prosecution Evidence <br />
                                                     अभियोजन साक्ष्य की प्रस्तुती एवं प्रतिपरिक्षण </th>
                                                 <th>Presentation and Cross-Examination of<br />
-                                                    Defense Supporting Evidence /<br />
+                                                    Defense Supporting Evidence <br />
                                                     बचाव सहायक साक्ष्य  की प्रस्तुती एवं प्रतिपरिक्षण </th>
                                                 <th>Brief Presentation and Cross-Examination of
                                                     <br />
-                                                    the Presenting Officer /
+                                                    the Presenting Officer 
                                                     <br />
                                                     प्रस्तुतकर्ता अधिकारी की ब्रीफ प्रस्तुती एवं प्रतिपरिक्षण  </th>
                                                 <th>Delinquent Employee's Counter<br />
-                                                    Argument on brief /<br />
+                                                    Argument on brief <br />
                                                     ब्रीफ पर अपचारी कर्मचारी का प्रतिवाद</th>
                                                 <th>Dispatch of Final Investigation
                                                    
-                                                    Report to Disciplinary<br /> Officer /<br />
+                                                    Report to Disciplinary<br /> Officer <br />
                                                     अंतिम जांच प्रतिवेदन का अनुशासनिक अधिकारी को प्रेषण </th>
-                                                <th>Remark /<br />
+                                                <th>Remark <br />
                                                     रिमार्क </th>
-                                                <th>Action</th>
+                                                <th>Action<br /> कार्यवाहीं</th>
 
                                             </tr>
                                         </thead>
