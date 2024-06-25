@@ -10,7 +10,6 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -33,18 +32,15 @@
             </div>
         </div>
     </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-9">
-                    <h4 class="card-title">Cancel Transfer Report /
-स्थानांतरण रिपोर्ट रद्द करें</h4>
+                    <h4 class="card-title">Cancel Transfer Report / रद्द स्थानांतरण रिपोर्ट</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
-
             <fieldset class="mt-3">
                 <legend>Cancel Transfer Details / स्थानांतरण विवरण रद्द करें</legend>
                 <div class="row form-group align-items-end">
@@ -71,7 +67,6 @@
                         <a href="Rpt_CancelTransfer.aspx" class=" btn btn-outline-danger btn w-lg btn-border">Clear</a>
                     </div>
                 </div>
-
             </fieldset>
             <div id="dv_info" runat="server" visible="false">
                 <fieldset id="DetailsFill" runat="server">
