@@ -145,8 +145,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Decision on Application H.O/
-                        आवेदन पर निर्णय एच.ओ</h4>
+                    <h4 class="card-title">Decision on Application H.O / आवेदन पर निर्णय एच.ओ</h4>
                 </div>
             </div>
         </div>

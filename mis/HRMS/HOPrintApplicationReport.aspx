@@ -103,19 +103,19 @@
     <div class="card-header">
         <div class="row">
             <div class="col-lg-12">
-                <h4 class="card-title">Register Application For Compassionate Appointment on HO Level/<br />
+                <h4 class="card-title">Register Application For Compassionate Appointment on HO Level<br />
                        एच.ओ. स्तर पर अनुकंपा नियुक्ति हेतु आवेदन पंजीकृत करें</h4>
             </div>
         </div>
     </div>
     <div class="card-body">
             <fieldset>
-                <legend>Print Application /आवेदन प्रिंट करें
+                <legend>Print Application / आवेदन प्रिंट करें
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District /<br /> जिला<span style="color: red">*</span></label>
+                            <label>District <br /> जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
                                 <asp:ListItem Value="51">Agar Malwa</asp:ListItem>
@@ -176,7 +176,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Details/विवरण     
+                <legend>Details / विवरण     
                 </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -476,8 +476,8 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="window.print()">Print</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>

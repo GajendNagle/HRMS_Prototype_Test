@@ -88,8 +88,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Action on Compassionate Appointment<br />
-                    अनुकंपा नियुक्ति पर कार्यवाही </legend>
+                <legend>Action on Compassionate Appointment / अनुकंपा नियुक्ति पर कार्यवाही </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
