@@ -97,35 +97,26 @@
          </u>
      </p>
  </div>
-
 <%--  <div class="row page-titles mb-4">--%>
-
   <div class="card   card-border-primary radius-defalt">
 
     <div class="card-header">
         <div class="row">
             <div class="col-lg-12">
-                <h5 class="card-title">Compassionate Appointment/
-
-अनुकम्पा नियुक्ति
-                </h5>
+                <h5 class="card-title">Compassionate Appointment / अनुकम्पा नियुक्ति</h5>
             </div>
         </div>
     </div>
-
         <div class="card-body">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12 col-md-12">
-
                     <div class="single_element">
                         <div class="quick_activity">
                             <div class="row justify-content-center">
                                 <div class="col-lg-4">
-
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 one">
                                             <h4 class="">प्राप्त आवेदन संख्या</h4>
-
                                         </div>
                                         <div class="card-content">
                                             <button class="card-btn one">1250</button>
@@ -133,14 +124,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 five">
                                             <h4 class="">अनुमोदित आवेदन संख्या</h4>
-
                                         </div>
                                         <div class="card-content">
-
                                             <button class="card-btn five">500</button>
                                         </div>
                                     </div>
@@ -155,7 +143,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -164,11 +151,8 @@
             <fieldset>
                 <legend>Compassionate Appointment / अनुकंपा नियुक्ति
                 </legend>
-
                 <%-- <h1>अनुकंपा नियुक्ति और निगरानी</h1>--%>
                 <div class="row">
-
-
                     <div class="col-md-8">
                         <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 38%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति आवेदन के लिए आवश्यक दस्तावेज़:</h4>
                     </div>
@@ -186,7 +170,6 @@
                     <li>आवेदक का फोटो</li>
                     <li>राशन कार्ड<span style="color: blue;"> आवेदन करने से पूर्व उपरोक्त दस्तावेज तैयार करलें और 500 kb तक के साइज़ मे pdf प्रारूप में अपलोड किए जाएंगे</span></li>
                 </ol>
-
                 <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4><br />
                 <p style="font-weight: bold; background-color: #F0FFFF; padding: 10px; border-radius: 10px;">
                     मध्यप्रदेश शासन स्कूल शिक्षा विभाग के अंतर्गत प्रदेश भर में 3.5 लाख से अधिक अधिकारी/कर्मचारी कार्यरत है। शासकीय कर्मचारी के असामयिक मृत्यु होने पर उनके आश्रितों को नियम अनुसार अनुकंपा नियुक्ति दिये जाने का प्रावधान है।  
@@ -194,7 +177,6 @@
                     अनुकंपा नियुक्ति संबंधी सभी प्रकरणों के पारदर्शी एवं समय सीमा में निराकरण सुनिश्चित करने तथा सभी प्रकरणों की अद्तन स्थिति तथा राज्य व अन्य स्तरों पर मोनिटरिंग करने के उद्देश से विभाग ने एजूकेशन पोर्टल पर अनुकंपा नियुक्ति संबंधी ऑनलाइन 
                     प्रणाली का क्रियान्वयन करने का निर्णय लिया है ।
                 </p>
-
                 <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति बिंदु विशिष्ट :</h4>
                 <ul style="font: bold; list-style-type: none; margin-left: -30px">
                     <li style="background-color: #F0F8FF; padding: 10px 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अध्यापक संवर्ग के लिए अनुकम्पा नियुक्ति के सम्बन्ध में पूर्व प्रावधान के अनुसार आवेदक का D.Ed. / B.Ed. के साथ 'शिक्षक पात्रता परीक्षा उत्तीर्ण' होना आवश्यक है, अब अध्यापक संवर्ग से नवीन कैडर में नियुक्ति के बाद अनुकम्पा नियुक्ति के 
@@ -206,7 +188,6 @@
                         में त्वरित निराकरण किया जाकर दिवंगत कर्मचारी के आश्रितों को लाभ सुनिश्चित हो सकेगा। अनुकंपा नियुक्ति के संबंध में समयमध्यप जारी समय-प्रदेश शासन के नियम है। उपलब्ध पर पोर्टल भी निर्देश-</li>
                     <li style="background-color: #F0FFF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;इस प्रणाली के प्रारंभ होने के पश्चात शिक्षकोंआवेदन अपना को कर्मचारियों/ संबंधित कार्यालयों को मैन्युअल रूप से प्रस्तुत न करते हुये इस प्रणाली के तहत ऑनलाइन प्रस्तुत करनी होगी।</li>
                     <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
-
                 </ul>
             </fieldset>
         </div>
@@ -222,12 +203,10 @@
     <script src="../dist/dashboard/morris.js"></script>
     <script src="../dist/js/highcharts/highcharts.js"></script>
 
-
     <script src="../js/highcharts-3d.js"></script>
     <script src="../js/drilldown.js"></script>
     <script src="../js/exporting.js"></script>
     <script src="../js/export-data.js"></script>
     <script src="../js/accessibility.js"></script>
-
 </asp:Content>
 

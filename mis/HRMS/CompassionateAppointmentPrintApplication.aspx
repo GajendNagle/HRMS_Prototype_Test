@@ -91,15 +91,13 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Compassionate Appointment Print Application/
-                        अनुकम्पा नियुक्ति प्रिंट आवेदन करें</h4>
+                    <h4 class="card-title">Compassionate Appointment Print Application / अनुकम्पा नियुक्ति आवेदन प्रिंट करें</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Compassionate Appointment Print Application/अनुकम्पा नियुक्ति प्रिंट आवेदन     
-                </legend>
+                <legend>Compassionate Appointment Print Application / अनुकम्पा नियुक्ति आवेदन प्रिंट</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -407,8 +405,8 @@
                                         </fieldset>
                                     </div>
                                     <div class="modal-footer justify-content-center">
-                                        <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-primary" onclick="window.print()">Print</button>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
