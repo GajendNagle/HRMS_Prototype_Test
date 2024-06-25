@@ -21,9 +21,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Decide on Pending Applications at H.O. Level</span></li>
                     </ol>
@@ -52,7 +51,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District <br /> जिला<span style="color: red">*</span></label>
+                            <label>District
+                                <br />
+                                जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Text="selected" Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="51">Agar Malwa</asp:ListItem>
@@ -179,7 +180,8 @@
                                             <td>Married</td>
                                             <td>18/05/1994 </td>
                                             <td>Son</td>
-                                            <td><a class="btn btn-success btn-rounded" href="HODetailsOfEmployee.aspx" />Action</td></tr>
+                                            <td><a class="btn btn-success btn-rounded" href="HODetailsOfEmployee.aspx" />Action</td>
+                                        </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Laxminarayan Meena</td>
@@ -219,9 +221,9 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-   <script>
-       document.getElementById("toggleButton4").addEventListener("click", function () {
-           document.getElementById("empDetail").style.display = "block";
-       });
-   </script> 
+    <script>
+        document.getElementById("toggleButton4").addEventListener("click", function () {
+            document.getElementById("empDetail").style.display = "block";
+        });
+    </script>
 </asp:Content>

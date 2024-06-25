@@ -22,9 +22,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item">
                             <span id="brdcmDistrictWise" runat="server" visible="false">District Wise Counting Report</span>
@@ -47,9 +46,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Dispose Cases Details
-                      <br />
-                        मामलों के निपटान का विवरण </h4>
+                    <h4 class="card-title">Dispose Cases Details / मामलों के निपटान का विवरण </h4>
                 </div>
             </div>
         </div>
@@ -354,8 +351,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Block Wise Counting Report<br />
-                        ब्लॉक वार सांख्यिकी रिपोर्ट</h4>
+                    <h4 class="card-title">Block Wise Counting Report / ब्लॉक वार सांख्यिकी रिपोर्ट</h4>
                 </div>
             </div>
         </div>
@@ -2831,8 +2827,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">District Wise Counting Report<br />
-                        जिला वार सांख्यिकी रिपोर्ट</h4>
+                    <h4 class="card-title">District Wise Counting Report / जिला वार सांख्यिकी रिपोर्ट</h4>
                 </div>
             </div>
         </div>
@@ -2879,58 +2874,60 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="text-center"><td class="expand"><span style="font-size: 12pt;">1</span></td>
+                                    <tr class="text-center">
+                                        <td class="expand"><span style="font-size: 12pt;">1</span></td>
                                         <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Raisen</span></td>
                                         <td><a href="#" onclick="toggleFieldset('TotalReceivedCases')" style="color: #00BCD4; font-weight: bold;">2</a>
-                                        <td><a href="#" onclick="toggleFieldset('AcceptedApplicationData')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('AvedankoForwordKiyagya')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DisposeAavedan')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DarjYaLambitReport')" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
+                                            <td><a href="#" onclick="toggleFieldset('AcceptedApplicationData')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('AvedankoForwordKiyagya')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DisposeAavedan')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DarjYaLambitReport')" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
                                     </tr>
-                                    <tr class="text-center"><td class="expand"><span style="font-size: 12pt;">2</span></td>
+                                    <tr class="text-center">
+                                        <td class="expand"><span style="font-size: 12pt;">2</span></td>
                                         <td class="expand"><span style="font-size: 12pt;">Shahdol</span></td>
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Umaria</span></td>
                                         <td>
                                             <a href="#" onclick="toggleFieldset('ReceivedcaseUmaria')" style="color: #00BCD4; font-weight: bold;">3</a>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('ForWordApplicationUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DisposeCaseUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DistrictWisePendingApplication')" style="color: #00BCD4; font-weight: bold;">2</a>
-                                        </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('ForWordApplicationUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DisposeCaseUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DistrictWisePendingApplication')" style="color: #00BCD4; font-weight: bold;">2</a>
+                                            </td>
                                     </tr>
                                     <tr class="text-center">
-                                     <td class="expand"><span style="font-size: 12pt;">3</span></td>
+                                        <td class="expand"><span style="font-size: 12pt;">3</span></td>
                                         <td class="expand"><span style="font-size: 12pt;">Rewa</span></td>
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Sidhi</span></td>
                                         <td>
                                             <a href="#" onclick="toggleFieldset('ReceivedcaseUmaria')" style="color: #00BCD4; font-weight: bold;">3</a>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DistWiseLockaavedan')" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DistWiseForwordApplication')" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DisposeCaseOfSidhi')" style="color: #00BCD4; font-weight: bold;">3</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DistWiseLockaavedan')" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DistWiseForwordApplication')" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DisposeCaseOfSidhi')" style="color: #00BCD4; font-weight: bold;">3</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
                                     </tr>
                                     <tr class="text-center">
                                         <td class="expand"><span style="font-size: 12pt;">4</span></td>
@@ -2938,18 +2935,18 @@
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Betul</span></td>
                                         <td>
                                             <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
                                     </tr>
                                     <tr class="text-center">
                                         <td class="expand"><span style="font-size: 12pt;">5</span></td>
@@ -2958,18 +2955,18 @@
 
                                         <td>
                                             <a href="#" onclick="toggleFieldset('ReceivedcaseUmaria')" style="color: #00BCD4; font-weight: bold;">3</a>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('ForWordApplicationUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DisposeCaseUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" onclick="toggleFieldset('DistrictWisePendingApplication')" style="color: #00BCD4; font-weight: bold;">2</a>
-                                        </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('ForWordApplicationUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DisposeCaseUmaria')" style="color: #00BCD4; font-weight: bold;">1</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="toggleFieldset('DistrictWisePendingApplication')" style="color: #00BCD4; font-weight: bold;">2</a>
+                                            </td>
                                     </tr>
                                     <tr class="text-center">
                                         <td class="expand"><span style="font-size: 12pt;">6</span></td>
@@ -2978,18 +2975,18 @@
 
                                         <td>
                                             <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
-                                        </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" style="color: #00BCD4; font-weight: bold;">0</a>
+                                            </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -3018,7 +3015,7 @@
                         <div class="table-responsive">
                             <table class="table  table-striped table-bordered footable-loaded default text-center" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                 <thead class="text-center">
-                                    <tr >
+                                    <tr>
                                         <th data-class="expand" scope="col">Sr. No.
                                               <br />
                                             सरल क्र.</th>

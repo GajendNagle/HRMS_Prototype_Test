@@ -21,9 +21,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Decide on Pending Applications at H.O. Level</span></li>
                     </ol>
@@ -158,9 +157,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Number of Family Members of Deceased Employee
-                 <br />
-                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या <span style="color: red">*</span></label>
+                                Number of Family Members of Deceased Employee<br />
+                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>7</option>
                             </select>
@@ -333,42 +331,42 @@
                                             <tr>
                                                 <td>1</td>
                                                 <td>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>जन्मतिथि के प्रमाणीकरण हेतु हाई स्कूल की अंक सूची अथवा सक्षम अधिकारी द्वारा जारी किया गया जन्म प्रमाण पत्र</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td>स्थानीय / मूल निवासी होने का प्रमाण पत्र</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
                                                 <td>यदि आवेदक अनुसूचित जाति/जनजाति तथा अन्य पिछड़े वर्ग का हो तो प्रमाण पत्र.</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
                                                 <td>हायर सेकेण्डरी घातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र.</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>6</td>
                                                 <td>परिवार के सभी सदस्यों द्वारा आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति का शपथ पत्र</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>7</td>
                                                 <td>आवेदक का फोटो अपलोड करे.</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                             <tr>
                                                 <td>8</td>
                                                 <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
-                                                <td><a class="btn btn-outline-success">View</a></td>
+                                                <td><a class="btn btn-success">View</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -383,7 +381,8 @@
                 <div class="row form-group">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Take Action<br />
+                            <label>
+                                Take Action<br />
                                 कार्रवाई करें<span style="color: red">*</span></label>
                             <select class="form-control select2" id="Actionddl" onchange="ShowHideHandicape()">
                                 <option>--Select--</option>
@@ -396,7 +395,8 @@
                     </div>
                     <div class="col-md-3" id="Mydocu" style="display: none;">
                         <div class="form-group">
-                            <label>Upload Document<br />
+                            <label>
+                                Upload Document<br />
                                 दस्तावेज़ अपलोड करें</label>
                             <asp:FileUpload runat="server" CssClass="form-control"></asp:FileUpload>
                             <h5 style="font-weight: 500;">Note  :<span style="color: red;">Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
@@ -463,7 +463,8 @@
                 <div class="row" id="div3">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Order No.<br />
+                            <label>
+                                Order No.<br />
                                 क्रम संख्या<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -488,7 +489,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Payment<br />
+                            <label>
+                                Payment<br />
                                 भुगतान<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -529,7 +531,7 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Tour Apply Successfully!',
+                                text: 'Record Updated Successfully!',
                                 timer: 2000
                             }
                             )

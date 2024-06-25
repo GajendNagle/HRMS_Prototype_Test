@@ -5,6 +5,7 @@
         th {
             white-space: nowrap;
         }
+
         @media print {
             .modal-dialog {
                 width: 200%;
@@ -59,9 +60,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item"><span>NOC Report was sent to the District Collector at the H.O. level</span></li>
                     </ol>
@@ -389,7 +389,7 @@
                             <div class="form-group">
                                 <label>
                                     Number of Family Members of Deceased Employee<br />
-                                    दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या :<span style="color: Red;">*</span></label>
+                                    दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या:<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                             </div>
                         </div>
@@ -663,56 +663,64 @@
                                         <td>1</td>
                                         <td>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>जन्मतिथि के प्रमाणीकरण हेतु हाई स्कूल की अंक सूची अथवा सक्षम अधिकारी द्वारा जारी किया गया  जन्म प्रमाण पत्र </td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>स्थानीय / मूल निवासी होने का प्रमाण पत्र</td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>यदि आवेदक अनुसूचित जाति/जनजाति तथा अन्य पिछड़े वर्ग का हो तो प्रमाण पत्र.</td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>हायर सेकेण्डरी /स्नातक या अन्य परीक्षा उत्तीर्ण करने के प्रमाण पत्र.</td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
                                         <td>परिवार के सभी सदस्यों द्वारा आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति का शपथ पत्र </td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
                                         <td>आवेदक का फोटो  अपलोड करे.</td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
                                         <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
                                         <td>
-                                            <a class="btn btn-success">View</a>
+                                            <button type="button" class="btn btn-success">View</button>
+                                            <%--<a class="btn btn-success">View</a>--%>
                                         </td>
                                     </tr>
                                 </tbody>

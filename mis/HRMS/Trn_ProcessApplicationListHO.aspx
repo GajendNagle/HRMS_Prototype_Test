@@ -61,9 +61,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item">Action Report on Compassionate Appointment at H.O. Level</li>
                     </ol>
@@ -92,7 +91,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District / जिला<span style="color: red">*</span></label>
+                            <label>District
+                                <br />
+                                जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
                                 <asp:ListItem Value="51">Agar Malwa</asp:ListItem>
@@ -396,7 +397,7 @@
                         <div class="form-group">
                             <label>
                                 Number of Family Members of Deceased Employee<br />
-                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या : <span style="color: Red;">*</span></label>
+                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या:<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
                         </div>
@@ -597,56 +598,64 @@
                                     <td>1</td>
                                     <td>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>जन्मतिथि के प्रमाणीकरण हेतु हाई स्कूल की अंक सूची अथवा सक्षम अधिकारी द्वारा जारी किया गया  जन्म प्रमाण पत्र </td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>स्थानीय / मूल निवासी होने का प्रमाण पत्र</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>यदि आवेदक अनुसूचित जाति/जनजाति तथा अन्य पिछड़े वर्ग का हो तो प्रमाण पत्र.</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>हायर सेकेण्डरी /स्नातक या अन्य परीक्षा उत्तीर्ण करने के प्रमाण पत्र.</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>परिवार के सभी सदस्यों द्वारा आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति का शपथ पत्र </td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>आवेदक का फोटो  अपलोड करे.</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
                                     <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+                                        <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                             </tbody>
@@ -660,8 +669,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label>
-                            <b style="color: black;">Action<br />
-                                कार्रवाई</b>  <span style="color: Red;">*</span></label>
+                            Action<br />
+                            कार्रवाई <span style="color: Red;">*</span></label>
                         <select name="ctl00$ContentBody$ddlkaryvahi" id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
                             <option value="0">- Select  - </option>
                             <option value="1">आवेदन मे आपत्ति/लंबित किया जाना है</option>
@@ -678,8 +687,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>If there is Any Objection<br />
-                                            यदि ,आपत्ति हो तो </b><span style="color: Red;">*</span>
+                                        If there is Any Objection<br />
+                                        यदि ,आपत्ति हो तो<span style="color: Red;">*</span>
                                     </label>
                                     <asp:DropDownList runat="server" CssClass="form-control">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -695,8 +704,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>Objection Details<br />
-                                            आपत्ति का विवरण</b><span style="color: Red;">*</span>
+                                        Objection Details<br />
+                                        आपत्ति का विवरण<span style="color: Red;">*</span>
                                     </label>
                                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
@@ -705,8 +714,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>Description of Action Taken<br />
-                                            लिए गए एक्शन का विवरण</b><span style="color: Red;">*</span>
+                                        Description of Action Taken<br />
+                                        लिए गए एक्शन का विवरण<span style="color: Red;">*</span>
                                     </label>
                                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
@@ -714,8 +723,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>Remark<br />
-                                            रिमार्क </b><span style="color: Red;">*</span>
+                                        Remark<br />
+                                        रिमार्क<span style="color: Red;">*</span>
                                     </label>
                                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
@@ -726,8 +735,8 @@
                 <div class="row align-items-end mt-3" id="ApplicationAcceptRemarkView" style="display: none">
                     <div class="col-md-6">
                         <label>
-                            <b>Remark<br />
-                                रिमार्क </b><span style="color: Red;">*</span>
+                            Remark<br />
+                            रिमार्क<span style="color: Red;">*</span>
                         </label>
                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
@@ -735,8 +744,8 @@
                 <div class="row align-items-end mt-3" id="DivisionalDirector&RemarkView" style="display: none">
                     <div class="col-md-3">
                         <label>
-                            <b>Division<br />
-                                संभाग </b><span style="color: Red;">*</span>
+                            Division<br />
+                            संभाग<span style="color: Red;">*</span>
                         </label>
                         <asp:DropDownList runat="server" CssClass="form-control">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -754,8 +763,8 @@
                     </div>
                     <div class="col-md-6" id="RemarkView">
                         <label>
-                            <b>Remark<br />
-                                रिमार्क </b><span style="color: Red;">*</span>
+                            Remark<br />
+                            रिमार्क<span style="color: Red;">*</span>
                         </label>
                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
@@ -763,8 +772,8 @@
                 <div class="row align-items-end mt-3" id="Division&RemarkView" style="display: none">
                     <div class="col-md-3">
                         <label>
-                            <b>District<br />
-                                जिला </b><span style="color: Red;">*</span>
+                            District<br />
+                            जिला<span style="color: Red;">*</span>
                         </label>
                         <asp:DropDownList runat="server" CssClass="form-control">
                             <asp:ListItem Value="0">-- Select --  </asp:ListItem>
@@ -824,8 +833,8 @@
                     </div>
                     <div class="col-md-6">
                         <label>
-                            <b>Remark<br />
-                                रिमार्क </b><span style="color: Red;">*</span>
+                            Remark<br />
+                            रिमार्क<span style="color: Red;">*</span>
                         </label>
                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
@@ -1019,8 +1028,8 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="window.print()">Print</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
