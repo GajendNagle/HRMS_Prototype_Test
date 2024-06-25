@@ -33,9 +33,8 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">Employee Annual Property Returns Management System<br />
-                                कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Employee Annual Property Returns Management System / कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
                         </div>
                     </div>
                 </div>

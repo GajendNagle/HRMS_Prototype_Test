@@ -26,7 +26,7 @@
                             <a href="#EmpAPRMS" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee APRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Employee APRMS Home</span></li>
+                        <li class="breadcrumb-item"><span>Employee APRMS Fill</span></li>
                     </ol>
                 </div>
             </div>
@@ -39,9 +39,8 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">Employee Annual Property Returns Management System<br />
-                                कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Employee Annual Property Returns Management System / कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
                         </div>
                     </div>
                 </div>
@@ -90,7 +89,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                         <label>
-                                        Unique Id-Name /<br />
+                                        Unique Id-Name <br />
                                         यूनिक आई.डी. - नाम
                                     </label>
 
@@ -101,7 +100,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                         <label>
-                                        District Name /
+                                        District Name 
                                 <br />
                                         जिला का नाम
                                     </label>
@@ -111,7 +110,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                         <label>
-                                        Sankul Name /
+                                        Sankul Name
                                 <br />
                                         संकुल का नाम
                                     </label>
@@ -121,7 +120,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                         <label>
-                                        Designation Name /
+                                        Designation Name 
                                 <br />
                                         पदनाम
                                     </label>
@@ -138,17 +137,17 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Year of APR /
+                                        Year of APR 
                                 <br />
                                         अचल संपत्ति के विवरण का वर्ष<span style="color: red">*</span></label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
                                   
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                         <label>
-                                        Uplode APR form /
+                                        Uplode APR form 
                                 <br />
                                         अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                                     </label>
@@ -190,25 +189,25 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Sr. No. / 
+                                                <th>Sr. No. 
                                             <br />
                                                     सरल क्र.</th>
-                                                <th>District /
+                                                <th>District
                                             <br />
                                                     जिला</th>
-                                                <th>Employee /
+                                                <th>Employee 
                                             <br />
                                                     कर्मचारी</th>
-                                                <th>Sankul /
+                                                <th>Sankul 
                                             <br />
                                                     संकुल</th>
-                                                <th>Designation /
+                                                <th>Designation 
                                             <br />
                                                     पद</th>
-                                                <th>Financial Year /
+                                                <th>Financial Year 
                                             <br />
                                                     वित्तीय वर्ष</th>
-                                                <th>Detail /
+                                                <th>Detail 
                                             <br />
                                                     विवरण</th>
                                             </tr>
