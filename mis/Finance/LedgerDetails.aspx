@@ -26,13 +26,13 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h4 class="card-title">Ledger Details/
-                                बही विवरण</h4>
+                                बही खाता विवरण</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Ledger Details/बही विवरण</legend>
+                        <legend>Ledger Details/बही खाता विवरण</legend>
                         <div class="row align-items-end">
                              <div class="col-md-3">
                                 <div class="form-group">
@@ -46,23 +46,34 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
+                                    <label>Select Ledger Search/<br />बहीखाता खोज का चयन करें
+                                        </label>
+                                    <select class="form-control select2">
+                                        <option value="2">Ledger Name</option>
+                                        <option value="1">Ledger Code</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
                                     <label>
-                                        Enter Ledger Name /<br />
-                                        बहीखाता  का नाम दर्ज करें
+                                        Enter Ledger Name(English) /<br />
+                                        बहीखाता का नाम अंग्रेजी में दर्ज करें
                                     <span style="color: red;">*</span></label>
                                     <input type="text" class="form-control" placeholder="Enter Ledger Name" />
                                 </div>
-                            </div>
-                            <div class="col-md-6 ">
+                            </div></div><hr />
+                            <div class="row justify-content-center">
+                            <div class="col-md-12 text-center">
                                 <div class="form-group ">
-                                    <button type="button" class="btn btn-outline-success btn-border w-lg" >Search</button>
+                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
                                     <a href="LedgerDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset id="FS_Details">
-                        <legend>Ledger Details/बही विवरण </legend>
+                    <fieldset id="FS_Details" style="display: none">
+                        <legend>Ledger Details/बही खाता विवरण </legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -76,13 +87,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" >
                             <div class="col-md-12">
                                 <div class="table-responsive">
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
                                                 </th>
@@ -109,7 +120,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr role="row" class="odd">
+                                            <tr role="row" class="odd" align="center" valign="middle">
                                                 <td ><span>1</span>
                                                 </td>
                                                 <td >
@@ -122,18 +133,18 @@
 
                                                 </td>
                                                 <td >
-                                                    <a>22AAAAA0000A1Z5</a>
+                                                    <a></a>
                                                 </td>
                                                 <td >
                                                     <a>Head Office</a>
                                                 </td>
-                                                <td >
-                                                    <span>Approve</span>
+                                                <td align="center" valign="middle">
+                                                    <span>Active</span>
                                                 </td>
 
                                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
-                                            <tr role="row" class="odd">
+                                            <tr role="row" class="odd" align="center" valign="middle">
                                                 <td ><span>2</span>
                                                 </td>
                                                 <td >
@@ -147,18 +158,18 @@
 
                                                 </td>
                                                 <td>
-                                                    <a>45AAAAA0000A1Z5</a>
+                                                    <a></a>
                                                 </td>
                                                 <td>
                                                     <a>Head Office</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <span>Approve</span>
+                                                    <span>Active</span>
                                                 </td>
 
                                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
-                                            <tr role="row" class="odd">
+                                            <tr role="row" class="odd" align="center" valign="middle">
                                                 <td ><span>3</span>
                                                 </td>
                                                 <td >
@@ -172,13 +183,13 @@
 
                                                 </td>
                                                 <td>
-                                                    <a>11AAAAA0000A1Z5</a>
+                                                    <a></a>
                                                 </td>
                                                 <td>
                                                     <a>Head Office</a>
                                                 </td>
-                                                <td>
-                                                    <span>Approve</span>
+                                                <td align="center" valign="middle">
+                                                    <span >Active</span>
                                                 </td>
 
                                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>

@@ -20,12 +20,12 @@
     <div class="card-body">
         <div runat="server" id="divOffice">
             <fieldset>
-                <legend>Receipt Voucher /रसीद वाउचर</legend>
+                <legend>Receipt Voucher /प्राप्ति वाउचर</legend>
                 <div class="row align-items-end justify-content-between">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label style="color: blue;">
-                                (Previous Voucher No : H024-25VR442)
+                                (Previous Voucher No : H024-25VR001)
                             </label>
                         </div>
                     </div>
@@ -44,14 +44,14 @@
                             Voucher /Bill No 
                         </label>
                         <div class="form-group  input-group">
-                            <input type="text" class="form-control " value="H024-25VR442" />
-                            <input type="text" class="form-control " value="308" />
+                            <input type="text" class="form-control " value="H024-25VR" />
+                            <input type="text" class="form-control " value="001" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date
+                                Voucher Date 
                             </label>
                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                         </div>
@@ -64,8 +64,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Cr.Dr /
-                                        क्रेडिट डेबिट चुनें<span style="color: red;"> *</span></label>
+                                Select Cr.Dr Type/
+                                        क्रेडिट डेबिट प्रकार का चयन करें<span style="color: red;"> *</span></label>
                             <select class="form-control select2">
                                 <option value="2">Debit</option>
                                 <option value="1">Credit</option>
@@ -75,8 +75,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Particulars /<br />
-                                विवरण चुनें<span style="color: red;"> *</span></label>
+                                Select Ledger(Head Code) /<br />
+                                बहीखाता (हेड कोड) का चयन करें<span style="color: red;"> *</span></label>
                             <select class="form-control select2">
                                 <option value="1">Select</option>
                             </select>
@@ -85,9 +85,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Current Balance/
+                                Current Balance Amount/
    <br />
-                                वर्तमान शेष<span style="color: red;"> *</span>
+                                वर्तमान शेष राशि <span style="color: red;"> *</span>
                             </label>
                             <input type="text" class="form-control" value="897644.00" />
                             <%--<select class="form-control select2">
@@ -131,24 +131,24 @@
                                 </div>
                             </div>
                         </div>--%>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="table-responsive">
 
                             <table class="table table-bordered" id="mainTable">
                                 <thead>
-                                    <tr>
+                                    <tr align="center" valign="middle">
                                         <th>Sr. No. /<br />
                                             क्र.सं.
                                         </th>
-                                        <th>Particulars/<br />
-                                            विवरण </th>
-                                        <th>Debit /
+                                        <th> Ledger(Head Code) /<br />
+                                बहीखाता (हेड कोड) </th>
+                                        <th>Debit Amount /
                                             <br />
-                                            डेबिट</th>
-                                        <th>Credit /
+                                            डेबिट राशि </th>
+                                        <th>Credit Amount/
                                             <br />
-                                            क्रेडिट
+                                            क्रेडिट राशि 
                                         </th>
                                         <th>BillByBill Detail /
                                             <br />

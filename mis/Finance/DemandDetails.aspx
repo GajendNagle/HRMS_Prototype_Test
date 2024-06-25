@@ -70,7 +70,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप का चयन करें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Annual</option>
@@ -124,7 +124,7 @@
                     </fieldset>
                         <fieldset id="FS_Details" style="display: none">
                         <legend>Demand Details /
-                                मांग विवरण </legend>
+                                मांग राशि विवरण </legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -144,7 +144,7 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
                                                 </th>
@@ -178,7 +178,7 @@
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>12-2-2023</a>
+                                                    <a>05-01-2023</a>
                                                 </td>
                                                  <td align="center" valign="middle">
                                                     <a>543000.00</a>
@@ -223,6 +223,25 @@
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Approve</a>
+                                                </td>
+                                            </tr>
+                                             <tr role="row" class="odd">
+                                                <td align="center" valign="middle"><span></span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <span></span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a></a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a><b>Total</b></a>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <a>643054.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a></a>
                                                 </td>
                                             </tr>
                                             <!-- Add more rows as needed -->

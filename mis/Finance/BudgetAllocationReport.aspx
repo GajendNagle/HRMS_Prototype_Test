@@ -37,7 +37,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select From Date /
-                                        दिनांक से चयन करें<span style="color: red;"> *</span></label>
+                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select To Date /
-                                        दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप चुनें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Income</option>
@@ -65,7 +65,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                        ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -84,7 +84,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Office Name/<br />
-                                        ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -106,12 +106,12 @@
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
                         <legend>Budget Allocation Report /
-                                बजट आवंटन रिपोर्ट </legend>
+                                बजट आवंटन जानकारी </legend>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <button class="btn btn-outline-secondary btn-sm btn-rounded w-55" onclick="openPDF()">Print</button>
-                                    <button class="btn btn-outline-success btn-sm btn-rounded w-55" onclick="exportFile()">Export</button>
+                                    <button class="btn btn-outline-secondary btn-border" onclick="openPDF()">Print</button>
+                                    <button class="btn btn-outline-success btn-border" onclick="exportFile()">Export</button>
                                 </div>
                             </div>
                         </div>
@@ -126,20 +126,20 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
                                                 </th>
                                                 <th>Ledger Code /
                                             <br />
-                                                    खाताबही कोड</th>
+                                                    बहीखाता कोड</th>
                                                 <th>Ledger Name /
                                             <br />
-                                                    खाताबही नाम
+                                                    बहीखाता का नाम
                                                 </th>
                                                 <th>Amount/
                                             <br />
-                                                    राशि
+                                                    आवंटन राशि
                                                 </th>
                                             </tr>
                                         </thead>

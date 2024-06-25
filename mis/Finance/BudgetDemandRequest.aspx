@@ -34,7 +34,7 @@
                 <div class="card-body">
                      <fieldset>
                         <legend>Budget Demand Request /
-                                बजट मांग अनुरोध</legend>
+                                बजट मांग राशि अनुरोध</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -48,7 +48,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप चुनें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार चुनें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Income</option>
@@ -60,7 +60,7 @@
                                     <label>
                                         Select Head (Ledger)Name/
    <br />
-                                        हेड नाम चुनें<span style="color: red;"> *</span>
+                                        हेड (बहीखाता)नाम चुनें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -74,7 +74,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Amount Request/<br />
-                                राशि अनुरोध दर्ज करें<span style="color: red;">*</span></label>
+                                मांग राशि दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Alias" />
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     </fieldset>
                         <fieldset id="FS_Details" style="display: none">
                         <legend>Budget Demand Details /
-                                बजट मांग विवरण </legend>
+                                बजट मांग राशि विवरण </legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -111,22 +111,22 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
                                                 </th>
                                                 <th>Head Type /<br />
-                                                    हेड नाम </th>
+                                                    हेड प्रकार </th>
                                                 <th>Head Code /
                                             <br />
                                                     हेड कोड</th>
-                                                <th>Head Name /
+                                                <th>Head (Ledger)Name /
                                             <br />
-                                                    हेड नाम
+                                                    हेड(बहीखाता) नाम
                                                 </th>
                                                 <th>Amount Request /
                                             <br />
-                                                    राशि अनुरोध
+                                                    राशि मांग
                                                 </th>
                                                 <th>Action /
                                             <br />
@@ -188,6 +188,26 @@
                                                     <a>10000.00</a>
                                                 </td>
                                                 <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td align="center" valign="middle"><span></span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <span></span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a></a>
+
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a><b>Total</b></a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>743054.00</a>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <a></a>
+                                                </td>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>

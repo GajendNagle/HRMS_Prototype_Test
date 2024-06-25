@@ -24,20 +24,20 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h4 class="card-title">Office Wise Budget Allocation Report /
-                                कार्यालयवार बजट आवंटन रिपोर्ट</h4>
+                                कार्यालय अनुसार बजट आवंटन रिपोर्ट</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>DFO Wise Budget Allocation Report /
-                                कार्यालयवार बजट आवंटन रिपोर्ट</legend>
+                        <legend>Office Wise Budget Allocation Report /
+                                कार्यालय अनुसार बजट आवंटन रिपोर्ट</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Select From Date /
-                                        दिनांक से चयन करें<span style="color: red;"> *</span></label>
+                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select To Date /
-                                        दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप चुनें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Income</option>
@@ -65,7 +65,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                        ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -84,7 +84,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Office Name/<br />
-                                        ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -106,20 +106,20 @@
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
                         <legend>Budget Allocation Report /
-                                बजट आवंटन रिपोर्ट </legend>
+                                बजट आवंटन जानकारी </legend>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <button class="btn btn-outline-secondary btn-sm btn-rounded w-55" onclick="openPDF()">Print</button>
-                                    <button class="btn btn-outline-success btn-sm btn-rounded w-55" onclick="exportFile()">Export</button>
+                                    <button class="btn btn-outline-secondary btn-border" onclick="openPDF()">Print</button>
+                                    <button class="btn btn-outline-success btn-border" onclick="exportFile()">Export</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <h5>मध्य प्रदेश राज्य लघु वनोपज (व्यापार एवं विकास) सहकारी संघ मर्यादित
+                        <div class="row justify-content-center mb-0 mt-0">
+                            <h5>Directorate of Public Instruction
                             </h5>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center mb-0">
                             <h5>[Head Office]
                             </h5>
                         </div>
@@ -202,5 +202,24 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
+
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+
+        function exportFile() {
+            var fileUrl = '../Document/HRMS_Document%20(1).pdf';
+            var a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'HRMS_Document.pdf';  // Replace with the desired file name
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
 </asp:Content>
 

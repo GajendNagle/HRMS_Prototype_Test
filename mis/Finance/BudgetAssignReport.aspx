@@ -26,20 +26,20 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h4 class="card-title">Budget Assign Report /
-                                बजट असाइनमेंट रिपोर्ट</h4>
+                                बजट आवंटन रिपोर्ट</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
                         <legend>Budget Assign Report /
-                                बजट असाइनमेंट रिपोर्ट</legend>
+                                बजट आवंटन की प्रक्रिया</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Select From Date /<br />
-                                        दिनांक से चुनें<span style="color: red;"> *</span></label>
+                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2023-12-10" />
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select To Date /<br />
-                                        दिनांक तक चुनें<span style="color: red;"> *</span></label>
+                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                         ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
+                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -73,7 +73,7 @@
                         <div class="form-group">
                             <label>
                                 Select Office Name/<br />
-                                ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
+                                कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -97,7 +97,7 @@
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
                         <legend>Budget Assign Report /
-                                बजट असाइनमेंट रिपोर्ट </legend>
+                                बजट आवंटन जानकारी</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -117,7 +117,7 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
                                                 </th>
@@ -134,9 +134,9 @@
                                             <br />
                                                     कुल नियत सीमा
                                                 </th>
-                                                <th>Action /
+                                                <th>LetterView /
                                             <br />
-                                                    कार्रवाई 
+                                                    पत्र दृश्य 
                                                 </th>
                                             </tr>
                                         </thead>
