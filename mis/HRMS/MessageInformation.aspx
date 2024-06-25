@@ -127,9 +127,9 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                            <button type="button" class="Alert-Confirmation btn btn-success btn w-lg btn-border">Save</button>
-                            <a href="MessageInformation.aspx" class="btn btn-outline-danger btn w-lg btn-border">Clear</a>
-                        </div>
+                        <button type="button" class="Alert-Confirmation btn btn-success btn w-lg btn-border">Save</button>
+                        <a href="MessageInformation.aspx" class="btn btn-outline-danger btn w-lg btn-border">Clear</a>
+                    </div>
                 </div>
             </fieldset>
             <fieldset>
