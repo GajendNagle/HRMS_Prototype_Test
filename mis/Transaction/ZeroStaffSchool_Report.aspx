@@ -5,19 +5,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-          <h4 class="mb-sm-0"></h4>
-<div class="=page-title-right">
-    <ol class="breadcrumb m-0">
-        <li class="breadcrumb-item">
-            <span>Home</span>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
-                <span>OIS Setup Reports</span></a>
-        </li>
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
+                            <span>OIS Setup Reports</span></a>
+                    </li>
                     <%--                     <li class="breadcrumb-item">
     <a href="#Reports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Reports')">
         <span>Reports</span></a>
@@ -35,47 +35,54 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h5 class="card-title">Zero Staff School Report</h5>
+                    <h5 class="card-title">Zero Staff School Report/जीरो स्टाफ स्कूल रिपोर्ट</h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
 
             <fieldset>
-                <legend>Staff Details</legend>
-                <div class="row form-group">
-                    <div class="col-md-3">
-                        <label class="font-bold">District Name/<br />
-जिले का नाम<span style="color: red">*</span></label>
-                        <span class="fa-pull-right">
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
-                                ErrorMessage="Select District Name" InitialValue="0" ForeColor="Red"
-                                Text="<i class='fa fa-exclamation-circle' title='Select District Name !'></i>"
-                                ControlToValidate="ddlDistrict" Display="Dynamic" runat="server">
-                            </asp:RequiredFieldValidator>
-                        </span>
-                        <asp:DropDownList runat="server" CssClass="form-control select2" ID="ddlDistrict" AutoPostBack="true">
-                            <asp:ListItem Value="0">--Bhopal--</asp:ListItem>
-                            <asp:ListItem Value="1">Chhatarpur</asp:ListItem>
-                            <asp:ListItem Value="2">Betul</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                    <div class="col-md-3">
-                        <label class="font-bold">Block Name/<br />विकासखण्ड का नाम</label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2" AutoPostBack="true" ID="ddlBlock">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Seoni</asp:ListItem>
-                            <asp:ListItem>Chhapara</asp:ListItem>
-                            <asp:ListItem>Kurai</asp:ListItem>
-                            <asp:ListItem>Barghat</asp:ListItem>
-                            <asp:ListItem>Ghansor</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-
-
+                <legend>Staff Details/स्टाफ विवरण</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Management Group /<br />प्रबंधन समूह </label>
+                            <label>
+                                District Name<br />
+                                जिले का नाम<span style="color: red">*</span></label>
+                            <span>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+                                    ErrorMessage="Select District Name" InitialValue="0" ForeColor="Red"
+                                    Text="<i class='fa fa-exclamation-circle' title='Select District Name !'></i>"
+                                    ControlToValidate="ddlDistrict" Display="Dynamic" runat="server">
+                                </asp:RequiredFieldValidator>
+                            </span>
+                            <asp:DropDownList runat="server" CssClass="form-control select2" ID="ddlDistrict" AutoPostBack="true">
+                                <asp:ListItem Value="0">--Bhopal--</asp:ListItem>
+                                <asp:ListItem Value="1">Chhatarpur</asp:ListItem>
+                                <asp:ListItem Value="2">Betul</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Block Name<br />
+                                विकासखण्ड का नाम</label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2" AutoPostBack="true" ID="ddlBlock">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Seoni</asp:ListItem>
+                                <asp:ListItem>Chhapara</asp:ListItem>
+                                <asp:ListItem>Kurai</asp:ListItem>
+                                <asp:ListItem>Barghat</asp:ListItem>
+                                <asp:ListItem>Ghansor</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Management Group
+                                <br />
+                                प्रबंधन समूह </label>
 
                             <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlManagementGrp" AutoPostBack="true">
                                 <asp:ListItem Value="0"> -Select-</asp:ListItem>
@@ -91,8 +98,9 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Management Details/<br />प्रबंधन विवरण  </label>
-                            <span class="fa-pull-right"></span>
+                            <label>Management Details<br />
+                                प्रबंधन विवरण  </label>
+
                             <asp:DropDownList CssClass="form-control select2" runat="server" ID="ddlSchoolManagementDtls">
                                 <asp:ListItem Value="0"> -Select-</asp:ListItem>
                             </asp:DropDownList>
@@ -100,7 +108,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Category/<br />श्रेणी</label>
+                            <label>Category<br />
+                                श्रेणी</label>
 
                             <asp:DropDownList CssClass="form-control select2" runat="server" AutoPostBack="true" ID="ddlSchoolCat">
                                 <asp:ListItem Value="0"> -Select-</asp:ListItem>
@@ -113,8 +122,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Category Details/<br />
-श्रेणी विवरण</label>
+                            <label>
+                                Category Details<br />
+                                श्रेणी विवरण</label>
                             <asp:DropDownList class="form-control select2" ID="ddlCategarydtl" runat="server">
                                 <asp:ListItem Value="0"> -Select-</asp:ListItem>
                             </asp:DropDownList>
@@ -134,27 +144,51 @@
             <div class="row form-group" id="dv_rpt" runat="server">
                 <div class="col-md-12">
                     <fieldset>
-                        <legend>Zero Staff School Details</legend>
+                        <legend>Zero Staff School Details/शून्य स्टाफ स्कूल विवरण</legend>
                         <div class="row">
 
                             <div class="col-md-12">
+                                <div class="table-responsive">
+
+                              
 
                                 <%--table district Start--%>
 
-                                <table class="table table-bordered table-responsive-lg " id="tblDistrict">
+                                <table class="table table-bordered " id="tblDistrict">
                                     <thead>
-                                        <tr>
-                                            <th>Sr. No</th>
-                                            <th>District</th>
-                                            <th>Block</th>
-                                            <th>Management Group</th>
-                                            <th>Management Details</th>
-                                            <th>Category Details</th>
-                                            <th>School Name</th>
-                                            <th>Total Enrollment</th>
-                                            <th>Sanction Teachers</th>
-                                            <th>Currently Working</th>
+                                        <tr style="white-space:nowrap;">
+                                            <th>Sr. No
+                                                <br />
+                                                क्र. संख्या</th>
+                                            <th>District
+                                                <br />
+                                                जिला</th>
+                                            <th>Block
+                                                <br />
+                                                ब्लॉक</th>
+                                            <th>Management Group
+                                                <br />
+                                                प्रबंधन समूह</th>
+                                            <th>Management Details
+                                                <br />
+                                                प्रबंधन विवरण</th>
+                                            <th>Category Details
+                                                <br />
+                                                श्रेणी विवरण</th>
+                                            <th>School Name
+                                                <br />
+                                                स्कूल का नाम</th>
+                                            <th>Total Enrollment
+                                                <br />
+                                                कुल नामांकन</th>
+                                            <th>Sanction Teachers
+                                                <br />
+                                                स्वीकृत शिक्षक</th>
+                                            <th>Currently Working
+                                                <br />
+                                                वर्तमान में काम कर रहे</th>
                                         </tr>
+
                                     </thead>
                                     <tr>
                                         <td>1</td>
@@ -181,7 +215,7 @@
                                         <td>62</td>
                                     </tr>
                                 </table>
-
+  </div>
                             </div>
                         </div>
                     </fieldset>
@@ -189,7 +223,7 @@
             </div>
         </div>
     </div>
-    </div>
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

@@ -1,67 +1,78 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_SchoolSetup.aspx.cs" Inherits="mis_HRMS_Rpt_SchoolSetup" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        .card-border-info {
+            border-color: #fff !important;
+        }
+       .form-control:read-only {
+    background-color: #fff;
+}
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-                          <div class="row">
-     <div class="col-12">
-         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                      <h4 class="mb-sm-0"></h4>
-<div class="=page-title-right">
-    <ol class="breadcrumb m-0">
-        <li class="breadcrumb-item">
-            <span>Home</span>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
-                <span>OIS Setup Reports</span></a>
-        </li>
-               
-                     <li class="breadcrumb-item"><span>School Setup Report</span></li>
-                 </ol>
-             </div>
-         </div>
-     </div>
- </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
+                                <span>OIS Setup Reports</span></a>
+                        </li>
 
- 
-   <%--  <div class="row page-titles mb-4">--%>
-    
-   <div class="card card-border-primary">
-      <div class="card-header">
-          <div class="row align-items-end">
-              <div class="col-lg-6">
-                  <h5 class="card-title">School Setup Report
-                  </h5>
-              </div>
-          </div>
-      </div>
-      <div class="card-body">
-
-
- 
-        <div class="card-header card-border-info">
-            <div class="row form-group m-2">
-                <div class="col-md-3">
-                    <label class="font-bold text-dark">OIS Type/<br />ओ.आई.एस प्रकार<span style="color: red">*</span></label>
-                    <asp:DropDownList ID="ddlOISType" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlOISType_SelectedIndexChanged" AutoPostBack="true">
-                        <asp:ListItem Value="0">--Select--</asp:ListItem>
-                        <asp:ListItem Value="1">Office</asp:ListItem>
-                        <asp:ListItem Value="2">Institute</asp:ListItem>
-                        <asp:ListItem Value="3" Selected="True">School</asp:ListItem>
-                    </asp:DropDownList>
+                        <li class="breadcrumb-item"><span>School Setup Report</span></li>
+                    </ol>
                 </div>
             </div>
         </div>
-        <%--<div class="card-body">
-   --%>         <fieldset>
-                <legend>School Setup Report</legend>
+    </div>
+
+
+    <%--  <div class="row page-titles mb-4">--%>
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h5 class="card-title">School Setup Report/स्कूल सेटअप रिपोर्ट
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+
+
+
+            <div class="card-header card-border-info">
+                <div class="row form-group m-2">
+                    <div class="col-md-3">
+                        <label class=" text-dark">OIS Type<br />
+                            ओ.आई.एस प्रकार<span style="color: red">*</span></label>
+                        <asp:DropDownList ID="ddlOISType" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlOISType_SelectedIndexChanged" AutoPostBack="true">
+                            <asp:ListItem Value="0">--Select--</asp:ListItem>
+                            <asp:ListItem Value="1">Office</asp:ListItem>
+                            <asp:ListItem Value="2">Institute</asp:ListItem>
+                            <asp:ListItem Value="3" Selected="True">School</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+            </div>
+            <%--<div class="card-body">
+            --%>
+            <fieldset>
+                <legend>School Setup Report/स्कूल सेटअप रिपोर्ट</legend>
                 <div class="row form-group">
                     <div class="col-md-3">
-                        <label class="font-bold">Division Name/<br />संभाग का नाम <span style="color: red">*</span></label>
+                        <label class="">Division Name<br />
+                            संभाग का नाम <span style="color: red">*</span></label>
                         <asp:DropDownList ID="ddlDivision" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlDivision_SelectedIndexChanged" AutoPostBack="true">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -69,22 +80,25 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">District Name/<br />
-जिले का नाम<span style="color: red">*</span></label>
+                        <label class="">
+                            District Name<br />
+                            जिले का नाम<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" AutoPostBack="true" CssClass="form-control select2" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" ID="ddlDistrict">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Block Name/<br />विकासखण्ड का नाम</label>
+                        <label class="">Block Name<br />
+                            विकासखण्ड का नाम</label>
                         <asp:DropDownList ID="ddlBlock" runat="server" AutoPostBack="true"
                             CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">
-                            Management Group/<br />प्रबंधन समूह 
+                        <label class="">
+                            Management Group<br />
+                            प्रबंधन समूह 
                         </label>
                         <asp:DropDownList ID="ddlMngmntGrp" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMngmntGrp_SelectedIndexChanged"
                             CssClass="form-control select2">
@@ -97,15 +111,17 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">
-                            Management Details/<br />प्रबंधन विवरण 
+                        <label class="">
+                            Management Details<br />
+                            प्रबंधन विवरण 
                         </label>
                         <asp:DropDownList ID="ddlMngmntGrpDtls" runat="server" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Category/<br />श्रेणी </label>
+                        <label class="">Category<br />
+                            श्रेणी </label>
                         <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true" ID="ddlCategory" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                             <asp:ListItem Value="1">Primary</asp:ListItem>
@@ -115,55 +131,59 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3 ">
-                        <label class="font-bold">Category Details/<br />
-श्रेणी विवरण</label>
-                        <asp:DropDownList runat="server" Disabled="true" ID="ddlCateDtls" CssClass="form-control ">
-                            <%--<asp:ListItem Value="0">--Select--</asp:ListItem>--%>
-                            <%--<asp:ListItem Value="1">1st to 5th </asp:ListItem>--%>
+                        <label class="">
+                            Category Details<br />
+                            श्रेणी विवरण</label>
+                        <asp:DropDownList runat="server" ID="ddlCateDtls" CssClass="form-control select2 ">
+                            <asp:ListItem Value="Select">Select</asp:ListItem>
+                            <asp:ListItem Value="Bhopal">General</asp:ListItem>
+                            <asp:ListItem Value="Bhopal">OBC</asp:ListItem>
+                            <asp:ListItem Value="Bhopal">SC</asp:ListItem>
+                            <asp:ListItem Value="Bhopal">ST</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-weight-bold">School-Dise Code/<br />
-स्कूल-डिस कोड<span style="color: red">*</span></label>
-                        <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                        <label>
+                            School-Dise Code<br />
+                            स्कूल-डिस कोड<span style="color: red">*</span></label>
+                        <asp:TextBox runat="server" CssClass="form-control" placeholder=" School-Dise Code"></asp:TextBox>
                     </div>
                 </div>
-       <hr />
-       <div class="col-md-12">
-    <div class="form-group">
-   <asp:Button  runat="server"  class="btn w-lg btn-success btn-border" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
-           <a class="btn btn-outline-danger w-lg btn-border" href="Rpt_SchoolSetup.aspx">Clear</a>
-    </div>
-</div>
-           
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <asp:Button runat="server" class="btn w-lg btn-success btn-border" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
+                        <a class="btn btn-outline-danger w-lg btn-border" href="Rpt_SchoolSetup.aspx">Clear</a>
+                    </div>
+                </div>
 
 
-            <%--    <div class="row justify-content-center">
+
+                <%--    <div class="row justify-content-center">
                     <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <asp:Button runat="server" CssClass="btn btn-success btn-rounded" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
                         </div>
                     </div>
                 </div>--%>
-
             </fieldset>
 
 
             <fieldset runat="server" id="div_details" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -242,18 +262,18 @@
             <fieldset runat="server" id="divUpperPrimary" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-md-12">
@@ -393,18 +413,18 @@
             <fieldset runat="server" id="divSecondary" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-md-12">
@@ -544,18 +564,18 @@
             <fieldset runat="server" id="divUprSec" visible="false">
                 <legend>Details</legend>
                 <div class="row justify-content-end">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-md-12">

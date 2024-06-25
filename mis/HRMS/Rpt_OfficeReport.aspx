@@ -38,29 +38,29 @@
             <fieldset>
                 <legend>Office Report/कार्यालय रिपोर्ट</legend>
                 <div class="row form-group align-items-end">
-                    <div class="col-md-2">
-                        <label class="font-bold">Select Division Name/ संभाग का नाम चुनें<span style="color: red">*</span></label>
+                    <div class="col-md-3">
+                        <label>Select Division Name/ संभाग का नाम चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList ID="ddlDivision" runat="server" CssClass="form-control select2" OnSelectedIndexChanged="ddlDivision_SelectedIndexChanged" AutoPostBack="true">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
                             <asp:ListItem>Gwalior</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
-                        <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
+                    <div class="col-md-3">
+                        <label>Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlDistrict_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control select2" ID="ddlDistrict">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
-                        <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें<span style="color: red">*</span></label>
+                    <div class="col-md-3">
+                        <label>Select Block Name/ ब्लॉक का नाम चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList ID="ddlBlock" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBlock_SelectedIndexChanged"
                             CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
-                        <label class="font-bold">Select Office Type/कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
+                    <div class="col-md-3">
+                        <label>Select Office Type/कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
                         <span class="fa-pull-right">
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ValidationGroup="a"
                                 ErrorMessage="Select Office Type" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Office Type !'></i>"
@@ -76,8 +76,8 @@
                             <asp:ListItem>BEO,SUSNER</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
-                        <label class="font-bold">Select U-Dise Code/यू-डाइस कोड चुनें<span style="color: red">*</span></label>
+                    <div class="col-md-3">
+                        <label>Select U-Dise Code/यू-डाइस कोड चुनें<span style="color: red">*</span></label>
                         <span class="fa-pull-right">
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ValidationGroup="a"
                                 ErrorMessage="Select UDise Code" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select UDise Code !'></i>"
@@ -93,8 +93,8 @@
                             <asp:ListItem>232203OBS01-BEO,SUSNER</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-2">
-                        <label class="font-bold">Select Designation Type/पदनाम प्रकार का चयन करें<span style="color: red">*</span></label>
+                    <div class="col-md-3">
+                        <label>Select Designation Type/पदनाम प्रकार का चयन करें<span style="color: red">*</span></label>
                         <span class="fa-pull-right">
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="a"
                                 ErrorMessage="Select Designation" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Designation !'></i>"
@@ -114,12 +114,12 @@
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
                                         <tr class="card-header">
-                                            <th>Sr.No./क्र.सं.</th>
-                                            <th>Designation/पद </th>
-                                            <th>Sanction/सांप्रतिबंध </th>
-                                            <th>Working /वर्किंग </th>
-                                            <th>Vacant /रिक्त </th>
-                                            <th>Surplus /अधिशेष </th>
+                                            <th>Sr.No.<br />क्र.सं.</th>
+                                            <th>Designation<br />पद </th>
+                                            <th>Sanction<br />सांप्रतिबंध </th>
+                                            <th>Working <br />वर्किंग </th>
+                                            <th>Vacant <br />रिक्त </th>
+                                            <th>Surplus <br />अधिशेष </th>
                                         </tr>
                                         <tr>
                                             <td>1.</td>
@@ -150,9 +150,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2" runat="server" id="divYear">
+                    <div class="col-md-3" runat="server" id="divYear">
                         <div class="form-group">
-                            <label class="font-bold">Select Financial Year/वित्तीय वर्ष चुनें<span style="color: red">*</span></label>
+                            <label>Select Financial Year/वित्तीय वर्ष चुनें<span style="color: red">*</span></label>
                             <span class="fa-pull-right">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ValidationGroup="a"
                                     ErrorMessage="Select Financial Year" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select Financial Year !'></i>"
