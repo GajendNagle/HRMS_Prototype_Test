@@ -532,7 +532,7 @@
                                     <option>23340502509-GHSS BANGAWAN</option>
                                     <option>23340603802-GAYANDEEP M S CHANDAN PIPALIYA</option>
                                 </select>--%>
-                                     <input id="ddlSchoolDise" class="form-control " placeholder="Enter School Dise Code" onchange="myFunction7()" />
+                                     <input id="ddlSchoolDise" class="form-control" autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" />
                             </div>
                         </div>
                         <div class="col-md-3" id="school" style="display:none;">
@@ -883,17 +883,23 @@
             document.getElementById('FemilySamagraID').style.display = "block";
 
         }</script>
-    <script> 
-        function myFunction3() {
-            var ForwordTo = document.getElementById("options").value;
-            if (ForwordTo == "1") {
-                document.getElementById('hiddenElement').style.display = "block";
-                document.getElementById('HandicapePercentage').style.display = "block";
-            } else {
-                document.getElementById('hiddenElement').style.display = "none";
-                document.getElementById('HandicapePercentage').style.display = "none";
-            }
-        }</script>
+   <script> 
+       function myFunction3() {
+           var ForwordTo = document.getElementById("options").value;
+           if (ForwordTo == "1") {
+               document.getElementById('hiddenElement').style.display = "block";
+               document.getElementById('HandicapePercentage').style.display = "block";
+               document.getElementById('DisCertificate').style.display = "block";
+               document.getElementById('eye').style.display = "block";
+               document.getElementById('file').style.display = "block";
+           } else {
+               document.getElementById('hiddenElement').style.display = "none";
+               document.getElementById('HandicapePercentage').style.display = "none";
+               document.getElementById('DisCertificate').style.display = "none";
+               document.getElementById('eye').style.display = "none";
+               document.getElementById('file').style.display = "none";
+           }
+       }</script>
     <script>
         function myFunction4() {
             var forwardTo = document.getElementById("child").value;
@@ -1006,22 +1012,56 @@
             sweetAlert.init();
         });
     </script>
-  <script>
-      function Backclickfn() {
-          var show = document.getElementById('show');
-          var show1 = document.getElementById('show1');
+ <script>
+     function Backclickfn() {
+         var show = document.getElementById('show');
+         var show1 = document.getElementById('show1');
+        
 
-          // Check if show is currently visible
-         if (show1.style.display === 'block') {
-              // Hide show1 and show show
-              show1.style.display = 'none';
-              show.style.display = 'block';
-          }
+         //if (show.style.display === 'block') {
+         //    show.style.display = 'none';
+         //   /* show2.style.display = 'block';*/
+         //    BtnBack.style.display = 'none';
+         //    show1.style.display = 'none';
+         //    // Ensure to hide show2 if necessary
+         //} else if (show1.style.display === 'block') {
+           if (show1.style.display === 'block') {
+             show1.style.display = 'none';
+             show.style.display = 'block';
+            /* show2.style.display = 'none'; */// Ensure to hide show2 if necessary
+         } else {
+             window.location.href = 'StudentReg.aspx'; // Redirect if neither show nor show1 is displayed
+         }
+     }
+ </script>
 
-          // Redirect to 'StudentReg.aspx'
-          window.location.href = 'StudentReg.aspx';
-      }
-  </script>
+       <script>
+           function myFunction7() {
+               var selectedValue = document.getElementById("ddlSchoolDise").value;
+               var schoolDiv = document.getElementById('school');
+
+               if (selectedValue !== "") {
+                   schoolDiv.style.display = "block"; // Show the div
+               } else {
+                   schoolDiv.style.display = "none"; // Hide the div
+               }
+           }
+       </script>   
+<script>
+    function myFunction8() {
+        var selectedValue = document.getElementById("IFSC").value;
+        var branchDiv = document.getElementById('Branch');
+        var bankNameDiv = document.getElementById('bankname');
+
+        if (selectedValue !== "") {
+            branchDiv.style.display = "block"; // Show the Branch div
+            bankNameDiv.style.display = "block"; // Show the bankname div
+        } else {
+            branchDiv.style.display = "none"; // Hide the Branch div
+            bankNameDiv.style.display = "none"; // Hide the bankname div
+        }
+    }
+</script>
 
 
 </asp:Content>
