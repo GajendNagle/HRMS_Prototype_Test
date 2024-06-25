@@ -4,86 +4,120 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Bank Master</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                       <%-- <li class="breadcrumb-item"><a href="../menu.aspx?ID=Masters&SubID=OfficeMaster" title="click to go on">Office Masters</a></li>--%>
-                        <li class="breadcrumb-item active">Bank Master</li>
-                    </ol>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                    <h4 class="mb-sm-0"></h4>
+                    <div class="=page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">
+                                <span>Home</span>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#BankMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                    <span>Bank Master </span></a>
+                            </li>
+                            <li class="breadcrumb-item">Bank Master</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <h4 class="card-title">Bank Master /
+बैंक मास्टर</h4>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
 
                 <span id="ContentBody_lblMsg"></span>
                 <fieldset>
-                    <legend>Bank Master</legend>
+                    <legend>Bank Master / बैंक मास्टर</legend>
                     <div class="row ">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Bank Name<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Bank Name<br />
+                                    बैंक का नाम दर्ज करें<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Bank Name" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>IFSC Code<span style="color: red">*</span></label>
+                                <label>
+                                    Enter IFSC Code<br />
+                                    आईएफएससी कोड दर्ज करें<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter IFSC Code" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Branch Name<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Branch Name<br />
+                                    शाखा का नाम दर्ज करें<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Branch Name" />
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Branch Code<span style="color: red">*</span></label>
+                                <label>
+                                    Enter Branch Code<br />
+                                    शाखा कोड दर्ज करें<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Branch Code" />
                             </div>
                         </div>
 
-                        <div class="col-md-1">
+                        <%--<div class="col-md-1">
                             <div class="form-group">
                                 <label>IsActive<i style="color: red;">*</i></label>
                                 <br />
                                 <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
                             </div>
-                        </div>
-                        <div class="col-md-2 mt-4">
+                        </div>--%>
+
+                        <div class="col-md-3 ms-4">
                             <div class="form-group">
-                                <button type="button" class="Alert-Confirmation btn   btn-success btn-rounded">Save</button>
-                                <a href="Mst_BankMaster.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                    Status
+						<small>(Active/InActive)</small><br>
+                                    स्थिति (सक्रिय/निष्क्रिय)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="button" class="Alert-Confirmation btn   btn-success btn-border w-lg">Save</button>
+                                <a href="Mst_BankMaster.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
                         </div>
                     </div>
                 </fieldset>
-               <%-- <div id="bankdetail" runat="server" visible="false">--%>
+                <%-- <div id="bankdetail" runat="server" visible="false">--%>
                 <fieldset>
-                    <legend>Directory Details</legend>
+                    <legend>Directory Details / 
+                       निर्देशिका विवरण</legend>
                     <div class="row justify-content-end">
-                        <div class="col-md-1">
+
+                        <div class="col-md-4 text-end">
                             <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
                         </div>
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                             </div>
@@ -94,12 +128,19 @@
                             <div class="table-responsive ">
                                 <table class="table">
                                     <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Bank Name</th>
-                                        <th>IFSC Code</th>
-                                        <th>Branch Name</th>
-                                        <th>Branch Code</th>
-                                        <th>Status</th>
+                                        <th>Sr.No.<br />
+                                            सरल क्र.</th>
+                                        <th>Bank Name<br />
+                                            बैंक का नाम</th>
+                                        <th>IFSC Code<br />
+                                            आईएफएससी कोड</th>
+                                        <th>Branch Name<br />
+                                            शाखा का नाम</th>
+                                        <th>Branch Code<br />
+                                            शाखा कोड</th>
+                                        <th>Status(Active / InActive)
+                                            <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
                                         <th>Action</th>
 
                                     </tr>
@@ -112,7 +153,7 @@
                                         <td>Active</td>
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
-                                    <tr>                                     
+                                    <tr>
                                         <td>SBIN0051467</td>
                                         <td>AYODHYA BY PASS ROAD,BHOPAL</td>
                                         <td>051467</td>
@@ -128,7 +169,7 @@
                                         <td>Active</td>
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
-                                    <tr>                                                                              
+                                    <tr>
                                         <td>PUNB0093210</td>
                                         <td>ARERA COLONY,BHOPAL</td>
                                         <td>093210</td>
@@ -149,7 +190,7 @@
                         </div>
                     </div>
                 </fieldset>
-                  <%--  </div>--%>
+                <%--  </div>--%>
                 <fieldset>
                     <legend>Description</legend>
                     <div class="row">
@@ -178,7 +219,7 @@
                                     <ul>
                                         <li>User should be able to enter the <strong>Branch Code</strong>and the text field should accept <strong>Only Numeric.</strong> </li>
                                     </ul>
-                                </li>                            
+                                </li>
                                 <li>
                                     <strong>Is Active (Checkbox)</strong>
                                     <ul>

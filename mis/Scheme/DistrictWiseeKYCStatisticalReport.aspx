@@ -48,8 +48,8 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-7">
-                    <h4 class="card-title">District Wise eKYC Statistical Report / जिलावार ई.के.वाई.सी. सांख्यिकीय रिपोर्ट
+                <div class="col-lg-10">
+                    <h4 class="card-title">District Wise eKYC Statistical Repor / जिलावार ई.के.वाई.सी. सांख्यिकीय रिपोर्ट
                     </h4>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                                                 <th scope="col" aria-label="स. क्र.: activate to sort column descending" aria-sort="ascending" style="width: 50px;">Sr.No.<br />सरल. क्र.</th>
                                                 <th scope="col" aria-label="जिला: activate to sort column ascending" style="width: 111px;">District<br />जिला</th>
                                                 <th scope="col" aria-label="कुल छात्र: activate to sort column ascending" style="width: 113px;">Total Students<br />कुल छात्र</th>
-                                                <th scope="col" aria-label="कुल छात्र जिनकी ई.के.वाई.सी.आवेदन प्राप्त हुआ : activate to sort column ascending" style="width: 320px;">Total Students whose eKYC Applications were Received<br />कुल छात्र जिनकी ई.के.वाई.सी.आवेदन प्राप्त हुआ </th>
+                                                <th scope="col" aria-label="कुल छात्र जिनकी ई.के.वाई.सी.आवेदन प्राप्त हुआ : activate to sort column ascending" style="width: 320px;">Total Students whose eKYC Applications were Received<br />कुल छात्र जिनको ई.के.वाई.सी.आवेदन प्राप्त हुआ </th>
                                                 <th scope="col" aria-label="कुल छात्र जिनकी ई.के.वाई.सी. अनुमोदित की गई: activate to sort column ascending" style="width: 321px;">Total Students whose eKYC Approved<br />कुल छात्र जिनकी ई.के.वाई.सी. अनुमोदित की गई</th>
                                             </tr>
                                         </thead>

@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">District and Scheme Wise Scholarship Summary Report</h4>
         </div>
@@ -37,18 +37,50 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#AnalyticalReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Analytical Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">District and Scheme Wise Scholarship Summary Report</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-10">
+                    <h4 class="card-title">District and Scheme Wise Scholarship Summary Report
+                        <br />
+                        जिला एवं योजनावार छात्रवृत्ति सारांश रिपोर्ट
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
-                <div class="row">
-                    <div class="col-md-2">
+                <legend>Details / विवरण</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Academic Year<span class="text-danger">*</span></label>
+                            <label>
+                                Academic Year<br />
+                                शैक्षणिक वर्ष<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option value="37">2024-25</option>
@@ -62,9 +94,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>District <span class="text-danger">*</span></label>
+                            <label>
+                                District Name<br />
+                                जिला का नाम <span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">- Select -</option>
                                 <option value="51">AGAR MALWA आगर मालवा</option>
@@ -125,7 +159,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Report Date <span class="text-danger">*</span></label>
+                            <label>
+                                Report Date<br />
+                                रिपोर्ट दिनांक<span class="text-danger">*</span></label>
                             <input class="form-control" type="date" />
                         </div>
                     </div>
@@ -142,18 +178,21 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
-                    <div class="col-md-12 text-center">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-rounded" />
+                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-border w-lg" />
+
+                            <a href="DistrictAndSchemeWiseScholarshipSummaryReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -169,27 +208,31 @@
                                             <tr>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        S. No.
+                                                        S.No.<br />
+                                                        सरल क्र.
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        District
+                                                        District<br />
+                                                        ज़िला
                                                     </div>
                                                 </th>
                                                 <th class="Total" scope="col">
                                                     <div style="text-align: center">
-                                                        Total Application
+                                                        Total Application<br />
+                                                        कुल आवेदन
                                                     </div>
                                                 </th>
                                                 <th class="Total" scope="col">
                                                     <div style="text-align: center">
-                                                        Total Scheme
+                                                        Total Scheme<br />
+                                                        कुल योजना
                                                     </div>
                                                 </th>
                                                 <th class="Total" scope="col">
                                                     <div style="text-align: center">
-                                                        Total Amount
+                                                        Total Amount<br />कुल राशि
                                                     </div>
                                                 </th>
                                             </tr>

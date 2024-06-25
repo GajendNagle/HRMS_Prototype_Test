@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">District-Wise Enrollment and Sanction of Scholarships</h4>
         </div>
@@ -37,18 +37,47 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ControlReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Control Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">District-Wise Enrollment and Sanction of Scholarships</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-10">
+                    <h4 class="card-title">District-Wise Enrollment and Sanction of Scholarships <br /> जिलावार नामांकन एवं छात्रवृत्ति की स्वीकृति
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>शैक्षणिक वर्ष <span class="text-danger">*</span></label>
+                            <label>Select Academic Year<br />शैक्षणिक वर्ष का चयन करें<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option value="37">2024-25</option>
@@ -74,7 +103,7 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
@@ -83,9 +112,14 @@
 
                         </div>
                     </div>
-                    <div class="col-md-12 text-center">
+                    </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 ">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnRegisterStudents" Text="छात्रवृत्ति प्राप्त करने वाले छात्रों की जिला-वार स्वीकृती की संक्षिप्त रिपोर्ट देखें " CssClass="btn btn-success btn-rounded" />
+                            <asp:Button runat="server" ID="btnRegisterStudents" Text="छात्रवृत्ति प्राप्त करने वाले छात्रों की  संक्षिप्त रिपोर्ट देखें " CssClass="btn btn-success btn-border w-lg" />
+
+                            <a href="DistrictWiseEnrollmentandSanctionofScholarships.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -101,12 +135,12 @@
                                             <tr>
                                                 <th></th>
                                                 <th></th>
-                                                <th>Total Enrollment Reported [Admissions/Promotions to Higher Class]</th>
-                                                <th>Students whose Profile [Income,% of marks obtained in previous class, occupation of parents] has been Updated/Reported</th>
-                                                <th>Students [Out of B], who are eligible end entitled for one or more Scholarships</th>
-                                                <th>Amount [Scholarships/financial assitance] entitled to the eligible Students</th>
-                                                <th>Students [Out of C] who have been sanctioned one or more Scholarship/financial assitance</th>
-                                                <th>Amount [Scholarships/financial assitance] sanctioned to students</th>
+                                                <th>Total Enrollment Reported [Admissions/Promotions to Higher Class]<br />रिपोर्ट किया गया कुल नामांकन [उच्च कक्षा में प्रवेश/पदोन्नति]</th>
+                                                <th>Students whose Profile [Income,% of marks obtained in previous class, occupation of parents] has been Updated/Reported<br />वे छात्र जिनकी प्रोफ़ाइल [आय, पिछली कक्षा में प्राप्त अंकों का%, माता-पिता का व्यवसाय] अद्यतन/रिपोर्ट की गई है</th>
+                                                <th>Students [Out of B], who are eligible end entitled for one or more Scholarships<br />छात्र [बी में से], जो पात्र हैं, एक या अधिक छात्रवृत्ति के लिए पात्र होंगे</th>
+                                                <th>Amount [Scholarships/financial assitance] entitled to the eligible Students<br />पात्र छात्रों के लिए हकदार राशि [छात्रवृत्ति/वित्तीय सहायता]</th>
+                                                <th>Students [Out of C] who have been sanctioned one or more Scholarship/financial assitance<br />छात्र [सी में से] जिन्हें एक या अधिक छात्रवृत्ति/वित्तीय सहायता स्वीकृत की गई है</th>
+                                                <th>Amount [Scholarships/financial assitance] sanctioned to students<br />छात्रों को स्वीकृत राशि [छात्रवृत्ति/वित्तीय सहायता]</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -114,12 +148,12 @@
                                             <tr>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        S. No.
+                                                        S. No.<br />सरल क्र.
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        District
+                                                        District<br />ज़िला
                                                     </div>
                                                 </th>
                                                 <th scope="col">

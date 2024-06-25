@@ -5,7 +5,7 @@
         ody {
             padding: 0;
             margin: 0;
-            font-family: 'Lato', sans-serif;
+            /*font-family: 'Lato', sans-serif;*/
             color: #000;
         }
 
@@ -43,7 +43,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Roboto Condensed', sans-serif;
+            /*font-family: 'Roboto Condensed', sans-serif;*/
         }
 
         /* Overlay Styles */
@@ -69,7 +69,7 @@
             right: 0;
             z-index: 101;
             width: 580px; /*Change your width here*/
-            height: 300px; /*Change your height here*/
+            height: 330px; /*Change your height here*/
             margin: auto;
 
             @media(max-width:768px) {
@@ -125,7 +125,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+    <%--<div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
                 <h4 class="text-themecolor ">Aadhaar e-KYC</h4>
@@ -141,14 +141,44 @@
                 </div>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#CycleDistribution" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>E-KYC </span></a>
+                        </li>
+                        <li class="breadcrumb-item">Student Details kyc</li>
+                        <li class="breadcrumb-item">Aadhaar e-KYC</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h4 class="card-title">Aadhaar e-KYC /
+  आधार ई-केवाईसी</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Aadhaar e-KYC </legend>
+                <legend>Aadhaar e-KYC / आधार ई-केवाईसी</legend>
                 <div class="row justify-content-center">
                     <div class="col-md-12">
                         <div class="form-group">
@@ -159,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="font-weight-bold">आवेदक का 12 अंको का आधार नंबर :-<span style="color: red">*</span></label>
@@ -169,41 +199,44 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="font-weight-bold">पुनः प्रविष्ट करें आवेदक का 12 अंकों का आधार नंबर :-<span style="color: red">*</span></label>
-                            <input  type="text" class="form-control" placeholder="12 अंकों का आधार नंबर" onkeypress="return lettersOnly();" />
+                            <input type="text" class="form-control" placeholder="12 अंकों का आधार नंबर" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
-                        <asp:Button runat="server" Text="ОТР के माध्यम से ईकेवाईसी" ID="sendotp" OnClick="sendotp_Click" class="btn btn-success btn-rounded s3-btn" />
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <asp:Button runat="server" Text="ОТР के माध्यम से ईकेवाईसी" ID="sendotp" OnClick="sendotp_Click" class="btn btn-success btn-rounded s3-btn" />
+                        </div>
                     </div>
+
                     <div class="col-md-3 mt-4">
-                        <a href="#" class="btn btn-block btn-danger btn-rounded">बायोमेट्रिक के माध्यम से ईकेवाईसी</a>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-block btn-danger btn-rounded">बायोमेट्रिक के माध्यम से ईकेवाईसी</a>
+                        </div>
                     </div>
                 </div>
             </fieldset>
         </div>
     </div>
     <!-- Overlay -->
-    <div class="overlay" id="overlay" style="display: none;"></div> 
+    <div class="overlay" id="overlay" style="display: none;"></div>
     <!-- Popup -->
     <div class="popup" id="popup" style="display: none;">
         <div class="popup-inner">
             <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
             <fieldset>
-                <legend>Aadhaar e-KYC </legend>
+                <legend>Aadhaar e-KYC / आधार ई-केवाईसी</legend>
                 <div class="row justify-content-center">
                     <div class="col-md-3">
-                        
-                            <label>6 Digit OTP </label>
-                            <span style="color: red">*</span> :-  
+
+                        <label>6 Digit OTP: </label><span style="color: red">*</span>  
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input type="text" maxlength="6" class="form-control"  autocomplete="off" placeholder="6 Digit OTP" />
+                            <input type="text" maxlength="6" class="form-control" autocomplete="off" placeholder="6 Digit OTP" />
                         </div>
                     </div>
                 </div>
-                <br />
-                <h6>An OTP (One time password) has been sent to your registered mobile number *******3637 with your Aadhaar Number</h6>
+                <h6>An OTP (One time password) has been sent to your registered mobile number *******3637 with your Aadhaar Number</h6><br />
                 <div class="row justify-content-center">
                     <div class="col-md-3">
                         <asp:Button Text="Validate OTP" OnClick="Button3_Click" type="button" runat="server" ID="Button3" class="btn btn-success"></asp:Button>
@@ -218,7 +251,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student details</legend>
+                <legend>Student details / छात्र विवरण</legend>
                 <div class="student-profile ">
                     <div>
                         <div class="row justify-content-center">
@@ -242,7 +275,7 @@
                                                     <h3 style="color: black;"><i class="far fa-clone pr-1"></i>Basic details of student from Aadhaar eKYC</h3>
                                                 </div>
                                                 <div style="min-height: 0rem;" class="card-body pt-0">
-                                                    <table class="table table-bordered">
+                                                    <table class="table table-bordered table-responsive">
                                                         <tr>
                                                             <th width="30%">Aadhaar number : </th>
                                                             <td width="2%">:</td>
@@ -282,21 +315,21 @@
                                                             <th width="30%">local body</th>
                                                             <td width="2%">:</td>
                                                             <td>Nagar Nigam</td>
-                                                        </tr> 
+                                                        </tr>
                                                         <tr>
                                                             <th width="30%">landmark </th>
                                                             <td width="2%">:</td>
                                                             <td>Bhopal</td>
-                                                        </tr> 
+                                                        </tr>
                                                     </table>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="col-lg-5">
-                                <div class="card shadow-sm"> 
+                                <div class="card shadow-sm">
                                     <div style="min-height: 12rem;" class="card-body">
                                         <div class="col-lg-12">
                                             <div class="card shadow-sm">
@@ -304,7 +337,7 @@
                                                     <h3 style="color: black;"><i class="far fa-clone pr-1"></i>Student basic information from Madhya Pradesh Education Portal</h3>
                                                 </div>
                                                 <div style="min-height: 0rem;" class="card-body pt-0">
-                                                    <table class="table table-bordered">
+                                                    <table class="table table-bordered table-responsive">
                                                         <tr>
                                                             <th width="30%">SSSMID : </th>
                                                             <td width="2%">:</td>
@@ -344,12 +377,12 @@
                                                             <th width="30%">local body</th>
                                                             <td width="2%">:</td>
                                                             <td>Nagar Nigam</td>
-                                                        </tr> 
+                                                        </tr>
                                                         <tr>
                                                             <th width="30%">landmark </th>
                                                             <td width="2%">:</td>
                                                             <td>Bhopal</td>
-                                                        </tr> 
+                                                        </tr>
                                                     </table>
                                                 </div>
                                             </div>
@@ -358,21 +391,22 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="row justify-content-center"> 
-                            <div class="col-md-2">
-                         <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Final Submit</button>
-                                 <a href="AadhaareKYC.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="Alert-Confirmation btn btn-success btn-border w-lg">Final Submit</button>
+                                <a href="AadhaareKYC.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </div> 
+                </div>
             </fieldset>
         </div>
-        </div>
-    
+    </div>
+
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server"> 
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
         // Popup Open
         function popupOpen() {

@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Scheme Wise Brief Report</h4>
         </div>
@@ -37,18 +37,50 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#AnalyticalReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Analytical Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Scheme Wise Brief Report</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-10">
+                    <h4 class="card-title">Scheme Wise Brief Report /
+                        योजनावार संक्षिप्त रिपोर्ट
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Academic Year<span class="text-danger">*</span></label>
+                            <label>
+                                Select Academic Year<br />
+                                शैक्षणिक वर्ष चयन करें<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option value="37">2024-25</option>
@@ -62,9 +94,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Department  <span class="text-danger">*</span></label>
+                            <label>
+                                Select Department<br />
+                                विभाग का चयन करें<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option selected="selected" value="2">अनुसूचित जाति कल्याण विभाग</option>
@@ -82,7 +116,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Report Date <span class="text-danger">*</span></label>
+                            <label>
+                                Report Date<br />
+                                रिपोर्ट दिनांक<span class="text-danger">*</span></label>
                             <input class="form-control" type="date" />
                         </div>
                     </div>
@@ -99,7 +135,7 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
@@ -108,9 +144,14 @@
 
                         </div>
                     </div>
-                    <div class="col-md-12 text-center">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-rounded" />
+                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-border w-lg" />
+
+                            <a href="SchemeWiseBriefReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -126,49 +167,53 @@
                                             <tr>
                                                 <th class="SN" scope="col">
                                                     <div style="text-align: center">
-                                                        S. No.
+                                                        S.No.<br />
+                                                        सरल क्र.
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Department
+                                                        Department<br />
+                                                        विभाग
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Scheme
+                                                        Scheme<br />
+                                                        योजना
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Total Sanctioned Applications
+                                                        Total Sanctioned Applications<br />
+                                                        कुल स्वीकृत आवेदन
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Total Sanctioned Amount
+                                                        Total Sanctioned Amount<br />कुल स्वीकृत राशि
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Total Paid Applications (M1Click)
+                                                        Total Paid Applications (M1Click)<br />कुल भुगतान आवेदन (एम1क्लिक)
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Total Paid Amount (M1Click)
+                                                        Total Paid Amount (M1Click)<br />कुल भुगतान राशि (M1Click)
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        View District Wise Report
+                                                        View District Wise Report<br />जिलावार रिपोर्ट देखें
                                                     </div>
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
 
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">1
                                                 </td>
                                                 <td>
@@ -203,7 +248,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">2
                                                 </td>
                                                 <td>
@@ -238,7 +283,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">3
                                                 </td>
                                                 <td>
@@ -273,7 +318,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">4
                                                 </td>
                                                 <td>
@@ -308,7 +353,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">5
                                                 </td>
                                                 <td>
@@ -343,7 +388,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">6
                                                 </td>
                                                 <td>
@@ -378,7 +423,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme1" >
+                                            <tr class="Scheme1">
                                                 <td class="SN">7
                                                 </td>
                                                 <td>
@@ -413,7 +458,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme2" >
+                                            <tr class="Scheme2">
                                                 <td class="SN">8
                                                 </td>
                                                 <td>
@@ -448,7 +493,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme2" >
+                                            <tr class="Scheme2">
                                                 <td class="SN">9
                                                 </td>
                                                 <td>
@@ -483,7 +528,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme2" >
+                                            <tr class="Scheme2">
                                                 <td class="SN">10
                                                 </td>
                                                 <td>
@@ -518,7 +563,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme2" >
+                                            <tr class="Scheme2">
                                                 <td class="SN">11
                                                 </td>
                                                 <td>
@@ -553,7 +598,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme2" >
+                                            <tr class="Scheme2">
                                                 <td class="SN">12
                                                 </td>
                                                 <td>
@@ -588,7 +633,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme2" >
+                                            <tr class="Scheme2">
                                                 <td class="SN">13
                                                 </td>
                                                 <td>
@@ -868,7 +913,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme4" >
+                                            <tr class="Scheme4">
                                                 <td class="SN">21
                                                 </td>
                                                 <td>
@@ -903,7 +948,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme4" >
+                                            <tr class="Scheme4">
                                                 <td class="SN">22
                                                 </td>
                                                 <td>
@@ -938,7 +983,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme4" >
+                                            <tr class="Scheme4">
                                                 <td class="SN">23
                                                 </td>
                                                 <td>
@@ -973,7 +1018,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme4" >
+                                            <tr class="Scheme4">
                                                 <td class="SN">24
                                                 </td>
                                                 <td>
@@ -1008,7 +1053,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme5" >
+                                            <tr class="Scheme5">
                                                 <td class="SN">25
                                                 </td>
                                                 <td>
@@ -1043,7 +1088,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme5" >
+                                            <tr class="Scheme5">
                                                 <td class="SN">26
                                                 </td>
                                                 <td>
@@ -1078,7 +1123,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme6" >
+                                            <tr class="Scheme6">
                                                 <td class="SN">27
                                                 </td>
                                                 <td>
@@ -1113,7 +1158,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme6" >
+                                            <tr class="Scheme6">
                                                 <td class="SN">28
                                                 </td>
                                                 <td>
@@ -1148,7 +1193,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme7" >
+                                            <tr class="Scheme7">
                                                 <td class="SN">29
                                                 </td>
                                                 <td>
@@ -1183,7 +1228,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="Scheme8" >
+                                            <tr class="Scheme8">
                                                 <td class="SN">30
                                                 </td>
                                                 <td>

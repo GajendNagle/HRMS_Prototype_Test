@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Enrollment/Scholarship Status Of School-Wise Children</h4>
         </div>
@@ -37,18 +37,50 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ControlReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Control Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Know Enrollment/Scholarship Status Of School-Wise Children</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-10">
+                    <h4 class="card-title">Know Enrollment/Scholarship Status Of School-Wise Children
+                        <br />
+                        विद्यालयवार बच्चों की नामांकन/छात्रवृत्ति स्थिति जानें
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
-                <div class="row">
-                    <div class="col-md-2">
+                <legend>Details / विवरण</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>शैक्षणिक वर्ष <span class="text-danger">*</span></label>
+                            <label>Select Academic Year<br />
+                                शैक्षणिक वर्ष का चयन करें<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option value="37">2024-25</option>
@@ -63,13 +95,15 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>शाला का डाइस कोड<span class="text-danger">*</span></label>
+                            <label>Enter School Dise Code<br />
+                                शाला का डाइस कोड दर्ज करें<span class="text-danger">*</span></label>
                             <input class="form-control" type="text" placeholder="11 अंक वाला शाला डाइस कोड दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>कक्षा<span class="text-danger">*</span></label>
+                            <label>Class<br />
+                                कक्षा<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">--Select--</option>
                                 <option value="1">1 st</option>
@@ -91,9 +125,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>छात्रवृत्ति की स्थिति<span class="text-danger">*</span></label>
+                            <label>Scholarship Status<br />
+                                छात्रवृत्ति की स्थिति<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-- छात्रवृत्ति की स्थिति चुने--</option>
                                 <option selected="selected" value="5">Application Not Registered</option>
@@ -107,6 +142,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="row justify-content-center">
@@ -119,18 +155,21 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
-                    <div class="col-md-12 text-center">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-rounded" />
+                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-border w-lg" />
+
+                            <a href="KnowEnrollment_ScholarshipStatusOfSchoolWiseChildren.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -146,45 +185,45 @@
                                             <tr>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        S. No.
+                                                        S.No.<br />सरल क्र.
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Samagra ID
+                                                        Samagra ID<br />समग्र आईडी
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Student Name
+                                                        Student Name<br />छात्र का नाम
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Father Name
+                                                        Father Name<br />पिता का नाम
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Class
+                                                        Class<br />कक्षा
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Gender
+                                                        Gender<br />जेंडर
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Status
+                                                        Status<br />स्थिति
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        Last Updated On
+                                                        Last Updated On<br />अंतिम बार अपडेट किया गया
                                                     </div>
                                                 </th>
-                                                <th scope="col">View Application Details for Scholarships</th>
+                                                <th scope="col">View Application Details for Scholarships<br />छात्रवृत्ति के लिए आवेदन विवरण देखें</th>
                                             </tr>
                                         </thead>
                                         <tbody>

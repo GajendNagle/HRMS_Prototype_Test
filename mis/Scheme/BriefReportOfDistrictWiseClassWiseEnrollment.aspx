@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Brief Report Of District Wise Class Wise Enrollment</h4>
         </div>
@@ -37,18 +37,49 @@
                 </ol>
             </div>
         </div>
-    </div>
+    </div>--%>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#ControlReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Control Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Brief Report Of District Wise Class Wise Enrollment</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-10">
+                    <h4 class="card-title">Brief Report Of District Wise Class Wise Enrollment
+                <br />
+                        जिलावार कक्षावार नामांकन की संक्षिप्त रिपोर्ट
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
-                <div class="row">
-                    <div class="col-md-2">
+                <legend>Details / विवरण</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>District  <span class="text-danger">*</span></label>
+                            <label>Select District Name<br />
+                                जिला का चयन करें<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">- Select District -</option>
                                 <option selected="selected" value="51">AGAR MALWA आगर मालवा</option>
@@ -107,9 +138,10 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Academic Year <span class="text-danger">*</span></label>
+                            <label>Select Academic Year<br />
+                                शैक्षणिक वर्ष का चयन करें<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option value="37">2024-25</option>
@@ -135,7 +167,7 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
@@ -144,9 +176,14 @@
 
                         </div>
                     </div>
-                    <div class="col-md-12 text-center">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-rounded" />
+                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-border w-lg" />
+
+                            <a href="BriefReportOfDistrictWiseClassWiseEnrollment.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -159,76 +196,91 @@
 
                                     <table class="table text-center table-bordered table-hover text-center">
                                         <thead>
-                                            <tr >
+                                            <tr>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        S. No.
+                                                        S.No.<br />
+                                                        सरल क्र.
                                                     </div>
                                                 </th>
                                                 <th scope="col">
                                                     <div style="text-align: center">
-                                                        District
+                                                        District<br />
+                                                        ज़िला
                                                     </div>
                                                 </th>
-                                                <th scope="col">Total Students</th>
+                                                <th scope="col">Total Students<br />
+                                                    कुल छात्र</th>
                                                 <th class="Class15" scope="col">
                                                     <div style="text-align: center">
-                                                        Class 1
-                                                    </div>
-                                                </th>
-                                                <th class="Class15" scope="col">
-                                                    <div style="text-align: center">
-                                                        Class 2
-                                                    </div>
-                                                </th>
-                                                <th class="Class15" scope="col">
-                                                    <div style="text-align: center">
-                                                        Class 3
+                                                        Class 1<br />
+                                                        कक्षा 1
                                                     </div>
                                                 </th>
                                                 <th class="Class15" scope="col">
                                                     <div style="text-align: center">
-                                                        Class 4
+                                                        Class 2<br />
+                                                        कक्षा 2
                                                     </div>
                                                 </th>
                                                 <th class="Class15" scope="col">
                                                     <div style="text-align: center">
-                                                        Class 5
+                                                        Class 3<br />
+                                                        कक्षा 3
+                                                    </div>
+                                                </th>
+                                                <th class="Class15" scope="col">
+                                                    <div style="text-align: center">
+                                                        Class 4<br />
+                                                        कक्षा 4
+                                                    </div>
+                                                </th>
+                                                <th class="Class15" scope="col">
+                                                    <div style="text-align: center">
+                                                        Class 5<br />
+                                                        कक्षा 5
                                                     </div>
                                                 </th>
                                                 <th class="Class68" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 6
+                                                        Class 6<br />
+                                                        कक्षा 6
                                                     </div>
                                                 </th>
                                                 <th class="Class68" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 7
+                                                        Class 7<br />
+                                                        कक्षा 7
                                                     </div>
                                                 </th>
                                                 <th class="Class68" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 8
+                                                        Class 8<br />
+                                                        कक्षा 8
                                                     </div>
                                                 </th>
                                                 <th class="Class910" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 9
+                                                        Class 9<br />
+                                                        कक्षा 9
                                                     </div>
                                                 </th>
                                                 <th class="Class910" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 10
+                                                        Class 10<br />
+                                                        कक्षा 10
                                                     </div>
                                                 </th>
                                                 <th class="Class1112" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 11
+                                                        Class 11<br />
+                                                        कक्षा 11
                                                     </div>
                                                 </th>
                                                 <th class="Class1112" scope="col" style="display: none;">
                                                     <div style="text-align: center">
-                                                        Class 12
+                                                        Class 12<br />
+                                                        कक्षा 12
                                                     </div>
                                                 </th>
                                             </tr>

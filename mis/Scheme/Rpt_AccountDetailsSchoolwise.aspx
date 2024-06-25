@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Students whose electronic Pay Order failed</h4>
         </div>
@@ -18,16 +18,48 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#BankMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Bank Master </span></a>
+                        </li>
+                        <li class="breadcrumb-item">Account Details School Wise</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-8">
+                    <h4 class="card-title">Account Details School Wise /
+खाता विवरण स्कूल अनुसार</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>School wise Summary of Students whose electronic Pay Order failed</legend>
-                <div class="row justify-content-center">
+                <legend>School wise Summary of Students whose electronic Pay Order failed<br />
+                    उन छात्रों का विद्यालयवार सारांश जिनका इलेक्ट्रॉनिक भुगतान आदेश विफल हो गया</legend>
+                <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label class="font-bold">District Name<span style="color: red">*</span></label>
+                        <label>
+                            Select District Name<br />
+                            जिला का चयन करें<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -83,7 +115,9 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Block Name</label>
+                        <label>
+                            Select Block Name<br />
+                            ब्लॉक का चयन करें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Agar</asp:ListItem>
@@ -102,7 +136,9 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-weight-bold">Sankul Name<span style="color: red"> *</span></label>
+                        <label>
+                            Select Sankul Name<br />
+                            संकुल का चयन करें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>AKBARPUR GOVT. HS</asp:ListItem>
@@ -119,17 +155,18 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="font-weight-bold">School Name / UDISE Code<span style="color: red;"> *</span></label>
-                            <asp:DropDownList CssClass="form-control select2" runat="server">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>121-Sarasvati Gyan Mandir</asp:ListItem>
-                                <asp:ListItem>101-Gyan Ganga Vidhya Mandir</asp:ListItem>
-                                <asp:ListItem>012-Reema Gyan Mandir</asp:ListItem>
-                                <asp:ListItem>131-Sarasvati Vidhya Mandir</asp:ListItem>
-                                <asp:ListItem>122-Bal Bharti Higher Secondary School</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                        <label>
+                            Select School Name / UDISE Code<br />
+                            स्कूल का नाम/
+यू-डाइस  कोड का चयन करें<span style="color: red;">*</span></label>
+                        <asp:DropDownList CssClass="form-control select2" runat="server">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>121-Sarasvati Gyan Mandir</asp:ListItem>
+                            <asp:ListItem>101-Gyan Ganga Vidhya Mandir</asp:ListItem>
+                            <asp:ListItem>012-Reema Gyan Mandir</asp:ListItem>
+                            <asp:ListItem>131-Sarasvati Vidhya Mandir</asp:ListItem>
+                            <asp:ListItem>122-Bal Bharti Higher Secondary School</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                     <div class="col-lg-12 mt-3">
                         <div class="row justify-content-center">
@@ -142,34 +179,54 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-rounded" Text="Show Student Details" OnClick="btnShowStudentDetails_Click" />
+                            <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-border w-lg" Text="Show Student Details" OnClick="btnShowStudentDetails_Click" />
+
+                            <a href="Rpt_AccountDetailsSchoolwise.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <div id="accountBlock" runat="server" visible="false">
                 <fieldset>
-                    <legend>List Of Student Account Details School Wise</legend>
+                    <legend>List Of Student Account Details School Wise / विद्यालयवार छात्र खाता विवरण की सूची</legend>
+
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div class="table-responsive table-bordered">
-                                <table class="table text-center">                   
-                                    <tbody>                              
-                                        <tr>                             
-                                            <th>Sr.No.</th>              
-                                            <th>UDISE Code</th>
-                                            <th>School</th>
-                                            <th>Number of Students whose Payment Failed</th>
-                                            <th>Number of Students whose Payment failed and their Accounts has been updated</th>
+                                <table class="table text-center">
+                                    <tbody>
+                                        <tr>
+                                            <th>Sr.No.<br />सरल क्र.
+                                            </th>
+                                            <th>UDISE Code<br />यू-डाइस कोड</th>
+                                            <th>School<br />स्कूल</th>
+                                            <th>Number of Students whose Payment Failed<br />उन छात्रों की संख्या जिनका भुगतान विफल रहा</th>
+                                            <th>Number of Students whose Payment failed and their Accounts has been updated<br />उन छात्रों की संख्या जिनका भुगतान विफल हो गया और उनके खाते अपडेट कर दिए गए हैं</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -178,7 +235,7 @@
                                             <td>1</td>
                                             <td>0</td>
                                         </tr>
-                                        <tr>    
+                                        <tr>
                                             <td>2</td>
                                             <td>23510802605</td>
                                             <td>P.S. DHOTI</td>

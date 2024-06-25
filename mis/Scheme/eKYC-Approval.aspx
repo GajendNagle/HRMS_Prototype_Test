@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+    <%--<div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
                 <h4 class="text-themecolor ">eKYC-Approval</h4>
@@ -18,37 +18,74 @@
                 </div>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#E_KYC" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>E-KYC </span></a>
+                        </li>
+                        <li class="breadcrumb-item">eKYC-Approval</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h4 class="card-title">eKYC-Approval /
+ईकेवाईसी-अनुमोदन</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>eKYC-Approval</legend>
+                <legend>eKYC-Approval / ईकेवाईसी-अनुमोदन</legend>
                 <div class="card">
-                    <h5 class="card-header">List Of Students In School For eKYC Approval-  School Details</h5>
+                    <h5 class="card-header">List Of Students In School For eKYC Approval-  School Details
+                        <br />
+                        ईकेवाईसी अनुमोदन के लिए स्कूल में छात्रों की सूची- स्कूल विवरण</h5>
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <table class="table table-bordered">
                                 <tr>
-                                    <th width="30%">District : </th>
+                                    <th width="30%">District<br />
+                                        ज़िला : </th>
                                     <td width="2%">:</td>
                                     <td>BHOPAl</td>
-                                    <th width="30%" class="text-gray-lighter">Block</th>
+                                    <th width="30%" class="text-gray-lighter">Block<br />
+                                        ब्लॉक</th>
                                     <td width="2%">:</td>
                                     <td>Berasia</td>
 
                                 </tr>
                                 <tr>
-                                    <th width="30%">School Name </th>
+                                    <th width="30%">School Name<br />
+                                        स्कूल का नाम </th>
                                     <td width="2%">:</td>
                                     <td>GOVT HS BEELKHO (Class 9 to 10)</td>
-                                    <th width="30%">School Type</th>
+                                    <th width="30%">School Type<br />
+                                        स्कूल का प्रकार</th>
                                     <td width="2%">:</td>
                                     <td>High Schools (Class 9 to 10)</td>
                                 </tr>
                                 <tr>
-                                    <th width="30%">DISE Code </th>
+                                    <th width="30%">DISE Code<br />
+                                        डायस कोड </th>
                                     <td width="2%">:</td>
                                     <td>23320104204
                                     </td>
@@ -59,13 +96,15 @@
                         </div>
                         <h5 class="card-header"></h5>
                         <br />
-                        <div class="row justify-content-center">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <label>
-                                    <span>शैक्षणिक वर्ष *</span>:</label>
+                                    Academic Year<br />
+                                    शैक्षणिक वर्ष
+                                    <span style="color: red">*</span>:</label>
                                 <div class="clearfix">
                                 </div>
-                                <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlAcademicYear" id="ddlAcademicYear" class="form-control vd_DDL_required">
+                                <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlAcademicYear" id="ddlAcademicYear" class="form-control vd_DDL_required form-select">
                                     <option value="0">-- शैक्षणिक वर्ष चुने --</option>
                                     <option value="36">2023-24</option>
                                     <option value="35">2022-23</option>
@@ -82,23 +121,22 @@
                                 <div id="html_element"></div>
                             </div>
                         </div>
-                        <br />
-                        <div class="row justify-content-center">
+                        <hr />
+                        <div class="row ">
                             <div style="font-size: medium; color: Teal; text-align: center;">
-                                <center class="col-md-12">
-                                    <hr />
+                                <div class="col-md-12">
                                     <input type="button" id="btnSchoolDetailsShow"
-                                        value="Filter" class="btn btn-large btn-info PerformClick" />
+                                        value="Filter" class="btn btn-large btn-success btn-border w-lg PerformClick" />
                                     <input type="button" id="btnSchoolDetailsHide"
-                                        value="Clear" class="btn btn-large btn-info PerformClick" />
-                                </center>
+                                        value="Clear" class="btn btn-large btn-outline-danger w-lg PerformClick" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset id="divStudentDetail" style="display: none;">
-                <legend>Details</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
 
                     <div class="col-md-4 text-end">
@@ -119,17 +157,28 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <th>S. No.</th>
-                                    <th>Samagrald</th>
-                                    <th>Name</th>
-                                    <th>Father's Name</th>
-                                    <th>DOB</th>
-                                    <th>Gender</th>
-                                    <th>Stream</th>
-                                    <th>Class</th>
-                                    <th>Approval Status</th>
-                                    <th>Approval Remark</th>
-                                    <th>Aprove</th>
+                                    <th>S.No.<br />
+                                        सरल क्र.</th>
+                                    <th>Samagrald<br />
+                                        समग्र आईडी</th>
+                                    <th>Name<br />
+                                        नाम</th>
+                                    <th>Father's Name<br />
+                                        पिता का नाम</th>
+                                    <th>DOB<br />
+                                        जन्म तिथि</th>
+                                    <th>Gender<br />
+                                        जेंडर</th>
+                                    <th>Stream<br />
+                                        स्ट्रीम</th>
+                                    <th>Class<br />
+                                        कक्षा</th>
+                                    <th>Approval Status<br />
+                                        अनुमोदन स्थिति</th>
+                                    <th>Approval Remark<br />
+                                        अनुमोदन टिप्पणी</th>
+                                    <th>Aprove<br />
+                                        अनुमोदन करें</th>
 
                                 </tr>
                                 <tr>
@@ -180,20 +229,20 @@
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
     </script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
 
-      $(document).ready(function () {
-          $("#btnSchoolDetailsHide").click(function () { 
-              window.location.reload();
-          });
-          $("#btnSchoolDetailsShow").click(function () {
-              $("#divStudentDetail").show();
-          });
-      });
+        $(document).ready(function () {
+            $("#btnSchoolDetailsHide").click(function () {
+                window.location.reload();
+            });
+            $("#btnSchoolDetailsShow").click(function () {
+                $("#divStudentDetail").show();
+            });
+        });
 
 
 
-  </script>
+    </script>
 </asp:Content>
 

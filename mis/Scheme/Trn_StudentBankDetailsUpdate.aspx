@@ -54,19 +54,19 @@
                     <div class="row ">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Bank Name<span style="color: red">*</span></label>
+                                <label>Bank Name <br />बैंक का नाम<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Bank Name" />
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Branch Name<span style="color: red">*</span></label>
+                                <label>Branch Name<br />शाखा का नाम<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Branch Name" />
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Branch Code<span style="color: red">*</span></label>
+                                <label>Branch Code<br />शाखा कोड<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Branch Code" />
                             </div>
                         </div>
@@ -80,7 +80,7 @@
         </div>
     </div>
 
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Update Student Bank Account Details</h4>
         </div>
@@ -94,10 +94,39 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#BankMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Bank Master </span></a>
+                        </li>
+                        <li class="breadcrumb-item">Update Student Bank Account Details</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Update Student Bank Account Details /
+छात्र का बैंक खाता विवरण अपडेट करें</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">
@@ -109,26 +138,33 @@
             </div>
 
             <fieldset>
-                <legend>Student Details</legend>
+                <legend>Student Details / 
+                   छात्र विवरण</legend>
                 <table class="table table-bordered table-custom">
                     <tbody>
                         <tr>
-                            <th>Name :</th>
+                            <th>Name<br />
+                                नाम :</th>
                             <td>Rounak Nath</td>
-                            <th>Father Name:</th>
+                            <th>Father Name<br />
+                                पिता का नाम:</th>
                             <td>Munna lal </td>
                         </tr>
                         <tr>
-                            <th>Date Of Birth :</th>
+                            <th>Date Of Birth<br />
+                                जन्म की तारीख :</th>
                             <td>25/08/2005</td>
-                            <th>Gender :</th>
+                            <th>Gender<br />
+                                जेंडर :</th>
                             <td>Male</td>
                         </tr>
                         <tr>
-                            <th>Mobile No.:</th>
+                            <th>Mobile No.<br />
+                                मोबाइल नंबर:</th>
                             <td>9632587415
                             </td>
-                            <th>Aadhar No. :</th>
+                            <th>Aadhar No.<br />
+                                आधार नंबर :</th>
                             <td>852369565852
                             </td>
                         </tr>
@@ -136,36 +172,43 @@
                 </table>
             </fieldset>
             <fieldset>
-                <legend>Student Details</legend>
+                <legend>Student Details / छात्र विवरण</legend>
                 <table class="table table-bordered table-custom">
                     <tbody>
                         <tr>
-                            <th>Year :</th>
+                            <th>Year<br />
+                                वर्ष :</th>
                             <td>2024</td>
-                            <th>Class :</th>
+                            <th>Class<br />
+                                कक्षा :</th>
                             <td>6</td>
                         </tr>
                         <tr>
-                            <th>School Name :</th>
+                            <th>School Name<br />
+                                स्कूल का नाम :</th>
                             <td>Dhanti Bai Ms Katni</td>
-                            <th>Dise :</th>
+                            <th>Dise<br />
+                                डाइस :</th>
                             <td>20356985235</td>
                         </tr>
                     </tbody>
                 </table>
             </fieldset>
             <fieldset>
-                <legend>Student Bank Details</legend>
+                <legend>Student Bank Details / छात्र बैंक विवरण</legend>
                 <table class="table table-bordered table-custom">
                     <tbody>
                         <tr>
-                            <th>IFSC Code :</th>
+                            <th>IFSC Code<br />
+                                आईएफएससी कोड :</th>
                             <td>SBIN0007718</td>
-                            <th>Bank Name :</th>
+                            <th>Bank Name<br />
+                                बैंक का नाम :</th>
                             <td>State Bank Of India</td>
                         </tr>
                         <tr>
-                            <th>Account Number :</th>
+                            <th>Account Number<br />
+                                खाता नंबर :</th>
                             <td>56235698562</td>
                             <th></th>
                             <td></td>
@@ -174,12 +217,14 @@
                 </table>
             </fieldset>
             <fieldset>
-                <legend>Bank Detail</legend>
+                <legend>Bank Detail / 
+बैंक का विवरण</legend>
                 <table class="table table-bordered table-custom">
                     <tbody>
                         <tr>
 
-                            <th>IFSC Code<span style="color: red">*</span></th>
+                            <th>IFSC Code<br />
+                                आईएफएससी कोड<span style="color: red">*</span></th>
                             <td>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter IFSC Code" /></td>
                             <td colspan="2"><span class="bg-dark text-white">Find Your IFSC</span>
@@ -187,7 +232,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Bank Name<span style="color: red">*</span></th>
+                            <th>Bank Name<br />
+                                बैंक का नाम<span style="color: red">*</span></th>
                             <td>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -202,11 +248,11 @@
                         </tr>
 
                         <tr>
-                            <th>Account Number<span style="color: red">*</span></th>
+                            <th>Account Number<br />खाता नंबर<span style="color: red">*</span></th>
                             <td>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Account Number" /></td>
 
-                            <th>Account Number (Re Type)<span style="color: red">*</span></th>
+                            <th>Account Number (Re Type)<br />खाता नंबर (पुनः टाइप करें)<span style="color: red">*</span></th>
                             <td>
                                 <input type="text" class="form-control" autocomplete="off" placeholder="Enter Account Number" /></td>
 

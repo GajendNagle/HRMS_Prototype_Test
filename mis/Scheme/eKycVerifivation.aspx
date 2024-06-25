@@ -5,7 +5,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Roboto Condensed', sans-serif;
+            /*font-family: 'Roboto Condensed', sans-serif;*/
         }
 
         /* Overlay Styles */
@@ -88,6 +88,32 @@
         .card-body {
             min-height: 9rem;
         }
+
+        @media print {
+            /* Show modal content in full page */
+            .modal-dialog {
+                width: 200%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+
+            .modal-content {
+                height: 200%;
+                border: none;
+                box-shadow: none;
+            }
+
+            .modal-body {
+                width: 210%;
+                height: auto;
+                overflow: visible !important;
+                zoom: 90%;
+            }
+            /* Hide unnecessary elements */
+            body.modal-open {
+                visibility: hidden;
+            }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -121,7 +147,7 @@
                             <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#CycleDistribution" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                            <a href="#E_KYC" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
                                 <span>E-KYC </span></a>
                         </li>
                         <li class="breadcrumb-item">eKyc-Verifivation</li>
@@ -148,14 +174,16 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Enter Mobile Number<br />
+                                    <label>
+                                        Enter Mobile Number<br />
                                         मोबाइल नंबर दर्ज करें :-</label>
                                     <input class="form-control" placeholder="मोबाइल नंबर दर्ज करे " />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Confirm Mobile Number<br />
+                                    <label>
+                                        Confirm Mobile Number<br />
                                         मोबाइल नंबर पुनः प्रविष्ट करे  :-</label>
                                     <input class="form-control" placeholder="मोबाइल नंबर पुनः प्रविष्ट करे " />
                                 </div>
@@ -172,7 +200,7 @@
                         <hr />
                         <div class="row ">
                             <div class="col-md-3">
-                                <input type="button" class="s3-btn btn btn-success btn-border w-lg" name="Open" onclick="popupOpen();" value="मोबाइल नंबर पर OTP प्राप्त करने के लिए यहाँ क्लीक करे">
+                                <input type="button" class="s3-btn btn btn-success btn-border w-lg" name="Open" onclick="popupOpen();" value="मोबाइल नंबर पर OTP प्राप्त करने के लिए यहाँ क्लीक करे" data-toggle="modal" data-target="#myModal">
                             </div>
                         </div>
                     </div>
@@ -181,10 +209,10 @@
         </div>
     </div>
     <!-- Overlay -->
-    <div class="overlay" id="overlay" style="display: none;"></div>
+    <%--<div class="overlay" id="overlay" style="display: none;"></div>--%>
 
     <!-- Popup -->
-    <div class="popup" id="popup" style="display: none;">
+    <%--<div class="popup" id="popup" style="display: none;">
         <div class="popup-inner">
             <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
             <div class="card">
@@ -214,13 +242,61 @@
                 </div>
             </div>
         </div>
+    </div>--%>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                    <h4 class="modal-title text-white"></h4>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <div class="card">
+                        <h5 class="card-header">मोबाइल नंबर सत्यापित करे</h5>
+                        <div class="card-body">
+                            <div class="row align-items-end">
+                                <div class="col-md-4">
+                                    <label>कृप्या OTP दर्ज करे<span style="color: red">*</span></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input class="form-control" placeholder="OTP दर्ज करे " />
+                                </div>
+
+                                <div class="col-md-3">
+                                    <asp:Button Text="Submit OTP" OnClick="Button3_Click" type="button" runat="server" ID="Button1" class="btn btn-success"></asp:Button>
+                                </div>
+
+                            </div>
+
+                            <div class="row align-items-end">
+
+                                <div class="col-md-4">
+                                    <asp:Button Text="OTP पुनः भेजे " type="button" runat="server" ID="Button2" class="btn btn-warning"></asp:Button>
+                                </div>
+                                <div class="col-lg-7" style="position:relative; right:15px;">
+                                    <asp:Button Text="दर्ज मोबाइल नंबर पर OTP भेजा गया है!" runat="server" CssClass="btn btn-success w-lg"></asp:Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="card mt-3 shadow" runat="server" id="Studendetails" visible="false">
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student details</legend>
+                <legend>Student details / छात्र विवरण</legend>
                 <div class="student-profile ">
                     <div>
                         <div class="row justify-content-center">
@@ -360,10 +436,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-2">
-                                <button type="button" class="Alert-Confirmation btn btn-success btn-rounded">Final Submit</button>
-                                <a href="eKycVerifivation.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="Alert-Confirmation btn btn-success btn-border w-lg">Final Submit</button>
+                                <a href="eKycVerifivation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
                         </div>
                     </div>
@@ -374,6 +451,8 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         var onloadCallback = function () {
             grecaptcha.render('html_element', {
@@ -384,7 +463,7 @@
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
     </script>
-    <script>
+    <%--<script>
         // Popup Open
         function popupOpen() {
             document.getElementById("popup").style.display = "block";
@@ -395,6 +474,6 @@
             document.getElementById("popup").style.display = "none";
             document.getElementById("overlay").style.display = "none";
         }
-    </script>
+    </script>--%>
 </asp:Content>
 

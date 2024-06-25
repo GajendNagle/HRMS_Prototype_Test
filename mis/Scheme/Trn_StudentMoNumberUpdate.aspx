@@ -40,7 +40,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Update Student Mobile Number</h4>
         </div>
@@ -54,9 +54,39 @@
                 </ol>
             </div>
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#BankMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Bank Master </span></a>
+                        </li>
+                        <li class="breadcrumb-item">Update Student Mobile Number</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Update Student Mobile Number /
+छात्र मोबाइल नंबर अपडेट करें</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">
@@ -67,11 +97,12 @@
                 </div>
             </div>
             <fieldset>
-                <legend>Update Student Mobile Number</legend>
+                <legend>Update Student Mobile Number / छात्र मोबाइल नंबर अपडेट करें</legend>
                 <table class="table table-bordered table-custom">
                     <tbody>
                         <tr>
-                            <th class="text-end">Member ID : </th>
+                            <th class="text-end">Member ID<br />
+                                सदस्य आईडी : </th>
                             <td>
                                 <input type="text" class="form-control" placeholder="Enter Member ID" /></td>
                             <td>
@@ -83,30 +114,36 @@
             </fieldset>
             <div id="MobileDetails" runat="server" visible="false">
                 <fieldset>
-                    <legend>Student Details</legend>
+                    <legend>Student Details / छात्र विवरण </legend>
                     <table class="table table-bordered table-custom">
                         <tbody>
                             <tr>
-                                <th>Name :</th>
+                                <th>Name<br />
+                                    नाम :</th>
                                 <td>Rounak Nath</td>
-                                <th>Father Name:</th>
+                                <th>Father Name<br />
+                                    पिता का नाम:</th>
                                 <td>Munna lal</td>
                             </tr>
                             <tr>
-                                <th>Date Of Birth :</th>
+                                <th>Date Of Birth<br />
+                                    जन्म की तारीख :</th>
                                 <td>25/08/2005</td>
-                                <th>Gender :</th>
+                                <th>Gender<br />
+                                    जेंडर :</th>
                                 <td>Male</td>
                             </tr>
                         </tbody>
                     </table>
                 </fieldset>
                 <fieldset>
-                    <legend>Mobile Number Of The Student</legend>
+                    <legend>Mobile Number Of The Student / छात्र का मोबाइल नंबर</legend>
                     <table class="table table-bordered table-custom">
                         <tbody>
                             <tr>
-                                <th class="text-end">Mobile Number  :</th>
+                                <th class="text-end">Mobile Number
+                                    <br />
+                                    मोबाइल नंबर :</th>
                                 <td>
                                     <input type="text" class="form-control" placeholder="Enter Mobile Number" />
                                 </td>
@@ -133,10 +170,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <hr />
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <asp:Button runat="server" ID="Button1" CssClass="btn btn-danger btn-rounded" Text="Update Mobile No Of The Student" />
-                        <a href="Trn_StudentMoNumberUpdate.aspx" class="btn btn-info btn-rounded">Reset Details</a>
+                    <div class="col-md-12 ">
+                        <asp:Button runat="server" ID="Button1" CssClass="btn btn-success btn-border" Text="Update Mobile No Of The Student" />
+                        <a href="Trn_StudentMoNumberUpdate.aspx" class="btn btn-outline-danger btn-rounded">Reset Details</a>
                     </div>
                 </div>
             </div>

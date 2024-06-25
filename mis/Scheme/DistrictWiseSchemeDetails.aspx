@@ -23,7 +23,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">District Wise Scheme Details</h4>
         </div>
@@ -37,18 +37,48 @@
                 </ol>
             </div>
         </div>
-    </div>
+    </div>--%>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#AnalyticalReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')"><span>Analytical Report</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Scheme Wise Brief Report</li>
+                        <li class="breadcrumb-item">District Wise Scheme Details</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-10">
+                    <h4 class="card-title">District Wise Scheme Details /
+            जिलावार योजना विवरण
+                    </h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Details</legend>
-                <div class="row">
-                    <div class="col-md-2">
+                <legend>Details / विवरण</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Academic Year<span class="text-danger">*</span></label>
+                            <label>Academic Year<br />शैक्षणिक वर्ष<span class="text-danger">*</span></label>
                             <select disabled="disabled" class="form-control select2">
 
                                 <option selected="selected" value="36">2024-25</option>
@@ -58,9 +88,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Schemes<span class="text-danger">*</span></label>
+                            <label>Schemes<br />योजनाएं<span class="text-danger">*</span></label>
                             <select class="form-control select2" disabled="disabled">
 
                                 <option selected="selected" value="2">1.1-सामान्य निर्धन वर्ग छात्रवृत्ति योजना</option>
@@ -70,7 +100,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Report Date<span class="text-danger">*</span></label>
+                            <label>Report Date<br />रिपोर्ट दिनांक<span class="text-danger">*</span></label>
                             <input class="form-control" value="11/09/2023" type="text" disabled="disabled" />
                         </div>
                     </div>
@@ -87,7 +117,7 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
@@ -96,9 +126,13 @@
 
                         </div>
                     </div>
-                    <div class="col-md-12 text-center">
+                    </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-rounded" />
+                            <asp:Button runat="server" ID="btnRegisterStudents" Text="View" CssClass="btn btn-success btn-border" />
+                            <a href="DistrictWiseSchemeDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -111,14 +145,14 @@
                                     <table class="table table-hover table-bordered table-condensed ">
                                         <thead>
                                             <tr>
-                                                <th>S. No.</th>
-                                                <th>जिला
-</th>
-                                                <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना के कुल स्वीकृत आवेदन</th>
-                                                <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत भुगतान (M1Click)</th>
-                                                <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना की कुल स्वीकृत राशि</th>
-                                                <th>सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत राशि का भुगतान (M1Click)</th>
-                                          
+                                                <th>S.No.<br />सरल क्र.</th>
+                                                <th>District<br />जिला
+                                                </th>
+                                                <th>Total accepted applications of General Poor Category Scholarship Scheme<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना के कुल स्वीकृत आवेदन</th>
+                                                <th>Payment under General Poor Category Scholarship Scheme (M1Click)<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत भुगतान (M1Click)</th>
+                                                <th>Total sanctioned amount of General Poor Category Scholarship Scheme<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना की कुल स्वीकृत राशि</th>
+                                                <th>Payment of amount under General Poor Category Scholarship Scheme (M1Click)<br />सामान्य निर्धन वर्ग छात्रवृत्ति योजना अंतर्गत राशि का भुगतान (M1Click)</th>
+
                                             </tr>
                                         </thead>
                                     </table>
