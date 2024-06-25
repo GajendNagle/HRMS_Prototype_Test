@@ -50,13 +50,13 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Parent Menu Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Parent Menu Name (In English)<br />पेरेंट मेनू नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Parent Menu Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>पेरेंट मेनू का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Parent Menu Name (in Hindi)<br />पेरेंट मेनू का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="पेरेंट मेनू का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -124,8 +124,8 @@
                                         सरल क्र.</th>
                                     <th>Module Name <br />
                                         मोड्यूल का नाम</th>
-                                    <th>Parent Menu Name (In English)</th>
-                                    <th>पेरेंट मेनू का नाम (हिंदी में)</th>
+                                    <th>Parent Menu Name (In English)<br />पेरेंट मेनू नाम (अंग्रेजी में)</th>
+                                    <th>Parent Menu Name (in Hindi)<br />पेरेंट मेनू का नाम (हिंदी में)</th>
                                     <th>Parent Menu Sequence No. <br />
                                         पेरेंट मेनू का  अनुक्रम क्रमांक</th>
                                     <th>Parent Menu Icon<br />

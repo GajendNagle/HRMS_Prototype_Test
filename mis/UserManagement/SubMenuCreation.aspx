@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SubMenuCreation.aspx.cs" Inherits="mis_UserManagement_SubMenuCreation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -63,13 +68,13 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Sub Menu Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Sub Menu Name (In English)<br />सब मेनू नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Menu Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>सब मेनू का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Sub Menu Name (in Hindi)<br />सब मेनू का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="सब मेनू का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -162,8 +167,8 @@
                                         मोड्यूल का नाम</th>
                                     <th>Parent Menu Name <br />
                                         पेरेंट मेनू का नाम</th>
-                                    <th>Sub Menu Name(In English)</th>
-                                    <th>सब मेनू का नाम (हिंदी में)</th>
+                                    <th>Sub Menu Name(In English)<br />सब मेनू नाम(अंग्रेजी में)</th>
+                                    <th> Sub Menu Name (In Hindi)<br />सब मेनू का नाम (हिंदी में)</th>
                                     <th>Controller Name <br />
                                         नियंत्रक का नाम</th>
                                     <th>View Name<br />

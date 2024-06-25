@@ -28,6 +28,9 @@
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
                         <li class="breadcrumb-item"><a href="#sidebarDashboards" data-bs-toggle="collapse" role="button">Dashboards</a></li>
                         <li class="breadcrumb-item active">HRMS Dashboard</li>
                     </ol>
@@ -374,22 +377,22 @@
                         </div>
                     </div>--%>
                 </div>
-        </div>
+            </div>
 
 
 
-        <%--                 <div class="row">--%>
-        <div class="col-md-12" data-aos="fade-up" data-aos-duration="1500">
-            <div class="form-group">
-                <div class="card shadow">
-                    
-                    <div class="card-body">
-                        <div id="TeacherStaff_Chart"></div>
+            <%--                 <div class="row">--%>
+            <div class="col-md-12" data-aos="fade-up" data-aos-duration="1500">
+                <div class="form-group">
+                    <div class="card shadow">
+
+                        <div class="card-body">
+                            <div id="TeacherStaff_Chart"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

@@ -2,9 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-
     <link href="~\css\dashboard.css" rel="stylesheet" />
-
     <style>
         .btn-check:focus + .btn-secondary, .btn-secondary:focus {
             color: var(--vz-btn-active-color);
@@ -348,370 +346,383 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
-    <!-- end row -->
-    <!-- end row -->
-
     <div class="row">
-        <!-- end col -->
-        <div class="col-xxl-6 col-md-12">
-            <div class="card card-height-100">
-                <div class="card-header  border-bottom border-primary align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">Schemes</h4>
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0">Employees Dashboard</h4>
+
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#sidebarDashboards" data-bs-toggle="collapse" role="button">Dashboards</a></li>
+                        <li class="breadcrumb-item active">Employees DashBoard</li>
+                    </ol>
                 </div>
-                <!-- end card header -->
-                <div class="card-body pb-0 danger">
-                    <div id="Chart_Scheme"></div>
-                </div>
-            </div>
-            <!-- end card -->
-        </div>
-        <%--Schemes--%>
-        <div class="col-xxl-6 col-md-12 h-auto">
-            <div class="card border card-height-100 ">
-                <div class="card-header border-bottom border-primary align-items-center d-flex ">
-                    <h4 class="card-title mb-0 flex-grow-1">Students Applied for Scheme</h4>
-                </div>
-                <!-- end card header -->
-                <div class="card-body pb-0">
-                    <div>
-                        <div id="SchemeApplicants_Charts"></div>
-                    </div>
-                </div>
-                <!-- end card body -->
+
             </div>
         </div>
-        <%--Students Applied for Scheme--%>
     </div>
-    <!-- end row -->
-
-    <div class="row">
-        <div class="col-xxl-6 col-md-12">
-            <div class="card card-height-100 ">
-                <div class="card-header  border-bottom border-primary align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">Circular Orders</h4>
-                    <div class="flex-shrink-0">
-                        <div class="dropdown card-header-dropdown">
-                            <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class=" fs-16"><i class="mdi mdi-dots-vertical align-middle"></i></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <a class="dropdown-item" href="#">Today</a>
-                                <a class="dropdown-item" href="#">Last Week</a>
-                                <a class="dropdown-item" href="#">Last Month</a>
-                                <a class="dropdown-item" href="#">Current Year</a>
-                            </div>
-                        </div>
+    <br />
+    <div class="container-fluid p-0 ">
+        <div class="row">
+            <!-- end col -->
+            <div class="col-xxl-6 col-md-12">
+                <div class="card card-height-100">
+                    <div class="card-header  border-bottom border-primary align-items-center d-flex">
+                        <h4 class="card-title mb-0 flex-grow-1">Schemes</h4>
+                    </div>
+                    <!-- end card header -->
+                    <div class="card-body pb-0 danger">
+                        <div id="Chart_Scheme"></div>
                     </div>
                 </div>
-                <!-- end card header -->
-                <div class="card-body">
-                    <div class="row  overflow-auto" style="max-height: 100%">
-
-                        <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">1</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">2</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">3</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">4</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="card card-border-primary mb-3">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">5</span></div>
-                                    </div>
-                                    <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- end -->
-                </div>
-                <!-- end cardbody -->
+                <!-- end card -->
             </div>
-            <!-- end card -->
-        </div>
-
-        <div class="col-xxl-6 col-md-12">
-            <div class="card card-height-100 ">
-                <div class="card-header border-bottom border-primary align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">Monthly Event Calendar</h4>
-                    <div class="flex-shrink-0">
+            <%--Schemes--%>
+            <div class="col-xxl-6 col-md-12 h-auto">
+                <div class="card border card-height-100 ">
+                    <div class="card-header border-bottom border-primary align-items-center d-flex ">
+                        <h4 class="card-title mb-0 flex-grow-1">Students Applied for Scheme</h4>
                     </div>
-                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventList"><i class="ri-menu-line"></i>Upcoming Events</button>
-
-                </div>
-                <!-- end card header -->
-                <div class="card-body pt-0">
-
-
-                    <div class="offcanvas offcanvas-custom " style="min-width: 350px" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEventList" aria-labelledby="offcanvasScrollingLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasEventListLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <!-- end card header -->
+                    <div class="card-body pb-0">
+                        <div>
+                            <div id="SchemeApplicants_Charts"></div>
                         </div>
-                        <div class="offcanvas-body py-3">
-                            <div id="external-events">
+                    </div>
+                    <!-- end card body -->
+                </div>
+            </div>
+            <%--Students Applied for Scheme--%>
+        </div>
+        <!-- end row -->
+        <div class="row">
+            <div class="col-xxl-6 col-md-12">
+                <div class="card card-height-100 ">
+                    <div class="card-header  border-bottom border-primary align-items-center d-flex">
+                        <h4 class="card-title mb-0 flex-grow-1">Circular Orders</h4>
+                        <div class="flex-shrink-0">
+                            <div class="dropdown card-header-dropdown">
+                                <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class=" fs-16"><i class="mdi mdi-dots-vertical align-middle"></i></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Today</a>
+                                    <a class="dropdown-item" href="#">Last Week</a>
+                                    <a class="dropdown-item" href="#">Last Month</a>
+                                    <a class="dropdown-item" href="#">Current Year</a>
+                                </div>
                             </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col-xl-6 col-md-7 m-0">
-                                        <h5 class="mb-1">Upcoming Events</h5>
-                                    </div>
-                                    <div class="col-xl-6 col-md-5 text-end m-0">
+                        </div>
+                    </div>
+                    <!-- end card header -->
+                    <div class="card-body">
+                        <div class="row  overflow-auto" style="max-height: 100%">
 
-                                        <%--<button class="btn btn-outline-secondary w-auto mb-2" id="btn-new-event" type="button"><i class="mdi mdi-plus"></i>Create Event</button>--%>
+                            <div class="col-md-12">
+                                <div class="card card-border-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">1</span></div>
+                                        </div>
+                                        <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">उच्च माध्यमिक शिक्षक संवर्ग की दिनांक 01/04/2023 की स्थिति दर्शाने वाली अंतरिम वरिष्ठता सूची का प्रकाशन</a></p>
                                     </div>
                                 </div>
+                            </div>
 
-                                <p class="text-muted">Don't miss scheduled events</p>
-                                <div class="pe-2 me-n1 mb-3 simplebar-scrollable-y" data-simplebar="init">
-                                    <div class="simplebar-wrapper" style="margin: 0px -8px 0px 0px;">
-                                        <div class="simplebar-height-auto-observer-wrapper">
-                                            <div class="simplebar-height-auto-observer"></div>
+                            <div class="col-md-12">
+                                <div class="card card-border-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">2</span></div>
                                         </div>
-                                        <div class="simplebar-mask">
-                                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
-                                                <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;">
-                                                    <div class="simplebar-content" style="padding: 0px 8px 0px 0px;">
-                                                        <div id="upcoming-event-list">
+                                        <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">8 अप्रैल 2024 को आयोजित वीडियो कांफ्रेंसिंग स्थगित किये जाने विषयक</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card card-border-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">3</span></div>
+                                        </div>
+                                        <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">पालक द्वारा यूनिफार्म, पुस्तकें एवं अन्य सामग्री क्रय करने के संबंध में</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card card-border-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">4</span></div>
+                                        </div>
+                                        <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">SC/ST प्री एवं पोस्ट मैट्रिक छात्रवृत्ति योजनाओं हेतु शालेय विद्यार्थियों के समग्र, आधार, डिजिटल जाती प्रमाण पत्र एवं आय प्रमाण पत्र की उपलब्धता/अपडेशन सुनिश्चित किए जाने विषयक।</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card card-border-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1"><i class="mdi mdi-checkbox-blank-circle me-2 text-info"></i><span class="fw-medium">5</span></div>
+                                        </div>
+                                        <p class="text-muted text-truncate-two-lines mb-0"><a href="javascript:void(0);">शैक्षणिक सत्र 2022-23 से अनुसूचित जनजातीय वर्ग के विद्यार्थियों को कक्षा 12वीं की बोर्ड परीक्षा शुल्क के भुगतान विषयक</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- end -->
+                    </div>
+                    <!-- end cardbody -->
+                </div>
+                <!-- end card -->
+            </div>
+
+            <div class="col-xxl-6 col-md-12">
+                <div class="card card-height-100 ">
+                    <div class="card-header border-bottom border-primary align-items-center d-flex">
+                        <h4 class="card-title mb-0 flex-grow-1">Monthly Event Calendar</h4>
+                        <div class="flex-shrink-0">
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventList"><i class="ri-menu-line"></i>Upcoming Events</button>
+
+                    </div>
+                    <!-- end card header -->
+                    <div class="card-body pt-0">
+
+
+                        <div class="offcanvas offcanvas-custom " style="min-width: 350px" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEventList" aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasEventListLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body py-3">
+                                <div id="external-events">
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-7 m-0">
+                                            <h5 class="mb-1">Upcoming Events</h5>
+                                        </div>
+                                        <div class="col-xl-6 col-md-5 text-end m-0">
+
+                                            <%--<button class="btn btn-outline-secondary w-auto mb-2" id="btn-new-event" type="button"><i class="mdi mdi-plus"></i>Create Event</button>--%>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-muted">Don't miss scheduled events</p>
+                                    <div class="pe-2 me-n1 mb-3 simplebar-scrollable-y" data-simplebar="init">
+                                        <div class="simplebar-wrapper" style="margin: 0px -8px 0px 0px;">
+                                            <div class="simplebar-height-auto-observer-wrapper">
+                                                <div class="simplebar-height-auto-observer"></div>
+                                            </div>
+                                            <div class="simplebar-mask">
+                                                <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                    <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;">
+                                                        <div class="simplebar-content" style="padding: 0px 8px 0px 0px;">
+                                                            <div id="upcoming-event-list">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="simplebar-placeholder" style="width: 249px; height: 2521px;"></div>
                                         </div>
-                                        <div class="simplebar-placeholder" style="width: 249px; height: 2521px;"></div>
-                                    </div>
-                                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
-                                        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
-                                    </div>
-                                    <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
-                                        <div class="simplebar-scrollbar" style="height: 63px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                                        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                            <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                                        </div>
+                                        <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                            <div class="simplebar-scrollbar" style="height: 63px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
+
+                            </div>
+                        </div>
+
+                        <style>
+                            .offcanvas.offcanvas-custom.show .simplebar-content-wrapper {
+                                visibility: visible;
+                            }
+
+                            .offcanvas.offcanvas-custom .simplebar-content-wrapper {
+                                visibility: hidden;
+                            }
+
+                            .offcanvas-custom {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                border-right: var(--primary) solid 1px;
+                                border-radius: var(--vz-border-radius);
+                                padding-bottom: 1rem;
+                                /* Adjust width as needed */
+                                height: 100%;
+                                z-index: 100;
+                                visibility: hidden;
+                                background-color: var(--vz-body-bg);
+                                transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+                                transform: translateX(-100%);
+                            }
+                        </style>
+                        <div>
+                            <div id="calendar" style="width: 100%; max-height: 550px"></div>
 
                         </div>
-                    </div>
 
-                    <style>
-                        .offcanvas.offcanvas-custom.show .simplebar-content-wrapper {
-                            visibility: visible;
-                        }
-
-                        .offcanvas.offcanvas-custom .simplebar-content-wrapper {
-                            visibility: hidden;
-                        }
-
-                        .offcanvas-custom {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            border-right: var(--primary) solid 1px;
-                            border-radius: var(--vz-border-radius);
-                            padding-bottom: 1rem;
-                            /* Adjust width as needed */
-                            height: 100%;
-                            z-index: 100;
-                            visibility: hidden;
-                            background-color: var(--vz-body-bg);
-                            transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-                            transform: translateX(-100%);
-                        }
-                    </style>
-                    <div>
-                        <div id="calendar" style="width: 100%; max-height: 550px"></div>
 
                     </div>
+                    <!-- end cardbody -->
 
 
                 </div>
-                <!-- end cardbody -->
-
 
             </div>
-
         </div>
-    </div>
-    <!-- end row -->
-
-    <div class="row">
-    </div>
-    <div class="modal  fade" id="event-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content border-0">
-                <div class="modal-header p-3 bg-info-subtle">
-                    <h5 class="modal-title" id="modal-title">Event</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <div id="form-event">
-                        <div class="text-end">
-                            <a href="#" class="btn btn-sm btn-soft-primary" id="edit-event-btn" data-id="edit-event" onclick="editEvent(this)" role="button">Edit</a>
-                        </div>
-                        <div class="event-details" id="event-details">
-                            <div class="d-flex mb-2">
-                                <div class="flex-grow-1 d-flex align-items-center">
+        <!-- end row -->
+        <div class="modal  fade" id="event-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content border-0">
+                    <div class="modal-header p-3 bg-info-subtle">
+                        <h5 class="modal-title" id="modal-title">Event</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <div id="form-event">
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-soft-primary" id="edit-event-btn" data-id="edit-event" onclick="editEvent(this)" role="button">Edit</a>
+                            </div>
+                            <div class="event-details" id="event-details">
+                                <div class="d-flex mb-2">
+                                    <div class="flex-grow-1 d-flex align-items-center">
+                                        <div class="flex-shrink-0 me-3">
+                                            <i class="ri-calendar-event-line text-muted fs-16"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="d-block fw-semibold mb-0" id="event-start-date-tag"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
                                     <div class="flex-shrink-0 me-3">
-                                        <i class="ri-calendar-event-line text-muted fs-16"></i>
+                                        <i class="ri-time-line text-muted fs-16"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="d-block fw-semibold mb-0" id="event-start-date-tag"></h6>
+                                        <h6 class="d-block fw-semibold mb-0"><span id="event-timepicker1-tag"></span>- <span id="event-timepicker2-tag"></span></h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class="ri-map-pin-line text-muted fs-16"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="d-block fw-semibold mb-0"><span id="event-location-tag"></span></h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class="ri-discuss-line text-muted fs-16"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="d-block text-muted mb-0" id="event-description-tag"></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class="ri-time-line text-muted fs-16"></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <h6 class="d-block fw-semibold mb-0"><span id="event-timepicker1-tag"></span>- <span id="event-timepicker2-tag"></span></h6>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class="ri-map-pin-line text-muted fs-16"></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <h6 class="d-block fw-semibold mb-0"><span id="event-location-tag"></span></h6>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class="ri-discuss-line text-muted fs-16"></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <p class="d-block text-muted mb-0" id="event-description-tag"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row event-form" id="event-form">
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label class="form-label">Type</label>
-                                    <select class="form-select d-none" name="category" id="event-category" required>
-                                        <option value="bg-danger-subtle">Danger</option>
-                                        <option value="bg-success-subtle">Success</option>
-                                        <option value="bg-primary-subtle">Primary</option>
-                                        <option value="bg-info-subtle">Info</option>
-                                        <option value="bg-dark-subtle">Dark</option>
-                                        <option value="bg-warning-subtle">Warning</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid event category</div>
-                                </div>
-                            </div>
-                            <!--end col-->
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label class="form-label">Event Name</label>
-                                    <input class="form-control d-none" placeholder="Enter event name" type="text" name="title" id="event-title" required value="" />
-                                    <div class="invalid-feedback">Please provide a valid event name</div>
-                                </div>
-                            </div>
-                            <!--end col-->
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label>Event Date</label>
-                                    <div class="input-group d-none">
-                                        <input type="text" id="event-start-date" class="form-control flatpickr flatpickr-input" placeholder="Select date" required>
-                                        <span class="input-group-text"><i class="ri-calendar-event-line"></i></span>
+                            <div class="row event-form" id="event-form">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Type</label>
+                                        <select class="form-select d-none" name="category" id="event-category" required>
+                                            <option value="bg-danger-subtle">Danger</option>
+                                            <option value="bg-success-subtle">Success</option>
+                                            <option value="bg-primary-subtle">Primary</option>
+                                            <option value="bg-info-subtle">Info</option>
+                                            <option value="bg-dark-subtle">Dark</option>
+                                            <option value="bg-warning-subtle">Warning</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a valid event category</div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--end col-->
-                            <div class="col-12" id="event-time">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Start Time</label>
-                                            <div class="input-group d-none">
-                                                <input id="timepicker1" type="text" class="form-control flatpickr flatpickr-input" placeholder="Select start time">
-                                                <span class="input-group-text"><i class="ri-time-line"></i></span>
-                                            </div>
+                                <!--end col-->
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Event Name</label>
+                                        <input class="form-control d-none" placeholder="Enter event name" type="text" name="title" id="event-title" required value="" />
+                                        <div class="invalid-feedback">Please provide a valid event name</div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label>Event Date</label>
+                                        <div class="input-group d-none">
+                                            <input type="text" id="event-start-date" class="form-control flatpickr flatpickr-input" placeholder="Select date" required>
+                                            <span class="input-group-text"><i class="ri-calendar-event-line"></i></span>
                                         </div>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">End Time</label>
-                                            <div class="input-group d-none">
-                                                <input id="timepicker2" type="text" class="form-control flatpickr flatpickr-input" placeholder="Select end time">
-                                                <span class="input-group-text"><i class="ri-time-line"></i></span>
+                                </div>
+                                <!--end col-->
+                                <div class="col-12" id="event-time">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Start Time</label>
+                                                <div class="input-group d-none">
+                                                    <input id="timepicker1" type="text" class="form-control flatpickr flatpickr-input" placeholder="Select start time">
+                                                    <span class="input-group-text"><i class="ri-time-line"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">End Time</label>
+                                                <div class="input-group d-none">
+                                                    <input id="timepicker2" type="text" class="form-control flatpickr flatpickr-input" placeholder="Select end time">
+                                                    <span class="input-group-text"><i class="ri-time-line"></i></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--end col-->
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="event-location">Location</label>
-                                    <div>
-                                        <input type="text" class="form-control d-none" name="event-location" id="event-location" placeholder="Event location">
+                                <!--end col-->
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="event-location">Location</label>
+                                        <div>
+                                            <input type="text" class="form-control d-none" name="event-location" id="event-location" placeholder="Event location">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--end col-->
-                            <input type="hidden" id="eventid" name="eventid" value="" />
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label class="form-label">Description</label>
-                                    <textarea class="form-control d-none" id="event-description" placeholder="Enter a description" rows="3" spellcheck="false"></textarea>
+                                <!--end col-->
+                                <input type="hidden" id="eventid" name="eventid" value="" />
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Description</label>
+                                        <textarea class="form-control d-none" id="event-description" placeholder="Enter a description" rows="3" spellcheck="false"></textarea>
+                                    </div>
                                 </div>
+                                <!--end col-->
                             </div>
-                            <!--end col-->
-                        </div>
-                        <!--end row-->
-                        <div class="hstack gap-2 justify-content-end">
-                            <button type="button" class="btn btn-soft-danger" id="btn-delete-event"><i class="ri-close-line align-bottom"></i>Delete</button>
-                            <button type="submit" class="btn btn-success" id="btn-save-event">Add Event</button>
+                            <!--end row-->
+                            <div class="hstack gap-2 justify-content-end">
+                                <button type="button" class="btn btn-soft-danger" id="btn-delete-event"><i class="ri-close-line align-bottom"></i>Delete</button>
+                                <button type="submit" class="btn btn-success" id="btn-save-event">Add Event</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- end modal-content-->
             </div>
-            <!-- end modal-content-->
+            <!-- end modal dialog-->
         </div>
-        <!-- end modal dialog-->
     </div>
     <!-- end modal-->
 </asp:Content>

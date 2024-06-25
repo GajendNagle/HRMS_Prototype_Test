@@ -18,7 +18,7 @@
                         <li class="breadcrumb-item">
                             <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>State Master</span></li>
+                        <li class="breadcrumb-item"><span>State Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -48,20 +48,20 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter State Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter State Name (In English)<br />राज्य का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter State Name" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>राज्य का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Name of the State (in Hindi)<br />राज्य का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="राज्य का नाम दर्ज करे" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter State Code No. /<br />
+                                Enter State Code No. <br />
                                 राज्य कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -105,13 +105,15 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>State Name</th>
-                                    <th>राज्य का नाम</th>
-                                    <th>State Code No. /<br />
+                                    <th>Name of the State(In English)<br />
+राज्य का नाम (अंग्रेजी में)</th>
+                                    <th>Name of the State (in Hindi)<br />
+राज्य का नाम (हिंदी में)</th>
+                                    <th>State Code No. <br />
                                         राज्य कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

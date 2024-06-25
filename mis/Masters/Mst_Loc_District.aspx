@@ -48,7 +48,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select State Name /<br />
+                            <label>Select State Name <br />
                                 राज्य का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br />
+                            <label>Select Division Name<br />
                                 संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -105,19 +105,19 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter District Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter District Name (In English)<br />जिला का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder=" Enter District Name " />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>जिले का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>District Name (In Hindi)<br />जिले का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="जिले का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter District Code No. /<br />
+                            <label>Enter District Code No.<br />
                                 जिला कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Code No." />
                         </div>
@@ -162,17 +162,17 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br>
+                                    <th>Sr.No. <br>
                                         सरल क्र.</th>
-                                    <th>State Name /<br>
+                                    <th>State Name <br>
                                         राज्य का नाम</th>
-                                    <th>Division Name /<br>
+                                    <th>Division Name <br>
                                         संभाग का नाम</th>
-                                    <th>District Name</th>
-                                    <th>जिले का नाम</th>
-                                    <th>District Code No. /<br>
+                                    <th>District Name(In English)<br />जिला का नाम (अंग्रेजी में)</th>
+                                    <th>District Name(In Hindi) <br />जिले का नाम (हिंदी में)</th>
+                                    <th>District Code No. <br>
                                         जिला कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br>
+                                    <th>Status(Active/InActive) <br>
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

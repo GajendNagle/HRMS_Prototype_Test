@@ -1,5 +1,4 @@
-﻿
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SchoolDirectoryDashboard.aspx.cs" Inherits="mis_Dashboard_AdminDashboard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SchoolDirectoryDashboard.aspx.cs" Inherits="mis_Dashboard_AdminDashboard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
@@ -28,23 +27,26 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <div class="col-md-5 align-self-center">
+                    <h4 class="text-themecolor ">School Directory Dashboard</h4>
+                    <h5 class="text-themecolor ">Educational Year [2023-2024]</h5>
+                </div>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#sidebarDashboards" data-bs-toggle="collapse" role="button">Dashboards</a></li>
+                        <li class="breadcrumb-item active">School Directory Dashboard</li>
+                    </ol>
+                </div>
 
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">School Directory Dashboard</h4>
-            <h5 class="text-themecolor ">Educational Year [2023-2024]</h5>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Dashboard" title="click to go on">Dashboard</a></li>
-                    <li class="breadcrumb-item active">School Directory Dashboard</li>
-                </ol>
             </div>
         </div>
     </div>
- 
     <div class="row justify-content-center">
         <div class="col-lg-12 col-sm-12 col-md-12">
             <div class="section-title">
@@ -58,7 +60,8 @@
                             <div class="card-wrap">
                                 <div class="card-header card-header1 one">
                                     <%--<i class="fas fa-code"></i>--%>
-                                    <h4 class="">Registered Offices  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">Registered Offices 
+                                        <smallh4>(No's)</smallh4></h4>
 
                                 </div>
                                 <div class="card-content">
@@ -71,7 +74,8 @@
 
                             <div class="card-wrap">
                                 <div class="card-header card-header1 two">
-                                    <h4 class="">Registered Institutes  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">Registered Institutes 
+                                        <smallh4>(No's)</smallh4></h4>
 
                                 </div>
                                 <div class="card-content">
@@ -83,7 +87,8 @@
                         <div class="col-lg-2">
                             <div class="card-wrap">
                                 <div class="card-header card-header1 three">
-                                    <h4 class="">Registered Schools  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">Registered Schools 
+                                        <smallh4>(No's)</smallh4></h4>
                                 </div>
                                 <div class="card-content">
                                     <%--<h1 class="card-title card-title1"></h1>--%>
@@ -94,7 +99,8 @@
                         <div class="col-lg-2">
                             <div class="card-wrap">
                                 <div class="card-header card-header1 four">
-                                    <h4 class="">Registered Sankuls  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">Registered Sankuls 
+                                        <smallh4>(No's)</smallh4></h4>
                                 </div>
                                 <div class="card-content">
 
@@ -108,7 +114,8 @@
                             <div class="card-wrap">
                                 <div class="card-header card-header1 one">
                                     <%--<i class="fas fa-code"></i>--%>
-                                    <h4 class="">School Functional  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">School Functional 
+                                        <smallh4>(No's)</smallh4></h4>
 
                                 </div>
                                 <div class="card-content">
@@ -121,7 +128,8 @@
 
                             <div class="card-wrap">
                                 <div class="card-header card-header1 two">
-                                    <h4 class="">School Non-Functional  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">School Non-Functional 
+                                        <smallh4>(No's)</smallh4></h4>
 
                                 </div>
                                 <div class="card-content">
@@ -133,7 +141,10 @@
                         <div class="col-lg-2">
                             <div class="card-wrap">
                                 <div class="card-header card-header1 three">
-                                    <h4 class=""> Merged School  <smallh4><br /> (No's)</smallh4></h4>
+                                    <h4 class="">Merged School 
+                                        <smallh4>
+                                            <br />
+                                            (No's)</smallh4></h4>
                                 </div>
                                 <div class="card-content">
                                     <%--<h1 class="card-title card-title1"></h1>--%>
@@ -144,7 +155,8 @@
                         <div class="col-lg-2">
                             <div class="card-wrap">
                                 <div class="card-header card-header1 four">
-                                    <h4 class="">Registered Special Schools  <smallh4>(No's)</smallh4></h4>
+                                    <h4 class="">Registered Special Schools 
+                                        <smallh4>(No's)</smallh4></h4>
                                 </div>
                                 <div class="card-content">
 
@@ -252,7 +264,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
 
 

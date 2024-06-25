@@ -37,13 +37,13 @@
                 <div class="row align-items-end">
                     <div class="col-md-3 mt-4">
                         <div class="form-group">
-                            <label>Enter Module Name(In English)<span style="color: red">*</span></label>
+                            <label>Enter Module Name(In English)<br />मॉड्यूल नाम दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" maxlength="50" class="form-control" id="txtModuleNameEng" placeholder="Enter Module Name" />
                         </div>
                     </div>
                     <div class="col-md-3 mt-5">
                         <div class="form-group">
-                            <label>मॉड्यूल का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Name of the module (in Hindi)<br />मॉड्यूल का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="मॉड्यूल का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -110,8 +110,8 @@
                                 <tr>
                                     <th>Sr.No.<br />
                                         सरल क्र.</th>
-                                    <th>Module Name (In English)</th>
-                                    <th>मॉड्यूल का नाम (हिंदी में)</th>
+                                    <th>Module Name (In English)<br />मॉड्यूल का नाम (अंग्रेजी में)</th>
+                                    <th>Module Name (In Hindi)<br />मॉड्यूल का नाम (हिंदी में)</th>
                                     <th>Module Sequence No.<br />
                                         मॉड्यूल अनुक्रम संख्या</th>
                                     <th>Module Icon <br />

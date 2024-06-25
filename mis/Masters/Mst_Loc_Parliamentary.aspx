@@ -47,7 +47,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br />
+                            <label>Select Division Name<br />
                                 संभाग का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br />
+                            <label>Select District Name<br />
                                 जिला का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -124,19 +124,19 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Parliamentary Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Parliamentary Name (In English)<br />लोकसभा का नाम दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Parliamentary Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>लोकसभा का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Parliamentary Name (In Hindi)<br />लोकसभा का नाम(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="लोकसभा का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Parliamentary Code No. /<br />
+                            <label>Enter Parliamentary Code No.<br />
                                 लोकसभा कोड दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -181,17 +181,17 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No.<br />
                                         सरल क्र.</th>
-                                    <th>Division Name /<br />
+                                    <th>Division Name<br />
                                         संभाग का नाम</th>
-                                    <th>District Name /<br />
+                                    <th>District Name<br />
                                         जिले का नाम</th>
-                                    <th>Parliamentary Name (In English)</th>
-                                    <th>लोकसभा का नाम(हिंदी में)</th>
-                                    <th>Parliamentary Code No. /<br />
+                                    <th>Parliamentary Name (In English)<br />लोकसभा का नाम(अंग्रेजी में)</th>
+                                    <th>Parliamentary Name (In Hindi)<br />लोकसभा का नाम(हिंदी में)</th>
+                                    <th>Parliamentary Code No.<br />
                                         लोकसभा कोड संख्या</th>
-                                    <th>Status(Active / InActive) /<br />
+                                    <th>Status(Active / InActive)<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

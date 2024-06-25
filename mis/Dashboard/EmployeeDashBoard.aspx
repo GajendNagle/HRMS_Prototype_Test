@@ -50,18 +50,21 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0">Employee Dashboard</h4>
 
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Dashboard</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Dashboard" title="click to go on">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#sidebarDashboards" data-bs-toggle="collapse" role="button">Dashboards</a></li>
+                        <li class="breadcrumb-item active">Employee DashBoard</li>
+                    </ol>
+                </div>
+
             </div>
         </div>
     </div>
@@ -124,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <hr />           
+            <hr />
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -153,7 +156,7 @@
                                                 </li>
                                                 <li class="buttons">
                                                     <a href="#" title="School Edcuation Related Schemes For Teachers">शिक्षक-योजनाएं</a>
-                                                </li>                                                                                       
+                                                </li>
                                             </ul>
                                             <script type="text/javascript">
                                                 function ticker1() {
@@ -191,18 +194,18 @@
                                                 </div>
                                                 <div id="News1" style="font-size: 16px; font-weight: bold; text-align: left; padding: 14px;">
                                                     <div id="dvcircular12" class="ticker" style="padding: 5px;">
-                                                        <ul id="dlNews1" cellspacing="0" border="0" style="border-collapse: collapse;">                                                         
-                                                                    <li>
-                                                                        <a id="dlNews_ctl00_HyperLink_Sub" href="#">माध्यमिक शिक्षा मंडल - कक्षा १० वीं एवं १२ वीं के आवेदन में ३१ इस त्रुटि सुधार का अवसर / विषयों में गलती सही करा सकेंगे विद्यार्थी - न्यूज़ दीपक हलवे ,प्राचार्य , शासकीय अहिल्याश्रम कन्या उमावि क्रमांक २ इंदौर - </a>
-                                                                    </li>
-                                                                                                                 
-                                                                    <li>
-                                                                        <a id="dlNews_ctl01_HyperLink_Sub" href="#">(१) इंदौर - शासकीय संयोगितागंज उमावि  बालक उमावि इंदौर - जिस स्कूल में  कभी पढ़े थे जॉनी वाकर , उस स्कूल को संवारेगा अब  नगर निगम इंदौर (२) कामकाज के लिए पलायन - सबसे  ज्यादा लोग भारत  से गए / अमेरिका पहला ठिकाना (३) माध्यमिक शिक्षा मंडल हेल्प लाइन - बीते साल में  एक लाख सैंतीस हजार कॉल आये   - न्यूज़ दीपक हलवे ,प्राचार्य , शासकीय हाई स्कूल ,बालौदा टाकून , इंदौर - </a>
-                                                                    </li>                                                       
-                                                                    <li>
-                                                                        <a id="dlNews_ctl02_HyperLink_Sub" href="#">(१) सरकारी सुविधा नहीं मिली तो स्टाफ और ग्रामीणों ने ही मिलकर स्कूल को संवार दिया (२) कैरियर काउंसलिंग - पोर्टल  से छात्रों को कॅरियर चुनने को मदद मिलेगी (३) अनुभूति कार्यक्रम अंतर्गत विद्यार्थियों को कराया वन भ्रमण   - न्यूज़ दीपक हलवे ,प्राचार्य , शासकीय हाई स्कूल ,बालौदा टाकून , इंदौर - </a>
-                                                                    </li>
-                                                            </ul>
+                                                        <ul id="dlNews1" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                            <li>
+                                                                <a id="dlNews_ctl00_HyperLink_Sub" href="#">माध्यमिक शिक्षा मंडल - कक्षा १० वीं एवं १२ वीं के आवेदन में ३१ इस त्रुटि सुधार का अवसर / विषयों में गलती सही करा सकेंगे विद्यार्थी - न्यूज़ दीपक हलवे ,प्राचार्य , शासकीय अहिल्याश्रम कन्या उमावि क्रमांक २ इंदौर - </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a id="dlNews_ctl01_HyperLink_Sub" href="#">(१) इंदौर - शासकीय संयोगितागंज उमावि  बालक उमावि इंदौर - जिस स्कूल में  कभी पढ़े थे जॉनी वाकर , उस स्कूल को संवारेगा अब  नगर निगम इंदौर (२) कामकाज के लिए पलायन - सबसे  ज्यादा लोग भारत  से गए / अमेरिका पहला ठिकाना (३) माध्यमिक शिक्षा मंडल हेल्प लाइन - बीते साल में  एक लाख सैंतीस हजार कॉल आये   - न्यूज़ दीपक हलवे ,प्राचार्य , शासकीय हाई स्कूल ,बालौदा टाकून , इंदौर - </a>
+                                                            </li>
+                                                            <li>
+                                                                <a id="dlNews_ctl02_HyperLink_Sub" href="#">(१) सरकारी सुविधा नहीं मिली तो स्टाफ और ग्रामीणों ने ही मिलकर स्कूल को संवार दिया (२) कैरियर काउंसलिंग - पोर्टल  से छात्रों को कॅरियर चुनने को मदद मिलेगी (३) अनुभूति कार्यक्रम अंतर्गत विद्यार्थियों को कराया वन भ्रमण   - न्यूज़ दीपक हलवे ,प्राचार्य , शासकीय हाई स्कूल ,बालौदा टाकून , इंदौर - </a>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                     <script type="text/javascript">
                                                         function ticker() {
@@ -232,7 +235,7 @@
                         <h2>Student Details</h2>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="card" >
+                        <div class="card">
                             <div class="card-header card-border-info">
                             </div>
                             <div class="card-body">
@@ -248,13 +251,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 " >
+            <div class="col-lg-6 col-md-12 col-sm-12 ">
                 <div class="row">
-                    <div class="section-title" >
-                        <h2 >Students Gender-Wise</h2>
+                    <div class="section-title">
+                        <h2>Students Gender-Wise</h2>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12" >
-                        <div class="card"  >
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="card">
                             <div class="card-header card-border-info">
                             </div>
                             <div class="card-body">
@@ -318,7 +321,7 @@
                 <div class="row">
                     <div class="section-title">
                         <h2>Increment Detail</h2>
-                    </div> 
+                    </div>
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="card" data-aos="zoom-in-right" data-aos-duration="1500">
                             <div class="card-header card-border-info">
@@ -493,7 +496,7 @@
             };
         });
 
-        var casteCategories = ['General','OBC', 'SC', 'ST', ]; // Separate SC and ST categories
+        var casteCategories = ['General', 'OBC', 'SC', 'ST',]; // Separate SC and ST categories
 
         var boysDrilldown = Object.keys(classNumbers).map(function (className) {
             var boysDistribution = calculateDistribution(classNumbers[className].boys, casteCategories.length);
@@ -563,7 +566,7 @@
                     borderWidth: 0,
                     dataLabels: {
                         enabled: true,
-                       
+
                     }
                 }
             },
@@ -645,7 +648,7 @@
                         },
                         {
                             name: '2023',
-                            y:6,
+                            y: 6,
                             drilldown: '2023'
                         },
                         {
@@ -657,7 +660,7 @@
                     ]
                 }
             ],
-          
+
         });
 
         Highcharts.chart('containerLeave', {

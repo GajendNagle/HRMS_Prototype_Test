@@ -56,13 +56,13 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Role Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Role Name (In English)<br />रोल का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Role Name" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>रोल का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Role Name (In Hindi) <br />रोल का नाम (हिंदी में) <span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="रोल का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -74,14 +74,14 @@
                         </div>
                     </div>
                     <div class="row align-items-end">
-                        <div class="col-md-3 ms-4">
+                        <div class="col-md-5 ms-4">
                             <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive1" name="IsActive" value="true">
                                 Applicable to all User's of Selected User level <br />
                                 चयनित उपयोगकर्ता स्तर के सभी उपयोगकर्ताओं के लिए लागू
                             </label>
                         </div>
-                        <div class="col-md-3 ms-4">
+                        <div class="col-md-4 ms-4">
                             <div class="form-group">
                                 <label class="form-check-label">
                                     <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -128,8 +128,10 @@
                                     सरल क्र.</th>
                                 <th>User Level Name <br />
                                     उपयोगकर्ता स्तर का नाम</th>
-                                <th>Role Name (In English)</th>
-                                <th>रोल का नाम (हिंदी में)</th>
+                                <th>Role Name (In English)<br />
+रोल का नाम (अंग्रेजी में)</th>
+                                <th>Role Name (In Hindi)<br />
+रोल का नाम (हिंदी में) </th>
                                 <th>Role sequence No. <br />
                                     रोल अनुक्रम संख्या</th>
                                 <th>Applicable to all User's of Selected User level <br />
