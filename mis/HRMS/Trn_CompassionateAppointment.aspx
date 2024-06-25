@@ -117,7 +117,7 @@
                                     <div class="form-group">
                                         <label>
                                             Deceased Officer/Staff Cadre <br />
-                                            दिवंगत अधिकारी / कर्मचारी कैडर<span style="color: red" id="ddlcader">*</span></label>
+                                            दिवंगत अधिकारी/कर्मचारी कैडर<span style="color: red" id="ddlcader">*</span></label>
                                         <input name="Ecode" type="text" class="form-control" autocomplete="off" placeholder="दिवंगत शासकीय सेवक का पूर्ण नाम" id="txtname4" value="Class 3" readonly />
                                     </div>
                                 </div>
@@ -401,7 +401,7 @@ Name of the Applicant Family Member for Compassionate Appointment<br />
                                 <div class="col-md-3" style="display: none" id="DivQualification">
                                     <div class="form-group">
                                         <label>
-                                            Professional Qualification /<br />
+                                            Professional Qualification <br />
                                             व्यावसायिक योग्यता<span style="color: red">*</span></label>
                                         <select class="form-control select2" id="ddlSapthpatr2">
                                             <option value="">--Select--</option>
@@ -576,7 +576,7 @@ Name of the Applicant Family Member for Compassionate Appointment<br />
                             <div class="row">
                                 <div class="col-md-12">
                                     <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Final Submit</button>
-                                    <a runat="server" id="clearfirst" href="Trn_DeoCompassionateApproval.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                                    <a runat="server" id="clearfirst" href="Trn_CompassionateAppointment.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>

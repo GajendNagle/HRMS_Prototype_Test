@@ -5,7 +5,6 @@
         th {
             white-space: nowrap;
         }
-     
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -18,13 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Transport Management System</span></a>
-                        </li>
+                          <li class="breadcrumb-item">
+       <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+   </li>
+
+   <li class="breadcrumb-item">
+       <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransportManagement')">
+           <span>Transport Management System</span></a>
+   </li>
                         <li class="breadcrumb-item"><span>Vehicle Registration</span></li>
                     </ol>
                 </div>
@@ -68,20 +68,20 @@
                                 <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Model" autocomplete="off">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <%--<div class="col-md-3">
                             <div class="form-group">
                                 <span>Vehicle Variants
                                     <br />
                                     वाहन का प्रकार <span style="color: red">*</span></span>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Class">
                             </div>
-                        </div>
-                        <div class="col-md-4">
+                        </div>--%>
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <span>Fuel Type
                                     <br />
                                     ईंधन का प्रकार<span style="color: red">*</span></span>
-                                <div class="form-control">
+                                <%--<div class="form-control">
                                     <input type="radio" id="one">
                                     <label for="one">Diesel</label>
                                     <input type="radio" id="two">
@@ -90,7 +90,14 @@
                                     <label for="three">CNG</label>
                                     <input type="radio" id="four">
                                     <label for="four">Electric</label>
-                                </div>
+                                </div>--%>
+                                <select class="form-control">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">Diesel</option>
+                                    <option value="2">Petrol</option>
+                                    <option value="3">CNG</option>
+                                    <option value="4">Electric</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -363,7 +370,7 @@
                             <div class="table-responsive">
                                 <div>
                                     <table class="table table-bordered" id="tblVehicle" style="border-collapse: collapse; text-align: center;">
-                                        <tbody>
+                                        <tbody class="text-center">
                                             <tr>
                                                 <th scope="col">Sr.No.<br />
                                                     सरल क्र. </th>
@@ -392,7 +399,7 @@
                                                 </td>
                                                 <td>MAT631139NWH69961
                                                 </td>
-                                                <td class="text-right">1901003122P105135
+                                                <td>1901003122P105135
                                                 </td>
                                                 <td>TATA MOTORS </td>
                                                 <td>DOOR STEEL SHELL </td>
@@ -437,39 +444,18 @@
                                                     <span>4</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblVehicle_Number">MP04ZB8211</span>
+                                                    <span>MP04ZB8211</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblVehicle_Chassis_Number">MAT631139NWH67251</span>
+                                                    <span>MAT631139NWH67251</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblInsurance_Number">1901003122P105133</span>
+                                                    <span>1901003122P105133</span>
                                                 </td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblDealer_Name">Varenyam motor car</span></td>
+                                                    <span>Varenyam motor car</span></td>
                                                 <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl05_lblVehicle_Color">White</span></td>
-                                                <td>
-                                                    <a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-eye" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>5</span>
-                                                </td>
-                                                <td>
-                                                    <span>MP04HC4163</span>
-                                                </td>
-                                                <td>
-                                                    <span>1995990</span>
-                                                </td>
-                                                <td>
-                                                    <span>1901003122P105404432</span>
-                                                </td>
-                                                <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblDealer_Name">MY CAR bhopal  </span></td>
-                                                <td>
-                                                    <span id="ctl00_ContentBody_grvVehiclRegistration_ctl06_lblVehicle_Color">White</span> </td>
+                                                    <span>White</span></td>
                                                 <td>
                                                     <a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-eye" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye"></i></a>
                                                 </td>
@@ -496,78 +482,83 @@
                                                 <tr>
                                                     <th>Vehicle Number :</th>
                                                     <td>MP04ZB8290</td>
-                                                    <th>Vehicle Class :</th>
-                                                    <td>L1e-A</td>
+                                                    <%-- <th>Vehicle Class :</th>
+                                                    <td>L1e-A</td>--%>
                                                     <th>Vehicle Company (Maker):</th>
                                                     <td>TATA MOTORS</td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Fuel Type :</span></th>
                                                     <td><span>Diesel</span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Vehicle Model :</span></th>
                                                     <td><span>SAFARIXT</span></td>
                                                     <th><span>Vehicle Type :</span></th>
                                                     <td><span>Body type</span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Year Of Manufacture:</span></th>
                                                     <td><span>2022</span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Seat Capacity:</span></th>
                                                     <td><span>7</span></td>
                                                     <th><span>Vehicle Chassis Number:</span></th>
                                                     <td><span>MAT631139NWH69961</span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Vehicle Engine Number:</span></th>
                                                     <td><span>4205829</span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Vehicle Weight(Unladen weight) KG:</span></th>
                                                     <td><span></span></td>
                                                     <th><span>Cubic Capacity:</span></th>
                                                     <td><span></span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Horse power (BHP/KW):</span></th>
                                                     <td><span></span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Wheel Base (mm):</span></th>
                                                     <td><span></span></td>
                                                     <th><span>Registration No.:</span></th>
                                                     <td><span></span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Registration Validity:</span></th>
                                                     <td><span></span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Registraion Date:</span></th>
                                                     <td><span>20/10/2022</span></td>
                                                     <th><span>Insurance Company Name:</span></th>
                                                     <td><span>UNITED INDIA INSURANCE COMPANY LIMITED</span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Insurance Number:</span></th>
                                                     <td><span>1901003122P105135</span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Insurance Start Date:</span></th>
                                                     <td><span>22/10/2022</span></td>
                                                     <th><span>Insurance End Date:</span></th>
                                                     <td><span>21/10/2023</span></td>
-                                                </tr>
-                                                <tr>
                                                     <th><span>Insurance Amount:</span></th>
                                                     <td><span>57593.00</span></td>
+                                                </tr>
+                                                <tr>
+
                                                     <th><span>Dealer Name:</span></th>
                                                     <td><span>TATA MOTORS</span></td>
                                                     <th><span>Dealer Address:</span></th>
                                                     <td><span>BHOPAL</span></td>
-                                                </tr>
-                                                <tr>
-
-
                                                     <th><span>Type Of Body:</span></th>
                                                     <td><span>DAY GREY</span></td>
-                                                    <th><span>Vehicle Color:</span></th>
-                                                    <td><span>DOOR STEEL SHELL</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <%-- <th><span>Motor Vehicle:</span></th>
-                                                    <td><span>New Vehicle</span></td>--%>
+                                                    <th><span>Vehicle Color:</span></th>
+                                                    <td><span>DOOR STEEL SHELL</span></td>
+                                                    <th></th>
+                                                    <td></td>
+                                                    <th></th>
+                                                    <td></td>
                                                 </tr>
                                             </table>
                                         </div>
