@@ -63,9 +63,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#DEOCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>DEO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item"><span>NOC Report at the D.E.O. level</span></li>
                     </ol>
@@ -194,10 +193,10 @@
                                                 <td>Pending by collector</td>
                                                 <td>Nil</td>
                                                 <td>
-                                                    <button class="btn btn-success">View</button>
+                                                    <button type="button" class="btn btn-success">View</button>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-success">View</button>
+                                                    <button type="button" class="btn btn-success">View</button>
                                                 </td>
                                             </tr>
                                             <tr>

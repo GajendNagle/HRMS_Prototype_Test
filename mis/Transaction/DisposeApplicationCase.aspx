@@ -21,9 +21,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Compassionate Appointment
-                                </span></a>
+                            <a href="#DEOCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>DEO Compassionate Appointment </span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Decide on Pending Applications at DEO Level</span></li>
                     </ol>
@@ -53,7 +52,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District <br />
+                                District
+                                <br />
                                 जिला <span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" Enabled="false" CssClass="form-control">
                                 <asp:ListItem Selected="True">भोपाल</asp:ListItem>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset class="mt-5" id="empDetail" style="display:none">
+            <fieldset class="mt-5" id="empDetail" style="display: none">
                 <legend>Details / विवरण</legend>
                 <div class="row form-group">
                     <div class="col-md-12">
@@ -161,10 +161,10 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-  <script>
-      document.getElementById("toggleButton4").addEventListener("click", function () {
-          document.getElementById("empDetail").style.display = "block";
-      });
-  </script>
+    <script>
+        document.getElementById("toggleButton4").addEventListener("click", function () {
+            document.getElementById("empDetail").style.display = "block";
+        });
+    </script>
 </asp:Content>
 

@@ -45,8 +45,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Dispose Cases Details<br />
-                        मामलों के निपटान का विवरण </h4>
+                    <h4 class="card-title">Dispose Cases Details / मामलों के निपटान का विवरण </h4>
                 </div>
             </div>
         </div>
@@ -349,8 +348,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Block Wise Counting Report<br />
-                        ब्लॉक वार सांख्यिकी रिपोर्ट</h4>
+                    <h4 class="card-title">Block Wise Counting Report / ब्लॉक वार सांख्यिकी रिपोर्ट</h4>
                 </div>
             </div>
         </div>
@@ -390,8 +388,9 @@
                         <div class="table-responsive">
                             <table class="footable table  table-striped text-center table-bordered footable-loaded default" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                 <thead>
-                                    <tr> <th data-class="expand" scope="col">Sr.No.<br />
-     सरल क्र.</th>
+                                    <tr>
+                                        <th data-class="expand" scope="col">Sr.No.<br />
+                                            सरल क्र.</th>
                                         <th data-class="expand" scope="col">Division<br />
                                             संभाग</th>
                                         <th data-class="phone,tablet" scope="col">District<br />
@@ -423,7 +422,8 @@
                                         <td style="text-align: right;">16</td>
 
                                     </tr>
-                                    <tr> <td class="expand"><span style="font-size: 12pt;">2</span></td>
+                                    <tr>
+                                        <td class="expand"><span style="font-size: 12pt;">2</span></td>
                                         <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td><span style="font-size: 12pt;">Phanda Gramin</span></td>
@@ -434,7 +434,8 @@
                                         <td style="text-align: right;">16</td>
 
                                     </tr>
-                                    <tr> <td class="expand"><span style="font-size: 12pt;">3</span></td>
+                                    <tr>
+                                        <td class="expand"><span style="font-size: 12pt;">3</span></td>
                                         <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td><span style="font-size: 12pt;">Phanda URBAN- New City</span></td>
@@ -445,7 +446,8 @@
                                         <td style="text-align: right;">16</td>
 
                                     </tr>
-                                    <tr> <td class="expand"><span style="font-size: 12pt;">4</span></td>
+                                    <tr>
+                                        <td class="expand"><span style="font-size: 12pt;">4</span></td>
                                         <td class="expand"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td class="phone,tablet"><span style="font-size: 12pt;">Bhopal</span></td>
                                         <td><span style="font-size: 12pt;">Phanda URBAN- Old City</span></td>
@@ -467,8 +469,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">District Wise Counting Report<br />
-                        जिला वार सांख्यिकी रिपोर्ट</h4>
+                    <h4 class="card-title">District Wise Counting Report / जिला वार सांख्यिकी रिपोर्ट</h4>
                 </div>
             </div>
         </div>

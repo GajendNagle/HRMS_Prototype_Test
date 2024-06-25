@@ -5,7 +5,6 @@
         th {
             white-space: nowrap;
         }
-
         @media print {
             .modal-dialog {
                 width: 200%;
@@ -13,20 +12,17 @@
                 margin: 0;
                 padding: 0;
             }
-
             .modal-content {
                 height: 200%;
                 border: none;
                 box-shadow: none;
             }
-
             .modal-body {
                 width: 210%;
                 height: auto;
                 overflow: visible !important;
                 zoom: 76%;
             }
-
             body.modal-open {
                 visibility: hidden;
             }
@@ -35,11 +31,9 @@
                 body.modal-open .modal .modal-body {
                     visibility: visible;
                 }
-
             .modal-footer {
                 display: none;
             }
-
             .modal-header {
                 display: none;
             }
@@ -57,22 +51,24 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Compassionate Appointment</li>
-                        <li class="breadcrumb-item">Compassionate Appointment Print Application DEO</li>
+                        <li class="breadcrumb-item">
+                            <a href="#DEOCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>DEO Compassionate Appointment </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Compassionate Appointment Print Application DEO</span></li>
                     </ol>
                 </div>
             </div>
         </div>
+    </div>  
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
     </div>
-
-     <div class="col-md-5" style="position: relative; bottom: 20px;">
-     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-         <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-         </u>
-     </p>
- </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -91,8 +87,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District Name/<br />
-                                जिला का नाम<span style="color: red">*</span></label>
+                                District Name<br />जिला का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control" Enabled="false" ID="ddlDistrict">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1" Selected="True">Bhopal</asp:ListItem>
@@ -102,8 +97,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Details/विवरण
-                </legend>
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -113,7 +107,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
                         </div>
                     </div>
                 </div>
@@ -179,7 +173,6 @@
                                     <td>Panding </td>
                                 </tr>
                                 <%-- my code Increase grid --%>
-
                                 <tr>
                                     <td>2</td>
                                     <td>Raj Kumar</td>
@@ -253,42 +246,36 @@
                                                 <th>अधिकारी कर्मचारी कोड</th>
                                                 <td>CA7933</td>
                                             </tr>
-
                                             <tr>
                                                 <th>दिवंगत अधिकारी/कर्मचारी का नाम</th>
                                                 <td>KRISHNAVATI PARTE</td>
                                                 <th>लिंग</th>
                                                 <td>Female</td>
                                             </tr>
-
                                             <tr>
                                                 <th>अंतिम पोस्टिंग जिला</th>
                                                 <td>Gwalior</td>
                                                 <th>दिवंगत अधिकारी/कर्मचारी कैडर</th>
                                                 <td>Regular Class- III</td>
                                             </tr>
-
                                             <tr>
                                                 <th>दिवंगत अधिकारी/कर्मचारी पदनाम</th>
                                                 <td>Teacher (UDT)</td>
                                                 <th>अंतिम स्कूल कार्यालय और कर्मचारी का पता</th>
                                                 <td>GOVT. HSS GARDHI</td>
                                             </tr>
-
                                             <tr>
                                                 <th>मृत्यु का कारण</th>
                                                 <td>अन्य</td>
                                                 <th>जाति</th>
                                                 <td>ST</td>
                                             </tr>
-
                                             <tr>
                                                 <th>मृत्यु दिनांक</th>
                                                 <td>01/01/2021</td>
                                                 <th>परिवार के जीवित सदस्यों की संख्या</th>
                                                 <td>2</td>
                                             </tr>
-
                                             <tr>
                                                 <th>विभाग का नाम</th>
                                                 <td>Education</td>
@@ -324,7 +311,6 @@
                                                 <th>पदनाम </th>
                                                 <td>प्रयोगशाला शिक्षक</td>
                                             </tr>
-
                                             <tr>
                                                 <th>प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
                                                 <td>नही</td>
@@ -373,8 +359,6 @@
                                             <td>कोई व्यवसाय नही</td>
                                             <td>01/01/1995</td>
                                         </tr>
-
-
                                     </table>
                                 </div>
                                 <div class="table-responsive">
@@ -393,7 +377,6 @@
                                                 </td>
                                             </tr>
                                             <tr>
-
                                                 <td class="float-end font-16 text-end">
                                                     <br />
                                                     <br />
@@ -420,7 +403,6 @@
                                                     (जहाँ दिवंगत शासकीय सेवक कार्यरत था) नाम...................<br />
                                                     कार्यालय का नाम...................
                                                 </td>
-
                                             </tr>
                                         </tbody>
                                     </table>
@@ -428,15 +410,12 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="window.print()">Print</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </asp:Content>
