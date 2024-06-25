@@ -150,7 +150,7 @@
                             <a href="#E_KYC" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
                                 <span>E-KYC </span></a>
                         </li>
-                        <li class="breadcrumb-item">eKyc-Verifivation</li>
+                        <li class="breadcrumb-item">eKyc-Verification</li>
                     </ol>
                 </div>
             </div>
