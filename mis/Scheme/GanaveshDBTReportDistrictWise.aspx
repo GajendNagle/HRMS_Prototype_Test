@@ -45,7 +45,7 @@
             
             <div class="mt-3">
                 <fieldset>
-                    <legend>District Wise Uniform Distribution Report / जिलावार गणवेश वितरण रिपोर्ट</legend>
+                    <legend>District Wise Uniform Distribution Report / जिलावार यूनिफार्म वितरण रिपोर्ट</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
