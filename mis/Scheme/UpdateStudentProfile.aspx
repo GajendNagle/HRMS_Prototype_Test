@@ -13,7 +13,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor">Update Student Profile</h4>
         </div>
@@ -27,10 +27,39 @@
                 </ol>
             </div>
         </div>
-    </div>
+    </div>--%>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#StudentProfileMgmt" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Student Profile Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">Update Student Profile for Scholarships</li>
+                        <li class="breadcrumb-item">Update Student Profile</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Update Student Profile /
+                        छात्र प्रोफ़ाइल अपडेट करें</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">
@@ -42,7 +71,7 @@
             </div>
 
             <fieldset>
-                <legend>छात्र विवरण</legend>
+                <legend>student details / छात्र विवरण</legend>
                 <div class="row justify-content-center">
                     <div class="col-lg-2">
                         <div>
@@ -59,19 +88,25 @@
 
                             <tbody>
                                 <tr>
-                                    <th>9 अंको का स्टूडेंट आई डी. :</th>
+                                    <th>9 digit student ID.<br />
+                                        9 अंको का स्टूडेंट आई डी. :</th>
                                     <td>196496693</td>
-                                    <th>परिवार  आई डी :</th>
+                                    <th>परिवार  आई डी
+                                        <br />
+                                        Family ID:</th>
                                     <td>26123832</td>
                                 </tr>
                                 <tr>
-                                    <th>विद्यार्थी का पूरा नाम :</th>
+                                    <th>full name of student<br />
+                                        विद्यार्थी का पूरा नाम :</th>
                                     <td>Rounak Nath</td>
-                                    <th>जन्मतिथि :</th>
+                                    <th>DOB<br />
+                                        जन्मतिथि :</th>
                                     <td>01/01/2015</td>
                                 </tr>
                                 <tr>
-                                    <th>लिंग :</th>
+                                    <th>Gender<br />
+                                        लिंग :</th>
                                     <td>
                                         <select class="form-control form-select select2" disabled="disabled">
                                             <option>--Select--</option>
@@ -80,7 +115,8 @@
                                             <option>03 Transgender</option>
                                         </select>
                                     </td>
-                                    <th>बसाहट का नाम जिसमे छात्र निवास करता है :</th>
+                                    <th>Name of the settlement in which the student resides<br />
+                                        बसाहट का नाम जिसमे छात्र निवास करता है :</th>
                                     <td>
                                         <select class="form-control form-select select2" disabled="disabled">
                                             <option>--Select--</option>
@@ -96,11 +132,12 @@
 
             </fieldset>
             <fieldset>
-                <legend>पारिवारिक विवरण</legend>
+                <legend>Family details / पारिवारिक विवरण</legend>
                 <table class="table table-bordered table-custom">
                     <tbody>
                         <tr>
-                            <th>क्या विद्यार्थी अनाथ है:</th>
+                            <th>Is the student an orphan<br />
+                                क्या विद्यार्थी अनाथ है:</th>
                             <td>
                                 <asp:RadioButtonList runat="server" CssClass="rblResult" RepeatDirection="Horizontal">
                                     <asp:ListItem>हाँ</asp:ListItem>
@@ -110,11 +147,13 @@
 
                         </tr>
                         <tr>
-                            <th>पिता का पूरा नाम:</th>
+                            <th>Father's full name<br />
+                                पिता का पूरा नाम:</th>
                             <td>
                                 <input type="text" class="form-control" value="Ramesh Singh" disabled="disabled" /></td>
 
-                            <th>क्या पिता स्वर्गवासी है :</th>
+                            <th>Is the father from heaven<br />
+                                क्या पिता स्वर्गवासी है :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -124,7 +163,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>पिता का  व्यवसाय :</th>
+                            <th>father's business<br />
+                                पिता का  व्यवसाय :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -137,7 +177,8 @@
                                 </select>
                             </td>
 
-                            <th>अस्वच्छ धंधे का प्रकार :</th>
+                            <th>Type Of Unclean Occupation<br />
+                                अस्वच्छ धंधे का प्रकार :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -147,13 +188,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>माता का नाम :</th>
+                            <th>Mother's Name<br />
+                                माता का नाम :</th>
                             <td>
                                 <input type="text" class="form-control" value="Bati Bai" disabled="disabled" /></td>
 
                         </tr>
                         <tr>
-                            <th>माता का व्यवसाय :</th>
+                            <th>Mother's Business<br />
+                                माता का व्यवसाय :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -167,7 +210,8 @@
                                 </select>
                             </td>
 
-                            <th>अस्वच्छ धंधे का प्रकार :</th>
+                            <th>Type Of Unclean Occupation<br />
+                                अस्वच्छ धंधे का प्रकार :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -177,11 +221,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>परिवार की वार्षिक आय :</th>
+                            <th>Annual Family Income<br />
+                                परिवार की वार्षिक आय :</th>
                             <td>
                                 <input type="text" class="form-control" value="" /></td>
 
-                            <th>धर्म :</th>
+                            <th>Religion<br />
+                                धर्म :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -194,7 +240,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>जाति :</th>
+                            <th>Caste<br />
+                                जाति :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -204,7 +251,8 @@
                                     <option>04 Gen</option>
                                 </select>
                             </td>
-                            <th>उपजाति :</th>
+                            <th>Sub Caste<br />
+                                उपजाति :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -217,10 +265,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>डिजिटल जाति प्रमाणपत्र संख्या (लोक सेवा केंद्र द्वारा प्रदय) :</th>
+                            <th>Digital Caste Certificate Number (provided by Lok Seva Kendra)<br />
+                                डिजिटल जाति प्रमाणपत्र संख्या (लोक सेवा केंद्र द्वारा प्रदय) :</th>
                             <td>
                                 <input type="text" class="form-control" value="" placeholder="Digital Cast Certificate Number" /></td>
-                            <th>क्या विमुक्त /घुमक्कड़/अर्ध-घुमक्कड़ जाति है :</th>
+                            <th>Is it a liberated/nomadic/semi-nomadic caste?<br />
+                                क्या विमुक्त /घुमक्कड़/अर्ध-घुमक्कड़ जाति है :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -230,7 +280,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>कितने भाई/ बहन है :</th>
+                            <th>how many brothers/sisters do you have<br />
+                                कितने भाई/ बहन है :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -242,7 +293,8 @@
                                     <option>-- 5+ --</option>
                                 </select>
                             </td>
-                            <th>क्या पिता या पालक आयकर दाता है अथवा 10 एकड़ से अधिक भूमि है ?(प्रमाण सलग्न है?) :</th>
+                            <th>Is the father or guardian an income tax payer or owns more than 10 acres of land? (Is proof attached?)<br />
+                                क्या पिता या पालक आयकर दाता है अथवा 10 एकड़ से अधिक भूमि है ?(प्रमाण सलग्न है?) :</th>
                             <td>
                                 <asp:RadioButtonList runat="server" CssClass="rblResult" RepeatDirection="Horizontal">
                                     <asp:ListItem>हाँ</asp:ListItem>
@@ -251,7 +303,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>क्या परिवार से केवल दो ही छात्रो द्वारा छात्रवृति ली जा रही है ?(प्रमाण पत्र सलग्न है?) :</th>
+                            <th>Are only two students from the family taking scholarship? (certificate attached?)<br />
+                                क्या परिवार से केवल दो ही छात्रो द्वारा छात्रवृति ली जा रही है ?(प्रमाण पत्र सलग्न है?) :</th>
                             <td>
                                 <asp:RadioButtonList runat="server" CssClass="rblResult" RepeatDirection="Horizontal">
                                     <asp:ListItem>हाँ</asp:ListItem>
@@ -261,12 +314,14 @@
 
                         </tr>
                         <tr>
-                            <th>क्या परिवार बी.पी.एल. कार्डधारी है? :</th>
+                            <th>Is the family BPL? Are you a cardholder?<br />
+                                क्या परिवार बी.पी.एल. कार्डधारी है? :</th>
                             <td>
                                 <label>हाँ</label>
                             </td>
 
-                            <th>विद्यार्थी बेघर है? :</th>
+                            <th>Is the student homeless?<br />
+                                विद्यार्थी बेघर है? :</th>
                             <td>
                                 <select class="form-control form-select select2">
                                     <option>--Select--</option>
@@ -276,11 +331,13 @@
 
                         </tr>
                         <tr>
-                            <th>विद्यार्थी/ पालक/ अभिभावक का मोबाइल नंबर :</th>
+                            <th>Mobile number of student/parent/guardian<br />
+                                विद्यार्थी/ पालक/ अभिभावक का मोबाइल नंबर :</th>
                             <td>
                                 <input type="text" class="form-control" value="" /></td>
 
-                            <th>विद्यार्थी/ पालक/ अभिभावक की ईमेल आई डी :</th>
+                            <th>Email ID of student/parent/guardian<br />
+                                विद्यार्थी/ पालक/ अभिभावक की ईमेल आई डी :</th>
                             <td>
                                 <input type="text" class="form-control" value="" /></td>
 
@@ -290,36 +347,43 @@
                 </table>
             </fieldset>
             <fieldset>
-                <legend>स्कूल विवरण</legend>
+                <legend>School Details /
+                    स्कूल विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>वर्तमान कक्षा :</th>
+                                    <th>Current Class<br />
+                                        वर्तमान कक्षा :</th>
                                     <td>
                                         <label>9</label>
                                     </td>
-                                    <th>वर्तमान कक्षा में प्रवेश दिनांक :</th>
+                                    <th>Admission date in current class<br />
+                                        वर्तमान कक्षा में प्रवेश दिनांक :</th>
                                     <td>
                                         <label>08/07/2023</label></td>
 
                                 </tr>
                                 <tr>
-                                    <th>कक्षा में प्रवेश की तिथि (DD/MM/YYYY):</th>
+                                    <th>Date Of Entry Into Class<br />
+                                        कक्षा में प्रवेश की तिथि (DD/MM/YYYY):</th>
                                     <td>
                                         <label></label>
                                     </td>
-                                    <th>गत वर्ष की कक्षा :</th>
+                                    <th>Last year's class<br />
+                                        गत वर्ष की कक्षा :</th>
                                     <td>
                                         <label>8</label>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>गत कक्षा की संस्था का नाम :</th>
+                                    <th>Name of last class's institution<br />
+                                        गत कक्षा की संस्था का नाम :</th>
                                     <td>
                                         <input type="text" class="form-control" value="" /></td>
-                                    <th>विद्यार्थी की स्थिति :</th>
+                                    <th>Student Status<br />
+                                        विद्यार्थी की स्थिति :</th>
                                     <td>
                                         <select class="form-control form-select select2">
                                             <option>--Select--</option>
@@ -334,24 +398,28 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>उपस्थिति विवरण</legend>
+                <legend>Attendance Report / उपस्थिति विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>गत वर्ष के विद्यार्थी की उपस्थिति दिवस :</th>
+                                    <th>Last year student attendance day<br />
+                                        गत वर्ष के विद्यार्थी की उपस्थिति दिवस :</th>
                                     <td>
                                         <input type="text" class="form-control" value="" /></td>
-                                    <th>वर्तमान शैक्षणिक वर्ष में कार्य दिवस :</th>
+                                    <th>Working days in the current academic year<br />
+                                        वर्तमान शैक्षणिक वर्ष में कार्य दिवस :</th>
                                     <td>
                                         <input type="text" class="form-control" value="" /></td>
                                 </tr>
                                 <tr>
-                                    <th>वर्तमान शैक्षणिक वर्ष में उपस्थिति दिवस :</th>
+                                    <th>Attendance day in the current academic year<br />
+                                        वर्तमान शैक्षणिक वर्ष में उपस्थिति दिवस :</th>
                                     <td>
                                         <input type="text" class="form-control" value="" /></td>
-                                    <th>उपस्थिति  प्रतिशत :</th>
+                                    <th>Attendance percentage<br />
+                                        उपस्थिति प्रतिशत :</th>
                                     <td>
                                         <label>82.00</label></td>
                                 </tr>
@@ -361,13 +429,14 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>शैक्षणिक विवरण </legend>
+                <legend>Academic Details / शैक्षणिक विवरण </legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>गत कक्षा की परीक्षा का वर्ष :</th>
+                                    <th>Year of last class examination<br />
+                                        गत कक्षा की परीक्षा का वर्ष :</th>
                                     <td>
                                         <select class="form-control form-select select2">
                                             <option>--Select--</option>
@@ -376,7 +445,8 @@
                                             <option>2021-22</option>
                                         </select>
                                     </td>
-                                    <th>गत वार्षिक परिणाम :</th>
+                                    <th>Last annual result<br />
+                                        गत वार्षिक परिणाम :</th>
                                     <td>
                                         <select class="form-control form-select select2">
                                             <option>--Select--</option>
@@ -386,7 +456,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>उत्तीर्ण प्रतिशत :</th>
+                                    <th>Passing percentage<br />
+                                        उत्तीर्ण प्रतिशत :</th>
                                     <td>
                                         <input type="text" class="form-control" value="" /></td>
 
@@ -397,13 +468,13 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>पीडब्ल्यूडी विवरण </legend>
+                <legend>PWD Details / पीडब्ल्यूडी विवरण </legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>नि:शक्तता का प्रकार :</th>
+                                    <th>Type Of Disability<BR />नि:शक्तता का प्रकार :</th>
                                     <td>
                                         <select class="form-control form-select select2">
                                             <option>--Select--</option>
@@ -415,7 +486,7 @@
                                             <option>06 Multiple Disabilities</option>
                                         </select>
                                     </td>
-                                    <th>नि:शक्तता  का  प्रतिशत (%) :</th>
+                                    <th>Percentage of disability (%)<br />नि:शक्तता  का  प्रतिशत (%) :</th>
                                     <td>
                                         <input type="text" class="form-control" value="" /></td>
                                 </tr>
@@ -425,18 +496,18 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>बैंक विवरण</legend>
+                <legend>Bank Details / बैंक विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>बैंक खाता क्रमांक : </th>
+                                    <th>Bank Account Number<br />बैंक खाता क्रमांक : </th>
                                     <td>
                                         <label>6367120000055</label>
                                         <span><a href="#" style="color: red; font-weight: 900">बैंक खाता क्रमांक एवं बैंक का आई.एफ.एस. कोड  अपडेट करने के लिए यहाँ क्लिक करें</a></span>
                                     </td>
-                                    <th>बैंक का आई. एफ. एस. कोड :</th>
+                                    <th> I.F. S. code<br />बैंक का आई. एफ. एस. कोड :</th>
                                     <td>
                                         <label>CNRB0006367</label>
                                     </td>
@@ -457,15 +528,17 @@
                 </div>
                 <div class="col-lg-12"></div>
 
-                <div class="col-lg-1  text-center">
+                <div class="col-lg-2  text-center">
                     <div class="form-group">
                         <input type="text" class="form-control text-center" />
                     </div>
                 </div>
-                <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn-success btn-rounded" onclick="ShowSchemePopup()">Submit</button>
+                <hr />
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-success btn-border w-lg" onclick="ShowSchemePopup()">Submit</button>
                     <%--<asp:Button runat="server" ID="btnDraftSave" CssClass="btn btn-success btn-rounded" Text="Draft Save"  />
                     <asp:Button runat="server" ID="btnSubmit" CssClass="btn btn-success btn-rounded" Text="Submit" />--%>
+                    <a href="UpdateStudentProfile.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                 </div>
 
 
@@ -536,8 +609,8 @@
                                                     <img src="../dist/images/avatar-13.png" style="width: 97px; height: 90px;" /></td>
                                             </tr>--%>
                                             <tr style="background: white; color: black; border-style: hidden;">
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;Student Name :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;" colspan="3">Arghadip Das</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;Student Name :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;" colspan="3">Arghadip Das</td>
                                                 <td rowspan="2" colspan="2" style="padding: 0rem !important; text-align: center; background-color: white !important;">
                                                     <img src="../dist/images/avatar-13.png" style="width: 97px; height: 90px;" /></td>
                                             </tr>
@@ -545,27 +618,27 @@
 
 
                                             <tr style="background: white; color: black; border-style: hidden;">
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;Guardian's Name :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;" colspan="3">&nbsp;&nbsp;Bibhas Das</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;Guardian's Name :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;" colspan="3">&nbsp;&nbsp;Bibhas Das</td>
                                             </tr>
 
                                             <tr style="background: white; color: black; border-style: hidden;">
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;Address :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;" colspan="3">Keushi</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;Address :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;" colspan="3">Keushi</td>
                                                 <td rowspan="2" style="padding: 0rem !important; text-align: center">
                                                     <img src="../dist/images/qr.png" style="width: 80px; height: 70px; margin-top: 1rem;" /></td>
                                             </tr>
                                             <tr style="background: white; color: black; border-style: hidden;">
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;Class :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;">IV</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;">Section :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;">A</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;Class :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">IV</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">Section :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">A</td>
                                             </tr>
                                             <tr style="background: white; color: black; border-style: hidden;">
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;Date Of Issue :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;">03/12/2019</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;Validity :</td>
-                                                <td style="padding: 0rem !important;border-style: hidden;">&nbsp;&nbsp;22/12/2020</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;Date Of Issue :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">03/12/2019</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;Validity :</td>
+                                                <td style="padding: 0rem !important; border-style: hidden;">&nbsp;&nbsp;22/12/2020</td>
                                             </tr>
                                             <tr style="background-color: #20b0e0 !important;">
                                                 <td colspan="5" style="padding-bottom: 2rem; text-align: right;">Signature Of Principal</td>

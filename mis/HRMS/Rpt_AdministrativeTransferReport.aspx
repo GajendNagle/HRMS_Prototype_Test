@@ -60,7 +60,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -122,7 +122,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        From Date /<br />
+                                        From Date <br />
                                         दिनांक से<span style="color: red">*</span></label>
                                     <input type="date" class="form-control" id="txtDataOfFrom" />
                                 </div>
@@ -130,7 +130,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        To Date /<br />
+                                        To Date <br />
                                         दिनांक तक<span style="color: red">*</span></label>
                                     <input type="date" class="form-control" id="txtDataOfTo" />
                                 </div>
@@ -140,7 +140,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Transfer Status /<br />
+                                        Transfer Status <br />
                                         स्थानांतरण स्थिति<span style="color: red">*</span></label>
                                     <select class="form-control select2" id="ddlApprove">
                                         <option value="--Select--">--Select--</option>
@@ -155,7 +155,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <button type="button" class=" Alert-Save btn btn-outline-success btn-border w-lg" onclick="showhide()">Search</button>
-                                    <a href="Rpt_TransferReport.aspx" class=" btn btn-outline-danger btn-border w-lg">Clear</a>
+                                    <a href="Rpt_AdministrativeTransferReport.aspx" class=" btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
@@ -185,46 +185,46 @@
                                         <table class="table table-bordered text-center">
                                             <thead>
                                                 <tr>
-                                                    <th rowspan="2">Sr.No. /<br />
+                                                    <th rowspan="2">Sr.No. <br />
                                                         सरल क्र</th>
-                                                    <th rowspan="2">Office Type /<br />
+                                                    <th rowspan="2">Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th rowspan="2">Employee Name /<br />
+                                                    <th rowspan="2">Employee Name <br />
                                                         कर्मचारी का नाम</th>
-                                                    <th rowspan="2">Employee Designation /<br />
+                                                    <th rowspan="2">Employee Designation <br />
                                                         कर्मचारी का पदनाम</th>
-                                                    <th rowspan="2">Employee Department /<br />
+                                                    <th rowspan="2">Employee Department <br />
                                                         कर्मचारी विभाग</th>
-                                                    <th rowspan="2">Employee Subject /<br />
+                                                    <th rowspan="2">Employee Subject <br />
                                                         कर्मचारी का विषय</th>
-                                                    <th colspan="5">Current Location /<br />
+                                                    <th colspan="5">Current Location <br />
                                                         वर्तमान स्थान</th>
-                                                    <th colspan="5">Preference Location /<br />
+                                                    <th colspan="5">Preference Location <br />
                                                         वरीयता स्थान </th>
-                                                    <th rowspan="2">Status /<br />
+                                                    <th rowspan="2">Status <br />
                                                         स्थिति</th>
                                                 </tr>
 
                                                 <tr>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Posted From /<br />
+                                                    <th>Posted From <br />
                                                         से पोस्ट किया गया</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Reason For Transfer /<br />
+                                                    <th>Reason For Transfer <br />
                                                         स्थानांतरण का कारण</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
                                                 </tr>
                                             </thead>
@@ -296,46 +296,46 @@
                                         <table class="table table-bordered text-center">
                                             <thead>
                                                 <tr>
-                                                    <th rowspan="2">Sr.No. /<br />
+                                                    <th rowspan="2">Sr.No. <br />
                                                         सरल क्र</th>
-                                                    <th rowspan="2">Office Type /<br />
+                                                    <th rowspan="2">Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th rowspan="2">Employee Name /<br />
+                                                    <th rowspan="2">Employee Name <br />
                                                         कर्मचारी का नाम</th>
-                                                    <th rowspan="2">Employee Designation /<br />
+                                                    <th rowspan="2">Employee Designation <br />
                                                         कर्मचारी का पदनाम</th>
-                                                    <th rowspan="2">Employee Department /<br />
+                                                    <th rowspan="2">Employee Department <br />
                                                         कर्मचारी विभाग</th>
-                                                    <th rowspan="2">Employee Subject /<br />
+                                                    <th rowspan="2">Employee Subject <br />
                                                         कर्मचारी का विषय</th>
-                                                    <th colspan="5">Current Location /<br />
+                                                    <th colspan="5">Current Location <br />
                                                         वर्तमान स्थान</th>
-                                                    <th colspan="5">Preference Location /<br />
+                                                    <th colspan="5">Preference Location <br />
                                                         वरीयता स्थान </th>
-                                                    <th rowspan="2">Status /<br />
+                                                    <th rowspan="2">Status <br />
                                                         स्थिति</th>
                                                 </tr>
 
                                                 <tr>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Posted From /<br />
+                                                    <th>Posted From <br />
                                                         से पोस्ट किया गया</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Reason For Transfer /<br />
+                                                    <th>Reason For Transfer <br />
                                                         स्थानांतरण का कारण</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
                                                 </tr>
                                             </thead>
@@ -408,46 +408,46 @@
                                         <table class="table table-bordered text-center">
                                             <thead>
                                                 <tr>
-                                                    <th rowspan="2">Sr.No. /<br />
+                                                    <th rowspan="2">Sr.No. <br />
                                                         सरल क्र</th>
-                                                    <th rowspan="2">Office Type /<br />
+                                                    <th rowspan="2">Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th rowspan="2">Employee Name /<br />
+                                                    <th rowspan="2">Employee Name <br />
                                                         कर्मचारी का नाम</th>
-                                                    <th rowspan="2">Employee Designation /<br />
+                                                    <th rowspan="2">Employee Designation <br />
                                                         कर्मचारी का पदनाम</th>
-                                                    <th rowspan="2">Employee Department /<br />
+                                                    <th rowspan="2">Employee Department <br />
                                                         कर्मचारी विभाग</th>
-                                                    <th rowspan="2">Employee Subject /<br />
+                                                    <th rowspan="2">Employee Subject <br />
                                                         कर्मचारी का विषय</th>
-                                                    <th colspan="5">Current Location /<br />
+                                                    <th colspan="5">Current Location <br />
                                                         वर्तमान स्थान</th>
-                                                    <th colspan="5">Preference Location /<br />
+                                                    <th colspan="5">Preference Location <br />
                                                         वरीयता स्थान </th>
-                                                    <th rowspan="2">Status /<br />
+                                                    <th rowspan="2">Status <br />
                                                         स्थिति</th>
                                                 </tr>
 
                                                 <tr>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Posted From /<br />
+                                                    <th>Posted From <br />
                                                         से पोस्ट किया गया</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Reason For Transfer /<br />
+                                                    <th>Reason For Transfer <br />
                                                         स्थानांतरण का कारण</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
                                                 </tr>
                                             </thead>
@@ -518,46 +518,46 @@
                                         <table class="table table-bordered text-center ">
                                             <thead>
                                                 <tr>
-                                                    <th rowspan="2">Sr.No. /<br />
+                                                    <th rowspan="2">Sr.No. <br />
                                                         सरल क्र</th>
-                                                    <th rowspan="2">Office Type /<br />
+                                                    <th rowspan="2">Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th rowspan="2">Employee Name /<br />
+                                                    <th rowspan="2">Employee Name <br />
                                                         कर्मचारी का नाम</th>
-                                                    <th rowspan="2">Employee Designation /<br />
+                                                    <th rowspan="2">Employee Designation <br />
                                                         कर्मचारी का पदनाम</th>
-                                                    <th rowspan="2">Employee Department /<br />
+                                                    <th rowspan="2">Employee Department <br />
                                                         कर्मचारी विभाग</th>
-                                                    <th rowspan="2">Employee Subject /<br />
+                                                    <th rowspan="2">Employee Subject <br />
                                                         कर्मचारी का विषय</th>
-                                                    <th colspan="5">Current Location /<br />
+                                                    <th colspan="5">Current Location <br />
                                                         वर्तमान स्थान</th>
-                                                    <th colspan="5">Preference Location /<br />
+                                                    <th colspan="5">Preference Location <br />
                                                         वरीयता स्थान </th>
-                                                    <th rowspan="2">Status /<br />
+                                                    <th rowspan="2">Status <br />
                                                         स्थिति</th>
                                                 </tr>
 
                                                 <tr>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Posted From /<br />
+                                                    <th>Posted From <br />
                                                         से पोस्ट किया गया</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
-                                                    <th>Office Type /<br />
+                                                    <th>Office Type <br />
                                                         कार्यालय का प्रकार</th>
-                                                    <th>Reason For Transfer /<br />
+                                                    <th>Reason For Transfer <br />
                                                         स्थानांतरण का कारण</th>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         विकासखंड</th>
-                                                    <th>Sankul Code /<br />
+                                                    <th>Sankul Code <br />
                                                         संकुल कोड</th>
                                                 </tr>
                                             </thead>

@@ -12,107 +12,50 @@
             fill: white !important;
             text-decoration: none !important;
         }
-   
-      .radius-defalt
-      {
-              border-radius: var(--vz-card-border-radius)!important;
-      }
-  </style>
+
+        .radius-defalt {
+            border-radius: var(--vz-card-border-radius) !important;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
-
-<%--    <div class="row page-titles" style="margin-bottom: -30px">
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center">
-
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
-                    <li class="breadcrumb-item active">Employee Compassionate Application</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link font-16 text-white" href="AnukampaNuktiMainPage.aspx" role="button" aria-expanded="false"><strong><b><i class="fa fa-home" aria-hidden="true"></i></b></strong></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-16 text-white" href="Trn_CompassionateAppointment.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति के लिए आवेदन पंजीकृत करें</b></strong></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-16 text-white" href="CompassionateAppointmentPrintApplication.aspx" role="button" aria-expanded="false"><strong><b>&emsp;&emsp;<i class="far fa-hand-point-right"></i> अनुकंपा नियुक्ति आवेदन प्रिंट /स्टेटस</b></strong></a>
-                            </li>
-                        </ul>
-
-                    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassionate Appointment </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Employee Compassionate Application</span></li>
+                    </ol>
                 </div>
-            </nav>
-            <br />
-            <br />--%>
-                <div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                            <span>Compassionate Appointment </span></a>
-                    </li>
-                    <li class="breadcrumb-item"><span>Employee Compassionate Application</span></li>
-                </ol>
             </div>
         </div>
     </div>
-</div>
-     <div class="col-md-5" style="position:relative; bottom:20px;">
-     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom:-0.2rem;">
-         <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-         </u>
-     </p>
- </div>
-
-<%--  <div class="row page-titles mb-4">--%>
-
-  <div class="card   card-border-primary radius-defalt">
-
-    <div class="card-header">
-        <div class="row">
-            <div class="col-lg-12">
-                <h5 class="card-title">Compassionate Appointment/
-
-अनुकम्पा नियुक्ति
-                </h5>
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
+    <div class="card   card-border-primary radius-defalt">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Compassionate Appointment / अनुकम्पा नियुक्ति
+                    </h5>
+                </div>
             </div>
         </div>
-    </div>
-
         <div class="card-body">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12 col-md-12">
@@ -137,7 +80,6 @@
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 five">
                                             <h4 class="">अनुमोदित आवेदन संख्या</h4>
-
                                         </div>
                                         <div class="card-content">
 
@@ -155,7 +97,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -164,11 +105,7 @@
             <fieldset>
                 <legend>Compassionate Appointment / अनुकंपा नियुक्ति
                 </legend>
-
-                <%-- <h1>अनुकंपा नियुक्ति और निगरानी</h1>--%>
                 <div class="row">
-
-
                     <div class="col-md-8">
                         <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 38%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति आवेदन के लिए आवश्यक दस्तावेज़:</h4>
                     </div>
@@ -187,7 +124,8 @@
                     <li>राशन कार्ड<span style="color: blue;"> आवेदन करने से पूर्व उपरोक्त दस्तावेज तैयार करलें और 500 kb तक के साइज़ मे pdf प्रारूप में अपलोड किए जाएंगे</span></li>
                 </ol>
 
-                <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4><br />
+                <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति ओर निगरानी प्रणाली के बारे मे :</h4>
+                <br />
                 <p style="font-weight: bold; background-color: #F0FFFF; padding: 10px; border-radius: 10px;">
                     मध्यप्रदेश शासन स्कूल शिक्षा विभाग के अंतर्गत प्रदेश भर में 3.5 लाख से अधिक अधिकारी/कर्मचारी कार्यरत है। शासकीय कर्मचारी के असामयिक मृत्यु होने पर उनके आश्रितों को नियम अनुसार अनुकंपा नियुक्ति दिये जाने का प्रावधान है।  
                 अधिकारी/कर्मचारी की असामायिक मृत्यु होने पर उनके आश्रितों द्वारा अनुकंपा नियुक्ति हेतु आवेदन पत्र प्रस्तुत किये जाते है, जिनका निराकरण विभिन्न स्तरों पर संबंधित कार्यालयों द्वारा शासन नियमानुसार तथा आवेदक की पात्रता के अनुसार किया जाता है।
@@ -215,19 +153,15 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script src="../dist/DashboardNew/js/jquery1-3.4.1.min.js"></script>
     <script src="../dist/DashboardNew/js/jquery.waypoints.min.js"></script>
-
     <script src="../dist/DashboardNew/js/jquery.counterup.min.js"></script>
     <script src="../dist/DashboardNew/js/custom.js"></script>
     <script src="../dist/dashboard/raphael-min.js"></script>
     <script src="../dist/dashboard/morris.js"></script>
     <script src="../dist/js/highcharts/highcharts.js"></script>
-
-
     <script src="../js/highcharts-3d.js"></script>
     <script src="../js/drilldown.js"></script>
     <script src="../js/exporting.js"></script>
     <script src="../js/export-data.js"></script>
     <script src="../js/accessibility.js"></script>
-
 </asp:Content>
 

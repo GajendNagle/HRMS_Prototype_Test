@@ -21,96 +21,10 @@
         #empDetail {
             display: none;
         }
-
-        th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #1b5a5b !important;
-            color: white;
-        }
+       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <%--  <div class="row page-titles" style="margin-bottom: -30px">
-        <div class="col-md-5 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Anukampa Logo.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                </u>
-            </p>
-        </div>
-        <div class="col-md-7 align-self-center">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=CompassionateAppointment" title="click to go on">Compassionate Appointment</a></li>
-                    <li class="breadcrumb-item active">DEO Compassionate Application Approval</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <a class="nav-link  text-white " href="DisposeApplicationCaseForDEO.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            <li class="nav-item">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति </b>
-                                            </a>
-                                            <ul class="dropdown-menu">
-
-                                                <li><a class="dropdown-item" href="../HRMS/Trn_DeoCompassionateApproval.aspx">अनुकंपा नियुक्ति के लिए आवेदन पंजीयन / सुधार करें</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/DeoPrintApplicationReport.aspx">प्रिन्ट आवेदन</a></li>
-
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <a class="nav-link  text-white " href="../HRMS/Trn_ProcessApplicationListDeo.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>अनुकंपा नियुक्ति पर कार्यवाही</b></a>
-
-
-                            <a class="nav-link  text-white " href="../Transaction/DisposeApplicationCase.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>आवेदन पर निर्णय करें</b></a>
-
-                            <li class="nav-item">
-                                <a class="nav-link  text-white " href="../HRMS/NocSendByDistrictCollectorDeo.aspx" role="button" style="font-size: 1.0em"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>NOC जिला  कलेक्टर को भेजी गई</b></a></li>
-                            <li class="nav-item">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट </b>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DisposeCasesNOC">Dispose Cases</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=BlockWiseCounting">Block-Wise Statistics</a></li>
-                                                <li><a class="dropdown-item" href="DEOLevelReportSection.aspx?ID=DistrictWiseCounting">District-Wise Statistics</a></li>
-                                                <li><a class="dropdown-item" href="../HRMS/NocReportDeo.aspx">NOC Report</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-            <br />
-            <br />--%>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -139,65 +53,47 @@
             </u>
         </p>
     </div>
-
-    <%--  <div class="row page-titles mb-4">--%>
-
     <div class="card   card-border-primary radius-defalt">
-
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">DEO Compassionate Application Approval/
+                    <h5 class="card-title">DEO Compassionate Application Approval /
 
 डी.ई.ओ अनुकंपा आवेदन की स्वीकृति
                     </h5>
                 </div>
             </div>
         </div>
-
-        <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-           <div class="card-body">
-
+   <div class="card-body">
         <div class="row justify-content-center">
             <div class="col-lg-12 col-sm-12 col-md-12">
-             
-                  
-                        <div class="row justify-content-center">
+                                     <div class="row justify-content-center">
                             <div class="col-lg-4">
-
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 one">
                                         <h4 class="">प्राप्त आवेदन संख्या</h4>
-
                                     </div>
                                     <div class="card-content">
                                         <button class="card-btn one">1250</button>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="col-lg-4">
-
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 five">
                                         <h4 class="">अनुमोदित आवेदन संख्या</h4>
-
                                     </div>
                                     <div class="card-content">
-
                                         <button class="card-btn five">500</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
-
                                 <div class="card-wrap">
                                     <div class="card-header card-header1 two">
                                         <h4 class="">प्रतीक्षारत आवेदन संख्या</h4>
-
                                     </div>
                                     <div class="card-content">
-
                                         <button class="card-btn two">750</button>
                                     </div>
                                 </div>
@@ -205,16 +101,11 @@
 
                         </div>
                     </div>
-            
         </div>
         <fieldset>
             <legend>Compassionate Appointment / अनुकंपा नियुक्ति
             </legend>
-
-            <%-- <h1>अनुकंपा नियुक्ति और निगरानी</h1>--%>
             <div class="row">
-
-
                 <div class="col-md-8">
                     <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 38%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति आवेदन के लिए आवश्यक दस्तावेज़:</h4>
                 </div>
@@ -240,7 +131,6 @@
                     अनुकंपा नियुक्ति संबंधी सभी प्रकरणों के पारदर्शी एवं समय सीमा में निराकरण सुनिश्चित करने तथा सभी प्रकरणों की अद्तन स्थिति तथा राज्य व अन्य स्तरों पर मोनिटरिंग करने के उद्देश से विभाग ने एजूकेशन पोर्टल पर अनुकंपा नियुक्ति संबंधी ऑनलाइन 
                     प्रणाली का क्रियान्वयन करने का निर्णय लिया है ।
             </p>
-
             <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 25%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px"><i class="far fa-hand-point-right"></i>&emsp; अनुकंपा नियुक्ति बिंदु विशिष्ट :</h4>
             <ul style="font: bold; list-style-type: none; margin-left: -30px">
                 <li style="background-color: #F0F8FF; padding: 10px 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;अध्यापक संवर्ग के लिए अनुकम्पा नियुक्ति के सम्बन्ध में पूर्व प्रावधान के अनुसार आवेदक का D.Ed. / B.Ed. के साथ 'शिक्षक पात्रता परीक्षा उत्तीर्ण' होना आवश्यक है, अब अध्यापक संवर्ग से नवीन कैडर में नियुक्ति के बाद अनुकम्पा नियुक्ति के 
@@ -252,7 +142,6 @@
                         में त्वरित निराकरण किया जाकर दिवंगत कर्मचारी के आश्रितों को लाभ सुनिश्चित हो सकेगा। अनुकंपा नियुक्ति के संबंध में समयमध्यप जारी समय-प्रदेश शासन के नियम है। उपलब्ध पर पोर्टल भी निर्देश-</li>
                 <li style="background-color: #F0FFF0; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;इस प्रणाली के प्रारंभ होने के पश्चात शिक्षकोंआवेदन अपना को कर्मचारियों/ संबंधित कार्यालयों को मैन्युअल रूप से प्रस्तुत न करते हुये इस प्रणाली के तहत ऑनलाइन प्रस्तुत करनी होगी।</li>
                 <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px; font-weight: bold;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
-
             </ul>
         </fieldset></div></div>
    
@@ -266,14 +155,11 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script src="../dist/DashboardNew/js/jquery1-3.4.1.min.js"></script>
     <script src="../dist/DashboardNew/js/jquery.waypoints.min.js"></script>
-
     <script src="../dist/DashboardNew/js/jquery.counterup.min.js"></script>
     <script src="../dist/DashboardNew/js/custom.js"></script>
     <script src="../dist/dashboard/raphael-min.js"></script>
     <script src="../dist/dashboard/morris.js"></script>
     <script src="../dist/js/highcharts/highcharts.js"></script>
-
-
     <script src="../js/highcharts-3d.js"></script>
     <script src="../js/drilldown.js"></script>
     <script src="../js/exporting.js"></script>
@@ -286,7 +172,6 @@
             var SweetAlert = function () { };
             //examples
             SweetAlert.prototype.init = function () {
-
                 $('.Alert-Save').click(function () {
                     Swal.fire({
                         title: 'Are you sure?',
@@ -296,7 +181,6 @@
                         confirmButtonColor: '#3085D6',
                         cancelButtonColor: '#d33',
                         confirmButtonText: 'Yes'
-
                     }).then((result) => {
                         if (result.value) {
                             Swal.fire({
@@ -307,7 +191,6 @@
                             }
                             )
                             var x = document.getElementById("EmployeeDetails2");
-
                             if (x.style.display === "none") {
                                 x.style.display = "block";
                             }

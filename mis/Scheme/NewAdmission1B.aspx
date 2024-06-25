@@ -13,33 +13,49 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">New Admission (Format - 1B)</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchemeManagement&SubID=AdmissionMgmt" title="click to go on">Admission Management</a></li>
-                    <li class="breadcrumb-item active">New Admission (Format - 1B)</li>
-                </ol>
+   
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement_AdmissionMgmt" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Admission Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">New Admission (Format - 1B)</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">New Admission (Format - 1B) /
+              नया प्रवेश (प्रारूप - 1बी)</h4>
+                </div>
+            </div>
         </div>
         <div class="card-body ">
             <fieldset>
-                <legend>Student Enrollment Details</legend>
+                <legend>Student Enrollment Details / छात्र नामांकन विवरण</legend>
 
-                <div class="row justify-content-center">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Academic Year <span style="color: red">*</span></label>
+                            <label>
+                                Select Academic Year<br />
+                                शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="2024-25">2024-25</option>
@@ -59,7 +75,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Student Samagra Id <span style="color: red">*</span></label>
+                            <label>
+                                Student Samagra Id<br />
+                                विद्यार्थी समग्र आईडी<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" ID="txtStudentSamagraID" placeholder="102345670" AutoComplete="off" CssClass="form-control" MaxLength="9"></asp:TextBox>
                         </div>
                     </div>
@@ -76,7 +94,7 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
@@ -85,44 +103,50 @@
 
                         </div>
                     </div>
-
-                    <div class="col-md-4 text-center">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-rounded" OnClick="btnShowStudentDetails_Click" Text="Show Student Details" />
-                            <a href="NewAdmission1B.aspx" class="btn btn-rounded btn-danger">Clear</a>
+                            <asp:Button runat="server" ID="btnShowStudentDetails" CssClass="btn btn-success btn-border w-lg" OnClick="btnShowStudentDetails_Click" Text="Show Student Details" />
+                            <a href="NewAdmission1B.aspx" class="btn btn-border btn-outline-danger btn w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
-
-
             </fieldset>
             <fieldset runat="server" id="dvPersonalDetails">
-                <legend>Personal Details</legend>
+                <legend>Personal Details / व्यक्तिगत विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>Name:</th>
+                                    <th>Name<br />
+                                        नाम:</th>
                                     <td>
                                         <asp:Label runat="server">Rudra Sharma</asp:Label></td>
-                                    <th>Father Name:</th>
+                                    <th>Father Name<br />
+                                        पिता का नाम:</th>
                                     <td>
                                         <asp:Label runat="server">Narayan Sharma</asp:Label></td>
                                 </tr>
                                 <tr>
-                                    <th>Mother Name:</th>
+                                    <th>Mother Name<br />
+                                        माता का नाम:</th>
                                     <td>
                                         <asp:Label runat="server">Maya Sharma</asp:Label></td>
-                                    <th>Date of Birth:</th>
+                                    <th>Date of Birth<br />
+                                        जन्म की तारीख:</th>
                                     <td>
                                         <asp:Label runat="server">01-04-2008</asp:Label></td>
                                 </tr>
                                 <tr>
-                                    <th>Gender:</th>
+                                    <th>Gender<br />
+                                        जेंडर:</th>
                                     <td>
                                         <asp:Label runat="server">Boy</asp:Label></td>
-                                    <th>Category:</th>
+                                    <th>Category<br />
+                                        श्रेणी:</th>
                                     <td>
                                         <asp:Label runat="server">OBC</asp:Label></td>
                                 </tr>
@@ -133,32 +157,41 @@
             </fieldset>
 
             <fieldset runat="server" id="dvPreviousSchoolDetails">
-                <legend>Previous School Details</legend>
+                <legend>Previous School Details / पिछले का स्कूल विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>District :</th>
-                                    <td><asp:Label runat="server">TIKAMGARH</asp:Label></td>
+                                    <th>District<br />
+                                        ज़िला :</th>
+                                    <td>
+                                        <asp:Label runat="server">TIKAMGARH</asp:Label></td>
 
-                                    <th>Block :</th>
-                                    <td><asp:Label runat="server">PALERA</asp:Label></td>
+                                    <th>Block<br />
+                                        ब्लॉक :</th>
+                                    <td>
+                                        <asp:Label runat="server">PALERA</asp:Label></td>
                                 </tr>
                                 <tr>
-                                    <th>Previous School Name :</th>
-                                    <td><asp:Label runat="server">EPES GMS HANOTA (1-8)</asp:Label></td>
+                                    <th>Previous School Name<br />
+                                        पिछले स्कूल का नाम :</th>
+                                    <td>
+                                        <asp:Label runat="server">EPES GMS HANOTA (1-8)</asp:Label></td>
                                     <th>Previous School UDISE Code :</th>
-                                    <td><asp:Label runat="server">23080412302</asp:Label></td>
-                                    
+                                    <td>
+                                        <asp:Label runat="server">23080412302</asp:Label></td>
+
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <th>Previous School Type :</th>
-                                    <td><asp:Label runat="server">Primary With Middle School (Class 1 to 8)</asp:Label></td>
+                                    <td>
+                                        <asp:Label runat="server">Primary With Middle School (Class 1 to 8)</asp:Label></td>
                                     <th>Previous Class :</th>
-                                    <td><asp:Label runat="server">5 </asp:Label></td>
+                                    <td>
+                                        <asp:Label runat="server">5 </asp:Label></td>
                                 </tr>
-                                
+
 
                             </tbody>
                         </table>
@@ -167,31 +200,43 @@
             </fieldset>
 
             <fieldset runat="server" id="dvPreviousAcademicDetails">
-                <legend>Enrolled School Details</legend>
+                <legend>Enrolled School Details / नामांकित विद्यालय का विवरण</legend>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered table-custom">
                             <tbody>
                                 <tr>
-                                    <th>District :</th>
-                                    <td><asp:Label runat="server">Bhopal</asp:Label></td>
+                                    <th>District<br />
+                                        ज़िला :</th>
+                                    <td>
+                                        <asp:Label runat="server">Bhopal</asp:Label></td>
 
-                                    <th>Block :</th>
-                                    <td><asp:Label runat="server">Barasia</asp:Label></td>
+                                    <th>Block<br />
+                                        ब्लॉक :</th>
+                                    <td>
+                                        <asp:Label runat="server">Barasia</asp:Label></td>
                                 </tr>
                                 <tr>
-                                    <th>School Name :</th>
-                                    <td><asp:Label runat="server">K.D. Memorial School</asp:Label></td>
-                                    <th>UDISE Code :</th>
-                                    <td><asp:Label runat="server">23304068112</asp:Label></td>
+                                    <th>School Name<br />
+                                        स्कूल का नाम :</th>
+                                    <td>
+                                        <asp:Label runat="server">K.D. Memorial School</asp:Label></td>
+                                    <th>UDISE Code<br />
+                                        यू-डाइस कोड :</th>
+                                    <td>
+                                        <asp:Label runat="server">23304068112</asp:Label></td>
                                 </tr>
-                                
-                                <tr>
-                                    <th>School Management Type :</th>
-                                    <td><asp:Label runat="server">State Govt.</asp:Label></td>
 
-                                    <th>School Type :</th>
-                                    <td><asp:Label runat="server">Primary With Middle School (1 to 8)</asp:Label></td>
+                                <tr>
+                                    <th>School Management Type<br />
+                                        विद्यालय प्रबंधन प्रकार :</th>
+                                    <td>
+                                        <asp:Label runat="server">State Govt.</asp:Label></td>
+
+                                    <th>School Type<br />
+                                        स्कूल का प्रकार :</th>
+                                    <td>
+                                        <asp:Label runat="server">Primary With Middle School (1 to 8)</asp:Label></td>
                                 </tr>
 
                             </tbody>
@@ -200,36 +245,41 @@
                 </div>
             </fieldset>
             <fieldset runat="server" id="dvEnrollmentDetails">
-                <legend>Enrollment Details</legend>
-                <div class="row justify-content-center">
+                <legend>Enrollment Details / नामांकन विवरण</legend>
+                <div class="row align-items-end">
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">Enroll Students in <span style="color: red">*</span></label>
+                            <label>Enroll Students in<br />
+                                छात्रों को नामांकित करें <span style="color: red">*</span></label>
                             <input type="text" class="form-control" disabled="disabled" value="2024-25" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">UDISE Code <span style="color: red">*</span></label>
+                            <label>
+                               Enter UDISE Code<br />
+                                यू-डाइस कोड दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" value="" />
                         </div>
                     </div>
-
-                    <div class="col-lg-12  text-center">
+                    </div>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnEnroll" CssClass="btn btn-success btn-rounded" Text="Show School Details" OnClick="btnEnroll_Click" />
-                            <a href="NewAdmission1B.aspx" class="btn btn-danger btn-rounded">Clear</a>
+                            <asp:Button runat="server" ID="btnEnroll" CssClass="btn btn-success btn-border w-lg" Text="Show School Details" OnClick="btnEnroll_Click" />
+                            <a href="NewAdmission1B.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset runat="server" id="dvNewSchoolDetails">
-                <legend>New School Details</legend>
+                <legend>New School Details / नये स्कूल का विवरण</legend>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">New School</label>
-                            <select class="form-control">
+                            <label>New School<br />नया स्कूल</label>
+                            <select class="form-control select2">
                                 <option>select</option>
                                 <option>GHSS BHATANWARA (Class 1 to 12)</option>
 
@@ -238,7 +288,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">New Class</label>
+                            <label>New Class<br />नई कक्षा</label>
                             <select class="form-control select2">
                                 <option>--Select--</option>
                                 <option>1st</option>
@@ -249,14 +299,14 @@
                                 <option>6th</option>
                                 <option>7th</option>
                                 <option>8th</option>
-                         
+
                             </select>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">Last Class Result</label>
-                            <select class="form-control">
+                            <label>Last Class Result<br />अंतिम कक्षा का परिणाम</label>
+                            <select class="form-control select2">
                                 <option>select</option>
                                 <option>Pass</option>
                                 <option>Fail</option>
@@ -265,13 +315,13 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">Last Class Percentage</label>
+                            <label>Last Class Percentage<br />अंतिम कक्षा का प्रतिशत</label>
                             <input type="text" class="form-control" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="font-bold">Scholar No.</label>
+                            <label>Scholar No.<br />स्कॉलर नंबर</label>
                             <input type="text" class="form-control" />
                         </div>
                     </div>
@@ -286,7 +336,7 @@
                             </div>
                             <div class="col-lg-12"></div>
 
-                            <div class="col-lg-1 ">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <input type="text" class="form-control text-center" />
                                 </div>
@@ -295,19 +345,17 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-12  text-center">
+                    </div>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-12">
                         <div class="form-group">
-                            <asp:Button runat="server" ID="btnAdmitStudent" CssClass="btn btn-success btn-rounded" Text="Admit Student in the School" OnClick="btnAdmitStudent_Click" />
+                            <asp:Button runat="server" ID="btnAdmitStudent" CssClass="btn btn-success btn-border w-lg" Text="Admit Student in the School" OnClick="btnAdmitStudent_Click" />
+                            <a href="NewAdmission1B.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
-
-
-
-
-
-
         </div>
     </div>
 </asp:Content>

@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>        <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
                 <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
@@ -63,7 +63,7 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-lg-6">
-                                <h4 class="card-title">Block Wise Counting Report /<br />
+                                <h4 class="card-title">Block Wise Counting Report <br />
                                     ब्लॉक वार सांख्यिकी रिपोर्ट<br />
                                 </h4>
                             </div>
@@ -117,7 +117,7 @@
                                     <div class="form-group">
 
 
-                                        <label>Block Name / <br />विकासखण्ड का नाम<span style="color: red">*</span></label>
+                                        <label>Block Name <br />विकासखण्ड का नाम<span style="color: red">*</span></label>
 
                                         <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="ddlDistrictN" Display="Dynamic"></asp:RequiredFieldValidator>
 
@@ -171,17 +171,17 @@
                                         <table class="table table-bordered text-center">
                                             <thead>
                                                 <tr>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         ब्लॉक</th>
-                                                    <th>Received Application /<br />
+                                                    <th>Received Application <br />
                                                         प्राप्त आवेदन</th>
-                                                    <th>Approved Application /<br />
+                                                    <th>Approved Application <br />
                                                         स्वीकृत आवेदन</th>
-                                                    <th>Pending Application /<br />
+                                                    <th>Pending Application <br />
                                                         लंबित आवेदन</th>
-                                                    <th>Reject Application /<br />
+                                                    <th>Reject Application <br />
                                                         निराकृत आवेदन</th>
                                                 </tr>
                                             </thead>
@@ -257,17 +257,17 @@
                                             <thead>
 
                                                 <tr>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         ब्लॉक</th>
-                                                    <th>Received Application /<br />
+                                                    <th>Received Application <br />
                                                         प्राप्त आवेदन</th>
-                                                    <th>Approved Application /<br />
+                                                    <th>Approved Application <br />
                                                         स्वीकृत आवेदन</th>
-                                                    <th>Pending Application /<br />
+                                                    <th>Pending Application <br />
                                                         लंबित आवेदन</th>
-                                                    <th>Reject Application /<br />
+                                                    <th>Reject Application <br />
                                                         निराकृत आवेदन</th>
                                                 </tr>
                                             </thead>
@@ -354,17 +354,17 @@
                                             <thead>
 
                                                 <tr>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         ब्लॉक</th>
-                                                    <th>Received Application /<br />
+                                                    <th>Received Application <br />
                                                         प्राप्त आवेदन</th>
-                                                    <th>Approved Application /<br />
+                                                    <th>Approved Application <br />
                                                         स्वीकृत आवेदन</th>
-                                                    <th>Pending Application /<br />
+                                                    <th>Pending Application <br />
                                                         लंबित आवेदन</th>
-                                                    <th>Reject Application /<br />
+                                                    <th>Reject Application <br />
                                                         निराकृत आवेदन</th>
                                                 </tr>
                                             </thead>
@@ -440,17 +440,17 @@
                                             <thead>
 
                                                 <tr>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         ब्लॉक</th>
-                                                    <th>Received Application /<br />
+                                                    <th>Received Application <br />
                                                         प्राप्त आवेदन</th>
-                                                    <th>Approved Application /<br />
+                                                    <th>Approved Application <br />
                                                         स्वीकृत आवेदन</th>
-                                                    <th>Pending Application /<br />
+                                                    <th>Pending Application <br />
                                                         लंबित आवेदन</th>
-                                                    <th>Reject Application /<br />
+                                                    <th>Reject Application <br />
                                                         निराकृत आवेदन</th>
                                                 </tr>
                                             </thead>
@@ -540,17 +540,17 @@
                                             <thead>
 
                                                 <tr>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         ब्लॉक</th>
-                                                    <th>Received Application /<br />
+                                                    <th>Received Application <br />
                                                         प्राप्त आवेदन</th>
-                                                    <th>Approved Application /<br />
+                                                    <th>Approved Application <br />
                                                         स्वीकृत आवेदन</th>
-                                                    <th>Pending Application /<br />
+                                                    <th>Pending Application <br />
                                                         लंबित आवेदन</th>
-                                                    <th>Reject Application /<br />
+                                                    <th>Reject Application <br />
                                                         निराकृत आवेदन</th>
                                                 </tr>
                                             </thead>
@@ -623,17 +623,17 @@
                                             <thead>
 
                                                 <tr>
-                                                    <th>District /<br />
+                                                    <th>District <br />
                                                         जिला</th>
-                                                    <th>Block /<br />
+                                                    <th>Block <br />
                                                         ब्लॉक</th>
-                                                    <th>Received Application /<br />
+                                                    <th>Received Application <br />
                                                         प्राप्त आवेदन</th>
-                                                    <th>Approved Application /<br />
+                                                    <th>Approved Application <br />
                                                         स्वीकृत आवेदन</th>
-                                                    <th>Pending Application /<br />
+                                                    <th>Pending Application <br />
                                                         लंबित आवेदन</th>
-                                                    <th>Reject Application /<br />
+                                                    <th>Reject Application <br />
                                                         निराकृत आवेदन</th>
                                                 </tr>
                                             </thead>

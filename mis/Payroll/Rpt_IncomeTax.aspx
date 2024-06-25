@@ -14,7 +14,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Income Tax Report</h4>
         </div>
@@ -32,16 +32,50 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Income Tax Report</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Income Tax Report/
+आयकर रिपोर्ट</h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Income Tax Report Office Wise</legend>
+                <legend>Income Tax Report Office Wise/आयकर रिपोर्ट कार्यालय-वार</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-								 <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -62,7 +96,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year</label>
+                            <label>Year<br />
+                                वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -76,7 +111,8 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month</label>
+                            <label>Month<br />
+                                माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">January-February-March</option>
@@ -88,10 +124,17 @@
                     </div>
 
 
-                    <div class="col-md-3 mt-4">
+                    <%--   <div class="col-md-3 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class=" btn btn-success  btn-rounded">Search</button>
                             <a href="Rpt_IncomeTax.aspx" class="btn btn-danger  btn-rounded">Clear</a>
+                        </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                            <a href="Rpt_IncomeTax.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
                         </div>
                     </div>
 
@@ -99,7 +142,7 @@
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Report: INCOME TAX (Deduction) Details (January-February-March-2023) of Head Office</legend>
+                    <legend>Report: INCOME TAX (Deduction) Details (January-February-March-2023) of Head Office/रिपोर्ट: प्रधान कार्यालय का आयकर (कटौती) विवरण (जनवरी-फरवरी-मार्च-2023)</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -117,21 +160,33 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Name</th>
-                                        <th>Designation</th>
-                                        <th>Pan No.</th>
-                                        <th>Jan Earning</th>
-                                        <th>Feb Earning</th>
-                                        <th>Mar Earning</th>
-                                        <th>Total Earning</th>
-                                        <th>Jan Deduction</th>
-                                        <th>Feb Deduction</th>
-                                        <th>Mar Deduction</th>
-                                        <th>Total Deduction</th>
-
+                                    <tr style="white-space:nowrap;">
+                                        <th>Sr.No.<br />
+                                            क्रमांक</th>
+                                        <th>Employee Name<br />
+                                            कर्मचारी का नाम</th>
+                                        <th>Designation<br />
+                                            पद</th>
+                                        <th>Pan No.<br />
+                                            पैन नंबर</th>
+                                        <th>Jan Earning<br />
+                                            जनवरी कमाई</th>
+                                        <th>Feb Earning<br />
+                                            फरवरी कमाई</th>
+                                        <th>Mar Earning<br />
+                                            मार्च कमाई</th>
+                                        <th>Total Earning<br />
+                                            कुल कमाई</th>
+                                        <th>Jan Deduction<br />
+                                            जनवरी कटौती</th>
+                                        <th>Feb Deduction<br />
+                                            फरवरी कटौती</th>
+                                        <th>Mar Deduction<br />
+                                            मार्च कटौती</th>
+                                        <th>Total Deduction<br />
+                                            कुल कटौती</th>
                                     </tr>
+
                                     <tr>
                                         <td>1</td>
                                         <td>Sunil Bujurk</td>
@@ -185,7 +240,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="main-ul">
-                               <li><strong>Office Type </strong>
+                            <li><strong>Office Type </strong>
                                 <ul>
                                     <li>User will be able to select the <strong>Office Type </strong>from the dropdown which will automatically reflect from Office Type Master.</li>
                                 </ul>
@@ -200,7 +255,7 @@
                                     <li>User will be able to select <strong>Month </strong>from dropdown.</li>
                                 </ul>
                             </li>
-                         
+
                             <li><strong>Search </strong>
                                 <ul>
                                     <li>User will Search data as per selected field.</li>
@@ -213,7 +268,7 @@
                                     <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
                                 </ul>
                             </li>
-                              <li><strong>Grid</strong>
+                            <li><strong>Grid</strong>
                                 <ul>
                                     <li>The data of income tax being deducted on employee's monthly earnings will be visible quarterly.</li>
                                 </ul>

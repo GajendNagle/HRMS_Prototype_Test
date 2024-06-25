@@ -88,7 +88,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Uniq Id /<br />
+                                        Employee Uniq Id
+                                        <br />
                                         कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                                     <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
                                 </div>
@@ -108,7 +109,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee Name/<br />
+                                            Employee Name<br />
                                             कर्मचारी का नाम<span style="color: red">*</span></label>
                                         <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Aman Patidar" />
                                     </div>
@@ -116,7 +117,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Unique ID /<br />
+                                            Unique ID
+                                            <br />
                                             यूनिक आई.डी<span style="color: red">*</span></label>
                                         <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4890" />
                                     </div>
@@ -124,7 +126,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Designation /<br />
+                                            Designation
+                                            <br />
                                             पदनाम <span style="color: red">*</span></label>
                                         <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                                     </div>
@@ -149,13 +152,17 @@
                                         <table class="table text-center">
                                             <tbody>
                                                 <tr>
-                                                    <th>Sr. No. /<br />
+                                                    <th>Sr. No.
+                                                        <br />
                                                         सरल क्र.</th>
-                                                    <th>Training Type /<br />
+                                                    <th>Training Type
+                                                        <br />
                                                         प्रशिक्षण प्रकार</th>
-                                                    <th>Level of Training (State/Division/District/Development Block) /<br />
+                                                    <th>Level of Training (State/Division/District/Development Block)
+                                                        <br />
                                                         प्रशिक्षण का स्तर (राज्य/संभाग/जिला/विकासखंड)</th>
-                                                    <th>Duration of Training (in days) /<br />
+                                                    <th>Duration of Training (in days)
+                                                        <br />
                                                         प्रशिक्षण की अवधि (दिनों में)</th>
                                                 </tr>
                                                 <tr>
@@ -210,7 +217,6 @@
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
-
                                                     <td>
                                                         <input type="text" class="form-control" autocomplete="off" />
 
@@ -226,7 +232,6 @@
                                                 </tr>
                                                 <tr>
                                                     <td>5</td>
-
                                                     <td>
                                                         <input type="text" class="form-control" autocomplete="off" />
 
@@ -246,18 +251,11 @@
                                 </div>
                             </div>
                         </fieldset>
-
                         <div class="row justify-content-center">
-
-
                             <div class="col-md-2">
-
-                                <button id="Button2" type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="myFunction()">Save</button>
+                                <button id="Button2" type="button" class="btn btn-outline-success btn-border w-lg Alert-Confirmation" onclick="myFunction()">Save</button>
                             </div>
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -272,7 +270,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>
+    <%--<script>
         debugger;
         !function ($) {
             "use strict";
@@ -319,6 +317,6 @@
                 "use strict";
                 $.SweetAlert.init()
             }(window.jQuery);
-    </script>
+    </script>--%>
 </asp:Content>
 

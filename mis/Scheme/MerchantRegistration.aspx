@@ -3,49 +3,62 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Merchants Registrations
- 
-            </h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Scheme Management</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchemeManagement" title="click to go on">Cycle Scheme</a></li>
-                    <li class="breadcrumb-item active"><a href="MerchantRegistration.aspx" title="click to go on">Merchants Registrations</a></li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#CycleDistribution" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchemeManagement')">
+                                <span>Cycle Distribution Management </span></a>
+                        </li>
+                        <li class="breadcrumb-item">Merchants Registrations</li>
+                    </ol>
+                </div>
             </div>
         </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
-            </div>
-            <div class="card-body">
+    </div>
 
-                <nav class="navbar navbar-expand-lg navbar-dark topbar">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-9">
+                    <h4 class="card-title">Merchant Registration /
+व्यापारी पंजीकरण</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+
+            <%--<nav class="navbar navbar-expand-lg navbar-dark topbar">
                     <div class="container-fluid">
                         <a class="navbar-brand"  ></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <%--fsf--%>
-                                <li class="nav-item dropdown">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">--%>
+            <%--fsf--%>
+            <%-- <li class="nav-item dropdown">
                                     <a class="nav-link text-white " role="button" aria-expanded="false">
                                         <b class="font-16 font-bold"><i class="fa fa-home"></i></b>
                                     </a>
-                                </li>
-                                <%--fsf--%>
-                                <li class="nav-item dropdown">
+                                </li>--%>
+            <%--fsf--%>
+            <%-- <li class="nav-item dropdown">
                                     <a class="nav-link  text-white" role="button" aria-expanded="false">
                                         <b class="font-16 font-bold">Admin</b>
                                     </a>
-                                </li>
-                                <%--fsf--%>
-                                <li class="nav-item dropdown">
+                                </li>--%>
+            <%--fsf--%>
+            <%--<li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <b class="font-16 font-bold">Merchants Registrations</b>
                                     </a>
@@ -74,9 +87,9 @@
                                         <li><a class="dropdown-item" href="6thClassAllStudent.aspx">All Students in 6th Class</a></li>
                                         <li><a class="dropdown-item" href="6thClassCycleSelectionStudent.aspx">6th Class Students Selected for Cycle Distribution</a></li>
                                     </ul>
-                                </li>
-                                <%--fsf--%>
-                                <li class="nav-item dropdown">
+                                </li>--%>
+            <%--fsf--%>
+            <%--<li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <b class="font-16 font-bold">HS/ HSS Teachers Cycle 9th</b>
                                     </a>
@@ -117,40 +130,40 @@
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </nav>--%>
 
-                <div class="mt-3">
-                    <fieldset>
-                        <legend>Merchant Registration</legend>
-                        <div class="row justify-content-center">
+            <div class="mt-3">
+                <fieldset>
+                    <legend>Merchant Registration / व्यापारी पंजीकरण</legend>
+                    <div class="row align-items-end">
 
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Mobile Number : <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" />
-                                </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Mobile Number<br />मोबाइल नंबर<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" />
                             </div>
-                             <div class="col-md-1"></div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Confirm Mobile No. : <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" />
-                                </div>
+                        </div>
+                        <%--<div class="col-md-1"></div>--%>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Confirm Mobile No.<br />मोबाइल नंबर की पुष्टि करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" />
                             </div>
-
-                            <div class="row justify-content-center mt-2">
-                                <div class="col-md-3 text-center">
-                                    <div class="form-group">
-                                        <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-rounded" onclick="Show();">Validate Mobile </button>
-                                    </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-border w-lg" onclick="Show();">Validate Mobile </button>
+                                    <a href="MerchantRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </div>
-                    </fieldset>
-
-                </div>
+                   
+                </fieldset>
 
             </div>
+
         </div>
     </div>
 

@@ -32,7 +32,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Employee Salary Slip</h4>
         </div>
@@ -50,16 +50,52 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Employee Salary Slip</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Employee Salary Slip/
+
+कर्मचारी वेतन पर्ची</h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Single Salary Slip</legend>
+                <legend>Single Salary Slip/एकल वेतन पर्ची</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>
+                                Office Type<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                            <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -80,7 +116,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>
+                                Employee Name<br />
+                                कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Abhishek</option>
@@ -94,7 +132,9 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>
+                                Year<br />
+                                वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -108,7 +148,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>
+                                Month<br />
+                                माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -126,7 +168,14 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                            <a href="Rpt_SingleSalarySlip.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+                        </div>
+                    </div>
+                    <%--<div class="col-md-2">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn-block btn btn-success btn-rounded">Search</button>
                         </div>
@@ -135,12 +184,12 @@
                         <div class="form-group">
                             <a href="Rpt_SingleSalarySlip.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Salary Slip:</legend>
+                    <legend>Salary Slip/ वेतन पर्ची:</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -157,60 +206,83 @@
                     <div class="row">
                         <div class="col-md-12 ">
                             <div class="table-responsive">
-                                <table class="table border table-bordered tablerow ">
+                                <table class="table border table-bordered">
                                     <tr>
                                         <td class="tdbgcolor">
-                                            <label>NAME OF EMPLOYEE:</label></td>
+                                            <label>NAME OF EMPLOYEE:</label>
+                                        </td>
                                         <td>
-                                            <label>SHRI SAJI VARGHESE</label></td>
+                                            <label>SHRI SAJI VARGHESE</label>
+                                        </td>
                                         <td class="tdbgcolor">
-                                            <label>BANK ACCOUNT NUMBER:</label></td>
+                                            <label>BANK ACCOUNT NUMBER:</label>
+                                        </td>
                                         <td>
-                                            <label>03021004411</label></td>
+                                            <label>03021004411</label>
+                                        </td>
                                         <td class="tdbgcolor">
-                                            <label>EPF/UAN:</label></td>
+                                            <label>EPF/UAN:</label>
+                                        </td>
                                         <td>
-                                            <label>-</label></td>
+                                            <label>-</label>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td class="tdbgcolor">
-                                            <label>FATHER'S/HUSBAND NAME:</label></td>
-                                        <td>
-                                            <label>LATE MR PV VARKEY</label></td>
-                                        <td class="tdbgcolor">
-                                            <label>BANK NAME:</label></td>
-                                        <td>
-                                            <label>STATE BANK OF INDIA</label></td>
-                                        <td class="tdbgcolor">
-                                            <label>G.INS NUMBER:</label></td>
-                                        <td>
-                                            <label>-</label></td>
 
-                                    </tr>
                                     <tr>
                                         <td class="tdbgcolor">
-                                            <label>DESIGNATION:</label></td>
+                                            <label>FATHER'S/HUSBAND NAME:</label>
+                                        </td>
                                         <td>
-                                            <label>ASST. GRADE-1</label></td>
+                                            <label>LATE MR PV VARKEY</label>
+                                        </td>
                                         <td class="tdbgcolor">
-                                            <label>IFSC CODE:</label></td>
+                                            <label>BANK NAME:</label>
+                                        </td>
                                         <td>
-                                            <label>SBIN0030005</label></td>
+                                            <label>STATE BANK OF INDIA</label>
+                                        </td>
                                         <td class="tdbgcolor">
-                                            <label>NET SALARY:</label></td>
+                                            <label>G.INS NUMBER:</label>
+                                        </td>
                                         <td>
-                                            <label>70052</label></td>
+                                            <label>-</label>
+                                        </td>
                                     </tr>
+
                                     <tr>
                                         <td class="tdbgcolor">
-                                            <label>EMPLOYEE CODE:</label></td>
+                                            <label>DESIGNATION:</label>
+                                        </td>
                                         <td>
-                                            <label>E00083</label></td>
+                                            <label>ASST. GRADE-1</label>
+                                        </td>
+                                        <td class="tdbgcolor">
+                                            <label>IFSC CODE:</label>
+                                        </td>
+                                        <td>
+                                            <label>SBIN0030005</label>
+                                        </td>
+                                        <td class="tdbgcolor">
+                                            <label>NET SALARY:</label>
+                                        </td>
+                                        <td>
+                                            <label>70052</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdbgcolor">
+                                            <label>EMPLOYEE CODE:</label>
+                                        </td>
+                                        <td>
+                                            <label>E00083</label>
+                                        </td>
                                         <td colspan="4">
                                             <label></label>
                                         </td>
                                     </tr>
                                 </table>
+
                             </div>
                         </div>
                     </div>

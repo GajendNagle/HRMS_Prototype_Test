@@ -16,7 +16,7 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#EmployeeVerification" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                             <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee Verification</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>About Employee Verification</span></li>
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h4 class="card-title">About Employee Verification
-                        <br />
+                      /
                         कर्मचारी सत्यापन के बारे में</h4>
                 </div>
             </div>

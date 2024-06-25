@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_OfficeWiseArrearEPF.aspx.cs" Inherits="mis_Payroll_Rpt_OfficeWiseArrearEPF" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_OfficeWiseArrearEPF.aspx.cs" Inherits="mis_Payroll_Rpt_OfficeWiseArrearEPF" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
@@ -10,7 +10,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--   <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Office Wise Arrear EPF Report</h4>
         </div>
@@ -28,16 +28,50 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Office Wise Arrear EPF Report</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Office Wise Arrear EPF Report/
+
+कार्यालयवार बकाया ई.पी.एफ रिपोर्ट </h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Office Wise Arrear EPF Report</legend>
+                <legend>Office Wise Arrear EPF Report/कार्यालयवार बकाया ई.पी.एफ रिपोर्ट</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Name<span style="color: red">*</span></label>
+                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                               	 <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -58,7 +92,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Regular/Permanent">Regular/Permanent</option>
@@ -72,13 +106,13 @@
                                 <option value="Daily Wage's Employee">Daily Wage's Employee</option>
                                 <option value="Dally Wages Federation">Dally Wages Federation</option>
                                 <option value="Job Rate Employee">Job Rate Employee</option>
-								
+
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Arrear Type<span style="color: red">*</span></label>
+                            <label>Arrear Type<br />बकाया प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">DA Arrear</option>
@@ -90,7 +124,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -103,7 +137,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />
+माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -121,17 +156,25 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+               <%--     <div class="col-md-2 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class=" btn btn-success btn-rounded">Search</button>
                             <a href="Rpt_OfficeWiseArrearEPF.aspx" class="btn btn-danger btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
+                      <hr />
+  <div class="col-md-12">
+      <div class="form-group">
+          <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+          <a href="Rpt_OfficeWiseArrearEPF.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+      </div>
+  </div>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Report:</legend>
+                    <legend>Report /
+रिपोर्ट:</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -146,15 +189,15 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            <label>Madhya Pradesh State Education</label>
+                        <div class="col-md-6">
+                            <label>Madhya Pradesh State Education/मध्य प्रदेश राज्य शिक्षा</label>
 
                         </div>
                         <%--<div class="col-md-1">
                                 <label>Address</label>
                             </div>--%>
                         <div class="col-md-10">
-                            <label>Statement showing remittance of Employee Provident Fund (Subs. & Contr.) & Family Pension Fund (Contr.) for the month November 2023.</label>
+                            <label>Statement showing remittance of Employee Provident Fund (Subs. & Contr.) & Family Pension Fund (Contr.) for the month November 2023.<br />नवंबर 2023 महीने के लिए कर्मचारी भविष्य निधि (सब्सिडी और कॉन्ट्रि.) और पारिवारिक पेंशन फंड (कंट्री) के प्रेषण को दर्शाने वाला विवरण।</label>
                         </div>
                     </div>
                     <div class="row">
@@ -162,16 +205,17 @@
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th colspan="8">November 2023</th>
+                                        <th colspan="8">November 2023/नवंबर 2023</th>
                                     </tr>
-                                    <tr>
-                                        <th>S.No.</th>
-                                        <th>Name of Employee</th>
-                                        <th>Employee Account No.</th>
-                                        <th>Distributed Salary</th>
-                                        <th colspan="3">Employee Provident Fund</th>
-                                        <th>Total</th>
-                                    </tr>
+                                  <tr style="white-space:nowrap;">
+    <th>S.No.<br/>क्रमांक</th>
+    <th>Name of Employee<br/>कर्मचारी का नाम</th>
+    <th>Employee Account No.<br/>कर्मचारी खाता संख्या</th>
+    <th>Distributed Salary<br/>वितरित वेतन</th>
+    <th colspan="3">Employee Provident Fund<br/>कर्मचारी भविष्य निधि</th>
+    <th>Total<br/>कुल</th>
+</tr>
+
                                     <tr>
                                         <td colspan="4"></td>
                                         <td>Subs. (12%)</td>

@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
@@ -96,7 +96,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation Type /<br />
+                                        Designation Type <br />
                                         पदनाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="----">--Select--</option>
@@ -110,7 +110,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District /<br />
+                                        District <br />
                                         ज़िला<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -170,7 +170,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Block /<br />
+                                        Block <br />
                                         ब्लॉक<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -183,7 +183,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Name /<br />
+                                        Employee Name <br />
                                         कर्मचारी का नाम<span style="color: red">*</span></label>
                                     <input name="txtEmpName" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Name" />
                                 </div>
@@ -217,41 +217,41 @@
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered">
                                         <tr class="card-header">
-                                            <th>Sr. No. /<br />
+                                            <th>Sr. No. <br />
                                                 सरल क्र.</th>
-                                            <th>Office Type /<br />
+                                            <th>Office Type <br />
                                                 कार्यालय का प्रकार</th>
-                                            <th>Employee-ID/Name /<br />
+                                            <th>Employee-ID/Name <br />
                                                 कर्मचारी-आईडी/नाम</th>
-                                            <th>Employee Designation /<br />
+                                            <th>Employee Designation <br />
                                                 कर्मचारी का पदनाम</th>
-                                            <th>Employee Department /<br />
+                                            <th>Employee Department <br />
                                                 कर्मचारी का विभाग</th>
-                                            <th>Employee Subject /<br />
+                                            <th>Employee Subject <br />
                                                 कर्मचारी का विषय</th>
-                                            <th>Panal /<br />
+                                            <th>Panal <br />
                                                 पैनल</th>
-                                            <th>Posted From /<br />
+                                            <th>Posted From <br />
                                                 से पद पर</th>
-                                            <th>District /<br />
+                                            <th>District <br />
                                                 जिला</th>
-                                            <th>Block /<br />
+                                            <th>Block <br />
                                                 ब्लॉक </th>
-                                            <th>Sankul Code / Name /<br />
+                                            <th>Sankul Code / Name <br />
                                                 संकुल कोड/नाम</th>
-                                            <th>Reason For Transfer /<br />
+                                            <th>Reason For Transfer <br />
                                                 स्थानांतरण का कारण</th>
-                                            <th>Preference Location /<br />
+                                            <th>Preference Location <br />
                                                 प्रिफरेंस लोकैशन</th>
-                                            <th>View Service Book /<br />
+                                            <th>View Service Book <br />
                                                 सर्विस बुक देखें</th>
-                                            <th>View Apply Application /<br />
+                                            <th>View Apply Application <br />
                                                 अप्लाइ आवेदन देखें</th>
-                                            <th>Handicaped Certificate /<br />
+                                            <th>Handicaped Certificate <br />
                                                 विकलांग प्रमाण पत्र देखें</th>
-                                            <th>View Critical Illness Certificate /<br />
+                                            <th>View Critical Illness Certificate <br />
                                                 गंभीर बीमारी प्रमाणपत्र देखें</th>
-                                            <th>Reject Transfer /<br />
+                                            <th>Reject Transfer <br />
                                                 स्थानांतरण अस्वीकार करें</th>
                                         </tr>
                                         <tr>

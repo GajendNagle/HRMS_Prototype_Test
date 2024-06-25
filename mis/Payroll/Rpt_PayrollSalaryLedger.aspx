@@ -20,7 +20,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--    <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Payroll Salary Ledger</h4>
         </div>
@@ -38,16 +38,51 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Payroll Salary Ledger</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Payroll Salary Ledger/
+
+पेरोल वेतन बही</h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Payroll Salary Ledger</legend>
+                <legend>Payroll Salary Ledger/पेरोल वेतन बही</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                              <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -68,7 +103,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>Employee Name<br />
+                                कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Ramji</option>
@@ -79,7 +115,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />
+                                वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -91,7 +128,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1 mt-4">
+                    <%--  <div class="col-md-1 mt-4">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -100,69 +137,101 @@
                         <div class="form-group">
                             <a href="Rpt_PayrollSalaryLedger.aspx" class=" btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
                 <div class="row">
                     <div class="col-md-12 table-responsive" style="">
-                        <span  class="lblEmpDetail" style="color: black; font-size: 17px;"></span>
+                        <span class="lblEmpDetail" style="color: black; font-size: 17px;"></span>
                         <p class="hidden-print" style="color: red"><b>नोट: </b>प्रिंट करने के लिए कृपया Ctrl+P का उपयोग करें |</p>
                         <div>
                         </div>
                     </div>
                 </div>
-            </fieldset>
-            <fieldset id="show">
-                <legend>Payroll Salary Ledger Details (Report)</legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">Excel</button>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-100">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                        <a href="Rpt_PayrollSalaryLedger.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
                     </div>
                 </div>
+            </fieldset>
+            <fieldset id="show">
+                <legend>Payroll Salary Ledger Details (Report)/पेरोल वेतन बही विवरण (रिपोर्ट)</legend>
+                <div class="row justify-content-end">
+        <div class="col-md-4 text-end">
+            <div class="form-group">
+                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                <button class="btn btn-info btn-rounded w-55">PDF</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+    </div>
                 <div class="row">
                     <div class="table-responsive">
                         <table class="table">
-                            <tr>
-                                <th>Sr.No</th>
-                                <th>Head</th>
-                                <th>Earning & Deduction</th>
-                                <th>Total In FY</th>
-                                <th>April</th>
-                                <th>April Arrear</th>
-                                <th>May</th>
-                                <th>May Arrear</th>
-                                <th>June</th>
-                                <th>June Arrear</th>
-                                <th>July.</th>
-                                <th>July Arrear</th>
-                                <th>August</th>
-                                <th>August Arrear</th>
-                                <th>September</th>
-                                <th>September Arrear</th>
-                                <th>October</th>
-                                <th>October Arrear</th>
-                                <th>November</th>
-                                <th>November Arrear</th>
-                                <th>December</th>
-                                <th>December Arrear</th>
-                                <th>January</th>
-                                <th>January Arrear</th>
-                                <th>February</th>
-                                <th>February Arrear</th>
-                                <th>March</th>
-                                <th>March Arrear</th>
+                            <tr style="white-space:nowrap;"> 
+                                <th>Sr.No<br />
+                                    क्रमांक</th>
+                                <th>Head<br />
+                                    शीर्षक</th>
+                                <th>Earning & Deduction<br />
+                                    अर्जन और कटौती</th>
+                                <th>Total In FY<br />
+                                    वित्तीय वर्ष में कुल</th>
+                                <th>April<br />
+                                    अप्रैल</th>
+                                <th>April Arrear<br />
+                                    अप्रैल अतिरिक्त</th>
+                                <th>May<br />
+                                    मई</th>
+                                <th>May Arrear<br />
+                                    मई अतिरिक्त</th>
+                                <th>June<br />
+                                    जून</th>
+                                <th>June Arrear<br />
+                                    जून अतिरिक्त</th>
+                                <th>July<br />
+                                    जुलाई</th>
+                                <th>July Arrear<br />
+                                    जुलाई अतिरिक्त</th>
+                                <th>August<br />
+                                    अगस्त</th>
+                                <th>August Arrear<br />
+                                    अगस्त अतिरिक्त</th>
+                                <th>September<br />
+                                    सितंबर</th>
+                                <th>September Arrear<br />
+                                    सितंबर अतिरिक्त</th>
+                                <th>October<br />
+                                    अक्टूबर</th>
+                                <th>October Arrear<br />
+                                    अक्टूबर अतिरिक्त</th>
+                                <th>November<br />
+                                    नवंबर</th>
+                                <th>November Arrear<br />
+                                    नवंबर अतिरिक्त</th>
+                                <th>December<br />
+                                    दिसंबर</th>
+                                <th>December Arrear<br />
+                                    दिसंबर अतिरिक्त</th>
+                                <th>January<br />
+                                    जनवरी</th>
+                                <th>January Arrear<br />
+                                    जनवरी अतिरिक्त</th>
+                                <th>February<br />
+                                    फरवरी</th>
+                                <th>February Arrear<br />
+                                    फरवरी अतिरिक्त</th>
+                                <th>March<br />
+                                    मार्च</th>
+                                <th>March Arrear<br />
+                                    मार्च अतिरिक्त</th>
                             </tr>
+
                             <tr>
                                 <td>1</td>
                                 <td>BASIC SALARY</td>
@@ -470,7 +539,7 @@
                 </div>
             </fieldset>
         </div>
-        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

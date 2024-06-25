@@ -32,7 +32,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Employee Final Statement</h4>
         </div>
@@ -50,17 +50,51 @@
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
+        <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Employee Final Statement</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">Employee Final Statement/
+कर्मचारी अंतिम विवरण</h5>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <fieldset>
-                <legend>Final Statement</legend>
+                <legend>Final Statement/ अंतिम विवरण</legend>
                 <div class="row">
-                   <div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                  
-								 <option value="Bhopal">Head Office</option>
+
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -81,7 +115,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Employee Name<span style="color: red">*</span></label>
+                            <label>Employee Name<br />
+                                कर्मचारी का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Abhishek</option>
@@ -92,7 +127,9 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Year<span style="color: red">*</span></label>
+                            <label>
+                                From Year<br />
+                                वर्ष से<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -106,7 +143,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>From Month<span style="color: red">*</span></label>
+                            <label>
+                                From Month<br />
+                                माह से<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -126,7 +165,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Year<span style="color: red">*</span></label>
+                            <label>To Year<br />
+                                साल तक<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -140,7 +180,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>To Month<span style="color: red">*</span></label>
+                            <label>
+                                To Month<br />
+                                माह  तक<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -158,7 +200,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-2">
+                    <%--   <div class="col-md-2 mt-2">
                         <br />
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn-block btn btn-success  btn-rounded">Search</button>
@@ -169,12 +211,21 @@
                         <div class="form-group">
                             <a href="Rpt_SingleSalarySlip.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                            <a href="Rpt_EmployeeFinalStatementFromAndToYearOrMonth.aspx.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+                        </div>
                     </div>
+
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Professional Tax Challan</legend>
+                    <legend>Professional Tax Challan/
+प्रोफेशनल टैक्स चालान</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -193,17 +244,24 @@
 
                             <table class="table table-bordered border rowheight">
                                 <tr>
-                                    <th colspan="18" style="text-align: center;"><b>M.P. State Education : Head Office</b></th>
+                                    <th colspan="18" style="text-align: center;"><b>M.P. State Education : Head Office<br />
+                                        एम.पी.। राज्य शिक्षा : प्रधान कार्यालय</b></th>
                                 </tr>
                                 <tr>
-                                    <th colspan="18" style="text-align: center;"><b>Income Tax assesment 2023-January To 2023-January (Tentative Statement)</b></th>
+                                    <th colspan="18" style="text-align: center;"><b>Income Tax assesment 2023-January To 2023-January (Tentative Statement)<br />
+                                        आयकर आकलन 2023-जनवरी से 2023-जनवरी (अस्थायी विवरण)</b></th>
                                 </tr>
-                                <tr>
-                                    <th colspan="6"><b>Name of the Employee: Abhishek</b></th>
-                                    <th colspan="4"><b>Designation: Administrator</b></th>
-                                    <th colspan="4"><b>PAN No.:</b></th>
-                                    <th colspan="1"><b>Code: 0</b></th>
-                                    <th colspan="3"><b>Run Date: 29/12/2023 11:15:48</b></th>
+                                <tr style="white-space:nowrap;">
+                                    <th colspan="6"><b>Name of the Employee/
+                                        कर्मचारी का नाम: Abhishek</b></th>
+                                    <th colspan="4"><b>Designation/
+                                        पद का नाम: Administrator</b></th>
+                                    <th colspan="4"><b>PAN No./
+                                        पैन नंबर:</b></th>
+                                    <th colspan="1"><b>Code/
+                                        कोड: 0</b></th>
+                                    <th colspan="3"><b>Run Date/
+                                        चलाने की तिथि: 29/12/2023 11:15:48</b></th>
                                 </tr>
                                 <tr>
                                     <th>Month</th>
@@ -393,68 +451,68 @@
                         </div>
                     </div>
                 </fieldset>
-                </div>
-                <fieldset id="dcp" runat="server">
-                    <legend>Description</legend>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="main-ul">
-                                <li><strong>Office Type </strong>
-                                    <ul>
-                                        <li>User will be able to select the <strong>Office Type </strong>from the dropdown and the data will be populated from the<strong> Office Type Master.</strong></li>
-                                    </ul>
-                                </li>
-                                <li><strong>Employee Name</strong>
-                                    <ul>
-                                        <li>User will be able to select the <strong>Employee Name </strong>from the dropdown and the data will be populated from the <strong>Employee Registration</strong></li>
-                                    </ul>
-                                </li>
-                                <li><strong>Year (Dropdown)</strong>
-                                    <ul>
-                                        <li>User will be able to select <strong>Year </strong>from dropdown. Data populated from <strong>Database Table</strong>. </li>
-                                    </ul>
-                                </li>
-                                <li><strong>Month (Dropdown)</strong>
-                                    <ul>
-                                        <li>User will be able to select <strong>Month </strong>from dropdown. Data populated from <strong>Database Table </strong>. </li>
-                                    </ul>
-                                </li>
+            </div>
+            <fieldset id="dcp" runat="server">
+                <legend>Description</legend>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="main-ul">
+                            <li><strong>Office Type </strong>
+                                <ul>
+                                    <li>User will be able to select the <strong>Office Type </strong>from the dropdown and the data will be populated from the<strong> Office Type Master.</strong></li>
+                                </ul>
+                            </li>
+                            <li><strong>Employee Name</strong>
+                                <ul>
+                                    <li>User will be able to select the <strong>Employee Name </strong>from the dropdown and the data will be populated from the <strong>Employee Registration</strong></li>
+                                </ul>
+                            </li>
+                            <li><strong>Year (Dropdown)</strong>
+                                <ul>
+                                    <li>User will be able to select <strong>Year </strong>from dropdown. Data populated from <strong>Database Table</strong>. </li>
+                                </ul>
+                            </li>
+                            <li><strong>Month (Dropdown)</strong>
+                                <ul>
+                                    <li>User will be able to select <strong>Month </strong>from dropdown. Data populated from <strong>Database Table </strong>. </li>
+                                </ul>
+                            </li>
 
-                                <li><strong>Search </strong>
-                                    <ul>
-                                        <li>User will Search data as per selected field.</li>
-                                        <li>After click on Search button data will be visible in grid view.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Clear (Button)</strong>
-                                    <ul>
-                                        <li>User should be able to click on Clear button.</li>
-                                        <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Excel (Button)</strong>
-                                    <ul>
-                                        <li>Excel button should be visible and user should be able to click.</li>
-                                        <li>After clicking on Excel button grid view data export in Excel.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>PDF (Button)</strong>
-                                    <ul>
-                                        <li>PDF button should be visible and user should be able to click.</li>
-                                        <li>After clicking on PDF button grid view data export in PDF.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Searchbox (Searchable box)</strong>
-                                    <ul>
-                                        <li>Users can search for any text value, and only the relevant text related to the search will be displayed .</li>
-                                    </ul>
-                                </li>
+                            <li><strong>Search </strong>
+                                <ul>
+                                    <li>User will Search data as per selected field.</li>
+                                    <li>After click on Search button data will be visible in grid view.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Clear (Button)</strong>
+                                <ul>
+                                    <li>User should be able to click on Clear button.</li>
+                                    <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
+                                </ul>
+                            </li>
+                            <li><strong>Excel (Button)</strong>
+                                <ul>
+                                    <li>Excel button should be visible and user should be able to click.</li>
+                                    <li>After clicking on Excel button grid view data export in Excel.</li>
+                                </ul>
+                            </li>
+                            <li><strong>PDF (Button)</strong>
+                                <ul>
+                                    <li>PDF button should be visible and user should be able to click.</li>
+                                    <li>After clicking on PDF button grid view data export in PDF.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Searchbox (Searchable box)</strong>
+                                <ul>
+                                    <li>Users can search for any text value, and only the relevant text related to the search will be displayed .</li>
+                                </ul>
+                            </li>
 
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                </fieldset>
-            
+                </div>
+            </fieldset>
+
         </div>
     </div>
 </asp:Content>

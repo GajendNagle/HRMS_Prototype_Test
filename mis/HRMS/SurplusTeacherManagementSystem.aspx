@@ -61,9 +61,9 @@
 <div class="card card-border-primary">
     <div class="card-header">
         <div class="row align-items-end">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="card-title color_black">
-             District-wise Surplus  Teachers Report
+             District-wise Surplus  Teachers Report/जिलेवार अधिशेष शिक्षकों की रिपोर्ट
                 </div>
             </div>
         </div>

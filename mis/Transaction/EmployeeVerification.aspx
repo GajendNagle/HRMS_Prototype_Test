@@ -87,7 +87,7 @@
                                 <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="#EmployeeVerification" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                 <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                     <span>Employee Verification</span></a>
                             </li>
                             <li class="breadcrumb-item"><span>Employee Verification</span></li>
@@ -158,7 +158,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Verification Status /
+                                    Verification Status 
                                     <br />
                                     सत्यापन स्थिति<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="ddlApprove">
@@ -197,19 +197,19 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No. /<br />
+                                            <th>Sr.No. <br />
                                                 सरल क्र.</th>
-                                            <th>Employee Name /<br />
+                                            <th>Employee Name <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Employee ID /<br />
+                                            <th>Employee ID <br />
                                                 कर्मचारी की आई. डी.</th>
-                                            <th>Designation /<br />
+                                            <th>Designation <br />
                                                 धारित पद</th>
-                                            <th>Department /<br />
+                                            <th>Department <br />
                                                 विभाग</th>
-                                            <th>View More /<br />
+                                            <th>View More <br />
                                                 अधिक विवरण देखे</th>
-                                            <th>Status /<br />
+                                            <th>Status <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
@@ -248,20 +248,20 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No. /<br />
+                                            <th>Sr.No. <br />
                                                 सरल क्र.</th>
                                             <th>Action</th>
-                                            <th>Employee Name /<br />
+                                            <th>Employee Name<br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Employee ID /<br />
+                                            <th>Employee ID <br />
                                                 कर्मचारी की आई.डी.</th>
-                                            <th>Designation /<br />
+                                            <th>Designation <br />
                                                 धारित पद</th>
-                                            <th>Department /<br />
+                                            <th>Department <br />
                                                 विभाग</th>
-                                            <th>View More /<br />
+                                            <th>View More <br />
                                                 अधिक विवरण देखे</th>
-                                            <th>Status /<br />
+                                            <th>Status <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
@@ -321,19 +321,19 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No. /<br />
+                                            <th>Sr.No.<br />
                                                 सरल क्र.</th>
-                                            <th>Employee Name /<br />
+                                            <th>Employee Name <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Employee ID /<br />
+                                            <th>Employee ID <br />
                                                 कर्मचारी की आई.डी.</th>
-                                            <th>Designation /<br />
+                                            <th>Designation <br />
                                                 धारित पद</th>
-                                            <th>Department /<br />
+                                            <th>Department <br />
                                                 विभाग</th>
-                                            <th>View More /<br />
+                                            <th>View More <br />
                                                 अधिक विवरण देखे</th>
-                                            <th>Status /<br />
+                                            <th>Status <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
@@ -459,7 +459,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Employee Unique ID /
+                                                    Employee Unique ID 
                                                     <br />
                                                     कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="5859685" />
@@ -469,7 +469,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Name /
+                                                    First Name 
                                                     <br />
                                                     प्रथम नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Shyam" />
@@ -478,7 +478,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Middle Name /
+                                                    Middle Name 
                                                     <br />
                                                     मध्य नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Kumar" />
@@ -487,7 +487,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Last Name /
+                                                    Last Name 
                                                     <br />
                                                     उपनाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Verma" />
@@ -497,7 +497,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Father's/Husband Name /
+                                                    Father's/Husband Name 
                                                     <br />
                                                     पिता/पति का नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Kunal Verma" />
@@ -506,7 +506,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Post /
+                                                    Post 
                                                     <br />
                                                     पद<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Regular/Permanemt" />
@@ -515,7 +515,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Designation /
+                                                    Designation 
                                                     <br />
                                                     पद का नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Administrator" />
@@ -524,7 +524,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Subject /
+                                                    Subject 
                                                     <br />
                                                     विषय<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Chemistry" />
@@ -533,7 +533,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    School Name /
+                                                    School Name 
                                                     <br />
                                                     स्कूल का नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="GB Convent School" />
@@ -542,7 +542,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Sankul /
+                                                    Sankul 
                                                     <br />
                                                     संकुल<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Reema Vidhya" />
@@ -551,7 +551,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Date of Birth /
+                                                    Date of Birth 
                                                     <br />
                                                     जन्मतिथि<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/07/1999" />
@@ -560,7 +560,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Gender /
+                                                    Gender 
                                                     <br />
                                                     लिंग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Male" />
@@ -569,7 +569,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Height /
+                                                    Height 
                                                     <br />
                                                     ऊंचाई<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6.4" />
@@ -578,7 +578,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Category /
+                                                    Category 
                                                     <br />
                                                     वर्ग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="General" />
@@ -587,7 +587,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Religion /
+                                                    Religion 
                                                     <br />
                                                     धर्म<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Hindu" />
@@ -596,7 +596,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Identification Mark /
+                                                    Identification Mark 
                                                     <br />
                                                     पहचान चिह्न<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Mole on Face" />
@@ -605,7 +605,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Blood Group /
+                                                    Blood Group 
                                                     <br />
                                                     ब्लड ग्रुप<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="O+" />
@@ -614,7 +614,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Handicapped (PWD) /
+                                                    Handicapped (PWD) 
                                                     <br />
                                                     विकलांग (पीडब्ल्यूडी)<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
@@ -623,7 +623,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Handicape Type /
+                                                    Handicape Type 
                                                     <br />
                                                     विकलांगता प्रकार<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Low vision" />
@@ -632,7 +632,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Handicape Percentage /
+                                                    Handicape Percentage 
                                                     <br />
                                                     विकलांगता प्रतिशत<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="30%" />
@@ -641,7 +641,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Critical Illness /
+                                                    Critical Illness 
                                                     <br />
                                                     गंभीर बीमारी<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="No" />
@@ -650,7 +650,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    PAN No. /
+                                                    PAN No. 
                                                     <br />
                                                     पैन नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="SDEKK5695G" />
@@ -659,7 +659,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Aadhaar No. /
+                                                    Aadhaar No. 
                                                     <br />
                                                     आधार नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="362596836495" />
@@ -668,7 +668,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Samagra ID No. /
+                                                    Samagra ID No. 
                                                     <br />
                                                     समग्र आईडी नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="654651545454" />
@@ -677,7 +677,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Employee Treasury Code /
+                                                    Employee Treasury Code 
                                                     <br />
                                                     कर्मचारी कोष कोड<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="56958369" />
@@ -686,7 +686,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Hobbies /
+                                                    Hobbies 
                                                     <br />
                                                     हॉबी<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Dancing, Singing" />
@@ -696,7 +696,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Certification Date /
+                                                    Certification Date 
                                                     <br />
                                                     प्रमाणीकरण दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/01/2023" />
@@ -705,7 +705,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Mobile No. /<br />
+                                                    Mobile No. <br />
                                                     मोबाइल नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6589562358" />
                                             </div>
@@ -713,7 +713,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Email ID. /
+                                                    Email ID. 
                                                     <br />
                                                     ईमेल आईडी<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly="" autocomplete="off" placeholder="example123@gmail.com" />
@@ -722,7 +722,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Whether the First Page of E-Service Book is Certified /
+                                                    Whether the First Page of E-Service Book is Certified 
                                                     <br />
                                                     ई-सेवा पुस्तिका का प्रथम पृष्ठ प्रमाणित है या नहीं<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
@@ -742,7 +742,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Address line 1 /
+                                                                Address line 1 
                                                                 <br />
                                                                 पता लाइन 1<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
@@ -751,7 +751,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Address line 2 /
+                                                                Address line 2 
                                                                 <br />
                                                                 पता लाइन 2<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
@@ -760,7 +760,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                State /
+                                                                State 
                                                                 <br />
                                                                 राज्य<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Madhya Pradesh" />
@@ -769,7 +769,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Division /
+                                                                Division 
                                                                 <br />
                                                                 संभाग<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
@@ -778,7 +778,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                District /
+                                                                District 
                                                                 <br />
                                                                 जिला<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
@@ -787,7 +787,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                City /
+                                                                City 
                                                                 <br />
                                                                 शहर<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
@@ -796,7 +796,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Pincode /
+                                                                Pincode 
                                                                 <br />
                                                                 पिन कोड<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="462010" />
@@ -821,7 +821,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Address line 1 /
+                                                                Address line 1 
                                                                 <br />
                                                                 पता लाइन 1<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
@@ -830,7 +830,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Address line 2 /
+                                                                Address line 2 
                                                                 <br />
                                                                 पता लाइन 2<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
@@ -839,7 +839,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                State /
+                                                                State 
                                                                 <br />
                                                                 राज्य<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Madhya Pradesh" />
@@ -848,7 +848,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Division /
+                                                                Division 
                                                                 <br />
                                                                 संभाग<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
@@ -857,7 +857,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                District /
+                                                                District 
                                                                 <br />
                                                                 जिला<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
@@ -866,7 +866,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                City /
+                                                                City 
                                                                 <br />
                                                                 शहर<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
@@ -875,7 +875,7 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Pincode /
+                                                                Pincode 
                                                                 <br />
                                                                 पिन कोड<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="462010" />
@@ -892,7 +892,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Married /
+                                                    Married 
                                                     <br />
                                                     विवाहित<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
@@ -901,7 +901,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Spouse Name /
+                                                    Spouse Name 
                                                     <br />
                                                     जीवनसाथी का नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Ruchita " />
@@ -910,7 +910,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Is Spouse Government Employee/
+                                                    Is Spouse Government Employee
                                                     <br />
                                                     क्या पति/पत्नी सरकारी कर्मचारी हैं?<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
@@ -919,7 +919,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Departmnet Name /
+                                                    Departmnet Name 
                                                     <br />
                                                     विभाग का नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
@@ -928,7 +928,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Office Address /
+                                                    Office Address 
                                                     <br />
                                                     कार्यालय का पता<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="52, Arera Hills, Bhopal" />
@@ -942,7 +942,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Qualification /
+                                                    Qualification 
                                                     <br />
                                                     योग्यता<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Post Graduate" />
@@ -951,7 +951,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Science /
+                                                    Science 
                                                     <br />
                                                     विज्ञान<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Science" />
@@ -960,7 +960,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Board / Univercity name /
+                                                    Board / Univercity name 
                                                     <br />
                                                     बोर्ड/यूनिवर्सिटी का नाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Makhanlal Chaturvedi" />
@@ -969,7 +969,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Passing Year /
+                                                    Passing Year 
                                                     <br />
                                                     पासिंग ईयर <span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="2022" />
@@ -978,9 +978,9 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Grade / Percentage /
+                                                    Grade / Percentage
                                                     <br />
-                                                    क्षेणी (प्रतिशत)
+                                                    क्षेणी / प्रतिशत
                                                     <span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="99%" />
                                             </div>
@@ -994,7 +994,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Order Date /<br />
+                                                    First Appointment Order Date <br />
                                                     प्रथम नियुक्ति आदेश दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20.12.2021" />
                                             </div>
@@ -1002,7 +1002,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Department /<br />
+                                                    First Appointment Department <br />
                                                     प्रथम नियुक्ति विभाग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
                                             </div>
@@ -1010,7 +1010,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Employee’s Designation Type /<br />
+                                                    Employee’s Designation Type<br />
                                                     कर्मचारी का पदनाम प्रकार<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Teaching" />
                                             </div>
@@ -1018,7 +1018,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Designation /<br />
+                                                    First Appointment Designation <br />
                                                     प्रथम नियुक्ति पदनाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Teacher" />
                                             </div>
@@ -1027,7 +1027,7 @@
                                         <div class="col-md-3 mt-4">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Pay scale /<br />
+                                                    First Appointment Pay scale <br />
                                                     प्रथम नियुक्ति वेतनमान<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20600" />
                                             </div>
@@ -1035,7 +1035,7 @@
                                         <div class="col-md-3 mt-4">
                                             <div class="form-group">
                                                 <label>
-                                                    Parent Department /<br />
+                                                    Parent Department <br />
                                                     मूल विभाग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="-" />
                                             </div>
@@ -1043,7 +1043,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    School/Institute/Office Address of First Posting /<br />
+                                                    School/Institute/Office Address of First Posting <br />
                                                     प्रथम पोस्टिंग के स्कूल/संस्थान/कार्यालय का पता<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="101 Arera Hills, Bhopal" />
                                             </div>
@@ -1052,7 +1052,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Recent Appointment Department/<br />
+                                                    Recent Appointment Department<br />
                                                     हाल ही में नियुक्ति विभाग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="IT" />
                                             </div>
@@ -1061,7 +1061,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Samvilian Order No. /<br />
+                                                    Samvilian Order No. <br />
                                                     संविलियन आदेश क्रमांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="569894545" />
                                             </div>
@@ -1069,7 +1069,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Samvilian Order Date /<br />
+                                                    Samvilian Order Date <br />
                                                     संविलियन आदेश दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/11/2022" />
                                             </div>
@@ -1077,23 +1077,23 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Employee Retirement Date /<br />
+                                                    Employee Retirement Date <br />
                                                     कर्मचारी सेवानिवृत्ति दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/11/2082" />
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Whether Working/Posted in Other Department on Deputation/Transfer /<br />
+                                                    Whether Working/Posted in Other Department on Deputation/Transfer <br />
                                                     क्या प्रतिनियुक्ति/स्थानांतरण पर अन्य विभाग में कार्यरत/तैनात है<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Working in Other Department/Organization on Deputation Transfer /<br />
+                                                    Working in Other Department/Organization on Deputation Transfer <br />
                                                     प्रतिनियुक्ति स्थानान्तरण पर अन्य विभाग/संगठन में कार्यरत<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
@@ -1107,7 +1107,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Payroll Office Type /
+                                                    Payroll Office Type 
                                                     <br />
                                                     पेरोल कार्यालय का प्रकार<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
@@ -1117,7 +1117,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Type of Post /
+                                                    Type of Post 
                                                     <br />
                                                     पद का प्रकार<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Teaching" />
@@ -1126,7 +1126,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Class /
+                                                    Class 
                                                     <br />
                                                     कक्षा<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Class 3" />
@@ -1135,7 +1135,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Pay Commission /
+                                                    Pay Commission 
                                                     <br />
                                                     वेतन आयोग
                                                     <span style="color: red">*</span></label>
@@ -1145,7 +1145,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Grade Pay /
+                                                    Grade Pay 
                                                     <br />
                                                     ग्रेड पे
                                                     <span style="color: red">*</span></label>
@@ -1155,7 +1155,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Pay Scale /
+                                                    Pay Scale 
                                                     <br />
                                                     वेतनमान<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="15600-39100" />
@@ -1164,7 +1164,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Level /
+                                                    Level 
                                                     <br />
                                                     स्तर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Level - 3" />
@@ -1173,7 +1173,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Basic Pay /
+                                                    Basic Pay 
                                                     <br />
                                                     मूल वेतन<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="15600-39100" />
@@ -1182,16 +1182,16 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Employee Department /
+                                                    Employee Department 
                                                     <br />
                                                     कर्मचारी विभाग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Current Appointment Joining Date /
+                                                    Current Appointment Joining Date 
                                                     <br />
                                                     वर्तमान नियुक्ति में शामिल होने का दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="12.12.2023" />
@@ -1206,7 +1206,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    IFSC Code /
+                                                    IFSC Code 
                                                     <br />
                                                     आईएफएससी कोड<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="BARB0ASHOKA" />
@@ -1216,7 +1216,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    EPF No. /
+                                                    EPF No. 
                                                     <br />
                                                     ईपीएफ नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="4646416464165" />
@@ -1225,7 +1225,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    GPF No. /
+                                                    GPF No. 
                                                     <br />
                                                     जीपीएफ नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6546541564641" />
@@ -1234,7 +1234,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    NPS No. /
+                                                    NPS No. 
                                                     <br />
                                                     एनपीएस नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="5614654465445" />
@@ -1243,7 +1243,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Group Insurance No. /
+                                                    Group Insurance No. 
                                                     <br />
                                                     समूह बीमा संख्या<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="45334343546G" />
@@ -1252,7 +1252,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Gratuity No. /
+                                                    Gratuity No. 
                                                     <br />
                                                     ग्रेच्युटी संख्या<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="45454146546" />
@@ -1261,7 +1261,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    EGLS No. /
+                                                    EGLS No. 
                                                     <br />
                                                     ईजीएलएस नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="65595662131" />
@@ -1270,7 +1270,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    EDLI No. /
+                                                    EDLI No. 
                                                     <br />
                                                     ईडीएलआई नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="846451151564" />
@@ -1279,7 +1279,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>
-                                                    ESIC No. /
+                                                    ESIC No. 
                                                     <br />
                                                     ईएसआईसी नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="4644641464646" />
@@ -1291,7 +1291,8 @@
                                 <div class="row align-items-end justify-content-center">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Verification Status / सत्यापन स्थिति<span style="color: red">*</span></label>
+                                            <label>Verification Status 
+                                                <br />सत्यापन स्थिति<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Verified" />
                                         </div>
                                     </div>

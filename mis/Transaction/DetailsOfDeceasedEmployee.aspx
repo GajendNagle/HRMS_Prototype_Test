@@ -41,7 +41,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Decide on Pending Applications at DEO Level / डी.ई.ओ. लेवल पर लंबित आवेदनों पर निर्णय करें </h5>
+                    <h5 class="card-title">Decide on Pending Applications at DEO Level <br /> डी.ई.ओ. लेवल पर लंबित आवेदनों पर निर्णय करें </h5>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Employee Code /<br />
+                                Employee Code <br />
                                 कर्मचारी कोड <span style="color: red">*</span></label>
                             <input name="ename" value="BA3784" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -60,7 +60,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Deceased Employee Name /<br />
+                                Deceased Employee Name <br />
                                 दिवंगत कर्मचारी का नाम <span style="color: red">*</span></label>
                             <input name="ename" value="Iqbal Husain Mansuri" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -68,7 +68,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Gender /<br />
+                                Gender <br />
                                 लिंग<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Male</option>
@@ -80,7 +80,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Cast /<br />
+                                Cast <br />
                                 कैटेगरी<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">OBC</option>
@@ -94,7 +94,7 @@
                         <div class="form-group">
                             <br />
                             <label>
-                                Last Posting Disrict /<br />
+                                Last Posting Disrict <br />
                                 अंतिम पोस्टिंग जिला<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Shajapur</option>
@@ -105,7 +105,7 @@
                         <div class="form-group">
                             <br />
                             <label>
-                                Deceased Employee Cadre /<br />
+                                Deceased Employee Cadre <br />
                                 दिवंगत कर्मचारी कैडर<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Regular Class-III</option>
@@ -115,8 +115,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Deceased Officer / Employee Designation /<br />
-                                दिवंगत अधिकारी / कर्मचारी पदनाम <span style="color: red">*</span></label>
+                                Deceased Officer/Employee Designation <br />
+                                दिवंगत अधिकारी/कर्मचारी पदनाम <span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">Accountant</option>
                             </select>
@@ -125,15 +125,15 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Last School / Office and Employee Address /<br />
-                                अंतिम स्कूल / कार्यालय और कर्मचारी का पता<span style="color: red">*</span></label>
+                                Last School/Office and Employee Address <br />
+                                अंतिम स्कूल/कार्यालय और कर्मचारी का पता<span style="color: red">*</span></label>
                             <input class="form-control" type="text" value="BEO, SHAJAPUR" />
                         </div>
                     </div>
                     <div id="handipaceType" class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Cause of Death /<br />
+                                Cause of Death <br />
                                 मृत्यु का कारण <span style="color: red">*</span></label>
                             <input class="form-control" value="कोविड-19 संक्रमण" type="text" />
                         </div>
@@ -141,7 +141,7 @@
                     <div id="HandicapePercentage" class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Death Date /<br />
+                                Death Date <br />
                                 मृत्यु दिनाँक <span style="color: red">*</span></label>
                             <input class="form-control" value="27/04/2021" type="text" />
                         </div>
@@ -149,7 +149,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Number of Family Members of Deceased Employee /<br />
+                                Number of Family Members of Deceased Employee <br />
                                 दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>7</option>
@@ -159,7 +159,7 @@
                     <div class="col-md-3" id="DivCriticalIllness">
                         <div class="form-group">
                             <label>
-                                Department Name /<br />
+                                Department Name <br />
                                 विभाग का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option>Education</option>
@@ -169,7 +169,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Application Received Date /<br />
+                                Application Received Date <br />
                                 आवेदन प्राप्त दिनांक<span style="color: red">*</span></label>
                             <input class="form-control" type="text" value="12/06/2021" />
                         </div>
@@ -291,7 +291,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>आवेदन की स्थिति /
+                            <label>आवेदन की स्थिति 
                                 <br />
                                 Application Status<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="आवेदन को संभागीय आयुक्त लोक शिक्षण फॉरवर्ड किया गया है" autocomplete="off" />
@@ -299,7 +299,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Remark /
+                            <label>Remark 
                                 <br />
                                 टिप्पणी <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" value="शाजापुर जिले एवं संभाग में पद रिक्त नहीं होने से" autocomplete="off" />
@@ -375,7 +375,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Action /<br />
+                                Action <br />
                                 कार्रवाई करें<span style="color: red">*</span></label>
                             <select class="form-control select2" id="Actionddl" onchange="ShowHideHandicape()">
                                 <option>--Select--</option>
@@ -389,7 +389,7 @@
                     <div class="col-md-3" id="div2">
                         <div class="form-group">
                             <label>
-                                To which Post Does the Applicant Want to be Appointed? /<br />
+                                To which Post Does the Applicant Want to be Appointed? <br />
                                 आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
                                 <option value="">--Select--</option>
@@ -402,16 +402,16 @@
                     <div class="col-md-3" id="DivReason">
                         <div class="form-group">
                             <label>
-                                Reason of Rejectance/ Return
+                                Reason of Rejectance/Return
             <br />
-                                अस्वीकार्य / वापसी के कारण <span style="color: red">*</span></label>
+                                अस्वीकार्य/वापसी के कारण <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
                     </div>
                     <div class="col-md-4" id="Mydocu" style="display: none;">
                         <div class="form-group">
                             <label>
-                                Upload Document /<br />
+                                Upload Document <br />
                                 दस्तावेज अपलोड करें<span style="color: red">*</span></label>
                             <asp:FileUpload runat="server" CssClass="form-control"></asp:FileUpload>
                         </div>
@@ -426,7 +426,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Appointment Letter Number /<br />
+                                Appointment Letter Number <br />
                                 नियुक्ति पत्र संख्या <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -434,7 +434,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Appointment Order Number /<br />
+                                Appointment Order Number <br />
                                 नियुक्ति आदेश संख्या<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -442,7 +442,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>
-                                Date of Letter /<br />
+                                Date of Letter <br />
                                 पत्र का दिनांक <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -450,7 +450,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>
-                                Position Appointed to Applicant /<br />
+                                Position Appointed to Applicant <br />
                                 आवेदक नियुक्त पद<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -460,7 +460,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>
-                                Place of Posting /<br />
+                                Place of Posting <br />
                                 पोस्टिंग की जगह<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
                         </div>
@@ -470,7 +470,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Order Number /
+                                Order Number 
                                 <br />
                                 क्रम संख्या<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
@@ -479,7 +479,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Check No. /
+                                Check No. 
                                 <br />
                                 चेक नंबर<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
@@ -488,7 +488,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Payment Date /
+                                Payment Date 
                                 <br />
                                 भुगतान दिनांक<span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />
@@ -497,7 +497,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Payment /
+                                Payment 
                                 <br />
                                 भुगतान <span style="color: red">*</span></label>
                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="" />

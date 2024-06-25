@@ -13,7 +13,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--   <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">NPS Report</h4>
         </div>
@@ -32,12 +32,48 @@
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
+            <div class="card-body">--%>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Payroll')">
+                                <span>Reports
+                                </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>NPS Report</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">NPS Report/
+
+एन.पी.एस. रिपोर्ट</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
             <fieldset>
-                <legend>NPS Report Month Wise</legend>
+                <legend>NPS Report Month Wise/एन.पी.एस. रिपोर्ट माहवार</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type<span style="color: red">*</span></label>
+                            <label>Office Type<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -61,7 +97,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Year<span style="color: red">*</span></label>
+                            <label>Year<br />
+                                वर्ष<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -75,7 +112,8 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Month<span style="color: red">*</span></label>
+                            <label>Month<br />
+                                माह<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">January</option>
@@ -89,7 +127,8 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Type of Post<span style="color: red">*</span></label>
+                            <label>Type of Post<br />
+                                पोस्ट का प्रकार<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">All</option>
@@ -109,7 +148,7 @@
                     </div>
 
 
-                    <div class="col-md-2">
+                    <%--   <div class="col-md-2">
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="   btn-block btn btn-success  btn-rounded">Search</button>
                         </div>
@@ -118,13 +157,21 @@
                         <div class="form-group">
                             <a href="Rpt_NpsReport.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
                         </div>
+                    </div>--%>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="myFunction()" class=" btn btn-success w-lg btn-rounded">Search</button>
+                            <a href="Rpt_NpsReport.aspx" class=" btn btn-outline-danger w-lg btn-rounded">Clear</a>
+                        </div>
                     </div>
                 </div>
 
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>NPS Report:</legend>
+                    <legend>NPS Report/
+एन.पी.एस. रिपोर्ट :</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -142,20 +189,29 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr>
-                                        <th>Sr.No.</th>
-                                        <th>Employee Name</th>
-                                        <th>Pan No.</th>
-                                        <th>Designation</th>
-                                        <th>Date Of Payment </th>
-                                        <th>Paid Salary</th>
-                                        <th>NPS %</th>
-                                        <th>NPS Deduction</th>
-                                        <th>Date of Deposit</th>
-                                        <th>Challan No.</th>
-
-
+                                    <tr style="white-space:nowrap;">
+                                        <th>Sr.No.<br />
+                                            क्रमांक</th>
+                                        <th>Employee Name<br />
+                                            कर्मचारी का नाम</th>
+                                        <th>Pan No.<br />
+                                            पैन नंबर</th>
+                                        <th>Designation<br />
+                                            पद</th>
+                                        <th>Date Of Payment<br />
+                                            भुगतान की तारीख</th>
+                                        <th>Paid Salary<br />
+                                            वेतन भुगतान</th>
+                                        <th>NPS %<br />
+                                            एन.पी.एस. %</th>
+                                        <th>NPS Deduction<br />
+                                            एन.पी.एस कटौती</th>
+                                        <th>Date of Deposit<br />
+                                            जमा की तारीख</th>
+                                        <th>Challan No.<br />
+                                            चालान संख्या</th>
                                     </tr>
+
                                     <tr>
                                         <td>1</td>
                                         <td>Anirudh Chaturvedi</td>
