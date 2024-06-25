@@ -163,7 +163,7 @@
                                 </div>
                             </div>
                         </div>
-                        <br />
+                        <hr />
                         <div class="row">
                             <div class="col-md-3">
                                 <input type="button" class="s3-btn btn btn-success" name="Open" onclick="popupOpen();" value="विद्यार्थी की जानकारी देखे" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">

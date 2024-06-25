@@ -139,7 +139,7 @@
                 </fieldset>
 
                 <fieldset id="Report">
-                    <legend>ब्लॉक-वार गणवेश की मांग </legend>
+                    <legend>ब्लॉक-वार यूनिफार्म की मांग </legend>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">

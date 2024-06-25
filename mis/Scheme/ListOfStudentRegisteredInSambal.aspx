@@ -146,9 +146,13 @@
                             </div>
                         </div>
                         <hr />
-                        <div class="col-md-4 text-center">
+                        </div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-rounded">छात्रों की सूची</button>
+                                <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-border w-lg">छात्रों की सूची</button>
+
+                                <a href="ListOfStudentRegisteredInSambal.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                             </div>
                         </div>
                     </div>

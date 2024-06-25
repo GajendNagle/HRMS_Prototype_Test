@@ -49,7 +49,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-9">
-                    <h4 class="card-title">District Wise Scheme Details / जिलेवार योजना विवरण
+                    <h4 class="card-title">District Wise Scheme Details / जिलावार योजना विवरण
                     </h4>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         <div class="card-body ">
 
             <fieldset>
-                <legend>District Wise Scheme Details / जिलेवार योजना विवरण</legend>
+                <legend>District Wise Scheme Details / जिलावार योजना विवरण</legend>
                 <div class="row">
 
                     <div class="col-lg-12">

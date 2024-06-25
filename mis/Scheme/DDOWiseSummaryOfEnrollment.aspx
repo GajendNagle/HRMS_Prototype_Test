@@ -49,7 +49,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <h4 class="card-title">DDO-Wise Summary of Enrollment in Schools / स्कूलों में नामांकन का डीडीओ-वार सारांश
+                    <h4 class="card-title">DDO-Wise Summary of Enrollment in Schools <br /> स्कूलों में नामांकन का डीडीओ-वार सारांश
                     </h4>
                 </div>
             </div>
@@ -121,6 +121,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr />
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">

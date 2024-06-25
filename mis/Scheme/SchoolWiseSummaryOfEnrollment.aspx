@@ -113,7 +113,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>School<br />स्कूल</label>
+                                    <label>Select <br />स्कूल का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option>--Select--</option>
                                         <option>MS Barotha</option>
@@ -148,6 +148,7 @@
                                 </div>
                             </div>
                             </div>
+                        <hr />
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">

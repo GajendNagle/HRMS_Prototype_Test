@@ -36,14 +36,14 @@
             <div class="row align-items-end">
                 <div class="col-lg-9">
                     <h4 class="card-title">District Wise Uniform Demand & Distribution Progress <br />
-जिलेवार  यूनिफार्म मांग एवं वितरण प्रगति</h4>
+जिलावार  यूनिफार्म मांग एवं वितरण प्रगति</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="mt-3">
                 <fieldset>
-                    <legend>District Wise Uniform Demand & Distribution Progress / जिलेवार  यूनिफार्म मांग एवं वितरण प्रगति</legend>
+                    <legend>District Wise Uniform Demand & Distribution Progress / जिलावार यूनिफार्म मांग एवं वितरण प्रगति</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>Select Academic Year<br />शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
@@ -116,7 +116,7 @@
                      <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-border w-lg" onclick="Show();">जिले-वार यूनिफार्म की मांग देखे</button>
+                                <button type="button" id="btnShowStudentDetails" class="btn btn-success btn-border w-lg" onclick="Show();">जिलावार यूनिफार्म की मांग देखे</button>
                                 <a href="GanaveshSHGReportDistrictWise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                 </fieldset>
 
                 <fieldset id="Report">
-                    <legend>District Wise Uniform Demand / जिले-वार यूनिफार्म की मांग</legend>
+                    <legend>District Wise Uniform Demand / जिला-वार यूनिफार्म की मांग</legend>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">

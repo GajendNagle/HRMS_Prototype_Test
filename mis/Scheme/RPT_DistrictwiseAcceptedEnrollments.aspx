@@ -64,7 +64,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Academic Year<br />शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
+                                    <label>Academic Year<br />शैक्षणिक वर्ष<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <%-- <option value="--Select--">--Select--</option>--%>
                                         <option value="2021-22">2021-22</option>

@@ -78,8 +78,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name<br />
-                                जिला का चयन करें<span class="text-danger">*</span></label>
+                            <label>District Name<br />
+                                जिला का नाम<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">- Select District -</option>
                                 <option selected="selected" value="51">AGAR MALWA आगर मालवा</option>
@@ -140,8 +140,8 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Academic Year<br />
-                                शैक्षणिक वर्ष का चयन करें<span class="text-danger">*</span></label>
+                            <label>Academic Year<br />
+                                शैक्षणिक वर्ष<span class="text-danger">*</span></label>
                             <select class="form-control select2">
                                 <option value="0">-Select-</option>
                                 <option value="37">2024-25</option>

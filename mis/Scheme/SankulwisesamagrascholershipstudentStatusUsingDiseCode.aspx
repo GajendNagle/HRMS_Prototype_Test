@@ -66,8 +66,8 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Academic Year<br />
-                                        शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
+                                    <label> Academic Year<br />
+                                        शैक्षणिक वर्ष<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <%-- <option value="--Select--">--Select--</option>--%>
                                         <option value="2021-22">2021-22</option>
@@ -88,8 +88,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Enter DISE Code<br />
-                                        डाइस कोड दर्ज करें<span style="color: red">*</span></label>
+                                    <label> DISE Code<br />
+                                        डाइस कोड<span style="color: red">*</span></label>
                                     <input type="text" class="form-control" value="23040302802" autocomplete="off" placeholder="DISE Code" />
                                 </div>
                             </div>
@@ -132,8 +132,10 @@
 
                                 </div>
                             </div>
-
-                            <div class="col-md-4 text-center">
+                            </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <asp:Button runat="server" ID="btnShowSummary" CssClass="btn btn-success btn-border btn w-lg" Text="Show" OnClick="btnShowSummary_Click" />
                                     <a href="SankulwisesamagrascholershipstudentStatusUsingDiseCode.aspx" class="btn btn-outline-danger btn-border btn w-lg">Clear</a>
