@@ -258,7 +258,7 @@
                                             <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-success btn w-lg" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;">Joining</asp:LinkButton>
                                             <%-- <button type="button" class=" Alert-Save btn btn-success btn-rounded" onclick="showhide()">Comfirm Joining</button>--%>
 
-                                            <%--     <a class="Alert-Delete">Confoirm Joining</a></td>--%>
+                                            <%--     <a class="Alert-Delete">Confoirm Joining</a>--%></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -344,7 +344,6 @@
                 </div>
                 <!-- /.modal-dialog -->
             </div>
-
             <!--Description-->
             <fieldset id="dcp" runat="server">
                 <legend>Description / विवरण</legend>
@@ -420,7 +419,7 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Approve Successfully!',
+                                text: 'Approved Successfully!',
                                 timer: 2000
                                 // animation: false,
                                 // customClass: {
