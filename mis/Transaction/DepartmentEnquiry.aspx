@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
 
         <div class="row">
             <div class="col-12">
@@ -85,7 +84,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="fw-bold text-dark">
-                                            Employee Unique Id /<br />
+                                            Employee Unique Id <br />
                                             अपचारी लोक सेवक की यूनिक आई.डी. <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ID="txtEmployeeId" CssClass="form-control" placeholder="Search" AutoComplete="off">
@@ -107,7 +106,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee Name /<br/>
+                                            Employee Name <br />
                                             कर्मचारी का नाम<span style="color: red">*</span></label>
                                         <input name="txtEmpName" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Arjun Talwar" />
                                     </div>
@@ -115,7 +114,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Unique ID /
+                                            Unique ID 
                                     <br/>
                                             यूनिक आई.डी<span style="color: red">*</span></label>
                                         <input name="txtUniqueID" type="text" class="form-control" readonly="" autocomplete="off" placeholder="AR4781" />
@@ -124,7 +123,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Designation /
+                                            Designation 
                                     <br/>
                                             पदनाम <span style="color: red">*</span></label>
                                         <input name="txtDesignation" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Teacher(UDT)" />
@@ -133,7 +132,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            District /<br/>
+                                            District <br />
                                             ज़िला<span style="color: red">*</span></label>
                                         <input name="txtDistrict" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Bhopal" />
                                     </div>
@@ -141,7 +140,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Block /<br/>
+                                            Block <br />
                                             ब्लॉक<span style="color: red">*</span></label>
                                         <input name="txtBlock" type="text" class="form-control" readonly="" autocomplete="off" placeholder="GovindPura" />
                                     </div>
@@ -149,7 +148,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Sankul Code/ Name /
+                                            Sankul Code / Name 
                     <br />
                                             संकुल कोड / नाम<span style="color: red">*</span></label>
                                         <input name="txtSankulName" type="text" class="form-control" readonly="" autocomplete="off" placeholder="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
@@ -158,7 +157,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            School /<br/>
+                                            School <br/>
                                             स्कूल <span style="color: red">*</span></label>
                                         <input name="txtBlock" type="text" class="form-control" readonly="" autocomplete="off" placeholder="VINAYAK PUBLIC SCHOOL TARRAKHURD SCHOOL" />
                                     </div>
@@ -176,7 +175,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Name of departmental investigating officer /<br />
+                                            Name of departmental investigating officer <br />
                                             विभागीय जांचकर्ता अधिकारी का नाम<span style="color: red">*</span></label>
                                         <input name="txtEmpName" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of departmental investigating officer" />
                                     </div>
@@ -184,7 +183,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Name of Presenting Officer /<br />
+                                            Name of Presenting Officer <br />
                                             प्रस्तुतकर्ता अधिकारी का नाम<span style="color: red">*</span></label>
                                         <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="Enter Name of Presenting Officer" />
                                     </div>
@@ -193,14 +192,14 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Notice to delinquent officer to appear before investigating officer/ जाँच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सुचना<span style="color: red">*</span></label>
+                                            Notice to delinquent officer to appear before investigating officer / जाँच अधिकारी के समक्ष अपचारी अधिकारी को प्रस्तुत होने की सुचना<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Suspension Date /<br />
+                                            Suspension Date <br />
                                             निलंबन दिनांक<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
                                     </div>
@@ -208,7 +207,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Imputed Date /<br />
+                                            Imputed Date <br />
                                             आरोपित दिनांक<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
                                     </div>
@@ -216,7 +215,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Brief Date of Departmental Enquiry /
+                                            Brief Date of Departmental Enquiry 
                                     <br />
                                             विभागीय जााँच की संक्षिप्त दिनांक<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
@@ -227,7 +226,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            First hearing of the criminal before the investigating officer and reading of the charge sheet /<br />
+                                            First hearing of the criminal before the investigating officer and reading of the charge sheet <br />
                                             जाँच अधिकारी के समक्ष अपचारी की प्रथम सुनवाई एवं आरोप पत्र का वाचन<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
                                     </div>
@@ -235,7 +234,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Presentation and cross-examination of prosecution evidence /<br />
+                                            Presentation and cross-examination of prosecution evidence <br />
                                             अभियोजन साक्ष्य  की प्रस्तुति एवं प्रतिपरीक्षण  <span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
                                     </div>
@@ -244,7 +243,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Presentation and cross-examination of defense supporting evidence /
+                                            Presentation and cross-examination of defense supporting evidence 
                                     <br />
                                             बचाव सहायक साक्ष्य  की प्रस्तुति  एवं प्रतिपरीक्षण<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
@@ -253,7 +252,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Presenting the Presenting Officer's Brief and Making it Available the Delinquent Employee /
+                                            Presenting the Presenting Officer's Brief and Making it Available the Delinquent Employee 
                                             <br />
                                             प्रस्तुतकर्ता  अधिकारी  की  ब्रीफ  प्रस्तुति  एवं अपचारी  कर्मचारी को उपलब्ध करना<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
@@ -262,7 +261,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Delinquent the employee's counter  argument on brief /<br />
+                                            Delinquent the employee's counter  argument on brief <br />
                                             ब्रीफ पर अपचारी कर्मचारी का प्रतिवाद <span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
                                     </div>
@@ -270,7 +269,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
-                                            Dispatch of final investigation report to disciplinary officer / 
+                                            Dispatch of final investigation report to disciplinary officer 
                                             <br />
                                             अंतिम जाँच प्रतिवेदन का अनुशासकीय  अधिकारी को प्रेषण<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" autocomplete="off" />
@@ -279,7 +278,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>
-                                            Remark/
+                                            Remark
                                 रिमार्क  <span style="color: red">*</span></label>
                                         <%--<input type="text" class="form-control" autocomplete="off" placeholder="Enter Remark" />--%>
                                         <asp:TextBox runat="server" placeholder="Enter Remark" CssClass="form-control" TextMode="MultiLine" MaxLength="200" AutoComplete="off"></asp:TextBox>
@@ -299,7 +298,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

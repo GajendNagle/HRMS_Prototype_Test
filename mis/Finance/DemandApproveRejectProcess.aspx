@@ -26,15 +26,15 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Demand Approve Reject Process /
-                                मांग स्वीकृत अस्वीकार प्रक्रिया</h4>
+                            <h4 class="card-title">Demand Approve/ Reject Process /
+                                मांग स्वीकृत /अस्वीकृत प्रक्रिया</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                      <fieldset>
-                        <legend>Demand Approve Reject Process /
-                                मांग स्वीकृत अस्वीकार प्रक्रिया</legend>
+                        <legend>Demand Details /
+                                मांग विवरण</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -48,7 +48,7 @@
                                 <div class="form-group">
                                     <label>
                                     Select Month /
-                                        महीना का चयन करें<span style="color: red;"> *</span></label>
+                                        माह का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                          <option value="6">June </option>
                                         <option value="1">January </option>
@@ -70,7 +70,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप का चयन करें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Annual</option>
@@ -82,7 +82,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                         ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
+                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -100,7 +100,7 @@
                         <div class="form-group">
                             <label>
                                 Select Office Name/<br />
-                                ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
+                                कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -144,15 +144,18 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
+                                                </th>
+                                                <th>CheckBox /<br />
+                                                    चेक बॉक्स
                                                 </th>
                                                 <th>Ledger Code /
                                             <br />
                                                     बहीखाता कोड
                                                 <th>Ledger Name /<br />
-                                                    बहीखाता नाम</th>
+                                                    बहीखाता का नाम</th>
                                                 <th>Date /
                                             <br />
                                                     दिनांक 
@@ -161,15 +164,17 @@
                                             <br />
                                                     दिनांकवार कुल
                                                 </th>
-                                                <th>Expense Total /
+                                                <th>Status /
                                             <br />
-                                                    व्यय कुल
+                                                    स्थिति
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>1</span>
+                                                </td>
+                                                <td align="center" valign="middle" ><input id="ContentBody_chck1" type="checkbox" name="ctl00$ContentBody$chck1" />
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <span>10.01.01</span>
@@ -178,17 +183,19 @@
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>543000.00</a>
+                                                    <a>02-02-2023</a>
                                                 </td>
                                                  <td align="center" valign="middle">
                                                     <a>543000.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>0.00</a>
+                                                    <a>Pending</a>
                                                 </td>
                                             </tr>
                                           <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
+                                                </td>
+                                              <td align="center" valign="middle" ><input id="ContentBody_chck1" type="checkbox" name="ctl00$ContentBody$chck1" />
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <span>10.02.01</span>
@@ -197,17 +204,19 @@
                                                     <a>Medical Expense Reimbursement</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>100054.00</a>
+                                                    <a>07-06-2023</a>
                                                 </td>
                                                  <td align="center" valign="middle">
                                                     <a>100054.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>0.00</a>
+                                                    <a>Pending</a>
                                                 </td>
                                             </tr>
                                         <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
+                                                </td>
+                                            <td align="center" valign="middle" ><input id="ContentBody_chck1" type="checkbox" name="ctl00$ContentBody$chck1" />
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <span>10.03.01</span>
@@ -216,13 +225,34 @@
                                                     <a>Stationery, Font Copy, Bidding</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>10000.00</a>
+                                                    <a>05-08-2023</a>
                                                 </td>
                                                  <td align="center" valign="middle">
                                                     <a>10000.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>0.00</a>
+                                                    <a>Pending</a>
+                                                </td>
+                                            </tr>
+                                             <tr role="row" class="odd">
+                                                <td align="center" valign="middle"><span></span>
+                                                </td>
+                                            <td align="center" valign="middle" >
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <span></span>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a></a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a><b>Total</b></a>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <a>743054.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a></a>
                                                 </td>
                                             </tr>
                                             <!-- Add more rows as needed -->
@@ -234,8 +264,9 @@
                         </div>
                             <div class="col-md-12 justify-content-center">
                             <div class="form-group text-center">
-                                <button type="button" class=" Alert-Approve btn btn-outline-success btn-rounded">Approve</button>
-                            <a class="Alert-Reject  btn btn-outline-danger btn-rounded">Reject</a>
+                                <button type="button" class=" Alert-Approve btn btn-outline-success btn-border w-lg">Approve</button>
+                            <a class="Alert-Reject  btn btn-outline-danger w-lg btn-border">Reject</a>
+                                <a id="clearfirst" href="DemandApproveRejectProcess.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
                     </fieldset>

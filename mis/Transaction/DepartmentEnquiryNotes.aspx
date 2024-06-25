@@ -33,13 +33,12 @@
         </p>
     </div>
 
-    <div class="content-wrapper">
-        <div class="container-fluid">
+   
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">About Departmental Enquiry<br />
+                            <h4 class="card-title">About Departmental Enquiry /
                                 विभागीय पूछताछ के बारे में</h4>
                         </div>
                     </div>
@@ -98,8 +97,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

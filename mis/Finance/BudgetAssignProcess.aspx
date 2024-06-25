@@ -26,20 +26,20 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h4 class="card-title">Budget Assign Process /
-                                बजट आवंटित करने की प्रक्रिया</h4>
+                                बजट आवंटन प्रक्रिया</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
                         <legend>Budget Assign Process /
-                                बजट आवंटित करने की प्रक्रिया</legend>
+                                बजट आवंटन प्रक्रिया</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Select From Date /<br />
-                                        दिनांक से चुनें<span style="color: red;"> *</span></label>
+                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2023-12-10" />
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select To Date /<br />
-                                        दिनांक तक चुनें<span style="color: red;"> *</span></label>
+                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Checkbox/<br />
                                                     चेक बॉक्स
                                                 </th>

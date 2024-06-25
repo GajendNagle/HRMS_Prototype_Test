@@ -33,7 +33,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-            <div class="col-md-12">
+    <div class="col-md-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
             <h4 class="mb-sm-0"></h4>
             <div class="=page-title-right">
@@ -53,18 +53,18 @@
             </div>
         </div>
     </div>
-<div class="content-wrapper">
-    <div class="container-fluid">
-        <div class="card card-border-primary">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="card-title">Tour Apply/यात्रा के लिए आवेदन करें</h4>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Tour Apply / यात्रा के लिए आवेदन करें</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-body">
-<%--    <div class="content-wrapper">
+                <div class="card-body">
+                    <%--    <div class="content-wrapper">
         <!-- Main content -->
         <div class="container-fluid">
             <div class="row page-titles mb-4">
@@ -109,8 +109,8 @@
                     </nav>
                     <br />--%>
                     <fieldset>
-                        <legend>Tour Apply/यात्रा के लिए आवेदन करें</legend>
-                        <div class="row">
+                        <legend>Tour Apply / यात्रा के लिए आवेदन करें</legend>
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -200,40 +200,40 @@
                                         यात्रा का उद्देश्य
                                    <span style="color: red">*</span>
                                     </label>
-                                    <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
+                                    <textarea class="form-control" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
                                 </div>
                             </div>
 
 
-                                         <hr />
-<div class="col-md-12">
-    <div class="form-group">
-        <button type="button"  onclick="myFunction()" class="btn w-lg btn-success btn-border">Apply</button>
-        <a href="EmpTourApply.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
-<%--                            <div class="col-md-2 text-center" style="top: 3.3rem;">
+                            <hr />
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" onclick="myFunction()" class="btn w-lg btn-success btn-border">Apply</button>
+                                    <a href="EmpTourApply.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                </div>
+                            </div>
+                            <%--                            <div class="col-md-2 text-center" style="top: 3.3rem;">
                                 <button type="button" class="btn btn-success  btn-rounded Alert-Save " onclick="myFunction()">Apply</button>
                                 <a href="EmpTourApply.aspx" class="btn btn-danger  btn-rounded">Clear</a>
                             </div>--%>
                         </div>
                     </fieldset>
                     <fieldset id="show">
-                        <legend>Tour Detail/यात्रा विवरण</legend>
-                                                   <div class="row justify-content-end">
-<div class="col-md-4 text-end">
-    <div class="form-group">
-        <button class="btn btn-info btn-rounded w-55">Excel</button>
-        <button class="btn btn-info btn-rounded w-55">PDF</button>
-    </div>
-</div>
-<div class="col-md-3">
-    <div class="form-group"> 
-        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-    </div>
-</div>
-</div>
-             
+                        <legend>Tour Detail / यात्रा विवरण</legend>
+                        <div class="row justify-content-end">
+                            <div class="col-md-4 text-end">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="myTable">

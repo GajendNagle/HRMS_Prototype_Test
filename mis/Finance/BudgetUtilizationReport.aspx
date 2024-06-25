@@ -46,7 +46,7 @@
                                 <div class="form-group">
                                     <label>
                                     Select Month /
-                                        महीना का चयन करें<span style="color: red;"> *</span></label>
+                                        माह का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                          <option value="6">June </option>
                                         <option value="1">January </option>
@@ -68,7 +68,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type /<br />
-                                        हेड टाइप का चयन करें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                         <option value="1">Annual</option>
@@ -80,7 +80,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                         ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
+                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -98,7 +98,7 @@
                         <div class="form-group">
                             <label>
                                 Select Office Name/<br />
-                                ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
+                                कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -122,12 +122,12 @@
                     </fieldset>
                       <fieldset id="FS_Details" style="display: none">
                         <legend>Budget Utilization Report /
-                                बजट उपयोगिता रिपोर्ट</legend>
+                                बजट उपयोगिता जानकारी</legend>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <button class="btn btn-outline-secondary btn-sm btn-rounded w-55" onclick="openPDF()">Print</button>
-                                    <button class="btn btn-outline-success btn-sm btn-rounded w-55" onclick="exportFile()">Export</button>
+                                    <button class="btn btn-outline-secondary btn-border" onclick="openPDF()">Print</button>
+                                    <button class="btn btn-outline-success btn-border" onclick="exportFile()">Export</button>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                 <th>Sr. No. /<br />
                                                     क्र.सं.
                                                 </th>
@@ -150,18 +150,18 @@
                                             <br />
                                                     बहीखाता कोड
                                                 <th>Ledger Name /<br />
-                                                    बहीखाता नाम</th>
+                                                    बहीखाता का नाम</th>
                                                 <th>Allocation /
                                             <br />
-                                                    आवंटन 
+                                                    आवंटन राशि 
                                                 </th>
                                                 <th>Utilization /
                                             <br />
-                                                    उपयोगीकरण
+                                                    उपयोगी राशि
                                                 </th>
                                                 <th>% of Utilization/
                                             <br />
-                                                    % उपयोगीकरण
+                                                    उपयोगी राशि % 
                                                 </th>
                                             </tr>
                                         </thead>
@@ -292,6 +292,26 @@
         // Set default value to current financial year on page load
         $(document).ready(function () {
             //setDefaultFinancialYear();
-        });</script>
+        });
+
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
+
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+
+        function exportFile() {
+            var fileUrl = '../Document/HRMS_Document%20(1).pdf';
+            var a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'HRMS_Document.pdf';  // Replace with the desired file name
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+    </script>
 </asp:Content>
 

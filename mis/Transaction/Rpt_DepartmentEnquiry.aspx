@@ -37,20 +37,17 @@
             </u>
         </p>
     </div>
-
-    <div class="content-wrapper">
-        <div class="container-fluid">
-            <div class="card card-border-primary" id="divDataofAU5693" runat="server">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">Departmental Enquiry List<br />
-                                विभागीय पूछताछ सूची</h4>
-                        </div>
-                    </div>
+    <div class="card card-border-primary" id="divDataofAU5693" runat="server">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Departmental Enquiry List<br />
+                        विभागीय पूछताछ सूची</h4>
                 </div>
-                <div class="card-body">
-                    <%--<nav class="navbar navbar-expand-lg topbar ">
+            </div>
+        </div>
+        <div class="card-body">
+            <%--<nav class="navbar navbar-expand-lg topbar ">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,74 +80,77 @@
                         </div>
                     </nav>
                     <br />--%>
-                    <fieldset>
-                        <legend>Department Enquiry Report / विभाग पूछताछ रिपोर्ट</legend>
-                        <div class="row justify-content-end">
-                            <div class="col-md-4 text-end">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                                </div>
-                            </div>
+            <fieldset>
+                <legend>Department Enquiry Report / विभाग पूछताछ रिपोर्ट</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
-
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <table id="tblList" class="table table-bordered table-responsive-lg text-center">
-                                    <thead>
-                                        <tr class="align-text-top">
-                                            <th rowspan="2">Sr.No./<br />
-                                                सरल क्र.</th>
-                                            <th rowspan="2">Enquiry Order No. /<br />
-                                                विभाग आदेश क्र.</th>
-                                            <th rowspan="2">Enquiry Order Date /<br />
-                                                विभाग आदेश दिनांक</th>
-                                            <th colspan="2">Remark /<br />
-                                                रिमार्क</th>
-                                            <th rowspan="2">Close Order No./<br />
-                                                निराकरण आदेश क्र.</th>
-                                            <th rowspan="2">Close Order Date/<br />
-                                                निराकरण आदेश दिनांक</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Open Remark</th>
-                                            <th>Close Remark<br />
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>652325</td>
-                                            <td>01/01/2024</td>
-                                            <td>उपरोक्त कार्यवाही की जा रही है</td>
-                                            <td>Nil</td>
-                                            <td>Nil</td>
-                                            <td>Nil</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>652555</td>
-                                            <td>05/01/2024</td>
-                                            <td>Nil</td>
-                                            <td>न्यायालय के आदेश पर कर्मचारियों
-                                        <br />
-                                                को सभी दोषों से मुक्त किया जाता है</td>
-                                            <td>768594</td>
-                                            <td>10/01/2024</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                         </div>
-                    </fieldset>
+                    </div>
                 </div>
-            </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <table id="tblList" class="table table-bordered table-responsive-lg text-center">
+                            <thead>
+                                <tr class="align-text-top">
+                                    <th rowspan="2">Sr.No.<br />
+                                        सरल क्र.</th>
+                                    <th rowspan="2">Enquiry Order No.
+                                        <br />
+                                        विभाग आदेश क्र.</th>
+                                    <th rowspan="2">Enquiry Order Date
+                                        <br />
+                                        विभाग आदेश दिनांक</th>
+                                    <th colspan="2">Remark
+                                        <br />
+                                        रिमार्क</th>
+                                    <th rowspan="2">Close Order No.<br />
+                                        निराकरण आदेश क्र.</th>
+                                    <th rowspan="2">Close Order Date<br />
+                                        निराकरण आदेश दिनांक</th>
+                                </tr>
+                                <tr>
+                                    <th>Open Remark</th>
+                                    <th>Close Remark<br />
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>652325</td>
+                                    <td>01/01/2024</td>
+                                    <td>उपरोक्त कार्यवाही की जा रही है</td>
+                                    <td>Nil</td>
+                                    <td>Nil</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>652555</td>
+                                    <td>05/01/2024</td>
+                                    <td>Nil</td>
+                                    <td>न्यायालय के आदेश पर कर्मचारियों
+                                        <br />
+                                        को सभी दोषों से मुक्त किया जाता है</td>
+                                    <td>768594</td>
+                                    <td>10/01/2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

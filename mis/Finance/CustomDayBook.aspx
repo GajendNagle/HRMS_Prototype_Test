@@ -37,7 +37,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select From Date /
-                                        दिनांक से चयन करें<span style="color: red;"> *</span></label>
+                                       प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select To Date /
-                                        दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                                     <label>
                                         Select Office Type/
    <br />
-                                        ऑफिस टाइप का चयन करें<span style="color: red;"> *</span>
+                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -72,7 +72,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Office Name/<br />
-                                        ऑफिस नाम का चयन करें<span style="color: red;">*</span></label>
+                                         कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
@@ -98,8 +98,8 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <button class="btn btn-outline-secondary btn-sm btn-rounded w-55" onclick="openPDF()">Print</button>
-                                    <button class="btn btn-outline-success btn-sm btn-rounded w-55" onclick="exportFile()">Export</button>
+                                    <button class="btn btn-outline-secondary btn-border" onclick="openPDF()">Print</button>
+                                    <button class="btn btn-outline-success btn-border" onclick="exportFile()">Export</button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                             </h5>
                         </div><div class="row justify-content-center mb-0">
                             <h5>
-                                M.P State Minor Forest Produce(T&D)Co-op.Fed.Ltd,
+                                Directorate of Public Instruction,
                             </h5>
                         </div>
                         <div class="row justify-content-center mb-0">
@@ -120,19 +120,19 @@
                             <h5>01-04-2024  To 31-06-2024 
                             </h5>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr>
+                                            <tr align="center" valign="middle">
                                                <th> Voucher Date/<br />वाउचर दिनांक</th>
-                                               <th> Particulars/<br />विवरण</th>
-                                               <th> Vch Type /<br />वीसीएच प्रकार</th>
-                                               <th> Vch No. /<br />वीसीएच नं.</th>
+                                               <th> Ledger Name/<br />
+                                                    बहीखाता का नाम</th>
+                                               <th> Vch Type /<br />वाउचर प्रकार</th>
+                                               <th> Vch No. /<br />वाउचर नं.</th>
                                                <th> Office Name/<br /> कार्यालय का नाम</th>
-                                               <th> Debt Amount/<br /> ऋण राशि</th>
+                                               <th> Debt Amount/<br /> डेबिट राशि</th>
                                                <th> Credit Amount/<br /> क्रेडिट राशि</th>
                                                <th> Action/<br /> कार्रवाई</th>
                                                
@@ -140,7 +140,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr role="row" class="odd">
+                                            <tr role="row" class="odd" align="center" valign="middle">
                                                <td>01/04/2024</td>
                                                 <td>10.01.01</td>
                                                 <td>Payment</td>
@@ -148,10 +148,9 @@
                                                 <td>Head Office</td>
                                                 <td>1658951.00</td>
                                                 <td></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-eye" aria-hidden="true"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                               
+                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
-                                            <tr role="row" class="odd">
+                                            <tr role="row" class="odd" align="center" valign="middle">
                                               <td>01/04/2024</td>
                                                 <td>10.01.02</td>
                                                 <td>Receipt</td>
@@ -159,7 +158,7 @@
                                                 <td>Head Office</td>
                                                 <td></td>
                                                 <td>1131.00</td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-eye" aria-hidden="true"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>
@@ -176,5 +175,24 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
+     <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
+
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+
+        function exportFile() {
+            var fileUrl = '../Document/HRMS_Document%20(1).pdf';
+            var a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'HRMS_Document.pdf';  // Replace with the desired file name
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+     </script>
 </asp:Content>
 

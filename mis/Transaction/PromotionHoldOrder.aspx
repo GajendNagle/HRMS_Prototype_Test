@@ -68,7 +68,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Promotion Hold Orders/
+                    <h5 class="card-title">Promotion Hold Orders /
                 पदोन्नति होल्ड आदेश
                     </h5>
                 </div>
@@ -82,7 +82,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Choose an option/<br />
+                                Choose an option<br />
                                 विकल्प चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="ddlEmp" AutoPostBack="true" class="form-control select2" OnSelectedIndexChanged="ddlEmp_SelectedIndexChanged">
                                 <asp:ListItem Text="--Select--" Value="0" ></asp:ListItem>
@@ -95,7 +95,7 @@
                     <div class="col-md-3 mb-4" runat="server" visible="false" id="txtEmpID">
                         <div class="form-group">
                             <label>
-                                Employee Unique Id/<br />
+                                Employee Unique Id<br />
                                 कर्मचारी यूनिक आईडी<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control" />
 
@@ -104,7 +104,7 @@
                     <div class="col-md-3 mb-4" runat="server" visible="false" id="txtOrderNo">
                         <div class="form-group">
                             <label>
-                                Order No./<br />
+                                Order No.<br />
                                 आदेश संख्या:<span style="color: red">*</span></label>
                             <asp:TextBox runat="server" CssClass="form-control" />
                         </div>
@@ -124,8 +124,8 @@
                     <%--<div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group ">
-                                <%-- <asp:Button Text="Search" OnClick="Unnamed_Click" runat="server" class=" btn btn-success btn-rounded" validationgroup="a"/>--%>
-                    <%--  <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded" validationgroup="a">Search</button>
+                         <asp:Button Text="Search" OnClick="Unnamed_Click" runat="server" class=" btn btn-success btn-rounded" validationgroup="a"/>
+                         <button onclick="Hideshow()" type="button" class=" btn btn-success btn-rounded" validationgroup="a">Search</button>
                                 <a href="PromotionHoldOrder.aspx" class="btn btn-danger btn-rounded">Clear</a>
                             </div>
                         </div>--%>

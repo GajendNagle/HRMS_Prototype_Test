@@ -25,7 +25,7 @@
     <div class="card-body">
         <div runat="server" id="divOffice">
             <fieldset>
-                <legend>Ledger Creation /बही निर्माण</legend>
+                <legend>Ledger Creation /बही खाता निर्माण</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
@@ -67,7 +67,7 @@
                         <div class="form-group">
                             <label>
                                 Select Group Name/<br />
-                                समूह का नाम चयन करे.<span style="color: red;">*</span></label>
+                                सूची से समूह का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Direct Expenses(Expenses)</option>
@@ -97,7 +97,8 @@
                         <div class="form-group">
                             <label>
                                 Select Bank Type/<br />
-                                बैंक प्रकार का चयन करे</label>
+                                सूची से बैंक प्रकार का चयन करे
+                            </label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Current Account</option>
@@ -114,8 +115,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter A/c Holder Name/<br />
-                                खाता धारक का नाम दर्ज करें
+                                Enter A/c Holder Name (English)/<br />
+                                खाता धारक का नाम अंग्रेजी में दर्ज करें
                             </label>
                             <input type="text" class="form-control" Value="Ram Yadav" />
                         </div>
@@ -140,8 +141,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Bank Name/<br />
-                                बैंक का नाम दर्ज करें</label>
+                                Enter Bank Name(English)/<br />
+                                बैंक का नाम अंग्रेजी में दर्ज करें</label>
                             <input type="text" class="form-control" placeholder="Enter Bank Name" />
                         </div>
                     </div>
@@ -149,14 +150,14 @@
                         <div class="form-group">
                             <label>
                                 Enter Bank Branch/<br />
-                                बैंक शाखा दर्ज करें</label>
+                                बैंक शाखा का नाम दर्ज करें</label>
                             <input type="text" class="form-control" placeholder="Enter Bank Branch" />
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Mailing Details /मेल विवरण</legend>
+                <legend>Mailing Details /मैलिंग विवरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -232,7 +233,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Tax Registration Details /कर पंजीकरण विवरण</legend>
+                <legend>Tax Registration Details / पंजीकरण विवरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -262,7 +263,7 @@
                         <div class="form-group">
                             <label>
                                 Enter GST No.(CAPTIAL LETTERS ONLY)/<br />
-                                जीएसटी नंबर दर्ज करें<span style="color: red;">*</span></label>
+                                जी.एस.टी नंबर दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter GST No." />
                         </div>
                     </div>
@@ -274,8 +275,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Applicable From/<br />
-                                 लागू होने की दिनांक का चयन करें
+                                Select GST Applicable From/<br />
+                                 जी.एस.टी लागू होने की दिनांक का चयन करें
                             </label>
                             <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" placeholder="2/2/2024" />
                         </div>
@@ -295,7 +296,7 @@
                 </div>
             </fieldset>
              <fieldset id="gstDetails" class="hidden">
-                <legend>GST Detail /जीएसटी विवरण</legend>
+                <legend>GST Detail /जी.एस.टी विवरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -337,7 +338,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Is reverse charge applicable? /<br />
+                                Select Is reverse charge applicable? /
                                 क्या रिवर्स चार्ज लागू है? चयन करें
                                     <span style="color: red;">*</span></label>
                             <select class="form-control select2">
@@ -390,7 +391,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Opening Balance /प्रारंभिक जमा</legend>
+                <legend>Opening Balance /प्रारंभिक शेष </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -447,7 +448,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Opening Balance<br />
-                                ओपनिंग बैलेंस दर्ज करें
+                                प्रारंभिक शेष दर्ज करें
                                     <span style="color: red;">*</span></label>
                             <input type="text" class="form-control" Value="0.00" />
                         </div>

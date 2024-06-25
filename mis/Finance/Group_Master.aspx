@@ -26,7 +26,7 @@
                             <div class="form-group">
                                 <label>
                                     Select Group/<br />
-                                    समूह का चयन करें<span style="color: red;">*</span></label>
+                                    सूची से समूह का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option selected="selected" value="0">--Select --</option>
                                     <option value="1">Liabilities</option>

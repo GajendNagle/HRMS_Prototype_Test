@@ -88,7 +88,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-lg-12">
-                <h5 class="card-title">E-Service Book Report/
+                <h5 class="card-title">E-Service Book Report /
 
 ई-सर्विस बुक रिपोर्ट
                 </h5>
@@ -99,12 +99,12 @@
         <div class="card-body">
 
             <fieldset>
-                <legend>E-Service Book Report/
+                <legend>E-Service Book Report /
 ई-सर्विस बुक रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Distric/<br />ज़िलाt<span style="color: red">*</span></label>
+                            <label>Distric<br />ज़िलाt<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2 select2-hidden-accessible" data-select2-id="32" tabindex="-1" aria-hidden="true">
                             <option value="--Select--" data-select2-id="34">--Select--</option>
                             <option value="Bhopal">Bhopal</option>
@@ -162,14 +162,14 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Department/<br />विभाग<span style="color: red">*</span></label>
+                            <label>Department<br />विभाग<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="Bhopal">--Select--</option>
                                 <option value="Bhopal">Head Office</option>                               
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
-                                <option value="Bhopal">SANKUL/AEO</option>
+                                <option value="Bhopal">SANKUL / AEO</option>
                                 <option value="Bhopal">SCHOOL</option>
                                 <option value="Principal Secretary">Principal Secretary</option>
                                 <option value="Secretary">Secretary</option>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Designation/<br />पद का नाम<span style="color: red">*</span></label>
+                            <label>Designation<br />पद का नाम<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Additional Director">Additional Director</option>
@@ -218,7 +218,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Udice Code/<br />डाइस कोड<span style="color: red">*</span></label>
+                            <label>Udice Code<br />डाइस कोड<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>59865895680</asp:ListItem>
@@ -243,7 +243,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Date of Joining/<br />जोइनिंग दिंनाक<span style="color: red">*</span></label>
+                            <label>Date of Joining<br />जोइनिंग दिंनाक<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
@@ -298,15 +298,15 @@
                                  <table id="tblList" class="table table-bordered table-responsive-lg text-center">
                                      <thead>
                                          <tr valign="middle">
-                                             <th>Sr.No./<br />सरल क्र.</th>
-                                             <th>Employee Name/<br />कर्मचारी का नाम</th>
-                                             <th>Department/<br />विभाग</th>
-                                             <th>Designation/<br />पद का नाम</th>                     
-                                             <th>District/<br />ज़िला</th>
-                                             <th>Block/<br />विकासखंड </th>
-                                             <th>U-DISE Code/<br />यू-डीआईएसई कोड</th>
-                                             <th>Date Of Joing/<br />जोइनिंग दिंनाक</th>
-                                             <th>Check Report/<br />रिपोर्ट जांचें</th>
+                                             <th>Sr.No.<br />सरल क्र.</th>
+                                             <th>Employee Name<br />कर्मचारी का नाम</th>
+                                             <th>Department<br />विभाग</th>
+                                             <th>Designation<br />पद का नाम</th>                     
+                                             <th>District<br />ज़िला</th>
+                                             <th>Block<br />विकासखंड </th>
+                                             <th>U-DISE Code<br />यू-डीआईएसई कोड</th>
+                                             <th>Date Of Joing<br />जोइनिंग दिंनाक</th>
+                                             <th>Check Report<br />रिपोर्ट जांचें</th>
                                          </tr>
                                      </thead>
                                      <tbody>

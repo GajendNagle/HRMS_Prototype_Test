@@ -71,7 +71,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Promotion Process/
+                    <h5 class="card-title">Promotion Process /
                   पदोन्नति प्रक्रिया
                     </h5>
                 </div>
@@ -131,7 +131,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Name /
+                                    Employee Name 
                                     <br />
                                     कर्मचारी का नाम<span style="color: red">*</span>
                                     <br />
@@ -141,14 +141,14 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Class /<br />
+                                <label>Class<br />
                                     श्रेणी<span style="color: red">*</span></label>
                                 <input name="eclass" type="text" value="Class 1" disabled class="form-control" autocomplete="off" placeholder="" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Type of Post /<br />
+                                <label>Type of Post<br />
                                     पद का प्रकार<span style="color: red">*</span></label>
                                 <input name="epost" type="text" value="Regular" disabled class="form-control" autocomplete="off" placeholder="" />
                             </div>
@@ -156,7 +156,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Designation Type /<br />
+                                    Designation Type<br />
                                     पदनाम का प्रकार<span style="color: red">*</span></label>
                                 <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Teaching" />
                             </div>
@@ -165,7 +165,7 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Designation /<br />
+                                <label>Designation<br />
                                     पद<span style="color: red">*</span></label>
                                 <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Prathmik Shikshak" />
                             </div>
@@ -173,7 +173,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Department /<br />
+                                    Department<br />
                                     विभाग<span style="color: red">*</span></label>
                                 <input name="txtdepartment" type="text" class="form-control" readonly autocomplete="off" placeholder="" value="Department of Education" />
                             </div>
@@ -181,7 +181,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Pay Commission /
+                                <label>Pay Commission 
                                     <br />
                                     वेतन आयोग<span style="color: red">*</span></label>
                                 <input name="ename" type="text" value="Seventh Pay Commission" disabled class="form-control" autocomplete="off" placeholder="Seventh Pay Commission" />
@@ -189,7 +189,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Pay Scale /<br />
+                                <label>Pay Scale<br />
                                     वेतनमान<span style="color: red">*</span></label>
                                 <input name="ename" type="text" value="5200-20200" disabled class="form-control" autocomplete="off" placeholder="" />
                             </div>
@@ -198,7 +198,7 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Level /
+                                <label>Level 
                                     <br />
                                     स्तर<span style="color: red">*</span></label>
                                 <input name="ename" type="text" value="Level-7" disabled class="form-control" autocomplete="off" placeholder="" />
@@ -206,7 +206,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Current Office /
+                                <label>Current Office 
                                     <br />
                                     वर्तमान कार्यालय<span style="color: red">*</span></label>
                                 <input name="ename" type="text" value="Govt MS UNDRAI" disabled class="form-control" autocomplete="off" placeholder="" />
@@ -214,7 +214,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Basic Salary /<br />
+                                <label>Basic Salary<br />
                                     मूल वेतन<span style="color: red">*</span></label>
                                 <input name="ename" type="text" value="43500.00" disabled class="form-control" autocomplete="off" placeholder="" />
                             </div>
@@ -228,7 +228,7 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Class /<br />
+                                <label>Class<br />
                                     श्रेणी<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -241,7 +241,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Type of Post /<br />
+                                <label>Type of Post<br />
                                     पद का प्रकार<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -261,7 +261,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Designation /
+                                <label>Designation 
+
                                     <br />
                                     पद<span style="color: red">*</span></label>
                                 <select class="form-control select2">
@@ -292,7 +293,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Department /
+                                <label>Department 
                                     <br />
                                     विभाग<span style="color: red">*</span></label>
                                 <select class="form-control select2">
@@ -324,7 +325,7 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Pay Commission /
+                                <label>Pay Commission 
                                     <br />
                                     वेतन आयोग<span style="color: red">*</span></label>
                                 <select class="form-control select2" name="PayCommissionId" id="PayCommissionId" onchange="return ShowHidePayDiv()" required data-msg="Select Pay Commission">
@@ -338,7 +339,7 @@
                         </div>
                         <div class="col-md-3" id="sel1">
                             <div class="form-group">
-                                <label>Level /<br />
+                                <label>Level<br />
                                     स्तर<span style="color: red">*</span></label>
                                 <select class="form-select select2" name="LevelId">
                                     <option value="0">Select</option>
@@ -355,7 +356,7 @@
                         </div>
                         <div class="col-md-3" id="sel2">
                             <div class="form-group">
-                                <label>Pay Scale /<br />
+                                <label>Pay Scale<br />
                                     वेतनमान<span style="color: red">*</span></label>
                                 <select class="form-select select2" name="PayScaleId">
                                     <option value="0">Select</option>
@@ -375,7 +376,7 @@
 
                         <div class="col-md-3" id="sel3">
                             <div class="form-group">
-                                <label>Grade Pay /<br />
+                                <label>Grade Pay<br />
                                     ग्रेड पे<span style="color: red">*</span></label>
                                 <select class="form-select select2" name="GradePayId">
                                     <option value="0">Select</option>
@@ -395,7 +396,7 @@
 
                         <div class="col-md-3" id="sel4">
                             <div class="form-group">
-                                <label>Basic Pay /
+                                <label>Basic Pay 
                                     <br />
                                     मूल वेतन<span style="color: red">*</span></label>
                                 <select class="form-select select2" name="BasicPayId">
@@ -418,7 +419,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>File No. /<br />
+                                <label>File No.<br />
                                     दस्तावेज संख्या<span style="color: red">*</span></label>
                                 <input type="text" autocomplete="off" class="form-control" placeholder="Enter File No." name="name" />
                             </div>
@@ -434,7 +435,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Division /<br />
+                                    <label>Division<br />
                                         संभाग<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -454,7 +455,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>District /<br />
+                                    <label>District<br />
                                         जिला<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -474,7 +475,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Block /<br />
+                                    <label>Block<br />
                                         ब्लॉक<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -496,7 +497,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Sankul /<br />
+                                    <label>Sankul<br />
                                         संकुल<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -511,7 +512,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>School /<br />
+                                    <label>School<br />
                                         विद्यालय<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -523,7 +524,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Postal Code /<br />
+                                    <label>Postal Code<br />
                                         पोस्टल कोड<span style="color: red">*</span></label>
                                     <select id="ddlpostalcode" class="form-control select2">
                                         <option value="0">--Select--</option>
@@ -535,7 +536,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Panel Name /<br />
+                                    <label>Panel Name<br />
                                         पैनल का नाम<span style="color: red">*</span></label>
                                     <select id="ddlpanelname" class="form-control select2">
                                         <option value="0">--Select--</option>
@@ -547,7 +548,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Vacant Post /
+                                    <label>Vacant Post 
                                         <br />
                                         रिक्त पद<span style="color: red">*</span></label>
                                     <select id="ddlvacantpost" class="form-control select2">
