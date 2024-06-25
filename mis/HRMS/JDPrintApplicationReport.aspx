@@ -63,7 +63,7 @@
                         <a href="#JDCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                             <span>JD Compassionate Appointment </span></a>
                     </li>
-                    <li class="breadcrumb-item"><span>Compassionate Appointment On JD Level Print Apply</span></li>
+                    <li class="breadcrumb-item"><span>JD-Level Compassionate Appointment Application</span></li>
                 </ol>
             </div>
         </div>
@@ -79,18 +79,17 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Compassionate Appointment On JD Level Print Apply<br />
-                        जे.डी. स्तर पर अनुकंपा नियुक्ति प्रिंट आवेदन करें</h4>
+                    <h4 class="card-title">JD-Level Compassionate Appointment Application Print<br />जे.डी. स्तर पर अनुकंपा नियुक्ति आवेदन प्रिंट करें</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Compassionate Appointment Print Application  / अनुकम्पा नियुक्ति प्रिंट आवेदन</legend>
+                <legend>JD-Level Compassionate Appointment Application Print / जे.डी. स्तर पर अनुकंपा नियुक्ति आवेदन प्रिंट करें</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District /<br /> जिला<span style="color: red">*</span></label>
+                            <label>District <br /> जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1">Bhopal</asp:ListItem>
@@ -421,8 +420,8 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="window.print()">Print</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>

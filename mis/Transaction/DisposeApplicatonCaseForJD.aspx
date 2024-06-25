@@ -44,9 +44,6 @@
             </p>
         </div>
         <div class="col-md-7 align-self-center">
-
-
-
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
@@ -122,7 +119,6 @@
 </nav>
             <br />
             <br />
-
             <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
         <div class="row">
        <div class="col-12">
@@ -157,8 +153,8 @@
        <div class="card-header">
            <div class="row">
                <div class="col-lg-12">
-                   <h4 class="card-title">Compassionate Appointment On J.D. Level Print Apply<br />
-                       जे. डी. स्तर पर अनुकंपा नियुक्ति प्रिंट आवेदन करें</h4>
+                   <h4 class="card-title">Compassionate Appointment On J.D. Level Print Application<br />
+                       जे. डी. स्तर पर अनुकंपा नियुक्ति आवेदन प्रिंट करें</h4>
                </div>
            </div>
        </div>

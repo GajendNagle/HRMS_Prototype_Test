@@ -687,7 +687,7 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Tour Apply Successfully!',
+                                text: 'Record Updated Successfully!',
                                 timer: 2000
                             }
                             )

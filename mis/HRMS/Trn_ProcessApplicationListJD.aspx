@@ -65,7 +65,7 @@
                                 <span>Compassionate Appointment
                                 </span></a>
                         </li>
-                        <li class="breadcrumb-item">Action Report on Compassionate Appointment at J.D. Level</li>
+                        <li class="breadcrumb-item">J.D.-Level Compassionate Appointment Action Report</li>
                     </ol>
                 </div>
             </div>
@@ -81,8 +81,8 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Action Report on Compassionate Appointment at J.D. Level<br />
-                        जे.डी. स्तर पर अनुकंपा नियुक्ति पर कार्रवाई रिपोर्ट</h4>
+                    <h4 class="card-title">J.D.-Level Compassionate Appointment Action Report<br />
+                        जेडी स्तर पर अनुकंपा नियुक्ति कार्रवाई रिपोर्ट</h4>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District /<br />
+                                District <br />
                                 जिला <span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
@@ -269,7 +269,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Employee Code /<br />
+                                Employee Code <br />
                                 कर्मचारी कोड<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtU_Id" type="text" value="AK7328" maxlength="6" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtU_Id" disabled="disabled"
                                 class="form-control vd_Required m-0" />
@@ -278,7 +278,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Name of Deceased Employee /<br />
+                                Name of Deceased Employee <br />
                                 दिवंगत कर्मचारी का नाम<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtName" type="text"
                                 value="Phul Singh Kushawah" maxlength="20" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtName"
@@ -288,7 +288,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Gender /<br />
+                                Gender <br />
                                 लिंग<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Male" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                         </div>
@@ -296,7 +296,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Caste /<br />
+                                Caste <br />
                                 जाति<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="SC" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                         </div>
@@ -304,7 +304,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Last Posting District /<br />
+                                Last Posting District <br />
                                 अंतिम पोस्टिंग जिला<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Vidisha" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                         </div>
@@ -312,7 +312,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Deceased Staff Cadre /<br />
+                                Deceased Staff Cadre <br />
                                 दिवंगत कर्मचारी कैडर<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Regular Class- III " maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
@@ -321,7 +321,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Deceased Officer/Employee Designation /<br />
+                                Deceased Officer/Employee Designation <br />
                                 दिवंगत अधिकारी/कर्मचारी पदनाम<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="Work Assistant" maxlength="50" disabled="disabled" class="form-control vd_Required " />
                         </div>
@@ -329,7 +329,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Last School/Office and Employee Address /<br />
+                                Last School/Office and Employee Address <br />
                                 अंतिम स्कूल/ कार्यालय और कर्मचारी का पता<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="NGPS VEERPUR BANDH ( 1 to 5)" maxlength="50" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtL_S_C_Address" disabled="disabled" class="form-control vd_Required " />
                         </div>
@@ -337,7 +337,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Cause of Death /<br />
+                                Cause of Death <br />
                                 मृत्यु का कारण<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="कोविड-19 संक्रमण " maxlength="50" disabled="disabled" class="form-control vd_Required " />
                         </div>
@@ -345,7 +345,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date of Death /<br />
+                                Date of Death <br />
                                 मृत्यु दिनाँक<span style="color: Red;">*</span></label>
                             <div class="input-group">
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="28/12/2021" maxlength="10" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtD_O_Death" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
@@ -355,15 +355,14 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Number of Family Members of Deceased Employee /<br />
-                                दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या : <span style="color: Red;">*</span></label>
+                                Number of Family Members of Deceased Employee<br />दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या:<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Department Name /<br />
+                                Department Name <br />
                                 विभाग का नाम<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtDepartment_Name" type="text" value="Education" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtDepartment_Name" disabled="disabled" class="form-control vd_Required" />
                         </div>
@@ -371,7 +370,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date of Receipt of Application /<br />
+                                Date of Receipt of Application <br />
                                 आवेदन प्राप्त तिथि<span style="color: Red;">*</span></label>
                             <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtaaprecievedate" type="text" value="21/04/2023" maxlength="10" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtaaprecievedate" disabled="disabled" class="form-control vd_Required dummy" />
                         </div>
@@ -629,56 +628,64 @@
                                     <td>1</td>
                                     <td>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>जन्मतिथि के प्रमाणीकरण हेतु हाई स्कूल की अंक सूची अथवा सक्षम अधिकारी द्वारा जारी किया गया  जन्म प्रमाण पत्र </td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>स्थानीय / मूल निवासी होने का प्रमाण पत्र</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>यदि आवेदक अनुसूचित जाति/जनजाति तथा अन्य पिछड़े वर्ग का हो तो प्रमाण पत्र.</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>हायर सेकेण्डरी /स्नातक या अन्य परीक्षा उत्तीर्ण करने के प्रमाण पत्र.</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>परिवार के सभी सदस्यों द्वारा आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति का शपथ पत्र </td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>आवेदक का फोटो  अपलोड करे.</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
                                     <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
                                     <td>
-                                        <a class="btn btn-success">View</a>
+ <button type="button" class="btn btn-success">View</button>
+                                        <%--<a class="btn btn-success">View</a>--%>
                                     </td>
                                 </tr>
                             </tbody>
@@ -691,7 +698,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Action /<br />
+                            Action <br />
                             कार्रवाई<span style="color: Red;">*</span></label>
                         <select id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
                             <option value="0">--Select--</option>
@@ -704,7 +711,7 @@
                 <div class="row align-items-end" id="DisctrictCollectDetails" style="display: none;">
                     <div class="col-md-3">
                         <label>
-                            To which Post Does the Applicant Want to be Appointed? /<br />
+                            To which Post Does the Applicant Want to be Appointed? <br />
                             आवेदक किस पद पर नियुक्ति चाहता है<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr5" onchange="ShowHide()">
                             <option value="">--Select--</option>
@@ -714,7 +721,7 @@
                     </div>
                     <div class="col-md-3 " style="display: none" id="DivDesignation">
                         <label>
-                            Designation /<br />
+                            Designation <br />
                             पदनाम<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr6" onchange="ShowHide1()">
                             <option value="">--Select--</option>
@@ -724,7 +731,7 @@
                     </div>
                     <div class="col-md-3" style="display: none" id="DivQualificationStatus">
                         <label>
-                            Have Passed The Primary Teacher Eligibility Test For Primary Teacher /<br />
+                            Have Passed The Primary Teacher Eligibility Test For Primary Teacher <br />
                             क्या प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की है<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr1" onchange="ShowHide2()">
                             <option value="">--Select--</option>
@@ -734,13 +741,13 @@
                     </div>
                     <div class="col-md-3" style="display: none" id="Divyear">
                         <label>
-                            Year of Eligibility Test /<br />
+                            Year of Eligibility Test <br />
                             पात्रता परीक्षा का वर्ष<span style="color: red">*</span></label>
                         <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="पात्रता परीक्षा का वर्ष" />
                     </div>
                     <div class="col-md-3" style="display: none" id="DivQualification">
                         <label>
-                            Professional Qualification /<br />
+                            Professional Qualification <br />
                             व्यावसायिक योग्यता<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlSapthpatr2">
                             <option value="">--Select--</option>
@@ -752,8 +759,8 @@
                     </div>
                     <div class="col-md-6">
                         <label>
-                            <b>Remark /<br />
-                                रिमार्क </b><span style="color: Red;">*</span>
+                           Remark <br />
+                                रिमार्क<span style="color: Red;">*</span>
                         </label>
                         <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
@@ -765,8 +772,8 @@
                 </div>
                 <div class="col-md-6" id="RemarkView" style="display: none">
                     <label>
-                        <b>Remark /<br />
-                            रिमार्क </b><span style="color: Red;">*</span>
+                       Remark <br />
+                            रिमार्क<span style="color: Red;">*</span>
                     </label>
                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
@@ -777,8 +784,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>If there is Any Objection /<br />
-                                            यदि ,आपत्ति हो तो </b><span style="color: Red;">*</span>
+                                       If there is Any Objection <br />
+                                            यदि ,आपत्ति हो तो<span style="color: Red;">*</span>
                                     </label>
                                     <asp:DropDownList runat="server" CssClass="form-control">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -794,8 +801,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>Objection Details /<br />
-                                            आपत्ति का विवरण</b><span style="color: Red;">*</span>
+                                       Objection Details <br />
+                                            आपत्ति का विवरण<span style="color: Red;">*</span>
                                     </label>
                                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
@@ -804,8 +811,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>Description of Action Taken /<br />
-                                            लिए गए एक्शन का विवरण</b><span style="color: Red;">*</span>
+                                       Description of Action Taken <br />
+                                            लिए गए एक्शन का विवरण<span style="color: Red;">*</span>
                                     </label>
                                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
@@ -813,8 +820,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        <b>Remark /<br />
-                                            रिमार्क </b><span style="color: Red;">*</span>
+                                       Remark <br />
+                                            रिमार्क <span style="color: Red;">*</span>
                                     </label>
                                     <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
@@ -1001,8 +1008,8 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="window.print()">Print</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

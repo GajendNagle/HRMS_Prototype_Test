@@ -44,9 +44,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Dispose Cases Details
-                        <br />
-                        मामलों के निपटान का विवरण </h4>
+                    <h4 class="card-title">Dispose Cases Details / मामलों के डिस्पोज़ का विवरण </h4>
                 </div>
             </div>
         </div>
@@ -353,8 +351,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Block Wise Counting Report<br />
-                        ब्लॉक वार सांख्यिकी रिपोर्ट</h4>
+                    <h4 class="card-title">Block Wise Counting Report / ब्लॉक वार सांख्यिकी रिपोर्ट</h4>
                 </div>
             </div>
         </div>
@@ -656,8 +653,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">District Wise Counting Report<br />
-                        जिला वार सांख्यिकी रिपोर्ट</h4>
+                    <h4 class="card-title">District Wise Counting Report / जिला वार सांख्यिकी रिपोर्ट</h4>
                 </div>
             </div>
         </div>

@@ -66,7 +66,7 @@
                                 <span>Compassionate Appointment
                                 </span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>NOC Report at the H.O. level</span></li>
+                        <li class="breadcrumb-item"><span>H.O. level NOC Report</span></li>
                     </ol>
                 </div>
             </div>
@@ -82,9 +82,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">NOC Report at the H.O. level
-               <br />
-                        एच.ओ. स्तर पर एन.ओ.सी. रिपोर्ट</h5>
+                    <h5 class="card-title">H.O. level NOC Report<br />एच.ओ. स्तर पर एन.ओ.सी. रिपोर्ट</h5>
                 </div>
             </div>
         </div>

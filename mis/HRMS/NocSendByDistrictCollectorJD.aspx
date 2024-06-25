@@ -94,7 +94,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>District / जिला <span style="color: red">*</span></label>
+                                <label>District <br /> जिला <span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                     <asp:ListItem Text="selected" Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem Value="1">Bhopal</asp:ListItem>
@@ -723,7 +723,7 @@
                             <div class="form-group">
                                 <label>
                                     Number of Family Members of Deceased Employee<br />
-                                    दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या : <span style="color: Red;">*</span></label>
+                                    दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या:<span style="color: Red;">*</span></label>
 
 
                                 <%--  <asp:DropDownList runat="server" CssClass="form-control vd_Required form-select">
