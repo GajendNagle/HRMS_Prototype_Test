@@ -18,12 +18,13 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Transport Management System</span></a>
-                        </li>
+    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+</li>
+
+<li class="breadcrumb-item">
+    <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+        <span>Transport Management System</span></a>
+</li>
                         <li class="breadcrumb-item"><span>Vehicle Insurance</span></li>
                     </ol>
                 </div>
@@ -59,18 +60,6 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Insurance Type
-                                <br />
-                                बीमा प्रकार<span style="color: red">*</span></span>
-                            <select name="ctl00$ContentBody$ddlInsuranceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlInsuranceType\',\'\')', 0)" id="ctl00_ContentBody_ddlInsuranceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                <option selected="selected" value="0">--Select--</option>
-                                <option value="1">General Insurance</option>
-                                <option value="2">Claim</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
                             <span>Insurance Company
                                 <br />
                                 बीमा कंपनी<span style="color: red">*</span></span>
@@ -90,7 +79,7 @@
                             <span>Insurance Start Date
                                 <br />
                                 बीमा आरंभ तिथि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtInsuranceStartDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtInsuranceStartDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtInsuranceStartDate" class="form-control " data-date-end-date="0d" data-provide="datepicker" value="05/07/2023" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" readonly="readonly">
+                            <input name="ctl00$ContentBody$txtInsuranceStartDate" type="Date" class="form-control " data-date-end-date="0d" data-provide="datepicker" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -98,7 +87,19 @@
                             <span>Insurance End Date
                                 <br />
                                 बीमा समाप्ति तिथि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtInsuranceEndDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtInsuranceEndDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtInsuranceEndDate" class="form-control disableFuturedate" data-provide="datepicker" value="05/07/2024" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" readonly="readonly">
+                            <input name="ctl00$ContentBody$txtInsuranceEndDate" type="Date" class="form-control" data-provide="datepicker" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Insurance Type
+            <br />
+                                बीमा प्रकार<span style="color: red">*</span></span>
+                            <select name="ctl00$ContentBody$ddlInsuranceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlInsuranceType\',\'\')', 0)" id="ctl00_ContentBody_ddlInsuranceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                <option selected="selected" value="0">--Select--</option>
+                                <option value="1">General Insurance</option>
+                                <option value="2">Claim</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -174,7 +175,7 @@
                                                 बीमा प्रकार</th>
                                             <th scope="col">Insurance Company<br />
                                                 बीमा कंपनी</th>
-                                            <th scope="col">New Insurance Number<br />
+                                            <th scope="col">Insurance Number<br />
                                                 नया बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
                                                 बीमा आरंभ तिथि</th>

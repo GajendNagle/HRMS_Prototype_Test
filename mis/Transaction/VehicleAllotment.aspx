@@ -17,13 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Transport Management System</span></a>
-                        </li>
+                           <li class="breadcrumb-item">
+    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+</li>
+
+<li class="breadcrumb-item">
+    <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+        <span>Transport Management System</span></a>
+</li>
                         <li class="breadcrumb-item"><span>Vehicle Allotment</span></li>
                     </ol>
                 </div>
@@ -47,17 +48,16 @@
                             <span>Employee ID
                                 <br />
                                 कर्मचारी की आई.डी.<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$ddlOfficeType" class="form-control" />
+                            <input name="ctl00$ContentBody$ddlOfficeType" placeholder="Enter Employee ID" class="form-control" />
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <button id="toggleButton4" type="button" class=" fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                            <a href="VehicleAllotment.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
-
                 </div>
-
                 <div id="EmployeeDetailsData" style="display: none">
                     <div class="row align-items-end">
                         <div class="col-md-3">
@@ -194,12 +194,12 @@
                                 <option>MP12CA3652</option>
                                 <option>MP04ZB8269</option>
                             </select>
-                            <%--<input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />--%>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <button id="toggleButton2" type="button" class="btn  btn-success btn-border">Search</button>
+                            <a href="VehicleAllotment.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -221,14 +221,14 @@
                                 <input type="text" maxlength="20" class="form-control" value="Tiago" readonly="readonly" autocomplete="off" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <%-- <div class="col-md-3">
                             <div class="form-group">
                                 <span>Vehicle Variants
                                     <br />
                                     वाहन का प्रकार <span style="color: red">*</span></span>
                                 <input type="text" maxlength="50" class="form-control" value="Hatchback" readonly="readonly" />
                             </div>
-                        </div>
+                        </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Vehicle Color
@@ -237,11 +237,13 @@
                                 <input type="text" maxlength="30" class="form-control" value="Midnight Plum" readonly="readonly" autocomplete="off" />
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <span>Fuel Type /<br />
+                                <span>Fuel Type
+                                    <br />
                                     ईंधन का प्रकार<span style="color: red">*</span></span>
-                                <div class="form-control" disabled="true">
+                                <input type="text" maxlength="30" class="form-control" value="Diesel" readonly="readonly" autocomplete="off" />
+                                <%--<div class="form-control" disabled="true">
                                     <input type="radio" disabled="disabled" id="one" />
                                     <label for="one">Diesel</label>
                                     <input type="radio" disabled="disabled" id="two" />
@@ -250,7 +252,7 @@
                                     <label for="three">CNG</label>
                                     <input type="radio" disabled="disabled" id="four" />
                                     <label for="four">Electric</label>
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -276,7 +278,7 @@
                                 <input type="text" maxlength="50" value="MP04CB4473" readonly="readonly" class="form-control" autocomplete="off" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <%--<div class="col-md-3">
                             <div class="form-group">
                                 <span>Office Type
                                     <br />
@@ -301,7 +303,7 @@
                                     <option value="0" selected="selected">Head Office</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>--%>
                     </div>
                 </div>
             </fieldset>
@@ -309,14 +311,14 @@
             <fieldset id="VEHICLEALLOTMENTDetails" style="display: none">
                 <legend>VEHICLE ALLOTMENT / वाहन आवंटन </legend>
                 <div class="row align-items-end">
-                    <%--<div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Number
                                 <br />
                                 आदेश नंबर<span style="color: red">*</span></span>
                             <input type="text" maxlength="20" id="ctl00_ContentBody_txtOrederNumber" class="form-control" placeholder="Enter Order Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                         </div>
-                    </div>--%>
+                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Date
@@ -325,14 +327,14 @@
                             <input type="date" class="form-control" data-provide="datepicker" data-date-end-date="0d" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <div class="form-group">
                             <span>Vehicle Type
                                 <br />
                                 वाहन का प्रकार<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtVehicleType" type="text" placeholder="Enter Vehicle Type" id="ctl00_ContentBody_txtVehicleType" class="form-control" />
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Driver Name
@@ -349,16 +351,28 @@
                             <input name="ctl00$ContentBody$txtDriverContactNo" type="text" maxlength="10" id="ctl00_ContentBody_txtDriverContactNo" class="form-control" placeholder="Enter Driver Contact No." onpaste="return false;" autocomplete="off" />
                         </div>
                     </div>
-                    <%--<div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <span>Upload File /<br />
+                            <span>Upload File
+                                <br />
                                 फ़ाइल अपलोड करें<span style="color: red">*</span></span>
                             <input type="file" name="ctl00$ContentBody$orderFileUploader" id="ctl00_ContentBody_orderFileUploader" class="form-control">
                         </div>
-                    </div>--%>
-                    <div class="col-md-5">
+                    </div>
+                    <div class="col-md-4">
                         <div class="form-group">
-                            <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                            <span>Remark
+             <br />
+                                रिमार्क
+                                <span style="color: red">*</span></span>
+                            <textarea rows="1" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" id="toggleButton" class="fw-bold Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+                            <a href="VehicleAllotment.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -403,27 +417,38 @@
                                             <th scope="col">Sr.No.
                                                 <br />
                                                 सरल क्र.</th>
+                                            <th scope="col">Employee Name With Code
+                                                <br />
+                                                कर्मचारी का नाम कोड सहित</th>
+                                            <th scope="col">District
+                                                <br />
+                                                जिला
+                                            </th>
+                                            <th scope="col">DDO/Sankul Code
+                                                <br />
+                                                डीडीओ/संकुल कोड</th>
+                                            <th scope="col">Designation
+     <br />
+                                                पद का नाम</th>
                                             <th scope="col">Vehicle Number
                                                 <br />
                                                 गाडी नंबर</th>
-                                            <th scope="col">Office Type
+                                            <%--<th scope="col">Office Type
                                                 <br />
                                                 कार्यालय का प्रकार</th>
                                             <th scope="col">Office Name
                                                 <br />
-                                                कार्यालय का नाम</th>
-                                            <th scope="col">Designation
-                                                <br />
-                                                पद का नाम</th>
+                                                कार्यालय का नाम</th>--%>
+
                                             <th scope="col">Order Number
                                                 <br />
                                                 आदेश संख्या</th>
                                             <th scope="col">Order Date
                                                 <br />
                                                 आर्डर की तारीख</th>
-                                            <th scope="col">Vehicle Type
+                                            <%-- <th scope="col">Vehicle Type
                                                 <br />
-                                                वाहन का प्रकार</th>
+                                                वाहन का प्रकार</th>--%>
                                             <th scope="col">Driver Name
                                                 <br />
                                                 चालक का नाम</th>
@@ -438,20 +463,30 @@
                                     </thead>
                                     <tbody>
                                         <tr role="row" class="odd">
-                                            <td class="">
+                                            <td>
                                                 <span>1</span>
                                             </td>
                                             <td>
-                                                <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblVehicle_Number">MP04CB4473</span>
+                                                <span>E0561-Raj</span>
                                             </td>
                                             <td>
+                                                <span>Agar Malwa</span>
+                                            </td>
+                                            <td>
+                                                <span>23090107701</span>
+                                            </td>
+
+                                            <%-- <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblOffice_Name">Head Office</span>
                                             </td>
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblOfficeType_Title">Head Office</span>
-                                            </td>
+                                            </td>--%>
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblDesignation">Joint Director</span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblVehicle_Number">MP04CB4473</span>
                                             </td>
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblOrder_Number">111-9244735-1237858</span>
@@ -459,9 +494,9 @@
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblOrder_Date">12/05/2023</span>
                                             </td>
-                                            <td style="width: 10%;" class="sorting_1">
+                                            <%-- <td style="width: 10%;" class="sorting_1">
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblVehicletype">Tiago</span>
-                                            </td>
+                                            </td>--%>
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleAllotment_ctl02_lblDrivername">LAKSHMI NARAYAN</span>
                                             </td>

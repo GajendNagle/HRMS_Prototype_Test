@@ -16,7 +16,7 @@ public partial class mis_Transaction_VehicleDisposeReport : System.Web.UI.Page
     {
         if (ddlVehicleNumber.SelectedValue == "1")
         {
-            txt1.Text = "Hatchback";
+            //txt1.Text = "Hatchback";
             txt2.Text = "Tiago";
             txt3.Text = "1HGCM82633A123456";
             txt4.Text = "MP04CH4163";
@@ -27,7 +27,7 @@ public partial class mis_Transaction_VehicleDisposeReport : System.Web.UI.Page
         }
         else if (ddlVehicleNumber.SelectedValue == "2")
         {
-            txt1.Text = "Hatchback";
+           // txt1.Text = "Hatchback";
             txt2.Text = "Tiago";
             txt3.Text = "1HGCM82633A142552";
             txt4.Text = "MP04CH9580";
@@ -39,7 +39,7 @@ public partial class mis_Transaction_VehicleDisposeReport : System.Web.UI.Page
         }
         else
         {
-            txt1.Text = "";
+           // txt1.Text = "";
             txt2.Text = "";
             txt3.Text = "";
             txt4.Text = "";

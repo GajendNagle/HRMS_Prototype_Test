@@ -18,10 +18,11 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
                         </li>
+
                         <li class="breadcrumb-item">
-                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Transport Management Report</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Vehicle Maintenance Report</span></li>
@@ -76,28 +77,6 @@
                             </select>
                         </div>
                     </div>
-                    <%--<div class="col-md-3">
-                        <div class="form-group">
-                            <span>Office Type /<br />
-                                कार्यालय का प्रकार<span style="color: red">*</span></span>
-                            <select name="ctl00$ContentBody$ddlOfficeType" id="ddlOfficeType" class="form-control select2">
-                                <option value=" -Select-">--Select--</option>
-                                <option value="Bhopal">Head Office</option>
-                                <option value="Bhopal">JOINT DIRECTORS</option>
-                                <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
-                                <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Vehicle Number /<br />
-                                गाडी नंबर<span style="color: red">*</span></span>
-                            <select id="ctl00_ContentBody_ddlVehicleNumber" class="form-control" disabled="disabled" tabindex="-1" aria-hidden="true">
-                                <option value="1" selected="selected">MP04CB4473</option>
-                            </select>
-                        </div>
-                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>District
@@ -224,8 +203,8 @@
                                         <th scope="col">Financial Year
                                             <br />
                                             वित्तीय वर्ष</th>
-                                        <th scope="col">Office Type<br />
-                                            कार्यालय का प्रकार</th>
+                                        <%--<th scope="col">Office Type<br />
+                                            कार्यालय का प्रकार</th>--%>
                                         <th scope="col">Vehicle Number<br />
                                             गाडी नंबर</th>
                                         <th scope="col">Maintenance Type<br />
@@ -253,9 +232,9 @@
                                         <td>
                                             <span>2024 </span>
                                         </td>
-                                        <td style="width: 10%;">
+                                        <%--<td style="width: 10%;">
                                             <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblOffice_Name">Head Office</span>
-                                        </td>
+                                        </td>--%>
                                         <td>
                                             <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblVehicle_Number">MP04CB4473</span></td>
                                         <td>
@@ -281,12 +260,6 @@
                                                 <i class="fa fa-eye" aria-hidden="true"></i>
                                             </button>
                                         </td>
-                                    </tr>
-                                    <tr style="font-weight: bold;">
-                                        <td align="right" colspan="8">Total</td>
-                                        <td>5000.00</td>
-                                        <td></td>
-                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>

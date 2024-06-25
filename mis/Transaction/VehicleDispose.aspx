@@ -17,13 +17,15 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Transport Management System</span></a>
-                        </li>
+
+                     <li class="breadcrumb-item">
+    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+</li>
+
+<li class="breadcrumb-item">
+    <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+        <span>Transport Management System</span></a>
+</li>
                         <li class="breadcrumb-item"><span>Vehicle Dispose</span></li>
                     </ol>
                 </div>
@@ -52,37 +54,6 @@
                                 <asp:ListItem Value="1" Text="MP04HC4163" />
                                 <asp:ListItem Value="2" Text="MP04CG9580" />
                             </asp:DropDownList>
-                            <%--<select class="form-control select2 select2-hidden-accessible">
-                                <option>--Select--</option>
-                                <option>MP04HC4163</option>
-                                <option>MP04CV7194</option>
-                                <option>MP04CG9580</option>
-                                <option>MP12CA3652</option>
-                                <option>MP04ZB8269</option>
-                            </select>--%>
-                        </div>
-                    </div>
-                    <%-- <div class="col-md-4">
-                        <div class="form-group">
-                            <button id="toggleButton4" type="button" class=" fw-bold btn w-lg btn-outline-success btn-border">Search</button>
-                        </div>
-                    </div>--%>
-                    <%--</div>
-                <div id="EmployeeDetailsData" >
-                    <div class="row align-items-end">--%>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            Vehicle Type
-                            <br />
-                            वाहन का प्रकार<span style="color: red">*</span>
-                            <asp:TextBox class="form-control" ReadOnly="true" ID="txt1" runat="server" Text="" />
-                            <%--<select class="form-control" disabled="disabled">
-                                <option value="1">Hatchback</option>
-                                <option value="2">Sedan</option>
-                                <option value="3">SUV</option>
-                                <option value="4">MUV</option>
-                                <option value="4">Commercial Vehicle</option>
-                            </select>--%>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -101,8 +72,6 @@
                             <asp:TextBox class="form-control" ReadOnly="true" ID="txt3" runat="server" Text="" />
                         </div>
                     </div>
-                </div>
-                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             Vehicle Registration Number
@@ -111,7 +80,6 @@
                             <asp:TextBox class="form-control" ReadOnly="true" ID="txt4" runat="server" Text="" />
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             Vehicle Company
@@ -130,7 +98,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset runat="server" id="VehicleAllotementNo" visible="false">
                 <legend>Office / कार्यालय</legend>
                 <div class="row align-items-end">
@@ -142,14 +109,6 @@
                             <input name="ctl00$ContentBody$txtYearOfManufacture" placeholder="Enter Order No." type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
                         </div>
                     </div>
-                    <%--<div class="col-md-4">
-                    <div class="form-group">
-                        <button id="toggleButton2" type="button" class="btn btn-success btn-border">Search</button>
-                    </div>
-                </div>--%>
-                    <%--</div>
-            <div id="VEHICLEALLOTMENTData" style="display: block">
-                <div class="row align-items-end">--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Order Date
@@ -163,7 +122,7 @@
                             <span>Current Reading(Km)
                                     <br />
                                 वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtCurrentReadingKm" placeholder="Enter Current Reading" type="text" maxlength="7" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" onpaste="return false"/>
+                            <input name="ctl00$ContentBody$txtCurrentReadingKm" placeholder="Enter Current Reading" type="text" maxlength="7" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" onpaste="return false" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -177,7 +136,7 @@
                     <%--</div>--%>
                 </div>
             </fieldset>
-           
+
             <div runat="server" id="VEHICLEALLOTMENTDetails" visible="false">
 
                 <fieldset>

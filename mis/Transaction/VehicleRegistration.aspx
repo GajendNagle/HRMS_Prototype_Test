@@ -17,14 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                          <li class="breadcrumb-item">
-       <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-   </li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+                        </li>
 
-   <li class="breadcrumb-item">
-       <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransportManagement')">
-           <span>Transport Management System</span></a>
-   </li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+                                <span>Transport Management System</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Vehicle Registration</span></li>
                     </ol>
                 </div>

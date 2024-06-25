@@ -17,13 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Transport Management Report</span></a>
-                        </li>
+                       <li class="breadcrumb-item">
+    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+</li>
+
+<li class="breadcrumb-item">
+    <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+        <span>Transport Management Report</span></a>
+</li>
                         <li class="breadcrumb-item"><span>Vehicle Allotment Report</span></li>
                     </ol>
                 </div>
@@ -191,11 +192,13 @@
                                         <tr role="row">
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S.No.: activate to sort column descending" style="width: 33.2373px;">S.No.<br />
                                                 सरल क्र.</th>
+                                            <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S.No.: activate to sort column descending" style="width: 33.2373px;">Employee Name With Code<br />
+    कर्मचारी का नाम कोड सहित</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Order Date: activate to sort column ascending" style="width: 55.9921px;">Order Date
                                             <br />
                                                 आर्डर की तारीख</th>
-                                            <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Office Type: activate to sort column ascending" style="width: 56.2197px;">Office Type<br />
-                                                कार्यालय का प्रकार</th>
+                                           <%-- <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Office Type: activate to sort column ascending" style="width: 56.2197px;">Office Type<br />
+                                                कार्यालय का प्रकार</th>--%>
                                             <th scope="col" style="width: 59.7542px;">District
                                                 <br />
                                                 ज़िला</th>
@@ -219,14 +222,16 @@
                                         <tr role="row">
                                             <td>
                                                 <span>1</span>
+                                            </td> <td>
+                                                <span>E0561-Raj</span>
                                             </td>
                                             <td>
                                                 <span>13/06/2024</span>
                                             </td>
 
-                                            <td>
+                                          <%--  <td>
                                                 <span>Head Office</span>
-                                            </td>
+                                            </td>--%>
                                             <td>
                                                 <span>Barwani</span>
                                             </td>

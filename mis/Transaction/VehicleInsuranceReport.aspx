@@ -18,12 +18,13 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Transport Management Report</span></a>
-                        </li>
+    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+</li>
+
+<li class="breadcrumb-item">
+    <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+        <span>Transport Management Report</span></a>
+</li>
                         <li class="breadcrumb-item"><span>Vehicle Insurance  Report </span></li>
                     </ol>
                 </div>
@@ -240,15 +241,15 @@
                                                 सरल क्र.</th>
                                             <th scope="col">Financial Year<br />
                                                 वित्तीय वर्ष</th>
-                                            <th scope="col">Office Type<br />
-                                                कार्यालय का प्रकार</th>
+                                           <%-- <th scope="col">Office Type<br />
+                                                कार्यालय का प्रकार</th>--%>
                                             <th scope="col">Vehicle Number<br />
                                                 गाडी नंबर</th>
                                             <th scope="col">Insurance Type<br />
                                                 बीमा प्रकार</th>
                                             <th scope="col">Insurance Company<br />
                                                 बीमा कंपनी</th>
-                                            <th scope="col">New Insurance Number<br />
+                                            <th scope="col"> Insurance Number<br />
                                                 नया बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
                                                 बीमा आरंभ दिनांक</th>
@@ -268,9 +269,9 @@
                                             <td>
                                                 <span>2024</span>
                                             </td>
-                                            <td>
+                                            <%--<td>
                                                 <span>Head Office</span>
-                                            </td>
+                                            </td>--%>
                                             <td>
                                                 <span id="ctl00_ContentBody_grvVehicleInsuranceYr_ctl02_lblVehicle_Number">MP04CB4473</span>
                                             </td>

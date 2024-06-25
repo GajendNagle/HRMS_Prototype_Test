@@ -19,10 +19,11 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
                         </li>
+
                         <li class="breadcrumb-item">
-                            <a href="#TransportManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Transport Management System</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Vehicle Maintenance</span></li>
@@ -48,46 +49,28 @@
                             <span>Vehicle Number
                                 <br />
                                 वाहन संख्या<span style="color: red">*</span></span>
-                            <select class="form-control select2 select2-hidden-accessible">
+                            <%--<select class="form-control select2 select2-hidden-accessible">
                                 <option>--Select--</option>
-                                <option>MP04HC4163</option>
+                                <option></option>
                                 <option>MP04CV7194</option>
-                                <option>MP04CG9580</option>
+                                <option>MP04CG9580MP04CG9580</option>
                                 <option>MP12CA3652</option>
                                 <option>MP04ZB8269</option>
-                            </select>
-                            <%--<input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />--%>
+                            </select>--%>
+                            <asp:DropDownList ID="ddlVehicleNumber" runat="server" CssClass="form-control" OnSelectedIndexChanged="ddlVehicleNumber_SelectedIndexChanged" AutoPostBack="true">
+                                <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                <asp:ListItem Value="1"> MP04CB4473</asp:ListItem>
+                                <asp:ListItem Value="2"> MP04CG9580</asp:ListItem>
+                            </asp:DropDownList>
+                            <%--<input type="text"  class="form-control" placeholder="Enter Vehicle Number"  autocomplete="off" />--%>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Type
+                            <span>Type 
                                 <br />
                                 प्रकार<span style="color: red">*</span></span>
-                            <select class="form-control select2">
-                                <option>--Select--</option>
-                                <option value="1" selected="selected">Hatchback</option>
-                                <option value="2">Sedan</option>
-                                <option value="3">SUV</option>
-                                <option value="4">MUV</option>
-                                <option value="4">Commercial Vehicle</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Maintenance Type
-                                <br />
-                                रखरखाव का प्रकार<span style="color: red">*</span></span>
-                            <select class="form-control select2 select2-hidden-accessible">
-                                <option>--Select--</option>
-                                <option>Servicing</option>
-                                <option>Battery</option>
-                                <option>Headlights</option>
-                            </select>
-                            <%--  <select name="ctl00$ContentBody$ddlMaintenanceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlMaintenanceType\',\'\')', 0)" id="ctl00_ContentBody_ddlMaintenanceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                <option selected="selected" value="0">Select</option>
-                            </select>--%>
+                            <asp:TextBox runat="server" type="text" class="form-control" placeholder="Enter Vehicle Number" ID="txtVehicletype" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -95,18 +78,15 @@
                             <span>Previous Reading(Km)
                                 <br />
                                 पिछली रीडिंग(किमी)</span>
-                            <input name="ctl00$ContentBody$txtPrevReadingKm" type="text" value="0" id="ctl00_ContentBody_txtPrevReadingKm" class="form-control" readonly="readonly">
+                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtPrevReadingKm" placeholder="Previous Reading(Km)" type="text" ID="txtPreviousReading" class="form-control"></asp:TextBox>
                         </div>
                     </div>
-
-                </div>
-                <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Previous Bill Date
                                 <br />
                                 पिछला बिल दिनांक</span>
-                            <input type="date" class="form-control">
+                            <asp:TextBox runat="server" class="form-control" placeholder="Previous Bill Date" ID="txtPreviousBillDate"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -114,17 +94,38 @@
                             <span>Previous Bill Amount
                                 <br />
                                 पिछला बिल राशि</span>
-                            <input name="ctl00$ContentBody$txtPrevBillAmount" id="ctl00_ContentBody_txtPrevBillAmount" value="0" class="form-control" readonly="readonly" />
+                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtPrevBillAmount" placeholder="Previous Bill Amount" ID="txtPrevBillAmount" class="form-control"></asp:TextBox>
                         </div>
                     </div>
-
-                    <div id="ctl00_ContentBody_showReaingKm" class="col-md-3">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Maintenance Type
+             <br />
+                                रखरखाव का प्रकार<span style="color: red">*</span></span>
+                            <select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
+                                <option>Servicing</option>
+                                <option>Battery</option>
+                                <option>Headlights</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
                         <div class="form-group">
                             <span>Current Reading(Km)
                                 <br />
                                 वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
 
-                            <input name="ctl00$ContentBody$txtCurrentReadingKm" type="text" maxlength="9" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtCurrentReadingKm\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return validateNum(event)" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off" onpaste="return false">
+                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtCurrentReadingKm" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Difference Reading(Km)
+            <br />
+                                वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
+
+                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtDifferencereading" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -132,19 +133,15 @@
                             <span>Bill Number
                                 <br />
                                 बिल संख्या<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtBillNumber" type="text" maxlength="20" id="ctl00_ContentBody_txtBillNumber" class="form-control" placeholder="Enter Bill Number" autocomplete="off" onkeypress="return validateNum(event)" onpaste="return false">
+                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtBillNumber" type="text" ID="txtBillNumber" MaxLength="20" class="form-control" placeholder="Enter Bill Number" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
-
-                </div>
-
-                <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Bill Date
                                 <br />
                                 बिल की तिथि<span style="color: red">*</span></span>
-                            <input type="date" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtBillDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentBody_txtBillDate" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
+                            <asp:TextBox runat="server" ID="txtBillDate" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -152,7 +149,7 @@
                             <span>Bill Amount
                                 <br />
                                 बिल राशि<span style="color: red">*</span></span>
-                            <input name="ctl00$ContentBody$txtBillAmount" type="text" maxlength="9" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$txtBillAmount\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return isNumberKey(this, event);" id="ctl00_ContentBody_txtBillAmount" class="form-control" placeholder="Enter Bill Amount" autocomplete="off" oninput="validate(this)" onpaste="return false">
+                            <asp:TextBox name="ctl00$ContentBody$txtBillAmount" runat="server" type="text" MaxLength="9" ID="txtBillAmount" class="form-control" placeholder="Enter Bill Amount" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -163,28 +160,20 @@
                             <input type="file" name="ctl00$ContentBody$BillBookUpload" id="ctl00_ContentBody_BillBookUpload" class="form-control">
                         </div>
                     </div>
-
-                </div>
-
-                <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <span>Vehicle Expenses Details
                                 <br />
                                 वाहन व्यय विवरण<span style="color: red">*</span></span>
                             <textarea name="ctl00$ContentBody$txtVehicleExpensesDetails" rows="4" cols="60" id="ctl00_ContentBody_txtVehicleExpensesDetails" class="form-control" placeholder="Enter Vehicle Expenses Details" onkeyup="countChars(this);"></textarea>
-                            <p id="charNum">0 characters</p>
                         </div>
                     </div>
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col-md-12">
-                        <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
-
-                        <%--<asp:Button runat="server" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-success btn-border" OnClick="btSaveRcd_Click" Text="Save" ID="btSaveRcd" />--%>
-                        <%--<button type="button" class="fw-bold Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
-                        <a href="VehicleMaintenance.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
+                            <a href="VehicleMaintenance.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                        </div>
                     </div>
                 </div>
             </fieldset>
@@ -227,8 +216,8 @@
                                         <tr>
                                             <th scope="col">Sr.No.<br />
                                                 सरल क्र.</th>
-                                            <th scope="col">Office Name<br />
-                                                कार्यालय का नाम</th>
+                                            <%-- <th scope="col">Office Name<br />
+                                                कार्यालय का नाम</th>--%>
                                             <th scope="col">Vehicle Number<br />
                                                 गाडी नंबर</th>
                                             <th scope="col">Maintenance Type<br />
@@ -252,8 +241,9 @@
                                             <td style="width: 10%;">
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblOffice_Name">1</span>
                                             </td>
-                                            <td>
+                                            <%--<td>
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblOfficeName"></span>Head Office</td>
+                                            --%>
                                             <td>
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblVehicle_Number">MP04CB4473</span>
                                             </td>
@@ -281,13 +271,13 @@
                                                 </button>
                                             </td>
                                         </tr>
-                                        <tr style="font-weight: bold;">
+                                        <%--<tr style="font-weight: bold;">
                                             <td align="right" colspan="7">Total</td>
                                             <td>5000.00</td>
-                                           
+
                                             <td></td>
                                             <td></td>
-                                        </tr>
+                                        </tr>--%>
                                     </tbody>
                                 </table>
                             </div>
