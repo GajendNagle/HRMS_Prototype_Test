@@ -123,7 +123,7 @@
                 </fieldset>
 
                 <fieldset id="Report">
-                    <legend>District Wise Uniform Distribution Report / जिलावार गणवेश वितरण रिपोर्ट</legend>
+                    <legend>District Wise Uniform Distribution Report / जिलावार यूनिफार्म वितरण रिपोर्ट</legend>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
