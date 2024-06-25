@@ -80,9 +80,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">H.O. level NOC Report
-       <br />
-                        एच.ओ. स्तर पर एन.ओ.सी. रिपोर्ट</h5>
+                    <h5 class="card-title">H.O. level NOC Report / एच.ओ. स्तर पर एन.ओ.सी. रिपोर्ट</h5>
                 </div>
             </div>
         </div>
@@ -216,7 +214,6 @@
                                                     स्थिति</th>
                                                 <th scope="col">Appointment Department Name<br>
                                                     नियुक्ति विभाग का नाम</th>
-
                                                 <th scope="col">NOC Document<br />
                                                     एन.ओ.सी. दस्तावेज़</th>
                                                 <th scope="col">Appointment Document<br />
@@ -298,13 +295,12 @@
                                         </tfoot>
                                     </table>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </fieldset>
             </div>
-        </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
