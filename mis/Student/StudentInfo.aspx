@@ -434,7 +434,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter   Is Vimukti<br />
+                                    Select   Is Vimukti<br />
 
                                     विमुक्ति है<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
@@ -691,7 +691,7 @@
                          <div class="col-md-3" style="display:none;" id="bankname">
      <div class="form-group">
          <label>
-             Select Bank Name<br />
+              Bank Name<br />
              बैंक का नाम<span style="color: red">*</span></label>
          <input class="form-control "  placeholder="STATE BANK OF INDIA BHOPAL" autocomplete="off" />
             <%-- <option value="0">Select</option>
@@ -708,7 +708,7 @@
                         <div class="col-md-3" style="display:none;" id="Branch">
                             <div class="form-group">
                                 <label>
-                                    Enter Branch<br />
+                                     Branch<br />
                                     शाखा<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Bhopal" />
                             </div>

@@ -1,9 +1,9 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_InstituteManagement.aspx.cs" Inherits="Rpt_InstituteManagement" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_InstituteManagement.aspx.cs" Inherits="Rpt_InstituteManagement" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div id="dv_Masters_LocationMasters" runat="server">
+   <%-- <div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
                 <h4 class="text-themecolor ">Institute Report Detail</h4>
@@ -23,9 +23,46 @@
         <div class="card mt-3 shadow">
             <div class="card-header card-border-info">
             </div>
-            <div class="card-body">
+            <div class="card-body">--%>
+        <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
+                            <span>OIS Setup Reports</span></a>
+                    </li>
+
+                    <li class="breadcrumb-item"><span>Institute Report</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%--  <div class="row page-titles mb-4">--%>
+
+<div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-6">
+                <h5 class="card-title">Institute Report/संस्थान रिपोर्ट 
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
                 <fieldset>
-                    <legend>Institute Report Detail</legend>
+                    <legend>Institute Report Detail/संस्थान रिपोर्ट विवरण</legend>
                     <div class="row">
                         <div class="col-md-3">
                             <label class="font-bold">Division Name<span class="fa-pull-right" style="color: red">*</span> </label>
