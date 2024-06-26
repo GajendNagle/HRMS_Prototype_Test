@@ -39,19 +39,21 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <label>
+                                    <input type="radio" name="RegistrationMode" value="Samagra" onchange="SelectRegistrationMode()" />
                                     Enter Samagra Id
                                     <br />
                                     समग्र आईडी दर्ज करें
                                 </label>
-                                <input type="text" class="form-control" placeholder="Samagra Id " />
+                                <input type="text" class="form-control" id="txtSamagra" disabled placeholder="Samagra Id " />
                             </div>
                             <div class="col-md-3">
                                 <label>
+                                    <input type="radio" name="RegistrationMode" value="Aadhar" onchange="SelectRegistrationMode()" />
                                     Enter Aadhar Number
                                     <br />
                                     आधार नंबर दर्ज करें
                                 </label>
-                                <input type="text" class="form-control" placeholder="Aadhar Number  " />
+                                <input type="text" class="form-control" id="txtAadhar" disabled placeholder="Aadhar Number  " />
                             </div>
                             <hr />
                             <div class="col-md-12">
@@ -188,7 +190,7 @@
                                     <br />
                                     राज्य</label>
 
-                                <select class="form-select select2">
+                                <select class="form-select select2" disabled >
                                     <option value="--Select--">--Select--</option>
                                     <option value="Madhya Pradesh" selected>Madhya Pradesh</option>
                                     <option value="Maharashtra">Maharashtra</option>
@@ -200,7 +202,7 @@
                                     Division
                                     <br />
                                     संभाग</label>
-                                <select class="form-select select2">
+                                <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
 
                                     <option value="Bhopal" selected>Bhopal</option>
@@ -213,7 +215,7 @@
                                     District
                                     <br />
                                     जिला</label>
-                                <select class="form-select select2">
+                                <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal" selected>Bhopal</option>
                                     <option value="Indore">Indore</option>
@@ -225,7 +227,7 @@
                                     Block
                                     <br />
                                     ब्लॉक</label>
-                                <select class="form-select select2">
+                                <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
 
                                     <option value="Phanda">Phanda</option>
@@ -240,7 +242,7 @@
                                     Village
                                     <br />
                                     गांव</label>
-                                <select class="form-select select2">
+                                <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
 
                                     <option value="Kalapipal">Kalapipal</option>
@@ -253,14 +255,14 @@
                                     Pincode
                                     <br />
                                     पिनकोड</label>
-                                <input type="text" class="form-control" value="462023" />
+                                <input type="text" class="form-control" disabled value="462023" />
                             </div>
                             <div class="col-md-6">
                                 <label>
                                     Address
                                     <br />
                                     पता</label>
-                                <textarea class="form-control" rows="1">123, Main Street, Kalapipal, Bhopal</textarea>
+                                <textarea class="form-control" disabled rows="1">123, Main Street, Kalapipal, Bhopal</textarea>
                             </div>
                             <hr />
                             <div class="col-md-12 ">
@@ -269,7 +271,7 @@
                             </div>
                         </div>
 
-                        <%--model start--%>
+                        <%--model start
                         <div class="modal fade" id="RegSuccessModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="RegSuccessModelLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -293,14 +295,30 @@
                                 </div>
                             </div>
                         </div>
-                        <%--model End--%>
+                            model End--%>
                     </fieldset>
                 </div>
             </div>
         </div>
     </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+
+        function SelectRegistrationMode() {
+            var value = document.querySelector('input[name="RegistrationMode"]:checked').value;
+            if (value == "Samagra") {
+                document.querySelector('#txtSamagra').disabled = false;
+                document.querySelector('#txtAadhar').disabled = true;
+                document.querySelector('#txtAadhar').disabled = true;
+            } else if (value == "Aadhar") {
+                document.querySelector('#txtSamagra').disabled = true;
+                document.querySelector('#txtAadhar').disabled = false;
+            }
+        }
+
+    </script>
     <script>
         !function ($) {
             "use strict";
@@ -359,11 +377,13 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Record Saved Successfully!',
-                                timer: 2000,
+                                html: `Profile Registered Seccessfully! <br>  <p class="text fs-16 mb-0" style="/*font-weight: 500;*/">
+                                Login Credintial sent on Registered Mail ID</p > `,
+
+                               // timer: 2000,
                                 onClose: () => {
 
-                                    $('#RegSuccessModel').modal('show'); // Assuming your modal has an id of 'myModal'
+                                    //$('#RegSuccessModel').modal('show'); // Assuming your modal has an id of 'myModal'
                                     //document.getElementById("fs_PersonalInfo").style.display = "block";
                                     //document.getElementById("fs_AddressInfo").style.display = "block";
                                     //document.getElementById("fs_Registration").style.display = "none";
