@@ -3,17 +3,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor"></h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="PaymentVoucher.aspx" title="click to go on">Day Book</a></li>
-                </ol>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
+                        <li class="breadcrumb-item active"><a href="OfficeWiseLedgerList.aspx" title="click to go on">Day Book</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
@@ -102,19 +105,19 @@
                             </div>--%>
                         </div>
 
-                        <div class="row justify-content-center mb-0">
+                        <div class="row justify-content-between mb-0">
                             <h5>Custom Day Book
                             </h5>
                         </div>
-                        <div class="row justify-content-center mb-0">
+                        <div class="row justify-content-between mb-0">
                             <h5>Directorate of Public Instruction,
                             </h5>
                         </div>
-                        <div class="row justify-content-center mb-0">
+                        <div class="row justify-content-between mb-0">
                             <h5>[Head Office]
                             </h5>
                         </div>
-                        <div class="row justify-content-center mb-0">
+                        <div class="row justify-content-between mb-0">
                             <h5>01-04-2024  To 31-06-2024 
                             </h5>
                         </div>

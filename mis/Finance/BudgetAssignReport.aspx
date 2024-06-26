@@ -157,7 +157,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>222975.00</a>
                                                 </td>
-                                                 <td><a href="#"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
+                                                  <td align="center" valign="middle"><a><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
@@ -175,7 +175,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>69487.00</a>
                                                 </td>
-                                                 <td><a href="#"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
+                                                  <td align="center" valign="middle"><a><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
                                             </tr>
                                              <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
@@ -193,7 +193,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>54487.00</a>
                                                 </td>
-                                                 <td><a href="#"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
+                                                 <td align="center" valign="middle"><a><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
                                             </tr>
                                            
                                             <!-- Add more rows as needed -->
