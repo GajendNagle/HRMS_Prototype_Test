@@ -5,6 +5,7 @@
         th {
             white-space: nowrap;
         }
+
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -13,11 +14,13 @@
                 margin: 0;
                 padding: 0;
             }
+
             .modal-content {
                 height: 200%;
                 border: none;
                 box-shadow: none;
             }
+
             .modal-body {
                 width: 210%;
                 height: auto;
@@ -28,6 +31,7 @@
             body.modal-open {
                 visibility: hidden;
             }
+
                 body.modal-open .modal .modal-header,
                 body.modal-open .modal .modal-body {
                     visibility: visible;
@@ -36,6 +40,7 @@
             .modal-footer {
                 display: none;
             }
+
             .modal-header {
                 display: none;
             }
@@ -43,79 +48,54 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-   <%-- <div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <span>HRMS</span>
-                    </li>
-                    <li class="breadcrumb-item">Compassionate Appointment</li>
-                    <li class="breadcrumb-item">Compassionate Appointment Print Application HO</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="card card-border-primary">
-        <div class="card-header">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 class="card-title">Compassionate Appointment On HO Level Print Apply<br />
-                       एच.ओ. स्तर पर अनुकंपा नियुक्ति प्रिंट आवेदन करें</h4>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>HO Compassionate Appointment </span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Compassionate Appointment Print Application HO</span></li>
+                    </ol>
                 </div>
             </div>
         </div>
-        <div class="card-body">--%>
-        <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#HeadOfficeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                            <span>HO Compassionate Appointment </span></a>
-                    </li>
-                    <li class="breadcrumb-item"><span>Compassionate Appointment Print Application HO</span></li>
-                </ol>
+    </div>
+    <div class="col-md-5" style="position: relative; bottom: 15px;">
+        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+            <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            </u>
+        </p>
+    </div>
+    <div class="card card-border-primary radius-defalt">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="card-title">Register Application For Compassionate Appointment on HO Level<br />
+                        एच.ओ. स्तर पर अनुकंपा नियुक्ति हेतु आवेदन पंजीकृत करें</h4>
+                </div>
             </div>
         </div>
-    </div>
-
-<div class="col-md-5" style="position: relative; bottom: 15px;">
-    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-        <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-        </u>
-    </p>
-</div>
-<div class="card card-border-primary radius-defalt">
-    <div class="card-header">
-        <div class="row">
-            <div class="col-lg-12">
-                <h4 class="card-title">Register Application For Compassionate Appointment on HO Level<br />
-                       एच.ओ. स्तर पर अनुकंपा नियुक्ति हेतु आवेदन पंजीकृत करें</h4>
-            </div>
-        </div>
-    </div>
-    <div class="card-body">
+        <div class="card-body">
             <fieldset>
                 <legend>Print Application / आवेदन प्रिंट करें
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District <br /> जिला<span style="color: red">*</span></label>
+                            <label>
+                                District
+                                    <br />
+                                जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
                                 <asp:ListItem Text="selected" Value="0">- चयन करे -</asp:ListItem>
                                 <asp:ListItem Value="51">Agar Malwa</asp:ListItem>

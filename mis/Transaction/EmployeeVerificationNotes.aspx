@@ -33,8 +33,6 @@
         </p>
     </div>
     <div class="card card-border-primary">
-        <%--        <div class="card-header card-border-info">
-        </div>--%>
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
@@ -45,7 +43,6 @@
             </div>
         </div>
         <div class="card-body">
-
             <%--<nav class="navbar navbar-expand-lg topbar ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
