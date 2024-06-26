@@ -76,19 +76,19 @@
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="customRadio2" name="customRadio" class="form-check-input" onclick="myFunction2()">
                                     <label class="form-check-label" for="customRadio11">
-                                        With Femily Samagra ID<br />
+                                        With Family Samagra ID<br />
                                         परिवार समग्र आईडी के साथ<span style="color: red">*</span></label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row align-items-end">
-                        <div class="col-md-3" id="FemilySamagraID" style="display: none;">
+                        <div class="col-md-3" id="familySamagraID" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                    Enter Femily Samagra ID<br />
+                                    Enter Family Samagra ID<br />
                                     परिवार समग्र आईडी<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Femily Samagra ID" />
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
                             </div>
                         </div>
                         <div class="col-md-3" id="StudentSamagraID" style="display: none;">
@@ -193,7 +193,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Fater Name 
+                                     Father Name 
                                 <br />
 
                                     पिता का नाम<span style="color: red">*</span></label>
@@ -304,13 +304,14 @@
 
                 </fieldset>
                 <fieldset>
-                    <legend>Address Information/पते की जानकारी</legend>
+                    <legend>Address Information/
+पता की जानकारी</legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                      State<br />
-                                    राज्य<span style="color: red">*</span></label>
+                                      State Name<br />
+                                    राज्य नाम<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">Madhya Pradesh</option>
                                     <option value="Select">Select</option>
@@ -350,9 +351,9 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                       Division
+                                       Division Name
                                     <br />
-                                    संभाग
+                                    संभाग नाम
                                 </label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">Bhopal</option>
@@ -374,8 +375,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                        District<br />
-                                    ज़िला<span style="color: red">*</span></label>
+                                        District Name<br />
+                                    ज़िला नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control " readonly="true">
                                     <option value="Bhopal">Bhopal</option>
                                     <option value="Select">Select</option>
@@ -435,9 +436,9 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Block 
+                                     Block Name
                                     <br />
-                                    विकासखण्ड <span style="color: red">*</span></label>
+                                    विकासखण्ड नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl03" class="form-control" readonly="true">
                                     <option value="Agar">Hoshur</option>
                                     <option value="Select">Select</option>
@@ -461,8 +462,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Village<br />
-                                    गाँव<span style="color: red">*</span></label>
+                                     Village Name <br />
+                                    गाँव नाम<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="
 Berasia"
                                     readonly />
@@ -483,7 +484,7 @@ Berasia"
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Femily Other Information/परिवार अन्य जानकारी</legend>
+                    <legend>Family Other Information/परिवार अन्य जानकारी</legend>
 
                     <div class="row align-items-end">
                         <div class="col-md-3">
@@ -550,10 +551,10 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Femily/Father Accupation
+                                    Enter family/Father Occupation
                                     <br />
                                     परिवार/पिता का व्यवसाय <span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Femily Samagra ID" />
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -573,9 +574,9 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter   School Dise Code<br />
+                                    Enter   School UDISE Code<br />
                                     स्कूल डीआईएसई कोड</label>
-                                <input id="ddlSchoolDise" class="form-control " placeholder="Enter School Dise Code" onchange="myFunction7()" />
+                                <input id="ddlSchoolDise" class="form-control"  autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" />
                                    <%-- <option>Select</option>
                                     <option>23320400117-GOVT HSS AHAMDABAD</option>
                                     <option>23320303134-GOVT HSS KHAJURI KALAN</option>
@@ -809,7 +810,7 @@ Berasia"
                     <div class="row align-items-end mt-4">
                         <div id="DocAppointment" class="col-md-4">
                             <label>
-                                Uploade Student Photo<br />
+                               Upload Student Photo<br />
                               
 छात्र फोटो अपलोड करें :
                             </label>
@@ -862,7 +863,7 @@ Berasia"
                     <div class="row align-items-end mt-3">
                         <div id="DocPresentpost" class="col-md-4">
                             <label>
-                               Student Upload Trancfer Certificate<br />
+                               Student Upload Transfer Certificate<br />
                              छात्र का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
@@ -927,14 +928,14 @@ Berasia"
     <script>    function myFunction1() {
             document.getElementById('customRadio1').style.display = "block";
             document.getElementById('StudentSamagraID').style.display = "block";
-            document.getElementById('FemilySamagraID').style.display = "none";
+            document.getElementById('familySamagraID').style.display = "none";
 
         }</script>
     <script> 
         function myFunction2() {
             document.getElementById('customRadio1').style.display = "block";
             document.getElementById('StudentSamagraID').style.display = "block";
-            document.getElementById('FemilySamagraID').style.display = "block";
+            document.getElementById('familySamagraID').style.display = "block";
 
         }</script>
     <script> 

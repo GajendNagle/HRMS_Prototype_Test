@@ -138,7 +138,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                  Enter Fater Name 
+                                  Enter Father Name 
                                 <br />
 
                                     पिता का नाम<span style="color: red">*</span></label>
@@ -249,13 +249,14 @@
 
                 </fieldset>
                 <fieldset>
-                    <legend>Address Information/पते की जानकारी</legend>
+                    <legend>Address Information/
+पता की जानकारी</legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select  State<br />
-                                    राज्य<span style="color: red">*</span></label>
+                                    Select  State Name<br />
+                                    राज्य नाम<span style="color: red">*</span></label>
                                 <select class="form-control select2" >
                                    
                                     <option value="Select">Select</option>
@@ -295,9 +296,9 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select   Division
+                                    Select   Division Name
                                     <br />
-                                    संभाग
+                                    संभाग नाम
                                 </label>
                                 <select class="form-control select2">
                            
@@ -319,8 +320,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select    District<br />
-                                    ज़िला<span style="color: red">*</span></label>
+                                    Select    District Name<br />
+                                    ज़िला नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 
                                     <option value="Select">Select</option>
@@ -380,9 +381,9 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Block 
+                                    Select Block  Name
                                     <br />
-                                    विकासखण्ड <span style="color: red">*</span></label>
+                                    विकासखण्ड नाम <span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl03" class="form-control select2" >
                                     
                                     <option value="Select">Select</option>
@@ -406,8 +407,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Village<br />
-                                    गाँव<span style="color: red">*</span></label>
+                                    Enter Village Name<br />
+                                    गाँव नाम<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="  Enter Village"
                                      />
                             </div>
@@ -427,7 +428,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Femily Other Information/परिवार अन्य जानकारी</legend>
+                    <legend>Family Other Information/परिवार अन्य जानकारी</legend>
 
                     <div class="row align-items-end">
                         <div class="col-md-3">
@@ -494,17 +495,17 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Femily/Father Accupation
+                                    EnterFamily /Father Occupation
                                     <br />
                                     परिवार/पिता का व्यवसाय <span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Femily Samagra ID" />
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Family Income(Yearly)<br />
-                                    पारिवारिक की वार्षिक आय <span style="color: red">*</span></label>
+                                    पारिवारिक  वार्षिक आय <span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Income" />
                             </div>
                         </div>
@@ -517,7 +518,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select   School Dise Code<br />
+                                    Select   School UDICE Code<br />
                                     स्कूल डीआईएसई कोड</label>
                                <%-- <select id="ddlSchoolDise" class="form-control select2" onchange="myFunction7()">
                                     <option>Select</option>
@@ -807,7 +808,8 @@
                     <div class="row align-items-end mt-3">
                         <div id="DocPresentpost" class="col-md-4">
                             <label>
-                               Student Upload Trancfer Certificate<br />
+                               Student Upload 
+Transfer Certificate<br />
                              छात्र का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
@@ -873,14 +875,14 @@
     <script>    function myFunction1() {
             document.getElementById('customRadio1').style.display = "block";
             document.getElementById('StudentSamagraID').style.display = "block";
-            document.getElementById('FemilySamagraID').style.display = "none";
+            document.getElementById('familySamagraID').style.display = "none";
 
         }</script>
     <script> 
         function myFunction2() {
             document.getElementById('customRadio1').style.display = "block";
             document.getElementById('StudentSamagraID').style.display = "block";
-            document.getElementById('FemilySamagraID').style.display = "block";
+            document.getElementById('familySamagraID').style.display = "block";
 
         }</script>
    <script> 
