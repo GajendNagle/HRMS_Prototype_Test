@@ -185,12 +185,12 @@
                         <table id="tbl2" class="table table-bordered table-responsive-lg text-center" runat="server">
                             <thead>
                                 <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                    <th>Sr.No./क्र.सं.</th>
-                                    <th>Designation/पद </th>
-                                    <th>Sanchion Post/सांचियोन पोस्ट</th>
-                                    <th>Working Post/वर्किंग पोस्ट</th>
-                                    <th>Vacant Post/रिक्त पद</th>
-                                    <th>Surplus Post/अधिशेष पोस्ट</th>
+                                    <th>Sr.No.<br />क्र.सं.</th>
+                                    <th>Designation<br />पद </th>
+                                    <th>Sanchion Post<br />सांचियोन पोस्ट</th>
+                                    <th>Working Post<br />वर्किंग पोस्ट</th>
+                                    <th>Vacant Post<br />रिक्त पद</th>
+                                    <th>Surplus Post<br />अधिशेष पोस्ट</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -234,12 +234,12 @@
                             <thead>
                                 <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                     
-                                    <th>Sr.No./क्र.सं.</th>
-                                    <th>Designation/पद </th>
-                                    <th>Sanchion Post/सांचियोन पोस्ट</th>
-                                    <th>Working Post/वर्किंग पोस्ट</th>
-                                    <th>Vacant Post/रिक्त पद</th>
-                                    <th>Surplus Post/अधिशेष पोस्ट</th>
+                                    <th>Sr.No.<br />क्र.सं.</th>
+                                    <th>Designation<br />पद </th>
+                                    <th>Sanchion Post<br />सांचियोन पोस्ट</th>
+                                    <th>Working Post<br />वर्किंग पोस्ट</th>
+                                    <th>Vacant Post<br />रिक्त पद</th>
+                                    <th>Surplus Post<br />अधिशेष पोस्ट</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -282,12 +282,12 @@
                         <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                             <thead>
                                 <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                    <th>Sr.No./क्र.सं.</th>
-                                    <th>Designation/पद </th>
-                                    <th>Sanchion Post/सांचियोन पोस्ट</th>
-                                    <th>Working Post/वर्किंग पोस्ट</th>
-                                    <th>Vacant Post/रिक्त पद</th>
-                                    <th>Surplus Post/अधिशेष पोस्ट</th>
+                                    <th>Sr.No.<br />क्र.सं.</th>
+                                    <th>Designation<br />पद </th>
+                                    <th>Sanchion Post<br />सांचियोन पोस्ट</th>
+                                    <th>Working Post<br />वर्किंग पोस्ट</th>
+                                    <th>Vacant Post<br />रिक्त पद</th>
+                                    <th>Surplus Post<br />अधिशेष पोस्ट</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -330,12 +330,12 @@
                         <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
                             <thead>
                                 <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                     <th>Sr.No./क्र.सं.</th>
-                                    <th>Designation/पद </th>
-                                    <th>Sanchion Post/सांचियोन पोस्ट</th>
-                                    <th>Working Post/वर्किंग पोस्ट</th>
-                                    <th>Vacant Post/रिक्त पद</th>
-                                    <th>Surplus Post/अधिशेष पोस्ट</th>
+                                     <th>Sr.No.<br />क्र.सं.</th>
+                                    <th>Designation<br />पद </th>
+                                    <th>Sanchion Post<br />सांचियोन पोस्ट</th>
+                                    <th>Working Post<br />वर्किंग पोस्ट</th>
+                                    <th>Vacant Post<br />रिक्त पद</th>
+                                    <th>Surplus Post<br />अधिशेष पोस्ट</th>
                                 </tr>
                             </thead>
                             <tbody>
