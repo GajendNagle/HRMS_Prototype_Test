@@ -821,7 +821,7 @@ of annual examination result
                             <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
                         </div>
                     </div>--%>
-                    <div class="modal-footer >
+                    <div class="modal-footer">
                         <div style="display: none;" id="btn1">
                    <div class="col-md-12">
     <div class="form-group">
