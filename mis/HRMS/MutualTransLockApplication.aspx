@@ -185,7 +185,7 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Tour Apply Successfully!',
+                                text: 'Application Locked Successfully!',
                                 timer: 2000
                             }).then(() => {
                                 // Hide or show table1 based on its current display state

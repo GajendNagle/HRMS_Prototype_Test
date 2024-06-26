@@ -275,7 +275,7 @@
                                 <div class="col-md-3" id="divtxtvacantpost">
                                     <div class="form-group">
                                         <label>
-                                            Vacant Post /
+                                            Vacant Post 
                                     <br />
                                             रिक्त पद
                                         <span style="color: red">*</span></label>
@@ -285,9 +285,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee To Be Placed In
-                                <br />
-                                            Which Month's Pay Bill<span style="color: red">*</span></label>
+                                            Employee Placement Month in Pay Bill <br />वेतन बिल में कर्मचारी नियुक्ति माह<span style="color: red">*</span></label>
                                         <input type="date" class="form-control" />
                                     </div>
                                 </div>
@@ -398,7 +396,7 @@
                                         <label>
                                             Relaving Date/
                  <br />
-                                            कार्यमुक्त दिनांक<span style="color: red">*</span></label>
+                                            कार्यमुक्ति दिनांक<span style="color: red">*</span></label>
                                         <input name="txtSchoolName" type="text" class="form-control" autocomplete="off" placeholder="Enter School Name" />
                                     </div>
                                 </div>
@@ -462,7 +460,7 @@
                 $('.Alert-Save').click(function () {
                     Swal.fire({
                         title: 'Are you sure?',
-                        text: "Do you want to Save This Record?",
+                        text: "Do you want to Transfer?",
                         type: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085D6',
@@ -474,7 +472,7 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Tour Apply Successfully!',
+                                text: 'Transferred Successfully!',
                                 timer: 2000
                             }
                             )

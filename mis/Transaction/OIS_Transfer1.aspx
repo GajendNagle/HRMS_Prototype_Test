@@ -55,8 +55,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">OIS Generate Transfer<br />
-                                ओ.आई.एस. जनरेट ट्रांसफर </h4>
+                            <h4 class="card-title">OIS Generate Transfer / ओ.आई.एस. जनरेट ट्रांसफर </h4>
                         </div>
                     </div>
                 </div>
@@ -91,7 +90,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation Type <br />
+                                        Designation Type
+                                        <br />
                                         पदनाम का प्रकार <span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -104,7 +104,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Designation <br />
+                                        Designation
+                                        <br />
                                         पदनाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -137,7 +138,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District Name <br />
+                                        District Name
+                                        <br />
                                         जिले का नाम<span style="color: red">*</span></label>
                                     <select name="ddlDistrict" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -197,7 +199,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Block Name <br />
+                                        Block Name
+                                        <br />
                                         विकासखण्ड का नाम<span style="color: red">*</span></label>
                                     <select id="ddlBlock" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
@@ -235,7 +238,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee ID-Name <br />
+                                            Employee ID-Name
+                                            <br />
                                             कर्मचारी का आई.डी. - नाम</label>
                                         <input name="ename" type="text" value="20562-Rohan" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -243,7 +247,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            OIS-Udise Code <br />
+                                            OIS-Udise Code
+                                            <br />
                                             ओ.आइ.एस. कोड</label>
                                         <input name="ename" type="text" value="7850041" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -251,7 +256,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Sankul Code <br />
+                                            Sankul Code
+                                            <br />
                                             संकुल कोड</label>
                                         <input name="ename" type="text" value="689200" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -259,7 +265,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Type of Post <br />
+                                            Type of Post
+                                            <br />
                                             पद प्रकार</label>
                                         <input name="ename" type="text" value="Regular" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -269,7 +276,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Class <br />
+                                            Class
+                                            <br />
                                             श्रेणी</label>
                                         <input name="ename" type="text" value="Class IV" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -277,7 +285,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Designation <br />
+                                            Designation
+                                            <br />
                                             पदनाम</label>
                                         <input name="ename" type="text" value="Regular" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -285,7 +294,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Department <br />
+                                            Department
+                                            <br />
                                             विभाग</label>
                                         <input name="ename" type="text" value="Administration" disabled="disabled" class="form-control" autocomplete="off" placeholder="" />
                                     </div>
@@ -298,7 +308,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label class="font-bold">
-                                            District Name <br />
+                                            District Name
+                                            <br />
                                             जिले का नाम<span style="color: red">*</span></label>
                                         <select name="ddlDistrict2" class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -358,7 +369,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label class="font-bold">
-                                            Block Name <br />
+                                            Block Name
+                                            <br />
                                             विकासखण्ड का नाम<span style="color: red">*</span></label>
                                         <select id="ddlBlock2" class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -381,7 +393,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            OIS-Udise Code <br />
+                                            OIS-Udise Code
+                                            <br />
                                             ओ.आइ.एस. यू-डाईस कोड</label>
                                         <select id="ddlOISCode" class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -394,7 +407,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Sankul Code <br />
+                                            Sankul Code
+                                            <br />
                                             संकुल कोड</label>
                                         <select id="ddlSankulCode" class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -409,7 +423,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Type of Post <br />
+                                            Type of Post
+                                            <br />
                                             पद प्रकार<span style="color: red">*</span></label>
                                         <select class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -421,7 +436,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Designation Name <br />
+                                            Designation Name
+                                            <br />
                                             पदनाम<span style="color: red">*</span></label>
                                         <select class="form-control select2">
                                             <option value="--Select--">--Select--</option>
@@ -454,7 +470,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Department <br />
+                                            Department
+                                            <br />
                                             विभाग<span style="color: red">*</span></label>
                                         <select class="form-control select2">
                                             <option value="----">--Select--</option>
@@ -622,7 +639,7 @@
                                                     <td>7</td>
                                                     <td>
                                                         <input type="checkbox" id="chckTransfer7" onclick="checkClick7();" /></td>
-                                                    <td>23010800401	- PS KHERODA KHURD
+                                                    <td>23010800401 - PS KHERODA KHURD
                                                     </td>
                                                     <td class="txt-link">
                                                         <asp:LinkButton runat="server" ID="LinkButton7" OnClick="LBUpadateInfo_Click">23010800401-PS KHERODA KHURD
@@ -649,43 +666,54 @@
                                 <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Order No. <br />
+                                            <label>
+                                                Order No.
+                                                <br />
                                                 आदेश नंबर<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." value="546545" readonly="" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Order Date <br />
+                                            <label>
+                                                Order Date
+                                                <br />
                                                 आदेश दिनांक <span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Effective Date <br />
+                                            <label>
+                                                Effective Date
+                                                <br />
                                                 प्रभावी दिनांक <span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="Enter Basic Salary" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Relieving Date <br />
+                                            <label>
+                                                Relieving Date
+                                                <br />
                                                 रिलीविंग दिनांक <span style="color: red">*</span></label>
                                             <input name="ename" type="date" class="form-control" autocomplete="off" placeholder="Enter Relieving Date" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Upload Documents <br />
+                                            <label>
+                                                Upload Documents
+                                                <br />
                                                 दस्तावेज़ अपलोड करें<span style="color: red">*</span></label>
                                             <input name="ename" type="file" class="form-control" autocomplete="off" />
                                         </div>
                                     </div>
-
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Remark <br />
+                                            <label>
+                                                Remark
+                                                <br />
                                                 टिप्पणी</label>
                                             <input type="text" class="form-control" placeholder="Enter Remark" autocomplete="off" />
                                         </div>
@@ -704,17 +732,23 @@
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered">
                                         <tr class="card-header">
-                                            <th>Sr.No. <br />
+                                            <th>Sr.No.
+                                                <br />
                                                 सरल क्र.</th>
-                                            <th>Order No. <br />
+                                            <th>Order No.
+                                                <br />
                                                 आदेश संख्या</th>
-                                            <th>Order Date <br />
+                                            <th>Order Date
+                                                <br />
                                                 आदेश दिनांक</th>
-                                            <th>Effective Date <br />
+                                            <th>Effective Date
+                                                <br />
                                                 प्रभावी दिनांक</th>
-                                            <th>Relieving Date <br />
+                                            <th>Relieving Date
+                                                <br />
                                                 कार्यमुक्ति दिनांक</th>
-                                            <th>Generate Order <br />
+                                            <th>Generate Order
+                                                <br />
                                                 आदेश जनरेट करें</th>
                                         </tr>
                                         <tr>
@@ -794,7 +828,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>District <br /> जिला<span style="color: red;">*</span></label>
+                                            <label>
+                                                District
+                                                <br />
+                                                जिला<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem Selected="True">1-Bhopal</asp:ListItem>
@@ -805,7 +842,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Block <br /> विकासखण्ड<span style="color: red;">*</span></label>
+                                            <label>
+                                                Block
+                                                <br />
+                                                विकासखण्ड<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem Selected="True">Huzur</asp:ListItem>
@@ -816,7 +856,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Location <br /> स्थान<span style="color: red;">*</span></label>
+                                            <label>
+                                                Location
+                                                <br />
+                                                स्थान<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem>1-Rural</asp:ListItem>
@@ -827,7 +870,10 @@
 
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Assembly <br /> विधानसभा<span style="color: red;">*</span></label>
+                                            <label>
+                                                Assembly
+                                                <br />
+                                                विधानसभा<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem>Govindpura</asp:ListItem>
@@ -837,7 +883,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Parliamentary <br /> विधानसभा<span style="color: red;">*</span></label>
+                                            <label>
+                                                Parliamentary
+                                                <br />
+                                                विधानसभा<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem Selected="True">Bhopal</asp:ListItem>
@@ -847,7 +896,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Habitation <br /> निवास</label>
+                                            <label>
+                                                Habitation
+                                                <br />
+                                                निवास</label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem Selected="True">Berasia</asp:ListItem>
@@ -857,7 +909,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>School Board <br /> स्कूल बोर्ड<span style="color: red;">*</span></label>
+                                            <label>
+                                                School Board
+                                                <br />
+                                                स्कूल बोर्ड<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem>1-CBSE</asp:ListItem>
@@ -870,7 +925,10 @@
 
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>School Type <br /> स्कूल का प्रकार<span style="color: red;">*</span></label>
+                                            <label>
+                                                School Type
+                                                <br />
+                                                स्कूल का प्रकार<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem>1-Boy</asp:ListItem>
@@ -1117,7 +1175,10 @@
                                 <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Special School <br /> विशेष विद्यालय<span style="color: red;">*</span></label>
+                                            <label>
+                                                Special School
+                                                <br />
+                                                विशेष विद्यालय<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem>CM Rise</asp:ListItem>
@@ -1135,7 +1196,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>School Status <br /> विद्यालय की स्थिति<span style="color: red;">*</span></label>
+                                            <label>
+                                                School Status
+                                                <br />
+                                                विद्यालय की स्थिति<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem Selected="True">Functional</asp:ListItem>
@@ -1146,7 +1210,10 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Hostel Attach <br /> हॉस्टल अटैच<span style="color: red;">*</span></label>
+                                            <label>
+                                                Hostel Attach
+                                                <br />
+                                                हॉस्टल अटैच<span style="color: red;">*</span></label>
                                             <asp:DropDownList CssClass="form-control" runat="server">
                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                 <asp:ListItem>Yes</asp:ListItem>
@@ -1224,57 +1291,17 @@
         }
 
         function checkClick() {
-            var chckTransfer = document.getElementById("chckTransfer");
-            if (chckTransfer.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
-        } function checkClick2() {
-            var chckTransfer2 = document.getElementById("chckTransfer2");
-            if (chckTransfer2.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var divTransfer = document.getElementById('divTransfer');
+            var anyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+            divTransfer.style.display = anyChecked ? 'block' : 'none';
         }
-        function checkClick3() {
-            var chckTransfer3 = document.getElementById("chckTransfer3");
-            if (chckTransfer3.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
-        }
-        function checkClick4() {
-            var chckTransfer4 = document.getElementById("chckTransfer4");
-            if (chckTransfer4.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
-        } function checkClick5() {
-            var chckTransfer5 = document.getElementById("chckTransfer5");
-            if (chckTransfer5.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
-        } function checkClick6() {
-            var chckTransfer6 = document.getElementById("chckTransfer6");
-            if (chckTransfer6.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
-        } function checkClick7() {
-            var chckTransfer7 = document.getElementById("chckTransfer7");
-            if (chckTransfer7.checked) {
-                divTransfer.style.display = "block";
-            } else {
-                divTransfer.style.display = "none";
-            }
-        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.addEventListener('change', checkClick));
+        });
 
         function openPDF1() {
             var pdfUrl = '../Document/Promotion-1.pdf';
@@ -1291,7 +1318,7 @@
                 $('.Alert-Save').click(function () {
                     Swal.fire({
                         title: 'Are you sure?',
-                        text: "Do you want to save this record ?",
+                        text: "Do you want Transfer/Releive ?",
                         type: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085D6',
@@ -1306,7 +1333,7 @@
                             Swal.fire({
                                 type: 'success',
                                 title: 'Success!',
-                                text: 'Record Saved Successfully!',
+                                text: 'Transferred/Releived Successfully!',
                                 timer: 2000
                                 // animation: false,
                                 // customClass: {

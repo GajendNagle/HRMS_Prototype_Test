@@ -83,8 +83,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Generate Transfer Order <br />
-                                स्थानांतरण आदेश जनरेट करें<br />
+                            <h4 class="card-title">Generate Transfer Order / स्थानांतरण आदेश जनरेट करें<br />
                             </h4>
                         </div>
                     </div>
@@ -349,7 +348,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">OTP Verification / OTP सत्यापन</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
