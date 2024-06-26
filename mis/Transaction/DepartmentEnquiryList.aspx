@@ -66,8 +66,7 @@
         </p>
     </div>
 
-    <div class="content-wrapper">
-        <div class="container-fluid">
+    
             <div class="card card-border-primary" id="divDataofAU5693" runat="server">
                 <div class="card-header">
                     <div class="row">
@@ -373,9 +372,7 @@
                     <!-- /.modal-dialog -->
                 </div>
             </div>
-        </div>
-    </div>
-
+        
     <!-- /.modal -->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">

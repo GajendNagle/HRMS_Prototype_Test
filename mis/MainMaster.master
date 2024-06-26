@@ -444,6 +444,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_District.aspx"><i class="ri-file-list-3-line"></i>District Master Data </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_Block.aspx"><i class="ri-file-list-3-line"></i>Block Master Data</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_Parliamentary.aspx"><i class="ri-file-list-3-line"></i>Parliamentary Master Data</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_Assembly.aspx"><i class="ri-file-list-3-line"></i>Assembly Master Data</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_NagerNigam.aspx"><i class="ri-file-list-3-line"></i>Nagar Nigam Master Data</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_NagarPalika.aspx"><i class="ri-file-list-3-line"></i>Nagar Palika Master Data</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_Loc_ZilaPanchayat.aspx"><i class="ri-file-list-3-line"></i>Jila Panchayat Master Data</a></li>
@@ -520,15 +521,15 @@
                                             <a href="#PayrollMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Payroll Master Data</a>
                                             <div class="collapse menu-dropdown" id="PayrollMaster">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item">
+                                                   <%-- <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Payroll/Mst_EarningAndDeduction.aspx"><i class="ri-file-list-3-line"></i>Head Master Data</a>
 
-                                                    </li>
-                                                    <%--<li class="nav-item">
+                                                    </li>--%>
+                                                    <li class="nav-item">
 
                                                         <a class="nav-link" href="/mis/Payroll/Mst_EarningAndDeduction.aspx"><i class="ri-file-list-3-line"></i>Earning And Deduction Master</a>
 
-                                                    </li>--%>
+                                                    </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Payroll/Mst_SetEarningDeductionOptionalHeadValue.aspx"><i class="ri-file-list-3-line"></i>Set Earning & Deduction Optional Head Value</a>
 
@@ -1041,12 +1042,13 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HOCompassionateApproval.aspx"><i class="ri-file-list-3-line"></i>Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOPrintApplicationReport.aspx"><i class="ri-file-list-3-line"></i>Print Application</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ProcessApplicationListHO.aspx"><i class="ri-file-list-3-line"></i>Action on Compassionate Appointment </a>
-                                                        <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForHO.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
-                                                            <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
-                                                                <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
-                                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForHO.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting"><i class="ri-file-list-3-line"></i>District-Wise Statistics</a>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report </a>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HoRpt_CompassionateAppointment.aspx"><i class="ri-file-list-3-line"></i>Compassionate Appointment Report </a>
 
                                                         <%--Ho Compassionate Application Approval end--%>
                                                 </ul>
@@ -1514,7 +1516,7 @@
                                 </a>
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="HostelManagement">
                                     <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_HostelManagement.aspx"><i class="ri-file-list-3-line"></i>Hostel Registration</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_HostelRegistration.aspx"><i class="ri-file-list-3-line"></i>Hostel Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_RoomType.aspx"><i class="ri-file-list-3-line"></i>Add Room Type</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_HostelRoom.aspx"><i class="ri-file-list-3-line"></i>Add Hostel Room</a></li>
                                     </ul>
@@ -1524,7 +1526,7 @@
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#GFMS" data-bs-toggle="collapse" role="button"
                                     aria-expanded="false" aria-controls="GFMS">
-                                    <i class="ri-stack-line"></i><span data-key="t-apps">Guest Faculty Management System</span>
+                                    <i class="ri-stack-line"></i><span data-key="t-apps">GFMS</span>
                                 </a>
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="GFMS">
                                     <ul class="nav nav-sm flex-column">
