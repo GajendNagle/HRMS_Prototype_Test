@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="EmployeeRegistration.aspx.cs" Inherits="mis_Transaction_EmployeeRegistration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-
-
     <style>
         #idSpouseOfcAdd {
             display: none;
@@ -46,8 +44,6 @@
 
         #idDeptName {
             display: none;
-            /*            margin-top: 7px
-*/
         }
 
         #idCurDeptName {
@@ -95,7 +91,6 @@
         }
 
         #Div_officetype1 {
-            /*display: none;*/
         }
 
         #DivCriticalIllness {
@@ -137,13 +132,12 @@
         .tab-menu {
             font-weight: 600 !important;
             margin-left: 1px !important;
-            border: 1px solid  var(--vz-border-color)  !important;
+            border: 1px solid var(--vz-border-color) !important;
             transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out !important;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -168,7 +162,7 @@
     </div>
     <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
         <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"/><u><br />
+            <img src="../../img/Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
             </u>
         </p>
     </div>
@@ -195,8 +189,8 @@
                     <div class="row  ">
                         <div class="col-md-12">
                             <ul class="nav nav-pills mb-3">
-                                <li class=" nav-item"><a href="#navpills-1" class="nav-link active tab-menu " data-bs-toggle="tab" aria-expanded="false">Personal Information</a> </li>
-                                <li class="nav-item"><a href="#navpills-2" class="nav-link tab-menu" data-bs-toggle="tab" aria-expanded="false">Appointment Information</a> </li>
+                                <li class="nav-item"><a href="#navpills-1" class="nav-link tab-menu active" data-bs-toggle="tab" aria-expanded="false">Personal Information</a> </li>
+                                <li class="nav-item"><a href="#navpills-2" class="nav-link tab-menu" data-bs-toggle="tab" aria-expanded="true">Appointment Information</a> </li>
                                 <li class="nav-item"><a href="#navpills-3" class="nav-link tab-menu" data-bs-toggle="tab" aria-expanded="true">Account Information</a> </li>
                                 <li class="nav-item"><a href="#navpills-4" class="nav-link tab-menu" data-bs-toggle="tab" aria-expanded="true">Upload Certificate</a> </li>
                             </ul>
@@ -218,7 +212,8 @@
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        First Name <br />
+                                                                        First Name
+                                                                        <br />
                                                                         प्रथम नाम<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" id="txtMessage" placeholder="Enter First Name" />
                                                                 </div>
@@ -226,7 +221,8 @@
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        Middle Name <br />
+                                                                        Middle Name
+                                                                        <br />
                                                                         मध्य नाम<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Middle Name" />
                                                                 </div>
@@ -234,7 +230,8 @@
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        Last Name <br />
+                                                                        Last Name
+                                                                        <br />
                                                                         उपनाम<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Last Name" />
                                                                 </div>
@@ -242,7 +239,8 @@
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        Father's / Husband Name <br />
+                                                                        Father's / Husband Name
+                                                                        <br />
                                                                         पिता/पति का नाम<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Father/Husband Name" />
                                                                 </div>
@@ -250,7 +248,8 @@
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        Date of Birth <br />
+                                                                        Date of Birth
+                                                                        <br />
                                                                         जन्म तिथि<span style="color: red">*</span></label>
                                                                     <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
                                                                 </div>
@@ -258,7 +257,8 @@
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
-                                                                        Age <br />
+                                                                        Age
+                                                                        <br />
                                                                         उम्र<span style="color: red">*</span></label>
                                                                     <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Employee Age" />
                                                                 </div>
@@ -281,7 +281,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Gender <br />
+                                                                Gender
+                                                                <br />
                                                                 लिंग<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -294,7 +295,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Height <br />
+                                                                Height
+                                                                <br />
                                                                 हाइट<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Height IN (C.M.)" />
                                                         </div>
@@ -302,7 +304,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Caste <br />
+                                                                Caste
+                                                                <br />
                                                                 जाति<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -316,7 +319,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Sub Caste <br />
+                                                                Sub Caste
+                                                                <br />
                                                                 उप जाति<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Sub Caste" />
                                                         </div>
@@ -324,7 +328,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Religion <br />
+                                                                Religion
+                                                                <br />
                                                                 धर्म<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -338,7 +343,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Identification Mark <br />
+                                                                Identification Mark
+                                                                <br />
                                                                 पहचान चिह्न<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Identification Mark" />
                                                         </div>
@@ -346,7 +352,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Blood Group <br />
+                                                                Blood Group
+                                                                <br />
                                                                 ब्लड ग्रुप<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -424,7 +431,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Critical Illness <br />
+                                                                Critical Illness
+                                                                <br />
                                                                 गंभीर बीमारी<span style="color: red">*</span></label>
                                                             <select class="form-control select2" onchange="ShowHideCriticalIllness()" id="ddlCriticalIllness">
                                                                 <option value="Yes">Yes</option>
@@ -435,7 +443,8 @@
                                                     <div class="col-md-3" id="DivCriticalIllness">
                                                         <div class="form-group">
                                                             <label>
-                                                                Type of Critical Illness <br />
+                                                                Type of Critical Illness
+                                                                <br />
                                                                 गंभीर बीमारी का प्रकार<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option>--Select--</option>
@@ -459,7 +468,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Aadhaar No. <br />
+                                                                Aadhaar No.
+                                                                <br />
                                                                 आधार न.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Aadhaar No." />
                                                         </div>
@@ -467,7 +477,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Samagra ID No <br />
+                                                                Samagra ID No
+                                                                <br />
                                                                 समग्र आई.डी. न.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samagra ID No." />
                                                         </div>
@@ -475,7 +486,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Employee Treasury Code <br />
+                                                                Employee Treasury Code
+                                                                <br />
                                                                 कर्मचारी कोष कोड<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Treasury Code" />
                                                         </div>
@@ -483,7 +495,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Employee PRAN Code <br />
+                                                                Employee PRAN Code
+                                                                <br />
                                                                 कर्मचारी पी.आर.ए.न. कोड<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Pran Code" />
                                                         </div>
@@ -491,7 +504,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Mobile No. <br />
+                                                                Mobile No.
+                                                                <br />
                                                                 मोबाइल न.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Mobile No." />
                                                         </div>
@@ -499,7 +513,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Email Id <br />
+                                                                Email Id
+                                                                <br />
                                                                 ईमेल आई.डी.<span style="color: red">*</span>
                                                             </label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" />
@@ -508,7 +523,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Whether First Page of E-Service Book is Certified <br />
+                                                                Whether First Page of E-Service Book is Certified
+                                                                <br />
                                                                 क्या ई-सेवा पुस्तिका का प्रथम पृष्ठ प्रमाणित है<span style="color: red">*</span></label>
                                                             <select id="ddlCertificateDate" onchange="ShowHideCertificateDate()" class="form-control select2">
                                                                 <option value="No">--Select--</option>
@@ -520,7 +536,8 @@
                                                     <div id="idCertificateDate" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Certification Date <br />
+                                                                Certification Date
+                                                                <br />
                                                                 प्रमाणीकरण तिथि<span style="color: red">*</span>
                                                                 &nbsp&nbsp&nbsp&nbsp</label>
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
@@ -529,7 +546,8 @@
                                                     <div id="idRollNo" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Employee Roll No. <br />
+                                                                Employee Roll No.
+                                                                <br />
                                                                 कर्मचारी रोल नं.<span style="color: red">*</span>
                                                                 &nbsp&nbsp&nbsp&nbsp</label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Roll No." />
@@ -538,7 +556,8 @@
                                                     <div id="idRank" class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                Employee Rank <br />
+                                                                Employee Rank
+                                                                <br />
                                                                 कर्मचारी रैंक<span style="color: red">*</span>
                                                                 &nbsp&nbsp&nbsp&nbsp</label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Rank" />
@@ -547,7 +566,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Hobbies <br />
+                                                                Hobbies
+                                                                <br />
                                                                 हॉबी<span style="color: red">*</span>
                                                                 &nbsp&nbsp&nbsp&nbsp</label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Hobbies" />
@@ -561,7 +581,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Nominee Name <br />
+                                                                Nominee Name
+                                                                <br />
                                                                 नामांकित व्यक्ति का नाम<span style="color: red">*</span></label>
                                                             <input id="txtNomineeName" value="" name="ename" type="text" class="form-control" placeholder="Enter Nominee Name" />
                                                         </div>
@@ -569,7 +590,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Relationship with Nominee <br />
+                                                                Relationship with Nominee
+                                                                <br />
                                                                 नामांकित व्यक्ति के साथ संबंध<span style="color: red">*</span></label>
                                                             <input id="txtNomineeRelation" value="" name="ename" type="text" class="form-control" placeholder="Enter Relationship " />
                                                         </div>
@@ -577,7 +599,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Nominee Percentage <br />
+                                                                Nominee Percentage
+                                                                <br />
                                                                 नामांकित व्यक्ति प्रतिशत<span style="color: red">*</span></label>
                                                             <input id="txtNomineePercentage" value="" name="ename" type="text" class="form-control" placeholder="Enter Percentage" />
                                                         </div>
@@ -591,17 +614,23 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered" id="tblNominee" style="display :none;">
+                                                            <table class="table table-bordered" id="tblNominee" style="display: none;">
                                                                 <tr>
-                                                                    <th>Sr. No. <br />
+                                                                    <th>Sr. No.
+                                                                        <br />
                                                                         सरल क्र.</th>
-                                                                    <th>Nominee Name <br />
+                                                                    <th>Nominee Name
+                                                                        <br />
                                                                         नामांकित व्यक्ति का नाम</th>
-                                                                    <th>Nominee Relation <br />
+                                                                    <th>Nominee Relation
+                                                                        <br />
                                                                         नामांकित के साथ संबंध</th>
-                                                                    <th>Nominee Percentage <br />
+                                                                    <th>Nominee Percentage
+                                                                        <br />
                                                                         नामांकित व्यक्ति प्रतिशत</th>
-                                                                    <th>Action <br />कार्यवाहीं
+                                                                    <th>Action
+                                                                        <br />
+                                                                        कार्यवाहीं
                                                                     </th>
                                                                 </tr>
                                                             </table>
@@ -619,7 +648,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            State <br />
+                                                                            State
+                                                                            <br />
                                                                             राज्य<span style="color: red">*</span></label>
                                                                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                                                             <option value="--Select--">--Select--</option>
@@ -661,7 +691,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            Division <br />
+                                                                            Division
+                                                                            <br />
                                                                             संभाग<span style="color: red">*</span></label>
                                                                         <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                                             <option value="--Select--">--Select--</option>
@@ -680,7 +711,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            District <br />
+                                                                            District
+                                                                            <br />
                                                                             जिला<span style="color: red">*</span></label>
                                                                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                                                             <option value="--Select--">--Select--</option>
@@ -740,7 +772,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            Block <br />
+                                                                            Block
+                                                                            <br />
                                                                             विकासखण्ड<span style="color: red">*</span></label>
                                                                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                                                             <option value="--Select--">--Select--</option>
@@ -753,7 +786,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            Pincode <br />
+                                                                            Pincode
+                                                                            <br />
                                                                             पिनकोड<span style="color: red">*</span></label>
                                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
                                                                     </div>
@@ -761,7 +795,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            Address line 1 <br />
+                                                                            Address line 1
+                                                                            <br />
                                                                             पता लाइन 1<span style="color: red">*</span></label>
                                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
                                                                     </div>
@@ -769,7 +804,8 @@
                                                                 <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <label>
-                                                                            Address line 2 <br />
+                                                                            Address line 2
+                                                                            <br />
                                                                             पता लाइन 2<span style="color: red">*</span></label>
                                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" />
                                                                     </div>
@@ -780,7 +816,7 @@
                                                 </div>
                                                 <div class="col-md-4 mb-4">
                                                     <div class="form-group">
-                                                        <input type="checkbox" id="vehicle1" name="vehicle1" checked="checked" value="Bike"/>
+                                                        <input type="checkbox" id="vehicle1" name="vehicle1" checked="checked" value="Bike" />
                                                         <b>Permanent Address same as Present Address</b>
                                                     </div>
                                                 </div>
@@ -790,7 +826,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    State <br />
+                                                                    State
+                                                                    <br />
                                                                     राज्य<span style="color: red">*</span></label>
                                                                 <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                                                     <option value="--Select--">--Select--</option>
@@ -832,7 +869,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    Division <br />
+                                                                    Division
+                                                                    <br />
                                                                     संभाग<span style="color: red">*</span></label>
                                                                 <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                                     <option value="--Select--">--Select--</option>
@@ -851,7 +889,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    District <br />
+                                                                    District
+                                                                    <br />
                                                                     जिला<span style="color: red">*</span></label>
                                                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                                                     <option value="--Select--">--Select--</option>
@@ -925,7 +964,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    Pincode <br />
+                                                                    Pincode
+                                                                    <br />
                                                                     पिनकोड<span style="color: red">*</span></label>
                                                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
                                                             </div>
@@ -942,7 +982,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    Address line 2 <br />
+                                                                    Address line 2
+                                                                    <br />
                                                                     पता लाइन 2<span style="color: red">*</span></label>
                                                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" />
                                                             </div>
@@ -956,7 +997,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Married Status <br />
+                                                                Married Status
+                                                                <br />
                                                                 वैवाहिक स्थिति<span style="color: red">*</span></label>
                                                             <select id="ddlMaarriedStatus" onchange="ShowHideMarried()" class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -968,7 +1010,8 @@
                                                     <div id="idSpouseName" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Spouse Name <br />
+                                                                Spouse Name
+                                                                <br />
                                                                 जीवनसाथी का नाम<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Name" />
                                                         </div>
@@ -976,7 +1019,8 @@
                                                     <div id="idSpouseGovEmp" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Is Spouse Government Employee <br />
+                                                                Is Spouse Government Employee
+                                                                <br />
                                                                 क्या पति/पत्नी सरकारी कर्मचारी हैं<span style="color: red">*</span></label>
                                                             <select id="ddlSpouseGovEmp" onchange="ShowHideGovEmp()" class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -988,7 +1032,8 @@
                                                     <div id="idSpouseDept" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Spouse Department Name <br />
+                                                                Spouse Department Name
+                                                                <br />
                                                                 जीवनसाथी का विभाग का नाम<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Department Name" />
                                                         </div>
@@ -996,7 +1041,8 @@
                                                     <div id="idSpouseOfcAdd" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Office Address <br />
+                                                                Office Address
+                                                                <br />
                                                                 कार्यालय का पता<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Office Address" />
                                                         </div>
@@ -1010,7 +1056,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Qualification <br />
+                                                                Qualification
+                                                                <br />
                                                                 योग्यता<span style="color: red">*</span></label>
                                                             <select id="Education" class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1060,7 +1107,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Subject <br />
+                                                                Subject
+                                                                <br />
                                                                 विषय<span style="color: red">*</span></label>
                                                             <input id="Subject" value="" name="ename" type="text" class="form-control" placeholder="Enter Subject" />
                                                         </div>
@@ -1068,7 +1116,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Board / Univercity Name <br />
+                                                                Board / Univercity Name
+                                                                <br />
                                                                 बोर्ड/यूनिवर्सिटी का नाम<span style="color: red">*</span></label>
                                                             <select id="Board" class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1081,7 +1130,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Passing Year <br />
+                                                                Passing Year
+                                                                <br />
                                                                 उतीर्ण वर्ष<span style="color: red">*</span></label>
                                                             <input id="PassingYear" name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
@@ -1089,7 +1139,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Grade / Percentage <br />
+                                                                Grade / Percentage
+                                                                <br />
                                                                 क्षेणी (प्रतिशत)<span style="color: red">*</span></label>
                                                             <input id="Grade" value="" name="ename" type="text" class="form-control" placeholder="Enter Grade/Percentage" />
                                                         </div>
@@ -1103,22 +1154,30 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered" id="tableAdd" style="display:none">
+                                                            <table class="table table-bordered" id="tableAdd" style="display: none">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>Sr. No.  <br />
+                                                                        <th>Sr. No. 
+                                                                            <br />
                                                                             सरल क्र.</th>
-                                                                        <th>Qualification <br />
+                                                                        <th>Qualification
+                                                                            <br />
                                                                             योग्यता</th>
-                                                                        <th>Subject <br />
+                                                                        <th>Subject
+                                                                            <br />
                                                                             विषय</th>
-                                                                        <th>Board/University <br />
+                                                                        <th>Board/University
+                                                                            <br />
                                                                             बोर्ड/यूनिवर्सिटी का नाम</th>
-                                                                        <th>Passing Year <br />
+                                                                        <th>Passing Year
+                                                                            <br />
                                                                             उतीर्ण वर्ष</th>
-                                                                        <th>Grade/Percentage <br />
+                                                                        <th>Grade/Percentage
+                                                                            <br />
                                                                             क्षेणी (प्रतिशत)</th>
-                                                                        <th>Action <br />कार्यवाहीं</th>
+                                                                        <th>Action
+                                                                            <br />
+                                                                            कार्यवाहीं</th>
                                                                     </tr>
                                                                 </thead>
                                                             </table>
@@ -1127,14 +1186,14 @@
                                                 </div>
                                                 <hr />
                                                 <div class="col-md-12 form-group">
-                                                    <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Save & Next</button>
+                                                    <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border" id="saveAndNextBtn" >Save & Next</button>
                                                     <a runat="server" id="clearfirst" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                                 </div>
                                             </fieldset>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="navpills-2" class="tab-pane active">
+                                <div id="navpills-2" class="tab-pane">
                                     <div class="row align-items-end">
                                         <div class="col-md-12">
                                             <fieldset id="idFirstAppointment">
@@ -1157,7 +1216,8 @@
                                                     <div class="col-md-3" id="Div_officetype1">
                                                         <div class="form-group">
                                                             <label>
-                                                                Office Type <br />
+                                                                Office Type
+                                                                <br />
                                                                 कार्यालय का प्रकार<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1180,7 +1240,8 @@
                                                     <div class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                First Appointment Division <br />
+                                                                First Appointment Division
+                                                                <br />
                                                                 प्रथम नियुक्ति संभाग<span style="color: red">*</span></label>
                                                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -1199,7 +1260,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                First Appointment District <br />
+                                                                First Appointment District
+                                                                <br />
                                                                 प्रथम नियुक्ति जिला<span style="color: red">*</span></label>
                                                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -1285,7 +1347,8 @@
                                                     <div class="col-md-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
-                                                                DDO / Sankul <br />
+                                                                DDO / Sankul
+                                                                <br />
                                                                 डीडीओ / संकुल<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -1300,7 +1363,8 @@
                                                     <div class="col-md-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
-                                                                Office/Institute/School Code & Name <br />
+                                                                Office/Institute/School Code & Name
+                                                                <br />
                                                                 कार्यालय/संस्थान/स्कूल कोड और नाम<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -1316,7 +1380,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Office/Institute/School Address of first Posting <br />
+                                                                Office/Institute/School Address of first Posting
+                                                                <br />
                                                                 प्रथम पोस्टिंग का कार्यालय/संस्थान/विद्यालय पता<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address" />
                                                         </div>
@@ -1413,7 +1478,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Appointment Joining Date <br />
+                                                                Appointment Joining Date
+                                                                <br />
                                                                 नियुक्ति तिथि<span style="color: red">*</span></label>
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
@@ -1421,7 +1487,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Panal Name <br />
+                                                                Panal Name
+                                                                <br />
                                                                 पैनल का नाम<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -1439,7 +1506,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Subject <br />
+                                                                Subject
+                                                                <br />
                                                                 विषय<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="--Select--">--Select--</option>
@@ -1459,7 +1527,8 @@
                                                     <div class="col-md-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
-                                                                Samvilian Order No. <br />
+                                                                Samvilian Order No.
+                                                                <br />
                                                                 संविलियन आदेश संख्या<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" />
                                                         </div>
@@ -1467,7 +1536,8 @@
                                                     <div class="col-md-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
-                                                                Samvilian Order Date <br />
+                                                                Samvilian Order Date
+                                                                <br />
                                                                 सैमविलियन ऑर्डर तिथि<span style="color: red">*</span></label>
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
@@ -1475,7 +1545,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Working in other Department Organization on Deputation Transfer <br />
+                                                                Working in other Department Organization on Deputation Transfer
+                                                                <br />
                                                                 अन्य विभाग में कार्यरत/ प्रतिनियुक्ति स्थानान्तरण पर संगठन<span style="color: red">*</span></label>
                                                             <select id="ddlWorkingDept" onchange="ShowHideWorkingDept()" class="form-control select2">
                                                                 <option value="Select">--Select--</option>
@@ -1496,7 +1567,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Is Regular <br />
+                                                                Is Regular
+                                                                <br />
                                                                 क्या नियमित है ?</label>
                                                             <select id="ddlIsRegular" class="form-control select2">
                                                                 <option value="Select">--Select--</option>
@@ -1509,7 +1581,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Increment Month <br />
+                                                                Increment Month
+                                                                <br />
                                                                 वेतन वृद्धि माह<span style="color: red;">*</span></label>
                                                             <select id="ddlIncrementMonth" class="form-control select2">
                                                                 <option value="Select">--Select--</option>
@@ -1531,7 +1604,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Provision Period To Month <br />
+                                                                Provision Period To Month
+                                                                <br />
                                                                 प्रावधान अवधि से माह तक<span style="color: red">*</span></label>
                                                             <input name="ename" id="To1" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
                                                         </div>
@@ -1540,7 +1614,8 @@
                                                     <div class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                If Provision Extend <br />
+                                                                If Provision Extend
+                                                                <br />
                                                                 यदि प्रावधान बढ़ाया गया</label>
                                                             <select id="ddlProviosionExtend1" class="form-control select2">
                                                                 <option value="Select">--Select--</option>
@@ -1568,7 +1643,8 @@
                                                     <div class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                Type of Post <br />
+                                                                Type of Post
+                                                                <br />
                                                                 पोस्ट का प्रकार<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1590,7 +1666,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Class <br />
+                                                                Class
+                                                                <br />
                                                                 कक्षा<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1604,7 +1681,8 @@
                                                     <div class="col-md-3 ">
                                                         <div class="form-group">
                                                             <label>
-                                                                Pay Commission <br />
+                                                                Pay Commission
+                                                                <br />
                                                                 वेतन आयोग<span style="color: red">*</span></label>
                                                             <select onchange="ShowHidePayCommissionF()" id="PayCommissionF" class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1617,7 +1695,8 @@
                                                     <div id="LevelF" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Level <br />
+                                                                Level
+                                                                <br />
                                                                 स्तर<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1644,7 +1723,8 @@
                                                     <div id="PayScaleF" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Pay scale <br />
+                                                                Pay scale
+                                                                <br />
                                                                 वेतनमान<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1679,7 +1759,8 @@
                                                     <div id="GradePayF" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Grade Pay <br />
+                                                                Grade Pay
+                                                                <br />
                                                                 ग्रेड पे<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1706,7 +1787,8 @@
                                                     <div id="BasicPayF" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Basic Pay <br />
+                                                                Basic Pay
+                                                                <br />
                                                                 मूल वेतन<span style="color: red">*</span></label>
                                                             <select class="form-control select2">
                                                                 <option value="----">--Select--</option>
@@ -1725,7 +1807,8 @@
                                                     <div id="txtBasicPayF" class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Basic Pay <br />
+                                                                Basic Pay
+                                                                <br />
                                                                 मूल वेतन<span style="color: red">*</span></label>
                                                             <input type="text" placeholder="Enter Basic Pay" class="form-control" name="name" value="" />
                                                         </div>
@@ -1753,7 +1836,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        OIS Type <br />
+                                                        OIS Type
+                                                        <br />
                                                         ओआईएस प्रकार<span style="color: red">*</span></label>
                                                     <select id="DropDownList1" class="form-control select2">
                                                         <option value="0">--Select--</option>
@@ -1766,7 +1850,8 @@
                                             <div class="col-md-3" id="OffiiceType">
                                                 <div class="form-group">
                                                     <label>
-                                                        Office Type <br />
+                                                        Office Type
+                                                        <br />
                                                         कार्यालय का प्रकार<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -1898,7 +1983,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        DDO / Sankul <br />
+                                                        DDO / Sankul
+                                                        <br />
                                                         डीडीओ/संकुल<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="--Select--">--Select--</option>
@@ -1913,7 +1999,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Office/Institute/School Code & Name <br />
+                                                        Office/Institute/School Code & Name
+                                                        <br />
                                                         कार्यालय/संस्थान/विद्यालय कोड एवं नाम<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="--Select--">--Select--</option>
@@ -1939,7 +2026,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Current Appointment Order No. <br />
+                                                        Current Appointment Order No.
+                                                        <br />
                                                         वर्तमान नियुक्ति आदेश क्र.<span style="color: red">*</span></label>
                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." />
                                                 </div>
@@ -1947,7 +2035,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Current Appointment Order Date <br />
+                                                        Current Appointment Order Date
+                                                        <br />
                                                         वर्तमान नियुक्ति आदेश दिनांक<span style="color: red">*</span></label>
                                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                 </div>
@@ -1956,7 +2045,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Current Appointment Department <br />
+                                                        Current Appointment Department
+                                                        <br />
                                                         वर्तमान नियुक्ति विभाग<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -1981,7 +2071,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Current Appointment Designation <br />
+                                                        Current Appointment Designation
+                                                        <br />
                                                         वर्तमान नियुक्ति पदनाम<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -2023,7 +2114,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Current Appointment Joining Date <br />
+                                                        Current Appointment Joining Date
+                                                        <br />
                                                         वर्तमान नियुक्ति में शामिल होने की तिथि<span style="color: red">*</span></label>
                                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                 </div>
@@ -2031,7 +2123,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Panal Name <br />
+                                                        Panal Name
+                                                        <br />
                                                         पैनल का नाम<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="--Select--">--Select--</option>
@@ -2049,7 +2142,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Subject <br />
+                                                        Subject
+                                                        <br />
                                                         विषय<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="--Select--">--Select--</option>
@@ -2068,7 +2162,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Samvilian Order No. <br />
+                                                        Samvilian Order No.
+                                                        <br />
                                                         संविलियन आदेश क्र.<span style="color: red">*</span></label>
                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" />
                                                 </div>
@@ -2076,7 +2171,8 @@
                                             <div class="col-md-3 mt-4">
                                                 <div class="form-group">
                                                     <label>
-                                                        Samvilian Order Date <br />
+                                                        Samvilian Order Date
+                                                        <br />
                                                         संविलियन आदेश तिथि<span style="color: red">*</span></label>
                                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                 </div>
@@ -2084,7 +2180,8 @@
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Employee Retirement Date <br />
+                                                        Employee Retirement Date
+                                                        <br />
                                                         कर्मचारी सेवानिवृत्ति तिथि<span style="color: red">*</span></label>
                                                     <input name="ename" placeholder="Retirement Date" readonly="readonly" type="text" id="retirementDateTextbox1" class="form-control" autocomplete="off" />
                                                 </div>
@@ -2093,7 +2190,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Working in Other Department Organization on Deputation Transfer <br />
+                                                        Working in Other Department Organization on Deputation Transfer
+                                                        <br />
                                                         प्रतिनियुक्ति स्थानान्तरण पर अन्य विभाग संगठन में कार्य करना<span style="color: red">*</span></label>
                                                     <select id="ddlCurWorkingDept" onchange="ShowHideCurWorkingDept()" class="form-control select2">
                                                         <option value="Select">--Select--</option>
@@ -2113,7 +2211,8 @@
                                             <div class="col-md-3 ">
                                                 <div class="form-group">
                                                     <label>
-                                                        Is Regular <br />
+                                                        Is Regular
+                                                        <br />
                                                         नियमित है</label>
                                                     <select id="ddlIsRegular1" class="form-control select2">
                                                         <option value="Select">--Select--</option>
@@ -2126,7 +2225,8 @@
                                             <div class="col-md-3 ">
                                                 <div class="form-group">
                                                     <label>
-                                                        Increment Month <br />
+                                                        Increment Month
+                                                        <br />
                                                         वेतन वृद्धि माह<span style="color: red;">*</span></label>
                                                     <select id="ddlIncrementMonth1" class="form-control select2">
                                                         <option value="Select">--Select--</option>
@@ -2148,7 +2248,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Provision Period To Month <br />
+                                                        Provision Period To Month
+                                                        <br />
                                                         प्रावधान अवधि से माह तक<span style="color: red">*</span></label>
                                                     <input name="ename" id="To" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
                                                 </div>
@@ -2157,7 +2258,8 @@
                                             <div class="col-md-3 ">
                                                 <div class="form-group">
                                                     <label>
-                                                        If Proviosion Extend <br />
+                                                        If Proviosion Extend
+                                                        <br />
                                                         यदि प्रावधान बढ़ाया गया</label>
                                                     <select id="ddlProviosionExtend" class="form-control select2">
                                                         <option value="Select">--Select--</option>
@@ -2206,7 +2308,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Class <br />
+                                                        Class
+                                                        <br />
                                                         कक्षा<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -2220,7 +2323,8 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Pay Commission <br />
+                                                        Pay Commission
+                                                        <br />
                                                         वेतन आयोग<span style="color: red">*</span></label>
                                                     <select onchange="ShowHidePayCommissionC()" id="PayCommissionC" class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -2233,7 +2337,8 @@
                                             <div id="LevelC" class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Level <br />
+                                                        Level
+                                                        <br />
                                                         स्तर<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -2296,7 +2401,8 @@
                                             <div id="GradePayC" class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Grade Pay <br />
+                                                        Grade Pay
+                                                        <br />
                                                         ग्रेड पे<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -2323,7 +2429,8 @@
                                             <div id="BasicPayC" class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Basic Pay <br />
+                                                        Basic Pay
+                                                        <br />
                                                         मूल वेतन<span style="color: red">*</span></label>
                                                     <select class="form-control select2">
                                                         <option value="----">--Select--</option>
@@ -2342,7 +2449,8 @@
                                             <div id="txtBasicPayC" class="col-md-3">
                                                 <div class="form-group">
                                                     <label>
-                                                        Basic Pay <br />
+                                                        Basic Pay
+                                                        <br />
                                                         मूल वेतन<span style="color: red">*</span></label>
                                                     <input type="text" class="form-control" placeholder="Enter Basic Pay" name="name" value="" />
                                                 </div>
@@ -2356,7 +2464,7 @@
                                         </div>
                                         <hr />
                                         <div class="col-md-12 form-group">
-                                            <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border ">Save & Next</button>
+                                            <button type="button" class="Alert-Confirmation2 btn btn-outline-success w-lg btn-border" id="saveAndNextBtn2">Save & Next</button>
                                             <a runat="server" id="A2" href="EmployeeRegistration.aspx" class="btn btn-outline-danger  w-lg btn-border">Clear</a>
                                         </div>
                                     </fieldset>
@@ -2370,7 +2478,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                IFSC Code <br />
+                                                                IFSC Code
+                                                                <br />
                                                                 आईएफएससी कोड<span style="color: red">*</span></label>
                                                             <input onchange="ShowBankDetails()" placeholder="Enter IFSC Code" name="ename" value="" type="text" class="form-control" autocomplete="off" />
                                                         </div>
@@ -2399,7 +2508,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    Account Type <br />
+                                                                    Account Type
+                                                                    <br />
                                                                     खाता का प्रकार<span style="color: red">*</span></label>
                                                                 <select class="form-control select2">
                                                                     <option value="----">--Select--</option>
@@ -2412,7 +2522,8 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>
-                                                                    Account No. <br />
+                                                                    Account No.
+                                                                    <br />
                                                                     खाता क्र.<span style="color: red">*</span></label>
                                                                 <input placeholder="Enter Account No." name="ename" type="text" class="form-control" autocomplete="off" />
                                                             </div>
@@ -2423,7 +2534,8 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>
-                                                                Select Provident Fund <br />
+                                                                Select Provident Fund
+                                                                <br />
                                                                 भविष्य निधि का चयन करें<span style="color: red">*</span></label>
                                                             <select id="Providedfund" class="form-control" onchange="SelectP()">
                                                                 <option value="">Select</option>
@@ -2437,7 +2549,8 @@
                                                     <div class="col-md-3" id="P1">
                                                         <div class="form-group">
                                                             <label>
-                                                                DPF No. <br />
+                                                                DPF No.
+                                                                <br />
                                                                 डीपीएफ नं.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
                                                         </div>
@@ -2472,7 +2585,8 @@
                                                     <div class="col-md-3" style="display: none;" id="nps">
                                                         <div class="form-group">
                                                             <label>
-                                                                NPS No. <br />
+                                                                NPS No.
+                                                                <br />
                                                                 एनपीएस नं.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter NPS No." />
                                                         </div>
@@ -2498,7 +2612,8 @@
                                                     <div class="col-md-3" id="P6">
                                                         <div class="form-group">
                                                             <label>
-                                                                EGLS No. <br />
+                                                                EGLS No.
+                                                                <br />
                                                                 ईजीएलएस नं.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EGLS No." />
                                                         </div>
@@ -2506,7 +2621,8 @@
                                                     <div class="col-md-3" id="P7">
                                                         <div class="form-group">
                                                             <label>
-                                                                EDLI No. <br />
+                                                                EDLI No.
+                                                                <br />
                                                                 ईडीएलआई नं.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EDLI No." />
                                                         </div>
@@ -2514,7 +2630,8 @@
                                                     <div class="col-md-3" id="P8">
                                                         <div class="form-group">
                                                             <label>
-                                                                ESIC No. <br />
+                                                                ESIC No.
+                                                                <br />
                                                                 ईएसआईसी नं.<span style="color: red">*</span></label>
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter ESIC No." />
                                                         </div>
@@ -2522,7 +2639,7 @@
                                                 </div>
                                                 <hr />
                                                 <div class="col-md-12 form-group">
-                                                    <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border ">Save & Next</button>
+                                                    <button type="button" class="Alert-Confirmation3 btn btn-outline-success w-lg btn-border" id="saveAndNextBtn3">Save & Next</button>
                                                     <a runat="server" id="A1" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                                 </div>
                                             </fieldset>
@@ -2582,7 +2699,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="DocCaste1" class="col-md-4">
-                                                        <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
+                                                        <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                                                     </div>
                                                     <div id="DocCaste2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2599,7 +2716,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="DocPresentpost1" class="col-md-4">
-                                                        <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
+                                                        <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                                                     </div>
                                                     <div id="DocPresentpost2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2610,12 +2727,13 @@
                                                 <div class="row align-items-end mt-3">
                                                     <div id="Dochandicapped" class="col-md-4">
                                                         <label>
-                                                            Upload Handicapped Certificate <br />
+                                                            Upload Handicapped Certificate
+                                                            <br />
                                                             विकलांग प्रमाण पत्र अपलोड करें :
                                                         </label>
                                                     </div>
                                                     <div id="Dochandicapped1" class="col-md-4">
-                                                        <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
+                                                        <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                                                     </div>
                                                     <div id="Dochandicapped2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2631,7 +2749,7 @@
                                                         </label>
                                                     </div>
                                                     <div id="CriticalIllness1" class="col-md-4">
-                                                        <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
+                                                        <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                                                     </div>
                                                     <div id="CriticalIllness3" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -2648,7 +2766,7 @@
                                                     </div>
                                                     <div id="DocMarried1" class="col-md-4">
 
-                                                        <input type="file" id="fileInput5" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)"/>
+                                                        <input type="file" id="fileInput5" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                                                     </div>
                                                     <div id="DocMarried2" class="col-md-4">
                                                         <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
@@ -3467,7 +3585,6 @@
         function ShowHideCertificateDate() {
             var ddlCertificateDate = document.getElementById("ddlCertificateDate");
             var idCertificateDate = document.getElementById("idCertificateDate");
-
             if (ddlCertificateDate.value === "No") {
                 idCertificateDate.style.display = "none";
             } else if (ddlCertificateDate.value === "Yes") {
@@ -3476,7 +3593,6 @@
                 idCertificateDate.style.display = "none";
             }
         }
-
         function SelectP() {
             var Providedfund = document.getElementById("Providedfund");
             var P1 = document.getElementById("P1");
@@ -3484,7 +3600,6 @@
             var P3 = document.getElementById("P3");
             var Una = document.getElementById("Una");
             var nps = document.getElementById("nps");
-
             if (Providedfund.value == "1") {
                 P1.style.display = "block";
                 P2.style.display = "none";
@@ -3522,7 +3637,6 @@
                 nps.style.display = "none"
             }
         }
-
         function calculateRetirementDate() {
             var dobInput = document.getElementById('dob').value;
             var dob = new Date(dobInput);
@@ -3534,22 +3648,15 @@
             document.getElementById('retirementDateTextbox').value = formattedRetirementDate;
             document.getElementById('retirementDateTextbox1').value = formattedRetirementDate;
         }
-
         function calculateAge() {
             var dobInput = document.getElementById('dob').value;
-
             var dob = new Date(dobInput);
-
             var currentDate = new Date();
-
             var age = currentDate.getFullYear() - dob.getFullYear();
-
             if (currentDate.getMonth() < dob.getMonth() || (currentDate.getMonth() === dob.getMonth() && currentDate.getDate() < dob.getDate())) {
                 age--;
             }
-
             document.getElementById('txtAge').value = age;
-
             calculateRetirementDate();
         }
 
@@ -3618,7 +3725,6 @@
                 idBankDetailsBox.style.display = "block";
             }
         }
-
         function ShowHideHandicape() {
             var ddlHandicape = document.getElementById("ddlHandicape");
             var HandicapePercentage = document.getElementById("HandicapePercentage");
@@ -3640,7 +3746,6 @@
 
             } else if (ddlCriticalIllness.value === "No") {
                 DivCriticalIllness.style.display = "none";
-
             }
         }
         function ddlofficetype() {
@@ -3651,7 +3756,6 @@
                 Div_officetype1.style.display = "none";
             }
         }
-
         function ShowHideMarried() {
             var ddlMaarriedStatus = document.getElementById("ddlMaarriedStatus");
             var idSpouseName = document.getElementById("idSpouseName");
@@ -3703,7 +3807,6 @@
         }
 
         function ShowHideOfficeType() {
-
             var ddlRegistrationType = document.getElementById("ddlRegistrationType");
             var idDeptName = document.getElementById("Div_officetype1");
             if (ddlRegistrationType.value === "2") {
@@ -3715,14 +3818,11 @@
             else if (ddlWorkingDept.value === "3") {
                 idDeptName.style.display = "none";
             }
-
             else {
                 idDeptName.style.display = "none";
             }
-
         }
         function ShowHideOfficeType1() {
-
             var ddlRegistrationType = document.getElementById("DropDownList1");
             var idDeptName = document.getElementById("OffiiceType");
             if (ddlRegistrationType.value === "2") {
@@ -3734,13 +3834,10 @@
             else if (ddlWorkingDept.value === "3") {
                 idDeptName.style.display = "none";
             }
-
             else {
                 idDeptName.style.display = "none";
             }
-
         }
-
         function ShowHideCurWorkingDept() {
             var ddlCurWorkingDept = document.getElementById("ddlCurWorkingDept");
             var idCurDeptName = document.getElementById("idCurDeptName");
@@ -3757,11 +3854,9 @@
 
             if (file) {
                 var reader = new FileReader();
-
                 reader.onload = function (e) {
                     var imageContainer = document.getElementById('imageContainer');
                     var uploadedImage = document.getElementById('uploadedImage');
-
                     uploadedImage.src = e.target.result;
                     imageContainer.style.display = 'block';
                 };
@@ -3777,41 +3872,29 @@
             else {
 
                 tableAdd.style.display = "table";;
-
                 var rows = tableAdd.rows.length;
                 var r = tableAdd.insertRow(rows);
-
                 var Education = document.getElementById("Education");
                 var Subject = document.getElementById("Subject");
                 var Board = document.getElementById("Board");
                 var PassingYear = document.getElementById("PassingYear");
                 var Grade = document.getElementById("Grade");
-
                 var c1 = r.insertCell(0);
                 c1.innerHTML = tableAdd.rows.length - 1;
-
                 var c2 = r.insertCell(1);
                 c2.innerHTML = Education.value;
-
                 var c3 = r.insertCell(2);
                 c3.innerHTML = Subject.value;
-
                 var c4 = r.insertCell(3);
                 c4.innerHTML = Board.value;
-
                 var c5 = r.insertCell(4);
                 c5.innerHTML = PassingYear.value;
-
                 var c6 = r.insertCell(5);
                 c6.innerHTML = Grade.value;
-
                 var c7 = r.insertCell(6);
                 c7.innerHTML = "<a class='Alert-Edit' onclick='EditConfirmation()'><i class='fa fa-pen'></i></a>| <a class='Alert-Delete' onclick='DeleteConfirmation()'><i class='fa fa-trash'></i></a>";
             }
         }
-
-
-
         function AddNominee() {
             var tableAdd = document.getElementById("tblNominee");
             tableAdd.style.display = "table";
@@ -3819,30 +3902,22 @@
                 alert('Maximum two entries allowed !!');
             }
             else {
-
                 tableAdd.style.display = "table";
-
                 var rows = tableAdd.rows.length;
                 var r = tableAdd.insertRow(rows);
                 var Education = document.getElementById("txtNomineeName");
                 var Subject = document.getElementById("txtNomineeRelation");
                 var Board = document.getElementById("txtNomineePercentage");
-
                 var c1 = r.insertCell(0);
                 c1.innerHTML = tableAdd.rows.length - 1;
-
                 var c2 = r.insertCell(1);
                 c2.innerHTML = Education.value;
-
                 var c3 = r.insertCell(2);
                 c3.innerHTML = Subject.value;
-
                 var c4 = r.insertCell(3);
                 c4.innerHTML = Board.value;
-
                 var c5 = r.insertCell(4);
                 c5.innerHTML = "<a class='Alert-Edit' onclick='EditConfirmation()'><i class='fa fa-pen'></i></a>| <a class='Alert-Delete' onclick='DeleteConfirmation()'><i class='fa fa-trash'></i></a>";
-
             }
         }
 
@@ -3851,11 +3926,9 @@
     <script type="text/javascript">
         google.load("elements", "1", { packages: "transliteration" });
     </script>
-
     <script>
         function OnLoad() {
             var currValue = document.getElementById("txtMessage");
-
             var options = {
                 sourceLanguage:
                     google.elements.transliteration.LanguageCode.ENGLISH,
@@ -3863,12 +3936,52 @@
                     [google.elements.transliteration.LanguageCode.HINDI],
                 transliterationEnabled: true
             };
-
             var control = new
 
                 google.elements.transliteration.TransliterationControl(options);
             control.makeTransliteratable(["txtMessage"])
         }
         google.setOnLoadCallback(OnLoad);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function activateTab(tabId) {
+                var tabLink = document.querySelector('.nav-link.tab-menu[href="#' + tabId + '"]');
+                if (tabLink) {
+                    tabLink.click(); 
+                }
+            }
+            function handleConfirmationAndActivate(tabId) {
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "Do you want to save this record?",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085D6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes'
+                }).then((result) => {
+                    if (result.value) {
+                        Swal.fire({
+                            type: 'success',
+                            title: 'Success!',
+                            text: 'Record Saved Successfully!',
+                            timer: 2000
+                        }).then(() => {
+                            activateTab(tabId);
+                        });
+                    }
+                });
+            }
+            document.getElementById('saveAndNextBtn').addEventListener('click', function () {
+                handleConfirmationAndActivate('navpills-2');
+            });
+            document.getElementById('saveAndNextBtn2').addEventListener('click', function () {
+                handleConfirmationAndActivate('navpills-3');
+            });
+            document.getElementById('saveAndNextBtn3').addEventListener('click', function () {
+                handleConfirmationAndActivate('navpills-4');
+            });
+        });
     </script>
 </asp:Content>

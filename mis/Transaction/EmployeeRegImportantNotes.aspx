@@ -37,9 +37,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">About Employee Registration
-                        <br />
-                                कर्मचारी पंजीकरण के बारे में
+                            <h4 class="card-title">About Employee Registration / कर्मचारी पंजीकरण के बारे में
                             </h4>
                         </div>
                     </div>
@@ -71,7 +69,6 @@
                         </div>
                     </div>
                     <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-
                     <div>
                         <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
                             <b>1)</b> &nbsp;समस्त जानकारी सावधानीपूर्वक और सही-सही भरें |<br />
@@ -79,16 +76,12 @@
                             <b>3)</b> &nbsp;फॉर्म को भरने के पूर्व फॉर्म संबंधी समस्त दस्तावेज साथ में लेकर बैठे ताकि असुविधा से बचा जा सके।<br />
                             <b>4)</b> &nbsp;फोटोग्राफ (JPG format) 700kb और सभी प्रकार के प्रमाण पत्र  (PDF Format) 700kb  में होना चाहिए
                     <br />
-
-
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

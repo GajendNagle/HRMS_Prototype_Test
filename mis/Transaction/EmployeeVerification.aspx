@@ -88,7 +88,7 @@
                             </li>
                             <li class="breadcrumb-item">
                                  <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                    <span>Employee Verification</span></a>
+                                    <span>Employee Registration</span></a>
                             </li>
                             <li class="breadcrumb-item"><span>Employee Verification</span></li>
                         </ol>
@@ -344,7 +344,7 @@
                                         <td>UDC</td>
                                         <td>HR</td>
                                         <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Reject</td>
+                                        <td>Rejected</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -353,7 +353,7 @@
                                         <td>UDC</td>
                                         <td>HR</td>
                                         <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Reject</td>
+                                        <td>Rejected</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -362,7 +362,7 @@
                                         <td>UDC</td>
                                         <td>HR</td>
                                         <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Reject</td>
+                                        <td>Rejected</td>
                                     </tr>
                                 </table>
                             </div>
@@ -372,7 +372,7 @@
                 <div class="row justify-content-center" id="divbtn">
                     <div class="col-md-12">
                         <div class="form-group text-center">
-                            <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="openBootstrapModalreg1()">Save</button>
+                            <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="openBootstrapModalreg1()">Approve</button>
                             <button type="button" class=" btn btn-outline-danger btn-border w-lg" onclick="openBootstrapModalreg()">Reject</button>
                         </div>
                     </div>

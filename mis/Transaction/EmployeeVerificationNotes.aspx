@@ -17,7 +17,7 @@
                         </li>
                         <li class="breadcrumb-item">
                              <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Employee Verification</span></a>
+                                <span>Employee Registration</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>About Employee Verification</span></li>
                     </ol>
