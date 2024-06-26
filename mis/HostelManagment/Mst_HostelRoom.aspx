@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
+    <%--<div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor"></h4>
         </div>
@@ -22,12 +22,32 @@
             </div>
 
         </div>
+    </div>--%>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HostelManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Hostel Management</span></a>
+                        </li>
+
+                        <li class="breadcrumb-item">Hostel Room Details</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Hostel Room Details /छात्रावास कक्ष का विवरण
+                    <h4 class="card-title">Hostel Room Details / छात्रावास कक्ष का विवरण
                     </h4>
                 </div>
             </div>
@@ -35,94 +55,83 @@
         <div class="card-body">
             <div runat="server" id="divOffice">
                 <fieldset>
-                    <legend>Hostel Room Details /छात्रावास कक्ष का विवरण</legend>
+                    <legend>Hostel Room Details / छात्रावास कक्ष का विवरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Select Hostel Name/<br />
-                                    हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="1">Boys Hostel</option>
-                                    <option value="2">Girls Hostel</option>
-                                    <option value="3">Combine </option>
-                                </select>
-                            </div>
+                            <label>
+                                Select Hostel Name<br />
+                                हॉस्टल का चयन करें<span style="color: red;">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="1">Boys Hostel</option>
+                                <option value="2">Girls Hostel</option>
+                                <option value="3">Combine </option>
+                            </select>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Select Room Type/
+                            <label>
+                                Select Room Type
                                     <br />
-                                    कक्ष के प्रकार चुनें<span style="color: red;">*</span></label>
-                                <select class="form-control select2">
-                                   
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="Single">Single</option>
-                                    <option value="Double">Double</option>
-                                    <option value="Triple">Triple</option>
-                                    <option value="Quad">Quad</option>
-                                </select>
-                            </div>
+                                कक्ष प्रकार का चयन करें<span style="color: red;">*</span></label>
+                            <select class="form-control select2">
+
+                                <option value="--Select--">--Select--</option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
+                                <option value="Triple">Triple</option>
+                                <option value="Quad">Quad</option>
+                            </select>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Select Hostel Room Number/<br />
-                                    हॉस्टल कक्ष नंबर चुनें<span style="color: red;">*</span></label>
-                                <select class="form-control select2">
-                                    <option value="--Select--">--Select--</option>
-                                    <option value="101">101</option>
-                                    <option value="201">201</option>
-                                    <option value="102">102</option>
-                                    <option value="202">202</option>
-                                </select>
-                            </div>
+                            <label>
+                                Select Hostel Room Number<br />
+                                हॉस्टल कक्ष नंबर का चयन करें<span style="color: red;">*</span></label>
+                            <select class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="101">101</option>
+                                <option value="201">201</option>
+                                <option value="102">102</option>
+                                <option value="202">202</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row align-items-end">
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Enter No. of Bed/<br />
-                                    बिस्तर की संख्या दर्ज करें<span style="color: red;">*</span></label>
-                                 <input type="text" class="form-control" placeholder="Enter No. of Bed" />
-                            </div>
+                            <label>
+                                Enter No. of Bed<br />
+                                बिस्तर की संख्या दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter No. of Bed" />
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Rent Per Bed/<br />
-                                    प्रति बिस्तर किराया<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" placeholder="Enter Rent per Bed" />
-                            </div>
+                            <label>
+                                Enter Rent Per Bed<br />
+                                प्रति बिस्तर किराया दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Rent per Bed" />
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
+                            <a href="Mst_HostelRoom.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </fieldset>
-                <div class="col-md-12">
-                    <div class="form-group text-center">
-                        <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
-                        <a href="Mst_RoomType.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <fieldset id="HostlInfo" style="display: none;">
-        <legend>Hostel Room Detail/छात्रावास कक्ष विवरण</legend>
+        <legend>Hostel Room Detail / छात्रावास कक्ष विवरण</legend>
         <div class="row justify-content-end">
-            <div class="col-md-1">
+
+            <div class="col-md-4 text-end">
                 <div class="form-group">
-                    <button class="btn btn-info btn-rounded w-100">Excel</button>
+                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                    <button class="btn btn-info btn-rounded w-55">PDF</button>
                 </div>
             </div>
-            <div class="col-md-1">
-                <div class="form-group">
-                    <button class="btn btn-info btn-rounded w-100">PDF</button>
-                </div>
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="form-group">
                     <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                 </div>
@@ -138,20 +147,19 @@
                                 <thead>
                                     <tr role="row">
                                         <th scope="col">Sr.No.<br />
-                                            क्र.सं.</th>
+                                            सरल क्र.</th>
                                         <th scope="col">Hostel Name<br />
-                                            हॉस्टल नाम</th>
+                                            हॉस्टल का नाम</th>
                                         <th scope="col">Room Type<br />
                                             कक्ष प्रकार   </th>
                                         <th scope="col">Hostel Room Number<br />
-                                            हॉस्टल कक्ष नंबर </th>
+                                            हॉस्टल का कक्ष नंबर </th>
                                         <th scope="col">No. of Bed<br />
                                             बिस्तर की संख्या </th>
                                         <th scope="col">Rent Per Bed<br />
                                             प्रति बिस्तर किराया</th>
                                         <th scope="col">Action
-                                            <br />
-                                            कार्रवाई </th>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
