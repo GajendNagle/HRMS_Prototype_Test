@@ -17,11 +17,7 @@
                 text-decoration: underline;
             }
 
-        .nav {
-            background-color: #005b5c;
-            padding: 10px;
-        }
-
+       
         title {
             background-color: brown;
         }
@@ -31,7 +27,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-    <div class="row page-titles mb-4">
+  <%--  <div class="row page-titles mb-4">
         <div class="col-md-5 align-self-center">
             <h4 class="text-themecolor ">Surplus Teachers Management System</h4>
         </div>
@@ -50,7 +46,7 @@
     <div class="mb-3">
         <div class="row nav">
             <div class="col-md-12 justify-content-around">
-                <%--<a class="head" href="../Default.aspx">Home</a>--%>
+                <%--<a class="head" href="../Default.aspx">Home</a>
                 <a class="head" href="ZeroTeacher.aspx">Zero Teachers </a>
                 <a class="head" href="SingleTeacherManagementSystem.aspx">Single Teachers</a>
                 <a class="head" href="SurplusTeacherManagementSystem.aspx">Surplus Status</a>
@@ -60,18 +56,69 @@
     <center>
         <h3 class="alert alert-success">School-wise Surplus Teachers
         </h3>
-    </center>
+    </center>--%>
+     <div class="row">
+     <div class="col-12">
+         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+             <h4 class="mb-sm-0"></h4>
+             <div class="=page-title-right">
+                 <ol class="breadcrumb m-0">
+                     <li class="breadcrumb-item">
+                         <span>Home</span>
+                     </li>
+                     <li class="breadcrumb-item">
+                         <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
+                     </li>
+                     <li class="breadcrumb-item">
+                         <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
+                             <span>OIS Setup Reports</span></a>
+                     </li>
+
+                     <li class="breadcrumb-item"><span>School-wise Surplus Teachers</span></li>
+                 </ol>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <%--  <div class="row page-titles mb-4">--%>
+
+
+ <%--div class="card card-border-primary">
+     <div class="card-header">
+         <div class="row align-items-end">
+             <div class="col-lg-12">
+                 <div class="card-title color_black">
+                     School-wise Surplus Teachers/स्कूलवार अधिशेष शिक्षक
+                 </div>
+             </div>
+         </div>
+     </div>
+     <br />--%>
+     <div class="card card-border-primary">
+     <div class="card-header">
+         <div class="row align-items-end">
+             <div class="col-lg-12">
+                 <h5 class="card-title">  School-wise Surplus Teachers/स्कूलवार अधिशेष शिक्षक
+                 </h5>
+             </div>
+         </div>
+     </div>
+     <div class="card-body">
+
+
 
     <div>
         <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="tblS1" style="width: 100%; border-collapse: collapse;">
             <thead>
-                <tr>
-                    <th scope="col">DISECode</th>
-                    <th scope="col">School</th>
-                    <th scope="col">Sanctioned Posts</th>
-                    <th scope="col">Working</th>
-                    <th scope="col">Surplus Teachers</th>
-                </tr>
+              <tr>
+    <th scope="col">DISECode<br />डी.आई.एस.ई. कोड</th>
+    <th scope="col">School<br />स्कूल</th>
+    <th scope="col">Sanctioned Posts<br />स्वीकृत पद</th>
+    <th scope="col">Working<br />कार्यरत</th>
+    <th scope="col">Surplus Teachers<br />अधिशेष शिक्षक</th>
+</tr>
+
             </thead>
             <tbody>
                 <tr>
@@ -217,7 +264,7 @@
                 </tr>
             </tfoot>
         </table>
-    </div>
+    </div></div></div>
 
 
 
@@ -228,13 +275,14 @@
     <div>
         <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="tblS2" style="width: 100%; display: none; border-collapse: collapse;">
             <thead>
-                <tr>
-                    <th scope="col">DISECode</th>
-                    <th scope="col">School</th>
-                    <th scope="col">Sanctioned Posts</th>
-                    <th scope="col">Working</th>
-                    <th scope="col">Surplus Teachers</th>
-                </tr>
+                           <tr>
+    <th scope="col">DISECode<br />डी.आई.एस.ई. कोड</th>
+    <th scope="col">School<br />स्कूल</th>
+    <th scope="col">Sanctioned Posts<br />स्वीकृत पद</th>
+    <th scope="col">Working<br />कार्यरत</th>
+    <th scope="col">Surplus Teachers<br />अधिशेष शिक्षक</th>
+</tr>
+
             </thead>
             <tbody>
                 <tr>

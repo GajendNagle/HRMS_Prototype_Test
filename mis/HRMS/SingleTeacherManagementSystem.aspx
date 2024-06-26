@@ -17,10 +17,7 @@
                 text-decoration: underline;
             }
 
-        .nav {
-            background-color: #005b5c;
-            padding: 10px;
-        }
+        
 
         title {
             background-color: brown;
@@ -78,9 +75,9 @@
                     <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="tbl1" style="width: 100%; border-collapse: collapse;">
                         <thead>
                             <tr>
-                                <th scope="col">S.No.</th>
-                                <th scope="col">District</th>
-                                <th scope="col">Schools</th>
+                                <th scope="col">S.No.<br />क्रमांक</th>
+                                <th scope="col">District<br />ज़िला</th>
+                                <th scope="col">Schools<br />स्कूल</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -386,13 +383,13 @@
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover bg-white" cellspacing="0" rules="all" border="1" id="tbl2" style="width: 100%; display: none; border-collapse: collapse;">
                         <thead>
-                            <tr>
-                                <th scope="col">S.No.</th>
-                                <th scope="col">Block</th>
-                                <th scope="col">DISE Code</th>
-                                <th scope="col">School</th>
-                                <th scope="col">Category</th>
-                            </tr>
+                                                   <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                         </thead>
                         <tbody>
                             <tr>

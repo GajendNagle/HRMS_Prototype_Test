@@ -16,14 +16,12 @@
                 text-decoration: underline;
             }
 
-        .nav {
-            background-color: #005b5c;
-            padding: 10px;
-        }
+     
 
         title {
             background-color: brown;
         }
+       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -75,11 +73,16 @@
                 <table class="table table-bordered table-hover bg-white "  id="GrdSchoolDetails" style="">
                     <thead>
                         <tr>
-                            <th scope="col" class="w-25">S.No.</th>
-                            <th scope="col">District</th>
-                            <th scope="col">Schools</th>
+                            <th scope="col" class="w-25">S.No.<br />क्रमांक</th>
+                            <th scope="col">District<br />ज़िला</th>
+                            <th scope="col">Schools<br />स्कूल</th>
                         </tr>
                     </thead>
+
+
+
+
+
                     <tbody>
                         <tr>
                             <td>1
@@ -160,11 +163,11 @@
                 <table class="table table-bordered table-hover bg-white" >
                     <thead>
                         <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
+                            <th scope="col">S.No.<br/>     क्रमांक</th>
+                            <th scope="col">Block<br/>     ब्लॉक</th>
+                            <th scope="col">DISE Code<br/> डी.आई.एस.ई. कोड</th>         
+                            <th scope="col">School   <br/> स्कूल</th>         
+                            <th scope="col">Category <br/> श्रेणी</th>         
                         </tr>
                     </thead>
                     <tbody>
@@ -219,12 +222,13 @@
                 <table class="table table-bordered table-hover bg-white" >
                     <thead>
                         <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+     <th scope="col">S.No.<br/>     क्रमांक</th>
+     <th scope="col">Block<br/>     ब्लॉक</th>
+     <th scope="col">DISE Code<br/> डी.आई.एस.ई. कोड</th>         
+     <th scope="col">School   <br/> स्कूल</th>         
+     <th scope="col">Category <br/> श्रेणी</th>         
+ </tr>          
+
                     </thead>
                     <tbody>
                         <tr>
@@ -280,12 +284,12 @@
                 <table class="table table-bordered table-hover bg-white"  >
                     <thead>
                         <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+     <th scope="col">S.No.<br/>क्रमांक</th>
+     <th scope="col">Block<br/>ब्लॉक</th>
+     <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+     <th scope="col">School<br/>स्कूल</th>         
+     <th scope="col">Category<br/>श्रेणी</th>         
+ </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -340,13 +344,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white">
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                            <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -402,13 +406,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white">
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                             <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -464,13 +468,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white" >
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                               <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -525,13 +529,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white">
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                               <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -586,13 +590,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white">
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                              <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -663,13 +667,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white">
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                           <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -724,13 +728,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover bg-white">
                     <thead>
-                        <tr>
-                            <th scope="col">S.No.</th>
-                            <th scope="col">Block</th>
-                            <th scope="col">DISE Code</th>
-                            <th scope="col">School</th>
-                            <th scope="col">Category</th>
-                        </tr>
+                                             <tr>
+    <th scope="col">S.No.<br/>क्रमांक</th>
+    <th scope="col">Block<br/>ब्लॉक</th>
+    <th scope="col">DISE Code<br/>डी.आई.एस.ई. कोड</th>         
+    <th scope="col">School<br/>स्कूल</th>         
+    <th scope="col">Category<br/>श्रेणी</th>         
+</tr>
                     </thead>
                     <tbody>
                         <tr>
