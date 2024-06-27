@@ -61,7 +61,8 @@
     </div>
     <%--  <div class="row page-titles mb-4">--%>
   <%--  <div class="row page-titles mb-4">--%>
-  <div class="row align-content-end"><div class="col-md-5 ">
+  <div class="row align-content-end">
+      <div class="col-md-5 ">
           <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
       </div>
                <%--               <div class="row justify-content-end" onclick=" moveBetweenFieldsets(currentFieldset, nextFieldset) " style=" position:fixed; margin-left: 35.5rem" id="btnBack">
@@ -72,12 +73,12 @@
         </div>
 </div>--%>
 
-      <div class="col-md-4">
+     <%-- <div class="col-md-4">
           <div class="form-group">
               </div>
 
-      </div>
-<div class="col-md-3 justify-content-lg-end" style="position:relative; left:120px; top:10px;">
+      </div>--%>
+<div class="col-md text-end">
     <div class="form-group">
          <button id="BtnBack" class="btn-info rounded-2 ml-5" type="button" onclick="Backclickfn()">BACK</button>
         

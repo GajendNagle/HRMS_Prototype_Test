@@ -9,7 +9,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
+ <%--   <div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/PropertyReturnNew.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -69,14 +69,52 @@
                     </div>
                 </div>
             </nav>
-            <br />
+            <br />--%>
+        <div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#EmpAPRMS" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <span>Employee APRMS</span></a>
+                    </li>
+                    <li class="breadcrumb-item"><span>APRMS District Wise Report</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row align-content-end">
+    <div class="col-md-5 ">
+        <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+    </div>
+</div>
 
+    <div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h5>APRMS District Wise Report/
+               ए.पी.आर.एम.एस जिलावार रिपोर्ट
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
             <fieldset>
-                <legend>Annual Property Returns Report/वार्षिक संपत्ति रिटर्न रिपोर्ट</legend>
+                <legend>Annual Property Returns District Wise Report/वार्षिक संपत्ति रिटर्न रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 <%--<label class="font-bold">--%>
                                     District<br />
                                 ज़िला</label>
@@ -139,7 +177,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Department<br />
                                 विभाग</label>
                             <select class="form-control select2">
@@ -159,7 +197,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Annual Year 
    <br />
                                 वित्तीय वर्ष
@@ -168,6 +206,7 @@
 
                         </div>
                     </div>
+                    <hr />
                     <div class="col-md-3 ">
                         <div class="form-group ">
 
@@ -179,7 +218,7 @@
                 </div>
             </fieldset>
             <fieldset id="FS_Details" style="display: none">
-                <legend>Details  </legend>
+                <legend>Details /विवरण </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -200,11 +239,11 @@
                             <table class="table table-bordered" id="mainTable">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No.</th>
-                                        <th>District</th>
-                                        <th>Total Employees Whose APR Uploaded</th>
-                                        <th>Total Employees Whose APR Not Uploaded</th>
-                                        <th>Performance %</th>
+                                        <th>Sr. No.<br />क्रमांक</th>
+                                        <th>District<br />ज़िला</th>
+                                        <th>Total Employees Whose APR Uploaded<br />कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                        <th>Total Employees Whose APR Not Uploaded<br />कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                        <th>Performance %<br />प्रदर्शन %</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -230,14 +269,19 @@
                     </div>
                 </div>
             </fieldset>
-            <div class="modal fade" id="districtModal" tabindex="-1" role="dialog" aria-labelledby="districtModalLabel" aria-hidden="true">
+            <%--<div class="modal fade" id="districtModal" tabindex="-1" role="dialog" aria-labelledby="districtModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="districtModalLabel">APR Details - <span id="modalDistrictName"></span></h3>
+                           <%-- <h3 class="modal-title" id="districtModalLabel">APR Details - <span id="modalDistrictName"></span></h3>
+                            
+                          
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </button>
                         </div>
+                                                    <fieldset>
+                                <legend>
+APR Details /एपीआर विवरण</legend>
                         <div class="modal-body">
                             <div class="row justify-content-end">
                                 <div class="col-md-6 text-end">
@@ -291,27 +335,110 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
+                                                        </fieldset>
+                      
+                 </div>
+                    
+ 
                     </div>
+                
+            </div>--%>
+        
+          <div class="modal  fade" id="districtModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+
+           
+                <%--<h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">EMPLOYEE  ACR FORM</h3>--%>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                                                                    <fieldset>
+                                <legend>
+APR Details /एपीआर विवरण</legend>
+                        <div class="modal-body">
+                            <div class="row justify-content-end">
+                                <div class="col-md-6 text-end">
+                                    <div class="form-group">
+                                        <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                        <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table id="modalTable" class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr. No.</th>
+                                                    <th>Employee
+                                            <br />
+                                                        कर्मचारी</th>
+                                                    <th>District <br />
+                                                        जिला</th>
+                                                    <th>Sankul
+                                            <br />
+                                                        संकुल</th>
+                                                    <th>OIS Name<br />
+                                                        कार्यालय / संस्था/ स्कूल</th>
+                                                    <th>Dipartment
+                                            <br />
+                                                        विभाग</th>
+                                                    <th>Designation
+                                            <br />
+                                                        पद</th>
+                                                    <th>Financial Year
+                                            <br />
+                                                        वित्तीय वर्ष</th>
+                                                    <th>Detail
+                                            <br />
+                                                        विवरण</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Table body will be populated dynamically using JavaScript -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                                                      
+                                                                       
+                                                                        </fieldset>                                                    
+
                 </div>
             </div>
+        </div>
+              </div>
             <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xxl" role="document">
+                <div class="modal-dialog modal-xl" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h2 class="modal-title">Selected APR Form </h2>
+                         
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <fieldset>
-                                <legend>APR Details</legend>
-
+                         
                                 <embed id="pdfViewer" width="100%" height="600" />
-                            </fieldset>
+                           
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -337,13 +464,13 @@
             const maxSizeInBytes = maxSizeInKB * 1024;
 
             const file = fileInput.files[0];
-            if (file && file.size > maxSizeInBytes) {
-                fileSizeMessage.innerHTML = '<br>File size exceeds the maximum limit (' + maxSizeInKB + ' KB). Please select a smaller file.';
-                // Optionally, you could clear the file input here to prevent submitting the oversized file
-                fileInput.value = '';
-            } else {
-                fileSizeMessage.textContent = '';
-            }
+            //if (file && file.size > maxSizeInBytes) {
+            //    fileSizeMessage.innerHTML = '<br>File size exceeds the maximum limit (' + maxSizeInKB + ' KB). Please select a smaller file.';
+            //    // Optionally, you could clear the file input here to prevent submitting the oversized file
+            //    fileInput.value = '';
+            //} else {
+            //    fileSizeMessage.textContent = '';
+            //}
         }
 
         $('.datepickerYear').datepicker({
@@ -387,7 +514,9 @@
                     "office": "23354912798 -Bal Bharti School",
                     "department": "Education",
                     "designation": "Assistant Teacher",
-                    "year": "2023-24"
+                    "year": "2023-24",
+                  
+                   
                 },
                 {
                     "employee": "CD5678-Ritu Sharma",
@@ -396,6 +525,7 @@
                     "department": "Education",
                     "designation": "Teacher",
                     "year": "2023-24"
+
                 },
                 {
                     "employee": "EF9012-Rahul Gupta",

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="UploadAPRForm.aspx.cs" Inherits="mis_HRMS_UploadAPRForm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <style>
         @media (max-width: 768px) {
             .d-none.d-md-table-cell {
@@ -45,7 +46,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
+    <%--<div class="row page-titles" style="margin-bottom: -30px">
         <div class="col-md-5 align-self-center">
             <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
                 <img src="../../img/PropertyReturnNew.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
@@ -103,39 +104,53 @@
                     </div>
                 </div>
             </nav>
-            <br />
-            <fieldset>
-                <legend>Upload APR Form/ एपीआर फॉर्म अपलोड करें </legend>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="fw-bold text-dark">
-                                Unique Id
-                                <br />
-                                यूनिक आई.डी.<span style="color: red">*</span>
-                            </label>
-
-                            <input name="ctl00$ContentBody$txtUniqueId" type="text" id="ContentBody_txtUniqueId" class="form-control" placeholder="Unique Id" autocomplete="off" />
-
-                        </div>
-                    </div>
-                    <div class="col-md-2 ">
-                        <div class="form-group ">
-
-                            <button type="button" class="btn btn-success btn-rounded" onclick="document.getElementById('FS_EmpInfo').style.display = 'block';document.getElementById('FS_FillApr').style.display = 'block'">Search</button>
-
-                        </div>
-                    </div>
-
-                </div>
-            </fieldset>
-            <fieldset id="FS_EmpInfo" style="display: none;">
+            <br />--%>
+      <div class="row">
+      <div class="col-12">
+          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+              <h4 class="mb-sm-0"></h4>
+              <div class="=page-title-right">
+                  <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                          <span>Home</span>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item">
+                          <a href="#EmpAPRMS" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>Employee APRMS</span></a>
+                      </li>
+                      <li class="breadcrumb-item"><span>Upload APR Form Document</span></li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row align-content-end">
+      <div class="col-md-5 ">
+          <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+      </div>
+  </div>
+    <div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h5 class="card-title">Upload APR Form Document/
+                ए.पी.आर फॉर्म दस्तावेज़ अपलोड करें
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+            
+            <%--<fieldset id="FS_EmpInfo">
                 <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
 
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Unique Id-Name
                                 <br />
                                 यूनिक आई.डी. - नाम
@@ -147,7 +162,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 District Name
   <br />
                                 जिला का नाम
@@ -157,7 +172,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Sankul Name
   <br />
                                 संकुल का नाम
@@ -167,7 +182,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Office / Institute / School
                         <br />
                                 कार्यालय / संस्था/ स्कूल
@@ -177,7 +192,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Department Name
                         <br />
                                 विभाग का नाम
@@ -189,7 +204,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Designation Name
                                 <br />
                                 पदनाम
@@ -201,42 +216,47 @@
                 </div>
 
 
-            </fieldset>
+            </fieldset>--%>
 
-            <fieldset id="FS_FillApr" style="display: none;">
+            <fieldset id="FS_FillApr">
                 <legend>Fill APR Form / APR फार्म भरे</legend>
 
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Year of APR
                 <br />
                                 अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                             </label>
-                            <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
-                            <br />
-                            <br />
-                            <br />
+                           <input maxlength="4" id="Year" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
+                          
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="fw-bold text-dark">
+                            <label>
                                 Uplode APR form
                 <br />
                                 अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
                             </label>
                             <input type="file" class="form-control" accept=".pdf" onchange="checkFileSize('FuAprForm', 200, 'MsgErr')" id="FuAprForm" />
                             <div style="color: red; font-size: 12px; margin: 0px; padding: 0px; display: inline" id="MsgErr">
-                                <br />
-                                <br />
-                                <br />
+                              
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                     <hr />
+ <div class="row">
+     <div class="col-md-12">
+         <div class="form-group">
+             <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+             <a href="UploadAprForm.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+         </div>
+     </div>
+ </div>
+                    <%--<div class="col-md-3">
                         <div class="form-group">
                             <input type="button" value="Save" onclick="document.getElementById('FS_Details').style.display = 'block';" class="Alert-Confirmation btn btn-success btn-rounded">
 
@@ -245,7 +265,7 @@
                             <br />
                             <br />
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </fieldset>
          <%--       <fieldset id="FS_Details" style="display: none">
@@ -527,5 +547,45 @@
                 }
             }
         });</script>
+      <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+
+  </script>
+  <script>
+      $('.datepickerYear').datepicker({
+          format: "yyyy",
+          minViewMode: 2,
+          autoclose: true,
+          orientation: 'bottom'
+      }).on('hide', function (e) {
+          var inputYear = e.target.value.trim();
+          if (/^\d+$/.test(inputYear)) {
+              var selectedYear = parseInt(inputYear);
+              var nextYear = selectedYear + 1;
+              var financialYear = selectedYear + '-' + (nextYear); // Example: 2023-24 for financial year 2023-2024
+              $(".datepickerYear").val(financialYear);
+          }
+          else if (inputYear === '') { // If input is empty
+              setDefaultFinancialYear();
+          }
+          else {
+              alert("Please enter a valid year.");
+          }
+      });
+
+      // Function to set default value to current financial year
+      function setDefaultFinancialYear() {
+          var currentDate = new Date();
+          var currentYear = currentDate.getFullYear();
+          var nextYear = currentYear + 1;
+          var financialYear = currentYear + '-' + (nextYear);
+          $(".datepickerYear").val(financialYear);
+      }
+
+      // Set default value to current financial year on page load
+      $(document).ready(function () {
+          setDefaultFinancialYear();
+      });
+       </script>
 </asp:Content>
 

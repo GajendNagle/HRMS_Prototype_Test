@@ -92,15 +92,29 @@
         <%--    <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)" style="">
         </p>
     </div>--%>
-      <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
+    <%--  <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
       <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
           <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
           </u>
       </p>
                          
-      </div>
+      </div>--%>
+    <div class="row align-content-end"><div class="col-md-5 ">
+        <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png"  style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+    </div></div>
 
-   
+   <div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h5 class="card-title">Employee APR Form/
+                 
+कर्मचारी एपीआर फॉर्म
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
     <fieldset id="show1" runat="server">
         <legend>Fill Annual Property Details/वार्षिक संपत्ति विवरण भरें</legend>
         <div class="row align-content-end">
@@ -488,7 +502,7 @@
         </div>
     </fieldset>
 
-
+        </div></div>
 </asp:Content>
 
 

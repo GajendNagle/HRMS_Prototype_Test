@@ -2,45 +2,36 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        @media (max-width: 768px) {
-            .d-none.d-md-table-cell {
-                display: none !important;
-            }
+       @media print {
 
-            .modal-backdrop {
-                display: none;
-            }
 
-            .modal {
-                position: static;
-                overflow: visible;
-                background: white;
-            }
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
 
-            .modal-dialog {
-                max-width: none;
-                width: auto;
-                background: white;
-            }
+    body {
+        font-size: 12px;
+        transform-origin: top left;
+        transform: scale(calc(100% / var(--print-scale, 1)));
+    }
 
-            .modal-content {
-                border: none;
-                box-shadow: none;
-                background: white;
-            }
-
-            #btnPrint {
-                display: none;
-            }
-        }
+    .page-break {
+        page-break-after: always;
+    }
+    #btnPrint{
+         display:none;
+    }
+    .modal-header {
+    display: none;
+}
 
         #imgLogoP1 {
             display: none;
         }
 
-        .modal-header {
-            display: none;
-        }
+        .
+       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -108,19 +99,29 @@
                             <a href="#EmpAPRMS" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee APRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Employee APR Form</span></li>
+                        <li class="breadcrumb-item"><span>Employee APR Form Report Print</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-5 " style="position: relative; bottom: 30px; right: 25px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-            <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
-
+    <div class="row align-content-end">
+        <div class="col-md-5 ">
+            <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+        </div>
     </div>
+    <div class="card card-border-primary">
+    <div class="card-header">
+        <div class="row align-items-end">
+            <div class="col-lg-12">
+                <h5 class="card-title">Employee APR Form Report Print/
+                
+कर्मचारी एपीआर फॉर्म रिपोर्ट प्रिंट
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
 
     <fieldset id="show2" runat="server">
         <legend>Employee Annual Property Detail Report/कर्मचारी की अचल संपत्ति का विवरण रिपोर्ट </legend>
@@ -238,227 +239,139 @@
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: var(--vz-primary);">
+                <div class="modal-header">
 
-                    <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
-
+               
                     <%--<h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">EMPLOYEE  ACR FORM</h3>--%>
                     <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div runat="server" id="show">
-                        <fieldset id="fs1">
-
-                            <div class="row text-center">
-                                <div class="col-sm-2">
-                                    <img id="imgLogoP2" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
-                                </div>
-                                <div class="col-sm-8 text-center">
-                                    <br />
-                                    <h3><strong>अचल संपत्ति का विवरण का वित्तीय वर्ष  2024</strong></h3>
-                                    <h4><strong>Real Estate Details For Financial Year 2024</strong></h4>
-                                    <h4><strong>जिला:- भोपल</strong></h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
-                                </div>
-                            </div>
-                            <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
-                           <div class="row">
-                             
-                                    <div class="col-md-12">
-                                  
-                                                <table class="table">
-                                                    <tr class="fs-5">
-                                                        <th>कर्मचारी का (पूरा) नाम तथा उस सेवा का नाम जिसमें वह हो </th>
-                                                        <td>Rajesh Agrawal</td>
-                                                        <th>कर्मचारी यूनिक कोड</th>
-                                                        <td>AB4545</td>
-                                                    </tr>
-                                                    <tr class="fs-5">
-                                                        <th>वर्तमान धारित पद</th>
-                                                        <td>प्राथमिक अध्यापक(PRT)</td>
-                                                       <th>वर्तमान वेतन</th>
-                                                        <td>25000</td>
-                                                    </tr>
-                                                    <tr class="fs-5">
-
-                                                        <th>वर्तमान वेतन</th>
-                                                        <td>25000</td>
-                                                        <th>अगली वेतन वृद्धि की तारीख</th>
-                                                        <td>24/12/2024</td>
-                                                    </tr></table></div></div>
-
-                                            <%--     </table>
-                                                <h3 class="text-center mt-4 mb-4 font-bold" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>::  कर्मचारी की अचल संपत्ति का विवरण ::</u></h3>
-                                            </div>
-                                            <table class="table table-hover table-bordered fs-4">
-                                                <tr class="mt-3">
-                                                    <th>Application Number/आवेदन क्रमांक :</th>
-                                                    <td>132240</td>
-                                                    <th>Unique Id/यूनिक आई.डी</th>
-                                                    <td>AR4781</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Employee Name/कर्मचारी का नाम</th>
-                                                    <td>Rajesh Agrawal</td>
-                                                    <th>Designation (पद)</th>
-                                                    <td>प्राथमिक अध्यापक(PRT)</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Current Salary/वर्तमान वेतन</th>
-                                                    <td>25000</td>
-                                                    <th>Increment Date/वेतन वृद्धि तिथि</th>
-                                                    <td>26/05/2023</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Division/संभाग का नाम</th>
-                                                    <td>Bhopal(भोपाल)</td>
-                                                    <th>District/जिले का नाम</th>
-                                                    <td>Raisen(रायसेन)</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Block/विकासखंड का नाम</th>
-                                                    <td>Agar(आगर)</td>
-                                                    <th>Gram Panchayat/ग्राम पंचायत का नाम</th>
-                                                    <td>Benibahra(बेनीबहरा)</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Gram(ग्राम का नाम) </th>
-                                                    <td>Belgaon(बेलगांव)</td>
-                                                    <th>Property Detail/ संपत्ति विवरण </th>
-                                                    <td>Commercial Property(व्यावसायिक संपत्ति)</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Total Area/कुल क्षेत्रफल</th>
-                                                    <td>20000 hectares</td>
-                                                    <th>Current Value/वर्तमान मूल्य</th>
-                                                    <td>5 crore</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Property Owner/संपत्ति मालिक</th>
-                                                    <td>Self</td>
-                                                    <th>Owner Name/संपत्ति मालिक का नाम
-                                                    </th>
-                                                    <td>Rajesh Agrawal</td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Property Source/संपत्ति स्रोत</th>
-                                                    <td>उपहार</td>
-                                                    <th>Purchase Date/खरीद की तारीख</th>
-                                                    <td>15/04/2022  </td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Seller  Mobile No/विक्रेता का मोबाइल नंबर</th>
-                                                    <td>9898989898</td>
-                                                    <th>Seller  Address/विक्रेता का पता
-                                                    </th>
-                                                    <td>Sector-2, Pithampur, Dhar, M.P. </td>
-                                                </tr>
-                                                <tr class="mt-3">
-                                                    <th>Property Annual Income/संपत्ति से वार्षिक आय
-                                                    </th>
-                                                    <td>150000</td>
-                                                    <th>Accusation/अभियुक्ति
-                                                    </th>
-                                                    <td>Nil </td>
-                                                </tr>
-                                                <br />
-                                                <%-- <tr>
-                                    <td class="text-right font-18 fw-bold" style="position: relative; left:700px;">हस्ताक्षर....................................</td></tr>
-                                 <tr> 
-                                    <td class="text-right font-18 fw-bold" style="position: relative; left:700px;">नाम........................................
-                                    </td><tr> 
-                                    <td class="text-right font-18 fw-bold" style="position: relative; left:700px;">पद........................................
-                                    </td></tr>
-                                            </table>
-                                            <div class="text-end d-flex flex-column gap-3">
-                                                <h4><b>हस्ताक्षर....................................</b></h4>
-                                                <h4><b>नाम....................................</b></h4>
-                                                <h4><b>पद....................................</b></h4>
-                                            </div>
-                                            <%--<table style="width: 100%;">
-                                    <tbody>
-                                        <tr>
-                                            <th class="font-18" style="position: relative; left: 320px; top: 35px;">: : <u>जाचं करने वाले अधिकारी की टीप्पणी</u> : :</th>
-                                        </tr>
-                                        <%--<tr>
-                                            <td class="font-18 text-center text-danger" style="position: relative; top: 50px; bottom: 20px;">अर्जुन तलवार  ने इस वर्ष अपने विकास में काफी प्रगति की है। वह अधिक आत्मविश्वासी  और शैक्षणिक रूप से अच्छा प्रदर्शन कर रहा है।
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-sm-left font-14 text-info" style="position: relative; top: 160px;">यह स्वयं की लॉगिन आईडी से जेनरेट गोपनीय चरित्रावली है,  हस्ताक्षर की आवश्यकता नहीं है।
-                                            </td>
-                                        </tr>
-                                
-                                  </tbody>
-                                </table>
-                                        </div>
+                        <div>
+                            <fieldset class="">
+                                <div class="row text-center">
+                                    <div class="col-sm-2">
+                                        <img id="imgLogoP2" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
+                                    </div>
+                                    <div class="col-sm-8 text-center">
+                                        <br />
+                                        <h3><strong>अचल संपत्ति का विवरण का वित्तीय वर्ष  2024</strong></h3>
+                                        <h4><strong>Annual Property Detail Report For Financial Year 2024</strong></h4>
+                                        <h4><strong>जिला:- भोपल</strong></h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
                                     </div>
                                 </div>
-                            </div>--%>
-                            <div class="row">
-    <div class="col-md-12">
-        <div class="table-responsive">
-        <table id="Table2" class="table table-bordered  text-center " runat="server">
-            <thead>
-                <tr valign="middle">
-                    <th rowspan="2">S.No.<br />
-                        सरल.क्र </th>
-                    <th rowspan="2">उस जिले, उप
-संभाग, तालुका
-तथा ग्राम का
-नाम, जिसमें
-संपत्ति स्थित हो
+                                <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
+                                <div class="row">
+
+                                    <div class="col-md-12">
+
+                                        <table class="table table-borderless">
+                                            <tr class="fs-5">
+                                                <th>कर्मचारी का (पूरा) नाम तथा उस सेवा का नाम जिसमें वह हो </th>
+                                                <td>Rajesh Agrawal</td>
+                                                <th>कर्मचारी यूनिक कोड</th>
+                                                <td>AB4545</td>
+                                            </tr>
+                                            <tr class="fs-5">
+                                                <th>वर्तमान धारित पद</th>
+                                                <td>प्राथमिक अध्यापक(PRT)</td>
+                                                <th>वर्तमान वेतन</th>
+                                                <td>25000</td>
+                                            </tr>
+                                            <tr class="fs-5">
+
+                                                <th>वर्तमान वेतन</th>
+                                                <td>25000</td>
+                                                <th>अगली वेतन वृद्धि की तारीख</th>
+                                                <td>24/12/2024</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table id="Table2" class="table table-bordered  text-center " runat="server">
+                                                <thead>
+                                                    <tr valign="middle">
+                                                        <th rowspan="2">S.No.<br />
+                                                            सरल.क्र </th>
+                                                        <th rowspan="2">उस जिले, उप
+संभाग, तालुका<br />
+                                                            तथा ग्राम का
+नाम, जिसमें<br />
+                                                            संपत्ति स्थित हो
                        
-                    </th>
-                    <th colspan="2">संपत्ति  का नाम तथा ब्यौर
-                        </th>
-                    <th rowspan="2">वर्तमान मूल्य
-    </th>
-                    <th rowspan="2">यदि स्वयं के नाम पर न हो तो बतलाइये कि वह किसके नाम पर धारित है और उसका शासकीय कर्मचारी से क्या संबंध है</th>
-                    <th rowspan="2">उसे किस प्रकार अर्जित किया गया |रसीद पट्टा ,बंधक विरासत, भेंट या अन्य  किसी प्रकार से तथा अर्जन की तारीख  और जिससे अर्जित की गई हो उसका नाम तथा ब्यौर
+                                                        </th>
+                                                        <th colspan="2">संपत्ति  का नाम तथा ब्यौर
+                                                        </th>
+                                                        <th rowspan="2">वर्तमान मूल्य
+                                                        </th>
+                                                        <th rowspan="2">यदि स्वयं के नाम पर न हो
+                                                            <br />
+                                                            तो बतलाइये कि वह किसके
+                                                            <br />
+                                                            नाम पर धारित है और उसका
+                                                            <br />
+                                                            शासकीय कर्मचारी से क्या संबंध है</th>
+                                                        <th rowspan="2">उसे किस प्रकार अर्जित किया गया |<br />
+                                                            रसीद पट्टा ,बंधक विरासत, भेंट या अन्य  किसी प्रकार से तथा
+                                                            <br />
+                                                            अर्जन की तारीख  और जिससे अर्जित की गई हो उसका नाम तथा ब्यौर
                        
-                        </th>
-                    <th rowspan="2" >संपत्ति से वार्षिक आय</th>
-                     <th rowspan="2">अभियुक्ति</th>
-                    
-                    
-                </tr>
-            </thead>
-            <tbody>
-                <tr valign="middle"  class="text-white">
-                    <td>गहृ तथा अन्य भवन</td>
-                    <td>भूमि (आवासीय)
+                                                        </th>
+                                                        <th rowspan="2">संपत्ति से वार्षिक आय</th>
+                                                        <th rowspan="2">अभियुक्ति</th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr valign="middle">
+                                                        <td>गहृ तथा अन्य भवन</td>
+                                                        <td>भूमि (आवासीय)
 प्लाट एवं कृषि भूमि</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                   
-                   
-                       
-                </tr>
-                  <tr  valign="middle">
-      <td>1</td>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-     
-         
-  </tr>
-                <%--<tr valign="middle">
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <th>1</th>
+                                                        <th>2</th>
+                                                        <th>3</th>
+                                                        <th>4</th>
+                                                        <th>5</th>
+                                                        <th>6</th>
+                                                        <th>7</th>
+                                                        <th>8</th>
+
+
+
+                                                    </tr>
+                                                    <tr valign="middle">
+                                                        <td>1</td>
+                                                        <th>जिले :-भोपाल,<br />
+                                                            संभाग :-भोपाल,<br />
+                                                            विकासखंड :-आगर,<br />
+                                                            ग्राम पंचायत :-बगियाटोला,<br />
+                                                            ग्राम :-गराटोला</th>
+                                                        <th>आवासीय संपत्ति</th>
+                                                        <th>कृषि भूमि</th>
+                                                        <th>5000000-/</th>
+                                                        <th>राजेश अग्रवाल</th>
+                                                        <th>संपत्ति स्रोत :-संपत्ति रसीद<br />
+                                                            खरीद की तारीख :- 07/11/1999<br />
+                                                            विक्रेता का मोबाइल नंबर :-9876486473<br />
+                                                            विक्रेता का पता :-भोपाल </th>
+                                                        <th>45674</th>
+                                                        <th>Nil</th>
+
+
+                                                    </tr>
+                                                    <%--<tr valign="middle">
                     <td>1
                     </td>
                     <td>
@@ -493,38 +406,83 @@
 
 
                 </tr>--%>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+    <div class="col-md-8">
+                                <ul>
+                                    <li class="fw-bold "> जहां लागू न हो काट दीजिए |</li>
 
-            </tbody>
-        </table>
-            </div>
+                                    <li class="fw-bold ">  ऐसे
+                मामले में जहां मूल्य का सही-सही निर्धारण करना सांभव न हो
+                                 <br />
+                                        वहां वर्तमान स्थिति  के सांदर्भ र्में लगभग मूल्य बतलाया जाए |</li>
+                                    <li class="fw-bold "> इसमेंअल्पकालीन पट्टे भी सम्मिलित है |</li>
+                                </ul>
+        </div>
+                                    <div class="col-md-4">
+        <div class="text-end d-flex flex-column gap-3 justify-content-end">
+            <h6><b>हस्ताक्षर.................................................</b></h6>
+            <h6><b>नाम......................................................</b></h6>
+           <h6><b>कर्मचारी आई.डी......................................</b></h6>
+            <h6><b>पद........................................................</b></h6>
+        </div>
     </div>
 </div>
-                               <h5 class="fw-bold ">* जहां लागू न हो काट दीजिए |</h5>
-                            
-            <h5 class="fw-bold ">**  ऐसे
-                मामले में जहां मूल्य का सही-सही निर्धारण करना सांभव न हो,<br />
-                           वहां वर्तमान स्थिति  के सांदर्भ र्में लगभग मूल्य बतलाया जाए |</h5>
-                    <h5>*** </h5>        
-                            <br />
+                                <br />
+                                
 
-                        </fieldset>
+                                        <p>
+                                            <h6><span class="text-danger">टिप्पणी:-</span>मध्यप्रदशे शासकीय सवेक (आचरण) नियम, 1959 के नियम 18(3) के अधीन प्रथम श्रेणी, द्वितीय श्रेणी  तथा
+                                  
+                                                तृतीय  श्रेणी  के प्रत्येक सदस्य से यह अपेक्षित है कि वह सवे  में पहली नियुक्ति के 
+समय और उसके बाद प्रत्यके बारह
+                                  
+                                                महीने की अवधि के पश्चात् यह  घोषणा-पत्र भर कर प्रस्तुत करें और उसमें वह उनके स्वामित्व की तथा उसके द्वारा
+                                    
+                                                अर्जित अथवा उसे विरासत में मिली  या
+उसके अपने नाम पर उसके परिवार के किसी सदस्य के नाम पर या किसी
+                                   
+                                                अन्य व्यक्ति के नाम पर पट्टटे या बंधक पर उसके द्वारा  धारित समस्त अचल सम्पत्ती के ब्यौरे दें।</h6>
+                                        </p>
+                                 
+                                  
+                            </fieldset>
+                            </div>
+                      
                         <div class="modal-footer justify-content-center">
 
                             <button type="button" class="btn btn-success w-lg btn-border" id="btnPrint" onclick="printModalContent('exampleModal')">Print</button>
 
                         </div>
-
                     </div>
 
 
                 </div>
-            </div>
 
+
+            </div>
         </div>
+
     </div>
 
 
-  
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center"></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+        </div></div>
     <script>
         function printModal() {
             window.print();
@@ -535,7 +493,9 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>  function printModalContent(modalId) {
+ 
+    <script>
+        function printModalContent(modalId) {
             var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
             document.body.innerHTML = modalContent.innerHTML
             window.print();
@@ -552,6 +512,8 @@
                     printModalContent(modalId);
                 }
             }
-        });</script>
+        });
+
+    </script>
 </asp:Content>
 

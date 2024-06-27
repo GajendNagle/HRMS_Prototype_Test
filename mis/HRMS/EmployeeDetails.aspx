@@ -91,9 +91,9 @@
       <div class="card-header">
           <div class="row align-items-end">
               <div class="col-lg-12">
-                  <h4 class="card-title color_black">
-                      रिपोर्टिंग अधिकारी द्वारा भरी गई ACR रिपोर्ट का विवरण
-                  </h4>
+                  <h5>
+                      ACR Report Filled By Reporting Officer Details/रिपोर्टिंग अधिकारी द्वारा भरी गई ACR रिपोर्ट का विवरण
+                  </h5>
               </div>
           </div>
       </div>
