@@ -162,8 +162,7 @@
                     </div>
                 </div>
                 <fieldset class="mt-5  ">
-                    <legend>Panel-Wise Teacher's Surplus Details / पैनल-वार शिक्षक अधिशेष विवरण
-                    </legend>
+                    <legend>Panel-Wise Teacher's Surplus Details / पैनल-वार शिक्षक अधिशेष विवरण</legend>
 
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
@@ -178,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
@@ -218,19 +217,15 @@
                     <legend>All Employee With Surplus Details / अधिशेष विवरण वाले सभी कर्मचारी</legend>
                     <p>Custom Search Builder</p>
                     <div class="row justify-content-end">
-                        <div class="col-md-1">
+                        <div class="col-md-4 text-end">
                             <div class="form-group">
-                                <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <div class="form-group">
-                                <asp:Button ID="Button3" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                                <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                             </div>
                         </div>
                     </div>
