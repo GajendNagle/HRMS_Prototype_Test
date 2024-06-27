@@ -36,7 +36,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-9">
-                    <h4 class="card-title">Cancel Transfer Report / रद्द स्थानांतरण रिपोर्ट</h4>
+                    <h4 class="card-title">Cancel Transfer Report / स्थानांतरण रिपोर्ट रद्द करें</h4>
                 </div>
             </div>
         </div>
@@ -45,6 +45,7 @@
                 <legend>Cancel Transfer Details / स्थानांतरण विवरण रद्द करें</legend>
                 <div class="row form-group align-items-end">
                     <div class="col-md-3">
+                        <div class="form-group">
                         <label id="txtId">
                             Select District Name<br />
                             जिला का चयन करें<span style="color: red">*</span></label>
@@ -58,6 +59,7 @@
                             <asp:ListItem Value="5">Dewas</asp:ListItem>
                         </asp:DropDownList>
                     </div>
+                </div>
                 </div>
                 <hr />
                 <div class="row">
