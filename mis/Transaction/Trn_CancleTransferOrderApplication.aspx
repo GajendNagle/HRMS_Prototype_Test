@@ -37,7 +37,7 @@
         </div>
         <div class="card-body">
 
-            <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right" style="font-size:21px"></i>&emsp;स्थानांतरण आदेश को निरस्त कराने हेतु आवश्यक बिन्दु :-</h4>
+            <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-18"><i class="far fa-hand-point-right" style="font-size:22px"></i>&emsp;स्थानांतरण आदेश को निरस्त कराने हेतु आवश्यक बिन्दु :-</h4>
             <div>
                 <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
                     <b>1):-</b>यदि किसी शिक्षक का बरीयता के आधार पर ट्रान्सफर हुआ है ओर आधार हेतु उपलब्ध जानकारी गलत है तो संकुल प्राचार्य द्वारा होल्ड लगाने के उपरांत राज्य स्तर से ट्रान्सफर निरस्त किया जाएगा | पृथक से आवेदन की आवश्यकता नहीं है |<br />
