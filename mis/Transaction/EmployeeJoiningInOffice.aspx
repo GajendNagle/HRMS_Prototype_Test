@@ -191,21 +191,29 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th rowspan="2">Sr.No. <br />
+                                            <th rowspan="2">Sr.No.
+                                                <br />
                                                 सरल क्र. </th>
-                                            <th rowspan="2">Office Type <br />
+                                            <th rowspan="2">Office Type
+                                                <br />
                                                 कार्यालय का प्रकार</th>
-                                            <th rowspan="2">Employee Name <br />
+                                            <th rowspan="2">Employee Name
+                                                <br />
                                                 कर्मचारी का नाम</th>
-                                            <th rowspan="2">Employee Designation <br />
+                                            <th rowspan="2">Employee Designation
+                                                <br />
                                                 कर्मचारी पदनाम</th>
-                                            <th rowspan="2">Employee Department <br />
+                                            <th rowspan="2">Employee Department
+                                                <br />
                                                 कर्मचारी विभाग</th>
-                                            <th rowspan="2">Employee Subject <br />
+                                            <th rowspan="2">Employee Subject
+                                                <br />
                                                 कर्मचारी विषय</th>
-                                            <th colspan="5">Current Location <br />
+                                            <th colspan="5">Current Location
+                                                <br />
                                                 वर्तमान स्थान</th>
-                                            <th colspan="5">Preference Location <br />
+                                            <th colspan="5">Preference Location
+                                                <br />
                                                 वरीयता स्थान
                                             </th>
                                             <th rowspan="2">Action<br />
@@ -213,26 +221,35 @@
                                         </tr>
 
                                         <tr>
-                                            <th>Office Type <br />
+                                            <th>Office Type
+                                                <br />
                                                 कार्यालय का प्रकार</th>
-                                            <th>Posted From <br />
+                                            <th>Posted From
+                                                <br />
                                                 से कार्यरत </th>
-                                            <th>District <br />
+                                            <th>District
+                                                <br />
                                                 जिला </th>
-                                            <th>Block <br />
+                                            <th>Block
+                                                <br />
                                                 विकासखण्ड </th>
-                                            <th>Sankul Code <br />
+                                            <th>Sankul Code
+                                                <br />
                                                 संकुल कोड
                                             </th>
                                             <th>Office Type<br />
                                                 कार्यालय का प्रकार</th>
-                                            <th>Reason For Transfer <br />
+                                            <th>Reason For Transfer
+                                                <br />
                                                 स्थानांतरण का कारण</th>
-                                            <th>District <br />
+                                            <th>District
+                                                <br />
                                                 जिला</th>
-                                            <th>Block <br />
+                                            <th>Block
+                                                <br />
                                                 विकासखण्ड</th>
-                                            <th>Sankul Code <br />
+                                            <th>Sankul Code
+                                                <br />
                                                 संकुल कोड</th>
                                         </tr>
                                     </thead>
@@ -318,12 +335,15 @@
                                             <input type="text" class="form-control" placeholder="Enter Remark" />
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mt-5 ">
-                                        <div class="form-group">
-                                            <button type="button" class="btn btn-success Alert-request" data-bs-dismiss="modal">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger waves-effect text-start  btn-border" data-bs-dismiss="modal">Close</button>
-                                        </div>
+                                </div>
+                                <hr />
+                                <div class="row align-items-end">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-success Alert-request" data-bs-dismiss="modal">Approve</button>
+                                   
+                                        <button type="button" class="btn btn-outline-danger waves-effect   btn-border" data-bs-dismiss="modal">Close</button>
                                     </div>
+
                                 </div>
                             </fieldset>
                             <%--<div class="row m-l-5 mt-4">
