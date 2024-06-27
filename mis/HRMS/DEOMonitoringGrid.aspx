@@ -86,23 +86,21 @@
                             </select>
                         </div>
 
-                        <div class="row justify-content-center mt-3">
-                            <div class="col-lg-12 mt-2">
-                                <div class="row justify-content-center">
+                        <div class="row mt-4 align-items-end">
+                            <div class="col-lg-12 mt-3">
+                                <div class="row ml-5 align-items-end">
                                     <div class="col-lg-3 text-center">
                                         <img src="../../img/captcha.png" width="150" />
                                     </div>
                                     <div class="col-lg-12"></div>
-                                    <div class="col-lg-4 text-center">
-                                        <label class="font-bold">Please enter the code shown above</label>
+                                    <div class="col-lg-4 ">
+                                        <label class="font-bold ml-3">Please enter the code shown above</label>
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control text-center" />
+                                    <div class="col-lg-2">
+                                            <input type="text" class="form-control text-center ml-3" />
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

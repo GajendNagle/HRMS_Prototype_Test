@@ -31,6 +31,7 @@
         #ShowOrders {
             display: none;
         }
+
     </style>
     <style>
         /* Style for the modal */
@@ -390,15 +391,15 @@
 
             <!-- Editable  modal content -->
             <div id="Editmodal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xxl" style="width: 100%;">
+                <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="myLargeModalLabel2">School Details</h4>
-                            <button type="button" class="btn-close" onclick="CloseModal()" aria-hidden="true"></button>
+                            <h4 class="modal-title" id="myLargeModalLabel2">School Details / स्कूल विवरण</h4>
+                            <button type="button" class="btn-close" onclick="CloseModal()" aria-hidden="True"></button>
                         </div>
                         <div class="modal-body">
                             <fieldset>
-                                <legend>School Basic Information</legend>
+                                <legend>School Basic Information / स्कूल की बुनियादी जानकारी</legend>
 
                                 <div class="row align-items-end">
 
@@ -444,6 +445,8 @@
                                             </asp:DropDownList>
                                         </div>
                                     </div>
+                                    </div>
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
@@ -499,6 +502,8 @@
                                             </asp:DropDownList>
                                         </div>
                                     </div>
+                                    </div>
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
@@ -555,6 +560,8 @@
                                             </asp:DropDownList>
                                         </div>
                                     </div>
+                                    </div>
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
@@ -624,6 +631,8 @@
                                             </asp:DropDownList>
                                         </div>
                                     </div>
+                                    </div>
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
@@ -663,6 +672,8 @@
                                             <asp:TextBox runat="server" placeholder="9895989654" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                         </div>
                                     </div>
+                                    </div>
+                                <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>
@@ -708,7 +719,7 @@
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <legend>School Address Information</legend>
+                                <legend>School Address Information / स्कूल पता की जानकारी</legend>
                                 <div class="row align-items-end">
                                     <div class="col-md-3">
                                         <div class="form-group">
@@ -843,7 +854,7 @@
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <legend>School Bank Information</legend>
+                                <legend>School Bank Information / स्कूल बैंक की जानकारी</legend>
                                 <div class="row align-items-end">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -872,8 +883,8 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <div class="modal-footer">
-                            <div class="row">
+                        <div class="modal-footer justify-content-center">
+                            <div class="row ">
                                 <div>
                                     <button type="button" class="btn btn-outline-danger waves-effect text-start " onclick="CloseModal()">Close</button>
                                 </div>

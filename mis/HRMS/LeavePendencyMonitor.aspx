@@ -109,7 +109,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="row align-items-end">
+                        <div class="row align-items-end mt-3">
                             <div class="col-lg-12">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-3 text-center">
@@ -121,11 +121,9 @@
                                     </div>
                                     <div class="col-lg-12"></div>
 
-                                    <div class="col-lg-1 ">
-                                        <div class="form-group">
+                                    <div class="col-lg-2">
                                             <input type="text" class="form-control text-center" />
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
