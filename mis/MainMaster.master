@@ -900,7 +900,7 @@
                                             <div class="collapse menu-dropdown" id="Tour">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmpTourApplyNotes.aspx"><i class="ri-file-info-line"></i>About Tour</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmpTourApply.aspx"><i class="ri-file-list-3-line"></i>Apply Tour</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmpTourApply.aspx"><i class="ri-file-list-3-line"></i>Tour Apply</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmpTourGenerateOrder.aspx"><i class="ri-file-list-3-line"></i>Tour Approve</a></li>
                                                 </ul>
                                             </div>
