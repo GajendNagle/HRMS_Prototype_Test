@@ -62,13 +62,9 @@
   
     <%--  <div class="row page-titles mb-4">--%>
   <%--  <div class="row page-titles mb-4">--%>
-  <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
-      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-          <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-          </u>
-      </p>
-      </div>
-         
+ <div class="row"><div class="col-md-5 ">
+          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+      </div></div>  
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
@@ -84,19 +80,22 @@
             <fieldset id="show2">
                 <legend>ACR report filled by Accepting Authority / स्वीकृति प्राधिकारी द्वारा भरी गई एसीआर रिपोर्ट</legend>
                 <div class="row justify-content-end">
-                     <div class="col-md-4 text-end">
-     <div class="form-group">
-         <button class="btn btn-info btn-rounded w-55">Excel</button>
-         <button class="btn btn-info btn-rounded w-55">PDF</button>
-     </div>
- </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
+            
+    <div class="col-md-4 text-end">
+        <div class="form-group">
+            <button class="btn btn-info btn-rounded w-55">Excel</button>
+            <button class="btn btn-info btn-rounded w-55">PDF</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+        </div>
+    </div>
+</div>
                     <div class="row">
                         <div class="col-md-12">
+                            <div class="table-responsive">
                             <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
@@ -159,7 +158,7 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table></div>
                         </div>
                     </div>
                 </div>

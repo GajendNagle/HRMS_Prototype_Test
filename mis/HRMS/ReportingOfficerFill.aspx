@@ -87,12 +87,9 @@
     </div>
     <%--  <div class="row page-titles mb-4">--%>
     <%--  <div class="row page-titles mb-4">--%>
-    <div class="col-md-5 " style="position: relative; bottom: 30px; right: 25px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-            <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
-    </div>
+    <div class="row"><div class="col-md-5 ">
+          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+      </div></div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
@@ -215,7 +212,7 @@
         <div runat="server" id="Fieldset1" visible="false">
             <fieldset>
 
-
+                   <legend>To be filled by reporting officer /रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
 
                 <div class="fw-bold">Please give comment of agreement or disagreement on the achievement mentioned by the officer reported upon in self assessment.Please give reasons in case of disagreement and refer to communication made to the officer reported upon in this regard</div>
                 <div class="fw-bold">आवेदक अधिकारी/शिक्षक द्वारा स्वमूल्यांकन में उल्लेखित उपलब्धि के संबंध में सहमति/असहमति की टिप्पणी | असहमति की स्थिति में कारण एवं इस संबंध में किये गये पत्राचार का विवरण एवं स्केल पॉइंट में प्रदर्शन |</div>
@@ -228,7 +225,7 @@
                     </div>
 
                 </div>
-                <legend>To be filled by reporting officer /रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
+             
 
 
 

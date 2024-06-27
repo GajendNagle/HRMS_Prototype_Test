@@ -61,15 +61,26 @@
     </div>
     <%--  <div class="row page-titles mb-4">--%>
   <%--  <div class="row page-titles mb-4">--%>
-  <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
-      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-          <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-          </u>
-      </p>
-                              <div class="row justify-content-end" onclick=" moveBetweenFieldsets(currentFieldset, nextFieldset) " style="position: relative; left:680px; bottom:20PX;  margin-bottom: -2.5rem"" id="btnBack">
-    <div class="col-md-3">
+  <div class="row align-content-end"><div class="col-md-5 ">
+          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+      </div>
+               <%--               <div class="row justify-content-end" onclick=" moveBetweenFieldsets(currentFieldset, nextFieldset) " style=" position:fixed; margin-left: 35.5rem" id="btnBack">
+    <div class="col-md-3  justify-content-end">
+           <div class="form-group">
+        <button id="BtnBack" class="btn-info rounded-2 ml-5" type="button" onclick="Backclickfn()">BACK</button>
+    </div>
+        </div>
+</div>--%>
 
-        <button id="BtnBack" class="btn-info rounded-2" type="button" onclick="Backclickfn()">BACK</button>
+      <div class="col-md-4">
+          <div class="form-group">
+              </div>
+
+      </div>
+<div class="col-md-3 justify-content-lg-end" style="position:relative; left:120px; top:10px;">
+    <div class="form-group">
+         <button id="BtnBack" class="btn-info rounded-2 ml-5" type="button" onclick="Backclickfn()">BACK</button>
+        
     </div>
 </div>
       </div>

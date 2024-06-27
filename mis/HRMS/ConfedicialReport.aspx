@@ -1,12 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ConfedicialReport.aspx.cs" Inherits="mis_Transaction_ConfedicialReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        #ddlPosition {
-            position: relative;
-            bottom: 20px;
-        }
-    </style>
+  <style>
+      .offcanvas-backdrop{
+          position: relative;
+      }
+  </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -14,7 +13,7 @@
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
+                <%--<div class="=page-title-right">--%>
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
                             <span>Home</span>
@@ -34,13 +33,10 @@
     </div>
     <%--  <div class="row page-titles mb-4">--%>
   <%--  <div class="row page-titles mb-4">--%>
-  <div class="col-md-5 " style="position:relative;bottom:30px; right:25px;">
-      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-          <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-          </u>
-      </p>
-      </div>
-    <div class="card card-border-primary">
+<div class="row"><div class="col-md-5 ">
+          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+      </div></div>
+ <%--   <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
@@ -61,14 +57,27 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <div class="row page-titles mb-4">
-                                <div class="col-md-5 align-self-center">
+                            <div class="row">
+                                <div class="col-md-5 ">
                                 </div>
 
                                 <div class="card-header card-border-info">
                                 </div>
 
-                                <div id="ContentBody_show">
+                            
+        </div>--%>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h5 class="card-title">For Teacher's Cadre (Class 1st to 12th)/
+                        शिक्षक संवर्ग के लिए (कक्षा 1 से 12)
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+
 
                                     <fieldset>
                                         <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
@@ -339,7 +348,7 @@
                     </div>
 
                 </footer>
-                <script>
+             <%--   <script>
 
                     $('.select2').select2()
                     !function ($) {
@@ -651,10 +660,8 @@
                             "use strict";
                             $.SweetAlert.init()
                         }(window.jQuery);
-                </script>
-            </div>
-        </div>
-
+                </script>--%>
+           
 
 
 </asp:Content>
