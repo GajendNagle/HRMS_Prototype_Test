@@ -37,9 +37,8 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-7">
-                    <h4 class="card-title">Monitor Pendency for Action on Leave Applications
-                        <br />
-                        अवकाश आवेदनों पर कार्यवाही के लिए लंबित मामलों की निगरानी करें</h4>
+                    <h4 class="card-title">Pendency for Action on Leave Applications <br />
+                        अवकाश आवेदनों पर कार्यवाही हेतु लंबित आवेदन</h4>
                 </div>
             </div>
         </div>
@@ -48,9 +47,8 @@
 
             <div class="mt-3">
                 <fieldset>
-                    <legend>Monitor Pendency for Action on Leave Applications
-                        <br />
-                        अवकाश आवेदनों पर कार्यवाही के लिए लंबित मामलों की निगरानी करें</legend>
+                    <legend>Pendency for Action on Leave Applications /
+                        अवकाश आवेदनों पर कार्यवाही हेतु लंबित आवेदन</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
