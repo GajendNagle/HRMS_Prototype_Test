@@ -114,7 +114,7 @@
                         </div>
                     </fieldset>
                     <fieldset id="tblDetails" visible="false" runat="server">
-                        <legend>Details</legend>
+                        <legend>Details / विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-1">
                                 <div class="form-group">
@@ -136,23 +136,23 @@
                             <table class="table text-center table-bordered">
                                 <thead>
                                     <tr>
-                                        <th colspan="4">New Schools to be Opened</th>
-                                        <th colspan="2">Schools to be Merged</th>
-                                        <th colspan="2">Schools to be Closed</th>
-                                        <th colspan="2">Schools to be Updated/Upgraded</th>
+                                        <th colspan="4">New Schools to be Opened<br />खोले जाने वाले नए स्कूल</th>
+                                        <th colspan="2">Schools to be Merged<br />विलय किए जाने वाले स्कूल</th>
+                                        <th colspan="2">Schools to be Closed<br />बंद किए जाने वाले स्कूल</th>
+                                        <th colspan="2">Schools to be Updated / Upgraded<br />स्कूल जिन्हें अपडेट / अपग्रेड किया जाना है</th>
                                     </tr>
                                 </thead>
                                 <tr>
-                                    <th>Sr.No.</th>
-                                    <th>Block</th>
-                                    <th>Proposed</th>
-                                    <th>Approved</th>
-                                    <th>Proposed</th>
-                                    <th>Approved</th>
-                                    <th>Proposed</th>
-                                    <th>Approved</th>
-                                    <th>Proposed</th>
-                                    <th>Approved</th>
+                                    <th>Sr.No.<br />सरल क्र.</th>
+                                    <th>Block<br />विकासखण्ड</th>
+                                    <th>Proposed<br />प्रस्तावित</th>
+                                    <th>Approved<br />अनुमोदित</th>
+                                    <th>Proposed<br />प्रस्तावित</th>
+                                    <th>Approved<br />अनुमोदित</th>
+                                    <th>Proposed<br />प्रस्तावित</th>
+                                    <th>Approved<br />अनुमोदित</th>
+                                    <th>Proposed<br />प्रस्तावित</th>
+                                    <th>Approved<br />अनुमोदित</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
