@@ -44,10 +44,11 @@
                 <div class="card-body">
                     <fieldset>
                         <legend>Block-wise Publish Schools / ब्लॉकवार प्रकाशित विद्यालय</legend>
-                        <div class="row form-group">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>District Name<span style="color: red">*</span></label>
+                                    <label>District Name<br />जिले का नाम
+                                        <span style="color: red">*</span></label>
                                     <asp:DropDownList runat="server" ID="ddlDistrictName" OnSelectedIndexChanged="ddlDistrictName_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control select2 mt-2">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                         <asp:ListItem>Bhopal</asp:ListItem>
@@ -57,7 +58,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Block Name<span style="color: red">*</span></label>
+                                    <label>Block Name<br />विकासखण्ड का नाम
+                                        <span style="color: red">*</span></label>
                                     <asp:DropDownList runat="server" ID="ddlBlockN" CssClass="form-control select2 mt-2">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     </asp:DropDownList>
@@ -65,7 +67,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Management Group</label>
+                                    <label>Management Group<br />प्रबंधन समूह
+                                    </label>
                                     <asp:DropDownList runat="server" ID="ddlMgtGroup" CssClass="form-control select2 mt-2" OnSelectedIndexChanged="ddlMgtGroup_SelectedIndexChanged" AutoPostBack="true">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                         <asp:ListItem>Central Government</asp:ListItem>
@@ -77,7 +80,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Management Group Details</label>
+                                    <label>Management Group Details<br />प्रबंधन समूह विवरण</label>
                                     <asp:DropDownList runat="server" ID="ddlMgtGroupD" CssClass="form-control select2 mt-2">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     </asp:DropDownList>
@@ -85,7 +88,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Category</label>
+                                    <label>Category<br />वर्ग</label>
                                     <asp:DropDownList runat="server" ID="ddlCategory" CssClass="form-control select2 mt-2" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                         <asp:ListItem>Primary School</asp:ListItem>
@@ -97,15 +100,15 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Category Detail</label>
+                                    <label>Category Detail<br />वर्ग विवरण</label>
                                     <asp:DropDownList runat="server" ID="ddlCategoryDetail" CssClass="form-control select2 mt-2">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="form-group mt-4">
-                                    <asp:Button runat="server" Text="Block-wise Summary of Publishing Schools" CssClass="btn btn-success btn-rounded" OnClick="Unnamed_Click" />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <asp:Button runat="server" Text="Block-wise Summary of Publishing Schools" CssClass="btn btn-success btn-rounded text-wrap" OnClick="Unnamed_Click" />
                                 </div>
                             </div>
                         </div>
