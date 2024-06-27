@@ -11,7 +11,7 @@ public partial class mis_Transaction_Rpt_SchoolDetail : System.Web.UI.Page
     {
         dv_rpt.Visible = false;
         dv_rpt1.Visible = false;
-        dv_rpt2.Visible = false;
+        //dv_rpt2.Visible = false;
         divTables.Visible = false;
 
 
@@ -21,7 +21,7 @@ public partial class mis_Transaction_Rpt_SchoolDetail : System.Web.UI.Page
     {
         dv_rpt.Visible = true;
         dv_rpt1.Visible = true;
-        dv_rpt2.Visible = true;
+        //dv_rpt2.Visible = true;
         divTables.Visible = true;
 
     }

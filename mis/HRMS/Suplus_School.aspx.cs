@@ -12,8 +12,4 @@ public partial class mis_Transaction_Suplus_School : System.Web.UI.Page
 
     }
 
-    protected void btnSave_Click(object sender, EventArgs e)
-    {
-        dv_rpt.Visible = true;
-    }
 }

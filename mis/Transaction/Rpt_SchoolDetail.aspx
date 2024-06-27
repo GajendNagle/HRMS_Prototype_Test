@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <fieldset id="dv_rpt" runat="server">
-                        <legend>Details</legend>
+                        <legend>Details / विवरण</legend>
                         <div class="row align-items-end">
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -125,7 +125,7 @@
                                     <asp:TextBox runat="server" CssClass="form-control">Class 1 to 12</asp:TextBox>
                                 </div>
                             </div>
-                            <div class="row align-items-end" id="dv_rpt2" runat="server">
+                           <%-- <div class="row align-items-end" id="dv_rpt2" runat="server">--%>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>
@@ -150,10 +150,10 @@
                                         <asp:TextBox runat="server" CssClass="form-control">JNV-23510817802</asp:TextBox>
                                     </div>
                                 </div>
-                            </div>
+                            <%--</div>--%>
                             <div runat="server" class="mt-4 col-12" id="divTables" visible="false">
                                 <fieldset>
-                                    <legend>Enrollments in the Current Year / करंट वर्ष में नामांकन</legend>
+                                    <legend>Enrollments in the Current Year / वर्तमान वर्ष में नामांकन</legend>
                                     <%--<h5 class="fw-normal">Enrollments in Current Year</h5>--%>
                                     <div class="row align-items-end">
                                         <div class="col-md-12">

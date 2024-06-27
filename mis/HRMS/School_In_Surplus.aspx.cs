@@ -12,8 +12,8 @@ public partial class mis_Transaction_School_In_Surplus : System.Web.UI.Page
 
     }
 
-    protected void btnSave_Click(object sender, EventArgs e)
-    {
-        dv_rpt.Visible = true;
-    }
+    //protected void btnSave_Click(object sender, EventArgs e)
+    //{
+    //    dv_rpt.Visible = true;
+    //}
 }

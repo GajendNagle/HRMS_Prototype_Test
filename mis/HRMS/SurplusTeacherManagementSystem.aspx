@@ -50,7 +50,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">District-wise Surplus Teachers Report / जिलेवार अधिशेष शिक्षकों की रिपोर्ट</h4>
+                    <h4 class="card-title">District-Wise Surplus Teachers Report / जिलेवार अधिशेष शिक्षकों की रिपोर्ट</h4>
                 </div>
             </div>
         </div>
