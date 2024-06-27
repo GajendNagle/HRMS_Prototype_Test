@@ -106,16 +106,7 @@
                     <fieldset>
                         <legend>GSTR-1</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Select Regional Office/<br />
-                                        क्षेत्रीय कार्यालय का चयन करें<span style="color: red;">*</span></label>
-                                    <select class="form-control select2">
-                                        <option selected="selected" value="0">--All --</option>
-                                    </select>
-                                </div>
-                            </div>
+                           
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -131,6 +122,21 @@
                                         <option value="4">Block Office</option>
                                         <option value="5">Sankul</option>
                                         <option value="6">School</option>
+                                    </select>
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Name/<br />
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                        <option selected="selected" value="0">--Select --</option>
+                                        <option value="1">Jabalpur</option>
+                                        <option value="2">Indore</option>
+                                        <option value="3">Bhopal</option>
+                                        <option value="4">Gwalior</option>
+                                        <option value="5">Hoshangabad</option>
                                     </select>
                                 </div>
                             </div>

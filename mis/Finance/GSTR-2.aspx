@@ -118,16 +118,6 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Regional Office/<br />
-                                        क्षेत्रीय कार्यालय का चयन करें<span style="color: red;">*</span></label>
-                                    <select class="form-control select2">
-                                        <option selected="selected" value="0">--All --</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
                                         Select Office Type/
    <br />
                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
@@ -140,6 +130,21 @@
                                         <option value="4">Block Office</option>
                                         <option value="5">Sankul</option>
                                         <option value="6">School</option>
+                                    </select>
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Name/<br />
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                        <option selected="selected" value="0">--Select --</option>
+                                        <option value="1">Jabalpur</option>
+                                        <option value="2">Indore</option>
+                                        <option value="3">Bhopal</option>
+                                        <option value="4">Gwalior</option>
+                                        <option value="5">Hoshangabad</option>
                                     </select>
                                 </div>
                             </div>
@@ -281,18 +286,18 @@
                                             <h5>0</h5>
                                         </div>
                                     </div>
-                                    <hr>
-                                    <div class="row" >
+                                   
+                                    <div class="row">
                                         <div class="col-md-12">
                                             <div class="table-responsive">
                                                 <table class="" id="Table">
                                                     <thead>
-                                                        <tr>
+                                                        <tr style="border-width: 1px;border-left: 0;border-right: 0; border-bottom: 0;">
                                                             <th><b>Ledger Name</b></th>
                                                             <th><b>No. of Invoices</b></th>
                                                             <th><b>Taxable Value </b></th>
-                                                            <th colspan="4" style="text-align: center; vertical-align: middle;"><b>Total Tax </b></th>
-                                                            <th colspan="4" style="text-align: center; vertical-align: middle;"><b>Input Tax Credit</b></th>
+                                                            <th colspan="4" style="text-align: center; vertical-align: middle; border-width: 1px;border-left: 0;border-right: 0;"><b>Total Tax </b></th>
+                                                            <th colspan="4" style="text-align: center; vertical-align: middle; border-width: 1px;border-left: 0;border-right: 0;"><b>Input Tax Credit</b></th>
                                                             <th><b>Reconciliation Status</b></th>
                                                         </tr>
                                                         <tr>
@@ -326,8 +331,8 @@
                                                         </tr>--%>
                                                         <tr>
                                                             <td>
-                                                                <p style="white-space: nowrap;">
-                                                                    To be reconciled with the GST portal
+                                                                <p style="white-space: nowrap;"><b>
+                                                                    To be reconciled with the GST portal</b>
                                                                 </p>
                                                             </td>
                                                         </tr>
@@ -548,38 +553,38 @@ Unregistered - 6C</td>
                                                                 
                                                             </td>
                                                         </tr>
-                                                       <tr>
-                                                           <td>Total Inward Supplies</td>
-                                                            <td style="text-align: center; vertical-align: middle;">15</td>
-                                                            <td style="text-align: center; vertical-align: middle;">424884.43</td>
-                                                            <td style="text-align: center; vertical-align: middle;">0.00</td>
-                                                            <td style="text-align: center; vertical-align: middle;">32816.46</td>
-                                                            <td style="text-align: center; vertical-align: middle;">32816.46</td>
-                                                            <td style="text-align: center; vertical-align: middle;">0.00</td>
-                                                            <td style="text-align: center; vertical-align: middle;">0.00</td>
-                                                            <td style="text-align: center; vertical-align: middle;">31482.38</td>
-                                                            <td style="text-align: center; vertical-align: middle;">31482.38</td>
-                                                            <td style="text-align: center; vertical-align: middle;">0.00</td>
-                                                           <td style="text-align: center; vertical-align: middle;">0</td>
+                                                       <tr style="border-width: 1px;border-left: 0;border-right: 0;">
+                                                           <td><b>Total Inward Supplies</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>15</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>424884.43</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>0.00</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>32816.46</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>32816.46</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>0.00</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>0.00</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>31482.38</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>31482.38</b></td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>0.00</b></td>
+                                                           <td style="text-align: center; vertical-align: middle;"><b>0</b></td>
                                                         </tr>
                                                          <tr>
                                                             <td>
                                                                     ITC Reversal/Reclaim - 11 - (Summary)
                                                             </td>
                                                         </tr>
-                                                          <tr>
+                                                          <tr style="border-width: 1px; border-style: dotted; border-left: 0;border-right: 0; border-top: 0; " >
                                                             <td>
-                                                                   Total No. of Invoices
+                                                                  <b>Total No. of Invoices</b> 
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                            <td>HSN/SAC Summary - 13</td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
-                                                            <td style="text-align: center; vertical-align: middle;">424884.43</td>
-                                                            <td style="text-align: center; vertical-align: middle;">0.00</td>
-                                                            <td style="text-align: center; vertical-align: middle;">32816.46</td>
-                                                            <td style="text-align: center; vertical-align: middle;">32816.46</td>
-                                                            <td style="text-align: center; vertical-align: middle;">0.00</td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>424884.43</b> </td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>0.00</b> </td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>32816.46</b> </td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>32816.46</b> </td>
+                                                            <td style="text-align: center; vertical-align: middle;"><b>0.00</b> </td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
@@ -602,7 +607,7 @@ Unregistered - 6C</td>
                                                         </tr>
                                                          <tr>
                                                             <td>
-                                                                   Reverse Charge Liability to be Booked
+                                                                 <b>  Reverse Charge Liability to be Booked</b>
                                                             </td>
                                                         </tr>
                                                          <tr>
@@ -622,7 +627,7 @@ Unregistered - 6C</td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
                                                             <td style="text-align: center; vertical-align: middle;"></td>
-                                                           <td style="text-align: center; vertical-align: middle;">0.16</td>
+                                                           <td style="text-align: center; vertical-align: middle;"><b>0.16</b></td>
                                                         </tr>
                                                          <tr>
                                                             <td>
@@ -631,10 +636,10 @@ Unregistered - 6C</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                               Advance Payments
+                                                             <b> Advance Payments</b> 
                                                             </td>
                                                         </tr>
-                                                         <tr>
+                                                         <tr style="border-width: 1px;border-left: 0;border-right: 0;">
                                                             <td>
                                                                Amount Unadjusted Against Purchases
                                                             </td>
@@ -648,7 +653,7 @@ Unregistered - 6C</td>
                                                     </tbody>
                                                 </table>
 
-                                                <p style="color: blue;">Note: Voucher Count and values are not provided for HSN/SAC Summary and Document Summary Drill down for details.</p>
+                                             
                                             </div>
 
                                         </div>
