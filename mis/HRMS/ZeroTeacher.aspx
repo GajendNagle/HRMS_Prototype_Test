@@ -10,14 +10,10 @@
             font-size: 20px;
             color: white;
         }
-
             .head:hover {
                 color: red;
                 text-decoration: underline;
             }
-
-
-
         title {
             background-color: brown;
         }
@@ -40,8 +36,7 @@
                             <a href="#RptOISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('SchoolDirectory')">
                                 <span>OIS Setup Reports</span></a>
                         </li>
-
-                        <li class="breadcrumb-item"><span>District-wise Zero Teachers Report</span></li>
+                        <li class="breadcrumb-item"><span>Zero Teachers</span></li>
                     </ol>
                 </div>
             </div>
@@ -50,7 +45,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <h4 class="card-title">District-wise Zero Teachers Report / जिलेवार शून्य शिक्षकों की रिपोर्ट</h4>
                 </div>
             </div>
@@ -86,11 +81,6 @@
                                             स्कूल</th>
                                     </tr>
                                 </thead>
-
-
-
-
-
                                 <tbody>
                                     <tr>
                                         <td>1
@@ -247,7 +237,6 @@
                                     <br />
                                             श्रेणी</th>
                                     </tr>
-
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -844,7 +833,6 @@
         document.addEventListener("DOMContentLoaded", function () {
             // Select all table rows
             var rows = document.getElementsByTagName("tr");
-
             // Attach event listener to each row
             for (var i = 0; i < rows.length; i++) {
                 rows[i].addEventListener("click", function () {
@@ -863,7 +851,6 @@
                         // Show the second table
                         var secondTable = document.getElementById("BlockofAshoknagar");
                         secondTable.style.display = "flex";
-
                         // Hide the first table
                         var firstTable = this.closest("table");
                         firstTable.style.display = "none";
