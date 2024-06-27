@@ -35,9 +35,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h5 class="card-title">School Setup Master/
-स्कूल सेटअप मास्टर
-                    </h5>
+                    <h5 class="card-title">School Setup Master / स्कूल सेटअप मास्टर</h5>
                 </div>
             </div>
         </div>
@@ -61,11 +59,11 @@
         <div class="card mt-3 shadow">--%>
             <%--   <div class="card-body">--%>
             <fieldset>
-                <legend>School Setup Master/
-स्कूल सेटअप मास्टर</legend>
+                <legend>School Setup Master / स्कूल सेटअप मास्टर</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label>Financial Year<br />
+                        <label>
+                            Financial Year<br />
                             वित्तीय वर्ष<span style="color: red">*</span></label>
                         <asp:DropDownList ID="FinancialYear" runat="server" CssClass="form-control select2">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -122,7 +120,8 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label>School Category<br />
+                        <label>
+                            School Category<br />
                             स्कूल श्रेणी</label>
                         <asp:DropDownList runat="server" OnSelectedIndexChanged="ddlSchoolCategory_SelectedIndexChanged1" AutoPostBack="true" ID="ddlSchoolCategory" CssClass="form-control select2 ">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -134,14 +133,17 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label>School Sub Category Details<br />
-                            स्कूल उप श्रेणी विवरण </label>
+                        <label>
+                            School Sub Category Details<br />
+                            स्कूल उप श्रेणी विवरण
+                        </label>
                         <asp:DropDownList runat="server" ID="ddlSchoolSubCateDtls" CssClass="form-control select2 fs-4">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label>School/Dise Code<br />
+                        <label>
+                            School/Dise Code<br />
                             स्कूल/डिस कोड</label>
                         <asp:DropDownList runat="server" ID="ddlSchool" CssClass="form-control select2 fs-4">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
@@ -163,28 +165,26 @@
                     </div>--%>
             </fieldset>
             <fieldset runat="server" id="div_details" visible="false">
-                <legend>Details/विवरण</legend>
-                  <div class="row justify-content-end">
-      <div class="col-md-4 text-end">
-          <div class="form-group">
-              <button class="btn btn-info btn-rounded w-55">Excel</button>
-              <button class="btn btn-info btn-rounded w-55">PDF</button>
-          </div>
-      </div>
-      <div class="col-md-3">
-          <div class="form-group">
-              <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-          </div>
-      </div>
-  </div>
+                <legend>Details / विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr class="card-header text-center">
-                                    <th style="width: 8%">Sr. No.
-                                        <br />
-                                        क्र. संख्या</th>
+                                    <th style="width: 8%">Sr. No.<br />सरल क्र.</th>
                                     <th>Subject
                                         <br />
                                         विषय</th>
@@ -202,7 +202,7 @@
                                     <td>
                                         <input class="form-control" value="50" /></td>
                                     <td>
-                                        <input class="form-control" value="23" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -210,7 +210,7 @@
                                     <td>
                                         <input class="form-control" value="50" /></td>
                                     <td>
-                                        <input class="form-control" value="34" /></td>
+                                        <input class="form-control" value="2" /></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -218,7 +218,7 @@
                                     <td>
                                         <input class="form-control" value="40" /></td>
                                     <td>
-                                        <input class="form-control" value="20" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -226,7 +226,7 @@
                                     <td>
                                         <input class="form-control" value="35" /></td>
                                     <td>
-                                        <input class="form-control" value="30" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -234,7 +234,7 @@
                                     <td>
                                         <input class="form-control" value="45" /></td>
                                     <td>
-                                        <input class="form-control" value="40" /></td>
+                                        <input class="form-control" value="2" /></td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
@@ -242,7 +242,7 @@
                                     <td>
                                         <input class="form-control" value="55" /></td>
                                     <td>
-                                        <input class="form-control" value="50" /></td>
+                                        <input class="form-control" value="2" /></td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
@@ -250,7 +250,7 @@
                                     <td>
                                         <input class="form-control" value="70" /></td>
                                     <td>
-                                        <input class="form-control" value="60" /></td>
+                                        <input class="form-control" value="3" /></td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
@@ -258,7 +258,7 @@
                                     <td>
                                         <input class="form-control" value="60" /></td>
                                     <td>
-                                        <input class="form-control" value="40" /></td>
+                                        <input class="form-control" value="2" /></td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
@@ -266,7 +266,7 @@
                                     <td>
                                         <input class="form-control" value="33" /></td>
                                     <td>
-                                        <input class="form-control" value="20" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>10</td>
@@ -274,7 +274,7 @@
                                     <td>
                                         <input class="form-control" value="37" /></td>
                                     <td>
-                                        <input class="form-control" value="33" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>11</td>
@@ -282,7 +282,7 @@
                                     <td>
                                         <input class="form-control" value="45" /></td>
                                     <td>
-                                        <input class="form-control" value="40" /></td>
+                                        <input class="form-control" value="2" /></td>
                                 </tr>
                                 <tr>
                                     <td>12</td>
@@ -290,7 +290,7 @@
                                     <td>
                                         <input class="form-control" value="45" /></td>
                                     <td>
-                                        <input class="form-control" value="35" /></td>
+                                        <input class="form-control" value="2" /></td>
                                 </tr>
                                 <tr>
                                     <td>13</td>
@@ -298,7 +298,7 @@
                                     <td>
                                         <input class="form-control" value="36" /></td>
                                     <td>
-                                        <input class="form-control" value="18" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>14</td>
@@ -306,7 +306,7 @@
                                     <td>
                                         <input class="form-control" value="36" /></td>
                                     <td>
-                                        <input class="form-control" value="23" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>15</td>
@@ -314,7 +314,7 @@
                                     <td>
                                         <input class="form-control" value="25" /></td>
                                     <td>
-                                        <input class="form-control" value="22" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr>
                                     <td>16</td>
@@ -322,12 +322,12 @@
                                     <td>
                                         <input class="form-control" value="28" /></td>
                                     <td>
-                                        <input class="form-control" value="14" /></td>
+                                        <input class="form-control" value="1" /></td>
                                 </tr>
                                 <tr class="card-header">
                                     <th colspan="2">Total 11/12 class Enrollment Count</th>
                                     <th>690</th>
-                                    <th>502</th>
+                                    <th>24</th>
                                 </tr>
                             </table>
                             <br />
