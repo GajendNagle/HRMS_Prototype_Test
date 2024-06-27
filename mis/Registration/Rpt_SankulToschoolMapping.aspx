@@ -25,7 +25,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <h4 class="card-title">Sankul To School Mapping Report / संकुल से स्कूल मैपिंग रिपोर्ट
                     </h4>
                 </div>
