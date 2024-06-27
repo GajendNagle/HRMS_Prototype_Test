@@ -14,7 +14,7 @@
                         </li>
 
                          <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
-                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Reports</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>School Reports</span></a></li>
                         <li class="breadcrumb-item">Sankul Detail Report</li>
                     </ol>
                 </div>
@@ -27,7 +27,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Sankul Detail Report/संकुल विस्तृत रिपोर्ट
+                    <h4 class="card-title">Sankul Detail Report / संकुल विस्तृत रिपोर्ट
                     </h4>
                 </div>
             </div>
@@ -36,11 +36,11 @@
 
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>Sankul Detail Report/संकुल विस्तृत रिपोर्ट</legend>
+                <legend>Sankul Detail Report / संकुल विस्तृत रिपोर्ट</legend>
 
                 <div class="row form-group align-items-end">
                     <div class="col-md-3">
-                        <label>Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
+                        <label>Select Division Name<br />संभाग चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -55,7 +55,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label >Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
+                        <label >Select District Name<br /> जिला चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -111,7 +111,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Block Name/ ब्लॉक का नाम चुनें<span style="color: red">*</span></label>
+                        <label>Select Block Name<br /> ब्लॉक चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Agar</asp:ListItem>
@@ -131,24 +131,24 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                            <label>From Date/की तिथि से</label>
+                            <label>From Date<br />दिनांक से</label>
                             <input type="date" class="form-control" placeholder="17/11/2023" />
                     </div></div>
                     <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label>To Date/तारीख तक</label>
+                        <label>To Date<br />दिनांक तक</label>
                         <input type="date" class="form-control" placeholder="17/11/2023" />
                     </div>
                     <hr />
-                    <div class="col-md-12 justify-content-center">
-                        <div class="form-group text-center">
+                    <div class="col-md-12">
+                        <div class="form-group">
                             <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-border" OnClick="View1_Click" runat="server" Text="Search" />
                             <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div> </div>
                 </div>
             </fieldset>
-            <fieldset runat="server" id="data" visible="false">
-                <legend>Sankul Detail Reports /संकुल विस्तृत रिपोर्ट</legend>
+            <fieldset runat="server" style="margin-top:4%;" id="data" visible="false">
+                <legend>Sankul Detail Reports / संकुल विस्तृत रिपोर्ट</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -167,14 +167,14 @@
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr class="card-header">
-                                    <th>Sr. No./क्रमांक</th>
-                                    <th>Division Name/संभाग का नाम</th>
-                                    <th>District Name/जिले का नाम </th>
-                                    <th>Block Name/ब्लॉक का नाम </th>
-                                    <th>Sankul Name/संकुल का नाम </th>
-                                    <th>Sankul UDISE Code/संकुल UDISE कोड</th>
-                                    <th>Sankul Code No./संकुल कोड संख्या</th>
-                                    <th>View More/और देखें</th>
+                                    <th>Sr. No.<br />क्रमांक</th>
+                                    <th>Division Name<br />संभाग का नाम</th>
+                                    <th>District Name<br />जिले का नाम </th>
+                                    <th>Block Name<br />ब्लॉक का नाम </th>
+                                    <th>Sankul Name<br />संकुल का नाम </th>
+                                    <th>Sankul UDISE Code<br />संकुल UDISE कोड</th>
+                                    <th>Sankul Code No.<br />संकुल कोड संख्या</th>
+                                    <th>View More<br />अधिक देखें</th>
 
 
                                 </tr>
@@ -192,7 +192,7 @@
                                             <div class="modal-dialog modal-xl">
                                                 <div class="modal-content">
                                                     <div class="modal-header" id="myDIV">
-                                                        <h4 class="modal-title" id="myLargeModalLabel1">Sankul Detail/संकुल विवरण</h4>
+                                                        <h4 class="modal-title" id="myLargeModalLabel1">Sankul Detail / संकुल विवरण</h4>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                                                     </div>
                                                     <div class="modal-body">
@@ -205,15 +205,12 @@
         </tr>
     </thead>--%>
                                                                     <tbody>
+                                                                      
                                                                         <tr>
-                                                                            <th colspan="2">Sankul Name/संकुल नाम</th>
-                                                                            <th colspan="5">School Name/स्कूल के नाम</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th style="width: 5%">Sr. No./क्रमांक</th>
-                                                                            <th>Sankul Name/संकुल नाम</th>
-                                                                            <th>Sr.No./क्रमांक</th>
-                                                                            <th>School Name/स्कूल के नाम</th>
+                                                                            <th style="width: 8%">Sr. No.<br />सरल क्रमांक</th>
+                                                                            <th>Sankul Name<br />संकुल नाम</th>
+                                                                            <th style="width: 8%">Sr. No.<br />सरल क्रमांक</th>
+                                                                            <th>School Name<br />स्कूल के नाम</th>
                                                                         </tr>
                                                                         <tr>
                                                                             <td rowspan="2">1</td>

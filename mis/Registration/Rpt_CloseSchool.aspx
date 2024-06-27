@@ -13,32 +13,32 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-
-                       <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
-                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Reports</span></a></li>
+                        <li class="breadcrumb-item"><a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"><a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>School Reports</span></a></li>
                         <li class="breadcrumb-item">Close School Reports</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-        <div class="card card-border-primary">
-            <div class="card-header">
-                <div class="row align-items-end">
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Close School Report/स्कूल रिपोर्ट बंद करें
-                    </h4>
+                    <h4 class="card-title">Close School Report / बंद स्कूल रिपोर्ट</h4>
                 </div>
             </div>
-            </div>
-            <div class="card-body">
-                <fieldset>
-                    <legend>Close School Report/स्कूल रिपोर्ट बंद करें</legend>
+        </div>
+        <div class="card-body">
+            <fieldset>
+                <legend>Close School Report / बंद स्कूल रिपोर्ट</legend>
 
-                    <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <label class="font-bold">Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Division Name<br />
+                                संभाग का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -52,8 +52,12 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select District Name<br />
+                                जिले का नाम चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -108,8 +112,12 @@
                                 <asp:ListItem>Ujjain</asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-3">
-                            <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें</label>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Block Name<br />
+                                ब्लॉक चुनें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Agar</asp:ListItem>
@@ -128,97 +136,110 @@
 
                             </asp:DropDownList>
                         </div>
-                        <div class="col-md-3">
-                                <label class="font-bold">From Date/की तिथि से</label>
-                                <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
-                                <input type="date" class="form-control" placeholder="17/11/2023" />
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                From Date<br />
+                                दिनांक से</label>
+                            <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
+                            <input type="date" class="form-control" placeholder="17/11/2023" />
 
                         </div>
-                        <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <div class="form-group">
-                                <label class="font-bold">To Date/तारीख तक</label>
+                                <label>
+                                    To Date<br />
+                                    दिनांक तक</label>
                                 <input type="date" class="form-control" placeholder="17/11/2023" />
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="form-group">
-                                <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-rounded" OnClick="View1_Click" runat="server" Text="Search" />
-                                <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                             </div>
                         </div>
                     </div>
-                    <%--<div class="row justify-content-center">
+                </div>
+                <hr />
+                <div class="row align-items-end">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-border" OnClick="View1_Click" runat="server" Text="Search" />
+                            <a href="Rpt_CloseSchool.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+                        </div>
+                    </div>
+                </div>
+
+                <%--<div class="row justify-content-center">
                     </div>--%>
-                </fieldset>
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <fieldset runat="server" id="report" visible="false">
-                            <legend>Details/विवरण</legend>
-                            <div class="row justify-content-end align-items-end">
-                                <div class="col-md-4 text-end">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                        <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                    </div>
+            </fieldset>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <fieldset runat="server" id="report" visible="false">
+                        <legend>Details / विवरण</legend>
+                        <div class="row justify-content-end align-items-end">
+                            <div class="col-md-4 text-end">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
                                 </div>
                             </div>
-                            <div class="row align-items-end">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered">
-                                            <tr class="card-header">
-                                                <th>Sr. No./क्रमांक</th>
-                                                <th> Division/संभाग </th>
-                                                <th>District</th>
-                                                <th>Block/ ब्लॉक</th>
-                                                <th>Dise Code/डिस कोड</th>
-                                                <th>School Name/स्कूल के नाम</th>
-                                                <th>Management/प्रबंधन</th>
-                                                <th>Category/वर्ग</th>
-                                                <th>Sankul(DDO)/संकुल</th>
-                                                <th>Incharge Name/प्रभारी का नाम</th>
-                                                <th>Functional/कार्यात्मक</th>
-
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Chambal</td>
-                                                <td>SHEOPUR</td>
-                                                <td>VIJAYPUR</td>
-                                                <td>23010804504</td>
-                                                <td>GOVT. HSS Rose</td>
-                                                <td>Govt_SED</td>
-                                                <td>Higher Secodary</td>
-                                                <td>GOVT. HSS Rose</td>
-                                                <td>Mr.Rammohan Yadav</td>
-                                                <td>Closed</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Bhopal</td>
-                                                <td>Bhopal</td>
-                                                <td>Berasia</td>
-                                                <td>23010804523</td>
-                                                <td>GOVT. HSS SHYAMPUR</td>
-                                                <td>Govt_SED</td>
-                                                <td>Higher Secodary</td>
-                                                <td>GOVT. HSS SHYAMPUR</td>
-                                                <td>Mr.Rammohan Yadav</td>
-                                                <td>Closed</td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                 </div>
                             </div>
-                        </fieldset>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <tr class="card-header">
+                                            <th>Sr. No.<br />सरल क्रमांक</th>
+                                            <th>Division<br />संभाग </th>
+                                            <th>District<br />जिला</th>
+                                            <th>Block<br /> ब्लॉक</th>
+                                            <th>Dise Code<br />डाईस कोड</th>
+                                            <th>School Name<br />स्कूल नाम</th>
+                                            <th>Management<br />प्रबंधन</th>
+                                            <th>Category<br />वर्ग</th>
+                                            <th>Sankul(DDO)<br />संकुल</th>
+                                            <th>Incharge Name<br />प्रभारी का नाम</th>
+                                            <th>Functional<br />कार्यात्मक</th>
 
-                        <%--  <fieldset>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Chambal</td>
+                                            <td>SHEOPUR</td>
+                                            <td>VIJAYPUR</td>
+                                            <td>23010804504</td>
+                                            <td>GOVT. HSS Rose</td>
+                                            <td>Govt_SED</td>
+                                            <td>Higher Secodary</td>
+                                            <td>GOVT. HSS Rose</td>
+                                            <td>Mr.Rammohan Yadav</td>
+                                            <td>Closed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Bhopal</td>
+                                            <td>Bhopal</td>
+                                            <td>Berasia</td>
+                                            <td>23010804523</td>
+                                            <td>GOVT. HSS SHYAMPUR</td>
+                                            <td>Govt_SED</td>
+                                            <td>Higher Secodary</td>
+                                            <td>GOVT. HSS SHYAMPUR</td>
+                                            <td>Mr.Rammohan Yadav</td>
+                                            <td>Closed</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <%--  <fieldset>
                             <legend>Description</legend>
                             <div class="row">
                                 <div class="col-md-12">
@@ -301,13 +322,13 @@
                                 </div>
                             </div>
                         </fieldset>--%>
-                    </div>
                 </div>
-                <!-- Add the Modal -->
-
-
             </div>
+            <!-- Add the Modal -->
+
+
         </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="server">
 </asp:Content>
