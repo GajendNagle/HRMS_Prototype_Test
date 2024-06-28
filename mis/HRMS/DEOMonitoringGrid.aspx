@@ -5,6 +5,9 @@
         #Report {
             display: none;
         }
+        th{
+            white-space:nowrap;
+        }
     </style>
 
 </asp:Content>
