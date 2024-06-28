@@ -28,16 +28,15 @@ public partial class mis_Masters_Mst_SchoolRegistration : System.Web.UI.Page
         divSchool.Visible = false;
         divOffice.Visible = false;
         divInstitute.Visible = false;
-        if (ddlRegistrationType.SelectedItem.Text == "School Registration")
+        if (ddlRegistrationType.SelectedValue == "1")
         {
             divSchool.Visible = true;
-
         }
-        else if (ddlRegistrationType.SelectedItem.Text == "Office Registration")
+        else if (ddlRegistrationType.SelectedValue == "2")
         {
             divOffice.Visible = true;
         }
-        else if (ddlRegistrationType.SelectedItem.Text == "Institute Registration")
+        else if (ddlRegistrationType.SelectedValue == "3")
         {
             divInstitute.Visible = true;
         }

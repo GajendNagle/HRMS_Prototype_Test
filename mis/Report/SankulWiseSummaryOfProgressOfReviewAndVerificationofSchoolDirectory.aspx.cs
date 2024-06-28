@@ -1,16 +1,17 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class mis_Transaction_SankulWiseSummaryOfProgressOfReviewAndVerificationofSchoolDirectory : System.Web.UI.Page
+public partial class mis_Report_SankulWiseProgressReport : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
+
     protected void Unnamed_Click(object sender, EventArgs e)
     {
         show.Visible = true;
@@ -88,7 +89,20 @@ public partial class mis_Transaction_SankulWiseSummaryOfProgressOfReviewAndVerif
             ddlManagementGroupDetails.Items.Insert(0, new ListItem("--Select--", ""));
         }
     }
-    protected void ddlCategory_SelectedIndexChanged(object sender, EventArgs e)
+
+    public void FillDDl(DropDownList ddltofill, string[] param)
+    {
+        ddltofill.Items.Clear();
+        ddltofill.Items.Insert(0, new ListItem("--Select--", ""));
+        for (int i = 0; i < param.Length; i++)
+        {
+            ddltofill.Items.Add(new ListItem(param[i]));
+        }
+    }
+
+
+
+    protected void ddlCategory_SelectedIndexChanged1(object sender, EventArgs e)
     {
         ddlCategoryDetails.Items.Clear();
         if (ddlCategory.SelectedItem.Text == "Primary School")
@@ -131,17 +145,4 @@ public partial class mis_Transaction_SankulWiseSummaryOfProgressOfReviewAndVerif
             ddlCategoryDetails.Items.Insert(0, new ListItem("--Select--", ""));
         }
     }
-    public void FillDDl(DropDownList ddltofill, string[] param)
-    {
-        ddltofill.Items.Clear();
-        ddltofill.Items.Insert(0, new ListItem("--Select--", ""));
-        for (int i = 0; i < param.Length; i++)
-        {
-            ddltofill.Items.Add(new ListItem(param[i]));
-        }
-    }
-
-   
 }
-
-

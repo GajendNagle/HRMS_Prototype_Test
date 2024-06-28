@@ -2,10 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
         th {
             white-space: nowrap;
         }
