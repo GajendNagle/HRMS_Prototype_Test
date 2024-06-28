@@ -557,18 +557,19 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_SchoolSetup.aspx"><i class="ri-file-list-3-line"></i>OIS Setup Master</a></li>
+                                        <%--<li class="nav-item">
                                             <a href="#OISSetup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="OISSetup" data-key="t-OISSetup"><i class="ri-menu-line"></i>OIS Setup Master</a>
                                             <div class="collapse menu-dropdown" id="OISSetup">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_SchoolSetup.aspx"><i class="ri-file-list-3-line"></i>School Setup</a></li>
-                                                    <%--not found--%>
+                                                    <!--not found-->
                                                     <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Office Setup</a></li>
-                                                    <%--not found--%>
+                                                    <!--not found-->
                                                     <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Institute Setup</a></li>
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#developmentMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Development Master Data</a>
                                             <div class="collapse menu-dropdown" id="developmentMaster">
@@ -1129,6 +1130,7 @@
                                                 <ul class="nav nav-sm flex-column">
 
                                                     <%--Employee APRMS--%>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpAprNotes.aspx"><i class="ri-file-list-3-line"></i>Employee APRMS Home </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailsForm.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprDistWiseReport.aspx"><i class="ri-file-list-3-line"></i>APRMS District Wise Report</a></li>
@@ -1139,18 +1141,18 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
+                                        <%--<li class="nav-item">
                                             <a href="#HOAPRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="HOAPRMS" data-key="t-HOAPRMS"><i class="ri-menu-line"></i>Head Office APRMS</a>
                                             <div class="collapse menu-dropdown" id="HOAPRMS">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <%--Head Office APRMS--%>
+                                                    <!--Head Office APRMS-->
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOAprNotes.aspx"><i class="ri-file-list-3-line"></i>Head Office APRMS Home </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprFill.aspx"><i class="ri-file-list-3-line"></i>Head Office APR Fill </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprDistWiseReport.aspx"><i class="ri-file-list-3-line"></i>Head Office APR Report </a></li>
-                                                </ul>
+                                                    </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#IDCard" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="IDCard" data-key="t-IDCard"><i class="ri-menu-line"></i>Employee ID Card Management System</a>
