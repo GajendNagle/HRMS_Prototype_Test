@@ -6,45 +6,45 @@
             white-space: nowrap;
         }
 
-       @media print {
-    /* Show modal content in full page */
-    .modal-dialog {
-        width: 200%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
+        @media print {
+            /* Show modal content in full page */
+            .modal-dialog {
+                width: 200%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
-    .modal-content {
-        height: 200%;
-        border: none;
-        box-shadow: none;
-    }
+            .modal-content {
+                height: 200%;
+                border: none;
+                box-shadow: none;
+            }
 
-    .modal-body {
-        width: 210%;
-        height: auto;
-        overflow: visible !important;
-        zoom: 90%;
-    }
-    /* Hide unnecessary elements */
-    body.modal-open {
-        visibility: hidden;
-    }
+            .modal-body {
+                width: 72rem;
+                height: auto;
+                overflow: visible !important;
+                zoom: 90%;
+            }
+            /* Hide unnecessary elements */
+            body.modal-open {
+                visibility: hidden;
+            }
 
-        body.modal-open .modal .modal-header,
-        body.modal-open .modal .modal-body {
-            visibility: visible;
+                body.modal-open .modal .modal-header,
+                body.modal-open .modal .modal-body {
+                    visibility: visible;
+                }
+
+            .modal-footer {
+                display: none;
+            }
+
+            .modal-header {
+                display: none;
+            }
         }
-
-    .modal-footer {
-        display: none;
-    }
-
-    .modal-header {
-        display: none;
-    }
-}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -288,7 +288,6 @@
                         <div class="col-md-12 text-center">
                             <h3 class="font-bold">जिला शिक्षा अधिकारी</h3>
                             <h4 class="font-bold">जिला : टीकमगढ़</h4>
-
                             <h4 class="font-bold">लोकसेवक का विवरण</h4>
                         </div>
                         <div class="row">
@@ -339,12 +338,12 @@
                                 <hr />
                             </div>
                         </div>
-                        <div class="row mb-2">
+                        <div class="row mb-2 text-center">
                             <div class="col-md-12">
                                 <label class="font-16 font-bold">विषय :- संकुल प्रचार्य विवेक जैन द्वारा मेरी वर्ष 2023 की जनवरी फरवारी मार्च अप्रैल की सैलारी नहीं दी जा रही है।</label>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-4  text-end">
                             <div class="col-md-12 mt-2" style="margin-top: 3.5rem !important;">
                                 <h6>अधिकारी/ कर्मचारी के हस्ताक्षर</h6>
                             </div>
@@ -353,10 +352,10 @@
 
 
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info waves-effect text-start text-white" data-bs-dismiss="modal">Print</button>
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
-                </div>
+                <div class="modal-footer justify-content-center">
+     <button type="button" class="btn btn-info waves-effect text-start text-white"  onclick="printModalContent('myLargeModalLabel')">Print</button>
+     <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+ </div>
             </div>
             <!-- /.modal-content -->
         </div>
@@ -371,23 +370,25 @@
                 </div>
                 <div class="modal-body">
                     <fieldset>
-                        <div class="row">
-                            <div class="col-md-4 text-start">
-                                <img src="../dist/images/icon/MP_LOGO.svg" style="width: 9rem; height: 9rem" alt="homepage" class="light-logo">
+                        <div class="row ">
+                            <div class="col-sm-2">
+                                <img id="imgLogoP1" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
                             </div>
-                            <div class="col-md-4 text-center">
+                            <div class="col-sm-8 text-center">
+                                <br />
                                 <h3 class="font-bold">जिला शिक्षा अधिकारी</h3>
                                 <h4 class="font-bold">जिला : टीकमगढ़</h4>
                                 <h4 class="font-bold">लोकसेवक का विवरण</h4>
                                 <h4 class="font-bold mt-4">नोट शीट</h4>
                             </div>
-                            <div class="col-md-4 text-end">
-                                <img src="../Transaction/Screenshot%202024-05-08%20101730.png" style="width: 10rem; height: fit-content; margin-top: 2rem;" />
+                            <div class="col-sm-2 mt-2">
+                                <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
                             </div>
                         </div>
+                        <%--<hr style="height: 3px; border-width: 10px; color: black; background-color: black" />--%>
                         <div class="row mt-5">
                             <div class="col-md-12 table-responsive">
-                                <table class="table text-center table-bordered ">
+                                <table class="table text-center ">
                                     <tr>
                                         <th style="background-color: #ffffff !important; color: black; text-align: right">शिकायत क्र. :</th>
                                         <td style="text-align: left">74060</td>
@@ -418,6 +419,8 @@
                                     <tr>
                                         <th style="background-color: #ffffff !important; color: black; text-align: right">शिकायत का विषय :</th>
                                         <td style="text-align: left">बकाया लंबित</td>
+                                        <th></th>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                     </tr>
@@ -426,27 +429,24 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
-                                <h5 class="font-bold">शिकायत का विवरण</h5>
+                                <h5 class="font-bold"> -: शिकायत का विवरण :-</h5>
                                 <hr />
                             </div>
                         </div>
-                        <div class="row mb-2">
+                        <div class="row mb-2 text-center">
                             <div class="col-md-12">
                                 <label class="font-16 font-bold">विषय :- संकुल प्रचार्य विवेक जैन द्वारा मेरी वर्ष 2023 की जनवरी फरवारी मार्च अप्रैल की सैलारी नहीं दी जा रही है।</label>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-4 text-end">
                             <div class="col-md-12 mt-2" style="margin-top: 3.5rem !important;">
-                                <h6>अधिकारी/ कर्मचारी के हस्ताक्षर</h6>
+                                <h6 class=" font-bold">अधिकारी/ कर्मचारी के हस्ताक्षर</h6>
                             </div>
                         </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-success w-lg btn-border" id="btnPrint" onclick="printModalContent('myLargeModalLabel8')">Print</button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info waves-effect text-start text-white" data-bs-dismiss="modal">Print</button>
+                    <button type="button" class="btn btn-info waves-effect text-start text-white" id="btnPrint" onclick="printModalContent('myLargeModalLabel8')">Print</button>
                     <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -466,9 +466,9 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Forward To :<span style="color: red">*</span></label>
+                                    <label>Forward To <br />आगे प्रेषित<span style="color: red">*</span></label>
                                     <select class="form-control">
-                                        <option selected="selected" value="0">-Select-</option>
+                                        <option selected="selected" value="0">--Select--</option>
                                         <option value="16">DIET/DRC</option>
                                         <option value="13">BRC</option>
                                         <option value="12">BEO</option>
@@ -479,16 +479,14 @@
                                         <option value="5">RSK</option>
                                         <option value="3">CPI</option>
                                         <option value="1">SED</option>
-
-
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Authority Name :<span style="color: red">*</span></label>
+                                    <label>Authority Name <br />प्राधिकरण का नाम <span style="color: red">*</span></label>
                                     <select class="form-control ">
-                                        <option value="0">-Select-</option>
+                                        <option value="0">--Select--</option>
                                         <option value="1">RMSA</option>
                                         <option value="2">Est-1</option>
                                         <option value="3">Est-2</option>
@@ -512,7 +510,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Type Note Here :<span style="color: red">*</span></label>
+                                    <label>Type Note Here <br />यहां नोट टाइप करें<span style="color: red">*</span></label>
                                     <input class="form-control" />
                                 </div>
                             </div>
