@@ -59,7 +59,7 @@
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 one">
-                                            <h4 class="">पंजीकृत शिकायतें </h4>
+                                            <h4 style="color:white">पंजीकृत शिकायतें </h4>
 
                                         </div>
                                         <div class="card-content">
@@ -72,7 +72,7 @@
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 five">
-                                            <h4 class="">लोक्ड शिकायतें</h4>
+                                            <h4 style="color:white">लोक्ड शिकायतें</h4>
 
                                         </div>
                                         <div class="card-content">
@@ -85,7 +85,7 @@
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 two">
-                                            <h4 class="">अग्रेषित शिकायतें</h4>
+                                            <h4 style="color:white">अग्रेषित शिकायतें</h4>
 
                                         </div>
                                         <div class="card-content">
@@ -98,7 +98,7 @@
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 three">
-                                            <h4 class="">पूर्ण शिकायतें</h4>
+                                            <h4 style="color:white">पूर्ण शिकायतें</h4>
 
                                         </div>
                                         <div class="card-content">
@@ -111,7 +111,7 @@
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 four">
-                                            <h4 class="">अस्वीकृत शिकायतें</h4>
+                                            <h4 style="color:white">अस्वीकृत शिकायतें</h4>
 
                                         </div>
                                         <div class="card-content">
@@ -124,11 +124,10 @@
 
                                     <div class="card-wrap">
                                         <div class="card-header card-header1 five">
-                                            <h4 class="">पेंडिंग शिकायतें</h4>
+                                            <h4 style="color:white">पेंडिंग शिकायतें</h4>
 
                                         </div>
                                         <div class="card-content">
-
                                             <button class="card-btn five">5808</button>
                                         </div>
                                     </div>
@@ -142,7 +141,7 @@
             <fieldset>
                 <legend>परिवेदना निवारण / Grievance Redressal
                 </legend>
-                <div class="row">
+                <div class="row mb-1">
                 <h4 class="parivedan-heading" style="color: brown; background-color: bisque; font-weight: bold; border-radius: 10px;">
                             <i class="far fa-hand-point-right"></i>&emsp;
                             परिवेदना निवारण के बारे में:
@@ -153,7 +152,7 @@
                     स्कूल शिक्षा विभाग अंतर्गत कार्यरत् तथा सेवानिवृत्त शिक्षकों/कर्मचारियों की सेवा संबंधी समस्याओं के निराकरण हेतु समय-समय पर विभाग स्तर से आवश्यक निर्देश जारी किये गये है । निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम 2009 की धारा 24 की उपधारा (3) के प्रावधान अनुसार शिक्षकों की शिकायतों के निराकरण हेतु समुचित व्यवस्था स्थापित किये जाने की अनिवार्यता है। उक्त अनुक्रम में इन समस्याओं के निराकरण हेतु अधिक बेहतर व्यवस्था जो समयबद्ध तथा पारदर्शी हो, स्थापित किए जाने का निर्णय लिया गया है ताकि संबंधित शासकीय सेवकों की समस्याओं का समय-सीमा में निराकरण किया जा सके। 2/ इस निर्णय के अनुक्रम में कार्यरत एवं सेवानिवृत्त शिक्षकों/कर्मचारियों की सेवा संबंधी समस्याओं के निराकरण हेतु ‘‘परिवेदना निवारण प्रबंधन प्रणाली’’ का विकास किया गया है ताकि सबंधितों को उनकी समस्याओं के निराकरण के लिए संबंधित कार्यालयों में आने-जाने में समय एवं धन का अपव्यय न करना पड़े।
    ।
                 </p>
-                <div class="row">
+                <div class="row mb-1">
                         <h4 class="parivedan-heading" style="color: brown; background-color: bisque; font-weight: bold; border-radius: 10px;">
                             <i class="far fa-hand-point-right"></i>&emsp;परिवेदना निवारण के विशिष्ट बिंदु :</h4>
                     </div>
@@ -165,7 +164,7 @@
                     <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;आवेदक के लिए ट्रेकिंग हेतु ऑनलाइन सुविधा उपलब्ध रहेगी जिसका प्रिंट आउट संबंधितों द्वारा लिया जा सकेगा।</li>
                     <li style="background-color: #FFF0F5; padding: 10px; border-radius: 10px;"><i class="fa fa-star" aria-hidden="true" style="font-size: 10px"></i>&emsp;किन्ही भी कार्यरत् तथा सेवानिवृत्त शिक्षकों/कर्मचारियों के लिए यह आवश्यक होगा कि अपनी समस्याओं के सम्बन्ध में न्यायालय में जाने से पूर्व उनके द्वारा ऑनलाइन ‘‘परिवेदना निवारण प्रबंधन प्रणाली’’ पर शिकायत को दर्ज करना होगा |</li>
                 </ul>
-                <div class="row">
+                <div class="row mb-1">
                         <h4 class="parivedan-heading" style="color: brown; background-color: bisque; font-weight: bold; border-radius: 10px;">
                             <i class="far fa-hand-point-right"></i>&emsp;उद्देश्य :</h4>
                     </div>
