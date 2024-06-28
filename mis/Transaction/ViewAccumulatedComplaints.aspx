@@ -16,66 +16,10 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles" style="margin-bottom: -30px">
-        <%-- <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br /></u></p>
-        </div>--%>
-        <div class="col-md-5  ">
-            <p style="color: brown; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">शिकायत प्रोसेसिंग </p>
-        </div>
-        <div class="col-md-7 align-self-center">
-
-
-
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <%--<li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>--%>
-                    <li class="breadcrumb-item active">शिकायत प्रोसेसिंग </li>
-                </ol>
-            </div>
-        </div>
-    </div>
     <div class="card mt-3 shadow">
         <div class="card-header card-border-info">
         </div>
         <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            <li class="nav-item dropdown">
-
-                                <a class="nav-link dropdown-toggle text-dark font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b>शिकायत पंजीयन</b></strong></a>
-                                <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="../HRMS/Trn_ParivadNivaran.aspx">शिकायत दर्ज करे</a></li>
-
-                                    <li><a class="dropdown-item" href="../HRMS/ParivednaNevakarnStatus.aspx">शिकायत ट्रैकिंग स्थिति</a></li>
-                                    <li><a class="dropdown-item" href="../HRMS/PrintComplaint.aspx">शिकायत प्रिंट करे</a></li>
-
-                                </ul>
-                            </li>
-                            <a class="nav-link  text-white " href="../HRMS/ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold">शिकायत प्रोसेसिंग </b></a>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-            <br />
-            <br />
-
-            <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
-
-
             <fieldset>
                 <legend>शिकायत प्रोसेसिंग 
                 </legend>
@@ -84,7 +28,6 @@
                         <div class="form-group">
                             <label>District:<span style="color: red">*</span></label>
                             <select class="form-control select2">
-
                                 <option selected="selected" value="0">-Select-</option>
                                 <option value="51">Agar Malwa ,आगर मालवा</option>
                                 <option value="49">Alirajpur ,अलीराजपुर </option>
@@ -174,7 +117,6 @@
                     </div>
                     <div class="col-md-3 mt-4 py-2">
                         <button id="Button1" type="button" class="btn btn-success btn-rounded" onclick="myFunction()">सर्च</button>
-                        <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                     </div>
                 </div>
 
@@ -204,8 +146,6 @@
                                         </tr>
                                         <tr>
                                             <td>1</td>
-
-
                                             <td>74060</td>
                                             <td>Nidhi Mishra [Prathmik Shikshak]</td>
                                             <td>Financial Related</td>
@@ -216,9 +156,6 @@
                                             <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
                                             <td><a href="#"><i class="fas fa-eye"></i></a></td>
                                             <td><a href="#" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
-
-
-
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -228,32 +165,17 @@
                                             <td>Pending arrears</td>
                                             <td>02/05/2024</td>
                                             <td>Commissioner, Public Instructions</td>
-
                                             <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                             <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
                                             <td><a href="#"><i class="fas fa-eye"></i></a></td>
                                             <td><a href="#" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
-
                                         </tr>
-
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </fieldset>
-
-
-                <%--                <div class="row justify-content-center">
-
-
-                    <div class="col-md-2">
-
-                        <button id="Button2" type="button" class="btn btn-success btn-rounded Alert-Save btn-block" onclick="myFunction()">Save</button>
-                    </div>
-
-
-                </div>--%>
             </div>
         </div>
     </div>
@@ -354,43 +276,43 @@
                                 <h4 class="font-bold mt-4">नोट शीट</h4>
                             </div>
                             <div class="col-md-4 text-end">
-                                <img src="Screenshot%202024-05-08%20101730.png" style="width: 10rem; height: auto;margin: 1rem;" />
+                                <img src="Screenshot%202024-05-08%20101730.png" style="width: 10rem; height: auto; margin: 1rem;" />
                             </div>
                         </div>
                         <div class="row mt-5">
                             <div class="col-md-12 table-responsive">
                                 <table class="table text-center table-bordered ">
                                     <tr>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">शिकायत क्र. :</th>
-                                        <td style="text-align:left">74060</td>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">शिकायत दिनाँक :</th>
-                                        <td style="text-align:left">02/05/2024</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">शिकायत क्र. :</th>
+                                        <td style="text-align: left">74060</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">शिकायत दिनाँक :</th>
+                                        <td style="text-align: left">02/05/2024</td>
 
                                     </tr>
 
                                     <tr>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">जिला :</th>
-                                        <td style="text-align:left">टीकमगढ़</td>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">विभाग :</th>
-                                        <td style="text-align:left">Education</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">जिला :</th>
+                                        <td style="text-align: left">टीकमगढ़</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">विभाग :</th>
+                                        <td style="text-align: left">Education</td>
                                     </tr>
                                     <tr>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">लोकसेवक का नाम :</th>
-                                        <td style="text-align:left">Nidhi Mishra [BO8511]</td>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">पदनाम :</th>
-                                        <td style="text-align:left">Prathmik Shikshak</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">लोकसेवक का नाम :</th>
+                                        <td style="text-align: left">Nidhi Mishra [BO8511]</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">पदनाम :</th>
+                                        <td style="text-align: left">Prathmik Shikshak</td>
 
                                     </tr>
                                     <tr>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">ईमेल :</th>
-                                        <td style="text-align:left">Gaurishankartkg@Gmail.Com</td>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">मोबाइल :</th>
-                                        <td style="text-align:left">7974333143</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">ईमेल :</th>
+                                        <td style="text-align: left">Gaurishankartkg@Gmail.Com</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">मोबाइल :</th>
+                                        <td style="text-align: left">7974333143</td>
                                     </tr>
 
                                     <tr>
-                                        <th style="background-color: #ffffff !important; color: black;text-align:right">शिकायत का विषय :</th>
-                                        <td style="text-align:left">बकाया लंबित</td>
+                                        <th style="background-color: #ffffff !important; color: black; text-align: right">शिकायत का विषय :</th>
+                                        <td style="text-align: left">बकाया लंबित</td>
 
                                     </tr>
                                     <tr>

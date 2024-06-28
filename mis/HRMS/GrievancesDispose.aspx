@@ -6,11 +6,6 @@
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
-
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
         th {
             white-space: nowrap;
         }
@@ -30,33 +25,26 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Grievance Management System</span></a>
+                            <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Report</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Grievances Dispose</span></li>
+                        <li class="breadcrumb-item"><span>List of Resolved Complaints Report</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <%--  <div class="row page-titles mb-4">--%>
-    <div class="col-md-5" style="position: relative; bottom: 20px; right: 15px;">
-        <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
-            <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
-            </u>
-        </p>
-    </div>
-
-
-
+     <div class="col-md-5" style="position: relative; bottom: 20px;">
+     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+         <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+         </u>
+     </p>
+ </div>
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Grievances Dispose/
+                    <h5 class="card-title">Grievances Dispose /
            
 शिकायतों का निपटान
                     </h5>
@@ -67,12 +55,12 @@
 
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>Grievances Dispose/शिकायतों का निपटान</legend>
+                    <legend>Grievances Dispose / शिकायतों का निपटान</legend>
                     <div class="row">
 
                         <div class="col-md-3 ">
                             <label class="font-bold">
-                                District/<br />
+                                District<br />
                                 जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
                                 <asp:ListItem>--select--</asp:ListItem>
@@ -88,7 +76,7 @@
                         </div>
                         <div class="col-md-3 ">
                             <label class="font-bold">
-                                Section  Name/<br />
+                                Section  Name<br />
                                 अनुभाग का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
                                 <asp:ListItem>--select--</asp:ListItem>
@@ -113,30 +101,18 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-
                     <hr />
                     <div class="col-md-12">
                         <div class="form-group">
-                            <%-- <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
                             <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />
                             <a href="GrievancesDispose.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
-
-                    <%--  <div class="col-md-4 mt-5" style="position: relative; top: 1px; bottom: 10px;">
-                            <div class="form-group">
-                                <asp:Button runat="server" type="button" class="btn btn-success btn-rounded" OnClick="Unnamed_Click" Text=" Search" />
-
-                                </>
-                                <a href="GrievancesDispose.aspx" class="btn btn-danger  btn-rounded">Clear</a>
-                            </div>
-                        </div>--%>
                 </fieldset>
             </div>
             <div id="show2" runat="server" visible="false">
                 <fieldset>
-                    <legend>Dispose Action Details/
-निपटान कार्रवाई विवरण</legend>
+                    <legend>Dispose Action Details / निपटान कार्रवाई विवरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -153,33 +129,30 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-
-
                                 <table id="Table4" class="table table-bordered  text-center " runat="server">
                                     <thead>
                                         <tr valign="middle">
-                                            <th>S.No./<br />
+                                            <th>S.No.<br />
                                                 सरल क्र.</th>
-                                            <th>Grievance No./<br />
+                                            <th>Grievance No.<br />
                                                 शिकायत क्र.</th>
-                                            <th>Employee Name/<br />
+                                            <th>Employee Name<br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Type/<br />
+                                            <th>Type<br />
                                                 प्रकार
                                             </th>
-                                            <th>Subject/<br />
+                                            <th>Subject<br />
                                                 विषय
                                             </th>
-                                            <th>Forwarded Date/<br />
+                                            <th>Forwarded Date<br />
                                                 अग्रेषित तिथि
                                             </th>
-                                            <th>Status/<br />
+                                            <th>Status<br />
                                                 स्थिति</th>
-                                            <th>Action/
+                                            <th>Action
                                                 <br />
                                                 कार्रवाई
                                             </th>
-                                            <%-- <th>Application Forword</th>--%>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -209,12 +182,12 @@
             <label class="col-md-3 fw-bold color_black fs-4"><span style="color: red">Grievances No :- </span>1002</label>
             <br />
             <fieldset>
-                <legend>Grievances Dispose or Reject/शिकायतों का निपटारा करें या अस्वीकार करें</legend>
+                <legend>Grievances Dispose or Reject / शिकायतों का निपटारा करें या अस्वीकार करें</legend>
                 <div class="row">
 
                     <div class="col-md-3 fw-bold color_black ">
                         <label class="font-bold">
-                            Disposal Status Type/<br />
+                            Disposal Status Type<br />
                             निपटान स्थिति प्रकार<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" ID="ddlDisposal" CssClass="form-control ">
                             <asp:ListItem>--select--</asp:ListItem>
@@ -225,18 +198,17 @@
                     </div>
                     <div class="col-md-3 fw-bold color_black ">
                         <label class="font-bold">
-                            Type Note Here/
+                            Type Note Here
                             <br />
                             यहां नोट टाइप करें<span style="color: red">*</span></label>
                         <textarea class="form-control   fw-bold" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                     </div>
                     <div class="col-md-3 fw-bold color_black">
                         <label class="font-bold">
-                            File upload/<br />
+                            File upload<br />
                             फाइल अपलोड<span style="color: red">*</span></label>
                         <asp:FileUpload runat="server" CssClass="form-control  " ID="file" />
                         <p class="justify-content-end  fw-bold" style="position: relative; font-size: 15px">
-
                             <span style="color: red; font-size: 14px">Documents In Pdf Format  Size:150 kb</span>
                         </p>
                     </div>
@@ -245,7 +217,6 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Dispose It</button>
-                        <%--   <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />--%>
                         <a href="GrievancesDispose.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
