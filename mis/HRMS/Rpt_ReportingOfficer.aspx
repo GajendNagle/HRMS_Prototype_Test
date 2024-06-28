@@ -37,8 +37,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>ACR</span></a>
+                            <a href="#ACRReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>ACR Report</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Reporting Officer Fill By ACR  Report Print</span></li>
                     </ol>
@@ -57,7 +57,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h4 class="card-title color_black">
+                    <h4>
                    PART-3 Assessment  Report/
                     भाग तीन- मूल्यांकन रिपोर्ट
                     </h4>

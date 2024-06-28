@@ -1855,7 +1855,7 @@
                     })
                 });
             },
-                //init
+                
                 $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
         }(window.jQuery),
             //initializing

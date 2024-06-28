@@ -224,7 +224,7 @@
             <hr />
             <div class="col-md-12">
                 <div class="form-group">
-                    <button type="button" class="Alert-Save  btn w-lg btn-success btn-border">
+                    <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
                         Save/Next
                     </button>
                     <a href="ConfedicialReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -287,8 +287,8 @@
                     })
                 });
             },
-                init
-            init
+ 
+           
             $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
         }(window.jQuery),
             //initializing
@@ -297,6 +297,7 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
+
 
 
 

@@ -62,8 +62,8 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>ACR</span></a>
+                            <a href="#ACRReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>ACR Report</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>Reporting Officer Fill By ACR</span></li>
                     </ol>
@@ -73,17 +73,16 @@
     </div>
     <%--  <div class="row page-titles mb-4">--%>
     <%--  <div class="row page-titles mb-4">--%>
-    <div class="col-md-5 " style="position: relative; bottom: 30px; right: 25px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-            <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
-    </div>
+     <div class="row"><div class="col-md-5 ">
+          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+      </div></div>
+    
+
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h4 class="card-title color_black">PART-1 Basic Information Print/
+                    <h4>PART-1 Basic Information Print/
                    भाग एक- सामान्य जानकारी प्रिंट
                     </h4>
                 </div>

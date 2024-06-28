@@ -44,9 +44,14 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 mb-2">
+           <div class="row  align-content-end">
+               <div class="col-md-11 "></div>
+        <div class="col-md text-end">
+              <div class="form-group">
 
-        <button id="BtnBack" class="btn-info rounded-2" type="button" onclick="Backclickfn()" style="position: relative; left: 950px;">BACK</button>
+    <button id="BtnBack" class="btn-info rounded-2" type="button" onclick="Backclickfn()" >BACK</button>
+</div>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">

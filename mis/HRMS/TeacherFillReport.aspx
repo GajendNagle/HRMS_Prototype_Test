@@ -65,19 +65,7 @@
       <div class="col-md-5 ">
           <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
       </div>
-               <%--               <div class="row justify-content-end" onclick=" moveBetweenFieldsets(currentFieldset, nextFieldset) " style=" position:fixed; margin-left: 35.5rem" id="btnBack">
-    <div class="col-md-3  justify-content-end">
-           <div class="form-group">
-        <button id="BtnBack" class="btn-info rounded-2 ml-5" type="button" onclick="Backclickfn()">BACK</button>
-    </div>
-        </div>
-</div>--%>
-
-     <%-- <div class="col-md-4">
-          <div class="form-group">
-              </div>
-
-      </div>--%>
+             
 <div class="col-md text-end">
     <div class="form-group">
          <button id="BtnBack" class="btn-info rounded-2 ml-5" type="button" onclick="Backclickfn()">BACK</button>
@@ -90,7 +78,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h4 class="card-title color_black">
+                    <h4>
                       PART-2 Self-Evaluation
                       भाग दो-स्वमूल्यांकन
                     </h4>
@@ -835,6 +823,8 @@ of annual examination result
                     </div>--%>
                     <div class="modal-footer">
                         <div style="display: none;" id="btn1">
+
+                      
                    <div class="col-md-12">
     <div class="form-group">
         <button type="button" class="Alert-Save btn w-lg btn-success btn-border">

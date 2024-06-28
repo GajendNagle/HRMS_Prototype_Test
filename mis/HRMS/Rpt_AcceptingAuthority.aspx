@@ -49,8 +49,8 @@
                           <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                       </li>
                       <li class="breadcrumb-item">
-                          <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                              <span>ACR</span></a>
+                          <a href="#ACRReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                              <span>ACR Report</span></a>
                       </li>
                       <li class="breadcrumb-item"><span>Accepting Authority ACR Report Print</span></li>
                   </ol>
@@ -69,7 +69,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Reviewing Officer/
+                    <h4>Reviewing Officer/
                      Acceptanceing Officer Report
                     </h4>
                 </div>
