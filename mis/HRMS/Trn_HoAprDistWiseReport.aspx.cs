@@ -11,4 +11,54 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
     {
 
     }
+
+    protected void txtUniqueID_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Unnamed_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btn1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button6_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button7_Click(object sender, EventArgs e)
+    {
+
+    }
 }

@@ -137,7 +137,7 @@
                         <div class="form-group">
                             <label>
                                 <br>
-                                Date of Birth<br>
+                                Date Of Birth<br>
                                 जन्मतिथि<span style="color: red">*</span>
                             </label>
                             <input name="ctl00$ContentBody$TXTDOB" type="date" readonly="readonly" id="ContentBody_TXTDOB" class="form-control" autocomplete="off" value="1999-12-03">
@@ -180,7 +180,7 @@
                         <div class="form-group">
                             <label>
                                 <br>
-                                First Posting  designation<br>
+                                First Posting  Designation<br>
                                 प्रथम नियुक्ति का पद<span style="color: red;">*</span>
                             </label>
                             <input name="ctl00$ContentBody$TextBox1" type="text" readonly="readonly" id="ContentBody_TextBox1" class="form-control" autocomplete="off" value="प्राथमिक अध्यापक">

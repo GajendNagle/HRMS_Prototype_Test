@@ -20,21 +20,23 @@
                             <a href="#EmpAPRMS" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee APRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Employee APRMS Home</span></li>
+                        <li class="breadcrumb-item"><span>About APRMS </span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="content-wrapper">
-        <div class="container-fluid">
-
+    <div class="row align-content-end">
+    <div class="col-md-5 ">
+        <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+    </div>
+</div>
+  
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title">Employee Annual Property Returns Management System / कर्मचारी वार्षिक संपत्ति रिटर्न प्रबंधन प्रणाली</h4>
+                            <h4 class="card-title"> APRMS information/Aprms जानकारी</h4>
                         </div>
                     </div>
                 </div>

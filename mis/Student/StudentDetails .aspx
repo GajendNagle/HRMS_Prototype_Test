@@ -814,7 +814,7 @@ Berasia"
                             <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div id="Dochandicapped2" class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <a href=""  class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></a>
 
                         </div>
                     </div>

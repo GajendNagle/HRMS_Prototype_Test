@@ -491,6 +491,8 @@
                                     संपत्ति से वार्षिक आय</th>
                                 <th>Accusation<br />
                                     अभियुक्ति</th>
+                                  <th>Action<br />
+      कार्रवाई</th>
 
                             </tr>
                         </thead>
@@ -500,8 +502,10 @@
                 </div>
             </div>
         </div>
-    </fieldset>
+        <hr />
+         <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Submit</button>
 
+    </fieldset>
         </div></div>
 </asp:Content>
 
@@ -621,6 +625,7 @@
              let Gradei = document.getElementById("txtPurchase").value;
              let Gradej = document.getElementById("monumber").value;
              let Gradek = document.getElementById("address").value;
+             let Gradel = document.getElementById("address").value;
 
 
 

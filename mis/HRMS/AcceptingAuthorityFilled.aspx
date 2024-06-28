@@ -126,10 +126,10 @@
                     </div>
                 </div>
             </nav>--%>
-            <br />
+            <br />Review And Filling Of ACR Report By The Accepting Authority 
 
             <fieldset id="show2" runat="server">
-                <legend>Review and filling of ACR report by the Accepting Authority / स्वीकारकर्ता प्राधिकारी द्वारा एसीआर रिपोर्ट की समीक्षा करना और भरना</legend>
+                <legend>Filled By Review Accepting Authority Officer/ समीक्षा स्वीकार करने वाले प्राधिकारी अधिकारी द्वारा  भरना  जाए</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -145,12 +145,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="table-responsive">
                         <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                             <thead>
                                 <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
                                     <th>S.No
                                             <br />
                                         सरल क्र.</th>
+                                                                    <th>Financial Year<br />
+वित्तीय वर्ष</th>
                                     <th>Unique ID/Name
                                             <br />
                                         कर्मचारी आईडी/नाम </th>
@@ -180,6 +183,7 @@
                             <tbody>
                                 <tr valign="middle">
                                     <td>1</td>
+                                      <td>2023-2024</td>
                                     <td>गोपाल वर्मा/<br />
                                         EDP4454445</td>
                                     <td>22/07/1989</td>
@@ -206,6 +210,8 @@
                             <tbody>
                                 <tr valign="middle">
                                     <td>2</td>
+                                    <td>2023-2024</td>
+
                                     <td>सागर गुप्ता/<br />
                                         EDP78974445</td>
                                     <td>28/09/1989</td>
@@ -230,7 +236,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div></div>
 
 
             </fieldset>

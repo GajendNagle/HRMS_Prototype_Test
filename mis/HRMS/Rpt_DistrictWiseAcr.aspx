@@ -51,12 +51,13 @@
         <div class="card-body">
          
             <fieldset runat="server" id="DDL">
-                <legend>District Wise ACR Report</legend>
+                <legend>District Wise ACR Report/जिलेवार एसीआर रिपोर्ट
+</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District
+                                District<br /> जिला
                               
                     <span class="fa-pull-right" style="color: red">*</span>
                             </label>
@@ -90,7 +91,7 @@
 
 
             <fieldset runat="server" visible="false" id="show">
-                <legend>Details</legend>
+                <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -109,12 +110,12 @@
                     <div class="col-md-12">
                         <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
                             <thead>
-                                <tr valign="middle" class="text-white">
-                                    <th>Sr.No</th>
-                                    <th>District Name</th>
+                                <tr>
+                                    <th>Sr.No<br />सरल.क्र</th>
+                                    <th>District Name<br />जिले का नाम</th>
 
-                                    <th>Financial Year</th>
-                                    <th>Total Numbers</th>
+                                    <th>Financial Year<br />वित्तीय वर्ष</th>
+                                    <th>Total Numbers/कुल संख्या</th>
 
                                     <%--<th>प्रिंट</th--%>
                                 </tr>
@@ -162,7 +163,7 @@
 
             </fieldset>
             <fieldset runat="server" visible="false" id="show1">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -182,15 +183,15 @@
                             <div class="table-responsive">
                                 <table id="Table6" class="table table-bordered  text-center" runat="server">
                                     <thead>
-                                        <tr valign="middle" class="text-white">
-                                            <th>Sr.No</th>
-                                            <th>District Name</th>
+                                         <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
-                                            <th>Financial Year</th>
-                                            <th>Total Numbers</th>
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-                                            <%--<th>प्रिंट</th--%>
-                                        </tr>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                     </thead>
                                     <tbody>
                                         <tr valign="middle">
@@ -215,7 +216,7 @@
 
             </fieldset>
             <fieldset runat="server" visible="false" id="show2">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -235,15 +236,15 @@
                         <div class="col-md-12">
                             <table id="Table7" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>District Name</th>
+                                   <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
-                                        <th>Financial Year</th>
-                                        <th>Total Numbers</th>
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-
-                                    </tr>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
@@ -266,7 +267,7 @@
 
             </fieldset>
             <fieldset runat="server" visible="false" id="show3">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -285,15 +286,15 @@
                         <div class="col-md-12">
                             <table id="Table8" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>District Name</th>
+                                   <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
-                                        <th>Financial Year</th>
-                                        <th>Total Numbers</th>
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-                                        <%--<th>प्रिंट</th--%>
-                                    </tr>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
@@ -312,7 +313,7 @@
                     </div>
             </fieldset>
             <fieldset runat="server" visible="false" id="show4">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -331,13 +332,15 @@
                         <div class="col-md-12">
                             <table id="Table9" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>S.No</th>
-                                        <th>District Name</th>
-                                        <th>Financial Year</th>
-                                        <th>Total Numbers</th>
+                                    <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
-                                    </tr>
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
+
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 </thead>
                                 <tbody>
 
@@ -361,7 +364,7 @@
             </fieldset>
 
             <fieldset runat="server" id="Fieldset1" visible="false">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -380,17 +383,15 @@
                         <div class="col-md-12">
                             <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>Employee Unique ID</th>
-                                        <th>Sankul Code </th>
-                                        <th>Financial Year</th>
+                                   <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-
-
-                                    </tr>
-                                </thead>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 <tbody>
                                     <tr valign="middle">
                                         <td>1</td>
@@ -446,7 +447,7 @@
             </fieldset>
 
             <fieldset runat="server" id="Fieldset2" visible="false">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -465,15 +466,15 @@
                         <div class="col-md-12">
                             <table id="Table5" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>Employee Unique ID</th>
-                                        <th>Sankul Code </th>
-                                        <th>Financial Year</th>
+                                     <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-
-                                    </tr>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
@@ -540,7 +541,7 @@
          
             </fieldset>
             <fieldset runat="server" id="Fieldset3" visible="false">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -559,15 +560,15 @@
                         <div class="col-md-12">
                             <table id="Table3" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>Employee Unique ID</th>
-                                        <th>Sankul Code </th>
-                                        <th>Financial Year</th>
+                                    <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-                                        <%--<th>प्रिंट</th--%>
-                                    </tr>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
@@ -631,7 +632,7 @@
               
             </fieldset>
             <fieldset runat="server" id="Fieldset4" visible="false">
-                <legend>Details</legend>
+           <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -650,16 +651,15 @@
                         <div class="col-md-12">
                             <table id="Table4" class="table table-bordered table-responsive-lg text-center" runat="server">
                                 <thead>
-                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>Sr.No</th>
-                                        <th>Employee Unique ID</th>
-                                        <th>Sankul Code </th>
-                                        <th>Financial Year</th>
+                                    <tr>
+     <th>Sr.No<br />सरल.क्र</th>
+     <th>District Name<br />जिले का नाम</th>
 
+     <th>Financial Year<br />वित्तीय वर्ष</th>
+     <th>Total Numbers/कुल संख्या</th>
 
-
-                                        <%--<th>प्रिंट</th--%>
-                                    </tr>
+     <%--<th>प्रिंट</th--%>
+ </tr>
                                 </thead>
                                 <tbody>
                                     <tr valign="middle">
