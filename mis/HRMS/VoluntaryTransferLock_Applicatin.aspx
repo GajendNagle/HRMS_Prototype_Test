@@ -31,11 +31,18 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
+    <%--<div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
         <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
             <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
             </u>
         </p>
+    </div>--%>
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+
+            <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <p></p>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
@@ -69,11 +76,14 @@
                         <div class="">
                             <table class="table text-center table-responsive table-bordered">
                                 <tr class="card-header">
-                                    <th>Sr.No <br />
+                                    <th>Sr.No
+                                        <br />
                                         सरल क्र.</th>
-                                    <th>Application No. <br />
+                                    <th>Application No.
+                                        <br />
                                         आवेदन नंबार</th>
-                                    <th>Employee Name <br />
+                                    <th>Employee Name
+                                        <br />
                                         कर्मचारी का नाम</th>
                                     <th>Unique Id 
                                         <br />

@@ -50,17 +50,18 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+
+            <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <p></p>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-7">
-                    <h4 class="card-title">Apply for employee voluntary transfer <br />
+                    <h4 class="card-title">Apply For Employee Voluntary Transfer <br /> 
                         कर्मचारी स्वैच्छिक स्थानांतरण आवेदन करें</h4>
                 </div>
             </div>
@@ -74,7 +75,8 @@
                     <div class="col-md-3">
 
                         <label>
-                            Employee Name <br />
+                            Employee Name
+                            <br />
                             कर्मचारी का नाम<span style="color: red">*</span></label>
                         <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" value="Arjun Talwar" />
                     </div>
@@ -99,7 +101,8 @@
                     <div class="col-md-3">
 
                         <label>
-                            District <br />
+                            District
+                            <br />
                             ज़िला<span style="color: red">*</span></label>
                         <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
                     </div>
@@ -109,14 +112,16 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Block <br />
+                            Block
+                            <br />
                             ब्लॉक<span style="color: red">*</span></label>
                         <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Govindapura" />
                     </div>
 
                     <div class="col-md-3">
                         <label>
-                            Area <br />
+                            Area
+                            <br />
                             क्षेत्र<span style="color: red">*</span></label>
                         <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
                     </div>
@@ -141,7 +146,8 @@
 
                     <div class="col-md-3">
                         <label>
-                            Date of Birth <br />
+                            Date of Birth
+                            <br />
                             जन्मतिथि<span style="color: red">*</span></label>
                         <input name="DOB" id="txtDOB" class="form-control" readonly autocomplete="off" value="17/07/1992" />
                     </div>
@@ -157,7 +163,8 @@
 
                     <div class="col-md-3">
                         <label>
-                            Professional Qualifications <br />
+                            Professional Qualifications
+                            <br />
                             शैक्षणिक योग्यता<span style="color: red">*</span></label>
                         <input name="txtQualification" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="B Tech" />
                     </div>
@@ -173,7 +180,8 @@
                     <div class="col-md-3">
 
                         <label>
-                            Date Posted in Current Organization <br />
+                            Date Posted in Current Organization
+                            <br />
                             वर्तमान संस्था में पदस्थी दिनांक<span style="color: red">*</span></label>
                         <input name="DOB" id="txtDatePostedCrrnOrg" class="form-control" readonly autocomplete="off" value="15/04/2002" />
                     </div>
@@ -224,7 +232,8 @@
                                     <div class="col-md-4">
 
                                         <label>
-                                            Attach Certificate from the Medical Board <br />
+                                            Attach Certificate from the Medical Board
+                                            <br />
                                             मेडीकल बोर्ड का प्रमाण पत्र संलग्न करें<span style="color: red">*</span></label>
                                         <input name="txtCertMedicalBoard" type="file" class="border form-control" />
                                     </div>
@@ -246,7 +255,8 @@
                                                     <div class="row align-items-end">
                                                         <div class="col-md-3">
                                                             <label>
-                                                                Select Handicapped Type <br />
+                                                                Select Handicapped Type
+                                                                <br />
                                                                 विकलांगता का चयन करें<span style="color: red;">*</span></label>
                                                             <select id="ddlHandiCaped" class="form-control select2">
                                                                 <option>--Select--</option>
@@ -276,7 +286,8 @@
                                                         </div>
                                                         <div id="HandicapePercentage" class="col-md-3">
                                                             <label>
-                                                                Select Handicapped Percentage <br />
+                                                                Select Handicapped Percentage
+                                                                <br />
                                                                 विकलांगता प्रतिशत का चयन करें<span style="color: red">*</span></label>
                                                             <select id="ddlHandicappedPercentage" class="form-control select2">
                                                                 <option>--Select--</option>
@@ -290,7 +301,8 @@
                                                         </div>
                                                         <div class="col-md-3">
                                                             <label>
-                                                                Handicapped Certificate <br />
+                                                                Handicapped Certificate
+                                                                <br />
                                                                 विकलांगता प्रमाण पत्र<span style="color: red;">*</span></label>
                                                             <input name="CertMedicalBoard" id="fileCerdtMedicalBoard" type="file" class=" border form-control" />
                                                         </div>
@@ -458,7 +470,7 @@
                                 <label>
                                     Select Sankul Name 
                                     <br />
-                                    संकुल का चयन करें<span style="color: red">*</span> 
+                                    संकुल का चयन करें<span style="color: red">*</span>
                                 </label>
                                 <select class="form-control select2" id="ddlOffice" onchange="BindSankul();">
                                     <option>--Select--</option>
@@ -473,7 +485,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Office/Institute/School (UDISE Code) <br />
+                                    Select Office/Institute/School (UDISE Code)
+                                    <br />
                                     कार्यालय/संस्था/विद्यालय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="ddlOfficce" onchange="BindSankul();">
                                     <option>--Select--</option>
@@ -515,7 +528,8 @@
                         <div class="col-md-2" id="divtxtvacantpost">
                             <div class="form-group">
                                 <label>
-                                    Vacant Post <br />
+                                    Vacant Post
+                                    <br />
                                     रिक्त पद
                                         <span style="color: red">*</span></label>
                                 <input disabled="disabled" value="01" id="txtvacantpost" type="text" class="form-control" autocomplete="off" placeholder="Enter Vacant Post" />
@@ -544,10 +558,12 @@
                                             <th>Sankul Name 
                                                 <br />
                                                 संकुल का नाम</th>
-                                            <th>Office/Institute/School (UDISE Code) <br />
+                                            <th>Office/Institute/School (UDISE Code)
+                                                <br />
                                                 कार्यालय/संस्था/विद्यालय(यूडीआईएसई कोड)</th>
 
-                                            <th>Post Code <br />
+                                            <th>Post Code
+                                                <br />
                                                 पद कोड</th>
                                             <th>Panal Name 
                                                 <br />

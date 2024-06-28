@@ -32,11 +32,12 @@ application Status</li>
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+
+            <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <p></p>
+        </div>
     </div>
 
     <div class="card card-border-primary">
@@ -44,7 +45,7 @@ application Status</li>
             <div class="row align-items-end">
                 <div class="col-lg-9">
                     <h4 class="card-title">Voluntary Transfer
-                  application Status /
+                  Application Status /
                           स्वैच्छिक स्थानांतरण आवेदन की स्थिति
 
                     </h4>

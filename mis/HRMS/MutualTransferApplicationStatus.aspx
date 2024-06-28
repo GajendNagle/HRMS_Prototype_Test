@@ -35,11 +35,12 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+
+            <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <p></p>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
@@ -59,9 +60,11 @@
                         <div class="table-responsive">
                             <table class="table text-center table-bordered">
                                 <tr class="card-header">
-                                    <th>Sr No. <br />
+                                    <th>Sr No.
+                                        <br />
                                         स.क्र.</th>
-                                    <th>Date <br />
+                                    <th>Date
+                                        <br />
                                         दिनांक</th>
                                     <th>Unique 
                                         <br />
@@ -69,19 +72,24 @@
                                     <th>Name And Designation 
                                         <br />
                                         नाम एवं पद</th>
-                                    <th>Subject <br />
+                                    <th>Subject
+                                        <br />
                                         विषय</th>
-                                    <th>Working Institute And UDISE Code <br />
+                                    <th>Working Institute And UDISE Code
+                                        <br />
                                         कार्यरत संस्था एवं डाइस कोड</th>
-                                    <th>Working District <br />
+                                    <th>Working District
+                                        <br />
                                         कार्यरत जिला</th>
-                                    <th>New Organization And UDICE Code <br />
+                                    <th>New Organization And UDICE Code
+                                        <br />
                                         नवीन संस्था एवं डाइम कोड</th>
                                     <th>District Of New Posting 
                                         <br />
                                         नवीन पदस्थापना का जिला</th>
 
-                                    <th>Office Status <br />
+                                    <th>Office Status
+                                        <br />
                                         ऑफिस स्टेटस</th>
                                 </tr>
                                 <tr>

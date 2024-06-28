@@ -78,63 +78,40 @@
             height: -26px;
             margin: 2px;
         }
+       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="row">
-      <div class="col-12">
-          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-              <h4 class="mb-sm-0"></h4>
-              <div class="=page-title-right">
-                  <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                          <span>Home</span>
-
-                      </li>
-                      <li class="breadcrumb-item">
-                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                      </li>
-                      <li class="breadcrumb-item">
-                          <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                              <span>Employee ID Card Missing Details Report</span></a>
-                      </li>
-                  </ol>
-              </div>
-          </div>
-      </div>
-  </div>
-    
-    <%--<div class="row">
-      <div class="col-12">
-          <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-              <h4 class="mb-sm-0"></h4>
-              <div class="=page-title-right">
-                  <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                          <span>Home</span>
-                      </li>
-                      <li class="breadcrumb-item">
-                          <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                      </li>
-                      <li class="breadcrumb-item">
-                          <a href="#" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                              <span>Print Employee ID Card</span></a>
-                      </li>
-                  </ol>
-              </div>
-          </div>
-      </div>
-  </div>--%>
-    <div class="col-md-5 " style="position: relative; bottom: 30px; right: 25px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4.5rem">
-            <img src="../../img/IDCARD.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#IDCard" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Employee ID Card Management System</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Print Employee ID Card</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-
-   
-    <div class="card">
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+            <img src="../../img/IDCARD.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)">
+            <p></p>
+        </div>
+    </div>
+    <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
@@ -146,39 +123,6 @@
         </div>
 
         <div class="card-body">
-             <nav class="navbar navbar-expand-lg topbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link  text-white " href="EmployeeIDcardmanagementSystem.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>
-                                Employee ID Card Management</b></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="EmployeeIDcardmanagementSystem.aspx">Employee ID Card Management System</a></li>
-                                <li><a class="dropdown-item" href="GenerateIDCard.aspx">Print Employee ID Card</a></li>
-                                <li><a class="dropdown-item" href="EmployeeIDcardMissingDetails.aspx">Employee Missing Details</a></li>
-                            </ul>
-                        </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="DistrictwiseIDCardProgress.aspx">District Wise ID Card Progress Report</a></li>
-                            <li><a class="dropdown-item" href="BlockwiseIDCardProgress.aspx">Block Wise ID Card Progress Report</a></li>
-                            <li><a class="dropdown-item" href="SchoolwiseIDCardProgress.aspx">School Wise ID Card Progress Report</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <br />
             <div>
                 <div class="row mt-2">
                     <div class="col-md-3">
@@ -192,19 +136,15 @@
                     </div>
                 </div>
                 <fieldset>
-                    <legend>Print Employee Details/कर्मचारी विवरण प्रिंट करें</legend>
+                    <legend>Print Employee Details / कर्मचारी विवरण प्रिंट करें</legend>
                     <div class="row justify-content-end">
-                        <div class="col-md-2">
+                        <div class="col-md-4 text-end">
                             <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-100">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
                             <div class="form-group">
                                 <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                             </div>
@@ -215,8 +155,9 @@
                             <div class="row" id="idCard">
                                 <div class="col-lg-12">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered">
-                                            <thead style="font-family: 'Poppins', sans-serif; font-size: 14px;">
+                                        <table class="table table-bordered text-center">
+                                            <t
+                                                head style="font-family: 'Poppins', sans-serif; font-size: 14px;">
                                                 <tr role="row" id="details">
                                                     <th scope="col" id="photo" aria-label="जिला: activate to sort column ascending">Photo<br />
                                                         फ़ोटो</th>
@@ -250,7 +191,7 @@
                                                     <th>Employee Report<br />
                                                         कर्मचारी की रिपोर्ट</th>
                                                 </tr>
-                                            </thead>
+                                            </t>
                                             <tbody style="font-weight: 500;">
 
                                                 <tr id="row3">
@@ -398,9 +339,6 @@
                                             </tbody>
 
                                         </table>
-
-
-
                                     </div>
                                 </div>
 
@@ -416,9 +354,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </fieldset>
 
                 <%--  <div class="row" id="generateorder">
@@ -541,8 +476,8 @@
                                     }
 
                                     span {
-                                        font-size: 11px;
-                                        font-weight: bold;
+                                        /*font-size: 11px;*/
+                                        /*font-weight: bold;*/
                                         line-height: normal;
                                     }
 
@@ -943,10 +878,6 @@ Devri, MP</span></td>
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
@@ -997,8 +928,6 @@ Devri, MP</span></td>
             }
 
         </script>
-
-
     </div>
 
 </asp:Content>

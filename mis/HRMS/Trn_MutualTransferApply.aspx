@@ -35,11 +35,12 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+
+            <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <p></p>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
@@ -57,7 +58,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Employee Name <br />
+                                Employee Name
+                                <br />
                                 कर्मचारी का नाम<span style="color: red">*</span></label>
                             <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Arjun Talwar" />
                         </div>
@@ -65,7 +67,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Unique ID <br />
+                                Unique ID
+                                <br />
                                 यूनिक आई.डी<span style="color: red">*</span></label>
                             <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4781" />
                         </div>
@@ -73,7 +76,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Designation <br />
+                                Designation
+                                <br />
                                 पदनाम<span style="color: red">*</span></label>
                             <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                         </div>
@@ -81,7 +85,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District <br />
+                                District
+                                <br />
                                 ज़िला<span style="color: red">*</span></label>
                             <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
                         </div>
@@ -90,7 +95,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Block <br />
+                                Block
+                                <br />
                                 विकासखण्ड<span style="color: red">*</span></label>
                             <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Block" value="Govindapura" />
                         </div>
@@ -99,7 +105,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Area <br />
+                                Area
+                                <br />
                                 क्षेत्र<span style="color: red">*</span></label>
                             <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
                         </div>
@@ -144,7 +151,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Age (As On 01.07.2024) <br />
+                                Age (As On 01.07.2024)
+                                <br />
                                 आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
                             <input name="DOB" id="txtAgeCrrnt1" class="form-control" readonly autocomplete="off" value="32 years" />
                         </div>
@@ -223,7 +231,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Name <br />
+                                    Employee Name
+                                    <br />
                                     कर्मचारी का नाम<span style="color: red">*</span></label>
                                 <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Aman Patidar" />
                             </div>
@@ -231,7 +240,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Unique ID <br />
+                                    Unique ID
+                                    <br />
                                     यूनिक आई.डी<span style="color: red">*</span></label>
                                 <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4890" />
                             </div>
@@ -239,7 +249,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Designation <br />
+                                    Designation
+                                    <br />
                                     पदनाम<span style="color: red">*</span></label>
                                 <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                             </div>
@@ -247,7 +258,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    District <br />
+                                    District
+                                    <br />
                                     ज़िला<span style="color: red">*</span></label>
                                 <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
                             </div>
@@ -256,7 +268,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Block <br />
+                                    Block
+                                    <br />
                                     ब्लॉक<span style="color: red">*</span></label>
                                 <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Block" value="Govindapura" />
                             </div>
@@ -265,7 +278,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Area <br />
+                                    Area
+                                    <br />
                                     क्षेत्र<span style="color: red">*</span></label>
                                 <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
                             </div>
@@ -309,7 +323,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Age (As On 01.07.2024) <br />
+                                    Age (As On 01.07.2024)
+                                    <br />
                                     आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
                                 <input name="DOB" id="txtAgeCrrnt" class="form-control" readonly autocomplete="off" value="32 years" />
                             </div>

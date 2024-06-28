@@ -76,17 +76,20 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/OTTMS.png" style="height: 88px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row mb-1">
+        <div class="col-md-4 ">
+
+            <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <p></p>
+        </div>
     </div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <h4 class="card-title">Print Draft Application or Update Application Of Mutual Transfer <br /> ड्राफ्ट आवेदन प्रिंट करें या पारस्परिक स्थानान्तरण का आवेदन अपडेट करें
+                    <h4 class="card-title">Print Draft Application or Update Application Of Mutual Transfer
+                        <br />
+                        ड्राफ्ट आवेदन प्रिंट करें या पारस्परिक स्थानान्तरण का आवेदन अपडेट करें
                     </h4>
                 </div>
             </div>
@@ -114,18 +117,23 @@
                     <table class="table table-bordere text-center">
 
                         <tr>
-                            <th>Sr. No. <br />
+                            <th>Sr. No.
+                                <br />
                                 सरल क्र. </th>
                             <th>Application Number 
                                     <br />
                                 आवेदन संख्या</th>
-                            <th>Employ Name <br />
+                            <th>Employ Name
+                                <br />
                                 कर्मचारी का नाम </th>
-                            <th>Unique Id <br />
+                            <th>Unique Id
+                                <br />
                                 यूनिक आईडी </th>
-                            <th>Print Draft Application <br />
+                            <th>Print Draft Application
+                                <br />
                                 ड्राफ्ट आवेदन प्रिंट करें</th>
-                            <th>Update Application <br />
+                            <th>Update Application
+                                <br />
                                 एप्लिकेशन अपडेट करें</th>
                         </tr>
                         <tr>
