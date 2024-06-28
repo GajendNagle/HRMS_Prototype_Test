@@ -42,7 +42,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Vehicle Maintenance</legend>
+                <legend>Vehicle Maintenance / वाहन रखरखाव</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -70,7 +70,7 @@
                             <span>Type 
                                 <br />
                                 प्रकार<span style="color: red">*</span></span>
-                            <asp:TextBox runat="server" type="text" class="form-control" placeholder="Enter Vehicle Number" ID="txtVehicletype" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" type="text" ReadOnly="true" class="form-control" placeholder="Enter Vehicle Number" ID="txtVehicletype" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -78,7 +78,7 @@
                             <span>Previous Reading(Km)
                                 <br />
                                 पिछली रीडिंग(किमी)</span>
-                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtPrevReadingKm" placeholder="Previous Reading(Km)" type="text" ID="txtPreviousReading" class="form-control"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtPrevReadingKm" placeholder="Previous Reading(Km)" type="text" ID="txtPreviousReading" class="form-control"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -86,7 +86,7 @@
                             <span>Previous Bill Date
                                 <br />
                                 पिछला बिल दिनांक</span>
-                            <asp:TextBox runat="server" class="form-control" placeholder="Previous Bill Date" ID="txtPreviousBillDate"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" class="form-control" placeholder="Previous Bill Date" ID="txtPreviousBillDate"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -94,7 +94,7 @@
                             <span>Previous Bill Amount
                                 <br />
                                 पिछला बिल राशि</span>
-                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtPrevBillAmount" placeholder="Previous Bill Amount" ID="txtPrevBillAmount" class="form-control"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtPrevBillAmount" placeholder="Previous Bill Amount" ID="txtPrevBillAmount" class="form-control"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -116,7 +116,7 @@
                                 <br />
                                 वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
 
-                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtCurrentReadingKm" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtCurrentReadingKm" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -125,7 +125,7 @@
             <br />
                                 वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
 
-                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtDifferencereading" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtDifferencereading" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -133,7 +133,7 @@
                             <span>Bill Number
                                 <br />
                                 बिल संख्या<span style="color: red">*</span></span>
-                            <asp:TextBox runat="server" name="ctl00$ContentBody$txtBillNumber" type="text" ID="txtBillNumber" MaxLength="20" class="form-control" placeholder="Enter Bill Number" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtBillNumber" type="text" ID="txtBillNumber" MaxLength="20" class="form-control" placeholder="Enter Bill Number" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -141,7 +141,7 @@
                             <span>Bill Date
                                 <br />
                                 बिल की तिथि<span style="color: red">*</span></span>
-                            <asp:TextBox runat="server" ID="txtBillDate" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" ID="txtBillDate" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -149,7 +149,7 @@
                             <span>Bill Amount
                                 <br />
                                 बिल राशि<span style="color: red">*</span></span>
-                            <asp:TextBox name="ctl00$ContentBody$txtBillAmount" runat="server" type="text" MaxLength="9" ID="txtBillAmount" class="form-control" placeholder="Enter Bill Amount" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox ReadOnly="true" name="ctl00$ContentBody$txtBillAmount" runat="server" type="text" MaxLength="9" ID="txtBillAmount" class="form-control" placeholder="Enter Bill Amount" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -177,7 +177,6 @@
                     </div>
                 </div>
             </fieldset>
-            <br />
             <fieldset>
                 <legend>Details / विवरण</legend>
                 <div class="row" id="NoRcdTable">

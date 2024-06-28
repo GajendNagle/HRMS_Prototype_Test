@@ -70,11 +70,13 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5" style="position: relative; bottom: 20px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-            <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row">
+        <div class="col-md-5">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
+        </div>
     </div>
     <div class="card card-border-primary radius-defalt">
         <div class="card-header">
@@ -142,7 +144,7 @@
             </fieldset>
         </div>
     </div>
-    <div class="modal bs-example-modal-lg2"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header" id="myDIV">
@@ -204,12 +206,12 @@
                                 <hr />
                             </div>
                         </div>
-                        <div class="row mb-2">
+                        <div class="row mb-2 text-center">
                             <div class="col-md-12">
                                 <label class="font-16 font-bold">विषय :-  संकुल प्रचार्य विवेक जैन द्वारा मेरी वर्ष 2023 की जनवरी फरवारी मार्च अप्रैल की सैलारी नहीं दी जा रही है।</label>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-4 text-end">
                             <div class="col-md-12 mt-2" style="margin-top: 3.5rem !important;">
                                 <h6>अधिकारी/ कर्मचारी के हस्ताक्षर</h6>
                             </div>

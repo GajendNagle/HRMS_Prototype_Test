@@ -14,21 +14,24 @@
                 margin: 0;
                 padding: 0;
             }
+
             .modal-content {
                 height: 200%;
                 border: none;
                 box-shadow: none;
             }
+
             .modal-body {
-                width: 72rem;
+                width: 70rem;
                 height: auto;
                 overflow: visible !important;
-                zoom: 100%;
+                zoom: 91%;
             }
             /* Hide unnecessary elements */
             body.modal-open {
                 visibility: hidden;
             }
+
                 body.modal-open .modal .modal-header,
                 body.modal-open .modal .modal-body {
                     visibility: visible;
@@ -37,9 +40,30 @@
             .modal-footer {
                 display: none;
             }
+
             .modal-header {
                 display: none;
             }
+
+ .table-responsive {
+        overflow: visible!important;
+        width: 100%!important;
+    }
+
+    .table {
+        width: 100%!important;
+        table-layout: fixed;
+    }
+
+    .table td, .table th {
+        word-wrap: break-word;
+        white-space: normal; /* Add this to prevent text from wrapping */
+    }
+
+    /* Add this to scale the table to fit the page */
+    .table {
+        transform: scale(1.0); /* Adjust the scale value as needed */
+    }
         }
     </style>
 </asp:Content>
@@ -329,7 +353,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-md-2 text-center">
+                            <div class="col-md-3 text-center">
                                 <h5 class="font-bold">शिकायत का विवरण</h5>
                                 <hr />
                             </div>
@@ -349,9 +373,9 @@
 
                 </div>
                 <div class="modal-footer justify-content-center">
-     <button type="button" class="btn btn-info waves-effect text-start text-white"  onclick="printModalContent('myLargeModalLabel')">Print</button>
-     <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
- </div>
+                    <button type="button" class="btn btn-info waves-effect text-start text-white" onclick="printModalContent('myLargeModalLabel')">Print</button>
+                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
             <!-- /.modal-content -->
         </div>
@@ -425,7 +449,7 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
-                                <h5 class="font-bold"> -: शिकायत का विवरण :-</h5>
+                                <h5 class="font-bold">-: शिकायत का विवरण :-</h5>
                                 <hr />
                             </div>
                         </div>
@@ -462,7 +486,10 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Forward To <br />आगे प्रेषित<span style="color: red">*</span></label>
+                                    <label>
+                                        Forward To
+                                        <br />
+                                        आगे प्रेषित<span style="color: red">*</span></label>
                                     <select class="form-control">
                                         <option selected="selected" value="0">--Select--</option>
                                         <option value="16">DIET/DRC</option>
@@ -480,7 +507,10 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Authority Name <br />प्राधिकरण का नाम <span style="color: red">*</span></label>
+                                    <label>
+                                        Authority Name
+                                        <br />
+                                        प्राधिकरण का नाम <span style="color: red">*</span></label>
                                     <select class="form-control ">
                                         <option value="0">--Select--</option>
                                         <option value="1">RMSA</option>
@@ -506,7 +536,10 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Type Note Here <br />यहां नोट टाइप करें<span style="color: red">*</span></label>
+                                    <label>
+                                        Type Note Here
+                                        <br />
+                                        यहां नोट टाइप करें<span style="color: red">*</span></label>
                                     <input class="form-control" />
                                 </div>
                             </div>
@@ -514,7 +547,7 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn w-lg btn-success btn-border Alert-Save" data-bs-dismiss="modal">Forword</button>
+                    <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border Alert-Save" data-bs-dismiss="modal">Forword</button>
                     <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -528,20 +561,16 @@
         function printModalContent(modalId) {
             var modal = document.getElementById(modalId);
             var hideElements = modal.querySelectorAll('.print-hide');
-
-            // Hide header and footer elements before printing
             hideElements.forEach(function (element) {
-                element.style.display = 'none'; // Set display to none for printing
+                element.style.display = 'none';
             });
-
             window.print();
-
-            // Restore visibility of header and footer elements after printing
             hideElements.forEach(function (element) {
-                element.style.display = ''; // Reset display to default after printing
+                element.style.display = '';
             });
         }
 
     </script>
+
 </asp:Content>
 

@@ -1,51 +1,71 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DistrictWiseProcessReport.aspx.cs" Inherits="mis_HRMS_DistrictWiseProcessReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        th {
-            white-space: nowrap;
-        }
+       <style>
+       th {
+           white-space: nowrap;
+       }
 
-        @media print {
-            /* Show modal content in full page */
-            .modal-dialog {
-                width: 200%;
-                height: auto;
-                margin: 0;
-                padding: 0;
-            }
+       @media print {
+           /* Show modal content in full page */
+           .modal-dialog {
+               width: 200%;
+               height: auto;
+               margin: 0;
+               padding: 0;
+           }
 
-            .modal-content {
-                height: 200%;
-                border: none;
-                box-shadow: none;
-            }
+           .modal-content {
+               height: 200%;
+               border: none;
+               box-shadow: none;
+           }
 
-            .modal-body {
-                width: 210%;
-                height: auto;
-                overflow: visible !important;
-                zoom: 90%;
-            }
-            /* Hide unnecessary elements */
-            body.modal-open {
-                visibility: hidden;
-            }
+           .modal-body {
+               width: 70rem;
+               height: auto;
+               overflow: visible !important;
+               zoom: 91%;
+           }
+           /* Hide unnecessary elements */
+           body.modal-open {
+               visibility: hidden;
+           }
 
-                body.modal-open .modal .modal-header,
-                body.modal-open .modal .modal-body {
-                    visibility: visible;
-                }
+               body.modal-open .modal .modal-header,
+               body.modal-open .modal .modal-body {
+                   visibility: visible;
+               }
 
-            .modal-footer {
-                display: none;
-            }
+           .modal-footer {
+               display: none;
+           }
 
-            .modal-header {
-                display: none;
-            }
-        }
-    </style>
+           .modal-header {
+               display: none;
+           }
+
+.table-responsive {
+       overflow: visible!important;
+       width: 100%!important;
+   }
+
+   .table {
+       width: 100%!important;
+       table-layout: fixed;
+   }
+
+   .table td, .table th {
+       word-wrap: break-word;
+       white-space: normal; /* Add this to prevent text from wrapping */
+   }
+
+   /* Add this to scale the table to fit the page */
+   .table {
+       transform: scale(1.0); /* Adjust the scale value as needed */
+   }
+       }
+   </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -60,10 +80,10 @@
                         <li class="breadcrumb-item">
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                         <li class="breadcrumb-item">
-     <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-         <span>Grievance Report</span></a>
- </li>
+                        <li class="breadcrumb-item">
+                            <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Report</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>District Wise Progress Report</span></li>
                     </ol>
                 </div>
@@ -71,7 +91,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-5" >
+        <div class="col-md-5">
             <img src="../../img/Grievance%20Logo.png" style="height: 70px" title="Compassionate Appointment Facilitation & Monitoring System (CAFMS)">
         </div>
     </div>
@@ -80,9 +100,7 @@
             <div class="row align-items-end">
                 <div class="col-lg-12">
                     <h5 class="card-title">District Wise Progress Report /
-
-जिलेवार प्रगति रिपोर्ट
-                    </h5>
+जिलेवार प्रगति रिपोर्ट</h5>
                 </div>
             </div>
         </div>
@@ -171,15 +189,13 @@
                                     <td>Dindori</td>
                                     <td>0</td>
                                     <td>
-                                        <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="PendingForActinDindori" />
-                                    </td>
+                                          <p style="Color:#00bcd4 ;font-weight:bold">0</p>   </td>
 
                                     <td>
-                                        <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="RejectedGrievancesDindori" />
-
+                                            <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
                                     </td>
-                                    <td>
-                                        <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="DisposedGrievancesDindori" />
+                                    <td >
+                                       <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
 
                                     </td>
                                     <td>0%</td>
@@ -207,15 +223,12 @@
                                     <td>Anuppur</td>
                                     <td>0</td>
                                     <td>
-                                        <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="PendingForActinAnuppur" />
+                                           <p style="Color:#00bcd4 ;font-weight:bold">0</p>   </td>
+                                    <td>
+                                           <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
                                     </td>
                                     <td>
-                                        <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="RejectedGrievancesAnuppur" />
-
-                                    </td>
-                                    <td>
-                                        <asp:Button runat="server" Text="0" BorderStyle="None" ForeColor="#00bcd4" Font-Bold="true" ID="DisposedGrievancesAnuppur" />
-
+                                           <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
                                     </td>
                                     <td>0%</td>
                                 </tr>
@@ -236,7 +249,7 @@
                 <legend>District Wise Pending Complaint Status / जिला वार लंबित की  शिकायत स्थिति </legend>
                 <div class="row">
                     <div class="col-md-3">
-                        <label class="font-bold">
+                        <label>
                             District<br />
                             जिला
                             <span style="color: red">*</span>
@@ -637,7 +650,7 @@
                 <legend>District Wise Rejected Grievances Status / जिला वार अस्वीकृत शिकायतों की स्थिति</legend>
                 <div class="row">
                     <div class="col-md-3">
-                        <label class="font-bold">
+                        <label>
                             District
                             <br />
                             जिला
@@ -984,7 +997,7 @@
                 <legend>District Wise Disposed Grievance Status / जिलावार निस्तारित शिकायत की स्थिति</legend>
                 <div class="row ">
                     <div class="col-md-3">
-                        <label class="font-bold">
+                        <label>
                             District
                             <br />
                             जिला
@@ -1199,8 +1212,6 @@
                             <table class="table table-bordered text-center">
                                 <thead class="text-center">
                                     <tr>
-
-
                                         <th data-class="expand" scope="col">Sr.No.<br />
                                             सरल क्र.</th>
                                         <th data-class="phone,tablet" scope="col">Complaint Number<br />
@@ -1323,10 +1334,8 @@
         </div>
     </div>
     <%--Disposed  Status Data End--%>
-
-
     <%-- Pop Up model View --%>
-    <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal bs-example-modal-lg2" id="myLargeModalLabel" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header" id="myDIV">
@@ -1346,16 +1355,26 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Sr.No.<br />सरल क्र.</th>
-                                            <th>Complaint No.<br />शिकायत क्र.</th>
-                                            <th>Complaint Date<br />शिकायत दिनाँक </th>
-                                            <th>District<br />जिला  </th>
-                                            <th>Department<br />विभाग </th>
-                                            <th>Name of Public Servant<br />लोकसेवक का नाम </th>
-                                            <th>Designation<br />पदनाम </th>
-                                            <th>E-mail<br />ईमेल </th>
-                                            <th>Mobile<br />मोबाइल</th>
-                                            <th>Subject of Complaint<br />शिकायत का विषय</th>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
+                                            <th>Complaint No.<br />
+                                                शिकायत क्र.</th>
+                                            <th>Complaint Date<br />
+                                                शिकायत दिनाँक </th>
+                                            <th>District<br />
+                                                जिला  </th>
+                                            <th>Department<br />
+                                                विभाग </th>
+                                            <th>Name of Public Servant<br />
+                                                लोकसेवक का नाम </th>
+                                            <th>Designation<br />
+                                                पदनाम </th>
+                                            <th>E-mail<br />
+                                                ईमेल </th>
+                                            <th>Mobile<br />
+                                                मोबाइल</th>
+                                            <th>Subject of Complaint<br />
+                                                शिकायत का विषय</th>
 
                                         </tr>
                                     </thead>
@@ -1388,7 +1407,7 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+                    <button type="button" class="btn btn-info waves-effect text-start text-white" id="btnPrint" onclick="printModalContent('myLargeModalLabel')">Print</button>
                     <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -1396,6 +1415,21 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        function printModalContent(modalId) {
+            var modal = document.getElementById(modalId);
+            var hideElements = modal.querySelectorAll('.print-hide');
+            hideElements.forEach(function (element) {
+                element.style.display = 'none';
+            });
+            window.print();
+            hideElements.forEach(function (element) {
+                element.style.display = '';
+            });
+        }
+
+    </script>
+
 </asp:Content>
 
 

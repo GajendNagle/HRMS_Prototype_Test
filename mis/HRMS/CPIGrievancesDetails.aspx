@@ -25,21 +25,23 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-     <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-         <span>Grievance Report</span></a>
- </li>
+                            <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Report</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Details of Grievance forwarded from CPI</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-5" style="position: relative; bottom: 20px;">
-     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-         <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-         </u>
-     </p>
- </div>
+    <div class="row">
+        <div class="col-md-5" style="position: relative; bottom: 20px;">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
+        </div>
+    </div>
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">

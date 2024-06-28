@@ -17,14 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                           <li class="breadcrumb-item">
-    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+                        </li>
 
-<li class="breadcrumb-item">
-    <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
-        <span>Transport Management System</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+                                <span>Transport Management System</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Vehicle Allotment</span></li>
                     </ol>
                 </div>
@@ -177,7 +177,6 @@
                     </div>
                 </div>
             </fieldset>
-            <br />
             <fieldset id="VehicleAllotementNo" style="display: none">
                 <legend>Vehicle Allotment Number / वाहन आवंटन संख्या</legend>
                 <div class="row align-items-end">
@@ -307,7 +306,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset id="VEHICLEALLOTMENTDetails" style="display: none">
                 <legend>VEHICLE ALLOTMENT / वाहन आवंटन </legend>
                 <div class="row align-items-end">
@@ -377,7 +375,6 @@
                     </div>
                 </div>
             </fieldset>
-            <br />
             <fieldset>
                 <legend>Details / विवरण</legend>
                 <div class="row" id="FisrtTimetbl">

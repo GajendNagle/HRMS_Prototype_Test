@@ -35,23 +35,23 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-     <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-         <span>Grievance Report</span></a>
- </li>
+                            <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Report</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Section wise Pending Reports</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-     <div class="col-md-5" style="position: relative; bottom: 20px;">
-     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-         <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-         </u>
-     </p>
- </div>
-
+    <div class="row">
+        <div class="col-md-5" style="position: relative; bottom: 20px;">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
+        </div>
+    </div>
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
@@ -318,7 +318,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>1.</td>
-                                                <td><a class="anchor" href="#">Ashoknagar</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Ashoknagar</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -329,7 +329,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>2.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')">Bhopal</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')" style="color:#00bcd4;font-weight:bold">Bhopal</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>1</td>
@@ -340,7 +340,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>3.</td>
-                                                <td><a class="anchor" href="#">Gwalior</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Gwalior</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -351,7 +351,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>4.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')">Harda</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')" style="color:#00bcd4;font-weight:bold">Harda</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -362,7 +362,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>5.</td>
-                                                <td><a class="anchor" href="#">Indore</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Indore</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -476,7 +476,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>1.</td>
-                                                <td><a class="anchor" href="#">Chhatarpur</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Chhatarpur</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -487,7 +487,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>2.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')">Gwalior</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color:#00bcd4;font-weight:bold">Gwalior</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>1</td>
@@ -498,7 +498,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>3.</td>
-                                                <td><a class="anchor" href="#">Mandsaur</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Mandsaur</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -509,7 +509,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>4.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')">Rajgarh</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color:#00bcd4;font-weight:bold">Rajgarh</a></td>
                                                 <td>2</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -520,7 +520,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>5.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')">Singrauli</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color:#00bcd4;font-weight:bold">Singrauli</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -564,7 +564,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>1.</td>
-                                                <td><a class="anchor" href="#">Betul</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Betul</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -575,7 +575,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>2.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')">Bhopal</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color:#00bcd4;font-weight:bold">Bhopal</a></td>
                                                 <td>2</td>
                                                 <td>0</td>
                                                 <td>1</td>
@@ -586,7 +586,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>3.</td>
-                                                <td><a class="anchor" href="#">Burhanpur</a></td>
+                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Burhanpur</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -597,7 +597,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>4.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')">Chhindwara</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color:#00bcd4;font-weight:bold">Chhindwara</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -608,7 +608,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>5.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')">Indore</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color:#00bcd4;font-weight:bold">Indore</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>

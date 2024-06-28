@@ -34,11 +34,13 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5" style="position: relative; bottom: 20px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-            <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row">
+        <div class="col-md-5">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
+        </div>
     </div>
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
@@ -50,7 +52,6 @@
             </div>
         </div>
         <div class="card-body">
-
             <fieldset>
                 <legend>Grievance Tracking Details / शिकायत ट्रैकिंग विवरण
                 </legend>
