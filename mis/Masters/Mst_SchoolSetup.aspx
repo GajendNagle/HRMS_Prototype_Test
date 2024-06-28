@@ -31,11 +31,11 @@
                             <li class="breadcrumb-item">
                                 <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                             </li>
-                            <li class="breadcrumb-item">
+                           <%-- <li class="breadcrumb-item">
                                 <a href="#OISSetup" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
                                     <span>OIS Setup Master</span></a>
-                            </li>
-                            <li class="breadcrumb-item">School Setup</li>
+                            </li>--%>
+                            <li class="breadcrumb-item">OIS Setup Master</li>
                         </ol>
                     </div>
                 </div>
