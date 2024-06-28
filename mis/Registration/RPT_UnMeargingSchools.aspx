@@ -49,118 +49,126 @@
                 <legend>School Unmerge Report / स्कूल अनमर्ज रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label>
-                            Select Division<br />
-                            संभाग चुनें<span style="color: red">*</span></label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Bhopal</asp:ListItem>
-                            <asp:ListItem>Gwalior</asp:ListItem>
-                            <asp:ListItem>Narmadapuram</asp:ListItem>
-                            <asp:ListItem>Indore</asp:ListItem>
-                            <asp:ListItem>Jabalpur</asp:ListItem>
-                            <asp:ListItem>Rewa</asp:ListItem>
-                            <asp:ListItem>Sagar</asp:ListItem>
-                            <asp:ListItem>Shahdol</asp:ListItem>
-                            <asp:ListItem>Ujjain</asp:ListItem>
-                        </asp:DropDownList>
+                        <div class="form-group">
+                            <label>
+                                Select Division<br />
+                                संभाग चुनें<span style="color: red">*</span></label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Bhopal</asp:ListItem>
+                                <asp:ListItem>Gwalior</asp:ListItem>
+                                <asp:ListItem>Narmadapuram</asp:ListItem>
+                                <asp:ListItem>Indore</asp:ListItem>
+                                <asp:ListItem>Jabalpur</asp:ListItem>
+                                <asp:ListItem>Rewa</asp:ListItem>
+                                <asp:ListItem>Sagar</asp:ListItem>
+                                <asp:ListItem>Shahdol</asp:ListItem>
+                                <asp:ListItem>Ujjain</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label>
-                            Select District<br />
-                            जिला चुनें<span style="color: red">*</span></label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Bhopal</asp:ListItem>
-                            <asp:ListItem>Raisen</asp:ListItem>
-                            <asp:ListItem>Rajgarh</asp:ListItem>
-                            <asp:ListItem>Sehore</asp:ListItem>
-                            <asp:ListItem>Vidisha</asp:ListItem>
-                            <asp:ListItem>Ashoknagar</asp:ListItem>
-                            <asp:ListItem>Shivpuri</asp:ListItem>
-                            <asp:ListItem>Datia</asp:ListItem>
-                            <asp:ListItem>Guna</asp:ListItem>
-                            <asp:ListItem>Gwalior</asp:ListItem>
-                            <asp:ListItem>Harda</asp:ListItem>
-                            <asp:ListItem>Hoshangabad</asp:ListItem>
-                            <asp:ListItem>Betul</asp:ListItem>
-                            <asp:ListItem>Morena</asp:ListItem>
-                            <asp:ListItem>Sheopur</asp:ListItem>
-                            <asp:ListItem>Bhind</asp:ListItem>
-                            <asp:ListItem>Barwani</asp:ListItem>
-                            <asp:ListItem>Burhanpur</asp:ListItem>
-                            <asp:ListItem>Dhar</asp:ListItem>
-                            <asp:ListItem>Indore</asp:ListItem>
-                            <asp:ListItem>Jhabua</asp:ListItem>
-                            <asp:ListItem>Khandwa</asp:ListItem>
-                            <asp:ListItem>Khargone</asp:ListItem>
-                            <asp:ListItem>Alirajpur</asp:ListItem>
-                            <asp:ListItem>Balaghat</asp:ListItem>
-                            <asp:ListItem>Chhindwara</asp:ListItem>
-                            <asp:ListItem>Jabalpur</asp:ListItem>
-                            <asp:ListItem>Katni</asp:ListItem>
-                            <asp:ListItem>Mandla</asp:ListItem>
-                            <asp:ListItem>Narsinghpur</asp:ListItem>
-                            <asp:ListItem>Seoni</asp:ListItem>
-                            <asp:ListItem>Rewa</asp:ListItem>
-                            <asp:ListItem>Satna</asp:ListItem>
-                            <asp:ListItem>Sidhi</asp:ListItem>
-                            <asp:ListItem>Singroli</asp:ListItem>
-                            <asp:ListItem>Chhatarpur</asp:ListItem>
-                            <asp:ListItem>Damoh</asp:ListItem>
-                            <asp:ListItem>Panna</asp:ListItem>
-                            <asp:ListItem>Sagar</asp:ListItem>
-                            <asp:ListItem>Tikamgarh</asp:ListItem>
-                            <asp:ListItem>Shahdol</asp:ListItem>
-                            <asp:ListItem>Umaria</asp:ListItem>
-                            <asp:ListItem>Dindori</asp:ListItem>
-                            <asp:ListItem>Anuppur</asp:ListItem>
-                            <asp:ListItem>Dewas</asp:ListItem>
-                            <asp:ListItem>Mandsaur</asp:ListItem>
-                            <asp:ListItem>Neemuch</asp:ListItem>
-                            <asp:ListItem>Ratlam</asp:ListItem>
-                            <asp:ListItem>Shajapur</asp:ListItem>
-                            <asp:ListItem>Ujjain</asp:ListItem>
-                        </asp:DropDownList>
+                        <div class="form-group">
+                            <label>
+                                Select District<br />
+                                जिला चुनें<span style="color: red">*</span></label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Bhopal</asp:ListItem>
+                                <asp:ListItem>Raisen</asp:ListItem>
+                                <asp:ListItem>Rajgarh</asp:ListItem>
+                                <asp:ListItem>Sehore</asp:ListItem>
+                                <asp:ListItem>Vidisha</asp:ListItem>
+                                <asp:ListItem>Ashoknagar</asp:ListItem>
+                                <asp:ListItem>Shivpuri</asp:ListItem>
+                                <asp:ListItem>Datia</asp:ListItem>
+                                <asp:ListItem>Guna</asp:ListItem>
+                                <asp:ListItem>Gwalior</asp:ListItem>
+                                <asp:ListItem>Harda</asp:ListItem>
+                                <asp:ListItem>Hoshangabad</asp:ListItem>
+                                <asp:ListItem>Betul</asp:ListItem>
+                                <asp:ListItem>Morena</asp:ListItem>
+                                <asp:ListItem>Sheopur</asp:ListItem>
+                                <asp:ListItem>Bhind</asp:ListItem>
+                                <asp:ListItem>Barwani</asp:ListItem>
+                                <asp:ListItem>Burhanpur</asp:ListItem>
+                                <asp:ListItem>Dhar</asp:ListItem>
+                                <asp:ListItem>Indore</asp:ListItem>
+                                <asp:ListItem>Jhabua</asp:ListItem>
+                                <asp:ListItem>Khandwa</asp:ListItem>
+                                <asp:ListItem>Khargone</asp:ListItem>
+                                <asp:ListItem>Alirajpur</asp:ListItem>
+                                <asp:ListItem>Balaghat</asp:ListItem>
+                                <asp:ListItem>Chhindwara</asp:ListItem>
+                                <asp:ListItem>Jabalpur</asp:ListItem>
+                                <asp:ListItem>Katni</asp:ListItem>
+                                <asp:ListItem>Mandla</asp:ListItem>
+                                <asp:ListItem>Narsinghpur</asp:ListItem>
+                                <asp:ListItem>Seoni</asp:ListItem>
+                                <asp:ListItem>Rewa</asp:ListItem>
+                                <asp:ListItem>Satna</asp:ListItem>
+                                <asp:ListItem>Sidhi</asp:ListItem>
+                                <asp:ListItem>Singroli</asp:ListItem>
+                                <asp:ListItem>Chhatarpur</asp:ListItem>
+                                <asp:ListItem>Damoh</asp:ListItem>
+                                <asp:ListItem>Panna</asp:ListItem>
+                                <asp:ListItem>Sagar</asp:ListItem>
+                                <asp:ListItem>Tikamgarh</asp:ListItem>
+                                <asp:ListItem>Shahdol</asp:ListItem>
+                                <asp:ListItem>Umaria</asp:ListItem>
+                                <asp:ListItem>Dindori</asp:ListItem>
+                                <asp:ListItem>Anuppur</asp:ListItem>
+                                <asp:ListItem>Dewas</asp:ListItem>
+                                <asp:ListItem>Mandsaur</asp:ListItem>
+                                <asp:ListItem>Neemuch</asp:ListItem>
+                                <asp:ListItem>Ratlam</asp:ListItem>
+                                <asp:ListItem>Shajapur</asp:ListItem>
+                                <asp:ListItem>Ujjain</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label>
-                            Select Block<br />
-                            ब्लॉक चुनें</label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Agar</asp:ListItem>
-                            <asp:ListItem>Barod</asp:ListItem>
-                            <asp:ListItem>Nalkheda</asp:ListItem>
-                            <asp:ListItem>Susner</asp:ListItem>
-                            <asp:ListItem>Alirajpur</asp:ListItem>
-                            <asp:ListItem>Bhabra</asp:ListItem>
-                            <asp:ListItem>Katthiwara</asp:ListItem>
-                            <asp:ListItem>Sondwa</asp:ListItem>
-                            <asp:ListItem>Udaygarh</asp:ListItem>
-                            <asp:ListItem>Jobat</asp:ListItem>
-                            <asp:ListItem>Anuppur</asp:ListItem>
-                            <asp:ListItem>Jaithari</asp:ListItem>
-                            <asp:ListItem>Kotma</asp:ListItem>
+                        <div class="form-group">
+                            <label>
+                                Select Block<br />
+                                ब्लॉक चुनें</label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Agar</asp:ListItem>
+                                <asp:ListItem>Barod</asp:ListItem>
+                                <asp:ListItem>Nalkheda</asp:ListItem>
+                                <asp:ListItem>Susner</asp:ListItem>
+                                <asp:ListItem>Alirajpur</asp:ListItem>
+                                <asp:ListItem>Bhabra</asp:ListItem>
+                                <asp:ListItem>Katthiwara</asp:ListItem>
+                                <asp:ListItem>Sondwa</asp:ListItem>
+                                <asp:ListItem>Udaygarh</asp:ListItem>
+                                <asp:ListItem>Jobat</asp:ListItem>
+                                <asp:ListItem>Anuppur</asp:ListItem>
+                                <asp:ListItem>Jaithari</asp:ListItem>
+                                <asp:ListItem>Kotma</asp:ListItem>
 
-                        </asp:DropDownList>
+                            </asp:DropDownList>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label>
-                            UDISE Code<br />
-                            यूडाईस कोड</label>
-                        <asp:DropDownList CssClass="form-control select2" runat="server">
-                            <asp:ListItem>All</asp:ListItem>
-                            <asp:ListItem>23450404101</asp:ListItem>
-                            <asp:ListItem>23320300062</asp:ListItem>
-                            <asp:ListItem>23271000593</asp:ListItem>
-                            <asp:ListItem>23450900404</asp:ListItem>
-                            <asp:ListItem>23450300635</asp:ListItem>
-                        </asp:DropDownList>
+                        <div class="form-group">
+                            <label>
+                                UDISE Code<br />
+                                यूडाईस कोड</label>
+                            <asp:DropDownList CssClass="form-control select2" runat="server">
+                                <asp:ListItem>All</asp:ListItem>
+                                <asp:ListItem>23450404101</asp:ListItem>
+                                <asp:ListItem>23320300062</asp:ListItem>
+                                <asp:ListItem>23271000593</asp:ListItem>
+                                <asp:ListItem>23450900404</asp:ListItem>
+                                <asp:ListItem>23450300635</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
                     </div>
                 </div>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                        <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 From Date<br />
@@ -178,6 +186,7 @@
                         </div>
                     </div>
                 </div>
+                <hr />
                 <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="form-group ">
@@ -249,8 +258,7 @@
                                 <td>23356245856</td>
                                 <td>Crist Academy School</td>
                                 <td>Primary</td>
-                                <td>
-                                    <label id="data1">Merged</label></td>
+                                <td>Merged</td>
                                 <td>
                                     <asp:LinkButton ID="btndata1" runat="server" CssClass="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">View Details</asp:LinkButton>
                                 </td>
@@ -339,11 +347,16 @@
 
                                                     <div class="row form-group align-items-end">
                                                         <div class="col-md-4">
-                                                            <label>Date<br />दिनांक</label>
+                                                            <label>
+                                                                Date<br />
+                                                                दिनांक</label>
                                                             <asp:TextBox ID="TextBox3" ReadOnly="true" placeholder="Select Date..." runat="server" Text="09/01/2024" CssClass="datepicker form-control"></asp:TextBox>
                                                         </div>
                                                         <div class="col-md-4">
-                                                            <label>Order No. <br />आदेश संख्या</label>
+                                                            <label>
+                                                                Order No.
+                                                                <br />
+                                                                आदेश संख्या</label>
                                                             <asp:TextBox ID="TextBox4" ReadOnly="true" placeholder="Order No" runat="server" Text="2365" CssClass=" form-control"></asp:TextBox>
 
                                                         </div>
