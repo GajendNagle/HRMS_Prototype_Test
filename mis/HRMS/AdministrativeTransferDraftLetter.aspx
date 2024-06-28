@@ -78,8 +78,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4 class="card-title">Print Draft Letter or Update <br />
-                                ड्राफ्ट लेटर प्रिंट करें या अपडेट करें</h4>
+                            <h4 class="card-title">Print Draft Letter or Update / ड्राफ्ट लेटर प्रिंट करें या अपडेट करें</h4>
                         </div>
                 </div>
             </div>
@@ -128,7 +127,7 @@
                             <div class="form-group">
                                 <label>
                                     Designation Type <br />
-                                    पदनाम<span style="color: red">*</span></label>
+                                    पदनाम प्रकार<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="----">--Select--</option>
                                     <option value="----">All</option>
@@ -143,7 +142,7 @@
                             <div class="form-group">
                                 <label>
                                     District <br />
-                                    ज़िला<span style="color: red">*</span></label>
+                                    जिला<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="----">All</option>

@@ -27,7 +27,7 @@
     </div>
     <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
         <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <img src="../../img/OTTMS.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"./><u><br />
             </u>
         </p>
     </div>
@@ -36,16 +36,11 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="card-title">About Administrative Level Transfer
-                                <br />
-                                प्रशासनिक स्तर पर स्थानांतरण के बारे में
-                                <br />
-                            </h4>
+                        <div class="col-lg-12">
+                            <h4 class="card-title">About Administrative Level Transfer / प्रशासनिक स्तर पर स्थानांतरण के बारे में</h4>
                         </div>
                     </div>
                 </div>
-
                 <div class="card-body">
                     <%--<nav class="navbar navbar-expand-lg topbar ">
                         <div class="container-fluid">
@@ -85,7 +80,6 @@
                     <br />
                     <br />--%>
                     <h4 style="color: brown; background-color: bisque; height: 30px; font-weight: bold; width: 30%; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;प्रशासनिक स्थानांतरण दिशानिर्देश:-</h4>
-
                     <div>
                         <p style="font-weight: bold; background-color: #F0FFF0; padding: 20px; border-radius: 10px;" class="font-16">
                             <b>1) :-</b> आवेदकों से अनुरोध है कि समस्त जानकारी सावधानी पूर्वक और सही-सही भरें |<br />
