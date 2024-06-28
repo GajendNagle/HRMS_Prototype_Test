@@ -143,8 +143,8 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            School/Dise Code<br />
-                            स्कूल/डिस कोड</label>
+                            School / Dise Code<br />
+                            स्कूल / डाईस कोड</label>
                         <asp:DropDownList runat="server" ID="ddlSchool" CssClass="form-control select2 fs-4">
                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                         </asp:DropDownList>

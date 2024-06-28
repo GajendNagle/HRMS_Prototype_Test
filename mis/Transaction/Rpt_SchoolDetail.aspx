@@ -43,21 +43,22 @@
                 </div>
                 <div class="card-body">
                     <div class="row align-items-end">
-                        <div class="col-md-6">
-                            <label>
+                        <div class="col-md-4">
+                             <div class="form-group"><label>
                                 DISE Code<br />
                                 डाईस कोड<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="23510817802" />
                         </div>
-                        <div class="col-md-6">
-                            <label>
+                        </div>
+                        <div class="col-md-4">
+                             <div class="form-group"><label>
                                 Confirm DISE Code<br />
                                 डाईस कोड की पुष्टि करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="23510817802" />
                         </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-12 mt-4">
+                        </div>
+
+                        <div class="col-md-4 mt-4">
                             <div class="form-group">
                                 <asp:Button runat="server" CssClass="btn w-lg btn-outline-success btn-border" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
                             </div>
@@ -206,8 +207,8 @@
                                                     <tr class="card-header">
                                                         <th>Sr. No.<br />
                                                             सरल क्र.</th>
-                                                        <th>Employee<br />
-                                                            कर्मचारी</th>
+                                                        <th>Employee Code<br />
+                                                            कर्मचारी कोड</th>
                                                         <th>Name<br />
                                                             नाम</th>
                                                         <th>Present Posting Date<br />

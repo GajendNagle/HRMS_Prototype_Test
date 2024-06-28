@@ -37,8 +37,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Division Name<br />
-                                संभाग का नाम चुनें<span style="color: red">*</span></label>
+                                Select Division<br />
+                                संभाग चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -56,8 +56,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select District Name<br />
-                                जिले का नाम चुनें<span style="color: red">*</span></label>
+                                Select District<br />
+                                जिला चुनें<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
                                 <asp:ListItem>Bhopal</asp:ListItem>
@@ -116,7 +116,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Block Name<br />
+                                Select Block<br />
                                 ब्लॉक चुनें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -185,7 +185,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
                                 </div>
                             </div>
                         </div>
