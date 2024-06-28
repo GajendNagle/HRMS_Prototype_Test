@@ -49,7 +49,7 @@
                             <label>
                                 DDO/Shankul Name
                                 <br />
-                                डीडीओ/संकुल नाम<span style="color: red">*</span></label>
+                                डीडीओ/संकुल का नाम<span style="color: red">*</span></label>
                             <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="232589654521/ GOVT. HS AGURLI" />
                         </div>
                     </div>
