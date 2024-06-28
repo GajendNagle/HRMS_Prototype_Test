@@ -1343,30 +1343,7 @@
                                 <div class="collapse menu-dropdown " id="SchemeManagement">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-grid-line"></i>Dashboard</a></li>
-                                                                 <li class="nav-item">
-                                            <a class="nav-link menu-link" href="#NewScheme" data-bs-toggle="collapse" role="button"
-                                                aria-expanded="false" aria-controls="NewScheme">
-                                                <i class="ri-menu-line"></i>New Scheme Management
-                                            </a>
-                                            <div class="collapse menu-dropdown " id="NewScheme">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <!-- SHG Reports -->
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/mis\Scheme\ApplyForScheme.aspx">
-                                                            <i class="ri-file-list-3-line"></i>Apply For Scheme</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/mis\Scheme\ViewSchemeWiseEligibleStudent.aspx">
-                                                            <i class="ri-file-list-3-line"></i>View Scheme Wise Eligible Student </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/mis\Scheme\GenerateSchemeList.aspx">
-                                                            <i class="ri-file-list-3-line"></i>Generate Scheme List
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
+
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#NewScheme" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="NewScheme">
