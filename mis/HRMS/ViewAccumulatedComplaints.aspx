@@ -14,24 +14,21 @@
                 margin: 0;
                 padding: 0;
             }
-
             .modal-content {
                 height: 200%;
                 border: none;
                 box-shadow: none;
             }
-
             .modal-body {
                 width: 72rem;
                 height: auto;
                 overflow: visible !important;
-                zoom: 90%;
+                zoom: 100%;
             }
             /* Hide unnecessary elements */
             body.modal-open {
                 visibility: hidden;
             }
-
                 body.modal-open .modal .modal-header,
                 body.modal-open .modal .modal-body {
                     visibility: visible;
@@ -40,7 +37,6 @@
             .modal-footer {
                 display: none;
             }
-
             .modal-header {
                 display: none;
             }

@@ -597,9 +597,9 @@
                     </div>
                     <div class="modal-body p-4">
                         <div id="form-event">
-                            <div class="text-end">
+                            <%--<div class="text-end">
                                 <a href="#" class="btn btn-sm btn-soft-primary" id="edit-event-btn" data-id="edit-event" onclick="editEvent(this)" role="button">Edit</a>
-                            </div>
+                            </div>--%>
                             <div class="event-details" id="event-details">
                                 <div class="d-flex mb-2">
                                     <div class="flex-grow-1 d-flex align-items-center">
@@ -712,10 +712,10 @@
                                 <!--end col-->
                             </div>
                             <!--end row-->
-                            <div class="hstack gap-2 justify-content-end">
+                          <%--  <div class="hstack gap-2 justify-content-end">
                                 <button type="button" class="btn btn-soft-danger" id="btn-delete-event"><i class="ri-close-line align-bottom"></i>Delete</button>
                                 <button type="submit" class="btn btn-success" id="btn-save-event">Add Event</button>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                 </div>
@@ -1037,30 +1037,6 @@
         function editEvent(e) {
             document.getElementById("event-details").style.display = 'none';
             document.getElementById("event-form").style.display = 'block';
-            var t = e.getAttribute("data-id");
-            (
-                "new-event" == t ?
-                    (
-                        document.getElementById("modal-title").innerHTML = "",
-                        document.getElementById("modal-title").innerHTML = "Add Event",
-                        document.getElementById("btn-save-event").innerHTML = "Add Event",
-                        eventTyped
-                    )
-                    : "edit-event" == t ?
-                        (
-                            e.innerHTML = "Cancel",
-                            e.setAttribute("data-id", "cancel-event"),
-                            document.getElementById("btn-save-event").innerHTML = "Update Event",
-                            e.removeAttribute("hidden"),
-                            eventTyped
-                        )
-                        : (
-                            e.innerHTML = "Edit",
-                            e.setAttribute("data-id", "edit-event"),
-                            eventClicked
-                        )
-            )
-                ()
         }
         function eventTyped() {
             document.getElementById("form1").classList.remove("view-event"),
@@ -1503,9 +1479,6 @@
                             i.innerText = v.title,
                             document.getElementById("btn-delete-event").removeAttribute("hidden")
                     },
-                    //dateClick: function (e) {
-                    //    o(e)
-                    //},
                     events: y,
                     eventReceive: function (e) {
                         e = {
@@ -1576,19 +1549,7 @@
                             y.push(n)),
                         g.hide(),
                         upcomingEvent(y))
-                }),
-                document.getElementById("btn-delete-event").addEventListener("click", function (e) {
-                    if (v) {
-                        for (var t = 0; t < y.length; t++)
-                            y[t].id == v.id && (y.splice(t, 1),
-                                t--);
-                        upcomingEvent(y),
-                            v.remove(),
-                            v = null,
-                            g.hide()
-                    }
                 })
-
         });
         var str_dt = function (e) {
             var e = new Date(e)
