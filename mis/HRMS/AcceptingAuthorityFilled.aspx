@@ -81,7 +81,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Reviewing Officer/
+                    <h5>Reviewing Officer/
                      Acceptanceing Officer
                     </h5>
                 </div>

@@ -1,12 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SectionWiseGrievanceReports.aspx.cs" Inherits="mis_HRMS_SectionWiseGrievanceReports" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
     <style>
-        table-bordered th, .table-bordered td {
-            border: 1px solid #808080d2;
-        }
-
         th {
             white-space: nowrap;
         }
@@ -25,81 +20,8 @@
             color: cornflowerblue;
         }
     </style>
-
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <%-- <div class="container-fluid">
-        <span class="hidden-sm-up">
-            <br />
-            <br />
-            <br />
-        </span>
-        <div class="row page-titles" style="margin-bottom: -30px">
-            <div class="col-md-3 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Grievance%20Logo.png" style="height: 70px"><u><br />
-                    </u>
-                </p>
-            </div>
-            <div class="col-md-3  ">
-            </div>
-            <div class="col-md-6 align-self-center">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="ParivednaNevakarn.aspx" title="click to go on">Grievance Management System</a></li>
-                        <li class="breadcrumb-item active">Section wise Grievance Reports</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
-            </div>
-            <div class="card-body">
-                <nav class="navbar navbar-expand-lg topbar">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li>
-                                    <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">Complaint Filed</a></li>
-                                        <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">Complaint Tracking Status</a></li>
-                                        <li><a class="dropdown-item" href="PrintComplaint.aspx">Print Complaint</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
-                                </li>
-                                <li>
-                                    <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="DisposedGrievances.aspx">List of Resolved Complaints</a></li>
-                                        <li><a class="dropdown-item" href="RejectedGrievances.aspx">List of Rejected Complaints</a></li>
-                                        <li><a class="dropdown-item" href="ForwardedGrievances .aspx">District Wise Details of Forwarded Complaints</a></li>
-                                        <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">Details of Complaints forwarded from CPI</a></li>
-                                        <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">District Wise Progress Report</a></li>
-                                        <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">Section Wise Pending Report</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <br />--%>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -113,34 +35,29 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Grievance Management System</span></a>
-                        </li>
-                        <li class="breadcrumb-item"><span>Section wise Grievance Reports</span></li>
+     <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+         <span>Grievance Report</span></a>
+ </li>
+                        <li class="breadcrumb-item"><span>Section wise Pending Reports</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <%--  <div class="row page-titles mb-4">--%>
-    <div class="col-md-5" style="position: relative; bottom: 20px; right: 15px;">
-        <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
-            <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
-            </u>
-        </p>
-    </div>
-
-
+     <div class="col-md-5" style="position: relative; bottom: 20px;">
+     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+         <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+         </u>
+     </p>
+ </div>
 
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Section wise Grievance Reports/
-अनुभागवार शिकायत रिपोर्ट</h5>
+                    <h5 class="card-title">Section wise Pending Reports /
+अनुभागवार लंबित रिपोर्टें</h5>
                 </div>
             </div>
         </div>
@@ -149,12 +66,12 @@
 
 
             <fieldset>
-                <legend>Section Wise Pending Status/अनुभागवार की लंबित स्थिति</legend>
+                <legend>Section Wise Pending Status / अनुभागवार की लंबित स्थिति</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">
-                                Section Name/<br />
+                            <label>
+                                Section Name<br />
                                 अनुभाग का नाम
                                     <span style="color: red">*</span></label>
                             <script>
@@ -172,9 +89,7 @@
                                         return "tbl1"
                                     }
                                 }
-
                             </script>
-
                             <asp:DropDownList runat="server" ID="ddlRegistrationType" CssClass="form-control">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1">RMSA</asp:ListItem>
@@ -200,24 +115,16 @@
                     <hr />
                     <div class="col-md-12">
                         <div class="form-group">
-                            <%-- <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>--%>
                             <button onclick="showtbl(GetTblBySelectValue())" class=" btn w-lg btn-success btn-border" type="button">Search</button>
                             <a href="SectionWiseGrievanceReports.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
-                    <%-- <div class="col-md-4 mt-5" runat="server" id="btnSave">
-                            <div class="form-group">
-                                <%-- <asp:Button ID="btnSubmit" CssClass="btn btn-success btn-rounded" OnClick="btnSubmit_Click" runat="server" Text="Search" />
-                                <button onclick="showtbl(GetTblBySelectValue())" class=" btn w-lg btn-success btn-border" type="button">Search</button>
-                                <a href="SectionWiseGrievanceReports.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                            </div>
-                        </div>--%>
                 </div>
             </fieldset>
             <div class="row form-group" id="dv_rpt" runat="server">
                 <div class="col-md-12">
                     <fieldset>
-                        <legend>Section Wise Pending Details/अनुभागवार लंबित विवरण</legend>
+                        <legend>Section Wise Pending Details / अनुभागवार लंबित विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-1 ">
                                 <div class="form-group">
@@ -241,26 +148,26 @@
                                     <div class="table-responsive">
                                         <table class="table table-bordered" id="tbl1">
                                             <tr class="text-center card-header">
-                                                <th>Sr No./
+                                                <th>Sr No.
                                                         <br />
                                                     सरल क्रमांक </th>
-                                                <th>Section/
+                                                <th>Section
                                                         <br />
                                                     अनुभाग  </th>
-                                                <th>Registered Grievaces/
+                                                <th>Registered Grievaces
                                                         <br />
                                                     पंजीकृत शिकायतें </th>
-                                                <th>Locked Grievances/<br />
+                                                <th>Locked Grievances<br />
                                                     लॉक शिकायतें </th>
-                                                <th>Forwarded Grievances/
+                                                <th>Forwarded Grievances
                                                         <br />
                                                     अग्रेषित शिकायतें </th>
-                                                <th>Disposed Grievances/
+                                                <th>Disposed Grievances
                                                         <br />
                                                     डिस्पोज़्ड शिकायतें </th>
-                                                <th>Rejected Grievances/<br />
+                                                <th>Rejected Grievances<br />
                                                     अस्वीकृत  शिकायतें </th>
-                                                <th>Pending Grievances/
+                                                <th>Pending Grievances
                                                         <br />
                                                     लंबित शिकायतें </th>
                                             </tr>

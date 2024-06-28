@@ -26,7 +26,7 @@
             .modal-content {
                 height: 200%;
                 border: none;
-                box-shadow: none;
+                /*box-shadow: none;*/
             }
 
             .modal-body {
@@ -62,7 +62,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">

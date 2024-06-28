@@ -3,6 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
+        th{
+            white-space:nowrap;
+        }
         table th {
             font-weight: 400 !important;
             width: fit-content;

@@ -12,80 +12,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
-
-   <%-- <div class="row page-titles" style="margin-bottom: -30px">
-
-
-        <div class="col-md-4 align-self-center">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)"><u><br>
-                </u>
-            </p>
-        </div>
-        <div class="col-md-3 mt-5 fw-bold fs-4" style="position: relative; bottom: 10px; left: 80px; font-style: oblique; color: brown; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-        </div>
-
-
-        <div class="col-md-5 align-self-center">
-
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                    <li class="breadcrumb-item"><a href="ParivednaNevakarn.aspx" title="click to go on">Grievance Management System</a></li>
-                    <li class="breadcrumb-item active">Details of Grievance forwarded from CPI</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">
-            <nav class="navbar navbar-expand-lg topbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li>
-                                <a class="nav-link  text-white " href="ParivednaNevakarn.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle font-16 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><b><i class="far fa-hand-point-right"></i>शिकायत पंजीयन</b></strong></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Trn_ParivadNivaran.aspx">Complaint Filed</a></li>
-                                    <li><a class="dropdown-item" href="ParivednaNevakarnStatus.aspx">Complaint Tracking Status</a></li>
-                                    <li><a class="dropdown-item" href="PrintComplaint.aspx">Print Complaint</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="ViewAccumulatedComplaints.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत प्रोसेसिंग </b></a>
-                            </li>
-                            <li>
-                                <a class="nav-link dropdown-toggle  font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>शिकायत निराकरण </b></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle font-16 text-white ml-3" href="GrievancesDispose.aspx" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>रिपोर्ट</b> </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="DisposedGrievances.aspx">List of Resolved Grievance</a></li>
-                                    <li><a class="dropdown-item" href="RejectedGrievances.aspx">List of Rejected Grievance</a></li>
-                                    <li><a class="dropdown-item" href="ForwardedGrievances .aspx">District Wise Details of Forwarded Grievance</a></li>
-                                    <li><a class="dropdown-item" href="CPIGrievancesDetails.aspx">Details of Grievance forwarded from CPI</a></li>
-                                    <li><a class="dropdown-item" href="DistrictWiseProcessReport.aspx">District Wise Progress Report</a></li>
-                                    <li><a class="dropdown-item" href="SectionWiseGrievanceReports.aspx">Section Wise Pending Report</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <br />--%>
-
-                <div class="row">
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -98,33 +25,26 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Grievance Management System</span></a>
-                        </li>
+     <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+         <span>Grievance Report</span></a>
+ </li>
                         <li class="breadcrumb-item"><span>Details of Grievance forwarded from CPI</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <%--  <div class="row page-titles mb-4">--%>
-    <div class="col-md-5" style="position: relative; bottom: 20px; right: 15px;">
-        <%--      <p style="font-style: oblique; color: green; font-weight: bolder; font-size: large; font-family: Helvetica, Arial, sans-serif;">--%>
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -3rem">
-            <img src="../../img/Grievance%20Logo.png" style="height: 60px"><u><br />
-            </u>
-        </p>
-    </div>
-
-
-
+    <div class="col-md-5" style="position: relative; bottom: 20px;">
+     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+         <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+         </u>
+     </p>
+ </div>
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Details of Grievance forwarded from CPI/
+                    <h5 class="card-title">Details of Grievance forwarded from CPI /
 सी.पी.आई से अग्रेषित शिकायत का विवरण
                     </h5>
                 </div>
@@ -134,62 +54,62 @@
             <h3 class="fw-bold justify-content-center" style="position: relative; left: 500PX; top: 10PX; color: brown;"></h3>
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>Forwarded Grievances Details from CPI/सी.पी.आई से अग्रेषित शिकायत का विवरण</legend>
-                                      <div class="row justify-content-end">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-</div>
+                    <legend>Forwarded Grievances Details from CPI / सी.पी.आई से अग्रेषित शिकायत का विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table  table-bordered" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance" style="border-collapse: collapse;">
                                     <thead>
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No./
+                                            <th data-class="expand" scope="col">Sr.No.
                                                 <br />
                                                 सरल क्र.
                                             </th>
-                                            <th data-class="phone,tablet" scope="col">Grievances No./
+                                            <th data-class="phone,tablet" scope="col">Grievances No.
                                                 <br />
                                                 शिकायत क्र.
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Employee Name/
+                                            <th data-hide="phone,tablet" scope="col">Employee Name
                                                 <br />
                                                 कर्मचारी का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type/
+                                            <th data-hide="phone,tablet" scope="col">Type
                                                 <br />
                                                 प्रकार</th>
-                                            <th data-hide="phone,tablet" scope="col">Subject /
+                                            <th data-hide="phone,tablet" scope="col">Subject 
                                                 <br />
                                                 विषय</th>
-                                            <th data-hide="phone,tablet" scope="col">Registered Date /
+                                            <th data-hide="phone,tablet" scope="col">Registered Date 
                                                 <br />
                                                 पंजीकृत तिथि</th>
-                                            <th data-hide="phone,tablet" scope="col">Status /
+                                            <th data-hide="phone,tablet" scope="col">Status 
                                                 <br />
                                                 स्थिति</th>
-                                            <th data-hide="phone,tablet" scope="col">Forwarded To /
+                                            <th data-hide="phone,tablet" scope="col">Forwarded To 
                                                 <br />
                                                 इनको अग्रेषित</th>
-                                            <th data-hide="phone,tablet" scope="col">Forward Date /
+                                            <th data-hide="phone,tablet" scope="col">Forward Date 
                                                 <br />
                                                 अग्रेषित दिनांक</th>
-                                            <th data-hide="phone,tablet" scope="col">Forwarded By /
+                                            <th data-hide="phone,tablet" scope="col">Forwarded By 
                                                 <br />
                                                 द्वारा अग्रेषित किया गया</th>
-                                            <th data-hide="phone,tablet" scope="col">Office /
+                                            <th data-hide="phone,tablet" scope="col">Office 
                                                 <br />
                                                 कार्यालय</th>
-                                            <th data-hide="phone,tablet" scope="col">Section /
+                                            <th data-hide="phone,tablet" scope="col">Section 
                                                 <br />
                                                 अनुभाग</th>
                                         </tr>
