@@ -521,7 +521,7 @@
                                             <a href="#PayrollMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Payroll Master Data</a>
                                             <div class="collapse menu-dropdown" id="PayrollMaster">
                                                 <ul class="nav nav-sm flex-column">
-                                                   <%-- <li class="nav-item">
+                                                    <%-- <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Payroll/Mst_EarningAndDeduction.aspx"><i class="ri-file-list-3-line"></i>Head Master Data</a>
 
                                                     </li>--%>
@@ -1042,15 +1042,15 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HOCompassionateApproval.aspx"><i class="ri-file-list-3-line"></i>Register/Correct Application for Compassionate Appointment</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOPrintApplicationReport.aspx"><i class="ri-file-list-3-line"></i>Print Application</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ProcessApplicationListHO.aspx"><i class="ri-file-list-3-line"></i>Action on Compassionate Appointment </a>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForHO.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
+                                                        <li class="nav-item"><a class="nav-link" href="/mis/Transaction/AvedanperNirnayKareForHO.aspx"><i class="ri-file-list-3-line"></i>Decision On Application </a>
+                                                            <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocSendByDistrictCollectorHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report Sent to District Collector </a>
+                                                                <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DisposeCasesNOC"><i class="ri-file-list-3-line"></i>Dispose Cases </a>
+                                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=BlockWiseCounting"><i class="ri-file-list-3-line"></i>Block-Wise Statistics</a>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/HOLevelReportSection.aspx?ID=DistrictWiseCounting"><i class="ri-file-list-3-line"></i>District-Wise Statistics</a>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/NocReportHO.aspx"><i class="ri-file-list-3-line"></i>NOC Report </a>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HoRpt_CompassionateAppointment.aspx"><i class="ri-file-list-3-line"></i>Compassionate Appointment Report </a>
+                                                        <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HoRpt_CompassionateAppointment.aspx"><i class="ri-file-list-3-line"></i>Compassionate Appointment Report </a>
 
-                                                        <%--Ho Compassionate Application Approval end--%>
+                                                            <%--Ho Compassionate Application Approval end--%>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1106,24 +1106,30 @@
                                                 aria-controls="EmpAPRMS" data-key="t-EmpAPRMS"><i class="ri-menu-line"></i>Employee APRMS</a>
                                             <div class="collapse menu-dropdown" id="EmpAPRMS">
                                                 <ul class="nav nav-sm flex-column">
+
                                                     <%--Employee APRMS--%>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpAprNotes.aspx"><i class="ri-file-list-3-line"></i>Employee APRMS Home </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_EmpAprFill.aspx"><i class="ri-file-list-3-line"></i>Employee APR Fill </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailsForm.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprDistWiseReport.aspx"><i class="ri-file-list-3-line"></i>APRMS District Wise Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/UploadAPRForm.aspx"><i class="ri-file-list-3-line"></i>Upload APR Form Document</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>
+                                                    <%-- <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpAprNotes.aspx"><i class="ri-file-list-3-line"></i>Employee APRMS Home </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_EmpAprFill.aspx"><i class="ri-file-list-3-line"></i>Employee APR Fill </a></li>--%>
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
+                                        <%--<li class="nav-item">
                                             <a href="#HOAPRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="HOAPRMS" data-key="t-HOAPRMS"><i class="ri-menu-line"></i>Head Office APRMS</a>
                                             <div class="collapse menu-dropdown" id="HOAPRMS">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <%--Head Office APRMS--%>
+                                                    <!--Head Office APRMS-->
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOAprNotes.aspx"><i class="ri-file-list-3-line"></i>Head Office APRMS Home </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprFill.aspx"><i class="ri-file-list-3-line"></i>Head Office APR Fill </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprDistWiseReport.aspx"><i class="ri-file-list-3-line"></i>Head Office APR Report </a></li>
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#IDCard" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="IDCard" data-key="t-IDCard"><i class="ri-menu-line"></i>Employee ID Card Management System</a>
@@ -1301,7 +1307,7 @@
                                 </a>
                                 <div class="collapse menu-dropdown" id="StudentDirectory">
                                     <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentRegistration.aspx"><i class="ri-file-list-3-line"></i>Student Registration</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentReg.aspx"><i class="ri-file-list-3-line"></i>Student Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Student Verification</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Reports</a></li>
                                     </ul>
@@ -1532,7 +1538,7 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/AboutGuestFacultyManagement.aspx">About Guest Faculty Management</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx">Guest Faculty Registration</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GfmsLogin.aspx">Applicant Login</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GfmsLogin.aspx">Applicant Login</a></li>
                                     </ul>
                                 </div>
                             </li>
