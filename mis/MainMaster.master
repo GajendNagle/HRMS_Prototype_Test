@@ -569,7 +569,28 @@
                                                 </ul>
                                             </div>
                                         </li>
-
+                                        <li class="nav-item">
+                                            <a href="#developmentMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Development Master Data</a>
+                                            <div class="collapse menu-dropdown" id="developmentMaster">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Development/Mst_WorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Category Master</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Development/Mst_WorkSubcategory.aspx"><i class="ri-file-list-3-line"></i>Work Subcategory Master</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Development/Mst_Resource.aspx"><i class="ri-file-list-3-line"></i>Resource Master</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Development/Mst_FinancialResourceMap.aspx"><i class="ri-file-list-3-line"></i>Financial Resource Mapping Master</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -1114,22 +1135,22 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/UploadAPRForm.aspx"><i class="ri-file-list-3-line"></i>Upload APR Form Document</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>
                                                     <%-- <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpAprNotes.aspx"><i class="ri-file-list-3-line"></i>Employee APRMS Home </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_EmpAprFill.aspx"><i class="ri-file-list-3-line"></i>Employee APR Fill </a></li>--%>
+            <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_EmpAprFill.aspx"><i class="ri-file-list-3-line"></i>Employee APR Fill </a></li>--%>
                                                 </ul>
                                             </div>
                                         </li>
-                                        <%--<li class="nav-item">
+                                        <li class="nav-item">
                                             <a href="#HOAPRMS" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="HOAPRMS" data-key="t-HOAPRMS"><i class="ri-menu-line"></i>Head Office APRMS</a>
                                             <div class="collapse menu-dropdown" id="HOAPRMS">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <!--Head Office APRMS-->
+                                                    <%--Head Office APRMS--%>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/HOAprNotes.aspx"><i class="ri-file-list-3-line"></i>Head Office APRMS Home </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprFill.aspx"><i class="ri-file-list-3-line"></i>Head Office APR Fill </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprDistWiseReport.aspx"><i class="ri-file-list-3-line"></i>Head Office APR Report </a></li>
                                                 </ul>
                                             </div>
-                                        </li>--%>
+                                        </li>
                                         <li class="nav-item">
                                             <a href="#IDCard" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="IDCard" data-key="t-IDCard"><i class="ri-menu-line"></i>Employee ID Card Management System</a>
@@ -1307,7 +1328,7 @@
                                 </a>
                                 <div class="collapse menu-dropdown" id="StudentDirectory">
                                     <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentReg.aspx"><i class="ri-file-list-3-line"></i>Student Registration</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentRegistration.aspx"><i class="ri-file-list-3-line"></i>Student Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Student Verification</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Reports</a></li>
                                     </ul>
@@ -1322,6 +1343,54 @@
                                 <div class="collapse menu-dropdown " id="SchemeManagement">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="#"><i class="ri-grid-line"></i>Dashboard</a></li>
+                                                                 <li class="nav-item">
+                                            <a class="nav-link menu-link" href="#NewScheme" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="NewScheme">
+                                                <i class="ri-menu-line"></i>New Scheme Management
+                                            </a>
+                                            <div class="collapse menu-dropdown " id="NewScheme">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <!-- SHG Reports -->
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis\Scheme\ApplyForScheme.aspx">
+                                                            <i class="ri-file-list-3-line"></i>Apply For Scheme</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis\Scheme\ViewSchemeWiseEligibleStudent.aspx">
+                                                            <i class="ri-file-list-3-line"></i>View Scheme Wise Eligible Student </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis\Scheme\GenerateSchemeList.aspx">
+                                                            <i class="ri-file-list-3-line"></i>Generate Scheme List
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link menu-link" href="#NewScheme" data-bs-toggle="collapse" role="button"
+                                                aria-expanded="false" aria-controls="NewScheme">
+                                                <i class="ri-menu-line"></i>New Scheme Management
+                                            </a>
+                                            <div class="collapse menu-dropdown " id="NewScheme">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <!-- SHG Reports -->
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis\Scheme\ApplyForScheme.aspx">
+                                                            <i class="ri-file-list-3-line"></i>Apply For Scheme</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis\Scheme\ViewSchemeWiseEligibleStudent.aspx">
+                                                            <i class="ri-file-list-3-line"></i>View Scheme Wise Eligible Student </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis\Scheme\GenerateSchemeList.aspx">
+                                                            <i class="ri-file-list-3-line"></i>Generate Scheme List
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/Scheme_Department.aspx"><i class="ri-file-list-3-line"></i>Scheme  Department Master </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SchemeApplication.aspx"><i class="ri-file-list-3-line"></i>Scheme Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Scheme/StudentProfileLocking.aspx"><i class="ri-file-list-3-line"></i>Student Profile View/ Edit/ Lock</a></li>
@@ -1529,6 +1598,118 @@
                                 </div>
                             </li>
                             <%--Hostel Management--%>
+                            <%-- Start Finance --%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="TransPortManagement">
+                                    <i class="ri-stack-line"></i><span data-key="t-TransPort Management">Finance</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="Finance">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#FinanceACMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="FinanceACMaster"><i class="ri-menu-line"></i>Finance A/C Master</a>
+                                            <div class="collapse menu-dropdown" id="FinanceACMaster">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/DemandApproveRejectProcess.aspx"><i class="ri-file-list-3-line"></i>Group Management</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/LedgerCreation_Master.aspx"><i class="ri-file-list-3-line"></i>Ledger Creation Management</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>HSN/SAC Master</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Group Wise Ledger List</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Office Wise Ledger List Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Ledger for Office Mapping</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#BudgetDemandApprovalProcess" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="BudgetDemandApprovalProcess"><i class="ri-menu-line"></i>Budget Demand / Approval Process</a>
+                                            <div class="collapse menu-dropdown" id="BudgetDemandApprovalProcess">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/DemandApproveRejectProcess.aspx"><i class="ri-file-list-3-line"></i>Demand Request Process</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/DemandDetails.aspx"><i class="ri-file-list-3-line"></i>Demand Status Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Budget Approval Process (Approval Authority)</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Budget Allocation (Head Wise)</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Budget Allocation Approval Process (Letter Generate)</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Budget Allocation Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Budget Utilization Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#VoucherCreation" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="VoucherCreation"><i class="ri-menu-line"></i>Voucher Creation</a>
+                                            <div class="collapse menu-dropdown" id="VoucherCreation">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/PaymentVoucher.aspx"><i class="ri-file-list-3-line"></i>Payment Voucher</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/ReceiptVoucher.aspx"><i class="ri-file-list-3-line"></i>Receipt Voucher</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Journal Voucher</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#BudgetAssignMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="BudgetAssignMaster"><i class="ri-menu-line"></i>Budget Assign Master</a>
+                                            <div class="collapse menu-dropdown" id="BudgetAssignMaster">
+                                                <%--<ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="Finance/EmployeeRegImportantNotes.aspx"><i class="ri-file-list-3-line"></i>Employee Registration</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="Finance/EmployeeVerificationNotes.aspx"><i class="ri-file-list-3-line"></i>Employee Verification</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="Finance/EmployeeOtherCurriculumActivitiesNotw.aspx"><i class="ri-file-list-3-line"></i>Employee Other Curriculum Activities</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="Finance/Rpt_EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Details Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="Finance/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a></li>
+                                                </ul>--%>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#GSTR" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="GSTR"><i class="ri-menu-line"></i>GSTR</a>
+                                            <div class="collapse menu-dropdown" id="GSTR">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/GSTR/GSTR-1.aspx"><i class="ri-file-list-3-line"></i>GSTR-1</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/GSTR/GSTR-2.aspx"><i class="ri-file-list-3-line"></i>GSTR-2</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/GSTR/GSTR-3.aspx"><i class="ri-file-list-3-line"></i>GSTR-3</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#FinanceReport" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="FinanceReport"><i class="ri-menu-line"></i>Finance Report</a>
+                                            <div class="collapse menu-dropdown" id="FinanceReport">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/ExpensesReport.aspx"><i class="ri-file-list-3-line"></i>Expenses Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/OfficeWiseBudgetAllocationReport.aspx"><i class="ri-file-list-3-line"></i>Office Wise Budget Allocation Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/DayBookSingle.aspx"><i class="ri-file-list-3-line"></i>Day Book (Single)</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/CustomDayBook.aspx"><i class="ri-file-list-3-line"></i>Custom Day Book</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/LedgerDetails.aspx"><i class="ri-file-list-3-line"></i>Ledger Report</a></li>
+                                                    <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a>--%></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%-- End Finance --%>
+
+                            <%--Development module--%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#Development" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="HostelManagement">
+                                    <i class="ri-stack-line"></i><span data-key="t-apps">Development</span>
+                                </a>
+                                <div class="collapse menu-dropdown dropdown-custom-left" id="Development">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/CreateProject.aspx"><i class="ri-file-list-3-line"></i>Create Project</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Installment Creation</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Approval</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkWiseExpenditure.aspx"><i class="ri-file-list-3-line"></i>Work Wise Expenditure</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/GenerateSanctionLetter.aspx"><i class="ri-file-list-3-line"></i>Generate Sanction Letter</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_UtilisationCertificate.aspx"><i class="ri-file-list-3-line"></i>Utilisation Certificate</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/BonusAmtInfo.aspx"><i class="ri-file-list-3-line"></i>Bonus Amount Info</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#GFMS" data-bs-toggle="collapse" role="button"
                                     aria-expanded="false" aria-controls="GFMS">
@@ -1538,7 +1719,6 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/AboutGuestFacultyManagement.aspx">About Guest Faculty Management</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx">Guest Faculty Registration</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GfmsLogin.aspx">Applicant Login</a></li>
                                     </ul>
                                 </div>
                             </li>
