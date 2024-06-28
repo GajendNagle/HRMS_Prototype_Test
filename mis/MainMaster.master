@@ -1532,6 +1532,7 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/AboutGuestFacultyManagement.aspx">About Guest Faculty Management</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx">Guest Faculty Registration</a></li>
+                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GfmsLogin.aspx">Applicant Login</a></li>
                                     </ul>
                                 </div>
                             </li>
