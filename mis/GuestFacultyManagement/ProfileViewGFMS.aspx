@@ -59,6 +59,25 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#GFMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Guest Faculty Management System</span></a>
+                        </li>
+
+                        <li class="breadcrumb-item"><span>Update Information</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="position-relative mx-n4 mt-n4">
         <div class="profile-wid-bg profile-setting-img text-center">
             <div class="row">
@@ -186,7 +205,7 @@
                                     <div class="form-group">
                                         <label>
                                             Upload Certificate<br />
-                                            प्रमाण पत्र अपलोड करें
+                                            प्रमाण पत्र अपलोड करे
                                         </label>
                                         <input type="file" id="fileInput" class="form-control" onchange="displayImage(this)">
                                     </div>
@@ -283,7 +302,7 @@
                                     <div class="form-group">
                                         <label>
                                             Professional Qualification Score<br />
-                                            व्यावसायिक योग्यता स्कोर
+                                            व्यावसायिक योग्यता अंक
                                         </label>
                                         <input type="text" id="scoreQualification" class="form-control" placeholder="Enter Qualification Score" />
                                     </div>
@@ -304,7 +323,7 @@
                                     <div class="form-group">
                                         <label>
                                             Upload Certificate<br />
-                                            प्रमाण पत्र अपलोड करें
+                                            प्रमाण पत्र अपलोड करे
                                         </label>
                                         <input type="file" id="fileInputs" class="form-control" onchange="displayImage(this)">
                                     </div>

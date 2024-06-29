@@ -58,7 +58,25 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#GFMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Guest Faculty Management System</span></a>
+                        </li>
 
+                        <li class="breadcrumb-item"><span>Profile View</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="position-relative mx-n4 mt-n4">
         <div class="profile-wid-bg profile-setting-img text-center">
             <div class="row">
@@ -77,137 +95,101 @@
             <div class="card-body p-4">
                 <div class="tab-content">
                     <div class="tab-pane active" id="ProfileView" role="tabpanel">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Name (In English)
+                        <fieldset>
+                            <div class="row mt-4 align-items-end">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                           Enter Name (In English)
                                                     <br />
-                                                    नाम (अंग्रेज़ी में)</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: Raman Varma</label>
-                                            </div>
-                                        </div>
+                                            नाम दर्ज करे(अंग्रेज़ी में)</label>
+                                        <input type="text" id="txtNameEnglish"  readonly class="form-control" placeholder="Raman Verma" />
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Name (In Hindi)
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Name (In Hindi)
                                                     <br />
-                                                    नाम (हिंदी में)</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: रमण वर्मा</label>
-                                            </div>
-                                        </div>
+                                            नाम दर्ज करे(हिंदी में)</label>
+                                        <input type="text" id="txtNameHindi" readonly class="form-control" placeholder="रमण वर्मा" />
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>Gender </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: Male</label>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Enter Gender <br />लिंग दर्ज करें</label>
+                                        <input type="text" id="Gender" readonly  class="form-control" placeholder="Male" />
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>Mobile No. </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: 9876543210</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>Date of Birth </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: 01/01/1990</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Category</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: General</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Father's Name
-                                                </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: Mr. Satish Varma</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Mother's Name
-                                                </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: Mrs. Shobha Varma</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Family Samagra ID
-                                                </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: 1234567890</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>Marital Status </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: Married</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label>
-                                                    Email ID
-                                                </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <label>: raman.varma@example.com</label>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Enter Mobile No. <br />मोबाइल नंबर दर्ज करें.</label>
+                                        <input type="text" id="Mobile"  readonly class="form-control" placeholder="9876543210" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="row align-items-end">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Enter Date of Birth <br />
+जन्म तिथि दर्ज करें</label>
+                                        <input type="date" id="DOB" readonly  class="form-control" placeholder="01/01/1990" />
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                           Enter Category<br />
+श्रेणी दर्ज करें</label>
+                                        <input type="text" id="Category"  readonly class="form-control" placeholder="General" />
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                           Enter Father's Name<br />पिता का नाम दर्ज करें
+                                        </label>
+                                        <input type="text" id="FatherName" readonly  class="form-control" placeholder="Mr.Satish Varma" />
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                           Enter Mother's Name<br />
+माता का नाम दर्ज करें
+                                        </label>
+                                        <input type="text" id="MotherName"  readonly class="form-control" placeholder="Mrs.shobha Varma" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                           Enter Family Samagra ID <br />परिवार समग्र आईडी दर्ज करें
+                                        </label>
+                                        <input type="text" id="FamilyId" readonly  class="form-control" placeholder="1234567890" />
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Enter Marital Status <br />वैवाहिक स्थिति दर्ज करें</label>
+                                        <input type="text" id="MaritalStatus" readonly  class="form-control" placeholder="Married" />
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>
+                                           Enter Email ID<br />
+ईमेल आईडी दर्ज करें
+                                        </label>
+                                        <input type="text" id="EmailID"  readonly class="form-control" placeholder="raman123varma@example.com" />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
             </div>
