@@ -10,21 +10,21 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-               
+
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
+                <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
 
-                       <li class="breadcrumb-item">
+                        <li class="breadcrumb-item">
                             <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a>
                         </li>
-                        <li class="breadcrumb-item"> <a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>HO Level Request</span></a></li>
+                        <li class="breadcrumb-item"><a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Head Office Level Verification</span></a></li>
                         <li class="breadcrumb-item">School Verification</li>
                     </ol>
                 </div>
@@ -32,11 +32,11 @@
         </div>
     </div>
 
-         <div class="card card-border-primary">
+    <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">School Verification/विद्यालय सत्यापन
+                    <h4 class="card-title">School Verification / विद्यालय सत्यापन
                     </h4>
                 </div>
             </div>
@@ -44,11 +44,14 @@
 
         <div class="card-body">
             <fieldset>
-                <legend>School Verification/विद्यालय सत्यापन</legend>
+                <legend>School Verification / विद्यालय सत्यापन</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label class="font-bold">Select Division Name/संभाग का नाम चुनें </label>
+                        <label class="font-bold">
+                            Select Division Name<br />
+                            संभाग का नाम चुनें
+                        </label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -63,7 +66,9 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Select District Name/जिले का नाम चुनें</label>
+                        <label class="font-bold">
+                            Select District Name<br />
+                            जिले का नाम चुनें</label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -119,7 +124,9 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label class="font-bold">Select Block Name/ब्लॉक का नाम चुनें</label>
+                        <label class="font-bold">
+                            Select Block Name<br />
+                            ब्लॉक का नाम चुनें</label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Agar</asp:ListItem>
@@ -152,19 +159,22 @@
                             </div>
                         </div>--%>
                     <div class="col-md-3">
-                       
-                            <label class="font-bold">UDISE Code/यूडीआईएसई कोड</label>
-                            <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
+
+                        <label class="font-bold">
+                            UDISE Code<br />
+                            यूडीआईएसई कोड</label>
+                        <asp:TextBox runat="server" ID="txtUdiseCode" CssClass="form-control" placeholder="Enter UDISE Code"></asp:TextBox>
                     </div>
                 </div>
                 <hr />
 
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group text-center">
-                        <asp:Button ID="btnSubmit" CssClass="btn w-lg btn-success btn-rounded" runat="server" OnClick="btnSubmit_Click" Text="Search" />
-                        <a runat="server" id="clearfirst" href="SchoolVerification.aspx" class="btn w-lg btn-danger btn-rounded">Clear</a>
-                    </div></div>
+                        <div class="form-group ">
+                            <asp:Button ID="btnSubmit" CssClass="btn w-lg btn-success btn-rounded" runat="server" OnClick="btnSubmit_Click" Text="Search" />
+                            <a runat="server" id="clearfirst" href="SchoolVerification.aspx" class="btn w-lg btn-danger btn-rounded">Clear</a>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -173,7 +183,8 @@
 
 
             <fieldset runat="server" id="datatable" visible="false">
-                <legend>School Verification Details/स्कूल सत्यापन विवरण</legend>
+                <legend>School Verification Details
+                    स्कूल सत्यापन विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -192,23 +203,39 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <tbody>
-                                    <tr>
-                                        <th>Sr. No./क्रमांक</th>
-                                        <th>View Request Detail/अनुरोध विवरण देखें</th>
-                                        <th>Action/कार्रवाई </th>
-                                        <th>Division/संभाग </th>
-                                        <th>District/जिला </th>
-                                        <th>Block/ब्लॉक</th>
-                                        <th>UDISE Code/UDISE कोड</th>
-                                        <th>School Name/स्कूल के नाम</th>
-                                        <th>School Board/स्कूल बोर्ड</th>
-                                        <th>Management/प्रबंध</th>
-                                        <th>Category/वर्ग</th>
-                                        <th>School Category Detail/स्कूल श्रेणी विवरण</th>
-                                        <th>Sankul(DDO)/संकुल(डीडीओ)</th>
-                                        <th>Incharge Name/प्रभारी का नाम</th>
-                                        <th>Incharge Number/प्रभारी क्रमांक</th>
-                                        <th>Functional/कार्यात्मक</th>
+                                    <tr class="nowrap">
+                                        <th>Sr. No.<br />
+                                            क्रमांक</th>
+                                        <th>View Request Detail<br />
+                                            अनुरोध विवरण देखें</th>
+                                        <th>Action<br />
+                                            कार्रवाई </th>
+                                        <th>Division<br />
+                                            संभाग </th>
+                                        <th>District<br />
+                                            जिला </th>
+                                        <th>Block<br />
+                                            ब्लॉक</th>
+                                        <th>UDISE Code<br />
+                                            UDISE कोड</th>
+                                        <th>School Name<br />
+                                            स्कूल के नाम</th>
+                                        <th>School Board<br />
+                                            स्कूल बोर्ड</th>
+                                        <th>Management<br />
+                                            प्रबंध</th>
+                                        <th>Category<br />
+                                            वर्ग</th>
+                                        <th>School Category Detail<br />
+                                            स्कूल श्रेणी विवरण</th>
+                                        <th>Sankul(DDO)<br />
+                                            संकुल(डीडीओ)</th>
+                                        <th>Incharge Name<br />
+                                            प्रभारी का नाम</th>
+                                        <th>Incharge Number<br />
+                                            प्रभारी क्रमांक</th>
+                                        <th>Functional<br />
+                                            कार्यात्मक</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
@@ -269,39 +296,48 @@
                                                 <div class="modal-dialog modal-xl">
                                                     <div class="modal-content">
                                                         <div class="modal-header" id="myDIV">
-                                                            <h4 class="modal-title" id="myLargeModalLabel1">Request Details/अनुरोध विवरण</h4>
+                                                            <h4 class="modal-title" id="myLargeModalLabel1">Request Details / अनुरोध विवरण</h4>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                                                         </div>
                                                         <div class="modal-body">
 
-                                                            <div class="row">
-                                                                <div class="col-md-2">
-                                                                    <label>Date/तारीख</label>
+                                                            <div class="row align-items-end">
+                                                                <div class="col-lg-3 col-md-6 mt-3">
+                                                                    <label>
+                                                                        Date<br />
+                                                                        तारीख</label>
                                                                     <asp:TextBox ID="TextBox8" placeholder="15/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
                                                                 </div>
-                                                                <div class="col-md-3">
-                                                                    <label>Order Document Type</label>
+                                                                <div class="col-lg-3 col-md-6 mt-3">
+                                                                    <label>
+                                                                        Order Document Type<br />
+                                                                        ऑर्डर दस्तावेज़ प्रकार</label>
                                                                     <asp:TextBox ID="TextBox6" placeholder="Order Letter" ReadOnly="true" runat="server" CssClass="form-control"></asp:TextBox>
                                                                 </div>
 
-                                                                <div class="col-md-3">
-                                                                    <label>Order No</label>
+                                                                <div class="col-lg-3 col-md-6 mt-3">
+                                                                    <label>
+                                                                        Order No<br />
+                                                                        आदेश संख्या</label>
                                                                     <asp:TextBox ID="TextBox9" placeholder="1248745" ReadOnly="true" runat="server" CssClass=" form-control"></asp:TextBox>
                                                                 </div>
-                                                                <div class="col-md-2">
-                                                                    <label>Effective Date</label>
+                                                                <div class="col-lg-3 col-md-6 mt-3">
+                                                                    <label>
+                                                                        Effective Date<br />
+                                                                        प्रभावी तिथि</label>
                                                                     <asp:TextBox ID="TextBox4" placeholder="20/11/2023" ReadOnly="true" runat="server" CssClass="datepicker form-control"></asp:TextBox>
                                                                 </div>
-                                                                <div class="col-md-1 mt-2 ">
-                                                                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn view-but border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="openPDF()"><i class="fas fa-eye"></i>Document</asp:LinkButton>
+
+                                                                <div class="col-md-2 mt-3">
+                                                                    <button type="button" id="LinkButton3" class="btn  btn-outline-secondary  border" onclick="openPDF()"><i class="fas fa-eye"></i>Document</button>
                                                                     <%--<asp:FileUpload runat="server" CssClass="form-control" />--%>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="modal-footer">
+                                                            <div class="modal-footer">
 
 
-                                                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <!-- /.modal-content -->
@@ -339,83 +375,88 @@
 
                     </div>
                 </div>
+                <div class="" runat="server" id="divbtn" visible="false">
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" class=" btn w-lg btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Verify School</button>
+                            <button type="button" class="btn w-lg btn-danger btn-rounded" onclick="openBootstrapModal()">Reject Request</button>
+                        </div>
+                    </div>
+
+
+                </div>
             </fieldset>
 
-            <div class="row justify-content-center" runat="server" id="divbtn" visible="false">
-                <div class="col-md-12">
-                    <div class="form-group text-center">
-                        <button type="button" class=" btn w-lg btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Verify School</button>
-                        <button type="button" class="btn w-lg btn-danger btn-rounded" onclick="openBootstrapModal()">Reject Request</button>
-                    </div>
-                </div>
-
-                <div class="modal" tabindex="-1" role="dialog" id="OTPModal">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">OTP Details/ओटीपी विवरण</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                            </div>
-                            <div class="modal-body">
-                                <fieldset>
-                                    <legend>OTP Details/ओटीपी विवरण</legend>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>OTP (One Time Password)/ओटीपी (वन टाइम पासवर्ड)</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn w-lg btn-outline-success Alert-VerifySchool" data-bs-dismiss="modal">Submit</button>
-                                <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
-                            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="OTPModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">OTP Details / ओटीपी विवरण</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                         </div>
-                    </div>
-                </div>
-
-                <!-- sample modal content -->
-                <!-- Bootstrap Modal -->
-                <div class="modal" tabindex="-1" role="dialog" id="bootstrapModal">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Reject Remark/टिप्पणी अस्वीकार करें</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                            </div>
-                            <div class="modal-body">
+                        <div class="modal-body">
+                            <fieldset>
+                                <legend>OTP Details / ओटीपी विवरण</legend>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label>Remark/टिप्पणी</label>
-                                        <asp:TextBox ID="TextBox3" placeholder="Enter Reject Remark" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <div class="form-group">
+                                            <label>
+                                                OTP (One Time Password)<br />
+                                                ओटीपी (वन टाइम पासवर्ड)</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn w-lg btn-outline-success w-lg btn-border Alert-Reject" data-bs-dismiss="modal">Reject</button>
-                                <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
-                            </div>
+                            </fieldset>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn w-lg btn-outline-success Alert-VerifySchool" data-bs-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-                <!-- /.modal -->
-
             </div>
+
+            <!-- sample modal content -->
+            <!-- Bootstrap Modal -->
+            <div class="modal" tabindex="-1" role="dialog" id="bootstrapModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Reason of Rejection/ अस्वीकृति का कारण</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>
+                                        Remark<br />
+                                        टिप्पणी</label>
+                                    <asp:TextBox ID="TextBox3" placeholder="Enter Reject Remark" runat="server" CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn  btn-outline-danger w-lg btn-border Alert-Reject" data-bs-dismiss="modal">Reject</button>
+                            <button type="button" class="btn btn-outline-success w-lg btn-border" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal -->
 
             <!-- sample modal content -->
             <div class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
                 <div class="modal-dialog modal-xxl" style="width: 100%;">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="myLargeModalLabel">School Details/स्कूल विवरण</h4>
+                            <h4 class="modal-title" id="myLargeModalLabel">School Details / स्कूल विवरण</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                         </div>
                         <div class="modal-body">
                             <fieldset>
-                                <legend>School Basic Information/स्कूल की जानकारी</legend>
+                                <legend>School Basic Information / स्कूल की जानकारी</legend>
 
                                 <div class="row align-items-end">
                                     <div class="col-md-3">
