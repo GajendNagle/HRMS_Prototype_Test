@@ -9,14 +9,16 @@
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
                 <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
+                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Location Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#LocationMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Location Master Data</span></a>
+                        </li>
                         <li class="breadcrumb-item">Assembly Master Data</li>
                     </ol>
                 </div>
@@ -45,7 +47,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br /> संभाग का चयन करे<span style="color: red">*</span></label>
+                            <label>Select Division Name<br /> संभाग का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -62,7 +64,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br /> जिला का चयन करे<span style="color: red">*</span></label>
+                            <label>Select District Name<br /> जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -120,26 +122,26 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Assembly Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Assembly Name (In English)<br />विधानसभा का नाम दर्ज करे (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Assembly Name " />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>विधानसभा का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Assembly Name(In Hindi)<br />विधानसभा का नाम दर्ज करे (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="विधानसभा का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Assembly Code No. /<br />विधानसभा कोड संख्या जोड़े<span style="color: red">*</span></label>
+                            <label>Enter Assembly Code No.<br />विधानसभा कोड संख्या जोड़े दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3 ms-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -175,13 +177,13 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br /> सरल क्र.</th>
-                                    <th>Division Name /<br /> संभाग का नाम</th>
-                                    <th>District Name /<br />  जिले का नाम</th>
-                                    <th>Parliamentary Name (In English)</th>
-                                    <th>संसद का नाम(हिंदी में)</th>
-                                    <th>Parliamentary Code No. /<br /> लोकसभा कोड संख्या</th>
-                                    <th>Status(Active / InActive) /<br /> स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Sr.No.<br /> सरल क्र.</th>
+                                    <th>Division Name <br /> संभाग का नाम</th>
+                                    <th>District Name <br />  जिले का नाम</th>
+                                    <th>Parliamentary Name (In English)<br />विधानसभा का नाम दर्ज करे (अंग्रेजी में)</th>
+                                    <th>Enter Assembly Name(In Hindi)<br />संसद का नाम (हिंदी में)</th>
+                                    <th>Parliamentary Code No. <br /> लोकसभा कोड संख्या</th>
+                                    <th>Status(Active/InActive) <br /> स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

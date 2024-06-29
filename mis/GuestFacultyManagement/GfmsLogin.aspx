@@ -27,7 +27,7 @@
         <legend>अनुभव प्रमाण पत्र प्राप्त करने की प्रक्रिया</legend>
         <div class="row">
             <div class="col-md-12">
-                <div class="fs-5" style="font-family:'Aparajita'; font-weight:800">
+                <div class="fs-5" style="font-family:'Aparajita'; font-weight:bold">
                     <ol class="ul">
                         <li>सर्व प्रथम अपना अनुभव प्रमाण पत्र का दावा बनाए|</li>
                         <li>अनुभव प्रमाण पत्र का दावा बनाने हेतु पूर्व मैंने संचालित सिस्टम की Guest Id, जन्म तिथि, कार्यरत शाला का UDISE Code और कार्यरत र्शैक्षणिक सत्र की जानकारी होना आवश्यक है|</li>
@@ -36,7 +36,7 @@
                         <li>पूर्व मैंने संचालित सिस्टम की Guest Id, जन्म तिथि और कार्यरत र्शैक्षणिक सत्र की जानकारी यहा से पता करे |</li>
                         <li>अनुभव प्रमाण पत्र का दावा यहा से करे |</li>
                         <li>
-जानकारी को अपडेट करने के लिए <a href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx" class="text-primary">Update Information</a></li>
+जानकारी को अपडेट करने के लिए <a href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx" class="text-primary">Update Information</a>पर क्लिक करे</li>
                     </ol>
                 </div>
             </div>

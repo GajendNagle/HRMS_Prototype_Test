@@ -46,7 +46,7 @@
                 <legend>Add Nagar Palika / नगर पालिका जोड़े</legend>
                 <div class="row form-group align-items-end">
                     <div class="col-md-3">
-                        <label>Select State Name /<br />
+                        <label>Select State Name <br />
                             राज्य का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                             <option value="--Select--">--Select--</option>
@@ -84,7 +84,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Division Name /<br />
+                        <label>Select Division Name <br />
                             संभाग का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                             <option value="--Select--">--Select--</option>
@@ -100,7 +100,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select District Name /<br />
+                        <label>Select District Name <br />
                             जिला का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                             <option value="--Select--">--Select--</option>
@@ -157,7 +157,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Block Name /<br />
+                        <label>Select Block Name <br />
                             विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                         <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                             <option value="--Select--">--Select--</option>
@@ -180,21 +180,21 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Nagar Palika Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Nagar Palika Name (In English)<br />नगर पालिका का नाम (अंग्रेजी  में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Nagar Palika Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>नगर पालिका का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Nagar Palika Name (In Hindi)<br />नगर पालिका का नाम (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" autocomplete="off" placeholder="नगर पालिका का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Enter Nagar Palika Code No. /<br />
+                            <label>Enter Nagar Palika Code No.<br />
                                 नगर पालिका कोड संख्या<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -238,21 +238,21 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>State Name /<br />
+                                    <th>State Name <br />
                                         राज्य का नाम</th>
-                                    <th>Division Name /<br />
+                                    <th>Division Name <br />
                                         संभाग का नाम</th>
-                                    <th>District Name /<br />
+                                    <th>District Name <br />
                                         जिला का नाम</th>
-                                    <th>Block Name /<br />
+                                    <th>Block Name <br />
                                         विकासखण्ड का नाम</th>
                                     <th>Nagar Palika Name </th>
                                     <th>नगर पालिका का नाम</th>
-                                    <th>Nagar Palika Code No. /<br />
+                                    <th>Nagar Palika Code No. <br />
                                         नगर पालिका कोड क्र.</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

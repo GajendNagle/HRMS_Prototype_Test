@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>District Name (In Hindi)<br />जिले का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter District Name (In Hindi)<br />जिले का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="जिले का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)

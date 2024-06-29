@@ -48,7 +48,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Division Name /<br />
+                                Select Division Name <br />
                                 संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -67,7 +67,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select District Name /<br />
+                                Select District Name <br />
                                 जिला का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -127,7 +127,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Block Name /<br />
+                                Select Block Name <br />
                                 विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -150,7 +150,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Gram Panchayat Name /<br />
+                                Select Gram Panchayat Name <br />
                                 ग्राम  पंचायत का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -167,21 +167,21 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Village Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Village Name (In English)<br />गाँव का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Village Name " />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>गाँव का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Village Name (In Hindi)<br />गाँव का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" autocomplete="off" placeholder="गाँव का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Village Code No. /<br />
+                                Enter Village Code No. <br />
                                 गाँव कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -189,7 +189,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -225,21 +225,21 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>Division Name /<br />
+                                    <th>Division Name <br />
                                         संभाग का नाम</th>
-                                    <th>District Name /<br />
+                                    <th>District Name <br />
                                         जिला का नाम</th>
-                                    <th>Block Name /<br />
+                                    <th>Block Name <br />
                                         विकासखण्ड का नाम</th>
-                                    <th>Gram Panchayat /<br />
+                                    <th>Gram Panchayat <br />
                                         ग्राम पंचायत का नाम</th>
                                     <th>Village Name</th>
                                     <th>गाँव का नाम</th>
-                                    <th>Village Code No. /<br />
+                                    <th>Village Code No. <br />
                                         गाँव कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

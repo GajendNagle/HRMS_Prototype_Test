@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Name of Division (in Hindi)<br />संभाग का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Name of Division (In Hindi)<br />संभाग का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder="संभाग का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -106,9 +106,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label ms-4">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
-								<small>(Active/InActive)</small><br>
+                                <small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
@@ -146,13 +146,13 @@
                                         सरल क्र.</th>
                                     <th>State Name <br>
                                         राज्य का नाम</th>
-                                    <th> Name of Division  (In English)<br />
+                                    <th> Name of Division (In English)<br />
 विभाग का नाम  (अंग्रेजी में)</th>
                                     <th>Name of Division (in Hindi)<br />
 संभाग का नाम (हिंदी में)</th>
                                     <th>Division Code No. <br>
                                         संभाग कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br>
+                                    <th>Status(Active/InActive)<br>
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

@@ -161,7 +161,7 @@
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label>Enter Block Name (In English)<br />विकासखंड का नाम(अंग्रेजी में)<span style="color: red">*</span></label>
+                        <label>Enter Block Name (In English)<br />विकासखंड का नाम दर्ज करे (अंग्रेजी में)<span style="color: red">*</span></label>
                         <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="Enter Block Name" />
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Block Name (In Hindi)<br />विकासखंड का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Block Name (In Hindi)<br />विकासखंड का नामदर्ज करे (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="विकासखंड का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -264,7 +264,6 @@
             </fieldset>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

@@ -124,13 +124,13 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Parliamentary Name (In English)<br />लोकसभा का नाम दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>Enter Parliamentary Name (In English)<br />लोकसभा का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Parliamentary Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Parliamentary Name (In Hindi)<br />लोकसभा का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Parliamentary Name (In Hindi)<br />लोकसभा का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="लोकसभा का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="col-md-3 ms-4">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -159,7 +159,6 @@
                         </div>
                     </div>
                 </div>
-
             </fieldset>
             <fieldset>
                 <legend>Parliamentary Details / लोकसभा विवरण</legend>
@@ -191,7 +190,7 @@
                                     <th>Parliamentary Name (In Hindi)<br />लोकसभा का नाम(हिंदी में)</th>
                                     <th>Parliamentary Code No.<br />
                                         लोकसभा कोड संख्या</th>
-                                    <th>Status(Active / InActive)<br />
+                                    <th>Status(Active/InActive)<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

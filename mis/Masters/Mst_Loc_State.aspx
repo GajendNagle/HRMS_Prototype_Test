@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Name of the State (in Hindi)<br />राज्य का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Name of the State (In Hindi)<br />राज्य का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="राज्य का नाम दर्ज करे" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -107,7 +107,7 @@
                                 <tr>
                                     <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>Name of the State(In English)<br />
+                                    <th>Name of the State (In English)<br />
 राज्य का नाम (अंग्रेजी में)</th>
                                     <th>Name of the State (in Hindi)<br />
 राज्य का नाम (हिंदी में)</th>

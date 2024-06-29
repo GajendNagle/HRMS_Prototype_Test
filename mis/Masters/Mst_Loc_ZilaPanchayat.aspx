@@ -51,7 +51,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Division Name /<br />
+                            <label>Select Division Name <br />
                                 संभाग का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select District Name /<br />
+                            <label>Select District Name <br />
                                 जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -129,19 +129,19 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Jila Panchayat Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Jila Panchayat Name (In English)<br />जिला पंचायत का नाम(अंग्रेजी  में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Jila Panchayat Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>जिला पंचायत का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Jila Panchayat Name (In Hindi)<br />जिला पंचायत का नाम(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="जिला पंचायत का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Jila Panchayat Code No./<br />
+                            <label>Enter Jila Panchayat Code No.<br />
                                 जिला पंचायत कोड संख्या<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -149,7 +149,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -166,7 +166,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Jila Panchayat Details /<br />
+                <legend>Jila Panchayat Details / 
                     जिला पंचायत विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -186,17 +186,17 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>Division Name /<br />
+                                    <th>Division Name <br />
                                         संभाग का नाम</th>
-                                    <th>District Name /<br />
+                                    <th>District Name <br />
                                         जिला का नाम </th>
                                     <th>Jila Panchayat Name</th>
                                     <th>जिला पंचायत का नाम</th>
-                                    <th>Jila Panchayat Code No. /<br />
+                                    <th>Jila Panchayat Code No.<br />
                                         जिला पंचायत कोड न.</th>
-                                    <th>Status (Active/InActive) /<br />
+                                    <th>Status(Active/InActive)<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

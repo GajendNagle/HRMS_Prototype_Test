@@ -981,7 +981,7 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ConfedicialReportNotes.aspx"><i class="ri-file-info-line"></i>About ACR </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ConfedicialReport.aspx"><i class="ri-file-list-3-line"></i>Employee Apply ACR </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i> Employee ACR Resend Application </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee ACR Resend Application </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ReportingOfficerFill.aspx"><i class="ri-file-list-3-line"></i>ACR Report Fill By Reporting Officer </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AcceptingAuthorityFilled.aspx"><i class="ri-file-list-3-line"></i>ACR Report Reviewing Fill Accepting Authority </a></li>
 
@@ -1698,6 +1698,8 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/AboutGuestFacultyManagement.aspx">About Guest Faculty Management</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx">Guest Faculty Registration</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx">Update Information</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileDetails.aspx">Profile View</a></li>
                                     </ul>
                                 </div>
                             </li>
