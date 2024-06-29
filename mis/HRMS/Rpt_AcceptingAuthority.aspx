@@ -32,6 +32,7 @@
             .page-break {
                 page-break-after: always;
             }
+            
         }
     </style>
 </asp:Content>
@@ -357,7 +358,10 @@
                 <div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="staticBackdropLabel">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                
+                  <div class="modal-header d-print-none">
+      <h3 class="modal-title w-100 text-center" id="staticBackdropLabel"></h3>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
                 <div class="modal-body" id="printArea">
                     <fieldset>
                        

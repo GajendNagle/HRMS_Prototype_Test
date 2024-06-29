@@ -49,13 +49,99 @@ textarea::-webkit-scrollbar {
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Student Registration Print/छात्र पंजीकरण प्रिंट
+                    <h5 class="card-title">Student Registration  Report/छात्र पंजीकरण रिपोर्ट
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
-                        <div id="show" >
+            <fieldset id="show2" runat="server">
+    <legend>Student Registration  Detail Report/छात्र पंजीकरण विवरण रिपोर्ट </legend>
+    <div class="row justify-content-end">
+        <div class="col-md-4 text-end">
+            <div class="form-group">
+                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                <button class="btn btn-info btn-rounded w-55">PDF</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table id="Table1" class="table table-bordered text-center" runat="server">
+                    <thead>
+                        <tr valign="middle" style="white-space: nowrap;">
+                            <th>S.No.<br />
+                                क्र.सं</th>
+                            
+                          <%--  <th>Financial Year<br />
+                                वित्तीय वर्ष</th>--%>
+                            <th>Student Name<br />
+                                छात्र का नाम</th>
+                            <th>Gender<br />
+                                लिंग </th>
+                            <th>Date Of Birth <br />
+                                जन्म की तारीख</th>
+                            <th>Category<br />
+वर्ग
+                               </th>
+                            <th>State<br />
+                                राज्य </th>
+                            <th>Division<br />
+                                संभाग </th>
+                            <th>District<br />
+                                जिला </th>
+                            <th>Block<br />
+                                ब्लॉक </th>
+                            <th>View Student Application<br />
+    छात्र आवेदन देखें</th>
+                            
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr valign="middle">
+                            <td>1</td>
+                          
+                            <td>Riya Gupta</td>
+                            <td>Female</td>
+                            <td>7/11/2002</td>
+                            <td>OBC</td>
+                            <td>Madhya Pradesh</td>
+                            <td>Bhopal</td>
+                           
+                            <td>Bhopal</td> 
+                            <td>Hoshur</td>
+                              <td>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+      </button>
+
+  </td>
+                          
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</fieldset>
+                         <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-header" style="background-color: var(--vz-primary);">
+                  <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                  <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Student Registration Print/छात्र पंजीकरण प्रिंट</h3>
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
                 <fieldset>
                     <legend>General Information/सामान्य जानकारी</legend>
                     <div class="row align-items-end">
@@ -726,7 +812,7 @@ Berasia"
 
                 </fieldset>
             </div>
-            <div id="show1">
+            <%--<div id="show1">
                 
                 <fieldset>
                     <legend>Document / दस्तावेज़</legend>
@@ -841,9 +927,11 @@ Berasia"
      <button type="button" class="btn btn-primary mr-2" onclick="printModalContent('staticBackdrop'); ">Print</button>
      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
  </div>
-        </div>
+        </div>--%>
             </div>
        </div>
+                             </div>
+            </div></div>
         
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">

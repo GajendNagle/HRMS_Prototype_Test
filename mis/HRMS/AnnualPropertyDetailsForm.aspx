@@ -491,12 +491,13 @@
                                     संपत्ति से वार्षिक आय</th>
                                 <th>Accusation<br />
                                     अभियुक्ति</th>
-                                  <th>Action<br />
-      कार्रवाई</th>
+                                
 
                             </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody>
+
+                        </tbody>
 
                     </table>
                 </div>
@@ -625,18 +626,10 @@
              let Gradei = document.getElementById("txtPurchase").value;
              let Gradej = document.getElementById("monumber").value;
              let Gradek = document.getElementById("address").value;
-             let Gradel = document.getElementById("address").value;
-
-
-
-
-
-
-
+         
              // Get the table and insert a new row at the end
              let table = document.getElementById('Table1');
              let newRow = table.getElementsByTagName('tbody')[0].insertRow();
-
              // Insert data into cells of the new row
              newRow.insertCell(0).innerHTML = table.rows.length - 1;
              newRow.insertCell(1).innerHTML = name;

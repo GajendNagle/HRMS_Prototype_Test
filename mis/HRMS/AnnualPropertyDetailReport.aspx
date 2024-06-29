@@ -6,8 +6,8 @@
 
 
     @page {
-        size: A4;
-        margin: 10mm;
+      
+
     }
 
     body {
@@ -259,9 +259,9 @@
                                         <h4><strong>Annual Property Detail Report For Financial Year 2024</strong></h4>
                                         <h4><strong>जिला:- भोपल</strong></h4>
                                     </div>
-                                    <div class="col-sm-2">
+                                  <%--  <div class="col-sm-2">
                                         <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
-                                    </div>
+                                    </div>--%>
                                 </div>
                                 <hr style="height: 3px; border-width: 10px; color: black; background-color: black" />
                                 <div class="row">
@@ -292,13 +292,14 @@
                                     </div>
                                 </div>
 
+
                                 
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="table-responsive">
                                             <table id="Table2" class="table table-bordered  text-center " runat="server">
                                                 <thead>
-                                                    <tr valign="middle">
+                                                    <tr>
                                                         <th rowspan="2">S.No.<br />
                                                             सरल.क्र </th>
                                                         <th rowspan="2">उस जिले, उप
@@ -319,7 +320,7 @@
                                                             नाम पर धारित है और उसका
                                                             <br />
                                                             शासकीय कर्मचारी से क्या संबंध है</th>
-                                                        <th rowspan="2">उसे किस प्रकार अर्जित किया गया |<br />
+                                                        <th rowspan="2">उसे किस प्रकार अर्जित किया गया<br />
                                                             रसीद पट्टा ,बंधक विरासत, भेंट या अन्य  किसी प्रकार से तथा
                                                             <br />
                                                             अर्जन की तारीख  और जिससे अर्जित की गई हो उसका नाम तथा ब्यौर
@@ -337,7 +338,7 @@
                                                         <td>भूमि (आवासीय)
 प्लाट एवं कृषि भूमि</td>
                                                     </tr>
-                                                    <tr>
+                                                <%--    <tr>
                                                         <td></td>
                                                         <th>1</th>
                                                         <th>2</th>
@@ -350,10 +351,10 @@
 
 
 
-                                                    </tr>
+                                                    </tr>--%>
                                                     <tr valign="middle">
                                                         <td>1</td>
-                                                        <th>जिले :-भोपाल,<br />
+                                                        <th class="w-xl">जिले :-भोपाल,<br />
                                                             संभाग :-भोपाल,<br />
                                                             विकासखंड :-आगर,<br />
                                                             ग्राम पंचायत :-बगियाटोला,<br />
@@ -438,7 +439,7 @@
                                         <p>
                                             <h6><span class="text-danger">टिप्पणी:-</span>मध्यप्रदशे शासकीय सवेक (आचरण) नियम, 1959 के नियम 18(3) के अधीन प्रथम श्रेणी, द्वितीय श्रेणी  तथा
                                   
-                                                तृतीय  श्रेणी  के प्रत्येक सदस्य से यह अपेक्षित है कि वह सवे  में पहली नियुक्ति के 
+                                                तृतीय  श्रेणी  के प्रत्येक सदस्य से यह अपेक्षित है कि वह सेवा  में पहली नियुक्ति के 
 समय और उसके बाद प्रत्यके बारह
                                   
                                                 महीने की अवधि के पश्चात् यह  घोषणा-पत्र भर कर प्रस्तुत करें और उसमें वह उनके स्वामित्व की तथा उसके द्वारा

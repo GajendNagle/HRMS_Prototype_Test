@@ -36,7 +36,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title"> APRMS information/Aprms जानकारी</h4>
+                            <h4 class="card-title"> APRMS Information/APRMS की जानकारी</h4>
                         </div>
                     </div>
                 </div>
