@@ -1173,7 +1173,7 @@
                                             </tr>
 
 
-                                            <tr valign="middle">
+                                           <%-- <tr valign="middle">
                                                 <td>1</td>
                                                 <td>पहली कक्षा</td>
                                                 <td>हिंदी</td>
@@ -1254,9 +1254,9 @@
                                                 <td>8</td>
                                                 <td>2</td>
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>5
+                                                <td>1
                                                 </td>
                                                 <td>पाचंवी कक्षा
                                                 </td>
@@ -1276,7 +1276,7 @@
                                                 <td>12</td>
 
                                             </tr>
-                                            <tr valign="middle">
+                                          <%--  <tr valign="middle">
                                                 <td>6
                                                 </td>
                                                 <td>छटवी कक्षा
@@ -1314,9 +1314,9 @@
                                                 <td>8</td>
                                                 <td>2</td>
                                                 <td>10</td>
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>8
+                                                <td>2
                                                 </td>
                                                 <td>आठवी कक्षा
                                                 </td>
@@ -1336,7 +1336,7 @@
                                                 <td>8</td>
 
                                             </tr>
-                                            <tr valign="middle">
+                                           <%-- <tr valign="middle">
                                                 <td>9
                                                 </td>
                                                 <td>नव्वी कक्षा
@@ -1357,9 +1357,9 @@
                                                 <td>2</td>
 
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>10
+                                                <td>3
                                                 </td>
                                                 <td>दसवी कक्षा
                                                 </td>
@@ -1379,7 +1379,7 @@
                                                 <td>12</td>
 
                                             </tr>
-                                            <tr valign="middle">
+                                          <%--  <tr valign="middle">
                                                 <td>11
                                                 </td>
                                                 <td>ग्यारवी कक्षा
@@ -1399,9 +1399,9 @@
                                                 <td>5</td>
                                                 <td>11</td>
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>12
+                                                <td>4
                                                 </td>
                                                 <td>बरवी कक्षा
                                                 </td>

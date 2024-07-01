@@ -109,7 +109,7 @@
                                         <th>Status<br />
                                             स्टेटस</th>
 
-                                        <th>View Employee Application & Edit
+                                        <th>View Employee Application & Update
                                             <br />
                                             कर्मचारी आवेदन देखें और संपादित करें</th>
                                         <th>Resend ACR Report<br />
@@ -713,7 +713,7 @@
                                             </tr>
 
 
-                                            <tr valign="middle">
+                                           <%-- <tr valign="middle">
                                                 <td>1</td>
                                                 <td><input class="form-control" placeholder="पहली कक्षा"></td>
                                                 <td><input class="form-control" placeholder="हिंदी"></td>
@@ -791,9 +791,9 @@
  <td><input class="form-control" placeholder="2"></td>
  <td><input class="form-control" placeholder="10"></td>
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>5
+                                                <td>1
                                                 </td>
                                                <td><input class="form-control" placeholder="पाचंवी  कक्षा">
  </td>
@@ -813,7 +813,7 @@
 
 
                                             </tr>
-                                            <tr valign="middle">
+                                        <%--    <tr valign="middle">
                                                 <td>6
                                                 </td>
                                                <td><input class="form-control" placeholder="छटवी कक्षा">
@@ -852,9 +852,11 @@
  <td><input class="form-control" placeholder="2"></td>
  <td><input class="form-control" placeholder="10"></td>
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>8
+                                                <td>2
+
+
                                                 </td>
                                                <td><input class="form-control" placeholder="आठवी कक्षा">
  </td>
@@ -873,7 +875,7 @@
  <td><input class="form-control" placeholder="10"></td>
 
                                             </tr>
-                                            <tr valign="middle">
+                                            <%--<tr valign="middle">
                                                 <td>9
                                                 </td>
                                                 <td><input class="form-control" placeholder="नव्वी  कक्षा">
@@ -894,9 +896,9 @@
 
 
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>10
+                                                <td>3
                                                 </td>
                                                <td><input class="form-control" placeholder="दसवी  कक्षा">
  </td>
@@ -916,7 +918,7 @@
 
 
                                             </tr>
-                                            <tr valign="middle">
+                                            <%--<tr valign="middle">
                                                 <td>11
                                                 </td>
                                                 <td><input class="form-control" placeholder="ग्यारवी कक्षा">
@@ -936,9 +938,9 @@
  <td><input class="form-control" placeholder="10"></td>
 
 
-                                            </tr>
+                                            </tr>--%>
                                             <tr valign="middle">
-                                                <td>12
+                                                <td>4
                                                 </td>
                                                 <td><input class="form-control" placeholder="बरवी कक्षा">
  </td>
