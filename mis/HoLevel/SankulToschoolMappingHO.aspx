@@ -214,9 +214,9 @@
                         </div>
                         <div class="row align-items-end">
                             <div class="col-md-12">
-                                <div class="table-responsive">
+                                <div class="table-responsive p-1">
                                     <table class="table table-bordered">
-                                        <tbody>
+                                        <thead class="nowrap">
                                             <tr>
                                                 <th colspan="9">School 
                                                     <br />
@@ -229,14 +229,14 @@
                                             <tr>
                                                 <th>Sr. No
                                                     <br />
-                                                    क्रमांक</th>
+                                                    सरल क्रमांक</th>
                                                 <th>View Request Detail 
                                                     <br />
                                                     अनुरोध विवरण देखें</th>
                                                 <th>Action
                                                     <br />
                                                     कार्रवाई</th>
-                                                <th>Effective Date</th>
+                                                <th>Effective Date <br /> प्रभावी तिथि</th>
                                                 <th>UDISE Code
                                                     <br />
                                                     UDISE कोड</th>
@@ -254,7 +254,7 @@
                                                     स्कूल श्रेणी विवरण</th>
                                                 <th>Sr. No
                                                     <br />
-                                                    क्रमांक</th>
+                                                    सरल क्रमांक</th>
                                                 <th>UDISE Code
                                                     <br />
                                                     UDISE कोड</th>
@@ -274,6 +274,8 @@
                                                     <br />
                                                     मर्ज स्थिति</th>
                                             </tr>
+                                        </thead>
+                                        <tbody>
                                             <tr>
 
                                                 <td>1</td>
@@ -306,7 +308,7 @@
 
                                             <tr>
 
-                                                <td>1</td>
+                                                <td>2</td>
                                                 <td>
                                                     <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
                                                 </td>
@@ -334,7 +336,7 @@
                                             </tr>
                                             <tr>
 
-                                                <td>1</td>
+                                                <td>3</td>
                                                 <td>
                                                     <asp:LinkButton ID="LinkButton5" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
                                                 </td>
@@ -424,17 +426,15 @@
                                 </div>
                             </div>
                         </div>
-                    </fieldset>
-                    <div class="row justify-content-center" runat="server" id="divbtn" visible="false">
-                        <div class="col-md-12">
-                            <div class="form-group ">
+
+                        <div class="row " runat="server" id="divbtn" visible="false">
+                            <hr />
+                            <div class="col-md-12">
                                 <button type="button" class=" btn w-lg btn-outline-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">School Mapping</button>
-
-
                                 <button type="button" class="btn w-lg btn-outline-danger btn-rounded" onclick="openBootstrapModal()">Reject Request</button>
                             </div>
                         </div>
-                    </div>
+                    </fieldset>
                     <div class="modal" tabindex="-1" role="dialog" id="OTPModal">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -1133,7 +1133,7 @@
                                     स्कूल बैंक सूचना</legend>
 
                                 <div class="row align-items-end">
-                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="col-md-6 col-lg-4 ">
                                         <div class="form-group">
                                             <label class="font-bold">
                                                 School Bank Account Name
@@ -1143,7 +1143,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="col-md-6 col-lg-4 ">
                                         <div class="form-group">
                                             <label class="font-bold">
                                                 School Bank Account Number
@@ -1152,7 +1152,7 @@
                                             <asp:TextBox ID="TextBox1" Placeholder="Enter Account Number" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-4 col-xl-3 ">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="form-group">
                                             <label class="font-bold">
                                                 IFSC Code

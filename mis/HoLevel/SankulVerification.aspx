@@ -59,7 +59,7 @@
                 <legend>Sankul Verification / संकुल सत्यापन</legend>
 
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                         <label class="font-bold">
                             Select Division Name<br />
                             संभाग का नाम चुनें</label>
@@ -76,7 +76,7 @@
                             <asp:ListItem>Ujjain</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                         <label class="font-bold">
                             Select District Name<br />
                             जिले का नाम चुनें</label>
@@ -134,7 +134,7 @@
                             <asp:ListItem>Ujjain</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                         <label class="font-bold">
                             Select Block Name<br />
                             ब्लॉक का नाम चुनें</label>
@@ -169,7 +169,7 @@
                             </asp:DropDownList>
                         </div>
                     </div>--%>
-                    <%--<div class="col-md-3">
+                    <%--<div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                             <div class="form-group">
                                 <label class="font-weight-bold">Sankul UDISE Code</label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
@@ -182,7 +182,7 @@
                                 </asp:DropDownList>
                             </div>
                         </div>--%>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
 
                         <label class="font-bold">
                             UDISE Code<br />
@@ -252,12 +252,12 @@
                                     <th>Incharge Name<br />
                                         प्रभारी का नाम</th>
                                     <th>Incharge Number<br />
-                                        प्रभारी क्रमांक</th>
+                                        प्रभारी का नंबर</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn view-but" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2" OnClientClick="return false;"><i class="fas fa-eye"></i></asp:LinkButton>
                                     </td>
                                     <td scope="col">
                                         <input type="checkbox" />
@@ -539,7 +539,7 @@
 
                         <div class="row align-items-end">
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         School UDISE Code<br />
@@ -547,7 +547,7 @@
                                     <asp:TextBox ID="ir" runat="server" CssClass="form-control" ReadOnly="true" placeholder="Enter UDISE Code"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Division<br />
@@ -560,7 +560,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">Select District
                                         <br />
@@ -573,7 +573,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Block<br />
@@ -587,10 +587,7 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Location<br />
@@ -603,7 +600,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">Select Assembly 
                                         <br />
@@ -615,7 +612,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Parliamentary<br />
@@ -627,7 +624,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">Select Habitation 
                                         <br />
@@ -639,10 +636,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Board Type<br />
@@ -657,7 +651,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select School Type<br />
@@ -670,7 +664,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select School Category<br />
@@ -684,7 +678,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Lowest Class<br />
@@ -711,9 +705,7 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Highest Class<br />
@@ -726,7 +718,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Management Group<br />
@@ -742,7 +734,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select School Management<br />
@@ -755,7 +747,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select In-Charge Type<br />
@@ -769,11 +761,7 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="row align-items-end">
-
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         IN-Charge Unique Id<br />
@@ -781,7 +769,7 @@
                                     <asp:TextBox runat="server" placeholder="Enter IN-Charge Unique ID" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         IN-Charge Name<br />
@@ -790,7 +778,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         IN-Charge Mobile Number<br />
@@ -798,7 +786,7 @@
                                     <asp:TextBox runat="server" placeholder="Enter IN-Charge Mobile Number" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Year of Establishment<br />
@@ -819,11 +807,7 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="row align-items-end">
-
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">Select Minority Community  <br /> अल्पसंख्यक समुदाय का चयन करें<span style="color: red;">*</span></label>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
@@ -836,7 +820,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select School Medium<br />
@@ -853,13 +837,13 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">School Name (In English)<span style="color: red;">*</span></label>
                                     <asp:TextBox runat="server" Placeholder="Enter School Name (In English)" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">स्कूल का नाम (हिंदी में)<span style="color: red;"> *</span></label>
                                     <asp:TextBox runat="server" Placeholder="स्कूल का नाम दर्ज करे|" CssClass="form-control" ReadOnly="true"></asp:TextBox>
@@ -871,7 +855,7 @@
                     <fieldset>
                         <legend>School Address Information / स्कूल के पते की जानकारी</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         School Address (Line 1)<br />
@@ -879,7 +863,7 @@
                                     <asp:TextBox runat="server" Placeholder="Enter School Address (Line 1)" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         School Address (Line 2)<br />
@@ -888,7 +872,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Pin Code<br />
@@ -896,7 +880,7 @@
                                     <asp:TextBox runat="server" Placeholder="Enter Pin Code" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Landline Number<br />
@@ -905,11 +889,7 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="row align-items-end">
-
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Email ID<br />
@@ -917,7 +897,7 @@
                                     <asp:TextBox runat="server" Placeholder="Enter Email ID" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         School Website<br />
@@ -926,7 +906,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select School Shift<br />
@@ -940,7 +920,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Is School Residential<br />
@@ -952,11 +932,8 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Special School<br />
@@ -976,7 +953,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select School Status<br />
@@ -990,7 +967,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         Select Hostel Attach<br />
@@ -1008,7 +985,7 @@
                         <legend>School Bank Information / स्कूल बैंक सूचना</legend>
 
                         <div class="row align-items-end">
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4  mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         School Bank Account Name<br />
@@ -1017,7 +994,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4  mb-2">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         School Bank Account Number<br />
@@ -1025,7 +1002,7 @@
                                     <asp:TextBox ID="TextBox1" Placeholder="Enter Account Number" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-4 ">
+                            <div class="col-md-6 col-lg-4  mb-2 ">
                                 <div class="form-group">
                                     <label class="font-bold">
                                         IFSC Code<br />
