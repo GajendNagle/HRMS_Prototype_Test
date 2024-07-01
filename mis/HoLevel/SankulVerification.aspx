@@ -2,10 +2,21 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        .view-but {
+            font-weight: 700;
+            color: #673ab7;
+            text-decoration: underline;
+        }
+
         .alert-success {
             color: white !important;
             background-color: #069570 !important;
             border-color: #b3edde !important;
+        }
+        @media (min-width: 992px) {
+            .modal-lg, .modal-xl, .modal-xxl {
+                max-width: 80%
+            }
         }
     </style>
 </asp:Content>
@@ -184,9 +195,9 @@
                         <div class="form-group ">
 
 
-                            <asp:Button ID="btnSubmit" CssClass="btn w-lg btn-success btn-rounded " OnClick="View1_Click" runat="server" Text="Search" />
+                            <asp:Button ID="btnSubmit" CssClass="btn w-lg btn-outline-success btn-rounded " OnClick="View1_Click" runat="server" Text="Search" />
 
-                            <asp:Button ID="Button2" CssClass="btn w-lg btn-danger btn-rounded " runat="server" Text="Clear" />
+                            <asp:Button ID="Button2" CssClass="btn w-lg btn-outline-danger btn-rounded " runat="server" Text="Clear" />
                         </div>
                     </div>
                 </div>
@@ -198,8 +209,8 @@
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                    <button class="btn btn-outline-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-outline-info btn-rounded w-55">PDF</button>
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -276,10 +287,10 @@
                             <div class="col-md-12" runat="server" id="divbtn" visible="false">
                                 <hr />
                                 <div class="form-group">
-                                    <button type="button" class="btn w-lg btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Create Sankul</button>
+                                    <button type="button" class="btn w-lg btn-outline-success btn-rounded" data-bs-toggle="modal" data-bs-target="#OTPModal">Create Sankul</button>
 
 
-                                    <button type="button" class="btn w-lg btn-danger btn-rounded " onclick="openBootstrapModal()">Reject Request</button>
+                                    <button type="button" class="btn w-lg btn-outline-danger btn-rounded " onclick="openBootstrapModal()">Reject Request</button>
                                 </div>
                             </div>
 
@@ -303,7 +314,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-6 mt-3">
                                             <label>
-                                                Order Document Type<br />
+                                                Order Document Type
+                                                <br />
                                                 ऑर्डर दस्तावेज़ प्रकार</label>
                                             <asp:TextBox ID="TextBox3" placeholder="Order Letter" ReadOnly="true" runat="server" CssClass="form-control"></asp:TextBox>
                                         </div>
@@ -352,7 +364,7 @@
                                                 <div class="form-group">
                                                     <label>
                                                         OTP (One Time Password)<br />
-                                                        ओटीपी (वन टाइम पासवर्ड)</label>
+                                                        OTP (वन टाइम पासवर्ड)</label>
                                                     <input type="text" class="form-control" />
                                                 </div>
                                             </div>
@@ -515,7 +527,7 @@
     <!--for UDISE CODE CLICK Add the Modal -->
     <!-- sample modal content -->
     <div class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog modal-xxl" style="width: 100%;">
+        <div class="modal-dialog modal-xxl" style="max-width: 80%;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="myLargeModalLabel">School Details / स्कूल विवरण</h4>
@@ -550,7 +562,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Select District/ जिले का चयन करें<span style="color: red;"> *</span></label>
+                                    <label class="font-bold">Select District
+                                        <br />
+                                        जिले का चयन करें<span style="color: red;"> *</span></label>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                         <asp:ListItem>-Select-</asp:ListItem>
                                         <asp:ListItem>1-Bhopal</asp:ListItem>
@@ -591,7 +605,9 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Select Assembly /विधानसभा का चयन करें <span style="color: red;">*</span></label>
+                                    <label class="font-bold">Select Assembly 
+                                        <br />
+                                        विधानसभा का चयन करें <span style="color: red;">*</span></label>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                         <asp:ListItem>-Select-</asp:ListItem>
                                         <asp:ListItem>Govindpura</asp:ListItem>
@@ -613,7 +629,9 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Select Habitation /आवास का चयन करें </label>
+                                    <label class="font-bold">Select Habitation 
+                                        <br />
+                                        आवास का चयन करें </label>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                         <asp:ListItem>-Select-</asp:ListItem>
                                         <asp:ListItem>Berasia</asp:ListItem>
@@ -807,7 +825,7 @@
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="font-bold">Select Minority Community /अल्पसंख्यक समुदाय का चयन करें<span style="color: red;">*</span></label>
+                                    <label class="font-bold">Select Minority Community  <br /> अल्पसंख्यक समुदाय का चयन करें<span style="color: red;">*</span></label>
                                     <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                         <asp:ListItem>-Select-</asp:ListItem>
                                         <asp:ListItem>1-Muslim</asp:ListItem>
@@ -1020,21 +1038,21 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn w-lg btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn w-lg btn-outline-danger" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
 
             <!-- /.modal-content -->
-
-            <!-- /.modal-dialog -->
-
         </div>
-        <!-- /.modal -->
-        <script>
-            // Function to open the Bootstrap modal
-            function openBootstrapModal() {
-                $('#bootstrapModal').modal('show');
-            }
-        </script>
+        <!-- /.modal-dialog -->
+
+    </div>
+    <!-- /.modal -->
+    <script>
+        // Function to open the Bootstrap modal
+        function openBootstrapModal() {
+            $('#bootstrapModal').modal('show');
+        }
+    </script>
 </asp:Content>
 
