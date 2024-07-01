@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </nav>--%>
-            <br />Review And Filling Of ACR Report By The Accepting Authority 
+            <br />
 
             <fieldset id="show2" runat="server">
                 <legend>Filled By Review Accepting Authority Officer/ समीक्षा स्वीकार करने वाले प्राधिकारी अधिकारी द्वारा  भरना  जाए</legend>

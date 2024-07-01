@@ -6,6 +6,10 @@
         .a {
             color: #0000ff;
         }
+        th{
+            white-space:nowrap;
+        }
+       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -114,22 +118,22 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                                 <label>
-            District
+                            <label>
+                                District<br />ज़िला
           
-<span class="fa-pull-right" style="color: red">*</span>
-        </label>
-        <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="txtUniqueID" Display="Dynamic"></asp:RequiredFieldValidator>
+                                <span class="fa-pull-right" style="color: red">*</span>
+                            </label>
+                            <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="txtUniqueID" Display="Dynamic"></asp:RequiredFieldValidator>
 
-        <asp:DropDownList runat="server" ID="txtUniqueID" class="form-control select2" autocomplete="off" AutoPostBack="true" OnSelectedIndexChanged="txtUniqueID_SelectedIndexChanged" >
-            <asp:ListItem Value="0">--Select--</asp:ListItem>
-            <asp:ListItem>All</asp:ListItem>
-            <asp:ListItem>Bhopal</asp:ListItem>
-            <asp:ListItem>Indore</asp:ListItem>
-            <asp:ListItem>Sagar</asp:ListItem>
-            <asp:ListItem>Sehore</asp:ListItem>
+                            <asp:DropDownList runat="server" ID="txtUniqueID" class="form-control select2" autocomplete="off" AutoPostBack="true" OnSelectedIndexChanged="txtUniqueID_SelectedIndexChanged">
+                                <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                <asp:ListItem>All</asp:ListItem>
+                                <asp:ListItem>Bhopal</asp:ListItem>
+                                <asp:ListItem>Indore</asp:ListItem>
+                                <asp:ListItem>Sagar</asp:ListItem>
+                                <asp:ListItem>Sehore</asp:ListItem>
 
-        </asp:DropDownList>
+                            </asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -164,707 +168,20 @@
                         </div>
                     </div>
                     <hr />
-                    <div class="col-md-3 ">
+                    <div class="col-md-12 ">
                         <div class="form-group ">
 
-                           <asp:Button runat="server" type="button" class="Alert-Save2 btn w-lg btn-success btn-border" Text="Search" OnClick="Unnamed_Click" />
+                            <asp:Button runat="server" type="button" class="Alert-Save2 btn w-lg btn-success btn-border" Text="Search" OnClick="Unnamed_Click" />
+                             <a href="Trn_HoAprDistWiseReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
 
                         </div>
                     </div>
 
                 </div>
             </fieldset>
-                 <fieldset runat="server" visible="false" id="show">
-         <legend>Details</legend>
+            <fieldset runat="server" visible="false" id="show">
+                <legend>Details/विवरण</legend>
 
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-12">
-                 <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
-                     <thead>
-                         <tr valign="middle" class="text-white">
-                             <th>Sr.No</th>
-                             <th>District Name</th>
-
-                             <th>Financial Year</th>
-                             <th>Total Numbers</th>
-
-                             <%--<th>प्रिंट</th--%>
-                         </tr>
-                     </thead>
-                     <tbody>
-                         <tr valign="middle">
-                             <td>1</td>
-                             <td>Bhopal</td>
-                             <td>2023-2024</td>
-                             <td>
-                                 <asp:Button runat="server" Text="4" OnClick="btn1_Click" ID="btn1" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-
-                         </tr>
-                         <tr valign="middle">
-                             <td>2</td>
-                             <td>Indore</td>
-                             <td>2023-2024</td>
-                             <td>
-                                 <asp:Button runat="server" Text="6" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-white  text-info  " /></td>
-
-                         </tr>
-                         <tr valign="middle">
-                             <td>3</td>
-                             <td>Sagar</td>
-                             <td>2023-2024</td>
-                             <td>
-                                 <asp:Button runat="server" Text="6" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-                         </tr>
-                         <tr valign="middle">
-                             <td>4</td>
-                             <td>Sehore</td>
-                             <td>2023-2024</td>
-                             <td>
-                                 <asp:Button runat="server" Text="6" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-
-
-
-                         </tr>
-                     </tbody>
-                 </table>
-             </div>
-         </div>
-
-     </fieldset>
-     <fieldset runat="server" visible="false" id="show1">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <div class="table-responsive">
-                         <table id="Table6" class="table table-bordered  text-center" runat="server">
-                             <thead>
-                                 <tr valign="middle" class="text-white">
-                                     <th>Sr.No</th>
-                                     <th>District Name</th>
-
-                                     <th>Financial Year</th>
-                                     <th>Total Numbers</th>
-
-                                     <%--<th>प्रिंट</th--%>
-                                 </tr>
-                             </thead>
-                             <tbody>
-                                 <tr valign="middle">
-                                     <td>1</td>
-                                     <td>Bhopal</td>
-                                     <td>2023-2024</td>
-                                     <td>
-                                         <asp:Button runat="server" Text="4" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-
-
-
-                                 </tr>
-
-                             </tbody>
-
-                         </table>
-                     </div>
-                 </div>
-             </div>
-    
-
-     </fieldset>
-     <fieldset runat="server" visible="false" id="show2">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput9" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-
-             </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table7" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>Sr.No</th>
-                                 <th>District Name</th>
-
-                                 <th>Financial Year</th>
-                                 <th>Total Numbers</th>
-
-
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr valign="middle">
-                                 <td>1</td>
-                                 <td>Indore</td>
-                                 <td>2023-2024</td>
-                                 <td>
-                                     <asp:Button runat="server" Text="6" OnClick="Button5_Click" ID="Button5" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-                             </tr>
-
-
-
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-         
-
-     </fieldset>
-     <fieldset runat="server" visible="false" id="show3">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput11" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-              </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table8" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>Sr.No</th>
-                                 <th>District Name</th>
-
-                                 <th>Financial Year</th>
-                                 <th>Total Numbers</th>
-
-                                 <%--<th>प्रिंट</th--%>
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr valign="middle">
-                                 <td>1</td>
-                                 <td>Sagar</td>
-                                 <td>2023-2024</td>
-                                 <td>
-                                     <asp:Button runat="server" Text="6" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-                             </tr>
-
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-     </fieldset>
-     <fieldset runat="server" visible="false" id="show4">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput10" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-              </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table9" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>S.No</th>
-                                 <th>District Name</th>
-                                 <th>Financial Year</th>
-                                 <th>Total Numbers</th>
-
-                             </tr>
-                         </thead>
-                         <tbody>
-
-                             <tr valign="middle">
-                                 <td>1</td>
-                                 <td>Sehore</td>
-                                 <td>2023-2024</td>
-                                 <td>
-                                     <asp:Button runat="server" Text="6" OnClick="Button7_Click" ID="Button7" BorderStyle="None" CssClass="bg-white  text-info" /></td>
-
-                             </tr>
-
-
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-      
-
-     </fieldset>
-
-     <fieldset runat="server" id="Fieldset1" visible="false">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-              </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>Sr.No</th>
-                                 <th>Employee Unique ID</th>
-                                 <th>Sankul Code </th>
-                                 <th>Financial Year</th>
-
-
-
-
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr valign="middle">
-                                 <td>1</td>
-
-                                 <td>AC4453/Ram  Thakur </td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-
-                                 <td>2023-2024</td>
-
-
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>2</td>
-                                 <td>BI4453/Siya Gupta</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>3</td>
-
-                                 <td>AC4659/Gopal Varma</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-
-                                 <td>2023-2024</td>
-
-
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>4</td>
-
-                                 <td>BI4563/Nidhi Mishra</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-
-
-
-
-
-                             </tr>
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-      
-
-     </fieldset>
-
-     <fieldset runat="server" id="Fieldset2" visible="false">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput6" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-              </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table5" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>Sr.No</th>
-                                 <th>Employee Unique ID</th>
-                                 <th>Sankul Code </th>
-                                 <th>Financial Year</th>
-
-
-
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr valign="middle">
-                                 <td>1</td>
-                                 <td>BI4453/Kamlesh Soni</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>2</td>
-
-                                 <td>AC4659/Umashankar Agrawal</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-
-                                 <td>2023-2024</td>
-
-
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>3</td>
-
-                                 <td>BI4563/Abhilasha Sahu</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-
-                             <tr valign="middle">
-                                 <td>4</td>
-
-                                 <td>BI5593/Gayatri Nagwanshi</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-                             <tr valign="middle">
-                                 <td>5</td>
-
-                                 <td>Bk8573/Mohammad Rafi</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-                                 <td>2023-2024</td>
-                             </tr>
-                             <tr valign="middle">
-                                 <td>6</td>
-
-                                 <td>BY8573/Neeraj Saxena</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-
-
-
-
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-  
-     </fieldset>
-     <fieldset runat="server" id="Fieldset3" visible="false">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput7" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-              </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table3" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>Sr.No</th>
-                                 <th>Employee Unique ID</th>
-                                 <th>Sankul Code </th>
-                                 <th>Financial Year</th>
-
-
-                                 <%--<th>प्रिंट</th--%>
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr valign="middle">
-                                 <td>1</td>
-                                 <td>BI4453/Varsha Palsule</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>2</td>
-
-                                 <td>AC4659/Suman Kant Jain</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-
-                                 <td>2023-2024</td>
-
-
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>3</td>
-
-                                 <td>BI4563/Dilip Raghuwanshi</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-
-                             <tr valign="middle">
-                                 <td>4</td>
-
-                                 <td>BI5593/Dilip Raghuwanshi</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-                             <tr valign="middle">
-                                 <td>5</td>
-
-                                 <td>Bk8573/SWATANTRA TRIPATHI </td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-                                 <td>2023-2024</td>
-                             </tr>
-                             <tr valign="middle">
-                                 <td>6</td>
-
-                                 <td>BY8573/Ramakant Sharma</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-       
-     </fieldset>
-     <fieldset runat="server" id="Fieldset4" visible="false">
-         <legend>Details</legend>
-
-         <div class="row justify-content-end">
-             <div class="col-md-4 text-end">
-                 <div class="form-group">
-                     <button class="btn btn-info btn-rounded w-55">Excel</button>
-                     <button class="btn btn-info btn-rounded w-55">PDF</button>
-                 </div>
-             </div>
-             <div class="col-md-3">
-                 <div class="form-group">
-                     <input type="text" id="searchInput8" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                 </div>
-             </div>
-              </div>
-             <div class="row">
-                 <div class="col-md-12">
-                     <table id="Table4" class="table table-bordered table-responsive-lg text-center" runat="server">
-                         <thead>
-                             <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                 <th>Sr.No</th>
-                                 <th>Employee Unique ID</th>
-                                 <th>Sankul Code </th>
-                                 <th>Financial Year</th>
-
-
-
-                                 <%--<th>प्रिंट</th--%>
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr valign="middle">
-                                 <td>1</td>
-                                 <td>BI4453/Shail Gupta </td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>2</td>
-
-                                 <td>AC4659/PRIYANKA MEHRA </td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-
-                                 <td>2023-2024</td>
-
-
-
-
-                             </tr>
-                             <tr valign="middle">
-                                 <td>3</td>
-
-                                 <td>BI4563/Veerendra Kumar Jain </td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-
-                             <tr valign="middle">
-                                 <td>4</td>
-
-                                 <td>BI5593/Antar Singh Baror</td>
-                                 <td>GOVT. HSS SHYAMPUR-23010804504	</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-                             <tr valign="middle">
-                                 <td>5</td>
-
-                                 <td>Bk8573/Ram Singh Thakur </td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-                                 <td>2023-2024</td>
-                             </tr>
-                             <tr valign="middle">
-                                 <td>6</td>
-
-                                 <td>BY8573/Jagdeesh   Sahu</td>
-                                 <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
-                                 <td>2023-2024</td>
-                             </tr>
-
-                         </tbody>
-
-                     </table>
-                 </div>
-             </div>
-        
-
-     </fieldset>
-         <%--   <fieldset id="FS_Details" style="display: none">
-                <legend>Details /विवरण </legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-
-                            <table class="table table-bordered" id="mainTable">
-                                <thead>
-                                    <tr>
-                                        <th>Sr. No.<br />
-                                            क्रमांक</th>
-                                        <th>District<br />
-                                            ज़िला</th>
-                                        <th>Total Employees </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-toggle="modal" data-target="#districtModal">
-                                        <td>1</td>
-                                        <td>Bhopal</td>
-                                        <td>50</td>
-
-                                    </tr>
-                                    <tr data-toggle="modal" data-target="#districtModal">
-                                        <td>2</td>
-                                        <td>Raisen</td>
-                                        <td>40</td>
-
-                                    </tr>
-                                    <tr data-toggle="modal" data-target="#districtModal">
-                                        <td>3</td>
-                                        <td>Raisen</td>
-                                        <td>40</td>
-
-                                    </tr>
-                                    <!-- Add more rows as needed -->
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset id="FS_Details1" style="display: none">
-                <legend>Details /विवरण </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -881,222 +198,619 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
+                        <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr valign="middle" class="text-white">
+                                    <th>Sr.No<br />
+                                        सरल क्र.</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
 
-                            <table class="table table-bordered" id="mainTable1">
-                                <thead>
-                                    <tr>
-                                        <th>Sr. No.<br />
-                                            क्रमांक</th>
-                                        <th>District<br />
-                                            ज़िला</th>
-                                        <th>Total Employees Whose APR Uploaded<br />
-                                            कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                        <th>Total Employees Whose APR Not Uploaded<br />
-                                            कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
-                                        <th>Performance %<br />
-                                            प्रदर्शन %</th>
-                                    </tr>
-                                </thead>
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="middle">
+                                    <td>1</td>
+                                    <td>Bhopal</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="50" OnClick="btn1_Click" ID="btn1" BorderStyle="None" CssClass="bg-transparent  text-info" /></td>
+
+                                </tr>
+                                <tr valign="middle">
+                                    <td>2</td>
+                                    <td>Indore</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="70" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+
+                                </tr>
+                                <tr valign="middle">
+                                    <td>3</td>
+                                    <td>Sagar</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="78" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+                                </tr>
+                                <tr valign="middle">
+                                    <td>4</td>
+                                    <td>Sehore</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="40" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+
+
+
+                                </tr>
+                            </tbody>
+                        </table></div>
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset runat="server" visible="false" id="show1">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        
+                        <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr valign="middle" class="text-white">
+                                    <th>Sr.No<br />
+                                        सरल क्र.</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="middle">
+                                    <td>1</td>
+                                    <td>Bhopal</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="50" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table></div>
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset runat="server" visible="false" id="show2">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        
+                        <table id="Table3" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr valign="middle" class="text-white">
+                                    <th>Sr.No<br />
+                                        सरल क्र.</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="middle">
+                                    <td>1</td>
+
+                                    <td>Indore</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="70" OnClick="Button5_Click" ID="Button5" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+
+                                </tr>
+
+                            </tbody>
+                        </table></div>
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset runat="server" visible="false" id="show3">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        
+                        <table id="Table4" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr valign="middle" class="text-white">
+                                    <th>Sr.No<br />
+                                        सरल क्र.</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="middle">
+                                    <td>1</td>
+
+                                    <td>Sagar</td>
+                                    <td>
+                                        <asp:Button runat="server" Text="78" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div></div>
+
+            </fieldset>
+            <fieldset runat="server" visible="false" id="show4">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        <
+                        <table id="Table5" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr valign="middle" class="text-white">
+                                    <th>Sr.No<br />
+                                        सरल क्र.</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="middle">
+                                    <td>1</td>
+
+                                    <td>Sehore</td>
+                                    <td> <asp:Button runat="server" Text="40" OnClick="Button7_Click" ID="Button7" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+
+
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        </div>
+                </div>
+
+            </fieldset>
+            <fieldset runat="server" id="Fieldset1" visible="false">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="Table6" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No<br />
+                                        सरल.क्र</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+                                    <th>Total Employees Whose APR Uploaded<br />
+                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                    <th>Total Employees Whose APR Not Uploaded
+कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                    <th>Performance %<br />
+                                        प्रदर्शन %</th>
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
                                 <tbody>
-                                    <tr data-toggle="modal" data-target="#districtModal">
+                                    <tr valign="middle">
                                         <td>1</td>
+
                                         <td>Bhopal</td>
                                         <td>50</td>
-                                        <td>20</td>
-                                        <td>71%</td>
+
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>50%</td>
+
+
+
+
                                     </tr>
-                                    <tr data-toggle="modal" data-target="#districtModal">
+                                    <tr valign="middle">
                                         <td>2</td>
-                                        <td>Raisen</td>
-                                        <td>40</td>
+                                        <td>Indore</td>
+                                        <td>70</td>
+
                                         <td>30</td>
-                                        <td>57%</td>
+                                        <td>40</td>
+                                        <td>21%</td>
+
+
+
                                     </tr>
-                                    <!-- Add more rows as needed -->
+                                    <tr valign="middle">
+                                        <td>3</td>
+                                        <td>Sagar</td>
+                                        <td>50</td>
+
+                                        <td>78</td>
+                                        <td>50</td>
+                                        <td>39%</td>
+
+
+
+
+
+                                    </tr>
+                                    <tr valign="middle">
+                                        <td>4</td>
+
+                                        <td>Sehore</td>
+                                        <td>40</td>
+
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>50%</td>
+
+
+
+
+
+
+                                    </tr>
                                 </tbody>
-                            </table>
-                        </div>
 
+                        </table>
                     </div>
                 </div>
+
+
             </fieldset>
-            <%--<div class="modal fade" id="districtModal" tabindex="-1" role="dialog" aria-labelledby="districtModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                           <%-- <h3 class="modal-title" id="districtModalLabel">APR Details - <span id="modalDistrictName"></span></h3>
-                            
-                          
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
+                        <fieldset runat="server" id="Fieldset2" visible="false">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
-                                                    <fieldset>
-                                <legend>
-APR Details /एपीआर विवरण</legend>
-                        <div class="modal-body">
-                            <div class="row justify-content-end">
-                                <div class="col-md-6 text-end">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                        <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table id="modalTable" class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Sr. No.</th>
-                                                    <th>Employee
-                                            <br />
-                                                        कर्मचारी</th>
-                                                    <th>District <br />
-                                                        जिला</th>
-                                                    <th>Sankul
-                                            <br />
-                                                        संकुल</th>
-                                                    <th>OIS Name<br />
-                                                        कार्यालय / संस्था/ स्कूल</th>
-                                                    <th>Dipartment
-                                            <br />
-                                                        विभाग</th>
-                                                    <th>Designation
-                                            <br />
-                                                        पद</th>
-                                                    <th>Financial Year
-                                            <br />
-                                                        वित्तीय वर्ष</th>
-                                                    <th>Detail
-                                            <br />
-                                                        विवरण</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- Table body will be populated dynamically using JavaScript -->
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
                         
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                                                        </fieldset>
-                      
-                 </div>
-                    
- 
+                        <table id="Table7" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No<br />
+                                        सरल.क्र</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+                                    <th>Total Employees Whose APR Uploaded<br />
+                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                    <th>Total Employees Whose APR Not Uploaded<br />
+कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                    <th>Performance %<br />
+                                        प्रदर्शन %</th>
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+
+                                        <td>Bhopal</td>
+                                        <td>50</td>
+
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>50%</td>
+
+
+
+
+                                    </tr>
+                                   
+                                </tbody>
+
+                        </table></div>
                     </div>
-                
-            </div>--%>
-
-          <%--  <div class="modal  fade" id="districtModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
+                </div>
 
 
-                            <%--<h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">EMPLOYEE  ACR FORM</h3>
-                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </fieldset>
+                        <fieldset runat="server" id="Fieldset3" visible="false">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
-                        <div class="modal-body">
-                            <fieldset>
-                                <legend>APR Details /एपीआर विवरण</legend>
-                                <div class="modal-body">
-                                    <div class="row justify-content-end">
-                                        <div class="col-md-6 text-end">
-                                            <div class="form-group">
-                                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="table-responsive">
-                                                <table id="modalTable" class="table table-bordered">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Sr. No.</th>
-                                                            <th>Employee
-                                            <br />
-                                                                कर्मचारी</th>
-                                                            <th>District
-                                                                <br />
-                                                                जिला</th>
-                                                            <th>Sankul
-                                            <br />
-                                                                संकुल</th>
-                                                            <th>OIS Name<br />
-                                                                कार्यालय / संस्था/ स्कूल</th>
-                                                            <th>Dipartment
-                                            <br />
-                                                                विभाग</th>
-                                                            <th>Designation
-                                            <br />
-                                                                पद</th>
-                                                            <th>Financial Year
-                                            <br />
-                                                                वित्तीय वर्ष</th>
-                                                            <th>Detail
-                                            <br />
-                                                                विवरण</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <!-- Table body will be populated dynamically using JavaScript -->
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-
-
-                            </fieldset>
-
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        
+                        <table id="Table8" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No<br />
+                                        सरल.क्र</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+                                    <th>Total Employees Whose APR Uploaded<br />
+                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                    <th>Total Employees Whose APR Not Uploaded<br />
+कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                    <th>Performance %<br />
+                                        प्रदर्शन %</th>
 
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+
+                                       
+                                        <td>Indore</td>
+                                        <td>70</td>
+
+                                        <td>30</td>
+                                        <td>40</td>
+                                        <td>21%</td>
+
+
+
+                                    </tr>
+                                    
+                                </tbody>
+
+                        </table>
+                    </div>
+                </div>
+</div>
+
+            </fieldset>
+                        <fieldset runat="server" id="Fieldset4" visible="false">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
-                        <div class="modal-body">
-
-                            <embed id="pdfViewer" width="100%" height="600" />
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
-            </div>--%>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        
+                        <table id="Table9" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No<br />
+                                        सरल.क्र</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+                                    <th>Total Employees Whose APR Uploaded<br />
+                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                    <th>Total Employees Whose APR Not Uploaded<br />
+कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                    <th>Performance %<br />
+                                        प्रदर्शन %</th>
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+
+                                       
+                                        <td>Sagar</td>
+                                        <td>50</td>
+
+                                        <td>78</td>
+                                        <td>50</td>
+                                        <td>39%</td>
+
+
+
+
+
+                                    </tr>
+                                </tbody>
+
+                        </table>
+                    </div>
+                </div></div>
+
+
+            </fieldset>
+                        <fieldset runat="server" id="Fieldset5" visible="false">
+                <legend>Details/विवरण</legend>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput5" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive">
+                        
+                        <table id="Table10" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No<br />
+                                        सरल.क्र</th>
+                                    <th>District Name<br />
+                                        जिले का नाम</th>
+                                    <th>Total Employees<br />
+                                        कुल कर्मचारी </th>
+                                    <th>Total Employees Whose APR Uploaded<br />
+                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                    <th>Total Employees Whose APR Not Uploaded<br />
+कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                    <th>Performance %<br />
+                                        प्रदर्शन %</th>
+
+                                    <%--<th>प्रिंट</th--%>
+                                </tr>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+
+                                      
+                                        <td>Sehore</td>
+                                        <td>40</td>
+
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>50%</td>
+
+
+
+
+
+
+                                    </tr>
+                                </tbody>
+
+                        </table>
+                    </div>
+                </div>
+</div>
+
+            </fieldset>
+
         </div>
     </div>
 </asp:Content>
@@ -1485,7 +1199,5 @@ APR Details /एपीआर विवरण</legend>
          //Populate the main table initially
         populateMainTable(employeeData);
     </script>--%>
-
-
 </asp:Content>
 

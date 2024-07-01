@@ -473,8 +473,8 @@
                                     ग्राम/गांव</th>
                                 <th>Property Detail<br />
                                     संपत्ति विवरण</th>
-                                <th>Total Area<br />
-                                    कुल क्षेत्रफल</th>
+                               <%-- <th>Total Area<br />
+                                    कुल क्षेत्रफल</th>--%>
                                 <th>Current Value<br />
                                     वर्तमान मूल्य</th>
                                 <th>Property Owner<br />
@@ -491,6 +491,7 @@
                                     संपत्ति से वार्षिक आय</th>
                                 <th>Accusation<br />
                                     अभियुक्ति</th>
+                                 <th>Action</th>
                                 
 
                             </tr>
@@ -600,92 +601,95 @@
 
 
     </script>
-     <script>
+   <script>
 
+       debugger
+       function addData2() {
+           document.getElementById("Fieldset1").style.display = 'block';
+           let name = document.getElementById("Year").value;
+           let email = document.getElementById("txtemplname").value;
+           let mobile = document.getElementById("txtempldesigntn").value;
+           let PreviousGradea = document.getElementById("txtempluniquecode").value;
+           let PreviousGradeab = document.getElementById("txtcursalary").value;
+           let PreviousGradec = document.getElementById("dob").value;
+           let PreviousGraded = document.getElementById("ddlDivision").value;
+           let PreviousGradee = document.getElementById("ddlDistrict").value;
+           let Gradea = document.getElementById("ddlBlock").value;
+           let Gradeb = document.getElementById("ddlGramPanchayat").value;
+           let Gradec = document.getElementById("ddlGram").value;
+           let Graded = document.getElementById("ddlproprty").value;
+           let Gradee = document.getElementById("txtValue").value;
+           let Gradef = document.getElementById("ddlpropertyowner").value;
+           let Gradeg = document.getElementById('<%=ownername.ClientID%>').value;
+        let Gradeh = document.getElementById("ddlPropertySource").value;
+        let Gradei = document.getElementById("txtPurchase").value;
+        let Gradej = document.getElementById("monumber").value;
+           let Gradek = document.getElementById("address").value;
+           let Gradek = document.getElementById("Income").value;
+           let Gradek = document.getElementById("Accusation").value;
 
-         debugger
-         function
-             addData2() {
-             Fieldset1.style.display = 'block';
-             let name = document.getElementById("Year").value;
-             let email = document.getElementById("txtemplname").value;
-             let mobile = document.getElementById("txtempldesigntn").value;
-             let PreviousGradea = document.getElementById("txtempluniquecode").value;
-             let PreviousGradeab = document.getElementById("txtcursalary").value;
-             let PreviousGradec = document.getElementById("dob").value;
-             let PreviousGraded = document.getElementById("ddlDivision").value;
-             let PreviousGradee = document.getElementById("ddlDistrict").value;
-             let Gradea = document.getElementById("ddlBlock").value;
-             let Gradeb = document.getElementById("ddlGramPanchayat").value;
-             let Gradec = document.getElementById("ddlGram").value;
-             let Graded = document.getElementById("ddlproprty").value;
-             let Gradee = document.getElementById("txtValue").value;
-             let Gradef = document.getElementById("ddlpropertyowner").value;
-             let Gradeg = document.getElementById('<%=ownername.ClientID%>').value;
-             let Gradeh = document.getElementById("ddlPropertySource").value;
-             let Gradei = document.getElementById("txtPurchase").value;
-             let Gradej = document.getElementById("monumber").value;
-             let Gradek = document.getElementById("address").value;
-         
-             // Get the table and insert a new row at the end
-             let table = document.getElementById('Table1');
-             let newRow = table.getElementsByTagName('tbody')[0].insertRow();
-             // Insert data into cells of the new row
-             newRow.insertCell(0).innerHTML = table.rows.length - 1;
-             newRow.insertCell(1).innerHTML = name;
-             newRow.insertCell(2).innerHTML = email;
-             newRow.insertCell(3).innerHTML = mobile;
-             newRow.insertCell(4).innerHTML = PreviousGradea;
-             newRow.insertCell(5).innerHTML = PreviousGradeab;
-             newRow.insertCell(6).innerHTML = PreviousGradec;
-             newRow.insertCell(7).innerHTML = PreviousGraded;
-             newRow.insertCell(8).innerHTML = PreviousGradee;
-             newRow.insertCell(9).innerHTML = Gradea;
-             newRow.insertCell(10).innerHTML = Gradeb;
-             newRow.insertCell(11).innerHTML = Gradec;
-             newRow.insertCell(12).innerHTML = Graded;
-             newRow.insertCell(13).innerHTML = Gradee;
-             newRow.insertCell(14).innerHTML = Gradef;
-             newRow.insertCell(15).innerHTML = Gradeg;
-             newRow.insertCell(16).innerHTML = Gradeh;
-             newRow.insertCell(17).innerHTML = Gradei;
-             newRow.insertCell(18).innerHTML = Gradej;
-             newRow.insertCell(19).innerHTML = Gradek;
-             newRow.insertCell(20).innerHTML = Gradel;
-             newRow.insertCell(21).innerHTML = Gradem;
-             newRow.insertCell(22).innerHTML = Graden;
+        // Get the table and insert a new row at the end
+        let table = document.getElementById('Table1');
+        let newRow = table.getElementsByTagName('tbody')[0].insertRow();
+        // Insert data into cells of the new row
+        newRow.insertCell(0).innerHTML = table.rows.length - 1;
+        newRow.insertCell(1).innerHTML = name;
+        newRow.insertCell(2).innerHTML = email;
+        newRow.insertCell(3).innerHTML = mobile;
+        newRow.insertCell(4).innerHTML = PreviousGradea;
+        newRow.insertCell(5).innerHTML = PreviousGradeab;
+        newRow.insertCell(6).innerHTML = PreviousGradec;
+        newRow.insertCell(7).innerHTML = PreviousGraded;
+        newRow.insertCell(8).innerHTML = PreviousGradee;
+        newRow.insertCell(9).innerHTML = Gradea;
+        newRow.insertCell(10).innerHTML = Gradeb;
+        newRow.insertCell(11).innerHTML = Gradec;
+        newRow.insertCell(12).innerHTML = Graded;
+        newRow.insertCell(13).innerHTML = Gradee;
+        newRow.insertCell(14).innerHTML = Gradef;
+        newRow.insertCell(15).innerHTML = Gradeg;
+        newRow.insertCell(16).innerHTML = Gradeh;
+        newRow.insertCell(17).innerHTML = Gradei;
+        newRow.insertCell(18).innerHTML = Gradej;
+           newRow.insertCell(19).innerHTML = Gradek;
+           newRow.insertCell(20).innerHTML = Gradek;
 
+         // Add action field
+         newRow.insertCell(21);
 
+         // Create buttons for action
+         const actionButtonTd= newRow.cells[21];
+         actionButtonTd.innerHTML += '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
-             // Clear input fields after adding the row
-             clearInputs2();
-         };
+         // Clear input fields after adding the row
+         clearInputs2();
+    };
 
-         // Function to clear input fields after adding a row
-         function clearInputs2() {
-             document.getElementById("Year").value = "";
-             document.getElementById("txtemplname").value = "";
-             document.getElementById("txtempldesigntn").value = "";
-             document.getElementById("txtempluniquecode").value = "";
-             document.getElementById("txtcursalary").value = "";
-             document.getElementById("dob").value = "";
-             document.getElementById("ddlDivision").value = "";
-             document.getElementById("ddlDistrict").value = "";
-             document.getElementById("ddlBlock").value = "";
-             document.getElementById("ddlGramPanchayat").value = "";
-             document.getElementById("ddlGram").value = "";
-             document.getElementById("ddlproprty").value = "";
-             document.getElementById("txtValue").value = "";
-             document.getElementById("ddlpropertyowner").value = "";
-             document.getElementById("ownername").value = "";
-             document.getElementById("ddlPropertySource").value = "";
-             document.getElementById("txtPurchase").value = "";
-             document.getElementById("monumber").value = "";
-             document.getElementById("address").value = "";
-             document.getElementById("rowspan").value = "";
-         }
+    // Function to clear input fields after adding a row
+    function clearInputs2() {
+       document.getElementById("Year").value ="";
+       document.getElementById("txtemplname").value ="";
+       document.getElementById("txtempldesigntn").value ="";
+       document.getElementById("txtempluniquecode").value ="";
+       document.getElementById("txtcursalary").value ="";
+       document.getElementById("dob").value ="";
+       document.getElementById("ddlDivision").value ="";
+       document.getElementById("ddlDistrict").value ="";
+       document.getElementById("ddlBlock").value ="";
+       document.getElementById("ddlGramPanchayat").value ="";
+       document.getElementById("ddlGram").value ="";
+       document.getElementById("ddlproprty").value ="";
+       document.getElementById("txtValue").value ="";
+       document.getElementById("ddlpropertyowner").value ="";
+       document.getElementById("<%=ownername.ClientID%>").value = "";
+           document.getElementById("ddlPropertySource").value = "";
+           document.getElementById("txtPurchase").value = "";
+           document.getElementById("monumber").value = "";
+           document.getElementById("address").value = "";
+           document.getElementById("rowspan").value = "";
+           document.getElementById("Action").value = "";
+       }
 
-     </script>
-
+   </script>
 </asp:Content>
 

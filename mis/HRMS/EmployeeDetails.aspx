@@ -1,42 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="EmployeeDetails.aspx.cs" Inherits="mis_Transaction_EmployeeDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        @media print {
-            .modal-dialog {
-                width: 200%;
-                height: auto;
-                margin: 0;
-                padding: 0;
-            }
 
-            .modal-content {
-                height: 200%;
-                border: none;
-                box-shadow: none;
-            }
-
-            .modal-body {
-                width: 210%;
-                height: auto;
-                overflow: visible !important;
-                zoom: 90%;
-            }
-
-            body.modal-open {
-                visibility: hidden;
-            }
-
-                body.modal-open .modal .modal-header,
-                body.modal-open .modal .modal-body {
-                    visibility: visible;
-                }
-
-            .modal-footer {
-                display: none;
-            }
-        }
-    </style>
     <style>
         #ddlPosition {
             position: relative;
@@ -44,10 +9,6 @@
         }
     </style>
     <style>
-        textarea::-webkit-scrollbar {
-            width: 0;
-        }
-
         textarea {
             resize: vertical;
             min-height: 40px;
@@ -56,6 +17,11 @@
         #ddlPosition {
             position: relative;
             bottom: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 40px; /* Set a minimum height */
         }
     </style>
 </asp:Content>
@@ -121,62 +87,72 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                        <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr style="white-space:nowrap;">
-                                    <th>S.No<br />
-                                        सरल क्र.</th>
-                                    <th>Annual Year<br />
-                                        वित्तीय वर्ष</th>
-                                    <th>Unique ID/Name<br />
-                                        कर्मचारी आईडी/नाम</th>
+                            <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr style="white-space: nowrap;">
+                                        <th>S.No<br />
+                                            सरल क्र.</th>
+                                        <th>Annual Year<br />
+                                            वित्तीय वर्ष</th>
+                                        <th>Unique ID/Name<br />
+                                            कर्मचारी आईडी/नाम</th>
 
-                                    <th>Date of Birth<br />
-                                        जन्मतिथि</th>
-                                    <th>Designation
+                                        <th>Date of Birth<br />
+                                            जन्मतिथि</th>
+                                        <th>Designation
                                         <br />
-                                        पदनाम </th>
-                                    <th>Dise Code of Institution<br />
-                                        संस्थान का डाइस कोड</th>
+                                            पदनाम </th>
+                                        <th>Dise Code of Institution<br />
+                                            संस्थान का डाइस कोड</th>
 
-                                    
-                                    <th>Status<br />
-                                        स्टेटस</th>
-                                    <th>Resend ACR Report<br />
-                                        एसीआर रिपोर्ट पुनः भेजें</th>
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>1</td>
-                                    <td>20023-2024</td>
-                                    <td>गोपाल वर्मा/EDP4454445</td>
 
-                                    <td>22/07/1989</td>
-                                    <td>सहायक शिक्षक</td>
-                                    <td>DPI/456656356</td>
-                                   
-                                    <td class="w-lg">ACR Report Reject <%-- Rejected By Reporting Officer--%><br />
-                                        :- He is  not my employee</td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal1" onclick="document.getElementById('exampleModalFooter').style='display:block;'">
-                                            Resend</button>
-                                    </td>
+                                        <th>Status<br />
+                                            स्टेटस</th>
 
-                                </tr>
-                            </tbody>
+                                        <th>View Employee Application & Edit
+                                            <br />
+                                            कर्मचारी आवेदन देखें और संपादित करें</th>
+                                        <th>Resend ACR Report<br />
+                                            एसीआर रिपोर्ट पुनः भेजें</th>
+                                        <%--<th>प्रिंट</th--%>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+                                        <td>20023-2024</td>
+                                        <td>गोपाल वर्मा/EDP4454445</td>
 
-                        </table>
-                            </div>
+                                        <td>22/07/1989</td>
+                                        <td>सहायक शिक्षक</td>
+                                        <td>DPI/456656356</td>
+
+                                        <td style="white-space: nowrap;">ACR Report Reject<br />
+                                            :- He is  not my employee</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" onclick="document.getElementById('exampleModalFooter').style='display:block;'">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+
+
+                                        </td>
+                                        <td>
+                                            <button type="button" class="  btn w-lg btn-success btn-border" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                                Resend
+                                            </button>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
                     </div>
                 </div>
 
             </fieldset>
         </div>
     </div>
-    
-
     <div class="modal  fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -377,7 +353,7 @@
                                                     नामांकन</th>
                                                 <th rowspan="2">Average Annual attendance in Percentege<br />
                                                     वार्षिक औसत उपिस्थिति</th>
-                                                <th rowspan="2">Remark
+                                                <th rowspan="2" style="width: 400px;">Remark
             <br />
                                                     टिप्पणी</th>
                                             </tr>
@@ -394,102 +370,139 @@
                                             <tr valign="middle">
                                                 <td>1
                                                 </td>
-                                                <td cssclass="fw-bold text-center">पहली कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">85%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहली कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control w-100%" placeholder="85%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>2</td>
-                                                <td cssclass="fw-bold text-center">दूसरी</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">92%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="दूसरी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="92%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>3</td>
-                                                <td cssclass="fw-bold text-center">तीसरी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">82%</td>
-                                                <td cssclass="Fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center">  <input class="form-control" placeholder="तीसरी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="82%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>4</td>
-                                                <td cssclass="fw-bold text-center">चौथी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">76%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="चौथी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="76%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>5</td>
-                                                <td cssclass="fw-bold text-center">पाचंवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">89%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="पाचंवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="89%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>6</td>
-                                                <td cssclass="fw-bold text-center">छटवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">75%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="छटवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="75%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>7
                                                 </td>
-                                                <td cssclass="fw-bold text-center">सातवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">85%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
-
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="सातवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="85%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>8</td>
-                                                <td cssclass="fw-bold text-center">आठवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">92%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="आठवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="92%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>9</td>
-                                                <td cssclass="fw-bold text-center">नव्वी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">82%</td>
-                                                <td cssclass="Fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="नव्वी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="82%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>10</td>
-                                                <td cssclass="fw-bold text-center">दसवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">76%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="दसवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="76%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>11</td>
-                                                <td cssclass="fw-bold text-center">ग्यारवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">`189%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="ग्यारवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center">` <input class="form-control" placeholder="89%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
                                             <tr valign="middle">
                                                 <td>12</td>
-                                                <td cssclass="fw-bold text-center">बरवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पहला</td>
-                                                <td cssclass="fw-bold text-center">दूसरा</td>
-                                                <td cssclass="fw-bold text-center">75%</td>
-                                                <td cssclass="fw-bold text-center">नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="बरवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="पहला"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <input class="form-control" placeholder="दूसरा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="75%"></td>
+                                                <td cssclass="fw-bold text-center">
+                                                    <textarea class="form-control  w-100%"rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="नियमित उपस्थिति बनाए रखना छात्रों के लिए महत्वपूर्ण है"></textarea></td>
                                             </tr>
 
                                         </tbody>
@@ -523,104 +536,104 @@
                                         <tbody>
                                             <tr valign="middle">
                                                 <td>1</td>
-                                                <td cssclass="fw-bold text-center">पहली कक्षा</td>
-                                                <td cssclass="fw-bold text-center">हिंदी</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="पहली कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="हिंदी"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
 
-                                                <td cssclass="fw-bold text-center">89%</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="89%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>2</td>
-                                                <td cssclass="fw-bold text-center">दूसरी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">गणित</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="दूसरी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="गणित"></td>
                                                 <td cssclass="fw-bold text-center">100%
                                                 </td>
-                                                <td cssclass="fw-bold text-center">68%</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="68%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>3</td>
-                                                <td cssclass="fw-bold text-center">तीसरी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">अंग्रेजी</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="तीसरी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="अंग्रेजी"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
-                                                <td cssclass="fw-bold text-center">74%</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="74%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>4</td>
-                                                <td cssclass="fw-bold text-center">चौथी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">पर्यावरण</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="चौथी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="पर्यावरण"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
-                                                <td cssclass="fw-bold text-center">63%</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="63%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>5</td>
-                                                <td cssclass="fw-bold text-center">पाचंवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">हिंदी</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="पाचंवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="हिंदी"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
 
-                                                <td cssclass="fw-bold text-center">89%</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="89%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>6</td>
-                                                <td cssclass="fw-bold text-center">छटवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">गणित</td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="छटवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"> <input class="form-control" placeholder="गणित"></td>
                                                 <td cssclass="fw-bold text-center">100%
                                                 </td>
-                                                <td cssclass="fw-bold text-center">68%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="68%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>7</td>
-                                                <td cssclass="fw-bold text-center">सातवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">अंग्रेजी</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="सातवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="अंग्रेजी"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
-                                                <td cssclass="fw-bold text-center">74%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="74%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>8</td>
-                                                <td cssclass="fw-bold text-center">आठवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">विज्ञान</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="आठवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="विज्ञान"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
-                                                <td cssclass="fw-bold text-center">63%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="63%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>9</td>
-                                                <td cssclass="fw-bold text-center">नव्वी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">हिंदी</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="नव्वी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="हिंदी"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
 
-                                                <td cssclass="fw-bold text-center">89%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="89%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>10</td>
-                                                <td cssclass="fw-bold text-center">दसवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">गणित</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="दसवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="गणित"></td>
                                                 <td cssclass="fw-bold text-center">100%
                                                 </td>
-                                                <td cssclass="fw-bold text-center">68%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="68%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>11</td>
-                                                <td cssclass="fw-bold text-center">ग्यारवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">गणित</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="ग्यारवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="गणित"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
-                                                <td cssclass="fw-bold text-center">74%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="74%"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>12</td>
-                                                <td cssclass="fw-bold text-center">बरवी कक्षा</td>
-                                                <td cssclass="fw-bold text-center">जीव विज्ञान</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="बरवी कक्षा"></td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="जीव विज्ञान"></td>
                                                 <td cssclass="fw-bold text-center">100%</td>
-                                                <td cssclass="fw-bold text-center">63%</td>
+                                                <td cssclass="fw-bold text-center"><input class="form-control" placeholder="63%"></td>
 
                                             </tr>
 
@@ -647,12 +660,12 @@
                                 <div class="col-md-12 table-responsive">
                                     <table id="Table8" class="table table-bordered  text-center " runat="server">
                                         <thead>
-                                            <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                            <tr valign="middle" >
                                                 <th>S.No.<br />
                                                     सरल.क्र</th>
-                                                <th>Class<br />
+                                                <th style="width:120px;">Class<br />
                                                     कक्षा</th>
-                                                <th>Subject<br />
+                                                <th style="width:100px;">Subject<br />
                                                     विषय</th>
                                                 <th>No.of
                      Student<br />
@@ -702,250 +715,247 @@
 
                                             <tr valign="middle">
                                                 <td>1</td>
-                                                <td>पहली कक्षा</td>
-                                                <td>हिंदी</td>
-                                                <td>20</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>5</td>
+                                                <td><input class="form-control" placeholder="पहली कक्षा"></td>
+                                                <td><input class="form-control" placeholder="हिंदी"></td>
+                                                <td><input class="form-control" placeholder="20"></td>
+                                                <td><input class="form-control" placeholder="6"></td>
+                                                <td><input class="form-control" placeholder="4"></td>
+                                                <td><input class="form-control" placeholder="3"></td>
+                                                <td><input class="form-control" placeholder="2"></td>
+                                                <td><input class="form-control" placeholder="5"></td>
+                                                <td><input class="form-control" placeholder="6"></td>
+                                                <td><input class="form-control" placeholder="4"></td>
+                                                <td><input class="form-control" placeholder="3"></td>
+                                                <td><input class="form-control" placeholder="2"></td>
+                                                <td><input class="form-control" placeholder="5"></td>
 
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>2
                                                 </td>
-                                                <td>दूसरी कक्षा
+                                                <td><input class="form-control" placeholder="दूसरी कक्षा">
                                                 </td>
-                                                <td>गणित
+                                                <td><input class="form-control" placeholder="गणित">
                                                 </td>
-                                                <td>30</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
-                                                <td>10</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
-                                                <td>10</td>
+                                                <td><input class="form-control" placeholder="30"></td>
+                                                <td><input class="form-control" placeholder="6"></td>
+                                                <td><input class="form-control" placeholder="4"></td>
+                                                <td><input class="form-control" placeholder="8"></td>
+                                                <td><input class="form-control" placeholder="2"></td>
+                                                <td><input class="form-control" placeholder="10"></td>
+                                                <td><input class="form-control" placeholder="6"></td>
+                                                <td><input class="form-control" placeholder="4"></td>
+                                                <td><input class="form-control" placeholder="8"></td>
+                                                <td><input class="form-control" placeholder="2"></td>
+                                                <td><input class="form-control" placeholder="10"></td>
 
                                             </tr>
 
                                             <tr valign="middle">
                                                 <td>3
                                                 </td>
-                                                <td>तीसरी कक्षा
-                                                </td>
-                                                <td>अंग्रेजी
-                                                </td>
-                                                <td>50
-                                                </td>
-                                                <td>10</td>
-                                                <td>15</td>
-                                                <td>5</td>
-                                                <td>12</td>
-                                                <td>8</td>
-                                                <td>10</td>
-                                                <td>15</td>
-                                                <td>5</td>
-                                                <td>12</td>
-                                                <td>8</td>
-
+                                                <td><input class="form-control" placeholder="तीसरी कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="अंग्रेजी">
+ </td>
+ <td><input class="form-control" placeholder="50"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="15"></td>
+ <td><input class="form-control" placeholder="5"></td>
+ <td><input class="form-control" placeholder="12"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="9"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="12"></td>
                                             </tr>
 
                                             <tr valign="middle">
                                                 <td>4
                                                 </td>
-                                                <td>चौथी  कक्षा
-                                                </td>
-                                                <td>पर्यावरण
-                                                </td>
-                                                <td>25
-                                                </td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
+                                               <td><input class="form-control" placeholder="चौथी  कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="पर्यावरण">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>5
                                                 </td>
-                                                <td>पाचंवी कक्षा
-                                                </td>
-                                                <td>हिंदी
-                                                </td>
-                                                <td>68
-                                                </td>
-                                                <td>10</td>
-                                                <td>30</td>
-                                                <td>9</td>
-                                                <td>6</td>
-                                                <td>12</td>
-                                                <td>10</td>
-                                                <td>30</td>
-                                                <td>9</td>
-                                                <td>6</td>
-                                                <td>12</td>
+                                               <td><input class="form-control" placeholder="पाचंवी  कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="हिंदी">
+ </td>
+ <td><input class="form-control" placeholder="65"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="9"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="12"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="9"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="12"></td>
+
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>6
                                                 </td>
-                                                <td>छटवी कक्षा
-                                                </td>
-                                                <td>गणित
-                                                </td>
-                                                <td>20</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>5</td>
+                                               <td><input class="form-control" placeholder="छटवी कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="गणित">
+ </td>
+ <td><input class="form-control" placeholder="20"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="3"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="5"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="3"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="5"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>7
                                                 </td>
-                                                <td>सातवी कक्षा
-                                                </td>
-                                                <td>अंग्रेजी
-                                                </td>
-                                                <td>30</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
-                                                <td>10</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
-                                                <td>10</td>
+                                               <td><input class="form-control" placeholder="सातवी कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="अंग्रेजी">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+
                                             </tr>
                                             <tr valign="middle">
                                                 <td>8
                                                 </td>
-                                                <td>आठवी कक्षा
-                                                </td>
-                                                <td>विज्ञान
-                                                </td>
-                                                <td>50
-                                                </td>
-                                                <td>10</td>
-                                                <td>15</td>
-                                                <td>5</td>
-                                                <td>12</td>
-                                                <td>8</td>
-                                                <td>10</td>
-                                                <td>15</td>
-                                                <td>5</td>
-                                                <td>12</td>
-                                                <td>8</td>
+                                               <td><input class="form-control" placeholder="आठवी कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="विज्ञान">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>9
                                                 </td>
-                                                <td>नव्वी कक्षा
-                                                </td>
-                                                <td>हिंदी
-                                                </td>
-                                                <td>25
-                                                </td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>4</td>
-                                                <td>8</td>
-                                                <td>2</td>
+                                                <td><input class="form-control" placeholder="नव्वी  कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="गणित">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+
 
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>10
                                                 </td>
-                                                <td>दसवी कक्षा
-                                                </td>
-                                                <td>गणित
-                                                </td>
-                                                <td>68
-                                                </td>
-                                                <td>10</td>
-                                                <td>30</td>
-                                                <td>9</td>
-                                                <td>6</td>
-                                                <td>12</td>
-                                                <td>10</td>
-                                                <td>30</td>
-                                                <td>9</td>
-                                                <td>6</td>
-                                                <td>12</td>
+                                               <td><input class="form-control" placeholder="दसवी  कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="गणित">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>11
                                                 </td>
-                                                <td>ग्यारवी कक्षा
-                                                </td>
-                                                <td>गणित
-                                                </td>
-                                                <td>40
-                                                </td>
-                                                <td>8</td>
-                                                <td>6</td>
-                                                <td>10</td>
-                                                <td>5</td>
-                                                <td>11</td>
-                                                <td>8</td>
-                                                <td>6</td>
-                                                <td>10</td>
-                                                <td>5</td>
-                                                <td>11</td>
+                                                <td><input class="form-control" placeholder="ग्यारवी कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="गणित">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+
 
                                             </tr>
                                             <tr valign="middle">
                                                 <td>12
                                                 </td>
-                                                <td>बरवी कक्षा
-                                                </td>
-                                                <td>जीव विज्ञान
-                                                </td>
-                                                <td>45
-                                                </td>
-                                                <td>6</td>
-                                                <td>7</td>
-                                                <td>15</td>
-                                                <td>10</td>
-                                                <td>7</td>
-                                                <td>6</td>
-                                                <td>7</td>
-                                                <td>15</td>
-                                                <td>10</td>
-                                                <td>7</td>
+                                                <td><input class="form-control" placeholder="बरवी कक्षा">
+ </td>
+ <td><input class="form-control" placeholder="जीव विज्ञान">
+ </td>
+ <td><input class="form-control" placeholder="30"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+ <td><input class="form-control" placeholder="6"></td>
+ <td><input class="form-control" placeholder="4"></td>
+ <td><input class="form-control" placeholder="8"></td>
+ <td><input class="form-control" placeholder="2"></td>
+ <td><input class="form-control" placeholder="10"></td>
+
 
                                             </tr>
                                         </tbody>
@@ -1250,9 +1260,9 @@
                         <hr />
                         <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" class="  btn w-lg btn-success btn-border"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
-    Resend
-</button>
+                                <button type="button" class=" Alert-Edit btn w-lg btn-success btn-border">
+                                    Update 
+                                </button>
                                 <a href="EmployeeDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
@@ -1264,9 +1274,9 @@
             </div>
 
         </div>
-           
+
     </div>
-                <div class="modal  fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal  fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: var(--vz-primary);">
@@ -1307,7 +1317,7 @@
                         </div>
                     </fieldset>
                     <hr />
-                   <%-- <div class="modal-footer justify-content-center">
+                    <%-- <div class="modal-footer justify-content-center">
                         <div style="display: none;" id="btn1">
                             <button type="button" class="btn btn-success Alert-Save btn-rounded">Send To Officer</button>
                             <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
@@ -1316,15 +1326,17 @@
                     <div class="modal-footer">
                         <div style="display: none;" id="btn1">
 
-                      
-                   <div class="col-md-12">
-    <div class="form-group">
-        <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
-           Send To Officer
-        </button>
-        <a href="EmployeeDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div></div></div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
+                                        Send To Officer
+                                    </button>
+                                    <a href="EmployeeDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -1340,17 +1352,17 @@
         window.open(pdfUrl, '_blank');
     }
     </script>--%>
-       <script>
-       function myFunction() {
-           document.getElementById('OfficerName').style.display = "block";
-           document.getElementById('SankulCode').style.display = "block";
-           document.getElementById('btn1').style.display = "block";
+    <script>
+        function myFunction() {
+            document.getElementById('OfficerName').style.display = "block";
+            document.getElementById('SankulCode').style.display = "block";
+            document.getElementById('btn1').style.display = "block";
 
 
-           //var x = document.getElementById("mySelect").value;
-           //document.getElementById("demo").innerHTML = "You selected: " + x;
-       }
-       </script>
+            //var x = document.getElementById("mySelect").value;
+            //document.getElementById("demo").innerHTML = "You selected: " + x;
+        }
+    </script>
     <script>
         debugger;
         $(document).ready(function () {
@@ -1395,5 +1407,9 @@
             sweetAlert.init();
         });
     </script>
+    <script>function autoResize(textarea) {
+            textarea.style.height = 'auto'; // Reset height to auto
+            textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
+        }</script>
 </asp:Content>
 
