@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,13 +29,13 @@ public partial class mis_Transaction_AnnualPropertyDetailsForm : System.Web.UI.P
     //    }
     //    else if (ddlproprty.SelectedItem.Text =="Residential Property(आवासीय संपत्ति)")
     //    {
-         
+
     //        ddlArea.Items.Add("square feet");
 
     //    }
     //    else if (ddlproprty.SelectedItem.Text =="Commercial Property(व्यावसायिक संपत्ति)")
     //    {
-           
+
     //        ddlArea.Items.Add("square feet");
 
     //    }
@@ -51,38 +51,61 @@ public partial class mis_Transaction_AnnualPropertyDetailsForm : System.Web.UI.P
     //    }
     //}
 
-//    protected void ddlpropertowner_SelectedIndexChanged(object sender, EventArgs e)
-//    {
-//        divOwner.Visible = false;
-//        if (ddlpropertowner.SelectedItem.Text == "Self(स्वयं के नाम)")
-//        {
+    //    protected void ddlpropertowner_SelectedIndexChanged(object sender, EventArgs e)
+    //    {
+    //        divOwner.Visible = false;
+    //        if (ddlpropertowner.SelectedItem.Text == "Self(स्वयं के नाम)")
+    //        {
 
-//            divOwner.Visible = false;
+    //            divOwner.Visible = false;
 
-//        }
-//        else if (ddlpropertowner.SelectedItem.Text == "Wife(पत्नी के नाम)")
-//        {
-//            divOwner.Visible = true;
-
-
-//        }
-//        else if (ddlpropertowner.SelectedItem.Text == "Son(पुत्र के नाम)")
-//        {
-//            divOwner.Visible = true;
+    //        }
+    //        else if (ddlpropertowner.SelectedItem.Text == "Wife(पत्नी के नाम)")
+    //        {
+    //            divOwner.Visible = true;
 
 
-//        }
-//        else if (ddlpropertowner.SelectedItem.Text == "Daughter(पुत्री के नाम)")
-//        {
-//            divOwner.Visible = true;
+    //        }
+    //        else if (ddlpropertowner.SelectedItem.Text == "Son(पुत्र के नाम)")
+    //        {
+    //            divOwner.Visible = true;
 
 
-//        }
-//        else if (ddlpropertowner.SelectedItem.Text == "Other(अन्य)")
-//        {
-//            divOwner.Visible = true;
+    //        }
+    //        else if (ddlpropertowner.SelectedItem.Text == "Daughter(पुत्री के नाम)")
+    //        {
+    //            divOwner.Visible = true;
 
 
-//        }
-//    }
+    //        }
+    //        else if (ddlpropertowner.SelectedItem.Text == "Other(अन्य)")
+    //        {
+    //            divOwner.Visible = true;
+
+
+    //        }
+    //    }
+
+    protected void rdAprm_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            if (rdAprm.SelectedValue =="1")
+            {
+                show1.Visible = true;
+                show2.Visible = true;
+                showbtn.Visible = false;
+            }
+            else
+            {
+                show2.Visible = false;
+                showbtn.Visible = true;
+            }
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+    }
 }
