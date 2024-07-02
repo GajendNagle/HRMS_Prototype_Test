@@ -12,8 +12,11 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="OfficeWiseLedgerList.aspx" title="click to go on">Office Wise Ledger List</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#FinanceACMaster" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Finance A/C Master</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Office Wise Ledger List</a></li>
                     </ol>
                 </div>
             </div>
@@ -25,7 +28,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h5 class="card-title">Office Wise Ledger List /
                                 कार्यालय अनुसार खाता बही सूची</h5>
                         </div>
@@ -39,7 +42,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type/
+                                        Select Office Type
    <br />
                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
@@ -57,7 +60,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Name/<br />
+                                        Select Office Name<br />
                                         कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -102,29 +105,29 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                   क्रमांक	
                                                 </th>
-                                                <th>Ledger Name /<br />
+                                                <th>Ledger Name <br />
                                                     बहीखाता का नाम </th>
-                                                <th>Ledger Code /
+                                                <th>Ledger Code 
                                             <br />
                                                     बहीखाता कोड  </th>
-                                                <th>GST No./
+                                                <th>GST No.
                                             <br />
                                                     जी.एस.टी नं.
                                                 </th>
-                                                <th>Head Name/
+                                                <th>Head Name
                                             <br />
                                                     हेड नाम 
                                                 </th>
-                                                <th>Office Name /
+                                                <th>Office Name 
                                             <br />
                                                     कार्यालय नाम
                                                 </th>
-                                                <th>Action /
+                                                <th>Action 
                                             <br />
-                                                    कार्रवाई
+                                                    कार्यवाही
                                                 </th>
                                             </tr>
                                         </thead>

@@ -12,8 +12,11 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                        <li class="breadcrumb-item active"><a href="Group_Master.aspx" title="click to go on">Budget Assign Process</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Assign Process</a></li>
                     </ol>
                 </div>
             </div>
@@ -24,7 +27,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Budget Assign Process /
                                 बजट आवंटन प्रक्रिया</h4>
                         </div>
@@ -38,7 +41,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select From Date /<br />
+                                        Select From Date <br />
                                         प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2023-12-10" />
                                 </div>
@@ -46,7 +49,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select To Date /<br />
+                                        Select To Date <br />
                                         अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
@@ -86,18 +89,18 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Checkbox/<br />
+                                                <th>Check box<br />
                                                     चेक बॉक्स
                                                 </th>
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                    क्रमांक	
                                                 </th>
-                                                <th>Office Type /<br />
+                                                <th>Office Type <br />
                                                     कार्यालय प्रकार</th>
-                                                <th>Office Name /
+                                                <th>Office Name 
                                             <br />
                                                     कार्यालय का नाम</th>
-                                                <th>Amount /
+                                                <th>Amount 
                                             <br />
                                                     राशि 
                                                 </th>

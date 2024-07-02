@@ -8,13 +8,17 @@
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
                 <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
+                   <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="Group_Master.aspx" title="click to go on">Budget Demand Request</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#DemandProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Demand Process</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Demand Request</a></li>
                     </ol>
+
                 </div>
             </div>
         </div>
@@ -25,7 +29,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Budget Demand Request /
                                 बजट मांग राशि अनुरोध</h4>
                         </div>
@@ -39,28 +43,26 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Date /
-                                        दिनांक चुनें<span style="color: red;"> *</span></label>
+                                    Select Date <br />
+                                        दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type /<br />
-                                        हेड प्रकार चुनें<span style="color: red;"> *</span></label>
+                                         Head Type <br />
+                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
-                                        <option value="1">Income</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head (Ledger)Name/
-   <br />
-                                        हेड (बहीखाता)नाम चुनें<span style="color: red;"> *</span>
+                                         Ledger Name<br />
+                                        बहीखाता नाम का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -73,9 +75,9 @@
                             <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Amount Request/<br />
+                                Enter Amount Request<br />
                                 मांग राशि दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Alias" />
+                            <input type="text" class="form-control" placeholder="Enter Amount Request" />
                         </div>
                     </div>
 
@@ -105,32 +107,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="table-responsive">
 
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                    क्रमांक
                                                 </th>
-                                                <th>Head Type /<br />
+                                                <th>Head Type <br />
                                                     हेड प्रकार </th>
-                                                <th>Head Code /
+                                                <th>Head Code 
                                             <br />
                                                     हेड कोड</th>
-                                                <th>Head (Ledger)Name /
+                                                <th>Ledger Name 
                                             <br />
-                                                    हेड(बहीखाता) नाम
+                                                   बहीखाता नाम
                                                 </th>
-                                                <th>Amount Request /
+                                                <th>Amount Request 
                                             <br />
                                                     राशि मांग
                                                 </th>
-                                                <th>Action /
+                                                <th>Action 
                                             <br />
-                                                    कार्रवाई
+                                                    कार्यवाही
                                                 </th>
                                             </tr>
                                         </thead>

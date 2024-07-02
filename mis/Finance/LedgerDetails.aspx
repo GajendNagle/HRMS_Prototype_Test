@@ -12,8 +12,11 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="Group_Master.aspx" title="click to go on">Ledger Details</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#FinanceACMaster" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Finance A/C Master</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Ledger Details</a></li>
                     </ol>
                 </div>
             </div>
@@ -46,7 +49,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Ledger Search/<br />बहीखाता खोज का चयन करें
+                                    <label>Select Search Type<br />खोज प्रकार का चयन करें
                                         </label>
                                     <select class="form-control select2">
                                         <option value="2">Ledger Name</option>
@@ -54,13 +57,13 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label>
-                                        Enter Ledger Name(English) /<br />
+                                        Enter Ledger Name in English <br />
                                         बहीखाता का नाम अंग्रेजी में दर्ज करें
                                     <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Ledger Name" />
+                                    <input type="text" class="form-control" placeholder="Enter Ledger Name in English" />
                                 </div>
                             </div></div><hr />
                             <div class="row justify-content-center">
@@ -94,28 +97,28 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                    क्रमांक
                                                 </th>
-                                                <th>Ledger Name /<br />
+                                                <th>Ledger Name <br />
                                                     बहीखाता नाम </th>
-                                                <th>Ledger Code /
+                                                <th>Ledger Code 
                                             <br />
                                                     बहीखाता कोड</th>
-                                                <th>GST No. /
+                                                <th>GST No. 
                                             <br />
                                                     जी.एस.टी नंबर</th>
-                                                <th>Office Name /
+                                                <th>Office Name 
                                             <br />
                                                     कार्यालय का नाम
                                                 </th>
-                                                <th>Status /
+                                                <th>Status 
                                             <br />
                                                     स्थिति
                                                 </th>
-                                                <th>Action /
+                                                <th>Action 
                                             <br />
-                                                    कार्रवाई
+                                                    कार्यवाही
                                                 </th>
                                             </tr>
                                         </thead>

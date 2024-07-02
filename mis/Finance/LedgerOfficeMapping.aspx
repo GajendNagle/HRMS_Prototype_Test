@@ -42,8 +42,11 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                        <li class="breadcrumb-item active"><a href="OfficeWiseLedgerList.aspx" title="click to go on">Ledger Office Mapping</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#FinanceACMaster" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Finance A/C Master</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Ledger Office Mapping</a></li>
                     </ol>
                 </div>
             </div>
@@ -54,7 +57,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Ledger Office Mapping /
                                 बहीखाता कार्यालय मानचित्रण</h4>
                         </div>
@@ -68,7 +71,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type/
+                                        Select Office Type
    <br />
                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
@@ -86,7 +89,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Name/<br />
+                                        Created Office Name<br />
                                         कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -101,7 +104,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Ledger Name/<br />
+                                        Select Ledger Name<br />
                                         बहीखाता नाम का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -114,13 +117,19 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>
-                                        Select Office Name/<br />
-                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                     <label>
+                                        Select Office Type
+   <br />
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
+                                    </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
-                                        <option value="1">HO</option>
-                                        <option value="2">DO</option>
+                                        <option value="1">Head Office</option>
+                                        <option value="2">JD Office</option>
+                                        <option value="3">DEO Office</option>
+                                        <option value="4">Block Office</option>
+                                        <option value="5">Sankul</option>
+                                        <option value="6">School</option>
                                     </select>
                                 </div>
                             </div>
@@ -200,16 +209,37 @@
                                                     <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Harda-(HRD)</span>
                                                 </td>
                                                 <td>
-                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>North-Betul-(NBT)</span>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Betul-(BT)</span>
                                                 </td>
                                                 <td>
-                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>South-Betul-(SBT)</span>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Jabalpur(JBR)</span>
                                                 </td>
                                                 <td>
-                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>West-Betul-(WBT)</span>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Indore-(IDE)</span>
                                                 </td>
                                                 <td>
-                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>East-Chhindwara-(ECH)</span>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Ujjain-(UJN)</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Narsinghpur-(NRS)</span>
+                                                </td>
+                                                <td>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Balaghat-(BG)</span>
+                                                </td>
+                                                <td>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Chhindwara-(CH)</span>
+                                                </td>
+                                                <td>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Gwalior-(GWR)</span>
+                                                </td>
+                                                <td>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Seoni-(SE)</span>
+                                                </td>
+                                                <td>
+                                                    <input id="" type="checkbox" name="ctl00$ContentBody$chck1" /><span>Dewas-(DW)</span>
                                                 </td>
 
                                             </tr>

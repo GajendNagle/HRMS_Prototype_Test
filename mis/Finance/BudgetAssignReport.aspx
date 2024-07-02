@@ -12,8 +12,11 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="Group_Master.aspx" title="click to go on">Budget Assign Report</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Assign Report</a></li>
                     </ol>
                 </div>
             </div>
@@ -24,7 +27,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Budget Assign Report /
                                 बजट आवंटन रिपोर्ट</h4>
                         </div>
@@ -38,7 +41,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select From Date /<br />
+                                        Select From Date <br />
                                         प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2023-12-10" />
                                 </div>
@@ -46,7 +49,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select To Date /<br />
+                                        Select To Date <br />
                                         अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
@@ -54,7 +57,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type/
+                                        Select Office Type
    <br />
                                          कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
@@ -72,7 +75,7 @@
                              <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Office Name/<br />
+                                Select Office Name<br />
                                 कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -89,7 +92,7 @@
                             <div class="col-md-12 justify-content-center">
                                 <div class="form-group text-center">
                                     <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                    <a id="clearfirst" href="BudgetAssignProcess.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                    <a id="clearfirst" href="BudgetAssignReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                                 </div>
                             </div>
 
@@ -118,23 +121,23 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                    क्रमांक
                                                 </th>
-                                                <th>Assign Date/<br />
-                                                    दिनांक निर्दिष्ट</th>
-                                                <th>Letter No. /
+                                                <th>Assign Date<br />
+                                                    नियत दिनांक </th>
+                                                <th>Letter No. 
                                             <br />
                                                     पत्र क्रमांक</th>
-                                                <th>No. of DFO /
+                                                <%--<th>No. of DFO 
                                             <br />
                                                     डी.एफ.ओ की संख्या 
-                                                </th>
-                                                <th>Total Assign Limit /
+                                                </th>--%>
+                                                <th>Total Assign Limit 
                                             <br />
                                                     कुल नियत सीमा
                                                 </th>
-                                                <th>LetterView /
+                                                <th>LetterView 
                                             <br />
                                                     पत्र दृश्य 
                                                 </th>
@@ -151,9 +154,9 @@
                                                     <a>2024-25/0809</a>
 
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <%--<td align="center" valign="middle">
                                                     <a>1</a>
-                                                </td>
+                                                </td>--%>
                                                 <td align="center" valign="middle">
                                                     <a>222975.00</a>
                                                 </td>
@@ -169,9 +172,9 @@
                                                     <a>2024-25/0810</a>
 
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <%--<td align="center" valign="middle">
                                                     <a>1</a>
-                                                </td>
+                                                </td>--%>
                                                 <td align="center" valign="middle">
                                                     <a>69487.00</a>
                                                 </td>
@@ -187,9 +190,9 @@
                                                     <a>2024-25/0811</a>
 
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <%--<td align="center" valign="middle">
                                                     <a>1</a>
-                                                </td>
+                                                </td>--%>
                                                 <td align="center" valign="middle">
                                                     <a>54487.00</a>
                                                 </td>

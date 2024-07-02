@@ -4,26 +4,34 @@
        <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor"></h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="PaymentVoucher.aspx" title="click to go on">Budget Utilization Report</a></li>
-                </ol>
+  
+     <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Utilization Report</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
+
+
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Budget Utilization Report /
                                 बजट उपयोगिता रिपोर्ट</h4>
                         </div>
@@ -37,7 +45,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Financial Year /
+                                    Select Financial Year <br />
                                         वित्तीय वर्ष का चयन करें<span style="color: red;"> *</span></label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
                                 </div>
@@ -45,7 +53,7 @@
                              <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Month /
+                                    Select Month <br />
                                         माह का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                          <option value="6">June </option>
@@ -67,18 +75,17 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type /<br />
+                                        Select Head Type <br />
                                         हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
-                                        <option value="1">Annual</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type/
+                                        Select Office Type
    <br />
                                          कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
@@ -97,7 +104,7 @@
                             <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Office Name/<br />
+                                Select Office Name<br />
                                 कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -143,23 +150,23 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                    क्रमांक
                                                 </th>
-                                                <th>Ledger Code /
+                                                <th>Ledger Code 
                                             <br />
                                                     बहीखाता कोड
-                                                <th>Ledger Name /<br />
+                                                <th>Ledger Name <br />
                                                     बहीखाता का नाम</th>
-                                                <th>Allocation /
+                                                <th>Allocation 
                                             <br />
                                                     आवंटन राशि 
                                                 </th>
-                                                <th>Utilization /
+                                                <th>Utilization 
                                             <br />
                                                     उपयोगी राशि
                                                 </th>
-                                                <th>% of Utilization/
+                                                <th>% of Utilization
                                             <br />
                                                     उपयोगी राशि % 
                                                 </th>

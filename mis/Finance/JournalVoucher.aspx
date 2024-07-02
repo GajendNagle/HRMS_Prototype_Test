@@ -3,20 +3,37 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor"></h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="PaymentVoucher.aspx" title="click to go on">Journal Voucher</a></li>
-                </ol>
+  
+     <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                     <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#VoucherCreation" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Voucher Creation</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Journal Voucher</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
+     <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5 class="card-title">Journal Voucher / जर्नल वाउचर</h5>
+                        </div>
+                    </div>
+                </div>
+
 
      <div class="card-body">
         <div runat="server" id="divOffice">
@@ -57,8 +74,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Cr.Dr Type/
-                                        क्रेडिट डेबिट प्रकार का चयन करें<span style="color: red;"> *</span></label>
+                                Select Cr./Dr. Type<br />
+                                        क्रेडिट/ डेबिट प्रकार का चयन करें<span style="color: red;"> *</span></label>
                             <select class="form-control select2">
                                 <option value="2">Debit</option>
                                 <option value="1">Credit</option>
@@ -68,27 +85,31 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Ledger(Head Code) /<br />
+                                Select Ledger(Head Code) <br />
                                 बहीखाता (हेड कोड) का चयन करें<span style="color: red;"> *</span></label>
                             <select class="form-control select2">
                                 <option value="1">Select</option>
+                                <option value="2">Basic Pay/Special Pay/Dearness Allowance (10.01.01)</option>
+                                <option value="3">Gratuity Premium Payment (10.01.02) </option>
+                                <option value="4">Medical Expense Reimbursement (10.02.01)</option>
+                                <option value="5">Travel Expenses (10.03.01)</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Current Balance Amount/
+                                Current Balance Amount
    <br />
                                 वर्तमान शेष राशि <span style="color: red;"> *</span>
                             </label>
-                            <input type="text" class="form-control" value="897644.00" />
+                            <input type="text" class="form-control" value="897644.00" readonly/>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Amount /<br />
+                                Enter Amount <br />
                                 राशि दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Amount" />
                         </div>
@@ -110,29 +131,78 @@
                             <table class="table table-bordered" id="mainTable">
                                 <thead>
                                     <tr align="center" valign="middle">
-                                        <th>Sr. No. /<br />
-                                            क्र.सं.
+                                        <th>Sr. No. <br />
+                                            क्रमांक
                                         </th>
-                                        <th> Ledger(Head Code) /<br />
+                                        <th> Ledger(Head Code) <br />
                                 बहीखाता (हेड कोड) </th>
-                                        <th>Debit Amount /
+                                        <th>Debit Amount 
                                             <br />
                                             डेबिट राशि </th>
-                                        <th>Credit Amount/
+                                        <th>Credit Amount
                                             <br />
                                             क्रेडिट राशि 
                                         </th>
-                                        <th>BillByBill Detail /
+                                        <th>BillByBill Detail 
                                             <br />
                                             बिलबायबिल विवरण
                                         </th>
-                                        <th>Action /
+                                        <th>Action 
                                             <br />
-                                            कार्रवाई
+                                            कार्यवाही
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody></tbody>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
 
@@ -143,7 +213,7 @@
                         <label>
                             Narration /<br />
                             वर्णन</label>
-                        <textarea name="comments" id="comments" rows="5" cols="120" style="font-family: sans-serif; font-size: 1.2em;">
+                        <textarea name="comments" id="comments" rows="1" cols="50" style="font-family: sans-serif; font-size: 1.2em; height:40px;">
 </textarea>
                     </div>
                 </div>

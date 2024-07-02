@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="BudgetAllocationReport.aspx.cs" Inherits="mis_Finance_BudgetAllocationReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DayBookSingle.aspx.cs" Inherits="mis_Finance_DayBookSingle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-  
-     <div class="row">
+    
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -16,55 +16,35 @@
                         <li class="breadcrumb-item">
                             <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
                         </li>
-                       <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
-                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Allocation Report </a></li>
+                       <li class="breadcrumb-item"> <a href="#FinanceReport" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Finance Report</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Demand Details </a></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="content-wrapper">
         <div class="container-fluid">
-            <div class="card card-border-primary">
+            <diav class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title">Budget Allocation Report /
-                                बजट आवंटन रिपोर्ट</h4>
+                            <h4 class="card-title">Day Book Single Date/
+                                 डे बुक एकल दिनांक</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Budget Allocation Report /
-                                बजट आवंटन रिपोर्ट</legend>
+                        <legend>Day Book Single Date/
+                                 डे बुक एकल दिनांक</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select From Date <br />
-                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                        Select  Date <br />
+                                         दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Select To Date <br />
-                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
-                                    <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-12-10" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Select Head Type <br />
-                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
-                                    <select class="form-control select2">
-                                        <option value="2">Expense</option>
-                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -85,8 +65,6 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -102,96 +80,102 @@
                                     </select>
                                 </div>
                             </div>
+
+
                         </div>
                         <hr />
                         <div class="col-md-12 justify-content-center">
                             <div class="form-group text-center">
-                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Submit</button>
-                                <a id="clearfirst" href="BudgetAllocationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FSDetails').style.display = 'block';">Search</button>
+                                <a id="clearfirst" href="DayBookSingle.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset id="FS_Details" style="display: none">
-                        <legend>Budget Allocation Report /
-                                बजट आवंटन जानकारी </legend>
-                        <div class="row">
+                    <fieldset id="FSDetails" style="display: none">
+                        <legend>Day Book/
+                                 डे बुक</legend>
+                        <div class="row align-items-end">
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <button class="btn btn-outline-secondary btn-border" onclick="openPDF()">Print</button>
                                     <button class="btn btn-outline-success btn-border" onclick="exportFile()">Export</button>
                                 </div>
                             </div>
+                            <%-- <div class="col-md-2 justify-content-end">
+                                <div class="form-group text-end">
+                                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>--%>
+                        </div>
+
+                        <div class="row justify-content-center mb-0">
+                            <h5> Day Book
+                            </h5>
                         </div>
                         <div class="row justify-content-center mb-0">
-                            <h5>Budget Allocation Report(01/04/2024-31/03/2023)
+                            <h5>Directorate of Public Instruction,
                             </h5>
                         </div>
                         <div class="row justify-content-center mb-0">
                             <h5>[Head Office]
                             </h5>
                         </div>
+                        <div class="row justify-content-center mb-0">
+                            <h5>01-04-2024  To 31-06-2024 
+                            </h5>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-md-2 justify-content-end">
+                                <div class="form-group text-end">
+                                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
-                                            <tr align="center" valign="middle">
-                                                <th>Sr. No. <br />
-                                                    क्रमांक	
-                                                </th>
-                                                <th>Ledger Code 
-                                            <br />
-                                                    बहीखाता कोड</th>
-                                                <th>Ledger Name 
-                                            <br />
-                                                    बहीखाता का नाम
-                                                </th>
-                                                <th>Amount
-                                            <br />
-                                                    आवंटन राशि
-                                                </th>
+                                            <tr>
+                                                <th>Voucher Date<br />
+                                                    वाउचर दिनांक</th>
+                                                <th>Ledger Name<br />
+                                                    बहीखाता का नाम</th>
+                                                <th>Vch Type <br />
+                                                    वाउचर प्रकार</th>
+                                                <th>Vch No. <br />
+                                                    वाउचर नं.</th>
+                                                <th>Office Name<br />
+                                                    कार्यालय का नाम</th>
+                                                <th>Debt Amount<br />
+                                                    डेबिट राशि</th>
+                                                <th>Credit Amount<br />
+                                                    क्रेडिट राशि</th>
+                                                <th>Action<br />
+                                                    कार्यवाही</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>1</span>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>10.01.01</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>Basic Pay/Special Pay/Dearness Allowance</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>543000.00</a>
-                                                </td>
+                                                <td>01/04/2024</td>
+                                                <td>10.01.01</td>
+                                                <td>Payment</td>
+                                                <td>H024-25VR1</td>
+                                                <td>Head Office</td>
+                                                <td>1658951.00</td>
+                                                <td></td>
+                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>2</span>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>10.02.01</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>Medical Expense Reimbursement</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>100054.00</a>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>3</span>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>10.01.01</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>Stationery, Font Copy, Bidding</a>
-                                                </td>
-                                                <td align="center" valign="middle">
-                                                    <a>10000.00</a>
-                                                </td>
+                                                <td>01/04/2024</td>
+                                                <td>10.01.02</td>
+                                                <td>Receipt</td>
+                                                <td>H024-25MR109</td>
+                                                <td>Head Office</td>
+                                                <td></td>
+                                                <td>1131.00</td>
+                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>
@@ -202,7 +186,7 @@
                         </div>
                     </fieldset>
                 </div>
-            </div>
+            </diav>
         </div>
     </div>
 </asp:Content>

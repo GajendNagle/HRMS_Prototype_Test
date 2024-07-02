@@ -1,10 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="BudgetAllocationReport.aspx.cs" Inherits="mis_Finance_BudgetAllocationReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="BudgetAllocation.aspx.cs" Inherits="mis_Finance_BudgetAllocation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-  
-     <div class="row">
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -17,46 +16,37 @@
                             <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
                         </li>
                        <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
-                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Allocation Report </a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Allocation</a></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title">Budget Allocation Report /
-                                बजट आवंटन रिपोर्ट</h4>
+                            <h4 class="card-title">Budget Allocation /
+                                बजट आवंटन </h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Budget Allocation Report /
-                                बजट आवंटन रिपोर्ट</legend>
+                        <legend>Budget Allocation  /
+                                बजट आवंटन </legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select From Date <br />
-                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                        Select  Date <br />
+                                         दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Select To Date <br />
-                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
-                                    <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-12-10" />
-                                </div>
-                            </div>
+
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -85,8 +75,6 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -106,13 +94,13 @@
                         <hr />
                         <div class="col-md-12 justify-content-center">
                             <div class="form-group text-center">
-                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Submit</button>
-                                <a id="clearfirst" href="BudgetAllocationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
+                                <a id="clearfirst" href="BudgetAllocation.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
                         </div>
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
-                        <legend>Budget Allocation Report /
+                        <legend>Budget Allocation Details /
                                 बजट आवंटन जानकारी </legend>
                         <div class="row">
                             <div class="col-md-4">
@@ -122,14 +110,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center mb-0">
-                            <h5>Budget Allocation Report(01/04/2024-31/03/2023)
-                            </h5>
-                        </div>
-                        <div class="row justify-content-center mb-0">
-                            <h5>[Head Office]
-                            </h5>
-                        </div>
                         <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -137,20 +117,49 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. <br />
-                                                    क्रमांक	
+                                                <th>1
                                                 </th>
-                                                <th>Ledger Code 
-                                            <br />
-                                                    बहीखाता कोड</th>
-                                                <th>Ledger Name 
-                                            <br />
-                                                    बहीखाता का नाम
+                                                <th>2</th>
+                                                <th>3
                                                 </th>
-                                                <th>Amount
-                                            <br />
-                                                    आवंटन राशि
+                                                <th>4
                                                 </th>
+                                                <th>5
+                                                </th>
+                                                <th>6
+                                                </th>
+                                                <th>7
+                                                </th>
+                                                <th>8(5-7)
+                                                </th>
+                                                <th>9
+                                                </th>
+                                                <th>10
+                                                </th>
+                                                <th>11(9-10)
+                                                </th>
+                                                <th>12
+                                                </th>
+                                            </tr>
+                                            <tr align="center" valign="middle">
+                                                <th>क्रमांक
+                                                </th>
+                                                <th>उपलेखा शीर्ष</th>
+                                                <th>विवरण
+                                                </th>
+                                                <th>व्यय गत वर्ष
+                                                </th>
+                                                <th>जिला यूनियन द्वारा मांगी गई राशि(1 अप्रैल से आज दिनांक तक)
+                                                </th>
+                                                <th>कुल व्यय(1 अप्रैल से आज दिनांक तक)
+                                                </th>
+                                                <th>मुख्यालय द्वार दी गई राशि(1 अप्रैल से आज दिनांक तक)
+                                                </th>
+                                                <th>आवंटन हेतु शेष राशि</th>
+                                                <th>प्रस्तावित बजट</th>
+                                                <th>जिला यूनियन को प्रदाय राशि(1 अप्रैल से आज दिनांक तक)</th>
+                                                <th>शेष बजट</th>
+                                                <th>प्रदाय की गई राशि</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -164,33 +173,69 @@
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>543000.00</a>
+                                                    <a>94342199.00</a>
                                                 </td>
+                                                <td align="center" valign="middle">
+                                                    <a>0.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>26680432.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>73852034.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>-73852034.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>100000000.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>73852034.00</a>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <div contenteditable="true">26147966.00</div>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <div contenteditable="true">0.00</div>
+                                                </td>
+
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>10.02.01</a>
+                                                    <a>10.01.02</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Medical Expense Reimbursement</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>100054.00</a>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span>3</span>
+                                                    <a>2597151.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>10.01.01</a>
+                                                    <a>0.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>Stationery, Font Copy, Bidding</a>
+                                                    <a>0.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>10000.00</a>
+                                                    <a>1298575.50</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>-1298575.00</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>1298575.50</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <a>26000000.50</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                    <div contenteditable="true">1301424.50</div>
+                                                </td>
+                                                 <td align="center" valign="middle">
+                                                    <div contenteditable="true">0.00</div>
                                                 </td>
                                             </tr>
                                             <!-- Add more rows as needed -->
@@ -205,6 +250,7 @@
             </div>
         </div>
     </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>

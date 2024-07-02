@@ -13,9 +13,13 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
-                    <li class="breadcrumb-item active"><a href="Group_Master.aspx" title="click to go on"> Demand Details</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"> <a href="#DemandProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Demand Process</span></a></li>
+                    <li class="breadcrumb-item active"><a title="click to go on"> Demand Details </a></li>
                     </ol>
+
                 </div>
             </div>
         </div>
@@ -25,7 +29,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Demand Details /
                                 मांग राशि विवरण</h4>
                         </div>
@@ -39,7 +43,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Financial Year /
+                                    Select Financial Year <br />
                                         वित्तीय वर्ष का चयन करें<span style="color: red;"> *</span></label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
                                 </div>
@@ -47,7 +51,7 @@
                              <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Month /
+                                    Select Month <br />
                                         माह का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                          <option value="6">June </option>
@@ -69,18 +73,17 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type /<br />
+                                        Select Head Type <br />
                                         हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
-                                        <option value="1">Annual</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type/
+                                        Select Office Type
    <br />
                                          कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
@@ -99,7 +102,7 @@
                             <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Office Name/<br />
+                                Select Office Name<br />
                                 कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -116,7 +119,7 @@
                             <div class="col-md-12 justify-content-center">
                             <div class="form-group text-center">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                <a id="clearfirst" href="BudgetDemandRequest.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                <a id="clearfirst" href="DemandDetails.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
                         </div>
 
@@ -145,25 +148,25 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. /<br />
-                                                    क्र.सं.
+                                                <th>Sr. No. <br />
+                                                    क्रमांक
                                                 </th>
-                                                <th>Ledger Code /
+                                                <th>Ledger Code 
                                             <br />
                                                     बहीखाता कोड
-                                                <th>Ledger Name /<br />
+                                                <th>Ledger Name <br />
                                                     बहीखाता नाम</th>
-                                                <th>Date /
+                                                <th>Date 
                                             <br />
                                                     दिनांक 
                                                 </th>
-                                                <th>Date Wise Total /
+                                                <th>Date Wise Total 
                                             <br />
                                                     दिनांकवार राशि
                                                 </th>
-                                                <th>Status/
+                                                <th>Status
                                             <br />
-                                                    स्थिति
+                                                    कार्यवाही
                                                 </th>
                                             </tr>
                                         </thead>
