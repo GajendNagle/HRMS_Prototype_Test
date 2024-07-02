@@ -213,7 +213,7 @@
             <div runat="server" id="Fieldset1" visible="false">
                 <fieldset>
 
-                    <legend>To Be Filled By Reporting Rfficer /रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
+                    <legend>To Be Filled By Reporting Officer /रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
 
                     <div class="fw-bold">Please give comment of agreement or disagreement on the achievement mentioned by the officer reported upon in self assessment.Please give reasons in case of disagreement and refer to communication made to the officer reported upon in this regard</div>
                     <div class="fw-bold">आवेदक अधिकारी/शिक्षक द्वारा स्वमूल्यांकन में उल्लेखित उपलब्धि के संबंध में सहमति/असहमति की टिप्पणी | असहमति की स्थिति में कारण एवं इस संबंध में किये गये पत्राचार का विवरण एवं स्केल पॉइंट में प्रदर्शन |</div>
@@ -609,7 +609,7 @@
                                 <label>
                                     Accepting Authority Officer Name
                                     <br />
-                                    स्वीकारकर्ता प्राधिकारी का नाम <span style="color: red">*</span></label>
+                                    स्वीकारकर्ता प्राधिकारी का नाम </label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
 
                             </div>
