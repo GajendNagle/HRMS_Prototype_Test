@@ -557,7 +557,7 @@
                             <div class="form-group">
                                 <label>
                                     Select Class<br />
-                                    कक्षा<span style="color: red">*</span></label>
+                                    कक्षा का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="class" onchange="myFunction5()">
                                     <option value="0">Select</option>
                                     <option value="1">1st Class</option>
@@ -580,7 +580,7 @@
                                 <label>
                                     Select Subject<br />
 
-                                    विषय<span style="color: red">*</span></label>
+                                    विषय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Biology</option>
@@ -596,7 +596,7 @@
                             <div class="form-group">
                                 <label>
                                     Select  Percentage<br />
-                                    प्रतिशत<span style="color: red">*</span>
+                                    प्रतिशत चुनें<span style="color: red">*</span>
                                 </label>
                                 <select id="percentage" name="percentage" class="form-control select2">
                                     <option>Select</option>

@@ -566,7 +566,7 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                Enter  Family Income(Yearly)<br />
-                                 पारिवारिक आय दर्ज करें(वार्षिक)<span style="color: red">*</span></label>
+                                 पारिवार की वार्षिक आय दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Income" />
                             </div>
                         </div>
@@ -620,7 +620,7 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                     Select Class<br />
-                                    कक्षा<span style="color: red">*</span></label>
+                                    कक्षा का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="class" onchange="myFunction5()">
                                     <option value="0">Select</option>
                                     <option value="1">1st Class</option>
@@ -643,7 +643,7 @@ Berasia"
                                 <label>
                                     Select Subject<br />
 
-                                    विषय<span style="color: red">*</span></label>
+                                    विषय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Biology</option>
@@ -659,7 +659,7 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                     Select  Percentage<br />
-                                    प्रतिशत<span style="color: red">*</span>
+                                    प्रतिशत चुनें<span style="color: red">*</span>
                                 </label>
                                 <select id="percentage" name="percentage" class="form-control select2">
                                     <option>Select</option>
