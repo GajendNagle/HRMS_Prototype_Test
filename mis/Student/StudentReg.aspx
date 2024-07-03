@@ -53,7 +53,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Student Registration/छात्र पंजीकरण
+                    <h5 class="card-title">Student Registration/विद्यार्थी  पंजीकरण
                     </h5>
                 </div>
             </div>
@@ -63,7 +63,7 @@
             <div id="show2">
                    
                 <fieldset>
-                    <legend>Student Registration/छात्र पंजीकरण</legend>
+                    <legend>Student Registration/विद्यार्थी  पंजीकरण</legend>
 
                     <div class="row align-items-end">
                         <div class="col-md-3">
@@ -128,7 +128,7 @@
                                 <label>
                                        Student  Name (English)<br />
 
-                                    छात्र का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
+                                    विद्यार्थी  का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Riya Gupta" readonly />
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                                 <label>
                                       Student  Name (Hindi)<br />
 
-                                    छात्र का नाम (हिंदी में)<span style="color: red">*</span></label>
+                                    विद्यार्थी  का नाम (हिंदी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="रिया गुप्ता" readonly />
                             </div>
                         </div>
@@ -728,7 +728,7 @@ Berasia"
                 <fieldset>
                     <legend>Student Bank Account Information/
 
-छात्र बैंक खाते की जानकारी</legend>
+विद्यार्थी  बैंक खाते की जानकारी</legend>
                     <div class="row">
                        
                         <div class="col-md-3">
@@ -814,7 +814,7 @@ Berasia"
                             <label>
                                Upload Student Photo<br />
                               
-छात्र फोटो अपलोड करें :
+विद्यार्थी का फोटो अपलोड करें :
                             </label>
                         </div>
                         <div id="DocAppointment1" class="col-md-4">
@@ -832,7 +832,7 @@ Berasia"
                         <div  class="col-md-4"  style="display:none;" id="DisCertificate">
                             <label>
                                 Upload Student Disability Certificate<br />
-                                छात्र विकलांगता प्रमाण पत्र अपलोड करें
+                                विद्यार्थी का  विकलांगता प्रमाण पत्र अपलोड करें
  :
                             </label>
                         </div>
@@ -851,7 +851,7 @@ Berasia"
                         <div id="DocCaste" class="col-md-4">
                             <label>
                                 Upload Student Cast/Category Certificate<br />
-                             छात्र का जाति और श्रेणी प्रमाण पत्र अपलोड करें:
+                             विद्यार्थी  का जाति और श्रेणी प्रमाण पत्र अपलोड करें:
                             </label>
                         </div>
                         <div id="DocCaste1" class="col-md-4">
@@ -866,7 +866,7 @@ Berasia"
                         <div id="DocPresentpost" class="col-md-4">
                             <label>
                                Student Upload Transfer Certificate<br />
-                             छात्र का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
+                             विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
                         <div id="DocPresentpost1" class="col-md-4">
@@ -881,7 +881,7 @@ Berasia"
                         <div id="Dochandicapped" class="col-md-4">
                             <label>
                             Upload  Student   Bank Passbook <br />
-                               छात्र का बैंक पासबुक  अपलोड करें :
+                               विद्यार्थी  का बैंक पासबुक  अपलोड करें :
                             </label>
                         </div>
                         <div id="Dochandicapped1" class="col-md-4">

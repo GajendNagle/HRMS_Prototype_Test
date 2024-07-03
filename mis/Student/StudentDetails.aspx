@@ -49,14 +49,14 @@ textarea::-webkit-scrollbar {
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Student Registration  Details/छात्र पंजीकरण विवरण
+                    <h5 class="card-title">Student Registration  Details/विद्यार्थी  पंजीकरण विवरण
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset id="show2" runat="server">
-    <legend>Student Registration  Details Report/छात्र पंजीकरण विवरण  </legend>
+    <legend>Student Registration  Details Report/विद्यार्थी  पंजीकरण विवरण  </legend>
     <div class="row justify-content-end">
         <div class="col-md-4 text-end">
             <div class="form-group">
@@ -77,12 +77,12 @@ textarea::-webkit-scrollbar {
                     <thead>
                         <tr valign="middle" style="white-space: nowrap;">
                             <th>S.No.<br />
-                                क्र.सं</th>
+                                सं.क्र.</th>
                             
                           <%--  <th>Financial Year<br />
                                 वित्तीय वर्ष</th>--%>
                             <th>Student Name<br />
-                                छात्र का नाम</th>
+                                विद्यार्थी  का नाम</th>
                             <th>Gender<br />
                                 लिंग </th>
                             <th>Date Of Birth <br />
@@ -99,7 +99,7 @@ textarea::-webkit-scrollbar {
                             <th>Block<br />
                                 ब्लॉक </th>
                             <th>View Student Application<br />
-    छात्र आवेदन देखें</th>
+    विद्यार्थी  आवेदन देखें</th>
                             
 
                         </tr>
@@ -138,7 +138,7 @@ textarea::-webkit-scrollbar {
           <div class="modal-content">
               <div class="modal-header" style="background-color: var(--vz-primary);">
                   <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
-                  <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Student Registration Details/छात्र पंजीकरण विवरण</h3>
+                  <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Student Registration Details/विद्यार्थी  पंजीकरण विवरण</h3>
                   <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -150,7 +150,7 @@ textarea::-webkit-scrollbar {
                                 <label>
                                        Student  Name (English)<br />
 
-                                    छात्र का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
+                                    विद्यार्थी  का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Riya Gupta" readonly />
                             </div>
                         </div>
@@ -159,7 +159,7 @@ textarea::-webkit-scrollbar {
                                 <label>
                                       Student  Name (Hindi)<br />
 
-                                    छात्र का नाम (हिंदी में)<span style="color: red">*</span></label>
+                                    विद्यार्थी  का नाम (हिंदी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="रिया गुप्ता" readonly />
                             </div>
                         </div>
@@ -749,7 +749,7 @@ Berasia"
                 <fieldset>
                     <legend>Student Bank Account Information/
 
-छात्र बैंक खाते की जानकारी</legend>
+विद्यार्थी  बैंक खाते की जानकारी</legend>
                     <div class="row">
                        
                         <div class="col-md-3">
@@ -826,7 +826,7 @@ Berasia"
                             <label>
                                Upload Student Photo<br />
                               
-छात्र फोटो अपलोड करें :
+विद्यार्थी  फोटो अपलोड करें :
                             </label>
                         </div>
                         <div id="DocAppointment1" class="col-md-4">
@@ -844,7 +844,7 @@ Berasia"
                         <div  class="col-md-4" id="DisCertificate">
                             <label>
                                 Upload Student Disability Certificate<br />
-                                छात्र विकलांगता प्रमाणपत्र अपलोड करें
+                                विद्यार्थी  विकलांगता प्रमाणपत्र अपलोड करें
  :
                             </label>
                         </div>
@@ -863,7 +863,7 @@ Berasia"
                         <div id="DocCaste" class="col-md-4">
                             <label>
                                 Upload Student Cast/Category Certificate<br />
-                             छात्र का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
+                             विद्यार्थी  का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
                             </label>
                         </div>
                         <div id="DocCaste1" class="col-md-4">
@@ -878,7 +878,7 @@ Berasia"
                         <div id="DocPresentpost" class="col-md-4">
                             <label>
                                Student Upload Transfer Certificate<br />
-                             छात्र का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
+                             विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
                         <div id="DocPresentpost1" class="col-md-4">
@@ -893,7 +893,7 @@ Berasia"
                         <div id="Dochandicapped" class="col-md-4">
                             <label>
                             Upload  Student   Bank Passbook <br />
-                               छात्र का बैंक पासबुक  अपलोड करें :
+                               विद्यार्थी  का बैंक पासबुक  अपलोड करें :
                             </label>
                         </div>
                         <div id="Dochandicapped1" class="col-md-4">

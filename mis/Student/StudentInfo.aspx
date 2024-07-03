@@ -57,7 +57,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Student Registration /छात्र पंजीकरण 
+                    <h5 class="card-title">Student Registration /विद्यार्थी  पंजीकरण 
                     </h5>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                                     Enter Student  Name (English)<br />
 
                                   
-छात्र का नाम दर्ज करें (अंग्रेजी)<span style="color: red">*</span></label>
+विद्यार्थी  का नाम दर्ज करें (अंग्रेजी)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Student  Name (English)" />
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                                 <label>
                                     Enter  Student  Name (Hindi)<br />
 
-                                    छात्र का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
+                                    विद्यार्थी  का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder=" Enter  Student  Name (Hindi)" />
                             </div>
                         </div>
@@ -665,7 +665,7 @@
                 <fieldset>
                     <legend>Student Bank Account Information/
 
-छात्र बैंक खाते की जानकारी</legend>
+विद्यार्थी  बैंक खाते की जानकारी</legend>
                     <div class="row">
                        
                         <div class="col-md-3">
@@ -752,7 +752,7 @@
                             <label>
                                 Uploade Student Photo<br />
 
-                                छात्र फोटो अपलोड करें :
+                                विद्यार्थी का फोटो अपलोड करें :
                             </label>
                         </div>
                         <div id="DocAppointment1" class="col-md-4">
@@ -770,7 +770,7 @@
                         <div class="col-md-4" style="display: none;" id="DisCertificate">
                             <label>
                                 Upload Student Disability Certificate<br />
-                                छात्र विकलांगता प्रमाणपत्र अपलोड करें
+                                विद्यार्थी का विकलांगता प्रमाणपत्र अपलोड करें
  :
                             </label>
                         </div>
@@ -778,7 +778,9 @@
                             <input type="file" id="fileInput3" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div class="col-md-4" style="display: none;" id="eye">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye">
+
+</i></button>
 
 
                         </div>
@@ -789,7 +791,7 @@
                         <div id="DocCaste" class="col-md-4">
                             <label>
                                 Upload Student Cast/Category Certificate<br />
-                                छात्र का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
+                                विद्यार्थी  का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
                             </label>
                         </div>
                         <div id="DocCaste1" class="col-md-4">
@@ -805,7 +807,7 @@
                             <label>
                                 Student Upload 
 Transfer Certificate<br />
-                                छात्र का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
+                                विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
                         <div id="DocPresentpost1" class="col-md-4">
@@ -821,7 +823,7 @@ Transfer Certificate<br />
                             <label>
                                 Upload  Student   Bank Passbook
                                 <br />
-                                छात्र का बैंक पासबुक  अपलोड करें :
+                                विद्यार्थी  का बैंक पासबुक  अपलोड करें :
                             </label>
                         </div>
                         <div id="Dochandicapped1" class="col-md-4">
