@@ -56,7 +56,7 @@ textarea::-webkit-scrollbar {
         </div>
         <div class="card-body">
             <fieldset id="show2" runat="server">
-    <legend>Student Registration  Details Report/विद्यार्थी  पंजीकरण विवरण  </legend>
+    <legend>Student Registration  Details /विद्यार्थी  पंजीकरण विवरण  </legend>
     <div class="row justify-content-end">
         <div class="col-md-4 text-end">
             <div class="form-group">
