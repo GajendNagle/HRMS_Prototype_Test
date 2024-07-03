@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="StudentDetails .aspx.cs" Inherits="mis_Student_StudentDetails_" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="StudentDetails.aspx.cs" Inherits="mis_Student_StudentDetails_" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
     <style>@media print {
@@ -40,7 +40,7 @@ textarea::-webkit-scrollbar {
                       <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
                           <span>ACR</span></a>
                   </li>--%>
-                      <li class="breadcrumb-item"><span>Student Registration Print</span></li>
+                      <li class="breadcrumb-item"><span>Student Registration Details</span></li>
                   </ol>
               </div>
           </div>
@@ -49,14 +49,14 @@ textarea::-webkit-scrollbar {
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Student Registration  Report/छात्र पंजीकरण रिपोर्ट
+                    <h5 class="card-title">Student Registration  Details/छात्र पंजीकरण विवरण
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset id="show2" runat="server">
-    <legend>Student Registration  Detail Report/छात्र पंजीकरण विवरण रिपोर्ट </legend>
+    <legend>Student Registration  Details Report/छात्र पंजीकरण विवरण  </legend>
     <div class="row justify-content-end">
         <div class="col-md-4 text-end">
             <div class="form-group">
@@ -138,7 +138,7 @@ textarea::-webkit-scrollbar {
           <div class="modal-content">
               <div class="modal-header" style="background-color: var(--vz-primary);">
                   <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
-                  <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Student Registration Print/छात्र पंजीकरण प्रिंट</h3>
+                  <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Student Registration Details/छात्र पंजीकरण विवरण</h3>
                   <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -191,7 +191,7 @@ textarea::-webkit-scrollbar {
                             <div class="form-group">
                                 <label>
                                      Category<br />
-                                    वर्ग<span style="color: red">*</span></label>
+                                    श्रणी<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">OBC</option>
                                     <%-- <option value="Select">Select</option>
@@ -220,7 +220,7 @@ textarea::-webkit-scrollbar {
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Father Name 
+                                     Father's Name 
                                 <br />
 
                                     पिता का नाम<span style="color: red">*</span></label>
@@ -230,7 +230,7 @@ textarea::-webkit-scrollbar {
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                       Mother Name 
+                                       Mother's Name 
                                 <br />
 
                                     माता का नाम<span style="color: red">*</span></label>
@@ -252,7 +252,7 @@ textarea::-webkit-scrollbar {
 
                             <div class="form-group">
                                 <label>
-                                    Select   BPL<br />
+                                       BPL<br />
                                     गरीबी रेखा से नीचे<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true" >
                               
@@ -264,9 +264,9 @@ textarea::-webkit-scrollbar {
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select  Disability
+                                      Disability
                                 <br />
-                                    विकलांग<span style="color: red">*</span></label>
+                                    विकलांगता<span style="color: red">*</span></label>
                                 <select id="options" class="form-control " onchange="myFunction3()" readonly="true" >
                                      <option value="yes">Yes</option>
                                    
@@ -276,8 +276,8 @@ textarea::-webkit-scrollbar {
                         <div class="col-md-3 hidden" id="hiddenElement">
                             <div class="form-group">
                                 <label>
-                                    Select   Disability type<br />
-                                    विकलांगता प्रकार
+                                       Disability type<br />
+                                    विकलांगता का प्रकार
                                 <span style="color: red">*</span></label>
                                 <select id="ddlHandicappedType" class="form-control " readonly="true">
                                     
@@ -311,9 +311,9 @@ textarea::-webkit-scrollbar {
                         <div id="HandicapePercentage" class="col-md-3" >
                             <div class="form-group">
                                 <label>
-                                    Select  Handicapped Percentage 
+                                      Handicapped Percentage 
      <br />
-                                    विकलांग प्रतिशत<span style="color: red">*</span></label>
+                                    विकलांग का प्रतिशत<span style="color: red">*</span></label>
                                 <select id="ddlHandicappedPercentage" class="form-control " readonly="true">
                                  <%--   <option>Select</option>--%>
                                     <option value="40 to 50">41 to 50</option>
@@ -337,7 +337,7 @@ textarea::-webkit-scrollbar {
                             <div class="form-group">
                                 <label>
                                       State Name<br />
-                                    राज्य नाम<span style="color: red">*</span></label>
+                                    राज्य का नाम<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">Madhya Pradesh</option>
                                     <%--<option value="Select">Select</option>
@@ -379,7 +379,7 @@ textarea::-webkit-scrollbar {
                                 <label>
                                        Division Name
                                     <br />
-                                    संभाग नाम
+                                    संभाग का नाम
                                 </label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">Bhopal</option>
@@ -402,7 +402,7 @@ textarea::-webkit-scrollbar {
                             <div class="form-group">
                                 <label>
                                         District Name<br />
-                                    ज़िला नाम<span style="color: red">*</span></label>
+                                    ज़िला का नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control " readonly="true">
                                     <option value="Bhopal">Bhopal</option>
                                    <%-- <option value="Select">Select</option>
@@ -464,7 +464,7 @@ textarea::-webkit-scrollbar {
                                 <label>
                                      Block Name
                                     <br />
-                                    विकासखण्ड नाम<span style="color: red">*</span></label>
+                                    विकासखण्ड का नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl03" class="form-control" readonly="true">
                                     <option value="Agar">Hoshur</option>
                                    <%-- <option value="Select">Select</option>
@@ -489,7 +489,7 @@ textarea::-webkit-scrollbar {
                             <div class="form-group">
                                 <label>
                                      Village Name <br />
-                                    गाँव नाम<span style="color: red">*</span></label>
+                                    गाँव का नाम<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control"  autocomplete="off" placeholder="
 Berasia"
                                     readonly />
@@ -499,7 +499,7 @@ Berasia"
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>
-                                    Enter  Address
+                                      Address
                                     <br />
                                     पता <span style="color: red">*</span></label>
                                 <textarea class="form-control  w-100"
@@ -510,15 +510,15 @@ Berasia"
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Family Other Information/परिवार अन्य जानकारी</legend>
+                    <legend>Family Other Information/परिवार की अन्य जानकारी</legend>
 
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select   Is Vimukti<br />
+                                       Is Vimukti<br />
 
-                                    विमुक्ति है<span style="color: red">*</span></label>
+                                    विमुक्ति है /नहीं<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control " readonly="true">
                                     <%--<option>Select</option>
                                     <option>YES</option>--%>
@@ -530,7 +530,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select    Is Single Child<br />
+                                        Is Single Child<br />
                                     भाई बहन की संख्या<span style="color: red">*</span></label>
                                 <select id="child" name="ctl00$ContentBody$ctl02" class="form-control " readonly="true" onchange="myFunction4()">
                                    <%-- <option value="0">Select</option>
@@ -542,7 +542,7 @@ Berasia"
                         <div class="col-md-3" id="Sibling">
                             <div class="form-group">
                                 <label>
-                                    Select    No Of Sibling's<br />
+                                        No Of Sibling's<br />
                                     भाई बहन की संख्या<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control " readonly="true">
                                    <%-- <option>Select</option>--%>
@@ -563,7 +563,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select  Fatherless<br />
+                                    Select Fatherless<br />
 
                                     पितृहीन <span style="color: blue; font-size: 12px;">(पिता की ना होने की 
 स्थिति में )</span><span style="color: red">*</span></label>
@@ -577,7 +577,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter family/Father Occupation
+                                     Family/Father Occupation
                                     <br />
                                     परिवार/पिता का व्यवसाय <span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Teacher" readonly  />
@@ -586,22 +586,22 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                               Enter  Family Income(Yearly)<br />
-                                    पारिवारिक की वार्षिक आय <span style="color: red">*</span></label>
+                                 Family Income(Yearly)<br />
+                                    पारिवारिक  वार्षिक आय <span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="64000" readonly />
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Previous Acedemic Information/पिछली शैक्षणिक जानकारी</legend>
+                    <legend>Previous Acedemic Information/विगत शैक्षणिक वर्ष की जानकारी</legend>
                     <div class="row align-items-end">
 
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter   School UDISE Code<br />
-                                    स्कूल डीआईएसई कोड</label>
+                                       School UDISE Code<br />
+                                   स्कूल का UDISE कोड</label>
                                 <input id="ddlSchoolDise" class="form-control"  autocomplete="off" placeholder="23320400117-GOVT HSS AHAMDABAD" readonly onchange="myFunction7()" />
                                    <%-- <option>Select</option>
                                     <option>23320400117-GOVT HSS AHAMDABAD</option>
@@ -620,7 +620,7 @@ Berasia"
                         <div class="col-md-3" id="school" >
                             <div class="form-group">
                                 <label>
-                                    Select School Name<br />
+                                     School Name<br />
                                     स्कूल  का नाम</label>
                                 <select class="form-control" readonly="true">
                                  
@@ -640,7 +640,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Class<br />
+                                     Class<br />
                                     कक्षा<span style="color: red">*</span></label>
                                 <select class="form-control " readonly="true" id="class" onchange="myFunction5()">
                                  <%--   <option value="0">Select</option>--%>
@@ -662,7 +662,7 @@ Berasia"
                         <div class="col-md-3" id="subject" style="display:none;">
                             <div class="form-group">
                                 <label>
-                                    Select Subject<br />
+                                     Subject<br />
 
                                     विषय<span style="color: red">*</span></label>
                                 <select class="form-control select2">
@@ -679,7 +679,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select  Percentage<br />
+                                      Percentage<br />
                                     प्रतिशत<span style="color: red">*</span>
                                 </label>
                                 <select id="percentage" name="percentage" class="form-control " readonly="true">
@@ -703,12 +703,12 @@ Berasia"
 
                 </fieldset>
                 <fieldset>
-                    <legend>Current Acedemic Information/वर्तमान अकादमिक जानकारी</legend>
+                    <legend>Current Acedemic Information/वर्तमान शैक्षणिक वर्ष जानकारी</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Class<br />
+                                     Class<br />
                                     कक्षा<span style="color: red">*</span></label>
                                 <select class="form-control " readonly="true" id="class1" onchange="myFunction6()">
                                    <%-- <option value="0">Select</option>
@@ -730,7 +730,7 @@ Berasia"
                         <div class="col-md-3" id="subject1">
                             <div class="form-group">
                                 <label>
-                                    Select Subject<br />
+                                     Subject<br />
 
                                     विषय<span style="color: red">*</span></label>
                                 <select class="form-control " readonly="true">
@@ -755,7 +755,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter IFSC Code<br />
+                                     IFSC Code<br />
                                     आई.एफ.एस.सी कोड<span style="color: red">*</span></label>
                              <input class="form-control "  readonly  id="IFSC" placeholder="SBIN0051467" autocomplete="off"  onchange="myFunction8()"/>
                                <%--     <option value="0">Select</option>
@@ -794,7 +794,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Account No.<br />
+                                     Account No.<br />
                                     खाता नंबर<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="1111456237864" readonly />
                             </div>
@@ -802,7 +802,7 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Account Holder Name<br />
+                                     Account Holder Name<br />
                                     खाता धारक का नाम<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Riya Gupta" readonly />
                             </div>
