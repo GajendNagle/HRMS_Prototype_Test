@@ -26,9 +26,7 @@
             display: none;
         }
 
-        #idBankDetailsBox {
-            display: none;
-        }
+
 
         #handipaceType {
             display: none;
@@ -120,9 +118,9 @@
     <style>
         .profileimage {
             display: block;
-            height: 8.2rem;
-            margin-left: 4rem;
-            margin-top: -0.9rem;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         html body .m-t-30 {
@@ -160,23 +158,14 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -2rem;">
-            <img src="../../img/Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)" /><u><br />
-            </u>
-        </p>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/img/Registration.png" style="height: 70px">
+        </div>
     </div>
+
     <div class="content-wrapper">
         <div class="container-fluid">
-
-            <%--<div class="marqueecontainer">
-        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-        <div>
-            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                0
-            </marquee>
-        </div>
-    </div>--%>
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
@@ -201,7 +190,7 @@
                                             <fieldset>
                                                 <legend>Personal Information / व्यक्तिगत जानकारी</legend>
                                                 <div class="row align-items-end mb-0">
-                                                    <div class="col-md-9">
+                                                    <div class="col-xl-9">
                                                         <div class="row align-items-end">
                                                             <div class="col-md-4" hidden="hidden">
                                                                 <div class="form-group">
@@ -265,7 +254,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-3 ">
+                                                    <div class="col-xl-3 ">
                                                         <div class="row align-items-end">
                                                             <div class="col-md-12">
                                                                 <div class="form-group">
@@ -278,7 +267,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Gender
@@ -292,7 +281,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Height
@@ -301,7 +290,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Height IN (C.M.)" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Caste
@@ -316,7 +305,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Sub Caste
@@ -325,7 +314,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Sub Caste" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Religion
@@ -340,7 +329,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Identification Mark
@@ -349,7 +338,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Identification Mark" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Blood Group
@@ -366,7 +355,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Handicapped (PWD) 
@@ -378,7 +367,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="handipaceType" class="col-md-3">
+                                                    <div id="handipaceType" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Handicapped Type 
@@ -411,7 +400,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="HandicapePercentage" class="col-md-3">
+                                                    <div id="HandicapePercentage" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Handicapped Percentage 
@@ -428,7 +417,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Critical Illness
@@ -440,7 +429,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="DivCriticalIllness">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="DivCriticalIllness">
                                                         <div class="form-group">
                                                             <label>
                                                                 Type of Critical Illness
@@ -456,7 +445,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 PAN No. 
@@ -465,7 +454,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter PAN No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Aadhaar No.
@@ -474,7 +463,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Aadhaar No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Samagra ID No
@@ -483,7 +472,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samagra ID No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Employee Treasury Code
@@ -492,7 +481,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Treasury Code" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Employee PRAN Code
@@ -501,7 +490,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Pran Code" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Mobile No.
@@ -510,7 +499,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Mobile No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Email Id
@@ -520,7 +509,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Whether First Page of E-Service Book is Certified
@@ -533,7 +522,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="idCertificateDate" class="col-md-3">
+                                                    <div id="idCertificateDate" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Certification Date
@@ -543,7 +532,7 @@
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div id="idRollNo" class="col-md-3">
+                                                    <div id="idRollNo" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Employee Roll No.
@@ -553,7 +542,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Roll No." />
                                                         </div>
                                                     </div>
-                                                    <div id="idRank" class="col-md-3 ">
+                                                    <div id="idRank" class="col-md-6 col-lg-4 col-xl-3 ">
                                                         <div class="form-group">
                                                             <label>
                                                                 Employee Rank
@@ -563,7 +552,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Rank" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Hobbies
@@ -578,7 +567,7 @@
                                             <fieldset>
                                                 <legend>Nominee Details / नामांकित व्यक्ति का विवरण</legend>
                                                 <div class="row  align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Nominee Name
@@ -587,7 +576,7 @@
                                                             <input id="txtNomineeName" value="" name="ename" type="text" class="form-control" placeholder="Enter Nominee Name" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Relationship with Nominee
@@ -596,7 +585,7 @@
                                                             <input id="txtNomineeRelation" value="" name="ename" type="text" class="form-control" placeholder="Enter Relationship " />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Nominee Percentage
@@ -645,7 +634,7 @@
                                                         <fieldset>
                                                             <legend>Present Address / वर्तमान पता </legend>
                                                             <div class="row form-group">
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             State
@@ -688,7 +677,7 @@
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             Division
@@ -708,7 +697,7 @@
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             District
@@ -769,7 +758,7 @@
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             Block
@@ -783,7 +772,7 @@
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             Pincode
@@ -792,7 +781,7 @@
                                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             Address line 1
@@ -801,7 +790,7 @@
                                                                         <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6 col-lg-4 col-xl-3">
                                                                     <div class="form-group">
                                                                         <label>
                                                                             Address line 2
@@ -814,7 +803,7 @@
                                                         </fieldset>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 mb-4">
+                                                <div class="col-md-6 col-lg-4 col-xl-4 mb-4">
                                                     <div class="form-group">
                                                         <input type="checkbox" id="vehicle1" name="vehicle1" checked="checked" value="Bike" />
                                                         <b>Permanent Address same as Present Address</b>
@@ -823,7 +812,7 @@
                                                 <fieldset>
                                                     <legend>Permanent Address / स्थायी पता </legend>
                                                     <div class="row align-items-end">
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     State
@@ -866,7 +855,7 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     Division
@@ -886,7 +875,7 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     District
@@ -947,7 +936,7 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     Block 
@@ -961,7 +950,7 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     Pincode
@@ -970,7 +959,7 @@
                                                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" />
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     Address line 1 
@@ -979,7 +968,7 @@
                                                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" />
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                                             <div class="form-group">
                                                                 <label>
                                                                     Address line 2
@@ -994,7 +983,7 @@
                                             <fieldset>
                                                 <legend>Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Married Status
@@ -1007,7 +996,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="idSpouseName" class="col-md-3">
+                                                    <div id="idSpouseName" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Spouse Name
@@ -1016,7 +1005,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Name" />
                                                         </div>
                                                     </div>
-                                                    <div id="idSpouseGovEmp" class="col-md-3">
+                                                    <div id="idSpouseGovEmp" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Is Spouse Government Employee
@@ -1029,7 +1018,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="idSpouseDept" class="col-md-3">
+                                                    <div id="idSpouseDept" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Spouse Department Name
@@ -1038,7 +1027,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Department Name" />
                                                         </div>
                                                     </div>
-                                                    <div id="idSpouseOfcAdd" class="col-md-3">
+                                                    <div id="idSpouseOfcAdd" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Office Address
@@ -1053,7 +1042,7 @@
                                             <fieldset>
                                                 <legend>Education Qualification / शैक्षणिक योग्यता</legend>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Qualification
@@ -1104,7 +1093,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Subject
@@ -1113,7 +1102,7 @@
                                                             <input id="Subject" value="" name="ename" type="text" class="form-control" placeholder="Enter Subject" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Board / Univercity Name
@@ -1127,7 +1116,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Passing Year
@@ -1136,7 +1125,7 @@
                                                             <input id="PassingYear" name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Grade / Percentage
@@ -1145,7 +1134,7 @@
                                                             <input id="Grade" value="" name="ename" type="text" class="form-control" placeholder="Enter Grade/Percentage" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <input type="button" id="btnAdd" class="btn btn-outline-success w-lg btn-border" value="ADD" onclick="AddRow();" />
                                                         </div>
@@ -1186,7 +1175,7 @@
                                                 </div>
                                                 <hr />
                                                 <div class="col-md-12 form-group">
-                                                    <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border" id="saveAndNextBtn" >Save & Next</button>
+                                                    <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border" id="saveAndNextBtn">Save & Next</button>
                                                     <a runat="server" id="clearfirst" href="EmployeeRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                                 </div>
                                             </fieldset>
@@ -1199,7 +1188,7 @@
                                             <fieldset id="idFirstAppointment">
                                                 <legend>First Appointment Details / प्रथम नियुक्ति विवरण</legend>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 OIS Type 
@@ -1213,7 +1202,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="Div_officetype1">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="Div_officetype1">
                                                         <div class="form-group">
                                                             <label>
                                                                 Office Type
@@ -1237,7 +1226,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 ">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment Division
@@ -1257,7 +1246,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment District
@@ -1319,7 +1308,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 mt-4">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment Block 
@@ -1344,7 +1333,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 mt-4">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 DDO / Sankul
@@ -1360,7 +1349,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 mt-4">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Office/Institute/School Code & Name
@@ -1377,7 +1366,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Office/Institute/School Address of first Posting
@@ -1386,7 +1375,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment Order No.<br />
@@ -1394,7 +1383,7 @@
                                                             <input name="ename" type="text" placeholder="Enter Order No." class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment Order Date<br />
@@ -1403,7 +1392,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment Department<br />
@@ -1419,7 +1408,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Employee’s Designation Type<br />
@@ -1433,7 +1422,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 First Appointment Designation
@@ -1475,7 +1464,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Appointment Joining Date
@@ -1484,7 +1473,7 @@
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Panal Name
@@ -1503,7 +1492,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Subject
@@ -1524,7 +1513,7 @@
                                                     </div>
 
 
-                                                    <div class="col-md-3 mt-4">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Samvilian Order No.
@@ -1533,7 +1522,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 mt-4">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Samvilian Order Date
@@ -1542,7 +1531,7 @@
                                                             <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Working in other Department Organization on Deputation Transfer
@@ -1555,7 +1544,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="idDeptName" class="col-md-3">
+                                                    <div id="idDeptName" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Deputation Department Name
@@ -1564,7 +1553,7 @@
                                                             <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Is Regular
@@ -1578,7 +1567,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Increment Month
@@ -1591,8 +1580,8 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    
-                                                    <div class="col-md-3">
+
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Provision Period From Month<br />
@@ -1601,7 +1590,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Provision Period To Month
@@ -1611,7 +1600,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3 ">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                         <div class="form-group">
                                                             <label>
                                                                 If Provision Extend
@@ -1625,7 +1614,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3 ">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                         <div class="form-group">
                                                             <label>
                                                                 Provision Type 
@@ -1640,7 +1629,7 @@
                                                     </div>
 
 
-                                                    <div class="col-md-3 ">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                         <div class="form-group">
                                                             <label>
                                                                 Type of Post
@@ -1663,7 +1652,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Class
@@ -1678,7 +1667,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 ">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                         <div class="form-group">
                                                             <label>
                                                                 Pay Commission
@@ -1692,7 +1681,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="LevelF" class="col-md-3">
+                                                    <div id="LevelF" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Level
@@ -1720,7 +1709,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="PayScaleF" class="col-md-3">
+                                                    <div id="PayScaleF" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Pay scale
@@ -1756,7 +1745,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="GradePayF" class="col-md-3">
+                                                    <div id="GradePayF" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Grade Pay
@@ -1784,7 +1773,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="BasicPayF" class="col-md-3">
+                                                    <div id="BasicPayF" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Basic Pay
@@ -1804,7 +1793,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div id="txtBasicPayF" class="col-md-3">
+                                                    <div id="txtBasicPayF" class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Basic Pay
@@ -1833,7 +1822,7 @@
                                     <fieldset id="idCurrentAppointment">
                                         <legend>Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
                                         <div class="row align-items-end">
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         OIS Type
@@ -1847,7 +1836,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3" id="OffiiceType">
+                                            <div class="col-md-6 col-lg-4 col-xl-3" id="OffiiceType">
                                                 <div class="form-group">
                                                     <label>
                                                         Office Type
@@ -1872,7 +1861,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Division
@@ -1892,7 +1881,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment District 
@@ -1954,7 +1943,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Block 
@@ -1980,7 +1969,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         DDO / Sankul
@@ -1996,7 +1985,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Office/Institute/School Code & Name
@@ -2013,7 +2002,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Office/Institute/School Address of Posting 
@@ -2023,7 +2012,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Order No.
@@ -2032,7 +2021,7 @@
                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." />
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Order Date
@@ -2042,7 +2031,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Department
@@ -2054,7 +2043,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Employee’s Designation Type<br />
@@ -2068,7 +2057,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Designation
@@ -2111,7 +2100,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Current Appointment Joining Date
@@ -2120,7 +2109,7 @@
                                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Panal Name
@@ -2139,7 +2128,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Subject
@@ -2159,7 +2148,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Samvilian Order No.
@@ -2168,7 +2157,7 @@
                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-4">
+                                            <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                 <div class="form-group">
                                                     <label>
                                                         Samvilian Order Date
@@ -2177,7 +2166,7 @@
                                                     <input name="ename" type="date" class="form-control" autocomplete="off" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Employee Retirement Date
@@ -2187,7 +2176,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Working in Other Department Organization on Deputation Transfer
@@ -2200,7 +2189,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div id="idCurDeptName" class="col-md-3 mt-3">
+                                            <div id="idCurDeptName" class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Deputation Department Name<br />
@@ -2208,7 +2197,7 @@
                                                     <input name="ename" type="text" placeholder="Enter Department Name" class="form-control" autocomplete="off" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 ">
+                                            <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                 <div class="form-group">
                                                     <label>
                                                         Is Regular
@@ -2222,7 +2211,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3 ">
+                                            <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                 <div class="form-group">
                                                     <label>
                                                         Increment Month
@@ -2236,7 +2225,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Provision Period From Month<br />
@@ -2245,7 +2234,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Provision Period To Month
@@ -2255,7 +2244,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3 ">
+                                            <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                 <div class="form-group">
                                                     <label>
                                                         If Proviosion Extend
@@ -2269,7 +2258,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3 ">
+                                            <div class="col-md-6 col-lg-4 col-xl-3 ">
                                                 <div class="form-group">
                                                     <label>
                                                         Provision Type 
@@ -2282,7 +2271,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Type of Post 
@@ -2305,7 +2294,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Class
@@ -2320,7 +2309,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Pay Commission
@@ -2334,7 +2323,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div id="LevelC" class="col-md-3">
+                                            <div id="LevelC" class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Level
@@ -2362,7 +2351,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div id="PayScaleC" class="col-md-3">
+                                            <div id="PayScaleC" class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Pay scale 
@@ -2398,7 +2387,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div id="GradePayC" class="col-md-3">
+                                            <div id="GradePayC" class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Grade Pay
@@ -2426,7 +2415,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div id="BasicPayC" class="col-md-3">
+                                            <div id="BasicPayC" class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Basic Pay
@@ -2446,7 +2435,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div id="txtBasicPayC" class="col-md-3">
+                                            <div id="txtBasicPayC" class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="form-group">
                                                     <label>
                                                         Basic Pay
@@ -2475,63 +2464,59 @@
                                             <fieldset>
                                                 <legend>Employee Account Info / कर्मचारी खाता जानकारी</legend>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 IFSC Code
                                                                 <br />
                                                                 आईएफएससी कोड<span style="color: red">*</span></label>
-                                                            <input onchange="ShowBankDetails()" placeholder="Enter IFSC Code" name="ename" value="" type="text" class="form-control" autocomplete="off" />
+                                                            <input onchange="ShowBankDetails(this.value)" placeholder="Enter IFSC Code" name="ename" value="" type="text" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div id="idBankDetailsBox">
-                                                    <div class="row  align-items-end">
-                                                        <div class="col-md-3">
-                                                            <div class="form-group">
-                                                                <label>
-                                                                    Bank Name 
-                                                            <br />
-                                                                    बैंक का नाम<span style="color: red">*</span></label>
-                                                                <input placeholder="Bank Name" disabled="disabled" name="ename" type="text" class="form-control" autocomplete="off" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="form-group">
-                                                                <label>
-                                                                    Branch Name 
-                                                            <br />
-                                                                    शाखा का नाम<span style="color: red">*</span></label>
-                                                                <input placeholder="Branch Name" disabled="disabled" name="ename" type="text" class="form-control" autocomplete="off" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="form-group">
-                                                                <label>
-                                                                    Account Type
-                                                                    <br />
-                                                                    खाता का प्रकार<span style="color: red">*</span></label>
-                                                                <select class="form-control select2">
-                                                                    <option value="----">--Select--</option>
-                                                                    <option value="----">Salary</option>
-                                                                    <option value="----">Other</option>
-                                                                </select>
-                                                            </div>
 
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="form-group">
-                                                                <label>
-                                                                    Account No.
-                                                                    <br />
-                                                                    खाता क्र.<span style="color: red">*</span></label>
-                                                                <input placeholder="Enter Account No." name="ename" type="text" class="form-control" autocomplete="off" />
-                                                            </div>
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 bank" style="display: none">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Bank Name 
+                                                            <br />
+                                                                बैंक का नाम<span style="color: red">*</span></label>
+                                                            <input placeholder="Bank Name" disabled="disabled" name="ename" type="text" class="form-control" autocomplete="off" />
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 bank" style="display: none">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Branch Name 
+                                                            <br />
+                                                                शाखा का नाम<span style="color: red">*</span></label>
+                                                            <input placeholder="Branch Name" disabled="disabled" name="ename" type="text" class="form-control" autocomplete="off" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 bank" style="display: none">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Account Type
+                                                                    <br />
+                                                                खाता का प्रकार<span style="color: red">*</span></label>
+                                                            <select class="form-control select2">
+                                                                <option value="----">--Select--</option>
+                                                                <option value="----">Salary</option>
+                                                                <option value="----">Other</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 col-xl-3 bank" style="display: none">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Account No.
+                                                                    <br />
+                                                                खाता क्र.<span style="color: red">*</span></label>
+                                                            <input placeholder="Enter Account No." name="ename" type="text" class="form-control" autocomplete="off" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Select Provident Fund
@@ -2546,7 +2531,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P1">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P1">
                                                         <div class="form-group">
                                                             <label>
                                                                 DPF No.
@@ -2555,7 +2540,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="Una">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="Una">
                                                         <div class="form-group">
                                                             <label>
                                                                 UNA No. 
@@ -2564,7 +2549,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P2">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P2">
                                                         <div class="form-group">
                                                             <label>
                                                                 EPF No. 
@@ -2573,7 +2558,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EPF No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P3">
                                                         <div class="form-group">
                                                             <label>
                                                                 GPF No. 
@@ -2582,7 +2567,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter GPF No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" style="display: none;" id="nps">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" style="display: none;" id="nps">
                                                         <div class="form-group">
                                                             <label>
                                                                 NPS No.
@@ -2591,7 +2576,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter NPS No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P4">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Group Insurance No. 
@@ -2600,7 +2585,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Group Insurance No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P5">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P5">
                                                         <div class="form-group">
                                                             <label>
                                                                 Gratuity No. 
@@ -2609,7 +2594,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Gratuity No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P6">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P6">
                                                         <div class="form-group">
                                                             <label>
                                                                 EGLS No.
@@ -2618,7 +2603,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EGLS No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P7">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P7">
                                                         <div class="form-group">
                                                             <label>
                                                                 EDLI No.
@@ -2627,7 +2612,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EDLI No." />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3" id="P8">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3" id="P8">
                                                         <div class="form-group">
                                                             <label>
                                                                 ESIC No.
@@ -3716,14 +3701,19 @@
             }
         }
 
-        function ShowBankDetails() {
-            var idBankDetailsBox = document.getElementById("idBankDetailsBox");
+        function ShowBankDetails(value) {
+            if (value != "" && value!= " ") {
 
-            if (idBankDetailsBox.style.display === "none") {
-                idBankDetailsBox.style.display = "block";
-            } else {
-                idBankDetailsBox.style.display = "block";
+                $(".bank").each(function () {
+                    if (this.style.display === "none") {
+                        this.style = "display:block"
+                    } else {
+                        this.style.display = "block";
+                    }
+                }
+                );
             }
+
         }
         function ShowHideHandicape() {
             var ddlHandicape = document.getElementById("ddlHandicape");
@@ -3948,7 +3938,7 @@
             function activateTab(tabId) {
                 var tabLink = document.querySelector('.nav-link.tab-menu[href="#' + tabId + '"]');
                 if (tabLink) {
-                    tabLink.click(); 
+                    tabLink.click();
                 }
             }
             function handleConfirmationAndActivate(tabId) {

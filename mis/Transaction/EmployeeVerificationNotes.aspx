@@ -16,7 +16,7 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                             <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                            <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Employee Registration</span></a>
                         </li>
                         <li class="breadcrumb-item"><span>About Employee Verification</span></li>
@@ -24,14 +24,13 @@
                 </div>
             </div>
         </div>
+        <div class="row m-0">
+            <div class="col-md-4">
+                <img src="/img/Employee%20Registration.png" style="height: 70px">
+            </div>
+        </div>
     </div>
-    <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
-
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1.5rem;">
-            <img src="../../img/Employee%20Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
-            </u>
-        </p>
-    </div>
+    
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
