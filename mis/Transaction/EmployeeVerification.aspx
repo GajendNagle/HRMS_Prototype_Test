@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+
         #showdetails {
             display: none;
         }
@@ -87,7 +88,7 @@
                                 <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                             </li>
                             <li class="breadcrumb-item">
-                                 <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <a href="#Employee" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                     <span>Employee Registration</span></a>
                             </li>
                             <li class="breadcrumb-item"><span>Employee Verification</span></li>
@@ -96,13 +97,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-5 align-self-center" style="position: relative; bottom: 35px;">
+        <div class="row">
+            <div class="col-md-4">
 
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1.5rem;">
-                <img src="../../img/Employee%20Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
-                </u>
-            </p>
+                <img src="/img/Employee%20Registration.png" style="height: 70px">
+            </div>
         </div>
+
         <%--<div class="row page-titles mb-4">
             <div class="col-md-5 align-self-center">
 
@@ -195,21 +196,28 @@
                         <div class="col-md-12" id="appid">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <thead>
+                                    <thead class="nowrap">
                                         <tr>
-                                            <th>Sr.No. <br />
+                                            <th>Sr.No.
+                                                <br />
                                                 सरल क्र.</th>
-                                            <th>Employee Name <br />
+                                            <th>Employee Name
+                                                <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Employee ID <br />
+                                            <th>Employee ID
+                                                <br />
                                                 कर्मचारी की आई. डी.</th>
-                                            <th>Designation <br />
+                                            <th>Designation
+                                                <br />
                                                 धारित पद</th>
-                                            <th>Department <br />
+                                            <th>Department
+                                                <br />
                                                 विभाग</th>
-                                            <th>View More <br />
+                                            <th>View More
+                                                <br />
                                                 अधिक विवरण देखे</th>
-                                            <th>Status <br />
+                                            <th>Status
+                                                <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
@@ -246,22 +254,28 @@
                         <div class="col-md-12" id="penid">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <thead>
+                                    <thead class="nowrap">
                                         <tr>
-                                            <th>Sr.No. <br />
+                                            <th>Sr.No.
+                                                <br />
                                                 सरल क्र.</th>
                                             <th>Action</th>
                                             <th>Employee Name<br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Employee ID <br />
+                                            <th>Employee ID
+                                                <br />
                                                 कर्मचारी की आई.डी.</th>
-                                            <th>Designation <br />
+                                            <th>Designation
+                                                <br />
                                                 धारित पद</th>
-                                            <th>Department <br />
+                                            <th>Department
+                                                <br />
                                                 विभाग</th>
-                                            <th>View More <br />
+                                            <th>View More
+                                                <br />
                                                 अधिक विवरण देखे</th>
-                                            <th>Status <br />
+                                            <th>Status
+                                                <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
@@ -319,21 +333,27 @@
                         <div class="col-md-12" id="regid">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <thead>
+                                    <thead class="nowrap">
                                         <tr>
                                             <th>Sr.No.<br />
                                                 सरल क्र.</th>
-                                            <th>Employee Name <br />
+                                            <th>Employee Name
+                                                <br />
                                                 कर्मचारी का नाम</th>
-                                            <th>Employee ID <br />
+                                            <th>Employee ID
+                                                <br />
                                                 कर्मचारी की आई.डी.</th>
-                                            <th>Designation <br />
+                                            <th>Designation
+                                                <br />
                                                 धारित पद</th>
-                                            <th>Department <br />
+                                            <th>Department
+                                                <br />
                                                 विभाग</th>
-                                            <th>View More <br />
+                                            <th>View More
+                                                <br />
                                                 अधिक विवरण देखे</th>
-                                            <th>Status <br />
+                                            <th>Status
+                                                <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
@@ -368,15 +388,20 @@
                             </div>
                         </div>
                     </div>
-                </fieldset>
-                <div class="row justify-content-center" id="divbtn">
-                    <div class="col-md-12">
-                        <div class="form-group text-center">
-                            <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="openBootstrapModalreg1()">Approve</button>
-                            <button type="button" class=" btn btn-outline-danger btn-border w-lg" onclick="openBootstrapModalreg()">Reject</button>
+                    <div class="row justify-content-center" id="divbtn">
+
+                        <div class="col-md-12">
+                            <hr />
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="openBootstrapModalreg1()">Approve</button>
+                                <button type="button" class=" btn btn-outline-danger btn-border w-lg" onclick="openBootstrapModalreg()">Reject</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </fieldset>
+
                 <fieldset id="des">
                     <legend>Description / विवरण</legend>
                     <div class="row">
@@ -443,7 +468,7 @@
                     </div>
                 </fieldset>
                 <!-- sample modal content -->
-                <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header" id="myDIV">
@@ -456,7 +481,7 @@
                                     <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
                                     <div class="row align-items-end">
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Employee Unique ID 
@@ -466,7 +491,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     First Name 
@@ -475,7 +500,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Shyam" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Middle Name 
@@ -484,7 +509,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Kumar" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Last Name 
@@ -494,7 +519,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Father's/Husband Name 
@@ -503,7 +528,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Kunal Verma" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Post 
@@ -512,7 +537,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Regular/Permanemt" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Designation 
@@ -521,7 +546,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Administrator" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Subject 
@@ -530,7 +555,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Chemistry" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     School Name 
@@ -539,7 +564,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="GB Convent School" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Sankul 
@@ -548,7 +573,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Reema Vidhya" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Date of Birth 
@@ -557,7 +582,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/07/1999" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Gender 
@@ -566,7 +591,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Male" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Height 
@@ -575,7 +600,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6.4" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Category 
@@ -584,7 +609,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="General" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Religion 
@@ -593,7 +618,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Hindu" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Identification Mark 
@@ -602,7 +627,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Mole on Face" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Blood Group 
@@ -611,7 +636,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="O+" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Handicapped (PWD) 
@@ -620,7 +645,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Handicape Type 
@@ -629,7 +654,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Low vision" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Handicape Percentage 
@@ -638,7 +663,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="30%" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Critical Illness 
@@ -647,7 +672,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="No" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     PAN No. 
@@ -656,7 +681,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="SDEKK5695G" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Aadhaar No. 
@@ -665,7 +690,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="362596836495" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Samagra ID No. 
@@ -674,7 +699,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="654651545454" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Employee Treasury Code 
@@ -683,7 +708,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="56958369" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Hobbies 
@@ -693,7 +718,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Certification Date 
@@ -702,15 +727,16 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/01/2023" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Mobile No. <br />
+                                                    Mobile No.
+                                                    <br />
                                                     मोबाइल नंबर<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6589562358" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Email ID. 
@@ -719,7 +745,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly="" autocomplete="off" placeholder="example123@gmail.com" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Whether the First Page of E-Service Book is Certified 
@@ -739,7 +765,7 @@
                                                 <legend>Present Address / वर्तमान पता
                                                 </legend>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Address line 1 
@@ -748,7 +774,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Address line 2 
@@ -757,7 +783,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 State 
@@ -766,7 +792,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Madhya Pradesh" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Division 
@@ -775,7 +801,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 District 
@@ -784,7 +810,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 City 
@@ -793,7 +819,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Pincode 
@@ -818,7 +844,7 @@
                                                 <legend>Permanent Address / स्थायी पता
                                                 </legend>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Address line 1 
@@ -827,7 +853,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Address line 2 
@@ -836,7 +862,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="42, Arera Colony" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 State 
@@ -845,7 +871,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Madhya Pradesh" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Division 
@@ -854,7 +880,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 District 
@@ -863,7 +889,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 City 
@@ -872,7 +898,7 @@
                                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Bhopal" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Pincode 
@@ -889,7 +915,7 @@
                                 <fieldset>
                                     <legend>Marital Status and Spouse Details / वैवाहिक स्थिति एवं जीवनसाथी का विवरण</legend>
                                     <div class="row align-items-end">
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Married 
@@ -898,7 +924,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Spouse Name 
@@ -907,7 +933,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Ruchita " />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Is Spouse Government Employee
@@ -916,7 +942,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Departmnet Name 
@@ -925,7 +951,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Office Address 
@@ -939,7 +965,7 @@
                                 <fieldset>
                                     <legend>Education Qualification / शैक्षणिक योग्यता</legend>
                                     <div class="row align-items-end">
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Qualification 
@@ -948,7 +974,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Post Graduate" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Science 
@@ -957,7 +983,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Science" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Board / Univercity name 
@@ -966,7 +992,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Makhanlal Chaturvedi" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Passing Year 
@@ -975,7 +1001,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="2022" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Grade / Percentage
@@ -991,23 +1017,25 @@
                                 <fieldset>
                                     <legend>First Appointment Details / प्रथम नियुक्ति विवरण</legend>
                                     <div class="row align-items-end">
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Order Date <br />
+                                                    First Appointment Order Date
+                                                    <br />
                                                     प्रथम नियुक्ति आदेश दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20.12.2021" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Department <br />
+                                                    First Appointment Department
+                                                    <br />
                                                     प्रथम नियुक्ति विभाग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Employee’s Designation Type<br />
@@ -1015,41 +1043,45 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Teaching" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Designation <br />
+                                                    First Appointment Designation
+                                                    <br />
                                                     प्रथम नियुक्ति पदनाम<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Teacher" />
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3 mt-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                             <div class="form-group">
                                                 <label>
-                                                    First Appointment Pay scale <br />
+                                                    First Appointment Pay scale
+                                                    <br />
                                                     प्रथम नियुक्ति वेतनमान<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="20600" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3 mt-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                             <div class="form-group">
                                                 <label>
-                                                    Parent Department <br />
+                                                    Parent Department
+                                                    <br />
                                                     मूल विभाग<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="-" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    School/Institute/Office Address of First Posting <br />
+                                                    School/Institute/Office Address of First Posting
+                                                    <br />
                                                     प्रथम पोस्टिंग के स्कूल/संस्थान/कार्यालय का पता<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="101 Arera Hills, Bhopal" />
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Recent Appointment Department<br />
@@ -1058,42 +1090,47 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Samvilian Order No. <br />
+                                                    Samvilian Order No.
+                                                    <br />
                                                     संविलियन आदेश क्रमांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="569894545" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Samvilian Order Date <br />
+                                                    Samvilian Order Date
+                                                    <br />
                                                     संविलियन आदेश दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/11/2022" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Employee Retirement Date <br />
+                                                    Employee Retirement Date
+                                                    <br />
                                                     कर्मचारी सेवानिवृत्ति दिनांक<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="27/11/2082" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Whether Working/Posted in Other Department on Deputation/Transfer <br />
+                                                    Whether Working/Posted in Other Department on Deputation/Transfer
+                                                    <br />
                                                     क्या प्रतिनियुक्ति/स्थानांतरण पर अन्य विभाग में कार्यरत/तैनात है<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
-                                                    Working in Other Department/Organization on Deputation Transfer <br />
+                                                    Working in Other Department/Organization on Deputation Transfer
+                                                    <br />
                                                     प्रतिनियुक्ति स्थानान्तरण पर अन्य विभाग/संगठन में कार्यरत<span style="color: red">*</span></label>
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Yes" />
                                             </div>
@@ -1104,7 +1141,7 @@
                                 <fieldset>
                                     <legend>Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
                                     <div class="row align-items-end">
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Payroll Office Type 
@@ -1114,7 +1151,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Type of Post 
@@ -1123,7 +1160,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Teaching" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Class 
@@ -1132,7 +1169,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Class 3" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Pay Commission 
@@ -1142,7 +1179,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Second Pay Commission" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Grade Pay 
@@ -1152,7 +1189,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="8700" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Pay Scale 
@@ -1161,7 +1198,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="15600-39100" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Level 
@@ -1170,7 +1207,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Level - 3" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Basic Pay 
@@ -1179,7 +1216,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="15600-39100" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Employee Department 
@@ -1188,7 +1225,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="DPI" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Current Appointment Joining Date 
@@ -1203,7 +1240,7 @@
                                 <fieldset>
                                     <legend>Bank Account Details / बैंक के खाते का विवरण</legend>
                                     <div class="row align-items-end">
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     IFSC Code 
@@ -1213,7 +1250,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     EPF No. 
@@ -1222,7 +1259,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="4646416464165" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     GPF No. 
@@ -1231,7 +1268,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="6546541564641" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     NPS No. 
@@ -1240,7 +1277,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="5614654465445" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Group Insurance No. 
@@ -1249,7 +1286,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="45334343546G" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     Gratuity No. 
@@ -1258,7 +1295,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="45454146546" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     EGLS No. 
@@ -1267,7 +1304,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="65595662131" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     EDLI No. 
@@ -1276,7 +1313,7 @@
                                                 <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="846451151564" />
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="form-group">
                                                 <label>
                                                     ESIC No. 
@@ -1286,13 +1323,16 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </fieldset>
 
                                 <div class="row align-items-end justify-content-center">
-                                    <div class="col-md-3">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label>Verification Status 
-                                                <br />सत्यापन स्थिति<span style="color: red">*</span></label>
+                                            <label>
+                                                Verification Status 
+                                                <br />
+                                                सत्यापन स्थिति<span style="color: red">*</span></label>
                                             <input name="ename" type="text" class="form-control" readonly autocomplete="off" placeholder="Verified" />
                                         </div>
                                     </div>
@@ -1302,7 +1342,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-danger waves-effect  w-lg" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -1337,7 +1377,7 @@
         </div>
     </div>
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="bootstrapModalreg1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 style="font: bold; margin-left: auto;">//आहरण संवितरण अधिकारी की अनुशंसा//</h3>
@@ -1347,7 +1387,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <table class="table table-bordered" style="border: 1px solid">
-                                <tr>
+                                <tr class="nowrap">
                                     <th>सरल क्रमांक</th>
                                     <th>
                                         <center>अधिकारी की अनुशंसा</center>
