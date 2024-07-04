@@ -185,13 +185,13 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Nagar Nigam Name (In English)<br />नगर निगम का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>Enter Nagar Nigam Name (In English)<br />नगर निगम का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Nagar Nigam Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Nagar Nigam Name (In Hindi)<br />नगर निगम का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Nagar Nigam Name (In Hindi)<br />नगर निगम का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" autocomplete="off" placeholder="नगर निगम का नाम दर्ज करे " />
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                         <div class="form-group">
 
                             <label>Enter Nagar Nigam Code No. <br />
-                                नगर निगम कोड संख्या<span style="color: red">*</span></label>
+                                नगर निगम कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -252,8 +252,8 @@
                                         जिला का नाम</th>
                                     <th>Block Name <br />
                                         विकासखण्ड का नाम</th>
-                                    <th>Nagar Nigam Name</th>
-                                    <th>नगर निगम का नाम</th>
+                                    <th>Nagar Nigam Name(In English)<br />नगर निगम का नाम(अंग्रेज़ी में)</th>
+                                    <th>Nagar Nigam Name(In Hindi)<br />नगर निगम का नाम(हिंदी में)</th>
                                     <th>Nagar Nigam Code No. <br />
                                         नगर निगम कोड संख्या</th>
                                     <th>Status(Active/InActive) <br />

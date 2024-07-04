@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_JanpadPanchayat.aspx.cs" Inherits="mis_Master_BlockMaster" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -179,13 +184,13 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Janpad Panchayat Name (In English)<br />जनपद पंचायत का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>Enter Janpad Panchayat Name (In English)<br />जनपद पंचायत का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Janpad Panchayat Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Janpad Panchayat Name (In Hindi)<br />जनपद पंचायत का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Janpad Panchayat Name (In Hindi)<br />जनपद पंचायत का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" autocomplete="off" placeholder="जनपद पंचायत का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -245,8 +250,8 @@
                                         जिला का नाम</th>
                                     <th>Block Name <br />
                                         विकासखण्ड का नाम</th>
-                                    <th>Janpad Panchayat Name</th>
-                                    <th>जनपद पंचायत का नाम</th>
+                                    <th>Janpad Panchayat Name (In English)<br />जनपद पंचायत का नाम (अंग्रेजी में)</th>
+                                    <th>Janpad Panchayat Name (In Hindi)<br />जनपद पंचायत का नाम (हिंदी में)</th>
                                     <th>Janpad Panchayat Code No. <br />
                                         जनपद पंचायत कोड संख्या</th>
                                     <th>Status(Active/InActive) <br />

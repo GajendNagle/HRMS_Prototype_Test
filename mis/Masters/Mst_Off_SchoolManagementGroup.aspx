@@ -19,7 +19,7 @@
                         <li class="breadcrumb-item">
                             <a href="#OfficeMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Office Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>School Type Master Data</span></li>
+                        <li class="breadcrumb-item"><span>School Management Group Master Data</span></li>
                     </ol>
                 </div>
             </div>
@@ -49,27 +49,27 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Management Group (In English)<span style="color: red">*</span></label>
+                            <label>Enter Management Group (In English)<br />प्रबंधन का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Management Group Name" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>प्रबंधन का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Management Group (In Hindi)<br />प्रबंधन का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="प्रबंधन का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Management Code No. /<br />
-                                प्रबंधन कोड संख्या<span style="color: red">*</span></label>
+                            <label>Enter Management Code No. <br />
+                                प्रबंधन कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -105,13 +105,13 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>Management Group (In English)</th>
-                                    <th>प्रबंधन का नाम (हिंदी में)</th>
-                                    <th>Management Code No. /<br />
+                                    <th>Management Group (In English)<br />प्रबंधन का नाम(अंग्रेज़ी में)</th>
+                                    <th>Management Group (In English)<br />प्रबंधन का नाम (हिंदी में)</th>
+                                    <th>Management Code No. <br />
                                         प्रबंधन कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

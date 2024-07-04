@@ -57,7 +57,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Student Registration /छात्र पंजीकरण 
+                    <h5 class="card-title">Student Registration /विद्यार्थी  पंजीकरण 
                     </h5>
                 </div>
             </div>
@@ -74,7 +74,8 @@
                                 <label>
                                     Enter Student  Name (English)<br />
 
-                                    छात्र का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
+                                  
+विद्यार्थी  का नाम दर्ज करें (अंग्रेजी)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Student  Name (English)" />
                             </div>
                         </div>
@@ -83,7 +84,7 @@
                                 <label>
                                     Enter  Student  Name (Hindi)<br />
 
-                                    छात्र का नाम (हिंदी में)<span style="color: red">*</span></label>
+                                    विद्यार्थी  का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder=" Enter  Student  Name (Hindi)" />
                             </div>
                         </div>
@@ -91,7 +92,7 @@
                             <div class="form-group">
                                 <label>
                                     Select Gender<br />
-                                    लिंग<span style="color: red">*</span></label>
+                                    लिंग का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control" placeholder="Female">
                                     <option>Select</option>
                                     <option>Male</option>
@@ -103,7 +104,7 @@
                             <div class="form-group">
                                 <label>
                                     Enter   Date of Birth<br />
-                                    जन्म तिथि<span style="color: red">*</span></label>
+                                  जन्म तारीख दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" />
                             </div>
                         </div>
@@ -113,7 +114,7 @@
                             <div class="form-group">
                                 <label>
                                     Select Category<br />
-                                    वर्ग<span style="color: red">*</span></label>
+                                    श्रेणी का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
 
                                     <option value="Select">Select</option>
@@ -129,7 +130,8 @@
 
                                 <label>
                                     Select  Caste<br />
-                                    जाति<span style="color: red">*</span></label>
+                                    
+जाति का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="Select">Select</option>
                                     <option value="Bhopal">Hindu</option>
@@ -142,19 +144,19 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Father Name 
+                                    Enter Father's Name 
                                 <br />
 
-                                    पिता का नाम<span style="color: red">*</span></label>
+                                    पिता का नाम दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder=" Enter Fater Name" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter  Mother Name 
+                                    Enter  Mother's Name 
                                 <br />
-                                    माता का नाम<span style="color: red">*</span></label>
+                                   माता का नाम दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter  Mother Name " />
                             </div>
                         </div>
@@ -164,7 +166,7 @@
                             <div class="form-group">
                                 <label>
                                     Enter  Mobile No<br />
-                                    मोबाइल नंबर<span style="color: red">*</span></label>
+                                    मोबाइल नंबर दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Mobile No" />
                             </div>
                         </div>
@@ -185,7 +187,8 @@
                                 <label>
                                     Select  Disability
                                 <br />
-                                    विकलांग<span style="color: red">*</span></label>
+                                   
+विकलांगता का चयन करें<span style="color: red">*</span></label>
                                 <select id="options" class="form-control select2" onchange="myFunction3()">
                                     <option value="0">Select</option>
                                     <option value="1">Yes</option>
@@ -197,7 +200,7 @@
                             <div class="form-group">
                                 <label>
                                     Select   Disability type<br />
-                                    विकलांगता प्रकार
+                                    विकलांगता के प्रकार का चयन करें
                                 <span style="color: red">*</span></label>
                                 <select id="ddlHandicappedType" class="form-control select2">
                                     <option>Select</option>
@@ -230,8 +233,8 @@
                                 <label>
                                     Select  Handicapped Percentage 
      <br />
-विकलांग प्रतिशत<span style="color: red">*</span></label>
-विकलांग प्रतिशत<span style="color: red">*</span></label>
+विकलांगता के प्रतिशत का चयन करें<span style="color: red">*</span></label>
+
                                 <select id="ddlHandicappedPercentage" class="form-control select2">
                                     <option>Select</option>
                                     <option value="40 to 50">41 to 50</option>
@@ -247,13 +250,13 @@
                 </fieldset>
                 <fieldset>
                     <legend>Address Information/
-पता की जानकारी</legend>
-                    <div class="row">
+पते की जानकारी</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select  State Name<br />
-                                    राज्य नाम<span style="color: red">*</span></label>
+                                    राज्य के नाम का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="Select">Select</option>
                                     <option value="Bhopal">Madhya Pradesh</option>
@@ -294,7 +297,7 @@
                                 <label>
                                     Select   Division Name
                                     <br />
-                                    संभाग नाम
+                                    संभाग के नाम का चयन करें<span style="color: red">*</span>
                                 </label>
                                 <select class="form-control select2">
 
@@ -316,8 +319,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select    District Name<br />
-                                    ज़िला नाम<span style="color: red">*</span></label>
+                                    Select District Name<br />
+                                    ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
 
                                     <option value="Select">Select</option>
@@ -377,9 +380,9 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Block  Name
+                                    Select Block Name
                                     <br />
-                                    विकासखण्ड नाम <span style="color: red">*</span></label>
+                                    विकासखण्ड के नाम का चयन करें<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl03" class="form-control select2">
 
                                     <option value="Select">Select</option>
@@ -404,7 +407,7 @@
                             <div class="form-group">
                                 <label>
                                     Enter Village Name<br />
-                                    गाँव नाम<span style="color: red">*</span></label>
+                                    गाँव का नाम दर्ज करे<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="  Enter Village" />
                             </div>
                         </div>
@@ -414,7 +417,7 @@
                                 <label>
                                     Enter  Address
                                     <br />
-                                    पता <span style="color: red">*</span></label>
+                                    पता दर्ज करें <span style="color: red">*</span></label>
                                 <textarea class="form-control  w-100"
                                     placeholder=" Enter  Address" rows="1" autocomplete="off"></textarea>
                             </div>
@@ -422,8 +425,8 @@
 
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Family Other Information/परिवार अन्य जानकारी</legend>
+                                <fieldset>
+                    <legend>Family Other Information/परिवार की अन्य जानकारी</legend>
 
                     <div class="row align-items-end">
                         <div class="col-md-3">
@@ -431,7 +434,7 @@
                                 <label>
                                     Select   Is Vimukti<br />
 
-                                    विमुक्ति है<span style="color: red">*</span></label>
+                                   विमुक्ति है /नहीं  <span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option>Select</option>
                                     <option>YES</option>
@@ -478,7 +481,7 @@
                                 <label>
                                     Select  Fatherless<br />
 
-                                    पितृहीन <span style="color: blue; font-size: 12px;">(पिता की ना होने की 
+                                    पितृहीन हैं/नही चयन करें <span style="color: blue; font-size: 12px;">(पिता की ना होने की 
 स्थिति में )</span><span style="color: red">*</span></label>
                                 <select id="Fatherless" name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="0">Select</option>
@@ -490,33 +493,33 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    EnterFamily /Father Occupation
+                                    Enter family/Father Occupation
                                     <br />
-                                    परिवार/पिता का व्यवसाय <span style="color: red">*</span></label>
+                                  परिवार/पिता का व्यवसाय दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Family Income(Yearly)<br />
-                                    पारिवारिक  वार्षिक आय <span style="color: red">*</span></label>
+                               Enter  Family Income(Yearly)<br />
+                                 पारिवारिक आय दर्ज करें(वार्षिक)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Income" />
                             </div>
                         </div>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Previous Acedemic Information/पिछली शैक्षणिक जानकारी</legend>
+                              <fieldset>
+                    <legend>Previous Acedemic Information/विगत शैक्षणिक वर्ष की  जानकारी</legend>
                     <div class="row align-items-end">
 
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select   School UDICE Code<br />
-                                    स्कूल डीआईएसई कोड</label>
-                                <%-- <select id="ddlSchoolDise" class="form-control select2" onchange="myFunction7()">
-                                    <option>Select</option>
+                                    Enter   School UDISE Code<br />
+                                   स्कूल का UDISE कोड दर्ज करें</label>
+                                <input id="ddlSchoolDise" class="form-control"  autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" />
+                                   <%-- <option>Select</option>
                                     <option>23320400117-GOVT HSS AHAMDABAD</option>
                                     <option>23320303134-GOVT HSS KHAJURI KALAN</option>
                                     <option>23320212709-GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)</option>
@@ -527,17 +530,16 @@
                                     <option>23340402101-GGPS BAMULIYA DANGI</option>
                                     <option>23340502509-GHSS BANGAWAN</option>
                                     <option>23340603802-GAYANDEEP M S CHANDAN PIPALIYA</option>
-                                </select>--%>
-                                <input id="ddlSchoolDise" class="form-control" autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" />
+                                </input>--%>
                             </div>
                         </div>
-                        <div class="col-md-3" id="school" style="display: none;">
+                        <div class="col-md-3" id="school" style="display:none;">
                             <div class="form-group">
                                 <label>
                                     Select School Name<br />
-                                    स्कूल  का नाम</label>
+                              स्कूल का नाम चुनें</label>
                                 <select class="form-control  ">
-
+                                 
                                     <option>GOVT HSS AHAMDABAD</option>
                                     <option>GOVT HSS KHAJURI KALAN</option>
                                     <option>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)</option>
@@ -555,7 +557,7 @@
                             <div class="form-group">
                                 <label>
                                     Select Class<br />
-                                    कक्षा<span style="color: red">*</span></label>
+                                    कक्षा का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="class" onchange="myFunction5()">
                                     <option value="0">Select</option>
                                     <option value="1">1st Class</option>
@@ -578,7 +580,7 @@
                                 <label>
                                     Select Subject<br />
 
-                                    विषय<span style="color: red">*</span></label>
+                                    विषय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Biology</option>
@@ -594,7 +596,7 @@
                             <div class="form-group">
                                 <label>
                                     Select  Percentage<br />
-                                    प्रतिशत<span style="color: red">*</span>
+                                    प्रतिशत चुनें<span style="color: red">*</span>
                                 </label>
                                 <select id="percentage" name="percentage" class="form-control select2">
                                     <option>Select</option>
@@ -617,13 +619,13 @@
 
                 </fieldset>
                 <fieldset>
-                    <legend>Current Acedemic Information/वर्तमान अकादमिक जानकारी</legend>
+                    <legend>Current Acedemic Information/वर्तमान शैक्षणिक वर्ष जानकारी</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select Class<br />
-                                    कक्षा<span style="color: red">*</span></label>
+                                    कक्षा का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="class1" onchange="myFunction6()">
                                     <option value="0">Select</option>
                                     <option value="1">1st Class</option>
@@ -646,7 +648,7 @@
                                 <label>
                                     Select Subject<br />
 
-                                    विषय<span style="color: red">*</span></label>
+                                  विषय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Biology</option>
@@ -663,16 +665,16 @@
                 <fieldset>
                     <legend>Student Bank Account Information/
 
-छात्र बैंक खाते की जानकारी</legend>
+विद्यार्थी  बैंक खाते की जानकारी</legend>
                     <div class="row">
-
+                       
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Enter IFSC Code<br />
-                                    आई.एफ.एस.सी कोड<span style="color: red">*</span></label>
-                                <input class="form-control " id="IFSC" placeholder="Enter IFSC Code" autocomplete="off" onchange="myFunction8()" />
-                                <%--     <option value="0">Select</option>
+                                   आई.एफ.एस.सी कोड दर्ज करें<span style="color: red">*</span></label>
+                             <input class="form-control "   id="IFSC" placeholder="Enter IFSC Code" autocomplete="off"  onchange="myFunction8()"/>
+                               <%--     <option value="0">Select</option>
                                     <option value="1">SBIN0051467</option>
                                     <option value="2">ORBC0101947</option>
                                     <option value="3">CBIN0287003</option>
@@ -683,24 +685,24 @@
                                 </inpute>--%>
                             </div>
                         </div>
-                        <div class="col-md-3" style="display: none;" id="bankname">
-                            <div class="form-group">
-                                <label>
-                                    Bank Name<br />
-                                    बैंक का नाम<span style="color: red">*</span></label>
-                                <input class="form-control " placeholder="STATE BANK OF INDIA BHOPAL" autocomplete="off" />
-                                <%-- <option value="0">Select</option>
+                         <div class="col-md-3" style="display:none;" id="bankname">
+     <div class="form-group">
+         <label>
+              Bank Name<br />
+             बैंक का नाम<span style="color: red">*</span></label>
+         <input class="form-control "  placeholder="STATE BANK OF INDIA BHOPAL" autocomplete="off" />
+            <%-- <option value="0">Select</option>
              <option value="1">STATE BANK OF INDIA BHOPAL</option>
              <option value="2">ORIENTAL BANK OF COMMERCE BHOPAL </option>
              <option value="3">CENTRAL BANK OF INDIA HOSHANGABAD</option>
              <option value="4">CENTRAL BANK OF INDIA BABAI</option>
              <option value="4">CENTRAL BANK OF INDIA BETUL</option>--%>
-                            </div>
-                        </div>
-                        <div class="col-md-3" style="display: none;" id="Branch">
+     </div>
+ </div>
+                        <div class="col-md-3" style="display:none;" id="Branch">
                             <div class="form-group">
                                 <label>
-                                    Branch<br />
+                                     Branch<br />
                                     शाखा<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Bhopal" />
                             </div>
@@ -709,7 +711,7 @@
                             <div class="form-group">
                                 <label>
                                     Enter Account No.<br />
-                                    खाता नंबर<span style="color: red">*</span></label>
+                                   		खाता नंबर दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Account No." />
                             </div>
                         </div>
@@ -717,7 +719,7 @@
                             <div class="form-group">
                                 <label>
                                     Enter Account Holder Name<br />
-                                    खाता धारक का नाम<span style="color: red">*</span></label>
+                                 खाता धारक का नाम दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter  Account Holder Name" />
                             </div>
                         </div>
@@ -750,7 +752,7 @@
                             <label>
                                 Uploade Student Photo<br />
 
-                                छात्र फोटो अपलोड करें :
+                                विद्यार्थी का फोटो अपलोड करें :
                             </label>
                         </div>
                         <div id="DocAppointment1" class="col-md-4">
@@ -768,7 +770,7 @@
                         <div class="col-md-4" style="display: none;" id="DisCertificate">
                             <label>
                                 Upload Student Disability Certificate<br />
-                                छात्र विकलांगता प्रमाणपत्र अपलोड करें
+                                विद्यार्थी का विकलांगता प्रमाणपत्र अपलोड करें
  :
                             </label>
                         </div>
@@ -776,7 +778,9 @@
                             <input type="file" id="fileInput3" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div class="col-md-4" style="display: none;" id="eye">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye">
+
+</i></button>
 
 
                         </div>
@@ -787,7 +791,7 @@
                         <div id="DocCaste" class="col-md-4">
                             <label>
                                 Upload Student Cast/Category Certificate<br />
-                                छात्र का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
+                                विद्यार्थी  का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
                             </label>
                         </div>
                         <div id="DocCaste1" class="col-md-4">
@@ -803,7 +807,7 @@
                             <label>
                                 Student Upload 
 Transfer Certificate<br />
-                                छात्र का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
+                                विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
                         <div id="DocPresentpost1" class="col-md-4">
@@ -819,7 +823,7 @@ Transfer Certificate<br />
                             <label>
                                 Upload  Student   Bank Passbook
                                 <br />
-                                छात्र का बैंक पासबुक  अपलोड करें :
+                                विद्यार्थी  का बैंक पासबुक  अपलोड करें :
                             </label>
                         </div>
                         <div id="Dochandicapped1" class="col-md-4">

@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_Habitation.aspx.cs" Inherits="mis_Masters_Location_Masters_Mst_Habitation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -194,13 +199,13 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Habitation Name (In English)<br />बसाहट का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>Enter Habitation Name (In English)<br />बसाहट का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" autocomplete="off" placeholder="Enter Habitation Name " />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Habitation Name (In Hindi)<br />बसाहट का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Habitation Name (In Hindi)<br />बसाहट का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" autocomplete="off" placeholder="बसाहट का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -261,8 +266,8 @@
                                         ग्राम पंचायत का नाम</th>
                                     <th>Village Name <br />
                                         गाँव का नाम</th>
-                                    <th>Habitation Name</th>
-                                    <th>बसाहट का नाम</th>
+                                    <th>Habitation Name (In English)<br />बसाहट का नाम (अंग्रेजी में)</th>
+                                    <th>Habitation Name (In Hindi)<br />बसाहट का नाम (हिंदी में)</th>
                                     <th>Habitation Code No. <br />
                                         बसाहट कोड संख्या</th>
                                     <th>Status(Active/InActive) <br />

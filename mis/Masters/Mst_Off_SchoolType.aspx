@@ -46,21 +46,23 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter School Type Name  (In English)<span style="color: red">*</span></label>
+                            <label>Enter School Type Name (In English)<br />
+                                स्कूल का प्रकार दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter School Type" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-
-                            <label>स्कूल का प्रकार (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter School Type Name (In English)<br />
+                                स्कूल का प्रकार दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="स्कूल का प्रकार दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                School Type Code No. /<br />
+                                Enter School Type Code No.
+                                <br />
                                 स्कूल प्रकार कोड दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder=" Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
@@ -68,7 +70,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -104,13 +106,16 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No.
+                                        <br />
                                         सरल क्र.</th>
-                                    <th>School Type Name</th>
-                                    <th>स्कूल का प्रकार का नाम</th>
-                                    <th>School Type Code No. /<br />
+                                    <th>School Type Name (In English)<br />
+                                        स्कूल का प्रकार (अंग्रेज़ी में)</th>
+                                    <th>School Type Name (In English)<br />
+                                        स्कूल का प्रकार (हिंदी में)</th>
+                                    <th>School Type Code No. <br />
                                         स्कूल प्रकार कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

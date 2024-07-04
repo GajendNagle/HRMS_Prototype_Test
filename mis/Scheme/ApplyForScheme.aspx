@@ -94,7 +94,7 @@
 
                                     <td class="text-center align-middle">
 
-                                        <button type="button" class="btn btn-outline-success btn-sm" onclick="btnsearch1()">Apply For Scheme </button>
+                                        <button type="button" class="btn btn-outline-success text-nowrap btn-sm" onclick="btnsearch1()">Apply For Scheme </button>
                                     </td>
 
 

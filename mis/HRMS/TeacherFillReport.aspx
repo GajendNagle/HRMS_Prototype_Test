@@ -801,7 +801,7 @@ of annual examination result
                                 <label>
                                     Reporting Officer Name
                                  <br />
-                                    रिपोर्टिंग अधिकारी का नाम <span style="color: red">*</span></label>
+                                    रिपोर्टिंग अधिकारी का नाम</label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Dilip Raghuwanshi"></asp:TextBox>
 
                             </div>

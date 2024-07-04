@@ -47,7 +47,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Management Group /<br /> प्रबंधन समूह<span style="color: red">*</span></label>
+                            <label>Select Management Group <br /> प्रबंधन समूह का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="A- State Government">A- State Government</option>
@@ -60,26 +60,26 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Management Group Details<span style="color: red">*</span></label>
+                            <label>Enter Management Group Details(In English)<br />प्रबंधन समूह विवरण दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="Enter Management Group Details" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>प्रबंधन समूह विवरण (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Management Group Details(In Hindi)<br />प्रबंधन समूह विवरण दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder="प्रबंधन समूह का विवरण दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Management Details Code No. /<br /> प्रबंधन विवरण कोड संख्या<span style="color: red">*</span></label>
+                            <label>Management Details Code No. <br /> प्रबंधन विवरण कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -115,12 +115,12 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />सरल क्र.</th>
-                                    <th>Select Management Group /<br /> प्रबंधन समूह का चयन करें</th>
-                                    <th>Management Group Details (In English)</th>
-                                    <th>प्रबंधन समूह विवरण (हिंदी में)</th>
-                                    <th>Management Details Code No. /<br />प्रबंधन विवरण कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Sr.No. <br />सरल क्र.</th>
+                                    <th>Select Management Group <br /> प्रबंधन समूह का चयन करें</th>
+                                    <th>Management Group Details(In English)<br />प्रबंधन समूह विवरण(अंग्रेज़ी में)</th>
+                                    <th>Management Group Details(In Hindi)<br />प्रबंधन समूह विवरण (हिंदी में)</th>
+                                    <th>Management Details Code No. <br />प्रबंधन विवरण कोड संख्या</th>
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

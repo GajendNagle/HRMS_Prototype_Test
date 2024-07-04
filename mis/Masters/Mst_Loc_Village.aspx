@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_Village.aspx.cs" Inherits="mis_Masters_LocationMasters_Mst_Village" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -235,8 +240,8 @@
                                         विकासखण्ड का नाम</th>
                                     <th>Gram Panchayat <br />
                                         ग्राम पंचायत का नाम</th>
-                                    <th>Village Name</th>
-                                    <th>गाँव का नाम</th>
+                                    <th>Enter Village Name (In English)<br />गाँव का नाम (अंग्रेजी में)</th>
+                                    <th>Enter Village Name (In Hindi)<br />गाँव का नाम (हिंदी में)</th>
                                     <th>Village Code No. <br />
                                         गाँव कोड संख्या</th>
                                     <th>Status(Active/InActive) <br />

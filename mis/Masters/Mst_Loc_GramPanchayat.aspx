@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_GramPanchayat.aspx.cs" Inherits="mis_Masters_LocationMasters_Mst_GramPanchayat" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -147,13 +152,13 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Gram Panchayat Name (In English)<br />ग्राम पंचायत का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Gram Panchayat Name (In English)<br />ग्राम पंचायत का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="Enter Gram Panchayat Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Gram Panchayat Name (In Hindi)<br />ग्राम पंचायत का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>Enter Gram Panchayat Name (In Hindi)<br />ग्राम पंचायत का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="ग्राम पंचायत का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -212,8 +217,8 @@
                                             जिला का नाम</th>
                                         <th>Block Name <br />
                                             विकासखण्ड का नाम</th>
-                                        <th>Gram Panchayat Name</th>
-                                        <th>ग्राम पंचायत का नाम</th>
+                                        <th>Gram Panchayat Name (In English)<br />ग्राम पंचायत का नाम (अंग्रेज़ी में)</th>
+                                        <th>Enter Gram Panchayat Name (In Hindi)<br />ग्राम पंचायत का नाम (हिंदी में)</th>
                                         <th>Gram Panchayat Code No. <br />
                                             ग्राम पंचायत कोड संख्या</th>
                                         <th>Status(Active/InActive) <br />
