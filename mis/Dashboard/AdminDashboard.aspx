@@ -4,6 +4,7 @@
 
     <link href="~\css\dashboard.css" rel="stylesheet" />
     <style>
+       
         /* #upcoming-event-list .card {
         margin: unset 1.5rem inherit inherit;
     }*/
@@ -62,7 +63,7 @@
         .top-heading {
             position: relative;
             display: flex;
-            /*background-color: var(--vz-primary);*/
+            background-color: var(--vz-primary);
             background-image: url(../assets/images/svg/CardHeader.svg);
             justify-content: center;
             border-radius: 120px;
@@ -74,18 +75,19 @@
         .card-header {
             padding-left: 1rem;
             padding-right: 1rem;
+            background-color: var(--vz-primary);
             background-image: url(../assets/images/svg/CardHeader.svg);
         }
 
         .crm-widget .card-header-border {
-            border-top: 0.5rem solid #321e46;
-            border-radius: 30px 30px 0 0 !important;
+            border-top: 0.5rem solid var(--vz-primary);
+            border-radius: 25px 25px 0 0 !important;
             height: 30px;
         }
 
         .card-footer-border {
-            border-bottom: 0.5rem solid #321e46;
-            border-radius: 0 0 30px 30px !important;
+            border-bottom: 0.5rem solid var(--vz-primary);
+            border-radius: 0 0 25px 25px !important;
             height: 30px;
         }
 
@@ -2354,10 +2356,10 @@
                 <div class="card-header border-bottom border-primary align-items-center d-flex">
                     <h4 class="card-title mb-0 flex-grow-1">Monthly Event Calendar</h4>
                     <div class="flex-grow-1 text-end">
-                        <button class="btn btn-secondary w-auto me-2" id="btn-new-event" title="Create Event" type="button"><i class="mdi mdi-plus"></i> Add Event</button>
+                        <button class="btn btn-secondary w-auto me-2" id="btn-new-event" title="Create Event" type="button"><i class="mdi mdi-plus"></i>Add Event</button>
                     </div>
 
-                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventList"><i class="ri-menu-line"></i> Upcoming Events</button>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventList"><i class="ri-menu-line"></i>Upcoming Events</button>
 
                 </div>
                 <!-- end card header -->
@@ -2372,7 +2374,7 @@
 
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body" style="margin-right:1PX">
+                        <div class="offcanvas-body" style="margin-right: 1PX">
 
                             <div id="external-events">
                                 <%-- <br>
@@ -2652,6 +2654,7 @@
                                 return '<span class="fw-bold fs-13">Applicants: ' + this.y + '</span>';
                             }
                         },
+                        pointWidth: 50,
                         tooltip: {
                             headerFormat: '<span class="fw-bold fs-14">{point.name}</span><br>',
                             pointFormat: '<span class=" fs-13"><br/> ' + '<b>{point.name}</b><br/>Total Total Applicants: {point.y}<br/></span>'
@@ -2744,14 +2747,15 @@
 
                 dataLabels: {
                     enabled: true,
-                    format: ' <b>Students: {point.y} </b>',
+                    format: ' <span class="fw-bold fs-14">Students: {point.y} </span>',
                 },
+                pointWidth: 50,
                 tooltip: {
                     headerFormat: '',
                     pointFormatter: function () {
-                        return '<b>' + this.name + '</b><br/>Total Students: <b>' + this.y + '</b><br>' +
+                        return '<span class=" fs-13"><b >' + this.name + '</b><br/>Total Students: <b>' + this.y + '</b><br>' +
                             'Boys: <b>' + (this.y - this.z) + '</b><br>' +
-                            'Girls: <b>' + this.z + '</b><br>';
+                            'Girls: <b>' + this.z + '</b><br></span>';
                     }
                 },
                 borderRadius: 3,

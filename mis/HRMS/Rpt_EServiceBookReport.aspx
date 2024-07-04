@@ -2,6 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        .profileimage {
+            display: block;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         #show {
             display: none;
         }
@@ -79,7 +86,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Office Type <br />
+                                Select Office Type
+                                <br />
                                 कार्यालय प्रकार का चयन करें</label>
                             <select class="form-control select2">
                                 <option value="Bhopal">--Select--</option>
@@ -105,7 +113,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Designation <br />
+                                Select Designation
+                                <br />
                                 पद का का चयन करें</label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -139,7 +148,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Sankul ID <br />
+                                Select Sankul ID
+                                <br />
                                 संकुल आईडी का चयन करें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -161,7 +171,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Employee ID <br />
+                                Select Employee ID
+                                <br />
                                 कर्मचारी आईडी का चयन करें</label>
                             <asp:DropDownList runat="server" CssClass="form-control select2">
                                 <asp:ListItem>--Select--</asp:ListItem>
@@ -206,7 +217,7 @@
                 </div>
                 <fieldset>
                     <legend>PERSONAL INFORMATION / व्यक्तिगत जानकारी</legend>
-                    <div class="row align-items-end">
+                    <div class="row align-items-center">
                         <div class="col-md-9 col-sm-9">
 
                             <table class="table-bordered table">
@@ -214,7 +225,8 @@
                                     <td colspan="2" class="align-content-center">
 
                                         <label>
-                                            Employee Unique ID <br />
+                                            Employee Unique ID
+                                            <br />
                                             कर्मचारी यूनिक आईडी</label>
                                     </td>
                                     <td colspan="2" class="align-content-center">
@@ -223,7 +235,8 @@
                                 <tr>
                                     <td colspan="2" class="align-content-center">
                                         <label>
-                                            Employee Name <br />
+                                            Employee Name
+                                            <br />
                                             कर्मचारी का नाम</label></td>
                                     <td colspan="2" class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Krishna Mishra" /></td>
@@ -231,7 +244,8 @@
                                 <tr>
                                     <td colspan="2" class="align-content-center">
                                         <label>
-                                            Father's/Husband Name <br />
+                                            Father's/Husband Name
+                                            <br />
                                             पिता/पति का नाम</label></td>
                                     <td colspan="2" class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Pulkit Mishra" /></td>
@@ -241,12 +255,7 @@
 
                         </div>
                         <div class="col-md-3 col-sm-3">
-
-                            <div class="form-group">
-                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
-                                <br />
-                            </div>
-
+                            <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
                         </div>
                     </div>
                     <div class="row">
@@ -255,14 +264,16 @@
                                 <tr>
                                     <td class="firstCol align-content-center">
                                         <label>
-                                            Date of Birth <br />
+                                            Date of Birth
+                                            <br />
                                             जन्म तिथि</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="02/12/1980" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Age <br />
+                                            Age
+                                            <br />
                                             आयु</label>
                                     </td>
                                     <td class="align-content-center">
@@ -272,14 +283,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Gender <br />
+                                            Gender
+                                            <br />
                                             लिंग</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Male" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Height <br />
+                                            Height
+                                            <br />
                                             ऊंचाई</label>
                                     </td>
                                     <td class="align-content-center">
@@ -289,14 +302,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Caste <br />
+                                            Caste
+                                            <br />
                                             जाति</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="GENERAL" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Sub Caste <br />
+                                            Sub Caste
+                                            <br />
                                             उप जाति</label>
                                     </td>
                                     <td class="align-content-center">
@@ -305,14 +320,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Religion <br />
+                                            Religion
+                                            <br />
                                             धर्म</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Hindu" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Blood Group <br />
+                                            Blood Group
+                                            <br />
                                             ब्लड ग्रुप</label>
                                     </td>
                                     <td class="align-content-center">
@@ -321,14 +338,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Identification Mark <br />
+                                            Identification Mark
+                                            <br />
                                             पहचान चिह्न</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Mole on face" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Handicapped (PWD) <br />
+                                            Handicapped (PWD)
+                                            <br />
                                             विकलांग (पीडब्ल्यूडी)</label>
                                     </td>
                                     <td class="align-content-center">
@@ -337,14 +356,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Handicapped Type <br />
+                                            Handicapped Type
+                                            <br />
                                             विकलांगता प्रकार</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Blindness" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Handicapped Percentage <br />
+                                            Handicapped Percentage
+                                            <br />
                                             विकलांगता प्रतिशत</label>
                                     </td>
                                     <td class="align-content-center">
@@ -354,14 +375,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Critical Illness <br />
+                                            Critical Illness
+                                            <br />
                                             गंभीर बीमारी</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="No" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Employee Treasury Code <br />
+                                            Employee Treasury Code
+                                            <br />
                                             कर्मचारी ट्रेजरी कोड</label>
                                     </td>
                                     <td class="align-content-center">
@@ -370,7 +393,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            PAN No. <br />
+                                            PAN No.
+                                            <br />
                                             पैन नंबर</label>
                                     </td>
                                     <td class="align-content-center">
@@ -404,14 +428,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Email Id <br />
+                                            Email Id
+                                            <br />
                                             ईमेल आईडी</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="krishna38@gmail.com" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Hobbies <br />
+                                            Hobbies
+                                            <br />
                                             हाँबी</label>
 
                                     </td>
@@ -421,14 +447,16 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Whether The First Page of E-Service Book is Certified <br />
+                                            Whether The First Page of E-Service Book is Certified
+                                            <br />
                                             क्या ई-सर्विस बुक का पहला पृष्ठ प्रमाणित है</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Yes" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Certification Date <br />
+                                            Certification Date
+                                            <br />
                                             प्रमाणीकरण तिथि</label>
 
                                     </td>
@@ -463,7 +491,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            State <br />
+                                            State
+                                            <br />
                                             राज्य</label>
                                     </td>
                                     <td class="align-content-center">
@@ -502,7 +531,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="462020" /></td>
                                     <td colspan="2">
                                         <label>
-                                            Address Line 1 <br />
+                                            Address Line 1
+                                            <br />
                                             पता लाइन 1</label>
                                     </td>
                                     <td colspan="5">
@@ -512,7 +542,8 @@
                                 <tr>
                                     <td colspan="2">
                                         <label>
-                                            Address Line 2 <br />
+                                            Address Line 2
+                                            <br />
                                             पता लाइन 2
                                         </label>
                                     </td>
@@ -532,7 +563,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            State <br />
+                                            State
+                                            <br />
                                             राज्य</label>
                                     </td>
                                     <td class="align-content-center">
@@ -571,7 +603,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="462020" /></td>
                                     <td colspan="2" class="align-content-center">
                                         <label>
-                                            Address Line 1 <br />
+                                            Address Line 1
+                                            <br />
                                             पता लाइन 1</label>
                                     </td>
                                     <td colspan="5" class="align-content-center">
@@ -581,7 +614,8 @@
                                 <tr>
                                     <td colspan="2" class="align-content-center">
                                         <label>
-                                            Address Line 2 <br />
+                                            Address Line 2
+                                            <br />
                                             पता लाइन 2
                                         </label>
                                     </td>
@@ -602,7 +636,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Married <br />
+                                            Married
+                                            <br />
                                             विवाहित</label>
                                     </td>
                                     <td class="align-content-center">
@@ -616,7 +651,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Aarti Mishra" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Is Spouse Government Employee <br />
+                                            Is Spouse Government Employee
+                                            <br />
                                             क्या जीवनसाथी सरकारी कर्मचारी हैं?
                                         </label>
                                     </td>
@@ -626,7 +662,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Department Name <br />
+                                            Department Name
+                                            <br />
                                             विभाग का नाम
                                         </label>
                                     </td>
@@ -634,7 +671,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="DPI" /></td>
                                     <td colspan="2">
                                         <label>
-                                            Office Address <br />
+                                            Office Address
+                                            <br />
                                             कार्यालय का पता</label>
                                     </td>
                                     <td colspan="3" class="align-content-center">
@@ -661,33 +699,39 @@
                                     </td>
                                     <td>
                                         <label>
-                                            Qualification <br />
+                                            Qualification
+                                            <br />
                                             योग्यता</label>
                                     </td>
                                     <td>
                                         <label>
-                                            Suject <br />
+                                            Suject
+                                            <br />
                                             विषय
                                         </label>
                                     </td>
                                     <td>
                                         <label>
-                                            Board <br />
+                                            Board
+                                            <br />
                                             बोर्ड</label>
                                     </td>
                                     <td>
                                         <label>
-                                            Year <br />
+                                            Year
+                                            <br />
                                             वर्ष</label>
                                     </td>
                                     <td>
                                         <label>
-                                            Grade <br />
+                                            Grade
+                                            <br />
                                             ग्रेड</label>
                                     </td>
                                     <td>
                                         <label>
-                                            Comments <br />
+                                            Comments
+                                            <br />
                                             टिप्पणियाँ</label>
                                     </td>
                                 </tr>
@@ -779,14 +823,16 @@
                                 <tr>
                                     <td class="FirstAppointDetailWidth">
                                         <label>
-                                            First Appointment District <br />
+                                            First Appointment District
+                                            <br />
                                             प्रथम नियुक्ति जिला</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Bhopal" /></td>
                                     <td class="FirstAppointDetailWidth">
                                         <label>
-                                            Order No. <br />
+                                            Order No.
+                                            <br />
                                             आदेश संख्या</label>
                                     </td>
                                     <td class="align-content-center">
@@ -795,7 +841,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            First Appointment Order Date <br />
+                                            First Appointment Order Date
+                                            <br />
                                             प्रथम नियुक्ति आदेश दिनांक
                                         </label>
                                     </td>
@@ -804,7 +851,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            First Appointment Department <br />
+                                            First Appointment Department
+                                            <br />
                                             प्रथम नियुक्ति विभाग</label>
                                     </td>
                                     <td class="align-content-center">
@@ -813,7 +861,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Employee's Designation Type <br />
+                                            Employee's Designation Type
+                                            <br />
                                             कर्मचारी का पद प्रकार
                                         </label>
                                     </td>
@@ -822,7 +871,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            First Appointment Designation <br />
+                                            First Appointment Designation
+                                            <br />
                                             प्रथम नियुक्ति पदनाम</label>
                                     </td>
                                     <td class="align-content-center">
@@ -831,7 +881,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Appointment Joining Date <br />
+                                            Appointment Joining Date
+                                            <br />
                                             नियुक्ति में शामिल होने की दिनांक</label>
                                     </td>
                                     <td class="align-content-center">
@@ -839,7 +890,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Subject <br />
+                                            Subject
+                                            <br />
                                             विषय</label>
                                     </td>
                                     <td class="align-content-center">
@@ -857,7 +909,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Reema Vidhya School" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Sankul <br />
+                                            Sankul
+                                            <br />
                                             संकुल</label>
                                     </td>
                                     <td class="align-content-center">
@@ -867,7 +920,8 @@
                                 <tr>
                                     <td colspan="2" class="align-content-center">
                                         <label>
-                                            Office/Institute/School Address of first Posting <br />
+                                            Office/Institute/School Address of first Posting
+                                            <br />
                                             पहली पोस्टिंग का कार्यालय/संस्थान/स्कूल का पता</label>
                                     </td>
                                     <td colspan="3" class="align-content-center">
@@ -876,7 +930,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Samvilian Order No. <br />
+                                            Samvilian Order No.
+                                            <br />
                                             संविलियन आदेश क्रमांक</label>
                                     </td>
                                     <td class="align-content-center">
@@ -884,7 +939,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Samvilian Order Date <br />
+                                            Samvilian Order Date
+                                            <br />
                                             संविलियन ऑर्डर दिनांक</label>
                                     </td>
                                     <td class="align-content-center">
@@ -901,7 +957,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Working in other Department/Organization on Deputation Transfer <br />
+                                            Working in other Department/Organization on Deputation Transfer
+                                            <br />
                                             प्रतिनियुक्ति स्थानान्तरण पर अन्य विभाग/संगठन में कार्यरत</label>
                                     </td>
                                     <td class="align-content-center">
@@ -911,7 +968,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Deputation Department Name <br />
+                                            Deputation Department Name
+                                            <br />
                                             प्रतिनियुक्ति विभाग का नाम
                                         </label>
                                     </td>
@@ -919,7 +977,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="DPI" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Payroll Office Type <br />
+                                            Payroll Office Type
+                                            <br />
                                             पेरोल कार्यालय प्रकार</label>
                                     </td>
                                     <td class="align-content-center">
@@ -931,14 +990,16 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Class <br />
+                                            Class
+                                            <br />
                                             कक्षा</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Class 2" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Type of Post <br />
+                                            Type of Post
+                                            <br />
                                             पोस्ट का प्रकार
                                         </label>
                                     </td>
@@ -948,7 +1009,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Pay Commission <br />
+                                            Pay Commission
+                                            <br />
                                             वेतन आयोग
                                         </label>
                                     </td>
@@ -956,7 +1018,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Seventh Pay Commission" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Level <br />
+                                            Level
+                                            <br />
                                             लेवल
                                         </label>
                                     </td>
@@ -966,7 +1029,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Pay Scale <br />
+                                            Pay Scale
+                                            <br />
                                             वेतनमान</label>
                                     </td>
                                     <td class="align-content-center">
@@ -1029,7 +1093,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Employee's Designation Type <br />
+                                            Employee's Designation Type
+                                            <br />
                                             कर्मचारी का पदनाम प्रकार
                                         </label>
                                     </td>
@@ -1056,7 +1121,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Subject <br />
+                                            Subject
+                                            <br />
                                             विषय</label>
                                     </td>
                                     <td class="align-content-center">
@@ -1073,7 +1139,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Sankul <br />
+                                            Sankul
+                                            <br />
                                             संकुल</label>
                                     </td>
                                     <td class="align-content-center">
@@ -1082,7 +1149,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Office/Institute/School Address of first Posting <br />
+                                            Office/Institute/School Address of first Posting
+                                            <br />
                                             पहली पोस्टिंग का कार्यालय/संस्थान/स्कूल का पता
                                         </label>
                                     </td>
@@ -1092,7 +1160,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Samvilian Order No. <br />
+                                            Samvilian Order No.
+                                            <br />
                                             संविलियन आदेश क्रमांक
                                         </label>
                                     </td>
@@ -1120,7 +1189,8 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Working in Other Department/Organization on Deputation Transfer <br />
+                                            Working in Other Department/Organization on Deputation Transfer
+                                            <br />
                                             प्रतिनियुक्ति स्थानान्तरण पर अन्य विभाग/संगठन में कार्य करना
                                         </label>
                                     </td>
@@ -1131,7 +1201,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Deputation Department Name <br />
+                                            Deputation Department Name
+                                            <br />
                                             प्रतिनियुक्ति विभाग का नाम
                                         </label>
                                     </td>
@@ -1139,7 +1210,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="DPI" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Payroll Office Type <br />
+                                            Payroll Office Type
+                                            <br />
                                             पेरोल कार्यालय प्रकार</label>
                                     </td>
                                     <td class="align-content-center">
@@ -1151,14 +1223,16 @@
 
                                     <td class="align-content-center">
                                         <label>
-                                            Class <br />
+                                            Class
+                                            <br />
                                             कक्षा</label>
                                     </td>
                                     <td class="align-content-center">
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Class 2" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Type of Post <br />
+                                            Type of Post
+                                            <br />
                                             पोस्ट का प्रकार
                                         </label>
                                     </td>
@@ -1176,7 +1250,8 @@
                                         <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Seventh Pay Commission" /></td>
                                     <td class="align-content-center">
                                         <label>
-                                            Level <br />
+                                            Level
+                                            <br />
                                             लेवल</label>
                                     </td>
                                     <td class="align-content-center">
@@ -1185,7 +1260,8 @@
                                 <tr>
                                     <td class="align-content-center">
                                         <label>
-                                            Pay Scale <br />
+                                            Pay Scale
+                                            <br />
                                             वेतनमान</label>
                                     </td>
                                     <td class="align-content-center">
@@ -1221,7 +1297,8 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                Bank Name <br />
+                                                Bank Name
+                                                <br />
                                                 बैंक का नाम
                                             </label>
                                         </td>
@@ -1237,7 +1314,8 @@
                                             <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Arera Hills" /></td>
                                         <td class="align-content-center">
                                             <label>
-                                                IFSC Code <br />
+                                                IFSC Code
+                                                <br />
                                                 आईएफएससी कोड</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1247,7 +1325,8 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                Accout No. <br />
+                                                Accout No.
+                                                <br />
                                                 खाता नंबर</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1261,7 +1340,8 @@
                                             <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="Salary Account" /></td>
                                         <td class="align-content-center">
                                             <label>
-                                                EPF No. <br />
+                                                EPF No.
+                                                <br />
                                                 ईपीएफ नंबर</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1271,7 +1351,8 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                GPF No. <br />
+                                                GPF No.
+                                                <br />
                                                 जीपीएफ नंबर
                                             </label>
                                         </td>
@@ -1279,7 +1360,8 @@
                                             <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="64168496816416" /></td>
                                         <td class="align-content-center">
                                             <label>
-                                                NPS No. <br />
+                                                NPS No.
+                                                <br />
                                                 एनपीएस नंबर</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1297,7 +1379,8 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                Gratuity No. <br />
+                                                Gratuity No.
+                                                <br />
                                                 ग्रेच्युटी संख्या
                                             </label>
                                         </td>
@@ -1305,14 +1388,16 @@
                                             <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="417114127587" /></td>
                                         <td class="align-content-center">
                                             <label>
-                                                EGLS No. <br />
+                                                EGLS No.
+                                                <br />
                                                 ईजीएलएस नंबर</label>
                                         </td>
                                         <td class="align-content-center">
                                             <input name="ename" readonly="readonly" type="text" class="form-control" autocomplete="off" placeholder="57857857575 " /></td>
                                         <td class="align-content-center">
                                             <label>
-                                                EDLI No. <br />
+                                                EDLI No.
+                                                <br />
                                                 ईडीएलआई नंबर</label>
                                         </td>
                                         <td class="align-content-center">
@@ -1322,7 +1407,8 @@
                                     <tr>
                                         <td class="align-content-center">
                                             <label>
-                                                ESIC No. <br />
+                                                ESIC No.
+                                                <br />
                                                 ईएसआईसी नंबर
                                             </label>
                                         </td>
@@ -1341,7 +1427,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table-bordered table-responsive table">
+                                <table class="table-bordered table">
                                     <tr>
                                         <th>
                                             <label>
@@ -1350,13 +1436,15 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Order No. <br />
+                                                Order No.
+                                                <br />
                                                 आदेश संख्या
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Order Date <br />
+                                                Order Date
+                                                <br />
                                                 आदेश दिनांक
                                             </label>
                                         </th>
@@ -1368,7 +1456,8 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Direct In Case Of District/Division Level Authority <br />
+                                                Direct In Case Of District/Division Level Authority
+                                                <br />
                                                 जिला/मंडल स्तरीय प्राधिकरण के मामले में प्रत्यक्ष</label>
                                         </th>
                                         <th>
@@ -1378,13 +1467,15 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Basic Pay <br />
+                                                Basic Pay
+                                                <br />
                                                 मूल वेतन
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Date of Assumption of Office <br />
+                                                Date of Assumption of Office
+                                                <br />
                                                 कार्यभार ग्रहण करने का दिनांक
                                             </label>
                                         </th>
@@ -1404,7 +1495,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table-bordered table-responsive table">
+                                <table class="table-bordered  table">
                                     <tr>
                                         <th>
                                             <label>
@@ -1425,13 +1516,15 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Name of Issuing Office <br />
+                                                Name of Issuing Office
+                                                <br />
                                                 जारीकर्ता कार्यालय का नाम
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Direct In Case Of District/Division Level Authority <br />
+                                                Direct In Case Of District/Division Level Authority
+                                                <br />
                                                 जिला/मंडल स्तरीय प्राधिकरण के मामले में प्रत्यक्ष</label>
                                         </th>
                                         <th>
@@ -1483,25 +1576,29 @@
                                     <tr>
                                         <th>
                                             <label>
-                                                Sr .No. <br />
+                                                Sr .No.
+                                                <br />
                                                 सरल क्र.
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Year <br />
+                                                Year
+                                                <br />
                                                 वर्ष
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Month <br />
+                                                Month
+                                                <br />
                                                 माह
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                New Basic Pay <br />
+                                                New Basic Pay
+                                                <br />
                                                 नया मूल वेतन
                                             </label>
                                         </th>
@@ -1572,7 +1669,8 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Name of Issuing Office <br />
+                                                Name of Issuing Office
+                                                <br />
                                                 जारीकर्ता कार्यालय का नाम
                                             </label>
                                         </th>
@@ -1584,18 +1682,21 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Year <br />
+                                                Year
+                                                <br />
                                                 वर्ष</label>
                                         </th>
                                         <th>
                                             <label>
-                                                New Basic Pay <br />
+                                                New Basic Pay
+                                                <br />
                                                 नया मूल वेतन
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                View Order <br />
+                                                View Order
+                                                <br />
                                                 आर्डर देखें
                                             </label>
                                         </th>
@@ -1621,27 +1722,32 @@
                                     <tr>
                                         <th>
                                             <label>
-                                                Sr.No. <br />
+                                                Sr.No.
+                                                <br />
                                                 सरल क्र.</label>
                                         </th>
                                         <th>
                                             <label>
-                                                Order No. <br />
+                                                Order No.
+                                                <br />
                                                 आदेश संख्या</label>
                                         </th>
                                         <th>
                                             <label>
-                                                Order Date <br />
+                                                Order Date
+                                                <br />
                                                 आदेश दिनांक</label>
                                         </th>
                                         <th>
                                             <label>
-                                                Designation Type <br />
+                                                Designation Type
+                                                <br />
                                                 पदनाम प्रकार</label>
                                         </th>
                                         <th>
                                             <label>
-                                                Posted School/Institute/Office Name (DISE Code) <br />
+                                                Posted School/Institute/Office Name (DISE Code)
+                                                <br />
                                                 पोस्ट किया गया स्कूल/संस्थान/कार्यालय का नाम (डीआईएसई कोड)</label>
                                         </th>
                                     </tr>
@@ -1670,19 +1776,22 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Nominee Name <br />
+                                                Nominee Name
+                                                <br />
                                                 नामांकित व्यक्ति का नाम
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Relation with Nominee <br />
+                                                Relation with Nominee
+                                                <br />
                                                 नामांकित व्यक्ति के साथ संबंध
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Nominee Percentage <br />
+                                                Nominee Percentage
+                                                <br />
                                                 नामांकित व्यक्ति का प्रतिशत
                                             </label>
                                         </th>
@@ -1713,25 +1822,29 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Year <br />
+                                                Year
+                                                <br />
                                                 वर्ष
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Month <br />
+                                                Month
+                                                <br />
                                                 माह
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Earned Leave (In Days) <br />
+                                                Earned Leave (In Days)
+                                                <br />
                                                 अर्जित अवकाश (दिनों में)
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Available Leave (In Days) <br />
+                                                Available Leave (In Days)
+                                                <br />
                                                 उपलब्ध अवकाश (दिनों में)
                                             </label>
                                         </th>
@@ -1761,25 +1874,29 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Year <br />
+                                                Year
+                                                <br />
                                                 वर्ष
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Month <br />
+                                                Month
+                                                <br />
                                                 माह
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Half Pay leave Earned (In Days) <br />
+                                                Half Pay leave Earned (In Days)
+                                                <br />
                                                 अर्जित आधा वेतन अवकाश (दिनों में)
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Available Leave (In Days) <br />
+                                                Available Leave (In Days)
+                                                <br />
                                                 उपलब्ध अवकाश (दिनों में)
                                             </label>
                                         </th>
@@ -1841,7 +1958,8 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Date To <br />
+                                                Date To
+                                                <br />
                                                 दिनांक तक
                                             </label>
                                         </th>
@@ -1853,7 +1971,8 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Approver <br />
+                                                Approver
+                                                <br />
                                                 स्वीकृति दिनांक
                                             </label>
                                         </th>
@@ -1888,25 +2007,29 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Days <br />
+                                                Days
+                                                <br />
                                                 दिन
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Date From <br />
+                                                Date From
+                                                <br />
                                                 दिनांक से
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Date To <br />
+                                                Date To
+                                                <br />
                                                 दिनांक तक
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Date of return <br />
+                                                Date of return
+                                                <br />
                                                 लौटने की दिनांक
                                             </label>
                                         </th>
@@ -1947,7 +2070,8 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Issuing Officer <br />
+                                                Issuing Officer
+                                                <br />
                                                 जारीकर्ता अधिकारी
                                             </label>
                                         </th>
@@ -1990,37 +2114,43 @@
                                     <tr>
                                         <th>
                                             <label>
-                                                Sr.No. <br />
+                                                Sr.No.
+                                                <br />
                                                 सरल क्र.
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Type of Case <br />
+                                                Type of Case
+                                                <br />
                                                 केस का प्रकार
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Case Description <br />
+                                                Case Description
+                                                <br />
                                                 केस विवरण
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Before Whom the Case are Pending <br />
+                                                Before Whom the Case are Pending
+                                                <br />
                                                 जिनके समक्ष मामले लंबित हैं
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                From Which Date the Proceedings are Pending <br />
+                                                From Which Date the Proceedings are Pending
+                                                <br />
                                                 कार्यवाही किस दिनांक से लंबित है
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                View Order <br />
+                                                View Order
+                                                <br />
                                                 आर्डर देखें
                                             </label>
                                         </th>
@@ -2050,30 +2180,35 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Award Name <br />
+                                                Award Name
+                                                <br />
                                                 पुरस्कार का नाम
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Award Level <br />
+                                                Award Level
+                                                <br />
                                                 पुरस्कार स्तर</label>
                                         </th>
                                         <th>
                                             <label>
-                                                Award Year <br />
+                                                Award Year
+                                                <br />
                                                 पुरस्कार वर्ष
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Award Order No. <br />
+                                                Award Order No.
+                                                <br />
                                                 पुरस्कार आदेश क्रमांक
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                View Order <br />
+                                                View Order
+                                                <br />
                                                 आर्डर देखें
                                             </label>
                                         </th>
@@ -2104,37 +2239,43 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Training Type <br />
+                                                Training Type
+                                                <br />
                                                 प्रशिक्षण प्रकार
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Training Level <br />
+                                                Training Level
+                                                <br />
                                                 प्रशिक्षण स्तर
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                Total Days <br />
+                                                Total Days
+                                                <br />
                                                 कुल दिन
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                From <br />
+                                                From
+                                                <br />
                                                 से
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                To <br />
+                                                To
+                                                <br />
                                                 तक
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                View Order <br />
+                                                View Order
+                                                <br />
                                                 आर्डर देखें
                                             </label>
                                         </th>
@@ -2163,19 +2304,22 @@
                                         </th>
                                         <th>
                                             <label>
-                                                Resource Group <br />
+                                                Resource Group
+                                                <br />
                                                 संसाधन समूह
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                National Days <br />
+                                                National Days
+                                                <br />
                                                 राष्ट्रीय दिवस
                                             </label>
                                         </th>
                                         <th>
                                             <label>
-                                                State Days <br />
+                                                State Days
+                                                <br />
                                                 राज्य दिवस
                                             </label>
                                         </th>

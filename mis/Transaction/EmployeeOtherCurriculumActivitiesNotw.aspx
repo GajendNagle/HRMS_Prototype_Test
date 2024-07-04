@@ -26,11 +26,11 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;  margin-bottom: -4rem;">
-            <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row" >
+    <div class="col-md-4" >
+       
+            <img src="/img/Employee.png" style="height: 70px" >
+    </div>
     </div>
 
 

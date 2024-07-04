@@ -98,7 +98,7 @@
     </div>
     <div class="row align-content-end">
         <div class="col-md-5 ">
-            <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+            <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 70px" >
         </div>
     </div>
 
@@ -167,8 +167,8 @@
 
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12 ">
+                    <hr />
                         <div class="form-group ">
 
                             <asp:Button runat="server" type="button" class="Alert-Save2 btn w-lg btn-success btn-border" Text="Search" OnClick="Unnamed_Click" />
@@ -210,7 +210,7 @@
                                         कुल कर्मचारी </th>
 
 
-                                    <%--<th>प्रिंट</th--%>
+                                   <%--<th>प्रिंट</th--%>
                                 </tr>
                             </thead>
                             <tbody>
@@ -254,7 +254,6 @@
             </fieldset>
             <fieldset runat="server" visible="false" id="show1">
                 <legend>Details/विवरण</legend>
-
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -487,7 +486,7 @@
                                         कुल कर्मचारी </th>
                                     <th>Total Employees Whose APR Uploaded<br />
                                         कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                    <th>Total Employees Whose APR Not Uploaded
+                                    <th>Total Employees Whose APR Not Uploaded<br />
 कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
                                     <th>Performance %<br />
                                         प्रदर्शन %</th>

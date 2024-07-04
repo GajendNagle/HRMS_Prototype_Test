@@ -37,12 +37,12 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 align-self-center" style="position: relative; bottom: 35px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -4rem;">
-            <img src="../../img/Employee.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
-    </div>
+      <div class="row" >
+  <div class="col-md-4" >
+     
+          <img src="/img/Employee.png" style="height: 70px" >
+  </div>
+  </div>
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
@@ -83,7 +83,7 @@
                         <legend>National Or State Level Awards / राष्ट्रीय या राज्य स्तर के पुरस्कार
                         </legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Employee Uniq Id 
@@ -92,8 +92,8 @@
                                     <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
                                 </div>
                             </div>
-                            <hr />
-                            <div class="col-md-12 form-group">
+                            <div class="col-md-12">
+                                <hr />
                                 <button id="Button1" type="button" class="btn btn-outline-success btn-border w-lg" onclick="myFunction()">View</button>
                                 <%-- <a href="Trn_ApplyMutualTransfer.aspx" class="btn btn-info btn-rounded">Reset Details</a>--%>
                             </div>
@@ -104,7 +104,7 @@
                         <fieldset>
                             <legend>Employee Personal Information / कर्मचारी की व्यक्तिगत जानकारी</legend>
                             <div class="row align-items-end">
-                                <div class="col-md-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="form-group">
                                         <label>
                                             Employee Name<br />
@@ -112,7 +112,7 @@
                                         <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Aman Patidar" />
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="form-group">
                                         <label>
                                             Unique ID
@@ -121,7 +121,7 @@
                                         <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4890" />
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="form-group">
                                         <label>
                                             Designation
@@ -130,7 +130,7 @@
                                         <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="form-group">
                                         <label>
                                             Sankul Code/ Name
@@ -145,9 +145,9 @@
                             <legend>Details of National or State Level Awards And Honors
                              /
                                 राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
-                            <div class="row form-group">
+                            <div class="row ">
                                 <div class="col-md-12">
-                                    <div class="table-responsive table-bordered">
+                                    <div class="table-responsive">
                                         <table class="table text-center table table-hover table-bordered">
                                             <tbody>
                                                 <tr>
@@ -199,20 +199,12 @@
                                         </table>
                                     </div>
                                 </div>
+                                <div class="col-md-12">
+                                    <hr />
+                                    <button id="Button2" type="button" class="btn btn-outline-success w-lg btn-border Alert-Confirmation" onclick="myFunction()">Save</button>
+                                </div>
                             </div>
                         </fieldset>
-
-                        <div class="row justify-content-center">
-
-
-                            <div class="col-md-2">
-
-                                <button id="Button2" type="button" class="btn btn-outline-success w-lg btn-border Alert-Confirmation" onclick="myFunction()">Save</button>
-                            </div>
-
-
-                        </div>
-
                     </div>
                 </div>
             </div>

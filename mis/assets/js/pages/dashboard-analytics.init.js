@@ -69,7 +69,8 @@ function loadCharts() {
                 {
                     horizontal: !1,
                     columnWidth: "50%",
-                    borderRadius: 6
+                    borderRadius: 6,
+                    borderRadiusWhenStacked: "all" // "all"/"last"
                 }
             },
             dataLabels: { enabled: !1 }, legend: {

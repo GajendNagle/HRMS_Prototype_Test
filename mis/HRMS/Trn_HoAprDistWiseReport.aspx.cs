@@ -28,6 +28,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         else if (txtUniqueID.SelectedItem.Text == "Bhopal")
         {
@@ -41,6 +42,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         else if (txtUniqueID.SelectedItem.Text == "Indore")
         {
@@ -54,6 +56,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
 
         }
         else if (txtUniqueID.SelectedItem.Text == "Sagar")
@@ -68,6 +71,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
 
         }
         else if (txtUniqueID.SelectedItem.Text == "Sehore")
@@ -82,7 +86,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
-
+            Fieldset5.Visible = false;
         }
     }
 
@@ -93,10 +97,12 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = true;
-        Fieldset2.Visible = false;
+        Fieldset1.Visible = false;
+        Fieldset2.Visible = true;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
+        Fieldset5.Visible = false;
+
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -108,9 +114,11 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show3.Visible = false;
         show4.Visible = false;
         Fieldset1.Visible = false;
-        Fieldset2.Visible = true;
-        Fieldset3.Visible = false;
+        Fieldset2.Visible = false;
+        Fieldset3.Visible = true;
         Fieldset4.Visible = false;
+        Fieldset5.Visible = false;
+
     }
 
     protected void Button2_Click(object sender, EventArgs e)
@@ -122,8 +130,10 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show4.Visible = false;
         Fieldset1.Visible = false;
         Fieldset2.Visible = false;
-        Fieldset3.Visible = true;
-        Fieldset4.Visible = false;
+        Fieldset3.Visible = false;
+        Fieldset4.Visible = true;
+        Fieldset5.Visible = false;
+
 
     }
 
@@ -137,23 +147,12 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
-        Fieldset4.Visible = true;
+        Fieldset4.Visible = false;
+        Fieldset5.Visible = true;
+
     }
 
     protected void Button4_Click(object sender, EventArgs e)
-    {
-        show.Visible = false;
-        show1.Visible = false;
-        show2.Visible = false;
-        show3.Visible = false;
-        show4.Visible = false;
-        Fieldset1.Visible = true;
-        Fieldset2.Visible = false;
-        Fieldset3.Visible = false;
-        Fieldset4.Visible = false;
-    }
-
-    protected void Button5_Click(object sender, EventArgs e)
     {
         show.Visible = false;
         show1.Visible = false;
@@ -164,6 +163,22 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         Fieldset2.Visible = true;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
+        Fieldset5.Visible = false;
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        show.Visible = false;
+        show1.Visible = false;
+        show2.Visible = false;
+        show3.Visible = false;
+        show4.Visible = false;
+        Fieldset1.Visible = false;
+        Fieldset2.Visible = false;
+        Fieldset3.Visible = true;
+        Fieldset4.Visible = false;
+        Fieldset5.Visible = false;
+
 
     }
 
@@ -176,8 +191,10 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show4.Visible = false;
         Fieldset1.Visible = false;
         Fieldset2.Visible = false;
-        Fieldset3.Visible = true;
-        Fieldset4.Visible = false;
+        Fieldset3.Visible = false;
+        Fieldset4.Visible = true;
+        Fieldset5.Visible = false;
+
 
     }
 
@@ -191,7 +208,10 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
-        Fieldset4.Visible = true;
+        Fieldset4.Visible = false;
+        Fieldset5.Visible = true;
+
+
     }
 
     protected void txtUniqueID_SelectedIndexChanged(object sender, EventArgs e)
@@ -207,6 +227,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         if (txtUniqueID.SelectedItem.Text == "All")
         {
@@ -219,6 +240,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         if (txtUniqueID.SelectedItem.Text == "Bhopal")
         {
@@ -231,6 +253,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         if (txtUniqueID.SelectedItem.Text == "Indore")
         {
@@ -243,6 +266,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         if (txtUniqueID.SelectedItem.Text == "Indore")
         {
@@ -255,6 +279,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         if (txtUniqueID.SelectedItem.Text == "Sagar")
         {
@@ -267,6 +292,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
         if (txtUniqueID.SelectedItem.Text == "Sehore")
         {
@@ -279,6 +305,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
+            Fieldset5.Visible = false;
         }
     }
 }
