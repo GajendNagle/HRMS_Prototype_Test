@@ -45,12 +45,12 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Add Office Registration /कार्यालय पंजीकरण जोड़े</legend>
+                <legend>Add Office Registration / कार्यालय पंजीकरण जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select State Name /<br />
+                                Select State Name <br />
                                 राज्य का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -83,10 +83,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Division Name /<br />
+                                Select Division Name <br />
                                 संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -112,10 +112,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select District Name /<br />
+                                Select District Name <br />
                                 जिले का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -140,10 +140,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Block Name /<br />
+                                Select Block Name <br />
                                 विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl03" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -164,10 +164,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Office Type /<br />
+                                Select Office Type <br />
                                 कार्यालय का चयन करे<span style="color: red;">*</span></label>
                             <select name="ctl00$ContentBody$ctl04" class="form-control">
                                 <option value=" -Select-">-Select-</option>
@@ -190,48 +190,48 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Office Name (In English)<span style="color: red;">*</span></label>
+                            <label>Enter Office Name (In English)<br />कार्यालय नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" placeholder="Enter Office Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>कार्यालय नाम (हिंदी में)<span style="color: red;">*</span></label>
+                            <label>Enter Office Name (In Hindi)<br />कार्यालय नाम दर्ज करे(हिंदी में)<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="कार्यालय का नाम दर्ज करे" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Address (Line 1) /<br />
+                                Enter Address (Line 1) <br />
                                 पता (लाइन 1) दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl07" type="text" class="form-control" placeholder="Address (Line 1)" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Address (Line 2) /<br />
+                                Enter Address (Line 2) <br />
                                 पता (लाइन 2) दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl08" type="text" class="form-control" placeholder="Address (Line 2)" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Pin Code /<br />
+                                Enter Pin Code <br />
                                 पिन कोड दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl09" type="text" class="form-control" placeholder="Enter Pin Code" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Office In charge Name /<br />
+                                Select Office In charge Name <br />
                                 कार्यालय प्रभारी का चयन करे<span style="color: red;">*</span></label>
                             <select name="ctl00$ContentBody$ctl10" class="form-control select2">
                                 <option value=" -Select-">-Select-</option>
@@ -241,42 +241,42 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Official Mail Id /<br />
+                                Enter Official Mail Id <br />
                                 आधिकारिक मेल आईडी दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl11" type="text" class="form-control" placeholder="Enter Official Mail id" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Office Contact No. /<br />
+                                Enter Office Contact No. <br />
                                 कार्यालय संपर्क नं. दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl12" type="text" class="form-control" placeholder="Enter Office Contact No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Office GST No /<br />
+                                Enter Office GST No <br />
                                 कार्यालय जीएसटी नं दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl13" type="text" class="form-control" placeholder="Enter Office GST No" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Office Code /<br />
+                                Enter Office Code <br />
                                 कार्यालय कोड दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl14" type="text" class="form-control" placeholder="Enter Office Code" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Effective Date /<br />
+                                Enter Effective Date <br />
                                 प्रभावी तिथि दर्ज करे<span style="color: red;">*</span></label>
                             <input type="date" class="form-control" data-date-format="dd/MM/yyyy" />
                         </div>
@@ -287,34 +287,34 @@
                 <legend>Enter Location Details / 
 स्थान विवरण दर्ज करें</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Latitude /<br />
+                               Enter Latitude <br />
                                 अक्षरेखा दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl15" type="text" class="form-control" placeholder="Enter Latitude" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Longitude /<br />
+                                Enter Longitude <br />
                                 देशान्तर दर्ज करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ctl16" type="text" class="form-control" placeholder="Enter Longitude" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                    <hr />
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
@@ -339,23 +339,25 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
+                                <thead class="nowrap">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र.</th>
-                                    <th>Office Type /<br />
+                                    <th>Office Type <br />
                                         कार्यालय का प्रकार</th>
-                                    <th>Office Name /<br />
+                                    <th>Office Name <br />
                                         कार्यालय का नाम</th>
-                                    <th>Office Code /<br />
+                                    <th>Office Code <br />
                                         कार्यालय का कोड</th>
-                                    <th>Office Incharge Name /<br />
+                                    <th>Office Incharge Name <br />
                                         कार्यालय प्रभारी का नाम</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>View Details/<br />
+                                    <th>View Details<br />
                                         विवरण देखें</th>
-                                    <th>Action</th>
+                                    <th>Action <br />कार्यवाहीं</th>
                                 </tr>
+                                    </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Head office</td>
@@ -364,7 +366,7 @@
                                     <td>Mr. ABC</td>
                                     <td>Active</td>
                                     <td><i class="fa fa-eye"></i></td>
-                                    <td><i class="fa fa-pen"></i>| <i class="fa fa-trash"></i></td>
+                                   <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

@@ -45,7 +45,7 @@
             <fieldset>
                 <legend>Add Assembly / विधानसभा जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>Select Division Name<br /> संभाग का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
@@ -62,7 +62,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>Select District Name<br /> जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
@@ -120,36 +120,36 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>Enter Assembly Name (In English)<br />विधानसभा का नाम दर्ज करे (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Assembly Name " />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>Enter Assembly Name(In Hindi)<br />विधानसभा का नाम दर्ज करे (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="विधानसभा का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>Enter Assembly Code No.<br />विधानसभा कोड संख्या जोड़े दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                                <input checked="checked" type="checkbox" class="form-check-input" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                    <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg">Save</button>
                             <a href="Mst_Loc_Assembly.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
@@ -176,6 +176,7 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
+                                <thead class="nowrap">
                                 <tr>
                                     <th>Sr.No.<br /> सरल क्र.</th>
                                     <th>Division Name <br /> संभाग का नाम</th>
@@ -184,8 +185,9 @@
                                     <th>Enter Assembly Name(In Hindi)<br />संसद का नाम (हिंदी में)</th>
                                     <th>Parliamentary Code No. <br /> लोकसभा कोड संख्या</th>
                                     <th>Status(Active/InActive) <br /> स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action <br />कार्यवाहीं</th>
                                 </tr>
+                                    </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Bhopal</td>
@@ -194,7 +196,7 @@
                                     <td>नरेला</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -204,7 +206,7 @@
                                     <td>हुजुर</td>
                                     <td>02</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

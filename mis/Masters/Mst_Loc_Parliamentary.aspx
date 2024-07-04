@@ -45,9 +45,10 @@
             <fieldset>
                 <legend>Add Parliamentary / लोकसभा जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Division Name<br />
+                            <label>
+                                Select Division Name<br />
                                 संभाग का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -63,9 +64,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select District Name<br />
+                            <label>
+                                Select District Name<br />
                                 जिला का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -122,37 +124,42 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Parliamentary Name (In English)<br />लोकसभा का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Parliamentary Name (In English)<br />
+                                लोकसभा का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Parliamentary Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Parliamentary Name (In Hindi)<br />लोकसभा का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Parliamentary Name (In Hindi)<br />
+                                लोकसभा का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="लोकसभा का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Parliamentary Code No.<br />
+                            <label>
+                                Enter Parliamentary Code No.<br />
                                 लोकसभा कोड दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3 ms-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input checked="checked" type="checkbox" data-val="true" class="form-check-input" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
                             <a href="Mst_Loc_Parliamentary.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -179,21 +186,25 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No.<br />
-                                        सरल क्र.</th>
-                                    <th>Division Name<br />
-                                        संभाग का नाम</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
-                                    <th>Parliamentary Name (In English)<br />लोकसभा का नाम(अंग्रेजी में)</th>
-                                    <th>Parliamentary Name (In Hindi)<br />लोकसभा का नाम(हिंदी में)</th>
-                                    <th>Parliamentary Code No.<br />
-                                        लोकसभा कोड संख्या</th>
-                                    <th>Status(Active/InActive)<br />
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.<br />
+                                            सरल क्र.</th>
+                                        <th>Division Name<br />
+                                            संभाग का नाम</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Parliamentary Name (In English)<br />
+                                            लोकसभा का नाम(अंग्रेजी में)</th>
+                                        <th>Parliamentary Name (In Hindi)<br />
+                                            लोकसभा का नाम(हिंदी में)</th>
+                                        <th>Parliamentary Code No.<br />
+                                            लोकसभा कोड संख्या</th>
+                                        <th>Status(Active/InActive)<br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action <br />कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Bhopal</td>
@@ -202,7 +213,7 @@
                                     <td>भोपाल</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -212,7 +223,7 @@
                                     <td>विदिशा</td>
                                     <td>02</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

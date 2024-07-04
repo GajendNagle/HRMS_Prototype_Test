@@ -132,24 +132,23 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                                <input checked="checked" type="checkbox" class="form-check-input" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
-                               <label class="form-check-label">  Status
+                            <input checked="checked" type="checkbox" class="form-check-input" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
+                                Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                </div>
-                <hr />
-                <div class="row">
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border w-lg">Save</button>
                             <a href="Mst_Loc_District.aspx" class="btn btn-outline-danger w-lg btn-border w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
-        </fieldset>
+            </fieldset>
             <fieldset>
                 <legend>District Details / जिला विवरण</legend>
                 <div class="row justify-content-end">
@@ -170,29 +169,31 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No.
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
                                         <br>
-                                        सरल क्र.</th>
-                                    <th>State Name
+                                            सरल क्र.</th>
+                                        <th>State Name
                                         <br>
-                                        राज्य का नाम</th>
-                                    <th>Division Name
+                                            राज्य का नाम</th>
+                                        <th>Division Name
                                         <br>
-                                        संभाग का नाम</th>
-                                    <th>District Name(In English)<br />
-                                        जिला का नाम (अंग्रेजी में)</th>
-                                    <th>District Name(In Hindi)
+                                            संभाग का नाम</th>
+                                        <th>District Name(In English)<br />
+                                            जिला का नाम (अंग्रेजी में)</th>
+                                        <th>District Name(In Hindi)
                                         <br />
-                                        जिले का नाम (हिंदी में)</th>
-                                    <th>District Code No.
+                                            जिले का नाम (हिंदी में)</th>
+                                        <th>District Code No.
                                         <br>
-                                        जिला कोड संख्या</th>
-                                    <th>Status(Active/InActive)
+                                            जिला कोड संख्या</th>
+                                        <th>Status(Active/InActive)
                                         <br>
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action <br />कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Madhya Pradesh</td>
@@ -201,7 +202,7 @@
                                     <td>भोपाल</td>
                                     <td>32</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -211,7 +212,7 @@
                                     <td>ग्वालियर</td>
                                     <td>04</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

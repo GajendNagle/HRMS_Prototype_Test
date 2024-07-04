@@ -46,39 +46,41 @@
             <fieldset>
                 <legend>Add School Incharge Type Master / स्कूल प्रभारी का प्रकार जोड़ें</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter School Incharge Type Name(In English)<span style="color: red">*</span></label>
+                            <label>Enter School Incharge Type Name(In English)<br />
+                                स्कूल प्रभारी का प्रकार नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter School Incharge Type " />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>स्कूल प्रभारी का प्रकार नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter School Incharge Type Name(In Hindi)<br />
+                                स्कूल प्रभारी का प्रकार नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="स्कूल प्रभारी का प्रकार  दर्ज करे" />
                         </div>
                     </div>
-
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Incharge Code No. /<br />
+                                Enter Incharge Code No.
+                                <br />
                                 प्रभारी कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -105,24 +107,32 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No.</th>
-                                    <th>School Incharge Type Name (In English)</th>
-                                    <th>स्कूल प्रभारी का प्रकार नाम(हिंदी में)</th>
-                                    <th>Incharge Code No.
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.<br />
+                                            सरल क्र.</th>
+                                        <th>School Incharge Type Name (In English)<br />
+                                            स्कूल प्रभारी का प्रकार नाम(अंग्रेज़ी में)</th>
+                                        <th>School Incharge Type Name (In Hindi)<br />
+                                            स्कूल प्रभारी का प्रकार नाम(हिंदी में)</th>
+                                        <th>Incharge Code No.
                                         <br />
-                                        प्रभारी कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                            प्रभारी कोड संख्या</th>
+                                        <th>Status(Active/InActive)
+                                        <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action
+                                        <br />
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Head Master/Principal</td>
                                     <td>प्रधानाचार्य</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -130,24 +140,23 @@
                                     <td>सहा. प्रधानाचार्य / उप प्रधानाचार्य</td>
                                     <td>02</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 
-                                <tr>
-                                    <td>3</td>
-                                    <td>Acting Head Teacher</td>
-                                    <td>अभिनय मुख्य शिक्षक</td>
-                                    <td>03</td>
-                                    <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Acting Head Teacher</td>
+                                        <td>अभिनय मुख्य शिक्षक</td>
+                                        <td>03</td>
+                                        <td>Active</td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>Incharge From Other School</td>
                                     <td>अन्य विद्यालय प्रभारी</td>
                                     <td>04</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -155,7 +164,7 @@
                                     <td>ब्लॉक/जिला प्रभारी</td>
                                     <td>05</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
@@ -163,7 +172,7 @@
                                     <td>अन्य</td>
                                     <td>06</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
 
                             </table>

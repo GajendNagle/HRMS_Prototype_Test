@@ -44,44 +44,46 @@
             <fieldset>
                 <legend>Add School Medium / स्कूल माध्यम जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter School Medium Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter School Medium Name (In English)<br />
+                                स्कूल माध्यम का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter School Medium Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>स्कूल माध्यम का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter School Medium Name (In Hindi)<br />
+                                स्कूल माध्यम का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="स्कूल माध्यम का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Medium Code No. /<br />
+                            <label>
+                                Enter Medium Code No.<br />
                                 माध्यम कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
-
             </fieldset>
             <fieldset>
                 <legend>School Medium Master Details </legend>
@@ -102,24 +104,33 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
+                                <thead class="nowrap">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No.
+                                        <br />
                                         सरल क्र.</th>
-                                    <th>School Medium Name (In English)</th>
-                                    <th>स्कूल माध्यम का नाम(हिंदी में)</th>
-                                    <th>Medium Code No. /<br>
+                                    <th>School Medium Name (In English)<br />
+                                        स्कूल माध्यम का नाम(अंग्रेज़ी में)</th>
+                                    <th>School Medium Name (In Hindi)<br />
+                                        स्कूल माध्यम का नाम(हिंदी में)</th>
+                                    <th>Medium Code No.
+                                        <br>
                                         माध्यम कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive)
+                                        <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action
+                                        <br>
+                                        कार्यवाहीं</th>
                                 </tr>
+                                    </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Hindi</td>
                                     <td>हिंदी</td>
                                     <td>04</td>
-                                    <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td>Active </td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -127,7 +138,7 @@
                                     <td>अंग्रेजी</td>
                                     <td>19</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -135,7 +146,7 @@
                                     <td>उर्दू</td>
                                     <td>18</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -143,7 +154,7 @@
                                     <td>मराठी</td>
                                     <td>10</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -151,7 +162,7 @@
                                     <td>संस्कृत</td>
                                     <td>14</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

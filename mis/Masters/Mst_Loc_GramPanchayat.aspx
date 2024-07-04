@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_GramPanchayat.aspx.cs" Inherits="mis_Masters_LocationMasters_Mst_GramPanchayat" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
-        table th{
-            white-space:nowrap;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -48,11 +43,13 @@
         <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Add Gram Panchayat /ग्राम पंचायत जोड़े</legend>
+                <legend>Add Gram Panchayat / ग्राम पंचायत जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Division Name <br />
+                            <label>
+                                Select Division Name
+                                <br />
                                 संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -68,9 +65,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select District Name <br />
+                            <label>
+                                Select District Name
+                                <br />
                                 जिला का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -127,9 +126,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Block Name <br />
+                            <label>
+                                Select Block Name
+                                <br />
                                 विकासखण्ड का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -150,37 +151,43 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Gram Panchayat Name (In English)<br />ग्राम पंचायत का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Gram Panchayat Name (In English)<br />
+                                ग्राम पंचायत का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="Enter Gram Panchayat Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Gram Panchayat Name (In Hindi)<br />ग्राम पंचायत का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Gram Panchayat Name (In Hindi)<br />
+                                ग्राम पंचायत का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="ग्राम पंचायत का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Gram Panchayat Code No. <br />
+                            <label>
+                                Enter Gram Panchayat Code No.
+                                <br />
                                 ग्राम पंचायत कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" placeholder="Enter Code No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input checked="checked" class="form-check-input" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                    <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -207,46 +214,57 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
+                                <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No. <br />
+                                        <th>Sr.No.
+                                            <br />
                                             सरल क्र.</th>
-                                        <th>Division Name <br />
+                                        <th>Division Name
+                                            <br />
                                             संभाग का नाम</th>
-                                        <th>District Name <br />
+                                        <th>District Name
+                                            <br />
                                             जिला का नाम</th>
-                                        <th>Block Name <br />
+                                        <th>Block Name
+                                            <br />
                                             विकासखण्ड का नाम</th>
-                                        <th>Gram Panchayat Name (In English)<br />ग्राम पंचायत का नाम (अंग्रेज़ी में)</th>
-                                        <th>Enter Gram Panchayat Name (In Hindi)<br />ग्राम पंचायत का नाम (हिंदी में)</th>
-                                        <th>Gram Panchayat Code No. <br />
+                                        <th>Gram Panchayat Name (In English)<br />
+                                            ग्राम पंचायत का नाम (अंग्रेज़ी में)</th>
+                                        <th>Enter Gram Panchayat Name (In Hindi)<br />
+                                            ग्राम पंचायत का नाम (हिंदी में)</th>
+                                        <th>Gram Panchayat Code No.
+                                            <br />
                                             ग्राम पंचायत कोड संख्या</th>
-                                        <th>Status(Active/InActive) <br />
+                                        <th>Status(Active/InActive)
+                                            <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
-                                        <th>Action</th>
+                                        <th>Action
+                                            <br />
+                                            कार्यवाहीं</th>
                                     </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Bhopal</td>
-                                        <td>Bhopal</td>
-                                        <td>Bersia</td>
-                                        <td>Amarpur</td>
-                                        <td>अमरपुर</td>
-                                        <td>15</td>
-                                        <td>Active</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Dewas</td>
-                                        <td>Dewas</td>
-                                        <td>Dewas</td>
-                                        <td>Patadi</td>
-                                        <td>पतादी</td>
-                                        <td>10</td>
-                                        <td>InActive</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bhopal</td>
+                                    <td>Bhopal</td>
+                                    <td>Bersia</td>
+                                    <td>Amarpur</td>
+                                    <td>अमरपुर</td>
+                                    <td>15</td>
+                                    <td>Active</td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Dewas</td>
+                                    <td>Dewas</td>
+                                    <td>Dewas</td>
+                                    <td>Patadi</td>
+                                    <td>पतादी</td>
+                                    <td>10</td>
+                                    <td>InActive</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
                             </table>
                         </div>
                     </div>

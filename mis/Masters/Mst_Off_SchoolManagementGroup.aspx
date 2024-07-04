@@ -47,37 +47,41 @@
             <fieldset>
                 <legend>School Management Group Master / स्कूल प्रबंधन समूह मास्टर</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Management Group (In English)<br />प्रबंधन का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
+                            <label>Enter Management Group (In English)<br />
+                                प्रबंधन का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Management Group Name" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Management Group (In Hindi)<br />प्रबंधन का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Management Group (In Hindi)<br />
+                                प्रबंधन का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="प्रबंधन का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Management Code No. <br />
+                            <label>
+                                Enter Management Code No.
+                                <br />
                                 प्रबंधन कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input checked="checked" class="form-check-input" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -104,24 +108,32 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
+                                <thead class="nowrap">
                                 <tr>
-                                    <th>Sr.No. <br />
+                                    <th>Sr.No.
+                                        <br />
                                         सरल क्र.</th>
-                                    <th>Management Group (In English)<br />प्रबंधन का नाम(अंग्रेज़ी में)</th>
-                                    <th>Management Group (In English)<br />प्रबंधन का नाम (हिंदी में)</th>
-                                    <th>Management Code No. <br />
+                                    <th>Management Group (In English)<br />
+                                        प्रबंधन का नाम(अंग्रेज़ी में)</th>
+                                    <th>Management Group (In English)<br />
+                                        प्रबंधन का नाम (हिंदी में)</th>
+                                    <th>Management Code No.
+                                        <br />
                                         प्रबंधन कोड संख्या</th>
-                                    <th>Status(Active/InActive) <br />
+                                    <th>Status(Active/InActive)
+                                        <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action<br />
+                                        कार्यवाहीं</th>
                                 </tr>
+                                    </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>State Government</td>
                                     <td>राज्य सरकार</td>
                                     <td>A</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -129,7 +141,7 @@
                                     <td>सरकारी सहायता प्राप्त</td>
                                     <td>B</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -137,7 +149,7 @@
                                     <td>निजी गैर सहायता प्राप्त</td>
                                     <td>C</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -145,15 +157,14 @@
                                     <td>केंद्र सरकार</td>
                                     <td>D</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 <tr>
                                     <td>5</td>
                                     <td>Others </td>
                                     <td>अन्य</td>
                                     <td>E</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

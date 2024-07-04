@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -46,9 +45,11 @@
             <fieldset>
                 <legend>Add Office Type / कार्यालय प्रकार जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select OSI Type <br /> ओएसआई प्रकार का चयन करे<span style="color: red">*</span></label>
+                            <label>Select OSI Type
+                                <br />
+                                ओएसआई प्रकार का चयन करे<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control form-select">
                                 <asp:ListItem Value="0">Select</asp:ListItem>
                                 <asp:ListItem Value="1">Office</asp:ListItem>
@@ -57,9 +58,11 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Office Type Level <br /> कार्यालय प्रकार स्तर चयन करे<span style="color: red">*</span></label>
+                            <label>Select Office Type Level
+                                <br />
+                                कार्यालय प्रकार स्तर चयन करे<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control form-select">
                                 <asp:ListItem Value="0">Select</asp:ListItem>
                                 <asp:ListItem Value="1">1-State Level</asp:ListItem>
@@ -70,36 +73,42 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Office Type Name  (In English) <br />कार्यालय प्रकार का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
+                            <label>Enter Office Type Name  (In English)
+                                <br />
+                                कार्यालय प्रकार का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Office Type" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Office Type Name  (In Hindi) <br />कार्यालय प्रकार का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Office Type Name  (In Hindi)
+                                <br />
+                                कार्यालय प्रकार का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="कार्यालय का प्रकार दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Office Type Code No. <br /> ऑफिस प्रकार कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Office Type Code No.
+                                <br />
+                                ऑफिस प्रकार कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Code Number" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input checked="checked" type="checkbox" class="form-check-input" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -110,7 +119,6 @@
             <fieldset>
                 <legend>Office Type Details / कार्यालय प्रकार विवरण</legend>
                 <div class="row justify-content-end">
-
                     <div class="col-md-4 text-end">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
@@ -127,16 +135,34 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No. <br /> सरल क्र.</th>
-                                    <th>OSI Type <br> ओएसआई के प्रकार</th>
-                                    <th>OSI Type Level <br> ओएसआई प्रकार स्तर</th>
-                                    <th>Office Type Name  (In English) <br />कार्यालय प्रकार का नाम (अंग्रेज़ी में)</th>
-                                    <th> Office Type Name  (In Hindi) <br />कार्यालय प्रकार का नाम (हिंदी में)</th>
-                                    <th>Office Type Code <br> ऑफिस प्रकार कोड</th>
-                                    <th>Status(Active/InActive) <br />स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                                            <br />
+                                            सरल क्र.</th>
+                                        <th>OSI Type
+                                            <br>
+                                            ओएसआई के प्रकार</th>
+                                        <th>OSI Type Level
+                                            <br>
+                                            ओएसआई प्रकार स्तर</th>
+                                        <th>Office Type Name  (In English)
+                                            <br />
+                                            कार्यालय प्रकार का नाम (अंग्रेज़ी में)</th>
+                                        <th>Office Type Name  (In Hindi)
+                                            <br />
+                                            कार्यालय प्रकार का नाम (हिंदी में)</th>
+                                        <th>Office Type Code
+                                            <br>
+                                            ऑफिस प्रकार कोड</th>
+                                        <th>Status(Active/InActive)
+                                            <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action
+                                            <br />
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>School</td>
@@ -145,7 +171,7 @@
                                     <td>टेस्ट डाटा</td>
                                     <td>54</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -155,7 +181,7 @@
                                     <td>वस</td>
                                     <td>66</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

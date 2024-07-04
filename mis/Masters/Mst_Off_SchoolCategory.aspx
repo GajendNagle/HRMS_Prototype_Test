@@ -45,38 +45,42 @@
             <fieldset>
                 <legend>Add School Category /स्कूल श्रेणी जोड़े </legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Category Name (In English)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Category Name (In English)<br />
+                                श्रेणी का नाम दर्ज करे(अंग्रेज़ी में) <span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" autocomplete="off" placeholder="Enter Category Name " />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>श्रेणी का नाम (हिंदी में) <span style="color: red">*</span></label>
+                            <label>
+                                Enter Category Name (In Hindi)<br />
+                                श्रेणी का नाम दर्ज करे(हिंदी में) <span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="श्रेणी का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                School Category Code No. /<br />
-                                स्कूल श्रेणी कोड संख्या<span style="color: red">*</span></label>
+                                Enter School Category Code No.<br />
+                                स्कूल श्रेणी कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border">Save</button>
                             <a href="Mst_Loc_NagarPalika.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -103,34 +107,42 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No. /<br />
-                                        सरल क्र.</th>
-                                    <th>Category Name</th>
-                                    <th>श्रेणी का  नाम</th>
-                                    <th>School Category Code No. /<br />
-                                        स्कूल श्रेणी कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Primary Class</td>
-                                    <td>प्राथमिक कक्षा</td>
-                                    <td>01</td>
-                                    <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Higher Secondary</td>
-                                    <td>उच्च माध्यमिक</td>
-                                    <td>02</td>
-                                    <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                            </table>
+                                    <thead class="nowrap">
+                                        <tr>
+                                            <th>Sr.No.
+                                                <br />
+                                                सरल क्र.</th>
+                                            <th>Category Name(In English)<br>श्रेणी का  नाम (अंग्रेज़ी में)</th>
+                                            <th>Category Name(In Hindi)<br />
+                                                श्रेणी का  नाम (हिंदी में)</th>
+                                            <th>School Category Code No.
+                                                <br />
+                                                स्कूल श्रेणी कोड संख्या</th>
+                                            <th>Status(Active/InActive)
+                                                <br />
+                                                स्थिति (सक्रिय/निष्क्रिय)</th>
+                                            <th>Action
+                                        <br />
+                                                कार्यवाहीं</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Primary Class</td>
+                                        <td>प्राथमिक कक्षा</td>
+                                        <td>01</td>
+                                        <td>Active</td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Higher Secondary</td>
+                                        <td>उच्च माध्यमिक</td>
+                                        <td>02</td>
+                                        <td>Active</td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                </table>
                         </div>
                     </div>
                 </div>

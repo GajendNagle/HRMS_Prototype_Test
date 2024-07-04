@@ -48,14 +48,16 @@
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter State Name (In English)<br />
+                            <label>
+                                Enter State Name (In English)<br />
                                 राज्य का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter State Name" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Name State (In Hindi)<br />
+                            <label>
+                                Enter Name State (In Hindi)<br />
                                 राज्य का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="राज्य का नाम दर्ज करे" onkeypress="return lettersOnly();" />
                         </div>
@@ -107,29 +109,31 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No.
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
                                         <br />
-                                        सरल क्र.</th>
-                                    <th>Name of the State (In English)<br />
-                                        राज्य का नाम (अंग्रेजी में)</th>
-                                    <th>Name of the State (in Hindi)<br />
-                                        राज्य का नाम (हिंदी में)</th>
-                                    <th>State Code No.
+                                            सरल क्र.</th>
+                                        <th>Name of the State (In English)<br />
+                                            राज्य का नाम (अंग्रेजी में)</th>
+                                        <th>Name of the State (in Hindi)<br />
+                                            राज्य का नाम (हिंदी में)</th>
+                                        <th>State Code No.
                                         <br />
-                                        राज्य कोड संख्या</th>
-                                    <th>Status(Active/InActive)
+                                            राज्य कोड संख्या</th>
+                                        <th>Status(Active/InActive)
                                         <br />
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action <br />कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Madhya Pradesh</td>
                                     <td>मध्य प्रदेश</td>
                                     <td>23</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -137,7 +141,7 @@
                                     <td>छत्तीसगढ़</td>
                                     <td>24</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
