@@ -777,6 +777,7 @@
                                                 aria-controls="EmployeeReports" data-key="t-EmployeeReports"><i class="ri-menu-line"></i>Employee Reports</a>
                                             <div class="collapse menu-dropdown" id="EmployeeReports">
                                                 <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/EmployeeVarificationReport.aspx"><i class="ri-file-list-3-line"></i>Employee verification Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Details Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report </a></li>
                                                 </ul>
