@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Loc_NagarPanchayat.aspx.cs" Inherits="mis_Master_BlockMaster" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table th{
+            white-space:nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -247,8 +252,8 @@
                                         जिला का नाम </th>
                                     <th>Block Name <br />
                                         विकासखण्ड का नाम </th>
-                                    <th>Nagar Panchayat Name</th>
-                                    <th>नगर पंचायत का नाम</th>
+                                    <th>Nagar Panchayat Name (In English)<br />नगर पंचायत का नाम (अंग्रेज़ी में)</th>
+                                    <th>Nagar Panchayat Name (In Hindi)<br />नगर पंचायत का नाम (हिंदी में)</th>
                                     <th>Nagar Panchayat Code No. <br />
                                         नगर पंचायत कोड संख्या</th>
                                     <th>Status(Active/InActive) <br />

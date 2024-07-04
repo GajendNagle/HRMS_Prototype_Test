@@ -48,7 +48,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>OSI Type / ओएसआई प्रकार<span style="color: red">*</span></label>
+                            <label>Select OSI Type <br /> ओएसआई प्रकार का चयन करे<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control form-select">
                                 <asp:ListItem Value="0">Select</asp:ListItem>
                                 <asp:ListItem Value="1">Office</asp:ListItem>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type Level / कार्यालय प्रकार स्तर<span style="color: red">*</span></label>
+                            <label>Select Office Type Level <br /> कार्यालय प्रकार स्तर चयन करे<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" CssClass="form-control form-select">
                                 <asp:ListItem Value="0">Select</asp:ListItem>
                                 <asp:ListItem Value="1">1-State Level</asp:ListItem>
@@ -72,26 +72,26 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type Name  (In English)<span style="color: red">*</span></label>
+                            <label>Enter Office Type Name  (In English) <br />कार्यालय प्रकार का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Office Type" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>कार्यालय प्रकार का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Office Type Name  (In Hindi) <br />कार्यालय प्रकार का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="कार्यालय का प्रकार दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Office Type Code No. / ऑफिस प्रकार कोड संख्या<span style="color: red">*</span></label>
+                            <label>Enter Office Type Code No. <br /> ऑफिस प्रकार कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Code Number" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
@@ -128,13 +128,13 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. / सरल क्र.</th>
-                                    <th>OSI Type / ओएसआई के प्रकार</th>
-                                    <th>OSI Type Level / ओएसआई प्रकार स्तर</th>
-                                    <th>Office Type Name</th>
-                                    <th>कार्यालय प्रकार का नाम</th>
-                                    <th>Office Type Code / ऑफिस प्रकार कोड</th>
-                                    <th>Status(Active/InActive) /स्थिति (सक्रिय/निष्क्रिय)</th>
+                                    <th>Sr.No. <br /> सरल क्र.</th>
+                                    <th>OSI Type <br> ओएसआई के प्रकार</th>
+                                    <th>OSI Type Level <br> ओएसआई प्रकार स्तर</th>
+                                    <th>Office Type Name  (In English) <br />कार्यालय प्रकार का नाम (अंग्रेज़ी में)</th>
+                                    <th> Office Type Name  (In Hindi) <br />कार्यालय प्रकार का नाम (हिंदी में)</th>
+                                    <th>Office Type Code <br> ऑफिस प्रकार कोड</th>
+                                    <th>Status(Active/InActive) <br />स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>
                                 <tr>

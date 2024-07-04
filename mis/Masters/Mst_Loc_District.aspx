@@ -46,9 +46,11 @@
             <fieldset>
                 <legend>Add District / जिला जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select State Name <br />
+                            <label>
+                                Select State Name
+                                <br />
                                 राज्य का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -85,9 +87,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Division Name<br />
+                            <label>
+                                Select Division Name<br />
                                 संभाग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -103,36 +106,42 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter District Name (In English)<br />जिला का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter District Name (In English)<br />
+                                जिला का नाम दर्ज करें (अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder=" Enter District Name " />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter District Name (In Hindi)<br />जिले का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter District Name (In Hindi)<br />
+                                जिले का नाम दर्ज करें (हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="जिले का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter District Code No.<br />
+                            <label>
+                                Enter District Code No.<br />
                                 जिला कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Code No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label class="form-check-label">
-                                <input checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
-                                Status
+                                <input checked="checked" type="checkbox" class="form-check-input" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                               <label class="form-check-label">  Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
+                </div>
+                <hr />
+                <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success btn-border w-lg">Save</button>
@@ -140,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+        </fieldset>
             <fieldset>
                 <legend>District Details / जिला विवरण</legend>
                 <div class="row justify-content-end">
@@ -162,17 +171,25 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. <br>
+                                    <th>Sr.No.
+                                        <br>
                                         सरल क्र.</th>
-                                    <th>State Name <br>
+                                    <th>State Name
+                                        <br>
                                         राज्य का नाम</th>
-                                    <th>Division Name <br>
+                                    <th>Division Name
+                                        <br>
                                         संभाग का नाम</th>
-                                    <th>District Name(In English)<br />जिला का नाम (अंग्रेजी में)</th>
-                                    <th>District Name(In Hindi) <br />जिले का नाम (हिंदी में)</th>
-                                    <th>District Code No. <br>
+                                    <th>District Name(In English)<br />
+                                        जिला का नाम (अंग्रेजी में)</th>
+                                    <th>District Name(In Hindi)
+                                        <br />
+                                        जिले का नाम (हिंदी में)</th>
+                                    <th>District Code No.
+                                        <br>
                                         जिला कोड संख्या</th>
-                                    <th>Status(Active/InActive) <br>
+                                    <th>Status(Active/InActive)
+                                        <br>
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
                                     <th>Action</th>
                                 </tr>

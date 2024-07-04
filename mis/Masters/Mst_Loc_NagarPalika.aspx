@@ -180,14 +180,14 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Nagar Palika Name (In English)<br />नगर पालिका का नाम (अंग्रेजी  में)<span style="color: red">*</span></label>
+                            <label>Enter Nagar Palika Name (In English)<br />नगर पालिका का नाम दर्ज करे(अंग्रेजी  में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Nagar Palika Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
 
-                            <label>Enter Nagar Palika Name (In Hindi)<br />नगर पालिका का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Nagar Palika Name (In Hindi)<br />नगर पालिका का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl05" type="text" class="form-control" autocomplete="off" placeholder="नगर पालिका का नाम दर्ज करे" />
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                         <div class="form-group">
 
                             <label>Enter Nagar Palika Code No.<br />
-                                नगर पालिका कोड संख्या<span style="color: red">*</span></label>
+                                नगर पालिका कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl06" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -248,8 +248,8 @@
                                         जिला का नाम</th>
                                     <th>Block Name <br />
                                         विकासखण्ड का नाम</th>
-                                    <th>Nagar Palika Name </th>
-                                    <th>नगर पालिका का नाम</th>
+                                    <th>Nagar Palika Name (In English)<br />नगर पालिका का नाम(अंग्रेज़ी में)</th>
+                                    <th>Nagar Palika Name (In Hindi)<br />नगर पालिका का नाम(हिंदी में)</th>
                                     <th>Nagar Palika Code No. <br />
                                         नगर पालिका कोड क्र.</th>
                                     <th>Status(Active/InActive) <br />

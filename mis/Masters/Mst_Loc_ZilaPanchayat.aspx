@@ -129,20 +129,20 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Jila Panchayat Name (In English)<br />जिला पंचायत का नाम(अंग्रेजी  में)<span style="color: red">*</span></label>
+                            <label>Enter Jila Panchayat Name (In English)<br />जिला पंचायत का नाम दर्ज करे(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Jila Panchayat Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Jila Panchayat Name (In Hindi)<br />जिला पंचायत का नाम(हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Jila Panchayat Name (In Hindi)<br />जिला पंचायत का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="जिला पंचायत का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Enter Jila Panchayat Code No.<br />
-                                जिला पंचायत कोड संख्या<span style="color: red">*</span></label>
+                                जिला पंचायत कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -192,8 +192,8 @@
                                         संभाग का नाम</th>
                                     <th>District Name <br />
                                         जिला का नाम </th>
-                                    <th>Jila Panchayat Name</th>
-                                    <th>जिला पंचायत का नाम</th>
+                                    <th>Jila Panchayat Name (In English) <br />जिला पंचायत का नाम (अंग्रेज़ी में)</th>
+                                    <th>Jila Panchayat Name (In Hindi)<br />जिला पंचायत का नाम (हिंदी में )</th>
                                     <th>Jila Panchayat Code No.<br />
                                         जिला पंचायत कोड न.</th>
                                     <th>Status(Active/InActive)<br />
