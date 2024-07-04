@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        th {
+        th{
             white-space: nowrap;
         }
     </style>
@@ -48,7 +48,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                                वाहन संख्या<span style="color: red">*</span></span>
+                       गाड़ी का नंबर<span style="color: red">*</span></span>
                             <%--<select class="form-control select2 select2-hidden-accessible">
                                 <option>--Select--</option>
                                 <option></option>
@@ -70,14 +70,14 @@
                             <span>Type 
                                 <br />
                                 प्रकार<span style="color: red">*</span></span>
-                            <asp:TextBox runat="server" type="text" ReadOnly="true" class="form-control" placeholder="Enter Vehicle Number" ID="txtVehicletype" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" type="text" ReadOnly="true" class="form-control" placeholder="Type" ID="txtVehicletype" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Previous Reading(Km)
                                 <br />
-                                पिछली रीडिंग(किमी)</span>
+                                पूर्व रीडिंग( कि.मी. में )</span>
                             <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtPrevReadingKm" placeholder="Previous Reading(Km)" type="text" ID="txtPreviousReading" class="form-control"></asp:TextBox>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                         <div class="form-group">
                             <span>Previous Bill Date
                                 <br />
-                                पिछला बिल दिनांक</span>
+                                पूर्व बिल दिनांक</span>
                             <asp:TextBox runat="server" ReadOnly="true" class="form-control" placeholder="Previous Bill Date" ID="txtPreviousBillDate"></asp:TextBox>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="form-group">
                             <span>Previous Bill Amount
                                 <br />
-                                पिछला बिल राशि</span>
+                                पूर्व में बिल की राशि</span>
                             <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtPrevBillAmount" placeholder="Previous Bill Amount" ID="txtPrevBillAmount" class="form-control"></asp:TextBox>
                         </div>
                     </div>
@@ -114,26 +114,25 @@
                         <div class="form-group">
                             <span>Current Reading(Km)
                                 <br />
-                                वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
+                                वर्तमान रीडिंग( कि.मी. में )<span style="color: red">*</span></span>
 
-                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtCurrentReadingKm" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtCurrentReadingKm" type="text" MaxLength="9" class="form-control" placeholder="Current Reading(Km)" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Difference Reading(Km)
-            <br />
-                                वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
+            <br />रीडिंग में अंतर( कि.मी. में )<span style="color: red">*</span></span>
 
-                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtDifferencereading" type="text" MaxLength="9" class="form-control" placeholder="Enter Current Reading(Km)" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtCurrentReadingKm" ID="txtDifferencereading" type="text" MaxLength="9" class="form-control" placeholder="Current Reading(Km)" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Bill Number
                                 <br />
-                                बिल संख्या<span style="color: red">*</span></span>
-                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtBillNumber" type="text" ID="txtBillNumber" MaxLength="20" class="form-control" placeholder="Enter Bill Number" autocomplete="off"></asp:TextBox>
+                                बिल क्रमांक<span style="color: red">*</span></span>
+                            <asp:TextBox runat="server" ReadOnly="true" name="ctl00$ContentBody$txtBillNumber" type="text" ID="txtBillNumber" MaxLength="20" class="form-control" placeholder="Bill Number" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -149,7 +148,7 @@
                             <span>Bill Amount
                                 <br />
                                 बिल राशि<span style="color: red">*</span></span>
-                            <asp:TextBox ReadOnly="true" name="ctl00$ContentBody$txtBillAmount" runat="server" type="text" MaxLength="9" ID="txtBillAmount" class="form-control" placeholder="Enter Bill Amount" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox ReadOnly="true" name="ctl00$ContentBody$txtBillAmount" runat="server" type="text" MaxLength="9" ID="txtBillAmount" class="form-control" placeholder="Bill Amount" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -218,11 +217,11 @@
                                             <%-- <th scope="col">Office Name<br />
                                                 कार्यालय का नाम</th>--%>
                                             <th scope="col">Vehicle Number<br />
-                                                गाडी नंबर</th>
+                                                गाड़ी का नंबर</th>
                                             <th scope="col">Maintenance Type<br />
-                                                रखरखाव प्रकार</th>
+                                                रखरखाव का प्रकार</th>
                                             <th scope="col">Previous Reading Km<br />
-                                                पिछला रीडिंग किलोमीटर में</th>
+                                                पूर्व रीडिंग किलोमीटर में</th>
                                             <th scope="col">Current Reading Km<br />
                                                 वर्तमान रीडिंग किलोमीटर में</th>
                                             <th scope="col">Difference Km Reading<br />
@@ -231,8 +230,8 @@
                                                 बिल राशि</th>
                                             <th scope="col">Vehicle Expenses Details<br />
                                                 वाहन व्यय विवरण</th>
-                                            <th scope="col">Request Document<br />
-                                                दस्तावेज़ का अनुरोध करें</th>
+                                            <th scope="col">View Document<br />
+                                             दस्तावेज़ देखें</th>
                                         </tr>
                                     </thead>
                                     <tbody>

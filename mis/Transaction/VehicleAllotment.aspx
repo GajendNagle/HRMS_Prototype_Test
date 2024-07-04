@@ -64,7 +64,7 @@
                             <div class="form-group">
                                 <span>Employee Name With Code
                                     <br />
-                                    कर्मचारी का नाम कोड सहित<span style="color: red">*</span></span>
+                                    आई डी सहित कर्मचारी का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="20" class="form-control" readonly="readonly" value="E0561-Raj" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                                वाहन संख्या<span style="color: red">*</span></span>
+                              गाड़ी का नंबर<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
                                 <option>--Select--</option>
                                 <option>MP04HC4163</option>
@@ -313,7 +313,7 @@
                         <div class="form-group">
                             <span>Order Number
                                 <br />
-                                आदेश नंबर<span style="color: red">*</span></span>
+                                आदेश क्रमांक<span style="color: red">*</span></span>
                             <input type="text" maxlength="20" id="ctl00_ContentBody_txtOrederNumber" class="form-control" placeholder="Enter Order Number" onpaste="return false;" onkeypress="return isNumberKey(txt, evt)" autocomplete="off" />
                         </div>
                     </div>
@@ -343,9 +343,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Driver Contact No.
+                            <span>Driver's Mobile Number
                                 <br />
-                                ड्राइवर संपर्क नंबर<span style="color: red">*</span></span>
+                                चालक का मोबाईल नंबर<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtDriverContactNo" type="text" maxlength="10" id="ctl00_ContentBody_txtDriverContactNo" class="form-control" placeholder="Enter Driver Contact No." onpaste="return false;" autocomplete="off" />
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                         <div class="form-group">
                             <span>Remark
              <br />
-                                रिमार्क
+                                टिप्पणी
                                 <span style="color: red">*</span></span>
                             <textarea rows="1" class="form-control"></textarea>
                         </div>
@@ -416,7 +416,7 @@
                                                 सरल क्र.</th>
                                             <th scope="col">Employee Name With Code
                                                 <br />
-                                                कर्मचारी का नाम कोड सहित</th>
+                                                आई डी सहित कर्मचारी का नाम</th>
                                             <th scope="col">District
                                                 <br />
                                                 जिला
@@ -429,7 +429,7 @@
                                                 पद का नाम</th>
                                             <th scope="col">Vehicle Number
                                                 <br />
-                                                गाडी नंबर</th>
+                                              गाड़ी का नंबर</th>
                                             <%--<th scope="col">Office Type
                                                 <br />
                                                 कार्यालय का प्रकार</th>
@@ -439,19 +439,19 @@
 
                                             <th scope="col">Order Number
                                                 <br />
-                                                आदेश संख्या</th>
+                                                 आदेश क्रमांक</th>
                                             <th scope="col">Order Date
                                                 <br />
-                                                आर्डर की तारीख</th>
+                                                आदेश की तारीख</th>
                                             <%-- <th scope="col">Vehicle Type
                                                 <br />
                                                 वाहन का प्रकार</th>--%>
                                             <th scope="col">Driver Name
                                                 <br />
                                                 चालक का नाम</th>
-                                            <th scope="col">Driver Contact No.
+                                            <th scope="col">Driver's Mobile Number
                                                 <br />
-                                                ड्राइवर संपर्क नंबर</th>
+                                             चालक का मोबाईल नंबर</th>
                                             <th scope="col">Order Document
                                                 <br />
                                                 आदेश दस्तावेज़</th>

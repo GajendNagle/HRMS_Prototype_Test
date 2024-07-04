@@ -17,14 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       <li class="breadcrumb-item">
-    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+                        </li>
 
-<li class="breadcrumb-item">
-    <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
-        <span>Transport Management Report</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+                                <span>Transport Management Report</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Vehicle Registration Report</span></li>
                     </ol>
                 </div>
@@ -35,14 +35,14 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Registration Report / वाहन पंजीकरण रिपोर्ट</h4>
+                    <h4 class="card-title">Vehicle Registration Report / वाहन पंजीकरण विवरण</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
                 <legend>Vehicle Registration Report / 
-वाहन पंजीकरण रिपोर्ट</legend>
+वाहन पंजीकरण विवरण</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -70,7 +70,7 @@
                         <div class="form-group">
                             <span>District
                                 <br />
-                                ज़िला<span style="color: red">*</span></span>
+                               जिला <span style="color: red">*</span></span>
                             <select class="select2 form-control">
                                 <option value="0">--Select--</option>
                                 <option value="51">Agar Malwa</option>
@@ -132,7 +132,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                                गाडी नंबर<span style="color: red">*</span></span>
+                           गाड़ी का नंबर<span style="color: red">*</span></span>
                             <span class="left">
                                 <span id="ctl00_ContentBody_RequiredFieldValidator2" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Select Vehicle Number !"></i></span>
                             </span>
@@ -214,13 +214,13 @@
                                     <th scope="col">Sr.No.<br />
                                         सरल क्र. </th>
                                     <th scope="col">Vehicle Number<br />
-                                        गाडी नंबर</th>
+                                       गाड़ी का नंबर</th>
                                     <th scope="col">Chassis Number
          <br />
                                         चेसिस नंबर</th>
                                     <th scope="col">Insurance Number
          <br />
-                                        बीमा संख्या</th>
+                                        बीमा नंबर</th>
                                     <th scope="col">Dealer Name
          <br />
                                         विक्रेता का नाम</th>
@@ -261,6 +261,8 @@
                     </div>
                 </div>
             </fieldset>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>

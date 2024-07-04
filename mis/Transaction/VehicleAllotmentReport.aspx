@@ -17,14 +17,14 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                       <li class="breadcrumb-item">
-    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+                        </li>
 
-<li class="breadcrumb-item">
-    <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
-        <span>Transport Management Report</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+                                <span>Transport Management Report</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Vehicle Allotment Report</span></li>
                     </ol>
                 </div>
@@ -35,13 +35,13 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Allotment Report / वाहन आवंटन रिपोर्ट</h4>
+                    <h4 class="card-title">Vehicle Allotment Report / वाहन आवंटन विवरण</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Vehicle Allotment Report / वाहन आवंटन रिपोर्ट</legend>
+                <legend>Vehicle Allotment Report / वाहन आवंटन विवरण</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -76,7 +76,7 @@
                         <div class="form-group">
                             <span>District
                                 <br />
-                                ज़िला<span style="color: red">*</span></span>
+                               जिला <span style="color: red">*</span></span>
                             <select class="form-select form-control">
                                 <option value="0">--Select--</option>
                                 <option value="51">Agar Malwa</option>
@@ -152,7 +152,6 @@
                     </div>
                 </div>
             </fieldset>
-            <br />
             <fieldset>
                 <legend>Details / विवरण</legend>
                 <div class="col-md-12">
@@ -193,43 +192,44 @@
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S.No.: activate to sort column descending" style="width: 33.2373px;">S.No.<br />
                                                 सरल क्र.</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S.No.: activate to sort column descending" style="width: 33.2373px;">Employee Name With Code<br />
-    कर्मचारी का नाम कोड सहित</th>
+                                                कर्मचारी का नाम कोड सहित</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Order Date: activate to sort column ascending" style="width: 55.9921px;">Order Date
                                             <br />
-                                                आर्डर की तारीख</th>
-                                           <%-- <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Office Type: activate to sort column ascending" style="width: 56.2197px;">Office Type<br />
+                                               आदेश की तारीख</th>
+                                            <%-- <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Office Type: activate to sort column ascending" style="width: 56.2197px;">Office Type<br />
                                                 कार्यालय का प्रकार</th>--%>
                                             <th scope="col" style="width: 59.7542px;">District
                                                 <br />
-                                                ज़िला</th>
+                                               जिला </th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Vehicle Number: activate to sort column ascending" style="width: 80.355px;">Vehicle Number<br />
-                                                गाडी नंबर</th>
+                                              गाड़ी का नंबर</th>
 
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Designation: activate to sort column ascending" style="width: 74.4084px;">Designation<br />
                                                 पद का नाम  </th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Order Number: activate to sort column ascending" style="width: 72.0267px;">Order Number
                                             <br />
-                                                आदेश नंबर</th>
+                                                आदेश क्रमांक</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Vehicle Type: activate to sort column ascending" style="width: 64.3204px;">Vehicle Type<br />
                                                 वाहन का प्रकार</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Driver Name: activate to sort column ascending" style="width: 60.4976px;">Driver Name<br />
                                                 चालक का नाम</th>
-                                            <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Order Document: activate to sort column ascending" style="width: 86.4988px;">Order Document<br />
-                                                आदेश दस्तावेज़</th>
+                                            <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Order Document: activate to sort column ascending" style="width: 86.4988px;">View Document<br />
+                                                दस्तावेज़ देखें</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr role="row">
                                             <td>
                                                 <span>1</span>
-                                            </td> <td>
+                                            </td>
+                                            <td>
                                                 <span>E0561-Raj</span>
                                             </td>
                                             <td>
                                                 <span>13/06/2024</span>
                                             </td>
 
-                                          <%--  <td>
+                                            <%--  <td>
                                                 <span>Head Office</span>
                                             </td>--%>
                                             <td>

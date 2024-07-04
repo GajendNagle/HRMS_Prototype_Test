@@ -35,13 +35,13 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Maintenance Report / वाहन रखरखाव रिपोर्ट</h4>
+                    <h4 class="card-title">Vehicle Maintenance Report / वाहन रखरखाव विवरण</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Vehicle Maintenance Report / वाहन रखरखाव रिपोर्ट</legend>
+                <legend>Vehicle Maintenance Report / वाहन रखरखाव विवरण</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -206,12 +206,12 @@
                                         <%--<th scope="col">Office Type<br />
                                             कार्यालय का प्रकार</th>--%>
                                         <th scope="col">Vehicle Number<br />
-                                            गाडी नंबर</th>
+                                        गाड़ी का नंबर</th>
                                         <th scope="col">Maintenance Type<br />
                                             रखरखाव का प्रकार</th>
                                         <th scope="col">Previous Reading Km
                                         <br />
-                                            पिछला रीडिंग किलोमीटर में</th>
+                                            पूर्व रीडिंग किलोमीटर में</th>
                                         <th scope="col">Current Reading Km<br />
                                             वर्तमान रीडिंग किलोमीटर में</th>
                                         <th scope="col">Difference Km Reading<br />
@@ -220,8 +220,8 @@
                                             बिल राशि</th>
                                         <th scope="col">Vehicle Expenses Details<br />
                                             वाहन व्यय विवरण</th>
-                                        <th scope="col">Request Document<br />
-                                            दस्तावेज़ का अनुरोध करें</th>
+                                        <th scope="col">View Document<br />
+                                           दस्तावेज़ देखें</th>
                                     </tr>
                                 </thead>
                                 <tbody>

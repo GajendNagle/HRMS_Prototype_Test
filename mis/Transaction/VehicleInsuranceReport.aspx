@@ -36,14 +36,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h4 class="card-title">Vehicle Insurance  Report / 
-वाहन बीमा रिपोर्ट</h4>
+वाहन बीमा विवरण</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
                 <legend>Vehicle Insurance  Report / 
-वाहन बीमा रिपोर्ट</legend>
+वाहन बीमा विवरण</legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -244,21 +244,21 @@
                                            <%-- <th scope="col">Office Type<br />
                                                 कार्यालय का प्रकार</th>--%>
                                             <th scope="col">Vehicle Number<br />
-                                                गाडी नंबर</th>
+                                               गाड़ी का नंबर</th>
                                             <th scope="col">Insurance Type<br />
-                                                बीमा प्रकार</th>
+                                                बीमा का प्रकार</th>
                                             <th scope="col">Insurance Company<br />
                                                 बीमा कंपनी</th>
                                             <th scope="col"> Insurance Number<br />
-                                                नया बीमा नंबर</th>
+                                                 बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
-                                                बीमा आरंभ दिनांक</th>
+                                                बीमा प्रारंभ दिनांक</th>
                                             <th scope="col">Insurance End Date<br />
                                                 बीमा समाप्ति दिनांक</th>
                                             <th scope="col">Insurance Claim Date<br />
                                                 बीमा दावा दिनांक</th>
                                             <th scope="col">Insurance Amount<br />
-                                                बीमा राशि</th>
+                                                बीमा की राशि</th>
                                             <th scope="col">View Documents<br />
                                                 दस्तावेज़ देखें</th>
                                         </tr>

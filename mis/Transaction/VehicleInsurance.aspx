@@ -47,7 +47,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                                गाडी नंबर<span style="color: red">*</span></span>
+                            गाड़ी का नंबर<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
                                 <option>--Select--</option>
                                 <option>MP04HC4163</option>
@@ -70,7 +70,7 @@
                         <div class="form-group">
                             <span>Insurance Number
                                 <br />
-                                बीमा संख्या<span style="color: red">*</span></span>
+                               बीमा नंबर<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtNewInsuranceNumber" type="text" maxlength="17" id="ctl00_ContentBody_txtNewInsuranceNumber" class="form-control" onpaste="return false;" placeholder="Enter Insurance Number" autocomplete="off">
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                         <div class="form-group">
                             <span>Insurance Start Date
                                 <br />
-                                बीमा आरंभ तिथि<span style="color: red">*</span></span>
+                                बीमा प्रारंभ तिथि<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtInsuranceStartDate" type="Date" class="form-control " data-date-end-date="0d" data-provide="datepicker" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                         <div class="form-group">
                             <span>Insurance Type
             <br />
-                                बीमा प्रकार<span style="color: red">*</span></span>
+                                बीमा का प्रकार<span style="color: red">*</span></span>
                             <select name="ctl00$ContentBody$ddlInsuranceType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlInsuranceType\',\'\')', 0)" id="ctl00_ContentBody_ddlInsuranceType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
                                 <option selected="selected" value="0">--Select--</option>
                                 <option value="1">General Insurance</option>
@@ -114,7 +114,7 @@
                         <div class="form-group">
                             <span id="ctl00_ContentBody_lblInsAmt">Insurance Amount(Rs)
                                 <br />
-                                बीमा राशि(रु.)</span>
+                                बीमा की राशि(रु.)</span>
                             <span class="left">
                                 <span id="ctl00_ContentBody_RequiredFieldValidator7" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Enter Insurance Type !"></i></span>
                             </span>
@@ -170,21 +170,21 @@
                                             <th scope="col">S.No.<br />
                                                 सरल क्र.</th>
                                             <th scope="col">Vehicle Number<br />
-                                                गाडी नंबर</th>
+                                                गाड़ी का नंबर</th>
                                             <th scope="col">Insurance Type<br />
-                                                बीमा प्रकार</th>
+                                                बीमा का प्रकार</th>
                                             <th scope="col">Insurance Company<br />
                                                 बीमा कंपनी</th>
                                             <th scope="col">Insurance Number<br />
-                                                नया बीमा नंबर</th>
+                                                 बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
-                                                बीमा आरंभ तिथि</th>
+                                                बीमा प्रारंभ तिथि</th>
                                             <th scope="col">Insurance End Date<br />
                                                 बीमा समाप्ति तिथि</th>
                                             <th scope="col">Insurance Claim Date<br />
                                                 बीमा दावा दिनांक</th>
                                             <th scope="col">Insurance Amount<br />
-                                                बीमा राशि</th>
+                                                बीमा की राशि</th>
                                             <th scope="col">View Documents<br />
                                                 दस्तावेज़ देखें</th>
                                             <th scope="col">Action<br />

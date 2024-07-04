@@ -42,13 +42,13 @@
         <div class="card-body">
             <div>
                 <fieldset>
-                    <legend>VEHICLE DETAILS / वाहन जानकारी</legend>
+                    <legend>VEHICLE DETAILS / वाहन की जानकारी</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Vehicle Number
                                     <br />
-                                    गाडी का नंबर<span style="color: red">*</span></span>
+                                    गाड़ी का नंबर<span style="color: red">*</span></span>
                                 <input type="text" maxlength="10" class="form-control " placeholder="Enter Vehicle Number" autocomplete="off">
                             </div>
                         </div>
@@ -208,7 +208,7 @@
                             <div class="form-group">
                                 <span>Vehicle Weight(Unladen weight) KG
                                     <br />
-                                    वाहन का वजन कि.ग्रा.<span style="color: red">*</span></span>
+                                    वाहन का वजन कि.ग्रा. में <span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Vehicle Weight" autocomplete="off">
                             </div>
                         </div>
@@ -224,7 +224,7 @@
                             <div class="form-group">
                                 <span>Horse power (BHP/KW)
                                     <br />
-                                    अश्वशक्ति (बीएचपी/किलोवाट)<span style="color: red">*</span></span>
+                                    अश्वशक्ति (बीएचपी/किलोवॉट)<span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Horse power" autocomplete="off">
                             </div>
                         </div>
@@ -232,7 +232,7 @@
                             <div class="form-group">
                                 <span>Wheel Base (mm)
                                     <br />
-                                    व्हील बेस (मि.मी.)<span style="color: red">*</span></span>
+                                    व्हील बेस (मि.मी. में)<span style="color: red">*</span></span>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Wheel Base" autocomplete="off">
                             </div>
                         </div>
@@ -288,7 +288,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Insurance Number<br />
-                                    बीमा संख्या<span style="color: red">*</span></span>
+                                    बीमा नंबर<span style="color: red">*</span></span>
                                 <input type="text" maxlength="17" class="form-control" placeholder="Enter Insurance Number" autocomplete="off">
                             </div>
                         </div>
@@ -296,7 +296,7 @@
                             <div class="form-group">
                                 <span>Insurance Start Date
                                     <br />
-                                    बीमा आरंभ तिथि<span style="color: red">*</span></span>
+                                    बीमा प्रारंभ तिथि<span style="color: red">*</span></span>
                                 <input type="date" class="form-control disableFuturedate" data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
@@ -312,20 +312,20 @@
                             <div class="form-group">
                                 <span>Insurance Amount(Rs)
                                     <br />
-                                    बीमा राशि(रु.)<span style="color: red">*</span></span>
+                                    बीमा की राशि(रु.)<span style="color: red">*</span></span>
                                 <input type="text" maxlength="9" class="form-control" placeholder="Enter Insurance Amount" autocomplete="off">
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Dealer Details / डीलर का विवरण</legend>
+                    <legend>Dealer Details / विक्रेता का विवरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <span>Dealer Name
                                     <br />
-                                    डीलर का नाम<span style="color: red">*</span></span>
+                                    विक्रेता का नाम<span style="color: red">*</span></span>
                                 <input type="text" maxlength="45" class="form-control" placeholder="Enter Dealer Name" autocomplete="off">
                             </div>
                         </div>
@@ -333,7 +333,7 @@
                             <div class="form-group">
                                 <span>Dealer Address
                                     <br />
-                                    डीलर का पता<span style="color: red">*</span></span>
+                                    विक्रेता का पता<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Dealer Address" autocomplete="off">
                             </div>
                         </div>
@@ -375,13 +375,13 @@
                                                 <th scope="col">Sr.No.<br />
                                                     सरल क्र. </th>
                                                 <th scope="col">Vehicle Number<br />
-                                                    गाडी नंबर</th>
+                                                   गाड़ी का नंबर</th>
                                                 <th scope="col">Chassis Number
                                                     <br />
                                                     चेसिस नंबर</th>
                                                 <th scope="col">Insurance Number
                                                     <br />
-                                                    बीमा संख्या</th>
+                                                    बीमा नंबर</th>
                                                 <th scope="col">Dealer Name
                                                     <br />
                                                     विक्रेता का नाम</th>
