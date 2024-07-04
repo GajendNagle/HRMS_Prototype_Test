@@ -147,7 +147,7 @@
                                             <br />
                                                     बहीखाता का नाम
                                                 </th>
-                                                <th>Amount
+                                                <th> Allocation Amount
                                             <br />
                                                     आवंटन राशि
                                                 </th>
@@ -160,7 +160,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>10.01.01</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -173,7 +173,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>10.02.01</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Medical Expense Reimbursement</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -186,7 +186,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>10.01.01</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Stationery, Font Copy, Bidding</a>
                                                 </td>
                                                 <td align="center" valign="middle">

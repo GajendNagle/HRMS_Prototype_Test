@@ -185,7 +185,7 @@
     <script>
         function openPDF() {
             // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
+            var pdfUrl = '../../img/Finance.pdf';
 
             // Open the PDF in a new window or tab
             window.open(pdfUrl, '_blank');

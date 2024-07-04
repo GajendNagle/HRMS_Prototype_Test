@@ -177,7 +177,7 @@
                                                 <td align="center" valign="middle">
                                                     <span>10.01.01</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -196,7 +196,7 @@
                                                 <td align="center" valign="middle">
                                                     <span>10.02.01</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Medical Expense Reimbursement</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -215,14 +215,14 @@
                                                 <td align="center" valign="middle">
                                                     <span>10.03.01</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Stationery, Font Copy, Bidding</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>01-05-2023</a>
                                                 </td>
                                                  <td align="center" valign="middle">
-                                                    <a>0.00</a>
+                                                    <a>1000.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Approve</a>
@@ -241,7 +241,7 @@
                                                     <a><b>Total</b></a>
                                                 </td>
                                                  <td align="center" valign="middle">
-                                                    <a>643054.00</a>
+                                                    <a>653054.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a></a>

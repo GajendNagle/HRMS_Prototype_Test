@@ -40,7 +40,7 @@
                         <legend>Budget Demand Request /
                                 बजट मांग राशि अनुरोध</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="form-group">
                                     <label>
                                     Select Date <br />
@@ -48,7 +48,7 @@
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="form-group">
                                     <label>
                                          Head Type <br />
@@ -58,7 +58,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="form-group">
                                     <label>
                                          Ledger Name<br />
@@ -77,17 +77,24 @@
                             <label>
                                 Enter Amount Request<br />
                                 मांग राशि दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Amount Request" />
+                            <input type="text" id="numberInput" class="form-control" placeholder="Enter Amount Request" onkeyup="convertNumbers()"/>
+                        </div></div>
+                   
+                             <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                 Amount in Words<br />
+                                राशि शब्दों में<span style="color: red;">*</span></label>
+                            <input type="text" id="wordOutput" class="form-control" placeholder="Amount in Words" readonly/>
                         </div>
-                    </div>
-
+                    </div> 
                             <hr />
                             <div class="col-md-12 justify-content-center">
                             <div class="form-group text-center">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Add</button>
                                 <a id="clearfirst" href="BudgetDemandRequest.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
-                        </div>
+                        
 
                         </div>
                     </fieldset>
@@ -237,5 +244,52 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+   <script>
+       function numberToWords(number) {
+           if (number === 0) return 'Zero';
+
+           const units = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+           const teens = ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+           const tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
+           const scales = ['Thousand', 'Million', 'Billion', 'Trillion'];
+
+           function toWords(num) {
+               if (num === 0) return [];
+               if (num < 10) return [units[num]];
+               if (num < 20) return [teens[num - 10]];
+               if (num < 100) return [tens[Math.floor(num / 10)], toWords(num % 10)].flat().filter(Boolean);
+               if (num < 1000) return [units[Math.floor(num / 100)], 'Hundred', toWords(num % 100)].flat().filter(Boolean);
+
+               let words = [];
+               for (let i = scales.length - 1; i >= 0; i--) {
+                   const divisor = Math.pow(1000, i + 1);
+                   if (num >= divisor) {
+                       const group = Math.floor(num / divisor);
+                       words = words.concat(toWords(group), [scales[i]]);
+                       num %= divisor;
+                   }
+               }
+               return words.concat(toWords(num)).filter(Boolean);
+           }
+
+           return toWords(number).join(' ');
+       }
+
+       function convertNumbers() {
+           const numberInput = document.getElementById("numberInput");
+           const wordOutput = document.getElementById("wordOutput");
+           const inputValue = numberInput.value;
+           let result;
+
+           // Check if the input is a valid number
+           if (/^\d+$/.test(inputValue)) {
+               result = numberToWords(parseInt(inputValue));
+           } else {
+               result = 'Invalid number';
+           }
+
+           wordOutput.value = result;
+       }
+   </script>
 </asp:Content>
 

@@ -33,10 +33,75 @@
                         </div>
                     </div>
                 </div>
+                <div class="card-body">
+                    <fieldset>
+                        <legend>Statistics/
+                                आंकड़े</legend>
+                        <div class="row align-items-end">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select From Date
+                                        <br />
+                                        प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                    <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-04-01" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select To Date
+                                        <br />
+                                        अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                    <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-06-30" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Type
+   <br />
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
+                                    </label>
+                                    <select class="form-control select2">
+                                        <option selected="selected" value="0">--Select --</option>
+                                        <option value="1">Head Office</option>
+                                        <option value="2">JD Office</option>
+                                        <option value="3">DEO Office</option>
+                                        <option value="4">Block Office</option>
+                                        <option value="5">Sankul</option>
+                                        <option value="6">School</option>
+                                    </select>
+                                </div>
+                            </div>
 
-               <%-- <fieldset id="FS_Details">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Name<br />
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                        <option selected="selected" value="0">--Select --</option>
+                                        <option value="1">Jabalpur</option>
+                                        <option value="2">Indore</option>
+                                        <option value="3">Bhopal</option>
+                                        <option value="4">Gwalior</option>
+                                        <option value="5">Hoshangabad</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="col-md-12 justify-content-center">
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
+                                <a id="clearfirst" href="CashBankBook.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                <fieldset id="FS_Details" style="display: none">
                     <legend>Statistics/
-                                आंकड़े</legend>--%>
+                                आंकड़े</legend>
                     <div class="row">
                         <div class="col-md-4 mt-4">
                             <div class="form-group">
@@ -69,10 +134,10 @@
                                         <div class="table-responsive">
                                             <table class="table table-bordered" id="mainTable">
                                                 <thead>
-                                                    <tr>
-                                                        <th colspan="2">Total Voucher/<br />
+                                                    <tr align="center" valign="middle">
+                                                        <th colspan="2">Total Voucher<br />
                                                             कुल वाउचर</th>
-                                                        <th colspan="2">Type of Accounts/<br />
+                                                        <th colspan="2">Type of Accounts<br />
                                                             खाते का प्रकार</th>
 
                                                     </tr>
@@ -144,7 +209,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div></fieldset>
                <%-- </fieldset>--%>
             </div>
         </div>

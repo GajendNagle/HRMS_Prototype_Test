@@ -49,7 +49,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Select Search Type<br />खोज प्रकार का चयन करें
+                                    <label>Select Search Type<br /> प्रकार का चयन करें
                                         </label>
                                     <select class="form-control select2">
                                         <option value="2">Ledger Name</option>
@@ -126,7 +126,7 @@
                                             <tr role="row" class="odd" align="center" valign="middle">
                                                 <td ><span>1</span>
                                                 </td>
-                                                <td >
+                                                <td style="text-align: left;">
                                                     <span>Basic Pay/Special Pay/Dearness Allowance</span>
                                                     <br />
                                                     <span style="font-size: smaller;">Grp: Establishment Expenses, BB:No,CC:Yes</span>
@@ -150,7 +150,7 @@
                                             <tr role="row" class="odd" align="center" valign="middle">
                                                 <td ><span>2</span>
                                                 </td>
-                                                <td >
+                                                <td style="text-align: left;">
                                                     <span>Gratuity Premium Payment
 </span>
                                                     <br />
@@ -175,7 +175,7 @@
                                             <tr role="row" class="odd" align="center" valign="middle">
                                                 <td ><span>3</span>
                                                 </td>
-                                                <td >
+                                                <td style="text-align: left;">
                                                     <span>Gratuity Payment
 </span>
                                                     <br />

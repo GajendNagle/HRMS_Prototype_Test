@@ -159,23 +159,23 @@
                                         <tbody>
                                             <tr role="row" class="odd">
                                                 <td>01/04/2024</td>
-                                                <td>10.01.01</td>
+                                                <td style="text-align: left;">Basic Pay/Special Pay/Dearness Allowance (10.01.01)</td>
                                                 <td>Payment</td>
                                                 <td>H024-25VR1</td>
                                                 <td>Head Office</td>
                                                 <td>1658951.00</td>
                                                 <td></td>
-                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <td style="white-space: nowrap;"><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td>01/04/2024</td>
-                                                <td>10.01.02</td>
+                                                <td style="text-align: left;">Medical Expense Reimbursement (10.02.01)</td>
                                                 <td>Receipt</td>
                                                 <td>H024-25MR109</td>
                                                 <td>Head Office</td>
                                                 <td></td>
                                                 <td>1131.00</td>
-                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <td style="white-space: nowrap;"><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a>|<a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>
@@ -194,14 +194,13 @@
     <script>
         function openPDF() {
             // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
-
+            var pdfUrl = '../../../img/Finance.pdf';
             // Open the PDF in a new window or tab
             window.open(pdfUrl, '_blank');
         }
 
         function exportFile() {
-            var fileUrl = '../Document/HRMS_Document%20(1).pdf';
+            var fileUrl = '../../../img/Finance.pdf';
             var a = document.createElement('a');
             a.href = fileUrl;
             a.download = 'HRMS_Document.pdf';  // Replace with the desired file name

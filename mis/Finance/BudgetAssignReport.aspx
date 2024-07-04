@@ -137,9 +137,9 @@
                                             <br />
                                                     कुल नियत सीमा
                                                 </th>
-                                                <th>LetterView 
+                                                <th>Letter Detail 
                                             <br />
-                                                    पत्र दृश्य 
+                                                    पत्र देखें 
                                                 </th>
                                             </tr>
                                         </thead>
@@ -219,7 +219,7 @@
     <script>
         function openPDF() {
             // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
+            var pdfUrl = '../../img/Finance.pdf';
 
             // Open the PDF in a new window or tab
             window.open(pdfUrl, '_blank');

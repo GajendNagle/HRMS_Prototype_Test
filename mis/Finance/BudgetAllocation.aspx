@@ -169,7 +169,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>10.01.01</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -197,7 +197,7 @@
                                                     <div contenteditable="true">26147966.00</div>
                                                 </td>
                                                  <td align="center" valign="middle">
-                                                    <div contenteditable="true">0.00</div>
+                                                     <input type="email" id="2" class="form-control" style="width: 160px;" placeholder="0.00">
                                                 </td>
 
                                             </tr>
@@ -207,7 +207,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>10.01.02</a>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <td style="text-align: left;">
                                                     <a>Medical Expense Reimbursement</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -235,7 +235,7 @@
                                                     <div contenteditable="true">1301424.50</div>
                                                 </td>
                                                  <td align="center" valign="middle">
-                                                    <div contenteditable="true">0.00</div>
+                                                     <input type="email" id="a3" class="form-control" style="width: 160px;" placeholder="0.00">
                                                 </td>
                                             </tr>
                                             <!-- Add more rows as needed -->
@@ -245,6 +245,13 @@
 
                             </div>
                         </div>
+
+                        <div class="col-md-12 justify-content-center">
+                                    <div class="form-group text-center">
+                                        <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Save</button>
+                                        <a id="clearfirst" href="BudgetAllocation.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                    </div>
+                                </div>
                     </fieldset>
                 </div>
             </div>
