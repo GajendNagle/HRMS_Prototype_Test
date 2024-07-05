@@ -163,7 +163,7 @@
                                     <td>Technical</td>
                                     <td>Final level completion</td>
                                     <td>Active</td>
-                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -172,7 +172,7 @@
                                     <td>Technical</td>
                                     <td>Mid level completion</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -181,7 +181,7 @@
                                     <td>Technical</td>
                                     <td>Mid level completion</td>
                                     <td>InActive</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -190,7 +190,7 @@
                                     <td>Technical</td>
                                     <td>Foundation</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -199,7 +199,7 @@
                                     <td>Technical</td>
                                     <td>Plinth	</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

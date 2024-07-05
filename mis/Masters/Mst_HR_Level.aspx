@@ -46,10 +46,10 @@
             <fieldset>
                 <legend>Add Level / स्तर जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Pay Commission /<br />
+                                Select Pay Commission <br />
                                 वेतन आयोग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -58,10 +58,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Pay Scale /<br />
+                                Select Pay Scale <br />
                                 वेतनमान का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl01" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -70,32 +70,32 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Level / स्तर दर्ज करें<span style="color: red">*</span></label>
+                            <label>Enter Level <br /> स्तर दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" autocomplete="off" placeholder="Enter Level" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label class="form-label">
-                                Enter Effective Date /<br />
+                                Enter Effective Date <br />
                                 प्रभावी तिथि का चयन करे<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$TextBox1" type="date" id="ContentBody_TextBox1" class="form-control" placeholder="Select Date..." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                    <hr />
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
@@ -120,21 +120,23 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
+                                <thead class="nowrap">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No. <br />
                                         सरल क्र</th>
-                                    <th>Pay Commission /<br />
+                                    <th>Pay Commission <br />
                                         वेतन आयोग</th>
-                                    <th>Pay Scale /<br />
+                                    <th>Pay Scale <br />
                                         वेतनमान</th>
-                                    <th>Level /<br />
+                                    <th>Level <br />
                                         स्तर</th>
-                                    <th>Effective Date /<br />
+                                    <th>Effective Date <br />
                                         प्रभावी तिथि</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive) <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action<br />कार्यवाहीं</th>
                                 </tr>
+                                    </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>6th Pay</td>
@@ -142,7 +144,7 @@
                                     <td>Level-1</td>
                                     <td>01/04/2022</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -151,7 +153,7 @@
                                     <td>Level-2</td>
                                     <td>01/04/2022</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

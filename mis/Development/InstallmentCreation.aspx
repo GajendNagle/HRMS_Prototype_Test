@@ -25,15 +25,6 @@
             </div>
         </div>
     </div>
-    <div class="marqueecontainer">
-        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-        <div>
-            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                <%--इस पेज के माध्यम से स्कूल में उपयोग होने वाले फ़ोन नंबर्स का रजिस्ट्रेशन किया जाता हैं, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |--%>
-            </marquee>
-        </div>
-    </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -50,7 +41,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project Code /<br />
+                                Project Code
+                                <br />
                                 परियोजना कोड</label>
                             <asp:TextBox ID="txtProjectCode" MaxLength="10" value="P0001" disabled
                                 AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
@@ -59,9 +51,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project Date /<br />
+                                Project Date
+                                <br />
                                 परियोजना दिनांक</label>
-
                             <asp:TextBox ID="txtProjectDate" MaxLength="10" value="11/06/2024" disabled
                                 AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
@@ -69,20 +61,19 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Estimated Budget Cost(Approx. In Rs) /<br />
+                                Estimated Budget Cost(Approx. In Rs)
+                                <br />
                                 अनुमानित राशि
                             </label>
 
-                            <asp:TextBox ID="txtEstimatedBudgetCost" ClientIDMode="Static" MaxLength="10" value="60000.00" disabled
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtEstimatedBudgetCost" ClientIDMode="Static" MaxLength="10" value="60000.00" disabled="" AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Approved Cost(Approx. In Rs) /
-                  <br />
+                                Approved Cost(Approx. In Rs)
+                                <br />
                                 स्वीकृत राशि <span style="color: red">*</span></label>
                             <span class="pull-right">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic"
@@ -97,37 +88,43 @@
                                     SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
                                 </asp:RegularExpressionValidator>
                             </span>
-                            <asp:TextBox ID="txtApprovedCost" onkeypress="return validateNum(event);" placeholder="Enter Approved Cost" onchange="lnkbtnActiveorNot()" ClientIDMode="Static" MaxLength="10"
+                            <asp:TextBox ID="txtApprovedCost" onkeypress="return validateNum(event);" placeholder="60000.00" onchange="lnkbtnActiveorNot()" ClientIDMode="Static" MaxLength="10"
                                 AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
-
-
                     <div class="col-sm-3" id="pnlhidebtn" style="margin-top: 43px; display: none;">
                         <div class="form-group">
                             <asp:LinkButton ID="lnkResetApprovedCost" OnClientClick="clearApprovedCostData ();" Text="Reset Approved Cost" CssClass="btn btn-danger btn-block" runat="server"></asp:LinkButton>
                         </div>
                     </div>
-
                     <div class="col-sm-12">
-
-
                         <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;">
                             <tbody>
                                 <tr>
-                                    <th>Installment No. /<br />
+                                    <th>Installment No.
+                                        <br />
                                         इन्सटॉलमेंट  नं.</th>
-                                    <th>Project Exp. Start Date /<br />
+                                    <th>Project Exp. Start Date
+                                        <br />
                                         परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
-                                    <th>Project Exp. End Date /<br />
+                                    <th>Project Exp. End Date
+                                        <br />
                                         परियोजना एक्सपेक्टेड अंतिम दिनांक<span style="color: red">*</span></th>
-                                    <th>Installment (%)/<br />
+                                    <th>Installment (%)<br />
                                         इन्सटॉलमेंट  (%)<span style="color: red">*</span></th>
-                                    <th>Installment Amount /<br />
+                                    <th>Installment Amount
+                                        <br />
                                         इन्सटॉलमेंट  अमाउंट</th>
                                 </tr>
                                 <tr>
-                                    <td align="center">1</td>
+                                    <td align="center">
+                                        <select class="form-control select2">
+                                            <option value="--select--">--Select--</option>
+                                            <option value="Foundation">Foundation</option>
+                                            <option value="Plinth">Plinth</option>
+                                            <option value="Mid level completion">Mid level completion</option>
+                                            <option value="Final level completion">Final level completion</option>
+                                        </select></td>
                                     <td>
                                         <span class="pull-right">
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="Dynamic"
@@ -138,8 +135,7 @@
                                         </span>
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate11" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
-                                            data-provide="datepicker" onpaste="return false ;"
+                                            data-date-end-date="+365d" TextMode="Date" placeholder="Enter Project Exp. Start Date" data-provide="datepicker" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
 
@@ -156,7 +152,7 @@
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate12" MaxLength="10" data-date-start-date="-0d"
                                             data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
+                                            data-provide="datepicker" TextMode="Date" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
 
@@ -187,7 +183,14 @@
                                         <asp:TextBox ID="txtInstallmentAmount1" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
                                 </tr>
                                 <tr>
-                                    <td align="center">2</td>
+                                    <td align="center">
+                                        <select class="form-control select2">
+                                            <option value="--select--">--Select--</option>
+                                            <option value="Foundation">Foundation</option>
+                                            <option value="Plinth">Plinth</option>
+                                            <option value="Mid level completion">Mid level completion</option>
+                                            <option value="Final level completion">Final level completion</option>
+                                        </select></td>
                                     <td>
                                         <span class="pull-right">
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" Display="Dynamic"
@@ -199,7 +202,7 @@
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate21" MaxLength="10" data-date-start-date="-0d"
                                             data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
-                                            data-provide="datepicker" onpaste="return false ;"
+                                            data-provide="datepicker" TextMode="Date" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
 
@@ -216,7 +219,7 @@
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate22" MaxLength="10" data-date-start-date="-0d"
                                             data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
+                                            data-provide="datepicker" TextMode="Date" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
 
@@ -243,7 +246,14 @@
                                         <asp:TextBox ID="txtInstallmentAmount2" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
                                 </tr>
                                 <tr>
-                                    <td align="center">3</td>
+                                    <td align="center">
+                                        <select class="form-control select2">
+                                            <option value="--select--">--Select--</option>
+                                            <option value="Foundation">Foundation</option>
+                                            <option value="Plinth">Plinth</option>
+                                            <option value="Mid level completion">Mid level completion</option>
+                                            <option value="Final level completion">Final level completion</option>
+                                        </select></td>
                                     <td>
                                         <span class="pull-right">
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" Display="Dynamic"
@@ -253,7 +263,7 @@
                                             </asp:RequiredFieldValidator>
                                         </span>
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate31" MaxLength="10" data-date-start-date="-0d"
+                                            ID="txtExpStartDate31" TextMode="Date" MaxLength="10" data-date-start-date="-0d"
                                             data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
                                             data-provide="datepicker" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
@@ -272,7 +282,7 @@
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate32" MaxLength="10" data-date-start-date="-0d"
                                             data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
+                                            data-provide="datepicker" TextMode="Date" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
 
@@ -299,7 +309,14 @@
                                         <asp:TextBox ID="txtInstallmentAmount3" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
                                 </tr>
                                 <tr>
-                                    <td align="center">4</td>
+                                    <td align="center">
+                                        <select class="form-control select2">
+                                            <option value="--select--">--Select--</option>
+                                            <option value="Foundation">Foundation</option>
+                                            <option value="Plinth">Plinth</option>
+                                            <option value="Mid level completion">Mid level completion</option>
+                                            <option value="Final level completion">Final level completion</option>
+                                        </select></td>
                                     <td>
                                         <span class="pull-right">
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" Display="Dynamic"
@@ -310,7 +327,7 @@
                                         </span>
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate41" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
+                                            data-date-end-date="+365d" TextMode="Date" placeholder="Enter Project Exp. Start Date"
                                             data-provide="datepicker" onpaste="return false;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
@@ -327,7 +344,7 @@
                                         </span>
                                         <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
                                             ID="txtExpStartDate42" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
+                                            data-date-end-date="+365d" TextMode="Date" placeholder="Enter Project Exp. End Date"
                                             data-provide="datepicker" onpaste="return false ;"
                                             onkeypress="return false;" data-date-format="dd/mm/yyyy"
                                             data-date-autoclose="true" ClientIDMode="Static">
@@ -367,17 +384,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <%-- <div class="row">
-                        <div class="col-md-12">
-                            <asp:Button runat="server" ID="btnSubmit" OnClientClick="return ValidatePage();" ValidationGroup="a" CssClass="btn btn-success btn-block" Text="Save" />
-                            <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                        </div>
-                    </div>--%>
                     <div class="col-md-12">
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border" />
                         <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-
                 </div>
             </fieldset>
             <!-- Modal Component -->

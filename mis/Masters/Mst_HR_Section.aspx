@@ -46,36 +46,37 @@
             <fieldset>
                 <legend>Add Section / अनुभाग जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Section  Name (In English)<span style="color: red">*</span></label>
+                            <label>Enter Section  Name (In English)<br />अनुभाग का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" autocomplete="off" placeholder="Enter Section  Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>अनुभाग का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>Enter Section  Name (In Hindi)<br />अनुभाग का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="अनुभाग का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Section Code No. /<br />अनुभाग कोड संख्या दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Section Code No. <br />
+                                अनुभाग कोड संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
@@ -100,22 +101,26 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No. /<br />सरल क्र.</th>
-                                    <th>Section Name</th>
-                                    <th>अनुभाग का नाम</th>
-                                    <th>Section Code No. /<br />अनुभाग कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No. <br />
+                                            सरल क्र.</th>
+                                        <th>Section Name (In English)<br />अनुभाग का नाम (अंग्रेज़ी में)</th>
+                                        <th>Section Name (In Hindi)<br />अनुभाग का नाम (हिंदी में)</th>
+                                        <th>Section Code No. <br />
+                                            अनुभाग कोड संख्या</th>
+                                        <th>Status(Active/InActive) <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action <br />कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Finance</td>
                                     <td>वित्त</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>  <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -123,7 +128,7 @@
                                     <td>प्रशासन</td>
                                     <td>02</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                     <td class="nowrap"><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

@@ -1700,6 +1700,7 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/CreateProject.aspx"><i class="ri-file-list-3-line"></i>Create Project</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectApproval.aspx"><i class="ri-file-list-3-line"></i>Project Approval</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Installment Creation</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Document Upload</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Approval</a></li>

@@ -29,7 +29,7 @@
         <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
         <div>
             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                 इस पेज के माध्यम से कर्मचारियों को देय pay commission का रजिस्ट्रेशन किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं | 
+                इस पेज के माध्यम से कर्मचारियों को देय pay commission का रजिस्ट्रेशन किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं | 
             </marquee>
         </div>
     </div>
@@ -46,10 +46,11 @@
             <fieldset>
                 <legend>Add Pay Commission / वेतन आयोग जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Pay Commission Type /<br />
+                                Select Pay Commission Type
+                                <br />
                                 वेतन आयोग का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl00" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -58,18 +59,21 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Pay Commission /<br />
+                                Enter Pay Commission
+                                <br />
                                 वेतन आयोग दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="Enter Pay Commission" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Mapped With DA /<br />डीए के साथ मैप का चयन करे<span style="color: red">*</span></label>
+                                Select Mapped With DA
+                                <br />
+                                डीए के साथ मैप का चयन करे<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Yes">Yes</option>
@@ -78,47 +82,52 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Effective Date /<br />
+                                Enter Effective Date
+                                <br />
                                 प्रभावी तिथि दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$TextBox1" type="date" id="ContentBody_TextBox1" class="form-control" placeholder="Select Date..." />
                         </div>
                     </div>
-                </div>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <label>
-                            Enter Pay Commission Code No. /<br />
-                            वेतन आयोग कोड संख्या दर्ज करें<span style="color: red;">*</span></label>
-                        <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
-                    </div>
-                    <div class="col-md-3">
-                        <label>
-                            Enter Sequence  No. /<br />
-                            अनुक्रम संख्या दर्ज करें<span style="color: red;">*</span></label>
-                        <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Sequence No." onkeypress="return lettersOnly();" />
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <label>
+                                Enter Pay Commission Code No.
+                                <br />
+                                वेतन आयोग कोड संख्या दर्ज करें<span style="color: red;">*</span></label>
+                            <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Sequence  No.
+                                <br />
+                                अनुक्रम संख्या दर्ज करें<span style="color: red;">*</span></label>
+                            <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" placeholder="Enter Sequence No." onkeypress="return lettersOnly();" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Pay Commission Details /वेतन आयोग विवरण</legend>
+                <legend>Pay Commission Details / वेतन आयोग विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -136,50 +145,64 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No. /<br />सरल क्र.
-                                    </th>
-                                    <th>Pay Commission Type /<br />वेतन आयोग प्रकार
-                                    </th>
-                                    <th>Pay Commission /<br />वेतन आयोग
-                                    </th>
-                                    <th>Mapped With DA /<br />डीए के साथ मैप
-                                    </th>
-                                    <th>Effective Date /<br />प्रभावी तिथि
-                                    </th>
-                                    <th>Pay Commission Code No. /<br />वेतन आयोग कोड संख्या
-                                    </th>
-                                    <th>Sequence No. /<br />अनुक्रम संख्या
-                                    </th>
-                                    <th>Status(Active/InActive) /<br />
-                                        स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
-                                </tr>
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                                        <br />
+                                            सरल क्र.
+                                        </th>
+                                        <th>Pay Commission Type
+                                        <br />
+                                            वेतन आयोग प्रकार
+                                        </th>
+                                        <th>Pay Commission
+                                        <br />
+                                            वेतन आयोग
+                                        </th>
+                                        <th>Mapped With DA
+                                        <br />
+                                            डीए के साथ मैप
+                                        </th>
+                                        <th>Effective Date
+                                        <br />
+                                            प्रभावी तिथि
+                                        </th>
+                                        <th>Pay Commission Code No.
+                                        <br />
+                                            वेतन आयोग कोड संख्या
+                                        </th>
+                                        <th>Sequence No.
+                                        <br />
+                                            अनुक्रम संख्या
+                                        </th>
+                                        <th>Status(Active/InActive)
+                                        <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action<br />
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Grade Pay</td>
                                     <td>6th Pay</td>
                                     <td>Yes</td>
-
                                     <td>01/04/2022</td>
-
                                     <td>06</td>
                                     <td>1</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                   <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>Level Pay</td>
                                     <td>7th Pay</td>
                                     <td>Yes</td>
-
                                     <td>01/04/2022</td>
                                     <td>07</td>
                                     <td>2</td>
-
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

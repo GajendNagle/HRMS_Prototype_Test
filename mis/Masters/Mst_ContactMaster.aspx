@@ -45,9 +45,11 @@
             <fieldset>
                 <legend>Add Directory Master / डायरेक्टरी मास्टर जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select District Name /<br />
+                            <label>
+                                Select District Name
+                                <br />
                                 जिला का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -104,9 +106,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Office Type /<br />
+                            <label>
+                                Select Office Type
+                                <br />
                                 कार्यालय प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -117,10 +121,12 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Type of Post /<br />
-                                पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
+                            <label>
+                                Select Type of Post
+                                <br />
+                                पोस्ट का प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="DEO">DEO</option>
@@ -129,46 +135,54 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Employee Name /<br />
-                                कमचारी का नाम दर्ज करें<span style="color: red">*</span></label>
+                            <label>
+                                Enter Employee Name
+                                <br />
+                                कमचारी का नाम दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Name" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Email Address /<br />
-                                ईमेल पता दर्ज करें<span style="color: red">*</span></label>
+                            <label>
+                                Enter Email Address
+                                <br />
+                                ईमेल पता दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Email Address" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Mobile No. /मोबाइल न. दर्ज करे<span style="color: red">*</span></label>
+                            <label>Enter Mobile No.
+                                <br />
+                                मोबाइल न. दर्ज करे<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Mobile No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter Landline No. /<br />
+                            <label>
+                                Enter Landline No.
+                                <br />
                                 लैंडलाइन नंबर दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" autocomplete="off" placeholder="Enter Landline No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
@@ -193,27 +207,39 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
+                                <thead class="nowrap">
                                 <tr>
-                                    <th>Sr.No. /<br />
+                                    <th>Sr.No.
+                                        <br />
                                         सरल क्र.</th>
-                                    <th>District /<br>
+                                    <th>District
+                                        <br>
                                         जिला</th>
-                                    <th>Office Type /<br>
+                                    <th>Office Type
+                                        <br>
                                         कार्यालय का प्रकार</th>
-                                    <th>Type of Post /<br>
+                                    <th>Type of Post<br>
                                         पोस्ट का प्रकार</th>
-                                    <th>Name /<br>
+                                    <th>Name
+                                        <br>
                                         नाम</th>
-                                    <th>Email /<br>
+                                    <th>Email
+                                        <br>
                                         ईमेल</th>
-                                    <th>Mobile No. /<br>
+                                    <th>Mobile No.
+                                        <br>
                                         मोबाइल न.</th>
-                                    <th>Landline No. /<br>
+                                    <th>Landline No.
+                                        <br>
                                         लैंडलाइन न.</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Status(Active/InActive)
+                                        <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action
+                                            <br />
+                                        कार्यवाहीं</th>
                                 </tr>
+                                    </thead>
                                 <tr>
                                     <td rowspan="3">1</td>
                                     <td rowspan="3">Bhopal</td>
@@ -224,7 +250,7 @@
                                     <td>9876543215</td>
                                     <td>0755-323658</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                   <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>District IT coordinator</td>
@@ -233,7 +259,7 @@
                                     <td>5959589654</td>
                                     <td>0755-899989</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>District IT coordinator</td>
@@ -242,7 +268,7 @@
                                     <td>9895652145</td>
                                     <td>0755-565565</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">2</td>
@@ -254,7 +280,7 @@
                                     <td>8523654782</td>
                                     <td>0731-856354</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>District Project coordinator</td>
@@ -263,7 +289,7 @@
                                     <td>6532659852</td>
                                     <td>0731-741582</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

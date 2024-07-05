@@ -46,36 +46,44 @@
             <fieldset>
                 <legend>Add Post / पोस्ट जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Post Name (In English)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Post Name (In English)<br />
+                                पद का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" autocomplete="off" placeholder="Enter Post Name" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>पद का नाम (हिंदी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter Post Name (In Hindi)
+                                <br />
+                                पद का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="पद का नाम दर्ज करे" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Post Code No. /<br />पोस्ट कोड न.<span style="color: red">*</span></label>
+                            <label>
+                                Enter Post Code No.
+                                <br />
+                                पोस्ट कोड न.  दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Code No." onkeypress="return lettersOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label class="form-check-label">
                                 <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                    <hr />
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
@@ -101,13 +109,23 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />सरल क्र.</th>
-                                    <th>Post Name</th>
-                                    <th>पद  का  नाम</th>
-                                    <th>Post Code No. /<br />पोस्ट कोड संख्या</th>
-                                    <th>Status(Active/InActive) /<br />
+                                    <th>Sr.No.
+                                        <br />
+                                        सरल क्र.</th>
+                                    <th>Post Name(In English)<br />
+                                        पद का नाम(अंग्रेज़ी में)
+                                    </th>
+                                    <th>Post Name (In Hindi)<br />
+                                        पद  का  नाम(हिंदी में)
+                                    </th>
+                                    <th>Post Code No.
+                                        <br />
+                                        पोस्ट कोड संख्या</th>
+                                    <th>Status(Active/InActive)<br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action
+                                            <br />
+                                        कार्यवाहीं</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -115,7 +133,7 @@
                                     <td>नियमित</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -123,7 +141,7 @@
                                     <td>संविधा</td>
                                     <td>02</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>&nbsp|&nbsp<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
