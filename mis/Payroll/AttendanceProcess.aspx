@@ -14,37 +14,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <%--  <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                            <span>Home</span>
-                        </li>
 
-                        <li class="breadcrumb-item">
-                            <li class="breadcrumb-item"><a href="../Module.aspx?ID=Payroll" title="click to go on">Payroll</a></li>
-                        </li>
-                        <li class="breadcrumb-item">Employee Attendance Process</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="card">
-        <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Employee Attendance/कर्मचारी उपस्थिति
-                    </h4>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">--%>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -57,11 +27,11 @@
                         <li class="breadcrumb-item">
                             <a href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Payroll</span></a>
                         </li>
-                      <%--  <li class="breadcrumb-item">
+                        <%--  <li class="breadcrumb-item">
                             <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>ACR</span></a>
                         </li>--%>
-                        <li class="breadcrumb-item"><span>Employee Attendance Process</span></li>
+                        <li class="breadcrumb-item"><span>Attendance Process</span></li>
                     </ol>
                 </div>
             </div>
@@ -71,18 +41,21 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Employee Attendance/कर्मचारी उपस्थिति
+                    <h5 class="card-title">Attendance Process / उपस्थिति प्रक्रिया
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Employee Attendance/कर्मचारी उपस्थिति</legend>
+                <legend>Employee Attendance / कर्मचारी उपस्थिति</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Office Type<br />कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
+                            <label>
+                                Select Office Type
+                                <br />
+                                कार्यालय प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -104,9 +77,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Year<br />वर्ष चुनें<span style="color: red">*</span></label>
+                            <label>
+                                Select Year<br />
+                                वर्ष चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -118,9 +93,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Month<br />माह चुनें<span style="color: red">*</span></label>
+                            <label>
+                                Select Month<br />
+                                माह चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -138,9 +115,12 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Type of Post<br />पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
+                            <label>
+                                Select Type of Post
+                                <br />
+                                पोस्ट का प्रकार चुनें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">All</option>
@@ -158,8 +138,8 @@
                             </select>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" onclick="myFunction()" class="btn btn btn-success w-lg btn-border">Search</button>
                             <a href="AttendanceProcess.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
@@ -169,7 +149,7 @@
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Employee Attendance Process/कर्मचारी उपस्थिति प्रक्रिया</legend>
+                    <legend>Employee Attendance Process / कर्मचारी उपस्थिति प्रक्रिया</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -187,32 +167,64 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr style="white-space:nowrap !important;">
-                                        <th>Sr.No <br />क्र.सं.</th>
-                                        <th>Action All <br />सभी कार्रवाई 
+                                    <tr style="white-space: nowrap !important;">
+                                        <th>Sr.No
+                                            <br />
+                                            क्र.सं.</th>
+                                        <th>Action All
+                                            <br />
+                                            सभी कार्रवाई 
                                                     <%--<br />
                                             <input id="ContentBody_dctl07" type="checkbox" name="ctl00$ContentBody$ctl06" />--%></th>
-                                        <th>Add Leave <br />अवकाश जोड़ें</th>
-                                        <th>Generate e Status <br />ई स्टेटस जनरेट करें</th>
-                                        <th>Emp Name <br />कर्मचारी का नाम</th>
-                                        <th>Total Days <br />कुल दिन</th>
-                                        <th>Total Leave <br />कुल छुट्टी</th>
-                                        <th>Payable Days <br />देय दिन</th>
-                                        <th>Earned Leave/अर्जित अवकाश</th>
-                                        <th>LWP <br />एलडब्ल्यूपी</th>
-                                        <th>Medical Leave <br />चिकित्सा छुट्टी</th>
-                                        <th>Casual Leave <br />आकस्मिक अवकाश</th>
-                                        <th>Paternity Leave <br />पितृत्व अवकाश</th>
-                                        <th>Marriage Leave <br />शादी के लिए छुट्टी</th>
-                                        <th>other <br />अन्य</th>
-                                        <th>Maternity Leave <br />प्रसूति अवकाश</th>
+                                        <th>Add Leave
+                                            <br />
+                                            अवकाश जोड़ें</th>
+                                        <th>Generate e Status
+                                            <br />
+                                            ई स्टेटस जनरेट करें</th>
+                                        <th>Emp Name
+                                            <br />
+                                            कर्मचारी का नाम</th>
+                                        <th>Total Days
+                                            <br />
+                                            कुल दिन</th>
+                                        <th>Total Leave
+                                            <br />
+                                            कुल छुट्टी</th>
+                                        <th>Payable Days
+                                            <br />
+                                            देय दिन</th>
+                                        <th>Earned Leave
+                                            <br />
+                                            अर्जित अवकाश</th>
+                                        <th>LWP
+                                            <br />
+                                            एलडब्ल्यूपी</th>
+                                        <th>Medical Leave
+                                            <br />
+                                            चिकित्सा छुट्टी</th>
+                                        <th>Casual Leave
+                                            <br />
+                                            आकस्मिक अवकाश</th>
+                                        <th>Paternity Leave
+                                            <br />
+                                            पितृत्व अवकाश</th>
+                                        <th>Marriage Leave
+                                            <br />
+                                            शादी के लिए छुट्टी</th>
+                                        <th>other
+                                            <br />
+                                            अन्य</th>
+                                        <th>Maternity Leave
+                                            <br />
+                                            प्रसूति अवकाश</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>
                                             <input id="ContentBody_ctl07" type="checkbox" name="ctl00$ContentBody$ctl06" /></td>
                                         <td>
-                                            <a runat="server" id="lnkOpenModal1" href="javascript:void(0)" onclientclick="return false;" class="btn btn-info w-100s">Add</a>
+                                            <a  role="button"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-info">Add</a>
                                         </td>
                                         <td>Pending</td>
                                         <td>Rohit</td>
@@ -233,7 +245,7 @@
                                         <td>
                                             <input id="ContentBody_ctl04" type="checkbox" name="ctl00$ContentBody$ctl06" /></td>
                                         <td>
-                                            <a runat="server" id="lnkOpenModal" href="javascript:void(0)" onclientclick="return false;" class="btn btn-info w-100s">Add</a>
+                                            <a  role="button" data-bs-toggle="modal" data-bs-target="#myModal"  class="btn btn-info w-100s">Add</a>
                                         </td>
                                         <td>Generate</td>
                                         <td>Rahul</td>
@@ -255,6 +267,7 @@
                     </div>
                     <div class="row ">
                         <div class="col-md-12">
+                            <hr />
                             <div class="form-group">
                                 <button type="button" class=" Alert-Confirmation btn btn-success w-lg btn-border">Generate Attendance</button>
                                 <a href="AttendanceProcess.aspx" class=" btn w-lg btn-outline-danger btn-border">Clear</a>
@@ -270,7 +283,7 @@
             </div>
             <!--Description-->
             <fieldset id="dcp" runat="server">
-                <legend>Description/विवरण</legend>
+                <legend>Description / विवरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-12">
                         <ul class="main-ul">
@@ -354,87 +367,102 @@
         <div id="myModal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="card">
-                        <div class="card-header">
-                            School Registration/स्कूल पंजीकरण
-     <asp:Label ID="Label1" runat="server" Text="" Visible="true"></asp:Label>
-                        </div>
-                        <div class="card-body">
-                            <div class="row align-items-end">
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <legend>Add Leave/अवकाश जोड़ें</legend>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Earned Leave/अर्जित अवकाश</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>LWP/एलडब्ल्यूपी</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Medical Leave/चिकित्सा छुट्टी</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Casual Leave/आकस्मिक अवकाश</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Paternity Leave/पितृत्व अवकाश</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Marriage Leave/शादी के लिए छुट्टी</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>other/अन्य</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Maternity Leave/प्रसूति अवकाश</label>
-                                                    <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
-                                                </div>
+                    <div class="modal-header">
+
+                        <h3 class="modal-title">Add Leave / अवकाश जोड़ें</h3>
+                        <a role="button" data-bs-dismiss="modal" class="btn-close"></a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <legend>Add Leave / अवकाश जोड़ें</legend>
+                                    <div class="row  align-items-end">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    Earned Leave
+                                                    <br />
+                                                    अर्जित अवकाश</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 justify-content-center">
-                                                <div class="form-group text-center">
-                                                    <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border">Save</button>
-                                                    <a href="AttendanceProcess.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
-                                                </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    LWP
+                                                    <br />
+                                                    एलडब्ल्यूपी</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
                                             </div>
                                         </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <div class="row fa-pull-right">
-                                        <div class="col-md-2">
-                                            <asp:Button runat="server" ID="btnclose" CssClass="btn btn-outline-danger w-lg btn-border" Text="Close" />
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    Medical Leave
+                                                    <br />
+                                                    चिकित्सा छुट्टी</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    Casual Leave
+                                                    <br />
+                                                    आकस्मिक अवकाश</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    Paternity Leave
+                                                    <br />
+                                                    पितृत्व अवकाश</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    Marriage Leave
+                                                    <br />
+                                                    शादी के लिए छुट्टी</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    other
+                                                    <br />
+                                                    अन्य</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="form-group">
+                                                <label>
+                                                    Maternity Leave
+                                                    <br />
+                                                    प्रसूति अवकाश</label>
+                                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Value" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <hr />
+                                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border">Save</button>
+                                            <a href="AttendanceProcess.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                                         </div>
                                     </div>
-                                </div>
+                                </fieldset>
                             </div>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a role="button" data-bs-dismiss="modal" class="btn btn-outline-danger w-lg btn-border">Close</a>
                     </div>
                 </div>
             </div>
@@ -453,7 +481,7 @@
         }
     </script>
     <script type="text/javascript">
-        $(document).ready(function () {
+    <%--    $(document).ready(function () {
             $('#<%= lnkOpenModal.ClientID %>').click(function () {
                 $('#myModal').modal('show');
             });
@@ -462,7 +490,7 @@
             $('#<%= lnkOpenModal1.ClientID %>').click(function () {
                 $('#myModal').modal('show');
             });
-        });
+        });--%>
     </script>
 </asp:Content>
 
