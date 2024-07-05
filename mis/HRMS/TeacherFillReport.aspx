@@ -65,25 +65,21 @@
       <div class="col-md-5 ">
           <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
       </div>
-             
-<div class="col-md text-end">
-    <div class="form-group">
-         <button id="BtnBack" class="btn-info rounded-2 ml-5" type="button" onclick="Backclickfn()">BACK</button>
-        
-    </div>
-</div>
+          <%--   <a type="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" href="/ApplyTour"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i> Back to List</a>--%>
       </div>
 
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-12">
+                <div class="col-lg-9">
                     <h4>
                       PART-2 Self-Evaluation
-                      भाग दो-स्वमूल्यांकन
-                    </h4>
-                         
-                </div>
+                      भाग दो-स्वमूल्यांकन </h4>  
+                  </div>
+                  <div class="col-lg-3 text-end ">
+         <button id="BtnBack"  class="btn btn-primary btn-label waves-effect waves-light rounded-pill " type="button" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i> BACK</button>
+  </div>
+          
             </div>
         </div>
         <div class="card-body">
