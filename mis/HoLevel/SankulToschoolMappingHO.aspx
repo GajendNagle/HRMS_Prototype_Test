@@ -60,7 +60,7 @@
 
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
-                        <label class="font-bold">
+                        <label >
                             Select Division Name
                             <br />
                             संभाग का नाम चुनें
@@ -79,7 +79,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
-                        <label class="font-bold">
+                        <label >
                             Select District Name
                             <br />
                             जिले का नाम चुनें</label>
@@ -138,7 +138,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
-                        <label class="font-bold">
+                        <label >
                             Select Block Name
                             <br />
                             ब्लॉक का नाम चुनें</label>
@@ -162,7 +162,7 @@
                     </div>
                     <%--<div class="col-md-6 col-lg-4 col-xl-3 mb-2">
                             <div class="form-group">
-                                <label class="font-bold">Sankul UDISE Code</label>
+                                <label >Sankul UDISE Code</label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
                                     <asp:ListItem> Enter Sankul UDISE Code</asp:ListItem>
                                     <asp:ListItem>14548455-AKBARPUR GOVT. HS</asp:ListItem>
@@ -177,7 +177,7 @@
                         </div>--%>
                     <div class="col-md-6 col-lg-4 col-xl-3 mb-2">
 
-                        <label class="font-bold">
+                        <label >
                             UDISE Code
                             <br />
                             UDISE कोड</label>
@@ -637,7 +637,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 School UDISE Code
                                                 <br />
                                                 स्कूल UDISE कोड<span style="color: red;"> *</span></label>
@@ -646,7 +646,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Division
                                                 <br />
                                                 संभाग का चयन करें<span style="color: red;"> *</span></label>
@@ -660,7 +660,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select District
                                                 <br />
                                                 जिले का चयन करें<span style="color: red;"> *</span></label>
@@ -674,7 +674,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Block
                                                 <br />
                                                 ब्लॉक का चयन करें<span style="color: red;"> *</span></label>
@@ -690,7 +690,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Location
                                                 <br />
                                                 स्थान चुनें<span style="color: red;">*</span></label>
@@ -704,7 +704,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Assembly 
                                                 <br />
                                                 विधानसभा का चयन करें <span style="color: red;">*</span></label>
@@ -717,7 +717,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Parliamentary
                                                 <br />
                                                 संसदीय का चयन करें<span style="color: red;"> *</span></label>
@@ -730,7 +730,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Habitation 
                                                 <br />
                                                 आवास का चयन करें
@@ -745,7 +745,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Board Type
                                                 <br />
                                                 बोर्ड प्रकार का चयन करें<span style="color: red;"> *</span></label>
@@ -761,7 +761,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select School Type
                                                 <br />
                                                 स्कूल का प्रकार चुनें<span style="color: red;"> *</span></label>
@@ -775,7 +775,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select School Category
                                                 <br />
                                                 स्कूल श्रेणी का चयन करें<span style="color: red;"> *</span></label>
@@ -790,7 +790,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Lowest Class
                                                 <br />
                                                 निम्नतम वर्ग का चयन करें<span style="color: red;">*</span></label>
@@ -819,7 +819,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Highest Class
                                                 <br />
                                                 उच्चतम वर्ग का चयन करें<span style="color: red;">*</span></label>
@@ -833,7 +833,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Management Group
                                                 <br />
                                                 प्रबंधन समूह का चयन करें<span style="color: red;"> *</span></label>
@@ -850,7 +850,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select School Management
                                                 <br />
                                                 स्कूल प्रबंधन का चयन करें<span style="color: red;"> *</span></label>
@@ -864,7 +864,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select In-Charge Type
                                                 <br />
                                                 प्रभारी प्रकार का चयन करें<span style="color: red;"> *</span></label>
@@ -881,7 +881,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 IN-Charge Unique Id
                                                 <br />
                                                 प्रभारी यूनिक आईडी<span style="color: red;">*</span></label>
@@ -890,7 +890,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 IN-Charge Name
                                                 <br />
                                                 प्रभारी का नाम<span style="color: red;"> *</span></label>
@@ -900,7 +900,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 IN-Charge Mobile Number
                                                 <br />
                                                 प्रभारी मोबाइल नंबर <span style="color: red;">*</span></label>
@@ -909,7 +909,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Year of Establishment
                                                 <br />
                                                 स्थापना का वर्ष चुनें<span style="color: red;">*</span></label>
@@ -933,7 +933,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Minority Community 
                                                 <br />
                                                 अल्पसंख्यक समुदाय का चयन करें <span style="color: red;">*</span></label>
@@ -949,7 +949,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select School Medium
                                                 <br />
                                                 स्कूल माध्यम का चयन करें<span style="color: red;">*</span></label>
@@ -967,13 +967,13 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">School Name (In English)<span style="color: red;">*</span></label>
+                                            <label >School Name (In English)<span style="color: red;">*</span></label>
                                             <asp:TextBox runat="server" Placeholder="Enter School Name (In English)" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">स्कूल का नाम (हिंदी में)<span style="color: red;"> *</span></label>
+                                            <label >स्कूल का नाम (हिंदी में)<span style="color: red;"> *</span></label>
                                             <asp:TextBox runat="server" Placeholder="स्कूल का नाम दर्ज करे|" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                         </div>
                                     </div>
@@ -989,7 +989,7 @@
                                 <div class="row align-items-end">
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 School Address (Line 1)
                                                 <br />
                                                 स्कूल का पता(1)<span style="color: red;">*</span></label>
@@ -998,7 +998,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 School Address (Line 2)
                                                 <br />
                                                 स्कूल का पता(2)</label>
@@ -1008,7 +1008,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Pin Code
                                                 <br />
                                                 पिन कोड<span style="color: red;">*</span></label>
@@ -1017,7 +1017,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Landline Number
                                                 <br />
                                                 लैंडलाइन नंबर<span style="color: red;">*</span></label>
@@ -1029,7 +1029,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Email ID
                                                 <br />
                                                 ईमेल आई.डी<span style="color: red;">*</span></label>
@@ -1038,7 +1038,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 School Website
                                                 <br />
                                                 स्कूल की वेबसाइट</label>
@@ -1048,7 +1048,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select School Shift
                                                 <br />
                                                 स्कूल शिफ्ट का चयन करें <span style="color: red;">*</span></label>
@@ -1063,7 +1063,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Is School Residential
                                                 <br />
                                                 क्या विद्यालय आवासीय है का चयन करें<span style="color: red;">*</span></label>
@@ -1078,7 +1078,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Special School
                                                 <br />
                                                 विशेष विद्यालय का चयन करें<span style="color: red;">*</span></label>
@@ -1099,7 +1099,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select School Status
                                                 <br />
                                                 स्कूल की स्थिति का चयन करें<span style="color: red;">*</span></label>
@@ -1114,7 +1114,7 @@
 
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 Select Hostel Attach
                                                 <br />
                                                 हॉस्टल अटैच का चयन करें<span style="color: red;">*</span></label>
@@ -1135,7 +1135,7 @@
                                 <div class="row align-items-end">
                                     <div class="col-md-6 col-lg-4 ">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 School Bank Account Name
                                                 <br />
                                                 स्कूल बैंक खाते का नाम<span style="color: red;">*</span></label>
@@ -1145,7 +1145,7 @@
 
                                     <div class="col-md-6 col-lg-4 ">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 School Bank Account Number
                                                 <br />
                                                 स्कूल बैंक खाता संख्या<span style="color: red;">*</span></label>
@@ -1154,7 +1154,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4">
                                         <div class="form-group">
-                                            <label class="font-bold">
+                                            <label >
                                                 IFSC Code
                                                 <br />
                                                 आईएफएससी कोड<span style="color: red;">*</span></label>
@@ -1166,7 +1166,7 @@
                             </fieldset>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
 

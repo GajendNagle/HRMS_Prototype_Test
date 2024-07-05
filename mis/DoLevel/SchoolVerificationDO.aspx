@@ -43,7 +43,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item"><a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
-                        <li class="breadcrumb-item"><a href="#HeadOfficeLevelVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Head Office Level Verification</span></a></li>
+                        <li class="breadcrumb-item"><a href="#OISVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>OIS Verification</span></a></li>
                         <li class="breadcrumb-item">School Verification</li>
                     </ol>
                 </div>
@@ -53,7 +53,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <h4 class="card-title">School Verification / विद्यालय सत्यापन
                     </h4>
                 </div>
@@ -72,9 +72,10 @@
                            </span>
                         </div>
                     </div>
+
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="font-bold">Select School UDISE Code/स्कूल UDISE कोड चुनें<span style="color: red;"> *</span></label>
+                            <label >Select School UDISE Code<br />स्कूल UDISE कोड चुनें<span style="color: red;"> *</span></label>
                             <asp:DropDownList CssClass="form-control select2" runat="server">
                                 <asp:ListItem> Select School UDISE Code</asp:ListItem>
                                 <asp:ListItem>23145484551-Sarasvati Gyan Mandir</asp:ListItem>
@@ -86,8 +87,8 @@
                         </div>
                     </div>
                     <hr />
-                    <div class="row">
-                        <div class="col-md-12">
+                    <div class="row justify-content-between">
+                        <div class="col-md-12 align-items-center">
                             <div class="form-group text-center">
                                 <asp:Button ID="btnSubmit" CssClass="btn btn-success w-lg btn-border" runat="server" OnClick="btnSubmit_Click" Text="Search" />
                                 <a runat="server" id="clearfirst" href="SchoolVerificationDO.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -130,7 +131,7 @@
                                         <th>Sankul(DDO) Code/Name<br />संकुल (डीडीओ) कोड/नाम</th>
                                         <th>Incharge Name/<br />प्रभारी का नाम</th>
                                         <th>Incharge Number<br />प्रभारी क्रमांक</th>
-                                        <th>Action/<br />कार्रवाई</th>
+                                        <th>Action/<br />कार्यवाही</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -226,8 +227,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn w-lg btn-success Alert-Sendrequest" data-bs-dismiss="modal">Save</button>
-                                    <button type="button" class="btn w-lg btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success w-lg btn-border Alert-Sendrequest" data-bs-dismiss="modal">Save</button>
+                                    <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                             <!-- /.modal-content -->

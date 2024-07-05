@@ -38,13 +38,13 @@
                     <fieldset>
                         <legend>Proposed Budget /
                                 प्रस्तावित बजट</legend>
-                        <div class="row justify-content-end">
+                        <%--<div class="row justify-content-end">
                              <div class="col-md-12">
             <div class="form-group text-end">
                 <a id="" href="UpdateProposedBudget.aspx" class="btn btn-outline-primary w-lg btn-border">Update Proposed Budget</a>
             </div>
         </div>
-                        </div>
+                        </div>--%>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -89,7 +89,7 @@
                                         कार्यालय नाम का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
-                                        <option selected="selected" value="0">--Select --</option>
+                                        <%--<option selected="selected" value="0">--Select --</option>--%>
                                         <option value="1">Directorate of Public Instruction</option>
 
                                     </select>
@@ -136,8 +136,8 @@
                                                 <th>विवरण</th>
                                                 <th>प्रस्तावित बजट
                                                 </th>
-                                                <th>कार्यवाही
-                                                </th>
+                                                <%--<th>कार्यवाही
+                                                </th>--%>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -153,7 +153,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" id="2" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
@@ -167,7 +167,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" id="2" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
@@ -181,7 +181,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" id="2" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>4</span>
@@ -195,7 +195,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" id="2" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>

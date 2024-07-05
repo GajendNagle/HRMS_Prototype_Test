@@ -112,7 +112,7 @@
 
                     <hr />
                     <div class="col-md-12">
-                        <div class="form-group">
+                        <div class="form-group text-center">
                             <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
                             <a href="Mst_HostelRoom.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
@@ -147,7 +147,7 @@
                                 <thead>
                                     <tr role="row">
                                         <th scope="col">Sr.No.<br />
-                                            सरल क्र.</th>
+                                            क्र.सं.</th>
                                         <th scope="col">Hostel Name<br />
                                             हॉस्टल का नाम</th>
                                         <th scope="col">Room Type<br />

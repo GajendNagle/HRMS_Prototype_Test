@@ -3,28 +3,36 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor"></h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HostelManagement" title="click to go on">Hostel Management</a></li>
-                    <li class="breadcrumb-item active"><a href="Mst_HostelRegistration.aspx" title="click to go on">Room Deallocation</a></li>
-                </ol>
-            </div>
+  
+     <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HostelManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Hostel Management</span></a>
+                        </li>
 
+                        <li class="breadcrumb-item">Room Deallocation</li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
    <fieldset>
         <legend>Room Deallocation /  कक्ष का आवंटन</legend>
         <div class="row align-items-end">
              <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Select Hostel Type /<br />
+                        Select Hostel Type <br />
                         छात्रावास का प्रकार चुनें</label>
                     <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
@@ -37,7 +45,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Select Hostel Name /<br />
+                        Select Hostel Name <br />
                         हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
                      <select class="form-control select2">
                         <option selected="selected" value="0">--Select --</option>
@@ -101,7 +109,7 @@
                                 </th>
                                 <th>Action
                                             <br />
-                                    कार्रवाई
+                                    कार्यवाही
                                 </th>
                             </tr></thead>
                          <tbody>

@@ -82,7 +82,7 @@
                                         कार्यालय नाम का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
-                                        <option selected="selected" value="0">--Select --</option>
+                                       <%-- <option selected="selected" value="0">--Select --</option>--%>
                                         <option value="1">Directorate of Public Instruction</option>
 
                                     </select>
@@ -133,8 +133,8 @@
                                                 </th>
                                                 <th>बजट राशि में परिवर्तन
                                                 </th>
-                                                <th>कार्यवाही
-                                                </th>
+                                                <%--<th>कार्यवाही
+                                                </th>--%>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -154,7 +154,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
@@ -172,7 +172,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
@@ -190,7 +190,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>4</span>
@@ -208,7 +208,7 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>

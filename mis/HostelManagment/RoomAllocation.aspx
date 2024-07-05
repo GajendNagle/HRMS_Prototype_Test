@@ -4,27 +4,35 @@
      <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor"></h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=HostelManagement" title="click to go on">Hostel Management</a></li>
-                    <li class="breadcrumb-item active"><a href="Mst_HostelRegistration.aspx" title="click to go on">Room Allocation</a></li>
-                </ol>
+   
+     <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#HostelManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Hostel Management</span></a>
+                        </li>
+
+                        <li class="breadcrumb-item">Room Allocation</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
+
+
     <fieldset>
-        <legend>Room Allocation/ कक्ष आवंटन</legend>
+        <legend>Room Allocation / कक्ष आवंटन</legend>
         <div class="row align-items-end">
             <div class="col-md-3">
                 <div class="form-group">
                     <label >
-                        Select Student Name(ID)/
+                        Select Student Name(ID)
                         <br />
                         छात्र नाम(आई.डी) चयन करे</label>
                     <select class="form-control select2">
@@ -38,7 +46,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label >
-                        Category/<br />
+                        Category<br />
                         वर्ग
                     </label>
                    <input type="text" class="form-control" Value="OBC" />
@@ -47,7 +55,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label >
-                        Gender/<br />
+                        Gender<br />
                         लिंग
                     </label>
                     <input type="text" class="form-control" Value="Female" />
@@ -56,7 +64,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label >
-                         Academic Year/<br />
+                         Academic Year<br />
                         शैक्षणिक वर्ष </label>
                     <input type="text" class="form-control" Value="2024-25" />
                        <%--<input maxlength="4" autocomplete="off" id="a1" placeholder="2024-25" class="form-control datepickerYear" type="text" data-val="true" required="required" />--%>
@@ -67,7 +75,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label >
-                        Select Hostel Name/
+                        Select Hostel Name
                         <br />
                         छात्रावास का नाम चयन करे</label>
                     <select class="form-control select2">
@@ -82,7 +90,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Select Room Type/
+                        Select Room Type
    <br />
                         कक्ष प्रकार चयन करे
                     </label>
@@ -97,7 +105,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Select Room Number/
+                        Select Room Number
    <br />
                         कक्ष नंबर चयन करे
                     </label>
@@ -116,7 +124,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Select Bed Number/
+                        Select Bed Number
    <br />
                         बिस्तर नंबर चयन करे
                     </label>
@@ -133,7 +141,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Room Rent Per Month/<br />
+                        Room Rent Per Month<br />
                         प्रति माह कक्ष का किराया
                     </label>
                     <input type="text" class="form-control" value="400/-" />
@@ -142,7 +150,7 @@
              <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                        Availing Mess Facility/<br />
+                        Availing Mess Facility<br />
                         मेस सुविधा ले रहा है
                     </label>
                    <select class="form-control select2">
@@ -154,7 +162,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label>
-                         Mess Charges/<br />
+                         Mess Charges<br />
                          मेस शुल्क
                     </label>
                     <input type="text" class="form-control" value="1000/-" />
@@ -241,7 +249,7 @@
                                         </th>
                                         <th scope="col">Action
                                             <br />
-                                            कार्रवाई </th>
+                                            कार्यवाही </th>
                                     </tr>
                                 </thead>
                                 <tbody>

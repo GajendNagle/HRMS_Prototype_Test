@@ -16,48 +16,52 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <!-- Content Wrapper. Contains page content -->
-    <div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor ">Create Sankul</h4>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=SchoolDirectory" title="click to go on">School Directory</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=SchoolDirectory&SubID=DO" title="click to go on">OIS Verification</a></li>
-                        <li class="breadcrumb-item active">Create Sankul </li>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"><a href="#OISVerification" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>OIS Verification</span></a></li>
+                        <li class="breadcrumb-item">Create Sankul</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-        <div class="card mt-3 shadow">
-            <div class="card-header card-border-info">
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h4 class="card-title">Sankul Master / संकुल मास्टर
+                    </h4>
+                </div>
             </div>
+        </div>
             <div class="card-body">
-
                 <asp:Label runat="server" ID="lblMsg"></asp:Label>
                 <fieldset>
-                    <legend>Sankul Master</legend>
+                    <legend>Sankul Master / संकुल मास्टर</legend>
 
-                    <div class="row">
-
+                    <div class="row align-items-end">
                         <div class="col-md-12 mt-3">
                             <div class="form-group">
                                 <span class="bg-megnalight">Division : 
-                                   <b class="font-bold">Bhopal</b> </span>&nbsp&nbsp&nbsp&nbsp
+                                   <b class="font-bold">Bhopal</b> संभाग : भोपाल</span>&nbsp&nbsp&nbsp&nbsp
                        
                            <span class="bg-megnalight">District : 
-                              <b class="font-bold">Bhopal  </b>
+                              <b class="font-bold">Bhopal  </b>जिला : भोपाल
                            </span>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-weight-bold">School UDISE Code<span style="color: red;"> *</span></label>
+                                <label >School UDISE Code<br />स्कूल यू.डी.आई.एस.ई कोड<span style="color: red;"> *</span></label>
                                 <asp:DropDownList CssClass="form-control select2" runat="server">
                                     <asp:ListItem> Enter School UDISE Code</asp:ListItem>
                                     <asp:ListItem>1214548455-Sarasvati Gyan Mandir</asp:ListItem>
@@ -68,7 +72,7 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-3 mt-4">
+                        <div class="col-md-3 mb-4">
                             <asp:Button runat="server" ID="btnsearch" OnClick="btnsearch_Click" Text="Search" CssClass="btn btn-success btn-rounded" />
                         </div>
 
@@ -81,16 +85,16 @@
                                     <tbody>
                                         <tr>
 
-                                            <th>Sr. No.</th>
+                                            <th>Sr. No.<br />क्रमांक</th>
 
-                                            <th>Block</th>
-                                            <th>UDISE Code</th>
-                                            <th>School Name</th>
-                                            <th>School Board</th>
-                                            <th>Management</th>
-                                            <th>Category</th>
-                                            <th>School Category Detail</th>
-                                            <th>Action</th>
+                                            <th>Block<br />ब्लॉक</th>
+                                            <th>UDISE Code<br />UDISE कोड</th>
+                                            <th>School Name<br />स्कूल के नाम</th>
+                                            <th>School Board<br />स्कूल बोर्ड</th>
+                                            <th>Management<br />प्रबंध</th>
+                                            <th>Category<br />वर्ग</th>
+                                            <th>School Category Detail<br />स्कूल श्रेणी विवरण</th>
+                                            <th>Action<br />कार्यवाही</th>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -113,37 +117,37 @@
                                                 <div class="modal-dialog modal-xxl" style="width: 100%;">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title" id="myLargeModalLabel2">School Details</h4>
+                                                            <h4 class="modal-title" id="myLargeModalLabel2">School Details / स्कूल विवरण</h4>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                                                         </div>
                                                         <div class="modal-body">
                                                             <fieldset>
-                                                                <legend>School Basic Information</legend>
+                                                                <legend>School Basic Information / स्कूल की जानकारी</legend>
 
-                                                                <div class="row">
+                                                                <div class="row align-items-end">
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School UDISE Code<span style="color: red;"> *</span></label>
+                                                                            <label>School UDISE Code <br />स्कूल यू.डी.आई.एस.ई कोड<span style="color: red;"> *</span></label>
                                                                             <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" ReadOnly="true" placeholder="23445656546	"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Name (In English)<span style="color: red;">*</span></label>
+                                                                            <label>School Name (In English)<span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" Placeholder="Kamla nehru school" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">स्कूल का नाम (हिंदी में)<span style="color: red;"> *</span></label>
+                                                                            <label>स्कूल का नाम (हिंदी में)<span style="color: red;"> *</span></label>
                                                                             <asp:TextBox runat="server" Placeholder="कमला नेहरु स्कूल" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Division<span style="color: red;"> *</span></label>
+                                                                            <label>Select Division <br /> संभाग का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">1-Bhopal</asp:ListItem>
@@ -154,7 +158,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">District<span style="color: red;"> *</span></label>
+                                                                            <label>Select District <br />  जिला का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">1-Bhopal</asp:ListItem>
@@ -165,7 +169,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Block<span style="color: red;"> *</span></label>
+                                                                            <label>Select Block <br />  ब्लॉक का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">Huzur</asp:ListItem>
@@ -176,7 +180,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Location<span style="color: red;">*</span></label>
+                                                                            <label>Select Location <br /> स्थान का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem>1-Rural</asp:ListItem>
@@ -187,7 +191,7 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Assembly <span style="color: red;">*</span></label>
+                                                                            <label>Select Assembly <br /> सभा का चयन करें <span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem>Govindpura</asp:ListItem>
@@ -197,7 +201,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Parliamentary<span style="color: red;"> *</span></label>
+                                                                            <label>Select Parliamentary<br />संसदीय का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">Bhopal</asp:ListItem>
@@ -207,7 +211,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Habitation </label>
+                                                                            <label>Select Habitation <br />आवास का चयन करें </label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">Berasia</asp:ListItem>
@@ -217,7 +221,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Board<span style="color: red;"> *</span></label>
+                                                                            <label>Select School Board<br />स्कूल बोर्ड का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem>1-CBSE</asp:ListItem>
@@ -230,7 +234,7 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Type<span style="color: red;"> *</span></label>
+                                                                            <label>Select School Type<br /> स्कूल प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" runat="server" Enabled="false">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem>1-Boy</asp:ListItem>
@@ -241,7 +245,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label>School Category<span style="color: red;"> *</span></label>
+                                                                            <label>Select School Category<br />स्कूल श्रेणी का चयन करें<span style="color: red;"> *</span></label>
                                                                             <select class="form-control select2" disabled>
                                                                                 <option value=" -Select-">-Select-</option>
                                                                                 <option value="1-Primary">1-Pre-Primary</option>
@@ -254,7 +258,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label>School Category Details<span style="color: red;"> *</span></label>
+                                                                            <label>Select School Category Details<br />स्कूल श्रेणी विवरण का चयन करें<span style="color: red;"> *</span></label>
                                                                             <select class="form-control select2" disabled>
                                                                                 <option value=" -Select-">-Select-</option>
                                                                                 <option value="1-Primary only with grades 1 to 5 (PRY)">1-Primary only with grades 1 to 5 (PRY)</option>
@@ -274,7 +278,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Management Group<span style="color: red;"> *</span></label>
+                                                                            <label class="font-bold">Select Management Group<br />प्रबंधन समूह का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">A-State Govt</asp:ListItem>
@@ -288,7 +292,7 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Management<span style="color: red;"> *</span></label>
+                                                                            <label>Select School Management<br />स्कूल प्रबंधन का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">1-Department of Education (DOE)</asp:ListItem>
@@ -299,7 +303,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">In-Charge Type<span style="color: red;"> *</span></label>
+                                                                            <label>In-Charge Type<br />प्रभारी प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="t">1-Head Master / Principal </asp:ListItem>
@@ -311,26 +315,26 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">IN-Charge Unique Id<span style="color: red;">*</span></label>
+                                                                            <label>IN-Charge Unique Id<br />प्रभारी यूनिक आई.डी<span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" placeholder="68571" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">IN-Charge Name<span style="color: red;"> *</span></label>
+                                                                            <label>IN-Charge Name<br />प्रभारी का नाम<span style="color: red;"> *</span></label>
                                                                             <asp:TextBox runat="server" placeholder="Mr.Ramcharan" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">IN-Charge Mobile Number <span style="color: red;">*</span></label>
+                                                                            <label>IN-Charge Mobile Number<br />प्रभारी मोबाइल नंबर <span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" placeholder="9895989654" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Year of Establishment<span style="color: red;">*</span></label>
+                                                                            <label>Select Year of Establishment<br />स्थापना का वर्ष चुनें<span style="color: red;">*</span></label>
                                                                             <%-- <asp:TextBox runat="server" placeholder="Enter Year of Establishment" CssClass="form-control" ReadOnly="true"></asp:TextBox>--%>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
@@ -341,7 +345,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Minority Community <span style="color: red;">*</span></label>
+                                                                            <label>Select Minority Community <br />अल्पसंख्यक समुदाय का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
 
@@ -352,7 +356,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Medium<span style="color: red;">*</span></label>
+                                                                            <label>Select School Medium<br />स्कूल माध्यम का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" runat="server" Enabled="false">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">19-English</asp:ListItem>
@@ -371,56 +375,56 @@
 
                                                             </fieldset>
                                                             <fieldset>
-                                                                <legend>School Address Information</legend>
+                                                                <legend>School Address Information / स्कूल के पते की जानकारी</legend>
 
 
-                                                                <div class="row">
+                                                                <div class="row align-items-end">
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Address (Line 1)<span style="color: red;">*</span></label>
+                                                                            <label >School Address (Line 1)<br />स्कूल का पता(1)<span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" Placeholder="H No. 12 New rajeev nagar" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Address (Line 2)</label>
+                                                                            <label >School Address (Line 2)<br />स्कूल का पता(2)</label>
                                                                             <asp:TextBox runat="server" Placeholder="H No. 12 New rajeev nagar" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Pin Code<span style="color: red;">*</span></label>
+                                                                            <label >Pin Code<br />पिन कोड<span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" Placeholder="462010" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Landline Number<span style="color: red;">*</span></label>
+                                                                            <label >Landline Number<br />लैंडलाइन नंबर<span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" Placeholder="0755 1251 1258" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
 
                                                                 </div>
 
-                                                                <div class="row">
+                                                                <div class="row align-items-end">
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Email ID<span style="color: red;">*</span></label>
+                                                                            <label >Email ID<br />ईमेल आई.डी<span style="color: red;">*</span></label>
                                                                             <asp:TextBox runat="server" Placeholder="KNS@gmal.com" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Website</label>
+                                                                            <label >School Website<br />स्कूल की वेबसाइट</label>
                                                                             <asp:TextBox runat="server" Placeholder="KNSSchool.com" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Shift <span style="color: red;">*</span></label>
+                                                                            <label >School Shift <br />स्कूल शिफ्ट का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">Morning</asp:ListItem>
@@ -432,7 +436,7 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Is School Residential<span style="color: red;">*</span></label>
+                                                                            <label>Is School Residential<br />क्या विद्यालय आवासीय है का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">Yes</asp:ListItem>
@@ -445,11 +449,11 @@
 
                                                                 </div>
 
-                                                                <div class="row">
+                                                                <div class="row align-items-end">
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">Special School<span style="color: red;">*</span></label>
+                                                                            <label>Select Special School<br />विशेष विद्यालय का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem>CM Rise</asp:ListItem>
@@ -467,7 +471,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Status<span style="color: red;">*</span></label>
+                                                                            <label >Select School Status<br />स्कूल की स्थिति का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem Selected="True">Functional</asp:ListItem>
@@ -479,7 +483,7 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">hostel Attach<span style="color: red;">*</span></label>
+                                                                            <label >Select Hostel Attach<br />हॉस्टल अटैच का चयन करें<span style="color: red;">*</span></label>
                                                                             <asp:DropDownList CssClass="form-control" ReadOnly="true" runat="server">
                                                                                 <asp:ListItem>-Select-</asp:ListItem>
                                                                                 <asp:ListItem>Yes</asp:ListItem>
@@ -493,25 +497,25 @@
                                                                 </div>
                                                             </fieldset>
                                                             <fieldset>
-                                                                <legend>School Bank Information</legend>
+                                                                <legend>School Bank Information / स्कूल बैंक सूचना</legend>
 
-                                                                <div class="row">
+                                                                <div class="row align-items-end">
                                                                     <div class="col-md-4">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Bank Account Name<span style="color: red;">*</span></label>
+                                                                            <label>School Bank Account Name<br />स्कूल बैंक खाते का नाम<span style="color: red;">*</span></label>
                                                                             <asp:TextBox ID="TextBox5" placeholder="Bank Of Baroda" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-4">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">School Bank Account Number<span style="color: red;">*</span></label>
+                                                                            <label>School Bank Account Number<br />स्कूल बैंक खाता संख्या<span style="color: red;">*</span></label>
                                                                             <asp:TextBox ID="TextBox7" Placeholder="051121542585" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-4 ">
                                                                         <div class="form-group">
-                                                                            <label class="font-bold">IFSC Code<span style="color: red;">*</span></label>
+                                                                            <label >IFSC Code<br />आईएफएससी कोड<span style="color: red;">*</span></label>
                                                                             <asp:TextBox ID="TextBox8" Placeholder="BARB0ASHOKA" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                                                         </div>
                                                                     </div>
@@ -525,7 +529,7 @@
                                                                 <div>
                                                                     <%-- <asp:Button ID="Button4" CssClass="btn btn-success btn-rounded w-100" runat="server" OnClick="Button1_Click" Text="Update" />--%>
 
-                                                                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                                                 </div>
                                                             </div>
 
@@ -544,37 +548,37 @@
                             </div>
 
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-weight-bold">Mark as a Sankul<span style="color: red">*</span></label>
+                                <label >Mark as a Sankul<span style="color: red">*</span></label>
                                 <br />
                                 <asp:CheckBox Checked="false" runat="server" />
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label class="font-weight-bold">New Sankul Code No.	<span style="color: red">*</span></label>
+                                <label >New Sankul Code No.	<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter New Sankul Code No." onkeypress="return lettersOnly();"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-md-1 ">
                             <div class="form-group">
-                                <label class="font-weight-bold">IsActive<i style="color: red;">*</i></label>
+                                <label >IsActive<i style="color: red;">*</i></label>
                                 <br />
                                 <asp:CheckBox Checked="true" runat="server" />
                             </div>
                         </div>
-                        <div class="col-md-3 mt-4">
+                        <div class="col-md-12 justify-content-between">
                             <div class="form-group">
-                                <button type="button" onclick="toggleVisibility()" class="Alert-Confirmation btn btn-success btn-rounded">Save</button>
-                                <a href="Mst_SankulDO.aspx" class="btn  btn-danger btn-rounded">Clear</a>
+                                <button type="button" onclick="toggleVisibility()" class="Alert-Confirmation btn btn-success w-lg btn-border">Save</button>
+                                <a href="Mst_SankulDO.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <div id="myDiv">
                     <fieldset>
-                        <legend>Details</legend>
+                        <legend>Details / विवरण</legend>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -582,18 +586,18 @@
                                         <tr>
                                             <th>
                                                 <input type="checkbox" /></th>
-                                            <th>Sr.No.</th>
+                                            <th>Sr.No.<br />क्रमांक</th>
 
-                                            <th>Division Name</th>
-                                            <th>District Name</th>
-                                            <th>Block Name</th>
-                                            <th>School UDISE Code/Name</th>
-                                            <th>School Board</th>
-                                            <th>School Category</th>
-                                            <th>School Category Detail</th>
-                                            <th>New Sankul Code No.</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
+                                            <th>Division Name<br />संभाग नाम</th>
+                                            <th>District Name<br />जिला नाम</th>
+                                            <th>Block Name<br />ब्लॉक नाम</th>
+                                            <th>School UDISE Code/Name<br />स्कूल यूडीआईएसई कोड/नाम</th>
+                                            <th>School Board<br />स्कूल बोर्ड</th>
+                                            <th>School Category<br />स्कूल श्रेणी</th>
+                                            <th>School Category Detail<br />स्कूल श्रेणी विवरण</th>
+                                            <th>New Sankul Code No.<br />नवीन संकुल कोड नं.</th>
+                                            <th>Status<br />स्थिति</th>
+                                            <th>Action<br />कार्यवाही</th>
 
                                         </tr>
                                         <tr>
@@ -628,15 +632,15 @@
                                 <div class="modal-dialog modal-xl">
                                     <div class="modal-content">
                                         <div class="modal-header" id="myDIV">
-                                            <h4 class="modal-title text-" id="myLargeModalLabel1"><b>Create Sankul Request</b></h4>
+                                            <h4 class="modal-title text-" id="myLargeModalLabel1"><b>Create Sankul Request / संकुल अनुरोध बनाएं</b></h4>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                                         </div>
                                         <div class="modal-body">
 
-                                            <div class="row">
+                                            <div class="row align-items-end">
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Order Document Type</label>
+                                                        <label>Select Order Document Type<br />ऑर्डर दस्तावेज़ प्रकार का चयन करें</label>
                                                         <select class="form-control">
                                                             <option value="volvo">--Select--</option>
                                                             <option value="volvo">Order Letter</option>
@@ -648,32 +652,32 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Order No.</label>
+                                                        <label>Order No.<br />ऑर्डर संख्या</label>
                                                         <asp:TextBox ID="TextBox4" placeholder="Enter Order No." runat="server" CssClass=" form-control"></asp:TextBox>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Order Date</label>
+                                                        <label>Order Date<br />आर्डर की दिनांक</label>
                                                         <input type="date" class="form-control" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Upload Order Copy</label>
+                                                        <label>Upload Order Copy<br />ऑर्डर कॉपी अपलोड करें</label>
                                                         <asp:FileUpload runat="server" CssClass="form-control" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label>Effective Date</label>
+                                                        <label>Effective Date<br />प्रभावी दिनांक</label>
                                                         <input type="date" class="form-control" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
 
-                                                        <label>Remark</label>
+                                                        <label>Remark / टिप्पणी</label>
                                                         <textarea class="form-control" placeholder="Enter Remark" maxlength="100"></textarea>
                                                     </div>
                                                 </div>
@@ -692,8 +696,8 @@
                                         </div>
                                         <div class="modal-footer justify-content-center">
 
-                                            <button type="button" class="btn btn-success Alert-Sendrequest" data-bs-dismiss="modal">Save</button>
-                                            <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success w-lg btn-border Alert-Sendrequest" data-bs-dismiss="modal">Save</button>
+                                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                     <!-- /.modal-content -->
