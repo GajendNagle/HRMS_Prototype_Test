@@ -22,8 +22,30 @@
             display: block;
         }
 
-        table th {
+        .table th {
             background-color: white !important;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        table td {
+            background-color: white !important;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .profileimage {
+            display: block;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #l1, #l2, #l3, #l4, #l5, #l6, #l7, #l8, #l9, #l10, #l11, #l12, #l13 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #myLargeModalLabel1 {
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
     <script>
@@ -471,7 +493,7 @@
                     </div>
                 </fieldset>
                 <!-- sample modal content -->
-                <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" id="firsttimeModel" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header" id="myDIV">
@@ -480,92 +502,882 @@
                             </div>
                             <div class="modal-body">
                                 <fieldset>
-                                    <legend>Personal Information / व्यक्तिगत जानकारी</legend>
+                                    <legend id="l1">Personal Information / व्यक्तिगत जानकारी</legend>
 
-                                    <table class="table table-bordered">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
 
-                                        <tr>
+                                                    <th>First Name :</th>
+                                                    <td>Ajay </td>
+                                                    <th>Middle Name</th>
+                                                    <td>Kumar</td>
+                                                    <th>Last Name :</th>
+                                                    <td>Verma</td>
 
-                                            <th>First Name :</th>
-                                            <td>Ajay Kumar</td>
-                                            <th>Middle Name :</th>
-                                            <td>Kumar</td>
-
-                                        </tr>
-                                        <tr>
-
-                                            <th>Last Name :</th>
-                                            <td>Verma</td>
-                                            <th>Father's / Husband Name :</th>
-                                            <td>Rameshwar Verma</td>
-                                        </tr>
-                                        <tr>
-
-                                            <th>Date of Birth :</th>
-                                            <td>03/06/1992</td>
-                                            <th>Age :</th>
-                                            <td>33</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Gender :</th>
-                                            <td>Male</td>
-                                            <th>Height :</th>
-                                            <td>5'7'</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Caste :</th>
-                                            <td>OBC</td>
-                                            <th>Sub Caste :</th>
-                                            <td>Bhardwaj</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Religion :</th>
-                                            <td>Hindu</td>
-                                            <th>Identification Mark :
-                                            </th>
-                                            <td>Moles in left Hand</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Blood Group</th>
-                                            <td>A+</td>
-                                            <th>Handicapped (PWD) :</th>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Critical Illness :</th>
-                                            <td>No</td>
-                                            <th>PAN No. :</th>
-                                            <td>ABCTY1234D</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Aadhaar No. :</th>
-                                            <td>334512098765</td>
-                                            <th>Samagra ID No :</th>
-                                            <td>213409876</td>
-                                        </tr>
-
-                                    </table>
+                                                </tr>
+                                                <tr>
 
 
+                                                    <th>Father's / Husband Name :</th>
+                                                    <td>Rameshwar Verma</td>
+                                                    <th>Date of Birth :</th>
+                                                    <td>03/06/1992</td>
+                                                    <th>Age :</th>
+                                                    <td>33</td>
+                                                </tr>
+                                                <tr>
 
+                                                    <th>Gender :</th>
+                                                    <td>Male</td>
+                                                    <th>Height :</th>
+                                                    <td>5'7'</td>
+                                                    <th>Caste :</th>
+                                                    <td>OBC</td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <th>Sub Caste :</th>
+                                                    <td>Bhardwaj</td>
+                                                    <th>Religion :</th>
+                                                    <td>Hindu</td>
+                                                    <th>Identification Mark :
+                                                    </th>
+                                                    <td>Moles in left Hand</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Blood Group</th>
+                                                    <td>A+</td>
+                                                    <th>Handicapped (PWD) :</th>
+                                                    <td>No</td>
+                                                    <th>Critical Illness :</th>
+                                                    <td>No</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <th>Pan No. :</th>
+                                                    <td>ABCTY1234D</td>
+                                                    <th>Aadhaar No. :</th>
+                                                    <td>334512098765</td>
+                                                    <th>Samagra ID No :</th>
+                                                    <td>213409876</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Employee Treasury Code :</th>
+                                                    <td>TYE2345</td>
+                                                    <th>Employee PRAN Code :</th>
+                                                    <td>UPE456</td>
+                                                    <th>Mobile No. :</th>
+                                                    <td>8878346789</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <th>Email Id :</th>
+                                                    <td>ajay@gmail.com</td>
+                                                    <th>Employee Roll No. :</th>
+                                                    <td>A45687</td>
+                                                    <th>Aadhaar No. :</th>
+                                                    <td>334512098765</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Employee Rank :</th>
+                                                    <td>3rd</td>
+                                                    <th>Hobbies :</th>
+                                                    <td colspan="3">Reading Books</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend id="l2">Nominee Details / नामांकित व्यक्ति का विवरण</legend>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>Nominee Name</th>
+                                                <th>Relationship with Nominee</th>
+                                                <th>Nominee Percentage</th>
+                                                <th>Action</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sourya Verma</td>
+                                                <td>Brother</td>
+                                                <td>100%</td>
+                                                <td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend id="l11">Address / पता</legend>
+                                    <fieldset class="mt-5">
+
+                                        <legend id="l3">Present Address / वर्तमान पता</legend>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+
+                                                <tr>
+                                                    <th>State :</th>
+                                                    <td>Madhya Pradesh</td>
+                                                    <th>Division :</th>
+                                                    <td>Bhopal</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>District :</th>
+                                                    <td>Raisen</td>
+                                                    <th>Block :</th>
+                                                    <td>Begamganj</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Pincode :</th>
+                                                    <td>462010</td>
+                                                    <th>Address line 1 :
+                                                    </th>
+                                                    <td>2 B, near bank of india, Awadhpuri, Bhopal, Madhya Pradesh</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Address line 2 :</th>
+                                                    <td colspan="3">Apt 202</td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend id="l4">Permanent Address / स्थायी पता</legend>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <th>State :</th>
+                                                    <td>Madhya Pradesh</td>
+                                                    <th>Division :</th>
+                                                    <td>Bhopal</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>District :</th>
+                                                    <td>Raisen</td>
+                                                    <th>Block :</th>
+                                                    <td>Badi</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Pincode :</th>
+                                                    <td>462030</td>
+                                                    <th>Address line 1 :
+                                                    </th>
+                                                    <td>123 Main Street, apt 4B San Diego CA, 91911</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Address line 2 :</th>
+                                                    <td colspan="3">Main Street, apt 4B</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend id="l5">Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th>Married Status :</th>
+                                                <td>Yes</td>
+                                                <th>Spouse Name :
+                                                </th>
+                                                <td>Shalini Verma</td>
+                                                <th>Is Spouse Government Employee :</th>
+                                                <td>No</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend id="l6">Education Qualification / शैक्षणिक योग्यता</legend>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th>Qualification :</th>
+                                                <td>BCA</td>
+                                                <th>Subject :
+                                                </th>
+                                                <td>Computer</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Board / Univercity Name :</th>
+                                                <td>MP Board</td>
+                                                <th>Passing Year :
+                                                </th>
+                                                <td>03/05/2022</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Grade / Percentage :</th>
+                                                <td colspan="3">75%</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend id="l7">First Appointment Details / प्रथम नियुक्ति विवरण</legend>
+
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>OIS Type :</th>
+                                                <td>Office</td>
+                                                <th>Office Type :
+                                                </th>
+                                                <td>Principal Secretary</td>
+                                            </tr>
+                                            <tr>
+                                                <th>First Appointment Division :</th>
+                                                <td>Gwalior</td>
+                                                <th>First Appointment District :
+                                                </th>
+                                                <td>Raisen</td>
+                                            </tr>
+                                            <tr>
+                                                <th>First Appointment Block :</th>
+                                                <td>Badi</td>
+                                                <th>DDO / Sankul :
+                                                </th>
+                                                <td>MVM School</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Office/Institute/School Code & Name :
+                                                </th>
+                                                <td>Reem Higher Secondary School</td>
+                                                <th>Office/Institute/School Address of first Posting
+                                                   :</th>
+                                                <td>Robertson, 1234 NW Bobcat Lane, St. Robert</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Order No :
+                                                </th>
+                                                <td>3456</td>
+                                                <th>First Appointment Order Date :</th>
+                                                <td>08/04/2020</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Department :
+                                                </th>
+                                                <td>DPI</td>
+                                                <th>Employee’s Designation Type :</th>
+                                                <td>Clerical</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Designation :
+                                                </th>
+                                                <td>Director</td>
+                                                <th>Appointment Joining Date :</th>
+                                                <td>09/11/2021</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Panal Name :
+                                                </th>
+                                                <td>SSS-3</td>
+                                                <th>Subject :</th>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Samvilian Order No. :
+                                                </th>
+                                                <td>56789</td>
+                                                <th>Samvilian Order Date :</th>
+                                                <td>23/12/2018</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Working in other Department Organization on Deputation Transfer :
+                                                </th>
+                                                <td>No</td>
+                                                <th>Is Regular :</th>
+                                                <td>Yes</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Increment Month :
+                                                </th>
+                                                <td>January</td>
+                                                <th>Provision Period From Month :</th>
+                                                <td>01/03/2017</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Period To Month :
+                                                </th>
+                                                <td>04/07/2021</td>
+                                                <th>If Provision Extend :</th>
+                                                <td>No</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Type :
+                                                </th>
+                                                <td>Regular Employee</td>
+                                                <th>Employee Retirement Date</th>
+                                                <td>09/12/2026</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Type of Post :</th>
+                                                <td>Samvida Employee</td>
+                                                <th>Class :
+                                                </th>
+                                                <td>Class 3</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Pay Commission :</th>
+                                                <td>Seventh Pay Commission</td>
+                                                <th>Level :</th>
+                                                <td>Level-3</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Pay Scale :</th>
+                                                <td>9300-34800</td>
+                                                <th>Basic Pay :</th>
+                                                <td>16500</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend id="l8">Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
+
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>OIS Type :</th>
+                                                <td>Institude</td>
+                                                <th>Office Type :
+                                                </th>
+                                                <td>Deputy Secretary</td>
+                                            </tr>
+                                            <tr>
+                                                <th>First Appointment Division :</th>
+                                                <td>Narmadapuram</td>
+                                                <th>First Appointment District :
+                                                </th>
+                                                <td>Sehore</td>
+                                            </tr>
+                                            <tr>
+                                                <th>First Appointment Block :</th>
+                                                <td>Ashta</td>
+                                                <th>DDO / Sankul :
+                                                </th>
+                                                <td>Geetanjali Public School</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Office/Institute/School Code & Name :
+                                                </th>
+                                                <td>Reem Higher Secondary School</td>
+                                                <th>Office/Institute/School Address of first Posting
+:</th>
+                                                <td>Robertson, 1234 NW Bobcat Lane, St. Robert</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Order No :
+                                                </th>
+                                                <td>9840</td>
+                                                <th>First Appointment Order Date :</th>
+                                                <td>09/10/2020</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Department :
+                                                </th>
+                                                <td>DPI</td>
+                                                <th>Employee’s Designation Type :</th>
+                                                <td>Executive</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Designation :
+                                                </th>
+                                                <td>Joint Director</td>
+                                                <th>Appointment Joining Date :</th>
+                                                <td>01/11/2021</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Panal Name :
+                                                </th>
+                                                <td>SSS-5</td>
+                                                <th>Subject :</th>
+                                                <td>Maths</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Samvilian Order No. :
+                                                </th>
+                                                <td>92357</td>
+                                                <th>Samvilian Order Date :</th>
+                                                <td>20/12/2018</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Working in other Department Organization on Deputation Transfer :
+                                                </th>
+                                                <td>No</td>
+                                                <th>Is Regular :</th>
+                                                <td>Yes</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Increment Month :
+                                                </th>
+                                                <td>January</td>
+                                                <th>Provision Period From Month :</th>
+                                                <td>01/03/2017</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Period To Month :
+                                                </th>
+                                                <td>04/07/2021</td>
+                                                <th>If Provision Extend :</th>
+                                                <td>No</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Type :
+                                                </th>
+                                                <td>Regular Employee</td>
+                                                <th>Employee Retirement Date</th>
+                                                <td>09/10/2026</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Type of Post :</th>
+                                                <td>Samvida Employee</td>
+                                                <th>Class :
+                                                </th>
+                                                <td>Class 3</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Pay Commission :</th>
+                                                <td>Seventh Pay Commission</td>
+                                                <th>Level :</th>
+                                                <td>Level-3</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Pay Scale :</th>
+                                                <td>9300-34800</td>
+                                                <th>Basic Pay :</th>
+                                                <td>16500</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend id="l9">Employee Account Info / कर्मचारी खाता जानकारी</legend>
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>IFSC Code :</th>
+                                                <td>SBIN0005943 </td>
+                                                <th>Bank Name</th>
+                                                <td>State Bank of India</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Branch Name</th>
+                                                <td>Jawahar Chowk</td>
+                                                <th>Account Type</th>
+                                                <td>Salary</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Account No.</th>
+                                                <td>0112345678 </td>
+                                                <th>Provident Fund :</th>
+                                                <td>DPF No.</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>DPF No. :</th>
+                                                <td>34567</td>
+                                                <th>Group Insurance No :</th>
+                                                <td>B57445</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Gratuity No. :</th>
+                                                <td>TGT5676</td>
+                                                <th>EGLS No. :</th>
+                                                <td>PO7856</td>
+                                            </tr>
+                                            <tr>
+                                                <th>EDLI No. :</th>
+                                                <td>ILG98</td>
+                                                <th>ESIC No. :</th>
+                                                <td>UYT567</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </fieldset>
 
 
+                                <div class="row align-items-end">
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <legend id="l13">Document / दस्तावेज़</legend>
 
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="DocAppointment" class="col-md-4">
+                                                    <label>
+                                                        Appointment Order Certificate
+        <br />
+                                                        नियुक्ति आदेश प्रमाण पत्र :
+                                                    </label>
+                                                </div>
+
+
+                                                <div id="DocAppointment2" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="DocBirth" class="col-md-4">
+                                                    <label>
+                                                        Birth Certificate
+        <br />
+                                                        जन्म प्रमाण पत्र  :
+                                                    </label>
+                                                </div>
+
+                                                <div id="DocBirth2" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg5"></i></button>
+
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="DocCaste" class="col-md-4">
+                                                    <label>
+                                                        Caste Certificate (OBC/ST/SC)<br />
+                                                        जाति प्रमाण पत्र (ओबीसी/एसटी/एससी) :
+                                                    </label>
+                                                </div>
+
+                                                <div id="DocCaste2" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg6"></i></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="DocPresentpost" class="col-md-4">
+                                                    <label>
+                                                        Present Posting Order
+        <br />
+                                                        वर्तमान पोस्टिंग ऑर्डर  :
+                                                    </label>
+                                                </div>
+
+                                                <div id="DocPresentpost2" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="Dochandicapped" class="col-md-4">
+                                                    <label>
+                                                        Handicapped Certificate
+                        <br />
+                                                        विकलांग प्रमाण पत्र  :
+                                                    </label>
+                                                </div>
+
+                                                <div id="Dochandicapped2" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
+
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="CriticalIllness" class="col-md-4">
+                                                    <label>
+                                                        Critical Illness Certificate<br />
+                                                        गंभीर बीमारी प्रमाणपत्र  :
+                                                    </label>
+                                                </div>
+
+                                                <div id="CriticalIllness3" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
+
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center mt-3">
+                                                <div id="DocMarried" class="col-md-4">
+                                                    <label>
+                                                        Married Certificate<br />
+                                                        विवाहित प्रमाणपत्र  :
+                                                    </label>
+                                                </div>
+
+                                                <div id="DocMarried2" class="col-md-4">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg8"></i></button>
+
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <fieldset>
+                                    <legend id="l12">Educational Document / शैक्षिक दस्तावेज़</legend>
+
+                                    <div class="row justify-content-center mt-3">
+                                        <div id="Doc10th" class="col-md-4">
+                                            <label>
+                                                10th Marksheet<br />
+                                                10वीं की मार्कशीट  :</label>
+                                        </div>
+
+                                        <div id="Doc10th2" class="col-md-4">
+                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg9"></i></button>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div id="Doc12th" class="col-md-4">
+                                            <label>
+                                                12th Marksheet<br />
+                                                12वीं की मार्कशीट  :
+                                            </label>
+                                        </div>
+
+                                        <div id="Doc12th2" class="col-md-4">
+                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg10"></i></button>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div id="DocUG" class="col-md-4">
+                                            <label>
+                                                UG Certificate<br />
+                                                यूजी सर्टिफिकेट  :
+                                            </label>
+                                        </div>
+
+                                        <div id="DocUG2" class="col-md-4">
+                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div id="DocPG" class="col-md-4">
+                                            <label>
+                                                Upload PG Certificate<br />
+                                                पीजी प्रमाणपत्र अपलोड करें :
+                                            </label>
+                                        </div>
+
+
+                                        <div id="DocPG2" class="col-md-4">
+                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div id="DocDiploma" class="col-md-4">
+                                            <label>
+                                                Diploma Certificate<br />
+                                                डिप्लोमा प्रमाणपत्र  :
+                                            </label>
+                                        </div>
+
+                                        <div id="DocDiploma2" class="col-md-4">
+                                            <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div id="DocOther" class="col-md-4">
+                                            <label>
+                                                Other Certificate<br />
+                                                अन्य प्रमाणपत्र :
+                                            </label>
+                                        </div>
+
+                                        <div id="DocOther2" class="col-md-4">
+                                            <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                        </div>
+                                    </div>
+
+                                </fieldset>
                             </div>
+
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-danger waves-effect  w-lg" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
-                        <!-- /.modal-content -->
                     </div>
-                    <!-- /.modal-dialog -->
 
                 </div>
-                <!-- /.modal -->
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+
+        </div>
+        <!-- /.modal -->
+    </div>
+    <div class="modal bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="../../img/AppointmentOrder.jpg" class="img-fluid" />
+                </div>
+               
             </div>
         </div>
     </div>
+    <div class="modal bs-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../../img/Birth-Certificate.jpg" class="img-fluid" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bs-example-modal-lg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="../../img/CasteCertificate1.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bs-example-modal-lg7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../../img/Handicape-Certificate.jpg" class="img-fluid" width="800" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal bs-example-modal-lg8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="../../img/Marriage-Certificate1.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal bs-example-modal-lg9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="../../img/10thMarksheet.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal bs-example-modal-lg10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="../../img/12thMarksheet.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal bs-example-modal-lg11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="font: bold; margin-left: auto;"></h3>
+                   
+                      <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="../../img/UG-Certificate.jpeg" class="img-fluid" width="750" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="modal" tabindex="-1" role="dialog" id="bootstrapModalreg">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -704,6 +1516,7 @@
             $('#bootstrapModalreg1').modal('show');
         }
 
+
     </script>
     <script>
         !function ($) {
@@ -749,5 +1562,12 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
+
+<script>
+  
+    document.getElementById('btn-close').addEventListener('click', function () {
+        $('#firsttimeModel').modal('show');
+    });
+</script>
 </asp:Content>
 
