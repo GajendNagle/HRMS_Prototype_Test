@@ -1,102 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="EmployeeVerification.aspx.cs" Inherits="mis_Transaction_EmployeeVerification" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+
     <style>
-        #showdetails {
-            display: none;
+        thead {
+            white-space: nowrap;
         }
 
-        #appid {
-            display: none;
+        .table-scroll {
+            height: 600px;
+            overflow-y: auto;
         }
 
-        #penid {
-            display: none;
-        }
-
-        #divbtn {
-            display: none;
-        }
-
-        #des {
-            display: block;
-        }
-
-        .table th {
-            background-color: white !important;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bold;
-        }
-
-        table td {
-            background-color: white !important;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        .profileimage {
-            display: block;
-            height: 60px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #l1, #l2, #l3, #l4, #l5, #l6, #l7, #l8, #l9, #l10, #l11, #l12, #l13 {
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        #myLargeModalLabel1 {
-            font-family: 'Times New Roman', Times, serif;
-        }
+            .table-scroll thead th {
+                position: sticky;
+                top: 0;
+                background-color: #fff;
+            }
     </style>
-    <script>
-        function myFunction() {
-            var showdetails = document.getElementById("showdetails");
-            var ddlApprove = document.getElementById("ddlApprove");
-            var appid = document.getElementById("appid");
-            var penid = document.getElementById("penid");
-
-            if (ddlApprove.value == "1") {
-                showdetails.style.display = "block";
-                appid.style.display = "block";
-                penid.style.display = "none";
-                divbtn.style.display = "none";
-                regid.style.display = "none";
-
-            } else if (ddlApprove.value == "2") {
-                showdetails.style.display = "block";
-                penid.style.display = "block";
-                divbtn.style.display = "block";
-                appid.style.display = "none";
-                regid.style.display = "none";
-            } else if (ddlApprove.value == "3") {
-                showdetails.style.display = "block";
-                regid.style.display = "block";
-                penid.style.display = "none";
-                appid.style.display = "none";
-                divbtn.style.display = "none";
-                appid.style.display = "none";
-            }
-            else {
-                showdetails.style.display = "none";
-                appid.style.display = "none";
-                penid.style.display = "none";
-                divbtn.style.display = "none";
-            }
-        }
-    </script>
-    <script> 
-        function showhide() {
-            debugger;
-            var ddlApprove = document.getElementById("ddlApprove");
-            var states = ["All", "Approve", "Pending", "Reject"];
-
-            for (var i = 0; i < states.length; i++) {
-                var element = document.getElementById(states[i]);
-                element.style.display = ddlApprove.value === i.toString() ? "block" : "none";
-            }
-        }
-
-    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div id="dv_Masters_LocationMasters" runat="server">
@@ -128,27 +49,6 @@
                 <img src="/img/Employee%20Registration.png" style="height: 70px">
             </div>
         </div>
-
-        <%--<div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-
-              <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -1rem;">
-                    <img src="../../img/Employee%20Registration.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u>
-                    </u>
-                </p>
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=Employee" title="click to go on">Employee</a></li>
-                        <li class="breadcrumb-item active">Employee Verification</li>
-                    </ol>
-                </div>
-            </div>
-        </div>--%>
-
         <div class="card card-border-primary ">
             <div class="card-header">
                 <div class="row">
@@ -158,51 +58,8 @@
                 </div>
             </div>
             <div class="card-body">
-                <%--<nav class="navbar navbar-expand-lg topbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                <li>
-                                    <a class="nav-link  text-white " href="EmployeeVerificationNotes.aspx" role="button"><b class="font-16 font-bold"><i class="fa fa-home"></i></b></a>
-                                </li>
-                                <li>
-                                    <a class="nav-link  text-white " href="EmployeeVerification.aspx" role="button"><b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>कर्मचारी सत्यापन</b></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <br />--%>
+
                 <fieldset>
-                    <legend>Employee Verification / कर्मचारी सत्यापन
-                    </legend>
-                    <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Verification Status 
-                                    <br />
-                                    सत्यापन स्थिति<span style="color: red">*</span></label>
-                                <select class="form-control select2" id="ddlApprove">
-                                    <option value="0">--Select--</option>
-                                    <option value="1">Approve</option>
-                                    <option value="2">Pending</option>
-                                    <option value="3">Reject</option>
-                                </select>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="col-md-12 form-group">
-                            <button onclick="myFunction()" type="button" class=" btn btn-outline-success w-lg btn-border">Search</button>
-                            <a runat="server" id="A1" href="EmployeeVerification.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset id="showdetails">
                     <legend>Verification Details / सत्यापन विवरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
@@ -218,210 +75,109 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-md-12" id="appid">
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead class="nowrap">
-                                        <tr>
-                                            <th>Sr.No.
-                                                <br />
-                                                सरल क्र.</th>
-                                            <th>Employee Name
-                                                <br />
-                                                कर्मचारी का नाम</th>
-                                            <th>Employee ID
-                                                <br />
-                                                कर्मचारी की आई. डी.</th>
-                                            <th>Designation
-                                                <br />
-                                                धारित पद</th>
-                                            <th>Department
-                                                <br />
-                                                विभाग</th>
-                                            <th>View More
-                                                <br />
-                                                अधिक विवरण देखे</th>
-                                            <th>Status
-                                                <br />
-                                                स्थिति</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Shri A.K. Ranjan</td>
-                                        <td>0001</td>
-                                        <td>LDC</td>
-                                        <td>Finance</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Approved</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Omprakash</td>
-                                        <td>0012</td>
-                                        <td>LDC</td>
-                                        <td>Finance</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Approved</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Ashu</td>
-                                        <td>0010</td>
-                                        <td>LDC</td>
-                                        <td>Finance</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Approved</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
                         <div class="col-md-12" id="penid">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <thead class="nowrap">
+                                    <thead>
                                         <tr>
                                             <th>Sr.No.
-                                                <br />
+                                            <br />
                                                 सरल क्र.</th>
-                                            <th>Action</th>
-                                            <th>Employee Name<br />
-                                                कर्मचारी का नाम</th>
-                                            <th>Employee ID
-                                                <br />
-                                                कर्मचारी की आई.डी.</th>
+                                            <th>
+                                                <div>
+                                                    <input type="checkbox" style="font-size: small;" id="checkAll" onclick="toggleAll(this)">
+                                                    <label for="checkAll">All</label>
+                                                </div>
+                                            </th>
+                                            <th>Employee's name with ID
+                                            <br />
+                                                आई डी सहित कर्मचारी का नाम</th>
+
                                             <th>Designation
-                                                <br />
-                                                धारित पद</th>
-                                            <th>Department
-                                                <br />
-                                                विभाग</th>
+                                            <br />
+                                                पद</th>
+
+                                            <th>Sankul Name
+                                            <br />
+                                                संकुल का नाम
+                                            </th>
+                                            <th>School Name
+                                            <br />
+                                                स्कूल का नाम</th>
                                             <th>View More
-                                                <br />
+                                            <br />
                                                 अधिक विवरण देखे</th>
+                                            <th>Edit
+                                            <br />
+                                                संपादित करें
+                                            </th>
                                             <th>Status
-                                                <br />
+                                            <br />
                                                 स्थिति</th>
                                         </tr>
                                     </thead>
                                     <tr>
+                                    <tr>
                                         <td>1</td>
                                         <td scope="col">
-                                            <input type="checkbox" />
+                                            <input type="checkbox" id="CheckBox1" />
                                         </td>
-                                        <td>Shri S.S. Soni</td>
-                                        <td>0059</td>
+                                        <td>Shri S.S. Soni-0059</td>
                                         <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td>23430601402 - Govt. PS Ambakhapa</td>
+                                        <td>23320200505 - NEW BEST CONVENT SCHOOL</td>
+
+                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td scope="col">
-                                            <input type="checkbox" />
+                                            <input type="checkbox" id="CheckBox2" />
                                         </td>
-                                        <td>R.K. Dubey</td>
-                                        <td>0089</td>
+                                        <td>R.K. Dubey-0089</td>
                                         <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td>23430601401 - Govt. PS (Boys) Paradsinga</td>
+                                        <td>23320200601 - SRASHTI ENGLISH SCHOOL</td>
+                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td scope="col">
-                                            <input type="checkbox" />
+                                            <input type="checkbox" id="CheckBox3" />
                                         </td>
-                                        <td>Pradeep Mishra</td>
-                                        <td>0065</td>
+                                        <td>Pradeep Mishra-0065</td>
                                         <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td>23430601401 - Govt. PS Alesur</td>
+                                        <td>23350100107 - NATIONAL PUBLIC ENGLISH SCHOOL </td>
+                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td scope="col">
-                                            <input type="checkbox" />
+                                            <input type="checkbox" id="CheckBox4" />
                                         </td>
-                                        <td>Dhanraj Sharma</td>
-                                        <td>0060</td>
+                                        <td>Dhanraj Sharma-0060</td>
                                         <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td>23430603004 - Govt. PS (Boys) Berdi</td>
+                                        <td>23320200504 - SRASHTI ENGLISH SCHOOL</td>
+                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
                                         <td>Pending</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-md-12" id="regid">
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead class="nowrap">
-                                        <tr>
-                                            <th>Sr.No.<br />
-                                                सरल क्र.</th>
-                                            <th>Employee Name
-                                                <br />
-                                                कर्मचारी का नाम</th>
-                                            <th>Employee ID
-                                                <br />
-                                                कर्मचारी की आई.डी.</th>
-                                            <th>Designation
-                                                <br />
-                                                धारित पद</th>
-                                            <th>Department
-                                                <br />
-                                                विभाग</th>
-                                            <th>View More
-                                                <br />
-                                                अधिक विवरण देखे</th>
-                                            <th>Status
-                                                <br />
-                                                स्थिति</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Ramcharan</td>
-                                        <td>0075</td>
-                                        <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Rejected</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Praveen Kumar</td>
-                                        <td>0044</td>
-                                        <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Rejected</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>R.P Singh</td>
-                                        <td>0095</td>
-                                        <td>UDC</td>
-                                        <td>HR</td>
-                                        <td><a><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td>Rejected</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
                     <div class="row justify-content-center" id="divbtn">
-
                         <div class="col-md-12">
-                            <hr />
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
+                            <div class="form-group text-center">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="openBootstrapModalreg1()">Approve</button>
-                                <button type="button" class=" btn btn-outline-danger btn-border w-lg" onclick="openBootstrapModalreg()">Reject</button>
                             </div>
                         </div>
                     </div>
@@ -604,14 +360,14 @@
                                                 <th>Nominee Name</th>
                                                 <th>Relationship with Nominee</th>
                                                 <th>Nominee Percentage</th>
-                                                <th>Action</th>
+                                                <%--<th>Action</th>--%>
                                             </tr>
 
                                             <tr>
                                                 <td>Sourya Verma</td>
                                                 <td>Brother</td>
                                                 <td>100%</td>
-                                                <td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>
+                                                <%--<td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>--%>
                                             </tr>
                                         </table>
                                     </div>
@@ -1056,193 +812,217 @@
                                 </fieldset>
 
 
-                                <div class="row align-items-end">
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <legend id="l13">Document / दस्तावेज़</legend>
 
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="DocAppointment" class="col-md-4">
-                                                    <label>
-                                                        Appointment Order Certificate
+
+                                <fieldset>
+                                    <legend id="l13">Document / दस्तावेज़</legend>
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered ">
+                                            <thead>
+                                                <tr>
+                                                  <td class="text-center">
+                                                         <label style="font-weight: bold;font-size: large;">Sr. No.</label>
+                                                    </td>
+                                                    <td>    <label style="font-weight: bold;font-size: large;">Document Name  </label>
+                                                    </td>
+                                                   <td class="text-center">   <label style="font-weight: bold;font-size: large;">View Document</label>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>
+                                                        <label>
+                                                            Appointment Order Certificate
         <br />
-                                                        नियुक्ति आदेश प्रमाण पत्र :
-                                                    </label>
-                                                </div>
+                                                            नियुक्ति आदेश प्रमाण पत्र :
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
 
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td class="text-center">2</td>
+                                                    <td>
+                                                        <label >
+                                                            Birth Certificate
+                                                                <br />
+                                                            जन्म प्रमाण पत्र  :
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg5"></i></button>
 
-                                                <div id="DocAppointment2" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>
+                                                        <label>
+                                                            Caste Certificate (OBC/ST/SC)<br />
+                                                            जाति प्रमाण पत्र (ओबीसी/एसटी/एससी) :
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg6"></i></button>
 
-                                                </div>
-                                            </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">5</td>
+                                                    <td>
+                                                        <label>
+                                                            Handicapped Certificate
+                                                                <br />
+                                                            विकलांग प्रमाण पत्र  :
+                                                        </label>
+                                                    </td>
+                                                <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
 
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="DocBirth" class="col-md-4">
-                                                    <label>
-                                                        Birth Certificate
-        <br />
-                                                        जन्म प्रमाण पत्र  :
-                                                    </label>
-                                                </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">6</td>
+                                                    <td>
+                                                        <label>
+                                                            Critical Illness Certificate<br />
+                                                            गंभीर बीमारी प्रमाणपत्र  :
+                                                        </label>
+                                                    </td>
+                                                   <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
 
-                                                <div id="DocBirth2" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg5"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <td class="text-center">4</td>
+                                                    <td>
+                                                        <label>
+                                                            Present Posting Order
+                                                                <br />
+                                                            वर्तमान पोस्टिंग ऑर्डर  :
+                                                        </label>
+                                                    </td>
+                                                   <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
 
-                                                </div>
-                                            </div>
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="DocCaste" class="col-md-4">
-                                                    <label>
-                                                        Caste Certificate (OBC/ST/SC)<br />
-                                                        जाति प्रमाण पत्र (ओबीसी/एसटी/एससी) :
-                                                    </label>
-                                                </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="text-center">7</td>
+                                                    <td>
+                                                        <label>
+                                                            Married Certificate<br />
+                                                            विवाहित प्रमाणपत्र  :
+                                                        </label>
+                                                    </td>
+<td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg8"></i></button>
 
-                                                <div id="DocCaste2" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg6"></i></button>
-                                                </div>
-                                            </div>
+                                                    </td>
+                                                </tr>
 
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="DocPresentpost" class="col-md-4">
-                                                    <label>
-                                                        Present Posting Order
-        <br />
-                                                        वर्तमान पोस्टिंग ऑर्डर  :
-                                                    </label>
-                                                </div>
-
-                                                <div id="DocPresentpost2" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
-
-                                                </div>
-                                            </div>
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="Dochandicapped" class="col-md-4">
-                                                    <label>
-                                                        Handicapped Certificate
-                        <br />
-                                                        विकलांग प्रमाण पत्र  :
-                                                    </label>
-                                                </div>
-
-                                                <div id="Dochandicapped2" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
-
-                                                </div>
-                                            </div>
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="CriticalIllness" class="col-md-4">
-                                                    <label>
-                                                        Critical Illness Certificate<br />
-                                                        गंभीर बीमारी प्रमाणपत्र  :
-                                                    </label>
-                                                </div>
-
-                                                <div id="CriticalIllness3" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
-
-                                                </div>
-                                            </div>
-                                            <div class="row justify-content-center mt-3">
-                                                <div id="DocMarried" class="col-md-4">
-                                                    <label>
-                                                        Married Certificate<br />
-                                                        विवाहित प्रमाणपत्र  :
-                                                    </label>
-                                                </div>
-
-                                                <div id="DocMarried2" class="col-md-4">
-                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg8"></i></button>
-
-                                                </div>
-                                            </div>
-                                        </fieldset>
+                                        </table>
                                     </div>
-                                </div>
+                                </fieldset>
+
                                 <fieldset>
                                     <legend id="l12">Educational Document / शैक्षिक दस्तावेज़</legend>
+                                    <div class="table-responsive">
 
-                                    <div class="row justify-content-center mt-3">
-                                        <div id="Doc10th" class="col-md-4">
-                                            <label>
-                                                10th Marksheet<br />
-                                                10वीं की मार्कशीट  :</label>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr >
+                                 <td class="text-center">   <label style="font-weight: bold;font-size: large;">Sr. No.</label>
+                                                    </td>
+                                                    <td>    <label style="font-weight: bold;font-size: large;">Document Name  </label>
+                                                    </td>
+                                                   <td class="text-center">   <label style="font-weight: bold;font-size: large;">View Document</label>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                   <td class="text-center">1</td>
+                                                    <td>
+                                                        <label>
+                                                            10th Marksheet<br />
+                                                            10वीं की मार्कशीट  :</label></td>
+                                                  <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg9"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="text-center">2</td>
+                                                    <td>
+                                                        <label>
+                                                            12th Marksheet<br />
+                                                            12वीं की मार्कशीट  :
+                                                        </label>
+                                                    </td>
+                                                   <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg10"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>
+                                                        <label>
+                                                            UG Certificate<br />
+                                                            यूजी सर्टिफिकेट  :
+                                                        </label>
+                                                    </td>
+                                                  <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="text-center">4</td>
+                                                    <td>
+                                                        <label>
+                                                            Upload PG Certificate<br />
+                                                            पीजी प्रमाणपत्र अपलोड करें :
+                                                        </label>
+                                                    </td>
+                                                  <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">5</td>
+                                                    <td>
+                                                        <label>
+                                                            Diploma Certificate<br />
+                                                            डिप्लोमा प्रमाणपत्र  :
+                                                        </label>
+                                                    </td>
+                                                  <td class="text-center">
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <td class="text-center">6</td>
+                                                    <td>
+                                                        <label>
+                                                            Other Certificate<br />
+                                                            अन्य प्रमाणपत्र :
+                                                        </label>
+                                                    </td>
+                                                <td class="text-center">
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+                                                    </td>
+                                                </tr>
+                                               </tbody></table>
                                         </div>
-
-                                        <div id="Doc10th2" class="col-md-4">
-                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg9"></i></button>
-
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mt-3">
-                                        <div id="Doc12th" class="col-md-4">
-                                            <label>
-                                                12th Marksheet<br />
-                                                12वीं की मार्कशीट  :
-                                            </label>
-                                        </div>
-
-                                        <div id="Doc12th2" class="col-md-4">
-                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg10"></i></button>
-
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mt-3">
-                                        <div id="DocUG" class="col-md-4">
-                                            <label>
-                                                UG Certificate<br />
-                                                यूजी सर्टिफिकेट  :
-                                            </label>
-                                        </div>
-
-                                        <div id="DocUG2" class="col-md-4">
-                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mt-3">
-                                        <div id="DocPG" class="col-md-4">
-                                            <label>
-                                                Upload PG Certificate<br />
-                                                पीजी प्रमाणपत्र अपलोड करें :
-                                            </label>
-                                        </div>
-
-
-                                        <div id="DocPG2" class="col-md-4">
-                                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mt-3">
-                                        <div id="DocDiploma" class="col-md-4">
-                                            <label>
-                                                Diploma Certificate<br />
-                                                डिप्लोमा प्रमाणपत्र  :
-                                            </label>
-                                        </div>
-
-                                        <div id="DocDiploma2" class="col-md-4">
-                                            <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mt-3">
-                                        <div id="DocOther" class="col-md-4">
-                                            <label>
-                                                Other Certificate<br />
-                                                अन्य प्रमाणपत्र :
-                                            </label>
-                                        </div>
-
-                                        <div id="DocOther2" class="col-md-4">
-                                            <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                        </div>
-                                    </div>
-
                                 </fieldset>
                             </div>
 
@@ -1271,7 +1051,7 @@
 
                     <img src="../../img/AppointmentOrder.jpg" class="img-fluid" />
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -1366,8 +1146,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 style="font: bold; margin-left: auto;"></h3>
-                   
-                      <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
+
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
                 </div>
                 <div class="modal-body">
 
@@ -1404,48 +1184,207 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 style="font: bold; margin-left: auto;">//आहरण संवितरण अधिकारी की अनुशंसा//</h3>
+                    <h3 style="font: bold; margin-left: auto;"><u>आहरण संवितरण अधिकारी की अनुशंसा
+                    </u></h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <table class="table table-bordered" style="border: 1px solid">
-                                <tr class="nowrap">
-                                    <th>सरल क्रमांक</th>
-                                    <th>
-                                        <center>अधिकारी की अनुशंसा</center>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>
-                                        <label style="padding: 10px; text-align: justify;">
-                                            प्रमाणित किया जाता है कि श्री/श्रीमती/कु <strong>R.K. Dubey</strong> कार्यालय अंतर्गत <strong>UDC </strong>पद पर पदस्थ है। इन्होंने दिनांक <strong>21/03/2024</strong> को कार्यभार ग्रहण किया है। संबंधित द्वारा दी गई जानकारी का               
- 
-                                             मिलान कार्यालयीन अभिलेख से कर लिया गया है एवं जानकारी सही पाई गई है। श्री/ श्रीमती/कुका नाम Education Portal पर जोड़ने एवं यूनिक आईडी प्रदान करने की अनुशंसा की जाती है।             
-             
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2.</td>
-                                    <td>
-                                        <label style="padding: 10px; text-align: justify;">
-                                            प्रमाणित किया जाता है कि श्री/श्रीमती/कु <strong>Pradeep Mishra</strong> कार्यालय अंतर्गत <strong>UDC </strong>पद पर पदस्थ है। इन्होंने दिनांक <strong>21/03/2024</strong> को कार्यभार ग्रहण किया है। संबंधित द्वारा दी गई जानकारी का                
-                                             मिलान कार्यालयीन अभिलेख से कर लिया गया है एवं जानकारी सही पाई गई है। श्री/ श्रीमती/कुका नाम Education Portal पर जोड़ने एवं यूनिक आईडी प्रदान करने की अनुशंसा की जाती है।           
-        
-                                        </label>
-                                    </td>
-                                </tr>
-                            </table>
-
-
-                            <div class="row justify-content-center" id="divbtn1">
+                            <div class="table-responsive table-scroll">
+                                <table class="table table-bordered" style="border: 1px solid">
+                                    <tr>
+                                        <th><span style="font-size: large; font-weight: bold; white-space: nowrap;">सरल क्रमांक
+                                        </span>
+                                        </th>
+                                        <th>
+                                            <center style="font-size: large; font-weight: bold;">
+                                                <u>अधिकारी की अनुशंसा
+                                                </u>
+                                            </center>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>R.K. Dubey</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ किया गया हैं ।   आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी। संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं।
+                                            </label>
+                                            <%-- <label>
+                                    प्रमाणित  किया जाता है की श्री/श्रीमती/कु. ....   आज दिनांक को संबंधित कर्मचारी द्वारा कार्यवर ग्रहण  किया जा रहा है । संबंधित द्वारा दी गयी  जानकारी  का मिलान कार्यालयीन अभिलेखन से कर  लिया गया है एवं जानकारी सही पायी गयी है। संबंधित  कर्मचारी का नाम Education portal 3.0 पर जोड़ने एवं Unique Id  प्रदान करने की अनुशंसा की जाती है  
+                                </label>--%>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Pradeep Mishra</strong> का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया हैं।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Raj Mishra</strong> का कार्यालय अंतर्गत<strong> Assistant grade-II  </strong>पद पर पदस्थ  किया गया हैं।   आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Naveen Mishra</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया हैं।    आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>abhishek</strong> का कार्यालय अंतर्गत<strong> सहायक शिक्षक  </strong>पद पर पदस्थ  किया गया हैं।   आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>rohit Kumar</strong> का कार्यालय अंतर्गत<strong> संविदा शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>sagar </strong>का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">8.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Praveen Sharma</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">9.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Ritesh Pandey</strong> का कार्यालय अंतर्गत<strong> सहायक शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">10.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Kapil </strong>का कार्यालय अंतर्गत<strong> संविदा शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">11.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Hemant Malviya</strong> का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">12.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Hirendra Chouhan</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">13.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Vicky </strong>का कार्यालय अंतर्गत<strong> संविदा शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">14.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Arjun Kurmi</strong> का कार्यालय अंतर्गत<strong> सहायक शिक्षक   </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">15.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Shiv Kumar </strong>का कार्यालय अंतर्गत<strong> Assistant grade-II </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">16.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Vikram Kurmi</strong> का कार्यालय अंतर्गत<strong> Assistant grade-II </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">18.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Ankita soni</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">19.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Pratik Pawar</strong> का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">20.</td>
+                                        <td>
+                                            <label style="padding: 10px; text-align: justify;">
+                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Hanshraj Patwari</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया हैं।   आज दिनांक  <strong>07/04/2024</strong>
+                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="row justify-content-center mt-3" style="margin-bottom: 0.5rem; margin-top: 2rem !important;" id="divbtn1">
                                 <div class="col-md-12">
-                                    <div class="form-group text-center">
+                                    <div class="form-group text-center" style="margin-bottom: -10px;">
                                         <button type="button" class="Alert-SaveOrder  btn btn-success btn-rounded">Approve</button>
-                                        <button type="button" class="btn btn-danger btn-rounded waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger btn-rounded text-white" style="font-size: large;" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -1457,7 +1396,15 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-
+    <script>
+        function toggleAll(source) {
+            var checkboxes = document.querySelectorAll('table input[type="checkbox"]');
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i] != source)
+                    checkboxes[i].checked = source.checked;
+            }
+        }
+    </script>
     <script>
         !function ($) {
             "use strict";
@@ -1563,11 +1510,11 @@
             }(window.jQuery);
     </script>
 
-<script>
-  
-    document.getElementById('btn-close').addEventListener('click', function () {
-        $('#firsttimeModel').modal('show');
-    });
-</script>
+    <script>
+
+        document.getElementById('btn-close').addEventListener('click', function () {
+            $('#firsttimeModel').modal('show');
+        });
+    </script>
 </asp:Content>
 
