@@ -581,6 +581,9 @@
                                                         <a class="nav-link" href="/mis/Development/Mst_WorkSubcategory.aspx"><i class="ri-file-list-3-line"></i>Work Subcategory Master</a>
                                                     </li>
                                                     <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Development/Mile_Stone.aspx"><i class="ri-file-list-3-line"></i>Miled Stone Master</a>
+                                                    </li>
+                                                    <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master</a>
                                                     </li>
                                                     <li class="nav-item">
