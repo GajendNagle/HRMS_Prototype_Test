@@ -40,24 +40,23 @@
             </div>
   </div></div>
    
-         <div class="row  align-content-end">
-               <div class="col-md-11 "></div>
+         
       <%--  <div class="col-md text-end">
               <div class="form-group">
 
     <button id="BtnBack" class="btn-info rounded-2" type="button" onclick="Backclickfn()" style=" display:none;">BACK</button>
 </div>
         </div>--%>
-    </div>
+    
     <div class="card card-border-primary">
              <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-10">
                     <h5 class="card-title">Student Registration /विद्यार्थी  पंजीकरण 
                     </h5>
                 </div>
-                                      <div class="col-lg-3 text-end">
-       <button id="BtnBack"  class="btn btn-primary btn-label waves-effect waves-light rounded-pill" type="button" onclick="Backclickfn()" style="display:none;"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i> BACK</button>
+                                      <div class="col-lg-2 text-end "  id="BtnBack" style="display:none;">
+       <button  class="btn btn-primary btn-label waves-effect waves-light rounded-pill" type="button" onclick="Backclickfn()" "><i class="ri-arrow-go-back-line label-icon align-middle fs-14 me-1"></i> BACK</button>
 </div>
           
             </div>
