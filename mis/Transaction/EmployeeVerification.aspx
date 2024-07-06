@@ -841,7 +841,7 @@
                                                         </label>
                                                     </td>
                                                     <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg4"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -909,7 +909,7 @@
                                                         </label>
                                                     </td>
                                                    <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg4"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -979,7 +979,7 @@
                                                         </label>
                                                     </td>
                                                   <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -992,7 +992,7 @@
                                                         </label>
                                                     </td>
                                                   <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -1005,7 +1005,7 @@
                                                         </label>
                                                     </td>
                                                   <td class="text-center">
-                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -1018,7 +1018,7 @@
                                                         </label>
                                                     </td>
                                                 <td class="text-center">
-                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
                                                     </td>
                                                 </tr>
                                                </tbody></table>
@@ -1040,7 +1040,7 @@
         </div>
         <!-- /.modal -->
     </div>
-    <div class="modal bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal"  id="bs-example-modal-lg4" tabindex ="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1141,7 +1141,7 @@
             </div>
         </div>
     </div>
-    <div class="modal bs-example-modal-lg11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal " tabindex="-1" role="dialog" id="bs-example-modal-lg11" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
