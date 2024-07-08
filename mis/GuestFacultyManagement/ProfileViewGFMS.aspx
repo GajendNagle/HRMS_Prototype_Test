@@ -22,6 +22,7 @@
         .top-heading {
             position: relative;
             display: flex;
+            background-color: var(--vz-primary);
             background-image: url(../assets/images/svg/CardHeader.svg);
             justify-content: center;
             border-radius: 120px;
@@ -52,6 +53,7 @@
         }
 
         .profile-wid-bg {
+            background-color: var(--vz-primary);
             background-image: url(../assets/images/svg/CardHeader.svg) !important;
         }
     </style>

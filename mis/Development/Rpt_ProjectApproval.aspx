@@ -15,6 +15,9 @@
                         <li class="breadcrumb-item">
                             <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Development</span></a>
                         </li>
+                        <li class="breadcrumb-item">
+                            <a href="#DevelopmentReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Development')"aria-expanded="false"><span>Development Report</span></a>
+                        </li>
                         <li class="breadcrumb-item">Project Approval Report</li>
                     </ol>
                 </div>

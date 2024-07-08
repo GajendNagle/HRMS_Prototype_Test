@@ -15,6 +15,9 @@
                         <li class="breadcrumb-item">
                             <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Development</span></a>
                         </li>
+                        <li class="breadcrumb-item">
+                            <a href="#DevelopmentReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Development')" aria-expanded="false"><span>Development Report</span></a>
+                        </li>
                         <li class="breadcrumb-item">Project Status Report</li>
                     </ol>
                 </div>
@@ -196,7 +199,8 @@
                                 <input type="hidden" asp-for="PrevEmpId" id="hdnPrevEmpId" />
                                 <input type="hidden" asp-for="CompassionId" id="hdnCompassionId" />
                                 <legend>Work Related Important Document / कार्य संबंधी आवश्यक दस्तावेज</legend>
-                                <div class="row">               <div class="col-md-12 mt-3">
+                                <div class="row">
+                                    <div class="col-md-12 mt-3">
                                         <table class="table table-bordered table-responsive-lg">
                                             <thead>
                                                 <tr>
@@ -233,7 +237,7 @@
                                                     <td><b>Elecrtrical Document
                         <br />
                                                         इलेक्ट्रिकल दस्तावेज</b></td>
-                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                                    <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
