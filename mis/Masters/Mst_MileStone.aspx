@@ -19,7 +19,7 @@
                             <a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
                                 <span>Development Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Mile Stone Master Data</li>
+                        <li class="breadcrumb-item">MileStone Master Data</li>
                     </ol>
                 </div>
             </div>
@@ -29,7 +29,7 @@
         <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
         <div>
             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                इस पेज के माध्यम से माइल्ड स्टोन को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+                इस पेज के माध्यम से माइल स्टोन को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
             </marquee>
         </div>
     </div>
@@ -37,7 +37,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Miled Stone Master / माइल्ड स्टोन मास्टर</h4>
+                    <h4 class="card-title">MileStone Master / माइल स्टोन मास्टर</h4>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>Add Miled Stone / माइल्ड स्टोन जोड़े</legend>
+                <legend>Add MileStone / माइल स्टोन जोड़े</legend>
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
@@ -79,9 +79,9 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Miled Stone Type
+                                Select MileStone Type
                                 <br />
-                                माइल्ड स्टोन प्रकार का चयन करे<span style="color: red">*</span></label>
+                                माइल स्टोन प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select id="Project" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="A">Technical </option>
@@ -92,8 +92,8 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Miled Stone Name<br />
-                                माइल्ड स्टोन नाम दर्ज करे<span style="color: red">*</span></label>
+                                Enter MileStone Name<br />
+                                माइल स्टोन नाम दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Miled Stone Name " onkeypress="return hindiOnly();" />
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Miled Stone Details / माइल्ड स्टोन विवरण</legend>
+                <legend>MileStone Details / माइल स्टोन विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -144,11 +144,11 @@
                                         <th>Work Subcategory
                                             <br />
                                             कार्य की उपश्रेणी</th>
-                                        <th>Miled Stone Type<br />
-                                            माइल्ड स्टोन प्रकार</th>
-                                        <th>Miled Stone Name
+                                        <th>MileStone Type<br />
+                                            माइल स्टोन प्रकार</th>
+                                        <th>MileStone Name
                                             <br />
-                                            माइल्ड स्टोन नाम</th>
+                                            माइल स्टोन नाम</th>
                                         <th>Status(Active/InActive)
        <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
