@@ -56,7 +56,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Office Type /<br />
+                                Select Office Type <br />
                                 कार्यालय के प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <%--  <option value="--Select--">--Select--</option>--%>
@@ -74,7 +74,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Office Name /<br />
+                                Select Office Name <br />
                                 कार्यालय के नाम का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <%--<option value="--Select--">--Select--</option>--%>
@@ -90,7 +90,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project Code /<br />
+                                Project Code <br />
                                 परियोजना कोड</label>
                             <input type="Text" id="PCode" name="birthday" class="form-control" value="P0001" disabled autocomplete="off">
                         </div>
@@ -98,7 +98,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project Date /<br />
+                                Project Date <br />
                                 परियोजना दिनांक</label>
                             <input type="Text" id="PDate" name="birthday" class="form-control" value="11/06/2024" disabled autocomplete="off">
                         </div>
@@ -106,7 +106,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Estimated Budget Cost(Approx. In Rs) /<br />
+                                Estimated Budget Cost(Approx. In Rs) <br />
                                 अनुमानित राशि
                             </label>
                             <input type="text" id="Budget" name="birthday" class="form-control" value="60000.00" disabled autocomplete="off">
@@ -115,7 +115,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Installment Number /<br />
+                                Select Installment Number <br />
                                 किस्त संख्या चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <%--<option value="--Select--">--Select--</option>--%>
@@ -154,18 +154,18 @@
                         <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;">
                             <tbody>
                                 <tr>
-                                    <th>Installment No. /<br />
+                                    <th>Installment No. <br />
                                         इन्सटॉलमेंट  नं.</th>
-                                    <th>Project Exp. Start Date /<br />
+                                    <th>Project Exp. Start Date <br />
                                         परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
-                                    <th>Project Exp. End Date /<br />
+                                    <th>Project Exp. End Date <br />
                                         परियोजना एक्सपेक्टेड अंतिम दिनांक<span style="color: red">*</span></th>
 
-                                    <th>Installment Amount /<br />
+                                    <th>Installment Amount <br />
                                         इन्सटॉलमेंट  अमाउंट</th>
-                                    <th>Status /<br />
+                                    <th>Status <br />
                                         स्थिति</th>
-                                    <th>Action /<br />
+                                    <th>Action <br />
                                         क्रिया
                                     </th>
                                 </tr>

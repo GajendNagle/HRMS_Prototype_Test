@@ -5,6 +5,7 @@
         #workdescription2::-webkit-scrollbar {
             display: none;
         }
+       
 
         /*textarea {
             resize: vertical;

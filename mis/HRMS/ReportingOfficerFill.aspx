@@ -1763,7 +1763,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <%-- <script>
         function opnmodel() {
-            $('#exampleModal').model('show')
+            $('#exampleModal').model('show') 
         }
     </script>--%>
     <script>
