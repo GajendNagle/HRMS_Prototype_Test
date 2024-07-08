@@ -98,7 +98,7 @@
                             <input type="date" id="Tdate" name="birthday" class="form-control">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Project Status <br />
@@ -106,28 +106,28 @@
                                 परियोजना की स्थिति<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                                <option value="0">All</option>
+                                <option value="0">All</option>--%>
                                 <%-- <option value="1">Pending at School</option>
                                  <option value="2">Pending at Sankul</option>--%>
-                                <option value="3">Pending at BEO</option>
+                                <%--<option value="3">Pending at BEO</option>
                                 <option value="4">Pending at DEO</option>
                                 <option value="5">Pending at JD</option>
-                                <option value="6">Pending at HO</option>
+                                <option value="6">Pending at HO</option>--%>
                                 <%-- <option value="7"> Reject From School</option>
                                  <option value="8"> Reject From Sankul</option>
                                  <option value="9"> Reject From BEO</option><a href="../HostelManagment/">../HostelManagment/</a>
                                  <option value="10">Reject From DEO</option>
                                  <option value="11">Reject From JD</option>
                                  <option value="12">Reject From HO</option>--%>
-                            </select>
+                         <%--   </select>
                         </div>
-                    </div>
+                    </div>--%>
 
 
                 </div>
                 <hr />
                 <div class="col-md-12">
-                    <input type="submit" name="ctl00$ContentBody$btnSave" value="Search"
+                    <input type="button" name="ctl00$ContentBody$btnSave" value="Search"
                         class="btn btn-success btn-border" />
                     <a href="ProjectDetails.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                 </div>
@@ -197,7 +197,7 @@
                                     <th>22/05/2023</th>
                                      <td>स्कूल मरम्मत/निर्माण</td>
                                      <td>इमारत मरम्मत</td>
-                                    <td>QT4561</td>
+                                    <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <%--<td>Working Mode</td>--%>
                                     <td>Work For Bhopal Office</td>

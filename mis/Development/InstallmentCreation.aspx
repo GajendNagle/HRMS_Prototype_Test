@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+   <%-- <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -33,8 +33,62 @@
                 </div>
             </div>
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+     <div class="row">
+     <div class="col-12">
+         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+             <h4 class="mb-sm-0"></h4>
+             <div class="=page-title-right">
+                 <ol class="breadcrumb m-0">
+                     <li class="breadcrumb-item">
+                         <span>Home</span>
+                     </li>
+                     <li class="breadcrumb-item">
+                         <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Development</span></a>
+                     </li>
+                     <li class="breadcrumb-item">Installment Creation</li>
+                 </ol>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card card-border-primary">
+     <div class="card-header">
+         <div class="row">
+             <div class="col-lg-6">
+                 <h4 class="card-title">Installment Creation / किस्त निर्माण</h4>
+             </div>
+         </div>
+     </div>
+     <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
+            <fieldset>
+                <legend>Installment Creation Approval/किस्त निर्माण स्वीकृति </legend>
+                <div class="row align-items-end">
+                    <div class="col-md-6  col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Project Code
+             <br />
+                                परियोजना कोड<span style="color: red">*</span></label>
+                            <select id="Project_Code" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">P00017</option>
+                                <option value="B">P00018</option>
+                                <option value="C">P00019</option>
+                                <option value="D">All</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <hr />
+                  <input type="button" value="Search" class="btn btn-success btn-border" 
+                      onclick="div()" />
+                    <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                </div>
+            </fieldset>
+            <div id="hide" style="display: none;">
             <fieldset>
                 <legend>Installment Creation / किस्त निर्माण</legend>
                 <div class="row align-items-end">
@@ -44,8 +98,7 @@
                                 Project Code
                                 <br />
                                 परियोजना कोड</label>
-                            <asp:TextBox ID="txtProjectCode" MaxLength="10" value="P0001" disabled
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                          <input type="text" id="txtProjectCode" maxlength="10" value="P0001" disabled autocomplete="off" class="form-control form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -54,8 +107,7 @@
                                 Project Date
                                 <br />
                                 परियोजना दिनांक</label>
-                            <asp:TextBox ID="txtProjectDate" MaxLength="10" value="11/06/2024" disabled
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                          <input type="text" id="txtProjectDate" maxlength="10" value="11/06/2024" disabled autocomplete="off" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -66,7 +118,7 @@
                                 अनुमानित राशि
                             </label>
 
-                            <asp:TextBox ID="txtEstimatedBudgetCost" ClientIDMode="Static" MaxLength="10" value="60000.00" disabled="" AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                         <input type="text" id="txtEstimatedBudgetCost" maxlength="10" value="60000.00" disabled autocomplete="off" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -75,7 +127,7 @@
                                 Approved Cost(Approx. In Rs)
                                 <br />
                                 स्वीकृत राशि <span style="color: red">*</span></label>
-                            </span><%-- <span class="pull-right">
+                           <%-- </span>--%><%-- <span class="pull-right">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic"
                                     ControlToValidate="txtApprovedCost" ErrorMessage="Enter Approved Cost(Approx. In Rs) "
                                     Text="<i class='fa fa-exclamation-circle' title='Enter Approved Cost(Approx. In Rs)'></i>"
@@ -88,8 +140,7 @@
                                     SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
                                 </asp:RegularExpressionValidator>
                             --%>
-                            <asp:TextBox ID="txtApprovedCost" onkeypress="return validateNum(event);" placeholder="60000.00" TextMode="Number" ClientIDMode="Static" MaxLength="10"
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                        <input type="number" id="txtApprovedCost" placeholder="60000.00" onkeypress="return validateNum(event);" maxlength="10" autocomplete="off" class="form-control">
                         </div>
                     </div>
                     <%-- <div class="col-sm-3" id="pnlhidebtn" style="margin-top: 43px; display: none;">
@@ -106,11 +157,11 @@
                         <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;" id="Table1">
                             <tbody>
                                 <tr>
-                                    <th>Sr.No<br />
+                                    <th>Sr.No<br />सरल क्रमांक
                                     </th>
-                                    <th>Installment No.
+                                    <th>MileStone
                                         <br />
-                                        इन्सटॉलमेंट  नं.</th>
+                                       माइल स्टोन</th>
                                     <th>Project Exp. Start Date
                                         <br />
                                         परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
@@ -163,11 +214,11 @@
                         </table>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border" />
+                        <input type="button" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border Alert-Confirmation" />
                         <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
-            </fieldset>
+            </fieldset></div>
             <!--modal-->
 
 
@@ -610,7 +661,7 @@
             }
 
             // Insert data into cells of the new row
-            let newRow = table.insertRow(table.rows.length -1);
+            let newRow = table.insertRow(table.rows.length - 1);
             newRow.insertCell(0).innerHTML = table.rows.length - 2; // Column 0: Row number
             newRow.insertCell(1).innerHTML = name; // Column 1: Name
             newRow.insertCell(2).innerHTML = email; // Column 2: Email
@@ -619,8 +670,8 @@
             newRow.insertCell(5).innerHTML = PreviousGradeb; // Column 5: Previous Grade B
             let InstallmentPer_Total = document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value
             let InstallmentAmount_Total = document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value
-            document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value =+ PreviousGradea + + InstallmentPer_Total
-            document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value =+ PreviousGradeb + + InstallmentAmount_Total
+            document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value = + PreviousGradea + + InstallmentPer_Total
+            document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value = + PreviousGradeb + + InstallmentAmount_Total
             clearInputs3();
         }
         function clearInputs3() {
@@ -639,7 +690,7 @@
             let mobile = document.getElementById("c2").value = "";
             let PreviousGradea = document.getElementById("c3").value = "";
             let PreviousGradeab = document.getElementById("c4").value = "";
-          
+
 
         }
     </script>
@@ -652,6 +703,16 @@
             }
         }</script>
 
+     <%-- <script>
+          function div(){
+              document.getElementById("hide").style.display = "block";
+          }
 
+      </script>--%>
+    <script>
+        function div() {
+            document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';
+        }
+    </script>
 </asp:Content>
 
