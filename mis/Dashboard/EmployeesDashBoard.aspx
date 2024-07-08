@@ -38,11 +38,12 @@
             margin: 1.5rem 0;
         }
 
-        .card-header {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            background-image: url(../assets/images/svg/CardHeader.svg);
-        }
+       .card-header {
+     padding-left: 1rem;
+     padding-right: 1rem;
+     background-color: var(--vz-primary);
+     background-image: url(../assets/images/svg/CardHeader.svg);
+ }
 
             .card-header > * {
                 color: var(--vz-gray-200);
