@@ -52,9 +52,9 @@
                     <div class="col-md-6  col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Post Code 
+                                Project Code 
                             <br />
-                                पोस्ट कोड का चयन करे<span style="color: red">*</span></label>
+                                परियोजना कोड का चयन करे<span style="color: red">*</span></label>
                             <select id="DistrictName" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="P0001">P0001</option>
