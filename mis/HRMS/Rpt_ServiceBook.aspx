@@ -156,8 +156,8 @@
             }
         }
 
-        table th{
-            background-color:white !important;
+        table th {
+            background-color: white !important;
         }
         /*.table th{
             font-family:'Times New Roman', Times, serif;
@@ -169,7 +169,6 @@
             display: block;
             height: 7.0rem;
             margin-left: 2rem;
-           
         }
 
         html body .m-t-30 {
@@ -391,46 +390,44 @@
                     <fieldset>
                         <legend id="l1">Personal Information / व्यक्तिगत जानकारी</legend>
 
-                        <div class="table-responsive">
-                            <div class="row align-items-end">
-                                <div class="col-md-9 col-sm-9">
 
-                                    <table class="table-bordered table">
-                                        <tr>
-                                            <td colspan="2" class="align-content-center">
+                        <div class="row align-items-end mb-0">
+                            <div class="col-md-9 col-sm-9">
 
-                                                <label>
-                                                    First Name
+                                <table class="table-bordered table">
+                                    <tr>
+                                        <td colspan="2" class="align-content-center">
+
+                                            <label>
+                                                First Name
                        
-                                                </label>
-                                            </td>
-                                            <td colspan="2" class="align-content-center">Ajay
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2" class="align-content-center">
-                                                <label>
-                                                    Last Name
+                                            </label>
+                                        </td>
+                                        <td colspan="2" class="align-content-center">Ajay
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="align-content-center">
+                                            <label>
+                                                Last Name
                       
-                                                </label>
-                                            </td>
-                                            <td colspan="2" class="align-content-center">Verma
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-
-                                <div class="col-md-3 col-sm-3">
-                                        <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available"/>
-                                        <br />
-                                    </div>
+                                            </label>
+                                        </td>
+                                        <td colspan="2" class="align-content-center">Verma
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
 
+                            <div class="col-md-3 col-sm-3">
+                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
+                                <br />
+                            </div>
+                        </div>
+                        <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
-
-
                                         <th>Father's / Husband Name :</th>
                                         <td>Rameshwar Verma</td>
                                         <th>Date of Birth :</th>
@@ -679,9 +676,10 @@
                                     <th>Office/Institute/School Code & Name :
                                     </th>
                                     <td>Reem Higher Secondary School</td>
-                                    <th>Office/Institute/School Address of first Posting
+                                    <th>Office/Institute/School 
+                                        <br />Address of first Posting
                                                    :</th>
-                                    <td>Robertson, 1234 NW Bobcat Lane, St. Robert</td>
+                                    <td>Robertson, 1234 NW Bobcat Lane,<br /> St. Robert</td>
                                 </tr>
                                 <tr>
 
@@ -725,7 +723,8 @@
                                 </tr>
                                 <tr>
 
-                                    <th>Working in other Department Organization on Deputation Transfer :
+                                    <th>Working in other Department <br /> 
+                                        Organization on Deputation Transfer :
                                     </th>
                                     <td>No</td>
                                     <th>Is Regular :</th>
@@ -814,9 +813,10 @@
                                     <th>Office/Institute/School Code & Name :
                                     </th>
                                     <td>Reem Higher Secondary School</td>
-                                    <th>Office/Institute/School Address of first Posting
+                                    <th>Office/Institute/School 
+                                        <br />Address of first Posting
 :</th>
-                                    <td>Robertson, 1234 NW Bobcat Lane, St. Robert</td>
+                                    <td>Robertson, 1234 NW Bobcat Lane, <br />St. Robert</td>
                                 </tr>
                                 <tr>
 
@@ -860,7 +860,8 @@
                                 </tr>
                                 <tr>
 
-                                    <th>Working in other Department Organization on Deputation Transfer :
+                                    <th>Working in other Department <br /> Organization 
+                                        on Deputation Transfer :
                                     </th>
                                     <td>No</td>
                                     <th>Is Regular :</th>
@@ -1112,37 +1113,31 @@
                                             <tr>
                                                 <td>1</td>
 
-                                                <td>
-                                                    Computer Training
+                                                <td>Computer Training
                                                 </td>
-                                                <td>
-                                                    Raisen
+                                                <td>Raisen
                                                 </td>
-                                                <td>
-                                                    10 days
+                                                <td>10 days
                                                 </td>
 
                                             </tr>
                                             <tr>
                                                 <td>2</td>
 
-                                                <td>
-                                                    Skills Training.
+                                                <td>Skills Training.
                                                 </td>
-                                                <td>
-                                                    Berasia 
+                                                <td>Berasia 
                                                 </td>
-                                                <td>
-                                                    8 days
+                                                <td>8 days
                                                 </td>
 
                                             </tr>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </fieldset>
                     <fieldset>
