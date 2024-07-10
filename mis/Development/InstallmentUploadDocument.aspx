@@ -26,7 +26,7 @@
                             <a href="#Development" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Development')">
                                 <span>Development</span></a>
                         </li>
-                        <li class="breadcrumb-item">Installment Document Upload </li>
+                        <li class="breadcrumb-item">Demand  Request</li>
                     </ol>
                 </div>
             </div>
@@ -38,13 +38,15 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Document Upload  / दस्तावेज़ अपलोड </h4>
+                    <h4 class="card-title">Demand  Request  /
+अनुरोध करना </h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
         <fieldset>
-    <legend>Installment  Approval/किस्त  स्वीकृति </legend>
+    <legend>Demand  Request/
+अनुरोध करना </legend>
     <div class="row align-items-end">
         <div class="col-md-6  col-lg-4 col-xl-3">
             <div class="form-group">
@@ -77,7 +79,7 @@
                             <tr>
                                 <th>Sr.No.<br />
 सरल क्रमांक</th>
-                                <th>MileStone
+                                <th>Milestone
                                     <br />
 
 

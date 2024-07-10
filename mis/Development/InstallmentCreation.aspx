@@ -65,6 +65,67 @@
             <fieldset>
                 <legend>Installment Creation Approval/किस्त निर्माण स्वीकृति </legend>
                 <div class="row align-items-end">
+                           <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Select District Name<br />
+            ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
+        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+
+            <option value="Select">Select</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Raisen">Raisen</option>
+            <option value="Rajgarh">Rajgarh</option>
+            <option value="Sehore">Sehore</option>
+            <option value="Vidisha">Vidisha</option>
+            <option value="Ashoknagar">Ashoknagar</option>
+            <option value="Shivpuri">Shivpuri</option>
+            <option value="Datia">Datia</option>
+            <option value="Guna">Guna</option>
+            <option value="Gwalior">Gwalior</option>
+            <option value="Harda">Harda</option>
+            <option value="Hoshangabad">Hoshangabad</option>
+            <option value="Betul">Betul</option>
+            <option value="Morena">Morena</option>
+            <option value="Sheopur">Sheopur</option>
+            <option value="Bhind">Bhind</option>
+            <option value="Barwani">Barwani</option>
+            <option value="Burhanpur">Burhanpur</option>
+            <option value="Dhar">Dhar</option>
+            <option value="Indore">Indore</option>
+            <option value="Jhabua">Jhabua</option>
+            <option value="Khandwa">Khandwa</option>
+            <option value="Khargone">Khargone</option>
+            <option value="Alirajpur">Alirajpur</option>
+            <option value="Balaghat">Balaghat</option>
+            <option value="Chhindwara">Chhindwara</option>
+            <option value="Jabalpur">Jabalpur</option>
+            <option value="Katni">Katni</option>
+            <option value="Mandla">Mandla</option>
+            <option value="Narsinghpur">Narsinghpur</option>
+            <option value="Seoni">Seoni</option>
+            <option value="Rewa">Rewa</option>
+            <option value="Satna">Satna</option>
+            <option value="Sidhi">Sidhi</option>
+            <option value="Singroli">Singroli</option>
+            <option value="Chhatarpur">Chhatarpur</option>
+            <option value="Damoh">Damoh</option>
+            <option value="Panna">Panna</option>
+            <option value="Sagar">Sagar</option>
+            <option value="Tikamgarh">Tikamgarh</option>
+            <option value="Shahdol">Shahdol</option>
+            <option value="Umaria">Umaria</option>
+            <option value="Dindori">Dindori</option>
+            <option value="Anuppur">Anuppur</option>
+            <option value="Dewas">Dewas</option>
+            <option value="Mandsaur">Mandsaur</option>
+            <option value="Neemuch">Neemuch</option>
+            <option value="Ratlam">Ratlam</option>
+            <option value="Shajapur">Shajapur</option>
+            <option value="Ujjain">Ujjain</option>
+        </select>
+    </div>
+</div>
                     <div class="col-md-6  col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
@@ -80,12 +141,107 @@
                             </select>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col-md-12">
                     <hr />
                   <input type="button" value="Search" class="btn btn-success btn-border" 
                       onclick="div()" />
                     <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                </div>
+            </fieldset>
+                     <fieldset  id="Show" style="display:none;">
+                <legend>Project Details / परियोजना विवरण</legend>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                <tr style="white-space:nowrap">
+                                    <th>Sr.No.<br />
+                                       सरल क्रमांक</th>
+                                   <%-- <th>Action Status/<br>
+                                        गतिविधि स्थिति</th>
+                                    <th>Edit/<br>
+                                        एडिट करें</th>
+                                    <th>View Document/<br>
+                                        दस्तावेज़ देखें</th>
+                                    <th>View Details/<br>
+                                        विवरण देखें</th>
+                                    <th>Project Status/<br>
+                                        परियोजना की स्थिति</th>--%>
+                                    <th>Project Code<br>
+                                        परियोजना क्रमांक</th>
+                                    <th>Project Date<br>
+                                        परियोजना दिनांक</th>
+                                    <%--<th>Village /<br />
+                                        गाँव का नाम</th>--%>
+                                    <th>Work Category<br />
+                                        कार्य की श्रेणी</th>
+                                    <th>Work Subcategory<br />
+                                        कार्य का नाम</th>
+                                    <th>OIS Code<br />OIS कोड</th>
+                                    <th>Address<br />
+पता</th>
+                                   <%-- <th>Action Status<br>
+                                        गतिविधि स्थिति</th>--%>
+                                  <%--  <th>Work Place  /<br />
+                                        कार्य स्थल</th>--%>
+                                    <th> Work Description<br />
+कार्य का विवरण</th>
+                                    <th>Estimated Budget Cost(In Rs)  <br />
+                                        अनुमानित बजट</th>
+                                       <th>View Document<br>
+       दस्तावेज़ देखें</th>
+                                    <%--  <th>Edit<br>
+      एडिट करें</th>
+                                    <th>Send To Request<br />अनुरोध करने के लिए भेजें</th>--%>
+                                </tr></thead>
+                                <tbody id="tbody">
+                                <tr>
+                                    
+                                    <td>1</td>
+                                 <%--   <td>
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form-check-input">
+                                    </td>--%>
+                                     <td>P00019</td>
+                                    <th>22/05/2023</th>
+                                     <td>स्कूल मरम्मत/निर्माण</td>
+                                     <td>इमारत मरम्मत</td>
+                                    <td>Delhi Public School_44561</td>
+                                    <td>Bhopal M.P</td>
+                                    <%--<td>Working Mode</td>--%>
+                                    <td>Work For Bhopal Office</td>
+                                    <td>10000.00</td>
+
+                                    <td><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
+                                   <%-- <td>
+                                        <a class="btn btn-info btn-rounded" href="CreateProject.aspx"><i class="fa fa-pen"></i></a>
+                                    </td>--%>
+                                 <%--   <td>
+   <input type="button" value="Send TO H.O" id="btnSend" class="Alert-Save btn btn-outline-success btn-border w-lg" />
+     
+</td>--%><%--<td>    <button id="BtnBack"  class="Alert-Save btn btn-outline-primary w-xl  fs-16 me-4 rounded-4 " type="button">--%><%--<i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>--%> 
+   <%-- <i class="fa-regular fa-paper-plane-top  fs-16 me-2"></i>--%><%-- Send To Request</button></td>--%>
+                                  <%--  <td>Approval awaited at DEO</td>
+                                    <td>P00019</td>
+                                    <td>11/06/2024</td>
+                                    <td>Usridhana[उसरीढाना]</td>
+                                    <td>स्कूल मरम्मत/निर्माण</td>
+                                    <td>इमारत मरम्मत</td>
+                                    <td>Work For Bhopal Office</td>
+                                    <td>10000.00</td>--%>
+                                </tr>
+</tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
             <div id="hide" style="display: none;">
@@ -159,7 +315,7 @@
                                 <tr>
                                     <th>Sr.No<br />सरल क्रमांक
                                     </th>
-                                    <th>MileStone
+                                    <th>Milestone
                                         <br />
                                        माइल स्टोन</th>
                                     <th>Project Exp. Start Date
@@ -712,6 +868,8 @@
     <script>
         function div() {
             document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';
+            document.getElementById("Show").style.display = (document.getElementById("Show").style.display == 'block') ? 'none' : 'block';
+        
         }
     </script>
 </asp:Content>
