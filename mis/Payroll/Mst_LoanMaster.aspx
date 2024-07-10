@@ -13,25 +13,6 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <%--   <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Loan Master</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=Masters&SubID=PayrollMaster" title="click to go on">Payroll Master</a></li>
-                    <li class="breadcrumb-item active">Loan Master</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
-        </div>
-        <div class="card-body">--%>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -64,28 +45,23 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-12">
-                    <h6 class="card-title">Loan Mastere/सेट 
-
-ऋण मास्टर</h6>
+                <div class="col-lg-6">
+                    <h6 class="card-title">Loan Master / ऋण मास्टर</h6>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Set Loan Master/
-
-                   ऋण मास्टर</legend>
-                <div class="row">
-                    <div class="col-md-3">
+                <legend>Add Loan / ऋण जोड़ें</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Office Type/<br />
-                                कार्यालय का प्रकार<span style="color: red">*</span></label>
+                                Select Office Type<br>
+                                कार्यालय प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-
                                 <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
@@ -105,11 +81,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Office Name/<br />
-                                कार्यालय का नाम<span style="color: red">*</span></label>
+                                Select Office Name<br>
+                                कार्यालय नाम का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -121,11 +97,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Employee Name/<br />
-                                कर्मचारी का नाम<span style="color: red">*</span></label>
+                                Select Employee Name<br>
+                                कर्मचारी नाम का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Manish</option>
@@ -137,12 +113,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Loan Head/<br />
-                                
-ऋण मुखिया <span style="color: red">*</span></label>
+                                Select Loan Head<br>
+                                ऋण मुखिया का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Grain Advance</option>
@@ -150,46 +125,43 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Loan Amount/<br />
-                                  
-राशि<span style="color: red">*</span></label>
+                                Enter Loan Amount<br>
+                                ऋण राशि दर्ज़ करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Loan Amount" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Installment Amount/<br />
-                                किस्त
-राशि<span style="color: red">*</span></label>
+                                Enter Installment Amount<br>
+                                किस्त राशि दर्ज़ करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Installment Amount" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Installment No./<br />
-                                किस्त संख्या<span style="color: red">*</span></label>
+                                Enter Installment No.<br>
+                                किस्त संख्या दर्ज़ करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Installment No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Interest Amount/<br />
-
-                                ब्याज राशि</label>
+                                Enter Interest Amount<br>
+                                ब्याज राशि दर्ज़ करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Interest Amount" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Loan Deduction Year/<br />
-                                ऋण कटौती वर्ष<span style="color: red">*</span></label>
+                                Select Loan Deduction Year<br>
+                                ऋण कटौती वर्ष का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2023</option>
@@ -198,15 +170,14 @@
                                 <option value="Bhopal">2026</option>
                                 <option value="Bhopal">2027</option>
                                 <option value="Bhopal">2028</option>
-
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Loan Deduction Month/<br />
-                                ऋण कटौती महा<span style="color: red">*</span></label>
+                                Select Loan Deduction Month<br>
+                                ऋण कटौती महा का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -224,25 +195,15 @@
                             </select>
                         </div>
                     </div>
-                    <%-- <div class="col-md-2 mt-4">
-                        <div class="form-group">
-                            <button type="button" class="btn-block Alert-Save btn btn-success btn-rounded">Save</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mt-4">
-                        <div class="form-group">
-                            <a href="Mst_LoanMaster.aspx" class="btn-block btn btn-danger btn-rounded">Clear</a>
-                        </div>
-                    </div>--%>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <button type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
                         <a href="Mst_LoanMaster.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
             <fieldset id="show">
-                <legend>Details/विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -259,33 +220,38 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table">
-                                <tr style="white-space:nowrap !important">
-                                    <th>Sr.No./<br />
-                                        सरल क्र</th>
-                                    <th>Office Type/<br />
-                                        कार्यालय का प्रकार</th>
-                                    <th>Office Name/<br />
-                                        कार्यालय का नाम</th>
-                                    <th>Employee Name/<br />
-                                        कर्मचारी का नाम</th>
-                                    <th>Loan Head/<br />
-                                        ऋण  मुखिया </th>
-                                    <th>Loan Amount ⟨₹⟩/<br />ऋण  
-राशि  ⟨₹⟩</th>
-                                    <th>Installment Amount ⟨₹⟩/<br />
-                                        किस्त 
-राशि ⟨₹⟩</th>
-                                    <th>Installment No./<br />
-                                        किस्त संख्या</th>
-                                    <th>Interest Amount ⟨₹⟩/ब्याज राशि  ⟨₹⟩<br />
-                                    </th>
-                                    <th>Loan Deduction Year/<br />ऋण कटौती वर्ष
-                                    </th>
-                                    <th>Loan Deduction Month/<br />ऋण कटौती महा
-                                    </th>
-                                    <th>Action/<br />सक्रिय है</th>
-                                </tr>
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.<br>
+                                            सरल क्र</th>
+                                        <th>Office Type<br>
+                                            कार्यालय का प्रकार</th>
+                                        <th>Office Name<br>
+                                            कार्यालय का नाम</th>
+                                        <th>Employee Name<br>
+                                            कर्मचारी का नाम</th>
+                                        <th>Loan Head<br>
+                                            ऋण  मुखिया </th>
+                                        <th>Loan Amount ⟨₹⟩<br>
+                                            ऋण राशि  ⟨₹⟩</th>
+                                        <th>Installment Amount ⟨₹⟩<br>
+                                            किस्त राशि ⟨₹⟩</th>
+                                        <th>Installment No.<br>
+                                            किस्त संख्या</th>
+                                        <th>Interest Amount ⟨₹⟩<br />
+                                            ब्याज राशि  ⟨₹⟩
+                                        </th>
+                                        <th>Loan Deduction Year<br>
+                                            ऋण कटौती वर्ष
+                                        </th>
+                                        <th>Loan Deduction Month<br>
+                                            ऋण कटौती महा
+                                        </th>
+                                        <th>Action<br>
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Division Office</td>
@@ -298,7 +264,7 @@
                                     <td>00</td>
                                     <td>2023</td>
                                     <td>Nov 2023</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -312,124 +278,13 @@
                                     <td>00</td>
                                     <td>2022</td>
                                     <td>April 2023</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                 </div>
             </fieldset>
-            <!--Description-->
-            <fieldset id="dcp" runat="server">
-                <legend>Description</legend>
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <ul class="main-ul">
-                            <li><strong>Office Type </strong>
-                                <ul>
-                                    <li>User will be able to select the <strong>Office Type </strong>from the dropdown which will automatically reflect from Office Type Master.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Office Name (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Office Name </strong>from dropdown which will automatically reflect from Office Master</li>
-                                </ul>
-                            </li>
-                            <li><strong>Employee Name (Dropdown)</strong>
-                                <ul>
-                                    <li>The user will be able to select the employee name from the dropdown. employee name will be reflected in the Employee Registration Master.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Loan Head (Dropdown)</strong>
-                                <ul>
-                                    <%-- <li>User will be able to select <strong>Loan Head </strong>from dropdown. Earnings deduction master will be reflect from Loan head list.</li>--%>
-                                    <li>List of Loan head will automatically reflect from Earnings and Deduction master. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Loan Amount (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Loan Amount </strong>in textbox.</li>
-                                </ul>
-                            </li>
-
-                            <li><strong>Installment Amount (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Installment Amount</strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Installment No. (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Installment No. </strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Interest Amount (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Interest Amount </strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Loan Deduction Year (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Loan Deduction Year </strong>from dropdown. Year populated from <strong>Year Master </strong>. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Loan Deduction Month (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Loan Deduction Month </strong>from dropdown. Month populated from <strong>Month Master </strong>. </li>
-                                </ul>
-                            </li>
-
-                            <li><strong>Save (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on save button.</li>
-                                    <li>Click on save button form all mandatory filed should be validate in process.</li>
-                                    <li>After all fields Validate the Confirmation popup should be open with Message Format ("Are you sure?" "Do you want to save this record?").</li>
-                                    <li>If click on Yes – record will be saved and message will appear on the screen – Message ("Success!" "Record Saved Successfully!")..</li>
-                                    <li>If click on NO the record will not be saved and will return to the same page.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Clear (Button)</strong>
-                                <ul>
-                                    <li>User will be able to click on Clear button.</li>
-                                    <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
-                                </ul>
-                            </li>
-                            <li><strong>Excel (Button)</strong>
-                                <ul>
-                                    <li>Excel button should be visible and user should be able to click.</li>
-                                    <li>After clicking on the Excel button, showing the data will be export to Excel.</li>
-                                </ul>
-                            </li>
-                            <li><strong>PDF (Button)</strong>
-                                <ul>
-                                    <li>PDF button should be visible and user should be able to click.</li>
-                                    <li>After clicking on PDF button grid view data export in PDF.</li>
-                                </ul>
-                            </li>
-
-                            <li><strong>Action Gridview(Edit)</strong>
-                                <ul>
-                                    <li>Click The Edit Icon - A Pop Up Message Will Open -Popup Message - Do You Want To Update The details?</li>
-                                    <li>On Choose Yes Button option, The Form Will Come In The Editable format.</li>
-                                    <li>After Editing The details in the from,  On Click The Update Button,( A Pop Up Message Will Open. )- Message- Do You Want To Update details.</li>
-                                    <li>Choose YES - Popup Message - Data Updated Successfully.</li>
-                                    <li>Choose No - Data will be not Update.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Action Gridview(Delete)</strong>
-                                <ul>
-                                    <li>If the user wants to delete a record – the user can click on the delete icon. Will permanently delete the record.</li>
-                                    <li>A Pop Up Message Will Be Shown - Popup Message - Do You Want To Delete The record ?</li>
-                                    <li>On Doing YES,</li>
-                                    <li>The record Will Be Deleted And The Popup Message Will Be Shown</li>
-                                    <li>Popup Message - Record Deleted Successfully.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </fieldset>
-            <!-- End Description -->
         </div>
     </div>
 </asp:Content>

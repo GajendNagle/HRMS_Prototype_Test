@@ -23,73 +23,57 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <%--<div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Same Amount Set All the Employee Head Wise</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Payroll</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=Masters&SubID=PayrollMaster" title="click to go on">Payroll Master</a></li>
-                    <li class="breadcrumb-item active">Same Amount Set All the Employee Head Wise</li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Same Amount Set All the Employee Head Wise</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                इस पेज के माध्यम से नए Same Amount Set All the Employee Head Wise को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+            </marquee>
         </div>
-        <div class="card-body">--%>
-            <div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
-                    </li>
-                    <li class="breadcrumb-item"><span>Same Amount Set All the Employee Head Wise</span></li>
-                </ol>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <h6 class="card-title">Same Amount Set All the Employee Head Wise<br />
+                        सभी कर्मचारी शीर्षवार समान राशि निर्धारित करें</h6>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="marqueecontainer">
-    <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-    <div>
-        <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-            इस पेज के माध्यम से नए Same Amount Set All the Employee Head Wise को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
-        </marquee>
-    </div>
-</div>
-<div class="card card-border-primary">
-    <div class="card-header">
-        <div class="row align-items-end">
-            <div class="col-lg-12">
-                <h6 class="card-title">Same Amount Set All the Employee Head Wise/सभी कर्मचारी मदवार समान राशि निर्धारित करें</h6>
-            </div>
-        </div>
-    </div>
-    <div class="card-body">
-        <span id="ContentBody_lblMsg"></span>
+        <div class="card-body">
+            <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Set Head Wise Earning/Deduction </legend>
-                <div class="row">
-                    <div class="col-md-3">
+                <legend>Set Head Wise Earning / Deduction / शीर्षवार कमाई/कटौती निर्धारित करें</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Office Type/<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
+                            <label>
+                                Select Office Type<br>
+                                कार्यालय प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-              			 <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -108,9 +92,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
+                            <label>
+                                Select Office Name<br>
+                                कार्यालय नाम का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -122,9 +108,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Year/<br />वर्ष<span style="color: red">*</span></label>
+                            <label>
+                                Select Year<br>
+                                वर्ष का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">2022</option>
@@ -137,10 +125,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Month/<br />
-महीना<span style="color: red">*</span></label>
+                            <label>
+                                Select Month<br>
+                                माह का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="1">January</option>
@@ -158,9 +147,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Earning & Deduction Head/<br />कमाई एवं कटौती का मुखिया<span style="color: red">*</span></label>
+                            <label>
+                                Select Earning & Deduction Head<br>
+                                कमाई एवं कटौती का मुखिया का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">HRA</option>
@@ -169,9 +160,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Type of Post/<br />पोस्ट का प्रकार<span style="color: red">*</span></label>
+                            <label>
+                                SelectType of Post<br>
+                                पोस्ट प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Regular/Permanent">Regular/Permanent</option>
@@ -188,36 +181,28 @@
                             </select>
                         </div>
                     </div>
-                   <%-- <div class="col-md-2 mt-4">
-                        <div class="form-group">
-                            <button type="button" onclick="myFunction()" class="btn-block btn btn-success   btn-rounded">Search</button>
-                        </div>
+                    <div class="col-md-12">
+                        <hr />
+                        <button type="button" onclick="myFunction()" class="btn btn-outline-success w-lg btn-border">Save</button>
+                        <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-                    <div class="col-md-2 mt-4">
-                        <div class="form-group">
-                            <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
-                        </div>
-                    </div>--%>
-                    
-                                    <hr />
-<div class="col-md-12">
-    <button type="button"  onclick="myFunction()" class="btn btn-outline-success w-lg btn-border">Save</button>
-    <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-</div>
                 </div>
             </fieldset>
             <div id="show">
                 <fieldset>
-                    <legend>Details/विवरण </legend>
+                    <legend>Details / विवरण </legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" placeholder="Set Amount" autocomplete="off"  style="position:relative; left:300px;"/>
+                                <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" placeholder="Set Amount" autocomplete="off" style="position: relative; left: 300px;" />
                             </div>
                         </div>
-                        <div class="col-md-6 justify-content-end" style="position:relative; left:300px;">
+                        <div class="col-md-6 justify-content-end" style="position: relative; left: 300px;">
                             <div class="form-group">
-                                <button type="button" class=" btn btn-outline-success fs-6 w-lg btn-border">Set Same Amount <br />for All Employee</button>
+                                <button type="button" class=" btn btn-outline-success fs-6 w-lg btn-border">
+                                    Set Same Amount
+                                    <br />
+                                    for All Employee</button>
                             </div>
                         </div>
                         <div class="table-responsive col-md-12">
@@ -225,10 +210,14 @@
                                 <tr>
                                     <th>All<br />
                                         <input id="ContentBody_cstl08" type="checkbox" name="ctl00$ContentBody$ctl06" /></th>
-                                    <th>Sr.No./<br />सरल क्र</th>
-                                    <th>Employee Name/<br />कर्मचारी का नाम</th>
-                                    <th>Designation<br />पद का नाम</th>
-                                    <th>Amount⟨₹⟩/<br />राशि ⟨₹⟩</th>
+                                    <th>Sr.No.<br>
+                                        सरल क्र</th>
+                                    <th>Employee Name<br>
+                                        कर्मचारी का नाम</th>
+                                    <th>Designation<br />
+                                        पद का नाम</th>
+                                    <th>Amount⟨₹⟩<br>
+                                        राशि ⟨₹⟩</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -260,26 +249,14 @@
                             </table>
                         </div>
                     </div>
-                    <%--<div class="row justify-content-center">
-                        <div class="col-md-2 mt-4">
-                            <div class="form-group">
-                                <button type="button" class="Alert-Save btn-block btn btn-success  btn-rounded">Save</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2 mt-4">
-                            <div class="form-group">
-                                <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn-block btn btn-danger  btn-rounded">Clear</a>
-                            </div>
-                        </div>
-                    </div>--%>
-                                                        <hr />
-<div class="col-md-12">
-    <button type="button"  onclick="myFunction()" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
-    <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-</div>
+                    <hr />
+                    <div class="col-md-12">
+                        <button type="button" onclick="myFunction()" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+                        <a href="SameAmountSettheAllemployeeheadwise.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    </div>
                 </fieldset>
                 <fieldset id="Details">
-                    <legend>Set Head Wise Amount Details (Report)/शीर्षवार राशि विवरण निर्धारित करें (रिपोर्ट):-</legend>
+                    <legend>Set Head Wise Amount Details (Report) / शीर्षवार राशि विवरण निर्धारित करें (रिपोर्ट)</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -296,17 +273,28 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
-                                        <th>Sr.No./<br />सरल क्र</th>
-                                        <th>Office Type/<br />कार्यालय का प्रकार</th>
-                                        <th>Office Name/<br />कार्यालय का नाम</th>
-                                        <th>Year/<br />वर्ष </th>
-                                        <th>Month/<br />महीना </th>
-                                        <th>Head Name/<br />मुखिया का नाम </th>
-                                        <th>Type Of Post /<br />पोस्ट का प्रकार</th>
-                                        <th>Action/<br />सक्रिय है</th>
-                                    </tr>
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
+                                        <tr>
+                                            <th>Sr.No.<br>
+                                                सरल क्र</th>
+                                            <th>Office Type<br>
+                                                कार्यालय का प्रकार</th>
+                                            <th>Office Name<br>
+                                                कार्यालय का नाम</th>
+                                            <th>Year<br>
+                                                वर्ष </th>
+                                            <th>Month<br>
+                                                महीना </th>
+                                            <th>Head Name<br>
+                                                मुखिया का नाम </th>
+                                            <th>Type Of Post
+                                            <br>
+                                                पोस्ट का प्रकार</th>
+                                            <th>Action<br>
+                                                कार्यवाहीं</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>Division Office</td>
@@ -315,7 +303,7 @@
                                         <td>Jan</td>
                                         <td>DA</td>
                                         <td>Regular</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -325,7 +313,7 @@
                                         <td>April</td>
                                         <td>House Rent</td>
                                         <td>Regular</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                 </table>
                             </div>
@@ -333,116 +321,6 @@
                     </div>
                 </fieldset>
             </div>
-            <!--Description-->
-            <fieldset id="dcp" runat="server">
-                <legend>Description</legend>
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <ul class="main-ul">
-                            <li><strong>Office Type </strong>
-                                <ul>
-                                    <li>User will be able to select the <strong>Office Type </strong>from the dropdown which will automatically reflect from Office Type Master.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Office Name (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Office Name </strong>from dropdown. which will automatically reflect from Office Master </li>
-                                </ul>
-                            </li>
-                            <li><strong>Year (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Year </strong>from dropdown. Year populated from <strong>Year Master </strong>. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Month (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Month </strong>from dropdown. Month populated from <strong>Month Master </strong>. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Earning & Deduction Head (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Earning & Deduction Head </strong>from dropdown. Data populated from <strong>Earning/Deduction Head Master </strong>. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Type of Post (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Type of Post </strong>from dropdown. Data populated from <strong>Post Master </strong>. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Show (Button)</strong>
-                                <ul>
-                                    <li>User will be able to click on Show button.</li>
-                                    <li>On Show button click form field should be Grid will be visible.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Set Amount (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Value </strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Same Amount Set the All employee (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on <strong>(Same Amount Set the All employee)</strong>i button.</li>
-                                    <li>Click on <strong>(Same Amount Set the All employee)</strong> button, amount will be set in gridview on Amount column. .</li>
-                                </ul>
-                            </li>
-                            <li><strong>Checkbox (Checkbox)</strong>
-                                <ul>
-                                    <li>The user must have the right to check or uncheck the Checkbox. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Save (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on save button.</li>
-                                    <li>Click on save button form all mandatory filed should be validate in process.</li>
-                                    <li>After all fields Validate the Confirmation popup should be open with Message Format ("Are you sure?" "Do you want to save this record?").</li>
-                                    <li>If click on Yes – record will be saved and message will appear on the screen – Message ("Success!" "Record Saved Successfully!")..</li>
-                                    <li>If click on NO the record will not be saved and will return to the same page.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Clear (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on Clear button.</li>
-                                    <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
-                                </ul>
-                            </li>
-                            <li><strong>Excel (Button)</strong>
-                                <ul>
-                                    <li>Excel button should be visible and user should be able to click.</li>
-                                    <li>After clicking on the Excel button, showing the data will be export to Excel.</li>
-                                </ul>
-                            </li>
-                            <li><strong>PDF (Button)</strong>
-                                <ul>
-                                    <li>PDF button should be visible and user should be able to click.</li>
-                                    <li>After clicking on PDF button grid view data export in PDF.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Action Gridview(Edit)</strong>
-                                <ul>
-                                    <li>Click The Edit Icon - A Pop Up Message Will Open -Popup Message - Do You Want To Update The details?</li>
-                                    <li>On Choose Yes Button option, The Form Will Come In The Editable format.</li>
-                                    <li>After Editing The details in the from,  On Click The Update Button,( A Pop Up Message Will Open. )- Message- Do You Want To Update details.</li>
-                                    <li>Choose YES - Popup Message - Data Updated Successfully.</li>
-                                    <li>Choose No - Data will be not Update.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Action Gridview(Delete)</strong>
-                                <ul>
-                                    <li>If the user wants to delete a record – the user can click on the delete icon. Will permanently delete the record.</li>
-                                    <li>A Pop Up Message Will Be Shown - Popup Message - Do You Want To Delete The record ?</li>
-                                    <li>On Doing YES,</li>
-                                    <li>The record Will Be Deleted And The Popup Message Will Be Shown</li>
-                                    <li>Popup Message - Record Deleted Successfully.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </fieldset>
-            <!-- End Description -->
-
         </div>
     </div>
 </asp:Content>

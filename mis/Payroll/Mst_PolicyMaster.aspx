@@ -13,70 +13,53 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-  <%--  <div class="row page-titles mb-4">
-        <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor ">Policy Master</h4>
-        </div>
-        <div class="col-md-7 align-self-center text-end">
-            <div class="d-flex justify-content-end align-items-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Module.aspx?ID=Masters" title="click to go on">Masters</a></li>
-                    <li class="breadcrumb-item"><a href="../Menu.aspx?ID=Masters&SubID=PayrollMaster" title="click to go on">Payroll Master</a></li>
-                    <li class="breadcrumb-item active">Policy Master</li>
-                </ol>
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>Home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Policy Master Data</span></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card mt-3 shadow">
-        <div class="card-header card-border-info">
+    <div class="marqueecontainer">
+        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
+        <div>
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                इस पेज के माध्यम से नए Policy  को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
+            </marquee>
         </div>
-        <div class="card-body">--%>
-         <div class="row">
-     <div class="col-12">
-         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-             <h4 class="mb-sm-0"></h4>
-             <div class="=page-title-right">
-                 <ol class="breadcrumb m-0">
-                     <li class="breadcrumb-item">
-                         <span>Home</span>
-                     </li>
-                     <li class="breadcrumb-item">
-                         <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
-                     </li>
-                     <li class="breadcrumb-item">
-                         <a href="#PayrollMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')"><span>Payroll Master</span></a>
-                     </li>
-                     <li class="breadcrumb-item"><span>Policy Master</span></li>
-                 </ol>
-             </div>
-         </div>
-     </div>
- </div>
- <div class="marqueecontainer">
-     <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-     <div>
-         <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-             इस पेज के माध्यम से नए Policy  को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
-         </marquee>
-     </div>
- </div>
- <div class="card card-border-primary">
-     <div class="card-header">
-         <div class="row align-items-end">
-             <div class="col-lg-12">
-                 <h4 class="card-title">Policy Master/नीति मास्टर</h4>
-             </div>
-         </div>
-     </div>
-     <div class="card-body">
-         <span id="ContentBody_lblMsg"></span>
+    </div>
+    <div class="card card-border-primary">
+        <div class="card-header">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    <h4 class="card-title">Policy Master / नीति मास्टर</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Add Policy Details/नीति विवरण जोड़ें</legend>
+                <legend>Add Policy / नीति जोड़ें</legend>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Office Type/<br />कार्यालय का प्रकार<span style="color: red">*</span></label>
+                            <label>
+                                Select Office Type<br>
+                                कार्यालय प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">District Office</option>
@@ -85,13 +68,14 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Office Name/<br />कार्यालय का नाम<span style="color: red">*</span></label>
+                            <label>
+                                Select Office Name<br />
+                                कार्यालय नाम का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                  		
-								 <option value="Bhopal">Head Office</option>
+                                <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
                                 <option value="Bhopal">DISTRICT EDUCATION OFFICERS</option>
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
@@ -110,9 +94,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Employee Name/<br />कर्मचारी का नाम<span style="color: red">*</span></label>
+                            <label>
+                                Select Employee Name<br>
+                                कर्मचारी के नाम का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Ramji Pandey</option>
@@ -120,39 +106,46 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Policy Type/<br />
-नीति  प्रकार<span style="color: red">*</span></label>
+                            <label>
+                                Select Policy Type<br>
+                                नीति प्रकार का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">LIC</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Policy No./<br />नीति संख्या<span style="color: red">*</span></label>
+                            <label>
+                                Enter Policy No.<br>
+                                नीति संख्या दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Policy No." />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Policy Name/<br />नीति का नाम<span style="color: red">*</span></label>
+                            <label>
+                                Enter Policy Name<br>
+                                नीति का नाम दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Enter Policy Name" />
                         </div>
                     </div>
-
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Premium Amount/<br />अधिमूल्य  राशि<span style="color: red">*</span></label>
+                            <label>
+                                Enter Premium Amount<br>
+                                अधिमूल्य  राशि दर्ज करे<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl04" type="text" class="form-control" autocomplete="off" placeholder="Premium Amount" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Premium Frequency/<br />अधिमूल्य 
-आवृत्ति<span style="color: red">*</span></label>
+                            <label>
+                                Select Premium Frequency<br>
+                                अधिमूल्य आवृत्ति का चयन करे<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Monthly</option>
@@ -160,42 +153,31 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Policy Start Date/<br />पॉलिसी आरंभ तिथि<span style="color: red">*</span></label>
+                            <label>
+                                Policy Start Date<br>
+                                पॉलिसी आरंभ तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Policy End  Date/<br />पॉलिसी समाप्ति तिथि<span style="color: red">*</span></label>
+                            <label>
+                                Policy End  Date<br>
+                                पॉलिसी समाप्ति तिथि<span style="color: red">*</span></label>
                             <input type="date" class="form-control" placeholder="" />
                         </div>
                     </div>
-
-<%--                    <div class="col-md-2 mt-4">
-                        <div class="form-group">
-
-                            <button type="button" class="btn-block Alert-Save btn btn-success  btn-rounded">Save</button>
-                        </div>
+                    <div class="col-md-12">
+                        <hr />
+                        <button type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+                        <a href="Mst_PolicyMaster.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-                    <div class="col-md-2 mt-4">
-                        <div class="form-group">
-                            <a href="Mst_PolicyMaster.aspx" class="btn-block btn btn-danger btn-rounded">Clear</a>
-                        </div>
-                    </div>--%>
-                     <hr />
- <div class="col-md-12">
-     <button type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
-     <a href="Mst_PolicyMaster.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
- </div>
                 </div>
-
             </fieldset>
             <fieldset id="show">
-                <legend>Details </legend>
+                <legend>Policy Details / नीति विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -212,21 +194,35 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table">
-                                <tr style="white-space:nowrap !important">
-                                    <th>Sr.No./<br />सरल क्र</th>
-                                    <th>Office Type/<br />कार्यालय का प्रकार</th>
-                                    <th>Office Name/<br />कार्यालय का नाम </th>
-                                    <th>Employee Name/<br />कर्मचारी का नाम</th>
-                                    <th>Policy Type/<br />नीति प्रकार</th>
-                                    <th>Policy No/<br />नीति संख्या</th>
-                                    <th>Policy Name/<br />नीति का नाम</th>
-                                    <th>Premium Amount ⟨₹⟩/<br />अधिमूल्य  राशि ⟨₹⟩</th>
-                                    <th>Premium Frequency/<br />अधिमूल्य आवृत्ति</th>
-                                    <th>Policy Start Date/<br />पॉलिसी आरंभ तिथि</th>
-                                    <th>Policy End Date/<br />पॉलिसी समाप्ति तिथि</th>
-                                    <th>Action/<br />सक्रिय है</th>
-                                </tr>
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.<br>
+                                            सरल क्र</th>
+                                        <th>Office Type<br>
+                                            कार्यालय का प्रकार</th>
+                                        <th>Office Name<br>
+                                            कार्यालय का नाम </th>
+                                        <th>Employee Name<br>
+                                            कर्मचारी का नाम</th>
+                                        <th>Policy Type<br>
+                                            नीति प्रकार</th>
+                                        <th>Policy No<br>
+                                            नीति संख्या</th>
+                                        <th>Policy Name<br>
+                                            नीति का नाम</th>
+                                        <th>Premium Amount ⟨₹⟩<br>
+                                            अधिमूल्य  राशि ⟨₹⟩</th>
+                                        <th>Premium Frequency<br>
+                                            अधिमूल्य आवृत्ति</th>
+                                        <th>Policy Start Date<br>
+                                            पॉलिसी आरंभ तिथि</th>
+                                        <th>Policy End Date<br>
+                                            पॉलिसी समाप्ति तिथि</th>
+                                        <th>Action<br>
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>Division Office</td>
@@ -239,7 +235,7 @@
                                     <td>Monthly</td>
                                     <td>01/01/2023</td>
                                     <td>31/12/2030</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -253,123 +249,13 @@
                                     <td>Quarterly</td>
                                     <td>01/01/2023</td>
                                     <td>31/12/2030</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
-
                             </table>
                         </div>
                     </div>
                 </div>
             </fieldset>
-
-            <!--Description-->
-            <fieldset id="dcp" runat="server">
-                <legend>Description</legend>
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <ul class="main-ul">
-                            <li><strong>Office Type </strong>
-                                <ul>
-                                    <li>User will be able to select the <strong>Office Type </strong>from the dropdown which will automatically reflect from Office Type Master.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Office Name (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Office Name </strong>from dropdown. which will automatically reflect from Office Master </li>
-                                </ul>
-                            </li>
-                            <li><strong>Employee Name (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Employee Name </strong>from dropdown. employee name will be reflected in the Employee Registration Master.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Policy Type (Dropdown)</strong>
-                                <ul>
-                                    <li>>List of Policy Type will automatically reflect from Earnings and Deduction master. </li>
-                                </ul>
-                            </li>
-                            <li><strong>Policy No. (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Policy No. </strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Policy Name (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Policy Name</strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Premium Amount (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to Enter <strong>Premium Amount</strong>in textbox.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Premium Frequency (Dropdown)</strong>
-                                <ul>
-                                    <li>User will be able to select <strong>Premium Frequency </strong>from dropdown. Data populated from <strong>Master </strong>. </li>
-                                </ul>
-                            </li>
-
-                            <li><strong>Policy Start Date (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to select Policy Start Date, the field should be in a calendar format</li>
-                                </ul>
-                            </li>
-                            <li><strong>Policy End Date (Textbox)</strong>
-                                <ul>
-                                    <li>User will be able to select Policy End Date, the field should be in a calendar format</li>
-                                </ul>
-                            </li>
-                            <li><strong>Save (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on save button.</li>
-                                    <li>Click on save button form all mandatory filed should be validate in process.</li>
-                                    <li>After all fields Validate the Confirmation popup should be open with Message Format ("Are you sure?" "Do you want to save this record?").</li>
-                                    <li>If click on Yes – record will be saved and message will appear on the screen – Message ("Success!" "Record Saved Successfully!")..</li>
-                                    <li>If click on NO the record will not be saved and will return to the same page.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Clear (Button)</strong>
-                                <ul>
-                                    <li>User should be able to click on Clear button.</li>
-                                    <li>After clicking on Clear button all the fields should be Clear or reload the same page</li>
-                                </ul>
-                            </li>
-                            <li><strong>Excel (Button)</strong>
-                                <ul>
-                                    <li>Excel button should be visible and user should be able to click.</li>
-                                    <li>After clicking on the Excel button, showing the data will be export to Excel.</li>
-                                </ul>
-                            </li>
-                            <li><strong>PDF (Button)</strong>
-                                <ul>
-                                    <li>PDF button should be visible and user should be able to click.</li>
-                                    <li>After clicking on PDF button grid view data export in PDF.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Action Gridview(Edit)</strong>
-                                <ul>
-                                    <li>Click The Edit Icon - A Pop Up Message Will Open -Popup Message - Do You Want To Update The details?</li>
-                                    <li>On Choose Yes Button option, The Form Will Come In The Editable format.</li>
-                                    <li>After Editing The details in the from,  On Click The Update Button,( A Pop Up Message Will Open. )- Message- Do You Want To Update details.</li>
-                                    <li>Choose YES - Popup Message - Data Updated Successfully.</li>
-                                    <li>Choose No - Data will be not Update.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Action Gridview(Delete)</strong>
-                                <ul>
-                                    <li>If the user wants to delete a record – the user can click on the delete icon. Will permanently delete the record.</li>
-                                    <li>A Pop Up Message Will Be Shown - Popup Message - Do You Want To Delete The record ?</li>
-                                    <li>On Doing YES,</li>
-                                    <li>The record Will Be Deleted And The Popup Message Will Be Shown</li>
-                                    <li>Popup Message - Record Deleted Successfully.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </fieldset>
-            <!-- End Description -->
         </div>
     </div>
 </asp:Content>

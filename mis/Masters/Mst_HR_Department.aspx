@@ -88,7 +88,7 @@
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-                </div>++
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Appointed Department Details / नियुक्ति विभाग विवरण</legend>
