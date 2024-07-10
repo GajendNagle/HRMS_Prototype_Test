@@ -242,7 +242,7 @@
                                     <td>District Office</td>
                                     <td>JD  Office</td>
                                     <td>Shyamji</td>
-                                    <td>LIC</td> 
+                                    <td>LIC</td>
                                     <td>7458966</td>
                                     <td>Jeevan Umang</td>
                                     <td>6000</td>
