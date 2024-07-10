@@ -17,6 +17,120 @@
                 top: 0;
                 background-color: #fff;
             }
+
+
+        #idSpouseOfcAdd {
+            display: none;
+        }
+
+        #idCertificateDate {
+            display: none;
+        }
+
+        #idSpouseName {
+            display: none;
+        }
+
+        #idSpouseDept {
+            display: none;
+        }
+
+        #idSpouseGovEmp {
+            display: none;
+        }
+
+        #idSpouseName {
+            display: none;
+        }
+
+
+
+        #handipaceType {
+            display: none;
+        }
+
+        #HandicapePercentage {
+            display: none;
+        }
+
+        .card-border-primary {
+            border-color: var(--vz-primary) !important;
+        }
+
+        #idDeptName {
+            display: none;
+        }
+
+        #idCurDeptName {
+            display: none;
+        }
+
+        #LevelF {
+            display: none;
+        }
+
+        #BasicPayF {
+            display: none;
+        }
+
+        #GradePayF {
+            display: none;
+        }
+
+        #PayScaleF {
+            display: none;
+        }
+
+        #txtBasicPayF {
+            display: none;
+        }
+
+        #LevelC {
+            display: none;
+        }
+
+        #BasicPayC {
+            display: none;
+        }
+
+        #PayScaleC {
+            display: none;
+        }
+
+        #GradePayC {
+            display: none;
+        }
+
+        #txtBasicPayC {
+            display: none;
+        }
+
+        #Div_officetype1 {
+        }
+
+        #DivCriticalIllness {
+            display: none;
+        }
+
+        #P1 {
+            display: none;
+        }
+
+        #P2 {
+            display: none;
+        }
+
+        .card-body {
+            margin-top: 1rem;
+        }
+
+        #P3 {
+            display: none;
+        }
+
+        #Una {
+            display: none;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -128,7 +242,7 @@
                                         <td>23320200505 - NEW BEST CONVENT SCHOOL</td>
 
                                         <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
+                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr>
@@ -141,7 +255,7 @@
                                         <td>23430601401 - Govt. PS (Boys) Paradsinga</td>
                                         <td>23320200601 - SRASHTI ENGLISH SCHOOL</td>
                                         <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
+                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr>
@@ -154,7 +268,7 @@
                                         <td>23430601401 - Govt. PS Alesur</td>
                                         <td>23350100107 - NATIONAL PUBLIC ENGLISH SCHOOL </td>
                                         <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
+                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr>
@@ -167,7 +281,7 @@
                                         <td>23430603004 - Govt. PS (Boys) Berdi</td>
                                         <td>23320200504 - SRASHTI ENGLISH SCHOOL</td>
                                         <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a></td>
+                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
                                         <td>Pending</td>
                                     </tr>
                                 </table>
@@ -376,9 +490,7 @@
                                 <fieldset>
                                     <legend id="l11">Address / पता</legend>
                                     <fieldset class="mt-5">
-
                                         <legend id="l3">Present Address / वर्तमान पता</legend>
-
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
 
@@ -642,14 +754,14 @@
                                                 <td>Deputy Secretary</td>
                                             </tr>
                                             <tr>
-                                                <th>First Appointment Division :</th>
+                                                <th>Current Appointment Division :</th>
                                                 <td>Narmadapuram</td>
-                                                <th>First Appointment District :
+                                                <th>Current Appointment District :
                                                 </th>
                                                 <td>Sehore</td>
                                             </tr>
                                             <tr>
-                                                <th>First Appointment Block :</th>
+                                                <th>Current Appointment Block :</th>
                                                 <td>Ashta</td>
                                                 <th>DDO / Sankul :
                                                 </th>
@@ -665,15 +777,15 @@
                                             </tr>
                                             <tr>
 
-                                                <th>First Appointment Order No :
+                                                <th>Current Appointment Order No :
                                                 </th>
                                                 <td>9840</td>
-                                                <th>First Appointment Order Date :</th>
+                                                <th>Current Appointment Order Date :</th>
                                                 <td>09/10/2020</td>
                                             </tr>
                                             <tr>
 
-                                                <th>First Appointment Department :
+                                                <th>Current Appointment Department :
                                                 </th>
                                                 <td>DPI</td>
                                                 <th>Employee’s Designation Type :</th>
@@ -681,10 +793,10 @@
                                             </tr>
                                             <tr>
 
-                                                <th>First Appointment Designation :
+                                                <th>Current Appointment Designation :
                                                 </th>
                                                 <td>Joint Director</td>
-                                                <th>Appointment Joining Date :</th>
+                                                <th>Current Appointment Joining Date :</th>
                                                 <td>01/11/2021</td>
                                             </tr>
                                             <tr>
@@ -821,12 +933,14 @@
                                         <table class="table table-bordered ">
                                             <thead>
                                                 <tr>
-                                                  <td class="text-center">
-                                                         <label style="font-weight: bold;font-size: large;">Sr. No.</label>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">Sr. No.</label>
                                                     </td>
-                                                    <td>    <label style="font-weight: bold;font-size: large;">Document Name  </label>
+                                                    <td>
+                                                        <label style="font-weight: bold; font-size: large;">Document Name  </label>
                                                     </td>
-                                                   <td class="text-center">   <label style="font-weight: bold;font-size: large;">View Document</label>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">View Document</label>
                                                     </td>
                                                 </tr>
                                             </thead>
@@ -845,10 +959,10 @@
 
                                                     </td>
                                                 </tr>
-                                                <tr >
+                                                <tr>
                                                     <td class="text-center">2</td>
                                                     <td>
-                                                        <label >
+                                                        <label>
                                                             Birth Certificate
                                                                 <br />
                                                             जन्म प्रमाण पत्र  :
@@ -881,7 +995,7 @@
                                                             विकलांग प्रमाण पत्र  :
                                                         </label>
                                                     </td>
-                                                <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
 
                                                     </td>
@@ -894,13 +1008,13 @@
                                                             गंभीर बीमारी प्रमाणपत्र  :
                                                         </label>
                                                     </td>
-                                                   <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
 
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                <td class="text-center">4</td>
+                                                    <td class="text-center">4</td>
                                                     <td>
                                                         <label>
                                                             Present Posting Order
@@ -908,20 +1022,20 @@
                                                             वर्तमान पोस्टिंग ऑर्डर  :
                                                         </label>
                                                     </td>
-                                                   <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg4"></i></button>
 
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                   <td class="text-center">7</td>
+                                                    <td class="text-center">7</td>
                                                     <td>
                                                         <label>
                                                             Married Certificate<br />
                                                             विवाहित प्रमाणपत्र  :
                                                         </label>
                                                     </td>
-<td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg8"></i></button>
 
                                                     </td>
@@ -937,35 +1051,38 @@
 
                                         <table class="table table-bordered">
                                             <thead>
-                                                <tr >
-                                 <td class="text-center">   <label style="font-weight: bold;font-size: large;">Sr. No.</label>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">Sr. No.</label>
                                                     </td>
-                                                    <td>    <label style="font-weight: bold;font-size: large;">Document Name  </label>
+                                                    <td>
+                                                        <label style="font-weight: bold; font-size: large;">Document Name  </label>
                                                     </td>
-                                                   <td class="text-center">   <label style="font-weight: bold;font-size: large;">View Document</label>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">View Document</label>
                                                     </td>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                   <td class="text-center">1</td>
+                                                    <td class="text-center">1</td>
                                                     <td>
                                                         <label>
                                                             10th Marksheet<br />
                                                             10वीं की मार्कशीट  :</label></td>
-                                                  <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg9"></i></button>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                   <td class="text-center">2</td>
+                                                    <td class="text-center">2</td>
                                                     <td>
                                                         <label>
                                                             12th Marksheet<br />
                                                             12वीं की मार्कशीट  :
                                                         </label>
                                                     </td>
-                                                   <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg10"></i></button>
 
                                                     </td>
@@ -978,20 +1095,20 @@
                                                             यूजी सर्टिफिकेट  :
                                                         </label>
                                                     </td>
-                                                  <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
 
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                   <td class="text-center">4</td>
+                                                    <td class="text-center">4</td>
                                                     <td>
                                                         <label>
                                                             Upload PG Certificate<br />
                                                             पीजी प्रमाणपत्र अपलोड करें :
                                                         </label>
                                                     </td>
-                                                  <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
 
                                                     </td>
@@ -1004,25 +1121,26 @@
                                                             डिप्लोमा प्रमाणपत्र  :
                                                         </label>
                                                     </td>
-                                                  <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
 
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                <td class="text-center">6</td>
+                                                    <td class="text-center">6</td>
                                                     <td>
                                                         <label>
                                                             Other Certificate<br />
                                                             अन्य प्रमाणपत्र :
                                                         </label>
                                                     </td>
-                                                <td class="text-center">
+                                                    <td class="text-center">
                                                         <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg11"></i></button>
                                                     </td>
                                                 </tr>
-                                               </tbody></table>
-                                        </div>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </fieldset>
                             </div>
 
@@ -1033,14 +1151,1852 @@
                     </div>
 
                 </div>
-                <!-- /.modal-content -->
+
+
+                <div class="modal bs-example-modal-lg" tabindex="-1" role="dialog" id="firsttimeModel2" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" id="myDIV1">
+                                <h4 class="modal-title" id="myLargeModalLabel2">Employee Update Profile Details / कर्मचारी अपडेट प्रोफ़ाइल विवरण</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <fieldset>
+                                    <legend>Personal Information / व्यक्तिगत जानकारी</legend>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+
+                                                    <th>First Name :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" id="txtMessage" placeholder="Enter First Name" value="Rohan" /></td>
+                                                    <th>Middle Name</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Last Name" value="Kumar" /></td>
+                                                    <th>Last Name :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Father/Husband Name" value="Sharma" /></td>
+
+                                                </tr>
+                                                <tr>
+
+
+                                                    <th>Father's / Husband Name:</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Father/Husband Name" value="Akhilesh Sharma" /></td>
+                                                    <th>Date of Birth :</th>
+                                                    <td>
+                                                        <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" value="1992-04-05" /></td>
+                                                    <th>Age :</th>
+                                                    <td>
+                                                        <input name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Employee Age" value="32" /></td>
+                                                </tr>
+                                                <tr>
+
+                                                    <th>Gender :</th>
+                                                    <td>
+                                                        <select class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="--Select--" selected="selected">Male</option>
+                                                            <option value="--Select--">Female</option>
+                                                            <option value="--Select--">Other</option>
+                                                        </select></td>
+                                                    <th>Height :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Height IN (C.M.)" value="5'7"/></td>
+                                                    <th>Caste :</th>
+                                                    <td>
+                                                        <select class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="--Select--" selected="selected">GENERAL</option>
+                                                            <option value="--Select--">OBC</option>
+                                                            <option value="--Select--">SC</option>
+                                                            <option value="--Select--">ST</option>
+                                                        </select></td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <th>Sub Caste :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Sub Caste" value="Purohit "/></td>
+                                                    <th>Religion :</th>
+                                                    <td>
+                                                        <select class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="--Select--">Hindu</option>
+                                                            <option value="--Select--">Muslim</option>
+                                                            <option value="--Select--" selected="selected">Sikh</option>
+                                                            <option value="--Select--">Isai</option>
+                                                        </select></td>
+                                                    <th>Identification Mark :
+                                                    </th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Identification Mark" value="moles in left hand" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Blood Group</th>
+                                                    <td>
+                                                        <select class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="--Select--">A+</option>
+                                                            <option value="--Select--" selected="selected">A-</option>
+                                                            <option value="--Select--">B+</option>
+                                                            <option value="--Select--">B-</option>
+                                                            <option value="--Select--">O+</option>
+                                                            <option value="--Select--">O-</option>
+                                                        </select></td>
+
+                                                    <th>Critical Illness :</th>
+                                                    <td>
+                                                        <select class="form-control select2" onchange="ShowHideCriticalIllness()" id="ddlCriticalIllness">
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No" selected="selected">No</option>
+                                                        </select></td>
+                                                    <th>Type of Critical Illness</th>
+                                                    <td>
+                                                        <select class="form-control select2" disabled="disabled" id="ddlCritical">
+                                                            <option>--Select--</option>
+                                                            <option value="Cancer/ कैंसर">Cancer/ कैंसर</option>
+                                                            <option value="Brain Tumor/ मस्तिष्क का ट्यूमर">Brain Tumor/ मस्तिष्क का ट्यूमर</option>
+                                                            <option value="Kidney Transplant/ किडनी प्रत्यारोपण">Kidney Transplant/ किडनी प्रत्यारोपण</option>
+                                                            <option value="Open Heart Bypass Surgery /ओपन हार्ट बाईपास सर्जरी">Open Heart Bypass Surgery /ओपन हार्ट बाईपास सर्जरी</option>
+                                                            <option value="Parylasis / पक्षाघात">Parylasis / पक्षाघात</option>
+                                                        </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Handicapped (PWD):</th>
+                                                    <td>
+                                                        <select onchange="ShowHideHandicape()" id="ddlHandicape" class="form-control select2">
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No" selected="selected">No</option>
+                                                        </select></td>
+
+                                                    <th>Handicapped Type</th>
+                                                    <td>
+                                                        <select id="ddlHandicappedType" class="form-control select2" disabled="disabled">
+                                                            <option>--Select--</option>
+                                                            <option value="Cancer/ कैंसर">Blindnes/अंधापन</option>
+                                                            <option value="Low Vision/कम दृष्टि">Low Vision/कम दृष्टि</option>
+                                                            <option value="Hearing Impaiment/ श्रवण हानि">Hearing Impaiment/ श्रवण हानि</option>
+                                                            <option value="Speech and Language / वाणी और भाषा">Speech  Language / वाणी और भाषा</option>
+                                                            <option value="Loco Moto Disability / लोको मोटो विकलांगता">Loco Moto Disability / लोको मोटो विकलांगता</option>
+                                                            <option value="Mental Illness /मानसिक बिमारी">Mental Illness /मानसिक बिमारी</option>
+                                                            <option value="Specipic Illness /विशिष्ट बीमारी">Specipic Illness /विशिष्ट बीमारी</option>
+                                                            <option value="Intellectual Disability / बौद्धिक विकलांगता">Intellectual Disability / बौद्धिक विकलांगता</option>
+                                                            <option value="Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति">Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति</option>
+                                                            <option value="Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर">Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर</option>
+                                                            <option value="Multiple Disability / एकाधिक विकलांगता">Multiple Disability / एकाधिक विकलांगता</option>
+                                                            <option value="Cerebral Palsy / मस्तिष्क पक्षाघात">Cerebral Palsy / मस्तिष्क पक्षाघात</option>
+                                                            <option value="Dwarfism / बौनापन">Dwarfism / बौनापन</option>
+                                                            <option value="Muscular Dystrophy">Muscular Dystrophy</option>
+                                                            <option value="Chronic Disease / मांसपेशीय दुर्विकास">Chronic Disease / मांसपेशीय दुर्विकास</option>
+                                                            <option value="Multiple Sclerosis / मल्टीपल स्क्लेरोसिस">Multiple Sclerosis / मल्टीपल स्क्लेरोसिस</option>
+                                                            <option value="Thalassemia / थैलेसीमिया">Thalassemia / थैलेसीमिया</option>
+                                                            <option value="Hemophilia / हीमोफीलिया">Hemophilia / हीमोफीलिया</option>
+                                                            <option value="Sickle Cell Disease / सिकल सेल रोग">Sickle Cell Disease / सिकल सेल रोग</option>
+                                                            <option value="Acid Attack Victim / एसिड अटैक पीड़िता">Acid Attack Victim / एसिड अटैक पीड़िता</option>
+                                                            <option value="Parkinson's Disease / पार्किंसंस रोग">Parkinson's Disease / पार्किंसंस रोग</option>
+
+                                                        </select></td>
+                                                    <th>Handicapped Percentage</th>
+                                                    <td>
+                                                        <select class="form-control select2" id="HandicapePer" disabled="disabled">
+                                                            <option>--Select--</option>
+                                                            <option value="40 to 50">40 to 50</option>
+                                                            <option value="50 to 60">50 to 60</option>
+                                                            <option value="60 to 70">60 to 70</option>
+                                                            <option value="70 to 80">70 to 80</option>
+                                                            <option value="80 to 90">80 to 90</option>
+                                                            <option value="90 to 100">90 to 100</option>
+                                                        </select></td>
+                                                </tr>
+                                                <tr>
+
+                                                    <th>Pan No. :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter PAN No." value="CPVE67878" /></td>
+                                                    <th>Aadhaar No. :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Aadhaar No." value="332367095476" /></td>
+                                                    <th>Samagra ID No :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samagra ID No." value="912387906" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Employee Treasury Code :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Treasury Code" value="98565" /></td>
+                                                    <th>Employee PRAN Code :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Pran Code" value="IOR45" /></td>
+                                                    <th>Mobile No. :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Mobile No." value="7834678709" /></td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <th>Email Id :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" value="rohan@gmail.com" /></td>
+                                                    <th>Employee Roll No. :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Roll No." value="21547" /></td>
+                                                    <th>Employee Rank :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Rank" value="3rd" /></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Hobbies :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Hobbies" value="Reading Books" /></td>
+                                                    <td colspan="4"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Nominee Details / नामांकित व्यक्ति का विवरण</legend>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>Nominee Name</th>
+                                                <th>Relationship with Nominee</th>
+                                                <th>Nominee Percentage</th>
+                                                <th></th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <input name="ename" type="text" id="txtNomineeName" class="form-control" autocomplete="off" placeholder="Enter Nominee Name" value="Atul Sharma" /></td>
+
+                                                <td>
+                                                    <input name="ename" type="text" id="txtNomineeRelation" class="form-control" autocomplete="off" placeholder="Enter Relationship with Nominee" value="Brother" /></td>
+
+                                                <td>
+                                                    <input name="ename" type="text" id="txtNomineePercentage" class="form-control" autocomplete="off" placeholder="Nominee Percentage" value="50%" /></td>
+
+                                                <td>
+                                                    <input type="button" id="btnNomineeadd" class="btn btn-outline-success w-lg btn-border" value="ADD" onclick="AddNominee();" /></td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="tblNominee" style="display: none;">
+                                                <tr>
+                                                    <th>Sr. No.
+                <br />
+                                                        सरल क्र.</th>
+                                                    <th>Nominee Name
+                <br />
+                                                        नामांकित व्यक्ति का नाम</th>
+                                                    <th>Nominee Relation
+                <br />
+                                                        नामांकित के साथ संबंध</th>
+                                                    <th>Nominee Percentage
+                <br />
+                                                        नामांकित व्यक्ति प्रतिशत</th>
+                                                    <th>Action
+                <br />
+                                                        कार्यवाहीं
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Address / पता</legend>
+                                    <fieldset class="mt-5">
+
+                                        <legend>Present Address / वर्तमान पता</legend>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+
+                                                <tr>
+                                                    <th>State :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Rajasthan">Rajasthan</option>
+                                                            <option value="Maharashtra">Maharashtra</option>
+                                                            <option value="Nagaland">Nagaland</option>
+                                                            <option value="Nashik">Nashik</option>
+                                                            <option value="West">West</option>
+                                                            <option value="Bengal">Bengal</option>
+                                                            <option value="Telangana">Telangana</option>
+                                                            <option value="Assam">Assam</option>
+                                                            <option value="Tripura">Tripura</option>
+                                                            <option value="Madhya" selected="selected">Madhya</option>
+                                                            <option value="Pradesh">Pradesh</option>
+                                                            <option value="Tamil">Tamil</option>
+                                                            <option value="Nadu">Nadu</option>
+                                                            <option value="Gujarat">Gujarat</option>
+                                                            <option value="Sikkim">Sikkim</option>
+                                                            <option value="Andhra">Andhra</option>
+                                                            <option value="Uttar">Uttar</option>
+                                                            <option value="Punjab">Punjab</option>
+                                                            <option value="Karnataka">Karnataka</option>
+                                                            <option value="Meghalaya">Meghalaya</option>
+                                                            <option value="Uttarakhand">Uttarakhand</option>
+                                                            <option value="Goa">Goa</option>
+                                                            <option value="Haryana">Haryana</option>
+                                                            <option value="Mizoram">Mizoram</option>
+                                                            <option value="Arunachal">Arunachal</option>
+                                                            <option value="Pradesh">Pradesh</option>
+                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                            <option value="Bihar">Bihar</option>
+                                                            <option value="Himachal">Himachal</option>
+                                                            <option value="Kerala">Kerala</option>
+                                                            <option value="Jharkhand">Jharkhand</option>
+                                                            <option value="Orissa">Orissa</option>
+                                                        </select></td>
+                                                    <th>Division :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Bhopal</option>
+                                                            <option value="Gwalior" selected="selected">Gwalior</option>
+                                                            <option value="Narmadapuram">Narmadapuram</option>
+                                                            <option value="Indore">Indore</option>
+                                                            <option value="Jabalpur">Jabalpur</option>
+                                                            <option value="Rewa">Rewa</option>
+                                                            <option value="Sagar">Sagar</option>
+                                                            <option value="Shahdol">Shahdol</option>
+                                                            <option value="Ujjain">Ujjain</option>
+                                                        </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>District :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Bhopal</option>
+                                                            <option value="Raisen">Raisen</option>
+                                                            <option value="Rajgarh" selected="selected">Rajgarh</option>
+                                                            <option value="Sehore">Sehore</option>
+                                                            <option value="Vidisha">Vidisha</option>
+                                                            <option value="Ashoknagar">Ashoknagar</option>
+                                                            <option value="Shivpuri">Shivpuri</option>
+                                                            <option value="Datia">Datia</option>
+                                                            <option value="Guna">Guna</option>
+                                                            <option value="Gwalior">Gwalior</option>
+                                                            <option value="Harda">Harda</option>
+                                                            <option value="Hoshangabad">Hoshangabad</option>
+                                                            <option value="Betul">Betul</option>
+                                                            <option value="Morena">Morena</option>
+                                                            <option value="Sheopur">Sheopur</option>
+                                                            <option value="Bhind">Bhind</option>
+                                                            <option value="Barwani">Barwani</option>
+                                                            <option value="Burhanpur">Burhanpur</option>
+                                                            <option value="Dhar">Dhar</option>
+                                                            <option value="Indore">Indore</option>
+                                                            <option value="Jhabua">Jhabua</option>
+                                                            <option value="Khandwa">Khandwa</option>
+                                                            <option value="Khargone">Khargone</option>
+                                                            <option value="Alirajpur">Alirajpur</option>
+                                                            <option value="Balaghat">Balaghat</option>
+                                                            <option value="Chhindwara">Chhindwara</option>
+                                                            <option value="Jabalpur">Jabalpur</option>
+                                                            <option value="Katni">Katni</option>
+                                                            <option value="Mandla">Mandla</option>
+                                                            <option value="Narsinghpur">Narsinghpur</option>
+                                                            <option value="Seoni">Seoni</option>
+                                                            <option value="Rewa">Rewa</option>
+                                                            <option value="Satna">Satna</option>
+                                                            <option value="Sidhi">Sidhi</option>
+                                                            <option value="Singroli">Singroli</option>
+                                                            <option value="Chhatarpur">Chhatarpur</option>
+                                                            <option value="Damoh">Damoh</option>
+                                                            <option value="Panna">Panna</option>
+                                                            <option value="Sagar">Sagar</option>
+                                                            <option value="Tikamgarh">Tikamgarh</option>
+                                                            <option value="Shahdol">Shahdol</option>
+                                                            <option value="Umaria">Umaria</option>
+                                                            <option value="Dindori">Dindori</option>
+                                                            <option value="Anuppur">Anuppur</option>
+                                                            <option value="Dewas">Dewas</option>
+                                                            <option value="Mandsaur">Mandsaur</option>
+                                                            <option value="Neemuch">Neemuch</option>
+                                                            <option value="Ratlam">Ratlam</option>
+                                                            <option value="Shajapur">Shajapur</option>
+                                                            <option value="Ujjain">Ujjain</option>
+                                                        </select></td>
+                                                    <th>Block :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Huzur</option>
+                                                            <option value="Raisen">Fanda</option>
+                                                            <option value="Govindapura" selected="selected">Govindapura</option>
+                                                        </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Pincode :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" value="459843" /></td>
+                                                    <th>Address line 1 :
+                                                    </th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" value="Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Address line 2 :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" value="Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678" /></td>
+                                                    <td colspan="2"></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend>Permanent Address / स्थायी पता</legend>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <th>State :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl00" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Rajasthan">Rajasthan</option>
+                                                            <option value="Maharashtra" selected="selected">Maharashtra</option>
+                                                            <option value="Nagaland">Nagaland</option>
+                                                            <option value="Nashik">Nashik</option>
+                                                            <option value="West">West</option>
+                                                            <option value="Bengal">Bengal</option>
+                                                            <option value="Telangana">Telangana</option>
+                                                            <option value="Assam">Assam</option>
+                                                            <option value="Tripura">Tripura</option>
+                                                            <option value="Madhya">Madhya</option>
+                                                            <option value="Pradesh">Pradesh</option>
+                                                            <option value="Tamil">Tamil</option>
+                                                            <option value="Nadu">Nadu</option>
+                                                            <option value="Gujarat">Gujarat</option>
+                                                            <option value="Sikkim">Sikkim</option>
+                                                            <option value="Andhra">Andhra</option>
+                                                            <option value="Uttar">Uttar</option>
+                                                            <option value="Punjab">Punjab</option>
+                                                            <option value="Karnataka">Karnataka</option>
+                                                            <option value="Meghalaya">Meghalaya</option>
+                                                            <option value="Uttarakhand">Uttarakhand</option>
+                                                            <option value="Goa">Goa</option>
+                                                            <option value="Haryana">Haryana</option>
+                                                            <option value="Mizoram">Mizoram</option>
+                                                            <option value="Arunachal">Arunachal</option>
+                                                            <option value="Pradesh">Pradesh</option>
+                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                            <option value="Bihar">Bihar</option>
+                                                            <option value="Himachal">Himachal</option>
+                                                            <option value="Kerala">Kerala</option>
+                                                            <option value="Jharkhand">Jharkhand</option>
+                                                            <option value="Orissa">Orissa</option>
+                                                        </select></td>
+                                                    <th>Division :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal" selected="selected">Bhopal</option>
+                                                            <option value="Gwalior">Gwalior</option>
+                                                            <option value="Narmadapuram">Narmadapuram</option>
+                                                            <option value="Indore">Indore</option>
+                                                            <option value="Jabalpur">Jabalpur</option>
+                                                            <option value="Rewa">Rewa</option>
+                                                            <option value="Sagar">Sagar</option>
+                                                            <option value="Shahdol">Shahdol</option>
+                                                            <option value="Ujjain">Ujjain</option>
+                                                        </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>District :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Bhopal</option>
+                                                            <option value="Raisen">Raisen</option>
+                                                            <option value="Rajgarh">Rajgarh</option>
+                                                            <option value="Sehore" selected="selected">Sehore</option>
+                                                            <option value="Vidisha">Vidisha</option>
+                                                            <option value="Ashoknagar">Ashoknagar</option>
+                                                            <option value="Shivpuri">Shivpuri</option>
+                                                            <option value="Datia">Datia</option>
+                                                            <option value="Guna">Guna</option>
+                                                            <option value="Gwalior">Gwalior</option>
+                                                            <option value="Harda">Harda</option>
+                                                            <option value="Hoshangabad">Hoshangabad</option>
+                                                            <option value="Betul">Betul</option>
+                                                            <option value="Morena">Morena</option>
+                                                            <option value="Sheopur">Sheopur</option>
+                                                            <option value="Bhind">Bhind</option>
+                                                            <option value="Barwani">Barwani</option>
+                                                            <option value="Burhanpur">Burhanpur</option>
+                                                            <option value="Dhar">Dhar</option>
+                                                            <option value="Indore">Indore</option>
+                                                            <option value="Jhabua">Jhabua</option>
+                                                            <option value="Khandwa">Khandwa</option>
+                                                            <option value="Khargone">Khargone</option>
+                                                            <option value="Alirajpur">Alirajpur</option>
+                                                            <option value="Balaghat">Balaghat</option>
+                                                            <option value="Chhindwara">Chhindwara</option>
+                                                            <option value="Jabalpur">Jabalpur</option>
+                                                            <option value="Katni">Katni</option>
+                                                            <option value="Mandla">Mandla</option>
+                                                            <option value="Narsinghpur">Narsinghpur</option>
+                                                            <option value="Seoni">Seoni</option>
+                                                            <option value="Rewa">Rewa</option>
+                                                            <option value="Satna">Satna</option>
+                                                            <option value="Sidhi">Sidhi</option>
+                                                            <option value="Singroli">Singroli</option>
+                                                            <option value="Chhatarpur">Chhatarpur</option>
+                                                            <option value="Damoh">Damoh</option>
+                                                            <option value="Panna">Panna</option>
+                                                            <option value="Sagar">Sagar</option>
+                                                            <option value="Tikamgarh">Tikamgarh</option>
+                                                            <option value="Shahdol">Shahdol</option>
+                                                            <option value="Umaria">Umaria</option>
+                                                            <option value="Dindori">Dindori</option>
+                                                            <option value="Anuppur">Anuppur</option>
+                                                            <option value="Dewas">Dewas</option>
+                                                            <option value="Mandsaur">Mandsaur</option>
+                                                            <option value="Neemuch">Neemuch</option>
+                                                            <option value="Ratlam">Ratlam</option>
+                                                            <option value="Shajapur">Shajapur</option>
+                                                            <option value="Ujjain">Ujjain</option>
+                                                        </select></td>
+                                                    <th>Block :</th>
+                                                    <td>
+                                                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                            <option value="--Select--">--Select--</option>
+                                                            <option value="Bhopal">Huzur</option>
+                                                            <option value="Raisen" selected="selected">Fanda</option>
+                                                            <option value="Govindapura">Govindapura</option>
+                                                        </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Pincode :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Pincode" value="456723" /></td>
+                                                    <th>Address line 1 :
+                                                    </th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 1" value="Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Address line 2 :</th>
+                                                    <td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address line 2" value="Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678" /></td>
+                                                    <td colspan="2"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend>Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <th>Married Status :</th>
+                                                        <td>
+                                                            <select id="ddlMaarriedStatus" onchange="ShowHideMarried()" class="form-control select2">
+                                                                <option value="--Select--">--Select--</option>
+                                                                <option value="Yes" selected="selected">Yes</option>
+                                                                <option value="No">No</option>
+                                                            </select></td>
+
+                                                        <th>Spouse Name</th>
+                                                        <td>
+                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Name" value="Soniya Sharma" /></td>
+
+                                                        <th>Is Spouse Government Employee</th>
+                                                        <td>
+                                                            <select id="ddlSpouseGovEmp" onchange="ShowHideGovEmp()" class="form-control select2">
+                                                                <option value="--Select--">--Select--</option>
+                                                                <option value="Yes">Yes</option>
+                                                                <option value="No" selected="selected">No</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="GovEmp" style="display: none">
+                                                        <th>Spouse Department Name</th>
+                                                        <td>
+                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Spouse Department Name" /></td>
+                                                        <th>Office Address</th>
+                                                        <td>
+                                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Office Address" /></td>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend>Education Qualification / शैक्षणिक योग्यता</legend>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th>Qualification :</th>
+                                                <td>
+                                                    <select id="Education" class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="BALLB">BALLB</option>
+                                                        <option value="BachelorOfArts">Bachelor of Arts</option>
+                                                        <option value="BachelorOfCommerce">Bachelor of Commerce</option>
+                                                        <option value="Architecture">Architecture</option>
+                                                        <option value="BCA" selected="selected">BCA</option>
+                                                        <option value="ComputerScience">Computer Science</option>
+                                                        <option value="Education">Education</option>
+                                                        <option value="BBA">BBA</option>
+                                                        <option value="MBBS">MBBS</option>
+                                                        <option value="BachelorOfScience">Bachelor of Science</option>
+                                                        <option value="BDesInDesign">BDes in Design</option>
+                                                        <option value="Biotechnology">Biotechnology</option>
+                                                        <option value="BScIT">BSc IT</option>
+                                                        <option value="Engineering">Engineering</option>
+                                                        <option value="Humanities">Humanities</option>
+                                                        <option value="Management">Management</option>
+                                                        <option value="Arts">Arts</option>
+                                                        <option value="Aviation">Aviation</option>
+                                                        <option value="Bsc">Bsc</option>
+                                                        <option value="ChemicalEngineering">Chemical Engineering</option>
+                                                        <option value="CivilEngineering">Civil Engineering</option>
+                                                        <option value="Economics">Economics</option>
+                                                        <option value="ElectricalEngineering">Electrical Engineering</option>
+                                                        <option value="FashionDesigning">Fashion designing</option>
+                                                        <option value="MBA">MBA</option>
+                                                        <option value="EducationLaw">Education Law</option>
+                                                        <option value="HospitalAdministration">Hospital Administration</option>
+                                                        <option value="MasterOfScienceBiochemistry">Master of Science Biochemistry</option>
+                                                        <option value="MBAFinance">MBA Finance</option>
+                                                        <option value="MD">MD</option>
+                                                        <option value="MassCommunications">Mass communications</option>
+                                                        <option value="MastersOfPhysician">Masters Of Physician</option>
+                                                        <option value="MCA">MCA</option>
+                                                        <option value="PGDiplomaInEntrepreneurshipDevelopment">PG Diploma in Entrepreneurship Development</option>
+                                                        <option value="ExecutivePGProgramInManagement">Executive PG program in Management</option>
+                                                        <option value="HumanResourceManagement">Human Resource Management</option>
+                                                        <option value="InternationalBusiness">International business</option>
+                                                        <option value="MasterOfArts">Master of Arts</option>
+                                                        <option value="MasterOfDataScience">Master of Data Science</option>
+                                                        <option value="MBABusinessAnalytics">MBA Business Analytics</option>
+                                                    </select></td>
+                                                <th>Subject :
+                                                </th>
+                                                <td>
+                                                    <input id="Subject" value="Computer" name="ename" type="text" class="form-control" placeholder="Enter Subject" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Board / Univercity Name :</th>
+                                                <td>
+                                                    <select id="Board" class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="MP Board" selected="selected">MP Board</option>
+                                                        <option value="CBSC Board">CBSC Board</option>
+                                                        <option value="ICSC Board">ICSC Board</option>
+                                                    </select></td>
+                                                <th>Passing Year :
+                                                </th>
+                                                <td>
+                                                    <input id="PassingYear" name="ename" type="date" class="form-control" autocomplete="off" value="2019-02-05" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Grade / Percentage :</th>
+                                                <td>
+                                                    <input id="Grade" value="78%" name="ename" type="text" class="form-control" placeholder="Enter Grade/Percentage" /></td>
+                                                <td colspan="2">
+                                                    <input type="button" id="btnAdd" class="btn btn-outline-success w-lg btn-border" value="ADD" onclick="AddRow();" /></td>
+                                            </tr>
+
+                                        </table>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="tableAdd" style="display: none">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sr. No. 
+                    <br />
+                                                            सरल क्र.</th>
+                                                        <th>Qualification
+                    <br />
+                                                            योग्यता</th>
+                                                        <th>Subject
+                    <br />
+                                                            विषय</th>
+                                                        <th>Board/University
+                    <br />
+                                                            बोर्ड/यूनिवर्सिटी का नाम</th>
+                                                        <th>Passing Year
+                    <br />
+                                                            उतीर्ण वर्ष</th>
+                                                        <th>Grade/Percentage
+                    <br />
+                                                            क्षेणी (प्रतिशत)</th>
+                                                        <th>Action
+                    <br />
+                                                            कार्यवाहीं</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend>First Appointment Details / प्रथम नियुक्ति विवरण</legend>
+
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>OIS Type :</th>
+                                                <td>
+                                                    <select id="ddlRegistrationType" class="form-control select2">
+                                                        <option value="0">--Select--</option>
+                                                        <option value="2">Office</option>
+                                                        <option value="3" selected="selected">Institute</option>
+                                                        <option value="1">School</option>
+                                                    </select></td>
+                                                <th>Office Type :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="PrincipalSecretary">Principal Secretary</option>
+                                                        <option value="Secretary" selected="selected">Secretary</option>
+                                                        <option value="DeputySecretary">Deputy Secretary</option>
+                                                        <option value="CPI">CPI</option>
+                                                        <option value="CRSK">CRSK</option>
+                                                        <option value="DPI">DPI</option>
+                                                        <option value="Collector">Collector</option>
+                                                        <option value="CEOZP">CEO, ZP</option>
+                                                        <option value="JointDirector">Joint Director</option>
+                                                        <option value="DEO">DEO</option>
+                                                        <option value="DPC">DPC</option>
+                                                        <option value="BEO">BEO</option>
+                                                        <option value="BRC">BRC</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <th>First Appointment Division :</th>
+                                                <td>
+                                                    <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="Bhopal">Bhopal</option>
+                                                        <option value="Gwalior" selected="selected">Gwalior</option>
+                                                        <option value="Narmadapuram">Narmadapuram</option>
+                                                        <option value="Indore">Indore</option>
+                                                        <option value="Jabalpur">Jabalpur</option>
+                                                        <option value="Rewa">Rewa</option>
+                                                        <option value="Sagar">Sagar</option>
+                                                        <option value="Shahdol">Shahdol</option>
+                                                        <option value="Ujjain">Ujjain</option>
+                                                    </select></td>
+                                                <th>First Appointment District :
+                                                </th>
+                                                <td>
+                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="Bhopal">Bhopal</option>
+                                                        <option value="Raisen">Raisen</option>
+                                                        <option value="Rajgarh" selected="selected">Rajgarh</option>
+                                                        <option value="Sehore">Sehore</option>
+                                                        <option value="Vidisha">Vidisha</option>
+                                                        <option value="Ashoknagar">Ashoknagar</option>
+                                                        <option value="Shivpuri">Shivpuri</option>
+                                                        <option value="Datia">Datia</option>
+                                                        <option value="Guna">Guna</option>
+                                                        <option value="Gwalior">Gwalior</option>
+                                                        <option value="Harda">Harda</option>
+                                                        <option value="Hoshangabad">Hoshangabad</option>
+                                                        <option value="Betul">Betul</option>
+                                                        <option value="Morena">Morena</option>
+                                                        <option value="Sheopur">Sheopur</option>
+                                                        <option value="Bhind">Bhind</option>
+                                                        <option value="Barwani">Barwani</option>
+                                                        <option value="Burhanpur">Burhanpur</option>
+                                                        <option value="Dhar">Dhar</option>
+                                                        <option value="Indore">Indore</option>
+                                                        <option value="Jhabua">Jhabua</option>
+                                                        <option value="Khandwa">Khandwa</option>
+                                                        <option value="Khargone">Khargone</option>
+                                                        <option value="Alirajpur">Alirajpur</option>
+                                                        <option value="Balaghat">Balaghat</option>
+                                                        <option value="Chhindwara">Chhindwara</option>
+                                                        <option value="Jabalpur">Jabalpur</option>
+                                                        <option value="Katni">Katni</option>
+                                                        <option value="Mandla">Mandla</option>
+                                                        <option value="Narsinghpur">Narsinghpur</option>
+                                                        <option value="Seoni">Seoni</option>
+                                                        <option value="Rewa">Rewa</option>
+                                                        <option value="Satna">Satna</option>
+                                                        <option value="Sidhi">Sidhi</option>
+                                                        <option value="Singroli">Singroli</option>
+                                                        <option value="Chhatarpur">Chhatarpur</option>
+                                                        <option value="Damoh">Damoh</option>
+                                                        <option value="Panna">Panna</option>
+                                                        <option value="Sagar">Sagar</option>
+                                                        <option value="Tikamgarh">Tikamgarh</option>
+                                                        <option value="Shahdol">Shahdol</option>
+                                                        <option value="Umaria">Umaria</option>
+                                                        <option value="Dindori">Dindori</option>
+                                                        <option value="Anuppur">Anuppur</option>
+                                                        <option value="Dewas">Dewas</option>
+                                                        <option value="Mandsaur">Mandsaur</option>
+                                                        <option value="Neemuch">Neemuch</option>
+                                                        <option value="Ratlam">Ratlam</option>
+                                                        <option value="Shajapur">Shajapur</option>
+                                                        <option value="Ujjain">Ujjain</option>
+
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <th>First Appointment Block :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="Agar">Agar</option>
+                                                        <option value="Barod">Barod</option>
+                                                        <option value="Nalkheda">Nalkheda</option>
+                                                        <option value="Susner">Susner</option>
+                                                        <option value="Alirajpur" selected="selected">Alirajpur</option>
+                                                        <option value="Bhabra">Bhabra</option>
+                                                        <option value="Katthiwara">Katthiwara</option>
+                                                        <option value="Sondwa">Sondwa</option>
+                                                        <option value="Udaygarh">Udaygarh</option>
+                                                        <option value="Jobat">Jobat</option>
+                                                        <option value="Anuppur">Anuppur</option>
+                                                        <option value="Jaithari">Jaithari</option>
+                                                        <option value="Kotma">Kotma</option>
+
+                                                    </select></td>
+                                                <th>DDO / Sankul :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="--Select--">Geetanjali Public School</option>
+                                                        <option value="--Select--" selected="selected">MVM School</option>
+                                                        <option value="--Select--">Uma Vidhaya Niketan HS School</option>
+                                                        <option value="--Select--">Manvendra Public School</option>
+                                                        <option value="--Select--">Rose Marry Public School</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Office/Institute/School Code & Name :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="--Select--">GB Convent School</option>
+                                                        <option value="--Select--">Reem Higher Secondary School</option>
+                                                        <option value="--Select--" selected="selected">Geetanjali Public School</option>
+                                                        <option value="--Select--">Uma Vidhaya Niketan HS School</option>
+                                                        <option value="--Select--">Manvendra Public School</option>
+                                                        <option value="--Select--">Rose Marry Public School</option>
+                                                    </select></td>
+                                                <th>Office/Institute/School Address of first Posting
+                                                   :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address" value="Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Order No :
+                                                </th>
+                                                <td>
+                                                    <input name="ename" type="text" placeholder="Enter Order No." class="form-control" autocomplete="off" value="12689" /></td>
+                                                <th>First Appointment Order Date :</th>
+                                                <td>
+                                                    <input name="ename" type="date" class="form-control" autocomplete="off" value="2021-09-23" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Department :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----">DPI</option>
+                                                        <option value="----" selected="selected">Department of Education</option>
+                                                        <option value="----">Tribal Welfare Department</option>
+                                                        <option value="----">Local Body</option>
+                                                        <option value="----">Other State Govt Managed</option>
+                                                        <option value="----">Other Department</option>
+                                                    </select></td>
+                                                <th>Employee’s Designation Type :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----">Clerical</option>
+                                                        <option value="----">Executive</option>
+                                                        <option value="----" selected="selected">Ministry</option>
+                                                        <option value="----">Teaching</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>First Appointment Designation :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="Commissioner">Commissioner</option>
+                                                        <option value="Director">Director</option>
+                                                        <option value="AdditionalDirector">Additional Director</option>
+                                                        <option value="JointDirector">Joint Director</option>
+                                                        <option value="DeputyDirector">Deputy Director</option>
+                                                        <option value="AsstDirector" selected="selected">Asstt Director</option>
+                                                        <option value="RegionalLibrarian">Regional Librarian</option>
+                                                        <option value="PlanningOfficer">Planning Officer</option>
+                                                        <option value="DirectorELTI">Director (ELTI)</option>
+                                                        <option value="DirectorSISE">Director (SISE)</option>
+                                                        <option value="PrincipalPGBT">Principal (PGBT)</option>
+                                                        <option value="PrincipalDIET">Principal (DIET)</option>
+                                                        <option value="PrincipalHSS">Principal HSS</option>
+                                                        <option value="PrincipalHS">Principal HS</option>
+                                                        <option value="Lecturer">Lecturer</option>
+                                                        <option value="HMMS">HM(MS)</option>
+                                                        <option value="TeacherUDT">Teacher (UDT)</option>
+                                                        <option value="MusicTeacher">Music Teacher</option>
+                                                        <option value="TablaTeacher">Tabla Teacher</option>
+                                                        <option value="CraftTeacher">Craft Teacher</option>
+                                                        <option value="HMPS">HM(PS)</option>
+                                                        <option value="AsstTeacherLDT">Asstt Teacher(LDT)</option>
+                                                        <option value="VaristhaAdhyapak">Varistha Adhyapak</option>
+                                                        <option value="Adhyapak">Adhyapak</option>
+                                                        <option value="SahayakAdhyapak">Sahayak Adhyapak</option>
+                                                        <option value="ShikshaKarmi1">Shiksha Karmi-1</option>
+                                                        <option value="ShikshaKarmi2">Shiksha Karmi-2</option>
+                                                        <option value="ShikshaKarmi3">Shiksha Karmi-3</option>
+                                                        <option value="SamvidaShikshak1">Samvida Shikshak-1</option>
+                                                        <option value="SamvidaShikshak2">Samvida Shikshak-2</option>
+                                                        <option value="SamvidaShikshak3">Samvida Shikshak-3</option>
+                                                    </select></td>
+                                                <th>Appointment Joining Date :</th>
+                                                <td>
+                                                    <input name="ename" type="date" class="form-control" autocomplete="off" value="2018-09-12" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Panal Name :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="SSS-1">SSS-1</option>
+                                                        <option value="SSS-2">SSS-2</option>
+                                                        <option value="SSS-3">SSS-3</option>
+                                                        <option value="PR-HSS" selected="selected">PR-HSS</option>
+                                                        <option value="PR-HS">PR-HS</option>
+                                                        <option value="HM-MS">HM-MS</option>
+                                                        <option value="HM-PS">HM-PS</option>
+                                                    </select></td>
+                                                <th>Subject :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="--Select--">English</option>
+                                                        <option value="--Select--">Hindi</option>
+                                                        <option value="--Select--" selected="selected">Science</option>
+                                                        <option value="--Select--">Maths</option>
+                                                        <option value="--Select--">Chemistry</option>
+                                                        <option value="--Select--">Physics</option>
+                                                        <option value="--Select--">Bio</option>
+                                                        <option value="--Select--">Sanskrit</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Samvilian Order No. :
+                                                </th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" value="YU3457" /></td>
+                                                <th>Samvilian Order Date :</th>
+                                                <td>
+                                                    <input name="ename" type="date" class="form-control" autocomplete="off" value="2023-09-02" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Working in other Department Organization on Deputation Transfer :
+                                                </th>
+                                                <td>
+                                                    <select id="ddlWorkingDept" onchange="ShowHideWorkingDept()" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No" selected="selected">No</option>
+                                                    </select></td>
+                                                <th>Is Regular :</th>
+                                                <td>
+                                                    <select id="ddlIsRegular" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Increment Month :
+                                                </th>
+                                                <td>
+                                                    <select id="ddlIncrementMonth" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="January" selected="selected">January</option>
+                                                        <option value="July">July</option>
+                                                    </select></td>
+                                                <th>Provision Period From Month :</th>
+                                                <td>
+                                                    <input name="ename" id="From1" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" value="2021-09-03" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Period To Month :
+                                                </th>
+                                                <td>
+                                                    <input name="ename" id="To1" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" value="2023-09-03" /></td>
+                                                <th>If Provision Extend :</th>
+                                                <td>
+                                                    <select id="ddlProviosionExtend1" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Type :
+                                                </th>
+                                                <td>
+                                                    <select id="ddlProviosionType1" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Regular Employee</option>
+                                                        <option value="No">Separation</option>
+                                                    </select></td>
+                                                <th>Employee Retirement Date :</th>
+                                                <td>
+                                                    <input name="ename" placeholder="Retirement Date" type="text" id="retirementDateTextbox1" class="form-control" autocomplete="off" value="2023-06-09" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Type of Post :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="RegularPermanent">Regular/Permanent</option>
+                                                        <option value="FixedEmployee">Fixed Employee</option>
+                                                        <option value="ContingentEmployee" selected="selected">Contingent Employee</option>
+                                                        <option value="SamvidaEmployee">Samvida Employee</option>
+                                                        <option value="ThekaShramik">Theka Shramik</option>
+                                                        <option value="OutsourceEmployee">Outsource Employee</option>
+                                                        <option value="DeputationEmployee">Deputation Employee</option>
+                                                        <option value="ContractualEmployee">Contractual Employee</option>
+                                                        <option value="DailyWageEmployee">Daily Wage Employee</option>
+                                                        <option value="DailyWagesFederation">Daily Wages Federation</option>
+                                                        <option value="JobRateEmployee">Job Rate Employee</option>
+                                                    </select></td>
+                                                <th>Class :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----">Class 1</option>
+                                                        <option value="----" selected="selected">Class 2</option>
+                                                        <option value="----">Class 3</option>
+                                                        <option value="----">Class 4</option>
+                                                    </select></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Pay Commission :</th>
+                                                <td>
+                                                    <select onchange="ShowHidePayCommissionC()" id="PayCommission" class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="FourthPay" selected="selected">Fourth Pay Commission</option>
+                                                        <option value="SixthPay">Sixth Pay Commission</option>
+                                                        <option value="SeventhPay">Seventh Pay Commission</option>
+                                                    </select></td>
+                                                <th>Level :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="Level-1">Level-1</option>
+                                                        <option value="Level-2">Level-2</option>
+                                                        <option value="Level-3">Level-3</option>
+                                                        <option value="Level-4" selected="selected">Level-4</option>
+                                                        <option value="Level-5">Level-5</option>
+                                                        <option value="Level-6">Level-6</option>
+                                                        <option value="Level-7">Level-7</option>
+                                                        <option value="Level-8">Level-8</option>
+                                                        <option value="Level-9">Level-9</option>
+                                                        <option value="Level-10">Level-10</option>
+                                                        <option value="Level-11">Level-11</option>
+                                                        <option value="Level-12">Level-12</option>
+                                                        <option value="Level-13">Level-13</option>
+                                                        <option value="Level-14">Level-14</option>
+                                                        <option value="Level-15">Level-15</option>
+                                                        <option value="Level-16">Level-16</option>
+                                                        <option value="Level-17">Level-17</option>
+                                                    </select></td>
+
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend>Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
+
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>OIS Type :</th>
+                                                <td>
+                                                    <select id="DropDownList1" class="form-control select2">
+                                                        <option value="0">--Select--</option>
+                                                        <option value="2" selected="selected">Office</option>
+                                                        <option value="3">Institute</option>
+                                                        <option value="1">School</option>
+                                                    </select></td>
+                                                <th>Office Type :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="PrincipalSecretary">Principal Secretary</option>
+                                                        <option value="Secretary">Secretary</option>
+                                                        <option value="DeputySecretary" selected="selected">Deputy Secretary</option>
+                                                        <option value="CPI">CPI</option>
+                                                        <option value="CRSK">CRSK</option>
+                                                        <option value="DPI">DPI</option>
+                                                        <option value="Collector">Collector</option>
+                                                        <option value="CEOZP">CEO, ZP</option>
+                                                        <option value="JointDirector">Joint Director</option>
+                                                        <option value="DEO">DEO</option>
+                                                        <option value="DPC">DPC</option>
+                                                        <option value="BEO">BEO</option>
+                                                        <option value="BRC">BRC</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Current Appointment Division :</th>
+                                                <td>
+                                                    <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="Bhopal">Bhopal</option>
+                                                        <option value="Gwalior">Gwalior</option>
+                                                        <option value="Narmadapuram">Narmadapuram</option>
+                                                        <option value="Indore" selected="selected">Indore</option>
+                                                        <option value="Jabalpur">Jabalpur</option>
+                                                        <option value="Rewa">Rewa</option>
+                                                        <option value="Sagar">Sagar</option>
+                                                        <option value="Shahdol">Shahdol</option>
+                                                        <option value="Ujjain">Ujjain</option>
+                                                    </select></td>
+                                                <th>Current Appointment District :
+                                                </th>
+                                                <td>
+                                                    <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="Bhopal">Bhopal</option>
+                                                        <option value="Raisen">Raisen</option>
+                                                        <option value="Rajgarh">Rajgarh</option>
+                                                        <option value="Sehore">Sehore</option>
+                                                        <option value="Vidisha">Vidisha</option>
+                                                        <option value="Ashoknagar" selected="selected">Ashoknagar</option>
+                                                        <option value="Shivpuri">Shivpuri</option>
+                                                        <option value="Datia">Datia</option>
+                                                        <option value="Guna">Guna</option>
+                                                        <option value="Gwalior">Gwalior</option>
+                                                        <option value="Harda">Harda</option>
+                                                        <option value="Hoshangabad">Hoshangabad</option>
+                                                        <option value="Betul">Betul</option>
+                                                        <option value="Morena">Morena</option>
+                                                        <option value="Sheopur">Sheopur</option>
+                                                        <option value="Bhind">Bhind</option>
+                                                        <option value="Barwani">Barwani</option>
+                                                        <option value="Burhanpur">Burhanpur</option>
+                                                        <option value="Dhar">Dhar</option>
+                                                        <option value="Indore">Indore</option>
+                                                        <option value="Jhabua">Jhabua</option>
+                                                        <option value="Khandwa">Khandwa</option>
+                                                        <option value="Khargone">Khargone</option>
+                                                        <option value="Alirajpur">Alirajpur</option>
+                                                        <option value="Balaghat">Balaghat</option>
+                                                        <option value="Chhindwara">Chhindwara</option>
+                                                        <option value="Jabalpur">Jabalpur</option>
+                                                        <option value="Katni">Katni</option>
+                                                        <option value="Mandla">Mandla</option>
+                                                        <option value="Narsinghpur">Narsinghpur</option>
+                                                        <option value="Seoni">Seoni</option>
+                                                        <option value="Rewa">Rewa</option>
+                                                        <option value="Satna">Satna</option>
+                                                        <option value="Sidhi">Sidhi</option>
+                                                        <option value="Singroli">Singroli</option>
+                                                        <option value="Chhatarpur">Chhatarpur</option>
+                                                        <option value="Damoh">Damoh</option>
+                                                        <option value="Panna">Panna</option>
+                                                        <option value="Sagar">Sagar</option>
+                                                        <option value="Tikamgarh">Tikamgarh</option>
+                                                        <option value="Shahdol">Shahdol</option>
+                                                        <option value="Umaria">Umaria</option>
+                                                        <option value="Dindori">Dindori</option>
+                                                        <option value="Anuppur">Anuppur</option>
+                                                        <option value="Dewas">Dewas</option>
+                                                        <option value="Mandsaur">Mandsaur</option>
+                                                        <option value="Neemuch">Neemuch</option>
+                                                        <option value="Ratlam">Ratlam</option>
+                                                        <option value="Shajapur">Shajapur</option>
+                                                        <option value="Ujjain">Ujjain</option>
+
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Current Appointment Block :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="Agar">Agar</option>
+                                                        <option value="Barod">Barod</option>
+                                                        <option value="Nalkheda" selected="selected">Nalkheda</option>
+                                                        <option value="Susner">Susner</option>
+                                                        <option value="Alirajpur">Alirajpur</option>
+                                                        <option value="Bhabra">Bhabra</option>
+                                                        <option value="Katthiwara">Katthiwara</option>
+                                                        <option value="Sondwa">Sondwa</option>
+                                                        <option value="Udaygarh">Udaygarh</option>
+                                                        <option value="Jobat">Jobat</option>
+                                                        <option value="Anuppur">Anuppur</option>
+                                                        <option value="Jaithari">Jaithari</option>
+                                                        <option value="Kotma">Kotma</option>
+
+                                                    </select></td>
+                                                <th>DDO / Sankul :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="--Select--">Geetanjali Public School</option>
+                                                        <option value="--Select--">MVM School</option>
+                                                        <option value="--Select--" selected="selected">Uma Vidhaya Niketan HS School</option>
+                                                        <option value="--Select--">Manvendra Public School</option>
+                                                        <option value="--Select--">Rose Marry Public School</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Office/Institute/School Code & Name :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="--Select--">GB Convent School</option>
+                                                        <option value="--Select--">Reem Higher Secondary School</option>
+                                                        <option value="--Select--">Geetanjali Public School</option>
+                                                        <option value="--Select--">Uma Vidhaya Niketan HS School</option>
+                                                        <option value="--Select--" selected="selected">Manvendra Public School</option>
+                                                        <option value="--Select--">Rose Marry Public School</option>
+                                                    </select></td>
+                                                <th>Office/Institute/School Address of first Posting
+:</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Address" value="Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Current Appointment Order No :
+                                                </th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Order No." value="OP345" /></td>
+                                                <th>Current Appointment Order Date :</th>
+                                                <td>
+                                                    <input name="ename" type="date" class="form-control" autocomplete="off" value="2021-09-12" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Current Appointment Department :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----" selected="selected">DPI</option>
+                                                    </select></td>
+                                                <th>Employee’s Designation Type :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----">Clerical</option>
+                                                        <option value="----" selected="selected">Executive</option>
+                                                        <option value="----">Ministry</option>
+                                                        <option value="----">Teaching</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Current Appointment Designation :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="Commissioner">Commissioner</option>
+                                                        <option value="Director">Director</option>
+                                                        <option value="AdditionalDirector">Additional Director</option>
+                                                        <option value="JointDirector" selected="selected">Joint Director</option>
+                                                        <option value="DeputyDirector">Deputy Director</option>
+                                                        <option value="AsstDirector">Asstt Director</option>
+                                                        <option value="RegionalLibrarian">Regional Librarian</option>
+                                                        <option value="PlanningOfficer">Planning Officer</option>
+                                                        <option value="DirectorELTI">Director (ELTI)</option>
+                                                        <option value="DirectorSISE">Director (SISE)</option>
+                                                        <option value="PrincipalPGBT">Principal (PGBT)</option>
+                                                        <option value="PrincipalDIET">Principal (DIET)</option>
+                                                        <option value="PrincipalHSS">Principal HSS</option>
+                                                        <option value="PrincipalHS">Principal HS</option>
+                                                        <option value="Lecturer">Lecturer</option>
+                                                        <option value="HMMS">HM(MS)</option>
+                                                        <option value="TeacherUDT">Teacher (UDT)</option>
+                                                        <option value="MusicTeacher">Music Teacher</option>
+                                                        <option value="TablaTeacher">Tabla Teacher</option>
+                                                        <option value="CraftTeacher">Craft Teacher</option>
+                                                        <option value="HMPS">HM(PS)</option>
+                                                        <option value="AsstTeacherLDT">Asstt Teacher(LDT)</option>
+                                                        <option value="VaristhaAdhyapak">Varistha Adhyapak</option>
+                                                        <option value="Adhyapak">Adhyapak</option>
+                                                        <option value="SahayakAdhyapak">Sahayak Adhyapak</option>
+                                                        <option value="ShikshaKarmi1">Shiksha Karmi-1</option>
+                                                        <option value="ShikshaKarmi2">Shiksha Karmi-2</option>
+                                                        <option value="ShikshaKarmi3">Shiksha Karmi-3</option>
+                                                        <option value="SamvidaShikshak1">Samvida Shikshak-1</option>
+                                                        <option value="SamvidaShikshak2">Samvida Shikshak-2</option>
+                                                        <option value="SamvidaShikshak3">Samvida Shikshak-3</option>
+                                                    </select></td>
+                                                <th>Current Appointment Joining Date :</th>
+                                                <td>
+                                                    <input name="ename" type="date" class="form-control" autocomplete="off" value="2018-04-09" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Panal Name :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="SSS-1">SSS-1</option>
+                                                        <option value="SSS-2">SSS-2</option>
+                                                        <option value="SSS-3">SSS-3</option>
+                                                        <option value="PR-HSS" selected="selected">PR-HSS</option>
+                                                        <option value="PR-HS">PR-HS</option>
+                                                        <option value="HM-MS">HM-MS</option>
+                                                        <option value="HM-PS">HM-PS</option>
+                                                    </select></td>
+                                                <th>Subject :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="--Select--">--Select--</option>
+                                                        <option value="--Select--">English</option>
+                                                        <option value="--Select--">Hindi</option>
+                                                        <option value="--Select--" selected="selected">Science</option>
+                                                        <option value="--Select--">Maths</option>
+                                                        <option value="--Select--">Chemistry</option>
+                                                        <option value="--Select--">Physics</option>
+                                                        <option value="--Select--">Bio</option>
+                                                        <option value="--Select--">Sanskrit</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Samvilian Order No. :
+                                                </th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" value="UYR675" /></td>
+                                                <th>Samvilian Order Date :</th>
+                                                <td>
+                                                    <input name="ename" type="date" class="form-control" autocomplete="off" value="2022-09-02" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Working in other Department Organization on Deputation Transfer :
+                                                </th>
+                                                <td>
+                                                    <select id="ddlCurWorkingDept" onchange="ShowHideCurWorkingDept()" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select></td>
+                                                <th>Is Regular :</th>
+                                                <td>
+                                                    <select id="ddlIsRegular1" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Increment Month :
+                                                </th>
+                                                <td>
+                                                    <select id="ddlIncrementMonth1" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="January" selected="selected">January</option>
+                                                        <option value="July">July</option>
+                                                    </select></td>
+                                                <th>Provision Period From Month :</th>
+                                                <td>
+                                                    <input name="ename" id="From" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" value="2019-09-04" /></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Period To Month :
+                                                </th>
+                                                <td>
+                                                    <input name="ename" id="To" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" value="2021-09-04" /></td>
+                                                <th>If Provision Extend :</th>
+                                                <td>
+                                                    <select id="ddlProviosionExtend" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+
+                                                <th>Provision Type :
+                                                </th>
+                                                <td>
+                                                    <select id="ddlProviosionType" class="form-control select2">
+                                                        <option value="Select">--Select--</option>
+                                                        <option value="Yes" selected="selected">Regular Employee</option>
+                                                        <option value="No">Separation</option>
+                                                    </select></td>
+                                                <th>Employee Retirement Date :</th>
+                                                <td>
+                                                    <input name="ename" placeholder="Retirement Date" type="text" id="retirementDateTextbox" class="form-control" autocomplete="off" value="2024-09-03" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Type of Post :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="RegularPermanent">Regular/Permanent</option>
+                                                        <option value="FixedEmployee">Fixed Employee</option>
+                                                        <option value="ContingentEmployee">Contingent Employee</option>
+                                                        <option value="SamvidaEmployee" selected="selected">Samvida Employee</option>
+                                                        <option value="ThekaShramik">Theka Shramik</option>
+                                                        <option value="OutsourceEmployee">Outsource Employee</option>
+                                                        <option value="DeputationEmployee">Deputation Employee</option>
+                                                        <option value="ContractualEmployee">Contractual Employee</option>
+                                                        <option value="DailyWageEmployee">Daily Wage Employee</option>
+                                                        <option value="DailyWagesFederation">Daily Wages Federation</option>
+                                                        <option value="JobRateEmployee">Job Rate Employee</option>
+                                                    </select></td>
+                                                <th>Class :
+                                                </th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----">Class 1</option>
+                                                        <option value="----">Class 2</option>
+                                                        <option value="----" selected="selected">Class 3</option>
+                                                        <option value="----">Class 4</option>
+                                                    </select></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Pay Commission :</th>
+                                                <td>
+                                                    <select onchange="ShowHidePayCommissionC()" id="PayCommissionC" class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="FourthPay" selected="selected">Fourth Pay Commission</option>
+                                                        <option value="SixthPay">Sixth Pay Commission</option>
+                                                        <option value="SeventhPay">Seventh Pay Commission</option>
+                                                    </select></td>
+                                                <th>Level :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="Level-1">Level-1</option>
+                                                        <option value="Level-2">Level-2</option>
+                                                        <option value="Level-3">Level-3</option>
+                                                        <option value="Level-4" selected="selected">Level-4</option>
+                                                        <option value="Level-5">Level-5</option>
+                                                        <option value="Level-6">Level-6</option>
+                                                        <option value="Level-7">Level-7</option>
+                                                        <option value="Level-8">Level-8</option>
+                                                        <option value="Level-9">Level-9</option>
+                                                        <option value="Level-10">Level-10</option>
+                                                        <option value="Level-11">Level-11</option>
+                                                        <option value="Level-12">Level-12</option>
+                                                        <option value="Level-13">Level-13</option>
+                                                        <option value="Level-14">Level-14</option>
+                                                        <option value="Level-15">Level-15</option>
+                                                        <option value="Level-16">Level-16</option>
+                                                        <option value="Level-17">Level-17</option>
+                                                    </select></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+
+                                    <legend>Employee Account Info / कर्मचारी खाता जानकारी</legend>
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <th>IFSC Code :</th>
+                                                <td>
+                                                    <input onchange="ShowBankDetails(this.value)" placeholder="Enter IFSC Code" name="ename" type="text" class="form-control" autocomplete="off" value="SBIN0005943" />
+                                                </td>
+                                                <th>Bank Name :</th>
+                                                <td>
+                                                    <input placeholder="Bank Name" name="ename" type="text" class="form-control" autocomplete="off" value="State Bank of India" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>Branch Name :</th>
+                                                <td>
+                                                    <input placeholder="Branch Name" name="ename" type="text" class="form-control" autocomplete="off" value="Dwarakapuri Punjagutta Branch" /></td>
+                                                <th>Account Type :</th>
+                                                <td>
+                                                    <select class="form-control select2">
+                                                        <option value="----">--Select--</option>
+                                                        <option value="----" selected="selected">Salary</option>
+                                                        <option value="----">Other</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Account No. :</th>
+                                                <td>
+                                                    <input placeholder="Enter Account No." name="ename" type="text" class="form-control" autocomplete="off" value="223465657786" />
+                                                </td>
+                                                <th>Provident Fund :</th>
+                                                <td>
+                                                    <select id="Providedfund" class="form-control select2" onchange="SelectP()">
+                                                        <option value="">Select</option>
+                                                        <option value="1" selected="selected">DPF No.</option>
+                                                        <option value="2">EPF No.</option>
+                                                        <option value="3">GPF No.</option>
+                                                        <option value="4">NPS No.</option>
+                                                    </select></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>DPF No. :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter DPF No." value="YUT78989" /></td>
+                                                <th>Group Insurance No :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Group Insurance No." value="TYR54" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Gratuity No. :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Gratuity No." value="HJ4564" /></td>
+                                                <th>EGLS No. :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EGLS No." value="QWE890" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>EDLI No. :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EDLI No." value="PWR464" /></td>
+                                                <th>ESIC No. :</th>
+                                                <td>
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter ESIC No." value="TYU7895" /></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Document / दस्तावेज़</legend>
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered ">
+                                            <thead>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">Sr. No.</label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">Document Name  </label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">Upload Document  </label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">View Document</label>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>
+                                                        <label>
+                                                            Appointment Order Certificate
+        <br />
+                                                            नियुक्ति आदेश प्रमाण पत्र :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" id="fileInput1" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+
+                                                    <%--<td><input type="file" id="fileInput1" class="form-control" onchange="displayImage(this)" /></td>--%>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>
+                                                        <label>
+                                                            Birth Certificate
+                                                                <br />
+                                                            जन्म प्रमाण पत्र  :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" ></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>
+                                                        <label>
+                                                            Caste Certificate (OBC/ST/SC)<br />
+                                                            जाति प्रमाण पत्र (ओबीसी/एसटी/एससी) :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" ></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">5</td>
+                                                    <td>
+                                                        <label>
+                                                            Handicapped Certificate
+                                                                <br />
+                                                            विकलांग प्रमाण पत्र  :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" ></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">6</td>
+                                                    <td>
+                                                        <label>
+                                                            Critical Illness Certificate<br />
+                                                            गंभीर बीमारी प्रमाणपत्र  :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">4</td>
+                                                    <td>
+                                                        <label>
+                                                            Present Posting Order
+                                                                <br />
+                                                            वर्तमान पोस्टिंग ऑर्डर  :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">7</td>
+                                                    <td>
+                                                        <label>
+                                                            Married Certificate<br />
+                                                            विवाहित प्रमाणपत्र  :
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+                                                </tr>
+
+                                        </table>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Educational Document / शैक्षिक दस्तावेज़</legend>
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">Sr. No.</label>
+                                                    </td>
+                                                    <td>
+                                                        <label style="font-weight: bold; font-size: large;">Document Name  </label>
+                                                    </td>
+                                                    <td>
+                                                        <label style="font-weight: bold; font-size: large;">Upload Document  </label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <label style="font-weight: bold; font-size: large;">View Document</label>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>
+                                                        <label>
+                                                            10th Marksheet<br />
+                                                            10वीं की मार्कशीट  :</label></td>
+     
+                                                    <td><input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>
+                                                        <label>
+                                                            12th Marksheet<br />
+                                                            12वीं की मार्कशीट  :
+                                                        </label>
+                                                    </td>
+                                                    <td><input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>
+                                                        <label>
+                                                            UG Certificate<br />
+                                                            यूजी सर्टिफिकेट  :
+                                                        </label>
+                                                    </td>
+                                                    <td><input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">4</td>
+                                                    <td>
+                                                        <label>
+                                                            Upload PG Certificate<br />
+                                                            पीजी प्रमाणपत्र अपलोड करें :
+                                                        </label>
+                                                    </td>
+                                                    <td><input type="file"  class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">5</td>
+                                                    <td>
+                                                        <label>
+                                                            Diploma Certificate<br />
+                                                            डिप्लोमा प्रमाणपत्र  :
+                                                        </label>
+                                                    </td>
+                                                    <td><input type="file"  class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" ></i></button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">6</td>
+                                                    <td>
+                                                        <label>
+                                                            Other Certificate<br />
+                                                            अन्य प्रमाणपत्र :
+                                                        </label>
+                                                    </td>
+                                                    <td><input type="file"  class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger waves-effect  w-lg" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <!-- /.modal-dialog -->
 
         </div>
         <!-- /.modal -->
     </div>
-    <div class="modal"  id="bs-example-modal-lg4" tabindex ="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+    <div class="modal" id="bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1515,6 +3471,124 @@
         document.getElementById('btn-close').addEventListener('click', function () {
             $('#firsttimeModel').modal('show');
         });
+    </script>
+
+    <script>
+        function ShowHideHandicape() {
+            var ddlHandicape = document.getElementById("ddlHandicape");
+            var HandicapePer = document.getElementById("HandicapePer");
+            var handipaceType = document.getElementById("handipaceType");
+            if (ddlHandicape.value === "Yes") {
+                ddlHandicappedType.toggleAttribute('disabled');
+            } else if (ddlHandicape.value === "No") {
+                ddlHandicappedType.toggleAttribute('disabled');
+
+            }
+            if (ddlHandicape.value === "Yes") {
+                HandicapePer.toggleAttribute('disabled');
+            } else if (ddlHandicape.value === "No") {
+                HandicapePer.toggleAttribute('disabled');
+
+            }
+
+        }
+        function ShowHideCriticalIllness() {
+            var ddlCriticalIllness = document.getElementById("ddlCriticalIllness");
+            var ddlCritical = document.getElementById("ddlCritical");
+            var handipaceType = document.getElementById("handipaceType");
+            if (ddlCriticalIllness.value === "Yes") {
+                ddlCritical.toggleAttribute('disabled')
+
+            } else if (ddlCriticalIllness.value === "No") {
+                ddlCritical.toggleAttribute('disabled')
+            }
+        }
+    </script>
+    <script>
+        function AddNominee() {
+            var tableAdd = document.getElementById("tblNominee");
+            tableAdd.style.display = "table";
+            if ((tableAdd.rows.length - 1) == 2) {
+                alert('Maximum two entries allowed !!');
+            }
+            else {
+                tableAdd.style.display = "table";
+                var rows = tableAdd.rows.length;
+                var r = tableAdd.insertRow(rows);
+                var Education = document.getElementById("txtNomineeName");
+                var Subject = document.getElementById("txtNomineeRelation");
+                var Board = document.getElementById("txtNomineePercentage");
+                var c1 = r.insertCell(0);
+                c1.innerHTML = tableAdd.rows.length - 1;
+                var c2 = r.insertCell(1);
+                c2.innerHTML = Education.value;
+                var c3 = r.insertCell(2);
+                c3.innerHTML = Subject.value;
+                var c4 = r.insertCell(3);
+                c4.innerHTML = Board.value;
+                var c5 = r.insertCell(4);
+                c5.innerHTML = "<a class='Alert-Edit' onclick='EditConfirmation()'><i class='fa fa-pen'></i></a>| <a class='Alert-Delete' onclick='DeleteConfirmation()'><i class='fa fa-trash'></i></a>";
+            }
+        }
+
+
+        function AddRow() {
+            var tableAdd = document.getElementById("tableAdd");
+            tableAdd.style.display = "table";;
+            if ((tableAdd.rows.length - 1) == 6) {
+                alert('Maximum six entries allowed !!');
+            }
+            else {
+
+                tableAdd.style.display = "table";;
+                var rows = tableAdd.rows.length;
+                var r = tableAdd.insertRow(rows);
+                var Education = document.getElementById("Education");
+                var Subject = document.getElementById("Subject");
+                var Board = document.getElementById("Board");
+                var PassingYear = document.getElementById("PassingYear");
+                var Grade = document.getElementById("Grade");
+                var c1 = r.insertCell(0);
+                c1.innerHTML = tableAdd.rows.length - 1;
+                var c2 = r.insertCell(1);
+                c2.innerHTML = Education.value;
+                var c3 = r.insertCell(2);
+                c3.innerHTML = Subject.value;
+                var c4 = r.insertCell(3);
+                c4.innerHTML = Board.value;
+                var c5 = r.insertCell(4);
+                c5.innerHTML = PassingYear.value;
+                var c6 = r.insertCell(5);
+                c6.innerHTML = Grade.value;
+                var c7 = r.insertCell(6);
+                c7.innerHTML = "<a class='Alert-Edit' onclick='EditConfirmation()'><i class='fa fa-pen'></i></a>| <a class='Alert-Delete' onclick='DeleteConfirmation()'><i class='fa fa-trash'></i></a>";
+            }
+        }
+
+        //function ShowHideMarried() {
+        //    var ddl = document.getElementById('ddlMaarriedStatus');
+        //    var selectedValue = ddl.options[ddl.selectedIndex].value;
+        //    var fieldsToShow = document.getElementById('tblfields');
+
+        //    if (selectedValue === 'Yes') {
+        //        tblfields.style.display = 'table'; // Show the fields
+        //    } else {
+        //        tblfields.style.display = 'none'; // Hide the fields
+        //    }
+        //}
+
+        function ShowHideGovEmp() {
+            var ddlSpouseGovEmp = document.getElementById("ddlSpouseGovEmp");
+            var idSpouseDept = document.getElementById("idSpouseDept");
+            var idSpouseOfcAdd = document.getElementById("GovEmp");
+            if (ddlSpouseGovEmp.value === "Yes") {
+                GovEmp.style.display = "table-row";
+
+            } else if (ddlSpouseGovEmp.value === "No") {
+                GovEmp.style.display = "none";
+
+            }
+        }
     </script>
 </asp:Content>
 
