@@ -18,9 +18,10 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Development Master Data</li>
+                        <li class="breadcrumb-item"><a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">Development Master Data
+                        </a></li>
                         <li class="breadcrumb-item">Work Subcategory Master</li>
                     </ol>
                 </div>
@@ -49,10 +50,10 @@
             <fieldset>
                 <legend>Add Work Subcategory / कार्य उपश्रेणी जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Work Category /
+                                Select Work Category 
              <br />
                                 कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
                             <select id="work-category" class="form-control select2">
@@ -64,39 +65,37 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Work Subcategory
+                                Enter Work Subcategory(In English)
                                 <br />
-                                (In English)<span style="color: red">*</span></label>
+                                कार्य की उपश्रेणी दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Subcategory" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                कार्य की उपश्रेणी दर्ज करें
+                                Enter Work Subcategory(In Hindi)
                                 <br />
-                                (हिंदी में)<span style="color: red">*</span></label>
+                                कार्य की उपश्रेणी दर्ज करें(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="कार्य की उपश्रेणी दर्ज करें" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                </div>
-                <hr />
-                <div class="row">
                     <div class="col-md-12">
+                        <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="Mst_WorkSubcategory.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
@@ -122,20 +121,22 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <th>Sr.No. /<br />
-                                        क्रमांक</th>
-                                    <th>Work Category /
+                                    <th>Sr.No.
+                                        <br />
+                                        सरल क्र</th>
+                                    <th>Work Category 
                                         <br />
                                         कार्य की श्रेणी
                                     </th>
-                                    <th>Work Subcategory </th>
-                                    <th>कार्य की उपश्रेणी </th>
-                                    <%--   <th>State Code No. /<br />
-                                        राज्य कोड संख्या</th>--%>
+                                    <th>Work Subcategory(In English)<br />
+                                        कार्य की उपश्रेणी(अंग्रेजी में)</th>
+                                    <th>Work Subcategory(In Hindi)<br />
+                                        कार्य की उपश्रेणी(हिन्दी में)</th>
                                     <th>Status(Active/InActive)
        <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
-                                    <th>Action</th>
+                                    <th>Action<br />
+                                        कार्यवाहीं</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -143,7 +144,7 @@
                                     <td>Building Repair</td>
                                     <td>इमारत मरम्मत</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -151,7 +152,7 @@
                                     <td>Hand Pump Mining</td>
                                     <td>हेंडपंप खनन</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -159,7 +160,7 @@
                                     <td>Water Tank construction</td>
                                     <td>पानी की टंकी निर्माण</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -167,7 +168,7 @@
                                     <td>CC Road Construction</td>
                                     <td>CC Road निर्माण</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
