@@ -38,33 +38,34 @@
                     </ol>
                 </div>
             </div>
-  </div></div>
-   
-         
-      <%--  <div class="col-md text-end">
+        </div>
+    </div>
+
+
+    <%--  <div class="col-md text-end">
               <div class="form-group">
 
     <button id="BtnBack" class="btn-info rounded-2" type="button" onclick="Backclickfn()" style=" display:none;">BACK</button>
 </div>
         </div>--%>
-    
+
     <div class="card card-border-primary">
-             <div class="card-header">
+        <div class="card-header">
             <div class="row">
                 <div class="col-lg-10">
                     <h5 class="card-title">Student Registration /विद्यार्थी  पंजीकरण 
                     </h5>
                 </div>
-                                      <div class="col-lg-2 text-end "  id="BtnBack" style="display:none;">
-       <button  class="btn btn-primary btn-label waves-effect waves-light rounded-pill" type="button" onclick="Backclickfn()" "><i class="ri-arrow-go-back-line label-icon align-middle fs-14 me-1"></i> BACK</button>
-</div>
-          
+                <div class="col-lg-2 text-end " id="BtnBack" style="display: none;">
+                    <button class="btn btn-primary btn-label waves-effect waves-light rounded-pill" type="button" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-14 me-1"></i>BACK</button>
+                </div>
+
             </div>
         </div>
         <div class="card-body">
-        
+
             <div id="show2">
-                   
+
                 <fieldset>
                     <legend>Student Registration/विद्यार्थी  पंजीकरण</legend>
 
@@ -73,8 +74,8 @@
                             <div class="form-group">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" onclick="myFunction1()">
-                                    <label class="form-check-label" for="customRadio11">
-                                        With Student  Samagra ID<br />
+                                    <label class="form-check-label" for="customRadio1">
+                                        With Student Samagra ID<br />
                                         विद्यार्थी समग्र आईडी के साथ<span style="color: red">*</span></label>
                                 </div>
                             </div>
@@ -129,7 +130,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                       Student  Name (English)<br />
+                                    Student  Name (English)<br />
 
                                     विद्यार्थी  का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Riya Gupta" readonly />
@@ -138,17 +139,17 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                      Student  Name (Hindi)<br />
+                                    Student  Name (Hindi)<br />
 
                                     विद्यार्थी  का नाम (हिंदी में)<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="रिया गुप्ता" readonly />
                             </div>
                         </div>
-                       
+
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Gender<br />
+                                    Gender<br />
                                     लिंग<span style="color: red">*</span></label>
                                 <select class="form-control" placeholder="Female" readonly="true">
                                     <option>Female</option>
@@ -158,20 +159,20 @@
                                 </select>
                             </div>
                         </div>
-                         <div class="col-md-3">
-     <div class="form-group">
-         <label>
-                Date of Birth<br />
-             जन्म तिथि<span style="color: red">*</span></label>
-         <input name="ename" id="DOB" <%--type="date"--%> class="form-control" autocomplete="off" placeholder="07/11/2002" readonly />
-     </div>
- </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Date of Birth<br />
+                                    जन्म तिथि<span style="color: red">*</span></label>
+                                <input name="ename" id="DOB" <%--type="date"--%> class="form-control" autocomplete="off" placeholder="07/11/2002" readonly />
+                            </div>
+                        </div>
                     </div>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Category<br />
+                                    Category<br />
                                     श्रेणी<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">OBC</option>
@@ -187,8 +188,8 @@
                             <div class="form-group">
 
                                 <label>
-                                       Caste<br />
-                                    जाति<span style="color: red">*</span></label>
+                                    Religion<br />
+                                    धर्म<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true">
                                     <%--<option value="Select">Select</option>--%>
                                     <option value="Bhopal">Hindu</option>
@@ -201,7 +202,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Father's Name 
+                                    Father's Name 
                                 <br />
 
                                     पिता का नाम<span style="color: red">*</span></label>
@@ -211,7 +212,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                       Mother's  Name 
+                                    Mother's  Name 
                                 <br />
 
                                     माता का नाम<span style="color: red">*</span></label>
@@ -224,7 +225,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                      Mobile No<br />
+                                    Mobile No<br />
                                     मोबाइल नंबर<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="8956231478" readonly />
                             </div>
@@ -247,8 +248,8 @@
                                 <label>
                                     Select  Disability
                                 <br />
-                                   
-विकलांगता का चयन करें<span style="color: red">*</span></label>
+
+                                    विकलांगता का चयन करें<span style="color: red">*</span></label>
                                 <select id="options" class="form-control select2" onchange="myFunction3()">
                                     <option value="0">Select</option>
                                     <option value="1">Yes</option>
@@ -296,7 +297,7 @@
                                 <label>
                                     Select  Handicapped Percentage 
      <br />
-                                   विकलांगता का प्रतिशत<span style="color: red">*</span></label>
+                                    विकलांगता का प्रतिशत<span style="color: red">*</span></label>
                                 <select id="ddlHandicappedPercentage" class="form-control select2">
                                     <option>Select</option>
                                     <option value="40 to 50">41 to 50</option>
@@ -305,6 +306,21 @@
                                     <option value="71 to 80">71 to 80</option>
                                     <option value="81 to 90">81 to 90</option>
                                     <option value="91 to 100">1  to 100</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Is there a Freed/Nomadic/Semi-Nomadic Caste
+                                    <br />
+                                    क्या विमुक्त/घुमक्कड़/अर्ध घुमक्कड़ जाति है <span style="color: red">*</span></label>
+                                <select class="form-control select2">
+                                    <option>Select</option>
+                                    <option value="40 to 50">विमुक्त </option>
+                                    <option value="51 to 60">घुमक्कड़</option>
+                                    <option value="61 to 70">अर्ध घुमक्कड़</option>
+                                    <option value="71 to 80">इनमें से कोई नहीं है</option>
                                 </select>
                             </div>
                         </div>
@@ -318,7 +334,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                      State Name<br />
+                                    State Name<br />
                                     राज्य का नाम<span style="color: red">*</span></label>
                                 <select class="form-control" readonly="true">
                                     <option value="Bhopal">Madhya Pradesh</option>
@@ -359,7 +375,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                       Division Name
+                                    Division Name
                                     <br />
                                     संभाग  का नाम
                                 </label>
@@ -383,7 +399,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                        District Name<br />
+                                    District Name<br />
                                     ज़िला  का नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control " readonly="true">
                                     <option value="Bhopal">Bhopal</option>
@@ -444,7 +460,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Block Name
+                                    Block Name
                                     <br />
                                     विकासखण्ड  का नाम<span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl03" class="form-control" readonly="true">
@@ -470,14 +486,24 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Village Name <br />
+                                    Village Name
+                                    <br />
                                     गाँव  का नाम<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="
 Berasia"
                                     readonly />
                             </div>
                         </div>
-
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Habitation Name
+             <br />
+                                    बसाहट  का नाम  <span style="color: red">*</span></label>
+                                <input class="form-control  w-100"
+                                    placeholder="Enter Habitation Name" autocomplete="off" />
+                            </div>
+                        </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>
@@ -500,7 +526,7 @@ Berasia"
                                 <label>
                                     Select   Is Vimukti<br />
 
-                                   विमुक्ति है /नहीं  <span style="color: red">*</span></label>
+                                    विमुक्ति है /नहीं  <span style="color: red">*</span></label>
                                 <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option>Select</option>
                                     <option>YES</option>
@@ -545,10 +571,8 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select  Fatherless<br />
-
-                                    पितृहीन हैं/नही चयन करें <span style="color: blue; font-size: 12px;">(पिता की ना होने की 
-स्थिति में )</span><span style="color: red">*</span></label>
+                                    Is  Father Dead ?<br />
+                                    क्या पिता स्वर्गवासी हैं ?  <span style="color: red">*</span></label>
                                 <select id="Fatherless" name="ctl00$ContentBody$ctl02" class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">YES</option>
@@ -559,20 +583,270 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter family/Father Occupation
-                                    <br />
-                                  परिवार/पिता का व्यवसाय दर्ज करें<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
+                                    Are the Students Unparented ?<br />
+                                    क्या विद्यार्थी अनाथ हैं ?   <span style="color: red">*</span>
+                                </label>
+                                <select id="orphanSelect" name="ctl00$ContentBody$ctl02" class="form-control select2" onchange="toggleGuardianField(); ">
+                                    <option value="0">Select</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">NO</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+
+
+                        <div id="guardianField" class="col-md-3" style="display: none;">
                             <div class="form-group">
                                 <label>
-                               Enter  Family Income(Yearly)<br />
-                                 पारिवार की वार्षिक आय दर्ज करें<span style="color: red">*</span></label>
+                                    Name of Guardian<br />
+                                    पालक का नाम   <span style="color: red">*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter Name of Guardian" />
+                            </div>
+                        </div>
+                        <div id="FamilydianIncome" class="col-md-3" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Enter Family Income(Yearly)<br />
+                                    पालक की वार्षिक आय दर्ज करें<span style="color: red">*</span>
+                                </label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Income" />
                             </div>
                         </div>
+
+                        <div id="FamilyddlDepartment" class="col-md-3" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Family Occupation<br />
+                                    पालक का व्यवसाय चुनें
+       
+                                </label>
+                                <select id="dropdown2" onchange="toggleSection2()" class="form-control">
+                                    <option>Select</option>
+                                    <option>Govt. Job</option>
+                                    <option>Private Job</option>
+                                    <option>Bussiness</option>
+                                    <option>Former</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" id="GuardianIncome" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Enter Guardian Income(Yearly)<br />
+                                    पालक की वार्षिक आय दर्ज करें<span style="color: red">*</span></label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Guardian Income" />
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="GuardianddlDepartment" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Guardian Occupation<br />
+                                    पालक  का व्यवसाय चुनें</label>
+                                <select  id="dropdown1" onchange="toggleSection1()" class="form-control" >
+                                    <option>Select</option>
+                                    <option>Govt. Job</option>
+                                    <option>Private Job</option>
+                                    <option>Bussiness</option>
+                                    <option>Former</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <script>
+                            function toggleSection1() {
+                                var dropdown = document.getElementById("dropdown1");
+                                var section1 = document.getElementById("DepartmentName");
+                                var section2 = document.getElementById("IsIncometaxpayer");
+                                var section3 = document.getElementById("Bhumiekd");
+                               
+                              
+                               
+                                // Hide all sections
+                                section1.style.display = "none";
+                                section2.style.display = "none";
+                                section3.style.display = "none";
+                               
+
+                                // Determine which section to display based on selected option
+                                if (dropdown.value === "Govt. Job") {
+                                    section1.style.display = "block";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+                                  
+                                } else if (dropdown.value === "Private Job") {
+                                   
+                                    section1.style.display = "none";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+                                   
+                                }
+                                else if (dropdown.value === "Bussiness") {
+                                    section1.style.display = "none";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+                                } else if (dropdown.value === "Former") {
+                                    section1.style.display = "none";
+                                    section2.style.display = "none";
+                                    section3.style.display = "block";
+                                   
+                                }
+                            }
+
+
+                            function toggleSection2() {
+                                var dropdown = document.getElementById("dropdown2");
+                                var section1 = document.getElementById("DepartmentName");
+                                var section2 = document.getElementById("IsIncometaxpayer");
+                                var section3 = document.getElementById("Bhumiekd");
+
+
+
+                                // Hide all sections
+                                section1.style.display = "none";
+                                section2.style.display = "none";
+                                section3.style.display = "none";
+
+
+                                // Determine which section to display based on selected option
+                                if (dropdown.value === "Govt. Job") {
+                                    section1.style.display = "block";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+
+                                } else if (dropdown.value === "Private Job") {
+
+                                    section1.style.display = "none";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+
+                                }
+                                else if (dropdown.value === "Bussiness") {
+                                    section1.style.display = "none";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+                                } else if (dropdown.value === "Former") {
+                                    section1.style.display = "none";
+                                    section2.style.display = "none";
+                                    section3.style.display = "block";
+
+                                }
+                            }
+                        </script>
+                        <div class="col-md-3" id="DepartmentName" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Department Name<br />
+                                    विभाग का नाम
+                               
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter Department Name">
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="IsIncometaxpayer" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Is Income Tax Payer<br />
+                                    क्या आयकर दाता है
+                                </label>
+                                <select class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="Bhumiekd" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Whether land is more than 10 acres<br />
+                                    क्या 10 एकड़ से अधिक भूमि है
+                                </label>
+                                <select class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                       
+                       <%-- <div class="col-md-3" id="PBhumiekd" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Whether land is more than 10 acres<br />
+                                    क्या 10 एकड़ से अधिक भूमि है
+        
+                                </label>
+                                <select class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>--%>
+                       <%-- <div class="col-md-3" id="FIsIncometaxpayer" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Is Income Tax Payer<br />
+                                    क्या आयकर दाता है
+       
+                                </label>
+                                <select class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>--%>
+                       <%-- <div class="col-md-3" id="FBhumiekd" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Whether land is more than 10 acres<br />
+                                    क्या 10 एकड़ से अधिक भूमि है
+        
+                                </label>
+                                <select class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>--%>
+                        
+                        <script>
+                            function toggleGuardianField() {
+                                var orphanSelect = document.getElementById("orphanSelect");
+                                var guardianField = document.getElementById("guardianField");
+                                var GuardianddlDepartment = document.getElementById("GuardianddlDepartment");
+                                var FamilyddlDepartment = document.getElementById("FamilyddlDepartment");
+                                var FamilydianIncome = document.getElementById("FamilydianIncome");
+                                var GuardianIncome = document.getElementById("GuardianIncome");
+
+                                if (orphanSelect.value === "1") {
+                                    guardianField.style.display = "block";
+                                    GuardianddlDepartment.style.display = "block";
+                                    GuardianIncome.style.display = "block";
+                                    FamilyddlDepartment.style.display = "none";
+                                    FamilydianIncome.style.display = "none";
+                                } else if (orphanSelect.value === "2") {
+                                    guardianField.style.display = "none";
+                                    GuardianddlDepartment.style.display = "none";
+                                    GuardianIncome.style.display = "none";
+                                    FamilyddlDepartment.style.display = "block";
+                                    FamilydianIncome.style.display = "block";
+                                } else {
+                                    guardianField.style.display = "none";
+                                    GuardianddlDepartment.style.display = "none";
+                                    GuardianIncome.style.display = "none";
+                                    FamilyddlDepartment.style.display = "none";
+                                    FamilydianIncome.style.display = "none";
+                                }
+                            }
+
+
+                        </script>
+
                     </div>
                 </fieldset>
                 <fieldset>
@@ -583,29 +857,17 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                     Enter   School UDISE Code<br />
-                                   स्कूल का UDISE कोड दर्ज करें</label>
-                                <input id="ddlSchoolDise" class="form-control"  autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" />
-                                   <%-- <option>Select</option>
-                                    <option>23320400117-GOVT HSS AHAMDABAD</option>
-                                    <option>23320303134-GOVT HSS KHAJURI KALAN</option>
-                                    <option>23320212709-GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)</option>
-                                    <option>23320110008-GOVT HSS GUNGA</option>
-                                    <option>23340101207-M.P. CONVENT BADI</option>
-                                    <option>23340202202-GMS BERKHEDI BARAMAD GADHI</option>
-                                    <option>23340300401-UEGS KUSNAGAR AMGAWAN</option>
-                                    <option>23340402101-GGPS BAMULIYA DANGI</option>
-                                    <option>23340502509-GHSS BANGAWAN</option>
-                                    <option>23340603802-GAYANDEEP M S CHANDAN PIPALIYA</option>
-                                </input>--%>
+                                    स्कूल का UDISE कोड दर्ज करें</label>
+                                <input id="ddlSchoolDise" class="form-control" autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" />
                             </div>
                         </div>
-                        <div class="col-md-3" id="school" style="display:none;">
+                        <div class="col-md-3" id="school" style="display: none;">
                             <div class="form-group">
                                 <label>
                                     Select School Name<br />
-                              स्कूल का नाम चुनें</label>
+                                    स्कूल का नाम चुनें</label>
                                 <select class="form-control  ">
-                                 
+
                                     <option>GOVT HSS AHAMDABAD</option>
                                     <option>GOVT HSS KHAJURI KALAN</option>
                                     <option>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)</option>
@@ -690,6 +952,14 @@ Berasia"
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
+                                    Date of Admission<br />
+                                    प्रवेश की तिथि<span style="color: red">*</span></label>
+                                <input type="date" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
                                     Select Class<br />
                                     कक्षा का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="class1" onchange="myFunction6()">
@@ -713,8 +983,7 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                     Select Subject<br />
-
-                                  विषय का चयन करें<span style="color: red">*</span></label>
+                                    विषय का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Biology</option>
@@ -733,14 +1002,14 @@ Berasia"
 
 विद्यार्थी  बैंक खाते की जानकारी</legend>
                     <div class="row">
-                       
+
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Enter IFSC Code<br />
-                                   आई.एफ.एस.सी कोड दर्ज करें<span style="color: red">*</span></label>
-                             <input class="form-control "   id="IFSC" placeholder="Enter IFSC Code" autocomplete="off"  onchange="myFunction8()"/>
-                               <%--     <option value="0">Select</option>
+                                    आई.एफ.एस.सी कोड दर्ज करें<span style="color: red">*</span></label>
+                                <input class="form-control " id="IFSC" placeholder="Enter IFSC Code" autocomplete="off" onchange="myFunction8()" />
+                                <%--     <option value="0">Select</option>
                                     <option value="1">SBIN0051467</option>
                                     <option value="2">ORBC0101947</option>
                                     <option value="3">CBIN0287003</option>
@@ -751,24 +1020,24 @@ Berasia"
                                 </inpute>--%>
                             </div>
                         </div>
-                         <div class="col-md-3" style="display:none;" id="bankname">
-     <div class="form-group">
-         <label>
-              Bank Name<br />
-             बैंक का नाम<span style="color: red">*</span></label>
-         <input class="form-control "  placeholder="STATE BANK OF INDIA BHOPAL" autocomplete="off" />
-            <%-- <option value="0">Select</option>
+                        <div class="col-md-3" style="display: none;" id="bankname">
+                            <div class="form-group">
+                                <label>
+                                    Bank Name<br />
+                                    बैंक का नाम<span style="color: red">*</span></label>
+                                <input class="form-control " placeholder="STATE BANK OF INDIA BHOPAL" autocomplete="off" />
+                                <%-- <option value="0">Select</option>
              <option value="1">STATE BANK OF INDIA BHOPAL</option>
              <option value="2">ORIENTAL BANK OF COMMERCE BHOPAL </option>
              <option value="3">CENTRAL BANK OF INDIA HOSHANGABAD</option>
              <option value="4">CENTRAL BANK OF INDIA BABAI</option>
              <option value="4">CENTRAL BANK OF INDIA BETUL</option>--%>
-     </div>
- </div>
-                        <div class="col-md-3" style="display:none;" id="Branch">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="display: none;" id="Branch">
                             <div class="form-group">
                                 <label>
-                                     Branch<br />
+                                    Branch<br />
                                     शाखा<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Bhopal" />
                             </div>
@@ -777,7 +1046,7 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                     Enter Account No.<br />
-                                   		खाता नंबर दर्ज करें<span style="color: red">*</span></label>
+                                    खाता नंबर दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Account No." />
                             </div>
                         </div>
@@ -785,7 +1054,7 @@ Berasia"
                             <div class="form-group">
                                 <label>
                                     Enter Account Holder Name<br />
-                                 खाता धारक का नाम दर्ज करें<span style="color: red">*</span></label>
+                                    खाता धारक का नाम दर्ज करें<span style="color: red">*</span></label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter  Account Holder Name" />
                             </div>
                         </div>
@@ -804,7 +1073,7 @@ Berasia"
                 </fieldset>
             </div>
             <div id="show1" style="display: none;">
-                
+
                 <fieldset>
                     <legend>Document / दस्तावेज़</legend>
                     <div class="row align-items-end">
@@ -815,9 +1084,9 @@ Berasia"
                     <div class="row align-items-end mt-4">
                         <div id="DocAppointment" class="col-md-4">
                             <label>
-                               Upload Student Photo<br />
-                              
-विद्यार्थी का फोटो अपलोड करें :
+                                Upload Student Photo<br />
+
+                                विद्यार्थी का फोटो अपलोड करें :
                             </label>
                         </div>
                         <div id="DocAppointment1" class="col-md-4">
@@ -831,30 +1100,30 @@ Berasia"
                     </div>
 
                     <div class="row align-items-end mt-3">
-                    
-                        <div  class="col-md-4"  style="display:none;" id="DisCertificate">
+
+                        <div class="col-md-4" style="display: none;" id="DisCertificate">
                             <label>
                                 Upload Student Disability Certificate<br />
                                 विद्यार्थी का  विकलांगता प्रमाण पत्र अपलोड करें
  :
                             </label>
                         </div>
-                        <div class="col-md-4" style="display:none;" id="file">
+                        <div class="col-md-4" style="display: none;" id="file">
                             <input type="file" id="fileInput3" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
-                        <div class="col-md-4" style="display:none;" id="eye">
+                        <div class="col-md-4" style="display: none;" id="eye">
                             <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
 
                         </div>
-                        
-                            
+
+
                     </div>
                     <div class="row align-items-end mt-3">
                         <div id="DocCaste" class="col-md-4">
                             <label>
                                 Upload Student Cast/Category Certificate<br />
-                             विद्यार्थी  का जाति और श्रेणी प्रमाण पत्र अपलोड करें:
+                                विद्यार्थी  का जाति और श्रेणी प्रमाण पत्र अपलोड करें:
                             </label>
                         </div>
                         <div id="DocCaste1" class="col-md-4">
@@ -868,8 +1137,8 @@ Berasia"
                     <div class="row align-items-end mt-3">
                         <div id="DocPresentpost" class="col-md-4">
                             <label>
-                               Student Upload Transfer Certificate<br />
-                             विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
+                                Student Upload Transfer Certificate<br />
+                                विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
                             </label>
                         </div>
                         <div id="DocPresentpost1" class="col-md-4">
@@ -883,8 +1152,9 @@ Berasia"
                     <div class="row align-items-end mt-3">
                         <div id="Dochandicapped" class="col-md-4">
                             <label>
-                            Upload  Student   Bank Passbook <br />
-                               विद्यार्थी  का बैंक पासबुक  अपलोड करें :
+                                Upload  Student   Bank Passbook
+                                <br />
+                                विद्यार्थी  का बैंक पासबुक  अपलोड करें :
                             </label>
                         </div>
                         <div id="Dochandicapped1" class="col-md-4">
@@ -910,7 +1180,69 @@ Berasia"
 
                         </div>
                     </div>
+                    <%--fsdcxhbfhbv--%>
+                    <div class="row align-items-end mt-3">
+                        <div class="col-md-4">
+                            <label>
+                                Upload  Below Poverty Line(BPL)      
+                                <br />
+                                गरीबी रेखा से नीचे (बीपीएल) की छाया प्रति अपलोड करें:
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div class="col-md-4">
+                            <label>
+                                Upload Domicile Certificate<br />
+                                मूल निवासी प्रमाण पत्र  अपलोड करें:
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div class="col-md-4">
+                            <label>
+                                Upload Disability Certificate<br />
+                                विकलांगता प्रमाणपत्र अपलोड:
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div class="col-md-4">
+                            <label>
+                                Income Tax Certificate<br />
+                                आयकर प्रमाण पत्र अपलोड करें:
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                        </div>
+                    </div>
+                    <%--fsdcxhbfhbv--%>
                 </fieldset>
                 <hr />
                 <div class="row">
@@ -921,11 +1253,33 @@ Berasia"
                         </div>
                     </div>
                 </div>
-                
+
+            </div>
         </div>
-    </div></div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+
+
+        function toggleSpinachField() {
+            var orphanSelect = document.getElementById("orphanSelect");
+            var spinachField = document.getElementById("spinachField");
+            var GuardianddlDepartment = document.getElementById("GuardianddlDepartment");
+            var GuardianIncome = document.getElementById("GuardianIncome");
+
+
+            if (orphanSelect.value === "1") {
+                spinachField.style.display = "block";
+                GuardianddlDepartment.style.display = "block";
+                GuardianIncome.style.display = "block";
+            } else {
+                spinachField.style.display = "none";
+                GuardianddlDepartment.style.display = "none";
+                GuardianIncome.style.display = "none";
+            }
+        }
+    </script>
     <script>function autoResize(textarea) {
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
@@ -960,7 +1314,7 @@ Berasia"
                 document.getElementById('file').style.display = "none";
             }
         }</script>
-   
+
 
     <script>
         function myFunction5() {
@@ -975,7 +1329,7 @@ Berasia"
                 document.getElementById('subject').style.display = "none";
             }
         }
-</script>
+    </script>
     <script>
         function myFunction6() {
             var forwardTo = document.getElementById("class1").value;
@@ -989,7 +1343,7 @@ Berasia"
                 document.getElementById('subject1').style.display = "none";
             }
         }
-</script>
+    </script>
     <script>
         function DivHide() {
             var checkbox1 = document.getElementById("customRadio1");
@@ -1020,7 +1374,7 @@ Berasia"
                 $('.Alert-Save').click(function () {
                     Swal.fire({
                         title: 'Are you sure?',
-                        text: "Do you want to Send this record?",
+                        text: "Do you want to Save Personal Information?",
                         type: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085D6',
@@ -1052,53 +1406,53 @@ Berasia"
         });
     </script>
 
-      <script>
-          function myFunction7() {
-              var selectedValue = document.getElementById("ddlSchoolDise").value;
-              var schoolDiv = document.getElementById('school');
+    <script>
+        function myFunction7() {
+            var selectedValue = document.getElementById("ddlSchoolDise").value;
+            var schoolDiv = document.getElementById('school');
 
-              if (selectedValue !== "") {
-                  schoolDiv.style.display = "block"; // Show the div
-              } else {
-                  schoolDiv.style.display = "none"; // Hide the div
-              }
-          }
-      </script>   
-   <script>
-       function myFunction8() {
-           var selectedValue = document.getElementById("IFSC").value;
-           var branchDiv = document.getElementById('Branch');
-           var bankNameDiv = document.getElementById('bankname');
+            if (selectedValue !== "") {
+                schoolDiv.style.display = "block"; // Show the div
+            } else {
+                schoolDiv.style.display = "none"; // Hide the div
+            }
+        }
+    </script>
+    <script>
+        function myFunction8() {
+            var selectedValue = document.getElementById("IFSC").value;
+            var branchDiv = document.getElementById('Branch');
+            var bankNameDiv = document.getElementById('bankname');
 
-           if (selectedValue !== "") {
-               branchDiv.style.display = "block"; // Show the Branch div
-               bankNameDiv.style.display = "block"; // Show the bankname div
-           } else {
-               branchDiv.style.display = "none"; // Hide the Branch div
-               bankNameDiv.style.display = "none"; // Hide the bankname div
-           }
-       }
-   </script>
- <script>
-     function Backclickfn() {
-         var show = document.getElementById('show');
-         var show1 = document.getElementById('show1');
-         var show2 = document.getElementById('show2');
+            if (selectedValue !== "") {
+                branchDiv.style.display = "block"; // Show the Branch div
+                bankNameDiv.style.display = "block"; // Show the bankname div
+            } else {
+                branchDiv.style.display = "none"; // Hide the Branch div
+                bankNameDiv.style.display = "none"; // Hide the bankname div
+            }
+        }
+    </script>
+    <script>
+        function Backclickfn() {
+            var show = document.getElementById('show');
+            var show1 = document.getElementById('show1');
+            var show2 = document.getElementById('show2');
 
-         if (show.style.display === 'block') {
-             show.style.display = 'none';
-             show2.style.display = 'block';
-             BtnBack.style.display = 'none';
-             show1.style.display = 'none'; // Ensure to hide show2 if necessary
-         } else if (show1.style.display === 'block') {
-             show1.style.display = 'none';
-             show.style.display = 'block';
-             show2.style.display = 'none'; // Ensure to hide show2 if necessary
-         } else {
-             window.location.href = 'StudentReg.aspx'; // Redirect if neither show nor show1 is displayed
-         }
-     }
- </script>
+            if (show.style.display === 'block') {
+                show.style.display = 'none';
+                show2.style.display = 'block';
+                BtnBack.style.display = 'none';
+                show1.style.display = 'none'; // Ensure to hide show2 if necessary
+            } else if (show1.style.display === 'block') {
+                show1.style.display = 'none';
+                show.style.display = 'block';
+                show2.style.display = 'none'; // Ensure to hide show2 if necessary
+            } else {
+                window.location.href = 'StudentReg.aspx'; // Redirect if neither show nor show1 is displayed
+            }
+        }
+    </script>
 
 </asp:Content>
 
