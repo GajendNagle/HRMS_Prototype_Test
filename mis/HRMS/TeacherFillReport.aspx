@@ -106,16 +106,16 @@
                                             <br />
                                             टिप्पणी</th>
                                         <th rowspan="2" style="display: none;" id="action">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr valign="middle"  class="text-white">
+                                    </tr>      <tr valign="middle"  class="text-white">
                                         <td>Previous Session<br />
                                             विगत सत्र</td>
                                         <td>Present Session
                                             <br />
                                             वर्तमान सत्र</td>
                                     </tr>
+                                </thead>
+                                <tbody>
+                              
                                     <tr valign="middle">
                                         <td>1
                                         </td>
