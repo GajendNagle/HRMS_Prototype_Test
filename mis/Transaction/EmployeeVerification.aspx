@@ -922,10 +922,6 @@
                                         </table>
                                     </div>
                                 </fieldset>
-
-
-
-
                                 <fieldset>
                                     <legend id="l13">Document / दस्तावेज़</legend>
                                     <div class="table-responsive">
