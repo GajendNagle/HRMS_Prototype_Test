@@ -1322,7 +1322,7 @@
                                             </div>
                                         </li><li class="nav-item">
                                             <a href="#SchoolManagementSystem" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SchoolManagementSystem"><i class="ri-menu-line"></i>School Management Report</a>
+                                                aria-controls="SchoolManagementSystem"><i class="ri-menu-line"></i>School Management System</a>
                                             <div class="collapse menu-dropdown" id="SchoolManagementSystem">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/RouteRegistrationMaster.aspx"><i class="ri-file-list-3-line"></i>Route Registration </a></li>
