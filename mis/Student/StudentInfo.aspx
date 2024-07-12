@@ -838,7 +838,7 @@ Transfer Certificate<br />
 
                         </div>
                     </div>
-                    <div class="row align-items-end mt-3">
+                   <%-- <div class="row align-items-end mt-3">
                         <div id="CriticalIllness" class="col-md-4">
                             <label>
                                 Upload Family Income Proof<br />
@@ -852,7 +852,7 @@ Transfer Certificate<br />
                             <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
-                    </div>
+                    </div>--%>
 
                 </fieldset>
                 <hr />
