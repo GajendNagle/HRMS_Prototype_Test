@@ -1,13 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" %>
 
-<script runat="server">
-
-</script>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -18,9 +13,12 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>Master Data</span>
+                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                         </li>
-                        <li class="breadcrumb-item">Development Master Data</li>
+                        <li class="breadcrumb-item">
+                            <a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
+                                <span>Development Master Data</span></a>
+                        </li>
                         <li class="breadcrumb-item">Unit Master</li>
                     </ol>
                 </div>
@@ -49,46 +47,43 @@
             <fieldset>
                 <legend>Add Unit Name / इकाई का नाम जोड़े</legend>
                 <div class="row align-items-end">
-
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Unit Name (In English) /<br />
+                                Enter Unit Name (In English)<br />
                                 इकाई का नाम दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Unit" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter UQC Code (In English)   /<br />
+                                Enter UQC Code (In English)<br />
                                 UQC कोड दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter UQC Code" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Number of Decimal Places (0 - 4) /<br />
+                                Enter Number of Decimal Places (0-4) <br />
                                 दशमलव संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter UQC Code" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                             <label class="form-check-label">
-                                <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
                                 Status
 								<small>(Active/InActive)</small><br>
                                 स्थिति (सक्रिय/निष्क्रिय)
                             </label>
                         </div>
                     </div>
-                </div>
-                <hr />
-                <div class="row">
                     <div class="col-md-12">
+                        <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="Mst_Unit.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
