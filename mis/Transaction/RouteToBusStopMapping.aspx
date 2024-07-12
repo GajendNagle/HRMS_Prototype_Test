@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="RouteToBusMapping.aspx.cs" Inherits="mis_Transaction_RouteToBusMapping" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="RouteToBusStopMapping.aspx.cs" Inherits="mis_Transaction_RouteToBusMapping" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
 </asp:Content>
