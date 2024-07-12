@@ -44,6 +44,18 @@
                 <legend>Vehicle Registration Report / 
 वाहन पंजीकरण विवरण</legend>
                 <div class="row">
+                                <div class="col-md-3">
+                <div class="form-group">
+                    <span>Transport Use
+<br />
+                        परिवहन का उपयोग<span style="color: red">*</span></span>
+                    <select class="form-control">
+                        <option value="0">--Select--</option>
+                        <option value="1">School Transport Use</option>
+                        <option value="2">Department Transport use</option>
+                    </select>
+                </div>
+            </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>From Date
@@ -67,12 +79,29 @@
                         </div>
                     </div>
                     <div class="col-md-3">
+    <div class="form-group">
+        <span>Select Office Type
+            <br />
+             कार्यालय प्रकार का चयन करें
+            <span style="color: red">*</span></span>
+        <select class="select2 form-control">
+            <option value="0">All</option>
+            <option value="51">Head Office</option>
+            <option value="49">JD Office </option>
+            <option value="47">DEO Office</option>
+            <option value="46">Block Office</option>
+            <option value="45">Sankul Office</option>       
+        </select>
+    </div>
+</div>
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <span>District
+                            <span>Select Office Name
                                 <br />
-                               जिला <span style="color: red">*</span></span>
+                               कार्यालय नाम का चयन करें <span style="color: red">*</span></span>
                             <select class="select2 form-control">
-                                <option value="0">--Select--</option>
+                                <option value="0">All</option>
+                                 <option value="51">Head Office</option>
                                 <option value="51">Agar Malwa</option>
                                 <option value="49">Alirajpur</option>
                                 <option value="47">Anuppur</option>

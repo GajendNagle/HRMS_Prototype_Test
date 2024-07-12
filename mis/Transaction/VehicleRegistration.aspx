@@ -46,6 +46,89 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
+                                <span>Transport Use
+            <br />
+                                    परिवहन का उपयोग<span style="color: red">*</span></span>
+                                <select class="form-control">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">School Transport Use</option>
+                                    <option value="2">Department Transport use</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Transport Ownership
+                                    <br />
+                                    परिवहन स्वामित्व<span style="color: red">*</span></span>
+                                <select class="form-control" id="dropdown1" onchange="toggleSection1()">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">Rented</option>
+                                    <option value="2">Self Ownership</option>
+                                </select>
+                            </div>
+                        </div>
+                        <%--hidshow--%>
+
+
+                        <%--hidshow--%>
+                        <script>
+
+                            function toggleSection1() {
+                                var dropdown1 = document.getElementById("dropdown1");
+                                var section1 = document.getElementById("section1");
+                                var section2 = document.getElementById("section2");
+                                var section3 = document.getElementById("section3");
+                                var section4 = document.getElementById("section4");
+                                var section5 = document.getElementById("section5");
+                                var section6 = document.getElementById("section6");
+                                var section7 = document.getElementById("section7");
+                                var section8 = document.getElementById("section8");
+                                var section9 = document.getElementById("fieldset1");
+                                var section10 = document.getElementById("fieldset2");
+
+                                if (dropdown1.value === "1") {
+                                    section1.style.display = "block";
+                                    section2.style.display = "block";
+                                    section3.style.display = "block";
+                                    section4.style.display = "block";
+                                    section5.style.display = "block";
+                                    section6.style.display = "block";
+                                    section7.style.display = "none";
+                                    section8.style.display = "none";
+                                    section9.style.display = "block";
+                                    section10.style.display = "none";
+
+                                } else if (dropdown1.value === "2") {
+                                    section7.style.display = "block";
+                                    section8.style.display = "block";
+                                    section1.style.display = "none";
+                                    section2.style.display = "none";
+                                    section3.style.display = "none";
+                                    section4.style.display = "none";
+                                    section5.style.display = "none";
+                                    section6.style.display = "none";
+                                    section9.style.display = "none";
+                                    section10.style.display = "block";
+
+                                } else {
+                                    section1.style.display = "none";
+                                    section2.style.display = "none";
+                                    section3.style.display = "none";
+                                    section4.style.display = "none";
+                                    section5.style.display = "none";
+                                    section6.style.display = "none";
+                                    section7.style.display = "none";
+                                    section8.style.display = "none";
+                                    section9.style.display = "none";
+                                    section10.style.display = "none";
+                                }
+                            }
+
+                        </script>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
                                 <span>Vehicle Number
                                     <br />
                                     गाड़ी का नंबर<span style="color: red">*</span></span>
@@ -274,6 +357,81 @@
                         </div>--%>
                     </div>
                 </fieldset>
+                <fieldset id="fieldset1" style="display: none;">
+                    <legend>Transporter Details / परिवाहक का विवरण</legend>
+                    <div class="row">
+                        <div class="col-md-3" id="section1" style="display: none;">
+                            <div class="form-group">
+                                <span>Firm Name
+                                <br />
+                                    फर्म का नाम<span style="color: red">*</span></span>
+                                <input type="text" maxlength="10" class="form-control " placeholder="Enter Ferm Name" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="section2" style="display: none;">
+                            <div class="form-group">
+                                <span>State Name
+                                <br />
+                                    राज्य   नाम<span style="color: red">*</span></span>
+                                <input type="text" maxlength="50" class="form-control" placeholder="Enter State Name" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="section3" style="display: none;">
+                            <div class="form-group">
+                                <span>GSTIN No.
+                                <br />
+                                    जी.एस.टी.आई.एन नंबर<span style="color: red"></span></span>
+                                <input type="text" maxlength="20" class="form-control" placeholder="Enter GSTIN No." autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="section5" style="display: none;">
+    <div class="form-group">
+        <span>Contect Person Name
+        <br />
+            संपर्क व्यक्ति का नाम<span style="color: red">*</span></span>
+        <input type="text" maxlength="50" class="form-control" placeholder="Enter Contect person Name">
+    </div>
+</div>
+                        <div class="col-md-9" id="section4" style="display: none;">
+                            <div class="form-group">
+                                <span>Address
+                                <br />
+                                    पता<span style="color: red">*</span></span>
+                                <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter  Address" autocomplete="off">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3" id="section6" style="display: none;">
+                            <div class="form-group">
+                                <span>Firm Ladline No.
+                       <br />
+                                    फर्म लैडलाइन नं.<span style="color: red">*</span></span>
+                                <input type="text" maxlength="50" class="form-control" placeholder="Firm Ladline No.">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="fieldset2" style="display: none;">
+                    <legend>Dealer Details / विक्रेता का विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-3" id="section7" style="display: none;">
+                            <div class="form-group">
+                                <span>Dealer Name
+                                <br />
+                                    विक्रेता का नाम<span style="color: red">*</span></span>
+                                <input type="text" maxlength="45" class="form-control" placeholder="Enter Dealer Name" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-md-9" id="section8" style="display: none;">
+                            <div class="form-group">
+                                <span>Dealer Address
+                                <br />
+                                    विक्रेता का पता<span style="color: red">*</span></span>
+                                <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Dealer Address" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
                 <fieldset>
                     <legend>Insurance Details / बीमा का विवरण</legend>
                     <div class="row align-items-end">
@@ -318,7 +476,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <fieldset>
+                <%--<fieldset>
                     <legend>Dealer Details / विक्रेता का विवरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
@@ -339,7 +497,7 @@
                         </div>
 
                     </div>
-                </fieldset>
+                </fieldset>--%>
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
@@ -375,7 +533,7 @@
                                                 <th scope="col">Sr.No.<br />
                                                     सरल क्र. </th>
                                                 <th scope="col">Vehicle Number<br />
-                                                   गाड़ी का नंबर</th>
+                                                    गाड़ी का नंबर</th>
                                                 <th scope="col">Chassis Number
                                                     <br />
                                                     चेसिस नंबर</th>
