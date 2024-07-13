@@ -71,7 +71,6 @@
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter UQC Code" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -125,8 +124,6 @@
                                         <br />
                                         दशमलव संख्या 
                                     </th>
-                                    <%--   <th>State Code No. /<br />
-                                        राज्य कोड संख्या</th>--%>
                                     <th>Status(Active - Yes /<br />
                                         InActive - No)</th>
                                     <th>Action</th>
