@@ -19,7 +19,7 @@
                             <a href="#SchoolManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>School Management System</span></a>
                         </li>
-                        <li class="breadcrumb-item">Route To Vehicle Mapping </li>
+                        <li class="breadcrumb-item">Driver Registration </li>
                     </ol>
                 </div>
             </div>
@@ -29,7 +29,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Route To Vehicle Mapping / वाहन मार्ग मानचित्रण</h4>
+                    <h4 class="card-title">Driver Registration / चालक पंजीकरण</h4>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>Route To Vehicle Mapping / वाहन मार्ग मानचित्रण</legend>
+                <legend>Driver Registration / चालक पंजीकरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -208,7 +208,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Route Details / मार्ग विवरण</legend>
+                <legend>  Details / विवरण</legend>
 
                 <div class="row justify-content-end ">
                     <div class="col-md-12 mt-3">
