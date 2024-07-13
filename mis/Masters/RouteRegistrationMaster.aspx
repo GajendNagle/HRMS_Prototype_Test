@@ -50,13 +50,17 @@
                     <div class="col-md-12">
                         <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
-                        <a href="Mst_WorkSubcategory.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                        <a href="RouteRegistrationMaster.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Route Details / मार्ग विवरण</legend>
                 <div class="row justify-content-end">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-outline-success btn-border  w-lg">Search</button>
+                        <a href="BusStopRegistrationMaster.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    </div>
                     <div class="col-md-4 text-end">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
@@ -85,6 +89,31 @@
                                             कार्यवाहीं</th>
                                     </tr>
                                 </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>RUT001</td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>RUT002</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>RUT003</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>RUT004</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>RUT005</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
                             </table>
                         </div>
                     </div>
