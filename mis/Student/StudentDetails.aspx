@@ -176,7 +176,7 @@
                                             <th>Gender
                                             </th>
                                             <td>
-                                                <select class="form-control" placeholder="Female" disabled="disabled">
+                                                <select class="form-control select2" placeholder="Female" disabled="disabled">
                                                     <option selected="selected">Female</option>
                                                     <option>Male</option>
                                                 </select></td>
@@ -454,21 +454,27 @@
 
                                     <table class="table table-bordered">
                                         <tr>
-
-                                            <th>Is Vimukti</th>
+                                            <th>Only Girl Child</th>
                                             <td>
-                                                <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                <select id="child" class="form-control select2" onchange="GirlChild()">
                                                     <option>Select</option>
-                                                    <option>YES</option>
-                                                    <option selected="selected">NO</option>
+                                                    <option value="Yes" selected="selected">Yes</option>
+                                                    <option value="No">No</option>
                                                 </select></td>
-                                            <th>Is Single Child</th>
+
+                                            <th>Select No Of Sibling's</th>
                                             <td>
-                                                <select id="child" name="ctl00$ContentBody$ctl02" class="form-control select2" onchange="myFunction4()">
-                                                    <option value="0">Select</option>
-                                                    <option value="1" selected="selected">YES</option>
-                                                    <option value="2">NO</option>
+                                                <select name="ctl00$ContentBody$ctl02" id="ddlSibling" class="form-control select2" disabled="disabled">
+                                                    <option>Select</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    
                                                 </select></td>
+                                        </tr>
+                                        <tr>
                                             <th>Is Father Dead ?</th>
                                             <td>
                                                 <select id="orphanSelect" name="ctl00$ContentBody$ctl02" class="form-control select2" onchange="toggleGuardianField(); ">
@@ -525,7 +531,16 @@
                                             <th>Attendance day of student in previous year</th>
                                             <td>
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="70 days" /></td>
-                                            <td colspan="2"></td>
+
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>
+                                                <select class="form-control select2" onchange="myFunction5()">
+                                                    <option value="1">Select</option>
+                                                    <option value="2" selected="selected">Day Scholar</option>
+                                                    <option value="3">Private Hostel</option>
+                                                    <option value="4">Govt. Hostel</option>
+
+                                                </select></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -552,7 +567,7 @@
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="07/06/2022" /></td>
                                             <th>Select Class</th>
                                             <td>
-                                                <select class="form-control select2" id="class1" onchange="myFunction6()">
+                                                <select class="form-control select2" >
                                                     <option value="0">Select</option>
                                                     <option value="1">1st Class</option>
                                                     <option value="2">2nd Class</option>
@@ -575,8 +590,18 @@
                                             <th>working days in the current academic year </th>
                                             <td>
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="300 days" /></td>
-                                            <td colspan="2"></td>
+
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>
+                                                <select class="form-control select2" onchange="myFunction5()">
+                                                    <option value="1">Select</option>
+                                                    <option value="2" selected="selected">Day Scholar</option>
+                                                    <option value="3">Private Hostel</option>
+                                                    <option value="4">Govt. Hostel</option>
+
+                                                </select></td>
                                         </tr>
+
                                         <tr>
                                             <th>Student Attendance Day in the current academic year</th>
                                             <td>
@@ -968,17 +993,15 @@
 
                                     <table class="table table-bordered">
                                         <tr>
-
-                                            <th>Is Vimukti</th>
-                                            <td>No</td>
                                             <th>Is Single Child</th>
                                             <td>Yes</td>
-                                            </tr>
-                                        <tr>
                                             <th>Is Father Dead ?</th>
                                             <td>No</td>
+                                        </tr>
+                                        <tr>
                                             <th>Are the Students Unparented ?</th>
                                             <td>No</td>
+                                            <td colspan="2"></td>
                                         </tr>
 
                                     </table>
@@ -994,12 +1017,15 @@
                                             <td>2234769808</td>
                                             <th>Class</th>
                                             <td>4th class</td>
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>Day Scholar</td>
                                         </tr>
                                         <tr>
                                             <th>Scolar Number</th>
                                             <td>RTY345345</td>
                                             <th>Percentage</th>
                                             <td>30%</td>
+                                            <td colspan="2"></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -1015,12 +1041,15 @@
                                             <td>GOVT HSS AHAMDABAD-23320400117</td>
                                             <th>Date of Admission</th>
                                             <td>02/04/2022</td>
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>Day Scholar</td>
                                         </tr>
                                         <tr>
                                             <th>Class</th>
                                             <td>4th class</td>
                                             <th>Scolar Number</th>
                                             <td>RTE4567788</td>
+                                            <td colspan="2"></td>
                                         </tr>
 
                                     </table>
@@ -1395,6 +1424,18 @@
             } else if (ddlResult.value === "Fail") {
                 tblfields.style.display = "table-Row";
 
+            }
+        }
+
+        function GirlChild() {
+            var child = document.getElementById("child");
+           
+            if (child.value === "Yes") {
+                ddlSibling.setAttribute("disabled", 'disabled');
+                
+            } else if (child.value === "No") {
+                ddlSibling.removeAttribute("disabled");
+                
             }
         }
     </script>
