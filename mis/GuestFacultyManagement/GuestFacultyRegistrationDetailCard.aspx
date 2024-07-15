@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="GuestFacultyRegistrationDetailCard.aspx.cs" Inherits="mis_SankulVerification_GuestFacultyRegistrationDetailCard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="GuestFacultyRegistrationDetailCard.aspx.cs" Inherits="mis_GuestFacultyManagement_GuestFacultyRegistrationDetailCard" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+     <style>
         fieldset {
             background-color: white;
         }
@@ -18,10 +18,21 @@
             page-break-after: always;
         }
         /*Css End By Sagar*/
+
+
+        .table tr:nth-child(even) {
+           background-color:transparent !important;
+        }
+
+        .table td, .table th {
+            border: 0px !important;
+        }
+
+       
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -33,7 +44,7 @@
                         <li class="breadcrumb-item">
                             <a href="#GFMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>GFMS</span></a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#SankulVerification" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Sankul Verification</span></a></li>
+                        <li class="breadcrumb-item"><a href="#SankulVerification" data-bs-toggle="collapse" onclick="SidebarToggle('GFMS')" role="button" aria-expanded="false"><span>Sankul Verification</span></a></li>
                         <li class="breadcrumb-item active"><a title="click to go on">Guest Faculty Registration Detail Card</a></li>
                     </ol>
                 </div>
@@ -83,19 +94,25 @@
                                     <tr role="row" class="odd">
                                         <td><span>Name</span>
                                         </td>
+                                        <td><span>Yash Vishwakarma</span>
+                                        </td>
                                         <td><span>Father's/Husband's Name</span>
+                                        </td>
+                                        <td><span>Vipul Vishwakarma</span>
                                         </td>
                                     </tr>
                                     <tr role="row" class="odd">
                                         <td><span>Date of Birth</span>
                                         </td>
+                                        <td>10/07/1996</td>
                                         <td><span>Gender</span>
                                         </td>
+                                         <td>Male</td>
                                     </tr>
                                     <tr role="row" class="odd">
                                         <td><span>Address</span>
                                         </td>
-
+                                        <td>MR - 55, Indra colony patel chowk Bhopal</td>
                                     </tr>
                                 </table>
                             </div>
@@ -168,7 +185,7 @@
                                         </td>
                                         <td><span>Email ID</span>
                                         </td>
-                                        <td><span>yash"gmail.com</span>
+                                        <td><span>yash@gmail.com</span>
                                         </td>
 
                                     </tr>
@@ -331,15 +348,15 @@
                         <div class="col text-center">
                             Verified On:<b> 28/06/2024</b>
                         </div>
-                        <div class="col text-end">
+                        <%--<div class="col text-end">
                             Verified IP:<b> 106.201.253.176</b>
-                        </div>
+                        </div>--%>
                         <div class="col-12 my-3">
                             <p>मैं प्रमाणित करता/करती हूँ कि  उपरोक्त जानकारी मेरे ज्ञान व विश्वास से एवं दस्तावेजों के अनुसार सत्य है, किसी भी प्रकार की असत्य एवं त्रुटिपूर्ण जानकारी पाये जाने पर मेरा पंजीयन आवेदन रद्द कर दिया जायेगा |</p>
                         </div>
 
                     </div>
-                    <div class="row mb-0">
+                 <%--   <div class="row mb-0">
                         <div class="col-md-12 ">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div style="width: 140px; height: auto; text-align: center;">
@@ -361,13 +378,15 @@
 
                         </div>
 
-                    </div>
+                    </div>--%>
                 </div>
                 <%-- End by sagar--%>
             </fieldset>
         </div>
     </div>
+
+
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
 </asp:Content>
 
