@@ -1462,7 +1462,7 @@
                             <input type="file" id="fileInput1" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div id="DocAppointment2" class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
 
                         </div>
@@ -1481,7 +1481,7 @@
                             <input type="file" id="fileInput3" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div class="col-md-4" id="eye">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
 
                         </div>
@@ -1499,7 +1499,7 @@
                             <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div id="DocCaste2" class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
                     </div>
@@ -1514,7 +1514,7 @@
                             <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div id="DocPresentpost2" class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
                     </div>
@@ -1530,7 +1530,7 @@
                             <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div id="Dochandicapped2" class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
                     </div>
@@ -1545,7 +1545,7 @@
                             <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div id="CriticalIllness3" class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
                     </div>
@@ -1562,7 +1562,7 @@
                             <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
                     </div>
@@ -1577,7 +1577,7 @@
                             <input type="file" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
                         </div>
                         <div class="col-md-4">
-                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+                            <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                         </div>
                     </div>
@@ -2022,7 +2022,9 @@
         //}
         document.getElementById("show2").style.display = (document.getElementById("show2").style.display == 'block') ? 'none' : 'block';
         BtnBack.style.display = 'none';
+        show1.style.display = 'none';
     }
+    
      </script>
     <script>
         function myFunction4() {
