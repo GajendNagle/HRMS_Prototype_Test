@@ -176,7 +176,7 @@
                                             <th>Gender
                                             </th>
                                             <td>
-                                                <select class="form-control" placeholder="Female" disabled="disabled">
+                                                <select class="form-control select2" placeholder="Female" disabled="disabled">
                                                     <option selected="selected">Female</option>
                                                     <option>Male</option>
                                                 </select></td>
@@ -454,21 +454,27 @@
 
                                     <table class="table table-bordered">
                                         <tr>
-
-                                            <th>Is Vimukti</th>
+                                            <th>Only Girl Child</th>
                                             <td>
-                                                <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                                <select id="child" class="form-control select2" onchange="GirlChild()">
                                                     <option>Select</option>
-                                                    <option>YES</option>
-                                                    <option selected="selected">NO</option>
+                                                    <option value="Yes" selected="selected">Yes</option>
+                                                    <option value="No">No</option>
                                                 </select></td>
-                                            <th>Is Single Child</th>
+
+                                            <th>Select No Of Sibling's</th>
                                             <td>
-                                                <select id="child" name="ctl00$ContentBody$ctl02" class="form-control select2" onchange="myFunction4()">
-                                                    <option value="0">Select</option>
-                                                    <option value="1" selected="selected">YES</option>
-                                                    <option value="2">NO</option>
+                                                <select name="ctl00$ContentBody$ctl02" id="ddlSibling" class="form-control select2" disabled="disabled">
+                                                    <option>Select</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    
                                                 </select></td>
+                                        </tr>
+                                        <tr>
                                             <th>Is Father Dead ?</th>
                                             <td>
                                                 <select id="orphanSelect" name="ctl00$ContentBody$ctl02" class="form-control select2" onchange="toggleGuardianField(); ">
@@ -525,7 +531,16 @@
                                             <th>Attendance day of student in previous year</th>
                                             <td>
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="70 days" /></td>
-                                            <td colspan="2"></td>
+
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>
+                                                <select class="form-control select2" onchange="myFunction5()">
+                                                    <option value="1">Select</option>
+                                                    <option value="2" selected="selected">Day Scholar</option>
+                                                    <option value="3">Private Hostel</option>
+                                                    <option value="4">Govt. Hostel</option>
+
+                                                </select></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -552,7 +567,7 @@
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="07/06/2022" /></td>
                                             <th>Select Class</th>
                                             <td>
-                                                <select class="form-control select2" id="class1" onchange="myFunction6()">
+                                                <select class="form-control select2" >
                                                     <option value="0">Select</option>
                                                     <option value="1">1st Class</option>
                                                     <option value="2">2nd Class</option>
@@ -575,8 +590,18 @@
                                             <th>working days in the current academic year </th>
                                             <td>
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="300 days" /></td>
-                                            <td colspan="2"></td>
+
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>
+                                                <select class="form-control select2" onchange="myFunction5()">
+                                                    <option value="1">Select</option>
+                                                    <option value="2" selected="selected">Day Scholar</option>
+                                                    <option value="3">Private Hostel</option>
+                                                    <option value="4">Govt. Hostel</option>
+
+                                                </select></td>
                                         </tr>
+
                                         <tr>
                                             <th>Student Attendance Day in the current academic year</th>
                                             <td>
@@ -871,11 +896,16 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
             <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header" style="background-color: var(--vz-primary);">
-                            <img id="imgLolgoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                            <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
                             <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Student Registration Details/विद्यार्थी  पंजीकरण विवरण</h3>
                             <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -883,7 +913,9 @@
 
                             <fieldset>
                                 <legend>General Information/सामान्य जानकारी</legend>
+
                                 <div class="table-responsive">
+
                                     <table class="table table-bordered">
                                         <tr>
                                             <th>Student Name (English)
@@ -961,17 +993,15 @@
 
                                     <table class="table table-bordered">
                                         <tr>
-
-                                            <th>Is Vimukti</th>
-                                            <td>No</td>
                                             <th>Is Single Child</th>
                                             <td>Yes</td>
-                                            </tr>
-                                        <tr>
                                             <th>Is Father Dead ?</th>
                                             <td>No</td>
+                                        </tr>
+                                        <tr>
                                             <th>Are the Students Unparented ?</th>
                                             <td>No</td>
+                                            <td colspan="2"></td>
                                         </tr>
 
                                     </table>
@@ -987,12 +1017,15 @@
                                             <td>2234769808</td>
                                             <th>Class</th>
                                             <td>4th class</td>
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>Day Scholar</td>
                                         </tr>
                                         <tr>
                                             <th>Scolar Number</th>
                                             <td>RTY345345</td>
                                             <th>Percentage</th>
                                             <td>30%</td>
+                                            <td colspan="2"></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -1008,12 +1041,15 @@
                                             <td>GOVT HSS AHAMDABAD-23320400117</td>
                                             <th>Date of Admission</th>
                                             <td>02/04/2022</td>
+                                            <th>Select Applicable for Student Residence</th>
+                                            <td>Day Scholar</td>
                                         </tr>
                                         <tr>
                                             <th>Class</th>
                                             <td>4th class</td>
                                             <th>Scolar Number</th>
                                             <td>RTE4567788</td>
+                                            <td colspan="2"></td>
                                         </tr>
 
                                     </table>
@@ -1188,7 +1224,122 @@
                                 </div>
                             </fieldset>
                         </div>
-                       
+                        <%--<div id="show1">
+                
+                <fieldset>
+                    <legend>Document / दस्तावेज़</legend>
+                    <div class="row align-items-end">
+                        <div>
+                            <h5 style="font-weight: 400;">Note :<span style="color: red;">Please upload a PDF or JPG file that is less than 700 KB in size.</span></h5>
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-4">
+                        <div id="DocAppointment" class="col-md-4">
+                            <label>
+                               Upload Student Photo<br />
+                              
+विद्यार्थी  फोटो अपलोड करें :
+                            </label>
+                        </div>
+                        <div id="DocAppointment1" class="col-md-4">
+                            <input type="file" id="fileInput1" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div id="DocAppointment2" class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-end mt-3">
+                    
+                        <div  class="col-md-4" id="DisCertificate">
+                            <label>
+                                Upload Student Disability Certificate<br />
+                                विद्यार्थी  विकलांगता प्रमाणपत्र अपलोड करें
+ :
+                            </label>
+                        </div>
+                        <div class="col-md-4" id="file">
+                            <input type="file" id="fileInput3" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div class="col-md-4" id="eye">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+
+                        </div>
+                        
+                            
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div id="DocCaste" class="col-md-4">
+                            <label>
+                                Upload Student Cast/Category Certificate<br />
+                             विद्यार्थी  का जाति और श्रेणी प्रमाणपत्र अपलोड करें:
+                            </label>
+                        </div>
+                        <div id="DocCaste1" class="col-md-4">
+                            <input type="file" id="fileInput2" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div id="DocCaste2" class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div id="DocPresentpost" class="col-md-4">
+                            <label>
+                               Student Upload Transfer Certificate<br />
+                             विद्यार्थी  का   स्थानांतरण  प्रमाण पत्र अपलोड करें :
+                            </label>
+                        </div>
+                        <div id="DocPresentpost1" class="col-md-4">
+                            <input type="file" id="fileInput4" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div id="DocPresentpost2" class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div id="Dochandicapped" class="col-md-4">
+                            <label>
+                            Upload  Student   Bank Passbook <br />
+                               विद्यार्थी  का बैंक पासबुक  अपलोड करें :
+                            </label>
+                        </div>
+                        <div id="Dochandicapped1" class="col-md-4">
+                            <input type="file" id="fileInput6" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div id="Dochandicapped2" class="col-md-4">
+                            <a href=""  class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="row align-items-end mt-3">
+                        <div id="CriticalIllness" class="col-md-4">
+                            <label>
+                                Upload Family Income Proof<br />
+                                पारिवारिक आय प्रमाण अपलोड करें:
+                            </label>
+                        </div>
+                        <div id="CriticalIllness1" class="col-md-4">
+                            <input type="file" id="fileInput010" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                        <div id="CriticalIllness3" class="col-md-4">
+                            <button type="submit" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
+
+                        </div>
+                    </div>
+
+                </fieldset>
+                <hr />
+              
+                 <div class="modal-footer justify-content-center d-print-none">
+     <button type="button" class="btn btn-primary mr-2" onclick="printModalContent('staticBackdrop'); ">Print</button>
+     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+ </div>
+        </div>--%>
                     </div>
                 </div>
             </div>
@@ -1265,14 +1416,25 @@
 
         function Result() {
             var ddlResult = document.getElementById("ddlResult");
-            var idSpouseDept = document.getElementById("idSpouseDept");
-            var idSpouseOfcAdd = document.getElementById("GovEmp");
+            
             if (ddlResult.value === "Pass") {
                 tblfields.style.display = "none";
 
             } else if (ddlResult.value === "Fail") {
                 tblfields.style.display = "table-Row";
 
+            }
+        }
+
+        function GirlChild() {
+            var child = document.getElementById("child");
+           
+            if (child.value === "Yes") {
+                ddlSibling.setAttribute("disabled", 'disabled');
+                
+            } else if (child.value === "No") {
+                ddlSibling.removeAttribute("disabled");
+                
             }
         }
     </script>
