@@ -503,7 +503,7 @@
                                             <th>School UDISE Code</th>
                                             <td>
                                                 <input id="ddlSchoolDise" class="form-control" autocomplete="off" placeholder="Enter School Dise Code" onchange="myFunction7()" value="22547689875" /></td>
-                                            <th>Class</th>
+                                            <th>Select Class</th>
                                             <td>
                                                 <select class="form-control select2" id="class" onchange="myFunction5()">
                                                     <option value="0">Select</option>
