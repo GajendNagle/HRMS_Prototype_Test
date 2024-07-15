@@ -1216,7 +1216,7 @@
                                     छात्र निवास के लिए लागू का चयन करें</label>
                                 <select class="form-control select2" onchange="myFunction5()">
                                     <option value="0">Select</option>
-                                    <option value="1">Select</option>
+                                   <%-- <option value="1">Select</option>--%>
                                     <option value="2">Day Scholar</option>
                                     <option value="3">Private Hostel</option>
                                     <option value="4">Govt. Hostel</option>
@@ -1352,7 +1352,7 @@
                                     छात्र निवास के लिए लागू का चयन करें</label>
                                 <select class="form-control select2" onchange="myFunction5()">
                                     <option value="0">Select</option>
-                                    <option value="1">Select</option>
+                                  <%--  <option value="1">Select</option>--%>
                                     <option value="2">Day Scholar</option>
                                     <option value="3">Private Hostel</option>
                                     <option value="4">Govt. Hostel</option>
@@ -1584,7 +1584,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <input id="checkbox1" onclick="showhidesavebtn2()" type="checkbox" />
-                            <span class="text-danger fw-bold">कूल प्राचार्य द्वारा विद्यार्थी के समस्त दस्तावेजों का अवलोकन कर लिया गया है तथा समस्त जानकारी सही पाई गई हैं, अतः विद्यालय प्राचार्य द्वारा विद्यार्थी पंजीयन को अनुमोदित किया जा रहा हैं ।</span>
+                            <span class="text-danger fw-bold">स्कुल प्राचार्य द्वारा विद्यार्थी के समस्त दस्तावेजों का अवलोकन कर लिया गया है तथा समस्त जानकारी सही पाई गई हैं, अतः विद्यालय प्राचार्य द्वारा विद्यार्थी पंजीयन को अनुमोदित किया जा रहा हैं ।</span>
                         </div>
 
                     </div>
@@ -1649,8 +1649,8 @@
             //else if (checkbox2.checked === false && checkbox1.checked === false && checkbox3.checked === false && checkbox4.checked === false) {
             //    showsavebtn.style.display = "none"
             //}
-            else if (checkbox1.checked == false && checkbox2.checked == false && checkbox3.checked == false && checkbox4.checked == false) {
-                showsavebtn2.style.display = "block"
+            else  {
+                showsavebtn2.style.display = "none"
             }
         }
     </script>
