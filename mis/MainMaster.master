@@ -586,12 +586,12 @@
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master</a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <%-- <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_Resource.aspx"><i class="ri-file-list-3-line"></i>Resource Master</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_FinancialResourceMap.aspx"><i class="ri-file-list-3-line"></i>Financial Resource Mapping Master</a>
-                                                    </li>
+                                                    </li>--%>
                                                 </ul>
                                             </div>
                                         </li>
@@ -780,9 +780,9 @@
                                                 aria-controls="EmployeeReports" data-key="t-EmployeeReports"><i class="ri-menu-line"></i>Employee Reports</a>
                                             <div class="collapse menu-dropdown" id="EmployeeReports">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/EmployeeVarificationReport.aspx"><i class="ri-file-list-3-line"></i>Employee verification Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Details Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeVarifactionReport.aspx"><i class="ri-file-list-3-line"></i>Employee verification Report </a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1139,7 +1139,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_HoAprDistWiseReport.aspx"><i class="ri-file-list-3-line"></i>APRMS District Wise Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/UploadAPRForm.aspx"><i class="ri-file-list-3-line"></i>Upload APR Form Document</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/HRMS/AnnualPropertyDetailReport.aspx"><i class="ri-file-list-3-line"></i>Employee APR Form Report Print</a></li>--%>
                                                     <%-- <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpAprNotes.aspx"><i class="ri-file-list-3-line"></i>Employee APRMS Home </a></li>
             <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_EmpAprFill.aspx"><i class="ri-file-list-3-line"></i>Employee APR Fill </a></li>--%>
                                                 </ul>
@@ -1318,18 +1318,6 @@
                                                     <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/MaintenanceStatusReport.aspx"><i class="ri-file-list-3-line"></i>Maintenance Status Report</a>--%></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleInsuranceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Insurance Report </a></li>
                                                     <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a>--%></li>
-                                                </ul>
-                                            </div>
-                                        </li><li class="nav-item">
-                                            <a href="#SchoolManagementSystem" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="SchoolManagementSystem"><i class="ri-menu-line"></i>School Management System</a>
-                                            <div class="collapse menu-dropdown" id="SchoolManagementSystem">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/RouteRegistrationMaster.aspx"><i class="ri-file-list-3-line"></i>Route Registration </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/BusStopRegistrationMaster.aspx"><i class="ri-file-list-3-line"></i>Bus Stop Registration </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteToBusStopMapping.aspx"><i class="ri-file-list-3-line"></i>Route To Bus Stop Mapping </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DriverRegistration.aspx"><i class="ri-file-list-3-line"></i>Driver Registration </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteToVehicleMapping.aspx"><i class="ri-file-list-3-line"></i>Route To Vehicle Mapping   </a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1588,7 +1576,10 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_HostelRegistration.aspx"><i class="ri-file-list-3-line"></i>Hostel Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_RoomType.aspx"><i class="ri-file-list-3-line"></i>Add Room Type</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_HostelRoom.aspx"><i class="ri-file-list-3-line"></i>Add Hostel Room</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Mst_RoomRegistration.aspx"><i class="ri-file-list-3-line"></i>Add Room</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/RoomAllocation.aspx"><i class="ri-file-list-3-line"></i>Student Room Allocation</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/RoomDeAllocation.aspx"><i class="ri-file-list-3-line"></i>Room Deallocation</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/StudentHostelReport.aspx"><i class="ri-file-list-3-line"></i>Report</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -1654,14 +1645,11 @@
                                             <a href="#BudgetAssignMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="BudgetAssignMaster"><i class="ri-menu-line"></i>Budget Assign Master</a>
                                             <div class="collapse menu-dropdown" id="BudgetAssignMaster">
-                                                <%--<ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="Finance/EmployeeRegImportantNotes.aspx"><i class="ri-file-list-3-line"></i>Employee Registration</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="Finance/EmployeeVerificationNotes.aspx"><i class="ri-file-list-3-line"></i>Employee Verification</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="Finance/EmployeeOtherCurriculumActivitiesNotw.aspx"><i class="ri-file-list-3-line"></i>Employee Other Curriculum Activities</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="Finance/Rpt_EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Details Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="Finance/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a></li>
-                                                </ul>--%>
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/ProposedBudget.aspx"><i class="ri-file-list-3-line"></i>Proposed Budget</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/UpdateProposedBudget.aspx"><i class="ri-file-list-3-line"></i>Update Proposed Budget</a></li>
+
+                                                </ul>
                                             </div>
                                         </li>
 
@@ -1690,9 +1678,9 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/BankChequePrint.aspx"><i class="ri-file-list-3-line"></i>Bank Cheque Print</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/CashBankBook.aspx"><i class="ri-file-list-3-line"></i>Cash Bank Book</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/Statistics.aspx"><i class="ri-file-list-3-line"></i>Statistics</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/DetailedTrialBalance.aspx"><i class="ri-file-list-3-line"></i>Detailed Trial Balance</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/AlphabeticalTrialBalance.aspx"><i class="ri-file-list-3-line"></i>Alphabetical Trial Balance</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/TrialBalance.aspx"><i class="ri-file-list-3-line"></i>Trial Balance</a></li>
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/DetailedTrialBalance.aspx"><i class="ri-file-list-3-line"></i>Detailed Trial Balance</a></li>--%>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/AlphabeticalTrialBalance.aspx"><i class="ri-file-list-3-line"></i>Alphabetical Ledger Report</a></li>
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/TrialBalance.aspx"><i class="ri-file-list-3-line"></i>Trial Balance</a></li>--%>
                                                     <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a>--%></li>
                                                 </ul>
                                             </div>
@@ -1711,16 +1699,18 @@
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="Development">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/CreateProject.aspx"><i class="ri-file-list-3-line"></i>Create Project</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectApproval.aspx"><i class="ri-file-list-3-line"></i>Project Approval</a></li>
+                                        <%--<li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>--%>
+                                        <%--<li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentUploadDocument.aspx"><i class="ri-file-list-3-line"></i>Generate Demand</a></li>--%>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Upload Document</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Installment Creation</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Document Upload</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Approval</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentReleas.aspx"><i class="ri-file-list-3-line"></i>Installment Payment Release</a></li>
+<%--                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Release</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Approval</a></li>--%>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkWiseExpenditure.aspx"><i class="ri-file-list-3-line"></i>Work Wise Expenditure</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/School_Work_Expenditure.aspx"><i class="ri-file-list-3-line"></i>School Work Expenditure</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/School_Work_Expenditure.aspx"><i class="ri-file-list-3-line"></i>Work Expences Entry</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/GenerateSanctionLetter.aspx"><i class="ri-file-list-3-line"></i>Generate Sanction Letter</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_UtilisationCertificate.aspx"><i class="ri-file-list-3-line"></i>Utilisation Certificate</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/BonusAmtInfo.aspx"><i class="ri-file-list-3-line"></i>Bonus Amount Info</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/BonusAmtInfo.aspx"><i class="ri-file-list-3-line"></i>Budget Receive Info</a></li>
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#DevelopmentReport" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="DevelopmentReport">
@@ -1749,10 +1739,19 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx">Guest Faculty Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileDetails.aspx">Profile View</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx">Update Information</a></li>
+                                        <li class="nav-item">
+                                            <a href="#sankulverification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="sankulverification"><i class="ri-menu-line"></i>Sankul Verification</a>
+                                            <div class="collapse menu-dropdown" id="sankulverification">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ViewGuestFacultyRegistration.aspx"><i class="ri-file-list-3-line"></i>View Guest Faculty Registration</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GuestFacultyRegistrationDetailCard.aspx"><i class="ri-file-list-3-line"></i>Guest Faculty Registration Detail Card</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
-                        </ul>
                         </ul>
                     </div>
                     <!-- Sidebar -->
