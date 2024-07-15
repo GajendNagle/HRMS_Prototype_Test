@@ -471,7 +471,7 @@
                                                     <option>3</option>
                                                     <option>4</option>
                                                     <option>5</option>
-                                                    
+
                                                 </select></td>
                                         </tr>
                                         <tr>
@@ -567,7 +567,7 @@
                                                 <input class="form-control" autocomplete="off" placeholder="Enter School Dise Code" value="07/06/2022" /></td>
                                             <th>Select Class</th>
                                             <td>
-                                                <select class="form-control select2" >
+                                                <select class="form-control select2">
                                                     <option value="0">Select</option>
                                                     <option value="1">1st Class</option>
                                                     <option value="2">2nd Class</option>
@@ -896,11 +896,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
             <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -1348,7 +1343,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h3 style="font: bold; margin-left: auto;"></h3>
-                            <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-hidden="true"></button>
+                            <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-hidden="true" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">
 
@@ -1416,7 +1411,7 @@
 
         function Result() {
             var ddlResult = document.getElementById("ddlResult");
-            
+
             if (ddlResult.value === "Pass") {
                 tblfields.style.display = "none";
 
@@ -1428,13 +1423,13 @@
 
         function GirlChild() {
             var child = document.getElementById("child");
-           
+
             if (child.value === "Yes") {
                 ddlSibling.setAttribute("disabled", 'disabled');
-                
+
             } else if (child.value === "No") {
                 ddlSibling.removeAttribute("disabled");
-                
+
             }
         }
     </script>
