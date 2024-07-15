@@ -1704,7 +1704,7 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Upload Document</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Installment Creation</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentReleas.aspx"><i class="ri-file-list-3-line"></i>Installment Payment Release</a></li>
-<%--                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Release</a></li>
+                                        <%--                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Release</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Approval</a></li>--%>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkWiseExpenditure.aspx"><i class="ri-file-list-3-line"></i>Work Wise Expenditure</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/School_Work_Expenditure.aspx"><i class="ri-file-list-3-line"></i>Work Expences Entry</a></li>
@@ -1735,17 +1735,73 @@
                                 </a>
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="GFMS">
                                     <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/AboutGuestFacultyManagement.aspx">About Guest Faculty Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx">Guest Faculty Registration</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileDetails.aspx">Profile View</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx">Update Information</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/AboutGuestFacultyManagement.aspx"><i class="ri-file-list-3-line"></i>About Guest Faculty Management</a></li>
+                                        <li class="nav-item">
+                                            <a href="#GuestFaculty" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="GuestFaculty"><i class="ri-menu-line"></i>Guest Faculty Login</a>
+                                            <div class="collapse menu-dropdown" id="GuestFaculty">
+
+                                                <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx"><i class="ri-file-list-3-line"></i>Guest Faculty Registration</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileDetails.aspx"><i class="ri-file-list-3-line"></i>Profile View</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx"><i class="ri-file-list-3-line"></i>Update Information</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Trn_ClaimExperienceCertificate.aspx"><i class="ri-file-list-3-line"></i>Claim Experience Certificate</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Rpt_ExpClaimPrint.aspx"><i class="ri-file-list-3-line"></i>Print Experience Claim</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+
+
                                         <li class="nav-item">
                                             <a href="#sankulverification" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="sankulverification"><i class="ri-menu-line"></i>Sankul Verification</a>
+                                                aria-controls="sankulverification"><i class="ri-menu-line"></i>Sankul Login</a>
                                             <div class="collapse menu-dropdown" id="sankulverification">
+
                                                 <ul class="nav nav-sm flex-column">
+
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ViewGuestFacultyRegistration.aspx"><i class="ri-file-list-3-line"></i>View Guest Faculty Registration</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GuestFacultyRegistrationDetailCard.aspx"><i class="ri-file-list-3-line"></i>Guest Faculty Registration Detail Card</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                     
+                                      
+                                        <li class="nav-item">
+                                            <a href="#DEOLogin" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="DEOLogin"><i class="ri-menu-line"></i>DEO Login</a>
+                                            <div class="collapse menu-dropdown" id="DEOLogin">
+
+                                                <ul class="nav nav-sm flex-column">
+                                                </ul>
+                                            </div>
+                                        </li>  
+                                        <li class="nav-item">
+                                            <a href="#BEOLogin" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="BEOLogin"><i class="ri-menu-line"></i>BEO Login</a>
+                                            <div class="collapse menu-dropdown" id="BEOLogin">
+
+                                                <ul class="nav nav-sm flex-column">
+                                                </ul>
+                                            </div>
+                                        </li> 
+                                        <li class="nav-item">
+                                            <a href="#SchoolLogin" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="SchoolLogin"><i class="ri-menu-line"></i>School Login</a>
+                                            <div class="collapse menu-dropdown" id="SchoolLogin">
+
+                                                <ul class="nav nav-sm flex-column">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#GFMSReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="GFMSReports"><i class="ri-menu-line"></i>Reports</a>
+                                            <div class="collapse menu-dropdown" id="GFMSReports">
+
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Rpt_GFMSAnalyticReport.aspx"><i class="ri-file-list-3-line"></i>Guest Faculty Analytic Report</a></li>
                                                 </ul>
                                             </div>
                                         </li>
