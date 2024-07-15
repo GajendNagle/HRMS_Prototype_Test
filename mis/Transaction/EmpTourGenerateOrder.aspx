@@ -39,7 +39,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-  <%--  <div class="content-wrapper">
+    <%--  <div class="content-wrapper">
         <!-- Main content -->
         <div class="container-fluid">
             <div class="row page-titles mb-4">
@@ -84,7 +84,7 @@
                     </nav>
                     <br />--%>
 
-            <div class="col-md-12">
+    <div class="col-md-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
             <h4 class="mb-sm-0"></h4>
             <div class="=page-title-right">
@@ -104,34 +104,76 @@
             </div>
         </div>
     </div>
-<div class="content-wrapper">
-    <div class="container-fluid">
-        <div class="card card-border-primary">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="card-title">Tour Generate</h4>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="card card-border-primary">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Applied Tour Search / एप्लाइड टूर सर्च</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-body">
+                <div class="card-body">
+                    <fieldset>
+                        <legend>Applied Tour Search / एप्लाइड टूर सर्च</legend>
+                        <div class="row align-items-end">
+                            <div class="col-md-3">
 
-                    <fieldset id="show">
-                        <legend>Tour Generate Details</legend>
-                                                <div class="row justify-content-end">
-<div class="col-md-4 text-end">
-    <div class="form-group">
-        <button class="btn btn-info btn-rounded w-55">Excel</button>
-        <button class="btn btn-info btn-rounded w-55">PDF</button>
-    </div>
-</div>
-<div class="col-md-3">
-    <div class="form-group"> 
-        <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
-    </div>
-</div>
-</div>
-             
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Type (Code)
+                                     कार्यालय प्रकार (कोड) का चयन करें<span style="color: red">*</span></label>
+
+                                    <select class="form-control select2">
+                                        <option>Select</option>
+                                        <option>DPI(06)</option>
+                                        <option>Joint Director(09)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Name (Code)/
+                                 कार्यालय का नाम (कोड) का चयन करें<span style="color: red">*</span></label>
+                                    <select class="form-control select2">
+                                        <option></option>
+                                        <option>State Council Educational Research and Training(SECRT)(233203OSS06)</option>
+                                        <option>Joint Director (Education),Indore(232401ORS01)</option>
+                                        <option>Joint Director (Education),Gwalior(232501ORS02)</option>
+                                        <option>Joint Director (Education),Jabalpur(232701ORS03)</option>
+                                        <option>Joint Director (Education),Bhopal(232601ORS04)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row align-items-end">
+                            <div class="col-md-12">
+
+                                <button type="button" class="btn w-lg btn-success btn-border" onclick="document.getElementById('show').style.display='block'">Search</button>
+                                <a href="EmpTourGenerateOrder.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="show" style="display:none">
+                        <legend>Applied Tour Details / एप्लाइड टूर विवरण</legend>
+                        <div class="row justify-content-end">
+                            <div class="col-md-4 text-end">
+                                <div class="form-group">
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -201,23 +243,24 @@
                                         </tr>
                                     </table>
                                 </div>
-                            </div> 
-                        </div><br />
-                            <div class="col-md-12">
-                                <div>
-                                    <p id="note"><b class="font-bold">Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन का अनुमोदन करें |</b></p>
-                                </div>
-                                <br />
                             </div>
-                                     <hr />
-<div class="col-md-12"  id="btnApproveBEO" >
-    <div class="form-group">
-        <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn w-lg btn-success btn-border">Approve</button>
-         <button type="button" class="btn btn-outline-danger w-lg btn-border" data-toggle="modal" data-target="#myModal">Reject</button>
-       <%-- <a href="AcceptingAuthorityFilled.aspx" class="">Clear</a>--%>
-    </div>
-</div>
-                       <%-- <div id="btnApproveBEO" class="row justify-content-center">
+                        </div>
+                        <br />
+                        <div class="col-md-12">
+                            <div>
+                                <p id="note"><b class="font-bold">Approve The Application After Clicking On The Checkbox/चेक बॉक्स पर क्लिक करने के उपरांत आवेदन का अनुमोदन करें |</b></p>
+                            </div>
+                            <br />
+                        </div>
+                        <hr />
+                        <div class="col-md-12" id="btnApproveBEO">
+                            <div class="form-group">
+                                <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn w-lg btn-success btn-border">Approve</button>
+                                <button type="button" class="btn btn-outline-danger w-lg btn-border" data-toggle="modal" data-target="#myModal">Reject</button>
+                                <%-- <a href="AcceptingAuthorityFilled.aspx" class="">Clear</a>--%>
+                            </div>
+                        </div>
+                        <%-- <div id="btnApproveBEO" class="row justify-content-center">
                             <div class="col-md-12 text-center">
                                 <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn btn-success  btn-rounded">Approve</button>
                                
@@ -293,7 +336,7 @@
                         </fieldset>
                     </div>--%>
                 </div>
-                <fieldset>
+                <fieldset style="display:none">
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -364,17 +407,17 @@
                 <!-- Modal Footer -->
                 <div class="modal-footer">
 
-                                                         <hr />
-<div class="col-md-12" >
-    <div class="form-group">
-         <button type="button" class=" w-lg  btn btn-success btn-border" data-dismiss="modal" id="saveButton">Save</button>
-        <buttondata-dismiss="modal" type="button" class=" btn w-lg btn btn-outline-secondary btn-border">Close</buttondata-dismiss="modal">
-         <%--<button type="button" class="btn btn-outline-danger w-lg btn-border" data-toggle="modal" data-target="#myModal">Reject</button>--%>
-       <%-- <a href="AcceptingAuthorityFilled.aspx" class="">Clear</a>--%>
-    </div>
-</div>
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" class=" w-lg  btn btn-success btn-border" data-dismiss="modal" id="saveButton">Save</button>
+                            <button type="button" class=" btn w-lg btn btn-outline-secondary btn-border">Close</button>
+                            <%--<button type="button" class="btn btn-outline-danger w-lg btn-border" data-toggle="modal" data-target="#myModal">Reject</button>--%>
+                            <%-- <a href="AcceptingAuthorityFilled.aspx" class="">Clear</a>--%>
+                        </div>
+                    </div>
 
-<%--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <%--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-success Alert-RejectT" data-dismiss="modal" id="saveButton">Save</button>--%>
                 </div>
             </div>
@@ -527,5 +570,17 @@
 
         }
     </script>
+
+        <%--<script>
+            function toggleVisibility() {
+                var div = document.getElementById("show");
+                if (show.style.visibility === "hidden") {
+                    show.style.visibility = "visible";
+                } else {
+                    show.style.visibility = "hidden";
+                }
+            }
+        </script>--%>
+    
 </asp:Content>
 

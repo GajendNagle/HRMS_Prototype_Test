@@ -58,8 +58,15 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-6">
                             <h4 class="card-title">Tour Apply / यात्रा के लिए आवेदन करें</h4>
+                        </div>
+
+                        <div class="col-lg-6  text-end">
+                            <button type="button" id="btn1" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" onclick="div()"><i class="bx bx-plus label-icon align-middle me-2"></i>Apply Tour</button>
+
+                            <button type="button" id="btn2" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" style="display: none;" onclick="div1()"><i class="bx bx-plus label-icon align-middle  me-2"></i>Back To List </button>
+
                         </div>
                     </div>
                 </div>
@@ -108,7 +115,7 @@
                         </div>
                     </nav>
                     <br />--%>
-                    <fieldset>
+                    <fieldset id="hide" style="display: none">
                         <legend>Tour Apply / यात्रा के लिए आवेदन करें</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
@@ -208,7 +215,7 @@
                             <hr />
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <button type="button" onclick="myFunction()" class="btn w-lg btn-success btn-border">Apply</button>
+                                    <button type="button" class="btn w-lg btn-success btn-border">Apply</button>
                                     <a href="EmpTourApply.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
                             </div>
@@ -218,7 +225,7 @@
                             </div>--%>
                         </div>
                     </fieldset>
-                    <fieldset id="show">
+                    <fieldset id="show1">
                         <legend>Tour Detail / यात्रा विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
@@ -236,7 +243,7 @@
 
                         <div class="row">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="myTable">
+                                <table class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th>Sr.No.<br />
@@ -245,41 +252,75 @@
                                             <th>Employee Code/Name<br />
                                                 कर्मचारी कोड या नाम
                                             </th>
+                                            <th>Office Name<br />
+                                                ऑफिस का नाम
+                                            </th>
                                             <th>Tour Type<br />
                                                 यात्रा का प्रकार
                                             </th>
-                                            <th>From Date<br />
-                                                की तिथि से
+                                            <th>Tour Start From
+                                                <br />
+                                                यात्रा प्रारंभ
                                             </th>
-                                            <th>To Date<br />
-                                                तारीख तक
+                                            <th>Tour Destination<br />
+                                                यात्रा समाप्त
                                             </th>
-                                            <th>Tour Starts From<br />
-                                                यात्रा प्रारंभ होती है
+                                            <th>Duration<br />
+                                                अवधि
                                             </th>
-                                            <th>Tour Ends At<br />
-                                                यात्रा समाप्त होती है
+                                            <th>No.Of Days<br />
+                                                दिनों की संख्या
                                             </th>
-                                            <th>Total Days<br />
-                                                कुल दिन
+                                            <th>Status<br />
+                                                स्थिति
                                             </th>
+                                            <th>Tour Purpose<br />
+                                                यात्रा का उद्देश्य</th>
                                         </tr>
                                     </thead>
                                     <tr>
                                         <td>1</td>
                                         <td>BI3468-Suresh Bamniya</td>
+                                        <td>NA</td>
                                         <td>official </td>
-                                        <td>10/10/2023</td>
-                                        <td>12/10/2023</td>
                                         <td>Bhopal</td>
                                         <td>Indore</td>
+                                        <td>13/07/2024 - 15/07/2024</td>
                                         <td>3</td>
+                                        <td>Pending</td>
+                                        <td>Trainning</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>BI3468-Ram Verma</td>
+                                        <td>NA</td>
+                                        <td>official </td>
+                                        <td>Bhopal</td>
+                                        <td>Indore</td>
+                                        <td>13/05/2024 - 16/05/2024</td>
+                                        <td>4</td>
+                                        <td>Pending</td>
+                                        <td>Test</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>BI3468-Rakesh Rajput</td>
+                                        <td>NA</td>
+                                        <td>official </td>
+                                        <td>Bhopal</td>
+                                        <td>Indore</td>
+                                        <td>12/02/2024 - 15/02/2024</td>
+                                        <td>4</td>
+                                        <td>Pending</td>
+                                        <td>NA</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset id="ContentBody_dcp">
+                    <fieldset id="ContentBody_dcp" style="display: none">
                         <legend>Description</legend>
                         <div class="row">
                             <div class="col-md-12">
@@ -408,6 +449,23 @@
                 "use strict";
                 $.SweetAlert.init()
             }(window.jQuery);
+    </script>
+
+    <script>
+        function div() {
+            document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';
+            document.getElementById("show1").style.display = (document.getElementById("show1").style.display == 'none') ? 'block' : 'none';
+            document.getElementById("btn2").style.display = (document.getElementById("btn2").style.display == 'block') ? 'none' : 'inline-block';
+            document.getElementById("btn1").style.display = (document.getElementById("btn1").style.display == 'none') ? 'block' : 'none';
+        }
+    </script>
+    <script>
+        function div1() {
+            document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'none') ? 'block' : 'none';
+            document.getElementById("show1").style.display = (document.getElementById("show1").style.display == 'block') ? 'none' : 'block';
+            document.getElementById("btn2").style.display = (document.getElementById("btn2").style.display == 'none') ? 'block' : 'none';
+            document.getElementById("btn1").style.display = (document.getElementById("btn1").style.display == 'block') ? 'none' : 'inline-block';
+        }
     </script>
 
 </asp:Content>
