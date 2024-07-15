@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_HostelRoom.aspx.cs" Inherits="mis_HostelManagment_Mst_HostelRoom" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_HostelRoom.aspx.cs" Inherits="mis_HostelManagment_Mst_HostelRoom" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
