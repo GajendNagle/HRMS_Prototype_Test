@@ -43,9 +43,9 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Route No.
+                            <span>Select Route No.
             <br />
-                                मार्ग क्रमांक<span style="color: red">*</span></span>
+                                मार्ग क्रमांक चुने <span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">RUT001</option>
@@ -56,9 +56,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Vehicle No.
+                            <span>Select Vehicle No.
                                 <br />
-                                वाहन क्रमांक<span style="color: red">*</span></span>
+                                वाहन क्रमांक चुने <span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">MP04AB1196</option>
@@ -76,19 +76,7 @@
              
             </fieldset>   <fieldset>
                     <legend>Details / विवरण</legend>
-                    <div class="row justify-content-end ">
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchgInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
@@ -97,11 +85,11 @@
                                         <tr>
                                             <th>Sr. No.
                      <br />
-                                                सरल क्र.</th>
+                                           क्रमांक </th>
                                              <th>Route No.<br />मार्ग क्रमांक</th>
                                             <th>Vehicle No.
                      <br />
-                                                वाहन क्र.</th>
+                                                वाहन क्रमांक </th>
                                            
                                             <th>Action<br />
                                                 कार्यवाहीं</th>
@@ -164,13 +152,13 @@
                                     <tr>
                                         <th>Sr. No.
                                      <br />
-                                            सरल क्र.</th>
+                                         क्रमांक </th>
                                                                     <th>Route No.
 <br />
                                 मार्ग क्रमांक</th>
                                         <th>Vehicle No.
                                      <br />
-                                            वाहन क्र.</th>
+                                            वाहन क्रमांक </th>
                                         
                                         <th>Action<br />
                                             कार्यवाहीं</th>

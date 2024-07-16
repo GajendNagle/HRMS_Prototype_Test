@@ -42,8 +42,8 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Route No.<br />
-                                मार्ग संख्या दर्ज करे<span style="color: red">*</span></label>
+                              Enter route detail<br />
+                              मार्ग की जानकारी दर्ज करे <span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Route Number" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
@@ -83,10 +83,10 @@
                                     <tr>
                                         <th>Sr. No.
                                      <br />
-                                            सरल क्र.</th>
-                                        <th>Route No
+                                            क्रमांक</th>
+                                        <th>Route Detail
                                      <br />
-                                            मार्ग क्र.</th>
+                                          मार्ग का विवरण</th>
                                         <th>Action<br />
                                             कार्यवाहीं</th>
                                     </tr>

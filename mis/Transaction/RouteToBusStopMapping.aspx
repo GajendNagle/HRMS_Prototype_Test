@@ -44,9 +44,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Route No.
+                            <span>Select Route No.
                                 <br />
-                                मार्ग क्रमांक<span style="color: red">*</span></span>
+                                रूट नंबर चुनें <span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">RUT001</option>
@@ -57,9 +57,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Bus Stop Name
+                            <span>Select Bus Stop Name
              <br />
-                                बस स्टॉप का नाम<span style="color: red">*</span></span>
+                                बस स्टॉप का नाम चुनें<span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">Gautam Nagar</option>
@@ -69,56 +69,41 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>In Time
+                            <span>Select In Time 
                                 <br />
-                                समय पर<span style="color: red">*</span></span>
+                                आने का समय चुनें<span style="color: red">*</span></span>
                             <input step="1800" title="time" class="form-control" type="time" ng-model="endTime" pattern="[0-9]*" value="00:00" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Out Time
+                            <span>Select Out Time
                                 <br />
-                                बाहर जाने का समय<span style="color: red">*</span></span>
+                                जाने का समय चुनें<span style="color: red">*</span></span>
                             <input step="1800" title="time" class="form-control" type="time" ng-model="endTime" pattern="[0-9]*" value="00:00" />
                         </div>
                     </div>
                     <hr />
-                    <div class="col-md-3 ">
-                        <div class="form-group">
-                            <button id="toggleButton2" type="button" oninput="searchFunction()" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">
-                                Add</button>
-                            <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="form-group">
+                                <button id="toggleButton2" type="button" oninput="searchFunction()" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">
+                                    Add</button>
+                                <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Details / विवरण</legend>
-                <div class="col-md-12">
-                    <div class="row justify-content-end" id="GrdFormate">
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row justify-content-end" id="NoRcdTable">
                     <div class="table-responsive">
-
                         <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehiclRegistration" style="border-collapse: collapse; text-align: center;">
                             <tbody>
                                 <tr>
                                     <th scope="col">Sr.No.<br />
-                                        सरल क्र. </th>
+                                        क्रमांक </th>
                                     <th scope="col">Route Number<br />
                                         मार्ग क्रमांक</th>
                                     <th scope="col">Bus Stop Name
@@ -158,9 +143,9 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <hr />
                         <div class="row">
                             <div class="col-md-12">
+                                <hr />
                                 <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
                                 <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
@@ -173,10 +158,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Route No.
+                            <span>Select Route No.
     <br />
-                                मार्ग क्रमांक<span style="color: red">*</span></span>
-                           
+                                रूट नंबर चुनें.<span style="color: red">*</span></span>
 
                             <select id="selection" class="form-control">
                                 <option value="option1">Select</option>
@@ -188,7 +172,7 @@
                     <hr />
                     <div class="row">
                         <div class="col-md-12">
-                            <button id="" type="button" onclick="showTable()" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                            <button type="button" onclick="showTable()" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
                             <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
@@ -198,8 +182,8 @@
                         document.getElementById("tableData").style.display = "block";
                         document.getElementById("tableData1").style.display = "block";
                     }
-    </script>
-                <div class="row justify-content-end"  id="tableData" style="display:none;">
+                </script>
+                <div class="row justify-content-end" id="tableData" style="display: none;">
                     <div class="col-md-12">
                         <div class="row justify-content-end" id="GrdFormatte">
                             <div class="col-md-4 text-end">
@@ -220,7 +204,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="col">Sr.No.<br />
-                                        सरल क्र. </th>
+                                        क्रमांक </th>
                                     <th scope="col">Route Number<br />
                                         मार्ग क्रमांक</th>
                                     <th scope="col">Bus Stop Name
@@ -229,9 +213,10 @@
                                     <th scope="col">In Time
                                         <br />
                                         समय पर
-                                    </th> <th scope="col">Out Time
+                                    </th>
+                                    <th scope="col">Out Time
                                         <br />
-                                         बाहर जाने का समय
+                                        बाहर जाने का समय
                                     </th>
                                     <th scope="col">Action
                                         <br />
@@ -251,13 +236,14 @@
                                     <td>
                                         <span>8:30 AM</span>
 
-                                    </td><td>
+                                    </td>
+                                    <td>
                                         <span>6:30 PM</span>
 
                                     </td>
                                     <td>
-                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="fa fa-edit"></i></a>
-                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="fa fa-trash"></i></a>
+                                        <a class="btn btn-primary"><i class="Alert-Edit fa fa-edit"></i></a>
+                                        <a class="btn btn-primary"><i class="Alert-Delete fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -274,13 +260,14 @@
                                     <td>
                                         <span>8:30 AM</span>
 
-                                    </td><td>
+                                    </td>
+                                    <td>
                                         <span>6:30 PM</span>
 
                                     </td>
                                     <td>
-                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="fa fa-edit"></i></a>
-                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="fa fa-trash"></i></a>
+                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="Alert-Edit fa fa-edit"></i></a>
+                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="Alert-Delete fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             </tbody>

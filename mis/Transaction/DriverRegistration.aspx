@@ -41,9 +41,9 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Vehicle No.
+                            <span>Select Vehicle No.
                                 <br />
-                                वाहन क्रमांक<span style="color: red">*</span></span>
+                               वाहन संख्या चुनें.<span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">MP04AB1196</option>
@@ -53,18 +53,27 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Driver Name
+                            <span>Enter Driver Name(In English)
                                 <br />
-                                चालक का नाम<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" />
+                                ड्राइवर का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Driver Name(In English)" />
 
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>State Name
+                            <span>Enter Driver Name(In Hindi)
                                 <br />
-                                राज्य का नाम    <span style="color: red">*</span></span>
+                                ड्राइवर का नाम हिंदी में दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Driver Name(In Hindi)" />
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select State Name
+                                <br />
+                               राज्य का नाम चुनें  <span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="--Select--" data-select2-id="3">--Select--</option>
                                 <option value="Rajasthan" data-select2-id="14">Rajasthan</option>
@@ -99,36 +108,37 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <span>Address
+                            <span>Enter Full Address
     <br />
-                                पता<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" />
+                                पूर्ण पता दर्ज करें<span style="color: red">*</span></span>
+                             <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Full Address" autocomplete="off">
+                           
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Driver Contact Number
+                            <span>Enter Driver Contact Number
     <br />
-                                ड्राइवर का संपर्क नंबर<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" />
+                                ड्राइवर का संपर्क नंबर दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Driver Contact Number" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Alternate Contact Number
+                            <span>Enter Alternate Contact Number
     <br />
-                                वैकल्पिक संपर्क नंबर<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" />
+                                अन्य संपर्क नंबर दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Alternate Contact Number" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Licence Number
+                            <span>Enter Licence Number
     <br />
-                                लाइसेंस क्रमांक<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" />
+                              लाइसेंस नंबर दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Licence Number" />
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -140,71 +150,60 @@
             </fieldset>
             <fieldset>
                 <legend>Details / विवरण</legend>
-                <div class="row justify-content-end ">
-    <div class="col-md-4 text-end">
-        <div class="form-group">
-            <button class="btn btn-info btn-rounded w-55">Excel</button>
-            <button class="btn btn-info btn-rounded w-55">PDF</button>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div class="form-group">
-            <input type="text" id="searchgInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-        </div>
-    </div>
-</div>
+               
                 <div class="row">
-    <div class="col-md-12">
-        <div class="table-responsive">
-            <table class="table table-bordered text-center">
-                <thead class="nowrap">
-                    <tr>
-                    <tr>
-                        <th>Sr. No.
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                    <tr>
+                                        <th>Sr. No.
      <br />
-                            सरल क्र.</th>
-                        <th>Vehicle No.
+                                          क्रमांक</th>
+                                        <th>Vehicle No.
      <br />
-                            वाहन क्र.</th>
-                        <th>Driver Name
-
-     <br />
-                            चालक का नाम</th>
-                        <th>Contact Number<br />
-     संपर्क नंबर</th> <th>Licence No.
+                                            वाहन क्रमांक</th>
+                                        <th>Driver Name
 
      <br />
-                            लाइसेंस क्रमांक</th>
+                                            चालक का नाम</th>
+                                        <th>Contact Number<br />
+                                            संपर्क नंबर</th>
+                                        <th>Licence No.
 
-                       
-                        <th colspan="3">Action<br />
-                            कार्यवाहीं</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>1</td>
+     <br />
+                                            लाइसेंस क्रमांक</th>
 
-                    <td>MP04AB1196</td>
-                    <td>Raj</td>
-                    <td>1234567890</td>
-                    <td>ABC123</td>
-                    <td><a class="btn btn-outline-primary"><i class="fa fa-pen"></i></a>
-                        <a class="Alert-Edit btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>MP04CD5154</td>
-                    <td>Rajendra</td>
-                    <td>1234567890</td>
-                    <td>ABC123</td>
-                    <td><a class=" btn btn-outline-primary"><i class="fa fa-pen"></i></a>
-                        <a class="Alert-Edit btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                </tr>
 
-            </table>
-        </div>
-    </div>
-</div>
+                                        <th colspan="3">Action<br />
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+
+                                    <td>MP04AB1196</td>
+                                    <td>Raj</td>
+                                    <td>1234567890</td>
+                                    <td>ABC123</td>
+                                    <td><a class="btn btn-outline-primary"><i class="fa fa-pen"></i></a>
+                                        <a class="Alert-Edit btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>MP04CD5154</td>
+                                    <td>Rajendra</td>
+                                    <td>1234567890</td>
+                                    <td>ABC123</td>
+                                    <td><a class=" btn btn-outline-primary"><i class="fa fa-pen"></i></a>
+                                        <a class="Alert-Edit btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Details / विवरण</legend>
@@ -216,19 +215,19 @@
                         <button type="button" class="btn btn-outline-success btn-border  w-lg" onclick="showTable()">Search</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-                    <div class="col-md-4 text-end"  id="tablefd" style="display:none">
+                    <div class="col-md-4 text-end" id="tablefd" style="display: none">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
                             <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                    <div class="col-md-2" id="searchbtn" style="display:none">
+                    <div class="col-md-2" id="searchbtn" style="display: none">
                         <div class="form-group">
                             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
-                <div class="row" id="tableData" style="display:none">
+                <div class="row" id="tableData" style="display: none">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
@@ -237,10 +236,10 @@
                                     <tr>
                                         <th>Sr. No.
                      <br />
-                                            सरल क्र.</th>
+                                            क्रमांक</th>
                                         <th>Vehicle No.
                      <br />
-                                            वाहन क्र.</th>
+                                            वाहन क्रमांक</th>
                                         <th>Driver Name
 
                      <br />
@@ -265,7 +264,7 @@
                                     <td>1234567890</td>
                                     <td>ABC123</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                 <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -274,7 +273,7 @@
                                     <td>1234567890</td>
                                     <td>ABC123</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                    <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -285,11 +284,11 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-        <script>
-    function showTable() {
-        document.getElementById("tableData").style.display = "block";
-        document.getElementById("tablefd").style.display = "block";
-        document.getElementById("searchbtn").style.display = "block";
-    }
-</script>
+    <script>
+        function showTable() {
+            document.getElementById("tableData").style.display = "block";
+            document.getElementById("tablefd").style.display = "block";
+            document.getElementById("searchbtn").style.display = "block";
+        }
+    </script>
 </asp:Content>
