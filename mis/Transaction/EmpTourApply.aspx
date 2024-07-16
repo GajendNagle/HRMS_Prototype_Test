@@ -132,7 +132,7 @@
                                     <label>
                                         Employee Code or Name
                                         <br />
-                                        कर्मचारी कोड या नाम<span style="color: red"> *</span></label>
+                                        कर्मचारी कोड या नाम<span style="color: red">*</span></label>
                                     <asp:TextBox runat="server" placeholder="Enter Your Name" CssClass="form-control" />
                                 </div>
                             </div>
@@ -140,7 +140,7 @@
                                 <div class="form-group">
                                     <label>
                                         Tour Type<br />
-                                        यात्रा का प्रकार<span style="color: red"> *</span></label>
+                                        यात्रा का प्रकार<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="0">--Select--</option>
                                         <option value="1">Official</option>
@@ -168,7 +168,7 @@
                                         Tour Destination<br />
                                         यात्रा समाप्त<span style="color: red">*</span></label> 
                                     <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select " id="DestinationDistrictId" name="DestinationDistrictId" >
-                                        <option value=">--Select--">--Select--</option>
+                                        <option value=">--Select--">Jabalpur</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Indore">Indore</option>
                                         <option value="Bhopal">Dewas</option>
@@ -202,7 +202,7 @@
                                 <div class="form-group">
                                     <label>
                                         To Date<br />
-                                        दिनांक तक<span style="color: red"> *</span></label>
+                                        दिनांक तक<span style="color: red">*</span></label>
                                     <input id="Todate" type="date" class="form-control" />
                                 </div>
                             </div>
@@ -259,7 +259,7 @@
 
                         <div class="row">
                             <div class="table-responsive">
-                                <table class="table table-bordered">
+                                <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
                                             <th>Sr.No.<br />
