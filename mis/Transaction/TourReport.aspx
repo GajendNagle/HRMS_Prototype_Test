@@ -39,25 +39,27 @@
                 <div class="card-body">
 
                     <fieldset>
-                        <legend>Get To Details / विवरण प्राप्त करें</legend>
+                        <legend>Get Tour Details / 
+                            यात्रा विवरण प्राप्त करें</legend>
 
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        From Date/
+                                        From Date<br />
                                    दिनांक से<span style="color: red">*</span></label>
-                                    <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator" InitialValue="0" ForeColor="Red" Text="<i class='fa fa-exclamation-circle' title='Select School Name !'></i>" ControlToValidate="txtFrom" Display="Dynamic"></asp:RequiredFieldValidator>
                                     <asp:TextBox TextMode="Date" runat="server" ID="txtFrom" CssClass="form-control"></asp:TextBox>
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtFrom" ErrorMessage="Select From Date" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        To Date/
+                                        To Date<br />
                               दिनांक तक<span style="color: red">*</span></label>
                                     <asp:TextBox TextMode="Date" runat="server" ID="txtToDate" CssClass="form-control"></asp:TextBox>
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtToDate" ErrorMessage="Select To Date" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                         </div>

@@ -99,7 +99,7 @@
                         <a href="#Tour" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                             <span>Tour</span></a>
                     </li>
-                    <li class="breadcrumb-item"><span>Tour Generate</span></li>
+                    <li class="breadcrumb-item"><span>Tour Approve</span></li>
                 </ol>
             </div>
         </div>
@@ -110,19 +110,19 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title">Applied Tour Search / एप्लाइड टूर सर्च</h4>
+                            <h4 class="card-title">Tour Approve / यात्रा स्वीकृत</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Applied Tour Search / एप्लाइड टूर सर्च</legend>
+                        <legend>Applied Tour Search / एप्लाइड यात्रा सर्च</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
 
                                 <div class="form-group">
                                     <label>
-                                        Select Office Type (Code)
+                                        Select Office Type (Code)<br />
                                      कार्यालय प्रकार (कोड) का चयन करें<span style="color: red">*</span></label>
 
                                     <select class="form-control select2">
@@ -136,10 +136,10 @@
 
                                 <div class="form-group">
                                     <label>
-                                        Select Office Name (Code)/
+                                        Select Office Name (Code)<br />
                                  कार्यालय का नाम (कोड) का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
-                                        <option></option>
+                                        <option>Select</option>
                                         <option>State Council Educational Research and Training(SECRT)(233203OSS06)</option>
                                         <option>Joint Director (Education),Indore(232401ORS01)</option>
                                         <option>Joint Director (Education),Gwalior(232501ORS02)</option>
@@ -159,7 +159,7 @@
                         </div>
                     </fieldset>
                     <fieldset id="show" style="display:none">
-                        <legend>Applied Tour Details / एप्लाइड टूर विवरण</legend>
+                        <legend>Applied Tour Details / एप्लाइड यात्रा विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
