@@ -265,7 +265,7 @@
                                 <button onclientclick="return false;" type="button" onclick=" HideShowForm()" class="Alert-ApproveT btn btn-success  btn-rounded">Approve</button>
                                
                             </div>
-                        </div>--%>
+                        </div>--%>          
                         <br />
                         <%--<div id="GenerateorderDetails" class="row justify-content-center">
                             <div class="col-md-12">

@@ -1,7 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="EmpTourApply.aspx.cs" Inherits="mis_HRMS_EmpTourApply" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <script src="https://schooledutest.tserver.co.in/assets/js/multiselect-dropdown.js">
+    </script>
+
     <style>
+        .placeholder {
+   
+     background-color: transparent ; 
+   
+}
+
         th {
             white-space: nowrap;
         }
@@ -116,7 +125,7 @@
                     </nav>
                     <br />--%>
                     <fieldset id="hide" style="display: none">
-                        <legend>Tour Apply / यात्रा के लिए आवेदन करें</legend>
+                        <legend>Apply Tour Details / यात्रा विवरण लागू करें</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -143,8 +152,7 @@
                                 <div class="form-group">
                                     <label>
                                         Tour Starts From<br />
-                                        यात्रा प्रारंभ होती है
-                                        <span style="color: red">*</span></label>
+                                        यात्रा प्रारंभ<span style="color: red">*</span></label> 
                                     <select class="form-control select2">
                                         <option value=">--Select--">--Select--</option>
                                         <option value="Bhopal">Bhopal</option>
@@ -157,15 +165,26 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Tour Ends At<br />
-                                        यात्रा समाप्त होती है
-                                        <span style="color: red">*</span></label>
-                                    <select class="form-control select2">
+                                        Tour Destination<br />
+                                        यात्रा समाप्त<span style="color: red">*</span></label> 
+                                    <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select " id="DestinationDistrictId" name="DestinationDistrictId" >
                                         <option value=">--Select--">--Select--</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Indore">Indore</option>
                                         <option value="Bhopal">Dewas</option>
                                         <option value="Gwalior">Gwalior</option>
+                                        <option value="Gwalior">Datia</option>
+                                        <option value="Gwalior">Shivpuri</option>
+                                        <option value="Gwalior">Guna</option>
+                                        <option value="Gwalior">Morena</option>
+                                        <option value="Gwalior">Ratlam</option>
+                                        <option value="Gwalior">Ujjain</option>
+                                        <option value="Gwalior">Jhabua</option>
+                                        <option value="Gwalior">Sehore</option>
+                                        <option value="Gwalior">Raisen</option>
+                                        <option value="Gwalior">Betul</option>
+                                        <option value="Gwalior">Dindori</option>
+                                        <option value="Gwalior">Seoni</option>
                                     </select>
                                 </div>
                             </div>
@@ -173,9 +192,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        From Date<br />
-                                        की तिथि से
-                                        <span style="color: red;">*</span></label>
+                                        Tour starts from Date<br />
+                                      यात्रा दिनांक से प्रारंभ<span style="color: red;">*</span></label>   
                                     <input id="Fromdate" type="date" class="form-control" />
                                 </div>
                             </div>
@@ -184,7 +202,7 @@
                                 <div class="form-group">
                                     <label>
                                         To Date<br />
-                                        तारीख तक<span style="color: red"> *</span></label>
+                                        दिनांक तक<span style="color: red"> *</span></label>
                                     <input id="Todate" type="date" class="form-control" />
                                 </div>
                             </div>
@@ -193,8 +211,7 @@
                                 <div class="form-group">
                                     <label>
                                         No. of Days<br />
-                                        दिनों की संख्या
-                                        <span style="color: red">*</span></label>
+                                        दिनों की संख्या<span style="color: red">*</span></label>
                                     <asp:TextBox placeholder="Enter No. Of Days" runat="server" CssClass="form-control" />
                                 </div>
                             </div>
@@ -204,8 +221,7 @@
                                 <div class="form-group">
                                     <label>
                                         Tour Purpose<br />
-                                        यात्रा का उद्देश्य
-                                   <span style="color: red">*</span>
+                                        यात्रा का उद्देश्य<span style="color: red">*</span>
                                     </label>
                                     <textarea class="form-control" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
                                 </div>
@@ -215,7 +231,7 @@
                             <hr />
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <button type="button" class="btn w-lg btn-success btn-border">Apply</button>
+                                    <button type="button" class="btn w-lg btn-success btn-border Alert-Confirmation">Apply</button>
                                     <a href="EmpTourApply.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
                             </div>
@@ -226,7 +242,7 @@
                         </div>
                     </fieldset>
                     <fieldset id="show1">
-                        <legend>Tour Detail / यात्रा विवरण</legend>
+                        <legend>Tour Details / यात्रा विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
