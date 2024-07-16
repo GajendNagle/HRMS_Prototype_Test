@@ -57,23 +57,24 @@
             <fieldset>
                 <legend>Bus Stop Details / बस स्टॉप विवरण</legend>
                 <div class="row justify-content-end">
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-outline-success btn-border  w-lg">Search</button>
+                    <hr />
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-outline-success btn-border  w-lg" onclick="showTable()">Search</button>
                         <a href="BusStopRegistrationMaster.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                    </div>
-                    <div class="col-md-4 text-end">
+                    </div> 
+                    <div class="col-md-4 text-end" id="tablefd" style="display: none;">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
                             <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2"  id="searchbtn" style="display: none;">
                         <div class="form-group">
                             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="tableData" style="display: none;">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
@@ -123,5 +124,12 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+     <script>
+     function showTable() {
+         document.getElementById("tableData").style.display = "block";
+         document.getElementById("tablefd").style.display = "block";
+         document.getElementById("searchbtn").style.display = "block";
+     }
+ </script>
 </asp:Content>
 

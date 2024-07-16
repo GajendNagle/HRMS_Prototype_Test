@@ -69,16 +69,26 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Time
+                            <span>In Time
                                 <br />
-                                समय<span style="color: red">*</span></span>
-                            <input id="timepicker" type="text" class="form-control">
+                                समय पर<span style="color: red">*</span></span>
+                            <input step="1800" title="time" class="form-control" type="time" ng-model="endTime" pattern="[0-9]*" value="00:00" />
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Out Time
+                                <br />
+                                बाहर जाने का समय<span style="color: red">*</span></span>
+                            <input step="1800" title="time" class="form-control" type="time" ng-model="endTime" pattern="[0-9]*" value="00:00" />
+                        </div>
+                    </div>
+                    <hr />
                     <div class="col-md-3 ">
                         <div class="form-group">
-                            <button id="toggleButton2" type="button" class="fw-bold btn w-lg btn-outline-success btn-border" style="margin-top: 2.5rem !important; }">
+                            <button id="toggleButton2" type="button" oninput="searchFunction()" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">
                                 Add</button>
+                            <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
 
@@ -130,7 +140,7 @@
 
                                     </td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-    <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -143,15 +153,15 @@
                                         <span>Gautam Nagar</span>
 
                                     </td>
-                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-    <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
                         <hr />
                         <div class="row">
                             <div class="col-md-12">
-                                <button id="toggleButton" type="button" class="fw-bold btn w-lg btn-outline-success btn-border">Save</button>
+                                <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
                                 <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                             </div>
                         </div>
@@ -166,22 +176,30 @@
                             <span>Route No.
     <br />
                                 मार्ग क्रमांक<span style="color: red">*</span></span>
-                            <select class="form-control">
-                                <option value="0">--Select--</option>
-                                <option value="1">RUT001</option>
-                                <option value="2">RUT002</option>
+                           
+
+                            <select id="selection" class="form-control">
+                                <option value="option1">Select</option>
+                                <option value="option2">RUT001</option>
+                                <option value="option3">RUT002 </option>
                             </select>
                         </div>
                     </div>
                     <hr />
                     <div class="row">
                         <div class="col-md-12">
-                            <button id="" type="button" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                            <button id="" type="button" onclick="showTable()" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
                             <a href="RouteToBusStopMapping.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-end" id="NoRcdTable1">
+                <script>
+                    function showTable() {
+                        document.getElementById("tableData").style.display = "block";
+                        document.getElementById("tableData1").style.display = "block";
+                    }
+    </script>
+                <div class="row justify-content-end"  id="tableData" style="display:none;">
                     <div class="col-md-12">
                         <div class="row justify-content-end" id="GrdFormatte">
                             <div class="col-md-4 text-end">
@@ -208,9 +226,12 @@
                                     <th scope="col">Bus Stop Name
                                         <br />
                                         बस स्टॉप का नाम</th>
-                                    <th scope="col">Time
+                                    <th scope="col">In Time
                                         <br />
-                                        समय
+                                        समय पर
+                                    </th> <th scope="col">Out Time
+                                        <br />
+                                         बाहर जाने का समय
                                     </th>
                                     <th scope="col">Action
                                         <br />
@@ -229,6 +250,9 @@
                                     </td>
                                     <td>
                                         <span>8:30 AM</span>
+
+                                    </td><td>
+                                        <span>6:30 PM</span>
 
                                     </td>
                                     <td>
@@ -250,6 +274,9 @@
                                     <td>
                                         <span>8:30 AM</span>
 
+                                    </td><td>
+                                        <span>6:30 PM</span>
+
                                     </td>
                                     <td>
                                         <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="fa fa-edit"></i></a>
@@ -265,26 +292,11 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-    <script>
-        $(document).ready(function () {
-            $('#timepicker').timepicker({
-                timeFormat: 'h:mm p',
-                interval: 15,
-                minTime: '8',
-                maxTime: '6:00pm',
-                dynamic: false,
-                dropdown: true,
-                scrollbar: false,
-                change: recordStart
-            });
 
-            function recordStart() {
-                let startTime = $('#timepicker').val();
-                $('#timeMessage').text("The Time picked is ... " + startTime);
-            }
+    <script>
+        $(function () {
+            $('#basicExample').timepicker();
         });
     </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
 </asp:Content>
