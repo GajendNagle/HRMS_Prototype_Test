@@ -29,7 +29,7 @@
         <div class="card-header  d-print-none">
             <div class="row">
                 <div class="col-lg-9">
-                    <h4 class="card-title">Apply For Vacancy / रिक्ति के लिए आवेदन करें </h4>
+                    <h4 class="card-title">Vacancy Details/ रिक्तियो की जानकारी</h4>
                 </div>
             </div>
         </div>
@@ -42,10 +42,10 @@
                             <div class="col-3">
                                 <div class="form-group">
                                     <label>
-                                        Enter UDISE Code<br />
+                                        Enter Udise Code<br />
                                         यूडाइस कोड दर्ज करे
                                     </label>
-                                    <input type="text" id="UdiceCode" class="form-control" placeholder="Enter UDIsE Code">
+                                    <input type="text" id="UdiceCode" class="form-control" placeholder="Enter Udise Code">
                                 </div>
                             </div>
                             <div class="col-3">

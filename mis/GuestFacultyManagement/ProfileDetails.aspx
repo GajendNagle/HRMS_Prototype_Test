@@ -69,8 +69,12 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
+
                         <li class="breadcrumb-item">
                             <a href="#GFMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Guest Faculty Management System</span></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#GuestFaculty" data-bs-toggle="collapse" role="button" aria-expanded="false" onclick="SidebarToggle('GFMS')"><span>Guest Faculty Login</span></a>
                         </li>
 
                         <li class="breadcrumb-item"><span>Profile View</span></li>
@@ -79,57 +83,55 @@
             </div>
         </div>
     </div>
-    <div class="position-relative mx-n4 mt-n4">
-        <div class="profile-wid-bg profile-setting-img text-center">
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="top-heading">
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <h3>Profile View</h3>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
+
+    <div class="col-md-12 col-lg-12">
+        <div class="card card-border-primary ">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="card-title">Profile View / प्रोफ़ाइल देखें</h4>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="col-md-12 col-lg-12">
-        <div class="card mt-lg-n5">
             <div class="card-body p-4">
                 <div class="tab-content">
                     <div class="tab-pane active" id="ProfileView" role="tabpanel">
                         <fieldset>
+                            <legend>Persnal  Details / व्यक्तिगत जानकारी</legend>
                             <div class="row mt-4 align-items-end">
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Name (In English)
+                                            Faculty Name (In English)
                                                     <br />
-                                            नाम दर्ज करे(अंग्रेज़ी में)</label>
+                                            शिक्षक का नाम (अंग्रेज़ी में)</label>
                                         <input type="text" id="txtNameEnglish" readonly class="form-control" placeholder="Raman Verma" />
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Name (In Hindi)
+                                            Faculty  Name (In Hindi)
                                                     <br />
-                                            नाम दर्ज करे(हिंदी में)</label>
+                                            शिक्षक का नाम (हिंदी में)</label>
                                         <input type="text" id="txtNameHindi" readonly class="form-control" placeholder="रमण वर्मा" />
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-group">
-                                        <label>Enter Gender
+                                        <label>
+                                            Gender
                                             <br />
-                                            लिंग दर्ज करें</label>
+                                            लिंग</label>
                                         <input type="text" id="Gender" readonly class="form-control" placeholder="Male" />
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-group">
-                                        <label>Enter Mobile No.
+                                        <label>
+                                            Mobile No.
                                             <br />
-                                            मोबाइल नंबर दर्ज करें.</label>
+                                            मोबाइल नंबर</label>
                                         <input type="text" id="Mobile" readonly class="form-control" placeholder="9876543210" />
                                     </div>
                                 </div>
@@ -138,17 +140,18 @@
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Date of Birth
+                                            Date of Birth
                                             <br />
-                                            जन्म तिथि दर्ज करें</label>
+                                            जन्म तिथि</label>
                                         <input type="date" id="DOB" readonly class="form-control" placeholder="01/01/1990" />
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Category<br />
-                                            श्रेणी दर्ज करें</label>
+                                            Category<br />
+                                            श्रेणी
+                                        </label>
                                         <input type="text" id="Category" readonly class="form-control" placeholder="General" />
 
                                     </div>
@@ -156,8 +159,8 @@
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Father's Name<br />
-                                            पिता का नाम दर्ज करें
+                                            Father's Name<br />
+                                            पिता का नाम 
                                         </label>
                                         <input type="text" id="FatherName" readonly class="form-control" placeholder="Mr.Satish Varma" />
                                     </div>
@@ -165,8 +168,8 @@
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Mother's Name<br />
-                                            माता का नाम दर्ज करें
+                                            Mother's Name<br />
+                                            माता का नाम 
                                         </label>
                                         <input type="text" id="MotherName" readonly class="form-control" placeholder="Mrs.shobha Varma" />
                                     </div>
@@ -176,18 +179,20 @@
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Family Samagra ID
+                                            Family Samagra ID
                                             <br />
-                                            परिवार समग्र आईडी दर्ज करें
+                                            परिवार समग्र आईडी
                                         </label>
                                         <input type="text" id="FamilyId" readonly class="form-control" placeholder="1234567890" />
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-group">
-                                        <label>Enter Marital Status
+                                        <label>
+                                            Marital Status
                                             <br />
-                                            वैवाहिक स्थिति दर्ज करें</label>
+                                            वैवाहिक स्थिति
+                                        </label>
                                         <input type="text" id="MaritalStatus" readonly class="form-control" placeholder="Married" />
 
                                     </div>
@@ -195,8 +200,8 @@
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Email ID<br />
-                                            ईमेल आईडी दर्ज करें
+                                            Email ID<br />
+                                            ईमेल आईडी 
                                         </label>
                                         <input type="text" id="EmailID" readonly class="form-control" placeholder="raman123varma@example.com" />
                                     </div>

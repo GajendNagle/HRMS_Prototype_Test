@@ -29,9 +29,9 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Claim  Experience Certificate /
-                        अनुभव प्रमाण पत्र का दावा करें </h4>
+                <div class="col-lg-9">
+                    <h4 class="card-title">Request For Experience Certificate /
+                        अनुभव प्रमाण पत्र के लिए अनुरोध</h4>
                 </div>
             </div>
         </div>
@@ -83,10 +83,10 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Guest Id
+                                Guest Faculty  ID/ Mobile Number
                             <br />
-                                गेस्ट आईडी <span style="color: red">*</span></label>
-                            <input class="form-control flatpickr-input" />
+                                 अतिथि शिक्षक की आइडी/ मोबाइल नंबर <span style="color: red">*</span></label>
+                            <input class="form-control flatpickr-input" placeholder="Enter Mobile Number" />
                         </div>
                     </div>
 
@@ -96,7 +96,7 @@
                                 Date Of Birth
                             <br />
                                 जन्म तिथि <span style="color: red">*</span></label>
-                            <input type="date" class="form-control" data-provider="flatpickr" data-altformat="j F Y" />
+                            <input type="date" class="form-control" data-provider="flatpickr" data-altformat="j F Y" placeholder="Fill Date Of Birth" />
                         </div>
                     </div>
 
@@ -135,13 +135,13 @@
                                         <th>Sr.No. 
                                             <br>
                                             सरल क्र. </th>
-                                        <th>Dise Code - School
+                                        <th>School Udise Code - School Name
                                         <br>
-                                            डाइस कोड - स्कूल
+                                           स्कूल यूडाइस कोड - स्कूल का नाम
                                         </th>
-                                        <th>Guest Id
-                                        <br>
-                                            गेस्ट आईडी
+                                        <th>    Guest Faculty  ID/ Mobile Number
+<br />
+     अतिथि शिक्षक की आइडी/ मोबाइल नंबर 
                                         </th>
                                         <th>Name
                                         <br>
@@ -155,9 +155,11 @@
                                             <br />
                                             शैक्षणिक वर्ष 
                                         </th>
-                                        <th>Month
-                                        <br>
-                                            महीना
+                                        <th>Working Period 
+                                        <br>कार्य की अवधि 
+                                            
+                                        </th>
+                                        <th>Action                                                                                  
                                         </th>
 
                                     </tr>
@@ -166,17 +168,18 @@
                                     <tr>
                                         <td>1</td>
                                         <td>23350804904 - GOVT. HSS GOULA</td>
-                                        <td>146542</td>
+                                        <td>9638527410</td>
                                         <td>Ramesh Laal</td>
                                         <td>28/07/1995</td>
-                                        <td>2023-24</td>
-                                        <td>August</td>
+                                        <td>2022-23</td>
+                                        <td>August to October</td>
+                                        <td>August to October</td>
 
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>23350811106 - GOVT. HSS JOULKHEDA</td>
-                                        <td>146542</td>
+                                        <td>9638527410</td>
                                         <td>Ramesh Laal</td>
                                         <td>28/07/1995 </td>
                                         <td>2023-24 </td>
@@ -189,7 +192,7 @@
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <hr />
-                                <button type="button" class=" Alert-ClaimConfirmation btn btn-outline-success btn-border w-lg">Registration Claim Form send to Sankul</button>
+                                <button type="button" class=" Alert-ClaimConfirmation btn btn-outline-success btn-border w-lg">Request For Claim  </button>
                             </div>
                         </div>
                     </fieldset>

@@ -433,12 +433,12 @@
                         </div>
                         <div class="row align-items-end">
                             <div class="col-md-4">
-                                <label>Verification </label>
-                                <input id="chck1" type="checkbox" name="" />
+                                <label for="chck1">Verify </label>
+                                <input id="chck1" type="radio" name="Process" />
                             </div>
                             <div class="col-md-4">
-                                <label>Rejection</label>
-                                <input id="chck2" type="checkbox" name="" onclick="function ()"/>
+                                <label for="chck2">Rejection</label>
+                                <input id="chck2" type="radio" name="Process" onclick="function ()"/>
                             </div>
                         <div class="col-md-12" id="remark" style="display: none">
                                <label>
