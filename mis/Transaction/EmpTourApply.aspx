@@ -8,6 +8,7 @@
         .placeholder {
    
      background-color: transparent ; 
+         opacity: 1;
    
 }
 
@@ -167,24 +168,25 @@
                                     <label>
                                         Tour Destination<br />
                                         यात्रा समाप्त<span style="color: red">*</span></label> 
-                                    <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select " id="DestinationDistrictId" name="DestinationDistrictId" >
-                                        <option value=">--Select--">Jabalpur</option>
+                                    <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select" id="DestinationDistrictId" name="DestinationDistrictId">
+                                        
+                                        <option value="Jabalpur">Jabalpur</option>
                                         <option value="Bhopal">Bhopal</option>
                                         <option value="Indore">Indore</option>
                                         <option value="Bhopal">Dewas</option>
                                         <option value="Gwalior">Gwalior</option>
-                                        <option value="Gwalior">Datia</option>
-                                        <option value="Gwalior">Shivpuri</option>
-                                        <option value="Gwalior">Guna</option>
-                                        <option value="Gwalior">Morena</option>
-                                        <option value="Gwalior">Ratlam</option>
-                                        <option value="Gwalior">Ujjain</option>
-                                        <option value="Gwalior">Jhabua</option>
-                                        <option value="Gwalior">Sehore</option>
-                                        <option value="Gwalior">Raisen</option>
-                                        <option value="Gwalior">Betul</option>
-                                        <option value="Gwalior">Dindori</option>
-                                        <option value="Gwalior">Seoni</option>
+                                        <option value="Datia">Datia</option>
+                                        <option value="Shivpuri">Shivpuri</option>
+                                        <option value="Guna">Guna</option>
+                                        <option value="Morena">Morena</option>
+                                        <option value="Ratlam">Ratlam</option>
+                                        <option value="Ujjain">Ujjain</option>
+                                        <option value="Jhabua">Jhabua</option>
+                                        <option value="Sehore">Sehore</option>
+                                        <option value="Raisen">Raisen</option>
+                                        <option value="Betul">Betul</option>
+                                        <option value="Dindori">Dindori</option>
+                                        <option value="Seoni">Seoni</option>
                                     </select>
                                 </div>
                             </div>
