@@ -34,13 +34,13 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Route To Bus Stop Mapping / बस स्टॉप तक मार्ग का मानचित्रण</h4>
+                    <h4 class="card-title">Route To Bus Stop Mapping </h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Route To Bus Stop Mapping / बस स्टॉप तक मार्ग का मानचित्रण</legend>
+                <legend>Route To Bus Stop Mapping </legend>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -69,17 +69,17 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select In Time 
+                            <span>Select Bus Stop arrival time
                                 <br />
-                                आने का समय चुनें<span style="color: red">*</span></span>
+                                बस आगमन का समय चुनें<span style="color: red">*</span></span>
                             <input step="1800" title="time" class="form-control" type="time" ng-model="endTime" pattern="[0-9]*" value="00:00" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Out Time
+                            <span>Select Bus Stop Departure time
                                 <br />
-                                जाने का समय चुनें<span style="color: red">*</span></span>
+                                बस प्रस्थान का समय चुनें<span style="color: red">*</span></span>
                             <input step="1800" title="time" class="form-control" type="time" ng-model="endTime" pattern="[0-9]*" value="00:00" />
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Details / विवरण</legend>
+                <legend>Route & Bus Stop Details </legend>
                 <div class="row justify-content-end" id="NoRcdTable">
                     <div class="table-responsive">
                         <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehiclRegistration" style="border-collapse: collapse; text-align: center;">
@@ -109,6 +109,14 @@
                                     <th scope="col">Bus Stop Name
          <br />
                                         बस स्टॉप का नाम</th>
+                                    <th scope="col">Bus Stop arrival time
+        <br />
+                                        बस आगमन का समय
+                                    </th>
+                                    <th scope="col">Bus Stop Departure time
+                                        <br />
+                                        बस प्रस्थान का समय
+                                    </th>
                                     <th scope="col">Action
          <br />
                                     </th>
@@ -124,6 +132,14 @@
                                         <span>Rachana Nagar</span>
 
                                     </td>
+                                    <td>
+                                        <span>8:30 AM</span>
+
+                                    </td>
+                                    <td>
+                                        <span>6:30 PM</span>
+
+                                    </td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
                                         <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
@@ -136,6 +152,14 @@
                                     </td>
                                     <td>
                                         <span>Gautam Nagar</span>
+
+                                    </td>
+                                    <td>
+                                        <span>8:30 AM</span>
+
+                                    </td>
+                                    <td>
+                                        <span>6:30 PM</span>
 
                                     </td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
@@ -210,13 +234,13 @@
                                     <th scope="col">Bus Stop Name
                                         <br />
                                         बस स्टॉप का नाम</th>
-                                    <th scope="col">In Time
+                                    <th scope="col">Bus Stop arrival time
                                         <br />
-                                        समय पर
+                                        बस आगमन का समय
                                     </th>
-                                    <th scope="col">Out Time
-                                        <br />
-                                        बाहर जाने का समय
+                                    <th scope="col">Bus Stop Departure time
+                                <br />
+                                        बस प्रस्थान का समय
                                     </th>
                                     <th scope="col">Action
                                         <br />

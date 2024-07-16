@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <span>Enter Driver Name(In English)
                                 <br />
-                                ड्राइवर का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></span>
+                                चालक का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></span>
                             <input class="form-control" type="text" placeholder="Enter Driver Name(In English)" />
 
                         </div>
@@ -64,7 +64,7 @@
                         <div class="form-group">
                             <span>Enter Driver Name(In Hindi)
                                 <br />
-                                ड्राइवर का नाम हिंदी में दर्ज करें<span style="color: red">*</span></span>
+                                चालक का नाम हिंदी में दर्ज करें<span style="color: red">*</span></span>
                             <input class="form-control" type="text" placeholder="Enter Driver Name(In Hindi)" />
 
                         </div>
@@ -121,7 +121,7 @@
                         <div class="form-group">
                             <span>Enter Driver Contact Number
     <br />
-                                ड्राइवर का संपर्क नंबर दर्ज करें<span style="color: red">*</span></span>
+                                चालक का संपर्क नंबर दर्ज करें<span style="color: red">*</span></span>
                             <input class="form-control" type="text" placeholder="Enter Driver Contact Number" />
                         </div>
                     </div>
@@ -135,9 +135,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Enter Licence Number
+                            <span>Enter Driving Licence No.
     <br />
-                              लाइसेंस नंबर दर्ज करें<span style="color: red">*</span></span>
+                              ड्राइविंग लाइसेंस नं. दर्ज करें<span style="color: red">*</span></span>
                             <input class="form-control" type="text" placeholder="Enter Licence Number" />
                         </div>
                     </div>
@@ -159,21 +159,21 @@
                                     <tr>
                                     <tr>
                                         <th>Sr. No.
-     <br />
+                                         <br />
                                           क्रमांक</th>
                                         <th>Vehicle No.
-     <br />
+                                             <br />
                                             वाहन क्रमांक</th>
                                         <th>Driver Name
 
-     <br />
+                                         <br />
                                             चालक का नाम</th>
                                         <th>Contact Number<br />
                                             संपर्क नंबर</th>
-                                        <th>Licence No.
+                                        <th>Driving Licence No.
 
-     <br />
-                                            लाइसेंस क्रमांक</th>
+                                         <br />
+                                            ड्राइविंग लाइसेंस नं.</th>
 
 
                                         <th colspan="3">Action<br />
@@ -246,10 +246,10 @@
                                             चालक का नाम</th>
                                         <th>Contact Number<br />
                                             संपर्क नंबर</th>
-                                        <th>Licence No.
+                                        <th>Driving Licence No.
 
                      <br />
-                                            लाइसेंस क्रमांक</th>
+                                            ड्राइविंग लाइसेंस नं.</th>
 
 
                                         <th colspan="2">Action<br />
