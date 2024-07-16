@@ -166,11 +166,46 @@
                         <hr />
                         <div class="col-md-12">
                             <div class="form-group">
-                                <a class="btn btn-outline-success w-lg btn-rounded Alert-Cancel">Cancel Increment</a>
+                                <a class="btn btn-outline-success w-lg btn-rounded"  data-bs-toggle="modal" data-bs-target="#ModalConfirm">Cancel Increment</a>
                             </div>
                         </div>
                     </div>
                 </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="modal  fade" id="ModalConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: var(--vz-primary);">
+                    <h3 class="modal-title fw-bold text-white mb-3">Cancel Increment</h3>
+                    <button type="button" class="btn-close text-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Cancel Increment</legend>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Remark / टिप्पणी<span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" AutoComplete="off" TextMode="MultiLine" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <hr />
+                    <div class="row">
+                        <div class="modal-footer">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
+                                        Cancel Increment
+                                    </button>
+                                    <a href="/mis/Transaction/IncrementCancel.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -186,66 +221,6 @@
                 x.style.display = "block";
             }
         }
-    </script>
-    <script>
-        !function ($) {
-            "use strict";
-            var SweetAlert = function () { };
-            //examples
-            SweetAlert.prototype.init = function () {
-                //Basic
-                //Success Message
-                $('.Alert-Success').click(function () {
-                    Swal.fire({
-                        type: 'success',
-                        title: 'Good job!',
-                        text: 'Something went wrong!',
-                        timer: 2000
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
-                    })
-                });
-                $('.Alert-Cancel').click(function () {
-                    Swal.fire({
-                        title: 'Are you sure?',
-                        text: "Do you want to Cancel this Increment?",
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085D6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes'
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
-                    }).then((result) => {
-                        if (result.value) {
-                            Swal.fire({
-                                type: 'success',
-                                title: 'Success!',
-                                text: 'Increment Canceled Successfully!',
-                                timer: 2000
-                                // animation: false,
-                                // customClass: {
-                                //     popup: 'animated tada'
-                                // }
-                            }
-                            )
-                        }
-                    })
-                });
-
-            },
-                //init
-                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
-        }(window.jQuery),
-            //initializing
-            function ($) {
-                "use strict";
-                $.SweetAlert.init()
-            }(window.jQuery);
     </script>
     <script>
         function toggleAll(source) {
