@@ -140,20 +140,21 @@
                                         <th>Sr.No.
                                                 <br />
                                             सरल क्र.</th>
-                                        <th>Employee's name with ID
+                                        <th>Employee's name 
                                                 <br />
-                                            आई डी सहित कर्मचारी का नाम</th>
+                                            कर्मचारी का नाम</th>
                                         <th>Designation
                                                 <br />
                                             पद</th>
 
-                                        <th>Sankul Name
+                                        <th>District Name
                                                 <br />
-                                            संकुल का नाम
+                                            जिला का नाम
                                         </th>
-                                        <th>School Name
+                                        <th>OIS Udise Code
                                                 <br />
-                                            स्कूल का नाम</th>
+
+                                            OIS यू डाइस कोड </th>
                                         <th>View More
                                                 <br />
                                             अधिक विवरण देखे</th>
@@ -166,7 +167,7 @@
                                     <td>1</td>
                                     <td>Shri A.K. Ranjan-0001</td>
                                     <td>LDC</td>
-                                    <td>23356245856 - Crist Academy School</td>
+                                    <td>Bhopal</td>
                                     <td>23354932167 - Delhi Public School</td>
                                     <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                     <td>Approved</td>
@@ -175,9 +176,9 @@
                                     <td>2</td>
                                     <td>Omprakash-0012</td>
                                     <td>UDC</td>
-                                    <td>23354912798 - Bal Bharti School</td>
+                                    <td>Sehore</td>
                                     <td>23568546215 - Sarasvati Vidhya Mandir</td>
-                                    <td class="text-center"> <a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                    <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                     <td>Approved</td>
                                 </tr>
                             </table>
@@ -360,17 +361,25 @@
                                     <table class="table table-bordered">
 
                                         <tr>
+                                            <th>S.No.</th>
                                             <th>Nominee Name</th>
                                             <th>Relationship with Nominee</th>
                                             <th>Nominee Percentage</th>
-                                           <%-- <th>Action</th>--%>
+                                            <%-- <th>Action</th>--%>
                                         </tr>
 
                                         <tr>
+                                            <td>1</td>
                                             <td>Sourya Verma</td>
                                             <td>Brother</td>
-                                            <td>100%</td>
-                                           <%-- <td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>--%>
+                                            <td>50%</td>
+                                            <%-- <td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>--%>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Simran Verma</td>
+                                            <td>Sister</td>
+                                            <td>50%</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -467,23 +476,50 @@
                                 <legend id="l6">Education Qualification / शैक्षणिक योग्यता</legend>
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
+                                        
                                         <tr>
-                                            <th>Qualification :</th>
-                                            <td>BCA</td>
-                                            <th>Subject :
-                                            </th>
-                                            <td>Computer</td>
+                                            <th>S.No.</th>
+                                            <th>Qualification</th>
+                                            <th>Subject</th>
+                                            <th>Board / University Name</th>
+                                            <th>Passing Year</th>
+                                            <th>Grade / Percentage</th>
                                         </tr>
+
                                         <tr>
-                                            <th>Board / Univercity Name :</th>
+                                            <td>1</td>
+                                            <td>MCA</td>
+                                            <td>Maths</td>
                                             <td>MP Board</td>
-                                            <th>Passing Year :
-                                            </th>
-                                            <td>03/05/2022</td>
+                                            <td>09/05/2020</td>
+                                            <td>70%</td>
                                         </tr>
+
                                         <tr>
-                                            <th>Grade / Percentage :</th>
-                                            <td colspan="3">75%</td>
+                                            <td>2</td>
+                                            <td>BSC</td>
+                                            <td>Computer</td>
+                                            <td>MP Board</td>
+                                            <td>09/05/2020</td>
+                                            <td>75%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td>BCA</td>
+                                            <td>Maths</td>
+                                            <td>MP Board</td>
+                                            <td>09/05/2021</td>
+                                            <td>77%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>MCA</td>
+                                            <td>Maths</td>
+                                            <td>MP Board</td>
+                                            <td>09/05/2020</td>
+                                            <td>70%</td>
                                         </tr>
 
                                     </table>
@@ -806,216 +842,222 @@
                                     </table>
                                 </div>
                             </fieldset>
-                                                         <fieldset>
-                                    <legend id="l13">Document / दस्तावेज़</legend>
-                                    <div class="table-responsive">
+                            <fieldset>
+                                <legend>Document / दस्तावेज़</legend>
+                                <div class="table-responsive">
 
-                                        <table class="table table-bordered ">
-                                            <thead>
-                                                <tr>
-                                                  <td class="text-center">
-                                                         <label style="font-weight: bold;font-size: large;">Sr. No.</label>
-                                                    </td>
-                                                    <td>    <label style="font-weight: bold;font-size: large;">Document Name  </label>
-                                                    </td>
-                                                   <td class="text-center">   <label style="font-weight: bold;font-size: large;">View Document</label>
-                                                    </td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">1</td>
-                                                    <td>
-                                                        <label>
-                                                            Appointment Order Certificate
+                                    <table class="table table-bordered ">
+                                        <thead  class="nowrap">
+                                            <tr>
+                                                <th class="text-center">
+                                                    <label style="font-weight: bold;">Sr.No.</label>
+                                                </th>
+                                                <th>
+                                                    <label style="font-weight: bold;">Document Name </label>
+                                                </th>
+                                                <th class="text-center">
+                                                    <label style="font-weight: bold;">View Document</label>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>
+                                                    <label>
+                                                        Appointment Order Certificate
         <br />
-                                                            नियुक्ति आदेश प्रमाण पत्र :
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr >
-                                                    <td class="text-center">2</td>
-                                                    <td>
-                                                        <label >
-                                                            Birth Certificate
-                                                                <br />
-                                                            जन्म प्रमाण पत्र  :
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg5"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">3</td>
-                                                    <td>
-                                                        <label>
-                                                            Caste Certificate (OBC/ST/SC)<br />
-                                                            जाति प्रमाण पत्र (ओबीसी/एसटी/एससी) :
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg6"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">5</td>
-                                                    <td>
-                                                        <label>
-                                                            Handicapped Certificate
-                                                                <br />
-                                                            विकलांग प्रमाण पत्र  :
-                                                        </label>
-                                                    </td>
+                                                        नियुक्ति आदेश प्रमाण पत्र :
+                                                    </label>
+                                                </td>
                                                 <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">6</td>
-                                                    <td>
-                                                        <label>
-                                                            Critical Illness Certificate<br />
-                                                            गंभीर बीमारी प्रमाणपत्र  :
-                                                        </label>
-                                                    </td>
-                                                   <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                <td class="text-center">4</td>
-                                                    <td>
-                                                        <label>
-                                                            Present Posting Order
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td>
+                                                    <label>
+                                                        Birth Certificate
                                                                 <br />
-                                                            वर्तमान पोस्टिंग ऑर्डर  :
-                                                        </label>
-                                                    </td>
-                                                   <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+                                                        जन्म प्रमाण पत्र  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg5"></i></button>
 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                   <td class="text-center">7</td>
-                                                    <td>
-                                                        <label>
-                                                            Married Certificate<br />
-                                                            विवाहित प्रमाणपत्र  :
-                                                        </label>
-                                                    </td>
-<td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg8"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td>
+                                                    <label>
+                                                        Caste Certificate (OBC/ST/SC)<br />
+                                                        जाति प्रमाण पत्र (ओबीसी/एसटी/एससी) :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg6"></i></button>
 
-                                                    </td>
-                                                </tr>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5</td>
+                                                <td>
+                                                    <label>
+                                                        Handicapped Certificate
+                                                                <br />
+                                                        विकलांग प्रमाण पत्र  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
 
-                                        </table>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset>
-                                    <legend id="l12">Educational Document / शैक्षिक दस्तावेज़</legend>
-                                    <div class="table-responsive">
-
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr >
-                                 <td class="text-center">   <label style="font-weight: bold;font-size: large;">Sr. No.</label>
-                                                    </td>
-                                                    <td>    <label style="font-weight: bold;font-size: large;">Document Name  </label>
-                                                    </td>
-                                                   <td class="text-center">   <label style="font-weight: bold;font-size: large;">View Document</label>
-                                                    </td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                   <td class="text-center">1</td>
-                                                    <td>
-                                                        <label>
-                                                            10th Marksheet<br />
-                                                            10वीं की मार्कशीट  :</label></td>
-                                                  <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg9"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                   <td class="text-center">2</td>
-                                                    <td>
-                                                        <label>
-                                                            12th Marksheet<br />
-                                                            12वीं की मार्कशीट  :
-                                                        </label>
-                                                    </td>
-                                                   <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg10"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">3</td>
-                                                    <td>
-                                                        <label>
-                                                            UG Certificate<br />
-                                                            यूजी सर्टिफिकेट  :
-                                                        </label>
-                                                    </td>
-                                                  <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                   <td class="text-center">4</td>
-                                                    <td>
-                                                        <label>
-                                                            Upload PG Certificate<br />
-                                                            पीजी प्रमाणपत्र अपलोड करें :
-                                                        </label>
-                                                    </td>
-                                                  <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">5</td>
-                                                    <td>
-                                                        <label>
-                                                            Diploma Certificate<br />
-                                                            डिप्लोमा प्रमाणपत्र  :
-                                                        </label>
-                                                    </td>
-                                                  <td class="text-center">
-                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class="text-center">6</td>
-                                                    <td>
-                                                        <label>
-                                                            Other Certificate<br />
-                                                            अन्य प्रमाणपत्र :
-                                                        </label>
-                                                    </td>
+                                                <td>
+                                                    <label>
+                                                        Critical Illness Certificate<br />
+                                                        गंभीर बीमारी प्रमाणपत्र  :
+                                                    </label>
+                                                </td>
                                                 <td class="text-center">
-                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-                                                    </td>
-                                                </tr>
-                                               </tbody></table>
-                                        </div>
-                                </fieldset>
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg7"></i></button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">4</td>
+                                                <td>
+                                                    <label>
+                                                        Present Posting Order
+                                                                <br />
+                                                        वर्तमान पोस्टिंग ऑर्डर  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg4"></i></button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">7</td>
+                                                <td>
+                                                    <label>
+                                                        Married Certificate<br />
+                                                        विवाहित प्रमाणपत्र  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg8"></i></button>
+
+                                                </td>
+                                            </tr>
+
+                                    </table>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Educational Document / शैक्षिक दस्तावेज़</legend>
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th class="text-center">
+                                                    <label style="font-weight: bold;">Sr.No.</label>
+                                                </th>
+                                                <th>
+                                                    <label style="font-weight: bold;">Document Name</label>
+                                                </th>
+                                                <th class="text-center">
+                                                    <label style="font-weight: bold;">View Document</label>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>
+                                                    <label>
+                                                        10th Marksheet<br />
+                                                        10वीं की मार्कशीट  :</label></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg9"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td>
+                                                    <label>
+                                                        12th Marksheet<br />
+                                                        12वीं की मार्कशीट  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg10"></i></button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td>
+                                                    <label>
+                                                        UG Certificate<br />
+                                                        यूजी सर्टिफिकेट  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">4</td>
+                                                <td>
+                                                    <label>
+                                                        Upload PG Certificate<br />
+                                                        पीजी प्रमाणपत्र अपलोड करें :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5</td>
+                                                <td>
+                                                    <label>
+                                                        Diploma Certificate<br />
+                                                        डिप्लोमा प्रमाणपत्र  :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">6</td>
+                                                <td>
+                                                    <label>
+                                                        Other Certificate<br />
+                                                        अन्य प्रमाणपत्र :
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </fieldset>
                         </div>
 
                         <div class="modal-footer">
