@@ -1233,10 +1233,11 @@
                                             <div class="collapse menu-dropdown" id="Increment">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/AddIncrement.aspx"><i class="ri-file-list-3-line"></i>Add Increment </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/IncrementProcess.aspx"><i class="ri-file-list-3-line"></i>Increment Process</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/IncrementOrders.aspx"><i class="ri-file-list-3-line"></i>Increment Order</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/IncrementCancel.aspx"><i class="ri-file-list-3-line"></i>Increment Cancel Orders</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/IncrementList.aspx"><i class="ri-file-list-3-line"></i>Increment List</a></li>
+<%--                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/IncrementProcess.aspx"><i class="ri-file-list-3-line"></i>Increment Process</a></li>--%>
+                                                    <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/IncrementOrders.aspx"><i class="ri-file-list-3-line"></i>Increment Order</a>--%></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_EmployeeIncrement.aspx"><i class="ri-file-list-3-line"></i>Employee Increment Report </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/IncrementCancel.aspx"><i class="ri-file-list-3-line"></i>Increment Cancel Orders</a></li>
                                                 </ul>
                                             </div>
                                         </li>
