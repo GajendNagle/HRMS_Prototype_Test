@@ -268,7 +268,7 @@
                         <%-- End by sagar--%>
                     </fieldset>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="printModalContent('staticBackdrop')">Print</button>
                     <button type="button" class="btn btn-outline-danger  btn-border w-lg" data-bs-dismiss="modal">Close</button>
                 </div>

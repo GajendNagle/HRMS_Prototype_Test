@@ -3,7 +3,39 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
     <style>
-        .top-heading i {
+        .no-border th, .no-border td {
+            border: 0px;
+            background-color: transparent;
+            width: calc(100% / 4);
+        }
+
+        .no-border tr, {
+            padding: 0.2rem 1rem;
+            background-color: transparent;
+        }
+
+        .table tr:nth-child(even), .table tr, .table th {
+            background-color: transparent;
+        }
+
+        .nav-pills .nav-link {
+            border-radius: var(--vz-nav-pills-border-radius);
+        }
+
+
+
+        @media print {
+            .card-body, .card, #printCard {
+                padding: 0;
+                margin: 0;
+            }
+
+            .card-border-primary {
+                border: 0
+            }
+        }
+
+        /*   .top-heading i {
             display: flex;
             align-items: center;
             font-size: 10px;
@@ -17,9 +49,9 @@
             color: #fff;
             padding: 0 11px;
             border-radius: 120px;
-        }
+        }*/
 
-        .top-heading {
+        /*   .top-heading {
             position: relative;
             display: flex;
             background-color: var(--vz-primary);
@@ -30,19 +62,19 @@
             padding: 8px 16px;
             margin: 2.0rem;
         }
-
-        .nav-tabs-custom.card-header-tabs {
+*/
+        /*  .nav-tabs-custom.card-header-tabs {
             margin-top: -0.6em;
             margin-left: 1rem;
-        }
-
+        }*/
+        /*
         .nav-tabs-custom .nav-item .nav-link {
             border: 1px solid transparent;
             font-weight: var(--vz-font-weight-medium);
             border-top-left-radius: 33px;
             border-top-right-radius: 29px;
         }
-
+*/
         .profile-setting-img {
             position: relative !important;
             height: 150px !important;
@@ -73,6 +105,9 @@
                         <li class="breadcrumb-item">
                             <a href="#GFMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Guest Faculty Management System</span></a>
                         </li>
+                        <li class="breadcrumb-item">
+                            <a href="#GuestFaculty" data-bs-toggle="collapse" role="button" aria-expanded="false" onclick="SidebarToggle('GFMS')"><span>Guest Faculty Login</span></a>
+                        </li>
 
                         <li class="breadcrumb-item"><span>Update Information</span></li>
                     </ol>
@@ -80,40 +115,28 @@
             </div>
         </div>
     </div>
-    <div class="position-relative mx-n4 mt-n4">
-        <div class="profile-wid-bg profile-setting-img text-center">
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="top-heading">
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <h3>Profile Details</h3>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="col-md-12 col-lg-12">
-        <div class="card mt-lg-n5">
+        <div class="card ">
             <div class="card-header-">
-                <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                <ul class="nav nav-pills m-3" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="tab" id="NavQualification" href="#Qualification" role="tab">Update Information 
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" style="display: none" id="NavExperience" href="#Experience" role="tab">Experience Details
+                        <a class="nav-link" data-bs-toggle="tab" id="NavExperience" href="#Experience" role="tab">Experience Details
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" style="display: none" id="NavApplication" href="#Application" role="tab">Application Submission
+                        <a class="nav-link " data-bs-toggle="tab" id="NavApplication" href="#Application" role="tab">EKYC Details 
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="card-body p-4">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="Qualification" role="tabpanel">
+                    <div class="tab-pane active show" id="Qualification" role="tabpanel">
                         <fieldset>
                             <div class="row mt-4 align-items-end">
                                 <div class="col-3">
@@ -246,7 +269,7 @@
                             </div>
                             <hr />
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 text-center">
                                     <button type="button" class="Alert-Save2 btn btn-outline-success btn-border  w-lg">Save & Next</button>
                                     <a href="ProfileViewGFMS.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
@@ -362,16 +385,16 @@
                             </div>
                             <hr />
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 text-center">
                                     <button type="button" class="Alert-Save3 btn btn-outline-success btn-border  w-lg">Save & Next</button>
                                     <a data-bs-toggle="tab" href="#Experience" onclick="document.getElementsByTagName('form').reset" role="tab" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
                             </div>
                         </fieldset>
                     </div>
-                    <div class="tab-pane" id="Application" role="tabpanel">
-                        <fieldset>
-                            <div class="row mt-4 align-items-end">
+                    <div class="tab-pane " id="Application" role="tabpanel">
+
+                        <%--<div class="row mt-4 align-items-end">
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
@@ -406,7 +429,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <%-- </div>--%>
+                               
                                 <div class="col-3">
                                     <div class="form-group">
                                         <label>
@@ -430,8 +453,180 @@
                                     <button type="button" class="Alert-Save btn btn-outline-success btn-border w-lg">Apply for Post</button>
                                     <a href="ProfileViewGFMS.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                                 </div>
+                            </div>--%>
+                        <div class="row">
+                            <div class="col-md-12" id="printCard">
+
+                                <fieldset class="px-0 ">
+                                    <div class="border-bottom border-dark  mt-0 ">
+
+                                        <div class="row text-center align-items-center">
+                                            <div class="col-2">
+                                                <img id="imgLogoP1" src="../../img/image-260nw-1902805156.jpg" style="width: 140px; height: auto; background: none" class="responsive" />
+                                            </div>
+                                            <div class="col-8 text-center">
+
+                                                <h3><strong><b>अतिथि शिक्षक - आवेदक का विवरण</b></strong></h3>
+                                                <label><b>Details as per EKYC</b></label>
+
+                                            </div>
+                                            <div class="col-2">
+                                                <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-12 mt-2">
+                                            <div class="table-responsive">
+                                                <table class="table no-border">
+                                                    <tbody class="border-0">
+
+                                                        <tr>
+                                                            <th>Name  </th>
+                                                            <td>Yash Varma</td>
+                                                            <th>Father / Husband / Guardian Name</th>
+                                                            <td>Mr. Papeendra  Varma</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Date Of Birth</th>
+                                                            <td>17/07/1996</td>
+                                                            <th>Gender</th>
+                                                            <td>Male</td>
+                                                        </tr>
+                                                        <tr class="bottom-border">
+                                                            <th>Address</th>
+                                                            <td>Near New Girls H.S. School Bari 
+                                                                    <br />
+                                                                Dist. Raisen M.P. District: RAISEN  </td>
+                                                            <th>Pin Code</th>
+                                                            <td>464665</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <div class="table-responsive">
+                                                <table class="table no-border">
+                                                    <tbody class="border-0">
+                                                        <tr>
+                                                            <th>Category</th>
+                                                            <td>SC</td>
+                                                            <th>Mental Status</th>
+                                                            <td>Unmarried</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Mother Name</th>
+                                                            <td>Mrs. Nimesh Varma</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr class="bottom-border">
+                                                            <th>Mobile No</th>
+                                                            <td>8602367114</td>
+                                                            <th>Email ID</th>
+                                                            <td>yash10yns@gmail.com </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-2">
+                                        <div class="row mt-3">
+                                            <div class="col-md-12 text-center">
+                                                <h5>Qualification Details </h5>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>S. No</th>
+                                                                <th>Year</th>
+                                                                <th>Qualification</th>
+                                                                <th>Course</th>
+                                                                <th>Subject</th>
+                                                                <th>Board University</th>
+                                                                <th>Roll Number</th>
+                                                                <th>Total Marks</th>
+                                                                <th>Obtained Marks</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>2010-11</td>
+                                                                <td>HIGH SCHOOL</td>
+                                                                <td>All</td>
+                                                                <td>All</td>
+                                                                <td>MP Board</td>
+                                                                <td>116528203</td>
+                                                                <td>600.00</td>
+                                                                <td>428.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>2012-13</td>
+                                                                <td>HSS (11<sup>th</sup>/12<sup>th</sup>)</td>
+                                                                <td>Science</td>
+                                                                <td>PCM</td>
+                                                                <td>MP Board</td>
+                                                                <td>236519077</td>
+                                                                <td>500.00</td>
+                                                                <td>292.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>2015-16</td>
+                                                                <td>GRADUATE</td>
+                                                                <td>Computer Science</td>
+                                                                <td>Computer Science</td>
+                                                                <td>State Govt. University</td>
+                                                                <td>14157421</td>
+                                                                <td>3700.00</td>
+                                                                <td>2362.00</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <h4 class="text-center">महत्वपूर्ण निर्देश </h4>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <p><b>आवेदक के लिए (EKYC से संबंधित)-पूर्व में EKYC समग्र के माध्यम से की जाती थी, इस प्रक्रिया में आंशिक बदलाव करते हुए अब EKYC सीधे आधार से की जा रही है। आधार EKYC से प्रदर्शित जानकारी यदि त्रुटिपूर्ण है, तो आवेदक को सही जानकारी दर्ज करने की सुविधा दी गई है। इस प्रक्रिया के पश्चात पोर्टल से प्रिन्ट किए गए आवेदनपत्र में EKYC तथा आवेदक द्वारा दर्ज जानकारी पृथक पृथक प्रदर्शित होगी। </b></p>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li><b>संकुल प्राचार्य के लिए (सत्यापन से संबंधित) - </b>संकुल प्राचार्य आवेदक द्वारा दर्ज जानकारी को प्रस्तुत अंकसूची/प्रमाणपत्र से मिलान करते हुए सत्यापित करेंगे।</li>
+                                                </ul>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </div>
-                        </fieldset>
+                                        <div class="col-md-12 px-4 d-print-none text-center">
+                                            <button onclick="printModalContent('printCard');" type="button" class=" btn btn-outline-success btn-border w-lg">Print</button>
+                                            <a role="button" class=" btn btn-outline-secondary btn-border w-lg" download="EKYC_Details" href="/mis/Document/GFMS_EKYCDetails.pdf">Download</a>
+                                        </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -440,6 +635,22 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
+        function printModalContent(modalId) {
+            var modalContent = document.querySelector('#' + modalId).cloneNode(true);
+            document.body.innerHTML = modalContent.innerHTML
+            window.print();
+            window.location.href = "ProfileViewGFMS.aspx";
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
+
+                if (document.getElementById("Application").classList == "tab-pane active show") {
+                    event.preventDefault();
+                    printModalContent('printCard');
+                }
+            }
+        });
+
         !function ($) {
             "use strict";
             var SweetAlert = function () { };
@@ -497,7 +708,8 @@
                                 timer: 4000,
                                 onClose: () => {
                                     document.getElementById("NavExperience").click();
-                                    document.getElementById("NavExperience").style.display = "block";
+
+
                                 }
                             }
                             )
@@ -523,7 +735,8 @@
                                 timer: 4000,
                                 onClose: () => {
                                     document.getElementById("NavApplication").click();
-                                    document.getElementById("NavApplication").style.display = "block";
+
+
                                 }
                             }
                             )
@@ -539,6 +752,8 @@
                 "use strict";
                 $.SweetAlert.init()
             }(window.jQuery);
+
+
         function AddExperience() {
             var tableAdd = document.getElementById("tblExperience");
             tableAdd.style.display = "table";

@@ -187,9 +187,9 @@
                             </table>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 text-center">
                                 <hr />
-                                <button type="button" class=" Alert-ClaimConfirmation btn btn-outline-success btn-border w-lg">Registration Claim Form</button>
+                                <button type="button" class=" Alert-ClaimConfirmation btn btn-outline-success btn-border w-lg">Registration Claim Form send to Sankul</button>
                             </div>
                         </div>
                     </fieldset>
