@@ -1333,7 +1333,8 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteToBusStopMapping.aspx"><i class="ri-file-list-3-line"></i>Route To Bus Stop Mapping </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DriverRegistration.aspx"><i class="ri-file-list-3-line"></i>Driver Registration </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteToVehicleMapping.aspx"><i class="ri-file-list-3-line"></i>Route To Vehicle Mapping   </a></li>
-                                                </ul>
+                                                  <li class="nav-item"><a class="nav-link" href="/mis/Transaction/BusStopToStudentEnrollment.aspx"><i class="ri-file-list-3-line"></i>Bus Stop Enrollnent</a></li>
+                                                    </ul>
                                             </div>
                                         </li>
                                     </ul>
