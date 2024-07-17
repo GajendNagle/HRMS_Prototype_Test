@@ -122,20 +122,20 @@
     </div>
 
     <div class="col-md-12 col-lg-12">
-        <div class="card  ">
+        <div class="card card-border-primary">
             <div class="card-header d-print-none">
-                <ul class="nav nav-pills m-3" role="tablist">
+                <ul class="nav nav-pills" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" id="NavQualification" href="#Qualification" role="tab">Update Information 
-                        </a>
+                       <h5><a class=" nav-link   active " data-bs-toggle="tab" id="NavQualification" href="#Qualification" role="tab">Update Information 
+                        </a></h5> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" id="NavExperience" href="#Experience" role="tab">Experience Details
-                        </a>
+                       <h5>  <a class="nav-link" data-bs-toggle="tab" id="NavExperience" href="#Experience" role="tab">Experience Details
+                        </a></h5> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " data-bs-toggle="tab" id="NavApplication" href="#Application" role="tab">EKYC Details 
-                        </a>
+                        <h5> <a class="nav-link " data-bs-toggle="tab" id="NavApplication" href="#Application" role="tab">EKYC Details 
+                        </a></h5> 
                     </li>
                 </ul>
             </div>
@@ -143,12 +143,13 @@
                 <div class="tab-content">
                     <div class="tab-pane active show" id="Qualification" role="tabpanel">
                         <fieldset>
+                            <legend>Add Qualification Details </legend>
                             <div class="row mt-4 align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Academic Year<br />
-                                            शैक्षणिक वर्ष का चयन करे
+                                            शैक्षणिक वर्ष का चयन करे <span style="color:red">*</span>
                                         </label>
                                         <%--<input name="name" id="AcademicYear" placeholder="Select Academic Year" class="form-control  datepickerYear" />--%>
                                         <select id="AcademicYear" class="form-control select2">
@@ -167,7 +168,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Qualification<br />
-                                            योग्यता का चयन करे
+                                            योग्यता का चयन करे <span style="color:red">*</span>
                                         </label>
                                         <select id="Education" class="form-control select2">
                                             <option value="----">--Select--</option>
@@ -218,7 +219,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Board<br />
-                                            बोर्ड का चयन करे 
+                                            बोर्ड का चयन करे <span style="color:red">*</span>
                                         </label>
                                         <select id="Board" class="form-control select2">
                                             <option value="----">--Select--</option>
@@ -232,7 +233,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Subject<br />
-                                            विषय का चयन करे 
+                                            विषय का चयन करे <span style="color:red">*</span>
                                         </label>
                                         <select id="Subject" class="form-control select2">
                                             <option value="----">--Select--</option>
@@ -253,7 +254,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Passing Year<br />
-                                            उत्तीर्ण वर्ष का चयन करे
+                                            उत्तीर्ण वर्ष का चयन करे <span style="color:red">*</span>
                                         </label>
 
                                         <%--<input id="PassingYear" name="name" placeholder="Select Passing Year" class="form-control  datepickerYear2" />--%>
@@ -287,7 +288,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Roll Number<br />
-                                            रोल नंबर दर्ज करे 
+                                            रोल नंबर दर्ज करे <span style="color:red">*</span>
                                         </label>
                                         <input type="text" id="rollnumber" class="form-control" placeholder="Enter Roll Number" />
                                     </div>
@@ -296,7 +297,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Percent<br />
-                                            प्रतिशत दर्ज करे 
+                                            प्रतिशत दर्ज करे <span style="color:red">*</span>
                                         </label>
                                         <input type="text" id="ddlPercentage" class="form-control" placeholder="Enter Percent" />
                                     </div>
@@ -305,7 +306,7 @@
                                     <div class="form-group">
                                         <label>
                                             Upload Certificate<br />
-                                            प्रमाण पत्र अपलोड करे
+                                            प्रमाण पत्र अपलोड करे<span style="color:red">*</span>
                                         </label>
                                         <input type="file" id="fileInput" class="form-control">
                                     </div>
@@ -355,12 +356,13 @@
                     </div>
                     <div class="tab-pane" id="Experience" role="tabpanel">
                         <fieldset>
+                            <legend>Add Experience Details</legend>
                             <div class="row mt-4 align-items-end">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Panel<br />
-                                            पैनल का चयन करे
+                                            पैनल का चयन करे<span style="color:red">*</span>
                                         </label>
                                         <select id="Panel" class="form-control select2">
                                             <option value="----">--Select--</option>
@@ -374,7 +376,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Experience Work(In Year)<br />
-                                            कार्य अनुभव दर्ज करे(वर्ष में)
+                                            कार्य अनुभव दर्ज करे(वर्ष में)<span style="color:red">*</span>
                                         </label>
                                         <input type="text" id="WorkedYear" class="form-control" placeholder="Enter Experience Work" />
                                     </div>
@@ -383,7 +385,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Subject<br />
-                                            विषय का चयन करे
+                                            विषय का चयन करे<span style="color:red">*</span>
                                         </label>
                                         <select id="Subjects" class="form-control select2">
                                             <option value="----">--Select--</option>
@@ -404,7 +406,7 @@
                                     <div class="form-group">
                                         <label>
                                             Professional Qualification Score<br />
-                                            व्यावसायिक योग्यता अंक
+                                            व्यावसायिक योग्यता अंक<span style="color:red">*</span>
                                         </label>
                                         <input type="text" id="scoreQualification" class="form-control" placeholder="Enter Qualification Score" />
                                     </div>
@@ -416,7 +418,7 @@
                                         <label>
                                             Qualified Score
                                             <br />
-                                            योग्यता अंक
+                                            योग्यता अंक<span style="color:red">*</span>
                                         </label>
                                         <input type="text" id="QualifiedScore" class="form-control" placeholder="Enter Qualified Score" />
                                     </div>
@@ -425,7 +427,7 @@
                                     <div class="form-group">
                                         <label>
                                             Upload Certificate<br />
-                                            प्रमाण पत्र अपलोड करे
+                                            प्रमाण पत्र अपलोड करे<span style="color:red">*</span>
                                         </label>
                                         <input type="file" id="fileInputs" class="form-control">
                                     </div>
@@ -470,71 +472,11 @@
                         </fieldset>
                     </div>
                     <div class="tab-pane " id="Application" role="tabpanel">
-
-                        <%--<div class="row mt-4 align-items-end">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter UDISE Code<br />
-                                            यूडीआईएसई कोड दर्ज करे
-                                        </label>
-                                        <input type="text" id="UdiceCode" class="form-control" placeholder="Enter UDICE Code">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter School Name<br />
-                                            विद्यालय का नाम दर्ज करे
-                                        </label>
-                                        <input class="form-control" type="text" placeholder="Enter School Name" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Select Vacant Panel<br />
-                                            रिक्त पैनल का चयन करें
-                                        </label>
-                                        <select id="VacantPanel" class="form-control select2">
-                                            <option value="----">--Select--</option>
-                                            <option value="SSS-2">SSS-2</option>
-                                            <option value="SSS-7">SSS-7</option>
-                                            <option value="SSS-5">SSS-5</option>
-                                            <option value="SSS-6">SSS-6</option>
-                                            <option value="SSS-3">SSS-3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                               
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Select Vacant Post<br />
-                                            रिक्त पोस्ट का चयन करें
-                                        </label>
-                                        <select id="VacantPost" class="form-control select2">
-                                            <option value="----">--Select--</option>
-                                            <option value="12">12</option>
-                                            <option value="10">10</option>
-                                            <option value="5">5</option>
-                                            <option value="16">16</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <button type="button" class="Alert-Save btn btn-outline-success btn-border w-lg">Apply for Post</button>
-                                    <a href="ProfileViewGFMS.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                                </div>
-                            </div>--%>
                         <div class="row">
                             <div class="col-md-12" id="printCard">
 
-                                <fieldset class="px-0 ">
+                                <fieldset class="px-0">
+                                    <legend class=" ms-3 d-print-none">Print Or Download KYC Details</legend>
                                     <div class="border-bottom border-dark  mt-0 ">
 
                                         <div class="row text-center align-items-center">

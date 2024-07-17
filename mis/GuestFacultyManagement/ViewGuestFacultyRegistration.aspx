@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ViewGuestFacultyRegistration.aspx.cs" Inherits="mis_GuestFacultyManagement_ViewGuestFacultyRegistration" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-     <div class="row">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -15,7 +15,9 @@
                         <li class="breadcrumb-item">
                             <a href="#GFMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>GFMS</span></a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#SankulVerification" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Sankul Verification</span></a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#sankulverification" data-bs-toggle="collapse" role="button" aria-expanded="false" onclick="SidebarToggle('GFMS')"><span>Sankul Login</span></a>
+                        </li>
                         <li class="breadcrumb-item active"><a title="click to go on">View Guest Faculty Registration</a></li>
                     </ol>
                 </div>
@@ -29,16 +31,45 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <h4 class="card-title">View Guest Faculty Registration /
-                                अतिथि संकाय पंजीकरण देखें</h4>
+                                अतिथि शिक्षक पंजीयन देखें</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
                         <legend>View Guest Faculty Registration /
-                                अतिथि संकाय पंजीकरण देखें</legend>
+                                अतिथि शिक्षक पंजीयन देखें</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label>
+                                        Academic Year 
+                                        <br />
+                                        शैक्षणिक वर्ष <span style="color: red">*</span></label>
+                                    <select class="form-control select2">
+                                        <option value="0">--Select--</option>
+                                        <option value="2024">2024-25</option>
+                                        <option value="2023">2023-24</option>
+                                        <option value="2022">2022-23</option>
+                                        <option value="2021">2021-22</option>
+                                        <option value="2020">2020-21</option>
+                                        <option value="2019">2019-20</option>
+                                        <option value="2018">2018-19</option>
+                                        <option value="2016">2017-18</option>
+                                        <option value="2015">2016-17</option>
+                                        <option value="2015">2015-16</option>
+                                        <option value="2014">2014-15</option>
+                                        <option value="2013">2013-14</option>
+                                        <option value="2012">2012-13</option>
+                                        <option value="2011">2011-12</option>
+                                        <option value="2010">2010-11</option>
+                                        <option value="2009">2009-10</option>
+                                        <option value="2008">2008-09</option>
+                                        <option value="2007">2007-08</option>
+                                    </select>
+                                </div>
+                            </div>
+                          <%--  <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Profile ID
@@ -46,8 +77,8 @@
                                         प्रोफ़ाइल आई.डी<span style="color: red;"> *</span></label>
                                     <input type="text" class="form-control" value="GF0012" />
                                 </div>
-                            </div>
-                            <div class="col-md-3">
+                            </div>--%>
+                            <div class="col-md-6 col-lg-4 ">
                                 <div class="form-group">
                                     <label>
                                         Mobile number as registered in the Application<br />
@@ -55,7 +86,7 @@
                                     <input type="text" class="form-control" value="Enter Mobile number as registered in the Application" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                           <%-- <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Select Qualification
@@ -70,8 +101,8 @@
                                         <option value="4">B.Ed</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
+                            </div>--%>
+                            <div class="col-md-6 col-lg-4">
                                 <div class="form-group">
                                     <label>
                                         Date of Birth
@@ -103,7 +134,7 @@
                                                 </th>
                                                 <th>Guest Faculty Name
                                                     <br />
-                                                    अतिथि संकाय का नाम</th>
+                                                    अतिथि शिक्षक का नाम</th>
                                                 <th>Qualification 
                                             <br />
                                                     योग्यता</th>
@@ -114,6 +145,10 @@
                                                 <th>Board
                                             <br />
                                                     बोर्ड
+                                                </th>
+                                                <th>View Profile
+                                            <br />
+                                                    प्रोफ़ाइल देखें
                                                 </th>
                                             </tr>
                                         </thead>
@@ -134,6 +169,9 @@
                                                 <td align="center" valign="middle">
                                                     <a>State govt university</a>
                                                 </td>
+                                                <td align="center" valign="middle">
+                                                    <button type="button" class="btn btn-outline-success btn-border" onclick="document.getElementById('FS_Details').style.display = 'block';">View</button>
+                                                </td>
 
                                             </tr>
                                             <tr role="row" class="odd">
@@ -151,6 +189,9 @@
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>State govt university</a>
+                                                </td>
+                                                <td align="center" valign="middle">
+                                                  <button type="button" class="btn btn-outline-success btn-border" onclick="document.getElementById('FS_Details').style.display = 'block';">View</button>
                                                 </td>
 
                                             </tr>
@@ -184,34 +225,34 @@
                             </div>
                         </div>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
-                                        Profile ID
+                                         Guest Faculty  ID
  <br />
-                                        प्रोफ़ाइल आई.डी<span style="color: red;"> *</span></label>
+                                     अतिथि शिक्षक आई.डी<span style="color: red;"> *</span></label>
                                     <input type="text" class="form-control" value="GF0012" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
-                                        Enter Name 
+                                       Guest Faculty Name
  <br />
-                                        नाम दर्ज करें <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Name" />
+                                        अतिथि शिक्षक का नाम  <span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" value="Ramesh Nanda" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Father's/Husband's Name 
  <br />
                                         पिता/पति का नाम दर्ज करें<span style="color: red;"> *</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Father's/Husband's Name " />
+                                    <input type="text" class="form-control" value="Vinod Nanda"/>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Date of Birth
@@ -222,7 +263,7 @@
                             </div>
                         </div>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Select Gender
@@ -230,12 +271,12 @@
                                         लिंग का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-select select2">
                                         <option value="--Select--">--Select--</option>
-                                        <option value="Male">Male</option>
+                                        <option selected value="Male">Male</option>
                                         <option value="Female">Female</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Select Category
@@ -244,28 +285,28 @@
                                     <select class="form-select select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="General">General</option>
-                                        <option value="OBC">OBC</option>
+                                        <option selected value="OBC">OBC</option>
                                         <option value="ST">ST</option>
                                         <option value="SC">SC</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Mobile No.
  <br />
                                         मोबाइल नंबर दर्ज करें<span style="color: red;"> *</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Mobile No." />
+                                    <input type="text" class="form-control" value="9638527410"/>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Email
  <br />
                                         ईमेल दर्ज करें<span style="color: red;"> *</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Email" />
+                                    <input type="text" class="form-control" value="RameshNanda1234@gmail.com" />
                                 </div>
                             </div>
                         </div>
@@ -292,7 +333,7 @@
                                                     योग्यता </th>
                                                 <th>Course
                                             <br />
-                                                    शृंखला
+                                                    कोर्स
                                                 </th>
                                                 <th>Subject
                                             <br />
@@ -308,7 +349,7 @@
                                                 </th>
                                                 <th>Total Marks
                                             <br />
-                                                    कुल मार्क
+                                                    कुल अंक
                                                 </th>
                                                 <th>Obtained Marks
                                             <br />
@@ -421,7 +462,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        क्या आवेदक शासकीय विद्यालय से सेवानिवृत्त शिक्षक है
+                                        क्या आवेदक शासकीय स्कूल से सेवानिवृत्त शिक्षक है
                                     </label>
                                     <select class="form-select select2">
                                         <option value="--Select--">--Select--</option>
@@ -437,39 +478,39 @@
                                 <input id="chck1" type="radio" name="Process" />
                             </div>
                             <div class="col-md-4">
-                                <label for="chck2">Rejection</label>
-                                <input id="chck2" type="radio" name="Process" onclick="function ()"/>
+                                <label for="chck2">Reject</label>
+                                <input id="chck2" type="radio" name="Process" onclick="function ()" />
                             </div>
-                        <div class="col-md-12" id="remark" style="display: none">
-                               <label>
+                            <div class="col-md-12" id="remark" style="display: none">
+                                <label>
                                     Remark(Reason for Rejection)आवेदन को रिजेक्ट करने की स्थिति में अस्वीकार करने के सभी करण स्पष्ट रूप से अंकित करे:
                                 </label>
-                             <textarea name="comments" id="comments" rows="1" cols="40" style="font-family: sans-serif; font-size: 1.2em; height: 41px;" dir="ltr"></textarea>
+                                <textarea name="comments" id="comments" rows="1" cols="40" style="font-family: sans-serif; font-size: 1.2em; height: 41px;" dir="ltr"></textarea>
 
                             </div>
-                        
-                        <hr />
+
+                            <hr />
+                        </div>
+
+
+                        <div class="col-md-12 ">
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save">Save</button>
+                                <a id="cc" href="ViewGuestFacultyRegistration.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                            </div>
+
+
+                        </div>
+                    </fieldset>
                 </div>
 
 
-                <div class="col-md-12 ">
-                    <div class="form-group text-center">
-                        <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save">Save</button>
-                        <a id="cc" href="ViewGuestFacultyRegistration.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
-                    </div>
-
-
-                </div>
-                </fieldset>
             </div>
-
-
         </div>
     </div>
-    </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-     <script>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
         $('.Alert-Save').click(function () {
             Swal.fire({
                 title: 'Are you sure?',
@@ -516,6 +557,6 @@
                 remarkSection.style.display = 'none'; // Hide the remark section
             }
         });
-     </script>
+    </script>
 </asp:Content>
 

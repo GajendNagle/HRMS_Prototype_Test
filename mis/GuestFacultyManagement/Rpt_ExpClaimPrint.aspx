@@ -91,9 +91,9 @@
                                                 स्कूल
 
                                             </th>
-                                            <th>Status
+                                            <th>Status Details
                                                 <br>
-                                                स्थिति
+                                                स्थिति विवरण
                                             </th>
                                             <th>Experience Claim Form
                                                 <br>
@@ -144,19 +144,19 @@
                                     <div class="col-8 text-center">
 
                                         <h3><strong><b>उपस्थिति सत्यापन पत्रक</b></strong></h3>
-                                        <h4><strong><b>(भरे हुये सत्यापन प्रपत्र को अभिलेख के रूप में नस्ती में संधारित करें)</b></strong></h4>
+                                        <h4><strong><b>(भरे हुये अनुभव प्रमाण पत्र एवं  दस्तवेजो को नस्ती में संग्रहित करे)</b></strong></h4>
                                         <h6><strong><b>सत्र:	2023-24</b></strong></h6>
                                         <div class="row mx-5 mb-0 justify-content-between">
                                             <div class="col text-left">
-                                                विद्यालय का DISE Code: 23350804904  
+                                                स्कूल का DISE Code: 23350804904  
                                             </div>
                                             <div class="col text-right">
-                                                विद्यालय का नाम: GOVT. HSS GOULA
+                                                स्कूल का नाम: GOVT. HSS GOULA
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-2">
-                                        <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
+                                        <%--<img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />--%>
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +166,7 @@
                                 <div class="col">
                                     <b>अतिथि शिक्षक की जानकारी (पोर्टल में उपलब्ध विवरण के अनुसार)</b>
                                 </div>
-                                <div class="col text-end">
-                                    <b>Code FBIWRG</b>
-                                </div>
+
                             </div>
                             <div class="row">
                                 <div class="col-12">
@@ -186,7 +184,7 @@
 
 
                                     <div class="bottom-dotted-border">
-                                        <b>अतिथि शिक्षक का Guest ID / Mobile Number :-</b> <span>9854545454</span>
+                                        <b>अतिथि शिक्षक का Guest ID / Mobile Number :-</b> <span>9638527410</span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 ">
@@ -287,10 +285,10 @@
         document.addEventListener('keydown', function (event) {
             if (event.ctrlKey && event.key === 'p') {
                 // Prevent default behavior of Ctrl+P (opening print dialog)
-                event.preventDefault();
                 // Print the content of the active modal
                 var activeModal = document.querySelector('.modal.show');
                 if (activeModal) {
+                    event.preventDefault();
                     var modalId = activeModal.getAttribute('id');
                     printModalContent(modalId);
                 }

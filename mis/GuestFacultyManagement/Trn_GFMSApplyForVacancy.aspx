@@ -26,6 +26,7 @@
         </div>
     </div>
     <div class="card card-border-primary ">
+        
         <div class="card-header  d-print-none">
             <div class="row">
                 <div class="col-lg-9">
@@ -61,27 +62,96 @@
                                 <div class="form-group">
                                     <label>
                                         Select Vacant Panel<br />
-                                         रिक्त पैनल का चयन करें
+                                        रिक्त पैनल का चयन करें
                                     </label>
                                     <select id="VacantPanel" class="form-control select2">
                                         <option value="----">--Select--</option>
-                                        <option value="SSS-2">SSS-2</option>
-                                        <option value="SSS-7">SSS-7</option>
-                                        <option value="SSS-5">SSS-5</option>
-                                        <option value="SSS-6">SSS-6</option>
-                                        <option value="SSS-3">SSS-3</option>
+                                        <option>Accountant</option>
+                                        <option>Accounts Officer </option>
+                                        <option>Accounts Officer (Class-I) </option>
+                                        <option>Additional Director</option>
+                                        <option>Assistant</option>
+                                        <option>Assistant Professor</option>
+                                        <option>Assistant Statistical Officer </option>
+                                        <option>Asstt Director</option>
+                                        <option>Asstt Director(Plan)</option>
+                                        <option>Asstt Director(Sports)</option>
+                                        <option>Asstt Grade-1</option>
+                                        <option>Asstt Grade-2</option>
+                                        <option>Asstt Grade-3</option>
+                                        <option>Asstt Supdt</option>
+                                        <option>Clerk-Part Time</option>
+                                        <option>Commissioner</option>
+                                        <option>Craft Teacher</option>
+                                        <option>Daftari</option>
+                                        <option>Data Entry Operator</option>
+                                        <option>Deputy Director</option>
+                                        <option>Developer</option>
+                                        <option>Director</option>
+                                        <option>District Sport Inspector</option>
+                                        <option>Driver</option>
+                                        <option>Head Clerk</option>
+                                        <option>HM-MS</option>
+                                        <option>HM-PS</option>
+                                        <option>HM-PS Testing</option>
+                                        <option>Investigator</option>
+                                        <option>Joint Director</option>
+                                        <option>Jr.Accounts Officer</option>
+                                        <option>Lecturer</option>
+                                        <option>Librarian</option>
+                                        <option>Minial</option>
+                                        <option>Planning Officer</option>
+                                        <option>PR-HS</option>
+                                        <option>PR-HSS</option>
+                                        <option>Principal HSS</option>
+                                        <option>Reader</option>
+                                        <option>Sr Auditor</option>
+                                        <option>Sr. Lecturer</option>
+                                        <option>SSS-1 Agriculture</option>
+                                        <option>SSS-1 Biology</option>
+                                        <option>SSS-1 Chemistry</option>
+                                        <option>SSS-1 Commerce</option>
+                                        <option>SSS-1 Economics</option>
+                                        <option>SSS-1 English</option>
+                                        <option>SSS-1 Geography-HS/HSS teachers</option>
+                                        <option>SSS-1 Hindi (HS/HSS Teachers)</option>
+                                        <option>SSS-1 History</option>
+                                        <option>SSS-1 Home Science (HS/HSS Teachers)</option>
+                                        <option>SSS-1 Maths</option>
+                                        <option>SSS-1 Physics</option>
+                                        <option>SSS-1 Political Science (HS/HSS Teachers)</option>
+                                        <option>SSS-1 Sanskrit (HS/HSS Teachers)</option>
+                                        <option>SSS-1 Sociology (HS/HSS Teachers)</option>
+                                        <option>SSS-1 Urdu</option>
+                                        <option>SSS-2 Biology</option>
+                                        <option>SSS-2 English</option>
+                                        <option>SSS-2 General (PTI-2)</option>
+                                        <option>SSS-2 Hindi</option>
+                                        <option>SSS-2 Information Technology</option>
+                                        <option>SSS-2 Maths</option>
+                                        <option>SSS-2 Sanskrit</option>
+                                        <option>SSS-2 Social Science</option>
+                                        <option>SSS-2 Urdu</option>
+                                        <option>SSS-3 Dance</option>
+                                        <option>SSS-3 General</option>
+                                        <option>SSS-3 General (Music)</option>
+                                        <option>SSS-3 General (PTI-3)</option>
+                                        <option>SSS-3 Information Technology</option>
+                                        <option>Steno Typist</option>
+                                        <option>Stenographer</option>
+                                        <option>Superintendent</option>
+                                        <option>Watchman </option>
                                     </select>
                                 </div>
                             </div>
-                          
                             <div class="col-3">
                                 <div class="form-group">
                                     <label>
-                                      Upload Score Card<br />
+                                        Upload Score Card<br />
                                         स्कोर कार्ड अपलोड करें
                                     </label>
-                                    <input type="file" name="name" value=""  class="form-control" />
-                                   
+                                    <input type="file" name="name" value="" class="form-control" />
+
                                 </div>
                             </div>
                         </div>
