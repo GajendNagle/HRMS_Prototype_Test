@@ -517,23 +517,11 @@
                                     <%--</div>--%>
                                 </div>
                             </div>
-                            <div class="col-md-2 text-end">
+                            <div class="col-md-3 text-end">
                                 <div class="form-group">
 
-                                    <%--<label>Select Fields</label>
-        <select id="dates-field2" class="bxs-select-multiple ml-5" multiple="multiple">
-            <option value="School Education Department">School Education Department</option>
-            <option value="Scheduled Cast Welfare Department">Scheduled Cast Welfare Department</option>
-            <option value="Tribal Affairs Department">Tribal Affairs Department</option>
-            <option value="GOVT BEEJ NIGAM">GOVT BEEJ NIGAM</option>
-            <option value="Backward Classes and Minorities Department">Backward Classes and Minorities Department</option>
-        </select>--%>
-                                    <%--  <div class="dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text dx-button-has-icon dx-datagrid-toolbar-button dx-datagrid-column-chooser-button" role="button" aria-label="Select Fields" aria-bs-haspopup="dialog" tabindex="0" title="Select Fields">--%>
-
-                                    <%--   <label>
-            Select Fields 
-                       <span style="color: red">*</span></label>--%>
-                                    <select id="dates-field2" class="multiselect-ui " multiple="multiple" onchange="DDLGrid() ">
+                                  
+                                    <select id="dates-field2" class="multiselect-ui" multiple="multiple" onchange="DDLGrid() ">
                                         <option value="1">Sr.No.</option>
                                         <option value="2">Academic Year</option>
                                         <option value="3">District Name</option>
@@ -573,56 +561,56 @@
                                    <table class="table" id="hideshowTable">
     <thead>
         <tr style="white-space: nowrap">
-            <th class="1">Sr.No.<br /> सरक क्र. </th>
-            <th class="2">Academic Year<br /> शैक्षणिक वर्ष </th>
-            <th class="3">District Name<br /> ज़िला का नाम </th>
-            <th class="4">Block Name<br /> विकासखण्ड का नाम </th>
-            <th class="5">Village Name<br /> गाँव का नाम</th>
-            <th class="6">Student Name<br /> विद्यार्थी का नाम</th>
-            <th class="7">Samagra ID<br /> समग्र आईडी </th>
-            <th class="8">Gender<br /> लिंग </th>
-            <th class="9">Date of Birth<br /> जन्म तिथि</th>
-            <th class="10">Category<br /> श्रेणी</th>
-            <th class="11">Father's Name<br /> पिता का नाम</th>
-            <th class="12">Mother's Name<br /> माता का नाम</th>
-            <th class="13">Mobile No<br /> मोबाइल नंबर</th>
-            <th class="14">BPL<br /> गरीबी रेखा से नीचे</th>
-            <th class="15">Physical Disability<br /> शारीरिक विकलांगता</th>
-            <th class="16">Is there a Freed/Nomadic/Semi-Nomadic Caste<br /> क्या विमुक्त/घुमक्कड़/अर्ध घुमक्कड़ जाति है</th>
-            <th class="17">Only Girl Child<br /> एकमात्र बालिका</th>
-            <th class="18">Father Dead?<br /> पिता स्वर्गवासी हैं ?</th>
-            <th class="19">Students Unparented ?<br /> विद्यार्थी अनाथ हैं ? </th>
-            <th class="20">Current School UDISE Code<br /> वर्तमान स्कूल UDISE कोड </th>
-            <th class="21">Current Class<br /> वर्तमान कक्षा  </th>
-            <th class="22">Account No.<br /> खाता नंबर</th>
-            <th class="23">IFSC Code<br /> आई.एफ.एस.सी कोड</th>
+            <th class="Sr">Sr.No.<br /> सरक क्र. </th>
+            <th class="Academic">Academic Year<br /> शैक्षणिक वर्ष </th>
+            <th class="District">District Name<br /> ज़िला का नाम </th>
+            <th class="Block">Block Name<br /> विकासखण्ड का नाम </th>
+            <th class="Village">Village Name<br /> गाँव का नाम</th>
+            <th class="Student">Student Name<br /> विद्यार्थी का नाम</th>
+            <th class="Samagra">Samagra ID<br /> समग्र आईडी </th>
+            <th class="Gender">Gender<br /> लिंग </th>
+            <th class="Birth">Date of Birth<br /> जन्म तिथि</th>
+            <th class="Category">Category<br /> श्रेणी</th>
+            <th class="Father">Father's Name<br /> पिता का नाम</th>
+            <th class="Mother">Mother's Name<br /> माता का नाम</th>
+            <th class="Mobile">Mobile No<br /> मोबाइल नंबर</th>
+            <th class="BPL">BPL<br /> गरीबी रेखा से नीचे</th>
+            <th class="Physical">Physical Disability<br /> शारीरिक विकलांगता</th>
+            <th class="Freed">Is there a Freed/Nomadic/Semi-Nomadic Caste<br /> क्या विमुक्त/घुमक्कड़/अर्ध घुमक्कड़ जाति है</th>
+            <th class="Child">Only Girl Child<br /> एकमात्र बालिका</th>
+            <th class="Dead">Father Dead?<br /> पिता स्वर्गवासी हैं ?</th>
+            <th class="Unparented">Students Unparented ?<br /> विद्यार्थी अनाथ हैं ? </th>
+            <th class="School">Current School UDISE Code<br /> वर्तमान स्कूल UDISE कोड </th>
+            <th class="Class">Current Class<br /> वर्तमान कक्षा  </th>
+            <th class="Account">Account No.<br /> खाता नंबर</th>
+            <th class="IFSC">IFSC Code<br /> आई.एफ.एस.सी कोड</th>
         </tr>
     </thead>
     <tbody>
         <tr class="text-center">
-            <td  class="1">1</td>
-            <td  class="2">2024-2025</td>
-            <td  class="3">Bhopal</td>
-            <td  class="4">Hujoor</td>
-            <td  class="5">Rajgarh</td>
-            <td  class="6">Rina Gupta</td>
-            <td  class="7">989305529512</td>
-            <td  class="8">Female</td>
-            <td  class="9">12/07/1998</td>
-            <td  class="10">OBC</td>
-            <td  class="11">Rajesh Gupta</td>
-            <td  class="12">Radha Gupta</td>
-            <td  class="13">963258741</td>
-            <td  class="14">Yes</td>
-            <td class="15">Yes</td>
-            <td  class="16">No</td>
-            <td  class="17">No</td>
-            <td class="18">No</td>
-            <td  class="19">No</td>
-            <td  class="20">23145484551-Sarasvati Gyan Mandir</td>
-            <td  class="21">11th</td>
-            <td  class="22">9910110011189</td>
-            <td  class="23">BKID0009536</td>
+            <td class="Sr">Sr.No.>1</td>
+            <td class="Academic">2024-2025</td>
+            <td class="District">Bhopal</td>
+            <td class="Block">Hujoor</td>
+            <td class="Village">Rajgarh</td>
+            <td class="Student">Rina Gupta</td>
+            <td class="Samagra">989305529512</td>
+            <td class="Gender">Female</td>
+            <td class="Birth">12/07/1998</td>
+            <td class="Category">>OBC</td>
+            <td class="Father">Rajesh Gupta</td>
+            <td class="Mother">Radha Gupta</td>
+            <td class="Mobile">963258741</td>
+            <td class="BPL">Yes</td>
+            <td class="Physical">Yes</td>
+            <td class="Freed">No</td>
+            <td class="Child">No</td>
+            <td class="Dead">No</td>
+            <td class="Unparented">No</td>
+            <td class="School">23145484551-Sarasvati Gyan Mandir</td>
+            <td class="Class">11th</td>
+            <td class="Account">9910110011189</td>
+            <td class="IFSC">IBKID0009536</td>
         </tr>
         <!-- Add more rows here -->
     </tbody>
@@ -1078,10 +1066,7 @@
         $(document).ready(function () {
             $('.multiselect-ui').multiselect({
                 includeSelectAllOption: true
-            }).on('change', function () {
-
-                DDLGrid();
-            });
+            })
         });
     </script>
 </asp:Content>
