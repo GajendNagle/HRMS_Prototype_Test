@@ -98,9 +98,9 @@
                                 <thead>
                                     <tr>
 
-                                        <th>S.No
+                                        <th>Sr.No
                                         <br />
-                                            सरल क्र.
+                                            क्रमांक
                                         </th>
                                         <th>Route No.<br />
                                             रूट नंबर</th>
@@ -217,7 +217,7 @@
 
                                         <thead>
                                             <tr>
-                                                <th>Sr.No./<br>
+                                                <th>Sr.No.<br>
                                                     क्रमांक </th>
                                                 <th>Teacher Name<br />
                                                     शिक्षक का नाम</th>

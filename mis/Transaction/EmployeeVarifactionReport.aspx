@@ -676,14 +676,14 @@
                                             <td>Deputy Secretary</td>
                                         </tr>
                                         <tr>
-                                            <th>First Appointment Division :</th>
+                                            <th>Current Appointment Division :</th>
                                             <td>Narmadapuram</td>
-                                            <th>First Appointment District :
+                                            <th>Current Appointment District :
                                             </th>
                                             <td>Sehore</td>
                                         </tr>
                                         <tr>
-                                            <th>First Appointment Block :</th>
+                                            <th>Current Appointment Block :</th>
                                             <td>Ashta</td>
                                             <th>DDO / Sankul :
                                             </th>
@@ -699,15 +699,15 @@
                                         </tr>
                                         <tr>
 
-                                            <th>First Appointment Order No :
+                                            <th>Current Appointment Order No :
                                             </th>
                                             <td>9840</td>
-                                            <th>First Appointment Order Date :</th>
+                                            <th>Current Appointment Order Date :</th>
                                             <td>09/10/2020</td>
                                         </tr>
                                         <tr>
 
-                                            <th>First Appointment Department :
+                                            <th>Current Appointment Department :
                                             </th>
                                             <td>DPI</td>
                                             <th>Employee’s Designation Type :</th>
@@ -715,10 +715,10 @@
                                         </tr>
                                         <tr>
 
-                                            <th>First Appointment Designation :
+                                            <th>Current Appointment Designation :
                                             </th>
                                             <td>Joint Director</td>
-                                            <th>Appointment Joining Date :</th>
+                                            <th>Current Appointment Joining Date :</th>
                                             <td>01/11/2021</td>
                                         </tr>
                                         <tr>
@@ -842,7 +842,7 @@
                                     </table>
                                 </div>
                             </fieldset>
-                            <fieldset>
+                          <%--  <fieldset>
                                 <legend>Document / दस्तावेज़</legend>
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
@@ -1054,7 +1054,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </fieldset>
+                            </fieldset>--%>
                         </div>
 
                         <div class="modal-footer">
