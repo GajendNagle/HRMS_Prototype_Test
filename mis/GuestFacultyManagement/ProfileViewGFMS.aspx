@@ -122,7 +122,8 @@
     </div>
 
     <div class="col-md-12 col-lg-12">
-        <div class="card ">
+        <div class="card  ">
+            <div class="card-header d-print-none">
                 <ul class="nav nav-pills m-3" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="tab" id="NavQualification" href="#Qualification" role="tab">Update Information 
@@ -788,21 +789,21 @@
 
     </script>--%>
     <script>
-        //function printModalContent(modalId) {
-        //    var modalContent = document.querySelector('#' + modalId).cloneNode(true);
-        //    document.body.innerHTML = modalContent.innerHTML
-        //    window.print();
-        //    window.location.href = "ProfileViewGFMS.aspx";
-        //}
-        //document.addEventListener('keydown', function (event) {
-        //    if (event.ctrlKey && event.key === 'p') {
+        function printModalContent(modalId) {
+            var modalContent = document.querySelector('#' + modalId).cloneNode(true);
+            document.body.innerHTML = modalContent.innerHTML
+            window.print();
+            window.location.href = "ProfileViewGFMS.aspx";
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
 
-        //        if (document.getElementById("Application").classList == "tab-pane active show") {
-        //            event.preventDefault();
-        //            printModalContent('printCard');
-        //        }
-        //    }
-        //});
+                if (document.getElementById("Application").classList == "tab-pane active show") {
+                    event.preventDefault();
+                    printModalContent('printCard');
+                }
+            }
+        });
 
         !function ($) {
             "use strict";
