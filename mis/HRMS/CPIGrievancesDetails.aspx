@@ -24,16 +24,16 @@
                             <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Grievance Report</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Details of Grievance forwarded from CPI</span></li>
+                        <li class="breadcrumb-item"><span>Complaints Grievance forwarded from CPI</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-5" style="position: relative; bottom: 20px;">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        <div class="col-md-5"">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -42,7 +42,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Details of Grievance forwarded from CPI /
+                    <h5 class="card-title">Complaints Grievance forwarded from CPI /
 सी.पी.आई से अग्रेषित शिकायत का विवरण
                     </h5>
                 </div>
@@ -69,24 +69,24 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table  table-bordered" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance" style="border-collapse: collapse;">
-                                    <thead>
+                                <table class="table  table-bordered text-center" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance">
+                                    <thead class="nowrap">
                                         <tr>
                                             <th data-class="expand" scope="col">Sr.No.
                                                 <br />
                                                 सरल क्र.
                                             </th>
-                                            <th data-class="phone,tablet" scope="col">Grievances No.
+                                            <th>Grievances No.
                                                 <br />
                                                 शिकायत क्र.
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Employee Name
+                                            <th>Employee Name
                                                 <br />
                                                 कर्मचारी का नाम</th>
-                                            <th data-hide="phone,tablet" scope="col">Type
+                                            <th>Type
                                                 <br />
                                                 प्रकार</th>
-                                            <th data-hide="phone,tablet" scope="col">Subject 
+                                            <th>Subject 
                                                 <br />
                                                 विषय</th>
                                             <th data-hide="phone,tablet" scope="col">Registered Date 
@@ -230,10 +230,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblForwarded_To">DEO</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblForward_Date">22/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl04_lblForwarded_By">CPI</span>
@@ -274,10 +271,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblForward_Date">22/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl05_lblForwarded_By">CPI</span>
@@ -318,10 +312,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl06_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl06_lblForward_Date">22/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl06_lblForwarded_By">CPI</span>
@@ -362,10 +353,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl07_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl07_lblForward_Date">16/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl07_lblForwarded_By">CPI</span>
@@ -406,10 +394,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl08_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl08_lblForward_Date">15/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl08_lblForwarded_By">CPI</span>
@@ -450,10 +435,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl09_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl09_lblForward_Date">15/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl09_lblForwarded_By">CPI</span>
@@ -494,10 +476,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblForward_Date">15/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblForwarded_By">CPI</span>
@@ -538,10 +517,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl11_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl11_lblForward_Date">15/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl11_lblForwarded_By">CPI</span>
@@ -582,10 +558,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl12_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl12_lblForward_Date">15/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl12_lblForwarded_By">CPI</span>
@@ -626,10 +599,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl13_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl13_lblForward_Date">15/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl13_lblForwarded_By">CPI</span>
@@ -672,8 +642,6 @@
                                             <td>
 
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl14_lblForward_Date">12/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl14_lblForwarded_By">CPI</span>
@@ -714,10 +682,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl15_lblForwarded_To">CPI</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl15_lblForward_Date">12/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl15_lblForwarded_By">CPI</span>
@@ -758,10 +723,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl16_lblForwarded_To">DEO</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl16_lblForward_Date">12/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl16_lblForwarded_By">CPI</span>
@@ -802,10 +764,7 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl17_lblForwarded_To">DEO</span>
                                             </td>
                                             <td>
-
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl17_lblForward_Date">12/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl17_lblForwarded_By">CPI</span>
@@ -848,8 +807,6 @@
                                             <td>
 
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl18_lblForward_Date">12/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl18_lblForwarded_By">CPI</span>
@@ -892,8 +849,6 @@
                                             <td>
 
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl19_lblForward_Date">12/04/2024</span>
-
-
                                             </td>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl19_lblForwarded_By">CPI</span>
@@ -905,7 +860,6 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl19_lblSection_Name">TMC</span>
                                             </td>
                                         </tr>
-
                                     </tbody>
                                 </table>
                             </div>
@@ -915,7 +869,6 @@
             </div>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

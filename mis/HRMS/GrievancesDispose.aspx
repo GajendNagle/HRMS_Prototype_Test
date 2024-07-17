@@ -6,6 +6,7 @@
             resize: vertical;
             min-height: 40px; /* Set a minimum height */
         }
+
         th {
             white-space: nowrap;
         }
@@ -25,87 +26,89 @@
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Grievance Report</span></a>
+                            <a href="#Grievance" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Grievance Management System</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>List of Resolved Complaints Report</span></li>
+                        <li class="breadcrumb-item"><span>Grievances Complaint Resolution</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-     <div class="col-md-5" style="position: relative; bottom: 20px;">
-     <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-         <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-         </u>
-     </p>
- </div>
+    <div class="row">
+        <div class="col-md-5">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
+        </div>
+    </div>
     <div class="card   card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Grievances Dispose /
-           
-शिकायतों का निपटान
+                    <h5 class="card-title">Grievances Dispose / शिकायतों का निपटारा
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
-
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>Grievances Dispose / शिकायतों का निपटान</legend>
-                    <div class="row">
-
-                        <div class="col-md-3 ">
-                            <label class="font-bold">
-                                District<br />
-                                जिला<span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
-                                <asp:ListItem>--select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Raisen</asp:ListItem>
-                                <asp:ListItem>Rajgarh</asp:ListItem>
-                                <asp:ListItem>Sehore</asp:ListItem>
-                                <asp:ListItem>Vidisha</asp:ListItem>
-                                <asp:ListItem>Ashoknagar</asp:ListItem>
-                                <asp:ListItem>Shivpuri</asp:ListItem>
-                                <asp:ListItem>Datia</asp:ListItem>
-                            </asp:DropDownList>
+                    <legend>Grievances Dispose / शिकायतों का निपटारा</legend>
+                    <div class="row align-items-end">
+                        <div class="col-md-6 col-ld-4 col-xl-3">
+                            <div class="form-group">
+                                <label>
+                                    District<br />
+                                    जिला<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>1-Sheopur</asp:ListItem>
+                                    <asp:ListItem>2-Morena</asp:ListItem>
+                                    <asp:ListItem>3-Bhind</asp:ListItem>
+                                    <asp:ListItem>4-Gwalior</asp:ListItem>
+                                    <asp:ListItem>5-Datia</asp:ListItem>
+                                    <asp:ListItem>6-Shivpuri</asp:ListItem>
+                                    <asp:ListItem>7-Guna</asp:ListItem>
+                                    <asp:ListItem>8-Ashoknagar</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
-                        <div class="col-md-3 ">
-                            <label class="font-bold">
-                                Section  Name<br />
-                                अनुभाग का नाम<span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
-                                <asp:ListItem>--select--</asp:ListItem>
-                                <asp:ListItem>RMSA</asp:ListItem>
-                                <asp:ListItem>Est-1</asp:ListItem>
-                                <asp:ListItem>Est-2</asp:ListItem>
-                                <asp:ListItem>Est-3</asp:ListItem>
-                                <asp:ListItem>Est-4</asp:ListItem>
-                                <asp:ListItem>CAFMS</asp:ListItem>
-                                <asp:ListItem>New Cadre</asp:ListItem>
-                                <asp:ListItem>Finance</asp:ListItem>
-                                <asp:ListItem>Grant</asp:ListItem>
-                                <asp:ListItem>NSDL</asp:ListItem>
-                                <asp:ListItem>CPI</asp:ListItem>
-                                <asp:ListItem>Legal</asp:ListItem>
-                                <asp:ListItem>Mis</asp:ListItem>
-                                <asp:ListItem>Physical education</asp:ListItem>
-                                <asp:ListItem>Akadmik</asp:ListItem>
-                                <asp:ListItem>CM-RISE</asp:ListItem>
-                                <asp:ListItem>Planning</asp:ListItem>
-                                <asp:ListItem>TMC</asp:ListItem>
-                            </asp:DropDownList>
+                        <div class="col-md-6 col-ld-4 col-xl-3">
+                            <div class="form-group">
+                                <label>
+                                    Section  Name<br />
+                                    अनुभाग का नाम<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>RMSA</asp:ListItem>
+                                    <asp:ListItem>Est-1</asp:ListItem>
+                                    <asp:ListItem>Est-2</asp:ListItem>
+                                    <asp:ListItem>Est-3</asp:ListItem>
+                                    <asp:ListItem>Est-4</asp:ListItem>
+                                    <asp:ListItem>CAFMS</asp:ListItem>
+                                    <asp:ListItem>New Cadre</asp:ListItem>
+                                    <asp:ListItem>Finance</asp:ListItem>
+                                    <asp:ListItem>Grant</asp:ListItem>
+                                    <asp:ListItem>NSDL</asp:ListItem>
+                                    <asp:ListItem>CPI</asp:ListItem>
+                                    <asp:ListItem>Legal</asp:ListItem>
+                                    <asp:ListItem>Mis</asp:ListItem>
+                                    <asp:ListItem>Physical education</asp:ListItem>
+                                    <asp:ListItem>Akadmik</asp:ListItem>
+                                    <asp:ListItem>CM-RISE</asp:ListItem>
+                                    <asp:ListItem>Planning</asp:ListItem>
+                                    <asp:ListItem>TMC</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
-                    </div>
-                    <hr />
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />
-                            <a href="GrievancesDispose.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <div class="col-md-12">
+                            <hr />
+                            <div class="form-group">
+                                <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />
+                                <a href="GrievancesDispose.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -130,8 +133,8 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table id="Table4" class="table table-bordered  text-center " runat="server">
-                                    <thead>
-                                        <tr valign="middle">
+                                    <thead class="nowrap">
+                                        <tr>
                                             <th>S.No.<br />
                                                 सरल क्र.</th>
                                             <th>Grievance No.<br />
@@ -166,7 +169,6 @@
                                             <td>DEO,KHARGONE</td>
                                             <td>
                                                 <asp:CheckBox runat="server" ID="chakbox" OnCheckedChanged="chakbox_CheckedChanged" AutoPostBack="true" Style="border-color: #005b5c;" /></td>
-
                                         </tr>
                                     </tbody>
                                 </table>
@@ -175,61 +177,58 @@
                     </div>
 
                 </fieldset>
-
             </div>
-
-        <div runat="server" id="show3" visible="false">
-            <label class="col-md-3 fw-bold color_black fs-4"><span style="color: red">Grievances No :- </span>1002</label>
-            <br />
-            <fieldset>
-                <legend>Grievances Dispose or Reject / शिकायतों का निपटारा करें या अस्वीकार करें</legend>
-                <div class="row">
-
-                    <div class="col-md-3 fw-bold color_black ">
-                        <label class="font-bold">
-                            Disposal Status Type<br />
-                            निपटान स्थिति प्रकार<span style="color: red">*</span></label>
-                        <asp:DropDownList runat="server" ID="ddlDisposal" CssClass="form-control ">
-                            <asp:ListItem>--select--</asp:ListItem>
-                            <asp:ListItem>Disposed</asp:ListItem>
-                            <asp:ListItem>Rejected</asp:ListItem>
-                            <asp:ListItem>Objected</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                    <div class="col-md-3 fw-bold color_black ">
-                        <label class="font-bold">
-                            Type Note Here
+            <div runat="server" id="show3" visible="false">
+                <label class="col-md-3 fw-bold color_black fs-4"><span style="color: red">Grievances No:-</span>1002</label>
+                <br />
+                <fieldset>
+                    <legend>Grievances Dispose or Reject / शिकायतों का निपटारा करें या अस्वीकार करें</legend>
+                    <div class="row ">
+                        <div class="col-md-6 col-ld-4 col-xl-4">
+                            <div class="form-group">
+                                <label>
+                                    Disposal Status Type<br />
+                                    निपटान स्थिति प्रकार<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="ddlDisposal" CssClass="form-control ">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>Disposed</asp:ListItem>
+                                    <asp:ListItem>Rejected</asp:ListItem>
+                                    <asp:ListItem>Objected</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-ld-4 col-xl-4">
+                            <div class="form-group">
+                                <label>
+                                    Type Note Here
                             <br />
-                            यहां नोट टाइप करें<span style="color: red">*</span></label>
-                        <textarea class="form-control   fw-bold" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                                    यहां नोट टाइप करें<span style="color: red">*</span></label>
+                                <textarea class="form-control  fw-bold" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-ld-4 col-xl-4">
+                            <div class="form-group">
+                                <label>
+                                    File upload<br />
+                                    फाइल अपलोड<span style="color: red">*</span></label>
+                                <asp:FileUpload runat="server" CssClass="form-control" ID="file" />
+                                <p class="align-items-end  fw-bold" style="font-size: 15px">
+                                    <span style="color: red; font-size: 14px">Documents In Pdf Format  Size:150 kb</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr />
+                            <div class="form-group">
+                                <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Dispose It</button>
+                                <a href="GrievancesDispose.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3 fw-bold color_black">
-                        <label class="font-bold">
-                            File upload<br />
-                            फाइल अपलोड<span style="color: red">*</span></label>
-                        <asp:FileUpload runat="server" CssClass="form-control  " ID="file" />
-                        <p class="justify-content-end  fw-bold" style="position: relative; font-size: 15px">
-                            <span style="color: red; font-size: 14px">Documents In Pdf Format  Size:150 kb</span>
-                        </p>
-                    </div>
-                </div>
-                <hr />
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Dispose It</button>
-                        <a href="GrievancesDispose.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                    </div>
-                </div>
-
-
-
-
-            </fieldset>
-            
-        </div>
+                </fieldset>
+            </div>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>function autoResize(textarea) {

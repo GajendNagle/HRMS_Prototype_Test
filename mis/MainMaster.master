@@ -1108,7 +1108,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ParivednaNevakarnStatus.aspx"><i class="ri-file-list-3-line"></i>Complaint Tracking Status </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/PrintComplaint.aspx"><i class="ri-file-list-3-line"></i>Print Complaint </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ViewAccumulatedComplaints.aspx"><i class="ri-file-list-3-line"></i>Grievances Processing </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/GrievancesDispose.aspx"><i class="ri-file-list-3-line"></i>Grievances Dispose </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/GrievancesDispose.aspx"><i class="ri-file-list-3-line"></i>Grievances Complaint Resolution</a></li>
 
                                                 </ul>
                                             </div>
@@ -1120,8 +1120,8 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DisposedGrievances.aspx"><i class="ri-file-list-3-line"></i>List of Resolved Complaints Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/RejectedGrievances.aspx"><i class="ri-file-list-3-line"></i>List of Rejected Grievance Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ForwardedGrievances%20.aspx"><i class="ri-file-list-3-line"></i>District Wise Forwarded Grievances Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/CPIGrievancesDetails.aspx"><i class="ri-file-list-3-line"></i>Details of Grievances forwarded from CPI </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ForwardedGrievances%20.aspx"><i class="ri-file-list-3-line"></i>DistrictWise Forwarded Grievances Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/CPIGrievancesDetails.aspx"><i class="ri-file-list-3-line"></i>Complaints Grievances forwarded from CPI Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DistrictWiseProcessReport.aspx"><i class="ri-file-list-3-line"></i>District Wise Progress Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/SectionWiseGrievanceReports.aspx"><i class="ri-file-list-3-line"></i>Section Wise Pending Report </a></li>
 

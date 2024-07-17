@@ -32,8 +32,8 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -42,8 +42,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">District Wise Details of Forwarded Grievances /
-अग्रेषित शिकायतों का जिलावार विवरण
+                    <h5 class="card-title">Grievances Reject / शिकायतें अस्वीकृत
                     </h5>
                 </div>
             </div>
@@ -52,26 +51,28 @@
             <h3 class="fw-bold justify-content-center" style="position: relative; left: 500PX; top: 10PX; color: brown;"></h3>
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>District Wise Forwarded Grievances / जिलेवार अग्रेषित शिकायतें</legend>
-                    <div class="row">
+                    <legend>Grievances Reject / शिकायतें अस्वीकृत</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
-                            <label >
-                                District<br />
-                                जिला<span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
-                                <asp:ListItem>--select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Raisen</asp:ListItem>
-                                <asp:ListItem>Rajgarh</asp:ListItem>
-                                <asp:ListItem>Sehore</asp:ListItem>
-                                <asp:ListItem>Vidisha</asp:ListItem>
-                                <asp:ListItem>Ashoknagar</asp:ListItem>
-                                <asp:ListItem>Shivpuri</asp:ListItem>
-                                <asp:ListItem>Datia</asp:ListItem>
-                            </asp:DropDownList>
+                            <div class="form-group">
+                                <label>
+                                    District<br />
+                                    जिला<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>1-Sheopur</asp:ListItem>
+                                    <asp:ListItem>2-Morena</asp:ListItem>
+                                    <asp:ListItem>3-Bhind</asp:ListItem>
+                                    <asp:ListItem>4-Gwalior</asp:ListItem>
+                                    <asp:ListItem>5-Datia</asp:ListItem>
+                                    <asp:ListItem>6-Shivpuri</asp:ListItem>
+                                    <asp:ListItem>7-Guna</asp:ListItem>
+                                    <asp:ListItem>8-Ashoknagar</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
-                        <hr />
                         <div class="col-md-12">
+                            <hr />
                             <div class="form-group">
                                 <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />
                                 <a href="ForwardedGrievances .aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -99,41 +100,41 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
-                                <table class="table table-bordered ms-2 me-2" style="border-collapse: collapse;">
-                                    <thead>
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
                                         <tr>
-                                            <th data-class="expand" scope="col">Sr.No.
+                                            <th>Sr.No.
                                                     <br />
                                                 सरल क्र.
                                             </th>
-                                            <th data-class="phone,tablet" scope="col">Grievances No.<br />
+                                            <th>Grievances No.<br />
                                                 शिकायत क्र.
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Employee Name
+                                            <th>Employee Name
                                                     <br />
                                                 कर्मचारी का नाम
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Type<br />
+                                            <th>Type<br />
                                                 प्रकार
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Subject<br />
+                                            <th>Subject<br />
                                                 विषय
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Registered Date<br />
+                                            <th>Registered Date<br />
                                                 पंजीकृत तिथि</th>
-                                            <th data-hide="phone,tablet" scope="col">Status<br />
+                                            <th>Status<br />
                                                 स्थिति</th>
-                                            <th data-hide="phone,tablet" scope="col">Forwarded To<br />
+                                            <th>Forwarded To<br />
                                                 इनको अग्रेषित</th>
-                                            <th data-hide="phone,tablet" scope="col">Forward Date<br />
+                                            <th>Forward Date<br />
                                                 अग्रेषित दिनांक
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Forwarded By<br />
+                                            <th>Forwarded By<br />
                                                 द्वारा अग्रेषित किया गया
                                             </th>
-                                            <th data-hide="phone,tablet" scope="col">Office<br />
+                                            <th>Office<br />
                                                 कार्यालय</th>
-                                            <th data-hide="phone,tablet" scope="col">Section<br />
+                                            <th>Section<br />
                                                 अनुभाग</th>
                                         </tr>
                                     </thead>

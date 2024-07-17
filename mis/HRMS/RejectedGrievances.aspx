@@ -32,8 +32,8 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -42,64 +42,66 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">List of Rejected Grievances /
-अस्वीकृत शिकायतों की सूची
+                    <h5 class="card-title">Grievances Reject / शिकायतें अस्वीकृत
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
-
-            <h3 class="fw-bold justify-content-center" style="position: relative; left: 500PX; top: 10PX; color: brown;"></h3>
+            <h3 class="fw-bold justify-content-center" style="position: relative; left: 500px; top: 10px; color: brown;"></h3>
             <div runat="server" id="show">
                 <fieldset>
                     <legend>List of Rejected Grievances / अस्वीकृत शिकायतों की सूची</legend>
                     <div class="row">
                         <div class="col-md-3">
-                            <label >
-                                District<br />
-                                जिला<span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
-                                <asp:ListItem>--select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Raisen</asp:ListItem>
-                                <asp:ListItem>Rajgarh</asp:ListItem>
-                                <asp:ListItem>Sehore</asp:ListItem>
-                                <asp:ListItem>Vidisha</asp:ListItem>
-                                <asp:ListItem>Ashoknagar</asp:ListItem>
-                                <asp:ListItem>Shivpuri</asp:ListItem>
-                                <asp:ListItem>Datia</asp:ListItem>
-                            </asp:DropDownList>
+                            <div class="form-group">
+                                <label>
+                                    District<br />
+                                    जिला<span style="color: red">*</span></label>
+                                <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>1-Bhopal</asp:ListItem>
+                                    <asp:ListItem>2-Raisen</asp:ListItem>
+                                    <asp:ListItem>3-Rajgarh</asp:ListItem>
+                                    <asp:ListItem>4-Sehore</asp:ListItem>
+                                    <asp:ListItem>5-Vidisha</asp:ListItem>
+                                    <asp:ListItem>6-Ashoknagar</asp:ListItem>
+                                    <asp:ListItem>7-Shivpuri</asp:ListItem>
+                                    <asp:ListItem>8-Datia</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label >
-                                Section Name<br />
-                                अनुभाग का नाम
+                            <div class="form-group">
+                                <label>
+                                    Section Name<br />
+                                    अनुभाग का नाम
                                 <span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
-                                <asp:ListItem>--select--</asp:ListItem>
-                                <asp:ListItem>RMSA</asp:ListItem>
-                                <asp:ListItem>Est-1</asp:ListItem>
-                                <asp:ListItem>Est-2</asp:ListItem>
-                                <asp:ListItem>Est-3</asp:ListItem>
-                                <asp:ListItem>Est-4</asp:ListItem>
-                                <asp:ListItem>CAFMS</asp:ListItem>
-                                <asp:ListItem>New Cadre</asp:ListItem>
-                                <asp:ListItem>Finance</asp:ListItem>
-                                <asp:ListItem>Grant</asp:ListItem>
-                                <asp:ListItem>NSDL</asp:ListItem>
-                                <asp:ListItem>CPI</asp:ListItem>
-                                <asp:ListItem>Legal</asp:ListItem>
-                                <asp:ListItem>Mis</asp:ListItem>
-                                <asp:ListItem>Physical education</asp:ListItem>
-                                <asp:ListItem>Akadmik</asp:ListItem>
-                                <asp:ListItem>CM-RISE</asp:ListItem>
-                                <asp:ListItem>Planning</asp:ListItem>
-                                <asp:ListItem>TMC</asp:ListItem>
-                            </asp:DropDownList>
+                                <asp:DropDownList runat="server" ID="DropDownList2" CssClass="form-control select2">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>RMSA</asp:ListItem>
+                                    <asp:ListItem>Est-1</asp:ListItem>
+                                    <asp:ListItem>Est-2</asp:ListItem>
+                                    <asp:ListItem>Est-3</asp:ListItem>
+                                    <asp:ListItem>Est-4</asp:ListItem>
+                                    <asp:ListItem>CAFMS</asp:ListItem>
+                                    <asp:ListItem>New Cadre</asp:ListItem>
+                                    <asp:ListItem>Finance</asp:ListItem>
+                                    <asp:ListItem>Grant</asp:ListItem>
+                                    <asp:ListItem>NSDL</asp:ListItem>
+                                    <asp:ListItem>CPI</asp:ListItem>
+                                    <asp:ListItem>Legal</asp:ListItem>
+                                    <asp:ListItem>Mis</asp:ListItem>
+                                    <asp:ListItem>Physical education</asp:ListItem>
+                                    <asp:ListItem>Akadmik</asp:ListItem>
+                                    <asp:ListItem>CM-RISE</asp:ListItem>
+                                    <asp:ListItem>Planning</asp:ListItem>
+                                    <asp:ListItem>TMC</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
                         </div>
-                        <hr />
                         <div class="col-md-12">
+                            <hr />
                             <div class="form-group">
                                 <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" OnClick="Unnamed_Click" Text=" Search" />
                                 <a href="RejectedGrievances.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -110,7 +112,7 @@
             </div>
             <div runat="server" id="show2" visible="false">
                 <fieldset>
-                    <legend>Rejected Grievances Details / अस्वीकृत शिकायतों का विवरण</legend>
+                    <legend>Grievances Reject / शिकायतें अस्वीकृत</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -126,12 +128,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-
-
                             <div class="table-responsive">
-
-                                <table class="table table-bordered m-2" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance" style="border-collapse: collapse;">
-                                    <thead>
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
                                         <tr>
                                             <th data-class="expand" scope="col">Sr.No.<br />
                                                 सरल क्र.</th>

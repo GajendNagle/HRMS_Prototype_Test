@@ -2,10 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        th {
-            white-space: nowrap;
-        }
-
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -45,25 +41,25 @@
                 display: none;
             }
 
- .table-responsive {
-        overflow: visible!important;
-        width: 100%!important;
-    }
+            .table-responsive {
+                overflow: visible !important;
+                width: 100% !important;
+            }
 
-    .table {
-        width: 100%!important;
-        table-layout: fixed;
-    }
+            .table {
+                width: 100% !important;
+                table-layout: fixed;
+            }
 
-    .table td, .table th {
-        word-wrap: break-word;
-        white-space: normal; /* Add this to prevent text from wrapping */
-    }
+                .table td, .table th {
+                    word-wrap: break-word;
+                    white-space: normal; /* Add this to prevent text from wrapping */
+                }
 
-    /* Add this to scale the table to fit the page */
-    .table {
-        transform: scale(1.0); /* Adjust the scale value as needed */
-    }
+            /* Add this to scale the table to fit the page */
+            .table {
+                transform: scale(1.0); /* Adjust the scale value as needed */
+            }
         }
     </style>
 </asp:Content>
@@ -90,13 +86,15 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5" style="position: relative; bottom: 20px;">
-        <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-            <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-            </u>
-        </p>
+    <div class="row">
+        <div class="col-md-5">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                </u>
+            </p>
+        </div>
     </div>
-    <div class="card   card-border-primary radius-defalt">
+    <div class="card card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
@@ -110,72 +108,73 @@
                 <legend>Grievances Processing / शिकायत प्रोसेसिंग 
                 </legend>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-ld-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                District<br />
-                                जिला<span style="color: red">*
+                                Select District Name (Code)<br />
+                                जिले का नाम (कोड) चयन करें<span style="color: red">*
                                 </span>
                             </label>
                             <select class="form-control select2">
-                                <option selected="selected" value="0">--Select--</option>
-                                <option value="51">Agar Malwa ,आगर मालवा</option>
-                                <option value="49">Alirajpur ,अलीराजपुर </option>
-                                <option value="47">Anuppur ,अनूपपुर </option>
-                                <option value="46">Ashoknagar ,अशोकनगर </option>
-                                <option value="45">Balaghat ,बालाघाट </option>
-                                <option value="28">Barwani ,बड़वानी </option>
-                                <option value="35">Betul ,बैतूल </option>
-                                <option value="3">Bhind ,भिण्ड </option>
-                                <option value="32">Bhopal ,भोपाल </option>
-                                <option value="48">Burhanpur ,बुरहानपुर </option>
-                                <option value="9">Chhatarpur ,छतरपुर </option>
-                                <option value="43">Chhindwara ,छिंदवाडा </option>
-                                <option value="12">Damoh ,दमोह </option>
-                                <option value="5">Datia ,दतिया </option>
-                                <option value="23">Dewas ,देवास </option>
-                                <option value="25">Dhar ,धार </option>
-                                <option value="41">Dindori ,डिण्डौरी </option>
-                                <option value="7">Guna ,गुना </option>
-                                <option value="4">Gwalior ,ग्वालियर </option>
-                                <option value="36">Harda ,हरदा </option>
-                                <option value="26">Indore ,इन्दौर </option>
-                                <option value="39">Jabalpur ,जबलपुर </option>
-                                <option value="24">Jhabua ,झाबुआ </option>
-                                <option value="38">Katni ,कटनी </option>
-                                <option value="29">Khandwa ,खण्डवा </option>
-                                <option value="27">Khargone ,खरगोन </option>
-                                <option value="42">Mandla ,मण्डला </option>
-                                <option value="19">Mandsaur ,मन्दसौर </option>
-                                <option value="2">Morena ,मुरैना </option>
-                                <option value="37">Narmadapuram ,नर्मदापुरम</option>
-                                <option value="40">Narsinghpur ,नरसिंहपुर </option>
-                                <option value="18">Neemuch ,नीमच </option>
-                                <option value="52">Niwari ,निवाड़ी</option>
-                                <option value="10">Panna ,पन्ना </option>
-                                <option value="34">Raisen ,रायसेन </option>
-                                <option value="30">Rajgarh ,राजगढ़ </option>
-                                <option value="20">Ratlam ,रतलाम </option>
-                                <option value="14">Rewa ,रीवा </option>
-                                <option value="11">Sagar ,सागर </option>
-                                <option value="13">Satna ,सतना </option>
-                                <option value="33">Sehore ,सीहोर </option>
-                                <option value="44">Seoni ,सिवनी </option>
-                                <option value="16">Shahdol ,शहडोल </option>
-                                <option value="22">Shajapur ,शाजापुर </option>
-                                <option value="1">Sheopur ,श्योपुर </option>
-                                <option value="6">Shivpuri ,शिवपुरी </option>
-                                <option value="17">Sidhi ,सीधी </option>
-                                <option value="50">Singrauli ,सिंगरौली </option>
-                                <option value="8">Tikamgarh ,टीकमगढ़ </option>
-                                <option value="21">Ujjain ,उज्जैन </option>
-                                <option value="15">Umaria ,उमरिया </option>
-                                <option value="31">Vidisha ,विदिशा</option>
-
+                                <option value="">Select</option>
+                                <option value="1">1-Sheopur</option>
+                                <option value="2">2-Morena</option>
+                                <option value="3">3-Bhind</option>
+                                <option value="4">4-Gwalior</option>
+                                <option value="5">5-Datia</option>
+                                <option value="6">6-Shivpuri</option>
+                                <option value="7">7-Guna</option>
+                                <option value="8">8-Ashoknagar</option>
+                                <option value="9">9-Neemuch</option>
+                                <option value="10">10-Mandsaur</option>
+                                <option value="11">11-Ratlam</option>
+                                <option value="12">12-Ujjain</option>
+                                <option value="13">13-Shajapur</option>
+                                <option value="14">14-Dewas</option>
+                                <option value="15">15-Agar Malwa</option>
+                                <option value="16">16-Jhabua</option>
+                                <option value="17">17-Dhar</option>
+                                <option value="18">18-Indore</option>
+                                <option value="19">19-Khargone</option>
+                                <option value="20">20-Barwani</option>
+                                <option value="21">21-Khandwa</option>
+                                <option value="22">22-Burhanpur</option>
+                                <option value="23">23-Alirajpur</option>
+                                <option value="24">24-Rajgarh</option>
+                                <option value="25">25-Vidisha</option>
+                                <option value="26">26-Bhopal</option>
+                                <option value="27">27-Sehore</option>
+                                <option value="28">28-Raisen</option>
+                                <option value="29">29-Betul</option>
+                                <option value="30">30-Harda</option>
+                                <option value="31">31-Narmadapuram</option>
+                                <option value="32">32-Tikamgarh</option>
+                                <option value="33">33-Chhatarpur</option>
+                                <option value="34">34-Panna</option>
+                                <option value="35">35-Sagar</option>
+                                <option value="36">36-Damoh</option>
+                                <option value="37">37-Niwari</option>
+                                <option value="38">38-Katni</option>
+                                <option value="39">39-Jabalpur</option>
+                                <option value="40">40-Narsinghpur</option>
+                                <option value="41">41-Mandla</option>
+                                <option value="42">42-Chhindwara</option>
+                                <option value="43">43-Seoni</option>
+                                <option value="44">44-Balaghat</option>
+                                <option value="45">45-Dindori</option>
+                                <option value="46">46-Satna</option>
+                                <option value="47">47-Rewa</option>
+                                <option value="48">48-Sidhi</option>
+                                <option value="49">49-Singrauli</option>
+                                <option value="50">50-Umaria</option>
+                                <option value="51">51-Shahdol</option>
+                                <option value="52">52-Anuppur</option>
+                                <option value="53">53-RAISEN</option>
+                                <option value="54">54-Maihar</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-ld-4 col-xl-3">
                         <div class="form-group">
                             <label>
                                 Section Name<br />
@@ -203,8 +202,8 @@
                             </select>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <button type="button" d="Button1" onclick="myFunction()" class="btn w-lg btn-success btn-border">Search</button>
                             <a href="ViewAccumulatedComplaints.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -225,71 +224,73 @@
                                 <button class="btn btn-info btn-rounded w-55">PDF</button>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-ld-4 col-xl-3">
                             <div class="form-group">
                                 <input type="text" id="searchInput3" oninput="searchFunction()" class="form-control" placeholder="Search...">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table  table-bordered text-center">
-                                <thead>
-                                    <tr>
-                                        <th>Sr.No.<br />
-                                            सरल क्र.</th>
-                                        <th>Grievance No.<br />
-                                            शिकायत क्र. </th>
-                                        <th>Employee Name<br />
-                                            कर्मचारी का नाम</th>
-                                        <th>Type<br />
-                                            प्रकार</th>
-                                        <th>Subject<br />
-                                            विषय</th>
-                                        <th>Registered Date<br />
-                                            पंजीकृत तिथि</th>
-                                        <th>Status<br />
-                                            स्तिथि</th>
-                                        <th>View<br />
-                                            देखे</th>
-                                        <th>Note Sheet
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
+                                        <tr>
+                                            <th>Sr.No.<br />
+                                                सरल क्र.</th>
+                                            <th>Grievance No.<br />
+                                                शिकायत क्र. </th>
+                                            <th>Employee Name<br />
+                                                कर्मचारी का नाम</th>
+                                            <th>Type<br />
+                                                प्रकार</th>
+                                            <th>Subject<br />
+                                                विषय</th>
+                                            <th>Registered Date<br />
+                                                पंजीकृत तिथि</th>
+                                            <th>Status<br />
+                                                स्तिथि</th>
+                                            <th>View<br />
+                                                देखे</th>
+                                            <th>Note Sheet
                                                         <br />
-                                            नोट शीट</th>
-                                        <th>Document<br />
-                                            दस्तावेज़
-                                        </th>
-                                        <th>Application Forword<br />
-                                            आवेदन अग्रेषित
-                                        </th>
+                                                नोट शीट</th>
+                                            <th>Document<br />
+                                                दस्तावेज़
+                                            </th>
+                                            <th>Application Forword<br />
+                                                आवेदन अग्रेषित
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>74060</td>
+                                        <td>Nidhi Mishra [Prathmik Shikshak]</td>
+                                        <td>Financial Related</td>
+                                        <td>Pending arrears</td>
+                                        <td>02/05/2024</td>
+                                        <td>DEO, TIKAMGARH</td>
+                                        <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
+                                        <td><a href="#"><i class="fas fa-eye"></i></a></td>
+                                        <td><a href="#" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
                                     </tr>
-                                </thead>
-                                <tr>
-                                    <td>1</td>
-                                    <td>74060</td>
-                                    <td>Nidhi Mishra [Prathmik Shikshak]</td>
-                                    <td>Financial Related</td>
-                                    <td>Pending arrears</td>
-                                    <td>02/05/2024</td>
-                                    <td>DEO, TIKAMGARH</td>
-                                    <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-eye"></i></a></td>
-                                    <td><a href="#" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>73045</td>
-                                    <td>Kamlesh Prasad Soni (Madhymik Shikshak)</td>
-                                    <td>Financial Related</td>
-                                    <td>Pending arrears</td>
-                                    <td>02/05/2024</td>
-                                    <td>Commissioner, Public Instructions</td>
-                                    <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
-                                    <td><a href="#"><i class="fas fa-eye"></i></a></td>
-                                    <td><a href="#" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>73045</td>
+                                        <td>Kamlesh Prasad Soni (Madhymik Shikshak)</td>
+                                        <td>Financial Related</td>
+                                        <td>Pending arrears</td>
+                                        <td>02/05/2024</td>
+                                        <td>Commissioner, Public Instructions</td>
+                                        <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></a></td>
+                                        <td><a href="#"><i class="fas fa-eye"></i></a></td>
+                                        <td><a href="#" class="btn btn-success btn-rounded" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1">Forword</a></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -301,7 +302,7 @@
             <div class="modal-content">
                 <div class="modal-header" id="myDIV">
                     <h4 class="modal-title" id="myLargeModalLabel1"></h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-hidden="true"></button>
                 </div>
                 <div class="modal-body">
                     <fieldset>
@@ -314,28 +315,30 @@
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table text-center table-bordered">
-                                        <tr>
-                                            <th>Sr. No.<br />
-                                                सरल क्र.</th>
-                                            <th>Complaint no.<br />
-                                                शिकायत क्र.</th>
-                                            <th>Complaint Date<br />
-                                                शिकायत दिनाँक </th>
-                                            <th>District<br />
-                                                जिला  </th>
-                                            <th>Department<br />
-                                                विभाग </th>
-                                            <th>Name of Public Servant<br />
-                                                लोकसेवक का नाम </th>
-                                            <th>Designation<br />
-                                                पदनाम </th>
-                                            <th>E-mail<br />
-                                                ईमेल </th>
-                                            <th>Mobile<br />
-                                                मोबाइल</th>
-                                            <th>Subject of Complaint<br />
-                                                शिकायत का विषय</th>
-                                        </tr>
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr. No.<br />
+                                                    सरल क्र.</th>
+                                                <th>Complaint no.<br />
+                                                    शिकायत क्र.</th>
+                                                <th>Complaint Date<br />
+                                                    शिकायत दिनाँक </th>
+                                                <th>District<br />
+                                                    जिला  </th>
+                                                <th>Department<br />
+                                                    विभाग </th>
+                                                <th>Name of Public Servant<br />
+                                                    लोकसेवक का नाम </th>
+                                                <th>Designation<br />
+                                                    पदनाम </th>
+                                                <th>E-mail<br />
+                                                    ईमेल </th>
+                                                <th>Mobile<br />
+                                                    मोबाइल</th>
+                                                <th>Subject of Complaint<br />
+                                                    शिकायत का विषय</th>
+                                            </tr>
+                                        </thead>
                                         <tr>
                                             <td>1</td>
                                             <td>74060</td>
@@ -373,8 +376,8 @@
 
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-info waves-effect text-start text-white" onclick="printModalContent('myLargeModalLabel')">Print</button>
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-success w-lg" onclick="printModalContent('myLargeModalLabel')">Print</button>
+                    <button type="button" class="btn btn-outline-danger  w-lg" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -466,8 +469,8 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-info waves-effect text-start text-white" id="btnPrint" onclick="printModalContent('myLargeModalLabel8')">Print</button>
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-success w-lg" id="btnPrint" onclick="printModalContent('myLargeModalLabel8')">Print</button>
+                    <button type="button" class="btn btn-outline-danger w-lg" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -483,8 +486,8 @@
                 </div>
                 <div class="modal-body">
                     <fieldset>
-                        <div class="row">
-                            <div class="col-md-3">
+                        <div class="row align-items-end">
+                            <div class="col-md-6 col-ld-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Forward To
@@ -505,7 +508,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-ld-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Authority Name
@@ -548,7 +551,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border Alert-Save" data-bs-dismiss="modal">Forword</button>
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger w-lg" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             <!-- /.modal-content -->

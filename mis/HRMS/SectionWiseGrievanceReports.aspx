@@ -45,9 +45,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-5" style="position: relative; bottom: 20px;">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+        <div class="col-md-5">
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -56,40 +56,19 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Section wise Pending Reports /
-अनुभागवार लंबित रिपोर्टें</h5>
+                    <h5 class="card-title">Section wise Pending Report / अनुभागवार लंबित रिपोर्ट</h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
-
-
-
             <fieldset>
                 <legend>Section Wise Pending Status / अनुभागवार की लंबित स्थिति</legend>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
                                 Section Name<br />
-                                अनुभाग का नाम
-                                    <span style="color: red">*</span></label>
-                            <script>
-
-                                function GetTblBySelectValue() {
-                                    var ddlvalue = document.getElementById('<%= ddlRegistrationType.ClientID%>').value
-                                    if (ddlvalue == "7") {
-                                        return "tbl2"
-                                    } else if (ddlvalue == "9") {
-                                        return "tbl4"
-                                    } if (ddlvalue == "10") {
-                                        return "tbl5"
-                                    }
-                                    else {
-                                        return "tbl1"
-                                    }
-                                }
-                            </script>
+                                अनुभाग का नाम<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="ddlRegistrationType" CssClass="form-control">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1">RMSA</asp:ListItem>
@@ -112,8 +91,8 @@
                             </asp:DropDownList>
                         </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                    <hr />
                         <div class="form-group">
                             <button onclick="showtbl(GetTblBySelectValue())" class=" btn w-lg btn-success btn-border" type="button">Search</button>
                             <a href="SectionWiseGrievanceReports.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -126,19 +105,15 @@
                     <fieldset>
                         <legend>Section Wise Pending Details / अनुभागवार लंबित विवरण</legend>
                         <div class="row justify-content-end">
-                            <div class="col-md-1 ">
+                            <div class="col-md-4 text-end">
                                 <div class="form-group">
-                                    <asp:Button ID="Button2" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="Excel" />
+                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
                                 </div>
                             </div>
-                            <div class="col-md-1">
+                            <div class="col-md-2">
                                 <div class="form-group">
-                                    <asp:Button ID="Button3" CssClass="btn btn-info btn-rounded w-100" runat="server" Text="PDF" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                                 </div>
                             </div>
                         </div>
@@ -147,7 +122,7 @@
                                 <div class="col-md-12">
                                     <div class="table-responsive">
                                         <table class="table table-bordered" id="tbl1">
-                                            <tr class="text-center card-header">
+                                            <tr class="text-center">
                                                 <th>Sr No.
                                                         <br />
                                                     सरल क्रमांक </th>
@@ -318,7 +293,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>1.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Ashoknagar</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Ashoknagar</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -329,7 +304,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>2.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')" style="color:#00bcd4;font-weight:bold">Bhopal</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')" style="color: #00bcd4; font-weight: bold">Bhopal</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>1</td>
@@ -340,7 +315,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>3.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Gwalior</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Gwalior</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -351,7 +326,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>4.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')" style="color:#00bcd4;font-weight:bold">Harda</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl3')" style="color: #00bcd4; font-weight: bold">Harda</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -362,7 +337,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>5.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Indore</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Indore</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -476,7 +451,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>1.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Chhatarpur</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Chhatarpur</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -487,7 +462,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>2.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color:#00bcd4;font-weight:bold">Gwalior</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color: #00bcd4; font-weight: bold">Gwalior</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>1</td>
@@ -498,7 +473,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>3.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Mandsaur</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Mandsaur</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -509,7 +484,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>4.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color:#00bcd4;font-weight:bold">Rajgarh</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color: #00bcd4; font-weight: bold">Rajgarh</a></td>
                                                 <td>2</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -520,7 +495,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>5.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color:#00bcd4;font-weight:bold">Singrauli</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl6')" style="color: #00bcd4; font-weight: bold">Singrauli</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -564,7 +539,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>1.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Betul</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Betul</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -575,7 +550,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>2.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color:#00bcd4;font-weight:bold">Bhopal</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color: #00bcd4; font-weight: bold">Bhopal</a></td>
                                                 <td>2</td>
                                                 <td>0</td>
                                                 <td>1</td>
@@ -586,7 +561,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>3.</td>
-                                                <td><a class="anchor" href="#" style="color:#00bcd4;font-weight:bold">Burhanpur</a></td>
+                                                <td><a class="anchor" href="#" style="color: #00bcd4; font-weight: bold">Burhanpur</a></td>
                                                 <td>0</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -597,7 +572,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>4.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color:#00bcd4;font-weight:bold">Chhindwara</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color: #00bcd4; font-weight: bold">Chhindwara</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -608,7 +583,7 @@
                                             </tr>
                                             <tr class="text-center">
                                                 <td>5.</td>
-                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color:#00bcd4;font-weight:bold">Indore</a></td>
+                                                <td><a class="anchor" href="#" onclick="showtbl('tbl7')" style="color: #00bcd4; font-weight: bold">Indore</a></td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -690,8 +665,6 @@
                                             </tr>
 
                                         </table>
-
-
                                         <table class="table table-bordered" style="display: none" id="tbl7">
                                             <tr class="text-center card-header">
                                                 <th>Sr No. 
@@ -760,27 +733,34 @@
                                                 <td>Others</td>
                                                 <td>Commissioner, Public Instructions</td>
                                             </tr>
-
                                         </table>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </fieldset>
                 </div>
             </div>
         </div>
-
-
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
 
+        function GetTblBySelectValue() {
+            var ddlvalue = document.getElementById('<%= ddlRegistrationType.ClientID%>').value
+            if (ddlvalue == "7") {
+                return "tbl2"
+            } else if (ddlvalue == "9") {
+                return "tbl4"
+            } if (ddlvalue == "10") {
+                return "tbl5"
+            }
+            else {
+                return "tbl1"
+            }
+        }
+    </script>
     <script>
         function showtbl(tblId) {
             var tables = document.getElementsByTagName('table');

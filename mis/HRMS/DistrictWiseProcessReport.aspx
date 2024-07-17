@@ -1,71 +1,71 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DistrictWiseProcessReport.aspx.cs" Inherits="mis_HRMS_DistrictWiseProcessReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-       <style>
-       th {
-           white-space: nowrap;
-       }
+    <style>
+        th {
+            white-space: nowrap;
+        }
 
-       @media print {
-           /* Show modal content in full page */
-           .modal-dialog {
-               width: 200%;
-               height: auto;
-               margin: 0;
-               padding: 0;
-           }
+        @media print {
+            /* Show modal content in full page */
+            .modal-dialog {
+                width: 200%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
-           .modal-content {
-               height: 200%;
-               border: none;
-               box-shadow: none;
-           }
+            .modal-content {
+                height: 200%;
+                border: none;
+                box-shadow: none;
+            }
 
-           .modal-body {
-               width: 70rem;
-               height: auto;
-               overflow: visible !important;
-               zoom: 91%;
-           }
-           /* Hide unnecessary elements */
-           body.modal-open {
-               visibility: hidden;
-           }
+            .modal-body {
+                width: 70rem;
+                height: auto;
+                overflow: visible !important;
+                zoom: 91%;
+            }
+            /* Hide unnecessary elements */
+            body.modal-open {
+                visibility: hidden;
+            }
 
-               body.modal-open .modal .modal-header,
-               body.modal-open .modal .modal-body {
-                   visibility: visible;
-               }
+                body.modal-open .modal .modal-header,
+                body.modal-open .modal .modal-body {
+                    visibility: visible;
+                }
 
-           .modal-footer {
-               display: none;
-           }
+            .modal-footer {
+                display: none;
+            }
 
-           .modal-header {
-               display: none;
-           }
+            .modal-header {
+                display: none;
+            }
 
-.table-responsive {
-       overflow: visible!important;
-       width: 100%!important;
-   }
+            .table-responsive {
+                overflow: visible !important;
+                width: 100% !important;
+            }
 
-   .table {
-       width: 100%!important;
-       table-layout: fixed;
-   }
+            .table {
+                width: 100% !important;
+                table-layout: fixed;
+            }
 
-   .table td, .table th {
-       word-wrap: break-word;
-       white-space: normal; /* Add this to prevent text from wrapping */
-   }
+                .table td, .table th {
+                    word-wrap: break-word;
+                    white-space: normal; /* Add this to prevent text from wrapping */
+                }
 
-   /* Add this to scale the table to fit the page */
-   .table {
-       transform: scale(1.0); /* Adjust the scale value as needed */
-   }
-       }
-   </style>
+            /* Add this to scale the table to fit the page */
+            .table {
+                transform: scale(1.0); /* Adjust the scale value as needed */
+            }
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -92,10 +92,10 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <img src="../../img/Grievance%20Logo.png" style="height: 70px" title="Compassionate Appointment Facilitation & Monitoring System (CAFMS)">
+            <img src="../../img/Grievance%20Logo.png" style="height: 60px" title="Compassionate Appointment Facilitation & Monitoring System (CAFMS)">
         </div>
     </div>
-    <div class="card   card-border-primary radius-defalt">
+    <div class="card card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
@@ -105,7 +105,6 @@
             </div>
         </div>
         <div class="card-body">
-
             <div runat="server" id="show">
             </div>
             <fieldset id="fdSetSummaryReport" runat="server">
@@ -127,7 +126,7 @@
                 <%-- first time Data Start --%>
                 <div class="col-md-12">
                     <div class="table-responsive">
-                        <table class="table  table-bordered text-center">
+                        <table class="table table-bordered text-center">
                             <thead class="text-center">
                                 <tr>
                                     <th>Sr.No.<br />
@@ -189,13 +188,14 @@
                                     <td>Dindori</td>
                                     <td>0</td>
                                     <td>
-                                          <p style="Color:#00bcd4 ;font-weight:bold">0</p>   </td>
+                                        <p style="color: #00bcd4; font-weight: bold">0</p>
+                                    </td>
 
                                     <td>
-                                            <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
+                                        <p style="color: #00bcd4; font-weight: bold">0</p>
                                     </td>
-                                    <td >
-                                       <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
+                                    <td>
+                                        <p style="color: #00bcd4; font-weight: bold">0</p>
 
                                     </td>
                                     <td>0%</td>
@@ -223,17 +223,16 @@
                                     <td>Anuppur</td>
                                     <td>0</td>
                                     <td>
-                                           <p style="Color:#00bcd4 ;font-weight:bold">0</p>   </td>
-                                    <td>
-                                           <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
+                                        <p style="color: #00bcd4; font-weight: bold">0</p>
                                     </td>
                                     <td>
-                                           <p style="Color:#00bcd4 ;font-weight:bold">0</p>  
+                                        <p style="color: #00bcd4; font-weight: bold">0</p>
+                                    </td>
+                                    <td>
+                                        <p style="color: #00bcd4; font-weight: bold">0</p>
                                     </td>
                                     <td>0%</td>
                                 </tr>
-
-
                             </tbody>
                         </table>
 
@@ -242,76 +241,75 @@
             </fieldset>
             <%-- first time Data End--%>
 
-
-
             <%--Pending Complaint Status Data start--%>
             <fieldset id="fdSetPendingForActin" runat="server" visible="false">
                 <legend>District Wise Pending Complaint Status / जिला वार लंबित की  शिकायत स्थिति </legend>
-                <div class="row">
-                    <div class="col-md-3">
-                        <label>
-                            District<br />
-                            जिला
-                            <span style="color: red">*</span>
-                        </label>
-                        <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
-                            <asp:ListItem Value="0">--Select-- </asp:ListItem>
-                            <asp:ListItem Value="1">Agar Malwa ,आगर  मालवा </asp:ListItem>
-                            <asp:ListItem Value="2">Alirajpur ,अलीराजपुर  </asp:ListItem>
-                            <asp:ListItem Value="3">Anuppur ,अनूपपुर  </asp:ListItem>
-                            <asp:ListItem Value="4">Ashoknagar ,अशोकनगर  </asp:ListItem>
-                            <asp:ListItem Value="5">Balaghat ,बालाघाट  </asp:ListItem>
-                            <asp:ListItem Value="6">Barwani ,बड़वानी  </asp:ListItem>
-                            <asp:ListItem Value="7">Betul ,बैतूल  </asp:ListItem>
-                            <asp:ListItem Value="8">Bhind ,भिण्ड  </asp:ListItem>
-                            <asp:ListItem Value="9">Bhopal ,भोपाल  </asp:ListItem>
-                            <asp:ListItem Value="10">Burhanpur ,बुरहानपुर  </asp:ListItem>
-                            <asp:ListItem Value="11">Chhatarpur ,छतरपुर  </asp:ListItem>
-                            <asp:ListItem Value="12">Chhindwara ,छिंदवाडा  </asp:ListItem>
-                            <asp:ListItem Value="13">Damoh ,दमोह  </asp:ListItem>
-                            <asp:ListItem Value="14">Datia ,दतिया  </asp:ListItem>
-                            <asp:ListItem Value="15">Dewas ,देवास  </asp:ListItem>
-                            <asp:ListItem Value="16">Dhar ,धार  </asp:ListItem>
-                            <asp:ListItem Value="17">Dindori ,डिण्डौरी  </asp:ListItem>
-                            <asp:ListItem Value="18">Guna ,गुना  </asp:ListItem>
-                            <asp:ListItem Value="19">Gwalior ,ग्वालियर  </asp:ListItem>
-                            <asp:ListItem Value="20">Harda ,हरदा  </asp:ListItem>
-                            <asp:ListItem Value="21">Indore ,इन्दौर  </asp:ListItem>
-                            <asp:ListItem Value="22">Jabalpur ,जबलपुर  </asp:ListItem>
-                            <asp:ListItem Value="23">Jhabua ,झाबुआ  </asp:ListItem>
-                            <asp:ListItem Value="24">Katni ,कटनी  </asp:ListItem>
-                            <asp:ListItem Value="25">Khandwa ,खण्डवा  </asp:ListItem>
-                            <asp:ListItem Value="26">Khargone ,खरगोन  </asp:ListItem>
-                            <asp:ListItem Value="27">Mandla ,मण्डला  </asp:ListItem>
-                            <asp:ListItem Value="28">Mandsaur ,मन्दसौर  </asp:ListItem>
-                            <asp:ListItem Value="29">Morena ,मुरैना  </asp:ListItem>
-                            <asp:ListItem Value="30">Narmadapuram ,नर्मदापुरम </asp:ListItem>
-                            <asp:ListItem Value="31">Narsinghpur ,नरसिंहपुर  </asp:ListItem>
-                            <asp:ListItem Value="32">Neemuch ,नीमच  </asp:ListItem>
-                            <asp:ListItem Value="33">Niwari ,निवाड़ी </asp:ListItem>
-                            <asp:ListItem Value="34">Panna ,पन्ना  </asp:ListItem>
-                            <asp:ListItem Value="35">Raisen ,रायसेन  </asp:ListItem>
-                            <asp:ListItem Value="36">Rajgarh ,राजगढ़  </asp:ListItem>
-                            <asp:ListItem Value="37">Ratlam ,रतलाम  </asp:ListItem>
-                            <asp:ListItem Value="38">Rewa ,रीवा  </asp:ListItem>
-                            <asp:ListItem Value="39">Sagar ,सागर  </asp:ListItem>
-                            <asp:ListItem Value="40">Satna ,सतना  </asp:ListItem>
-                            <asp:ListItem Value="41">Sehore ,सीहोर  </asp:ListItem>
-                            <asp:ListItem Value="42">Seoni ,सिवनी  </asp:ListItem>
-                            <asp:ListItem Value="43">Shahdol ,शहडोल  </asp:ListItem>
-                            <asp:ListItem Value="44">Shajapur ,शाजापुर  </asp:ListItem>
-                            <asp:ListItem Value="45">Sheopur ,श्योपुर  </asp:ListItem>
-                            <asp:ListItem Value="46">Shivpuri ,शिवपुरी  </asp:ListItem>
-                            <asp:ListItem Value="47">Sidhi ,सीधी  </asp:ListItem>
-                            <asp:ListItem Value="48">Singrauli ,सिंगरौली  </asp:ListItem>
-                            <asp:ListItem Value="49">Tikamgarh ,टीकमगढ़  </asp:ListItem>
-                            <asp:ListItem Value="50">Ujjain ,उज्जैन  </asp:ListItem>
-                            <asp:ListItem Value="51">Umaria ,उमरिया  </asp:ListItem>
-                            <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
-                        </asp:DropDownList>
+                <div class="row align-items-end">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                District<br />
+                                जिला<span style="color: red">*</span>
+                            </label>
+                            <asp:DropDownList runat="server" CssClass="form-select form-control" ID="ddlDistrict">
+                                <asp:ListItem Value="0">--Select-- </asp:ListItem>
+                                <asp:ListItem Value="1">Agar Malwa ,आगर  मालवा </asp:ListItem>
+                                <asp:ListItem Value="2">Alirajpur ,अलीराजपुर  </asp:ListItem>
+                                <asp:ListItem Value="3">Anuppur ,अनूपपुर  </asp:ListItem>
+                                <asp:ListItem Value="4">Ashoknagar ,अशोकनगर  </asp:ListItem>
+                                <asp:ListItem Value="5">Balaghat ,बालाघाट  </asp:ListItem>
+                                <asp:ListItem Value="6">Barwani ,बड़वानी  </asp:ListItem>
+                                <asp:ListItem Value="7">Betul ,बैतूल  </asp:ListItem>
+                                <asp:ListItem Value="8">Bhind ,भिण्ड  </asp:ListItem>
+                                <asp:ListItem Value="9">Bhopal ,भोपाल  </asp:ListItem>
+                                <asp:ListItem Value="10">Burhanpur ,बुरहानपुर  </asp:ListItem>
+                                <asp:ListItem Value="11">Chhatarpur ,छतरपुर  </asp:ListItem>
+                                <asp:ListItem Value="12">Chhindwara ,छिंदवाडा  </asp:ListItem>
+                                <asp:ListItem Value="13">Damoh ,दमोह  </asp:ListItem>
+                                <asp:ListItem Value="14">Datia ,दतिया  </asp:ListItem>
+                                <asp:ListItem Value="15">Dewas ,देवास  </asp:ListItem>
+                                <asp:ListItem Value="16">Dhar ,धार  </asp:ListItem>
+                                <asp:ListItem Value="17">Dindori ,डिण्डौरी  </asp:ListItem>
+                                <asp:ListItem Value="18">Guna ,गुना  </asp:ListItem>
+                                <asp:ListItem Value="19">Gwalior ,ग्वालियर  </asp:ListItem>
+                                <asp:ListItem Value="20">Harda ,हरदा  </asp:ListItem>
+                                <asp:ListItem Value="21">Indore ,इन्दौर  </asp:ListItem>
+                                <asp:ListItem Value="22">Jabalpur ,जबलपुर  </asp:ListItem>
+                                <asp:ListItem Value="23">Jhabua ,झाबुआ  </asp:ListItem>
+                                <asp:ListItem Value="24">Katni ,कटनी  </asp:ListItem>
+                                <asp:ListItem Value="25">Khandwa ,खण्डवा  </asp:ListItem>
+                                <asp:ListItem Value="26">Khargone ,खरगोन  </asp:ListItem>
+                                <asp:ListItem Value="27">Mandla ,मण्डला  </asp:ListItem>
+                                <asp:ListItem Value="28">Mandsaur ,मन्दसौर  </asp:ListItem>
+                                <asp:ListItem Value="29">Morena ,मुरैना  </asp:ListItem>
+                                <asp:ListItem Value="30">Narmadapuram ,नर्मदापुरम </asp:ListItem>
+                                <asp:ListItem Value="31">Narsinghpur ,नरसिंहपुर  </asp:ListItem>
+                                <asp:ListItem Value="32">Neemuch ,नीमच  </asp:ListItem>
+                                <asp:ListItem Value="33">Niwari ,निवाड़ी </asp:ListItem>
+                                <asp:ListItem Value="34">Panna ,पन्ना  </asp:ListItem>
+                                <asp:ListItem Value="35">Raisen ,रायसेन  </asp:ListItem>
+                                <asp:ListItem Value="36">Rajgarh ,राजगढ़  </asp:ListItem>
+                                <asp:ListItem Value="37">Ratlam ,रतलाम  </asp:ListItem>
+                                <asp:ListItem Value="38">Rewa ,रीवा  </asp:ListItem>
+                                <asp:ListItem Value="39">Sagar ,सागर  </asp:ListItem>
+                                <asp:ListItem Value="40">Satna ,सतना  </asp:ListItem>
+                                <asp:ListItem Value="41">Sehore ,सीहोर  </asp:ListItem>
+                                <asp:ListItem Value="42">Seoni ,सिवनी  </asp:ListItem>
+                                <asp:ListItem Value="43">Shahdol ,शहडोल  </asp:ListItem>
+                                <asp:ListItem Value="44">Shajapur ,शाजापुर  </asp:ListItem>
+                                <asp:ListItem Value="45">Sheopur ,श्योपुर  </asp:ListItem>
+                                <asp:ListItem Value="46">Shivpuri ,शिवपुरी  </asp:ListItem>
+                                <asp:ListItem Value="47">Sidhi ,सीधी  </asp:ListItem>
+                                <asp:ListItem Value="48">Singrauli ,सिंगरौली  </asp:ListItem>
+                                <asp:ListItem Value="49">Tikamgarh ,टीकमगढ़  </asp:ListItem>
+                                <asp:ListItem Value="50">Ujjain ,उज्जैन  </asp:ListItem>
+                                <asp:ListItem Value="51">Umaria ,उमरिया  </asp:ListItem>
+                                <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
                     </div>
-                    <hr />
                     <div class="col-md-12">
+                        <hr />
                         <div class="form-group">
                             <asp:Button runat="server" type="button" class=" btn w-lg btn-success btn-border" Text="Search" OnClick="BtndistrictWiseData_Click" ID="BtndistrictWiseData" />
                             <a href="DistrictWiseProcessReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -390,18 +388,14 @@
                                     <td class="phone,tablet">
                                         <a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a>
                                     </td>
-
                                 </tr>
                                 <tr>
                                     <td class="expand">
                                         <span>2</span>
                                         <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl03$hdnId" value="46088">
                                     </td>
-
-
                                     <td class="phone,tablet">46088
                                     </td>
-
                                     <td>
                                         <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblShikayat">02/05/2022</span>
                                     </td>
@@ -417,7 +411,6 @@
                                     <td>
                                         <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl03_lblStatus">RSK
                                         </span>
-
                                     </td>
                                     <td>
                                         <a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a>
@@ -426,7 +419,6 @@
 
                             </tbody>
                         </table>
-
                     </div>
                 </div>
                 <%-- pending Complain Table data End--%>
@@ -477,14 +469,11 @@
                                         <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl02_lblSubject">Pending arrears</span>
                                     </td>
                                     <td>BEO  District / Block All 
-                                                  
                                     </td>
                                     <td>
                                         <a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a>
                                     </td>
                                 </tr>
-
-
                             </tbody>
                         </table>
                     </div>
@@ -522,10 +511,7 @@
                                         <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl02$hdnId" id="" value="59362">
                                     </td>
                                     <td class="phone,tablet">
-
-
                                         <span>59362</span>
-
                                     </td>
                                     <td>
                                         <span id="">22/02/2023</span>
@@ -540,8 +526,6 @@
                                         <span id="">Others</span>
                                     </td>
                                     <td>DPC
-                                           
-                                           
                                     </td>
                                     <td>
                                         <a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a>
@@ -585,7 +569,6 @@
                                         <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl02$hdnId" value="70159">
                                     </td>
                                     <td class="phone,tablet">
-
                                         <a target="_blank" href="ViewGrievanceDetails.aspx?ShikayatId=NzAxNTk=&amp;empId=MjM1Mzg3">
                                             <span>70159</span>&nbsp;
                                         </a>
@@ -634,16 +617,13 @@
                                     <td>
                                         <a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a>
                                     </td>
-
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <%-- Dropdown Base Data End --%>
             </fieldset>
-
             <%--Pending Complaint Status Data End--%>
             <%--Rejected Status Data start--%>
             <fieldset id="fdSetRejectedGrievances" runat="server" visible="false">
@@ -710,8 +690,6 @@
                             <asp:ListItem Value="50">Ujjain ,उज्जैन  </asp:ListItem>
                             <asp:ListItem Value="51">Umaria ,उमरिया  </asp:ListItem>
                             <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
-
-
                         </asp:DropDownList>
                     </div>
                     <hr />
@@ -989,8 +967,6 @@
                 </div>
                 <%-- Dropdown Base Data End --%>
             </fieldset>
-
-
             <%--Rejected  Status Data End--%>
             <%--Disposed  Status Data start--%>
             <fieldset id="fdSetDisposedGrievances" runat="server" visible="false">
@@ -1059,13 +1035,10 @@
                             <asp:ListItem Value="52">Vidisha ,विदिशा </asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <asp:Button runat="server" CssClass="btn btn-outline-success w-lg btn-border" Text="Search" ID="BtnDisposeCase" OnClick="BtnDisposeCase_Click" />
-                            <a runat="server" class="btn btn-outline-danger w-lg btn-border" href="DistrictWiseProcessReport.aspx">Clear</a>
-                        </div>
+                    <div class="col-md-12">
+                        <hr />
+                        <asp:Button runat="server" CssClass="btn btn-outline-success w-lg btn-border" Text="Search" ID="BtnDisposeCase" OnClick="BtnDisposeCase_Click" />
+                        <a runat="server" class="btn btn-outline-danger w-lg btn-border" href="DistrictWiseProcessReport.aspx">Clear</a>
                     </div>
                 </div>
             </fieldset>
@@ -1142,7 +1115,6 @@
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
                     <%-- Dropdown Base Data Start of AgarMalwa--%>
                     <div class="col-md-12 mt-4" id="onClickDisposeTblAgarMalwa" runat="server" visible="false">
@@ -1199,8 +1171,6 @@
                                             <a href="#"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a>
                                         </td>
                                     </tr>
-
-
                                 </tbody>
                             </table>
                         </div>
@@ -1210,23 +1180,23 @@
                     <div class="col-md-12 mt-4" id="onClickDisposeTblAlirajPur" runat="server" visible="false">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <thead class="text-center">
+                                <thead class="nowrap">
                                     <tr>
-                                        <th data-class="expand" scope="col">Sr.No.<br />
+                                        <th>Sr.No.<br />
                                             सरल क्र.</th>
-                                        <th data-class="phone,tablet" scope="col">Complaint Number<br />
+                                        <th>Complaint Number<br />
                                             शिकायत क्रमांक</th>
-                                        <th data-hide="phone,tablet" scope="col">Date<br />
+                                        <th>Date<br />
                                             दिनाँक</th>
-                                        <th data-hide="phone,tablet" scope="col">Name of Public Servant<br />
+                                        <th>Name of Public Servant<br />
                                             लोकसेवक का नाम</th>
-                                        <th data-hide="phone,tablet" scope="col">Type of Complaint<br />
+                                        <th>Type of Complaint<br />
                                             शिकायत का प्रकार </th>
-                                        <th data-hide="phone,tablet" scope="col">Subject of Complaint<br />
+                                        <th>Subject of Complaint<br />
                                             शिकायत का विषय </th>
-                                        <th data-hide="phone,tablet" scope="col">Complaint Status<br />
+                                        <th>Complaint Status<br />
                                             शिकायत  की स्थिति</th>
-                                        <th data-class="phone,tablet" scope="col">View Complaint<br />
+                                        <th>View Complaint<br />
                                             शिकायत देखे<br />
                                         </th>
                                     </tr>
@@ -1347,13 +1317,12 @@
                         <div class="col-md-12 text-center">
                             <h3 class="font-bold">जिला शिक्षा अधिकारी</h3>
                             <h4 class="font-bold">जिला : टीकमगढ़</h4>
-
                             <h4 class="font-bold">लोकसेवक का विवरण</h4>
                         </div>
                         <div class="row">
                             <div class="col-md-12 table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
                                         <tr>
                                             <th>Sr.No.<br />
                                                 सरल क्र.</th>
@@ -1375,7 +1344,6 @@
                                                 मोबाइल</th>
                                             <th>Subject of Complaint<br />
                                                 शिकायत का विषय</th>
-
                                         </tr>
                                     </thead>
                                     <tr>
@@ -1407,8 +1375,8 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-info waves-effect text-start text-white" id="btnPrint" onclick="printModalContent('myLargeModalLabel')">Print</button>
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-success w-lg" id="btnPrint" onclick="printModalContent('myLargeModalLabel')">Print</button>
+                    <button type="button" class="btn btn-outline-danger w-lg" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

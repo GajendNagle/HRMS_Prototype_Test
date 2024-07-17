@@ -24,7 +24,7 @@
                             <a href="#GrievanceReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
                                 <span>Grievance Report</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>List of Resolved Grievance</span></li>
+                        <li class="breadcrumb-item"><span>Grievance Disposed Report</span></li>
                     </ol>
                 </div>
             </div>
@@ -32,8 +32,8 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -42,8 +42,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">List of Resolved Grievance /
-निराकृत शिकायतों की सूची
+                    <h5 class="card-title">Grievances Dispose/Reject <br />शिकायतों का निपटारा/अस्वीकार
                     </h5>
                 </div>
             </div>
@@ -51,8 +50,9 @@
         <div class="card-body">
             <div runat="server" id="show">
                 <fieldset>
-                    <legend>List of Resolved Grievance / समाधान की गई शिकायतों की सूची</legend>
-                    <div class="row">
+                    <legend>Grievances Dispose/Reject
+<br />शिकायतों का निपटारा/अस्वीकार</legend>
+                    <div class="row align-items-end">
                         <div class="col-md-3">
                             <label >
                                 District
@@ -60,14 +60,14 @@
                                 जिला<span style="color: red">*</span></label>
                             <asp:DropDownList runat="server" ID="DropDownList1" CssClass="form-control select2">
                                 <asp:ListItem Value="0">--select--</asp:ListItem>
-                                <asp:ListItem Value="1">Bhopal</asp:ListItem>
-                                <asp:ListItem Value="2">Raisen</asp:ListItem>
-                                <asp:ListItem Value="3">Rajgarh</asp:ListItem>
-                                <asp:ListItem Value="4">Sehore</asp:ListItem>
-                                <asp:ListItem Value="5">Vidisha</asp:ListItem>
-                                <asp:ListItem Value="6">Ashoknagar</asp:ListItem>
-                                <asp:ListItem Value="7">Shivpuri</asp:ListItem>
-                                <asp:ListItem Value="8">Datia</asp:ListItem>
+                                <asp:ListItem Value="1">1-Bhopal</asp:ListItem>
+                                <asp:ListItem Value="2">2-Raisen</asp:ListItem>
+                                <asp:ListItem Value="3">3-Rajgarh</asp:ListItem>
+                                <asp:ListItem Value="4">4-Sehore</asp:ListItem>
+                                <asp:ListItem Value="5">5-Vidisha</asp:ListItem>
+                                <asp:ListItem Value="6">6-Ashoknagar</asp:ListItem>
+                                <asp:ListItem Value="7">7-Shivpuri</asp:ListItem>
+                                <asp:ListItem Value="8">8-Datia</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
@@ -109,8 +109,7 @@
             </div>
             <div runat="server" id="show2" visible="false">
                 <fieldset>
-                    <legend>Dispose Action Details /
-निपटान कार्रवाई विवरण</legend>
+                    <legend>Dispose Action / निराकरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
@@ -128,7 +127,7 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table id="Table4" class="table table-bordered text-center m-1" runat="server">
-                                    <thead>
+                                    <thead class="nowrap">
                                         <tr>
                                             <th data-class="expand" scope="col">Sr.No.<br />
                                                 सरल क्र.
@@ -288,7 +287,6 @@
                                             </td>
                                             <td style="display: table-cell;">
                                                 <a href="../Document/Dispose_File_Download.pdf" class="btn btn-primary">view</a>
-
                                             </td>
                                         </tr>
                                     </tbody>
@@ -311,76 +309,13 @@
                     </div>
 
                     <div class="modal-body">
-                        <%--<fieldset>
-                                <legend>Detail</legend>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <table id="Table1" class="table table-bordered table-responsive-lg text-center " runat="server">
-                                            <thead>
-                                                <tr>
-                                                    <th data-class="expand" scope="col">SN</th>
-                                                    <th data-class="phone,tablet" scope="col">Grievance No</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Employee Name</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Type</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Subject</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed On</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Disposed By</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Dispose Details</th>
-                                                    <th data-hide="phone,tablet" scope="col" style="display: table-cell;">Status</th>
-                                                   
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="expand">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblRowNumber">1</span>
-                                                        <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$grdGrievance$ctl10$hdnId" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_hdnId" value="62888">
-                                                    </td>
-                                                    <td class="phone,tablet">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblGrievance">62888</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblName">Sucheta Naidu [Madhymik Shikshak ]</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblGrievance_Type">Others</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblsubject">Others</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lbldate">5/2/2024 3:06:00 PM</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblDisposed_by">DEO, CHHINDWARA</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblDispose_Details">शिकायत का निराकरण किया जा चुका है</span>
-                                                    </td>
-                                                    <td style="display: table-cell;">
-                                                        <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdGrievance_ctl10_lblstatus">Disposed</span>
-                                                    </td>
-                                                    
-                                                </tr>
-                                           
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </fieldset>--%> <%--  <a href="../Document/Dispose_File_Download.pdf">../Document/Dispose_File_Download.pdf</a>
-                            <div class="modal-footer justify-content-center">--%>
-                        <%-- <button type="button" class=" btn btn-primary">Print</button>--%>
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                     </div>
-
                 </div>
             </div>
 
         </div>
     </div>
-
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
