@@ -55,7 +55,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        District <br />
+                                        District
+                                        <br />
                                         जिला<span style="color: red">*</span></label>
                                     <select class="form-control select2" id="ddlDist" required="required">
                                         <option value="--Select--">--Select--</option>
@@ -143,13 +144,17 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Sr. No. <br />
+                                                <th>Sr. No.
+                                                    <br />
                                                     सरल क्र.</th>
-                                                <th>District <br />
+                                                <th>District
+                                                    <br />
                                                     जिला</th>
-                                                <th>Total Handicapped Employees <br />
+                                                <th>Total Handicapped Employees
+                                                    <br />
                                                     कुल विकलांग कर्मचारी</th>
-                                                <th>Handicapped Type <br />
+                                                <th>Handicapped Type
+                                                    <br />
                                                     विकलांग का प्रकार</th>
                                             </tr>
                                         </thead>
@@ -194,10 +199,13 @@
                                                                 सरल क्र.</th>
                                                             <th>Name<br />
                                                                 नाम</th>
-                                                            <th>Sankul<br />
-                                                                संकुल</th>
-                                                            <th>School<br />
-                                                                स्कुल</th>
+                                                            <%--<th>Sankul<br />
+                                                                संकुल</th>--%>
+                                                            <%-- <th>School<br />
+                                                                स्कुल</th>--%>
+                                                            <th>OIS Udise Code
+                                                                <br />
+                                                                OIS यू डाइस कोड </th>
                                                             <th>Handicapped Type<br />
                                                                 विकलांग प्रकार </th>
                                                             <th>Handicapped Percentage<br />
@@ -320,18 +328,12 @@
                 <td>${i + 1}</td>
                 <td>${selectedName}</td>
                 <td>${sankul}</td>
-                <td>${sankul}</td>
                 <td>${type}</td>
                 <td>${HandicappedPercentage[Math.floor(Math.random() * HandicappedPercentage.length)]}</td>
             </tr>`;
                 modalTableBody.innerHTML += row;
             }
         }
-
-
-
-
-
 
     </script>
 </asp:Content>

@@ -459,13 +459,13 @@
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th>Married Status :</th>
-                                            <td>Yes</td>
-                                            <th>Spouse Name :
+                                            <th style="width:16px">Married Status :</th>
+                                            <td style="width:16px">Yes</td>
+                                            <th style="width:16px">Spouse Name :
                                             </th>
-                                            <td>Shalini Verma</td>
-                                            <th>Is Spouse Government Employee :</th>
-                                            <td>No</td>
+                                            <td style="width:16px">Shalini Verma</td>
+                                            <th style="width:16px">Is Spouse Government Employee :</th>
+                                            <td style="width:16px">No</td>
                                         </tr>
 
                                     </table>
@@ -475,7 +475,7 @@
 
                                 <legend id="l6">Education Qualification / शैक्षणिक योग्यता</legend>
                                 <div class="table-responsive">
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered text-center">
                                         
                                         <tr>
                                             <th>S.No.</th>
@@ -483,7 +483,7 @@
                                             <th>Subject</th>
                                             <th>Board / University Name</th>
                                             <th>Passing Year</th>
-                                            <th>Grade / Percentage</th>
+                                            <th style="width:23px;">Grade / Percentage</th>
                                         </tr>
 
                                         <tr>
@@ -845,18 +845,17 @@
                             <fieldset>
                                 <legend>Document / दस्तावेज़</legend>
                                 <div class="table-responsive">
-
-                                    <table class="table table-bordered ">
+                                    <table class="table table-bordered">
                                         <thead  class="nowrap">
                                             <tr>
                                                 <th class="text-center">
-                                                    <label style="font-weight: bold;">Sr.No.</label>
+                                                    <label style="font-weight: bold;width:35px !important">Sr.No.</label>
                                                 </th>
                                                 <th>
                                                     <label style="font-weight: bold;">Document Name </label>
                                                 </th>
                                                 <th class="text-center">
-                                                    <label style="font-weight: bold;">View Document</label>
+                                                    <label style="font-weight: bold;width:70px">View Document</label>
                                                 </th>
                                             </tr>
                                         </thead>
@@ -964,18 +963,17 @@
                             <fieldset>
                                 <legend>Educational Document / शैक्षिक दस्तावेज़</legend>
                                 <div class="table-responsive">
-
                                     <table class="table table-bordered">
                                         <thead class="nowrap">
                                             <tr>
                                                 <th class="text-center">
-                                                    <label style="font-weight: bold;">Sr.No.</label>
+                                                    <label style="font-weight: bold;width:23px;">Sr.No.</label>
                                                 </th>
                                                 <th>
                                                     <label style="font-weight: bold;">Document Name</label>
                                                 </th>
                                                 <th class="text-center">
-                                                    <label style="font-weight: bold;">View Document</label>
+                                                    <label style="font-weight: bold;width:70px !important">View Document</label>
                                                 </th>
                                             </tr>
                                         </thead>
@@ -992,7 +990,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="text-center">2</td>
-                                                <td>
+                                                <td >
                                                     <label>
                                                         12th Marksheet<br />
                                                         12वीं की मार्कशीट  :
@@ -1039,7 +1037,6 @@
                                                 </td>
                                                 <td class="text-center">
                                                     <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg11"></i></button>
-
                                                 </td>
                                             </tr>
                                             <tr>
