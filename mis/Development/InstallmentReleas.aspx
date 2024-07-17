@@ -224,10 +224,11 @@
             </fieldset>
                         <fieldset id="hide" style="display:none;">
                 <legend>Installment Document Upload/किस्त के दस्तावेज़ अपलोड करे</legend>
-                <div class="col-sm-12">
-                    <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;">
+                <div class="col-md-12">
+                    <div class="table-responsive-lg">
+                    <table class="table-bordered table-hover" >
                         <tbody>
-                            <tr style="white-space:nowrap">
+                            <tr>
                                 <th>Sr.No.<br />
 सरल क्रमांक</th>
                                 <th>Milestone
@@ -277,17 +278,7 @@
      <%-- <option value="A">कक्षा निमार्ण</option>
       <option value="A">इमारत मरम्मत</option>--%>
       <option value="A">स्कूल नया निमार्ण</option>
-   <%--   <option value="B">हेंडपंप खनन</option>
-      <option value="B">बोरबेल खनन</option>
-      <option value="B">पानी की टंकी निर्माण</option>
-      <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-      <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-      <option value="C">CC Road निर्माण</option>
-      <option value="C">मार्ग मरम्मत</option>
-      <option value="C">मुरम रोड निर्माण</option>
-      <option value="C">डामर रोड निर्माण</option>
-      <option value="D">नाली निर्माण</option>
-      <option value="D">पेपर ब्लाक निर्माण</option>--%>
+  
 
       <%--selection of this next textbox will visible--%>
   </select>
@@ -297,11 +288,7 @@
                                 </td>
                                 <td>
                                     <input type="Text" value="10000" name="birthday" class="form-control text-center" disabled></td>
-                                <%--<td>
-                                    <input type="file" id="docDeathCertificate" asp-for="docDeathCertificate" required pattern=".+\.pdf$" data-pattern-msg="Only Pdf Accept" class="form-control getfileinfo" data-msg="Field is required." onchange="ValidateUploadFile(this,'lnkDeathofCertificate')" />
-                                    <span id="spndocDeathCertificateName" style="display: none"></span>
-                                    <span asp-validation-for="docDeathCertificate" class="text-danger"></span>
-                                </td>--%>
+                              
                                  <td class="text-center"> <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
  <td>
                            <textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks" ></textarea>
@@ -496,6 +483,7 @@
                         </tbody>
                     </table>
                 </div>
+                    </div>
             </fieldset>
                                                  <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
@@ -515,6 +503,7 @@
             <h5 style="font-weight: 200;">Note :<span style="color: red;"> Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
         </div>--%>
         <div class="col-md-12 mt-3">
+            <div class="table-responsive">
             <table class="table table-bordered table-responsive-lg">
                 <thead>
                     <th class="w-25">Sr.No.<br />
@@ -582,6 +571,7 @@
                 </tbody>
             </table>
         </div>
+            </div>
     </div>
 </fieldset>
             </div>

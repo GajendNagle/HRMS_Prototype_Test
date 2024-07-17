@@ -104,8 +104,8 @@
                                         <th>School<br />
                                             स्कूल
                                         </th>
-                                        <th>View Student Application<br />
-                                            विद्यार्थी  आवेदन देखें</th>
+                                        <th>View Student Registration<br />
+                                            विद्यार्थी  पंजीकरण देखें</th>
                                         <th>Update Information<br />
                                             जानकारी अपडेट करें</th>
 

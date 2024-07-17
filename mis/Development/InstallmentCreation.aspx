@@ -1,9 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="InstallmentCreation.aspx.cs" Inherits="mis_Development_InstallmentCreation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+          .table th {
+      background-color: white;
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="row">
+   <%-- <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -25,15 +29,6 @@
             </div>
         </div>
     </div>
-    <div class="marqueecontainer">
-        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-        <div>
-            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                <%--इस पेज के माध्यम से स्कूल में उपयोग होने वाले फ़ोन नंबर्स का रजिस्ट्रेशन किया जाता हैं, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |--%>
-            </marquee>
-        </div>
-    </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -42,344 +37,367 @@
                 </div>
             </div>
         </div>
-        <div class="card-body">
+        <div class="card-body">--%>
+     <div class="row">
+     <div class="col-12">
+         <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+             <h4 class="mb-sm-0"></h4>
+             <div class="=page-title-right">
+                 <ol class="breadcrumb m-0">
+                     <li class="breadcrumb-item">
+                         <span>Home</span>
+                     </li>
+                     <li class="breadcrumb-item">
+                         <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Development</span></a>
+                     </li>
+                     <li class="breadcrumb-item">Installment Creation</li>
+                 </ol>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card card-border-primary">
+     <div class="card-header">
+         <div class="row">
+             <div class="col-lg-12">
+                 <h4 class="card-title">Installment Creation & Approval/किस्त निर्माण एवं अनुमोदन</h4>
+             </div>
+         </div>
+     </div>
+     <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
+                <legend>Installment Creation & Approval/किस्त निर्माण एवं अनुमोदन </legend>
+                <div class="row align-items-end">
+                           <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Select District Name<br />
+            ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
+        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+
+            <option value="Select">Select</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Raisen">Raisen</option>
+            <option value="Rajgarh">Rajgarh</option>
+            <option value="Sehore">Sehore</option>
+            <option value="Vidisha">Vidisha</option>
+            <option value="Ashoknagar">Ashoknagar</option>
+            <option value="Shivpuri">Shivpuri</option>
+            <option value="Datia">Datia</option>
+            <option value="Guna">Guna</option>
+            <option value="Gwalior">Gwalior</option>
+            <option value="Harda">Harda</option>
+            <option value="Hoshangabad">Hoshangabad</option>
+            <option value="Betul">Betul</option>
+            <option value="Morena">Morena</option>
+            <option value="Sheopur">Sheopur</option>
+            <option value="Bhind">Bhind</option>
+            <option value="Barwani">Barwani</option>
+            <option value="Burhanpur">Burhanpur</option>
+            <option value="Dhar">Dhar</option>
+            <option value="Indore">Indore</option>
+            <option value="Jhabua">Jhabua</option>
+            <option value="Khandwa">Khandwa</option>
+            <option value="Khargone">Khargone</option>
+            <option value="Alirajpur">Alirajpur</option>
+            <option value="Balaghat">Balaghat</option>
+            <option value="Chhindwara">Chhindwara</option>
+            <option value="Jabalpur">Jabalpur</option>
+            <option value="Katni">Katni</option>
+            <option value="Mandla">Mandla</option>
+            <option value="Narsinghpur">Narsinghpur</option>
+            <option value="Seoni">Seoni</option>
+            <option value="Rewa">Rewa</option>
+            <option value="Satna">Satna</option>
+            <option value="Sidhi">Sidhi</option>
+            <option value="Singroli">Singroli</option>
+            <option value="Chhatarpur">Chhatarpur</option>
+            <option value="Damoh">Damoh</option>
+            <option value="Panna">Panna</option>
+            <option value="Sagar">Sagar</option>
+            <option value="Tikamgarh">Tikamgarh</option>
+            <option value="Shahdol">Shahdol</option>
+            <option value="Umaria">Umaria</option>
+            <option value="Dindori">Dindori</option>
+            <option value="Anuppur">Anuppur</option>
+            <option value="Dewas">Dewas</option>
+            <option value="Mandsaur">Mandsaur</option>
+            <option value="Neemuch">Neemuch</option>
+            <option value="Ratlam">Ratlam</option>
+            <option value="Shajapur">Shajapur</option>
+            <option value="Ujjain">Ujjain</option>
+        </select>
+    </div>
+</div>
+                    <div class="col-md-6  col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Project Code
+             <br />
+                                परियोजना कोड<span style="color: red">*</span></label>
+                            <select id="Project_Code" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">P00017</option>
+                                <option value="B">P00018</option>
+                                <option value="C">P00019</option>
+                                <option value="D">All</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-12">
+                    <hr />
+                  <input type="button" value="Search" class="btn btn-success btn-border" 
+                      onclick="div()" />
+                    <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                </div>
+            </fieldset>
+                     <fieldset  id="Show" style="display:none;">
+                <legend>Project Details / परियोजना विवरण</legend>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                <tr style="white-space:nowrap">
+                                    <th>Sr.No.<br />
+                                       सरल क्रमांक</th>
+                                 
+                                    <th>Project Code<br>
+                                        परियोजना क्रमांक</th>
+                                    <th>Project Date<br>
+                                        परियोजना दिनांक</th>
+                                    <%--<th>Village /<br />
+                                        गाँव का नाम</th>--%>
+                                    <th>Work Category<br />
+                                        कार्य की श्रेणी</th>
+                                    <th>Work Subcategory<br />
+                                        कार्य का नाम</th>
+                                    <th>OIS Code<br />OIS कोड</th>
+                                    <th>Address<br />
+पता</th>
+                                   <%-- <th>Action Status<br>
+                                        गतिविधि स्थिति</th>--%>
+                                  <%--  <th>Work Place  /<br />
+                                        कार्य स्थल</th>--%>
+                                    <th> Work Description<br />
+कार्य का विवरण</th>
+                                    <th>Estimated Budget Cost(In Rs)  <br />
+                                        अनुमानित बजट</th>
+                                       <th>View Document<br>
+       दस्तावेज़ देखें</th>
+                                    <%--  <th>Edit<br>
+      एडिट करें</th>
+                                    <th>Send To Request<br />अनुरोध करने के लिए भेजें</th>--%>
+                                </tr></thead>
+                                <tbody id="tbody">
+                                <tr>
+                                    
+                                    <td>1</td>
+                                 <%--   <td>
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form-check-input">
+                                    </td>--%>
+                                     <td>P00019</td>
+                                    <th>22/05/2023</th>
+                                     <td>स्कूल मरम्मत/निर्माण</td>
+                                     <td>इमारत मरम्मत</td>
+                                    <td>Delhi Public School_44561</td>
+                                    <td>Bhopal M.P</td>
+                                    <%--<td>Working Mode</td>--%>
+                                    <td>Work For Bhopal Office</td>
+                                    <td>10000.00</td>
+
+                                    <td><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
+                                
+                                </tr>
+</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                         
+                         <hr />
+                           <button type="button" value="Approved" class="Alert-Save btn btn-success btn-border" 
+      >Approved</button>
+                 <%--       <button type="button" value="Reject" class="btn btn-outline-danger  w-xl btn-border" 
+onclick="">Reject</button>--%>
+                          <button type="button" class="btn btn-outline-danger  w-xl btn-border" data-toggle="modal" data-target="#myModal">Reject</button>
+
+            </fieldset>
+          
+            <fieldset id="hide" style="display: none;">
                 <legend>Installment Creation / किस्त निर्माण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project Code /<br />
+                                Project Code
+                                <br />
                                 परियोजना कोड</label>
-                            <asp:TextBox ID="txtProjectCode" MaxLength="10" value="P0001" disabled
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                          <input type="text" id="txtProjectCode" maxlength="10" value="P0001" disabled autocomplete="off" class="form-control form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project Date /<br />
+                                Project Date
+                                <br />
                                 परियोजना दिनांक</label>
-
-                            <asp:TextBox ID="txtProjectDate" MaxLength="10" value="11/06/2024" disabled
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                          <input type="text" id="txtProjectDate" maxlength="10" value="11/06/2024" disabled autocomplete="off" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Estimated Budget Cost(Approx. In Rs) /<br />
+                                Estimated Budget Cost(Approx. In Rs)
+                                <br />
                                 अनुमानित राशि
                             </label>
 
-                            <asp:TextBox ID="txtEstimatedBudgetCost" ClientIDMode="Static" MaxLength="10" value="60000.00" disabled
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                         <input type="text" id="txtEstimatedBudgetCost" maxlength="10" value="60000.00" disabled autocomplete="off" class="form-control">
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Approved Cost(Approx. In Rs) /
-                  <br />
+                                Approved Cost(Approx. In Rs)
+                                <br />
                                 स्वीकृत राशि <span style="color: red">*</span></label>
-                            <span class="pull-right">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic"
-                                    ControlToValidate="txtApprovedCost" ErrorMessage="Enter Approved Cost(Approx. In Rs) "
-                                    Text="<i class='fa fa-exclamation-circle' title='Enter Approved Cost(Approx. In Rs)'></i>"
-                                    SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                </asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ValidationGroup="a"
-                                    Display="Dynamic" runat="server" ControlToValidate="txtApprovedCost"
-                                    ErrorMessage="Only Numeric allow, Approved Cost(Approx. In Rs)"
-                                    Text="<i class='fa fa-exclamation-circle' title='Only Numeric allow Approved Cost(Approx. In Rs) !'></i>"
-                                    SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
-                                </asp:RegularExpressionValidator>
-                            </span>
-                            <asp:TextBox ID="txtApprovedCost" onkeypress="return validateNum(event);" placeholder="Enter Approved Cost" onchange="lnkbtnActiveorNot()" ClientIDMode="Static" MaxLength="10"
-                                AutoComplete="off" runat="server" CssClass="form-control"></asp:TextBox>
+                        
+                        <input type="number" id="txtApprovedCost" placeholder="60000.00" onkeypress="return validateNum(event);" maxlength="10" autocomplete="off" class="form-control">
                         </div>
                     </div>
-
-
-                    <div class="col-sm-3" id="pnlhidebtn" style="margin-top: 43px; display: none;">
-                        <div class="form-group">
-                            <asp:LinkButton ID="lnkResetApprovedCost" OnClientClick="clearApprovedCostData ();" Text="Reset Approved Cost" CssClass="btn btn-danger btn-block" runat="server"></asp:LinkButton>
-                        </div>
-                    </div>
-
+                   
                     <div class="col-sm-12">
-
-
-                        <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;">
+                        <div class="table-responsive-xl">
+                        <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;" id="Table1">
                             <tbody>
                                 <tr>
-                                    <th>Installment No. /<br />
-                                        इन्सटॉलमेंट  नं.</th>
-                                    <th>Project Exp. Start Date /<br />
+                                    <th>Sr.No<br />सरल क्रमांक
+                                    </th>
+                                    <th style="width:250px;">Milestone Type
+                                        <br />
+                                       माइल स्टोन का प्रकार</th>
+                                    <th style="width:250px;">Milestone
+                                        <br />
+                                       माइल स्टोन</th>
+                                    <th style="width:250px;">Installment<br />किस्त</th>
+                                    <th>Project Exp. Start Date
+                                        <br />
                                         परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
-                                    <th>Project Exp. End Date /<br />
+                                    <th>Project Exp. End Date
+                                        <br />
                                         परियोजना एक्सपेक्टेड अंतिम दिनांक<span style="color: red">*</span></th>
-                                    <th>Installment (%)/<br />
+                                    <th>Installment (%)<br />
                                         इन्सटॉलमेंट  (%)<span style="color: red">*</span></th>
-                                    <th>Installment Amount /<br />
+                                    <th>Installment Amount
+                                        <br />
                                         इन्सटॉलमेंट  अमाउंट</th>
+                                    <th <%--style="display: none;" id="btnaction1"--%>>Action<br />
+                                        कार्रवाई</th>
                                 </tr>
                                 <tr>
-                                    <td align="center">1</td>
+                                    <td>1</td>
+                                    <td>  
+         
+             
+            <select id="Project" class="form-control select2" >
+                <option value="--Select--">--Select--</option>
+                <option value="Technical">Technical </option>
+                <option value="Financial">Financial</option>
+            </select>
+       </td>
+                                    <td align="center">
+                                        <select class="form-control select2" id="ddlInstallment" onchange="myaddbtn2()">
+                                            <option value="--select--">--Select--</option>
+                                            <option value="Foundation">Foundation</option>
+                                            <option value="Plinth">Plinth</option>
+                                            <option value="Mid level completion">Mid level completion</option>
+                                            <option value="Final level completion">Final level completion</option>
+                                        </select></td>
+                                                                 <td>  
+  
+      
+     <select id="InstallmentNo" class="form-control select2" style="width:150px;">
+         <option value="--Select--">--Select--</option>
+         <option value="1st Installment">1st Installment</option>
+         <option value="2nd Installment">2nd Installment</option>
+          <option value="3rd Installment">3rd Installment</option>
+          <option value="4th Installment">4th Installment</option>
+     </select>
+</td>
                                     <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate11" ErrorMessage="Enter 1st Project Exp. Start Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 1st Project Exp. Start Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate11" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
+                                        <input type="date" id="c1" class="form-control"></td>
                                     <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate12" ErrorMessage="Enter 1st Project Exp. End Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 1st Project Exp. End Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate12" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-
+                                        <input type="date" id="c2" class="form-control"></td>
                                     <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtInstallmentPer1" ErrorMessage="Enter 1st Installment(%)"
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 1st Installment(%)'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ValidationGroup="a"
-                                                Display="Dynamic" runat="server" ControlToValidate="txtInstallmentPer1"
-                                                ErrorMessage="Only Numeric allow, 1st Installment Amount "
-                                                Text="<i class='fa fa-exclamation-circle' title='Only Numeric allow,  1st Installment Per(%) !'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
-                                            </asp:RegularExpressionValidator>
-                                        </span>
-                                        <asp:TextBox ID="txtInstallmentPer1" onchange="calculateInstallmentAmt1();" autocomplete="off" onkeypress="return validateNum(event);"
-                                            ClientIDMode="Static" runat="server"
-                                            CssClass="form-control" MaxLength="2">
-                                        </asp:TextBox>
-
-                                    </td>
+                                        <input type="text" id="c3" class="form-control"></td>
                                     <td>
-                                        <asp:TextBox ID="txtInstallmentAmount1" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
+                                        <input type="email" id="c4" class="form-control"></td>
+                                    <td><%-- style="display: none;" id="btnaction3"--%>
+
+                                        <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
                                 </tr>
+
                                 <tr>
-                                    <td align="center">2</td>
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate21" ErrorMessage="Enter 2nd Project Exp. Start Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 2nd Project Exp. Start Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate21" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate22" ErrorMessage="Enter 2nd Project Exp. End Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 2nd Project Exp. End Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate22" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtInstallmentPer2" ErrorMessage="Enter 2nd Installment(%)"
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 2nd Installment(%)'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" ValidationGroup="a"
-                                                Display="Dynamic" runat="server" ControlToValidate="txtInstallmentPer2"
-                                                ErrorMessage="Only Numeric allow, 2nd Installment Amount "
-                                                Text="<i class='fa fa-exclamation-circle' title='Only Numeric allow,  2nd Installment Per(%) !'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
-                                            </asp:RegularExpressionValidator>
-                                        </span>
-                                        <asp:TextBox ID="txtInstallmentPer2" onchange="calculateInstallmentAmt2();" autocomplete="off" onkeypress="return validateNum(event);"
-                                            ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="2"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox ID="txtInstallmentAmount2" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
-                                </tr>
-                                <tr>
-                                    <td align="center">3</td>
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate31" ErrorMessage="Enter 3rd Project Exp. Start Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 3rd Project Exp. Start Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate31" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate32" ErrorMessage="Enter 3rd Project Exp. End Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 3rd Project Exp. End Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate32" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtInstallmentPer3" ErrorMessage="Enter 3rd Installment(%)"
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 3rd Installment(%)'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator4" ValidationGroup="a"
-                                                Display="Dynamic" runat="server" ControlToValidate="txtInstallmentPer3"
-                                                ErrorMessage="Only Numeric allow, 3rd Installment Amount "
-                                                Text="<i class='fa fa-exclamation-circle' title='Only Numeric allow,  3rd Installment Per(%) !'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
-                                            </asp:RegularExpressionValidator>
-                                        </span>
-                                        <asp:TextBox ID="txtInstallmentPer3" onchange="calculateInstallmentAmt3();"
-                                            autocomplete="off" onkeypress="return validateNum(event);" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="2"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox ID="txtInstallmentAmount3" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
-                                </tr>
-                                <tr>
-                                    <td align="center">4</td>
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate41" ErrorMessage="Enter 4th Project Exp. Start Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 4th Project Exp. Start Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate41" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. Start Date"
-                                            data-provide="datepicker" onpaste="return false;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtExpStartDate42" ErrorMessage="Enter 4th Project Exp. End Date "
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 4th Project Exp. End Date'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                        </span>
-                                        <asp:TextBox runat="server" autocomplete="off" CssClass="form-control"
-                                            ID="txtExpStartDate42" MaxLength="10" data-date-start-date="-0d"
-                                            data-date-end-date="+365d" placeholder="Enter Project Exp. End Date"
-                                            data-provide="datepicker" onpaste="return false ;"
-                                            onkeypress="return false;" data-date-format="dd/mm/yyyy"
-                                            data-date-autoclose="true" ClientIDMode="Static">
-
-                                        </asp:TextBox>
-                                    </td>
-
-                                    <td>
-                                        <span class="pull-right">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" Display="Dynamic"
-                                                ControlToValidate="txtInstallmentPer4" ErrorMessage="Enter 4th Installment(%)"
-                                                Text="<i class='fa fa-exclamation-circle' title='Enter 4th Installment(%)'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationGroup="a">
-                                            </asp:RequiredFieldValidator>
-                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator5" ValidationGroup="a"
-                                                Display="Dynamic" runat="server" ControlToValidate="txtInstallmentPer4"
-                                                ErrorMessage="Only Numeric allow, 4th Installment Amount "
-                                                Text="<i class='fa fa-exclamation-circle' title='Only Numeric allow,  4th Installment Per(%) !'></i>"
-                                                SetFocusOnError="true" ForeColor="Red" ValidationExpression="^[0-9]+$">
-                                            </asp:RegularExpressionValidator>
-                                        </span>
-                                        <asp:TextBox ID="txtInstallmentPer4" onchange="calculateInstallmentAmt4();"
-                                            autocomplete="off" onkeypress="return validateNum(event);" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="2"></asp:TextBox></td>
-                                    <td>
-                                        <asp:TextBox ID="txtInstallmentAmount4" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="13"></asp:TextBox></td>
-                                </tr>
-                                <tr>
+                                    <td></td>  
+                                    <td></td>
+                                    <td></td>
                                     <td></td>
                                     <td></td>
                                     <td>Total</td>
                                     <td>
-                                        <asp:TextBox ID="txtInstallmentPer_Total" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="3"></asp:TextBox></td>
+                                        <asp:TextBox ID="txtInstallmentPer_Total" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="3">0</asp:TextBox></td>
 
                                     <td>
-                                        <asp:TextBox ID="txtInstallmentAmount_Total" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="15"></asp:TextBox></td>
+                                        <asp:TextBox ID="txtInstallmentAmount_Total" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="15">0</asp:TextBox></td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </div>
-                    <%-- <div class="row">
-                        <div class="col-md-12">
-                            <asp:Button runat="server" ID="btnSubmit" OnClientClick="return ValidatePage();" ValidationGroup="a" CssClass="btn btn-success btn-block" Text="Save" />
-                            <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                        </div>
-                    </div>--%>
                     <div class="col-md-12">
-                        <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border" />
+                        <input type="button" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border Alert-Confirmation" />
                         <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-
                 </div>
             </fieldset>
+            <!--modal-->
+            <div class="modal" id="myModal">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                   <h4 class="modal-title text-white">Add Remark For Reject Installment  </h4>
+                   <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal Body -->
+               <div class="modal-body">
+                   <div class="form-group">
+                       <label>Remark<span style="color: red">*</span></label>
+                       <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject Installment "></textarea>
+                   </div>
+               </div>
+               <!-- Modal Footer -->
+               <div class="modal-footer justify-content-center">
+
+                   <button type="button" class="btn btn-success Alert-Rejected btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
+                   <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
             <!-- Modal Component -->
             <div class="modal" id="viewModel" tabindex="-1" role="dialog" aria-labelledby="viewModelListLabel1">
                 <div class="modal-dialog modal-xl" style="width: 100%;">
@@ -425,8 +443,7 @@
             </div>
 
         </div>
-    </div>
-
+   </div>
 
 
 
@@ -434,7 +451,7 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>
+    <%--<script>
         function lnkbtnActiveorNot() {
             debugger;
             var x = document.getElementById("txtApprovedCost").value;
@@ -798,7 +815,230 @@
             }
 
         }
-    </script>
+    </script>--%>
+    <%--<script>
+        function addData2() {
+            // Get input values
+            let name = document.getElementById("Project").value;
+            let name = document.getElementById("ddlInstallment").value;
+            let name = document.getElementById("Installment").value;
+            let email = document.getElementById("c1").value;
+            let mobile = document.getElementById("c2").value;
+            let PreviousGradea = document.getElementById("c3").value;
+            let PreviousGradeb = document.getElementById("c4").value;
 
+            // Get the table and insert a new row at the end
+            let table = document.getElementById('Table1');
+
+            // Check if the maximum limit is reached
+            if (table.rows.length >= 10) {
+                alert("Maximum 10 rows allowed.");
+                return; // Exit the function if the maximum limit is reached
+            }
+
+            // Insert data into cells of the new row
+            let newRow = table.insertRow(table.rows.length - 1);
+            newRow.insertCell(0).innerHTML = table.rows.length - 2;
+            newRow.insertCell(1).innerHTML = Projectk;
+          
+            newRow.insertCell(2).innerHTML = name;
+            newRow.insertCell(3).innerHTML = Installmentop;// Column 1: Name
+            newRow.insertCell(4).innerHTML = email; // Column 2: Email
+            newRow.insertCell(5).innerHTML = mobile; // Column 3: Mobile
+            newRow.insertCell(6).innerHTML = PreviousGradea; // Column 4: Previous Grade A
+            newRow.insertCell(7).innerHTML = PreviousGradeb; // Column 5: Previous Grade B
+            let InstallmentPer_Total = document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value
+            let InstallmentAmount_Total = document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value
+            document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value = + PreviousGradea + + InstallmentPer_Total
+            document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value = + PreviousGradeb + + InstallmentAmount_Total
+            clearInputs3();
+        }
+        function clearInputs3() {
+            debugger;
+            // Clear input fields
+            //document.getElementById("ddlClass").Items.Insert(0, new ListItem("--Select--", "0"));
+            document.getElementById("Project").selectedIndex = 0;
+            $('#Project').trigger('change');
+            document.getElementById("ddlInstallment").selectedIndex = 0;
+            $('#ddlInstallment').trigger('change');
+            document.getElementById("Installment").selectedIndex = 0;
+            $('#Installment').trigger('change');
+           
+
+
+            let email = document.getElementById("c1").value = "";
+            let mobile = document.getElementById("c2").value = "";
+            let PreviousGradea = document.getElementById("c3").value = "";
+            let PreviousGradeab = document.getElementById("c4").value = "";
+
+
+        }
+    </script>--%>
+    <script>
+        function addData2() {
+            // Get input values
+            let project = document.getElementById("Project").value;
+            let installment = document.getElementById("ddlInstallment").value;
+            let installmentNo = document.getElementById("InstallmentNo").value;
+            let prevGradeA = document.getElementById("c3").value;
+          /*  let prevGradeB = document.getElementById("c4").value;*/
+            let email = document.getElementById("c1").value;
+            let mobile = document.getElementById("c2").value;
+
+            // Get the table and insert a new row at the end
+            let table = document.getElementById('Table1');
+
+            // Check if the maximum limit is reached
+            if (table.rows.length >= 7) {
+                alert("Maximum 4 rows allowed.");
+                return; // Exit the function if the maximum limit is reached
+            }
+
+            // Insert data into cells of the new row
+            let newRow = table.insertRow(table.rows.length - 1);
+            newRow.insertCell(0).innerHTML = table.rows.length - 3;
+            newRow.insertCell(1).innerHTML = project;
+
+            newRow.insertCell(2).innerHTML = installment;
+            newRow.insertCell(3).innerHTML = installmentNo;
+            newRow.insertCell(4).innerHTML = email; // Column 1: Name
+            newRow.insertCell(5).innerHTML = mobile; // Column 2: Email
+            newRow.insertCell(6).innerHTML = prevGradeA; // Column 3: Mobile
+            newRow.insertCell(7).innerHTML = prevGradeB; // Column 4: Previous Grade A
+
+            // Update total values
+            let InstallmentPer_Total = parseFloat(document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value);
+        let InstallmentAmount_Total = parseFloat(document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value);
+    document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value = InstallmentPer_Total + parseFloat(prevGradeA);
+    document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value = InstallmentAmount_Total + parseFloat(prevGradeB);
+
+            clearInputs3();
+        }
+
+        function clearInputs3() {
+            // Clear input fields
+            
+            document.getElementById("Project").selectedIndex = 0;
+            $('#Project').trigger('change');
+            document.getElementById("ddlInstallment").selectedIndex = 0;
+            $('#ddlInstallment').trigger('change');
+
+            document.getElementById("InstallmentNo").selectedIndex = 0;
+            $('#InstallmentNo').trigger('change');
+
+            document.getElementById("c1").value = "";
+            document.getElementById("c2").value = "";
+            document.getElementById("c3").value = "";
+         /*   document.getElementById("c4").value = "";*/
+        }
+    </script>
+   <%-- <script>function myaddbtn2() {
+            var ForwordTo = document.getElementById("ddlInstallment").value;
+            if (ForwordTo != "0") {
+                document.getElementById("btnaction3").style.display = "table-cell";
+
+                document.getElementById("btnaction1").style = "display:table-cell";
+            }
+        }</script>--%>
+       <script>
+           debugger;
+           !function ($) {
+               "use strict";
+               var SweetAlert = function () { };
+               //examples
+               SweetAlert.prototype.init = function () {
+                   //Basic
+                   //Success Message
+                   $('.Alert-Save').click(function () {
+                       Swal.fire({
+                           title: 'Are you sure?',
+                           text: "Do you want to Approved this Installment ?",
+                           type: 'warning',
+                           showCancelButton: true,
+                           confirmButtonColor: '#3085D6',
+                           cancelButtonColor: '#d33',
+                           confirmButtonText: 'Yes'
+                           // animation: false,
+                           // customClass: {
+                           //     popup: 'animated tada'
+                           // }
+                       }).then((result) => {
+                           if (result.value) {
+                               Swal.fire({
+                                   type: 'success',
+                                   title: 'Success!',
+                                   text: 'Approved this Installment  Successfully', 
+                                   timer: 20000
+                                   
+                                   
+                               }
+                               )
+                                 document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';
+                           }
+                       })
+                   });
+               },
+
+                   $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+           }(window.jQuery),
+               //initializing
+               function ($) {
+                   "use strict";
+                   $.SweetAlert.init()
+               }(window.jQuery);
+       </script>
+     <%-- <script>
+          function div(){
+              document.getElementById("hide").style.display = "block";
+          }
+
+      </script>--%>
+    <script>
+        function div() {
+          /*  document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';*/
+            document.getElementById("Show").style.display = (document.getElementById("Show").style.display == 'block') ? 'none' : 'block';
+        
+        }
+    </script>
+    <script>
+        $(document).ready(function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            SweetAlert.prototype.init = function () {
+                // Basic
+                // Success Message
+                $('.Alert-Rejected').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Reject ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Request Rejected Successfully!',
+                                timer: 2000
+                            }).then(() => {
+                                document.getElementById("Show").style.display = (document.getElementById("Show").style.display == 'none') ? 'block' : 'none';
+                            });
+                        }
+                    });
+                });
+            };
+            $.SweetAlert = new SweetAlert;
+            $.SweetAlert.Constructor = SweetAlert;
+        });
+
+        // Initializing
+        $(document).ready(function ($) {
+            "use strict";
+            $.SweetAlert.init();
+        });
+    </script>
 </asp:Content>
 

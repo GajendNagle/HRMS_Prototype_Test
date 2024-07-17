@@ -1657,17 +1657,13 @@
     <script>
         function showhidesavebtn3() {
             var checkbox1 = document.getElementById("checkbox2");
-            /*var checkbox2 = document.getElementById("checkbox2");*/
-            //var checkbox3 = document.getElementById("checkbox3");
-            //var checkbox4 = document.getElementById("checkbox4");
+           
             var search = document.getElementById("search");
             var StudentSsm = document.getElementById("StudentSsm")
             if (checkbox1.checked) {
                 search.style.display = "block"
             }
-            //else if (checkbox2.checked === false && checkbox1.checked === false && checkbox3.checked === false && checkbox4.checked === false) {
-            //    showsavebtn.style.display = "none"
-            //}
+            
             else if (checkbox1.checked == false) {
                 search.style.display = "none"
                 show.style.display = "none"
