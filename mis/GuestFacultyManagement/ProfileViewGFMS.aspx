@@ -7,9 +7,10 @@
             border: 0px;
             background-color: transparent;
             width: calc(100% / 4);
+           
         }
 
-        .no-border tr, {
+        .no-border tr {
             padding: 0.2rem 1rem;
             background-color: transparent;
         }
@@ -21,7 +22,9 @@
         .nav-pills .nav-link {
             border-radius: var(--vz-nav-pills-border-radius);
         }
+        .btnShow{
 
+        }
 
 
         @media print {
@@ -90,6 +93,8 @@
         }
     </style>
 
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -118,7 +123,6 @@
 
     <div class="col-md-12 col-lg-12">
         <div class="card ">
-            <div class="card-header-">
                 <ul class="nav nav-pills m-3" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="tab" id="NavQualification" href="#Qualification" role="tab">Update Information 
@@ -139,7 +143,26 @@
                     <div class="tab-pane active show" id="Qualification" role="tabpanel">
                         <fieldset>
                             <div class="row mt-4 align-items-end">
-                                <div class="col-3">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Academic Year<br />
+                                            शैक्षणिक वर्ष का चयन करे
+                                        </label>
+                                        <%--<input name="name" id="AcademicYear" placeholder="Select Academic Year" class="form-control  datepickerYear" />--%>
+                                        <select id="AcademicYear" class="form-control select2">
+                                            <option value="----">--Select--</option>
+                                            <option >2024-25</option>
+                                            <option >2023-24</option>
+                                            <option >2022-23</option>
+                                            <option >2021-22</option>
+                                            <option >2020-21</option>
+                                            <option >2019-20</option>
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Qualification<br />
@@ -147,16 +170,50 @@
                                         </label>
                                         <select id="Education" class="form-control select2">
                                             <option value="----">--Select--</option>
-                                            <option value="BALLB">BALLB</option>
-                                            <option value="BachelorOfArts">Bachelor of Arts</option>
-                                            <option value="BachelorOfCommerce">Bachelor of Commerce</option>
                                             <option value="Architecture">Architecture</option>
-                                            <option value="BCA">BCA</option>
-                                            <option value="ComputerScience">Computer Science</option>
+                                            <option value="Arts">Arts</option>
+                                            <option value="Aviation	 ">Aviation	 </option>
+                                            <option value="Bachelor of Arts">Bachelor of Arts</option>
+                                            <option value="Bachelor of Commerce">Bachelor of Commerce</option>
+                                            <option value="Bachelor of Science ">Bachelor of Science </option>
+                                            <option value="Bachelor of Technology">Bachelor of Technology</option>
+                                            <option value="BALLB ">BALLB </option>
+                                            <option value="BBA ">BBA </option>
+                                            <option value="BCA ">BCA </option>
+                                            <option value="BDes in Design">BDes in Design</option>
+                                            <option value="Biochemistry">Biochemistry</option>
+                                            <option value="Biotechnology ">Biotechnology </option>
+                                            <option value="Bsc ">Bsc </option>
+                                            <option value="BSc IT">BSc IT</option>
+                                            <option value="Chemical Engineering">Chemical Engineering</option>
+                                            <option value="Civil Engineering ">Civil Engineering </option>
+                                            <option value="Computer Science">Computer Science</option>
+                                            <option value="Economics ">Economics </option>
+                                            <option value="Electrical Engineering">Electrical Engineering</option>
+                                            <option value="Engineering ">Engineering </option>
+                                            <option value="Executive PG program in Management">Executive PG program in Management</option>
+                                            <option value="Fashion designing ">Fashion designing </option>
+                                            <option value="Hospital Administration ">Hospital Administration </option>
+                                            <option value="Human Resource Management ">Human Resource Management </option>
+                                            <option value="Humanities">Humanities</option>
+                                            <option value="International business">International business</option>
+                                            <option value="Law">Law</option>
+                                            <option value="Management">Management</option>
+                                            <option value="Mass communications ">Mass communications </option>
+                                            <option value="Master of Arts">Master of Arts</option>
+                                            <option value="Master of Data Science">Master of Data Science</option>
+                                            <option value="Master of Science Biochemistry">Master of Science Biochemistry</option>
+                                            <option value="Masters Of Physician">Masters Of Physician</option>
+                                            <option value="MBA">MBA</option>
+                                            <option value="MBA Business Analytics">MBA Business Analytics</option>
+                                            <option value="MBA Finance">MBA Finance</option>
+                                            <option value="MBBS">MBBS</option>
+                                            <option value="MCA">MCA</option>
+                                            <option value="PG Diploma in Entrepreneurship Development">PG Diploma in Entrepreneurship Development</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Board<br />
@@ -170,7 +227,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Subject<br />
@@ -191,24 +248,41 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Passing Year<br />
                                             उत्तीर्ण वर्ष का चयन करे
                                         </label>
-                                        <select id="PassingYear" class="form-control select2">
+
+                                        <%--<input id="PassingYear" name="name" placeholder="Select Passing Year" class="form-control  datepickerYear2" />--%>
+                                         <select id="PassingYear" class="form-control select2">
                                             <option value="----">--Select--</option>
-                                            <option value="2020-2021d">2020-2021</option>
-                                            <option value="2021-2022">2021-2022</option>
-                                            <option value="2022-2023">2022-2023</option>
-                                            <option value="2023-2024">2023-2024</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
                                         </select>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row align-items-end">
-                                <div class="col-3">
+
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Enter Roll Number<br />
@@ -217,7 +291,7 @@
                                         <input type="text" id="rollnumber" class="form-control" placeholder="Enter Roll Number" />
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Enter Percent<br />
@@ -226,16 +300,16 @@
                                         <input type="text" id="ddlPercentage" class="form-control" placeholder="Enter Percent" />
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Upload Certificate<br />
                                             प्रमाण पत्र अपलोड करे
                                         </label>
-                                        <input type="file" id="fileInput" class="form-control" onchange="displayImage(this)">
+                                        <input type="file" id="fileInput" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <input type="button" id="btnQualification" class="btn btn-outline-success w-lg btn-border" value="ADD" onclick="AddQualification();" />
                                     </div>
@@ -252,6 +326,8 @@
                                                     योग्यता</th>
                                                 <th>Board<br />
                                                     बोर्ड</th>
+                                                <th>Academic Year<br />
+                                                    शैक्षणिक वर्ष</th>
                                                 <th>Subject<br />
                                                     विषय</th>
                                                 <th>Year Of Passing<br />
@@ -260,8 +336,8 @@
                                                     रोल नंबर</th>
                                                 <th>Percent<br />
                                                     प्रतिशत</th>
-                                                <th>Upload Certificate<br />
-                                                    प्रमाण पत्र अपलोड करें</th>
+                                                <th>View Certificate<br />
+                                                    प्रमाण पत्र देखे</th>
                                             </tr>
                                         </table>
                                     </div>
@@ -279,7 +355,7 @@
                     <div class="tab-pane" id="Experience" role="tabpanel">
                         <fieldset>
                             <div class="row mt-4 align-items-end">
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Panel<br />
@@ -293,7 +369,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Enter Experience Work(In Year)<br />
@@ -302,7 +378,7 @@
                                         <input type="text" id="WorkedYear" class="form-control" placeholder="Enter Experience Work" />
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Subject<br />
@@ -323,7 +399,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Professional Qualification Score<br />
@@ -334,7 +410,7 @@
                                 </div>
                             </div>
                             <div class="row align-items-end">
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Qualified Score
@@ -344,16 +420,16 @@
                                         <input type="text" id="QualifiedScore" class="form-control" placeholder="Enter Qualified Score" />
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Upload Certificate<br />
                                             प्रमाण पत्र अपलोड करे
                                         </label>
-                                        <input type="file" id="fileInputs" class="form-control" onchange="displayImage(this)">
+                                        <input type="file" id="fileInputs" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <input type="button" id="btnExperience" class="btn btn-outline-success w-lg btn-border" value="ADD" onclick="AddExperience();" />
                                     </div>
@@ -376,8 +452,8 @@
                                                     व्यावसायिक योग्यता स्कोर</th>
                                                 <th>Qualification Score<br />
                                                     योग्यता अंक</th>
-                                                <th>Upload Certificate<br />
-                                                    प्रमाण पत्र अपलोड करें</th>
+                                                <th>View Certificate<br />
+                                                    प्रमाण पत्र देखे</th>
                                             </tr>
                                         </table>
                                     </div>
@@ -395,7 +471,7 @@
                     <div class="tab-pane " id="Application" role="tabpanel">
 
                         <%--<div class="row mt-4 align-items-end">
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Enter UDISE Code<br />
@@ -404,7 +480,7 @@
                                         <input type="text" id="UdiceCode" class="form-control" placeholder="Enter UDICE Code">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Enter School Name<br />
@@ -413,7 +489,7 @@
                                         <input class="form-control" type="text" placeholder="Enter School Name" />
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Vacant Panel<br />
@@ -430,7 +506,7 @@
                                     </div>
                                 </div>
                                
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
                                             Select Vacant Post<br />
@@ -471,7 +547,7 @@
 
                                             </div>
                                             <div class="col-2">
-                                                <img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
+                                                <%--<img id="imgLogo1" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />--%>
                                             </div>
                                         </div>
                                     </div>
@@ -618,10 +694,10 @@
                                     </div>
                                 </fieldset>
                             </div>
-                                        <div class="col-md-12 px-4 d-print-none text-center">
-                                            <button onclick="printModalContent('printCard');" type="button" class=" btn btn-outline-success btn-border w-lg">Print</button>
-                                            <a role="button" class=" btn btn-outline-secondary btn-border w-lg" download="EKYC_Details" href="/mis/Document/GFMS_EKYCDetails.pdf">Download</a>
-                                        </div>
+                            <div class="col-md-12 px-4 d-print-none text-center">
+                                <button onclick="printModalContent('printCard');" type="button" class=" btn btn-outline-success btn-border w-lg">Print</button>
+                                <a role="button" class=" btn btn-outline-secondary btn-border w-lg" download="EKYC_Details" href="/mis/Document/GFMS_EKYCDetails.pdf">Download</a>
+                            </div>
 
                         </div>
 
@@ -632,24 +708,101 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h3 class="modal-title font-bold">View Certificate  </h3>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <embed id="pdfViewer" style="min-height: 500px; width: 100%" src="../Document/HRMS_Document (1).pdf" />
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+   <%-- <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
-        function printModalContent(modalId) {
-            var modalContent = document.querySelector('#' + modalId).cloneNode(true);
-            document.body.innerHTML = modalContent.innerHTML
-            window.print();
-            window.location.href = "ProfileViewGFMS.aspx";
-        }
-        document.addEventListener('keydown', function (event) {
-            if (event.ctrlKey && event.key === 'p') {
-
-                if (document.getElementById("Application").classList == "tab-pane active show") {
-                    event.preventDefault();
-                    printModalContent('printCard');
-                }
+        $('.datepickerYear').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true,
+            orientation: 'bottom'
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+                var nextYear = selectedYear + 1;
+                var financialYear = selectedYear + '-' + (nextYear % 100); // Example: 2023-24 for financial year 2023-2024
+                $(".datepickerYear").val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
             }
         });
+        $('.datepickerYear2').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true,
+            orientation: 'bottom'
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+
+                var financialYear = selectedYear;
+                $('.datepickerYear2').val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
+            }
+        });
+
+        // Function to set default value to current financial year
+        function setDefaultFinancialYear() {
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            var nextYear = currentYear + 1;
+            var financialYear = currentYear + '-' + (nextYear % 100);
+            this.value = financialYear;
+        }
+
+        // Set default value to current financial year on page load
+        $(document).ready(function () {
+            setDefaultFinancialYear();
+        });
+
+
+    </script>--%>
+    <script>
+        //function printModalContent(modalId) {
+        //    var modalContent = document.querySelector('#' + modalId).cloneNode(true);
+        //    document.body.innerHTML = modalContent.innerHTML
+        //    window.print();
+        //    window.location.href = "ProfileViewGFMS.aspx";
+        //}
+        //document.addEventListener('keydown', function (event) {
+        //    if (event.ctrlKey && event.key === 'p') {
+
+        //        if (document.getElementById("Application").classList == "tab-pane active show") {
+        //            event.preventDefault();
+        //            printModalContent('printCard');
+        //        }
+        //    }
+        //});
 
         !function ($) {
             "use strict";
@@ -783,7 +936,8 @@
                 var c6 = r.insertCell(5);
                 c6.innerHTML = QualifiedScore.value;
                 var c7 = r.insertCell(6);
-                c7.innerHTML = fileInputs.value;
+                c7.style = "text-align:center";
+                c7.innerHTML = '<a role="button" class=" btn btn-outline-secondary btn-border btnShow" data-bs-toggle="modal" data-bs-target="#pdfModal"><i class="fas fa-eye"></a>';
             }
         }
         function AddQualification() {
@@ -798,6 +952,7 @@
                 var r = tableAdd.insertRow(rows);
                 var Education = document.getElementById("Education");
                 var Board = document.getElementById("Board");
+                var AcademicYear = document.getElementById("AcademicYear");
                 var Subject = document.getElementById("Subject");
                 var Passing = document.getElementById("PassingYear");
                 var rollnumber = document.getElementById("rollnumber");
@@ -810,18 +965,22 @@
                 var c3 = r.insertCell(2);
                 c3.innerHTML = Board.value;
                 var c4 = r.insertCell(3);
-                c4.innerHTML = Subject.value;
+                c4.innerHTML = AcademicYear.value;
                 var c5 = r.insertCell(4);
-                c5.innerHTML = Passing.value;
-                var c6 = r.insertCell(5);
-                c6.innerHTML = rollnumber.value;
-                var c7 = r.insertCell(6);
-                c7.innerHTML = total.value;
-                var c8 = r.insertCell(7);
-                c8.innerHTML = fileInputs.value;
-            }
-        }
 
+                c5.innerHTML = Subject.value;
+                var c6 = r.insertCell(5);
+                c6.innerHTML = Passing.value;
+                var c7 = r.insertCell(6);
+                c7.innerHTML = rollnumber.value;
+                var c8 = r.insertCell(7);
+                c8.innerHTML = total.value;
+                var c9 = r.insertCell(8);
+                c9.style = "text-align:center";
+                c9.innerHTML = '<a role="button" class=" btn btn-outline-secondary btn-border btnShow" data-bs-toggle="modal" data-bs-target="#pdfModal"><i class="fas fa-eye"></a>';
+            }
+        };
     </script>
+
 </asp:Content>
 
