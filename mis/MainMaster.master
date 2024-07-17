@@ -1104,7 +1104,7 @@
                                             <div class="collapse menu-dropdown" id="Grievance">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ParivednaNevakarn.aspx"><i class="ri-file-list-3-line"></i>Grievance Management System Home</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ParivadNivaran.aspx"><i class="ri-file-list-3-line"></i>Complaint Filed </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ParivadNivaran.aspx"><i class="ri-file-list-3-line"></i>Add Employee Grievence Details</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ParivednaNevakarnStatus.aspx"><i class="ri-file-list-3-line"></i>Complaint Tracking Status </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/PrintComplaint.aspx"><i class="ri-file-list-3-line"></i>Print Complaint </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ViewAccumulatedComplaints.aspx"><i class="ri-file-list-3-line"></i>Grievances Processing </a></li>

@@ -24,7 +24,6 @@
                         <li class="breadcrumb-item">
                             <a href="#GuestFaculty" data-bs-toggle="collapse" role="button" aria-expanded="false" onclick="SidebarToggle('GFMS')"><span>Guest Faculty Login</span></a>
                         </li>
-
                         <li class="breadcrumb-item"><span>Print Experience Claim</span></li>
                     </ol>
                 </div>

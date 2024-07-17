@@ -36,8 +36,8 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -72,7 +72,7 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table text-center table-bordered">
-                                <thead>
+                                <thead class="nowrap">
                                     <tr>
                                         <th>Sr.No.
                                                 <br />
@@ -106,12 +106,6 @@
             </fieldset>
         </div>
     </div>
-
-
-
-
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

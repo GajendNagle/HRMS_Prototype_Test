@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="PrintComplaint.aspx.cs" Inherits="mis_Transaction_PrintComplaint" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
+    <%--    <style>
         th {
             white-space: nowrap;
         }
@@ -45,7 +45,7 @@
                 display: none;
             }
         }
-    </style>
+    </style>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -72,8 +72,8 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
-                <img src="../../img/Grievance%20Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+            <p style="font-style: oblique; color: green; font-weight: bolder; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                <img src="../../img/Grievance%20Logo.png" style="height: 60px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
                 </u>
             </p>
         </div>
@@ -82,15 +82,14 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Print Complaint /
-             शिकायत प्रिंट करें
+                    <h5 class="card-title">Complaint Status / शिकायत स्थिति
                     </h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Print Details / विवरण प्रिंट करें
+                <legend>Complaint Status / शिकायत स्थिति
                 </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -144,7 +143,7 @@
             </fieldset>
         </div>
     </div>
-    <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal bs-example-modal-lg2" id="ModalPrint" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header" id="myDIV">
@@ -217,17 +216,15 @@
                             </div>
                         </div>
                     </fieldset>
-
-
                 </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-danger waves-effect text-start text-white" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer justify-content-end">
+                    <button onclick="printModalContent('ModalPrint')" type="button" class=" btn btn-outline-success btn-border w-lg">Print</button>
+                    <button type="button" class="btn btn-outline-danger w-lg" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
-
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -238,6 +235,26 @@
             // Open the PDF in a new window or tab
             window.open(pdfUrl, '_blank');
         }
+    </script>
+    <script>
+        function printModalContent(ModalPrint) {
+            var modalContent = document.querySelector('#' + ModalPrint + ' .modal-body').cloneNode(true);
+            document.body.innerHTML = modalContent.innerHTML
+            window.print();
+            window.location.href = "PrintComplaint.aspx";
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
+                // Prevent default behavior of Ctrl+P (opening print dialog)
+                event.preventDefault();
+                // Print the content of the active modal
+                var activeModal = document.querySelector('.modal.show');
+                if (activeModal) {
+                    var ModalPrint = activeModal.getAttribute('id');
+                    printModalContent(ModalPrint);
+                }
+            }
+        });
     </script>
 </asp:Content>
 
