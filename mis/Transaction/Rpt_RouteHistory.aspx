@@ -19,7 +19,7 @@
                         <li class="breadcrumb-item">
                             <a href="#BusDriverToAttender" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Bus Driver & Attender Process</span></a>
-                        <li class="breadcrumb-item"><span>Route Details</span></li>
+                        <li class="breadcrumb-item"><span>Route History</span></li>
                     </ol>
                 </div>
             </div>
@@ -28,14 +28,24 @@
 
     <div class="card card-border-primary ">
         <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-7">
-                    <h4 class="card-title">Route Details / मार्ग का विवरण
-                    </h4>
+            <div class="row">
+                <div class="col-xxl-12 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            Route Details
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                .
+                            </marquee>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-
         <div class="card-body">
             <fieldset>
 

@@ -28,9 +28,21 @@
 
     <div class="card card-border-primary ">
         <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-9">
-                    <h4 class="card-title">Route Wise Picup/Droup Details / मार्ग के अनुसार विवरण</h4>
+            <div class="row">
+                <div class="col-xxl-12 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            Route Wise Picup/Droup Details
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                .
+                            </marquee>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,7 +51,7 @@
             <fieldset>
 
                 <legend>Route Wise Picup/Droup Details / मार्ग के अनुसार विवरण
-                   </legend>
+                </legend>
                 <div class="row align-items-end">
 
                     <div class="col-md-3">
@@ -97,7 +109,8 @@
                                     <tr>
 
                                         <th>Sr.No
-                                <br />क्रमांक
+                                <br />
+                                            क्रमांक
                                         </th>
                                         <th>Route No.<br />
                                             रूट नंबर</th>
@@ -110,7 +123,8 @@
                                         <th>Student Name<br />
                                             विद्यार्थी का नाम
                                         </th>
-                                        <th>Remark Details <br />
+                                        <th>Remark Details
+                                            <br />
                                             विवरण
                                         </th>
                                         <th>Action</th>

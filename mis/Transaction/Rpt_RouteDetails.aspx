@@ -20,7 +20,7 @@
                             <a href="#BusDriverToAttender" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Bus Driver & Attender Process</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Route Location</span></li>
+                        <li class="breadcrumb-item"><span>Route Details</span></li>
                     </ol>
                 </div>
             </div>
@@ -29,17 +29,28 @@
 
     <div class="card card-border-primary ">
         <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title">View Route Location / मार्ग स्थान विवरण</h4>
+            <div class="row">
+                <div class="col-xxl-12 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            View Route Location
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                .
+                            </marquee>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-
         <div class="card-body">
             <fieldset>
 
-                <legend> Location Details / मार्ग विवरण</legend>
+                <legend>Location Details / मार्ग विवरण</legend>
                 <div class="row align-items-end">
 
                     <div class="col-md-3">
@@ -138,7 +149,7 @@
                 </div>
             </fieldset>
         </div>
-        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
