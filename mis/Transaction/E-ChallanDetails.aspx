@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-12 text-end">
-                    <a role="button" href="E-Challan Process.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>Add E-Challan Process</a>
+                    <a role="button" href="E-ChallanProcess.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>Add E-Challan Process</a>
                 </div>
             </div>
         </div>
@@ -55,14 +55,14 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Date<br />
+                            Date<span style="color: red">*</span><br />
                             दिनांक
                         </label>
-                        <input type="date" name="name" class="form-control">
+                        <asp:TextBox runat="server" TextMode="Date" AutoPostBack="true" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Select Type<br />
+                            Select Type<span style="color: red">*</span><br />
                             प्रकार का चयन करें
                         </label>
                         <asp:DropDownList runat="server" ID="ddlType" CssClass="form-control select2">
@@ -91,9 +91,7 @@
                     </div>
 
                     <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
+                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                     </div>
                 </div>
                 <div class="row form-group">
@@ -132,9 +130,7 @@
                                         <td>Rohit Sharma</td>
                                         <td>9984653265</td>
                                         <td>9:05 AM</td>
-                                        <td>
-                                            <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></a>
-                                        </td>
+                                        <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
 
                                     </tr>
                                     <tr>
@@ -143,9 +139,7 @@
                                         <td>Shekhar Mishra</td>
                                         <td>8812456587</td>
                                         <td>9:15 AM</td>
-                                        <td>
-                                            <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firsttimeModel2"><i class="fa fa-print" aria-hidden="true"></i></a>
-                                        </td>
+                                        <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
                                     </tr>
 
                                 </tbody>
@@ -205,9 +199,7 @@
                                         <td>Rohit Sharma</td>
                                         <td>9984653265</td>
                                         <td>5:05 PM</td>
-                                        <td>
-                                            <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></a>
-                                        </td>
+                                        <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
 
                                     </tr>
                                     <tr>
@@ -216,9 +208,7 @@
                                         <td>Shekhar Mishra</td>
                                         <td>8812456587</td>
                                         <td>5:18 PM</td>
-                                        <td>
-                                            <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firsttimeModel2"><i class="fa fa-print" aria-hidden="true"></i></a>
-                                        </td>
+                                        <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
                                     </tr>
 
                                 </tbody>
@@ -227,26 +217,19 @@
                     </div>
                 </div>
             </fieldset>
-
-            <div class="modal bs-example-modal-lg" tabindex="-1" role="dialog" id="firsttimeModel2" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header" id="myDIV1">
-                            <h4 class="modal-title" id="myLargeModalLabel2"></h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-danger waves-effect  w-lg" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/Transport%20Managment.pdf';
+
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
 </asp:Content>
 

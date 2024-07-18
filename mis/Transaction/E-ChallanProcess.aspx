@@ -55,8 +55,8 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Vehical No<br />
-                            वाहन नंबर
+                           Select Vehical No<span style="color: red">*</span><br />
+                            वाहन नंबर का चयन करें
                         </label>
                         <asp:DropDownList runat="server" ID="ddlVehicalNo" CssClass="form-control select2">
                             <asp:ListItem>Select</asp:ListItem>
@@ -66,14 +66,14 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Select Type<br />
+                            Select Type<span style="color: red">*</span><br />
                             प्रकार का चयन करें
                         </label>
-                        <select class="form-control select2">
-                            <option>Select</option>
-                            <option>In Vehical</option>
-                            <option>Out Vehical</option>
-                        </select>
+                        <asp:DropDownList runat="server" class="form-control select2" AutoPostBack="true">
+                            <asp:ListItem>Select</asp:ListItem>
+                            <asp:ListItem>In Vehical</asp:ListItem>
+                            <asp:ListItem>Out Vehical</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                 </div>
                 <hr />
@@ -81,7 +81,7 @@
                     <div class="col-md-12">
                         <asp:Button runat="server" ID="searchButton" type="button" Text="Search" class="btn btn-outline-success w-lg btn-border" OnClick="searchButton_Click1" />
 
-                        <a href="E-Challan Process.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <a href="E-ChallanProcess.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
@@ -93,11 +93,8 @@
                         <button class="btn btn-info btn-rounded w-55">Excel</button>
                         <button class="btn btn-info btn-rounded w-55">PDF</button>
                     </div>
-
                     <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
+                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                     </div>
                 </div>
                 <div class="row form-group">
@@ -135,10 +132,10 @@
                                         <td>RTU002</td>
                                         <td>Rakesh Sinha</td>
                                         <td>6567234567</td>
-                                        <td>DL14 20110012345</td>
+                                        <td>DL1420110012345</td>
                                         <td>
-                                            <input type="time" name="time" class="form-control" /></td>
-                                        <td><a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></a></td>
+                                            <input type="time" name="time" value="17:38" class="form-control" /></td>
+                                        <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -154,12 +151,10 @@
                         <button class="btn btn-info btn-rounded w-55">Excel</button>
                         <button class="btn btn-info btn-rounded w-55">PDF</button>
                     </div>
-
                     <div class="col-md-2">
-                        <div class="form-group">
                             <input type="text" id="searchInput1" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                         </div>
-                    </div>
+                   
                 </div>
                 <div class="row form-group">
                     <div class="col-md-12">
@@ -198,8 +193,8 @@
                                         <td>9867874365</td>
                                         <td>DL14 20110014567</td>
                                         <td>
-                                            <input type="time" name="time" class="form-control" /></td>
-                                        <td><a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></a></td>
+                                            <input type="time" name="time" value="17:38" class="form-control" /></td>
+                                        <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -211,5 +206,14 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/Transport%20Managment.pdf';
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
 </asp:Content>
 

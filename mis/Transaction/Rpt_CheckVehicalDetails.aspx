@@ -53,18 +53,31 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            From Date<br />
-                            दिनांक से
+                            Select From Date<span style="color: red">*</span><br />
+                            प्रारंभिक दिनांक का चयन करें
                         </label>
                         <input type="date" name="name" class="form-control" />
                     </div>
 
                     <div class="col-md-3">
                         <label>
-                            To Date<br />
-                            दिनांक तक
+                            Select To Date<span style="color: red">*</span>
+                            <br />
+                            अंतिम दिनांक का चयन करें
                         </label>
                         <input type="date" name="name" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            Select Vehicle No<span style="color: red">*</span>
+                            <br />
+                            वाहन नंबर का चयन करें
+                        </label>
+                        <select class="form-control select2">
+                            <option>Select</option>
+                            <option>MP04AB1123</option>
+                            <option>MP04AB7723</option>
+                        </select>
                     </div>
                 </div>
                 <hr />
@@ -77,7 +90,7 @@
                 </div>
             </fieldset>
 
-            <fieldset id="tbldetail" style="display:none">
+            <fieldset id="tbldetail" style="display: none">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -86,9 +99,7 @@
                     </div>
 
                     <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
-                        </div>
+                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
                     </div>
                 </div>
                 <div class="row form-group">
@@ -121,6 +132,14 @@
                                         <td>6567234567</td>
                                         <td>9:00 AM</td>
                                         <td>6:06 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>MP04AB7723</td>
+                                        <td>Shyam Arora</td>
+                                        <td>7876546798</td>
+                                        <td>9:15 AM</td>
+                                        <td>6:17 PM</td>
                                     </tr>
                                 </tbody>
                             </table>
