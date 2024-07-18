@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="RouteHistory.aspx.cs" Inherits="mis_Transaction_RouteHistory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_RouteHistory.aspx.cs" Inherits="mis_Transaction_Rpt_RouteHistory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
@@ -170,7 +170,7 @@
                                                 <th>Sr.No.<br />
                                                     क्रमांक</th>
                                                 <th>Student Class<br />
-                                                    विद्यार्थी कक्षा</th>
+                                                    विद्यार्थी की कक्षा</th>
                                                 <th>Student Name<br />
                                                     विद्यार्थी का नाम</th>
                                                 <th>Parents Name<br />
