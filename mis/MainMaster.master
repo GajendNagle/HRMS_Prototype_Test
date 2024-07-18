@@ -1104,7 +1104,7 @@
                                             <div class="collapse menu-dropdown" id="Grievance">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ParivednaNevakarn.aspx"><i class="ri-file-list-3-line"></i>Grievance Management System Home</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ParivadNivaran.aspx"><i class="ri-file-list-3-line"></i>Add Employee Grievence Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Trn_ParivadNivaran.aspx"><i class="ri-file-list-3-line"></i>Add Employee Grievance Details </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ParivednaNevakarnStatus.aspx"><i class="ri-file-list-3-line"></i>Complaint Tracking Status </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/PrintComplaint.aspx"><i class="ri-file-list-3-line"></i>Print Complaint </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ViewAccumulatedComplaints.aspx"><i class="ri-file-list-3-line"></i>Grievances Processing </a></li>
@@ -1120,8 +1120,8 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DisposedGrievances.aspx"><i class="ri-file-list-3-line"></i>List of Resolved Complaints Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/RejectedGrievances.aspx"><i class="ri-file-list-3-line"></i>List of Rejected Grievance Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ForwardedGrievances%20.aspx"><i class="ri-file-list-3-line"></i>DistrictWise Forwarded Grievances Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/CPIGrievancesDetails.aspx"><i class="ri-file-list-3-line"></i>Complaints Grievances forwarded from CPI Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ForwardedGrievances%20.aspx"><i class="ri-file-list-3-line"></i>District Wise Forwarded Grievances Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/CPIGrievancesDetails.aspx"><i class="ri-file-list-3-line"></i>Complaint Forwarded From CPI Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DistrictWiseProcessReport.aspx"><i class="ri-file-list-3-line"></i>District Wise Progress Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/SectionWiseGrievanceReports.aspx"><i class="ri-file-list-3-line"></i>Section Wise Pending Report </a></li>
 
@@ -1334,18 +1334,6 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DriverRegistration.aspx"><i class="ri-file-list-3-line"></i>Driver Registration </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteToVehicleMapping.aspx"><i class="ri-file-list-3-line"></i>Route To Vehicle Mapping   </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/BusStopToStudentEnrollment.aspx"><i class="ri-file-list-3-line"></i>Bus Stop Enrollnent</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#BusDriverToAttender" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="BusDriverToAttender"><i class="ri-menu-line"></i>Bus Driver & Attender Process</a>
-                                            <div class="collapse menu-dropdown" id="BusDriverToAttender">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_RouteDetails.aspx"><i class="ri-file-list-3-line"></i>Route Details </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteWisePicupDroup.aspx"><i class="ri-file-list-3-line"></i>Route Wise Picup/Droup </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_RouteHistory.aspx"><i class="ri-file-list-3-line"></i>Route History </a></li>
-                                                   
                                                 </ul>
                                             </div>
                                         </li>
@@ -1734,7 +1722,7 @@
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Installment Creation</a></li>
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentReleas.aspx"><i class="ri-file-list-3-line"></i>Installment Payment Release</a></li>
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Release</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Approval</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Creation & Approval</a></li>
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkWiseExpenditure.aspx"><i class="ri-file-list-3-line"></i>Work Wise Expenditure</a></li>
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/School_Work_Expenditure.aspx"><i class="ri-file-list-3-line"></i>Work Expences Entry</a></li>
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/GenerateSanctionLetter.aspx"><i class="ri-file-list-3-line"></i>Generate Sanction Letter</a></li>
@@ -1775,7 +1763,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Reg_GuestFaculty.aspx"><i class="ri-file-list-3-line"></i>Guest Faculty Registration</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileDetails.aspx"><i class="ri-file-list-3-line"></i>Profile View</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/ProfileViewGFMS.aspx"><i class="ri-file-list-3-line"></i>Update Information</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Trn_GFMSApplyForVacancy.aspx"><i class="ri-file-list-3-line"></i>Apply For Vacancy</a></li>
+                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Trn_GFMSApplyForVacancy.aspx"><i class="ri-file-list-3-line"></i>Apply For Vacancy</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Trn_ClaimExperienceCertificate.aspx"><i class="ri-file-list-3-line"></i>Claim Experience Certificate</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Rpt_ExpClaimPrint.aspx"><i class="ri-file-list-3-line"></i>Print Experience Claim</a></li>
                                                 </ul>
