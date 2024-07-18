@@ -29,21 +29,30 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-12">
-                    <h4 class="card-title">Bus Stop Enrollment Process / बस स्टॉप प्रक्रिया</h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Bus Stop To Student Enrollment</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-12 text-end">
+                    <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" id="btnBack"
+                        onclick="funBack()"><i class="bx bx-plus label-icon align-middle  me-2"></i>View Details</a>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
-            <fieldset>
+            <fieldset id="RegDetail">
                 <legend>Bus Stop Enrollment / बस स्टॉप प्रक्रिया </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Select Enroll Type
                                 <br />
-                                प्रकार चुने <span style="color: red">*</span></span>
+                                प्रकार चुने<span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">Student</option>
@@ -55,7 +64,7 @@
                         <div class="form-group">
                             <span>Select Bus Stop Name Route No.
             <br />
-                                बस स्टॉप का नाम एवं रूट क्रमांक चुनें <span style="color: red">*</span></span>
+                                बस स्टॉप का नाम एवं रूट क्रमांक चुनें<span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">Gautam Nagar RUT001</option>
@@ -108,7 +117,7 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="dtls">
                 <legend>Details / विवरण</legend>
                 <div class="row">
                     <div class="col-md-12">
@@ -166,7 +175,7 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="FsDetails" class="d-none">
                 <legend>Details / विवरण</legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -187,7 +196,7 @@
                             <span>Select Class
              <br />
                                 कक्षा का चयन करें<span style="color: red">*</span></span>
-                            <select class="form-control" id="dropdown2" ">
+                            <select class="form-control" id="dropdown2">
                                 <option value="0">--Select--</option>
                                 <option value="1">Class-1</option>
                                 <option value="2">Class-2</option>
@@ -302,8 +311,26 @@
                 element1.style.display = "flex";
                 element2.style.display = "block";
                 // Add your data to the element2 div here
-               
+
             }
         }</script>
+    <script>
+        var a = 1
+        function funBack() {
+            document.querySelector('#FsDetails').classList.toggle('d-none');
+            document.querySelector('#RegDetail').classList.toggle('d-none');
+            document.querySelector('#dtls').classList.toggle('d-none');
+            if (a == 1) {
+
+                document.querySelector('#btnBack').innerHTML = '<i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back';
+                a = 2;
+            }
+            else {
+                document.querySelector('#btnBack').innerHTML = "<i class='bx bx-plus label-icon align-middle  me-2'></i>View Details";
+                a = 1;
+            }
+
+        }
+    </script>
 </asp:Content>
 

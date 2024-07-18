@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="PickUp_Drop_Details.aspx.cs" Inherits="mis_Masters_PickUp_Drop_Details" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_StudentWisePickupandDrop.aspx.cs" Inherits="mis_Masters_Rpt_StudentWisePickupandDrop" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
@@ -19,7 +19,7 @@
                             <a href="#ParentProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Parent Process</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Pickup/Drop Details</span></li>
+                        <li class="breadcrumb-item"><span>Student Wise Pickup/Drop Details</span></li>
                     </ol>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-xxl-12 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">PickUp/Drop Details</div>
+                        <div class="headertext btn btn-primary rounded-pill">Student Wise PickUp/Drop Details</div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
                         </div>
@@ -41,18 +41,36 @@
         </div>
 
         <div class="card-body">
-            <asp:label runat="server" ID="lblMsg"></asp:label>
+            <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>PickUp/Drop Details</legend>
+                <legend>Student Wise PickUp/Drop Details</legend>
                 <div class="row align-items-end">
-                     <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="form-group">
-                        <label>
-                            Student Name <br />
-                            विद्यार्थी का नाम<span style="color: red">*</span></label>
-                        <input name="ctl00$ContentBody$ctl00" type="TEXT" PlaceHolder="Arpana" class="form-control" />
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Route No.
+                               <br />
+                                मार्ग क्र.<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="TEXT" placeholder="RUT001" class="form-control" />
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Student Name
+                                <br />
+                                विद्यार्थी का नाम<span style="color: red">*</span></label>
+                            <select id="stdName" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">Arpana</option>
+                                <option value="B">Sagar</option>
+                                <option value="c">Shakshi</option>
+                                <option value="d">Sita</option>
+                                <option value="e">Dheeraj</option>
+                                <option value="f">Gajendra</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
@@ -102,6 +120,8 @@
                                         <th>Sr. No.
                                      <br />
                                             सरल क्र.</th>
+                                        <th>Student Name<br />
+                                            विद्यार्थी का नाम</th>
                                         <th>Date
                                      <br />
                                             दिनांक</th>
@@ -115,6 +135,7 @@
                                 </thead>
                                 <tr>
                                     <td>1</td>
+                                    <td>Arpana</td>
                                     <td>10/07/2024</td>
                                     <td>Health Issue</td>
                                     <td>No</td>
@@ -122,17 +143,19 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
+                                    <td>Arpana</td>
                                     <td>18/07/2024</td>
                                     <td>---</td>
-                                    <td> 09:45 AM</td>
-                                    <td> 05:10 PM</td>
+                                    <td>09:45 AM</td>
+                                    <td>05:10 PM</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
+                                    <td>Arpana</td>
                                     <td>12/07/2024</td>
                                     <td>---</td>
-                                    <td> 09:46 AM</td>
-                                    <td> 05:10 PM</td>
+                                    <td>09:46 AM</td>
+                                    <td>05:10 PM</td>
                                 </tr>
                             </table>
                         </div>

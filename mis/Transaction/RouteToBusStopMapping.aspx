@@ -31,15 +31,24 @@
         </div>
     </div>
     <div class="card card-border-primary">
-        <div class="card-header">
+         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Route To Bus Stop Mapping </h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Route To Bus Stop Mapping</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-12 text-end">
+                    <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" id="btnBack"
+                        onclick="funBack()"><i class="bx bx-plus label-icon align-middle  me-2"></i>View Details</a>
                 </div>
             </div>
         </div>
         <div class="card-body">
-            <fieldset>
+            <fieldset  id="RegDetail">
                 <legend>Route To Bus Stop Mapping </legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -95,7 +104,7 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="dtls">
                 <legend>Route & Bus Stop Details </legend>
                 <div class="row justify-content-end" id="NoRcdTable">
                     <div class="table-responsive">
@@ -177,7 +186,7 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="FsDetails" class="d-none">
                 <legend>Details</legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -308,6 +317,24 @@
         $(function () {
             $('#basicExample').timepicker();
         });
+    </script>
+    <script>
+        var a = 1
+        function funBack() {
+            document.querySelector('#FsDetails').classList.toggle('d-none');
+            document.querySelector('#RegDetail').classList.toggle('d-none');
+            document.querySelector('#dtls').classList.toggle('d-none');
+            if (a == 1) {
+
+                document.querySelector('#btnBack').innerHTML = '<i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back';
+                a = 2;
+            }
+            else {
+                document.querySelector('#btnBack').innerHTML = "<i class='bx bx-plus label-icon align-middle  me-2'></i>View Details";
+                a = 1;
+            }
+
+        }
     </script>
 
 </asp:Content>

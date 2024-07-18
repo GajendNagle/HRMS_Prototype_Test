@@ -28,22 +28,30 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Driver Registration / चालक पंजीकरण</h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Driver Registration</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-12 text-end">
+                    <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" id="btnBack"
+                        onclick="funBack()"><i class="bx bx-plus label-icon align-middle  me-2"></i>View Details</a>
                 </div>
             </div>
         </div>
-
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
-            <fieldset>
+            <fieldset id="RegDetail">
                 <legend>Driver Registration / चालक पंजीकरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Select Vehicle No.
                                 <br />
-                               वाहन संख्या चुनें.<span style="color: red">*</span></span>
+                                वाहन संख्या चुनें.<span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">MP04AB1196</option>
@@ -73,7 +81,7 @@
                         <div class="form-group">
                             <span>Select State Name
                                 <br />
-                               राज्य का नाम चुनें  <span style="color: red">*</span></span>
+                                राज्य का नाम चुनें  <span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="--Select--" data-select2-id="3">--Select--</option>
                                 <option value="Rajasthan" data-select2-id="14">Rajasthan</option>
@@ -113,8 +121,7 @@
                             <span>Enter Full Address
     <br />
                                 पूर्ण पता दर्ज करें<span style="color: red">*</span></span>
-                             <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Full Address" autocomplete="off">
-                           
+                            <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Full Address" autocomplete="off">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -137,7 +144,7 @@
                         <div class="form-group">
                             <span>Enter Driving Licence No.
     <br />
-                              ड्राइविंग लाइसेंस नं. दर्ज करें<span style="color: red">*</span></span>
+                                ड्राइविंग लाइसेंस नं. दर्ज करें<span style="color: red">*</span></span>
                             <input class="form-control" type="text" placeholder="Enter Licence Number" />
                         </div>
                     </div>
@@ -148,9 +155,9 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="dtls">
                 <legend>Details / विवरण</legend>
-               
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -160,7 +167,7 @@
                                     <tr>
                                         <th>Sr. No.
                                          <br />
-                                          क्रमांक</th>
+                                            क्रमांक</th>
                                         <th>Vehicle No.
                                              <br />
                                             वाहन क्रमांक</th>
@@ -205,29 +212,23 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="FsDetails" class="d-none">
                 <legend>Details / विवरण</legend>
 
                 <div class="row justify-content-end ">
-                    <hr />
-                    <div class="col-md-12 mt-3">
-
-                        <button type="button" class="btn btn-outline-success btn-border  w-lg" onclick="showTable()">Search</button>
-                        <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                    </div>
                     <div class="col-md-4 text-end" id="tablefd" style="display: none">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
                             <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                    <div class="col-md-2" id="searchbtn" style="display: none">
+                    <div class="col-md-2" id="searchbtn" >
                         <div class="form-group">
                             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
-                <div class="row" id="tableData" style="display: none">
+                <div class="row" id="tableData">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
@@ -289,6 +290,24 @@
             document.getElementById("tableData").style.display = "block";
             document.getElementById("tablefd").style.display = "block";
             document.getElementById("searchbtn").style.display = "block";
+        }
+    </script>
+    <script>
+        var a = 1
+        function funBack() {
+            document.querySelector('#FsDetails').classList.toggle('d-none');
+            document.querySelector('#RegDetail').classList.toggle('d-none');
+            document.querySelector('#dtls').classList.toggle('d-none');
+            if (a == 1) {
+
+                document.querySelector('#btnBack').innerHTML = '<i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back';
+                a = 2;
+            }
+            else {
+                document.querySelector('#btnBack').innerHTML = "<i class='bx bx-plus label-icon align-middle  me-2'></i>View Details";
+                a = 1;
+            }
+
         }
     </script>
 </asp:Content>
