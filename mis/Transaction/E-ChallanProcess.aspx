@@ -58,10 +58,10 @@
                            Select Vehical No<span style="color: red">*</span><br />
                             वाहन नंबर का चयन करें
                         </label>
-                        <asp:DropDownList runat="server" ID="ddlVehicalNo" CssClass="form-control select2">
+                        <asp:DropDownList runat="server" ID="ddlVehicalNo" CssClass="form-control select2" AutoPostBack="true">
                             <asp:ListItem>Select</asp:ListItem>
-                            <asp:ListItem Value="1">MP04AB1123</asp:ListItem>
-                            <asp:ListItem Value="2">MP04AB2223</asp:ListItem>
+                            <asp:ListItem>MP04AB1123</asp:ListItem>
+                            <asp:ListItem>MP04AB2223</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
@@ -69,10 +69,10 @@
                             Select Type<span style="color: red">*</span><br />
                             प्रकार का चयन करें
                         </label>
-                        <asp:DropDownList runat="server" class="form-control select2" AutoPostBack="true">
+                        <asp:DropDownList runat="server" class="form-control select2" ID="ddlType">
                             <asp:ListItem>Select</asp:ListItem>
-                            <asp:ListItem>In Vehical</asp:ListItem>
-                            <asp:ListItem>Out Vehical</asp:ListItem>
+                            <asp:ListItem Value="1">In Vehical</asp:ListItem>
+                            <asp:ListItem Value="2">Out Vehical</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -178,8 +178,8 @@
                                             मोबाइल नंबर</th>
                                         <th>Licence No.<br />
                                             लाइसेंस नंबर</th>
-                                        <th>In Time<br />
-                                            आगमन का समय</th>
+                                        <th>Out Time<br />
+                                            प्रस्थान का समय</th>
                                         <th>Save/Print</th>
                                     </tr>
                                 </thead>

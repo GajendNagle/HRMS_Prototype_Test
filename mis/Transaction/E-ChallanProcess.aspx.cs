@@ -14,7 +14,7 @@ public partial class mis_Transaction_E_ChallanProcess : System.Web.UI.Page
 
     protected void searchButton_Click1(object sender, EventArgs e)
     {
-        if (ddlVehicalNo.SelectedValue == "1")
+        if (ddlType.SelectedValue == "1")
         {
             table1.Visible = true;
         }
@@ -23,7 +23,7 @@ public partial class mis_Transaction_E_ChallanProcess : System.Web.UI.Page
             table1.Visible = false;
         }
 
-        if (ddlVehicalNo.SelectedValue == "2")
+        if (ddlType.SelectedValue == "2")
         {
             table2.Visible = true;
         }
