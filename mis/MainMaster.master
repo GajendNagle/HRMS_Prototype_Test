@@ -1387,6 +1387,18 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="#ParentProcess" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="ParentProcess"><i class="ri-menu-line"></i>Parent Process</a>
+                                            <div class="collapse menu-dropdown" id="ParentProcess">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/InformToStudent.aspx"><i class="ri-file-list-3-line"></i>Inform to Student</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/BusRoutDetails.aspx"><i class="ri-file-list-3-line"></i>Bus Route Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/PickUp_Drop_Details.aspx"><i class="ri-file-list-3-line"></i>Pickup/Drop Details</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>

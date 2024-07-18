@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="BusRoutDetails.aspx.cs" Inherits="mis_Masters_BusRoutDetails" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="InformStudentDetails.aspx.cs" Inherits="mis_Masters_Mst_MileStone" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
@@ -19,7 +19,7 @@
                             <a href="#ParentProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Parent Process</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Bus Route Details</span></li>
+                        <li class="breadcrumb-item"><span>Inform To student</span></li>
                     </ol>
                 </div>
             </div>
@@ -28,47 +28,23 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-xxl-12 col-md-12">
+                <div class="col-xxl-10 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Bus Route Details<%--बस मार्ग विवरण--%></div>
+                        <div class="headertext btn btn-primary rounded-pill">Inform To student <%--/ छात्र को सूचित करें--%></div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
                         </div>
                     </div>
                 </div>
-                <%-- <div class="col-xxl-2 col-md-12 text-end"> <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>add new state</a> </div>--%>
+                <div class="col-xxl-2 col-md-12 text-end">
+                    <a role="button" href="InformToStudent.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
+                </div>
             </div>
         </div>
-
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>Bus Route Deatils / बस मार्ग विवरण</legend>
-                <div class="row align-items-end">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="form-group">
-                            <label>
-                                Select Bus Route<br />
-                                बस मार्ग का चयन करें<span style="color: red">*</span></label>
-                            <select id="work-category" class="form-control select2">
-                                <option value="--Select--">RUT001</option>
-                                <option value="B">RUT002</option>
-                                <option value="c">RUT003</option>
-                                <option value="A">RUT004</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <hr />
-                        <div class="form-group">
-                            <button type="button" class="btn btn-outline-success btn-border  w-lg">Find Details</button>
-                            <a href="/mis/Masters/BusRoutDetails.aspx" class="btn btn-outline-danger w-lg">Clear</a>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>View Bus Route Details / बस मार्ग विवरण देखें</legend>
+                <legend>View Inform Details / सूचना विवरण देखें</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -91,34 +67,34 @@
                                         <th>Sr. No.
                                      <br />
                                             सरल क्र.</th>
-                                        <th>Route No.
+                                        <th>Student Name
                                      <br />
-                                            मार्ग क्र.</th>
-                                        <th>Bus Stop Name
+                                            छात्र का नाम</th>
+                                        <th>Date
                                      <br />
-                                            बस स्टॉप का नाम</th>
-                                        <th>Bus Stop Arrival Time<br />
-                                            बस स्टॉप आगमन का समय</th>
-                                        <th>Bus Stop Departure Time
+                                            दिनांक</th>
+                                        <th>Absence Reason<br />
+                                            अनुपस्थिति का कारण</th>
+                                        <th>Action
                                      <br />
-                                            बस स्टॉप प्रस्थान समय</th>
+                                            कार्यवाहीं </th>
                                     </tr>
                                 </thead>
                                 <tr>
                                     <td>1</td>
-                                    <td>RUT001</td>
-                                    <td>Gautam Nagar</td>
-                                    <td>8:45</td>
-                                    <td>8:50</td>
+                                    <td>Rohan Pandey</td>
+                                    <td>17/07/2024</td>
+                                    <td>Health Issue</td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>RUT002</td>
-                                    <td>Rachana Nagar</td>
-                                    <td>8:52</td>
-                                    <td>8:55</td>
+                                    <td>Rohan Pandey</td>
+                                    <td>18/07/2024</td>
+                                    <td>---</td>
+                                    <td>---</td>
                                 </tr>
-
                             </table>
                         </div>
                     </div>
@@ -126,6 +102,7 @@
             </fieldset>
         </div>
     </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
